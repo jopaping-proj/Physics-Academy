@@ -1,0 +1,43 @@
+/* Lesson-page-specific layout details that don't belong in generic
+   components.css. Keep this file small — if a rule applies to more than
+   one page type, it belongs in layout.css or components.css instead. */
+
+.lesson-header {
+  margin-bottom: var(--space-5);
+}
+
+.lesson-header__meta {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+}
+
+.further-practice__tier {
+  margin-bottom: var(--space-4);
+}
+
+.further-practice__tier-title {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.chunk-progression {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  margin: var(--space-2) 0 var(--space-4);
+}
+
+.chunk-progression span:not(:last-child)::after {
+  content: "→";
+  margin-left: var(--space-1);
+  color: var(--border-subtle);
+}

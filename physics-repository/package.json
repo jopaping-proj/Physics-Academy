@@ -1,0 +1,14 @@
+{
+  "name": "physics-academy",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive AP Physics 1, AP Physics 2, and IB Diploma Physics SL/HL repository.",
+  "type": "module",
+  "scripts": {
+    "build": "node build/build.js",
+    "serve": "node build/build.js && npx --yes serve dist"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

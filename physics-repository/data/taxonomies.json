@@ -1,0 +1,72 @@
+{
+  "_comment": "Controlled vocabulary for question-bank and lesson metadata. Extend by adding new values here first — never invent a skill/representation label inline inside a content or question-bank file.",
+
+  "difficulty": {
+    "_source": "rigor-standard-addendum.md §21 — canonical, do not modify without updating that document",
+    "values": [
+      "foundation",
+      "developing",
+      "ap-ib-standard",
+      "ap5-ib7-target",
+      "distinction-stretch"
+    ]
+  },
+
+  "cognitiveLevel": {
+    "_source": "rigor-standard-addendum.md §2",
+    "values": [
+      { "level": 1, "name": "Recognition and Recall" },
+      { "level": 2, "name": "Direct Application" },
+      { "level": 3, "name": "Conceptual Reasoning" },
+      { "level": 4, "name": "Multi-Representation Reasoning" },
+      { "level": 5, "name": "Multi-Step Modeling" },
+      { "level": 6, "name": "Transfer" },
+      { "level": 7, "name": "Synthesis" },
+      { "level": 8, "name": "Evaluation and Argumentation" }
+    ]
+  },
+
+  "skill": {
+    "_comment": "Seeded with the skills needed for the Unit 2 Dynamics prototype. Add more as new units are authored.",
+    "values": [
+      "identify-principle",
+      "construct-model",
+      "multi-representation-reasoning",
+      "justify-with-principle",
+      "evaluate-assumptions",
+      "limiting-case-analysis",
+      "reasonableness-check",
+      "proportional-reasoning",
+      "transfer",
+      "experimental-design",
+      "data-analysis",
+      "uncertainty-interpretation",
+      "misconception-diagnosis",
+      "error-analysis",
+      "synthesis"
+    ]
+  },
+
+  "representation": {
+    "values": [
+      "verbal",
+      "equation",
+      "graph",
+      "vector-diagram",
+      "free-body-diagram",
+      "motion-diagram",
+      "energy-bar-chart",
+      "numerical",
+      "physical-model"
+    ]
+  },
+
+  "lessonThreeTier": {
+    "_source": "rigor-standard-addendum.md §3 — page-layout grouping only, maps onto the difficulty scale above",
+    "mapping": {
+      "foundation": ["foundation", "developing"],
+      "examination-readiness": ["ap-ib-standard", "ap5-ib7-target"],
+      "mastery-distinction": ["distinction-stretch"]
+    }
+  }
+}

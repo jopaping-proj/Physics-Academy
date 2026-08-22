@@ -1,0 +1,300 @@
+/* Reusable component styles. See docs/architecture-proposal.md §4 for the
+   full component list and what each one is for. */
+
+/* ---- Sidebar / TOC ---- */
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--text-sm);
+}
+
+.toc-list a {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+.toc-list a[aria-current="true"] {
+  color: var(--text-primary);
+  background: var(--bg-panel-raised);
+  font-weight: 600;
+}
+
+.breadcrumb {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+/* ---- Generic panel card, base for most components below ---- */
+.card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-panel);
+}
+
+/* ---- HookCard ---- */
+.hook-card {
+  border-left: 3px solid var(--accent);
+}
+
+.hook-card__label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--text-xs);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ---- ObjectiveList ---- */
+.objective-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.objective-list li {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-1) 0;
+  color: var(--text-secondary);
+}
+
+.objective-list li::before {
+  content: "";
+  flex: 0 0 1rem;
+  height: 1rem;
+  margin-top: 0.15rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+/* ---- ConceptChunk ---- */
+.concept-chunk__label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+/* ---- WorkedExample ---- */
+.worked-example {
+  border-left: 3px solid var(--difficulty-ap-ib-standard);
+}
+
+.worked-example__steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+
+.worked-example__steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-2);
+}
+
+.worked-example__steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  background: var(--bg-panel-raised);
+  border-radius: 50%;
+  color: var(--text-secondary);
+}
+
+/* Scaffold-fade styling: worked examples nearer full independence get a
+   visibly thinner border, a small visual echo of addendum §16's fade. */
+.worked-example[data-scaffold="full"]        { border-left-width: 4px; }
+.worked-example[data-scaffold="partial"]     { border-left-width: 3px; }
+.worked-example[data-scaffold="hinted"]      { border-left-width: 2px; }
+.worked-example[data-scaffold="independent"] { border-left-width: 1px; }
+
+/* ---- FormativeCheck / quiz ---- */
+.quiz {
+  border-left: 3px solid var(--success);
+}
+
+.quiz__choice {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-2);
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.quiz__choice:hover {
+  border-color: var(--accent);
+}
+
+.quiz__choice[data-state="correct"] {
+  border-color: var(--success);
+  background: color-mix(in srgb, var(--success) 15%, var(--bg-panel-raised));
+}
+
+.quiz__choice[data-state="incorrect"] {
+  border-color: var(--error);
+  background: color-mix(in srgb, var(--error) 15%, var(--bg-panel-raised));
+}
+
+.quiz__feedback {
+  margin-top: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-raised);
+  font-size: var(--text-sm);
+}
+
+/* ---- Hint / solution progressive disclosure ---- */
+.disclosure > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  padding: var(--space-2) 0;
+}
+
+.disclosure[open] > summary {
+  margin-bottom: var(--space-2);
+}
+
+/* ---- MisconceptionCard / ErrorAnalysisCard ---- */
+.misconception-card,
+.error-analysis-card {
+  border-left: 3px solid var(--error);
+}
+
+.misconception-card__label,
+.error-analysis-card__label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--error);
+  font-weight: 700;
+}
+
+/* ---- RepresentationSwitcher ---- */
+.rep-switcher__tabs {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-3);
+}
+
+.rep-switcher__tab {
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.rep-switcher__tab[aria-selected="true"] {
+  color: var(--text-primary);
+  border-bottom-color: var(--accent);
+}
+
+/* ---- FormulaExplorer / GraphExplorer / SimulationContainer ---- */
+.interactive-panel {
+  border-left: 3px solid var(--difficulty-distinction-stretch);
+}
+
+.interactive-panel__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.interactive-panel__slider-group label {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.interactive-panel__canvas-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-canvas);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.interactive-panel__toolbar {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.interactive-panel__toolbar button {
+  padding: var(--space-1) var(--space-3);
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+/* ---- APIBExamCard ---- */
+.exam-card {
+  border-left: 3px solid var(--warning);
+}
+
+.exam-card__badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--warning) 20%, transparent);
+  color: var(--warning);
+}
+
+/* ---- DifficultyBadge ----
+   data-difficulty must be one of the 5 canonical values from
+   rigor-standard-addendum.md §21. See js/difficulty.js. */
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  padding: 2px var(--space-2);
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+
+.difficulty-badge[data-difficulty="foundation"]         { color: var(--difficulty-foundation); }
+.difficulty-badge[data-difficulty="developing"]          { color: var(--difficulty-developing); }
+.difficulty-badge[data-difficulty="ap-ib-standard"]      { color: var(--difficulty-ap-ib-standard); }
+.difficulty-badge[data-difficulty="ap5-ib7-target"]      { color: var(--difficulty-ap5-ib7-target); }
+.difficulty-badge[data-difficulty="distinction-stretch"] { color: var(--difficulty-distinction-stretch); }
+
+/* ---- RetrievalPrompt ---- */
+.retrieval-prompt {
+  border-left: 3px solid var(--accent-muted);
+}
+
+.retrieval-prompt__kind {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}

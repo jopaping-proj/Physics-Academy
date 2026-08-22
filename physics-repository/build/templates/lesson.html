@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{TITLE}} · Physics Academy</title>
+<link rel="stylesheet" href="{{ROOT}}css/variables.css" />
+<link rel="stylesheet" href="{{ROOT}}css/base.css" />
+<link rel="stylesheet" href="{{ROOT}}css/layout.css" />
+<link rel="stylesheet" href="{{ROOT}}css/components.css" />
+<link rel="stylesheet" href="{{ROOT}}css/lessons.css" />
+<!-- KaTeX: loaded on every lesson page since nearly every lesson has equations.
+     See docs/architecture-proposal.md §8 for the KaTeX-over-MathJax reasoning. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+</head>
+<body>
+<header class="site-header">
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="lesson-sidebar">Menu</button>
+  <a class="site-header__brand" href="{{ROOT}}index.html">Physics Academy</a>
+</header>
+
+<div class="lesson-shell">
+  <nav class="lesson-sidebar" id="lesson-sidebar" aria-label="Lesson navigation">
+    <div class="breadcrumb">{{BREADCRUMB}}</div>
+    <h2>On this page</h2>
+    <ul class="toc-list">
+{{SIDEBAR_TOC}}
+    </ul>
+    <h2>Objectives</h2>
+    <ul class="objective-list">
+{{SIDEBAR_OBJECTIVES}}
+    </ul>
+  </nav>
+
+  <main class="lesson-main">
+{{LESSON_BODY}}
+  </main>
+</div>
+
+<script type="application/json" id="lesson-data">
+{{LESSON_DATA_JSON}}
+</script>
+<script type="module" src="{{ROOT}}js/navigation.js"></script>
+<script type="module" src="{{ROOT}}js/content-loader.js"></script>
+<script type="module" src="{{ROOT}}js/difficulty.js"></script>
+<script type="module" src="{{ROOT}}js/assessment.js"></script>
+</body>
+</html>
