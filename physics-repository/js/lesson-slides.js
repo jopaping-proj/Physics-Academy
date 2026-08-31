@@ -134,7 +134,13 @@
 
     function slideKind(slide) {
       if (slide.querySelector(".hook-card__quiz")) return "hook";
-      if (slide.querySelector(".quiz-mount")) return "quiz";
+      // A quiz-mount is gateable only if it rendered an answerable
+      // multiple-choice question. Free-response / self-check items
+      // (FRQs) have a mount but no .quiz__choice — treat them as
+      // content the student is trusted to work through.
+      if (slide.querySelector(".quiz-mount")) {
+        return slide.querySelector(".quiz__choice") ? "quiz" : "content";
+      }
       if (slide.querySelector(".error-analysis__response")) return "error-analysis";
       const we = slide.querySelector(".worked-example");
       if (we && Number(we.dataset.phases || 1) > 1) return "worked-example";

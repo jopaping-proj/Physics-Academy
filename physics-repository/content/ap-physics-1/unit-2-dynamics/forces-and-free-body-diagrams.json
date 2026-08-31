@@ -1,0 +1,485 @@
+{
+  "id": "ap1-u2-l1",
+  "slug": "forces-and-free-body-diagrams",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Dynamics",
+  "topic": "Forces and Free-Body Diagrams",
+  "lessonTitle": "Forces and Free-Body Diagrams",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Vectors: adding vectors, and resolving a vector into perpendicular components with sine and cosine",
+    "The idea of acceleration as the rate of change of velocity (Unit 1)"
+  ],
+  "majorObjective": "Identify every force acting on an object from a description of a situation, represent those forces in a correct free-body diagram, and combine them into a net force along one or two axes.",
+  "subObjectives": [
+    "State that every force is a push or a pull that one object exerts on another, and name the source of each force in a scenario.",
+    "List the contact forces used in this course (normal, tension, applied, friction, spring) and the one field force (gravity), with the direction of each.",
+    "Identify every force on a chosen object — and no invented forces — from a verbal or pictorial description.",
+    "Construct a free-body diagram in either AP-accepted style (box or dot): only the forces on the object, each starting at the object, each labelled.",
+    "Reject things that do not belong on a free-body diagram: the object's own third-law pushes on other things, its velocity or acceleration, a 'net force' arrow, and any force with no nameable source.",
+    "Calculate the net force along a single axis by summing signed force components.",
+    "Resolve angled forces into components along two perpendicular axes and sum each axis separately."
+  ],
+  "hook": {
+    "prompt": "A hockey puck is given one quick shove and then slides across frictionless ice at a steady speed. **While it is sliding steadily (after the shove, ignoring friction and air):** which forces act on the puck?",
+    "choices": [
+      "Gravity (down), the normal force from the ice (up), and a forward 'force of the shove' that keeps it moving.",
+      "Only a forward 'force of motion' in the direction it slides.",
+      "Gravity (down) and the normal force from the ice (up) — nothing horizontal.",
+      "No forces at all, since it moves at constant velocity."
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "You already know how to **add vectors** and how to **break a vector into components** along two perpendicular directions: a vector of magnitude $F$ at angle $\\theta$ to the $x$-axis has an $x$-component $F\\cos\\theta$ and a $y$-component $F\\sin\\theta$. You also know that ==acceleration is the rate of change of velocity==, so an object moving at constant velocity has zero acceleration.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Every Force Comes From Something",
+      "concept": "A [[force]] is a push or a pull that **one object exerts on another**. Every force has a *source* — the other object doing the pushing or pulling. ==If you cannot name what is exerting a force, it is not a real force== and it does not belong in your analysis.\n\nIn this course the forces on an everyday object come from a short list:\n\n- **Gravity** ($\\vec{F}_g$, also called weight): the Earth pulls every object straight **down** with magnitude $|\\vec{F}_g| = mg$. This is the only *field* force here — it acts without contact.\n- **Normal force** ($\\vec{F}_N$): a surface pushes on whatever touches it, **perpendicular to the surface and away from it**.\n- **Tension** ($\\vec{F}_T$): a rope, string, or cable pulls **along its own length, away from the object**.\n- **Friction** ($\\vec{f}$): a surface pushes **parallel to itself**, opposing sliding (or the tendency to slide).\n- **Applied force** ($\\vec{F}_{app}$): a direct push or pull from a hand, a foot, another object.\n- **Spring force** ($\\vec{F}_s$): a stretched or compressed spring pushes or pulls back toward its natural length.\n\nTo find the forces on an object, work in this order: **(1)** name everything **touching** it — each contact gives a normal force, possibly a friction force, or a tension; **(2)** add **gravity**, which is always there.",
+      "representation": "| Force | Symbol | Source | Direction |\n|---|---|---|---|\n| Gravity / weight | $\\vec{F}_g$ | the Earth | straight down |\n| Normal | $\\vec{F}_N$ | a surface in contact | perpendicular to the surface, away from it |\n| Tension | $\\vec{F}_T$ | a rope / string / cable | along the rope, away from the object |\n| Friction | $\\vec{f}$ | a surface in contact | along the surface, opposing sliding |\n| Applied | $\\vec{F}_{app}$ | a hand / another object | the direction of the push or pull |\n| Spring | $\\vec{F}_s$ | a spring | back toward the spring's natural length |\n\nNotice that a single point of contact can supply **two** forces at once — a floor gives both a normal force (up) and, if there is sliding or a tendency to slide, a friction force (sideways).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A book lies at rest on a level table. List every force acting on the book.",
+        "phases": [
+          {
+            "label": "Choose the object, then find what touches it",
+            "steps": [
+              "**Object:** the book alone.",
+              "**What touches it?** Only the table — contact along the book's bottom face."
+            ]
+          },
+          {
+            "label": "Turn each contact into forces",
+            "steps": [
+              "The table pushes **up** on the book, perpendicular to its surface: the **normal force** $\\vec{F}_N$.",
+              "Is there friction? Nothing pushes the book sideways and it is not sliding or tending to slide, so **no friction force** acts here."
+            ]
+          },
+          {
+            "label": "Add gravity, then stop",
+            "steps": [
+              "The Earth pulls the book **down**: $\\vec{F}_g$, magnitude $mg$.",
+              "There is nothing else touching the book and no other field force in this course. **Two forces total:** $\\vec{F}_N$ up, $\\vec{F}_g$ down."
+            ]
+          }
+        ],
+        "keyMove": "Asking \"what is touching the object?\" *first*. The table is the only contact, so a normal force (and possibly friction) is the only contact force to consider — then gravity is automatic."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-l1-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Forces and Free-Body Diagrams",
+        "objective": "2.2",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "motion-requires-a-sustaining-force",
+        "question": "A soccer ball has been kicked and is now flying through the air. Ignoring air resistance, which forces act on the ball while it is in flight?",
+        "choices": [
+          "Gravity (down) and a forward 'force of the kick' carried by the ball.",
+          "Only gravity, straight down.",
+          "Gravity (down) and a normal force (up) from the air.",
+          "No forces — the ball is in free flight."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — once the foot loses contact with the ball, the foot exerts no more force. Nothing is touching the ball, and (ignoring air) the only force with a source is the Earth's pull: gravity, straight down.",
+          "incorrect": {
+            "0": "A force needs a source that is acting *now*. The kick is over — the foot is no longer touching the ball, so it exerts no force. There is no 'force of the kick' stored in the ball; the ball keeps moving because nothing stops it, not because a force pushes it.",
+            "2": "Air can exert a force (drag), but we are told to ignore air resistance. The air is not a solid surface, so there is no normal force here.",
+            "3": "Gravity always acts — the Earth pulls the ball down whether or not anything touches it. 'In free flight' does not mean 'no forces'; it means the *only* force is gravity."
+          }
+        },
+        "hint": ["A force needs an object exerting it *at this moment*. What is touching the ball in mid-air? What field force always acts?"],
+        "solution": "In flight, nothing touches the ball; ignoring air, the only force is gravity ($mg$, down)."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Drawing the Free-Body Diagram",
+      "concept": "A [[free-body diagram]] (FBD) is a picture of **only the forces acting on one object**. Three steps:\n\n1. **Isolate the object.** Draw it alone — a box or a dot — with nothing else in the picture: no table, no rope, no ground.\n2. **Draw one arrow per force.** Each arrow **starts at the object** and points the way that force pushes or pulls. Make stronger forces longer.\n3. **Label every arrow** with its type: $\\vec{F}_g$, $\\vec{F}_N$, $\\vec{F}_T$, $\\vec{f}$, $\\vec{F}_{app}$, $\\vec{F}_s$.\n\n==What must never appear on an FBD:==\n\n- Forces the object exerts **on other things** — a Newton's-third-law partner acts on the *other* object, so it belongs on that object's diagram, not this one.\n- The object's **velocity or acceleration** — those are motion, not forces.\n- A single **'net force' arrow** — the net force is the *result* of adding the arrows, not one of them.\n- Any force with **no nameable source** ('force of motion', 'force of the throw').",
+      "representation": "AP Physics accepts two styles — either earns full credit:\n\n- **Box diagram.** The object is a box. Gravity starts at the box's **centre**; contact forces (normal, tension, applied, friction, spring) start at the **surface where they act**.\n- **Dot diagram.** The object is a single dot. *Every* arrow starts at the **edge of the dot**, arranged like spokes. Two forces in the same direction are drawn **side by side, slightly offset** — never stacked so one hides the other.\n\nThe FBD is not a formality before the equations — it *is* how you find the net force: draw every arrow, then add them.",
+      "figures": [
+        { "svg": "forces-fbd/fbd-book.svg", "caption": "**Book on a table.** Two forces: the table's normal force up, gravity down. Equal length here because the book is in equilibrium." },
+        { "svg": "forces-fbd/fbd-pushed-crate.svg", "caption": "**Crate pushed right across a rough floor, speeding up.** Four forces: gravity down, normal up, the applied push right, kinetic friction left. The push arrow is longer than friction — that is why the crate speeds up." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A crate is dragged across a rough, level floor by a rope held at 30° above the horizontal. The crate moves to the right at constant speed. Draw its free-body diagram.",
+        "figure": { "svg": "forces-fbd/fbd-dragged-crate.svg", "caption": "Free-body diagram: gravity down, normal force up, tension up-and-right at 30°, kinetic friction left (opposing the motion)." },
+        "phases": [
+          {
+            "label": "Object and contacts",
+            "steps": [
+              "**Object:** the crate.",
+              "**Touching it:** the floor (a normal force, and friction because it is sliding) and the rope (a tension)."
+            ]
+          },
+          {
+            "label": "List the forces with directions",
+            "steps": [
+              "$\\vec{F}_g$ — straight **down**, from the Earth.",
+              "$\\vec{F}_N$ — **up**, perpendicular to the floor.",
+              "$\\vec{F}_T$ — along the rope, **up and to the right at 30°** above horizontal, away from the crate.",
+              "$\\vec{f}$ — **to the left**, along the floor, opposing the rightward sliding (kinetic friction)."
+            ]
+          },
+          {
+            "label": "Draw and sanity-check",
+            "steps": [
+              "Draw all four arrows starting at the crate (see the figure).",
+              "The rope pulls partly **upward**, so the floor does **not** have to support the whole weight: expect $F_N < mg$ — the FBD is where that shows up. There is **no** forward 'motion force' — the crate keeps moving because the horizontal forces balance."
+            ]
+          }
+        ],
+        "keyMove": "Recognising that the tension has an upward part, so the normal force is *less* than the weight. A common wrong FBD makes $\\vec{F}_N$ and $\\vec{F}_g$ equal out of habit."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-l1-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Forces and Free-Body Diagrams",
+        "objective": "2.2",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "confuses-a-force-and-its-effect-with-a-third-law-pair",
+        "question": "A person stands on the floor of an elevator. Which of the following belongs on the **free-body diagram of the person**?",
+        "choices": [
+          "The person's weight (down) and the normal force from the floor on the person (up).",
+          "The person's weight (down), the normal force (up), and the force the person pushes on the floor (down).",
+          "The person's weight (down) and the person's push on the floor (down).",
+          "The normal force (up) and the person's push on the floor (down), but not gravity, since the person is supported."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — an FBD shows only forces acting *on* the person: gravity (Earth on person, down) and the normal force (floor on person, up). The person's push on the floor is a force on the *floor*, so it goes on the floor's diagram, not the person's.",
+          "incorrect": {
+            "1": "The push of the person on the floor acts on the floor, not on the person. It is the Newton's-third-law partner of the floor's normal force on the person — partners always act on *different* objects, so only one of them (the normal force on the person) belongs here.",
+            "2": "Same error, and it also drops the normal force — the floor does push up on the person, and that force must be shown.",
+            "3": "Gravity always acts. 'Being supported' means the normal force *balances* gravity, not that gravity disappears."
+          }
+        },
+        "hint": ["An FBD shows forces *on* the object. The person pushing on the floor is a force on what?"],
+        "solution": "Forces on the person: $\\vec{F}_g$ (down) and $\\vec{F}_N$ (up). The person's push on the floor acts on the floor."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "From the Diagram to the Net Force",
+      "concept": "Once the FBD is drawn, the **net force** is the vector sum of every arrow: $\\vec{F}_{net} = \\sum \\vec{F}$.\n\n- **Forces along one line:** choose a positive direction and add **signed magnitudes**. $F_{net} = \\sum F$, with forces one way positive and the other way negative.\n- **Forces at angles:** break each force into components along two perpendicular axes — usually horizontal $x$ and vertical $y$ — and add each axis on its own: $\\sum F_x$ and $\\sum F_y$. A force $F$ at angle $\\theta$ to the $x$-axis contributes $F\\cos\\theta$ to $x$ and $F\\sin\\theta$ to $y$.\n\n==Pick your axes to make the algebra easy== — along the direction of motion, or along a ramp — not always horizontal and vertical.\n\nIf an object has **zero acceleration** (at rest, or moving at constant velocity), then $\\sum F_x = 0$ **and** $\\sum F_y = 0$ — two equations, which is exactly enough to solve for two unknowns.",
+      "representation": "Resolving one angled force: a tension $F_T = 120\\text{ N}$ at $30°$ above the horizontal splits into\n\n- horizontal: $F_{T,x} = F_T\\cos 30° = 120(0.866) \\approx 104\\text{ N}$\n- vertical: $F_{T,y} = F_T\\sin 30° = 120(0.500) = 60\\text{ N}$\n\nThe original arrow and its two components form a right triangle: $\\sqrt{104^2 + 60^2} \\approx 120\\text{ N}$, back to where we started.",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "The dragged crate again: its weight is $F_g = 200\\text{ N}$, the rope tension is $F_T = 120\\text{ N}$ at $30°$ above horizontal, and it moves at constant velocity. Find the normal force from the floor and the friction force.",
+        "phases": [
+          {
+            "label": "Set up axes and the equilibrium condition",
+            "steps": [
+              "Axes: $x$ horizontal (positive right), $y$ vertical (positive up).",
+              "Constant velocity ⇒ zero acceleration ⇒ $\\sum F_x = 0$ **and** $\\sum F_y = 0$."
+            ]
+          },
+          {
+            "label": "Vertical axis → the normal force",
+            "steps": [
+              "Vertical forces: $F_N$ (up), $F_T\\sin 30° = 60\\text{ N}$ (up), $F_g = 200\\text{ N}$ (down).",
+              "$\\sum F_y = F_N + 60 - 200 = 0 \\;\\Rightarrow\\; F_N = 140\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Horizontal axis → the friction force",
+            "steps": [
+              "Horizontal forces: $F_T\\cos 30° \\approx 104\\text{ N}$ (right), $f$ (left).",
+              "$\\sum F_x = 104 - f = 0 \\;\\Rightarrow\\; f \\approx 104\\text{ N}$.",
+              "Check: $F_N = 140\\text{ N}$ is **less than** the $200\\text{ N}$ weight — the rope's upward pull carries the rest, exactly as the FBD predicted."
+            ]
+          }
+        ],
+        "keyMove": "Reading \"constant velocity\" as *two* equations ($\\sum F_x = 0$, $\\sum F_y = 0$) — one for each unknown. The vertical equation is what makes $F_N \\neq mg$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-l1-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Forces and Free-Body Diagrams",
+        "objective": "2.2",
+        "skill": "multi-representation-reasoning",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "steeper-cable-angle-does-not-change-tension",
+        "question": "A heavy lamp hangs at rest from two cables that meet at the lamp, each making the same angle with the vertical. The cables are slowly lengthened so they become *more horizontal* (the angle from vertical increases), while the lamp stays at the same height. What happens to the tension in each cable?",
+        "choices": [
+          "It increases.",
+          "It stays the same — the lamp's weight hasn't changed.",
+          "It decreases.",
+          "It stays the same until the cables are horizontal, then becomes undefined."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — vertical equilibrium requires the two upward components to sum to the weight: $2T\\cos\\theta = mg$, where $\\theta$ is the angle from vertical. As the cables tilt toward horizontal, $\\cos\\theta$ shrinks, so $T = \\dfrac{mg}{2\\cos\\theta}$ must grow — approaching infinity as the cables approach horizontal.",
+          "incorrect": {
+            "1": "The weight is unchanged, but only the *vertical component* of each tension holds up the lamp. When the cables tilt, each tension has to be larger for its vertical component to still add up to the weight.",
+            "2": "This has the relationship backwards. More-horizontal cables have a smaller vertical component per unit of tension, so the tension must be *larger*, not smaller.",
+            "3": "The tension grows continuously without limit as the angle approaches horizontal; it never simply 'stays the same,' and it is well-defined for every angle short of exactly horizontal."
+          }
+        },
+        "hint": ["Write vertical equilibrium: the two upward tension components must add to $mg$. If each cable makes angle $\\theta$ with the vertical, the upward component of each is $T\\cos\\theta$. Solve for $T$ and see what happens as $\\theta$ grows."],
+        "solution": "$2T\\cos\\theta = mg \\Rightarrow T = \\dfrac{mg}{2\\cos\\theta}$, which increases as $\\theta$ (angle from vertical) increases."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "fbd-builder",
+    "title": "FBD Builder",
+    "subtitle": "Build the diagram, then check it",
+    "componentKey": "fbd-builder",
+    "description": "Pick a scenario, then build the free-body diagram: turn on each force that acts on the object and set its direction. Draw only the forces **on** the object. Press **Check** when you're done.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-l1-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "surfaces-exert-forces-beyond-normal-and-friction",
+      "question": "A block slides to the right along a rough horizontal table. Which set of forces from the *table* acts on the block?",
+      "choices": [
+        "A normal force (up) and a friction force (left, opposing the slide).",
+        "A normal force (up), a friction force (left), and a small forward force (right) that keeps the block moving.",
+        "Only a friction force (left).",
+        "A normal force (up) only — friction acts on the table, not the block."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — a surface can push perpendicular to itself (normal force) and drag parallel to itself (friction). That's all a dry surface does. The block keeps moving because nothing is fast enough to stop it, not because the table pushes it forward.",
+        "incorrect": {
+          "1": "A dry surface does not push objects *forward*. There is no 'keep-it-moving' force — that is the impetus misconception. Only two forces come from the surface: normal and friction.",
+          "2": "The table also pushes *up* on the block (the normal force); without it the block would fall through the table.",
+          "3": "Friction from the table acts on the block (leftward). By Newton's third law the block also drags the table rightward, but that partner force is on the table — it doesn't cancel the friction on the block."
+        }
+      },
+      "hint": ["What are the only two things a dry surface can do to an object touching it?"],
+      "solution": "A surface exerts a normal force (perpendicular) and, when there is sliding, a friction force (parallel, opposing) — nothing else."
+    },
+    {
+      "id": "ap1-u2-l1-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "draws-velocity-or-acceleration-as-a-force-on-the-fbd",
+      "question": "A car speeds up as it drives east along a straight, level road. A student's free-body diagram of the car shows: gravity (down), the normal force (up), the drive force from the road (east), air resistance (west), and a separate arrow labelled 'acceleration' (east). What is wrong with this diagram?",
+      "choices": [
+        "Nothing — that is a complete and correct free-body diagram.",
+        "The 'acceleration' arrow does not belong — acceleration is a motion, not a force. The other four arrows are forces and are fine.",
+        "Air resistance should not be included on a level road.",
+        "The normal force should point east, in the direction of motion."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a free-body diagram shows *forces* only. Acceleration is the *result* of the net force, found by adding the force arrows; it is never one of them. Remove the 'acceleration' arrow and the diagram is correct.",
+        "incorrect": {
+          "0": "The 'acceleration' arrow is not a force and must be removed. Everything else (gravity, normal, drive force, air resistance) is a genuine force on the car.",
+          "2": "Air resistance is a real force whenever the car moves through air — it is fine to include it. (The problem does not tell us to ignore it.)",
+          "3": "The normal force is the road pushing *perpendicular* to itself, which on a level road is straight up — not along the motion."
+        }
+      },
+      "hint": ["Go arrow by arrow: is each one a push or a pull from some object? Which arrow fails that test?"],
+      "solution": "The 'acceleration' arrow is not a force; an FBD contains forces only. The other four arrows are legitimate forces."
+    },
+    {
+      "id": "ap1-u2-l1-mc03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "question": "A 10 kg box sits on a table while a person presses straight down on top of it with a 40 N push. Taking $g = 9.8\\text{ m/s}^2$, what is the normal force the table exerts on the box?",
+      "choices": ["98 N", "138 N", "58 N", "40 N"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the box is in equilibrium, so $\\sum F_y = 0$: $F_N - mg - F_{push} = 0$, giving $F_N = mg + F_{push} = 98 + 40 = 138\\text{ N}$. The normal force adjusts to whatever is needed for equilibrium; it is *not* fixed at $mg$.",
+        "incorrect": {
+          "0": "This assumes $F_N = mg$ always. The extra 40 N downward push means the table must push back harder — $F_N = mg + 40$.",
+          "2": "This subtracts the push instead of adding it. The push is *downward*, in the same direction as gravity, so it adds to what the table must support.",
+          "3": "This is only the push. The table also has to hold up the box's weight."
+        }
+      },
+      "hint": ["Draw the box's FBD: $F_N$ up, $mg$ down, the person's push down. Set $\\sum F_y = 0$."],
+      "solution": "$F_N = mg + F_{push} = (10)(9.8) + 40 = 138\\text{ N}$."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**A student was asked to draw the free-body diagram of a box being pulled to the right at constant speed by a horizontal rope across a rough floor.** They drew, all starting at the box: gravity down; the normal force up (same length as gravity); the rope tension right; friction left (same length as the tension); and one more arrow to the right, longer than the others, labelled *'$\\vec{F}_{net}$, the force of motion.'*",
+      "prompts": [
+        "Identify the error in the student's diagram.",
+        "Explain why that arrow does not belong on a free-body diagram.",
+        "State what the correct free-body diagram should contain.",
+        "For this specific situation (constant speed), state what the net force actually is."
+      ],
+      "modelResponse": "**(1)** The extra rightward arrow labelled '$\\vec{F}_{net}$, the force of motion' does not belong. **(2)** A free-body diagram contains only individual forces, each a push or pull from a named object. The net force is the *sum* of those arrows, not one of them; and there is no 'force of motion' — no object is exerting it. **(3)** The correct diagram has exactly four arrows, all starting at the box: gravity (down), normal force (up), tension (right), kinetic friction (left). Here gravity and the normal force may be drawn equal (nothing else is vertical), and tension and friction should be drawn equal because the box moves at constant speed. **(4)** Constant speed in a straight line means zero acceleration, so the net force is exactly **zero** — the tension and friction cancel, and so do gravity and the normal force.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "The same situation lives in four linked representations: the **words** ('a crate dragged at constant speed by a rope at 30°'); the **free-body diagram** (four labelled arrows from the crate); the **component equations** ($\\sum F_x = 0$, $\\sum F_y = 0$); and the **numbers** that come out ($F_N = 140\\text{ N}$, $f \\approx 104\\text{ N}$). The FBD is the hinge: you cannot write correct component equations without it, and its rough arrow lengths already tell you the answer's shape ($F_N < mg$) before any algebra.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-l1-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "question": "A ball hangs motionless from a single vertical string attached to the ceiling. How many forces act on the ball, and what are they?",
+      "choices": [
+        "One: gravity, down.",
+        "Two: gravity (down) and the string's tension (up).",
+        "Two: the string's tension (up) and the ceiling's pull (up).",
+        "Three: gravity (down), tension (up), and a normal force (up)."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the string touches the ball and pulls up along its length (tension); the Earth pulls down (gravity). Two forces, and since the ball is at rest they are equal in magnitude.",
+        "incorrect": {
+          "0": "Gravity alone would make the ball accelerate downward. Something must be pulling up — the string.",
+          "2": "The ceiling does not touch the ball, so it exerts no force on it directly. The ceiling holds the *string*; the string pulls the ball.",
+          "3": "A normal force needs a surface pressing on the ball. Nothing is pressing on it — only the string (tension) and the Earth (gravity)."
+        }
+      },
+      "hint": ["What touches the ball? What field force always acts?"],
+      "solution": "Two forces: tension (up, from the string) and gravity (down, from the Earth)."
+    },
+    {
+      "id": "ap1-u2-l1-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "scenario": "A 6.0 kg block is held against a vertical wall by a horizontal push of 80 N directed straight at the wall. The block is not moving. Use $g = 9.8\\text{ m/s}^2$; assume the wall can exert friction on the block.",
+      "parts": [
+        { "label": "(a)", "prompt": "Draw and label the free-body diagram of the block.", "points": 3, "modelResponse": "Four forces, all starting at the block: gravity $\\vec{F}_g$ straight down ($mg = 58.8\\text{ N}$); the applied push $\\vec{F}_{app}$ horizontally into the wall (80 N); the normal force $\\vec{F}_N$ from the wall, horizontally *away* from the wall; and static friction $\\vec{f}$ from the wall, straight *up* (opposing the block's tendency to slide down)." },
+        { "label": "(b)", "prompt": "Find the normal force the wall exerts on the block.", "points": 2, "modelResponse": "Horizontal equilibrium ($\\sum F_x = 0$): the only horizontal forces are the 80 N push (toward the wall) and the normal force (away from the wall), so $F_N = 80\\text{ N}$." },
+        { "label": "(c)", "prompt": "Find the friction force the wall exerts on the block, and state its direction.", "points": 2, "modelResponse": "Vertical equilibrium ($\\sum F_y = 0$): friction (up) must balance gravity (down), so $f = mg = (6.0)(9.8) = 59\\text{ N}$, directed **up** the wall." },
+        { "label": "(d)", "prompt": "Explain why the normal force here is not equal to the block's weight.", "points": 2, "modelResponse": "The normal force is set by the *horizontal* equation, where it balances the 80 N push — nothing about the weight enters that equation. The weight is balanced instead by friction, on the vertical axis. Normal force equals weight only in the special case where the surface is horizontal and no other vertical forces act." }
+      ],
+      "totalPoints": 9,
+      "scoringNotes": "(a): 1 pt for exactly these four forces with no extras; 1 pt for all directions correct (friction *up* is the common miss); 1 pt for arrows starting at the block and labelled. (b),(c): award the setup point for the correct axis equation even with an arithmetic slip. (d): must connect $F_N$ to the horizontal equation, not just say 'because of the push'."
+    },
+    {
+      "id": "ap1-u2-l1-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Forces and Free-Body Diagrams",
+      "objective": "2.2",
+      "skill": "transfer",
+      "representation": "free-body-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A child on a sled is towed at constant velocity across level snow by a rope pulled at an angle above the horizontal. Which single change would **increase** the normal force the snow exerts on the sled?",
+      "choices": [
+        "Lowering the rope so it pulls more horizontally (smaller angle above horizontal).",
+        "Raising the rope so it pulls more vertically (larger angle above horizontal).",
+        "Pulling the rope harder at the same angle.",
+        "Nothing listed — the normal force always equals the sled-plus-child weight."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — vertical equilibrium gives $F_N = mg - F_T\\sin\\theta$. Lowering the rope makes $\\theta$ smaller, so $\\sin\\theta$ shrinks and the rope lifts *less* of the load — the snow must push up more, so $F_N$ increases (toward $mg$).",
+        "incorrect": {
+          "1": "Raising the rope increases $\\theta$, so the rope's upward component $F_T\\sin\\theta$ grows and lifts *more* of the load — the normal force *decreases*.",
+          "2": "Pulling harder at the same angle increases $F_T\\sin\\theta$, the upward component, so $F_N$ *decreases*.",
+          "3": "$F_N = mg - F_T\\sin\\theta$ here — the rope's vertical component changes it. It equals the weight only when nothing else has a vertical component."
+        }
+      },
+      "hint": ["Write $\\sum F_y = 0$ for the sled: $F_N + F_T\\sin\\theta - mg = 0$. Which change makes $F_T\\sin\\theta$ smaller?"],
+      "solution": "$F_N = mg - F_T\\sin\\theta$. A smaller angle (more horizontal rope) shrinks $F_T\\sin\\theta$, raising $F_N$."
+    }
+  ],
+  "examConnection": "Free-body diagrams are the backbone of Unit 2 on the exam. Expect to: **draw** an FBD as part of a longer problem (arrows starting at the object, correctly directed, correctly labelled — no extras); **translate** an FBD into $\\sum F_x$ and $\\sum F_y$ equations; and **reason** about how a force at an angle changes the normal force or the friction force. A frequent trap: assuming $F_N = mg$ when another force has a vertical component. On free-response, an FBD with an extra arrow (a 'net force', a 'motion force', an acceleration) or a missing real force loses credit even if the later algebra is right.",
+  "summary": "- Every **force** is a push or a pull from a *named* object. No source, no force.\n- The forces in this course: **gravity** ($mg$, down — the only field force); **normal** (a surface, perpendicular); **tension** (a rope, along its length); **friction** (a surface, opposing sliding); **applied** (a hand or object); **spring** (restoring).\n- Find forces by asking **what is touching the object**, then adding gravity.\n- A **free-body diagram** shows only the forces *on* one object — each arrow starting at the object, pointing its own way, labelled. Never draw: the object's pushes on other things, its velocity/acceleration, a 'net force' arrow, or a source-less force.\n- The **net force** is the vector sum of the arrows: signed sum on one axis, or $\\sum F_x$ and $\\sum F_y$ separately for angled forces.\n- **Zero acceleration** (at rest or constant velocity) means $\\sum F_x = 0$ *and* $\\sum F_y = 0$ — two equations for two unknowns.\n- The **normal force is not always** $mg$ — it is whatever the perpendicular equation makes it.",
+  "exitQuestion": {
+    "id": "ap1-u2-l1-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "transfer",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "question": "A 2.0 kg picture frame hangs in equilibrium from a single wire looped over a nail, so the wire makes equal angles of 50° with the horizontal on both sides. Taking $g = 9.8\\text{ m/s}^2$, the tension in the wire is closest to:",
+    "choices": ["≈ 13 N", "≈ 20 N", "≈ 15 N", "≈ 10 N"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — vertical equilibrium: the two upward components must sum to the weight. Each side contributes $T\\sin 50°$, so $2T\\sin 50° = mg$. Then $T = \\dfrac{mg}{2\\sin 50°} = \\dfrac{(2.0)(9.8)}{2(0.766)} \\approx 12.8\\text{ N} \\approx 13\\text{ N}$.",
+      "incorrect": {
+        "1": "This looks like $mg = 19.6\\text{ N}$ — the frame's weight, not the wire tension. The tension is shared between two wire segments and each is at an angle, so each carries less than the full weight vertically but the tension itself here works out to about 13 N.",
+        "2": "Close to $mg/\\sqrt{2}$ or a $45°$ estimate — check the angle and that the weight is split between *two* segments: $2T\\sin 50° = mg$.",
+        "3": "This is roughly $mg/2 = 9.8\\text{ N}$ — it ignores that each segment is at an angle, so only $\\sin 50°$ of each tension points up. Dividing by $\\sin 50°$ raises it to about 13 N."
+      }
+    },
+    "hint": [
+      "Only the vertical component of each wire segment's tension helps hold up the frame.",
+      "Vertical equilibrium: $T\\sin 50° + T\\sin 50° = mg$. Solve for $T$."
+    ],
+    "solution": "$2T\\sin 50° = mg \\Rightarrow T = \\dfrac{(2.0)(9.8)}{2\\sin 50°} \\approx 13\\text{ N}$."
+  },
+  "questionBankFile": "ap1-u2-forces-fbd.json",
+  "furtherPracticeQuestionIds": [
+    "ap1-u2-l1-fp01", "ap1-u2-l1-fp02", "ap1-u2-l1-fp03", "ap1-u2-l1-fp04",
+    "ap1-u2-l1-fp05", "ap1-u2-l1-fp06", "ap1-u2-l1-fp07", "ap1-u2-l1-fp08"
+  ]
+}

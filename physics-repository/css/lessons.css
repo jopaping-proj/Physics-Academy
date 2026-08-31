@@ -215,10 +215,11 @@
 /* interactives and the simulation want more than a prose column */
 .slide.interactive-panel .slide__inner { max-width: 860px; }
 
-/* the Formula Explorer's single graph — let the canvas set its own
-   height (it scales to its intrinsic ratio) instead of being stretched
-   to a 16:9 box that's needlessly tall in the deck column */
-.slide.interactive-panel .sim-graphs .interactive-panel__canvas-wrap {
+/* Canvas interactives (Formula Explorer graph, FBD Builder) let the
+   canvas set its own height — it scales to its intrinsic ratio — rather
+   than being stretched to a 16:9 box that's needlessly tall here. */
+.slide.interactive-panel .sim-graphs .interactive-panel__canvas-wrap,
+.slide.interactive-panel .slide__body > .interactive-panel__canvas-wrap {
   aspect-ratio: auto;
   height: auto;
 }
@@ -458,6 +459,106 @@
 .worked-example .figure {
   background: var(--bg-panel);
   margin-bottom: var(--space-3);
+}
+
+/* ------------------------------------------------------ FBD builder */
+
+.fbd__scenario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  width: 100%;
+}
+
+.fbd__scenario select {
+  flex: 1 1 16rem;
+  padding: var(--space-1) var(--space-2);
+  background: var(--bg-panel-raised);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+.fbd__grid {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.fbd__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-raised);
+}
+
+.fbd__row[data-on="true"] {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border-subtle));
+}
+
+.fbd__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.fbd__toggle input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+
+.fbd__dirs { display: flex; gap: 2px; }
+
+.fbd__dir {
+  width: 1.9rem;
+  height: 1.9rem;
+  font-size: var(--text-base);
+  line-height: 1;
+  background: var(--bg-panel);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.fbd__dir[data-active="true"] {
+  background: var(--accent);
+  color: var(--text-on-accent);
+  border-color: var(--accent);
+}
+
+/* an unchecked force shows no "selected" direction */
+.fbd__row:not([data-on="true"]) .fbd__dir[data-active="true"] {
+  background: var(--bg-panel);
+  color: var(--text-secondary);
+  border-color: var(--border-subtle);
+}
+
+.fbd__check {
+  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-weight: 600;
+  background: var(--accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.fbd__feedback {
+  margin-top: var(--space-2);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-raised);
+  font-size: var(--text-sm);
+  line-height: var(--line-height-body);
 }
 
 /* ---------------------------------------------------------- misc lesson */

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ap1-u2-l1-fp01",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "",
+    "question": "Which of the following is a field force (acts without contact) in AP Physics 1?",
+    "choices": ["Gravity", "Tension", "The normal force", "Friction"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — gravity acts on an object whether or not anything is touching it. Every other force in this course requires contact.",
+      "incorrect": {
+        "1": "Tension requires a rope, string, or cable in contact with the object.",
+        "2": "The normal force requires a surface pressing on the object.",
+        "3": "Friction requires two surfaces in contact."
+      }
+    },
+    "hint": ["Which force still acts on an object floating in mid-air with nothing touching it?"],
+    "solution": "Gravity is the only field (non-contact) force in this course."
+  },
+  {
+    "id": "ap1-u2-l1-fp02",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A box slides down a frictionless ramp. Its correct free-body diagram contains which forces?",
+    "choices": [
+      "Gravity (straight down) and the normal force (perpendicular to the ramp surface).",
+      "Gravity (down the ramp) and the normal force (up the ramp).",
+      "Gravity (straight down), the normal force (perpendicular to the ramp), and a force down the ramp that makes it slide.",
+      "Only gravity, straight down."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — two forces act: gravity, always straight down, and the normal force, always perpendicular to the contact surface (here, perpendicular to the ramp). There is no separate 'sliding force'; the component of gravity along the ramp does that job.",
+      "incorrect": {
+        "1": "Gravity always points straight down toward the Earth, not along a ramp. The normal force is perpendicular to the surface, not up the slope.",
+        "2": "There is no extra 'force that makes it slide.' The along-ramp component of gravity is what accelerates the box — it is part of gravity, not a new force.",
+        "3": "The ramp is in contact with the box and pushes on it: the normal force must be included."
+      }
+    },
+    "hint": ["Gravity is always straight down. The normal force is always perpendicular to the surface in contact. Is there anything else touching the box?"],
+    "solution": "Gravity (straight down) and the normal force (perpendicular to the ramp). No third 'sliding' force."
+  },
+  {
+    "id": "ap1-u2-l1-fp03",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "motionless-implies-no-forces-act",
+    "question": "A crate sits still on the floor of a moving truck that is travelling at constant velocity down a straight, level highway. Which statement about the forces on the crate is correct?",
+    "choices": [
+      "No forces act on the crate, since it is not moving relative to the truck.",
+      "Gravity (down) and the normal force (up) act, and they are equal in size.",
+      "Only a forward force acts, carrying the crate along with the truck.",
+      "Gravity, the normal force, and a forward friction force from the truck bed all act."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the crate has zero acceleration (constant velocity), so the net force is zero. Vertically, the normal force balances gravity. Horizontally, nothing needs to push the crate: at constant velocity no force is required to keep it moving.",
+      "incorrect": {
+        "0": "'Not accelerating' is not the same as 'no forces.' Gravity and the normal force both act; they balance.",
+        "2": "At constant velocity, no forward force is needed. A forward force would make the crate accelerate relative to the truck and slide toward the back.",
+        "3": "Friction would only act if the crate tended to slide. At constant velocity there is no tendency to slide, so the friction force is zero."
+      }
+    },
+    "hint": ["Constant velocity means zero acceleration means zero net force. Which forces are present, and how do they combine to zero?"],
+    "solution": "Gravity and the normal force act and balance; no horizontal force is needed at constant velocity."
+  },
+  {
+    "id": "ap1-u2-l1-fp04",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "Three horizontal forces act on a puck on frictionless ice: 12 N east, 5 N west, and 4 N west. What is the net force on the puck?",
+    "choices": ["3 N east", "21 N east", "3 N west", "13 N east"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — take east as positive: $(+12) + (-5) + (-4) = +3\\text{ N}$, i.e. 3 N east.",
+      "incorrect": {
+        "1": "This adds all three magnitudes. Forces in opposite directions must be subtracted, not added.",
+        "2": "Right idea, wrong sign — the 12 N east wins, so the net force points east.",
+        "3": "This subtracts only one of the two westward forces. Both the 5 N and the 4 N oppose the 12 N."
+      }
+    },
+    "hint": ["Pick a positive direction, write each force with its sign, and add."],
+    "solution": "East positive: $12 - 5 - 4 = 3\\text{ N}$ east."
+  },
+  {
+    "id": "ap1-u2-l1-fp05",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "question": "A 50 N force is applied to a box at 37° above the horizontal. Using $\\sin 37° \\approx 0.60$ and $\\cos 37° \\approx 0.80$, what are the horizontal and vertical components of this force?",
+    "choices": [
+      "40 N horizontal, 30 N vertical",
+      "30 N horizontal, 40 N vertical",
+      "50 N horizontal, 50 N vertical",
+      "40 N horizontal, 40 N vertical"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — with the angle measured from the horizontal, the horizontal component is $F\\cos\\theta = 50(0.80) = 40\\text{ N}$ and the vertical component is $F\\sin\\theta = 50(0.60) = 30\\text{ N}$.",
+      "incorrect": {
+        "1": "Sine and cosine are swapped. The angle is measured from the horizontal, so cosine gives the horizontal component.",
+        "2": "The components of a vector are each smaller than the vector itself (unless the vector points exactly along an axis). They also satisfy $\\sqrt{40^2 + 30^2} = 50$, not $\\sqrt{50^2+50^2}$.",
+        "3": "$40^2 + 40^2 = 3200 \\ne 50^2 = 2500$, so these cannot be the components of a 50 N force."
+      }
+    },
+    "hint": ["Angle from the horizontal: horizontal component $= F\\cos\\theta$, vertical component $= F\\sin\\theta$. Check with $\\sqrt{F_x^2 + F_y^2} = F$."],
+    "solution": "$F_x = 50\\cos 37° = 40\\text{ N}$, $F_y = 50\\sin 37° = 30\\text{ N}$."
+  },
+  {
+    "id": "ap1-u2-l1-fp06",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "misconception-diagnosis",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "third-law-partner-drawn-on-the-same-object",
+    "question": "A horse pulls a cart forward along a level road, and the cart accelerates. On the **free-body diagram of the cart**, which of these forces should appear?",
+    "choices": [
+      "The forward pull of the horse on the cart, gravity, the normal force, and backward friction/rolling resistance on the cart.",
+      "The forward pull of the horse on the cart AND the backward pull of the cart on the horse.",
+      "Only the forward pull of the horse on the cart — the other forces are on the horse.",
+      "The backward pull of the cart on the horse, gravity, and the normal force."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the cart's FBD shows every force acting *on the cart*: the horse's forward pull (through the harness), gravity down, the road's normal force up, and any backward resistive force from the road. The cart's pull back on the horse acts on the *horse* and belongs on the horse's diagram.",
+      "incorrect": {
+        "1": "The 'backward pull of the cart on the horse' acts on the horse, not the cart — it is the Newton's-third-law partner of the horse's pull on the cart. Partners act on different objects; never put both on one FBD.",
+        "2": "Gravity and the road's normal force also act on the cart and must be shown. And there may be a resistive force on the cart too.",
+        "3": "The backward pull of the cart on the horse is not a force on the cart at all. The force from the harness on the cart is *forward*."
+      }
+    },
+    "hint": ["An FBD shows forces on ONE object. A third-law pair has its two forces on two DIFFERENT objects — only one member of the pair can be on this diagram."],
+    "solution": "The cart's FBD: horse's forward pull, gravity, normal force, backward resistance — all forces *on the cart*. The cart-on-horse force is on the horse."
+  },
+  {
+    "id": "ap1-u2-l1-fp07",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A 4.0 kg box is dragged at constant velocity across a level floor by a rope pulling at 37° above the horizontal with a tension of 25 N. Using $g = 9.8\\text{ m/s}^2$, $\\sin 37° \\approx 0.60$, $\\cos 37° \\approx 0.80$, the normal force from the floor is closest to:",
+    "choices": ["24 N", "39 N", "54 N", "20 N"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — vertical equilibrium: $F_N + T\\sin 37° - mg = 0$, so $F_N = mg - T\\sin 37° = (4.0)(9.8) - 25(0.60) = 39.2 - 15 = 24.2 \\approx 24\\text{ N}$. The rope's upward pull carries part of the weight, so $F_N < mg$.",
+      "incorrect": {
+        "1": "This is $mg = 39.2\\text{ N}$ — the weight. The rope also pulls up, so the floor supports less than the full weight.",
+        "2": "This adds the tension's vertical component instead of subtracting it. The rope pulls *up*, which reduces how hard the floor must push.",
+        "3": "This uses only the tension's vertical component. The weight still has to be supported — mostly by the floor."
+      }
+    },
+    "hint": ["Draw the FBD: $F_N$ up, $T$ up-and-right at 37°, $mg$ down, friction left. Constant velocity → $\\sum F_y = 0$. The rope's upward component reduces $F_N$."],
+    "solution": "$F_N = mg - T\\sin 37° = 39.2 - 15 = 24\\text{ N}$."
+  },
+  {
+    "id": "ap1-u2-l1-fp08",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Forces and Free-Body Diagrams",
+    "objective": "2.2",
+    "skill": "limiting-case-analysis",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "question": "A tightrope walker of weight $W$ stands at the exact centre of a rope fixed to two poles. The rope sags so that each half makes a small angle $\\theta$ with the horizontal. Which statement about the rope tension $T$ is correct?",
+    "choices": [
+      "$T = \\dfrac{W}{2\\sin\\theta}$, so a nearly horizontal rope (small $\\theta$) requires an enormous tension.",
+      "$T = \\dfrac{W}{2}$, since the walker's weight is split evenly between the two halves.",
+      "$T = W\\sin\\theta$, so a nearly horizontal rope needs almost no tension.",
+      "$T = 2W\\sin\\theta$, so the tension is always less than the weight."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — vertical equilibrium at the walker: the two rope halves each pull up with a vertical component $T\\sin\\theta$, so $2T\\sin\\theta = W$, giving $T = \\dfrac{W}{2\\sin\\theta}$. As $\\theta \\to 0$ (rope pulled taut and level), $\\sin\\theta \\to 0$ and $T \\to \\infty$ — which is why a real tightrope always sags and why the poles must be very strong.",
+      "incorrect": {
+        "1": "This would be true only if each rope half pulled straight up. Because each half is nearly horizontal, only a small vertical component $T\\sin\\theta$ helps support the walker, so $T$ must be much larger than $W/2$.",
+        "2": "This has the dependence inverted. Small $\\theta$ (more horizontal) makes $\\sin\\theta$ small, so $T = W/(2\\sin\\theta)$ becomes *large*, not small.",
+        "3": "Dimensionally this treats $\\sin\\theta$ as multiplying rather than dividing. The vertical components must *add up to* $W$: $2T\\sin\\theta = W$, so $T$ is in the denominator relationship."
+      }
+    },
+    "hint": ["Free-body diagram of the walker: weight $W$ down, plus a tension along each rope half. Only the vertical component of each tension, $T\\sin\\theta$, opposes the weight. Set $\\sum F_y = 0$."],
+    "solution": "$2T\\sin\\theta = W \\Rightarrow T = \\dfrac{W}{2\\sin\\theta}$; $T \\to \\infty$ as $\\theta \\to 0$."
+  }
+]

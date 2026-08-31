@@ -147,8 +147,8 @@ export function interactiveComponentSlides(ic) {
     {
       id: "interactive-component",
       group: "explore",
-      groupLabel: "Formula Explorer",
-      subtitle: "Slope of the line = acceleration",
+      groupLabel: ic.title || formatComponentTitle(ic.type) || "Explore",
+      subtitle: ic.subtitle || "Work it, don't just watch it",
       cls: "interactive-panel",
       componentKey: ic.componentKey,
       body: `

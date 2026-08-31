@@ -88,6 +88,7 @@ import { loadQuestionBank, renderLessonBody, renderSidebarToc } from "./render/s
 // [data-component-key] element. Every new interactive needs an entry here.
 const COMPONENT_SCRIPTS = {
   "newtons-second-law-explorer": "js/lesson-interactives/newtons-second-law-explorer.js",
+  "fbd-builder": "js/lesson-interactives/fbd-builder.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 

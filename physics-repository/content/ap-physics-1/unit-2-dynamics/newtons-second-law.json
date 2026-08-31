@@ -236,6 +236,8 @@
   ],
   "interactiveComponent": {
     "type": "formula-explorer",
+    "title": "Formula Explorer",
+    "subtitle": "Slope of the line = acceleration",
     "componentKey": "newtons-second-law-explorer",
     "description": "One graph: net force $F$ up the side, mass $m$ across the bottom. The line is $F = a\\cdot m$, so **its steepness is the acceleration**. Move a slider — but first say out loud which way the line will tip.",
     "graphs": [
