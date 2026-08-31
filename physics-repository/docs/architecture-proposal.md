@@ -142,7 +142,7 @@ Difficulty badges get their own token set mapped from `difficulty.js`'s canonica
 | `FormulaExplorer` | Slider-driven manipulative (§12) |
 | `GraphExplorer` | Plotly-backed parameterized graph (§13) |
 | `SimulationContainer` | Standard chrome around any simulation: controls, reset, pause/play, prediction prompt slot (§14) |
-| `APIBExamCard` | Labeled AP-style or IB-style question block (§18–§19) |
+| `ExamConnectionCard` | Course-neutral "Exam Connection" block — exam-style reasoning demand, no framework labels (§18–§19) |
 | `DifficultyBadge` | Renders one of the five canonical tags (addendum §21) |
 | `RetrievalPrompt` | Recent/spaced/interleaved/generative retrieval question (addendum §17) |
 | `Sidebar` | Sticky TOC + objectives + breadcrumb (item 2) |
@@ -171,7 +171,7 @@ Only `navigation.js`, `content-loader.js`, and `difficulty.js` load on every pag
 
 ## 7. Question-bank data structure
 
-Already resolved above — see the extended schema now living in `master-project-prompt.md` §27, with `difficulty` locked to the addendum §21 canonical scale and `cognitiveLevel`, `skill`, `representation`, `misconceptionTested`, and `apIbConnection` added per addendum §18.
+Already resolved above — see the extended schema now living in `master-project-prompt.md` §27, with `difficulty` locked to the addendum §21 canonical scale and `cognitiveLevel`, `skill`, `representation`, and `misconceptionTested` added per addendum §18. (The `apIbConnection` field originally added here was retired 2026-08-31 in favour of the `courses` reuse index — see `master-project-prompt.md` §27 and `docs/ap-physics-1-unit-2-architecture.md` §1.)
 
 ## 8. Simplest technology stack that scales to hundreds of lessons
 

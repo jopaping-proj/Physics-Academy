@@ -122,12 +122,14 @@ Every lesson page should use a consistent structure. On desktop, use a multi-col
 12. Common Misconceptions
 13. Representation Connections
 14. Lesson-Level Formative Assessment
-15. AP / IB Exam Connection
+15. Exam Connection
 16. Summary
 17. Retrieval / Exit Question
 18. Further Practice
 
 Do not force every lesson to contain exactly the same number of chunks. The structure should follow the conceptual demands of the topic.
+
+**Slide delivery (added 2026-08-31).** The Main Content Area is rendered as a *deck*: one card ("slide") visible at a time, learner-paced with Back / Next, a progress bar, and a "Read as one page" toggle that stacks every card for review or printing. Each concept chunk is split across its own cards (idea → representation → worked example → check); misconception checks and lesson-assessment questions get one card each. This is the segmenting principle (Mayer, *Cambridge Handbook of Multimedia Learning*) — complex material learned better in learner-controlled segments — plus the coherence principle (one idea per card; secondary detail behind a disclosure). A **comprehension gate** ("Require answers", default on) keeps the Next button disabled on a card that carries a check — the hook prediction, a formative question, an error-analysis response, a worked example — until the student has engaged with it; Back and the sidebar stay free, and the gate can be switched off. **Completion** is remembered per lesson (localStorage) and shown as a tick beside each section in the sidebar. The left sidebar lists the card *groups*; the deck keeps the active group highlighted. Implemented in `js/lesson-slides.js`; every card is emitted by `build/build.js` as `<section class="slide" data-group="…">`.
 
 ## 5. Hook Question
 
@@ -199,7 +201,7 @@ Provide immediate feedback. Feedback should explain why the correct answer is co
 
 ## 9. Lesson-Level Formative Assessment
 
-At the end of every lesson, provide a larger formative assessment aligned directly with the lesson objectives. It should normally include a mixture of conceptual questions, quantitative questions, graphical interpretation, multi-representation questions, explanation/justification, and transfer questions. Where relevant, include one AP- or IB-style question.
+At the end of every lesson, provide a larger formative assessment aligned directly with the lesson objectives. It should normally include a mixture of conceptual questions, quantitative questions, graphical interpretation, multi-representation questions, explanation/justification, and transfer questions. Where relevant, include one exam-style question pitched to whichever course the lesson is being built for (see §18–§19).
 
 Provide optional hints before full solutions. Use progressive disclosure:
 
@@ -237,6 +239,8 @@ Worked examples should explicitly model expert physics reasoning. Do not present
 
 Gradually reduce scaffolding as students progress. Include common incorrect approaches when pedagogically useful.
 
+**Presentation (added 2026-08-31).** In content JSON, a worked example is authored as `phases` — the 13 steps above **grouped under 3–4 subgoal labels** ("Set up the problem", "Choose the principle", "Solve", "Check the answer") — plus a one-line `problem` statement and a `keyMove` self-explanation answer. The lesson page shows one phase, then a "Reveal next part" button (segmenting *within* the example); a "Show all steps" escape hatch; and, at the end, a prompt — *"what was the one move that mattered here?"* — that reveals `keyMove` only after the student has thought about it. This applies the subgoal-labelling effect (Catrambone) and self-explanation effect (Chi; Renkl) from the worked-example research, both of which improve transfer for novices. Rendered by `renderWorkedExample` in `build/build.js`, wired by `js/lesson-slides.js`.
+
 ## 11. Multiple Representations
 
 For major concepts, explicitly connect words, diagrams, graphs, equations, numerical values, and physical situations. For example, motion should connect:
@@ -256,6 +260,8 @@ kinematic equations
 ```
 
 Create interactive tools that demonstrate these connections where practical.
+
+**Figures (added 2026-08-31).** Diagrams that instruction refers to must actually be shown. Author them as SVG under `assets/diagrams/<lesson>/`, referenced from content JSON — `chunk.figures: [{ svg, caption }]` renders them on the representation card; `workedExample.figure` shows one at the top of a worked example. SVG is inlined at build time (themeable, one request) and carries its own `role="img"` + `aria-label`. Never write "the diagram above/below" for a diagram that does not exist.
 
 ## 12. Formula Relationship Explorer
 
@@ -426,12 +432,13 @@ Recommend the simplest architecture appropriate to the current stage of developm
 
 For quiz questions, use a structured model such as:
 
-**Extended 2026-08-22** to incorporate the per-question metadata required by `rigor-standard-addendum.md` §18 and the canonical difficulty scale from §21:
+**Extended 2026-08-22** to incorporate the per-question metadata required by `rigor-standard-addendum.md` §18 and the canonical difficulty scale from §21. **Revised 2026-08-31:** the `apIbConnection` exam-framework-code field is retired; questions now carry a `courses` reuse index (see field notes) so material can be filtered per course and reused whenever the target course changes.
 
 ```json
 {
   "id": "ap1-u2-l3-q01",
   "course": "AP Physics 1",
+  "courses": ["ap-physics-1", "ib-physics-hl"],
   "unit": "Unit 2",
   "lesson": "Newton's Second Law",
   "objective": "2.3",
@@ -441,7 +448,6 @@ For quiz questions, use a structured model such as:
   "difficulty": "ap5-ib7-target",
   "cognitiveLevel": 4,
   "misconceptionTested": "constant-velocity-implies-zero-net-force",
-  "apIbConnection": "AP1 SP 2.C / IB Paper 1",
   "question": "...",
   "choices": ["...", "...", "...", "..."],
   "correctAnswer": 1,
@@ -458,7 +464,7 @@ For quiz questions, use a structured model such as:
 }
 ```
 
-Field notes: `difficulty` must be one of the five canonical values from `rigor-standard-addendum.md` §21 (written here in kebab-case: `foundation`, `developing`, `ap-ib-standard`, `ap5-ib7-target`, `distinction-stretch`). `cognitiveLevel` is an integer 1–8 mapping to the addendum §2 hierarchy — it is a separate axis from `difficulty` (a Level-3 conceptual-reasoning question can still be tagged `foundation` or `ap5-ib7-target` depending on how demanding the specific scenario is). `skill` and `representation` are free-text tags maintained in a shared controlled vocabulary file (see `data/taxonomies.json` in the proposed structure) so they stay consistent across the question bank rather than drifting per author. `misconceptionTested` is optional and left empty when a question isn't misconception-diagnostic.
+Field notes: `courses` is the **course-reuse index** — an array listing every course the question can be used in as-is (`ap-physics-1`, `ap-physics-2`, `ib-physics-sl`, `ib-physics-hl`, maintained in `data/taxonomies.json`). Building or reviewing for a given course selects only questions whose `courses` contains it, so shared physics is authored once and reused across courses. This replaces the retired `apIbConnection` field: material is tagged by *where it can be reused*, not by exam-framework code — the reasoning type a question exercises already lives, course-neutrally, in `skill`, `representation`, and `cognitiveLevel`. The singular `course` field stays as the authored-for/provenance label. `difficulty` must be one of the five canonical values from `rigor-standard-addendum.md` §21 (written here in kebab-case: `foundation`, `developing`, `ap-ib-standard`, `ap5-ib7-target`, `distinction-stretch`). `cognitiveLevel` is an integer 1–8 mapping to the addendum §2 hierarchy — it is a separate axis from `difficulty` (a Level-3 conceptual-reasoning question can still be tagged `foundation` or `ap5-ib7-target` depending on how demanding the specific scenario is). `skill` and `representation` are free-text tags maintained in a shared controlled vocabulary file (see `data/taxonomies.json` in the proposed structure) so they stay consistent across the question bank rather than drifting per author. `misconceptionTested` is optional and left empty when a question isn't misconception-diagnostic.
 
 Make the question bank reusable later for lesson quizzes; retrieval practice; unit reviews; mock examinations; mastery tracking (now also enabling the Mastered/Developing/Needs-Review reporting called for in addendum §18, since `objective` + `skill` + correctness are now sufficient to aggregate by).
 
@@ -567,7 +573,7 @@ Common Misconceptions:
 
 Lesson-Level Formative Assessment:
 
-AP/IB Connection:
+Exam Connection:
 
 Exit Retrieval Question:
 ```
@@ -580,9 +586,9 @@ Do not attempt to build the entire repository at once. Use this sequence:
 
 **Phase 1 — Architecture.** Establish directory structure; design system; typography; color variables; navigation; lesson layout; reusable components.
 
-**Phase 2 — Prototype Lesson.** Build one exceptionally strong lesson containing sidebar navigation; hook; objectives; lesson chunks; MathJax; worked examples; formative quizzes; collapsible solutions; interactive graph; formula manipulative; simulation; misconceptions; final formative assessment. Use this as the reference implementation.
+**Phase 2 — Prototype Lesson.** Build one exceptionally strong lesson containing sidebar navigation; hook; objectives; lesson chunks; KaTeX math typesetting (approved 2026-08-22 in place of MathJax — see architecture-proposal.md §8); worked examples; formative quizzes; collapsible solutions; interactive graph; formula manipulative; simulation; misconceptions; final formative assessment. Use this as the reference implementation.
 
-**Phase 3 — Component Library.** Extract reusable components from the prototype: hook card; objective list; worked-example component; quiz component; hint/solution component; formula explorer; graph explorer; simulation container; misconception card; AP/IB exam card.
+**Phase 3 — Component Library.** Extract reusable components from the prototype: hook card; objective list; worked-example component; quiz component; hint/solution component; formula explorer; graph explorer; simulation container; misconception card; exam-connection card.
 
 **Phase 4 — Course Expansion.** Build units incrementally.
 
