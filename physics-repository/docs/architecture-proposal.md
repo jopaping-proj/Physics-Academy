@@ -148,6 +148,22 @@ Difficulty badges get their own token set mapped from `difficulty.js`'s canonica
 | `Sidebar` | Sticky TOC + objectives + breadcrumb (item 2) |
 | `SearchBar` | Global search input, wired up in Phase 5 |
 
+### Phase 3 status — component inventory as built (2026-08-31)
+
+Extracted from the Newton's Second Law prototype. Two kinds: **build-time render components** (`build/render/`, produce the HTML) and **runtime components** (`js/`, hydrate it).
+
+| Proposal component | Where it lives now |
+|---|---|
+| `HookCard`, `ObjectiveList`, `ConceptChunk`, `MisconceptionCard`, `ErrorAnalysisCard`, `ExamConnectionCard`, Further Practice | `build/render/sections.js` — one `*Slides()` function each, returning slide descriptors |
+| `WorkedExample` | `build/render/worked-example.js` (subgoal `phases`, `figure`, `keyMove`) + reveal logic in `js/lesson-slides.js` |
+| slide shell, inlined SVG `figures`, `FormativeCheck` mount | `build/render/primitives.js` |
+| `FormulaExplorer` / `GraphExplorer` / `SimulationContainer` container markup | `build/render/sections.js` (`interactiveComponentSlides`, `simulationSlides`); the interactive itself is a `js/lesson-interactives/*.js` or `simulations/*/index.js` self-mounting on `[data-component-key]` |
+| `FormativeCheck` behaviour, `HintSolutionDisclosure`, `DifficultyBadge`, hook/error-analysis wiring, KaTeX re-typeset, answer persistence | `js/assessment.js` |
+| `Sidebar` + the whole slide deck, comprehension gate, completion tracking, worked-example reveal | `js/lesson-slides.js` |
+| simulation chrome (play/pause/step/reset, prediction gate) | `js/simulations.js` |
+
+**Not yet generalized:** `js/lesson-interactives/newtons-second-law-explorer.js` is still a one-off — extract a config-driven `FormulaExplorer` once a second formula-explorer lesson exists (rule of three). `RepresentationSwitcher`, `RetrievalPrompt`, `SearchBar` are unbuilt.
+
 ## 5. JavaScript modules needed
 
 - `navigation.js` — sidebar scrollspy, mobile drawer, breadcrumb rendering.
