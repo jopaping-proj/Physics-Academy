@@ -2,3 +2,6 @@ node_modules/
 dist/
 .DS_Store
 *.log
+
+# Copyrighted reference material — kept locally, never committed or deployed.
+resources/

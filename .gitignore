@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+*.log
+
+# Reference material — copyrighted textbooks, past papers, course descriptions.
+# Kept locally for authoring; never committed (and never deployed).
+physics-repository/resources/
+
+# Build output and deps
+physics-repository/dist/
+physics-repository/node_modules/
+node_modules/
