@@ -630,6 +630,9 @@ function build() {
   if (fs.existsSync(DIST_DIR)) fs.rmSync(DIST_DIR, { recursive: true });
   fs.mkdirSync(DIST_DIR, { recursive: true });
 
+  // Tell GitHub Pages not to run Jekyll over the output (harmless elsewhere).
+  fs.writeFileSync(path.join(DIST_DIR, ".nojekyll"), "");
+
   copyStaticDirs();
 
   const lessonTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, "lesson.html"), "utf8");

@@ -20,11 +20,13 @@ Reads every `content/**/*.json` lesson file, renders it through `build/templates
 npm run serve
 ```
 
-Builds and serves `dist/` locally for preview (uses `npx serve`, requires network access the first time).
+Builds, then serves `dist/` at `http://localhost:4173` with `build/serve.js` — a tiny zero-dependency static server (needed because lesson pages load JS that browsers won't fetch over `file://`).
 
 ## Deploying
 
-`dist/` is a complete static site — publish it via GitHub Pages (Actions workflow publishing `dist/` as the Pages artifact) or any static host. No backend, no database (see `docs/master-project-prompt.md` §25/§30).
+`dist/` is a complete static site — no backend, no database (`docs/master-project-prompt.md` §25/§30).
+
+`.github/workflows/pages.yml` builds `physics-repository/` and publishes `dist/` to **GitHub Pages** on every push to `main` that touches `physics-repository/**` (or on manual dispatch). One-time setup: repo **Settings → Pages → Build and deployment → Source: GitHub Actions**. The build uses only relative paths, so it works at a project-Pages base path (`<user>.github.io/<repo>/`) with no configuration.
 
 ## Content authoring
 
