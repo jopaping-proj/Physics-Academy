@@ -1,7 +1,7 @@
 # AP Physics 1 · Unit 2: Force and Translational Dynamics — Curriculum Architecture
 
 **Document ID:** PA-AP1-U02-ARCH-001
-**Version:** 0.2.0
+**Version:** 0.3.0
 **Status:** Draft — for review. Not yet the controlled Unit 2 authority.
 **Scope of this document:** the pedagogical and structural specification for AP Physics 1 Unit 2 — outcome register, dependency order, cognitive-demand progression, lesson sequence, misconception priorities, assessment evidence contract, and the indexed unit test-bank architecture. It is the guide that the Unit 2 lesson blueprint, the individual lessons, the assessment blueprint and rubrics, the unit test bank, and supporting resources are all built against.
 **Parent authority:** `docs/master-project-prompt.md` (architecture, layout, process), `docs/rigor-standard-addendum.md` (intellectual quality bar, cognitive-demand scale, canonical difficulty scale), `docs/architecture-proposal.md` (repository build model), `data/taxonomies.json` (controlled vocabulary), and the current official College Board *AP Physics 1: Algebra-Based Course and Exam Description* (CED).
@@ -25,7 +25,15 @@ It **does** decide, for Unit 2 specifically: which outcomes exist, what counts a
 
 **What "CED" means.** The **Course and Exam Description** is College Board's official specification for an AP course — the one authoritative document defining the units, the topics within each unit, the Learning Objectives and Essential Knowledge statements, the science practices, the exam format and weighting, and the FRQ task models. "Align to the CED" means: the outcomes we teach and test are the ones the current official *AP Physics 1: Algebra-Based Course and Exam Description* actually lists, so mastering this unit measurably helps a student on the real exam.
 
-**Curriculum-verification caveat (`master-project-prompt.md` §32).** Every alphanumeric CED reference in this document — topic numbers, Learning Objective codes, Essential Knowledge codes, exam weighting, FRQ task-model names — is marked *[verify CED]* and must be checked against the current official CED before any lesson or test-bank item citing it is approved. The physics is stable; the framework's labelling is not — which is exactly why per-item exam-framework tagging was dropped in favour of a course-reuse index (see §1).
+**CED verification (`master-project-prompt.md` §32) — done 2026-08-31.** The framework facts below were checked against College Board's AP Central *AP Physics 1: Algebra-Based* course page and corroborating summaries ([AP Central](https://apcentral.collegeboard.org/courses/ap-physics-1), [UWorld unit/topic guide](https://collegeprep.uworld.com/ap/ap-physics-1/units-topics-and-key-concepts/), [UWorld exam-format guide](https://collegeprep.uworld.com/ap/ap-physics-1/exam-format-and-information/)). What is now **confirmed** (the earlier `[verify CED]` markers are cleared where these apply):
+
+- **Unit 2 is "Force and Translational Dynamics", 18–23% of the exam** (tied with Unit 3 for the heaviest unit; the 2024 framework, first exam May 2025).
+- **Unit 2 CED topics:** 2.1 Systems and Center of Mass · 2.2 Forces and Free-Body Diagrams · 2.3 Newton's Third Law · 2.4 Newton's First Law · 2.5 Newton's Second Law · 2.6 Gravitational Force · 2.7 Kinetic and Static Friction · 2.8 Spring Forces · **2.9 Circular Motion**. (Note the CED order: Third Law precedes First Law.)
+- **Three science practices:** 1 Creating Representations · 2 Mathematical Routines · 3 Scientific Questioning and Argumentation. (This project does not tag items with practice codes — see §1 — but lessons should exercise all three.)
+- **Exam, May 2026:** Section I — 40 single-select multiple-choice, 50%; Section II — 4 free-response, 50%, the task models being **Mathematical Routines, Translation Between Representations, Experimental Design and Analysis, Qualitative/Quantitative Translation**. Digital MCQ in Bluebook, handwritten FRQ. **The MCQ count and section timing change for the May 2027 exam** — details not yet public; re-check the CED before building a fixed practice exam (§12.9).
+- **Table of Information:** $g = 9.8\ \mathrm{m/s^2}$, $G = 6.67\times10^{-11}\ \mathrm{N\,m^2/kg^2}$.
+
+Learning-Objective and Essential-Knowledge *codes* (e.g. "2.5.A.1") are still not transcribed here — the CED PDF is the authority for those, and this document maps to CED *topics*, not sub-codes.
 
 ---
 
@@ -52,7 +60,7 @@ Across four linked representations: **verbal** situation descriptions, **free-bo
 
 ### Scope
 
-**Included** (subject to *[verify CED]* on exact topic boundaries):
+**Included** (all nine CED Unit 2 topics — §0):
 
 - systems and the center of mass as the point that responds to the net external force;
 - forces as interactions; the contact forces in this course (normal, tension, applied, friction, spring) and the one field force (gravitation);
@@ -66,7 +74,7 @@ Across four linked representations: **verbal** situation descriptions, **free-bo
 - spring force via Hooke's law in its **signed restoring-force form** $F_s = -k x$, and reading $k$ from the slope of a force–extension graph;
 - connected-object systems: two or more objects linked by ropes/contact, analyzed both as a single system and as individual FBDs;
 - inclined planes, with and without friction, as the synthesis task that integrates vector decomposition, FBDs, and Newton's second law;
-- uniform circular motion as an *application of Newton's second law* — centripetal acceleration as $v^2/r$ and the net force as the cause — **pending the §12 scope decision on whether this lives in Unit 2 or a later unit.**
+- **uniform circular motion (CED topic 2.9)** as an *application of Newton's second law* — centripetal acceleration as $a_c = v^2/r$ directed toward the centre, produced by the net of the real forces; "centripetal force" is not a separate force to add to an FBD.
 
 **Excluded:**
 
@@ -83,19 +91,19 @@ Across four linked representations: **verbal** situation descriptions, **free-bo
 
 ### Conventions and notation
 
-Aligned to the AP Physics 1 equation sheet and the existing Unit 2 prototype lesson. *[verify CED]* against the current official equation sheet.
+Aligned to the AP Physics 1 Table of Information / equation sheet (verified 2026-08-31 — §0) and the existing Unit 2 prototype lesson.
 
 | Quantity | Symbol | Notes |
 |---|---|---|
 | Net force (single axis) | $\vec{F}_{net} = \sum \vec{F}$ | signed sum along the chosen axis |
 | Weight / near-surface gravity | $\vec{F}_g$, $|\vec{F}_g| = mg$ | field force; distinct from $F_G$ below |
-| Universal gravitation | $F_G = G\dfrac{m_1 m_2}{r^2}$ | capital-$G$ subscript; $G = 6.67\times10^{-11}\ \mathrm{N\,m^2/kg^2}$ *[verify CED sheet precision]* |
+| Universal gravitation | $F_G = G\dfrac{m_1 m_2}{r^2}$ | capital-$G$ subscript; $G = 6.67\times10^{-11}\ \mathrm{N\,m^2/kg^2}$ (Table of Information) |
 | Normal force | $\vec{F}_N$ | perpendicular to the contact surface |
 | Tension | $\vec{F}_T$ | along the rope, away from the object |
 | Friction (kinetic) | $\vec{f}_k$, $|\vec{f}_k| = \mu_k |\vec{F}_N|$ | opposes relative sliding |
 | Friction (static) | $\vec{f}_s$, $|\vec{f}_s| \le \mu_s |\vec{F}_N|$ | opposes the tendency to slide; magnitude set by equilibrium up to the maximum |
 | Spring force | $F_s = -kx$ | **signed restoring-force form**; $k>0$ always; $x$ signed from natural length |
-| Free-fall magnitude | $g$ | $|g| = 9.8\ \mathrm{m/s^2}$ near Earth's surface (carried from Unit 1; *[verify CED sheet value: 9.8 vs 10]*) |
+| Free-fall magnitude | $g$ | $|g| = 9.8\ \mathrm{m/s^2}$ near Earth's surface (Table of Information; carried from Unit 1) |
 
 - **$g$ vs $G$:** local gravitational field strength / free-fall acceleration $g$ is not the universal constant $G$. Lessons must separate them visually and conceptually, not merely with a reminder (Misconception 4, §6).
 - **Sign convention:** every one-dimensional force/acceleration task states its positive direction explicitly. Every answer key records the canonical value **and** an acceptance interval consistent with the stated rounding (see §9, numerical-precision rule).
@@ -115,13 +123,30 @@ In its place every question, lesson, and topic carries a **`courses` reuse index
 
 ## 2. Approved outcome register
 
-Outcomes are grouped into **ten clusters**, numbered **2.1–2.10**. These cluster numbers are **internal Physics Academy identifiers**, inherited verbatim from the `objective` field already carried by all ~65 existing question-bank items — keeping them means zero re-tagging of that axis. **They are not College Board CED topic numbers and must never be conflated with them.** Each cluster maps to one or more CED topics and Learning Objectives, filled in during the §12 CED-verification pass.
+Outcomes are grouped into **twelve clusters**, `C2.1`–`C2.12`. The `C` prefix is deliberate: the bare numbers collide with CED topic numbers and mean something different. A cluster is a *pedagogical* unit (one lesson-sized chunk); a CED topic is a *coverage* checkbox. The `objective` field on the ~65 existing question-bank items still reads `"2.1"`…`"2.10"` — those are the same as `C2.1`…`C2.10` here; **re-tagging `objective` to the `C`-prefixed form (and adding a `cedTopic` field) is a tracked migration, §12.10** — it was not done in the CED-verification pass to keep that pass bounded.
 
-Sub-outcome letters (2.1a, 2.1b, …) are assigned here for traceability into the coverage matrix (§8) and the test bank (§9); they did not previously exist.
+Every cluster now maps to a **verified CED topic** (§0):
 
-Observable evidence is written so a formative check or FRQ part can be mapped directly to it.
+| Cluster | CED topic | Note |
+|---|---|---|
+| C2.1 Newton's First Law & Equilibrium | **2.4** Newton's First Law | equilibrium problem-solving is the applied form |
+| C2.2 Forces & Free-Body Diagrams | **2.2** Forces and Free-Body Diagrams | direct match |
+| C2.3 Newton's Second Law: the relationship | **2.5** Newton's Second Law | |
+| C2.4 Newton's Second Law: from descriptions | **2.5** Newton's Second Law | |
+| C2.5 Newton's Second Law: multi-force / two-axis | **2.5** Newton's Second Law | |
+| C2.6 Newton's Third Law | **2.3** Newton's Third Law | |
+| C2.7 Connected Objects & Systems | **2.5** Newton's Second Law | CED treats this as an N2L application, not its own topic |
+| C2.8 Friction | **2.7** Kinetic and Static Friction | direct match |
+| C2.9 Inclined Planes | **2.5** Newton's Second Law | N2L application; the designed synthesis capstone |
+| C2.10 Gravitation, Springs, Apparent Weight | **2.6** Gravitational Force + **2.8** Spring Forces | apparent weight is an N2L (2.5) application |
+| C2.11 Systems & Center of Mass | **2.1** Systems and Center of Mass | *new — no bank items yet* |
+| C2.12 Circular Motion | **2.9** Circular Motion | *new — resolved in the CED pass; formerly "optional"* |
 
-### Cluster 2.1 — Newton's First Law and Equilibrium
+So all nine CED Unit 2 topics are covered. The clusters over-decompose CED topic 2.5 (six clusters) on purpose — Newton's second law is the unit's core and 18–23% of the exam leans on it.
+
+Sub-outcome letters (`C2.1a`, `C2.1b`, …) trace into the coverage matrix (§8) and the test bank (§9). Observable evidence is written so a formative check or FRQ part can be mapped directly to it. Cluster headers below carry their CED topic in the title.
+
+### C2.1 — Newton's First Law and Equilibrium · CED topic 2.4
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -131,7 +156,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.1d | Apply the equilibrium condition to solve for an unknown force. | Sets $\sum F_x = 0$ and $\sum F_y = 0$ from an FBD and solves for a missing force magnitude or direction, including cases with angled forces. |
 | 2.1e | Justify that an object at rest still has forces acting on it. | Explains, for a specific scenario, why "not accelerating" means "balanced forces," not "no forces." |
 
-### Cluster 2.2 — Forces and Free-Body Diagrams
+### C2.2 — Forces and Free-Body Diagrams · CED topic 2.2
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -141,7 +166,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.2d | Calculate the net force along a single axis from an FBD. | Chooses a positive direction, sums signed force components along one axis, reports $\vec{F}_{net}$ with magnitude, direction, and units. |
 | 2.2e | Resolve angled forces into components along two perpendicular axes. | Produces correct component expressions (correct sine/cosine assignment) for forces at an angle to the chosen axes. |
 
-### Cluster 2.3 — Newton's Second Law: the relationship
+### C2.3 — Newton's Second Law: the relationship · CED topic 2.5
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -150,7 +175,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.3c | Reason proportionally about $\vec{F}_{net}=m\vec{a}$ without full calculation. | Predicts the factor by which $a$ changes when $F_{net}$ and/or $m$ are scaled, e.g. "$F_{net}$ doubled, $m$ tripled $\Rightarrow$ $a \times \tfrac{2}{3}$," framed through $a = F_{net}/m$. |
 | 2.3d | Identify Newton's first law as the $\vec{F}_{net}=0$ special case of the second. | States and shows that substituting $\vec{F}_{net}=0$ into $\vec{F}_{net}=m\vec{a}$ yields $\vec{a}=0$. |
 
-### Cluster 2.4 — Newton's Second Law: reasoning from descriptions
+### C2.4 — Newton's Second Law: reasoning from descriptions · CED topic 2.5
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -158,7 +183,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.4b | Connect a constant net force to the resulting $v$–$t$ graph and motion. | States that a constant nonzero net force produces constant acceleration (linear $v$–$t$), and reconstructs the described motion. |
 | 2.4c | Refute the claim that motion requires a sustaining force in its direction. | Identifies and corrects Aristotelian "impetus" reasoning in a specific scenario. |
 
-### Cluster 2.5 — Newton's Second Law: multi-force and two-axis problems
+### C2.5 — Newton's Second Law: multi-force and two-axis problems · CED topic 2.5
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -166,7 +191,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.5b | Apply Newton's second law independently along two perpendicular axes. | Uses $\sum F_y = 0$ (no perpendicular acceleration) to find the normal force, and $\sum F_x = ma_x$ along the motion axis. |
 | 2.5c | Solve for an unknown force given the measured acceleration. | Works backward: $F_{net} = ma$, then isolates the unknown force from the signed sum of known forces. |
 
-### Cluster 2.6 — Newton's Third Law
+### C2.6 — Newton's Third Law · CED topic 2.3
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -175,7 +200,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.6c | Contrast an action–reaction pair with balanced forces on one object. | Distinguishes a third-law pair (two objects, same interaction, same force type, no equilibrium implication) from balanced forces (one object, possibly different force types, implies $\vec{a}=0$ for that object). Correctly rejects "weight and normal force are a third-law pair." |
 | 2.6d | Apply the third law to equal-force / unequal-acceleration reasoning. | States that the mutual forces are equal in magnitude regardless of the objects' masses, and that the *accelerations* differ because the masses differ. |
 
-### Cluster 2.7 — Connected Objects and Systems
+### C2.7 — Connected Objects and Systems · CED topic 2.5 (application)
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -184,7 +209,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.7c | Explain why tension in a connecting rope is not equal to the weight of the hanging mass (when the system accelerates). | Shows that $F_T \ne m_{hang}\,g$ whenever $a \ne 0$, and gives the correct relationship. |
 | 2.7d | Handle an ideal pulley that redirects a rope without changing tension magnitude. | Applies equal tension throughout a single massless rope over a massless, frictionless pulley, with correct sign bookkeeping around the redirect. |
 
-### Cluster 2.8 — Friction (static and kinetic)
+### C2.8 — Friction (static and kinetic) · CED topic 2.7
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -194,7 +219,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.8d | Determine whether a described object slides or stays put. | Compares the required static friction to $\mu_s F_N$ and concludes correctly. |
 | 2.8e | Reason about how changing $\mu$, $F_N$, or applied force changes the motion. | Predicts qualitative changes in acceleration or in the slide/no-slide outcome without full calculation. |
 
-### Cluster 2.9 — Inclined Planes (synthesis)
+### C2.9 — Inclined Planes (synthesis) · CED topic 2.5 (application)
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -204,7 +229,7 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.9d | Calculate net force and acceleration along the incline, with and without friction. | Combines the parallel weight component, friction, and any applied force into $F_{net,\parallel}$, then $a = F_{net,\parallel}/m$, with correct signs. |
 | 2.9e | Solve a full incline problem end to end for an unfamiliar angle, mass, or friction condition (transfer). | Produces system, FBD, decomposition, net force, and acceleration without procedural cueing. |
 
-### Cluster 2.10 — Gravitation, Springs, and Apparent Weight
+### C2.10 — Gravitation, Springs, and Apparent Weight · CED topics 2.6 + 2.8
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -215,7 +240,29 @@ Observable evidence is written so a formative check or FRQ part can be mapped di
 | 2.10e | Calculate spring force, spring constant, or displacement given the other two; read $k$ from a force–extension graph. | Solves for $F_s$ (signed), $k$ (positive), or $x$ (signed); reads $k$ as the magnitude of the graph's slope. |
 | 2.10f | Analyze apparent weight (scale reading) for an object with vertical acceleration. | Applies $F_N - mg = ma$ (elevator frame handled in the ground frame) to find the scale reading; explains apparent weightlessness as $F_N = 0$ during free fall, not absence of gravity. |
 
-**Outcome count:** 44 sub-outcomes across 10 clusters.
+### C2.11 — Systems and Center of Mass · CED topic 2.1
+
+*New in the CED-verification pass. No question-bank items yet; scheduled as Module 1a in §5.*
+
+| ID | Outcome | Observable evidence |
+|---|---|---|
+| C2.11a | Define a system and its boundary, and distinguish internal from external forces. | Names the object(s) in a chosen system and classifies each force on it as internal or external. |
+| C2.11b | Locate the center of mass of a simple system qualitatively, and for two point masses quantitatively. | States that the center of mass is mass-weighted toward the heavier object; computes $x_{cm} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$. |
+| C2.11c | State that the center of mass of a system responds only to the net external force. | Predicts the motion of a system's center of mass when only internal forces act (it does not change) versus when a net external force acts. |
+| C2.11d | Treat an extended object or multi-object system as a point particle at its center of mass for translational dynamics. | Applies $\vec{F}_{net,ext} = M\vec{a}_{cm}$ to a system, using total mass $M$. |
+
+### C2.12 — Circular Motion · CED topic 2.9
+
+*Resolved from "optional" in the CED-verification pass — circular motion is CED Unit 2 topic 2.9. Delivered as Module 10 in §5. No question-bank items yet.*
+
+| ID | Outcome | Observable evidence |
+|---|---|---|
+| C2.12a | State that an object in uniform circular motion has centripetal acceleration $a_c = v^2/r$ directed toward the centre. | Gives magnitude and direction of the acceleration for a described uniform circular motion; notes speed is constant but velocity is not. |
+| C2.12b | Identify the real force(s) whose net provides the centripetal acceleration in a described scenario. | Names the actual forces (tension, friction, normal force, gravity, …) and states that their net points toward the centre; does **not** add a separate "centripetal force" to the FBD. |
+| C2.12c | Apply Newton's second law along the radial direction: $\sum F_r = m v^2/r$. | Sets the net radial force equal to $mv^2/r$ and solves for a force, the speed, or the radius. |
+| C2.12d | Reason about how $v$, $r$, or $m$ changes the required net force, and about limiting cases. | Predicts, e.g., the speed at which a car loses traction on a curve, or the tension at the top vs. bottom of a vertical circle. |
+
+**Outcome count:** 52 sub-outcomes across 12 clusters (C2.1–C2.10: 44; C2.11: 4; C2.12: 4).
 
 ---
 
@@ -294,7 +341,7 @@ This table replaces the external sample's proprietary six-phase learning cycle. 
 |---|:--:|:--:|:--:|---|
 | 2.1 First law & equilibrium | 1 | **5** | 8 | Solve an unfamiliar multi-force equilibrium (angled forces) end to end; justify a nonzero force that "isn't doing anything." |
 | 2.2 Forces & FBDs | 1 | **5** | 6 | Build a complete, correct FBD and two-axis net force for an unfamiliar scenario with no forces named in the prompt. |
-| 2.3 N2 relationship | 1 | **4** | 6 | Predict a graph shape ($a$ vs $F$, $a$ vs $m$) before viewing it; reason proportionally through combined changes. |
+| 2.3 N2 relationship | 1 | **4** | 6 | Predict the shape of an $F$-vs-$m$ graph before viewing it and read its slope as the acceleration; reason proportionally through combined changes. |
 | 2.4 N2 from descriptions | 2 | **4** | 6 | Given a verbal scenario, produce direction + relative magnitude of $\vec{a}$ and the matching $v$–$t$ sketch. |
 | 2.5 N2 multi-force / two-axis | 2 | **5** | 7 | Solve a two-axis FBD for acceleration and an unknown force in an unfamiliar configuration. |
 | 2.6 Third law | 1 | **5** | 8 | Attribute every force in an unfamiliar two-object interaction; evaluate a flawed "equal and opposite therefore equilibrium" argument. |
@@ -302,6 +349,8 @@ This table replaces the external sample's proprietary six-phase learning cycle. 
 | 2.8 Friction | 2 | **5** | 7 | Determine slide/no-slide and resulting acceleration for an unfamiliar incline-plus-applied-force case. |
 | 2.9 Inclined planes | 3 | **6** | 8 | Full end-to-end solution for an unfamiliar angle/mass/friction condition, plus a far-transfer variant (e.g. banked surface, accelerating incline). |
 | 2.10 Gravitation / springs / apparent weight | 1 | **5** | 7 | Proportional reasoning about $F_G$ for unfamiliar mass/distance pairs; predict spring force at an untested displacement from graph-read $k$; solve an unfamiliar elevator apparent-weight problem. |
+| 2.11 Systems & center of mass | 1 | **4** | 6 | Predict the motion of a system's centre of mass under internal-only vs. net-external forces; compute the centre of mass of two point masses. |
+| 2.12 Circular motion | 2 | **5** | 8 | Identify the real forces providing the centripetal net force in an unfamiliar scenario and solve $\sum F_r = mv^2/r$; reason about a limiting case (loss of traction, top of a vertical circle). |
 
 Every lesson's practice set is laid out in the three page-level tiers from `rigor-standard-addendum.md` §3 (**Foundation** / **Examination Readiness** / **Mastery-Distinction**), which group the five canonical difficulty tags per the mapping in `data/taxonomies.json` (`lessonThreeTier`). Cognitive level and difficulty tag are **separate axes** (`master-project-prompt.md` §27) — a Level-3 conceptual item can be `foundation` or `ap5-ib7-target` depending on scenario demand.
 
@@ -321,7 +370,15 @@ Two instruments, both before Module 1, neither graded:
 
 Neither is a placement engine — the self-paced repository has no 1:1 routing. Their combined output is a starting picture for the student, not a gate on content (see §12 for the gate-vs-optional decision on instrument A).
 
-### Module 1 — Forces and Free-Body Diagrams · Cluster 2.2
+> **Module numbering note.** Modules 1–10 below predate the CED-verification pass, which added two clusters. **C2.11 (Systems & Center of Mass)** is a short **Module 1a**, taught right before Module 1 (it establishes "system" and "external force," which the FBD module then uses). **C2.12 (Circular Motion)** is **Module 10** (after Inclined Planes, before Synthesis), pushing Synthesis to **Module 11**. A clean renumber of the whole sequence + the §8 coverage matrix is tracked in §12.11.
+
+### Module 1a — Systems and Center of Mass · C2.11 *(short)*
+
+**Progression:** what a *system* is and where its boundary is drawn → internal vs external forces → the centre of mass as the mass-weighted average position (qualitatively, then $x_{cm}$ for two point masses) → the centre of mass responds only to the **net external** force → so a system can be treated as a point particle at its centre of mass, $\vec{F}_{net,ext} = M\vec{a}_{cm}$.
+**Interactive:** a two-mass slider — move the masses and their values, watch the centre-of-mass marker; toggle an external force and see the centre of mass accelerate, vs. an internal "explosion" that leaves it unmoved.
+**Mastery evidence:** predict the centre-of-mass motion for an unfamiliar system under internal-only vs. net-external forcing; compute a two-mass centre of mass (Level 4).
+
+### Module 1 — Forces and Free-Body Diagrams · C2.2 (CED topic 2.2)
 
 **Progression:** forces as interactions → the contact forces of this course + the one field force → define the system; internal vs external → construct an FBD (both AP styles) → sum signed forces on one axis → resolve angled forces on two axes.
 **Interactive:** an FBD builder — pick forces, place them, check completeness and direction against a known scenario.
@@ -381,17 +438,22 @@ Delivered as one lesson with three chunked strands (they are independent; see §
 **Transfer:** at least one far-transfer item where the incline framing is only recognizable through conceptual understanding (e.g. a banked road, an accelerating wedge, a block on a block).
 **Mastery evidence:** full end-to-end solution for an unfamiliar angle/mass/friction condition (Level 6), plus a far-transfer variant (stretch 8).
 
-### Module 10 — Unit 2 Synthesis and Transfer
+### Module 10 — Circular Motion · C2.12 (CED topic 2.9)
+
+**Confirmed in Unit 2** by the CED-verification pass (CED topic 2.9). A second application-of-Newton's-second-law synthesis, after inclines.
+**Progression:** uniform circular motion — speed constant, velocity not → centripetal acceleration $a_c = v^2/r$ directed toward the centre → the net of the *real* forces (tension, friction, normal, gravity) provides it; "centripetal force" is **not** a separate FBD arrow (Misconception 13) → apply $\sum F_r = mv^2/r$ radially → limiting cases: a car on a flat curve losing traction, tension at the top vs. bottom of a vertical circle.
+**Interactive:** a puck-on-a-string / car-on-a-curve simulation — vary $v$, $r$, $m$; show the velocity vector (tangent), the acceleration vector (radial), and the FBD's real forces, with a "break free" threshold when the required net force exceeds what the real forces can supply.
+**Boundary:** uniform circular motion only; non-uniform (changing speed) and vertical-circle energy analysis are later-unit material.
+**Mastery evidence:** identify the real centripetal-providing forces and solve $\sum F_r = mv^2/r$ for an unfamiliar scenario; reason through one limiting case (Level 5, stretch 8).
+
+### Module 11 — Unit 2 Synthesis and Transfer
 
 Not new content — a consolidation lesson and the on-ramp to the unit test bank.
-**Force task:** an unfamiliar multi-force scenario (e.g. an object on a rough incline with an applied force at an angle) — system, FBD, net force, acceleration — integrating 2.2, 2.5, 2.8, 2.9.
-**Interaction task:** an unfamiliar multi-object interaction — attribute all forces, distinguish any third-law pairs from any balanced forces — integrating 2.6 with 2.2.
-**Spring/graph task:** an unfamiliar force–extension dataset — find $k$, predict a force or displacement for an untested value — integrating 2.10 with Unit 1 graph transfer.
+**Force task:** an unfamiliar multi-force scenario (e.g. an object on a rough incline with an applied force at an angle) — system, FBD, net force, acceleration — integrating C2.2, C2.5, C2.8, C2.9.
+**Interaction task:** an unfamiliar multi-object interaction — attribute all forces, distinguish any third-law pairs from any balanced forces — integrating C2.6 with C2.2.
+**Circular task:** an unfamiliar circular-motion scenario — name the real forces, apply $\sum F_r = mv^2/r$, evaluate a limiting case — integrating C2.12 with C2.2.
+**Spring/graph task:** an unfamiliar force–extension dataset — find $k$, predict a force or displacement for an untested value — integrating C2.10 with Unit 1 graph transfer.
 **Interleaving note (`rigor-standard-addendum.md` §14):** items here and in the unit test bank must not be grouped by subtopic; the student decides which framework applies.
-
-### Optional circular-motion module — **pending §12 scope decision**
-
-If uniform circular motion stays in Unit 2 per the current CED, it slots after Module 9 as a second application-of-Newton's-second-law synthesis: centripetal acceleration $v^2/r$ directed toward the center; the net force (a real force or sum of real forces) is the cause; "centripetal force" is not a new force to add to an FBD (Misconception 13). If the CED places it in a later unit, this module moves there and Module 9 becomes the sole synthesis capstone.
 
 ---
 
@@ -411,7 +473,7 @@ Ordered roughly by instructional weight for an AP-5 target. Items 1 and 8–10 a
 10. **Equal forces imply equal effects.** In an interaction, the more massive object is thought to exert a larger force, or the mutual forces are thought to produce equal accelerations. Slugs: `larger-object-exerts-larger-force-in-collision`, `third-law-implies-equal-accelerations`.
 11. **Friction only opposes actual motion** (not the tendency to move), **always acts**, **always opposes weight**, or **only acts horizontally**. Slugs: `friction-only-opposes-motion-not-tendency-to-move`, `friction-always-acts-and-opposes-weight`, `friction-direction-fixed-rather-than-opposing-actual-motion`, `friction-only-acts-horizontally-on-horizontal-surfaces`, `static-and-kinetic-friction-coefficients-are-always-equal`.
 12. **Normal force always equals full weight**, regardless of incline angle or other vertical forces. On an incline, the $\sin\theta$/$\cos\theta$ components are also frequently swapped — the Unit 1 trig error recurring in a new context.
-13. **"Centripetal force" is a separate force** to be added to a free-body diagram, rather than the name for the net force in circular motion. (Applies only if the circular-motion module is in Unit 2.)
+13. **"Centripetal force" is a separate force** to be added to a free-body diagram, rather than the name for the net (radially inward) sum of the *real* forces in circular motion. (CED topic 2.9 — Module 10.)
 14. **The spring constant changes with how hard you pull**, and relatedly, **the negative sign in $F_s=-kx$ makes $k$ negative** rather than encoding that the force opposes the displacement; **a stretched spring "has" negative force as a property**. Slug: `spring-constant-changes-with-applied-force` (add to `data/taxonomies.json` if not present).
 15. **Tension in a multi-object rope system supports the whole system's weight** / **the hanging mass is in free fall**. Slugs: `tension-in-a-multi-object-string-system-must-support-the-whole-system`, `treats-heavier-hanging-mass-as-being-in-free-fall`.
 16. **A scale always reads true weight**; **apparent weightlessness requires zero gravity**. Slugs: `scale-always-reads-true-weight`, `apparent-weightlessness-requires-zero-gravity`.
@@ -443,6 +505,8 @@ Distractors in the test bank should represent authentic misconceptions wherever 
 ## 8. Outcome coverage matrix
 
 "Introduced" = the module that first teaches the cluster; "Practised" = modules with formative items on it; "Mastery evidence" = the module whose lesson-level assessment certifies it; "Transfer" = where it appears in an unfamiliar context.
+
+*Predates the CED pass: rows for C2.11 (Module 1a → M11) and C2.12 (Module 10 → M11) are added in the §12.11 renumber.*
 
 | Cluster | Introduced | Practised | Mastery evidence | Transfer |
 |---|:--:|:--:|:--:|:--:|
@@ -483,7 +547,7 @@ Lesson-embedded formative checks keep their lesson-scoped ids (`ap1-u2-l3-q01`, 
 
 ### 9.3 Target composition
 
-Item counts are targets for the stabilized Unit 2 bank, not a cap.
+Item counts are targets for the stabilized Unit 2 bank, not a cap. *Predates the CED pass — add **C2.11 Systems & Center of Mass ≈ 8 MCQ** and **C2.12 Circular Motion ≈ 14 MCQ** (both with ≥1 FRQ), raising the MCQ total to ≈ 168, in the §12.11 pass.*
 
 | Cluster | MCQ target | FRQ involvement |
 |---|:--:|---|
@@ -529,7 +593,7 @@ Every bank item carries the full §27 schema. Non-negotiables:
 
 ### 9.6 FRQ reasoning modes
 
-`frqType` stays a **course-neutral reasoning-mode** tag, not an exam-framework code. The existing bank uses six: `multi-part-quantitative`, `quantitative-qualitative-translation`, `graph-and-justify`, `error-analysis`, `experimental-design`, `paragraph-argument`. The bank as a whole must contain enough of each to build a practice set that resembles the current AP Physics 1 Section II demand *[verify CED for the current official task-model names and count]* — but that alignment is a **composition target for the bank**, checked when a course-specific practice exam is assembled, not a per-item tag. The same six modes serve an IB practice set drawn from `courses`-tagged items.
+`frqType` stays a **course-neutral reasoning-mode** tag, not an exam-framework code. The existing bank uses six: `multi-part-quantitative`, `quantitative-qualitative-translation`, `graph-and-justify`, `error-analysis`, `experimental-design`, `paragraph-argument`. These map onto the **four verified AP Physics 1 Section II task models** (§0): Mathematical Routines, Translation Between Representations, Experimental Design and Analysis, Qualitative/Quantitative Translation — `multi-part-quantitative` ≈ Mathematical Routines, `graph-and-justify` ≈ Translation Between Representations, `experimental-design` ≈ Experimental Design and Analysis, `quantitative-qualitative-translation` ≈ Qualitative/Quantitative Translation; `error-analysis` and `paragraph-argument` are AP-relevant reasoning modes that appear *within* those FRQ types. The bank must hold enough of each to assemble a Section-II-shaped practice set — a **composition target**, checked at exam-assembly time, not a per-item tag. **The May 2027 exam changes the MCQ count and section timing** (§0); re-check before building a fixed practice exam (§12.9). The same six modes serve an IB practice set drawn from `courses`-tagged items.
 
 ### 9.7 Review protocol
 
@@ -575,9 +639,9 @@ Drawn from concept-inventory research (FCI, and the Force and Motion Conceptual 
 6. **Stable form.** Once piloted and fixed, the item set does not change between administrations, so pre/post comparison and cross-cohort comparison stay valid. Revisions bump a form version (`AP1-U2-DIAG` → `AP1-U2-DIAG-v2`) and reset the comparison baseline.
 7. **A few Newtonian-anchor items** (no misconception tested) check correct baseline understanding — constant velocity ⇔ balanced forces, free-fall objects of different mass share acceleration, an object at rest has forces on it — so the profile distinguishes "holds a misconception" from "has no stable model either way."
 
-### 10.3 Blueprint — AP Physics 1 Unit 2, 25 items
+### 10.3 Blueprint — AP Physics 1 Unit 2, 27 items
 
-Item count is a proposal pending pilot item analysis (§10.5). Twenty-five items sit comfortably in one ~30-minute untimed sitting; the FCI uses 30 for all of introductory mechanics, so a single unit needs fewer.
+Item count is a proposal pending pilot item analysis (§10.5). Twenty-seven items sit comfortably in one ~30-minute untimed sitting; the FCI uses 30 for all of introductory mechanics, so a single unit needs fewer.
 
 | §6 misconception | Items | Sample probe contexts |
 |---|:--:|---|
@@ -591,6 +655,7 @@ Item count is a proposal pending pilot item analysis (§10.5). Twenty-five items
 | 10 — equal forces ⇒ bigger object exerts more / equal accelerations | 2 | truck hits car; two skaters push apart |
 | 11 — friction only opposes actual motion / always acts | 2 | box on the verge of sliding; block sliding to rest |
 | 12 — normal force always equals full weight | 1 | block on a ramp; "is the normal force equal to $mg$?" |
+| 13 — "centripetal force" is a separate / outward force | 2 | ball on a string swung in a circle — which way does the string pull, and does a "centripetal force" belong on the FBD?; car rounding a curve |
 | 17 — need something to push against to accelerate | 1 | rocket in deep space |
 | Newtonian anchor (no misconception) | 4 | constant-velocity elevator; two dropped balls of different mass; ball at the top of its toss; steady tow at constant speed |
 
@@ -651,17 +716,17 @@ Each module package (one lesson + its share of the test bank) must include:
 
 ## 12. Open decisions before full production
 
-**Highest priority — blocks test-bank expansion:**
+**Resolved by the CED-verification pass (2026-08-31):**
 
-1. **Exam-framework tagging — RESOLVED 2026-08-31.** The `apIbConnection` field is retired repository-wide and replaced by the `courses` reuse index (§1). No science-practice reconciliation is needed — the axis is gone; reasoning type lives in `skill`/`representation`/`cognitiveLevel`. Migration of the ~65 existing items and the prototype lesson is complete. Remaining sub-task: cross-tag genuinely shared items with IB course values (folded into §12.8).
-2. **CED outcome mapping.** Fill the §2 register's "maps to CED topic / Learning Objective / Essential Knowledge" column from the current official CED. Confirm the cluster boundaries (especially: is "systems and center of mass" a Unit 2 topic here? is apparent weight explicit in the CED or a derived application?).
-3. **Circular-motion scope.** Determine from the current CED whether uniform circular motion / centripetal force is in this unit ("Force and Translational Dynamics") or a later one. Drives whether §5's optional module, §6's Misconception 13, and §10.3's blueprint row for it are in Unit 2.
+1. **Exam-framework tagging — RESOLVED.** The `apIbConnection` field is retired repository-wide, replaced by the `courses` reuse index (§1). Reasoning type lives in `skill`/`representation`/`cognitiveLevel`. Migration of the ~65 items and the prototype lesson is complete. Remaining sub-task: cross-tag genuinely shared items with IB values (§12.8).
+2. **CED outcome mapping — RESOLVED.** All twelve clusters mapped to verified CED topics (§2 table). Confirmed: **Systems & Center of Mass is CED topic 2.1** (added as C2.11 / Module 1a); apparent weight, connected systems, and inclined planes are **CED-topic-2.5 applications**, not separate topics. Not done: transcribing LO/EK sub-codes (§0 — the CED PDF is the authority; this doc maps to topics).
+3. **Circular-motion scope — RESOLVED.** Circular motion **is** in Unit 2 (CED topic 2.9). Added as C2.12 / Module 10; Synthesis moved to Module 11; Misconception 13 and the §10.3 diagnostic row are now unconditional.
+4. **Equation-sheet values — RESOLVED.** $g = 9.8\ \mathrm{m/s^2}$, $G = 6.67\times10^{-11}$ (Table of Information, §0).
 
 **Standard — before the corresponding module ships:**
 
-4. **Equation-sheet value of $g$** (9.8 vs 10 m/s²) and the precision of $G$ on the current official sheet.
 5. **Pulley scope.** Confirm the single-ideal-redirect boundary in §1 is sufficient for AP Physics 1, or widen it.
-6. **ID migration.** Execute the §9.2 re-indexing (promote `fp01–fp50` → `AP1-U2-MCQ-###`, prefix the FRQs, add `clusterId`) as one scripted migration, and set the prototype lesson's `objective` to `2.3`.
+6. **ID migration.** Execute the §9.2 re-indexing (promote `fp01–fp50` → `AP1-U2-MCQ-###`, prefix the FRQs, add `clusterId`) as one scripted migration, and set the prototype lesson's `objective` to `2.5` (CED topic) / `C2.3` (cluster).
 7. **Build-time validator scope.** Decide whether the §9.7 checks 3–4 validator lands before or alongside the bank expansion (recommended: before).
 8. **IB cross-listing.** When Unit 2 is stable, decide which clusters (Newton's laws, gravitation, friction, springs, equilibrium) get extracted into `content/shared-concepts/` with IB SL/HL assessment variants, and which stay AP-1-only.
 9. **Unit exam form.** Whether the repository ships a fixed AP-style Unit 2 practice exam (fixed form) in addition to the filterable bank, and its blueprint (MCQ count, FRQ selection, timing).
@@ -669,22 +734,27 @@ Each module package (one lesson + its share of the test bank) must include:
 11. **Concept-inventory post-test.** Whether to surface the normalized-gain $\langle g\rangle$ figure to students, or use it only for internal calibration.
 12. **Concept-inventory calibration.** Final item count (25 proposed), and the Newtonian-score thresholds shown to students — both frozen only after the §10.5 pilot item analysis on this project's population, not carried over from published FCI norms.
 13. **Diagnostic schema fields.** Confirm `data/taxonomies.json` and the `build/build.js` schema comment are extended with `diagnosticForm`, `pairId`, `calculatorFree`, `newtonianAnchor`, `revealFeedback`, and the new misconception slugs (§10.4) as part of Open Decision 7's validator work.
+14. **May 2027 exam changes.** The MCQ count and section timing change for May 2027 (§0); the exact figures are not yet public. Re-check the CED before the §12.9 fixed practice exam is built, and before any lesson claims a specific MCQ count.
+
+**Structural migrations (do together, one scripted pass):**
+
+10. **`objective` re-tag + `cedTopic` field.** Re-tag the ~65 bank items and the prototype lesson's embedded questions from bare `"2.1"…"2.10"` to the `C`-prefixed cluster form, and add a `cedTopic` field (e.g. `"2.5"`) per the §2 map — so an item is traceable both to its pedagogical cluster and to the CED topic it covers. Fold into the §12.6 ID migration.
+11. **Module renumber.** Renumber the §5 instructional sequence and the §8 coverage matrix to absorb Module 1a (Systems/COM) and Module 10 (Circular Motion) cleanly, rather than the "1a / bump to 11" patch applied in the CED pass.
 
 ---
 
 ## 13. Downstream implementation order
 
-1. Resolve Open Decisions 1–3 (§12) against the current official CED. Record the answers in this document (bump to v0.2.0) before writing new content.
-2. Land the §9.7 build-time validator (checks 3–4, plus the §10.4 diagnostic constraints) and the §12.6 ID migration.
-3. Bring the existing prototype lesson (`ap1-u2-l3`, Module 3) into full compliance with this architecture: set `objective` to `2.3`, add lesson-level `courses`, confirm the §11 checklist. (`apIbConnection` already stripped, `courses` already added on its embedded questions.)
-4. Produce the Unit 2 concept-inventory diagnostic (§10) — 25 items to the §10.3 blueprint — so it exists before Module 1 ships. Freeze its form only after the §10.5 pilot item analysis.
-5. Produce the spine modules in dependency order: **M1 (FBDs) → M2 (First law) → M4 (Multi-force/two-axis) → M5 (Third law)**, each with its lesson and its test-bank slice.
-6. Produce **M6 (Friction) → M7 (Connected systems) → M8 (Gravitation/springs/apparent weight)**.
-7. Produce **M9 (Inclined planes)** — the synthesis capstone — and the optional circular-motion module if §12.3 keeps it in Unit 2.
-8. Produce **M10 (Synthesis & transfer)** and assemble the interleaved unit cumulative assessment.
-9. Expand the test bank to the §9.3 targets; run every item through the §9.7 protocol.
-10. Pilot the unit; calibrate the §7 mastery rule, the §9.4 difficulty distribution, and the §10.5 diagnostic thresholds against observed student performance; compute pre/post $\langle g\rangle$ on the concept inventory.
-11. Retrospective: what in this architecture broke or bent under Unit 2? Fix it here before starting Unit 3, since every later unit inherits these structures.
+1. CED verification is **done** (§0, §12.1–4). Land the §9.7 build-time validator (checks 3–5, plus the §10.4 diagnostic constraints) and the §12.6 + §12.10 scripted migration (`objective` re-tag, `cedTopic` field, MCQ/FRQ re-index).
+2. Bring the existing prototype lesson (`ap1-u2-l3`, Module 3) into full compliance: `objective` → `C2.3` + `cedTopic: "2.5"`, add lesson-level `courses`, confirm the §11 checklist. (`apIbConnection` stripped, `courses` added, F-vs-a scrubbed, FBD figures added — all done.)
+3. Produce the Unit 2 concept-inventory diagnostic (§10) — 25 items to the §10.3 blueprint — before Module 1 ships. Freeze the form only after the §10.5 pilot item analysis.
+4. Produce **Module 1a (Systems & Center of Mass)** then the spine: **M1 (FBDs) → M2 (First law) → M4 (Multi-force/two-axis) → M5 (Third law)**, each with its lesson and test-bank slice.
+5. Produce **M6 (Friction) → M7 (Connected systems) → M8 (Gravitation/springs/apparent weight)**.
+6. Produce **M9 (Inclined planes)** and **M10 (Circular Motion)** — the two Newton's-second-law synthesis modules.
+7. Produce **M11 (Synthesis & transfer)** and assemble the interleaved unit cumulative assessment.
+8. Expand the test bank to the §9.3 targets (add C2.11 and C2.12 rows); run every item through the §9.7 protocol.
+9. Pilot the unit; calibrate the §7 mastery rule, the §9.4 difficulty distribution, and the §10.5 diagnostic thresholds against observed student performance; compute pre/post $\langle g\rangle$ on the concept inventory.
+10. Retrospective: what in this architecture broke or bent under Unit 2? Fix it here before starting Unit 3, since every later unit inherits these structures.
 
 ---
 
@@ -694,3 +764,4 @@ Each module package (one lesson + its share of the test bank) must include:
 |---|---|---|---|
 | 0.1.0 | 2026-08-31 | Draft — for review | Initial AP Physics 1 Unit 2 architecture, modeled structurally on an external Grade-8 unit-architecture sample (governance/tutorial-sprint/diagnostic-routing apparatus deliberately dropped). Defines 10 internal outcome clusters / 44 sub-outcomes inheriting the existing question bank's `objective` numbering; dependency order with Forces & FBDs as the spine and Inclined Planes as the synthesis capstone; a cognitive-demand progression table mapped to `rigor-standard-addendum.md` §2 (replacing the sample's proprietary learning cycle); an 11-module instructional sequence on the `master-project-prompt.md` §4 lesson flow; 18 prioritized misconceptions (slugs reconciled to the existing bank); an assessment evidence contract; a full unit test-bank architecture (ID scheme, ~146 MCQ / ~30–36 FRQ targets, difficulty calibration, per-item requirements, review protocol); a per-unit **concept-inventory diagnostic** spec (§10) modeled on the Force Concept Inventory — 25 calculator-free qualitative items, misconception-mapped blueprint, forced-choice design rules, item-analysis and normalized-gain reporting; and an open-decisions register headed by CED verification. No content approved; CED references unverified. |
 | 0.2.0 | 2026-08-31 | Draft — for review | Retired the per-item `apIbConnection` exam-framework tag repository-wide (it no longer matched College Board's current practice model and duplicated `skill`/`representation`/`cognitiveLevel`). Replaced it with a **`courses` reuse index** — `ap-physics-1` / `ap-physics-2` / `ib-physics-sl` / `ib-physics-hl` in `data/taxonomies.json` — on every question, lesson, and topic, so shared physics is authored once and filtered per course. Migrated all ~65 Unit 2 bank items and the prototype lesson's 12 embedded questions to `courses: ["ap-physics-1"]`; updated `master-project-prompt.md` §27 (both copies), `data/taxonomies.json`, and `build/build.js` (the lesson `apIbConnection` field → course-neutral `examConnection`; section renamed "Exam Connection"). Science-practice reconciliation (was §12.1) closed as resolved. Added a plain-language definition of "CED". No outcome, scope, sequencing, or difficulty change. |
+| 0.3.0 | 2026-08-31 | Draft — for review | **CED verification pass** (§0) against AP Central and corroborating sources. Confirmed: Unit 2 = "Force and Translational Dynamics", 18–23%; the nine CED Unit 2 topics (2.1–2.9); three science practices; the four Section-II FRQ task models; $g=9.8$, $G=6.67\times10^{-11}$; the May 2027 MCQ-count/timing change (figures TBD). Every cluster now maps to a verified CED topic (§2 table); cluster IDs `C`-prefixed in the doc to stop collision with CED topic numbers (bank `objective` re-tag deferred to §12.10). Added two clusters for previously-uncovered CED topics: **C2.11 Systems & Center of Mass** (CED 2.1 → new Module 1a) and **C2.12 Circular Motion** (CED 2.9 → new Module 10, resolving the "optional" question; Synthesis → Module 11). 44 → 52 sub-outcomes. Open decisions 1–4 closed; two structural migrations (§12.10 `objective`/`cedTopic`, §12.11 module renumber) tracked. No physics or difficulty-scale change. |
