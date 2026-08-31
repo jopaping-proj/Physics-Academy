@@ -378,12 +378,13 @@ Neither is a placement engine — the self-paced repository has no 1:1 routing. 
 **Interactive:** a two-mass slider — move the masses and their values, watch the centre-of-mass marker; toggle an external force and see the centre of mass accelerate, vs. an internal "explosion" that leaves it unmoved.
 **Mastery evidence:** predict the centre-of-mass motion for an unfamiliar system under internal-only vs. net-external forcing; compute a two-mass centre of mass (Level 4).
 
-### Module 1 — Forces and Free-Body Diagrams · C2.2 (CED topic 2.2)
+### Module 1 — Forces and Free-Body Diagrams · C2.2 (CED topic 2.2)  *(built — draft, 2026-08-31)*
 
 **Progression:** forces as interactions → the contact forces of this course + the one field force → define the system; internal vs external → construct an FBD (both AP styles) → sum signed forces on one axis → resolve angled forces on two axes.
-**Interactive:** an FBD builder — pick forces, place them, check completeness and direction against a known scenario.
+**Interactive:** an FBD builder (`js/lesson-interactives/fbd-builder.js`) — pick a scenario, toggle the forces and set directions, Canvas redraws the diagram, "Check" reports missing / mis-directed / doesn't-belong.
 **Boundary:** single-object FBDs; connected systems deferred to Module 7; incline-aligned axes deferred to Module 9.
 **Mastery evidence:** a complete, correct FBD and two-axis net force for an unfamiliar scenario with no forces named in the prompt (Level 5).
+**Status:** `content/ap-physics-1/unit-2-dynamics/forces-and-free-body-diagrams.json` + `data/question-bank/ap1-u2-forces-fbd.json` (8 items). **Physics not yet independently reviewed (§9.7 / master §31–§32).**
 
 ### Module 2 — Newton's First Law, Inertia, and Equilibrium · Cluster 2.1
 
