@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 236" role="img"
+     aria-label="Dot free-body diagram of the same cart. The object is a single dot; the weight arrow points down, the normal-force arrow points up, and the applied-force arrow points right, all starting from the edge of the dot.">
+  <defs>
+    <marker id="ah-grey2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8b96a5"/>
+    </marker>
+    <marker id="ah-blue2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#58a6ff"/>
+    </marker>
+    <marker id="ah-amber2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#f0c27a"/>
+    </marker>
+  </defs>
+
+  <!-- the object as a dot -->
+  <circle cx="128" cy="126" r="6" fill="#e6edf3"/>
+
+  <!-- weight: down from the edge of the dot -->
+  <line x1="128" y1="132" x2="128" y2="210" stroke="#8b96a5" stroke-width="2.5" marker-end="url(#ah-grey2)"/>
+  <text x="135" y="200" font-family="system-ui, sans-serif" font-size="13" fill="#8b96a5">F</text>
+  <text x="143" y="204" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">g</text>
+
+  <!-- normal force: up from the edge of the dot -->
+  <line x1="128" y1="120" x2="128" y2="44" stroke="#58a6ff" stroke-width="2.5" marker-end="url(#ah-blue2)"/>
+  <text x="135" y="56" font-family="system-ui, sans-serif" font-size="13" fill="#58a6ff">F</text>
+  <text x="143" y="60" font-family="system-ui, sans-serif" font-size="10" fill="#58a6ff">N</text>
+
+  <!-- applied force: right from the edge of the dot -->
+  <line x1="134" y1="126" x2="228" y2="126" stroke="#f0c27a" stroke-width="2.5" marker-end="url(#ah-amber2)"/>
+  <text x="150" y="117" font-family="system-ui, sans-serif" font-size="13" fill="#f0c27a">F</text>
+  <text x="158" y="121" font-family="system-ui, sans-serif" font-size="10" fill="#f0c27a">app</text>
+</svg>

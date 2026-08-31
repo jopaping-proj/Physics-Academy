@@ -78,6 +78,39 @@ img, svg {
   height: auto;
 }
 
+/* ---- Inline emphasis (js/markdown.js output) ----
+   Used throughout lesson prose to flag key concepts and terms per the
+   rigor addendum's instruction to make important relationships visually
+   distinct, not just bolded like everything else. */
+
+mark.term-highlight {
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+  color: var(--text-primary);
+  padding: 0.05em 0.25em;
+  border-radius: var(--radius-sm);
+}
+
+.key-term {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ---- Prose lists (js/markdown.js "- " bullet output) ---- */
+ul.md-list {
+  margin: 0 0 var(--space-3);
+  padding-left: var(--space-4);
+}
+
+ul.md-list li {
+  margin-bottom: var(--space-1);
+  max-width: var(--line-length-max);
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

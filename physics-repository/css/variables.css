@@ -77,6 +77,23 @@
   --sidebar-width: 280px;
   --header-height: 56px;
   --content-max-width: 900px;
+
+  /* ---- Simulation & interactive-visualization palette ----
+     Shared by every hand-rolled Canvas interactive (Cart on a Track,
+     the Formula Explorer's live graphs, and any future one) so they
+     read as one consistent "night mode" sub-theme rather than each
+     component inventing its own colors. Kept as its own token group,
+     the same way the difficulty scale above gets its own group. */
+  --sim-bg: #1a1a2e;
+  --sim-panel: #2d2d44;
+  --sim-text: #e0e0e0;
+  --sim-amber: #f0c27a;
+  --sim-cart: #e6b800;
+  --sim-red: #ff6b6b;
+  --sim-green: #51cf66;
+  --sim-teal: #48c9b0;
+  --sim-graph-bg: #16213e;
+  --sim-graph-grid: #2a3a5c;
 }
 
 @media (prefers-reduced-motion: reduce) {

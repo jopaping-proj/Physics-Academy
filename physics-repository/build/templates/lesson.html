@@ -10,42 +10,74 @@
 <link rel="stylesheet" href="{{ROOT}}css/components.css" />
 <link rel="stylesheet" href="{{ROOT}}css/lessons.css" />
 <!-- KaTeX: loaded on every lesson page since nearly every lesson has equations.
-     See docs/architecture-proposal.md §8 for the KaTeX-over-MathJax reasoning. -->
+     See docs/architecture-proposal.md §8 for the KaTeX-over-MathJax reasoning.
+     It renders math inside hidden slides too, so progressive reveal just unhides
+     already-typeset content. -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+<!-- Plotly: only present when this lesson declares a graph (see build.js needsPlotly). -->
+{{PLOTLY_SCRIPT}}
 </head>
 <body>
 <header class="site-header">
-  <button class="sidebar-toggle" aria-expanded="false" aria-controls="lesson-sidebar">Menu</button>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="lesson-sidebar">Sections</button>
   <a class="site-header__brand" href="{{ROOT}}index.html">Physics Academy</a>
 </header>
 
-<div class="lesson-shell">
+<div class="lesson-shell" data-lesson-mode="slides">
   <nav class="lesson-sidebar" id="lesson-sidebar" aria-label="Lesson navigation">
     <div class="breadcrumb">{{BREADCRUMB}}</div>
-    <h2>On this page</h2>
-    <ul class="toc-list">
+    <h2>Sections</h2>
+    <ol class="toc-list">
 {{SIDEBAR_TOC}}
-    </ul>
-    <h2>Objectives</h2>
-    <ul class="objective-list">
-{{SIDEBAR_OBJECTIVES}}
-    </ul>
+    </ol>
   </nav>
 
   <main class="lesson-main">
+    <div class="deck" id="lesson-deck">
+      <div class="deck__bar">
+        <div class="deck__progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span class="deck__progress-fill"></span>
+        </div>
+        <div class="deck__status">
+          <span class="deck__group" id="deck-group"></span>
+          <span class="deck__count" id="deck-count"></span>
+        </div>
+        <div class="deck__actions">
+          <button class="deck__toggle" id="deck-gate" type="button" aria-pressed="true"
+                  title="When on, you must engage with each check before moving to the next card">Require answers: on</button>
+          <button class="deck__toggle" id="deck-mode" type="button" aria-pressed="false">Read as one page</button>
+        </div>
+      </div>
+
+      <div class="deck__viewport" id="deck-viewport">
 {{LESSON_BODY}}
+      </div>
+
+      <div class="deck__nav" aria-label="Slide navigation">
+        <button class="deck__btn deck__prev" id="deck-prev" type="button" rel="prev">◂ Back</button>
+        <p class="deck__live" id="deck-live" aria-live="polite"></p>
+        <button class="deck__btn deck__next" id="deck-next" type="button" rel="next">Next ▸</button>
+      </div>
+    </div>
   </main>
 </div>
 
 <script type="application/json" id="lesson-data">
 {{LESSON_DATA_JSON}}
 </script>
-<script type="module" src="{{ROOT}}js/navigation.js"></script>
-<script type="module" src="{{ROOT}}js/content-loader.js"></script>
-<script type="module" src="{{ROOT}}js/difficulty.js"></script>
-<script type="module" src="{{ROOT}}js/assessment.js"></script>
+<!-- Plain <script> tags, not type="module": ES modules can't be fetched
+     over file://, and this site needs to work when opened directly from
+     disk. Order matters — each attaches to window.PA; later scripts
+     depend on earlier ones. -->
+<script src="{{ROOT}}js/content-loader.js"></script>
+<script src="{{ROOT}}js/navigation.js"></script>
+<script src="{{ROOT}}js/assessment.js"></script>
+<script src="{{ROOT}}js/lesson-slides.js"></script>
+<script src="{{ROOT}}js/formula-explorer.js"></script>
+<script src="{{ROOT}}js/simulations.js"></script>
+{{COMPONENT_SCRIPTS}}
 </body>
 </html>

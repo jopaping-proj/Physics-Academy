@@ -1,0 +1,560 @@
+[
+  {
+    "id": "ap1-u2-frq-01",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's First Law and Equilibrium",
+    "objective": "2.1",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "equilibrium-requires-absence-of-forces",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 4.0 kg lamp hangs in equilibrium from two cables. One cable is horizontal, attached to a wall. The other cable makes a 53° angle with the horizontal wall and is attached to the ceiling. (Use g = 9.8 m/s², sin 53° ≈ 0.80, cos 53° ≈ 0.60.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the free-body diagram for the lamp, listing every force acting on it.",
+        "points": 2,
+        "modelResponse": "Three forces act on the lamp: its weight (mg = 4.0×9.8 = 39.2 N, directed straight down); the tension in the horizontal cable, T1 (directed horizontally, toward the wall); and the tension in the angled cable, T2 (directed up and away from the wall, at 53° above the horizontal)."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the tension in the angled cable (Cable 2).",
+        "points": 2,
+        "modelResponse": "Vertical equilibrium requires the vertical component of T2 to balance the weight: T2 sin 53° = mg. So T2 = 39.2/0.80 = 49 N."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Determine the tension in the horizontal cable (Cable 1), and justify why this tension must be nonzero even though Cable 1 is horizontal and the lamp is not moving horizontally.",
+        "points": 2,
+        "modelResponse": "Horizontal equilibrium: T1 = T2 cos 53° = 49×0.60 = 29.4 N. Cable 2's tension has a horizontal component pulling the lamp toward the wall. For the lamp to remain in equilibrium (zero net horizontal force), Cable 1 must pull with equal magnitude in the opposite horizontal direction — equilibrium requires balanced forces, not the absence of forces, even for an object with no horizontal motion."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Full credit on (a) requires exactly three forces, correctly directed; partial credit for omitting a force or mislabeling a direction. (b) and (c) require correct trigonometric component selection and correct substitution; award partial credit for correct setup with an arithmetic error."
+  },
+  {
+    "id": "ap1-u2-frq-02",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's Second Law",
+    "objective": "2.4",
+    "skill": "justify-with-principle",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "quantitative-qualitative-translation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 1200 kg car, initially at rest, is acted on by a constant net force of 3600 N for 5.0 seconds on a straight, level road.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the car's acceleration during this interval.",
+        "points": 2,
+        "modelResponse": "a = F_net/m = 3600/1200 = 3.0 m/s²."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the car's velocity at the end of the 5.0 s interval.",
+        "points": 2,
+        "modelResponse": "v = at = 3.0×5.0 = 15 m/s (starting from rest)."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Without doing any further calculation, explain qualitatively how the car's acceleration would change if the same net force acted on a car with twice the mass, and justify your reasoning using Newton's second law.",
+        "points": 2,
+        "modelResponse": "Since a = F_net/m and F_net is unchanged while m doubles, the acceleration would be half as large (1.5 m/s²) — acceleration is inversely proportional to mass when net force is held fixed."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (c) must reference the inverse proportionality explicitly, not just state a new numeric answer, to receive full credit — a correct number alone without the proportional-reasoning justification earns partial credit only."
+  },
+  {
+    "id": "ap1-u2-frq-03",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's Second Law",
+    "objective": "2.5",
+    "skill": "multi-representation-reasoning",
+    "representation": "graph",
+    "type": "free-response",
+    "frqType": "graph-and-justify",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A student measures the acceleration of a cart of fixed but unknown mass m for several different applied net forces, recording: (F = 2.0 N, a = 0.80 m/s²), (F = 4.0 N, a = 1.6 m/s²), (F = 6.0 N, a = 2.4 m/s²), (F = 8.0 N, a = 3.2 m/s²).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the shape of the graph of a (y-axis) versus F (x-axis) for this data, and explain what that shape indicates about the relationship between a and F.",
+        "points": 2,
+        "modelResponse": "The graph is a straight line through the origin, indicating that a is directly proportional to F (a ∝ F) when mass is held constant."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the slope of this graph, including units, and state what physical quantity the slope represents.",
+        "points": 2,
+        "modelResponse": "slope = Δa/ΔF = (3.2−0.8)/(8.0−2.0) = 2.4/6.0 = 0.40 (m/s²)/N. Since a = (1/m)F, the slope equals 1/m, so the cart's mass is m = 1/0.40 = 2.5 kg."
+      },
+      {
+        "label": "(c)",
+        "prompt": "If the same cart were loaded with additional mass so that its total mass doubled, describe how the new graph of a vs. F would compare to the original, and justify your answer.",
+        "points": 2,
+        "modelResponse": "The new line would still pass through the origin and remain straight, but with half the slope (since slope = 1/m, doubling m halves the slope) — the new line would be less steep than the original, lying below it for every value of F."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (b) requires both the correct numerical slope and its unit-consistent physical interpretation (1/m) for full credit."
+  },
+  {
+    "id": "ap1-u2-frq-04",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's Third Law",
+    "objective": "2.6",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "Block X (4.0 kg) and Block Y (6.0 kg) are in contact on a frictionless horizontal surface. A horizontal 40 N force is applied to Block X, pushing both blocks together to the right.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the acceleration of the two-block system.",
+        "points": 2,
+        "modelResponse": "a = F/(m_X+m_Y) = 40/10 = 4.0 m/s²."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the magnitude of the contact force between Block X and Block Y.",
+        "points": 2,
+        "modelResponse": "Isolating Block Y (the only horizontal force on it is the contact push from X): F_contact = m_Ya = 6.0×4.0 = 24 N."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Identify the Newton's-third-law reaction to the force found in part (b), stating which object it acts on and its direction.",
+        "points": 2,
+        "modelResponse": "The reaction is the force Block Y exerts back on Block X: equal in magnitude (24 N) and opposite in direction — directed to the left, opposing the direction of the applied push."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (c) must correctly name both the magnitude and the object/direction of the reaction force; stating only 'equal and opposite' without identifying which object it acts on earns partial credit."
+  },
+  {
+    "id": "ap1-u2-frq-05",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Friction",
+    "objective": "2.8",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 5.0 kg wooden crate sits on a horizontal wooden floor. A student gradually increases a horizontal applied force on the crate and finds that the crate just begins to slide when the applied force reaches 21 N. (Use g = 9.8 m/s².)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the coefficient of static friction between the crate and the floor.",
+        "points": 2,
+        "modelResponse": "μs = f_{s,max}/N = 21/(5.0×9.8) = 21/49 ≈ 0.43."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Once the crate is sliding, the student maintains a horizontal applied force of 15 N and finds the crate moves at constant velocity. Determine the coefficient of kinetic friction.",
+        "points": 2,
+        "modelResponse": "At constant velocity, the applied force equals kinetic friction: f_k = 15 N. μk = 15/49 ≈ 0.31."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain why the applied force needed to keep the crate moving at constant velocity (15 N) is smaller than the force needed to start it moving (21 N), referring to the relationship between μs and μk.",
+        "points": 2,
+        "modelResponse": "Since μk is generally less than or equal to μs for a given pair of surfaces, less force is needed to maintain sliding than to overcome the larger static friction and begin the motion — this matches μk (≈0.31) being smaller than μs (≈0.43) here."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Parts (a) and (b) require correctly identifying N = mg for a horizontal surface with no other vertical forces; part (c) requires an explicit μk ≤ μs comparison, not just a restatement of the numbers."
+  },
+  {
+    "id": "ap1-u2-frq-06",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "2.9",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 2.0 kg block slides down a rough incline angled at 25° above horizontal. The coefficient of kinetic friction between block and incline is 0.15. (Use g = 9.8 m/s², sin 25° ≈ 0.42, cos 25° ≈ 0.91.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the free-body diagram for the block while it slides down, and identify the direction of the kinetic friction force.",
+        "points": 2,
+        "modelResponse": "Three forces act: weight (straight down), normal force (perpendicular to the incline surface, away from the surface), and kinetic friction (along the incline surface, directed up the incline, opposing the block's downward sliding motion)."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the magnitude of the block's acceleration down the incline.",
+        "points": 2,
+        "modelResponse": "a = g sin θ − μk g cos θ = 9.8(0.42) − 0.15(9.8)(0.91) = 4.12 − 1.34 ≈ 2.8 m/s²."
+      },
+      {
+        "label": "(c)",
+        "prompt": "If the incline's angle were increased (made steeper) while μk stayed the same, explain qualitatively what would happen to the block's acceleration, and justify your answer.",
+        "points": 2,
+        "modelResponse": "As θ increases, sin θ increases (increasing the gravity component driving the block down the incline) while cos θ decreases (decreasing the normal force, and therefore the friction opposing the motion). Both effects act to increase the net acceleration down the incline, so the block's acceleration would increase."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (c) requires addressing both the sin θ and cos θ trends — addressing only one earns partial credit."
+  },
+  {
+    "id": "ap1-u2-frq-07",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "2.7",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "Two blocks are connected by a light string over a frictionless, massless pulley: Block P (3.0 kg) and Block Q (5.0 kg), both hanging freely. (Use g = 9.8 m/s².)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Determine the magnitude of the system's acceleration.",
+        "points": 2,
+        "modelResponse": "a = (m_Q−m_P)g/(m_P+m_Q) = (5.0−3.0)(9.8)/8.0 = 19.6/8.0 ≈ 2.5 m/s²."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the tension in the string.",
+        "points": 2,
+        "modelResponse": "Using Block P (accelerating upward): T − m_Pg = m_Pa → T = m_P(g+a) = 3.0(9.8+2.45) ≈ 36.8 N. (Checking with Block Q: T = m_Q(g−a) = 5.0(9.8−2.45) ≈ 36.8 N — consistent.)"
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain why the tension found in part (b) is less than Block Q's weight but greater than Block P's weight.",
+        "points": 2,
+        "modelResponse": "Block Q's weight (49 N) exceeds the tension (36.8 N) because Q accelerates downward — the net downward force on Q (its weight minus tension) is what produces that acceleration. Block P's weight (29.4 N) is less than the tension (36.8 N) because P accelerates upward — the net upward force on P (tension minus its weight) is what accelerates it. Tension must lie strictly between the two weights for the system to accelerate as described."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (b) may be solved from either block's equation; award full credit either way provided the answer is consistency-checked or correctly derived from one block alone."
+  },
+  {
+    "id": "ap1-u2-frq-08",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "2.9",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 3.0 kg block is pushed up a rough incline (angle 20°, μk = 0.25) at constant velocity by a force applied parallel to the incline surface. (Use g = 9.8 m/s², sin 20° ≈ 0.34, cos 20° ≈ 0.94.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the free-body diagram of the block while being pushed up at constant velocity, including the direction of kinetic friction.",
+        "points": 2,
+        "modelResponse": "Four forces act: weight (down), normal force (perpendicular to the incline), the applied force (up the incline, parallel to the surface), and kinetic friction (down the incline, opposing the block's upward motion)."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the magnitude of the applied force required to maintain this constant velocity.",
+        "points": 2,
+        "modelResponse": "Constant velocity means equilibrium along the incline: F_applied = mg sin θ + μk mg cos θ = mg(sin θ + μk cos θ) = 3.0(9.8)(0.34 + 0.25×0.94) ≈ 29.4×0.575 ≈ 16.9 N."
+      },
+      {
+        "label": "(c)",
+        "prompt": "If friction were somehow eliminated (frictionless incline) but the applied force stayed the same as in part (b), explain qualitatively what would happen to the block's motion, and justify your answer.",
+        "points": 2,
+        "modelResponse": "Without friction, only gravity's component (mg sin θ ≈ 10.0 N) needs to be balanced, so the 16.9 N applied force would now exceed what's needed for equilibrium, leaving a net force of about 6.9 N up the incline. The block would accelerate up the incline rather than move at constant velocity."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (c) requires recognizing the resulting nonzero net force and its direction, not just stating 'it would speed up' without justification."
+  },
+  {
+    "id": "ap1-u2-frq-09",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Springs and Apparent Weight",
+    "objective": "2.10",
+    "skill": "justify-with-principle",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "scale-always-reads-true-weight",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 70 kg person stands on a bathroom scale inside an elevator. (Use g = 9.8 m/s².)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "The elevator accelerates downward at 2.0 m/s². Calculate the scale reading during this acceleration.",
+        "points": 2,
+        "modelResponse": "N = m(g−a) = 70(9.8−2.0) = 70(7.8) = 546 N."
+      },
+      {
+        "label": "(b)",
+        "prompt": "The elevator then moves at constant velocity. Calculate the scale reading during this interval.",
+        "points": 2,
+        "modelResponse": "At constant velocity, a = 0, so N = mg = 70(9.8) = 686 N — equal to the person's true weight."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain, using Newton's second law, why the scale reads less than the person's true weight while the elevator accelerates downward.",
+        "points": 2,
+        "modelResponse": "The scale reading equals the normal force N. Applying Newton's second law to the person (up positive): N − mg = ma, so N = m(g+a). When the elevator accelerates downward, a is negative, making N less than mg — the scale supplies a smaller upward force than the person's full weight because the remaining unbalanced force is exactly what produces the person's downward acceleration."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (c) must derive the sign relationship from N − mg = ma rather than simply asserting the result; full credit requires the explicit equation."
+  },
+  {
+    "id": "ap1-u2-frq-10",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's Second Law",
+    "objective": "2.4",
+    "skill": "error-analysis",
+    "representation": "verbal",
+    "type": "free-response",
+    "frqType": "error-analysis",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "heavier-objects-require-more-force-for-same-net-force-scenario",
+    "courses": ["ap-physics-1"],
+    "scenario": "A student is asked: 'A 2 kg cart and an 8 kg cart are both pushed with the same 4 N net force, starting from rest. Which cart requires more force to keep accelerating?' The student answers: 'The 8 kg cart needs more force, because it's heavier and heavier things are harder to push.'",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the error in the student's reasoning.",
+        "points": 2,
+        "modelResponse": "The student answers a question that wasn't asked — the problem already states both carts experience the same 4 N net force; it does not ask what force would be needed to give each cart some particular acceleration. The student incorrectly treats the situation as if force still needed to be determined."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the student's reasoning is incorrect, using Newton's second law.",
+        "points": 2,
+        "modelResponse": "Newton's second law, a = F_net/m, only requires knowing F_net and m to determine each cart's resulting acceleration — no comparison of 'how hard it is to push' is needed. Since F_net is already specified as equal for both carts, the correct next step is computing each cart's acceleration from a = F_net/m, not reasoning informally about difficulty of pushing."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Provide the correct reasoning and result: how do the accelerations of the two carts compare?",
+        "points": 2,
+        "modelResponse": "a(2 kg) = 4/2 = 2.0 m/s²; a(8 kg) = 4/8 = 0.5 m/s². The 2 kg cart has the greater acceleration — for the same net force, a larger mass results in a smaller acceleration, not a larger required force."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Follows the four-step error-analysis structure (identify → explain → correct reasoning → correct result); part (c) requires both numerical accelerations and the explicit comparison."
+  },
+  {
+    "id": "ap1-u2-frq-11",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Friction",
+    "objective": "2.8",
+    "skill": "experimental-design",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "experimental-design",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A student wants to experimentally determine the coefficient of kinetic friction, μk, between a wooden block and a horizontal wooden track, using a motion sensor that can measure the block's position over time as it slides and decelerates after being given an initial push.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the independent and dependent variables the student should measure, and describe the basic procedure.",
+        "points": 2,
+        "modelResponse": "No variable needs to be deliberately varied between trials; instead, measure the block's position over time as it decelerates from a known initial push (the dependent variable is the block's deceleration, derived from that position-time data). Procedure: give the block a push along the horizontal track, use the motion sensor to record position vs. time as it slides to a stop, and determine the deceleration from the resulting velocity-time graph's slope."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain how the student should use the collected data to calculate μk, including any needed algebraic relationship.",
+        "points": 2,
+        "modelResponse": "Since kinetic friction is the only horizontal force on the sliding block, Newton's second law gives μk mg = ma, so μk = a/g. The student finds a from the slope of a velocity-time graph, then divides by g. Notably, the block's mass cancels out of this relationship, so it does not need to be measured."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe one source of experimental uncertainty in this procedure, and explain how it would affect the measured value of μk.",
+        "points": 2,
+        "modelResponse": "If the track is not perfectly level (a slight incline in the direction of motion), an additional component of gravity would add to or subtract from the deceleration due to friction alone, causing the measured deceleration — and therefore the calculated μk — to be systematically too large or too small, since the calculation assumes friction is the only horizontal force acting."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Any physically valid uncertainty source is acceptable in (c) (e.g., air resistance, sensor resolution, track incline) provided the direction of its effect on μk is correctly justified."
+  },
+  {
+    "id": "ap1-u2-frq-12",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's Second Law",
+    "objective": "2.5",
+    "skill": "multi-representation-reasoning",
+    "representation": "graph",
+    "type": "free-response",
+    "frqType": "graph-and-justify",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "Two carts, Cart 1 (mass 2.0 kg) and Cart 2 (mass 4.0 kg), are each subjected to a range of different net forces, and their resulting accelerations are to be graphed as F_net (y-axis) versus a (x-axis) for each cart on the same set of axes.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the shape and starting point of each graph.",
+        "points": 2,
+        "modelResponse": "Both graphs are straight lines passing through the origin (zero net force produces zero acceleration for both), since F_net = ma is a direct proportionality for each fixed mass."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the slope of each line, and explain which cart's line is steeper.",
+        "points": 2,
+        "modelResponse": "The slope of F_net vs. a equals the mass, so Cart 1's line has slope 2.0 kg and Cart 2's line has slope 4.0 kg. Cart 2's line is steeper, since its larger mass requires proportionally more force to produce the same acceleration."
+      },
+      {
+        "label": "(c)",
+        "prompt": "At a specific acceleration of 3.0 m/s², determine the net force required for each cart, and explain this result in terms of the graph.",
+        "points": 2,
+        "modelResponse": "Cart 1: F = ma = 2.0×3.0 = 6.0 N. Cart 2: F = ma = 4.0×3.0 = 12.0 N. On the graph, this corresponds to reading the y-value at x = 3.0 m/s² on each line — since Cart 2's line is steeper, it reaches a higher F value at the same a value, consistent with needing twice the force to give the more massive cart the same acceleration."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (b) requires stating the slope equals mass explicitly, not just naming the numerical values."
+  },
+  {
+    "id": "ap1-u2-frq-13",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Springs and Apparent Weight",
+    "objective": "2.10",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "A 0.80 kg object is attached to a vertical spring with spring constant k = 160 N/m and allowed to come to rest, stretching the spring from its natural length. (Use g = 9.8 m/s².)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the free-body diagram of the object at rest, and state the equilibrium condition that applies.",
+        "points": 2,
+        "modelResponse": "Two forces act: weight (down, mg) and the spring's restoring force (up, since the stretched spring pulls the object back toward its natural length). Equilibrium condition: the upward spring force equals the downward weight, kx = mg."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate how far the spring stretches from its natural length.",
+        "points": 2,
+        "modelResponse": "x = mg/k = (0.80×9.8)/160 = 7.84/160 ≈ 0.049 m (about 4.9 cm)."
+      },
+      {
+        "label": "(c)",
+        "prompt": "If a second, identical object were attached below the first (doubling the total hanging mass), explain qualitatively how the spring's stretch would change, and justify your answer using Hooke's law.",
+        "points": 2,
+        "modelResponse": "Doubling the mass doubles the weight the spring must support. Since x = mg/k and k is unchanged, doubling mg doubles x as well — the spring would stretch twice as far, to approximately 9.8 cm."
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "Part (a) must correctly identify the spring force as upward (restoring), not simply 'the spring force,' to receive full credit."
+  },
+  {
+    "id": "ap1-u2-frq-14",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Newton's First Law and Equilibrium",
+    "objective": "2.1",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "free-response",
+    "frqType": "paragraph-argument",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+    "courses": ["ap-physics-1"],
+    "scenario": "A student claims: 'A box sliding at constant velocity across a rough floor must have a net force pushing it forward, otherwise friction would stop it and it wouldn't keep moving at a constant speed.'",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "In a well-organized paragraph, evaluate whether the student's claim is correct. Structure your response as: a clear claim, the relevant physical principle, supporting physical/mathematical evidence, your reasoning, and a conclusion.",
+        "points": 4,
+        "modelResponse": "Claim: The student's claim is incorrect — no *net* forward force is required to sustain constant velocity. Principle: Newton's first and second laws state that an object's velocity remains constant if and only if the net force acting on it is zero (F_net = ma, and constant velocity means a = 0). Evidence: If the box slides at constant velocity, its acceleration is zero, so F_net must equal zero — meaning any forward force present exactly balances the kinetic friction force in magnitude. Reasoning: The student is right that a forward force must exist to counteract friction, but wrong to call it a *net* forward force — it only needs to equal friction in magnitude so the two cancel, giving zero net force, which is exactly what constant velocity requires. If there were truly a net forward force (applied force greater than friction), the box would speed up, not move at constant velocity. Conclusion: The student correctly recognizes a forward force must exist, but incorrectly describes it as a net force — the net force is actually zero throughout the motion, which is precisely why the velocity stays constant."
+      }
+    ],
+    "totalPoints": 4,
+    "scoringNotes": "Full credit requires explicitly correcting the student's conflation of 'a forward force exists' with 'the net force is forward' — this is the central reasoning error. Partial credit for correctly stating F_net = 0 without addressing why the student's framing is subtly wrong."
+  },
+  {
+    "id": "ap1-u2-frq-15",
+    "course": "AP Physics 1",
+    "unit": "Unit 2: Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "2.7",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "type": "free-response",
+    "frqType": "multi-part-quantitative",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "courses": ["ap-physics-1"],
+    "scenario": "Block M (2.0 kg) rests on a frictionless incline (angle 30° above horizontal) and is connected by a light string over a frictionless, massless pulley at the top of the incline to a hanging Block N (3.0 kg). (Use g = 9.8 m/s², sin 30° = 0.50.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the free-body diagram for each block, identifying all forces.",
+        "points": 2,
+        "modelResponse": "Block M (on the incline): weight (down), normal force (perpendicular to the incline surface), and tension (up the incline, along the string). Block N (hanging): weight (down) and tension (up)."
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the magnitude of the system's acceleration, and state which block accelerates in which direction.",
+        "points": 2,
+        "modelResponse": "Driving force = m_Ng − m_Mg sin θ = 3.0(9.8) − 2.0(9.8)(0.50) = 29.4 − 9.8 = 19.6 N. Total mass = 5.0 kg, so a = 19.6/5.0 ≈ 3.9 m/s². Since m_Ng exceeds m_Mg sin θ, Block N accelerates downward and Block M accelerates up the incline."
+      },
+      {
+        "label": "(c)",
+        "prompt": "Determine the tension in the string.",
+        "points": 2,
+        "modelResponse": "Using Block N: m_Ng − T = m_Na → T = m_N(g−a) = 3.0(9.8−3.92) ≈ 17.6 N. (Cross-checking with Block M: T − m_Mg sin θ = m_Ma → T = m_Mg sin θ + m_Ma = 9.8 + 7.84 = 17.6 N — consistent.)"
+      }
+    ],
+    "totalPoints": 6,
+    "scoringNotes": "This is the most integrative FRQ in the set (two-object system spanning both an incline and a hanging mass) — award full credit for either block's tension equation, provided the direction of each block's acceleration is correctly justified in (b)."
+  }
+]

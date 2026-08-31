@@ -1,18 +1,25 @@
 {
-  "_comment": "PLACEHOLDER — smoke-test content only, to validate the build pipeline end to end. This is NOT the Phase 2 prototype lesson. One chunk, one misconception, minimal question text. Physics stated here is correct but not yet run through the §32 Physics Accuracy Protocol at full lesson scope.",
   "id": "ap1-u2-l3",
   "slug": "newtons-second-law",
   "course": "AP Physics 1",
   "unit": "Unit 2: Dynamics",
   "topic": "Newton's Laws",
   "lessonTitle": "Newton's Second Law: Force, Mass, and Acceleration",
-  "prerequisites": ["Vectors and vector addition", "Definition of acceleration"],
-  "majorObjective": "Analyze the relationship among net force, mass, and acceleration for an object.",
+  "prerequisites": [
+    "Vectors and vector addition",
+    "Definition of acceleration as the rate of change of velocity",
+    "Free-body diagram basics (drawing forces acting on an object)"
+  ],
+  "majorObjective": "Analyze and apply Newton's second law to predict and explain the motion of objects under a net force, using verbal, graphical, and symbolic reasoning — not just substitution into a memorized equation.",
   "subObjectives": [
-    "State Newton's second law in words and symbolically.",
+    "State [[Newton's second law]] in words and symbolically ($\\vec{F}_{net} = m\\vec{a}$).",
+    "Construct a free-body diagram and use it to determine the net force on an object.",
     "Calculate net force, mass, or acceleration given the other two quantities.",
-    "Predict how acceleration changes when mass and/or net force change.",
-    "Interpret F-vs-a and F-vs-m graphs, including what the slope represents."
+    "Explain, without fully calculating, how acceleration changes when net force and/or mass change (proportional reasoning).",
+    "Read an $F$-vs-$m$ graph and state what its slope means physically (the acceleration).",
+    "Identify and correct the misconception that a force is needed to sustain constant velocity.",
+    "Apply Newton's second law to an unfamiliar multi-force scenario (transfer).",
+    "Justify a claim about acceleration using Newton's second law in written form, following a Claim → Principle → Evidence → Reasoning → Conclusion structure."
   ],
   "hook": {
     "prompt": "A constant net force $F$ acts on a cart of mass $m$, producing acceleration $a$. The cart is replaced with an otherwise identical cart of mass $2m$, and the same net force $F$ is applied.\n\nWhat happens to the acceleration?",
@@ -24,30 +31,57 @@
     ],
     "correctIndex": 2
   },
-  "priorKnowledge": "Recall that acceleration is the rate of change of velocity, and that force is a vector quantity with both magnitude and direction. You have already used $\\vec{F}_{net} = \\sum \\vec{F}$ to combine multiple forces on an object.",
+  "priorKnowledge": "Recall that ==acceleration is the rate of change of velocity==, not velocity itself, and that force is a vector quantity with both magnitude and direction. You've already used $\\vec{F}_{net} = \\sum \\vec{F}$ to combine multiple forces acting on an object into a single net force.",
   "chunks": [
     {
       "id": "chunk-1",
-      "title": "Force, Mass, and Acceleration",
-      "concept": "Newton's second law states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: $\\vec{a} = \\vec{F}_{net} / m$, usually written $\\vec{F}_{net} = m\\vec{a}$.\n\nThis is a relationship between three quantities, not a formula to substitute into blindly — before using it, identify the system, identify every force acting on it, and find the net force first.",
-      "representation": "Free-body diagram: draw every force acting on the object as an arrow from its center, then find $\\vec{F}_{net}$ by vector addition before applying $\\vec{F}_{net} = m\\vec{a}$.",
+      "title": "What Newton's Second Law Says",
+      "concept": "[[Newton's second law]] states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass: $\\vec{a} = \\vec{F}_{net}/m$, almost always written $\\vec{F}_{net} = m\\vec{a}$.\n\nThis is a relationship between three quantities, not a formula to substitute into blindly. Before you touch the equation, work through these in order:\n\n- Identify the **system** — the one object (or group of objects) you're analyzing.\n- Identify **every** force acting on that system, not just the one that's obvious.\n- Combine those forces into a single ==net force==, $\\vec{F}_{net}$, using vector addition.\n\nOnly once you have $\\vec{F}_{net}$ does $\\vec{F}_{net} = m\\vec{a}$ become something you can actually use.",
+      "representation": "AP Physics accepts two ways to draw a free-body diagram. Know both — either earns full credit. Below, both show the *same* cart being pushed along a level track.\n\n- **Box diagram.** The object is a box. Gravity (a field force) starts at the box's **center**; contact forces (normal, applied, friction, tension) start at the **surface where they act**.\n- **Dot diagram.** The object is a dot. *Every* force starts at the **edge of the dot**, like spokes. Two forces in the same direction go **side by side, offset** — never stacked.\n\nThe diagram isn't a warm-up before the equation — it *is* how you find $\\vec{F}_{net}$: draw every force, cross out the pairs that cancel (here, gravity and the normal force), and whatever arrow is left over is the net force you put into $\\vec{F}_{net} = m\\vec{a}$.",
+      "figures": [
+        { "svg": "newtons-second-law/fbd-box.svg", "caption": "**Box diagram** — gravity from the centre, the normal force from the bottom surface, the push from the back surface." },
+        { "svg": "newtons-second-law/fbd-dot.svg", "caption": "**Dot diagram** — the same three forces, every one starting at the edge of the dot." }
+      ],
       "workedExample": {
         "scaffold": "full",
-        "steps": [
-          "System: the cart alone.",
-          "Known: m = 2.0 kg, F_net = 6.0 N (horizontal, rightward).",
-          "Target: acceleration a.",
-          "Assumption: frictionless track, force is constant.",
-          "Coordinate system: rightward positive.",
-          "Representation: free-body diagram shows only the 6.0 N applied force horizontally (gravity and normal force cancel vertically).",
-          "Governing principle: Newton's second law.",
-          "Equation: a = F_net / m.",
-          "Substitute: a = 6.0 N / 2.0 kg.",
-          "Solve: a = 3.0 m/s².",
-          "Check units: N/kg = (kg·m/s²)/kg = m/s². Consistent.",
-          "Check direction: positive, so acceleration points rightward, same direction as F_net.",
-          "Reasonableness: a modest force on a few-kilogram cart giving a few m/s² is physically sensible."
-        ]
+        "problem": "A 2.0 kg cart on a frictionless track is pushed with a constant 6.0 N horizontal force. Find its acceleration.",
+        "figure": { "svg": "newtons-second-law/fbd-cart-net.svg", "caption": "Free-body diagram for this cart: gravity and the normal force cancel, leaving the 6.0 N push as the net force." },
+        "phases": [
+          {
+            "label": "Set up the problem",
+            "steps": [
+              "**System:** the cart alone.",
+              "**Known:** $m = 2.0\\text{ kg}$, $F_{net} = 6.0\\text{ N}$ (horizontal, rightward).",
+              "**Target:** acceleration $a$.",
+              "**Assume:** frictionless track, constant force. **Positive direction:** rightward."
+            ]
+          },
+          {
+            "label": "Draw it, then pick the principle",
+            "steps": [
+              "In the free-body diagram, gravity ($\\vec{F}_g$, down) and the normal force ($\\vec{F}_N$, up) are equal and opposite — the cart has no vertical acceleration — so they cancel and drop out.",
+              "The only force left is the 6.0 N push, so $\\vec{F}_{net} = 6.0\\text{ N}$ to the right.",
+              "**Governing principle:** [[Newton's second law]]."
+            ]
+          },
+          {
+            "label": "Build and solve the equation",
+            "steps": [
+              "Solve $F_{net} = ma$ for the target: $a = F_{net}/m$.",
+              "Substitute: $a = 6.0\\text{ N} / 2.0\\text{ kg}$.",
+              "$a = 3.0\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "Check the answer",
+            "steps": [
+              "**Units:** $\\text{N/kg} = (\\text{kg}\\cdot\\text{m/s}^2)/\\text{kg} = \\text{m/s}^2$. ✓",
+              "**Direction:** positive, so $a$ points rightward — same direction as $F_{net}$, as Newton's second law requires. ✓",
+              "**Reasonable?** 6.0 N on 2.0 kg giving $3.0\\text{ m/s}^2$ (about $g/3$) is an easy light push. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Everything before the equation was bookkeeping. The one physics move: gravity and the normal force cancel, so the *net* force is just the 6.0 N push."
       },
       "formativeCheck": {
         "id": "ap1-u2-l3-q01",
@@ -61,64 +95,470 @@
         "difficulty": "developing",
         "cognitiveLevel": 3,
         "misconceptionTested": "",
-        "apIbConnection": "AP1 SP 6.D",
+        "courses": ["ap-physics-1"],
         "question": "If the net force on an object triples while its mass stays the same, what happens to its acceleration?",
         "choices": ["It triples.", "It stays the same.", "It is cut to a third.", "It increases by a factor of 9."],
         "correctAnswer": 0,
         "feedback": {
-          "correct": "Correct — with mass constant, a ∝ F_net, so tripling the net force triples the acceleration.",
+          "correct": "Correct — with mass constant, $a \\propto F_{net}$, so tripling the net force triples the acceleration.",
           "incorrect": {
             "1": "Acceleration only stays constant if force and mass change in the same proportion — here only force changed.",
-            "2": "This inverts the relationship. Increasing net force increases acceleration, it doesn't reduce it.",
-            "3": "That would be true for something proportional to F², but Newton's second law is linear in F_net."
+            "2": "This inverts the relationship. Increasing net force increases acceleration; it doesn't reduce it.",
+            "3": "That would be true if acceleration depended on the *square* of the force, but Newton's second law is linear in $F_{net}$."
           }
         },
         "hint": ["Hold mass fixed in F_net = ma and ask what happens to a as F_net changes."],
-        "solution": "a = F_net / m. Tripling F_net with m unchanged triples a."
+        "solution": "$a = F_{net}/m$. Tripling $F_{net}$ with $m$ unchanged triples $a$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Reasoning Proportionally, Without Full Calculation",
+      "concept": "You don't always need to plug in numbers to know what will happen to acceleration. Since $a = F_{net}/m$:\n\n- Hold mass constant: ==$a \\propto F_{net}$== — acceleration scales directly with net force.\n- Hold net force constant: ==$a \\propto 1/m$== — acceleration scales inversely with mass.\n\nWhen *both* force and mass change at once, the two effects **multiply** — they don't cancel or simply add:\n\n- Doubling force *and* doubling mass leaves acceleration unchanged (the two effects offset exactly).\n- Doubling force while *halving* mass quadruples acceleration (the two effects reinforce each other).",
+      "representation": "Think in factors, not numbers: if force changes by a factor of $k_F$ and mass changes by a factor of $k_m$, acceleration changes by a factor of $k_F / k_m$.",
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A rocket sled's thrust suddenly triples (a second booster fires). Its mass is unchanged at that instant. By what factor does its acceleration change?",
+        "phases": [
+          {
+            "label": "Set up the problem",
+            "steps": [
+              "**System:** the sled alone, at one instant during the burn.",
+              "**Known:** thrust triples; mass is unchanged *at that instant* (fuel loss over the whole burn is negligible across one instant).",
+              "**Target:** the *factor* $a$ changes by — not a number, since no mass or force value was given."
+            ]
+          },
+          {
+            "label": "Reason with the principle",
+            "steps": [
+              "**Governing principle:** [[Newton's second law]], used proportionally — no numbers.",
+              "With $m$ constant, $a \\propto F_{net}$. Triple $F_{net}$ ⇒ triple $a$."
+            ]
+          },
+          {
+            "label": "State the result",
+            "steps": [
+              "The sled's acceleration is now $3\\times$ what it was the instant before the booster fired."
+            ]
+          }
+        ],
+        "keyMove": "Reading \"mass is constant\" and picking $a \\propto F_{net}$ — that one choice makes the missing numbers not matter."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-l3-q02",
+        "course": "AP Physics 1",
+        "unit": "Unit 2",
+        "lesson": "Newton's Second Law",
+        "objective": "2.4",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "treats-simultaneous-proportional-changes-as-additive",
+        "courses": ["ap-physics-1"],
+        "question": "An object's mass is halved at the same moment its net force is doubled. By what factor does its acceleration change?",
+        "choices": ["It quadruples.", "It doubles.", "It stays the same.", "It is cut in half."],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $a_{new} = \\dfrac{2F}{m/2} = 4\\dfrac{F}{m} = 4a$. Doubling the force and halving the mass reinforce each other rather than cancel.",
+          "incorrect": {
+            "1": "This only accounts for the force doubling and ignores that a smaller mass *also* increases acceleration.",
+            "2": "This would be true if force doubled while mass also doubled — here mass moved in the opposite direction, which reinforces the increase in acceleration instead of canceling it.",
+            "3": "This treats the mass change as though it decreased acceleration, but a *smaller* mass under the *same or larger* force means *more* acceleration, not less."
+          }
+        },
+        "hint": ["Work out the two factors separately: what does doubling F alone do? What does halving m alone do? Then multiply the two factors together."],
+        "solution": "$a_{new} = \\dfrac{2F}{m/2} = 4a$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Reading Acceleration Off a Graph",
+      "concept": "$F_{net} = ma$ isn't only an equation — it's also a **graph**. For a fixed acceleration $a$, the equation is just $F = (a)\\,m$: net force up the side, mass across the bottom, a straight line through the origin.\n\n- The **slope of that line is the acceleration** — every extra kilogram of mass needs $a$ more newtons of net force to keep the same acceleration.\n- A **steeper** line means a **larger** acceleration; a shallower line, a smaller one.\n\nThis is exactly the graph the Formula Explorer on the next card draws. ==The slope of a physics graph is almost never just a number== — here it is an acceleration, in m/s², and reading that off the line is a skill worth practising.",
+      "representation": "One idea, four faces: the **words** ('acceleration is net force divided by mass'); the **equation** $F_{net} = ma$; the **free-body diagram** whose leftover arrow is $\\vec{F}_{net}$; and the **$F$-vs-$m$ graph** whose slope is $a$. Being able to move between all four — not getting stuck in just one — is what separates exam-ready understanding from memorised substitution.",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "Several carts, each given just enough net force to accelerate at the same rate, are plotted as net force (y) against mass (x). The points fall on a straight line through the origin with slope 3.0. What is that slope physically, and what net force would a 5.0 kg cart need?",
+        "phases": [
+          {
+            "label": "Read the graph",
+            "steps": [
+              "The plot is net force $F_{net}$ (vertical) against mass $m$ (horizontal): a straight line through the origin, slope $= 3.0$.",
+              "**Question:** what physical quantity is that slope, and what are its units?"
+            ]
+          },
+          {
+            "label": "Match the equation to the graph",
+            "steps": [
+              "For a fixed acceleration, $F_{net} = ma$ is $F = (a)\\,m$ — the form $y = (\\text{slope})\\,x$ with $y = F_{net}$ and $x = m$.",
+              "So the slope sits exactly where $a$ is: the slope **is** the acceleration, $a = 3.0\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "Use it to predict",
+            "steps": [
+              "A 5.0 kg cart at that same acceleration needs $F_{net} = ma = (3.0\\text{ m/s}^2)(5.0\\text{ kg})$.",
+              "$F_{net} = 15\\text{ N}$ — which is just the point on the same line at $m = 5.0\\text{ kg}$."
+            ]
+          }
+        ],
+        "keyMove": "Seeing $F_{net} = ma$ as $F = (\\text{slope})\\,m$ — the slope sits in the $a$ position, so the slope *is* the acceleration, units and all."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-l3-q03",
+        "course": "AP Physics 1",
+        "unit": "Unit 2",
+        "lesson": "Newton's Second Law",
+        "objective": "2.5",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "",
+        "courses": ["ap-physics-1"],
+        "question": "A student plots net force (y-axis) against mass (x-axis) while keeping acceleration constant across several trials, and gets a straight line through the origin. What does the slope of this line represent?",
+        "choices": ["The object's acceleration.", "The object's weight.", "The net force in a single trial.", "The coefficient of friction."],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — with $a$ fixed, $F_{net}=ma$ is linear in $m$ with slope $a$, so the slope of an F-vs-m graph directly gives the acceleration used in the trials.",
+          "incorrect": {
+            "1": "Weight is $mg$, a specific force — it isn't what this slope represents; nothing about $g$ appears in this particular graph.",
+            "2": "Net force is one of the plotted axes itself, not the slope of the line.",
+            "3": "Nothing in this graph involves a normal force or friction — there's no basis to extract a friction coefficient here."
+          }
+        },
+        "hint": ["Match F_net = ma to y = (slope)x, treating F_net as y and m as x."],
+        "solution": "Matching $F_{net}=ma$ to $y=(\\text{slope})x$ shows slope $=a$."
       }
     }
   ],
   "interactiveComponent": {
     "type": "formula-explorer",
-    "description": "Use the sliders to vary mass and net force independently and observe the resulting acceleration, the F-vs-a graph, and the F-vs-m graph. Before moving a slider, predict what will happen."
+    "componentKey": "newtons-second-law-explorer",
+    "description": "One graph: net force $F$ up the side, mass $m$ across the bottom. The line is $F = a\\cdot m$, so **its steepness is the acceleration**. Move a slider — but first say out loud which way the line will tip.",
+    "graphs": [
+      { "key": "f-vs-m", "label": "Net force F versus mass m — the slope of the line is the acceleration" }
+    ]
+  },
+  "simulation": {
+    "componentKey": "cart-force-mass",
+    "title": "Cart on a Track",
+    "description": "Set the cart's mass and the applied force, **predict** what will happen, then press Play. Watch the red net-force vector and the growing green velocity vector. The side graph plots this cart on an $F$-vs-$m$ line whose **slope is its acceleration** — steeper line, harder acceleration.\n\nTurn on **friction** and a push that is too small won't move the cart at all: static friction rises to meet it, up to a maximum of $\\mu_s F_N$. Push harder than that maximum and the cart breaks free — then a smaller *kinetic* friction $\\mu_k F_N$ opposes the sliding.",
+    "predictionPrompt": {
+      "question": "If you double the cart's mass while keeping the applied force the same, will the cart reach a given point on the track sooner, later, or in the same time?",
+      "choices": ["Sooner", "Later", "The same time"]
+    }
   },
   "misconceptions": [
     {
-      "statement": "A heavier object requires a proportionally larger force just to keep it moving at constant velocity.",
-      "diagnostic": "A 10 kg block and a 2 kg block both slide at constant velocity across a frictionless floor. Does the 10 kg block need a larger applied force to keep moving?",
-      "correction": "At constant velocity, acceleration is zero, so by Newton's second law the *net* force is zero regardless of mass — on a frictionless surface, no applied force is needed at all to maintain constant velocity. Mass affects how hard it is to *change* an object's velocity (inertia), not what force is needed to sustain a constant one."
+      "id": "ap1-u2-l3-mc01",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.1",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "motion-requires-a-sustaining-force",
+      "courses": ["ap-physics-1"],
+      "question": "A hockey puck slides across frictionless ice at a constant 3 m/s. Which statement about the forces on the puck is correct?",
+      "choices": [
+        "No forces act on the puck at all.",
+        "The net force on the puck is zero — gravity and the normal force cancel, and no horizontal force is needed to sustain the motion.",
+        "A constant forward force must be acting on the puck to keep it moving at 3 m/s.",
+        "The puck is actually decelerating very slowly, even though it looks constant."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — constant velocity means zero acceleration, so by Newton's second law the net force is exactly zero. Vertically, gravity and the normal force cancel; horizontally, nothing pushes the puck and nothing needs to — no force is required to sustain motion at constant velocity, only to change it.",
+        "incorrect": {
+          "0": "Forces do act on the puck — gravity and the normal force are both present, even though they happen to cancel. 'No forces act' is different from 'the net force is zero.'",
+          "2": "This is the classic misconception this question is testing. A nonzero forward force would *accelerate* the puck, making it speed up — not keep it at a constant 3 m/s. Constant velocity requires zero net force, not a sustaining force.",
+          "3": "The problem states the ice is frictionless and the speed is constant — introducing an unstated deceleration contradicts the given scenario."
+        }
+      },
+      "hint": ["Constant velocity means zero acceleration. What does Newton's second law say the net force must be when a = 0?"],
+      "solution": "Constant velocity ⇒ $a=0$ ⇒ $F_{net}=0$ by Newton's second law."
+    },
+    {
+      "id": "ap1-u2-l3-mc02",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.3",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "force-directly-changes-speed-instantaneously",
+      "courses": ["ap-physics-1"],
+      "question": "A car cruising at 20 m/s suddenly has its engine's net forward force doubled. One second later, is the car's speed now 40 m/s?",
+      "choices": [
+        "Yes — doubling the force doubles the speed instantly.",
+        "No — doubling the net force doubles the acceleration, which changes the speed gradually over time, not instantly.",
+        "No — force has no effect on speed, only on direction.",
+        "Yes, but only because exactly one second has passed."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — Newton's second law relates force to acceleration ($a = F_{net}/m$), not directly to speed. Doubling the net force doubles the acceleration, so the speed increases *faster* than before, following $v = v_0 + at$ — but it does not jump instantaneously.",
+        "incorrect": {
+          "0": "This confuses force with speed directly. Force determines acceleration — the *rate* at which speed changes — not the speed itself at a given instant.",
+          "2": "Force absolutely affects speed, just not instantaneously — a net force in the direction of motion increases speed continuously over time via acceleration.",
+          "3": "The one-second detail is a distractor — the actual new speed after one second depends on the real acceleration value ($v = v_0 + at$), which isn't determined by this problem's given information, so there's no reason it would land exactly on 40 m/s."
+        }
+      },
+      "hint": ["Newton's second law relates force to acceleration, not speed directly. What equation connects acceleration to a change in speed over time?"],
+      "solution": "Doubling $F_{net}$ doubles $a$; speed increases according to $v = v_0 + at$, not instantaneously."
+    },
+    {
+      "id": "ap1-u2-l3-mc03",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.3",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "f-net-is-the-single-applied-force",
+      "courses": ["ap-physics-1"],
+      "question": "A box is pushed with 20 N to the right while kinetic friction of 5 N acts to the left. A student writes $F_{net}=20\\text{ N}$ in Newton's second law. What is the error?",
+      "choices": [
+        "There is no error — F_net is just whichever force was intentionally applied.",
+        "F_net should be the vector sum of every force acting on the box, so here $F_{net}=20\\text{ N}-5\\text{ N}=15\\text{ N}$.",
+        "F_net should be the average of the two forces, $12.5\\text{ N}$.",
+        "F_net should be the larger force multiplied by the smaller, since both forces are present."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $F_{net}$ always means the vector sum of *every* force acting on the object, not just the one you happened to apply. Here, the 5 N friction force opposes the 20 N push, so $F_{net}=20\\text{ N}-5\\text{ N}=15\\text{ N}$.",
+        "incorrect": {
+          "0": "This is exactly the misconception being tested — $F_{net}$ is never just 'the force you applied.' Every force acting on the object, including ones like friction that you didn't apply, contributes to $F_{net}$.",
+          "2": "Forces don't average — they add as vectors. Opposing forces subtract; only their vector sum (a simple subtraction here, since they're collinear) gives $F_{net}$.",
+          "3": "Forces are never multiplied together to find a net force — $F_{net}$ is always found through vector addition of the individual forces, never multiplication."
+        }
+      },
+      "hint": ["F_net means the vector sum of every force acting on the object. List every force present here before combining them."],
+      "solution": "$F_{net}=20\\text{ N}-5\\text{ N}=15\\text{ N}$ (friction opposes the push)."
+    },
+    {
+      "id": "ap1-u2-l3-mc04",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.4",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "identical-outcomes-imply-identical-forces",
+      "courses": ["ap-physics-1"],
+      "question": "Two blocks, A (2 kg) and B (8 kg), are each pushed by hand across a frictionless floor so that BOTH reach the same final speed after the same amount of time, starting from rest. A student claims this means the SAME force was applied to both blocks, 'since they had the identical result.' Is the student correct?",
+      "choices": [
+        "Yes — identical outcomes always mean identical forces were applied.",
+        "No — Block B, being four times more massive, required four times the net force to produce the same acceleration (and therefore the same speed change) as Block A.",
+        "No — Block B actually required less force, since heavier objects naturally resist acceleration and need less push to reach the same speed.",
+        "No — force isn't related to how fast an object speeds up, so this comparison doesn't tell us anything about the forces involved."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — reaching the same speed in the same time from rest means both blocks had the *same acceleration* ($a = \\Delta v/\\Delta t$). Since $F_{net}=ma$, producing that same acceleration in a block four times as massive requires four times the net force — equal outcomes here actually imply *unequal* forces, in direct proportion to the masses.",
+        "incorrect": {
+          "0": "This has the relationship backwards. Because the masses differ, achieving an identical outcome (same acceleration) actually requires *different* forces, scaled by each block's mass.",
+          "2": "This inverts Newton's second law. A more massive object needs *more* force, not less, to achieve the same acceleration — mass makes an object harder to accelerate, so it takes a bigger push, not a smaller one, to match a lighter object's acceleration.",
+          "3": "Force is directly related to how fast an object's velocity changes — that's precisely what $F_{net}=ma$ describes. This comparison reveals a great deal about the relative forces involved."
+        }
+      },
+      "hint": ["Same speed change over the same time means the same acceleration for both blocks. Now use F_net = ma with each block's own mass to compare the forces."],
+      "solution": "Same $a$ for both blocks; $F_{net}=ma$ scales with mass, so Block B needed $4\\times$ the force of Block A."
+    },
+    {
+      "id": "ap1-u2-l3-mc05",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.5",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "inverse-relationships-graph-as-straight-lines",
+      "courses": ["ap-physics-1"],
+      "question": "A student holds net force constant and varies an object's mass, plotting the resulting acceleration (y-axis) against mass (x-axis) for each trial. The student sketches the result as a straight line with a negative slope, reasoning that 'acceleration goes down as mass goes up, so it should be a straight decreasing line.' What is wrong with this prediction?",
+      "choices": [
+        "Nothing — a straight decreasing line correctly shows that acceleration decreases as mass increases.",
+        "The direction of the trend (decreasing) is correct, but the shape is wrong — since $a=F_{net}/m$ is an inverse relationship, the graph should be a curve that drops steeply at first and flattens out, approaching (but never reaching) zero, not a straight line.",
+        "The student has the trend backwards — acceleration should increase as mass increases.",
+        "The graph should be a straight line with a positive slope, since force and mass are both positive quantities."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the student correctly senses that acceleration decreases as mass increases, but a straight line describes a *linear* decrease that would eventually reach zero (and go negative) at some finite mass. Since $a=F_{net}/m$ is an *inverse* relationship, the true graph is a curve that drops quickly at small mass and flattens toward — but never touches — zero, no matter how large the mass gets.",
+        "incorrect": {
+          "0": "The trend direction is right, but the shape is wrong. A straight line implies acceleration would hit exactly zero at some specific, finite mass — but $a=F_{net}/m$ never actually reaches zero for any finite mass; it only approaches it.",
+          "2": "Physically, a larger mass under the same net force produces *less* acceleration, not more — $a=F_{net}/m$ means mass and acceleration move in opposite directions, so the student's decreasing trend is actually correct; only the shape (straight line vs. curve) is the error.",
+          "3": "A positive slope would mean acceleration *increases* with mass, which contradicts $a=F_{net}/m$ entirely — larger mass under the same force must produce smaller, not larger, acceleration."
+        }
+      },
+      "hint": ["Before sketching, check the relationship's shape: does a ∝ 1/m produce a straight line, or does it curve? Consider what happens to a as m becomes very large."],
+      "solution": "$a=F_{net}/m$ is an inverse relationship — a decreasing curve approaching zero, not a straight line."
     }
   ],
-  "representationConnections": "The same relationship $F_{net} = ma$ appears as: a linear F-vs-a graph (slope = m) when mass is fixed; a linear F-vs-m graph (slope = a) when acceleration is fixed; a free-body diagram whose vector sum gives F_net; and the verbal statement that acceleration is proportional to net force and inversely proportional to mass.",
-  "lessonAssessment": [],
-  "apIbConnection": "AP Physics 1 Free-Response questions frequently ask you to justify a claim about acceleration using Newton's second law in words, not just algebra — practice stating *why* a ∝ F_net and a ∝ 1/m, not just the equation.",
-  "summary": "Newton's second law, $\\vec{F}_{net} = m\\vec{a}$, relates net force, mass, and acceleration. Acceleration is proportional to net force and inversely proportional to mass. Always find the net force from a free-body diagram before applying the law.",
+  "errorAnalysis": [
+    {
+      "studentWork": "A ball is thrown straight up. A student writes: *\"At the very top of its path, the ball's velocity is zero. Since acceleration is how fast velocity changes, and velocity is zero, there's nothing left to change — so acceleration must be zero at the top too.\"*",
+      "prompts": [
+        "Identify the error in this reasoning.",
+        "Explain why the reasoning is incorrect.",
+        "Provide the correct reasoning, using Newton's second law.",
+        "State the correct result for the ball's acceleration at the top of its path."
+      ],
+      "modelResponse": "The error is confusing a zero **value** of velocity with a zero **rate of change** of velocity — these are different things. Newton's second law asks what force is acting on the ball, not what its velocity happens to be at that instant. Throughout the entire flight, including at the top, the only force on the ball is gravity, $F_{net} = -mg$ (taking up as positive), since gravity doesn't switch off when velocity happens to pass through zero. By $\\vec{a} = \\vec{F}_{net}/m$, the acceleration is therefore $a = -g \\approx -9.8\\text{ m/s}^2$ at every point in the flight, including the top — constant, nonzero, and directed downward the entire time."
+    }
+  ],
+  "representationConnections": "The same relationship $F_{net} = ma$ appears as: a linear **$F$-vs-$m$ graph** whose slope is the acceleration $a$; a **free-body diagram** whose leftover arrow (after the cancelling pairs are crossed out) is $\\vec{F}_{net}$; the **symbolic equation** itself; and the **verbal** statement that acceleration is proportional to net force and inversely proportional to mass. Being able to move between all four without getting stuck in just one is exactly what distinguishes exam-ready understanding from memorized substitution.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-l3-la01",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.3",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "courses": ["ap-physics-1"],
+      "question": "A net force of 15 N acts on a 5.0 kg object. What is its acceleration?",
+      "choices": ["3.0 m/s²", "0.33 m/s²", "75 m/s²", "20 m/s²"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $a = F_{net}/m = 15/5.0 = 3.0\\text{ m/s}^2$.",
+        "incorrect": {
+          "1": "This inverts the division — check which quantity goes on top when solving F_net = ma for a.",
+          "2": "This multiplies force and mass instead of dividing.",
+          "3": "This adds force and mass rather than dividing one by the other."
+        }
+      },
+      "hint": ["a = F_net / m."],
+      "solution": "$a = 15/5.0 = 3.0\\text{ m/s}^2$."
+    },
+    {
+      "id": "ap1-u2-l3-la02",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.5",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "",
+      "courses": ["ap-physics-1"],
+      "question": "For a fixed net force, an F-vs-m graph (constant $F$, varying $m$ across trials, plotting $F$ against $m$) would be what shape?",
+      "choices": [
+        "A horizontal line — F doesn't depend on m in this graph since F is being held constant.",
+        "A straight line through the origin with positive slope.",
+        "A curve that decreases as m increases.",
+        "A vertical line."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — if F itself is the fixed, controlled quantity across every trial, plotting it against m gives a horizontal line at that constant F value, regardless of m. (Contrast this with holding *acceleration* constant and plotting F vs m, which *does* give a rising line with slope a — that's a different experiment.)",
+        "incorrect": {
+          "1": "A rising line through the origin is what you'd get holding acceleration constant, not holding force constant — re-read which quantity is fixed here.",
+          "2": "F=ma doesn't produce a decreasing curve for any of its normal variables held fixed.",
+          "3": "A vertical line would mean m is fixed while F varies freely — that's not what's described here."
+        }
+      },
+      "hint": ["Ask: which quantity is being deliberately held the same across every trial, and which two are being plotted against each other?"],
+      "solution": "Holding F fixed and varying m, then plotting F vs m, gives a horizontal line at that F value — m has no effect on the plotted quantity when F is what's fixed."
+    },
+    {
+      "id": "ap1-u2-l3-la03",
+      "course": "AP Physics 1",
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law",
+      "objective": "2.7",
+      "skill": "transfer",
+      "representation": "free-body-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "treats-incline-acceleration-as-equal-to-g",
+      "courses": ["ap-physics-1"],
+      "question": "A block slides down a frictionless incline angled at 30° above horizontal. What is the magnitude of its acceleration down the incline?",
+      "choices": ["$g\\sin(30°) \\approx 4.9\\text{ m/s}^2$", "$g\\cos(30°) \\approx 8.5\\text{ m/s}^2$", "$g \\approx 9.8\\text{ m/s}^2$", "$g\\tan(30°) \\approx 5.7\\text{ m/s}^2$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — only the component of gravity *along* the incline accelerates the block; the normal force cancels the perpendicular component. That component is $mg\\sin(30°)$, so $a = g\\sin(30°) \\approx 4.9\\text{ m/s}^2$ — independent of the block's mass.",
+        "incorrect": {
+          "1": "This uses cosine where sine belongs — cos(30°) gives the component of gravity *perpendicular* to the incline (which the normal force cancels), not the component along it.",
+          "2": "This treats the block as if it were in free fall, ignoring that the incline's normal force removes the perpendicular component of gravity entirely — only part of gravity contributes to acceleration here.",
+          "3": "tan(30°) isn't the component of gravity along a frictionless incline — that requires resolving gravity into components using sine and cosine relative to the incline's angle, not tangent."
+        }
+      },
+      "hint": ["Draw the free-body diagram: gravity straight down, normal force perpendicular to the incline surface. Resolve gravity into components parallel and perpendicular to the incline before applying Newton's second law along the incline direction."],
+      "solution": "Along the incline: $F_{net} = mg\\sin\\theta$ (normal force has no component along the incline on a frictionless surface). So $a = g\\sin\\theta = g\\sin(30°) \\approx 4.9\\text{ m/s}^2$."
+    }
+  ],
+  "summary": "- [[Newton's second law]] states $\\vec{F}_{net} = m\\vec{a}$ — acceleration is directly proportional to net force and inversely proportional to mass.\n- A free-body diagram is how you find $\\vec{F}_{net}$ in the first place: identify the system, identify every force, then combine them by vector addition.\n- Given any two of $F_{net}$, $m$, and $a$, you can solve directly for the third from $a = F_{net}/m$.\n- When force and mass change together, their effects on acceleration **multiply**, not add or cancel.\n- On an $F$-vs-$m$ graph the slope is the acceleration — a graph's slope is always a physical quantity with units, not just a number.\n- Constant velocity means zero net force, not zero force — force sustains nothing; it only causes *change*.\n- The same law applies to unfamiliar multi-force situations (inclines, angled ropes), not just the frictionless-cart case it was introduced with.\n- A strong written justification follows Claim → Principle → Evidence → Reasoning → Conclusion, not just a final equation.",
   "exitQuestion": {
     "id": "ap1-u2-l3-qexit",
     "course": "AP Physics 1",
     "unit": "Unit 2",
     "lesson": "Newton's Second Law",
-    "objective": "2.3",
-    "skill": "multi-representation-reasoning",
-    "representation": "graph",
+    "objective": "2.7",
+    "skill": "transfer",
+    "representation": "vector-diagram",
     "type": "multiple-choice",
-    "difficulty": "ap-ib-standard",
-    "cognitiveLevel": 4,
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
     "misconceptionTested": "",
-    "apIbConnection": "AP1 SP 2.C",
-    "question": "A student plots net force on the y-axis against acceleration on the x-axis for a single object of unknown mass and gets a straight line through the origin. What does the slope of this line represent?",
-    "choices": ["The object's mass.", "The object's weight.", "The object's acceleration.", "The coefficient of friction."],
+    "courses": ["ap-physics-1"],
+    "question": "A 4.0 kg box on a frictionless horizontal floor is pulled by a rope that makes a 40° angle above the horizontal, with tension 20 N. What is the box's horizontal acceleration?",
+    "choices": ["≈ 3.8 m/s²", "5.0 m/s²", "≈ 3.2 m/s²", "≈ 0.39 m/s²"],
     "correctAnswer": 0,
     "feedback": {
-      "correct": "Correct — F_net = ma means F_net vs a is linear with slope m, so the slope directly gives the object's mass.",
+      "correct": "Correct — only the horizontal component of tension accelerates the box horizontally: $F_x = T\\cos(40°) \\approx 20 \\times 0.766 \\approx 15.3\\text{ N}$, so $a = F_x/m \\approx 15.3/4.0 \\approx 3.8\\text{ m/s}^2$.",
       "incorrect": {
-        "1": "Weight is mg, a force — it isn't what this particular slope represents; the axes here are F_net and a, not F_net and g.",
-        "2": "Acceleration is already one of the plotted axes, not the slope of the line.",
-        "3": "Nothing in this graph involves a normal force or friction — there's no basis to extract a friction coefficient here."
+        "1": "This uses the full 20 N tension without resolving it into components first — but only the horizontal component of the rope's pull accelerates the box horizontally.",
+        "2": "This uses sin(40°) instead of cos(40°) — sine gives the *vertical* component of the tension (which affects the normal force, not the horizontal acceleration on this frictionless floor), not the horizontal one.",
+        "3": "This divides the horizontal force by the box's weight ($mg$) instead of its mass ($m$) — check units: force divided by mass gives acceleration; force divided by weight gives a dimensionless ratio."
       }
     },
-    "hint": ["Compare F_net = ma to the general line equation y = (slope)·x."],
-    "solution": "Matching F_net = m·a to y = (slope)·x shows slope = m."
+    "hint": [
+      "This isn't a straight horizontal push — the rope's tension has both a horizontal and a vertical component. Which component actually produces horizontal acceleration?",
+      "Resolve the tension into components first: T cos(40°) horizontal, T sin(40°) vertical. Only one of these belongs in F_net for horizontal motion."
+    ],
+    "solution": "$F_x = T\\cos(40°) \\approx 15.3\\text{ N}$. $a = F_x/m \\approx 15.3/4.0 \\approx 3.8\\text{ m/s}^2$."
   },
-  "furtherPracticeQuestionIds": []
+  "questionBankFile": "ap1-u2-dynamics.json",
+  "furtherPracticeQuestionIds": [
+    "ap1-u2-l3-fp02",
+    "ap1-u2-l3-fp03",
+    "ap1-u2-l3-fp04",
+    "ap1-u2-l3-fp05",
+    "ap1-u2-l3-fp24",
+    "ap1-u2-l3-fp25",
+    "ap1-u2-l3-fp26",
+    "ap1-u2-l3-fp27",
+    "ap1-u2-l3-fp28",
+    "ap1-u2-l3-fp29",
+    "ap1-u2-l3-fp31",
+    "ap1-u2-l3-fp32",
+    "ap1-u2-l3-fp33"
+  ]
 }

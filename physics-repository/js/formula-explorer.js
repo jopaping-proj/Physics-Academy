@@ -1,11 +1,17 @@
 /**
- * Slider-driven formula manipulative (master-project-prompt.md §12).
- * Phase 1 skeleton: wires up slider → live value/equation updates and
- * emits a change event graphs.js / simulations.js can listen for.
- * Phase 2 (Newton's Second Law prototype) will configure a real
- * instance of this against F = ma.
+ * Slider-driven formula manipulative (master-project-prompt.md §12):
+ * wires up slider → live value/equation updates and emits a change
+ * event other scripts can listen for. Used by both the Newton's
+ * Second Law Formula Explorer and the Cart on a Track simulation's
+ * mass/force sliders.
+ *
+ * Plain script, not an ES module — see js/content-loader.js for why.
+ * Wrapped in an IIFE so its internals don't leak into the shared
+ * top-level scope every plain <script> on the page shares.
  */
+window.PA = window.PA || {};
 
+(function () {
 /**
  * @param {HTMLElement} container - the .interactive-panel element
  * @param {{
@@ -14,7 +20,7 @@
  *   render: (results: Record<string, number>, values: Record<string, number>) => void
  * }} config
  */
-export function initFormulaExplorer(container, config) {
+function initFormulaExplorer(container, config) {
   const values = {};
   config.variables.forEach((v) => (values[v.key] = v.initial));
 
@@ -59,3 +65,6 @@ export function initFormulaExplorer(container, config) {
   const results = config.compute(values);
   config.render(results, values);
 }
+
+window.PA.formulaExplorer = { initFormulaExplorer };
+})();

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "node build/build.js",
-    "serve": "node build/build.js && npx --yes serve dist"
+    "serve": "node build/build.js && node build/serve.js"
   },
   "engines": {
     "node": ">=18"

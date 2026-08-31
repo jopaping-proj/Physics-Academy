@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 196" role="img"
+     aria-label="Free-body diagram for the 2.0 kilogram cart pushed with 6.0 newtons. The cart's wheels sit on the track surface. Weight (down) and the normal force (up) are drawn faint because they are equal and opposite and cancel. The only force left starts at the cart and points right: the 6.0 newton net force.">
+  <defs>
+    <marker id="ah-faint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6b7583"/>
+    </marker>
+    <marker id="ah-net" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#f0c27a"/>
+    </marker>
+  </defs>
+
+  <!-- track surface -->
+  <line x1="20" y1="150" x2="168" y2="150" stroke="#8b96a5" stroke-width="1.5"/>
+
+  <!-- the cart: box on two wheels, wheels resting on top of the surface -->
+  <rect x="52" y="100" width="84" height="38" rx="3" fill="#e6edf3" fill-opacity="0.06" stroke="#e6edf3" stroke-width="1.5"/>
+  <circle cx="74" cy="144" r="6" fill="none" stroke="#e6edf3" stroke-width="1.4"/>
+  <circle cx="118" cy="144" r="6" fill="none" stroke="#e6edf3" stroke-width="1.4"/>
+  <circle cx="94" cy="119" r="2" fill="#e6edf3"/>
+
+  <!-- weight and normal force: faint, equal and opposite -> they cancel -->
+  <g opacity="0.5">
+    <line x1="88" y1="119" x2="88" y2="176" stroke="#6b7583" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ah-faint)"/>
+    <line x1="100" y1="119" x2="100" y2="58" stroke="#6b7583" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ah-faint)"/>
+  </g>
+  <text x="66" y="172" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">F</text>
+  <text x="74" y="176" font-family="system-ui, sans-serif" font-size="9" fill="#8b96a5">g</text>
+  <text x="94" y="52" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">F</text>
+  <text x="102" y="56" font-family="system-ui, sans-serif" font-size="9" fill="#8b96a5">N</text>
+  <text x="150" y="126" font-family="system-ui, sans-serif" font-size="12" font-style="italic" fill="#8b96a5">equal &amp; opposite &#8594; cancel</text>
+
+  <!-- net force: starts at the cart, points right -->
+  <line x1="94" y1="110" x2="286" y2="110" stroke="#f0c27a" stroke-width="4" marker-end="url(#ah-net)"/>
+  <text x="150" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f0c27a">F</text>
+  <text x="159" y="92" font-family="system-ui, sans-serif" font-size="10" fill="#f0c27a">net</text>
+  <text x="172" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f0c27a">= 6.0 N, to the right</text>
+</svg>
