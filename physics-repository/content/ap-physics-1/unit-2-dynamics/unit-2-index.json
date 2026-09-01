@@ -15,7 +15,7 @@
     { "type": "module", "label": "Lesson 4", "slug": "newtons-second-law", "title": "Newton's Second Law: Force, Mass, and Acceleration", "cluster": "C2.3", "status": "reference" },
     { "type": "module", "label": "Lesson 5", "slug": "newtons-second-law-multi-force", "title": "Newton's Second Law: Multi-Force and Two-Axis Problems", "cluster": "C2.5", "status": "approved" },
     { "type": "module", "label": "Lesson 6", "slug": "newtons-third-law", "title": "Newton's Third Law: Interaction Pairs vs Balanced Forces", "cluster": "C2.6", "status": "approved" },
-    { "type": "module", "label": "Lesson 7", "slug": "friction-static-and-kinetic", "title": "Friction: Static and Kinetic", "cluster": "C2.8", "status": "draft" },
+    { "type": "module", "label": "Lesson 7", "slug": "friction-static-and-kinetic", "title": "Friction: Static and Kinetic", "cluster": "C2.8", "status": "approved" },
     { "type": "module", "label": "Lesson 8", "slug": null, "title": "Connected Objects and Systems", "cluster": "C2.7", "status": "planned" },
     { "type": "module", "label": "Lesson 9", "slug": null, "title": "Gravitation, Springs, and Apparent Weight", "cluster": "C2.10", "status": "planned" },
     { "type": "module", "label": "Lesson 10", "slug": null, "title": "Inclined Planes (synthesis capstone)", "cluster": "C2.9", "status": "planned" },

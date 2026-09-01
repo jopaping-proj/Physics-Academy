@@ -10,7 +10,7 @@
   "cedTopic": "2.7",
   "clusterId": "2.8",
   "lessonTitle": "Friction: Static and Kinetic",
-  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "status": "approved — physics reviewed 2026-09-02",
   "prerequisites": [
     "Building a free-body diagram and using $\\sum F_y = 0$ to find the normal force (Lessons 2, 5)",
     "The normal force is whatever $\\sum F_\\perp = 0$ requires — not always $mg$ (Lesson 5)",

@@ -8,8 +8,14 @@
  *     `difficulty`, `courses`, `cognitiveLevel` value must be defined in
  *     data/taxonomies.json (never invented inline);
  *   - `courses` present and non-empty on every bank item and lesson;
- *   - `objective` in the C-prefixed cluster form (`C2.x`) with a
- *     `cedTopic` naming a real CED topic (the §12.15 migration target);
+ *   - `objective` in the C-prefixed cluster form (`C<unit>.<cluster>`,
+ *     e.g. `C2.5`) with a `cedTopic` in the matching `<unit>.<topic>` form
+ *     (e.g. `2.5`) — checked structurally (same leading unit number), not
+ *     against a fixed per-unit topic list, so this applies to any unit of
+ *     any course, not just AP Physics 1 Unit 2 (the §12.15 migration
+ *     target). `objective` itself stays optional — a course/lesson that
+ *     hasn't adopted this alignment scheme (e.g. BASIS Physics 8 today)
+ *     just omits it;
  *   - multiple-choice: ≥2 choices, in-range answer key, and a
  *     `feedback.incorrect` entry for every distractor (review check 3);
  *   - free-response: parts with prompts + a model response or a figure,
@@ -26,7 +32,10 @@ import path from "node:path";
 import { ROOT, CONTENT_DIR } from "./render/paths.js";
 
 const BANK_DIR = path.join(ROOT, "data", "question-bank");
-const VALID_CED_TOPICS = new Set(["2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9"]);
+// C<unit>.<cluster> (e.g. "C2.5") and the matching <unit>.<topic> CED form
+// (e.g. "2.5") — unit-generic by design, see the file header.
+const OBJECTIVE_RE = /^C(\d+)\.\d+$/;
+const CED_TOPIC_RE = /^(\d+)\.\d+$/;
 
 function walkJsonFiles(dir) {
   const out = [];
@@ -67,13 +76,19 @@ export function validateContent({ taxonomies }) {
 
   function checkObjective(where, obj) {
     if (obj.objective == null) return; // objective is optional on some items
-    if (!/^C2\.\d+$/.test(obj.objective)) {
+    const objMatch = OBJECTIVE_RE.exec(obj.objective);
+    if (!objMatch) {
       errors.push(`${where}: objective "${obj.objective}" is not in the C-prefixed cluster form (expected e.g. "C2.5")`);
     }
     if (obj.cedTopic == null) {
       errors.push(`${where}: has "objective" but no "cedTopic" (§12.15 migration)`);
-    } else if (!VALID_CED_TOPICS.has(obj.cedTopic)) {
-      errors.push(`${where}: cedTopic "${obj.cedTopic}" is not a real AP Physics 1 Unit 2 CED topic (2.1–2.9)`);
+    } else {
+      const topicMatch = CED_TOPIC_RE.exec(obj.cedTopic);
+      if (!topicMatch) {
+        errors.push(`${where}: cedTopic "${obj.cedTopic}" is not in the "<unit>.<topic>" CED form (expected e.g. "2.5")`);
+      } else if (objMatch && topicMatch[1] !== objMatch[1]) {
+        errors.push(`${where}: cedTopic "${obj.cedTopic}" is from a different unit than objective "${obj.objective}" (expected a "${objMatch[1]}.x" topic)`);
+      }
     }
     // clusterId is the bare cluster number, must agree with objective (§9.2)
     const bareCluster = obj.objective.replace(/^C/, "");
