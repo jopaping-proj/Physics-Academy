@@ -17,10 +17,13 @@ A second, independent physics reader is still needed.
 
 ## Verdict
 
-**Concept inventory (all 27 items): APPROVED** by the project owner 2026-09-01 —
-`unit-2-concept-check.json` `status` updated. (Form still to be frozen after pilot
-item-analysis, §10.5.) The lesson and the FBD bank remain **draft** pending the
-independent human read of the physics.
+**Concept inventory (all 27 items): APPROVED** 2026-09-01. (Form still to be frozen
+after pilot item-analysis, §10.5.)
+
+**Lesson 2 — Forces and Free-Body Diagrams: APPROVED** 2026-09-01 —
+`forces-and-free-body-diagrams.json` `status` updated. The `AP1-U2-MCQ-051…058`
+FBD bank items are covered by the same review (findings below) and are approved
+with it.
 
 **No blocking physics or numerical errors found.** Every worked-example number, every
 MCQ key, and the FRQ point split were recomputed from scratch and agree:

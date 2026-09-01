@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140" role="img"
+     aria-label="Two astronauts 12 metres apart hold a rope: a 60 kilogram astronaut on the left and a 90 kilogram astronaut on the right. A star marks their centre of mass at 7.2 metres from the 60 kilogram astronaut and 4.8 metres from the 90 kilogram astronaut. With no external force they pull themselves together and meet at that star.">
+  <!-- Labels placed clear of the rope, the astronauts, and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="ar-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f85149"/></marker>
+  </defs>
+
+  <!-- rope: 0 m at x=40px, 12 m at x=280px (20 px/m); centre of mass 7.2 m -> x=184 -->
+  <line x1="40" y1="80" x2="280" y2="80" stroke="#6b7787" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- 60 kg astronaut -->
+  <rect x="26" y="66" width="28" height="28" rx="3" fill="#58a6ff" fill-opacity="0.18" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="40" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#58a6ff">60 kg</text>
+  <line x1="58" y1="72" x2="88" y2="72" stroke="#f85149" stroke-width="2" marker-end="url(#ar-red)"/>
+
+  <!-- 90 kg astronaut -->
+  <rect x="264" y="62" width="34" height="36" rx="3" fill="#58a6ff" fill-opacity="0.18" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="281" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#58a6ff">90 kg</text>
+  <line x1="262" y1="72" x2="232" y2="72" stroke="#f85149" stroke-width="2" marker-end="url(#ar-red)"/>
+
+  <!-- centre of mass -->
+  <line x1="184" y1="44" x2="184" y2="80" stroke="#f0c27a" stroke-width="1" stroke-dasharray="3 3"/>
+  <path d="M184 32 l3.1 6.9 7.5 0.8 -5.6 5.1 1.5 7.4 -6.4 -3.9 -6.4 3.9 1.5 -7.4 -5.6 -5.1 7.5 -0.8 z" fill="#f0c27a"/>
+
+  <text x="112" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">7.2 m</text>
+  <text x="232" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">4.8 m</text>
+  <text x="160" y="126" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">★ they meet here — the centre of mass</text>
+</svg>

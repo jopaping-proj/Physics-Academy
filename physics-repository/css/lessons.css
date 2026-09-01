@@ -196,6 +196,15 @@
 .slide__body > :last-child { margin-bottom: 0; }
 .slide__body h3 { font-size: var(--text-lg); }
 
+/* display equations on a card read as a headline, not body text */
+.slide__body .katex-display { font-size: 1.35em; margin: var(--space-3) 0; }
+.slide__body .katex-display > .katex { font-size: inherit; }
+
+/* a diagram shown with a quiz / FRQ question stem */
+.quiz__figure, .frq__figure { margin: var(--space-2) 0 var(--space-3); }
+.quiz__figure .figure, .frq__figure .figure { background: var(--bg-panel); }
+.quiz__figure .figure-row, .frq__figure .figure-row { margin: 0; }
+
 /* content-heavy cards (summary, further practice) scroll inside the card
    rather than making the card taller than the screen */
 .slide--scroller .slide__body {
@@ -482,9 +491,11 @@
   color: var(--text-secondary);
   border-top: 1px solid var(--border-subtle);
 }
-.com__grid { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-3); }
+.com__grid { display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-4); margin-bottom: var(--space-3); }
 .com__row { display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); }
-.com__val { min-width: 3.2rem; color: var(--text-secondary); }
+.com__name { font-weight: 600; color: var(--text-primary); min-width: 3.4rem; }
+.com__row input[type="range"] { width: 8rem; }
+.com__val { min-width: 3rem; color: var(--text-secondary); }
 .com__buttons { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2); }
 .com__btn {
   padding: var(--space-2) var(--space-3);

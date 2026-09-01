@@ -60,17 +60,21 @@
     grid.className = "com__grid";
     controls.appendChild(grid);
     const massInputs = [];
-    ["Left mass", "Right mass"].forEach((label, i) => {
-      const row = document.createElement("label");
+    ["Mass 1", "Mass 2"].forEach((label, i) => {
+      const row = document.createElement("div");
       row.className = "com__row";
-      row.append(document.createTextNode(`${label}: `));
+      const name = document.createElement("label");
+      name.className = "com__name";
+      name.textContent = label;
       const input = document.createElement("input");
       input.type = "range";
       input.min = "1";
       input.max = "10";
       input.step = "1";
       input.value = String(state.m[i]);
+      input.id = `com-mass-${i + 1}`;
       input.setAttribute("aria-label", `${label} in kilograms`);
+      name.setAttribute("for", input.id);
       const out = document.createElement("span");
       out.className = "com__val";
       out.textContent = `${state.m[i]} kg`;
@@ -79,7 +83,7 @@
         out.textContent = `${state.m[i]} kg`;
         if (state.mode === "idle") draw();
       });
-      row.append(input, out);
+      row.append(name, input, out);
       grid.appendChild(row);
       massInputs.push({ input, out });
     });
@@ -156,9 +160,9 @@
         note.innerHTML =
           "<strong>Internal.</strong> The masses push on <em>each other</em> — an equal-and-opposite pair. They fly apart, but the ★ center of mass does not move at all.";
       } else {
-        // constant external force on the LEFT mass during the push phase
+        // constant external force on mass 1 during the push phase
         state.v = [0, 0];
-        state.pushF = 7;
+        state.pushF = 3.5;
         note.hidden = false;
         note.innerHTML =
           "<strong>External.</strong> A force from outside pushes the left mass. The net external force is non-zero, so the ★ center of mass accelerates — though less than the pushed mass, since it carries the total mass " +
@@ -188,8 +192,10 @@
         state.x[1] += state.v[1] * dt;
       }
 
-      // stop at the track edges or after 2.6 s
-      const hitEdge = state.x.some((x, i) => x <= X_MIN + 0.3 || x >= X_MAX - 0.3);
+      // stop at the track edges, if the masses would collide, or after 2.6 s
+      const collide = state.x[0] > state.x[1] - 0.6;
+      const hitEdge = collide || state.x.some((x) => x <= X_MIN + 0.3 || x >= X_MAX - 0.3);
+      if (collide) state.x[0] = state.x[1] - 0.6;
       if (hitEdge) {
         state.x[0] = clamp(state.x[0], X_MIN + 0.3, X_MAX - 0.3);
         state.x[1] = clamp(state.x[1], X_MIN + 0.3, X_MAX - 0.3);
@@ -267,17 +273,23 @@
         }
       }
 
-      // masses
+      // masses — circle sized by mass, tagged "1"/"2", with its kg value above
       [0, 1].forEach((i) => {
         const px = toPx(state.x[i]);
         const r = radius(state.m[i]);
+        const cyM = y - r + 2;
         ctx.fillStyle = "#58a6ff";
         ctx.beginPath();
-        ctx.arc(px, y - r + 2, r, 0, Math.PI * 2);
+        ctx.arc(px, cyM, r, 0, Math.PI * 2);
         ctx.fill();
+        ctx.fillStyle = "#0d1117";
+        ctx.font = "700 12px system-ui, sans-serif";
+        ctx.textBaseline = "middle";
+        ctx.fillText(String(i + 1), px, cyM);
+        ctx.textBaseline = "alphabetic";
         ctx.fillStyle = cssVar("--sim-text", "#e0e0e0");
         ctx.font = "600 11px system-ui, sans-serif";
-        ctx.fillText(`${state.m[i]} kg`, px, y - 2 * r - 4);
+        ctx.fillText(`${state.m[i]} kg`, px, y - 2 * r - 6);
       });
 
       // ★ center of mass
@@ -288,9 +300,9 @@
       ctx.fillText("★ center of mass", cpx, y + 40);
 
       readout.textContent =
-        `left: ${state.m[0]} kg at ${state.x[0].toFixed(1)} m   ·   ` +
-        `right: ${state.m[1]} kg at ${state.x[1].toFixed(1)} m   ·   ` +
-        `center of mass: ${cm.toFixed(2)} m`;
+        `mass 1: ${state.m[0]} kg at ${state.x[0].toFixed(1)} m   ·   ` +
+        `mass 2: ${state.m[1]} kg at ${state.x[1].toFixed(1)} m   ·   ` +
+        `★ center of mass: ${cm.toFixed(2)} m`;
     }
 
     function star(c, cx, cy, R) {

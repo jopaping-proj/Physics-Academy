@@ -10,7 +10,7 @@
   "cedTopic": "2.2",
   "clusterId": "2.2",
   "lessonTitle": "Forces and Free-Body Diagrams",
-  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "status": "approved — physics reviewed 2026-09-01 (docs/reviews/2026-09-01-unit-2-forces-fbd-review.md)",
   "prerequisites": [
     "Vectors: adding vectors, and resolving a vector into perpendicular components with sine and cosine",
     "The idea of acceleration as the rate of change of velocity (Unit 1)"

@@ -64,6 +64,10 @@
   color: var(--text-secondary);
 }
 
+/* the objective text (with any inline math / key-terms) is one flex item,
+   laid out as normal inline flow so everything stays on the baseline */
+.objective-list li > span { flex: 1; min-width: 0; }
+
 .objective-list li::before {
   content: "";
   flex: 0 0 1rem;

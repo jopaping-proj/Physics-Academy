@@ -11,7 +11,7 @@
     { "type": "concept-check", "phase": "pre", "slug": "unit-2-concept-check", "title": "Unit 2 Concept Check", "note": "Take this first — calculator-free, score only, ~25 min." },
     { "type": "module", "label": "Lesson 1", "slug": "systems-and-center-of-mass", "title": "Systems and Center of Mass", "cluster": "C2.11", "status": "draft" },
     { "type": "module", "label": "Lesson 2", "slug": "forces-and-free-body-diagrams", "title": "Forces and Free-Body Diagrams", "cluster": "C2.2", "status": "draft" },
-    { "type": "module", "label": "Lesson 3", "slug": null, "title": "Newton's First Law, Inertia, and Equilibrium", "cluster": "C2.1", "status": "planned" },
+    { "type": "module", "label": "Lesson 3", "slug": "newtons-first-law", "title": "Newton's First Law: Inertia and Equilibrium", "cluster": "C2.1", "status": "draft" },
     { "type": "module", "label": "Lesson 4", "slug": "newtons-second-law", "title": "Newton's Second Law: Force, Mass, and Acceleration", "cluster": "C2.3", "status": "reference" },
     { "type": "module", "label": "Lesson 5", "slug": null, "title": "Newton's Second Law: Multi-Force and Two-Axis Problems", "cluster": "C2.5", "status": "planned" },
     { "type": "module", "label": "Lesson 6", "slug": null, "title": "Newton's Third Law: Interaction Pairs vs Balanced Forces", "cluster": "C2.6", "status": "planned" },

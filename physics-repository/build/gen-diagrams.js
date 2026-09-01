@@ -95,6 +95,44 @@ const DIAGRAMS = {
       { sym: "F_N", dir: "right", mag: 4, anchor: [158, 112], color: "blue" },
     ],
   },
+
+  // ---- Lesson 3 · Newton's First Law and Equilibrium ----
+  "first-law/fbd-crate-constant-v.svg": {
+    style: "box",
+    surface: { side: "bottom" },
+    ariaLabel:
+      "Box free-body diagram of a crate being dragged across a level floor at constant velocity. Four forces, all equal in length: gravity down from the centre, the normal force up from the bottom surface, the applied pull to the right from the back face, and friction to the left along the bottom surface. Every force is balanced by an equal and opposite one.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 112], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [138, 134], color: "blue" },
+      { sym: "F_app", dir: "right", mag: 3, anchor: [116, 108], color: "amber" },
+      { sym: "f", dir: "left", mag: 3, anchor: [168, 134], color: "red" },
+    ],
+  },
+
+  "first-law/fbd-lamp-two-cables.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a lamp hanging at rest from two cables, each 30 degrees above the horizontal. Gravity acts straight down. Each cable's tension acts up and outward at 30 degrees; the two tensions are equal.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
+      { sym: "F_T", dir: 150, mag: 4, anchor: [143, 108], color: "amber" },
+      { sym: "F_T", dir: 30, mag: 4, anchor: [157, 108], color: "amber" },
+    ],
+  },
+
+  "first-law/fbd-traffic-light.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a traffic light hanging from the midpoint of a nearly horizontal cable. Gravity acts straight down. Each half of the cable pulls up and outward at only 15 degrees above the horizontal, so each tension arrow is long — much longer than the weight.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+      { sym: "T_1", dir: 165, mag: 5, anchor: [142, 110], color: "amber" },
+      { sym: "T_2", dir: 15, mag: 5, anchor: [158, 110], color: "amber" },
+    ],
+  },
 };
 
 let n = 0;

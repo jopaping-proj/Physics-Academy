@@ -33,6 +33,10 @@ jobs:
         working-directory: physics-repository
         run: node build/build.js
       - uses: actions/configure-pages@v5
+        with:
+          # Switch the repo's Pages source to "GitHub Actions" automatically on
+          # the first run, so no manual Settings -> Pages toggle is needed.
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: physics-repository/dist

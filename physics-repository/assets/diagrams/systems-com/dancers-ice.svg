@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 190" role="img"
+     aria-label="Two dancers on frictionless ice, enclosed by a dashed system boundary, pull themselves toward each other. Two arrows point inward — the equal and opposite internal pair of hand forces. A star at the midpoint marks the centre of mass, which does not move: the dancers slide in toward it.">
+  <!-- Labels placed clear of the boundary, the dancers, and the arrows (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="di-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f85149"/></marker>
+  </defs>
+
+  <!-- ice -->
+  <line x1="24" y1="140" x2="316" y2="140" stroke="#3a4a6c" stroke-width="1.5"/>
+
+  <!-- system boundary -->
+  <ellipse cx="170" cy="101" rx="128" ry="40" fill="none" stroke="#e6edf3" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="170" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">system: both dancers</text>
+
+  <!-- dancers as blocks -->
+  <rect x="60" y="78" width="40" height="46" rx="3" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="80" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">dancer</text>
+  <rect x="240" y="78" width="40" height="46" rx="3" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="260" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">dancer</text>
+
+  <!-- internal pair: each pulled toward the other -->
+  <line x1="120" y1="101" x2="150" y2="101" stroke="#f85149" stroke-width="2.5" marker-end="url(#di-red)"/>
+  <line x1="220" y1="101" x2="190" y2="101" stroke="#f85149" stroke-width="2.5" marker-end="url(#di-red)"/>
+  <text x="170" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f85149">internal pair — equal and opposite</text>
+
+  <!-- centre of mass at the midpoint -->
+  <path d="M170 74 l3.1 6.9 7.5 0.8 -5.6 5.1 1.5 7.4 -6.4 -3.9 -6.4 3.9 1.5 -7.4 -5.6 -5.1 7.5 -0.8 z" fill="#f0c27a"/>
+  <text x="170" y="44" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f0c27a">★ centre of mass — stays put</text>
+</svg>

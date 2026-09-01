@@ -52,12 +52,14 @@
  *   "priorKnowledge": "md",
  *   "chunks": [
  *     { "id": "chunk-1", "title": "…", "concept": "md", "representation": "md",
- *       "figures": [ { "svg": "<lesson>/fbd-box.svg", "caption": "md" } ],   // inlined from assets/diagrams/, on the representation card
+ *       "conceptFigures": [ { "svg": "…", "caption": "md" } ],               // on the concept card
+ *       "figures": [ { "svg": "<lesson>/fbd-box.svg", "caption": "md" } ],   // on the representation card
  *       "workedExample": { "scaffold": "full", "problem": "…",
  *                          "figure": { "svg": "…", "caption": "md" },
  *                          "phases": [ { "label": "…", "steps": ["md"] } ],
  *                          "keyMove": "md" },
- *       "formativeCheck": { …question-bank-schema-object… } }
+ *       "formativeCheck": { …question-bank-schema-object,                    // may also carry
+ *                           "figures": [ { "svg": "…", "caption": "md" } ] } }  // a stem diagram
  *   ],
  *   "interactiveComponent": { "type": "formula-explorer", "componentKey": "…",
  *                             "description": "md", "graphs": [ { "key": "f-vs-m", "label": "…" } ] },
@@ -133,6 +135,16 @@ const COMPONENT_SCRIPTS = {
 
 const STATIC_DIRS = ["css", "js", "assets", "data", "simulations"];
 
+/**
+ * Fill `{{TOKEN}}` placeholders from a map. Uses a replacer *function* so
+ * a `$` in a value (KaTeX `$$…$$`, `$1`, `$&`) is inserted literally —
+ * `String.replace(str, str)` would mangle those. Unknown tokens are left
+ * as-is.
+ */
+function renderTemplate(tpl, map) {
+  return tpl.replace(/\{\{([A-Z_]+)\}\}/g, (m, key) => (key in map ? map[key] : m));
+}
+
 function findLessonFiles(dir) {
   const results = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -163,16 +175,13 @@ function buildLesson(file, templates) {
   // feedback, questions and options shuffled at runtime (js/concept-inventory.js).
   // See docs/ap-physics-1-unit-2-architecture.md §10.
   if (lesson.format === "concept-inventory") {
-    const html = templates.conceptInventory
-      .replaceAll("{{ROOT}}", rootPrefix)
-      .replace("{{TITLE}}", esc(lesson.lessonTitle || lesson.id))
-      .replace(
-        "{{BREADCRUMB}}",
-        [lesson.course, lesson.unit, "Concept Check"].filter(Boolean).map(esc).join(" › ")
-      )
-      .replace("{{HEADING}}", esc(lesson.lessonTitle || "Concept Check"))
-      .replace("{{INTRO}}", mdToHtml(lesson.intro || ""))
-      .replace("{{CI_DATA_JSON}}", JSON.stringify({ diagnosticKey: lesson.diagnosticKey || lesson.id, items: lesson.items || [] }));
+    const html = renderTemplate(templates.conceptInventory.replaceAll("{{ROOT}}", rootPrefix), {
+      TITLE: esc(lesson.lessonTitle || lesson.id),
+      BREADCRUMB: [lesson.course, lesson.unit, "Concept Check"].filter(Boolean).map(esc).join(" › "),
+      HEADING: esc(lesson.lessonTitle || "Concept Check"),
+      INTRO: mdToHtml(lesson.intro || ""),
+      CI_DATA_JSON: JSON.stringify({ diagnosticKey: lesson.diagnosticKey || lesson.id, items: lesson.items || [] }),
+    });
     fs.mkdirSync(path.dirname(outPath), { recursive: true });
     fs.writeFileSync(outPath, html, "utf8");
     console.log(`[build] ${relFromContent} -> dist/${outRel} (concept inventory)`);
@@ -204,13 +213,13 @@ function buildLesson(file, templates) {
         : `<span class="unit-index__todo">${title}</span>`;
       return `    <li class="${cls}">${tag} ${inner} ${meta}</li>`;
     });
-    const html = templates.unitIndex
-      .replaceAll("{{ROOT}}", rootPrefix)
-      .replace("{{TITLE}}", esc(lesson.lessonTitle || lesson.id))
-      .replace("{{BREADCRUMB}}", [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "))
-      .replace("{{HEADING}}", esc(lesson.lessonTitle || lesson.unit || "Unit"))
-      .replace("{{INTRO}}", mdToHtml(lesson.intro || ""))
-      .replace("{{SEQUENCE}}", items.join("\n"));
+    const html = renderTemplate(templates.unitIndex.replaceAll("{{ROOT}}", rootPrefix), {
+      TITLE: esc(lesson.lessonTitle || lesson.id),
+      BREADCRUMB: [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "),
+      HEADING: esc(lesson.lessonTitle || lesson.unit || "Unit"),
+      INTRO: mdToHtml(lesson.intro || ""),
+      SEQUENCE: items.join("\n"),
+    });
     fs.mkdirSync(path.dirname(outPath), { recursive: true });
     fs.writeFileSync(outPath, html, "utf8");
     console.log(`[build] ${relFromContent} -> dist/${outRel} (unit index)`);
@@ -235,18 +244,15 @@ function buildLesson(file, templates) {
     ? `Lesson ${lesson.lessonNumber} — ${lesson.lessonTitle}`
     : lesson.lessonTitle;
 
-  const html = lessonTemplate
-    .replaceAll("{{ROOT}}", rootPrefix)
-    .replace("{{TITLE}}", esc(lessonLabel || lesson.id))
-    .replace(
-      "{{BREADCRUMB}}",
-      [lesson.course, lesson.unit, lessonLabel].filter(Boolean).map(esc).join(" › ")
-    )
-    .replace("{{SIDEBAR_TOC}}", renderSidebarToc(lesson, bank))
-    .replace("{{LESSON_BODY}}", renderLessonBody(lesson, bank))
-    .replace("{{LESSON_DATA_JSON}}", JSON.stringify(lesson))
-    .replace("{{PLOTLY_SCRIPT}}", plotlyScript)
-    .replace("{{COMPONENT_SCRIPTS}}", componentScripts);
+  const html = renderTemplate(lessonTemplate.replaceAll("{{ROOT}}", rootPrefix), {
+    TITLE: esc(lessonLabel || lesson.id),
+    BREADCRUMB: [lesson.course, lesson.unit, lessonLabel].filter(Boolean).map(esc).join(" › "),
+    SIDEBAR_TOC: renderSidebarToc(lesson, bank),
+    LESSON_BODY: renderLessonBody(lesson, bank),
+    LESSON_DATA_JSON: JSON.stringify(lesson),
+    PLOTLY_SCRIPT: plotlyScript,
+    COMPONENT_SCRIPTS: componentScripts,
+  });
 
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, html, "utf8");
@@ -298,10 +304,9 @@ function buildHomepage(lessons) {
     })
     .join("\n");
 
-  const html = homepageTemplate.replace(
-    "{{COURSE_LIST}}",
-    courseList || "<p>No lessons built yet.</p>"
-  );
+  const html = renderTemplate(homepageTemplate, {
+    COURSE_LIST: courseList || "<p>No lessons built yet.</p>",
+  });
   fs.writeFileSync(path.join(DIST_DIR, "index.html"), html, "utf8");
 }
 

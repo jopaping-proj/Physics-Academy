@@ -43,7 +43,9 @@ export function hookSlides(hook) {
 
 // ---- ObjectiveList (§6) ----
 export function objectivesSlides(lesson) {
-  const subs = (lesson.subObjectives || []).map((s) => `<li>${mdInline(s)}</li>`).join("\n");
+  // wrap each objective in a <span> so inline math / key-terms are not
+  // direct children of the flex <li> (they'd break off the text baseline)
+  const subs = (lesson.subObjectives || []).map((s) => `<li><span>${mdInline(s)}</span></li>`).join("\n");
   return [
     {
       id: "objectives",
@@ -83,7 +85,8 @@ export function chunkSlides(chunk, index) {
     group: base,
     groupLabel,
     subtitle: "The core idea",
-    body: mdToHtml(chunk.concept),
+    cls: chunk.conceptFigures && chunk.conceptFigures.length ? "slide--scroller" : "",
+    body: `${mdToHtml(chunk.concept)}${renderFigures(chunk.conceptFigures)}`,
   });
 
   if (chunk.representation || (chunk.figures && chunk.figures.length)) {

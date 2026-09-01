@@ -239,6 +239,8 @@ Worked examples should explicitly model expert physics reasoning. Do not present
 
 Gradually reduce scaffolding as students progress. Include common incorrect approaches when pedagogically useful.
 
+**Every calculation must be formula-first (added 2026-09-01, permanent).** For any worked example, formative-check solution, FRQ model response, or error-analysis calculation: **write the governing formula in its standard symbolic form first**, then **rearrange it symbolically to isolate the target quantity** (show the algebra), and **only then substitute numbers**. If the quantity is already isolated (e.g. $x_{cm} = \dots$ when solving for $x_{cm}$), say so explicitly and substitute. Never jump straight to a line of numbers. This makes the method transferable and lets a student find their error by comparing formulas, not arithmetic.
+
 **Presentation (added 2026-08-31).** In content JSON, a worked example is authored as `phases` — the 13 steps above **grouped under 3–4 subgoal labels** ("Set up the problem", "Choose the principle", "Solve", "Check the answer") — plus a one-line `problem` statement and a `keyMove` self-explanation answer. The lesson page shows one phase, then a "Reveal next part" button (segmenting *within* the example); a "Show all steps" escape hatch; and, at the end, a prompt — *"what was the one move that mattered here?"* — that reveals `keyMove` only after the student has thought about it. This applies the subgoal-labelling effect (Catrambone) and self-explanation effect (Chi; Renkl) from the worked-example research, both of which improve transfer for novices. Rendered by `renderWorkedExample` in `build/build.js`, wired by `js/lesson-slides.js`.
 
 ## 11. Multiple Representations

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "AP1-U2-MCQ-065",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "",
+    "question": "Inertia is best described as:",
+    "choices": [
+      "a force that keeps a moving object going",
+      "an object's resistance to any change in its velocity",
+      "the tendency of moving objects to slow down and stop",
+      "the amount of motion an object has"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — inertia is the property that makes an object keep its velocity (speeding up, slowing, or turning all require a force to overcome it). Its quantitative measure is the inertial mass.",
+      "incorrect": {
+        "0": "Inertia is not a force. It is why a moving object *keeps* moving with no force at all.",
+        "2": "Objects only slow down when a force (like friction) acts. With no force, inertia keeps them moving forever.",
+        "3": "'Amount of motion' is closer to momentum. Inertia is resistance to *changing* the motion, and depends only on mass."
+      }
+    },
+    "hint": ["Which choice is a property of the object that doesn't depend on whether it's moving?"],
+    "solution": "Inertia is an object's resistance to a change in its velocity; inertial mass measures it."
+  },
+  {
+    "id": "AP1-U2-MCQ-066",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A standing bus passenger lurches forward when the bus brakes suddenly. The best explanation is:",
+    "choices": [
+      "The braking creates a forward force that throws the passenger forward.",
+      "The passenger keeps moving forward at the bus's old speed while the bus slows, until something exerts a backward force on them.",
+      "The passenger's weight shifts forward during braking.",
+      "Friction from the floor pushes the passenger forward."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — there is no horizontal force on the passenger, so by the first law their forward velocity does not change. The bus decelerates underneath them, so relative to the bus they pitch forward until a handrail or seat provides the force to slow them.",
+      "incorrect": {
+        "0": "Braking slows the *bus*; it does not create a forward force on the passenger. The passenger moves forward because *nothing* slowed them.",
+        "2": "Weight acts straight down and does not change during braking; it cannot cause a forward lurch.",
+        "3": "Floor friction, if anything, acts backward on the passenger's feet (matching the bus). It is the *absence* of a force on the upper body that causes the lurch."
+      }
+    },
+    "hint": ["What horizontal force acts on the passenger? If none, what does the first law say about their forward motion?"],
+    "solution": "No horizontal force on the passenger ⇒ they keep their forward velocity (inertia) while the bus slows."
+  },
+  {
+    "id": "AP1-U2-MCQ-067",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+    "question": "A worker pushes a crate horizontally across a rough floor so that it moves at a perfectly constant velocity. How does the size of the worker's push compare to the friction force on the crate?",
+    "choices": [
+      "The push is larger than friction — that is why the crate moves.",
+      "The push is exactly equal to friction.",
+      "The push is smaller than friction, but the crate keeps moving from earlier.",
+      "There is no friction, since the crate is already moving."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — constant velocity means zero acceleration, so the horizontal forces balance: push $=$ friction. A larger push would make the crate speed up; a smaller one would let it slow down.",
+      "incorrect": {
+        "0": "A push larger than friction gives a net forward force and an *increasing* speed. Constant velocity needs an exact balance.",
+        "2": "Motion does not 'carry over' as a stored push. If the push were smaller than friction, the net force would be backward and the crate would slow down.",
+        "3": "A crate sliding on a rough floor always has kinetic friction acting on it, opposing the motion."
+      }
+    },
+    "hint": ["Constant velocity ⇒ zero acceleration ⇒ zero net force. What does that make the push, compared to friction?"],
+    "solution": "Constant velocity ⇒ net horizontal force zero ⇒ push $=$ friction."
+  },
+  {
+    "id": "AP1-U2-MCQ-068",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "question": "An $8.0\\text{ kg}$ lamp hangs at rest from two cables, each making $25°$ with the horizontal ceiling. Using $g = 9.8\\text{ m/s}^2$ and $\\sin 25° \\approx 0.42$, the tension in each cable is closest to:",
+    "choices": ["$39\\text{ N}$", "$93\\text{ N}$", "$78\\text{ N}$", "$187\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — vertical equilibrium: $2T\\sin 25° - mg = 0$, so $T = \\dfrac{mg}{2\\sin 25°} = \\dfrac{(8.0)(9.8)}{2(0.42)} = \\dfrac{78.4}{0.84} \\approx 93\\text{ N}$.",
+      "incorrect": {
+        "0": "$39\\text{ N}$ is $mg/2$ — it would be right only if the cables were vertical. At $25°$ only the component $T\\sin 25°$ is vertical, so $T$ must be larger.",
+        "2": "$78\\text{ N}$ is the full weight $mg$. Each cable's tension is more than that here because the cables are shallow.",
+        "3": "$187\\text{ N}$ divides by $\\sin 25°$ but forgets the factor of 2 for the two cables (or uses $2/\\sin 25°$ instead of $1/(2\\sin 25°)$)."
+      }
+    },
+    "hint": ["Only the vertical part of each tension supports the lamp: $2T\\sin 25° = mg$. Solve for $T$."],
+    "solution": "$T = \\dfrac{mg}{2\\sin 25°} = \\dfrac{78.4}{0.84} \\approx 93\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-069",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "question": "A $3.0\\text{ kg}$ ball hangs from a string. A steady horizontal force $F$ pulls the ball aside until the string makes $30°$ with the vertical and the ball hangs at rest. Using $g = 9.8\\text{ m/s}^2$, the magnitude of $F$ is closest to:",
+    "choices": ["$29\\text{ N}$", "$17\\text{ N}$", "$34\\text{ N}$", "$15\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — three forces act: weight $mg$ down, tension $T$ along the string ($30°$ from vertical), and $F$ horizontal. Vertical: $T\\cos 30° - mg = 0 \\Rightarrow T = \\dfrac{mg}{\\cos 30°}$. Horizontal: $F - T\\sin 30° = 0 \\Rightarrow F = T\\sin 30° = mg\\tan 30° = (3.0)(9.8)(0.577) \\approx 17\\text{ N}$.",
+      "incorrect": {
+        "0": "$29\\text{ N}$ is the weight $mg$. $F$ is only the horizontal component needed to hold the ball at $30°$ from vertical — smaller than the weight for angles under $45°$.",
+        "2": "$34\\text{ N}$ is the string tension $T = mg/\\cos 30°$, not the horizontal pull. $F$ is $T\\sin 30°$.",
+        "3": "$15\\text{ N}$ is $mg\\sin 30°$ — but the correct component relation is $F = mg\\tan 30°$ (from dividing the horizontal equation by the vertical one)."
+      }
+    },
+    "hint": ["Write $\\sum F_y = 0$ and $\\sum F_x = 0$ with the string tension resolved. Dividing one by the other gives $F = mg\\tan 30°$."],
+    "solution": "$T\\cos 30° = mg$ and $F = T\\sin 30°$, so $F = mg\\tan 30° = (3.0)(9.8)(0.577) \\approx 17\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-070",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "question": "A sign of weight $W$ hangs in equilibrium from two cables attached to the same point on the sign: one cable is **horizontal**, the other rises to the wall at a small angle $\\theta$ above the horizontal. For small $\\theta$, how do the two cable tensions compare to $W$?",
+    "choices": [
+      "Both are less than $W$, since two cables share the load.",
+      "The angled cable's tension is greater than $W$, and the horizontal cable's tension is also greater than $W$.",
+      "The angled cable carries $W$ and the horizontal cable carries nothing.",
+      "Each cable carries exactly $W/2$."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — only the angled cable has a vertical component, so $\\sum F_y = 0$ gives $T_{angled}\\sin\\theta = W$, i.e. $T_{angled} = W/\\sin\\theta$, which is large for small $\\theta$. Then $\\sum F_x = 0$ gives $T_{horizontal} = T_{angled}\\cos\\theta = W\\cos\\theta/\\sin\\theta = W/\\tan\\theta$, also large for small $\\theta$. Both tensions blow up as $\\theta \\to 0$.",
+      "incorrect": {
+        "0": "'Sharing the load' does not lower the tensions here — the shallow geometry forces both above $W$. Only the vertical *component* of the angled cable supports the sign.",
+        "2": "The angled cable's tension is $W/\\sin\\theta$, not $W$ — much larger for small $\\theta$. And the horizontal cable must pull back on the angled cable's horizontal component, so it is far from zero.",
+        "3": "$W/2$ each would require both cables to pull straight up. Neither does: one is horizontal, the other nearly so."
+      }
+    },
+    "hint": ["Only the angled cable has a vertical component: $T_{angled}\\sin\\theta = W$. Then balance the horizontal forces. What happens to each as $\\theta \\to 0$?"],
+    "solution": "$T_{angled} = W/\\sin\\theta$ and $T_{horizontal} = W/\\tan\\theta$ — both exceed $W$ and grow without bound as $\\theta \\to 0$."
+  }
+]

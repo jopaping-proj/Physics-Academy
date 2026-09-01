@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 226" role="img"
+     aria-label="A dashed boundary encloses two blocks, A and B, which form the system. Between the blocks, two short arrows point at each other — the internal force pair that A and B exert on each other; it cancels for the system as a whole. Outside the boundary, a push arrow from the left and a gravity arrow downward are external forces that can move the system.">
+  <!-- Labels are placed clear of the boundary, the blocks, and the arrows (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="ie-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f85149"/></marker>
+    <marker id="ie-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#48c9b0"/></marker>
+    <marker id="ie-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+
+  <!-- system boundary -->
+  <rect x="96" y="60" width="168" height="70" rx="12" fill="none" stroke="#e6edf3" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="100" y="52" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e6edf3">the system</text>
+
+  <!-- blocks A and B -->
+  <rect x="112" y="80" width="40" height="34" rx="3" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="132" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff">A</text>
+  <rect x="208" y="80" width="40" height="34" rx="3" fill="#58a6ff" fill-opacity="0.15" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="228" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#58a6ff">B</text>
+
+  <!-- internal force pair between the blocks -->
+  <line x1="156" y1="91" x2="204" y2="91" stroke="#f85149" stroke-width="2.5" marker-end="url(#ie-red)"/>
+  <line x1="204" y1="103" x2="156" y2="103" stroke="#f85149" stroke-width="2.5" marker-end="url(#ie-red)"/>
+  <text x="180" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f85149">internal pair</text>
+  <text x="180" y="164" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#f85149">(cancels for the system)</text>
+
+  <!-- external: push from outside, into the boundary -->
+  <line x1="34" y1="95" x2="92" y2="95" stroke="#48c9b0" stroke-width="3" marker-end="url(#ie-teal)"/>
+  <text x="34" y="84" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#48c9b0">external push</text>
+
+  <!-- external: gravity, from below the boundary, down -->
+  <line x1="290" y1="70" x2="290" y2="120" stroke="#8b96a5" stroke-width="2.5" marker-end="url(#ie-grey)"/>
+  <text x="298" y="98" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#8b96a5">gravity</text>
+  <text x="298" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">(external)</text>
+
+  <text x="180" y="204" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">external forces can move the system · internal forces cannot</text>
+</svg>

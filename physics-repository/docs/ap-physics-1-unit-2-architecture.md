@@ -242,7 +242,7 @@ Sub-outcome letters (`C2.1a`, `C2.1b`, …) trace into the coverage matrix (§8)
 
 ### C2.11 — Systems and Center of Mass · CED topic 2.1
 
-*New in the CED-verification pass. No question-bank items yet; scheduled as Module 1a in §5.*
+*New in the CED-verification pass. No question-bank items yet; scheduled as Lesson 1 in §5.*
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -253,7 +253,7 @@ Sub-outcome letters (`C2.1a`, `C2.1b`, …) trace into the coverage matrix (§8)
 
 ### C2.12 — Circular Motion · CED topic 2.9
 
-*Resolved from "optional" in the CED-verification pass — circular motion is CED Unit 2 topic 2.9. Delivered as Module 10 in §5. No question-bank items yet.*
+*Resolved from "optional" in the CED-verification pass — circular motion is CED Unit 2 topic 2.9. Delivered as Lesson 11 in §5. No question-bank items yet.*
 
 | ID | Outcome | Observable evidence |
 |---|---|---|
@@ -316,7 +316,7 @@ Unit 1 carryover:  signed 1-D motion  ·  vector components (trig)  ·  slope/ar
    2.10f     (apparent wt)  --  needs 2.5b (two-axis N2) and 2.2c (FBD)
         |
         v
-  Unit 2 synthesis & transfer  (see §5 Module 10 and §9 unit test bank)
+  Unit 2 synthesis & transfer  (see §5 Lesson 12 and §9 unit test bank)
 ```
 
 **Notes on the ordering.**
@@ -362,7 +362,7 @@ Each module is one lesson page unless noted. Every lesson follows the flow in `m
 
 ### Module 0 — Unit 2 entry diagnostic and orientation
 
-Two instruments, both before Module 1, neither graded:
+Two instruments, both before Lesson 2, neither graded:
 
 **A. Concept inventory (§10) — built (draft) 2026-09-01.** `content/ap-physics-1/unit-2-dynamics/unit-2-concept-check.json` (27 items to the §10.3 blueprint) + `build/templates/concept-inventory.html` + `js/concept-inventory.js`. Calculator-free, purely conceptual, FCI-style. It shuffles the questions *and* the answer choices on every load; on submit it reports **only the score and percentage** — no per-question feedback, no review, and an explicit notice that item analysis is not provided and that the same check is taken again at the end of the unit. Each attempt's score is stored in `localStorage` (`pa:ci:ap1-u2`) so pre/post can be compared internally; the gain is not shown to the student. The per-misconception *profile* and *watch-list* described below in §10.5 are **not yet built** — the current version is score-only per the delivery decision; the profile view is a later enhancement. **Items not yet pilot-analysed (§10.5).**
 
@@ -370,31 +370,29 @@ Two instruments, both before Module 1, neither graded:
 
 Neither is a placement engine — the self-paced repository has no 1:1 routing. Their combined output is a starting picture for the student, not a gate on content (see §12 for the gate-vs-optional decision on instrument A).
 
-> **Module numbering note.** Modules 1–10 below predate the CED-verification pass, which added two clusters. **C2.11 (Systems & Center of Mass)** is a short **Module 1a**, taught right before Module 1 (it establishes "system" and "external force," which the FBD module then uses). **C2.12 (Circular Motion)** is **Module 10** (after Inclined Planes, before Synthesis), pushing Synthesis to **Module 11**. A clean renumber of the whole sequence + the §8 coverage matrix is tracked in §12.11.
->
-> **Student-facing lesson numbers (2026-09-01).** Lessons carry a `lessonNumber` field shown as "Lesson N" in the UI, following the clean teaching order: **1** Systems & COM (C2.11), **2** FBDs (C2.2), **3** First Law (C2.1), **4** Newton's 2nd Law relationship (C2.3/C2.4), **5** Multi-force/two-axis (C2.5), **6** Third Law (C2.6), **7** Friction (C2.8), **8** Connected objects (C2.7), **9** Gravitation/springs/apparent weight (C2.10), **10** Inclined planes (C2.9), **11** Circular motion (C2.12), **12** Synthesis. The §12.11 module renumber should adopt these.
+> **Numbering (renumbered 2026-09-01).** The lessons below are numbered in teaching order (**Lesson 1 … Lesson 12**); the number is the `lessonNumber` field shown as "Lesson N" in the UI and on the unit index page. "Module 0" is not a lesson — it is the pre-instruction concept check (§10) plus the Unit 1 retrieval check. Circular Motion (C2.12) is **Lesson 11**, before Synthesis (**Lesson 12**). Cross-references elsewhere in this document (and in §12.1–3 / the revision history) that still say "Module N" predate this renumber and refer to the same content.
 
-### Module 1a — Systems and Center of Mass · C2.11 *(built — draft, 2026-09-01; student-facing "Lesson 1")*
+### Lesson 1 — Systems and Center of Mass · C2.11 *(built — draft, 2026-09-01)*
 
 **Progression:** what a *system* is and where its boundary is drawn → internal vs external forces → the centre of mass as the mass-weighted average position (qualitatively, then $x_{cm}$ for two point masses) → the centre of mass responds only to the **net external** force → so a system can be treated as a point particle at its centre of mass, $\vec{F}_{net,ext} = M\vec{a}_{cm}$.
 **Interactive:** a two-mass slider — move the masses and their values, watch the centre-of-mass marker; toggle an external force and see the centre of mass accelerate, vs. an internal "explosion" that leaves it unmoved.
 **Mastery evidence:** predict the centre-of-mass motion for an unfamiliar system under internal-only vs. net-external forcing; compute a two-mass centre of mass (Level 4).
 
-### Module 1 — Forces and Free-Body Diagrams · C2.2 (CED topic 2.2)  *(built — draft, 2026-08-31)*
+### Lesson 2 — Forces and Free-Body Diagrams · C2.2 (CED topic 2.2)  *(built — approved 2026-09-01)*
 
 **Progression:** forces as interactions → the contact forces of this course + the one field force → define the system; internal vs external → construct an FBD (both AP styles) → sum signed forces on one axis → resolve angled forces on two axes.
 **Interactive:** an FBD builder (`js/lesson-interactives/fbd-builder.js`) — pick a scenario, toggle the forces and set directions, Canvas redraws the diagram, "Check" reports missing / mis-directed / doesn't-belong.
-**Boundary:** single-object FBDs; connected systems deferred to Module 7; incline-aligned axes deferred to Module 9.
+**Boundary:** single-object FBDs; connected systems deferred to Lesson 8; incline-aligned axes deferred to Lesson 10.
 **Mastery evidence:** a complete, correct FBD and two-axis net force for an unfamiliar scenario with no forces named in the prompt (Level 5).
-**Status:** `content/ap-physics-1/unit-2-dynamics/forces-and-free-body-diagrams.json` + `data/question-bank/ap1-u2-forces-fbd.json` (8 items). **Physics not yet independently reviewed (§9.7 / master §31–§32).**
+**Status:** `content/ap-physics-1/unit-2-dynamics/forces-and-free-body-diagrams.json` + the FBD items now in `data/question-bank/ap1-u2-forces-fbd.json` (`AP1-U2-MCQ-051…058`). **Approved 2026-09-01** (`docs/reviews/2026-09-01-unit-2-forces-fbd-review.md`).
 
-### Module 2 — Newton's First Law, Inertia, and Equilibrium · Cluster 2.1
+### Lesson 3 — Newton's First Law, Inertia, and Equilibrium · Cluster 2.1  *(built — draft, 2026-09-01)*
 
 **Progression:** inertia as resistance to a change in velocity → inertial mass as its measure → the first law as the biconditional zero-net-force condition → static vs dynamic equilibrium, both with $\vec{a}=0$ → solve for an unknown force from $\sum F_x = \sum F_y = 0$, including angled forces → justify that equilibrium means balanced, not absent, forces.
-**Cross-link:** explicitly forward-references Module 3's framing of equilibrium as the $\vec{F}_{net}=0$ case of the second law.
+**Cross-link:** explicitly forward-references Lesson 4's framing of equilibrium as the $\vec{F}_{net}=0$ case of the second law.
 **Mastery evidence:** unfamiliar multi-force (angled) equilibrium solved end to end; a "does nothing" force correctly justified as nonzero (Level 5).
 
-### Module 3 — Newton's Second Law: Force, Mass, and Acceleration · Clusters 2.3, 2.4  *(prototype lesson `ap1-u2-l3` — reference implementation)*
+### Lesson 4 — Newton's Second Law: Force, Mass, and Acceleration · Clusters 2.3, 2.4  *(prototype lesson `ap1-u2-l3` — reference implementation)*
 
 **Progression:** the verbal and symbolic statement → system/forces/net-force chain before the equation → solve for any one of $F_{net}$, $m$, $a$ → proportional reasoning through combined changes → $F$–$a$ and $F$–$m$ graphs, predicted before viewed → first law as the $\vec{F}_{net}=0$ special case → refute "motion needs a sustaining force."
 **Interactive:** Formula Explorer (mass/acceleration sliders → force; $F$-vs-$a$ and $F$-vs-$m$ graphs) — already built.
@@ -402,30 +400,30 @@ Neither is a placement engine — the self-paced repository has no 1:1 routing. 
 **Mastery evidence:** predict both graph shapes correctly before viewing; solve an unfamiliar multi-force scenario (Level 4, stretch 6).
 **Status:** built and verified. Its embedded questions have had `apIbConnection` stripped and `courses: ["ap-physics-1"]` added; its `objective` still needs setting to `2.3` (§12).
 
-### Module 4 — Newton's Second Law: Multi-Force and Two-Axis Problems · Cluster 2.5
+### Lesson 5 — Newton's Second Law: Multi-Force and Two-Axis Problems · Cluster 2.5
 
 **Progression:** three-or-more-force FBDs on one axis → the perpendicular axis: $\sum F_y = 0$ gives the normal force → $\sum F_x = ma_x$ along the motion axis → work backward from a measured acceleration to an unknown force.
 **Mastery evidence:** unfamiliar two-axis FBD solved for acceleration and an unknown force (Level 5).
 
-### Module 5 — Newton's Third Law: Interaction Pairs vs Balanced Forces · Cluster 2.6
+### Lesson 6 — Newton's Third Law: Interaction Pairs vs Balanced Forces · Cluster 2.6
 
-**Progression:** revisit force pairs already met in Modules 1–4 (gravity/normal, pushes, tension) → identify the reaction to a stated action (type, magnitude, direction, **object**) → the pair acts on two different objects → contrast with balanced forces on one object, explicitly rejecting "weight and normal force are a third-law pair" → equal forces, unequal accelerations when masses differ.
+**Progression:** revisit force pairs already met in Lessons 2–5 (gravity/normal, pushes, tension) → identify the reaction to a stated action (type, magnitude, direction, **object**) → the pair acts on two different objects → contrast with balanced forces on one object, explicitly rejecting "weight and normal force are a third-law pair" → equal forces, unequal accelerations when masses differ.
 **Rationale for placement:** students need several prior multi-force scenarios so the pair/balanced contrast (Misconceptions 8–10) has concrete cases to work from.
 **Mastery evidence:** attribute every force in an unfamiliar two-object interaction; evaluate a flawed "equal and opposite $\Rightarrow$ equilibrium" argument (Level 5, stretch 8).
 
-### Module 6 — Friction: Static and Kinetic · Cluster 2.8
+### Lesson 7 — Friction: Static and Kinetic · Cluster 2.8
 
 **Progression:** two friction regimes and their models ($f_k$ fixed once sliding; $f_s$ variable up to a maximum) → direction: opposing relative sliding *or its tendency* → compute $F_N$ first, then $f$, then Newton's second law → slide-or-stay decisions → qualitative reasoning about changing $\mu$, $F_N$, applied force.
-**Boundary:** horizontal surfaces and simple applied-force cases here; the incline-plus-friction synthesis is Module 9.
+**Boundary:** horizontal surfaces and simple applied-force cases here; the incline-plus-friction synthesis is Lesson 10.
 **Mastery evidence:** unfamiliar slide/no-slide-plus-acceleration case (Level 5).
 
-### Module 7 — Connected Objects and Systems · Cluster 2.7
+### Lesson 8 — Connected Objects and Systems · Cluster 2.7
 
 **Progression:** the system method (linked objects as one mass; external forces only) → the individual-object method (one FBD, common $a$, solve for tension/contact force) → why rope tension $\ne$ hanging weight when $a\ne0$ → the ideal redirecting pulley (equal tension through a massless rope over a massless frictionless pulley).
-**Prerequisites consumed:** Module 4 (two-axis), Module 5 (tension as an internal interaction pair).
+**Prerequisites consumed:** Lesson 5 (two-axis), Lesson 6 (tension as an internal interaction pair).
 **Mastery evidence:** unfamiliar two-body system solved both ways with reconciled results (Level 5).
 
-### Module 8 — Gravitation, Springs, and Apparent Weight · Cluster 2.10
+### Lesson 9 — Gravitation, Springs, and Apparent Weight · Cluster 2.10
 
 Delivered as one lesson with three chunked strands (they are independent; see §3).
 **Strand A — Gravitation:** mass vs weight; $g$ vs $G$ → gravity as a center-of-mass-directed interaction → proportional reasoning with $F_G = G\,m_1 m_2 / r^2$, including inverse-square → solve for any one variable.
@@ -434,14 +432,14 @@ Delivered as one lesson with three chunked strands (they are independent; see §
 **Interactive:** a force–extension graph explorer (slope $\to$ $k$; predict force at an untested displacement).
 **Mastery evidence:** proportional $F_G$ reasoning for an unfamiliar pair; spring-force prediction from graph-read $k$; unfamiliar elevator apparent-weight problem (Level 5).
 
-### Module 9 — Inclined Planes · Cluster 2.9  *(synthesis capstone)*
+### Lesson 10 — Inclined Planes · Cluster 2.9  *(synthesis capstone)*
 
 **Part A — Frictionless incline:** identify forces (weight vertical, normal perpendicular to the surface) → resolve weight into incline-parallel ($mg\sin\theta$) and incline-perpendicular ($mg\cos\theta$) components, with the trig assignment *justified* → normal force from perpendicular equilibrium; why $F_N < mg$ → net force and acceleration along the incline.
 **Part B — Incline with friction:** add friction opposing the sliding tendency → net force and acceleration with the friction term → slide-or-stay on an incline.
 **Transfer:** at least one far-transfer item where the incline framing is only recognizable through conceptual understanding (e.g. a banked road, an accelerating wedge, a block on a block).
 **Mastery evidence:** full end-to-end solution for an unfamiliar angle/mass/friction condition (Level 6), plus a far-transfer variant (stretch 8).
 
-### Module 10 — Circular Motion · C2.12 (CED topic 2.9)
+### Lesson 11 — Circular Motion · C2.12 (CED topic 2.9)
 
 **Confirmed in Unit 2** by the CED-verification pass (CED topic 2.9). A second application-of-Newton's-second-law synthesis, after inclines.
 **Progression:** uniform circular motion — speed constant, velocity not → centripetal acceleration $a_c = v^2/r$ directed toward the centre → the net of the *real* forces (tension, friction, normal, gravity) provides it; "centripetal force" is **not** a separate FBD arrow (Misconception 13) → apply $\sum F_r = mv^2/r$ radially → limiting cases: a car on a flat curve losing traction, tension at the top vs. bottom of a vertical circle.
@@ -449,7 +447,7 @@ Delivered as one lesson with three chunked strands (they are independent; see §
 **Boundary:** uniform circular motion only; non-uniform (changing speed) and vertical-circle energy analysis are later-unit material.
 **Mastery evidence:** identify the real centripetal-providing forces and solve $\sum F_r = mv^2/r$ for an unfamiliar scenario; reason through one limiting case (Level 5, stretch 8).
 
-### Module 11 — Unit 2 Synthesis and Transfer
+### Lesson 12 — Unit 2 Synthesis and Transfer
 
 Not new content — a consolidation lesson and the on-ramp to the unit test bank.
 **Force task:** an unfamiliar multi-force scenario (e.g. an object on a rough incline with an applied force at an angle) — system, FBD, net force, acceleration — integrating C2.2, C2.5, C2.8, C2.9.
@@ -476,7 +474,7 @@ Ordered roughly by instructional weight for an AP-5 target. Items 1 and 8–10 a
 10. **Equal forces imply equal effects.** In an interaction, the more massive object is thought to exert a larger force, or the mutual forces are thought to produce equal accelerations. Slugs: `larger-object-exerts-larger-force-in-collision`, `third-law-implies-equal-accelerations`.
 11. **Friction only opposes actual motion** (not the tendency to move), **always acts**, **always opposes weight**, or **only acts horizontally**. Slugs: `friction-only-opposes-motion-not-tendency-to-move`, `friction-always-acts-and-opposes-weight`, `friction-direction-fixed-rather-than-opposing-actual-motion`, `friction-only-acts-horizontally-on-horizontal-surfaces`, `static-and-kinetic-friction-coefficients-are-always-equal`.
 12. **Normal force always equals full weight**, regardless of incline angle or other vertical forces. On an incline, the $\sin\theta$/$\cos\theta$ components are also frequently swapped — the Unit 1 trig error recurring in a new context.
-13. **"Centripetal force" is a separate force** to be added to a free-body diagram, rather than the name for the net (radially inward) sum of the *real* forces in circular motion. (CED topic 2.9 — Module 10.)
+13. **"Centripetal force" is a separate force** to be added to a free-body diagram, rather than the name for the net (radially inward) sum of the *real* forces in circular motion. (CED topic 2.9 — Lesson 11.)
 14. **The spring constant changes with how hard you pull**, and relatedly, **the negative sign in $F_s=-kx$ makes $k$ negative** rather than encoding that the force opposes the displacement; **a stretched spring "has" negative force as a property**. Slug: `spring-constant-changes-with-applied-force` (add to `data/taxonomies.json` if not present).
 15. **Tension in a multi-object rope system supports the whole system's weight** / **the hanging mass is in free fall**. Slugs: `tension-in-a-multi-object-string-system-must-support-the-whole-system`, `treats-heavier-hanging-mass-as-being-in-free-fall`.
 16. **A scale always reads true weight**; **apparent weightlessness requires zero gravity**. Slugs: `scale-always-reads-true-weight`, `apparent-weightlessness-requires-zero-gravity`.
@@ -509,7 +507,7 @@ Distractors in the test bank should represent authentic misconceptions wherever 
 
 "Introduced" = the module that first teaches the cluster; "Practised" = modules with formative items on it; "Mastery evidence" = the module whose lesson-level assessment certifies it; "Transfer" = where it appears in an unfamiliar context.
 
-*Predates the CED pass: rows for C2.11 (Module 1a → M11) and C2.12 (Module 10 → M11) are added in the §12.11 renumber.*
+*Coverage rows for C2.11 (Lesson 1 → Lesson 12) and C2.12 (Lesson 11 → Lesson 12) follow the teaching order above.*
 
 | Cluster | Introduced | Practised | Mastery evidence | Transfer |
 |---|:--:|:--:|:--:|:--:|
@@ -524,7 +522,7 @@ Distractors in the test bank should represent authentic misconceptions wherever 
 | 2.9 Inclined planes | M9 | M9, M10 | M9 | M9 (far-transfer part), M10 |
 | 2.10 Gravitation / springs / apparent weight | M8 | M8, M10 | M8 | M10 |
 
-Every cluster is introduced once, practised in at least two modules, has a single certifying assessment, and reappears as transfer in Module 10. Clusters 2.2 and 2.5 (the FBD and two-axis spine) are practised in nearly every subsequent module by design.
+Every cluster is introduced once, practised in at least two modules, has a single certifying assessment, and reappears as transfer in Lesson 12. Clusters 2.2 and 2.5 (the FBD and two-axis spine) are practised in nearly every subsequent module by design.
 
 ---
 
@@ -623,7 +621,7 @@ Separate from the exam-preparation test bank (§9), each unit has a **concept-in
 
 | | Concept inventory (§10) | Unit test bank (§9) | Module 0 entry retrieval (§5) | Lesson formative checks (§7) |
 |---|---|---|---|---|
-| Timing | Before Module 1 (pre); optional re-take after Module 10 (post) | During/after each module; unit review | Before Module 1 | Throughout each lesson |
+| Timing | Before Lesson 1 (pre); optional re-take after Lesson 11 (post) | During/after each module; unit review | Before Module 1 | Throughout each lesson |
 | Purpose | Reveal prior conceptions (to researchers); show the student only how much they moved, pre → post | Build & certify AP-exam readiness | Refresh Unit 1 carryover skills | Check the chunk just taught |
 | Format | MC only, qualitative, **no calculator, no equation sheet, no numeric options** | MC + FRQ, quantitative and qualitative, calculator + sheet assumed | MC + short numeric | MC / multi-select / numeric / short response |
 | Cognitive level | 1–3 (recognition, conceptual reasoning) | 1–8, majority 4–6 | 1–3 | 1–6 |
@@ -684,7 +682,7 @@ Item count is a proposal pending pilot item analysis (§10.5). Twenty-seven item
 
 **Feedback policy — decided 2026-09-01, and what the built version does:** the student is shown **only their score and percentage**. No per-question feedback, no "correct/incorrect", no review of answers, no per-misconception profile, no watch-list. The intro screen states plainly that **item analysis will not be provided** and that **the same check is taken again at the end of the unit**. The questions *and* the answer choices are shuffled on every load, so the end-of-unit retake cannot be gamed by memorised positions.
 
-- **Pre:** linked at unit start (before Module 1), marked "take this first". Optional but strongly prompted (not a hard gate — §12.10). Untimed, ~20–30 minutes.
+- **Pre:** linked at unit start (before Lesson 1), marked "take this first". Optional but strongly prompted (not a hard gate — §12.10). Untimed, ~20–30 minutes.
 - **Post:** the same page, taken again after the final module. `js/concept-inventory.js` records every attempt's `{score, total, pct, at}` in `localStorage` (`pa:ci:<diagnosticKey>`), so the **normalized gain** $\langle g\rangle = \dfrac{\text{post}\% - \text{pre}\%}{100\% - \text{pre}\%}$ can be computed **internally** — it is **not** shown to the student.
 - The earlier draft's per-misconception *profile* and *watch-list* (a "you reason like X here" report) are **retired for the student-facing version** per the feedback-policy decision. The per-misconception tags (`misconception`, `pairId`) are kept in the item data for future *internal* analytics only.
 - **Item analysis before the form is fixed:** on pilot data, compute each item's difficulty (facility), discrimination (point-biserial), and distractor function. Cut or rewrite items with discrimination < 0.2 or a dead distractor. Only then freeze the form. This is *researcher-side* analysis, never surfaced to students.
@@ -743,16 +741,16 @@ Each module package (one lesson + its share of the test bank) must include:
 **Structural migrations (do together, one scripted pass):**
 
 15. **`objective` re-tag + `cedTopic` field — RESOLVED 2026-09-01.** `build/migrations/2026-09-01-objective-cedtopic.js` re-tagged all 95 items (50 MCQ + 15 FRQ + 8 FBD-bank + 12 + 10 lesson-embedded) from bare `"2.N"` to `C2.N` and inserted a `cedTopic` field per the §2 map; C2.10 items were split per-item (springs → 2.8, apparent weight → 2.5, gravitation → 2.6). Both lessons also gained top-level `objective` (`C2.2`, `C2.3`) + `cedTopic` (`2.2`, `2.5`) and `newtons-second-law.json` a lesson-level `courses`. The build now **fails** on a bare-`2.N` objective, a missing `cedTopic`, or a `cedTopic` outside 2.1–2.9 (`build/validate.js`). Still open: the §12.6 ID re-index (`fp##` → `AP1-U2-MCQ-###`) and `clusterId` field — a separate pass.
-16. **Module renumber.** Renumber the §5 instructional sequence and the §8 coverage matrix to absorb Module 1a (Systems/COM) and Module 10 (Circular Motion) cleanly, rather than the "1a / bump to 11" patch applied in the CED pass.
+16. **Module renumber — RESOLVED 2026-09-01.** §5 is renumbered to the student-facing teaching order (Lesson 1 = Systems/COM … Lesson 11 = Circular Motion, Lesson 12 = Synthesis), matching the `lessonNumber` field and the unit index page. Historical cross-references in §12.1–3 and the revision history that still say "Module N" are left as written.
 
 ---
 
 ## 13. Downstream implementation order
 
 1. CED verification is **done** (§0, §12.1–4). Land the §9.7 build-time validator (checks 3–5, plus the §10.4 diagnostic constraints) and the §12.6 + §12.10 scripted migration (`objective` re-tag, `cedTopic` field, MCQ/FRQ re-index).
-2. Bring the existing prototype lesson (`ap1-u2-l3`, Module 3) into full compliance: `objective` → `C2.3` + `cedTopic: "2.5"`, add lesson-level `courses`, confirm the §11 checklist. (`apIbConnection` stripped, `courses` added, F-vs-a scrubbed, FBD figures added — all done.)
-3. Produce the Unit 2 concept-inventory diagnostic (§10) — 25 items to the §10.3 blueprint — before Module 1 ships. Freeze the form only after the §10.5 pilot item analysis.
-4. Produce **Module 1a (Systems & Center of Mass)** then the spine: **M1 (FBDs) → M2 (First law) → M4 (Multi-force/two-axis) → M5 (Third law)**, each with its lesson and test-bank slice.
+2. Bring the existing prototype lesson (`ap1-u2-l3`, Lesson 4) into full compliance: `objective` → `C2.3` + `cedTopic: "2.5"`, add lesson-level `courses`, confirm the §11 checklist. (`apIbConnection` stripped, `courses` added, F-vs-a scrubbed, FBD figures added — all done.)
+3. Produce the Unit 2 concept-inventory diagnostic (§10) — 25 items to the §10.3 blueprint — before Lesson 2 ships. Freeze the form only after the §10.5 pilot item analysis.
+4. Produce **Lesson 1 (Systems & Center of Mass)** then the spine: **Lesson 2 (FBDs) → Lesson 3 (First law) → Lesson 5 (Multi-force/two-axis) → Lesson 6 (Third law)**, each with its lesson and test-bank slice.
 5. Produce **M6 (Friction) → M7 (Connected systems) → M8 (Gravitation/springs/apparent weight)**.
 6. Produce **M9 (Inclined planes)** and **M10 (Circular Motion)** — the two Newton's-second-law synthesis modules.
 7. Produce **M11 (Synthesis & transfer)** and assemble the interleaved unit cumulative assessment.
@@ -766,6 +764,7 @@ Each module package (one lesson + its share of the test bank) must include:
 
 | Version | Date | Status | Summary |
 |---|---|---|---|
+| 0.8.0 | 2026-09-01 | Draft — for review | **Lesson 3 built; Lesson 2 + concept inventory approved; §5 renumbered.** Lesson 3 — Newton's First Law: Inertia and Equilibrium (C2.1) — authored as `newtons-first-law.json`: inertia/inertial mass → the first-law biconditional + static/dynamic equilibrium → solving $\sum F_x = \sum F_y = 0$ (angled forces, symmetry); reuses the FBD builder for the equilibrium check; 4 new SVGs (bus-brake + 3 generated FBDs); bank `ap1-u2-first-law.json` (`AP1-U2-MCQ-065…070`). **Lesson 2 (FBDs) and the FBD bank items are approved** (2026-09-01 review). §5 instructional sequence **renumbered to Lesson 1–12** (was Module 1a/1–11), matching `lessonNumber` and the unit index; §12.11/§12.16 resolved. Build fix: `$$…$$` display math was being collapsed to `$…$` by `String.replace` — build.js now fills templates with a replacer function. New render features: `chunk.conceptFigures`, `formativeCheck.figures` (a diagram with an MCQ/FRQ stem). New permanent rule (`master` §10): every calculation is **formula-first**. `pages.yml` `configure-pages` now sets `enablement: true` so the Pages source flips to "GitHub Actions" automatically; `docs/deploying-github-pages.md` added. |
 | 0.7.0 | 2026-09-01 | Draft — for review | **Lesson 1 built; concept inventory approved; lesson numbers.** Module 1a — Systems and Center of Mass (C2.11) — authored as `systems-and-center-of-mass.json` (student-facing **Lesson 1**): 3 chunks, 3 worked examples, a new Canvas **Center-of-Mass Explorer** interactive (external push vs. internal explosion), 2 misconception items, an error-analysis task, a 3-part FRQ, 6 bank items (`AP1-U2-MCQ-059…064`), 2 diagrams. Every lesson now carries a required **`lessonNumber`** (teaching-order position, shown as "Lesson N"); the build fails without it; homepage + unit index ordered by it; unit name/module labels reconciled. The **concept inventory is approved** (physics review 2026-09-01) — `status` updated; its 27 items gained `objective`/`cedTopic`/`clusterId` (`build/migrations/2026-09-01-concept-inventory-tags.js`) and `taxonomies.json` gained a `misconception` vocab + the concept-inventory field list. `build/build.js` copies `CNAME` into `dist/` when present. |
 | 0.6.0 | 2026-09-01 | Draft — for review | **ID re-index + diagram-label rule.** §12.6 resolved: `build/migrations/2026-09-01-id-reindex.js` promoted the seed bank ids to `AP1-U2-MCQ-001…058` / `AP1-U2-FRQ-001…015`, added `clusterId` to all 81 bank + 23 embedded items + both lesson headers, and rewrote `furtherPracticeQuestionIds`; `build/validate.js` now checks `clusterId` ↔ `objective`. New permanent rule in `master-project-prompt.md` §11: **no label may overlap the object, an arrow/curve, an axis, another label, or a gridline** — every diagram, drawing, and graph. The six FBD SVGs are now generated from specs by `build/gen-diagrams.js` + `build/render/fbd-svg.js`, which auto-places labels clear of everything and fits the viewBox; the FBD-builder canvas labels are shifted off their arrows the same way. |
 | 0.5.0 | 2026-09-01 | Draft — for review | **Structural migrations + build enforcement.** §12.15 resolved: `build/migrations/2026-09-01-objective-cedtopic.js` re-tagged all 95 items to `C2.N` + added a `cedTopic` field (C2.10 split per-item); both lessons gained top-level `objective`/`cedTopic`/`courses`. §12.7 resolved: `build/validate.js` runs first in the build and aborts on controlled-vocabulary drift, empty `courses`, malformed `objective`/`cedTopic`, a distractor with no feedback, an inconsistent FRQ point total, or a numeric concept-inventory option. §12.12 partly resolved: a **unit index page** (`format: "unit-index"`) orders Concept Check (pre) → 12 modules with status → Concept Check (post) and heads the unit on the homepage; unit name standardised to "Force and Translational Dynamics". Also: the FBD SVGs and the FBD-builder interactive now follow the permanent free-body-diagram drawing rules (`master-project-prompt.md` §11 — contact forces from the surface, gravity from the centre, dot forces from the edge, relative lengths meaningful); lesson-check FRQ part (a) model response is now the box + dot diagram, inlined at build time via `parts[].figures`. |

@@ -1,0 +1,511 @@
+{
+  "id": "ap1-u2-nfl",
+  "slug": "newtons-first-law",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Newton's Laws",
+  "lessonNumber": "3",
+  "objective": "C2.1",
+  "cedTopic": "2.4",
+  "clusterId": "2.1",
+  "lessonTitle": "Newton's First Law: Inertia and Equilibrium",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Net force as the vector sum of every force on an object (Lesson 2)",
+    "Constructing a free-body diagram and resolving an angled force into components (Lesson 2)",
+    "Constant velocity means zero acceleration (Unit 1)"
+  ],
+  "majorObjective": "State Newton's first law as the two-way link between zero net force and constant velocity, classify a situation as static, dynamic, or non-equilibrium, and solve for an unknown force in an equilibrium problem — including one with forces at an angle — from $\\sum F_x = 0$ and $\\sum F_y = 0$.",
+  "subObjectives": [
+    "Define [[inertia]] as an object's resistance to any change in its velocity, and [[inertial mass]] as the measure of that resistance.",
+    "State Newton's first law: an object's velocity stays constant **if and only if** the net force on it is zero.",
+    "Classify a described situation as **static equilibrium** (at rest), **dynamic equilibrium** (constant non-zero velocity), or **not in equilibrium**.",
+    "Explain, for a specific case, why 'not accelerating' means the forces are **balanced**, not **absent**.",
+    "Set $\\sum F_x = 0$ and $\\sum F_y = 0$ from a free-body diagram and solve for an unknown force magnitude or direction.",
+    "Resolve angled forces into components and use symmetry to simplify an equilibrium problem.",
+    "Predict how a support force (e.g. a cable tension) changes as its angle changes, including the limiting case."
+  ],
+  "hook": {
+    "prompt": "You are riding in a train moving in a straight line at a steady 100 km/h. You hold a coin still in front of your face and let go. Relative to **you**, where does the coin land?",
+    "choices": [
+      "Behind you — the train moves forward while the coin falls.",
+      "Straight down, landing right at your feet.",
+      "In front of you — the coin carries extra forward motion from your hand.",
+      "It depends on exactly how fast the train is going."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "From Lesson 2 you can find the **net force** on an object by adding every force as a vector, and you can break an angled force into components $F\\cos\\theta$ and $F\\sin\\theta$. From Unit 1, **constant velocity — steady speed in a straight line — means zero acceleration**. This lesson connects those two ideas.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Inertia: Objects Keep Doing What They're Doing",
+      "concept": "[[Inertia]] is an object's resistance to **any change in its velocity** — starting, stopping, speeding up, slowing down, or turning. Every object has it, and it never runs out: a hockey puck sliding on frictionless ice would slide forever at the same speed and direction, because nothing acts to change its velocity.\n\nThe measure of inertia is [[inertial mass]] — the $m$ in kilograms. **More mass means more inertia**: a loaded freight car is hard to get rolling and, once rolling, hard to stop; an empty cart of the same design is easy on both counts. Inertial mass is a property of the object alone — it does not depend on where the object is or how it is moving.\n\nThe coin in the train keeps moving forward with the train because, once you let go, **nothing pushes it backward**. It shares the train's forward velocity and simply keeps it — so it falls straight down *relative to you* and lands at your feet.",
+      "conceptFigures": [
+        { "svg": "first-law/bus-brake.svg", "caption": "When the bus brakes, the floor's friction slows the bus. Nothing pushes the standing passenger backward, so — by inertia — the passenger keeps moving forward until a handrail or seat provides the force to slow them too." }
+      ],
+      "representation": "Inertia shows up any time the motion of a vehicle changes but yours does not — yet:\n\n| What the vehicle does | What you feel | Why |\n|---|---|---|\n| Brakes suddenly | You lurch **forward** | You keep your forward velocity; the seat belt (or dashboard) supplies the backward force to slow you. |\n| Accelerates from a stop | You press **back** into the seat | Your body tends to stay at rest; the seat pushes you forward to speed you up. |\n| Turns left | You lean / slide **right** | You tend to keep going straight; the door or the friction of the seat pushes you left into the turn. |\n\nIn every row there is **no force flinging you** the way you seem to move — you are simply keeping the velocity you had while the vehicle's velocity changes around you.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A city bus is moving forward at a steady speed when the driver brakes hard. A passenger is standing in the aisle, not holding on. Describe what happens to the passenger and explain it with Newton's first law.",
+        "phases": [
+          {
+            "label": "Separate the bus from the passenger",
+            "steps": [
+              "The **bus** slows because the road exerts a large backward friction force on its tyres when the brakes lock the wheels.",
+              "The **passenger** is a separate object. The only forces on the passenger are gravity (down) and the floor's normal force (up) — both vertical."
+            ]
+          },
+          {
+            "label": "Apply the first law to the passenger",
+            "steps": [
+              "There is **no horizontal force** on the passenger, so the passenger's horizontal velocity cannot change — they keep moving forward at the bus's original speed.",
+              "The bus slows underneath them, so relative to the bus the passenger **pitches forward**."
+            ]
+          },
+          {
+            "label": "What finally stops the passenger",
+            "steps": [
+              "The passenger keeps moving forward until something exerts a backward force on them — grabbing a pole, hitting the seat in front, or a neighbour.",
+              "It is not that a force 'threw them forward'; it is that **no force slowed them down** while the bus was slowing."
+            ]
+          }
+        ],
+        "keyMove": "Treating the passenger as a separate object with its own (purely vertical) forces. Once you see there is no horizontal force on the passenger, the first law does the rest."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-nfl-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's First Law",
+        "objective": "C2.1",
+        "cedTopic": "2.4",
+        "clusterId": "2.1",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+        "question": "A car rounds a curve to the left at steady speed. A ball resting on the smooth back seat slides toward the **right side** of the car. The best explanation is:",
+        "choices": [
+          "A rightward force (centrifugal force) pushes the ball outward during the turn.",
+          "The ball tends to keep moving in a straight line, so as the car turns left underneath it, the ball ends up nearer the right side.",
+          "The car's leftward turn creates a rightward reaction force on the ball.",
+          "Gravity pulls the ball toward the outside of the curve."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — with a smooth seat there is almost no sideways force on the ball, so by the first law it keeps moving in a straight line. The car curves left around it, which puts the ball closer to the right-hand door. Nothing pushes the ball outward.",
+          "incorrect": {
+            "0": "There is no outward 'centrifugal force' acting on the ball — that is the name people give to the *feeling* of continuing straight while the car turns. On a smooth seat, the horizontal force on the ball is nearly zero.",
+            "2": "Newton's third law pairs act on *different objects* and are not 'created by turning.' The ball slides right because no force turns it with the car, not because of a reaction force.",
+            "3": "Gravity acts straight down; it has no sideways component on a level road and cannot push the ball toward a door."
+          }
+        },
+        "hint": ["With a smooth (frictionless) seat, what is the sideways force on the ball? What does the first law then say about its straight-line motion?"],
+        "solution": "No sideways force ⇒ the ball keeps going straight (first law); the car turns left around it, leaving it near the right door."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Newton's First Law: Balanced Forces, Not No Forces",
+      "concept": "[[Newton's first law]] states: an object's **velocity stays constant** — same speed, same direction — **if and only if the net force on it is zero.**\n\nRead both directions:\n\n- **Zero net force ⇒ constant velocity.** No net push, no change in motion.\n- **Constant velocity ⇒ zero net force.** If an object moves in a straight line at steady speed (or stays at rest), you can conclude $\\vec{F}_{net} = 0$ without seeing the forces.\n\nThis balanced state is called [[equilibrium]], and it comes in two forms that are physically identical:\n\n- **Static equilibrium** — the object is at rest ($\\vec{v} = 0$).\n- **Dynamic equilibrium** — the object moves at constant non-zero velocity.\n\nBoth have $\\vec{a} = 0$ and $\\vec{F}_{net} = 0$. Standing still and cruising down the highway at a steady 100 km/h are the *same* force situation.\n\n==An object at rest is not free of forces — its forces are balanced.== A book on a table has gravity pulling down and the table pushing up, equal and opposite. Take away the table and the book accelerates downward; the forces were there all along.\n\n*(In Lesson 4 you'll see the first law is just $\\vec{F}_{net} = m\\vec{a}$ with $\\vec{a} = 0$ — not a separate rule.)*",
+      "figures": [
+        { "svg": "first-law/fbd-crate-constant-v.svg", "caption": "A crate **dragged at constant velocity**. All four arrows are equal in length: the pull balances friction, the normal force balances gravity. Constant velocity ⇒ every force is cancelled by an opposite one — even though the crate is moving *and* being pulled." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A 40 kg crate is dragged across a level floor at **constant velocity** by a horizontal rope. The floor exerts 120 N of kinetic friction on the crate. Take $g = 9.8\\text{ m/s}^2$. Find (a) the rope tension and (b) the normal force from the floor.",
+        "figure": { "svg": "first-law/fbd-crate-constant-v.svg", "caption": "Free-body diagram: rope tension right, friction left, normal force up, gravity down." },
+        "phases": [
+          {
+            "label": "Name the condition",
+            "steps": [
+              "Constant velocity ⇒ zero acceleration ⇒ the crate is in **dynamic equilibrium**.",
+              "Equilibrium means $\\sum F_x = 0$ **and** $\\sum F_y = 0$ — one equation per axis. Take $x$ rightward, $y$ upward."
+            ]
+          },
+          {
+            "label": "Horizontal axis → the tension",
+            "steps": [
+              "Horizontal forces: tension $T$ (right, $+$) and friction $f$ (left, $-$).",
+              "Equilibrium condition: $\\sum F_x = 0 \\;\\Rightarrow\\; T - f = 0$.",
+              "Isolate the unknown: $T = f$. Substitute: $T = 120\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Vertical axis → the normal force",
+            "steps": [
+              "Vertical forces: normal force $F_N$ (up, $+$) and weight $mg$ (down, $-$). The rope is horizontal, so it has no vertical component.",
+              "Equilibrium condition: $\\sum F_y = 0 \\;\\Rightarrow\\; F_N - mg = 0$.",
+              "Isolate: $F_N = mg$. Substitute: $F_N = (40)(9.8) = 392\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Both axes balance, consistent with constant velocity. ✓",
+              "$T = f$ because those are the only horizontal forces; $F_N = mg$ because nothing else acts vertically. A larger pull would make it *speed up* (not constant velocity), so $T = f$ exactly is the only value that fits."
+            ]
+          }
+        ],
+        "keyMove": "Turning \"constant velocity\" into two equations, $\\sum F_x = 0$ and $\\sum F_y = 0$ — one for each unknown. No new numbers are needed; the equilibrium condition supplies them."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-nfl-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's First Law",
+        "objective": "C2.1",
+        "cedTopic": "2.4",
+        "clusterId": "2.1",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+        "question": "An elevator is moving **downward at a constant speed**. Compare the tension in the supporting cable to the weight of the elevator.",
+        "choices": [
+          "The tension is less than the weight, because the elevator is moving down.",
+          "The tension equals the weight.",
+          "The tension is greater than the weight, because the cable must hold the elevator back.",
+          "The tension is zero while the elevator descends."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — constant speed in a straight line is equilibrium, so $\\sum F_y = 0$: the upward tension exactly balances the downward weight, $T = mg$. The *direction* of motion does not matter — only that the velocity is constant.",
+          "incorrect": {
+            "0": "Moving downward at *constant* speed still means zero acceleration. Tension less than weight would give a downward net force and a speeding-up descent, not a steady one.",
+            "2": "Tension greater than weight would give an upward net force — the elevator would be slowing down or speeding up upward, not descending steadily.",
+            "3": "Zero tension means free fall (net force $= mg$ down). The elevator would be accelerating at $g$, not moving at constant speed."
+          }
+        },
+        "hint": ["Constant speed in a straight line ⇒ what is the acceleration? What does $\\sum F_y = 0$ then require?"],
+        "solution": "Constant velocity ⇒ equilibrium ⇒ $T = mg$. The direction of travel is irrelevant."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Solving Equilibrium Problems",
+      "concept": "To find an unknown force on an object in equilibrium:\n\n1. Draw the free-body diagram.\n2. Choose $x$ and $y$ axes (pick directions that make the algebra easy).\n3. Resolve every angled force into components — a force $F$ at angle $\\theta$ to the $x$-axis has an $x$-part $F\\cos\\theta$ and a $y$-part $F\\sin\\theta$; **justify the sine/cosine choice from the geometry**, don't guess.\n4. Write $\\sum F_x = 0$ and $\\sum F_y = 0$.\n5. Solve the two equations for up to two unknowns.\n\n**Symmetry is a shortcut.** If two forces are mirror images about an axis, one equilibrium equation becomes automatic ($0 = 0$) and the other carries all the information.\n\nA key pattern: an object hung from **two cables at a shallow angle** needs a large tension, because only the small vertical component $T\\sin\\theta$ of each cable holds it up. As the cables flatten ($\\theta \\to 0$), $T \\to \\infty$ — which is why every real cable, clothesline, and power line sags.",
+      "figures": [
+        { "svg": "first-law/fbd-lamp-two-cables.svg", "caption": "A lamp hung from two cables, each $30°$ above the horizontal. Only the vertical components $F_T\\sin 30°$ support the weight; the horizontal components cancel by symmetry." }
+      ],
+      "representation": "A street sign of weight $W$ hangs from the middle of a cable between two poles; each half makes an angle $\\theta$ above horizontal.\n\n- **Horizontal:** the two tension components $T\\cos\\theta$ point opposite ways and cancel — $\\sum F_x = 0$ gives no new information (and tells you the two tensions are equal).\n- **Vertical:** $\\sum F_y = 0 \\;\\Rightarrow\\; 2T\\sin\\theta - W = 0 \\;\\Rightarrow\\; T = \\dfrac{W}{2\\sin\\theta}$.\n\nFor $\\theta = 30°$: $T = \\dfrac{W}{2(0.5)} = W$ — each cable carries the **full weight**. For $\\theta = 5°$: $T \\approx \\dfrac{W}{0.17} \\approx 5.7W$.",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A 6.0 kg lamp hangs at rest from two cables. Each cable makes $30°$ with the horizontal ceiling. Take $g = 9.8\\text{ m/s}^2$. Find the tension in each cable.",
+        "figure": { "svg": "first-law/fbd-lamp-two-cables.svg", "caption": "Free-body diagram of the lamp: weight down, and one tension along each cable, $30°$ above horizontal." },
+        "phases": [
+          {
+            "label": "Set up",
+            "steps": [
+              "At rest ⇒ **static equilibrium** ⇒ $\\sum F_x = 0$ and $\\sum F_y = 0$. Axes: $x$ horizontal, $y$ vertical.",
+              "The two cables are mirror images about the vertical, so their tensions are equal — call each one $T$.",
+              "Each tension makes $30°$ with the horizontal, so its **vertical** component is $T\\sin 30°$ and its **horizontal** component is $T\\cos 30°$."
+            ]
+          },
+          {
+            "label": "Horizontal axis (symmetry check)",
+            "steps": [
+              "$\\sum F_x = T\\cos 30° - T\\cos 30° = 0$ — automatically satisfied. This confirms the two tensions are equal but gives no number."
+            ]
+          },
+          {
+            "label": "Vertical axis → the tension",
+            "steps": [
+              "Upward: $T\\sin 30°$ from each of the two cables. Downward: the weight $mg$.",
+              "$\\sum F_y = 0 \\;\\Rightarrow\\; 2T\\sin 30° - mg = 0$.",
+              "Isolate the unknown: $T = \\dfrac{mg}{2\\sin 30°}$.",
+              "Substitute: $T = \\dfrac{(6.0)(9.8)}{2(0.50)} = \\dfrac{58.8}{1.0} = 58.8\\text{ N} \\approx 59\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Each cable's upward component is $T\\sin 30° = (58.8)(0.5) = 29.4\\text{ N}$; two of them add to $58.8\\text{ N} = mg$. ✓",
+              "The tension ($59\\text{ N}$) equals the full weight even though each cable only 'holds half.' Flatten the cables toward horizontal and $\\sin\\theta \\to 0$, so $T \\to \\infty$."
+            ]
+          }
+        ],
+        "keyMove": "Only the **vertical components** hold the lamp up: $2T\\sin\\theta = mg$. The horizontal components just cancel, so they never enter the answer."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-nfl-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's First Law",
+        "objective": "C2.1",
+        "cedTopic": "2.4",
+        "clusterId": "2.1",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "",
+        "figures": [
+          { "svg": "first-law/fbd-lamp-two-cables.svg", "caption": "The lamp's free-body diagram. Each cable is $30°$ above the horizontal; $x$ is horizontal, $y$ is vertical." }
+        ],
+        "question": "For the lamp above (weight $W$, two equal tensions $T$ at $30°$ above horizontal), which pair of equations correctly states equilibrium?",
+        "choices": [
+          "$\\sum F_x:\\; T\\cos 30° - T\\cos 30° = 0$   and   $\\sum F_y:\\; 2T\\sin 30° - W = 0$",
+          "$\\sum F_x:\\; 2T\\cos 30° - W = 0$   and   $\\sum F_y:\\; T\\sin 30° - T\\sin 30° = 0$",
+          "$\\sum F_x:\\; T - T = 0$   and   $\\sum F_y:\\; 2T - W = 0$",
+          "$\\sum F_x:\\; T\\sin 30° - T\\sin 30° = 0$   and   $\\sum F_y:\\; 2T\\cos 30° - W = 0$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — with the angle measured from the horizontal, each tension's horizontal part is $T\\cos 30°$ (the two cancel) and its vertical part is $T\\sin 30°$ (the two add and balance $W$). That gives $2T\\sin 30° = W$.",
+          "incorrect": {
+            "1": "This swaps the roles of the axes: the *weight* is vertical, so it belongs in the $\\sum F_y$ equation, and the horizontal components are what cancel.",
+            "2": "This uses the full tension $T$ on each axis, ignoring the angle. Only the components ($T\\cos 30°$, $T\\sin 30°$) act along the axes.",
+            "3": "The sine/cosine are swapped. With the angle taken from the *horizontal*, the horizontal component uses $\\cos$ and the vertical uses $\\sin$."
+          }
+        },
+        "hint": ["The angle is measured from the horizontal. Which component ($\\cos$ or $\\sin$) is horizontal? Which forces cancel, and which balance the weight?"],
+        "solution": "$\\sum F_x: T\\cos 30° - T\\cos 30° = 0$; $\\sum F_y: 2T\\sin 30° - W = 0$."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "fbd-builder",
+    "title": "FBD Builder — check for equilibrium",
+    "subtitle": "Build the diagram, then test whether the forces balance",
+    "componentKey": "fbd-builder",
+    "description": "Use the two static scenarios — **a book at rest on a table** and **a ball hanging from a string** — to practise the equilibrium condition. Turn on each force, set its direction, and set its **relative length**. Press **Check**: for an object at rest, every axis must balance, so the up force and the down force must be drawn the *same length*. Then try the moving scenarios and see that 'constant velocity' needs the same balance.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-nfl-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's First Law",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+      "question": "A car travels down a straight, level highway at a constant 100 km/h. Which statement about the horizontal forces on the car is correct?",
+      "choices": [
+        "There is a net forward force — that is what keeps the car moving.",
+        "The forward drive force from the road exactly balances air resistance and rolling friction, so the net force is zero.",
+        "There are no horizontal forces at all, since the speed is not changing.",
+        "The forward force is slightly larger than the resistive forces, to make up for energy lost to friction."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — constant velocity means zero acceleration, so the horizontal forces sum to zero. The engine (through the tyres) pushes the car forward with exactly enough force to cancel drag and rolling resistance. Remove the drive force and the car coasts to a stop; the forward force is needed to *balance* friction, not to sustain the motion itself.",
+        "incorrect": {
+          "0": "A net forward force would make the car *speed up*. At constant velocity the net force is zero, by the first law.",
+          "2": "There are real horizontal forces — a forward drive force and backward resistive forces. They are equal in size, so they *sum* to zero, but each one is non-zero.",
+          "3": "'Energy lost to friction' is a separate (energy) idea. For *forces*, constant velocity requires an exact balance: forward force $=$ resistive forces, no margin."
+        }
+      },
+      "hint": ["Constant velocity ⇒ zero acceleration ⇒ what must the net force be? Is that the same as 'no forces'?"],
+      "solution": "Constant velocity ⇒ net force zero: the forward drive force exactly balances drag and rolling friction."
+    },
+    {
+      "id": "ap1-u2-nfl-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's First Law",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "motionless-implies-no-forces-act",
+      "question": "A heavy chandelier hangs motionless from a single chain attached to the ceiling. How many forces act on the chandelier, and are they balanced?",
+      "choices": [
+        "No forces — it is not moving.",
+        "One force: the chain's upward pull.",
+        "Two forces — gravity down and the chain's tension up — and they are balanced.",
+        "Two forces, but they cannot be exactly balanced or the chandelier would fall."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — 'motionless' means the forces are *balanced*, not absent. Gravity pulls the chandelier down; the chain pulls it up with an equal force. $\\sum F_y = 0$, so it stays at rest.",
+        "incorrect": {
+          "0": "An object at rest still has forces on it — they just cancel. Cut the chain and gravity is very much still there.",
+          "1": "Gravity also acts, pulling the chandelier down. Without it the chain would fling the chandelier upward.",
+          "3": "Balanced forces are exactly what *keeps* it at rest. Zero net force means zero acceleration, which for something starting at rest means it stays at rest."
+        }
+      },
+      "hint": ["What is pulling the chandelier down? What is holding it up? If it isn't accelerating, how do those two compare?"],
+      "solution": "Two balanced forces: gravity down and chain tension up, equal in size."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $4.0\\text{ kg}$ sign hangs at rest from two cables, each making $40°$ with the horizontal. Find the tension in each cable. ($g = 9.8\\text{ m/s}^2$.)\n\n**Student's work:** \"There are two cables sharing the weight, so each holds half: $T = \\dfrac{mg}{2} = \\dfrac{(4.0)(9.8)}{2} = 19.6\\text{ N}$.\"",
+      "prompts": [
+        "Identify the student's error.",
+        "Explain which part of each tension actually supports the sign.",
+        "Carry out the correct calculation, formula first.",
+        "Give a quick check that shows the student's answer must be too small."
+      ],
+      "modelResponse": "**(1)** The student used the full tension of each cable as if it pulled straight up. The cables are at $40°$ to the horizontal, so only part of each tension is vertical. **(2)** Only the **vertical component** $T\\sin 40°$ of each cable helps hold the sign up; the horizontal components $T\\cos 40°$ point opposite ways and cancel. **(3)** Equilibrium on the vertical axis: $\\sum F_y = 0 \\Rightarrow 2T\\sin 40° - mg = 0$. Isolate the unknown: $T = \\dfrac{mg}{2\\sin 40°}$. Substitute: $T = \\dfrac{(4.0)(9.8)}{2(0.643)} = \\dfrac{39.2}{1.286} = 30.5\\text{ N} \\approx 31\\text{ N}$. **(4)** $T = mg/2$ would be correct only if the cables were **vertical** ($\\theta = 90°$, $\\sin 90° = 1$). For any smaller angle $\\sin\\theta < 1$, so dividing by $2\\sin\\theta$ makes $T$ *larger* than $mg/2$. The real answer must exceed $19.6\\text{ N}$ — and it does ($31\\text{ N}$).",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "One equilibrium situation ties together: the **words** ('a lamp hangs at rest from two cables at $30°$'); the **free-body diagram** (weight down, two tensions up-and-out); the **component equations** ($\\sum F_x = 0$ auto-satisfied by symmetry, $\\sum F_y = 0$ giving $2T\\sin 30° = mg$); and the **number** ($T \\approx 59\\text{ N}$). The diagram is where you decide the sine/cosine assignment; the symmetry of the diagram is what collapses two equations into one.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-nfl-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's First Law",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "question": "Which of these objects is **not** in equilibrium?",
+      "choices": [
+        "A book lying still on a shelf.",
+        "A skydiver falling straight down at constant terminal speed.",
+        "A car speeding up as it merges onto a highway.",
+        "A puck sliding across frictionless ice in a straight line at steady speed."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — the merging car's speed is changing, so it has a non-zero acceleration and a non-zero net force. The other three all have $\\vec{a} = 0$ (at rest, or constant velocity) and are in equilibrium — static for the book, dynamic for the skydiver and the puck.",
+        "incorrect": {
+          "0": "A book at rest is in *static* equilibrium — $\\vec{a} = 0$, balanced forces.",
+          "1": "'Constant terminal speed' in a straight line is *dynamic* equilibrium: gravity down is exactly balanced by air resistance up.",
+          "3": "Constant speed in a straight line, frictionless — dynamic equilibrium, net force zero."
+        }
+      },
+      "hint": ["Equilibrium means zero acceleration. Which object's velocity is changing?"],
+      "solution": "The merging car is speeding up (non-zero acceleration), so it is not in equilibrium. The other three have constant velocity."
+    },
+    {
+      "id": "ap1-u2-nfl-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's First Law",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "steeper-cable-angle-does-not-change-tension",
+      "scenario": "A $12\\text{ kg}$ traffic light hangs from the midpoint of a cable strung between two poles. Each half of the cable makes an angle of $15°$ with the horizontal. Take $g = 9.8\\text{ m/s}^2$.",
+      "figures": [
+        { "svg": "first-law/fbd-traffic-light.svg", "caption": "The traffic light's free-body diagram: weight down, and one tension along each half of the cable, $15°$ above horizontal." }
+      ],
+      "parts": [
+        { "label": "(a)", "prompt": "State the condition for the traffic light to hang at rest, and write the equilibrium equations for the horizontal ($x$) and vertical ($y$) axes. Let each tension be $T$.", "points": 3, "modelResponse": "At rest ⇒ $\\vec{a} = 0$ ⇒ $\\sum F_x = 0$ and $\\sum F_y = 0$. With the angle measured from the horizontal: $\\sum F_x:\\; T\\cos 15° - T\\cos 15° = 0$ (satisfied by symmetry; the two tensions are equal). $\\sum F_y:\\; 2T\\sin 15° - mg = 0$." },
+        { "label": "(b)", "prompt": "Find the tension in the cable.", "points": 3, "modelResponse": "From the vertical equation, isolate $T$ first: $2T\\sin 15° = mg \\Rightarrow T = \\dfrac{mg}{2\\sin 15°}$. Substitute: $T = \\dfrac{(12)(9.8)}{2(0.259)} = \\dfrac{117.6}{0.518} = 227\\text{ N}$." },
+        { "label": "(c)", "prompt": "The cable is rated for a maximum tension of $1000\\text{ N}$. Without moving the light, the cable is tightened so each half makes only $3°$ with the horizontal. Does the tension now exceed the rating? Justify with a calculation.", "points": 3, "modelResponse": "Same formula, new angle: $T = \\dfrac{mg}{2\\sin 3°} = \\dfrac{117.6}{2(0.0523)} = \\dfrac{117.6}{0.105} = 1123\\text{ N}$. This **exceeds** the $1000\\text{ N}$ rating. Flattening the cable from $15°$ to $3°$ nearly *quintupled* the tension even though the weight never changed — because the vertical component per unit tension, $\\sin\\theta$, shrank." }
+      ],
+      "totalPoints": 9,
+      "scoringNotes": "(a) 1 pt for stating $\\sum F_x = \\sum F_y = 0$ from $\\vec{a}=0$; 1 pt for the correct $x$ equation / symmetry statement; 1 pt for $2T\\sin 15° - mg = 0$ (award if $\\cos$/$\\sin$ swap is *consistent* with an angle from the vertical). (b) 1 pt isolate $T$ symbolically, 1 pt substitute, 1 pt $\\approx 227\\text{ N}$ (accept 220–230). (c) 1 pt correct recalculation, 1 pt numerical answer $\\approx 1100\\text{ N}$, 1 pt explicit 'exceeds the rating' with the angle-dependence reasoning. Carry (b) errors forward."
+    },
+    {
+      "id": "ap1-u2-nfl-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's First Law",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "",
+      "question": "A person stands on a bathroom scale in a stationary elevator; it reads $700\\text{ N}$. The elevator then rises at a **constant speed** of $3\\text{ m/s}$. While it is moving steadily upward, the scale reads:",
+      "choices": [
+        "more than $700\\text{ N}$, because the elevator is now moving up",
+        "exactly $700\\text{ N}$",
+        "less than $700\\text{ N}$, because upward motion 'unloads' the scale",
+        "$700\\text{ N}$ only for an instant, then it drops"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — constant speed in a straight line is equilibrium, so $\\sum F_y = 0$ for the person: the scale's upward normal force equals the person's weight, $N = mg = 700\\text{ N}$. The scale reads the normal force, so it still reads $700\\text{ N}$. A different reading would require an acceleration, which happens only while the elevator *speeds up or slows down*, not while it cruises.",
+        "incorrect": {
+          "0": "Moving up is not the same as accelerating up. At constant speed $\\vec{a} = 0$, so $N = mg$ exactly.",
+          "2": "There is no 'unloading' at constant velocity — the forces are balanced, so $N = mg$.",
+          "3": "The reading is a steady $700\\text{ N}$ for the whole constant-speed phase. It only changes during the brief speed-up at the start and slow-down at the end."
+        }
+      },
+      "hint": ["The scale reads the normal force on the person. What does $\\sum F_y = 0$ say about the normal force when the elevator moves at constant velocity?"],
+      "solution": "Constant velocity ⇒ equilibrium ⇒ $N = mg = 700\\text{ N}$; the scale reading is unchanged."
+    }
+  ],
+  "examConnection": "Newton's first law and equilibrium are tested on the AP exam as: **classification** ('is this object in equilibrium?' — spot the constant-velocity or at-rest cue); **conceptual reasoning** ('a moving object at constant speed has zero net force' — reject the sustaining-force idea and the 'at rest ⇒ no forces' idea); and **quantitative equilibrium** — draw an FBD, resolve angled forces, set $\\sum F_x = 0$ and $\\sum F_y = 0$, and solve for a tension or a normal force. The two-cable / hanging-sign geometry, where $T = \\dfrac{W}{2\\sin\\theta}$ blows up at small angles, is a recurring free-response setup. On free response, a common lost point is treating a cable's full tension as vertical instead of using its component.",
+  "summary": "- **Inertia** is an object's resistance to any change in its velocity; **inertial mass** ($m$) is its measure. More mass, more inertia.\n- **Newton's first law:** velocity is constant **if and only if** the net force is zero. It runs both ways — you can conclude $\\vec{F}_{net} = 0$ just from seeing constant velocity.\n- **Equilibrium** = zero net force = zero acceleration. **Static** (at rest) and **dynamic** (constant non-zero velocity) are the same force situation.\n- ==An object at rest has forces on it — balanced, not absent.==\n- **Solve an equilibrium problem** by drawing the FBD, resolving angled forces, and setting $\\sum F_x = 0$ and $\\sum F_y = 0$ — two equations for up to two unknowns. Use symmetry to simplify.\n- An object on **two shallow cables** needs a large tension: $T = \\dfrac{W}{2\\sin\\theta}$, which grows without bound as $\\theta \\to 0$.",
+  "exitQuestion": {
+    "id": "ap1-u2-nfl-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Newton's First Law",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "motion-requires-a-sustaining-force",
+    "question": "A puck slides across frictionless ice in a straight line at constant speed. A student says: *\"There must be a small forward force keeping it going — it's just balanced by nothing behind it.\"* The best correction is:",
+    "choices": [
+      "The student is right: a small forward force is needed, and there is nothing to balance it.",
+      "There is **no** horizontal force on the puck at all. Constant velocity requires zero *net* force, and here that is achieved with zero force — gravity and the normal force balance vertically, and nothing acts horizontally.",
+      "There is a forward force from the original push, which is stored in the puck and slowly released.",
+      "The forward force is balanced by the puck's inertia acting backward."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — no horizontal force acts on the puck. The first law does not say 'a forward force balanced by nothing'; it says the *net* force is zero, and on frictionless ice with no one pushing, that means *no* horizontal force. The puck keeps moving purely by inertia.",
+      "incorrect": {
+        "0": "A forward force 'balanced by nothing' is a net forward force — it would make the puck speed up. Constant velocity needs zero net force, which here means zero horizontal force.",
+        "2": "There is no 'stored force.' A force is an interaction happening *now*; once the pusher lets go, no forward force remains. The puck coasts because nothing stops it.",
+        "3": "Inertia is not a force and does not 'act backward.' It is the *property* that makes the puck keep its velocity when no force acts."
+      }
+    },
+    "hint": [
+      "The first law is about the *net* force, not about a force 'balanced by nothing.'",
+      "On frictionless ice with no one pushing, list the horizontal forces on the puck. How many are there?"
+    ],
+    "solution": "No horizontal force acts. Constant velocity ⇒ zero net force, and here that means zero force horizontally; the puck moves by inertia."
+  },
+  "questionBankFile": "ap1-u2-first-law.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-065", "AP1-U2-MCQ-066", "AP1-U2-MCQ-067",
+    "AP1-U2-MCQ-068", "AP1-U2-MCQ-069", "AP1-U2-MCQ-070"
+  ]
+}

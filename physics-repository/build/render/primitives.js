@@ -74,23 +74,30 @@ export function renderFigures(figures) {
 }
 
 /** Emits an empty mount + embedded question JSON. js/assessment.js renders it.
- * A free-response part may carry `figure` / `figures` (same shape as a
- * chunk figure) — the correct diagram for that part. assessment.js can't
- * read the filesystem, so we inline those SVGs here into `modelFigureHtml`
- * and drop the raw paths. */
+ * assessment.js can't read the filesystem, so any authored SVG figures are
+ * inlined here into HTML strings and the raw paths dropped:
+ *   - `figure` / `figures` on the check itself -> `figureHtml` (shown with
+ *     the question stem, MCQ or the FRQ scenario);
+ *   - `figure` / `figures` on a free-response part -> `modelFigureHtml`
+ *     (the correct diagram, shown in that part's model-response). */
 export function renderFormativeCheck(check, idSuffix) {
   if (!check) return "";
-  let prepared = check;
+  let prepared = { ...check };
+
+  const topFigs = check.figures || (check.figure ? [check.figure] : null);
+  if (topFigs) {
+    delete prepared.figure;
+    delete prepared.figures;
+    prepared.figureHtml = renderFigures(topFigs);
+  }
+
   if (Array.isArray(check.parts) && check.parts.some((p) => p && (p.figure || p.figures))) {
-    prepared = {
-      ...check,
-      parts: check.parts.map((p) => {
-        const figs = p && (p.figures || (p.figure ? [p.figure] : null));
-        if (!figs) return p;
-        const { figure, figures, ...rest } = p;
-        return { ...rest, modelFigureHtml: renderFigures(figs) };
-      }),
-    };
+    prepared.parts = check.parts.map((p) => {
+      const figs = p && (p.figures || (p.figure ? [p.figure] : null));
+      if (!figs) return p;
+      const { figure, figures, ...rest } = p;
+      return { ...rest, modelFigureHtml: renderFigures(figs) };
+    });
   }
   return `
   <div class="quiz-mount" id="formative-check-${esc(idSuffix)}">

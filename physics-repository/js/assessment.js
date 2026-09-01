@@ -180,6 +180,13 @@ function renderFreeResponse(container, question) {
   scenario.innerHTML = mdInline(question.scenario || question.question || "");
   container.appendChild(scenario);
 
+  if (question.figureHtml) {
+    const fig = document.createElement("div");
+    fig.className = "frq__figure";
+    fig.innerHTML = question.figureHtml;
+    container.appendChild(fig);
+  }
+
   const parts = Array.isArray(question.parts) ? question.parts : [];
   if (parts.length) {
     const list = document.createElement("ol");
@@ -252,6 +259,13 @@ function renderMultipleChoice(container, question) {
   const prompt = document.createElement("p");
   prompt.innerHTML = mdInline(question.question);
   container.appendChild(prompt);
+
+  if (question.figureHtml) {
+    const fig = document.createElement("div");
+    fig.className = "quiz__figure";
+    fig.innerHTML = question.figureHtml;
+    container.appendChild(fig);
+  }
 
   const list = document.createElement("div");
   question.choices.forEach((choiceText, index) => {
