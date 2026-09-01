@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img"
+     aria-label="The two-axis method. An x-axis is drawn along the direction of motion and a y-axis perpendicular to it, both through the object. A rope tension acts at angle theta above the x-axis; dashed lines drop from its tip to each axis, marking its components F_T cos theta along x and F_T sin theta along y. Beside the y-axis: sum of F_y equals 0. Beside the x-axis: sum of F_x equals m a_x.">
+  <!-- Hand-authored schematic. Labels placed clear of the axes, the force,
+       the components, and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="tam-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+    <marker id="tam-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f0c27a"/></marker>
+  </defs>
+
+  <!-- axes through the object -->
+  <line x1="100" y1="165" x2="322" y2="165" stroke="#8b96a5" stroke-width="1.8" marker-end="url(#tam-grey)"/>
+  <line x1="140" y1="207" x2="140" y2="58" stroke="#8b96a5" stroke-width="1.8" marker-end="url(#tam-grey)"/>
+  <text x="332" y="169" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b96a5">x</text>
+  <text x="140" y="48" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#8b96a5">y</text>
+  <text x="300" y="184" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">(along the motion)</text>
+
+  <!-- the object -->
+  <rect x="118" y="150" width="44" height="30" rx="3" fill="#e6edf3" fill-opacity="0.06" stroke="#e6edf3" stroke-width="1.4"/>
+  <circle cx="140" cy="165" r="2.4" fill="#e6edf3"/>
+
+  <!-- rope tension at angle theta -->
+  <line x1="140" y1="165" x2="237" y2="94.5" stroke="#f0c27a" stroke-width="3" marker-end="url(#tam-amber)"/>
+  <text x="245" y="86" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f0c27a">F<tspan font-size="9" dy="3">T</tspan></text>
+
+  <!-- angle theta -->
+  <line x1="140" y1="165" x2="196" y2="165" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+  <path d="M 176 165 A 36 36 0 0 0 169.1 143.8" fill="none" stroke="#8b96a5" stroke-width="1.2"/>
+  <text x="188" y="153" font-family="system-ui, sans-serif" font-size="13" fill="#8b96a5">&#952;</text>
+
+  <!-- components of F_T: dashed drops to each axis -->
+  <line x1="237" y1="94.5" x2="237" y2="165" stroke="#f0c27a" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <line x1="237" y1="94.5" x2="140" y2="94.5" stroke="#f0c27a" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="186" y="182" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#f0c27a">F<tspan font-size="8" dy="2">T</tspan><tspan dy="-2"> cos&#8201;&#952;</tspan></text>
+  <text x="132" y="128" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#f0c27a">F<tspan font-size="8" dy="2">T</tspan><tspan dy="-2"> sin&#8201;&#952;</tspan></text>
+
+  <!-- the two sums -->
+  <text x="154" y="78" font-family="system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#58a6ff">&#931;F<tspan font-size="9" dy="2">y</tspan><tspan dy="-2"> = 0</tspan></text>
+  <text x="248" y="146" font-family="system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#58a6ff">&#931;F<tspan font-size="9" dy="2">x</tspan><tspan dy="-2"> = m a</tspan><tspan font-size="9" dy="2">x</tspan></text>
+</svg>

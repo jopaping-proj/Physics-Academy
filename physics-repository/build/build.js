@@ -132,6 +132,7 @@ const COMPONENT_SCRIPTS = {
   "newtons-second-law-explorer": "js/lesson-interactives/newtons-second-law-explorer.js",
   "fbd-builder": "js/lesson-interactives/fbd-builder.js",
   "center-of-mass-explorer": "js/lesson-interactives/center-of-mass-explorer.js",
+  "interaction-pair-explorer": "js/lesson-interactives/interaction-pair-explorer.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 

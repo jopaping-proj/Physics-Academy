@@ -226,6 +226,7 @@ export function errorAnalysisSlides(list) {
     </div>
     <div class="error-analysis__model-response" hidden>
       <div class="error-analysis__model-response-label">Model Response</div>
+      ${renderFigures(e.modelFigures)}
       ${mdToHtml(e.modelResponse)}
     </div>
   </div>`,

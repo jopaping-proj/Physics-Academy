@@ -44,11 +44,11 @@
       "title": "Adding Up Several Forces on One Line",
       "concept": "When more than two forces act **along the same line**, the net force is still just their **signed sum**. Pick a positive direction, give each force a $+$ or $-$, add:\n\n$$F_{net} = \\sum F = F_1 + F_2 + F_3 + \\dots$$\n\nThen Newton's second law gives the acceleration:\n\n$$a = \\frac{F_{net}}{m}$$\n\nThe acceleration points the same way as the net force. On a **frictionless horizontal surface**, gravity and the normal force are vertical and cancel, so they don't enter the horizontal calculation at all — but you should still draw them.\n\n==A force that points *opposite* the motion is not 'used up' — it is a real force with a minus sign, and it makes the net force (and the acceleration) smaller.==",
       "figures": [
-        { "svg": "multi-force/fbd-three-forces.svg", "caption": "A sled on frictionless ice with three horizontal forces: a $20\\text{ N}$ push and a $15\\text{ N}$ pull forward, a $5\\text{ N}$ wind backward. Gravity and the normal force are vertical and cancel." }
+        { "svg": "multi-force/fbd-three-forces.svg", "caption": "A sled on frictionless ice with three horizontal forces: a $15\\text{ N}$ push and a $20\\text{ N}$ pull forward, a $5\\text{ N}$ wind backward. Gravity and the normal force are vertical and cancel." }
       ],
       "workedExample": {
         "scaffold": "full",
-        "problem": "A $6.0\\text{ kg}$ sled sits on frictionless ice. A child pushes it forward with $20\\text{ N}$, a friend pulls it forward with a rope at $15\\text{ N}$ (horizontal), and a headwind pushes back on it with $5.0\\text{ N}$. Find the sled's acceleration.",
+        "problem": "A $6.0\\text{ kg}$ sled sits on frictionless ice. A child pushes it forward with $15\\text{ N}$, a friend pulls it forward with a rope at $20\\text{ N}$ (horizontal), and a headwind pushes back on it with $5.0\\text{ N}$. Find the sled's acceleration.",
         "figure": { "svg": "multi-force/fbd-three-forces.svg", "caption": "The three horizontal forces on the sled. The two forward forces add; the wind subtracts." },
         "phases": [
           {
@@ -62,7 +62,7 @@
           {
             "label": "Net force along the motion",
             "steps": [
-              "$F_{net} = \\sum F_x = (+20) + (+15) + (-5.0)$.",
+              "$F_{net} = \\sum F_x = (+15) + (+20) + (-5.0)$.",
               "$F_{net} = +30\\text{ N}$ (forward)."
             ]
           },
@@ -121,7 +121,10 @@
     {
       "id": "chunk-2",
       "title": "Two Axes at Once: the Normal Force and the Motion",
-      "concept": "Most real problems have forces that are **not** all along one line — a rope at an angle, a ramp, a push that is partly downward. The move is to use Newton's second law **separately on two perpendicular axes**.\n\nFor an object sliding along a flat surface, choose $x$ along the motion and $y$ perpendicular to it. Then:\n\n- **Perpendicular axis ($y$):** the object stays on the surface — it has **no** $y$-acceleration — so\n$$\\sum F_y = 0$$\nThis equation is what gives you the **normal force**. Because an angled rope or push changes the $y$-forces, ==the normal force is generally *not* equal to $mg$.==\n- **Motion axis ($x$):** here the object accelerates, so\n$$\\sum F_x = m a_x$$\n\nResolve every angled force into an $x$-part and a $y$-part first, then put each part in the right equation. Two equations, and usually two unknowns (the normal force and the acceleration).",
+      "concept": "Most real problems have forces that are **not** all along one line — a rope at an angle, a ramp, a push that is partly downward. The move is to use Newton's second law **separately on two perpendicular axes**.\n\nFor an object sliding along a flat surface, choose $x$ along the motion and $y$ perpendicular to it.\n\n**Perpendicular axis ($y$).** The object stays on the surface — it has **no** $y$-acceleration — so $\\sum F_y = 0$. This equation is what gives you the **normal force**. Because an angled rope or push changes the $y$-forces, ==the normal force is generally *not* equal to $mg$.==\n\n**Motion axis ($x$).** Here the object accelerates, so $\\sum F_x = m a_x$. This equation gives you the acceleration.\n\nResolve every angled force into an $x$-part and a $y$-part first, then put each part in the right equation. Two equations, and usually two unknowns (the normal force and the acceleration).",
+      "conceptFigures": [
+        { "svg": "multi-force/two-axis-method.svg", "caption": "Choose $x$ along the motion and $y$ perpendicular to it. Resolve the angled force into $F_T\\cos\\theta$ (goes in the $x$-equation) and $F_T\\sin\\theta$ (goes in the $y$-equation). The object stays on the surface, so $\\sum F_y = 0$; it accelerates along the motion, so $\\sum F_x = m a_x$." }
+      ],
       "figures": [
         { "svg": "multi-force/fbd-angled-pull-accel.svg", "caption": "A crate pulled across a rough floor by a rope at $30°$ above horizontal, speeding up. The rope's vertical part $T\\sin 30°$ reduces the normal force; its horizontal part $T\\cos 30°$ beats friction, so the crate accelerates." }
       ],
@@ -198,6 +201,9 @@
           }
         },
         "hint": ["Write $\\sum F_y = 0$. Which way does the vertical component of a *down-and-forward* push point? Does it add to or subtract from $mg$?"],
+        "hintFigures": [
+          { "svg": "multi-force/dot-lawnmower.svg", "caption": "Dot free-body diagram: the handle push points down and forward, so its vertical component is **downward** — the ground must support $mg$ *and* that downward part, so $F_N > mg$." }
+        ],
         "solution": "$F_N = mg + F_{push}\\sin 40°$, which is larger than $mg$."
       }
     },
@@ -312,6 +318,9 @@
         }
       },
       "hint": ["List the vertical forces on the box. The rope pulls up and forward — does that add a vertical force? Then $\\sum F_y = 0$."],
+      "hintFigures": [
+        { "svg": "multi-force/dot-angled-rope.svg", "caption": "Dot free-body diagram: the rope tension has an **upward** component $T\\sin\\theta$, so the vertical balance is $F_N + T\\sin\\theta - mg = 0$ — the normal force is *reduced* below $mg$." }
+      ],
       "solution": "$F_N = mg - T\\sin 25°$, which is less than $mg$ — the upward pull of the rope reduces the normal force."
     },
     {
@@ -346,6 +355,9 @@
         }
       },
       "hint": ["Does the block accelerate vertically? Horizontally? Each answer sets the right-hand side of that axis's equation."],
+      "hintFigures": [
+        { "svg": "multi-force/dot-angled-rope.svg", "caption": "Dot free-body diagram: the block stays on the floor, so $\\sum F_y = 0$; it accelerates along the floor, so $\\sum F_x = m a_x$ — two independent equations for the same object." }
+      ],
       "solution": "$\\sum F_y = 0$ (no vertical acceleration) and $\\sum F_x = ma_x$ (horizontal motion) — two separate equations."
     }
   ],
@@ -359,6 +371,9 @@
         "State a check that shows the student's answer is too large."
       ],
       "modelResponse": "**(1)** The student added all three force magnitudes, treating the $6.0\\text{ N}$ west force as if it also pointed east. **(2)** The net force is a *signed* sum: after choosing a positive direction, forces the other way get a minus sign. With east positive, the $6.0\\text{ N}$ west force is $-6.0\\text{ N}$. **(3)** $F_{net} = \\sum F_x = (+12) + (+8.0) + (-6.0) = +14\\text{ N}$ (east). Then $F_{net} = ma \\Rightarrow a = \\dfrac{F_{net}}{m} = \\dfrac{14}{4.0} = 3.5\\text{ m/s}^2$, east. **(4)** The two eastward forces alone give $20\\text{ N}$, so $a$ cannot exceed $20/4.0 = 5.0\\text{ m/s}^2$. The westward force can only *reduce* the acceleration, so $6.5\\text{ m/s}^2$ is impossible.",
+      "modelFigures": [
+        { "svg": "multi-force/dot-three-forces.svg", "caption": "The correct free-body diagram: two forces east ($12\\text{ N}$, $8\\text{ N}$) and one west ($6\\text{ N}$). Taking east as $+$, the signed sum is $12 + 8 - 6 = 14\\text{ N}$ east." }
+      ],
       "responseMaxLength": 700
     }
   ],
@@ -391,6 +406,9 @@
         }
       },
       "hint": ["Perpendicular forces: $F_{net} = \\sqrt{F_1^2 + F_2^2}$. Then $a = F_{net}/m$."],
+      "solutionFigures": [
+        { "svg": "multi-force/dot-perpendicular.svg", "caption": "The two forces are perpendicular, so the net force is the hypotenuse: $F_{net} = \\sqrt{(6.0)^2 + (8.0)^2} = 10\\text{ N}$, directed north-east. Then $a = F_{net}/m = 5.0\\text{ m/s}^2$." }
+      ],
       "solution": "$F_{net} = \\sqrt{6.0^2 + 8.0^2} = 10\\text{ N}$; $a = 10/2.0 = 5.0\\text{ m/s}^2$."
     },
     {

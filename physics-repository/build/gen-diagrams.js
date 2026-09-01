@@ -128,20 +128,20 @@ const DIAGRAMS = {
     style: "box",
     surface: { side: "bottom" },
     ariaLabel:
-      "Box free-body diagram of a sled on frictionless ice. Gravity down from the centre and the normal force up from the bottom surface are equal and cancel. Three horizontal forces: a long forward push and a shorter forward pull, both from the back face, and a short backward wind force from the front face. The forward forces together beat the wind, so the net force is forward.",
+      "Box free-body diagram of a sled on frictionless ice. Gravity down from the centre and the normal force up from the bottom surface are equal and cancel. Three horizontal forces: a forward push and a longer forward pull, both from the back face, and a short backward wind force. The forward forces together beat the wind, so the net force is forward.",
     forces: [
       { sym: "F_g", dir: "down", mag: 3, anchor: [150, 112], color: "grey" },
       { sym: "F_N", dir: "up", mag: 3, anchor: [134, 134], color: "blue" },
-      { sym: "F_push", dir: "right", mag: 5, anchor: [116, 99], color: "amber" },
-      { sym: "F_pull", dir: "right", mag: 4, anchor: [116, 125], color: "green" },
-      { sym: "F_wind", dir: "left", mag: 2, anchor: [184, 112], color: "violet", label: { atTail: true, dx: 8, dy: 0, anchor: "start" } },
+      { sym: "F_push", dir: "right", mag: 4, anchor: [116, 100], color: "amber" },
+      { sym: "F_pull", dir: "right", mag: 5, anchor: [116, 124], color: "green", label: { lift: 6 } },
+      { sym: "F_wind", dir: "left", mag: 2, anchor: [184, 112], color: "violet" },
     ],
   },
 
   "multi-force/fbd-angled-pull-accel.svg": {
     style: "box",
     surface: { side: "bottom" },
-    angles: [{ deg: 30, side: "right", label: "30°" }],
+    angles: [{ deg: 30, side: "right", label: "30°", at: [176, 90], r: 22 }],
     ariaLabel:
       "Box free-body diagram of a crate pulled across a rough floor by a rope at 30 degrees above the horizontal while speeding up. Gravity down from the centre. The normal force up from the bottom surface, drawn shorter than gravity because the rope lifts part of the weight. Kinetic friction to the left along the bottom surface, drawn short. The rope tension up and to the right at 30 degrees, drawn as the longest arrow. An arc marks the 30-degree angle.",
     forces: [
@@ -149,6 +149,56 @@ const DIAGRAMS = {
       { sym: "F_N", dir: "up", mag: 2, anchor: [134, 134], color: "blue" },
       { sym: "F_T", dir: 30, mag: 5, anchor: [176, 90], color: "amber" },
       { sym: "f", dir: "left", mag: 2, anchor: [168, 134], color: "red", label: { lift: 14 } },
+    ],
+  },
+
+  "multi-force/dot-three-forces.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a block on ice with three horizontal forces: 12 newtons east and 8 newtons east (both to the right), and 6 newtons west (to the left). The eastward forces are longer, so the net force is 14 newtons east.",
+    forces: [
+      { sym: "12 N", dir: "right", len: 72, anchor: [159, 103], color: "amber" },
+      { sym: "8 N", dir: "right", len: 48, anchor: [159, 121], color: "green" },
+      { sym: "6 N", dir: "left", len: 36, anchor: [141, 112], color: "violet" },
+    ],
+  },
+
+  "multi-force/dot-perpendicular.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a puck pushed by two perpendicular forces: 6 newtons north (up) and 8 newtons east (right). Their resultant, drawn dashed, is 10 newtons to the north-east.",
+    forces: [
+      { sym: "6 N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
+      { sym: "8 N", dir: "right", mag: 4, anchor: [158, 112], color: "green" },
+      { sym: "F_net", dir: 37, mag: 5, anchor: [156, 106], color: "amber", dashed: true },
+    ],
+  },
+
+  "multi-force/dot-lawnmower.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a lawnmower pushed along level ground by a handle pointing down and forward at 40 degrees below the horizontal. Gravity down, the normal force up (drawn longer than gravity), and the push down-and-forward. The normal force exceeds the weight because the push has a downward part.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 4, anchor: [150, 104], color: "blue" },
+      { sym: "F_push", dir: -40, mag: 4, anchor: [156, 118], color: "amber" },
+    ],
+  },
+
+  "multi-force/dot-angled-rope.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    angles: [{ deg: 25, side: "right", label: "θ" }],
+    ariaLabel:
+      "Dot free-body diagram of a box dragged across a floor by a rope at angle theta above the horizontal. Gravity down, the normal force up (shorter than gravity because the rope lifts part of the weight), friction to the left, and the rope tension up and to the right at theta.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 4, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 2, anchor: [150, 104], color: "blue" },
+      { sym: "f", dir: "left", mag: 3, anchor: [142, 112], color: "red" },
+      { sym: "F_T", dir: 25, mag: 4, anchor: [158, 108], color: "amber" },
     ],
   },
 

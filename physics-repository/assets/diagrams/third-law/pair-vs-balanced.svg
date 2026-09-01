@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464 246" role="img"
+     aria-label="Two panels compare a third-law pair with balanced forces. Left: a book on a table. The table pushes up on the book and the book pushes down on the table — equal, opposite, on two different objects: a third-law pair. Right: the book alone. The table's upward normal force and the book's downward weight act on the one book; they are equal only because the book is in equilibrium, and they are different types of force, so they are not a third-law pair.">
+  <!-- Hand-authored comparison. Labels placed clear of the objects, the
+       arrows, and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="tl2-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
+    <marker id="tl2-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f0c27a"/></marker>
+    <marker id="tl2-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+
+  <line x1="232" y1="12" x2="232" y2="234" stroke="#8b96a5" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- ================= LEFT: third-law pair ================= -->
+  <text x="116" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#58a6ff">Third-law pair</text>
+  <text x="116" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">two different objects</text>
+
+  <!-- table -->
+  <rect x="66" y="150" width="108" height="12" fill="#8b96a5" fill-opacity="0.18" stroke="#8b96a5" stroke-width="1.3"/>
+  <line x1="78" y1="162" x2="78" y2="196" stroke="#8b96a5" stroke-width="1.3"/>
+  <line x1="162" y1="162" x2="162" y2="196" stroke="#8b96a5" stroke-width="1.3"/>
+  <!-- book -->
+  <rect x="92" y="128" width="56" height="22" rx="2" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.4"/>
+  <text x="120" y="142" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#58a6ff">book</text>
+
+  <!-- table pushes up on the book (on the book) -->
+  <line x1="104" y1="128" x2="104" y2="92" stroke="#58a6ff" stroke-width="3" marker-end="url(#tl2-blue)"/>
+  <text x="104" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">table on book</text>
+  <!-- book pushes down on the table (on the table) -->
+  <line x1="136" y1="150" x2="136" y2="186" stroke="#f0c27a" stroke-width="3" marker-end="url(#tl2-amber)"/>
+  <text x="136" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f0c27a">book on table</text>
+
+  <text x="116" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">equal &#183; opposite &#183; same type (contact)</text>
+
+  <!-- ================= RIGHT: balanced forces ================= -->
+  <text x="348" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f85149">Balanced forces</text>
+  <text x="348" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">one object: the book</text>
+
+  <!-- book alone -->
+  <rect x="320" y="116" width="56" height="22" rx="2" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.4"/>
+  <circle cx="348" cy="127" r="2" fill="#e6edf3"/>
+  <!-- normal force up, from the bottom surface -->
+  <line x1="336" y1="138" x2="336" y2="100" stroke="#58a6ff" stroke-width="3" marker-end="url(#tl2-blue)"/>
+  <text x="336" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">normal (table on book)</text>
+  <!-- weight down, from the centre -->
+  <line x1="360" y1="127" x2="360" y2="165" stroke="#8b96a5" stroke-width="3" marker-end="url(#tl2-grey)"/>
+  <text x="360" y="179" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#8b96a5">weight (Earth on book)</text>
+
+  <text x="348" y="203" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">different types &#183; equal only because</text>
+  <text x="348" y="217" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">the book is in equilibrium &#8594; not a pair</text>
+</svg>

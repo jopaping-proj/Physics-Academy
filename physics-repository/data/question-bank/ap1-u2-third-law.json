@@ -1,0 +1,201 @@
+[
+  {
+    "id": "AP1-U2-MCQ-077",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A crate rests on the floor and presses down on the floor with a force of $240\\text{ N}$. The force the floor exerts on the crate is:",
+    "choices": ["$240\\text{ N}$, upward", "$240\\text{ N}$, downward", "slightly less than $240\\text{ N}$, upward", "zero, because the crate is at rest"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — 'crate on floor' (down) and 'floor on crate' (up) are a third-law pair: equal magnitude, opposite direction. The floor pushes up on the crate with $240\\text{ N}$.",
+      "incorrect": {
+        "1": "The reaction is opposite in direction to the action. The crate pushes down, so the floor pushes up.",
+        "2": "Third-law partners are exactly equal in magnitude — $240\\text{ N}$, not slightly less.",
+        "3": "A resting object still interacts with its surroundings. The floor pushes up on the crate with $240\\text{ N}$."
+      }
+    },
+    "hint": ["The reaction to 'crate pushes down on floor' is 'floor pushes ___ on crate' — same size, opposite direction."],
+    "solution": "$240\\text{ N}$, upward — equal and opposite to the crate's push on the floor."
+  },
+  {
+    "id": "AP1-U2-MCQ-078",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "third-law-pair-acts-on-the-same-object",
+    "question": "While you walk forward at constant speed on level ground, which force is the Newton's-third-law partner of 'your foot pushes backward on the ground'?",
+    "choices": [
+      "The ground pushes forward on your foot.",
+      "Friction pushes backward on your foot.",
+      "Your other foot pushes forward on the ground.",
+      "Gravity pulls you down."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the interaction is foot ↔ ground. Your foot pushes back on the ground; the ground pushes forward on your foot with an equal force. That forward push is what moves you.",
+      "incorrect": {
+        "1": "This is the same force described the wrong way. The ground's push on your (planted) foot is *forward* — that is what propels you. A backward friction force would slow you.",
+        "2": "The partner must involve the same two objects (this foot and the ground) with the roles reversed, not the other foot.",
+        "3": "Gravity is a separate interaction between you and the Earth, not the partner of a contact push on the ground."
+      }
+    },
+    "hint": ["Swap the two objects and reverse the direction: 'foot pushes back on ground' becomes 'ground pushes ___ on foot'."],
+    "solution": "The ground pushes forward on your foot, equal in size to your backward push on the ground."
+  },
+  {
+    "id": "AP1-U2-MCQ-079",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "any-equal-and-opposite-pair-is-a-third-law-pair",
+    "question": "A ball hangs at rest from a string. Which statement is correct?",
+    "choices": [
+      "The string's upward tension on the ball and the ball's weight are a Newton's-third-law pair.",
+      "The string's upward tension on the ball and the ball's downward pull on the string are a Newton's-third-law pair.",
+      "There are no third-law pairs because nothing is moving.",
+      "The ball's weight and the ball's pull on the string are a Newton's-third-law pair."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'string pulls up on ball' and 'ball pulls down on string' are one interaction, equal and opposite, on two different objects (ball and string). That is a third-law pair.",
+      "incorrect": {
+        "0": "Tension and weight both act on the **ball** and are different force types. They are equal only because the ball is in equilibrium — balanced forces, not a third-law pair.",
+        "2": "Interactions and their third-law pairs exist whether or not anything moves.",
+        "3": "The weight acts on the ball (from Earth); the ball's pull acts on the string. Different interactions — the partner of the weight is 'ball pulls up on Earth'."
+      }
+    },
+    "hint": ["A third-law pair is one interaction with the objects swapped. Tension is the string↔ball interaction; weight is the Earth↔ball interaction."],
+    "solution": "Tension (string on ball, up) pairs with 'ball on string, down' — same interaction, two objects."
+  },
+  {
+    "id": "AP1-U2-MCQ-080",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "justify-with-principle",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "larger-object-exerts-larger-force-in-collision",
+    "question": "A $0.15\\text{ kg}$ baseball moving fast strikes a stationary $6.0\\text{ kg}$ bowling ball. During contact, the baseball pushes on the bowling ball with a force of $90\\text{ N}$. The magnitude of the bowling ball's acceleration and of the baseball's acceleration during contact are, respectively:",
+    "choices": [
+      "$15\\text{ m/s}^2$ and $600\\text{ m/s}^2$",
+      "$600\\text{ m/s}^2$ and $15\\text{ m/s}^2$",
+      "$15\\text{ m/s}^2$ and $15\\text{ m/s}^2$",
+      "$90\\text{ m/s}^2$ and $90\\text{ m/s}^2$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — by the third law the bowling ball pushes back on the baseball with $90\\text{ N}$ too. Then $a = F/m$: bowling ball $90/6.0 = 15\\text{ m/s}^2$; baseball $90/0.15 = 600\\text{ m/s}^2$. Equal forces, very unequal accelerations.",
+      "incorrect": {
+        "1": "The accelerations are swapped. The lighter object (baseball, $0.15\\text{ kg}$) gets the *larger* acceleration: $90/0.15 = 600\\text{ m/s}^2$.",
+        "2": "Equal forces do not give equal accelerations unless the masses are equal. Here the masses differ by $40\\times$, so the accelerations do too.",
+        "3": "$90$ is the force in newtons, not an acceleration. Divide by each mass."
+      }
+    },
+    "hint": ["The force on each ball is the same $90\\text{ N}$ (third law). Apply $a = F/m$ separately with each mass."],
+    "solution": "Bowling ball: $90/6.0 = 15\\text{ m/s}^2$. Baseball: $90/0.15 = 600\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-081",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "any-equal-and-opposite-pair-is-a-third-law-pair",
+    "question": "Two teams pull on opposite ends of a rope. Team X accelerates team Y across the line. Which single statement best explains how this is consistent with Newton's third law?",
+    "choices": [
+      "The rope pulls team X and team Y with different-sized forces, and the larger one wins.",
+      "The rope tension on each team is the same size, but team X wins because its members push harder on the ground, so the ground pushes them forward more than the rope pulls them back.",
+      "Newton's third law is suspended once one team starts to move.",
+      "Team X exerts a larger force on the rope than team Y does, so the net force on the rope is toward X."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for an ideal rope the tension pulling each team is equal. The tie-breaker is the ground: whichever team's feet push harder backward on the ground receives a larger forward ground reaction, so the net force on *that team* is forward and they accelerate, dragging the other team along.",
+      "incorrect": {
+        "0": "For a light rope in equilibrium the tension is the same throughout, so both teams are pulled by the same-size force.",
+        "2": "Newton's third law always holds. The resolution is about the forces on each team, not a failure of the law.",
+        "3": "Even if X briefly pulls the rope harder, the near-massless rope cannot sustain a net force; the tensions equalise. The decisive forces are between each team and the ground."
+      }
+    },
+    "hint": ["The rope tension on each team is equal. What other force acts on a team — and where does it come from?"],
+    "solution": "Equal rope tension on both teams; team X wins because the ground pushes them forward harder (the reaction to their harder push on the ground)."
+  },
+  {
+    "id": "AP1-U2-MCQ-082",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "transfer",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "third-law-implies-equal-accelerations",
+    "question": "A $50\\text{ kg}$ person stands at rest on a $150\\text{ kg}$ raft floating on still water (assume no water resistance). The person walks toward the front of the raft, briefly pushing backward on the raft's deck with $100\\text{ N}$. During that push, the raft's acceleration and the person's acceleration have magnitudes:",
+    "choices": [
+      "raft $0.67\\text{ m/s}^2$, person $2.0\\text{ m/s}^2$, in opposite directions",
+      "raft $2.0\\text{ m/s}^2$, person $0.67\\text{ m/s}^2$, in opposite directions",
+      "raft $0.67\\text{ m/s}^2$, person $2.0\\text{ m/s}^2$, in the same direction",
+      "both $0.50\\text{ m/s}^2$, in opposite directions"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the person pushes the deck backward with $100\\text{ N}$; the deck pushes the person forward with $100\\text{ N}$ (third law). $a = F/m$: raft $100/150 = 0.67\\text{ m/s}^2$ backward; person $100/50 = 2.0\\text{ m/s}^2$ forward. Opposite directions, unequal sizes.",
+      "incorrect": {
+        "1": "The accelerations are matched to the wrong masses. The lighter person ($50\\text{ kg}$) gets the larger acceleration: $100/50 = 2.0\\text{ m/s}^2$.",
+        "2": "The forces are opposite in direction (person forward, raft backward), so the accelerations are opposite too.",
+        "3": "Equal accelerations would require equal masses. Here $a = F/m$ with $50\\text{ kg}$ vs $150\\text{ kg}$ gives a $3{:}1$ ratio."
+      }
+    },
+    "hint": ["Same $100\\text{ N}$ on each body, opposite directions. Apply $a = F/m$ with $50\\text{ kg}$ and $150\\text{ kg}$."],
+    "solution": "Raft: $100/150 = 0.67\\text{ m/s}^2$ (backward). Person: $100/50 = 2.0\\text{ m/s}^2$ (forward)."
+  }
+]

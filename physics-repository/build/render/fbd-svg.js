@@ -255,24 +255,26 @@ export function renderFbdSvg(spec) {
     }
   }
 
-  // angle marks: an arc at the object centre between the horizontal and a
-  // ray at `deg`, with a short dashed horizontal reference and a label.
-  // spec.angles: [{ deg, side: "right"|"left", label }]
+  // angle marks: an arc between the horizontal and a ray at `deg`, with a
+  // short dashed horizontal reference and a label. Drawn at the object
+  // centre, or at `at: [x,y]` (e.g. the tail of the angled force).
+  // spec.angles: [{ deg, side: "right"|"left", label, at }]
   const angleParts = [];
   for (const ang of spec.angles || []) {
     const R = ang.r || 26;
     const right = ang.side !== "left";
     const deg = ang.deg;
+    const [ox, oy] = ang.at || [CX, CY];
     const base = right ? 0 : 180;
     const rad0 = (base * Math.PI) / 180;
     const rad1 = ((right ? deg : 180 - deg) * Math.PI) / 180;
-    const sx = CX + R * Math.cos(rad0);
-    const sy = CY - R * Math.sin(rad0);
-    const ex = CX + R * Math.cos(rad1);
-    const ey = CY - R * Math.sin(rad1);
+    const sx = ox + R * Math.cos(rad0);
+    const sy = oy - R * Math.sin(rad0);
+    const ex = ox + R * Math.cos(rad1);
+    const ey = oy - R * Math.sin(rad1);
     const sweep = right ? 0 : 1;
     angleParts.push(
-      `  <line x1="${r(CX)}" y1="${r(CY)}" x2="${r(sx + (right ? 6 : -6))}" y2="${r(CY)}" stroke="${COLORS.surface}" stroke-width="1" stroke-dasharray="3 2"/>`,
+      `  <line x1="${r(ox)}" y1="${r(oy)}" x2="${r(sx + (right ? 6 : -6))}" y2="${r(oy)}" stroke="${COLORS.surface}" stroke-width="1" stroke-dasharray="3 2"/>`,
       `  <path d="M ${r(sx)} ${r(sy)} A ${R} ${R} 0 0 ${sweep} ${r(ex)} ${r(ey)}" fill="none" stroke="${COLORS.surface}" stroke-width="1.2"/>`
     );
     // place the label in the open wedge, a bit past the arc; for a narrow
@@ -280,8 +282,8 @@ export function renderFbdSvg(spec) {
     const labelDeg = deg < 25 ? deg * 0.75 + 5 : deg / 2;
     const midRad = ((right ? labelDeg : 180 - labelDeg) * Math.PI) / 180;
     const lr = R + 16;
-    const lx = CX + lr * Math.cos(midRad);
-    const ly = CY - lr * Math.sin(midRad);
+    const lx = ox + lr * Math.cos(midRad);
+    const ly = oy - lr * Math.sin(midRad);
     angleParts.push(
       `  <text x="${r(lx)}" y="${r(ly)}" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="11" fill="${COLORS.surface}">${escapeAttr(ang.label || deg + "°")}</text>`
     );

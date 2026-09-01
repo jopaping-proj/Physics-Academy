@@ -1,0 +1,522 @@
+{
+  "id": "ap1-u2-n3l",
+  "slug": "newtons-third-law",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Newton's Laws",
+  "lessonNumber": "6",
+  "objective": "C2.6",
+  "cedTopic": "2.3",
+  "clusterId": "2.6",
+  "lessonTitle": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Every force is a push or a pull from one identifiable object on another (Lesson 2)",
+    "Building a free-body diagram for a single chosen object (Lesson 2)",
+    "Balanced forces on one object give $\\vec{a} = 0$ (Lesson 3)",
+    "Newton's second law $a = F_{net}/m$ (Lessons 4–5)"
+  ],
+  "majorObjective": "Given any force in an interaction, identify its Newton's-third-law partner — same type, equal magnitude, opposite direction, acting on the *other* object — and distinguish a third-law pair (two objects) from balanced forces on one object, including the reasoning that equal interaction forces produce unequal accelerations when the masses differ.",
+  "subObjectives": [
+    "State that every force is one side of an interaction between two objects, and write $\\vec{F}_{A\\text{ on }B} = -\\vec{F}_{B\\text{ on }A}$.",
+    "Given a stated action force, name the reaction's **type**, **magnitude** (equal), **direction** (opposite), and — critically — **the object it acts on**.",
+    "Explain that the two forces of a third-law pair act on **two different objects**, so they never appear on the same free-body diagram and never cancel each other.",
+    "Contrast a third-law pair with **balanced forces on one object**: the balanced pair can be different force types and is equal only because that object is in equilibrium.",
+    "Reject the claim that an object's weight and the normal force on it are a Newton's-third-law pair, and state the correct partner of each.",
+    "Apply the third law to **equal-force / unequal-acceleration** reasoning: the mutual forces are equal regardless of mass, but the accelerations differ because the masses differ."
+  ],
+  "hook": {
+    "prompt": "A large moving truck collides head-on with a small parked car. **During the collision**, the force the truck exerts on the car is:",
+    "choices": [
+      "larger than the force the car exerts on the truck, because the truck is heavier and moving",
+      "equal in magnitude to the force the car exerts on the truck, and opposite in direction",
+      "larger, because only the truck was moving beforehand",
+      "impossible to compare without knowing the speeds"
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "You already know that a force is always a push or a pull from one object on another (Lesson 2), and that when the forces **on one object** balance, that object does not accelerate (Lesson 3). This lesson is about the *other* object in every interaction — the one you left off the free-body diagram — and why 'equal and opposite' does **not** mean 'cancels out'.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Every Force Has a Partner",
+      "concept": "A force is never something one object 'has' on its own — it is one side of an **interaction** between **two** objects. If object $A$ pushes or pulls on object $B$, then $B$ pushes or pulls back on $A$. Newton's third law says these two forces are always related:\n\n$$\\vec{F}_{A\\text{ on }B} = -\\vec{F}_{B\\text{ on }A}$$\n\nSo the partner force (often called the **reaction**) is:\n\n1. the **same type** of force (both contact, or both gravitational, …);\n2. **equal in magnitude**;\n3. **opposite in direction**;\n4. acting on **the other object** — never on the same one.\n\nTo name a reaction force completely you must say all four things, and the fourth — *which object it acts on* — is the one students forget. ==\"Equal and opposite\" is only half the rule; \"on the other object\" is the half that matters most.==",
+      "conceptFigures": [
+        { "svg": "third-law/hand-crate.svg", "caption": "The hand pushes the crate; the crate pushes back on the hand. Same size, opposite direction, and — the key point — one force is on the crate and the other is on the hand." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Earth pulls straight down on a $2.0\\text{ kg}$ book with a gravitational force of $20\\text{ N}$. Describe the Newton's-third-law partner of this force completely.",
+        "figure": { "svg": "third-law/hand-crate.svg", "caption": "A force and its reaction always act on two different objects — here, name the partner of 'Earth pulls on the book'." },
+        "phases": [
+          {
+            "label": "Identify the interaction",
+            "steps": [
+              "The stated force is **Earth on book** (gravitational, $20\\text{ N}$, downward).",
+              "The interaction is between **Earth** and the **book**, so the partner force is **book on Earth**."
+            ]
+          },
+          {
+            "label": "Apply the four parts of the rule",
+            "steps": [
+              "**Type:** gravitational (same type as the stated force).",
+              "**Magnitude:** equal, so $20\\text{ N}$.",
+              "**Direction:** opposite, so **upward** (toward the book).",
+              "**Object it acts on:** the **Earth**."
+            ]
+          },
+          {
+            "label": "State it in one sentence",
+            "steps": [
+              "The book pulls **up on the Earth** with a gravitational force of $20\\text{ N}$.",
+              "Check with the law: $\\vec{F}_{\\text{book on Earth}} = -\\vec{F}_{\\text{Earth on book}}$ — same size, opposite direction, on the other object. ✓"
+            ]
+          },
+          {
+            "label": "Why it looks strange",
+            "steps": [
+              "The book really does pull the Earth up with $20\\text{ N}$ — but Earth's mass is so huge that $a = F/m$ gives an unmeasurably tiny acceleration. Equal force, wildly unequal acceleration."
+            ]
+          }
+        ],
+        "keyMove": "Naming the object the reaction acts on (the Earth), not just its size and direction."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n3l-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+        "objective": "C2.6",
+        "cedTopic": "2.3",
+        "clusterId": "2.6",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "third-law-pair-acts-on-the-same-object",
+        "question": "A swimmer pushes backward on the water with her hands. What is the Newton's-third-law partner of this force?",
+        "choices": [
+          "The water pushes **forward on the swimmer** with an equal-size force.",
+          "The water pushes **backward on the swimmer**, slowing her down.",
+          "Gravity pulls the swimmer down with an equal-size force.",
+          "The swimmer pushes **forward on herself** to move ahead."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the interaction is between the swimmer's hands and the water. She pushes the water backward; the water pushes her forward, equally hard, and that forward force (on the swimmer) is what propels her.",
+          "incorrect": {
+            "1": "The partner is *opposite* in direction. She pushes the water back, so the water pushes her *forward*, not backward.",
+            "2": "The partner must be the **same type** of force (a contact push) and part of the **same interaction** (hands ↔ water). Gravity is a separate interaction with the Earth.",
+            "3": "A force always comes from another object. You cannot push yourself forward; the water pushes you forward."
+          }
+        },
+        "hint": ["The two forces in a pair act on the two objects that are interacting. Which two objects are interacting here? Then reverse the direction."],
+        "solution": "The water pushes forward on the swimmer with a force equal in size to her backward push on the water.",
+        "hintFigures": [
+          { "svg": "third-law/hand-crate.svg", "caption": "Same structure: replace 'hand' with 'swimmer's hands' and 'crate' with 'water'. She pushes the water back; the water pushes her forward, on her." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The Pair Acts on Two Different Objects",
+      "concept": "Because the two forces of a third-law pair act on **different objects**, they can **never cancel each other**. Cancelling only happens when two forces act on the **same** object.\n\nThis is why the pair never causes a problem on a free-body diagram: you draw the forces on **one** object, and only **one** member of any pair is ever on that diagram. The partner is on the other object's diagram.\n\nIt is also how everything that moves under its own power works:\n\n- **Walking:** your foot pushes back on the ground; the ground pushes you forward.\n- **Swimming / rowing:** push water back, get pushed forward.\n- **Rockets:** the engine pushes exhaust gas out the back; the gas pushes the rocket forward. ==A rocket needs nothing to 'push against' — it pushes on its own exhaust — so it works in empty space.==\n\nWhenever something speeds up, look for the outside object it is pushing on, and the partner force it gets back.",
+      "figures": [
+        { "svg": "third-law/hand-crate.svg", "caption": "One member of the pair is on the crate, the other on the hand. A free-body diagram of the crate shows only the crate's force; the hand's diagram shows only the hand's." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A $60\\text{ kg}$ astronaut is at rest in deep space holding a $2.0\\text{ kg}$ toolbox. She pushes the toolbox away; while her hands are in contact, she pushes it with a force of $30\\text{ N}$. During the push, what force acts on the astronaut, and which way does she then drift?",
+        "phases": [
+          {
+            "label": "Identify the pair",
+            "steps": [
+              "The interaction is **astronaut ↔ toolbox** (a contact push).",
+              "She pushes the toolbox one way with $30\\text{ N}$; by the third law the toolbox pushes **her** the opposite way with $30\\text{ N}$."
+            ]
+          },
+          {
+            "label": "The forces do not cancel",
+            "steps": [
+              "The $30\\text{ N}$ on the toolbox and the $30\\text{ N}$ on the astronaut act on **different objects**, so they cannot cancel.",
+              "Each object feels a net force during the push: the toolbox accelerates one way, the astronaut the other."
+            ]
+          },
+          {
+            "label": "Compare the accelerations (optional numbers)",
+            "steps": [
+              "Principle: $a = \\dfrac{F_{net}}{m}$ for each object.",
+              "Toolbox: $a = \\dfrac{30}{2.0} = 15\\text{ m/s}^2$. Astronaut: $a = \\dfrac{30}{60} = 0.50\\text{ m/s}^2$.",
+              "Equal forces, but the astronaut's acceleration is $30\\times$ smaller because her mass is $30\\times$ larger."
+            ]
+          },
+          {
+            "label": "Answer",
+            "steps": [
+              "A $30\\text{ N}$ contact force from the toolbox acts on the astronaut, directed **opposite** to the way she pushed the toolbox.",
+              "She drifts **backward**, away from the toolbox — she has 'pushed off' it, with nothing else to push against."
+            ]
+          }
+        ],
+        "keyMove": "Recognising that the two $30\\text{ N}$ forces act on different objects, so both objects accelerate — the forces do not cancel."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n3l-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+        "objective": "C2.6",
+        "cedTopic": "2.3",
+        "clusterId": "2.6",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "objects-need-something-external-to-push-against-to-accelerate",
+        "question": "A student says: 'A rocket can't accelerate in outer space, because there is no air for its exhaust to push against.' The best correction is:",
+        "choices": [
+          "Correct — rockets only work inside the atmosphere.",
+          "The rocket pushes on its **own exhaust gas**; by the third law the gas pushes the rocket forward. No outside medium is needed.",
+          "The rocket accelerates because the exhaust pushes against the rocket's own tail from outside.",
+          "In space the rocket accelerates because there is no gravity to hold it back."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the interaction is rocket ↔ exhaust gas. The engine throws gas backward; the gas pushes the rocket forward with an equal force. The gas *is* the thing being pushed against, so a rocket works in vacuum.",
+          "incorrect": {
+            "0": "Rockets operate in vacuum precisely because they carry and push on their own propellant.",
+            "2": "The exhaust is expelled by the rocket, not an external object pressing on the tail. The pair is: rocket pushes gas back, gas pushes rocket forward.",
+            "3": "Whether or not gravity acts, the thrust comes from the rocket–exhaust interaction. Removing gravity is not what lets it accelerate."
+          }
+        },
+        "hint": ["What two objects interact when a rocket fires? The rocket pushes one of them backward — what pushes the rocket forward?"],
+        "solution": "The rocket pushes its exhaust gas backward; the gas pushes the rocket forward (third-law pair). No external medium is required.",
+        "hintFigures": [
+          { "svg": "third-law/hand-crate.svg", "caption": "Same structure: the rocket (like the hand) pushes the exhaust gas (like the crate) backward; the gas pushes the rocket forward." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Third-Law Pair vs Balanced Forces",
+      "concept": "The most common third-law error is calling **any** equal-and-opposite pair a third-law pair. The test is *which objects the forces act on*.\n\nTake a book resting on a table. Two forces act **on the book**: its weight $\\vec{F}_g$ (Earth on book, down) and the normal force $\\vec{F}_N$ (table on book, up). They are equal and opposite — but that is because the **book is in equilibrium**, not because of the third law. They act on the **same object**, and they are **different types** of force (gravitational vs contact). ==Weight and normal force are **balanced forces on one object**, not a Newton's-third-law pair.==\n\nThe real partners:\n\n| Force (on the book) | Its third-law partner |\n|---|---|\n| Earth pulls book **down** | Book pulls Earth **up** (gravitational, on the Earth) |\n| Table pushes book **up** | Book pushes table **down** (contact, on the table) |\n\nAnd because the pair forces are equal **whatever the masses**, two interacting objects of different mass get **different accelerations**: $a = F/m$, same $F$, smaller $m$ ⇒ bigger $a$.",
+      "conceptFigures": [
+        { "svg": "third-law/pair-vs-balanced.svg", "caption": "Left: the third-law pair — table on book (up) and book on table (down), on two objects. Right: the balanced forces on the book alone — normal force and weight, equal only because the book is in equilibrium." }
+      ],
+      "figures": [
+        { "svg": "third-law/equal-force-unequal-accel.svg", "caption": "In a collision the truck and car push on each other equally hard. The car's acceleration is larger because its mass is smaller — equal force, unequal acceleration." }
+      ],
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A $2000\\text{ kg}$ truck and a $1000\\text{ kg}$ car collide. At one instant the truck pushes on the car with a force of $8000\\text{ N}$. Find (a) the force the car exerts on the truck at that instant, and (b) the magnitude of each vehicle's acceleration.",
+        "figure": { "svg": "third-law/equal-force-unequal-accel.svg", "caption": "Equal collision forces on the two vehicles; the lighter car accelerates more." },
+        "phases": [
+          {
+            "label": "(a) The force on the truck",
+            "steps": [
+              "Newton's third law: $\\vec{F}_{\\text{car on truck}} = -\\vec{F}_{\\text{truck on car}}$.",
+              "So the magnitude is equal: the car pushes on the truck with $8000\\text{ N}$, in the opposite direction. (The masses do not matter here.)"
+            ]
+          },
+          {
+            "label": "(b) Each acceleration — formula first",
+            "steps": [
+              "Principle: $F_{net} = ma$, so $a = \\dfrac{F_{net}}{m}$ for each vehicle (the collision force is the dominant horizontal force at that instant).",
+              "Car: $a_{\\text{car}} = \\dfrac{8000}{1000} = 8.0\\text{ m/s}^2$.",
+              "Truck: $a_{\\text{truck}} = \\dfrac{8000}{2000} = 4.0\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Same force on each, but $a_{\\text{car}}$ is twice $a_{\\text{truck}}$ because the car's mass is half the truck's. ✓",
+              "This is why the occupants of the smaller vehicle experience the larger acceleration — a consequence of the third law, not a violation of it."
+            ]
+          }
+        ],
+        "keyMove": "Using the third law to set the two collision forces equal ($8000\\text{ N}$ each), then $a = F/m$ separately for each mass."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n3l-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+        "objective": "C2.6",
+        "cedTopic": "2.3",
+        "clusterId": "2.6",
+        "skill": "misconception-diagnosis",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "any-equal-and-opposite-pair-is-a-third-law-pair",
+        "question": "A book lies at rest on a table. Which pair of forces is a **Newton's-third-law pair**?",
+        "choices": [
+          "The book's weight (Earth on book) and the normal force (table on book).",
+          "The normal force (table on book) and the force of the book pushing down on the table.",
+          "The book's weight and the force of the book pushing down on the table.",
+          "There is no third-law pair here because the book is not moving."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — 'table pushes up on book' and 'book pushes down on table' are the same contact interaction, equal and opposite, acting on the two different objects (book and table). That is a third-law pair.",
+          "incorrect": {
+            "0": "These both act on the **book** and are different force types (gravitational and contact). They are equal and opposite only because the book is in equilibrium — balanced forces, not a third-law pair.",
+            "2": "The weight acts on the book (from the Earth); 'book on table' acts on the table (from the book). Different interactions — the partner of the weight is 'book pulls up on Earth'.",
+            "3": "Third-law pairs exist for every interaction whether or not anything moves. The book–table contact is an interaction right now."
+          }
+        },
+        "hint": ["A third-law pair must (i) be the same interaction, (ii) be the same type of force, and (iii) act on two different objects. Check each option against all three."],
+        "solution": "'Table pushes book up' and 'book pushes table down' — same contact interaction, two different objects.",
+        "hintFigures": [
+          { "svg": "third-law/pair-vs-balanced.svg", "caption": "The left panel is the third-law pair (two objects); the right panel is the balanced pair on the book alone." }
+        ]
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "interaction-pair-explorer",
+    "title": "Interaction-Pair Explorer",
+    "subtitle": "Name the reaction; spot the balanced-forces trap",
+    "componentKey": "interaction-pair-explorer",
+    "description": "Pick an interaction. The diagram shows the **one** force each object exerts on the **other** — always equal in length, opposite in direction, on two different bodies. Read off the reaction's type, magnitude, direction, and **which object it acts on**. Then open **Book on a table** and toggle the **balanced-forces trap** to see why weight and the normal force are *not* a third-law pair.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-n3l-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "any-equal-and-opposite-pair-is-a-third-law-pair",
+      "question": "A student writes: 'A person stands still on the floor. The person's weight and the floor's normal force on the person are a Newton's-third-law pair, because they are equal and opposite.' What is wrong with this?",
+      "choices": [
+        "Nothing — equal and opposite forces always form a third-law pair.",
+        "Both forces act on the **person** (one object), and they are different force types; they are equal only because the person is in equilibrium. A third-law pair acts on two different objects.",
+        "The forces are not actually equal; the normal force is slightly larger.",
+        "It is wrong only because the person is not moving; the statement would be correct if the person were walking."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — weight (Earth on person) and normal force (floor on person) both act on the person. Their equality comes from $\\sum F = 0$ for the person, not from the third law. The third-law partner of the normal force is 'person pushes down on the floor'; the partner of the weight is 'person pulls up on the Earth'.",
+        "incorrect": {
+          "0": "Two forces can be equal and opposite for a different reason — because their object is in equilibrium. That is the case here.",
+          "2": "For a person standing still on level ground the two forces are exactly equal (that is what $\\sum F_y = 0$ requires). The problem is that they act on the same object.",
+          "3": "Walking or standing, weight and the normal force both act on the person, so they are never a third-law pair."
+        }
+      },
+      "hint": ["Which object does each force act on? If it is the same object, it cannot be a third-law pair — no matter how equal and opposite the forces look."],
+      "solution": "Both forces act on the person and are different types; they balance because the person is in equilibrium. A third-law pair acts on two different objects.",
+      "hintFigures": [
+        { "svg": "third-law/pair-vs-balanced.svg", "caption": "Right panel: weight and normal force, both on the one object, balanced by equilibrium — not a pair." }
+      ]
+    },
+    {
+      "id": "ap1-u2-n3l-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "larger-object-exerts-larger-force-in-collision",
+      "question": "A mosquito splatters on the windshield of a fast-moving bus. During the impact:",
+      "choices": [
+        "The bus exerts a much larger force on the mosquito than the mosquito exerts on the bus.",
+        "The mosquito and the bus exert forces of **equal magnitude** on each other; the mosquito is destroyed because its tiny mass gives it an enormous acceleration.",
+        "The mosquito exerts no force on the bus at all.",
+        "The forces are equal only if the mosquito and bus have the same mass."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the interaction force is the same size on both (third law). The mosquito is obliterated and the bus is unaffected because $a = F/m$: the same force on the mosquito's minuscule mass is a colossal acceleration, while on the bus's large mass it is negligible.",
+        "incorrect": {
+          "0": "The third law makes the two interaction forces equal in magnitude regardless of mass or speed. What differs is the acceleration each force produces.",
+          "2": "If the mosquito exerted no force on the bus, the bus could exert none on the mosquito — they are two sides of one interaction. The mosquito's force on the bus is real, just far too small to matter for such a large mass.",
+          "3": "Equal masses are not required. The interaction forces are always equal in magnitude; the masses only affect the resulting accelerations."
+        }
+      },
+      "hint": ["The two forces are always equal in size. Ask instead: what does the same-size force *do* to a $0.000001\\text{ kg}$ mass versus a $10\\,000\\text{ kg}$ mass?"],
+      "solution": "Equal-magnitude forces on both; the mosquito's acceleration is enormous and the bus's is negligible because $a = F/m$.",
+      "hintFigures": [
+        { "svg": "third-law/equal-force-unequal-accel.svg", "caption": "Equal forces on the two bodies; the far lighter one gets the far larger acceleration." }
+      ]
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a horse pulls a cart forward along a level road, and the cart speeds up. Explain how this is possible.\n\n**Student's answer:** 'It is not possible. By Newton's third law, the horse pulls the cart forward and the cart pulls the horse backward with an equal force. The two forces cancel, so the net force is zero and nothing can accelerate.'",
+      "prompts": [
+        "Identify the student's error.",
+        "State the rule they broke.",
+        "Explain correctly why the cart accelerates.",
+        "Explain why the horse also accelerates forward."
+      ],
+      "modelResponse": "**(1)** The student added the two forces of a third-law pair and let them cancel. **(2)** Forces cancel only when they act on the **same** object. The 'horse on cart' force acts on the **cart**; the 'cart on horse' force acts on the **horse**. They are on different objects, so they are never added together and never cancel. **(3)** To find the cart's motion, draw a free-body diagram of the **cart alone**: the horse pulls it forward, and road friction/drag on the cart is backward. The forward pull is larger, so the net force on the cart is forward and it accelerates. **(4)** Draw a free-body diagram of the **horse alone**: the cart pulls it backward, but the **ground pushes the horse forward** (the reaction to the horse's hooves pushing back on the ground). That forward push from the ground exceeds the cart's backward pull, so the net force on the horse is also forward.",
+      "modelFigures": [
+        { "svg": "third-law/hand-crate.svg", "caption": "The 'horse on cart' and 'cart on horse' forces act on different objects (like 'hand on crate' and 'crate on hand') — they are never added together, so they cannot cancel." }
+      ],
+      "responseMaxLength": 850
+    }
+  ],
+  "representationConnections": "The third law links: the **interaction** (two named objects); the **two free-body diagrams** (one force of the pair on each); and the **notation** $\\vec{F}_{A\\text{ on }B} = -\\vec{F}_{B\\text{ on }A}$. The single most useful habit is writing every force with an explicit 'X on Y' label — then the partner is just 'Y on X', and it is obvious the two belong on different diagrams.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-n3l-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "question": "You push horizontally on a heavy crate with a force of $200\\text{ N}$, but it does not move. The force the crate exerts on you is:",
+      "choices": ["$200\\text{ N}$, directed back toward you", "less than $200\\text{ N}$, since the crate did not move", "zero, since the crate is stationary", "$200\\text{ N}$, directed away from you"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — by the third law the crate pushes back on you with exactly $200\\text{ N}$, in the opposite direction (toward you). Whether the crate moves depends on the *other* forces on the crate (like floor friction), not on the size of the reaction.",
+        "incorrect": {
+          "1": "The reaction is always equal in magnitude to the action — $200\\text{ N}$ — regardless of whether either object moves.",
+          "2": "A stationary object still takes part in interactions. The crate pushes back on you with $200\\text{ N}$; it stays put because friction from the floor also acts on it.",
+          "3": "The magnitude is right ($200\\text{ N}$) but the direction is wrong: the reaction points *opposite* your push, i.e. back toward you."
+        }
+      },
+      "hint": ["The reaction is equal in magnitude and opposite in direction, whether or not anything moves."],
+      "solution": "$200\\text{ N}$, directed back toward you — equal and opposite to your push, independent of the crate's motion."
+    },
+    {
+      "id": "ap1-u2-n3l-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
+      "skill": "multi-representation-reasoning",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "qualitative-plus-calculation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "third-law-implies-equal-accelerations",
+      "scenario": "In deep space, a $90\\text{ kg}$ astronaut (with equipment) is at rest next to a $12\\,000\\text{ kg}$ disabled satellite. The astronaut pushes off the satellite, exerting an average force of $180\\text{ N}$ on it over a short push.",
+      "figures": [
+        { "svg": "third-law/hand-crate.svg", "caption": "The push is one interaction: astronaut on satellite one way, satellite on astronaut the other." }
+      ],
+      "parts": [
+        { "label": "(a)", "prompt": "State the magnitude and direction of the force the satellite exerts on the astronaut during the push, and name the law you used.", "points": 2, "modelResponse": "By Newton's third law, $\\vec{F}_{\\text{satellite on astronaut}} = -\\vec{F}_{\\text{astronaut on satellite}}$. So the satellite pushes on the astronaut with $180\\text{ N}$, directed opposite to the astronaut's push on the satellite (i.e. pushing the astronaut away from the satellite)." },
+        { "label": "(b)", "prompt": "Find the magnitude of the acceleration of the astronaut and of the satellite during the push. Write the governing relation before substituting.", "points": 4, "modelResponse": "$F_{net} = ma \\Rightarrow a = \\dfrac{F_{net}}{m}$. Astronaut: $a = \\dfrac{180}{90} = 2.0\\text{ m/s}^2$. Satellite: $a = \\dfrac{180}{12\\,000} = 0.015\\text{ m/s}^2$." },
+        { "label": "(c)", "prompt": "A classmate says 'the forces are equal, so the accelerations must be equal too.' Explain what is wrong with this.", "points": 2, "modelResponse": "The forces are equal ($180\\text{ N}$ each), but acceleration is $a = F/m$, and the masses are very different. The astronaut's mass is about $133\\times$ smaller, so her acceleration is about $133\\times$ larger. Equal forces do **not** imply equal accelerations." },
+        { "label": "(d)", "prompt": "Is the pair 'astronaut on satellite' and 'satellite on astronaut' the same kind of thing as the pair 'the astronaut's weight and the normal force' when she stands on Earth? Explain in one or two sentences.", "points": 2, "modelResponse": "No. 'Astronaut on satellite' and 'satellite on astronaut' is a Newton's-third-law pair — one interaction, two different objects. On Earth, the astronaut's weight and the normal force both act on **her** (one object) and are different force types; they balance because she is in equilibrium, so they are **not** a third-law pair." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt $180\\text{ N}$ opposite direction, 1 pt cites Newton's third law. (b) 1 pt states $a = F_{net}/m$ before numbers, 1 pt astronaut $2.0\\text{ m/s}^2$, 1 pt satellite $0.015\\text{ m/s}^2$, 1 pt units throughout. (c) 1 pt identifies $a = F/m$ with unequal masses, 1 pt concludes unequal accelerations. (d) 1 pt 'no', 1 pt distinguishes two-objects (pair) from one-object-in-equilibrium (balanced)."
+    },
+    {
+      "id": "ap1-u2-n3l-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A fan is mounted on a small cart and blows air backward; the cart rolls forward. A student then puts a large sail on the cart, positioned so the fan blows directly into the sail. Compared with the fan alone, the cart now:",
+      "choices": [
+        "rolls forward faster, because the sail catches the moving air",
+        "does not roll forward at all (ideally), because the forward push on the sail and the backward push on the fan are an interaction pair within the cart and cancel",
+        "rolls backward, because the sail pushes the cart back",
+        "rolls forward at the same speed as with the fan alone"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — with the air caught by the sail, the system only pushes on itself: the fan pushes air toward the sail, the air pushes the sail forward, but the fan is pushed backward by the same interaction. These are internal forces on the cart-plus-sail system and sum to zero, so (ideally) there is no net external force and the cart does not accelerate. Removing the sail lets the air leave — then the cart pushes on *outside* air and moves.",
+        "incorrect": {
+          "0": "The sail catches the very air the fan is pushing. The forward force on the sail is cancelled by the backward force on the fan — both internal to the cart. Nothing is gained.",
+          "2": "The cart does not roll backward either — the internal forces cancel, giving (ideally) no motion, not reverse motion.",
+          "3": "With the fan alone, the air is expelled and the cart pushes on external air, so it accelerates. Adding the sail keeps the air in the system and removes that external push."
+        }
+      },
+      "hint": ["With the sail, does the cart push on anything *outside* the cart-plus-sail system? What does that mean for the net external force?"],
+      "solution": "Ideally the cart does not move: the fan–air and air–sail forces are all internal to the cart-plus-sail system and cancel, leaving no net external force."
+    }
+  ],
+  "examConnection": "On the AP exam the third law shows up as (1) 'identify the reaction force' multiple-choice items — the credited answer always names the **object** the reaction acts on; (2) paragraph-argument questions evaluating a flawed 'equal and opposite ⇒ no motion' claim (horse-and-cart, tug-of-war); and (3) collision or push-off items testing equal-force / unequal-acceleration. The reliable lost point is calling weight and the normal force a third-law pair — know that they are balanced forces on **one** object.",
+  "summary": "- Every force is one side of an interaction: $\\vec{F}_{A\\text{ on }B} = -\\vec{F}_{B\\text{ on }A}$.\n- To name a reaction, give its **type, magnitude (equal), direction (opposite), and the object it acts on** — the object is the part students omit.\n- The two forces of a pair act on **different objects**, so they **never cancel** and only one is ever on a given free-body diagram.\n- ==Weight and normal force are **balanced forces on one object**, not a third-law pair.== The partner of 'table on book' is 'book on table'.\n- **Equal forces, unequal accelerations:** the interaction forces are equal whatever the masses; $a = F/m$ makes the lighter object accelerate more.\n- Propulsion (walking, swimming, rockets) is the third law in action — push on something, get pushed back; a rocket pushes on its own exhaust and works in vacuum.",
+  "exitQuestion": {
+    "id": "ap1-u2-n3l-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "any-equal-and-opposite-pair-is-a-third-law-pair",
+    "question": "In a tug-of-war, team A pulls the rope with force $\\vec{F}$ and — by Newton's third law — the rope pulls back on team A with $-\\vec{F}$. A student concludes: 'Since these are equal and opposite, the net force is zero and neither team can ever win.' The flaw is that:",
+    "choices": [
+      "the two forces are actually not equal once the rope moves",
+      "the two forces act on different things (team A and the rope), so they do not combine into a net force on one object; a team accelerates according to the forces acting on *that team* — mainly the rope tension forward and ground friction backward",
+      "Newton's third law does not apply to ropes",
+      "the net force is zero, so the student is correct and tug-of-war is impossible to win"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'team A on rope' and 'rope on team A' act on two different objects and can never be summed into one net force. To see whether team A accelerates, draw a free-body diagram of team A: the rope pulls them one way, the ground's friction pushes the other way. Whichever team's feet can push harder on the ground gets the larger forward ground reaction and wins.",
+      "incorrect": {
+        "0": "The pair forces stay equal in magnitude whether or not the rope moves. That is not the flaw.",
+        "2": "The third law applies to the rope interaction just fine. The error is combining forces that act on different objects.",
+        "3": "The student is wrong: the relevant net force is the one on a single team, from the rope and the ground — not the third-law pair."
+      }
+    },
+    "hint": [
+      "The two 'equal and opposite' forces act on which two objects?",
+      "To decide if team A accelerates, what forces act on *team A itself*? (Think about their feet and the ground.)"
+    ],
+    "solution": "The action–reaction forces act on different objects and cannot be added into a net force on one team. Each team's motion depends on the forces on that team — rope tension versus ground friction."
+  },
+  "questionBankFile": "ap1-u2-third-law.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-077", "AP1-U2-MCQ-078", "AP1-U2-MCQ-079",
+    "AP1-U2-MCQ-080", "AP1-U2-MCQ-081", "AP1-U2-MCQ-082"
+  ]
+}

@@ -343,28 +343,34 @@ function handleAnswer(container, question, chosenIndex, choiceList, { restore = 
 function renderProgressiveDisclosure(container, question) {
   const hints = Array.isArray(question.hint) ? question.hint : [question.hint].filter(Boolean);
 
-  hints.forEach((hintText, i) => {
+  const disclosure = (summaryText, text, figureHtml) => {
     const details = document.createElement("details");
     details.className = "disclosure";
     const summary = document.createElement("summary");
-    summary.textContent = `Hint ${i + 1}`;
+    summary.textContent = summaryText;
     details.appendChild(summary);
-    const body = document.createElement("p");
-    body.innerHTML = mdInline(hintText);
-    details.appendChild(body);
+    if (figureHtml) {
+      const fig = document.createElement("div");
+      fig.className = "disclosure__figure";
+      fig.innerHTML = figureHtml;
+      details.appendChild(fig);
+    }
+    if (text) {
+      const body = document.createElement("p");
+      body.innerHTML = mdInline(text);
+      details.appendChild(body);
+    }
     container.appendChild(details);
+  };
+
+  hints.forEach((hintText, i) => {
+    // a hint figure is attached to the last hint
+    const fig = i === hints.length - 1 ? question.hintFigureHtml : null;
+    disclosure(`Hint ${i + 1}`, hintText, fig);
   });
 
-  if (question.solution) {
-    const details = document.createElement("details");
-    details.className = "disclosure";
-    const summary = document.createElement("summary");
-    summary.textContent = "Solution";
-    details.appendChild(summary);
-    const body = document.createElement("p");
-    body.innerHTML = mdInline(question.solution);
-    details.appendChild(body);
-    container.appendChild(details);
+  if (question.solution || question.solutionFigureHtml) {
+    disclosure("Solution", question.solution, question.solutionFigureHtml);
   }
 }
 

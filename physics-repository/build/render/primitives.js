@@ -90,6 +90,14 @@ export function renderFormativeCheck(check, idSuffix) {
     delete prepared.figures;
     prepared.figureHtml = renderFigures(topFigs);
   }
+  if (check.hintFigures) {
+    delete prepared.hintFigures;
+    prepared.hintFigureHtml = renderFigures(check.hintFigures);
+  }
+  if (check.solutionFigures) {
+    delete prepared.solutionFigures;
+    prepared.solutionFigureHtml = renderFigures(check.solutionFigures);
+  }
 
   if (Array.isArray(check.parts) && check.parts.some((p) => p && (p.figure || p.figures))) {
     prepared.parts = check.parts.map((p) => {

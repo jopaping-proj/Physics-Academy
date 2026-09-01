@@ -144,7 +144,7 @@
       incline: 45,
       forces: { gravity: "down", normal: "up-left", friction: "up-right" },
       magnitude: [["gravity", ">", "normal"]],
-      mag: { gravity: 5, normal: 3, friction: 3 },
+      mag: { gravity: 4, normal: 3, friction: 3 },
       hint: "Sliding DOWN a 45° ramp ⇒ friction points UP the ramp, exactly the up-right ↗ direction. Constant velocity ⇒ the normal force ↖ and friction ↗ together balance gravity ↓.",
     },
   ];
@@ -152,6 +152,18 @@
   function cssVar(name, fallback) {
     const v = getComputedStyle(document.body).getPropertyValue(name).trim();
     return v || fallback;
+  }
+
+  // Where a ray from the box centre, in direction (ux, uy), crosses the
+  // box edge — so a contact force's tail sits ON the surface it acts on,
+  // even for a diagonal rope or push (master §11). Returns an offset
+  // from the centre.
+  function edgeOffset(hw, hh, ux, uy) {
+    if (!ux && !uy) return [0, 0];
+    const tX = ux ? hw / Math.abs(ux) : Infinity;
+    const tY = uy ? hh / Math.abs(uy) : Infinity;
+    const t = Math.min(tX, tY);
+    return [ux * t, uy * t];
   }
 
   function drawArrow(ctx, x1, y1, x2, y2, color) {
@@ -340,28 +352,32 @@
       box.overlay.innerHTML = "";
 
       const cx = canvas.width / 2;
-      const cy = canvas.height / 2 + 4;
+      // on a ramp the box tilts and gravity runs the full height of the
+      // canvas — start a little higher so its label still fits.
+      const cy = canvas.height / 2 + (state.scenario.incline ? -14 : 4);
       const hw = 38; // half width
       const hh = 24; // half height
       const incDeg = state.scenario.incline || 0;
       const inc = (-incDeg * Math.PI) / 180; // ramp rises to the right
 
-      // ground / ramp line
+      // ground / ramp line — drawn in the box's own (rotated) frame at its
+      // bottom face, so the box always sits exactly on the surface and a
+      // contact force's tail lands on that same line.
       if (incDeg || state.on.normal || state.on.friction) {
         ctx.strokeStyle = "#3a4a6c";
         ctx.lineWidth = 1.5;
         ctx.save();
-        ctx.translate(cx, cy + hh);
+        ctx.translate(cx, cy);
         ctx.rotate(inc);
         ctx.beginPath();
-        ctx.moveTo(-(cx - 24), 0);
-        ctx.lineTo(cx - 24, 0);
+        ctx.moveTo(-(cx - 24), hh);
+        ctx.lineTo(cx - 24, hh);
         ctx.stroke();
         // hatching
         for (let x = -(cx - 30); x < cx - 30; x += 20) {
           ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x - 7, 9);
+          ctx.moveTo(x, hh);
+          ctx.lineTo(x - 7, hh + 9);
           ctx.stroke();
         }
         ctx.restore();
@@ -393,28 +409,38 @@
         // --- tail anchor on the box (master §11) ---
         let tx = cx;
         let ty = cy;
-        if (incDeg) {
-          // on a ramp, draw every force from the centre (the tilted faces
-          // make surface anchors ambiguous); relative lengths still matter.
-        } else if (f.anchor === "back") {
-          // the surface opposite the force direction (you push on the back face)
-          tx = cx - d.dx * hw;
-          ty = cy - d.dy * hh;
-        } else if (f.anchor === "toward") {
-          // a rope / spring attaches on the side it pulls toward
-          tx = cx + d.dx * hw;
-          ty = cy + d.dy * hh;
+        if (f.anchor === "centre") {
+          // gravity — the one field force, from the centre
+        } else if (incDeg) {
+          // on a ramp, every contact force acts at the box's ramp-facing
+          // (bottom) face — rotated with the box.
+          tx = cx - hh * Math.sin(inc);
+          ty = cy + hh * Math.cos(inc);
         } else if (f.anchor === "floor") {
           // friction acts along the resting (bottom) surface
           ty = cy + hh;
-        } // "centre" (gravity): stays at (cx, cy)
+        } else if (f.anchor === "back") {
+          // the surface opposite the force direction (you push on the back face)
+          const [ox, oy] = edgeOffset(hw, hh, -d.dx, -d.dy);
+          tx = cx + ox;
+          ty = cy + oy;
+        } else if (f.anchor === "toward") {
+          // a rope / spring attaches on the face it pulls toward
+          const [ox, oy] = edgeOffset(hw, hh, d.dx, d.dy);
+          tx = cx + ox;
+          ty = cy + oy;
+        }
 
         // fixed lateral shift along the arrow's left-perpendicular, so an
         // up arrow and a down arrow (or two parallel arrows) never overlap.
-        const px = -d.dy;
-        const py = d.dx;
-        tx += px * f.lane;
-        ty += py * f.lane;
+        // On a ramp the forces already point in distinct directions, so the
+        // nudge would only pull a tail off the surface — skip it there.
+        if (!incDeg) {
+          const px = -d.dy;
+          const py = d.dx;
+          tx += px * f.lane;
+          ty += py * f.lane;
+        }
 
         const L = forceLen(f);
         const ex = tx + d.dx * L;

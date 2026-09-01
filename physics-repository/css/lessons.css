@@ -200,10 +200,13 @@
 .slide__body .katex-display { font-size: 1.35em; margin: var(--space-3) 0; }
 .slide__body .katex-display > .katex { font-size: inherit; }
 
-/* a diagram shown with a quiz / FRQ question stem */
-.quiz__figure, .frq__figure { margin: var(--space-2) 0 var(--space-3); }
-.quiz__figure .figure, .frq__figure .figure { background: var(--bg-panel); }
-.quiz__figure .figure-row, .frq__figure .figure-row { margin: 0; }
+/* a diagram shown with a quiz / FRQ question stem, or inside a
+   hint / solution / model-response disclosure */
+.quiz__figure, .frq__figure, .disclosure__figure { margin: var(--space-2) 0 var(--space-3); }
+.quiz__figure .figure, .frq__figure .figure, .disclosure__figure .figure { background: var(--bg-panel); }
+.quiz__figure .figure-row, .frq__figure .figure-row, .disclosure__figure .figure-row { margin: 0; }
+.error-analysis__model-response .figure { background: var(--bg-panel); }
+.error-analysis__model-response .figure-row { margin: 0 0 var(--space-3); }
 
 /* content-heavy cards (summary, further practice) scroll inside the card
    rather than making the card taller than the screen */
@@ -517,6 +520,48 @@
   border-radius: var(--radius-sm);
 }
 
+/* ---- interaction-pair explorer (Lesson 6, Newton's third law) ---- */
+.ipe__buttons .com__btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--bg-panel-raised);
+  color: var(--text-primary);
+}
+.ipe__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+.ipe__readout { margin-top: var(--space-3); font-size: var(--text-sm); }
+.ipe__readout p { margin: 0 0 var(--space-2); }
+.ipe__k {
+  display: inline-block;
+  min-width: 5.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.ipe__pair { font-size: var(--text-base); }
+.ipe__rule {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-panel-raised);
+  border-left: 3px solid var(--sim-blue, #58a6ff);
+  border-radius: var(--radius-sm);
+}
+.ipe__note {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-panel-raised);
+  border-left: 3px solid var(--sim-amber, #f0c27a);
+  border-radius: var(--radius-sm);
+}
+.ipe__trap {
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-panel-raised);
+  border-left: 3px solid var(--sim-red, #ff6b6b);
+  border-radius: var(--radius-sm);
+}
+
 /* ---- unit index (concept-check → modules → concept-check) ---- */
 .unit-index { max-width: 760px; margin: 0 auto; padding: var(--space-5); }
 .unit-index__intro { padding: var(--space-4); margin: var(--space-3) 0 var(--space-5); }
@@ -532,6 +577,7 @@
   background: var(--bg-panel);
 }
 .unit-index__item.is-concept-check { border-left-color: var(--sim-amber, #f0c27a); background: var(--bg-panel-raised); }
+.unit-index__item.is-approved { border-left-color: var(--sim-green, #51cf66); }
 .unit-index__item.is-draft { border-left-color: var(--sim-teal, #48c9b0); }
 .unit-index__item.is-unbuilt { opacity: 0.55; }
 .unit-index__item a { font-weight: 600; }
