@@ -3,38 +3,54 @@
 **Goal:** make `https://jopaping-proj.github.io/Physics-Academy/` serve the built
 site (`physics-repository/dist/`) instead of a 404.
 
-**Why it's currently broken:** GitHub Pages is set to *"Deploy from a branch"*, so
-GitHub publishes the repository *root* — which has no `index.html`. The real site
-is built by the `Deploy site to GitHub Pages` Action into `dist/` (which is
-git-ignored, so it never appears on a branch). Pages has to be told to publish the
-**Action's** output.
+**Why it's still broken (verified 2026-09-01):** GitHub Pages is set to *"Deploy
+from a branch"*, so GitHub publishes the repository *root* — which has no
+`index.html`, so every lesson URL 404s. The real site is built by the `Deploy
+site to GitHub Pages` Action into `dist/` (git-ignored). That workflow already
+runs **fully green** (build → configure-pages → upload artifact → deploy). The
+only missing piece is telling Pages to serve the **Action's** output instead of
+the branch.
 
-There are two ways. Try A first — it needs no clicking.
-
----
-
-## Path A — let the workflow flip the switch (recommended)
-
-The workflow now has `enablement: true` on its `configure-pages` step, which asks
-GitHub to enable Pages **with "GitHub Actions" as the source** the next time it
-runs. So you just need to run it:
-
-1. Push any commit that touches `physics-repository/**` or `.github/workflows/pages.yml`
-   (committing the current changes will do it), **or** trigger it by hand:
-   - Open **`https://github.com/jopaping-proj/Physics-Academy/actions`**
-   - In the left sidebar, click the workflow **"Deploy site to GitHub Pages"**
-   - Click the **"Run workflow"** button (top-right of the run list) → leave branch
-     `main` → **"Run workflow"**
-2. Wait ~1–2 min for both jobs (`build`, then `deploy`) to go green.
-3. Open the `deploy` job — its summary shows the live URL. Visit it.
-
-If the `deploy` job succeeds, you're done — skip to **Verify** below.
-
-If `configure-pages` still fails with a permissions error, do Path B.
+The workflow tries to do this itself (`enablement: true`, plus an API
+`PUT …/pages {"build_type":"workflow"}` step). **Both were confirmed not to
+work** with the built-in `GITHUB_TOKEN` — GitHub does not let that token change
+the Pages *source* on an already-configured site. So one of the two one-time
+actions below is required.
 
 ---
 
-## Path B — flip the switch by hand in Settings
+## Path A — the one click (simplest)
+
+**Settings → Pages → Build and deployment → Source → change "Deploy from a
+branch" to "GitHub Actions".**
+
+1. Open **`https://github.com/jopaping-proj/Physics-Academy/settings/pages`**
+2. Under **"Build and deployment"**, the **"Source"** row has a button that says
+   **"Deploy from a branch"** — that button *is* a dropdown. Click it and choose
+   **"GitHub Actions"**.
+3. Done. No re-deploy needed — the last green `Deploy site to GitHub Pages` run
+   becomes the live site within a minute. (The built-in `pages-build-deployment`
+   workflow will stop running.)
+
+---
+
+## Path B — full automation via a repo secret (no more clicks, ever)
+
+If you'd rather the workflow handle it (now and after any future reset):
+
+1. Create a **fine-grained personal access token**
+   (`https://github.com/settings/tokens?type=beta`): *Resource owner* = your
+   account, *Repository access* = only `Physics-Academy`, *Permissions* →
+   *Repository permissions* → **Pages: Read and write**. Copy the token.
+2. Repo → **Settings → Secrets and variables → Actions → New repository secret**:
+   name **`PAGES_TOKEN`**, value = the token.
+3. Re-run the workflow (Actions → *Deploy site to GitHub Pages* → *Run
+   workflow*). The "Ensure Pages publishes from this workflow" step will now
+   succeed, flip the source, and every future push self-heals.
+
+---
+
+## (old) Path C — flip the switch by hand, detailed
 
 The control is on the **Pages** settings page. The exact spot:
 

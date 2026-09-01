@@ -36,7 +36,7 @@
     { key: "friction", label: "Friction", tex: "\\vec{f}", color: "--sim-red", anchor: "floor", lane: 0 },
     { key: "applied", label: "Applied push / pull", tex: "\\vec{F}_\\text{app}", color: "--sim-amber", anchor: "back", lane: 9 },
     { key: "spring", label: "Spring force", tex: "\\vec{F}_s", color: "--sim-green", anchor: "toward", lane: 0 },
-    { key: "drag", label: "Air resistance", tex: "\\vec{F}_\\text{air}", color: "--sim-violet", anchor: "centre", lane: -9 },
+    { key: "drag", label: "Air resistance", tex: "\\vec{F}_\\text{air}", color: "--sim-violet", anchor: "back", lane: -9 },
   ];
 
   const S = 0.7071;
@@ -118,20 +118,34 @@
       hint: "No push now — friction is the only horizontal force, so the net force points backward and the box decelerates. It keeps moving only by inertia. (Motion is to the right, friction points left.)",
     },
     {
-      text: "A block sliding down a frictionless ramp inclined at ~28°, speeding up.",
-      incline: 28,
+      text: "A block on a vertical spring, at rest — the spring is compressed.",
+      forces: { gravity: "down", spring: "up" },
+      magnitude: [["spring", "=", "gravity"]],
+      mag: { gravity: 3, spring: 3 },
+      hint: "At rest ⇒ the compressed spring pushes up with exactly the block's weight.",
+    },
+    {
+      text: "A block on a rough table, tied to a wall by a stretched spring, dragged away by a rope at constant speed.",
+      forces: { gravity: "down", normal: "up", tension: "right", spring: "left", friction: "left" },
+      magnitude: [["normal", "=", "gravity"], ["tension", ">", "spring"], ["tension", ">", "friction"]],
+      mag: { gravity: 3, normal: 3, tension: 5, spring: 3, friction: 2 },
+      hint: "Constant speed ⇒ the rope's forward pull balances the spring's backward pull PLUS friction. Vertically, the normal force balances gravity.",
+    },
+    {
+      text: "A block sliding down a frictionless 45° ramp, speeding up.",
+      incline: 45,
       forces: { gravity: "down", normal: "up-left" },
       magnitude: [["gravity", ">", "normal"]],
       mag: { gravity: 4, normal: 3 },
-      hint: "Only two forces: gravity straight DOWN (the full weight) and the normal force PERPENDICULAR to the ramp surface (up-and-left here). The normal force is smaller than the weight.",
+      hint: "Two forces only: gravity straight DOWN (the full weight) and the normal force PERPENDICULAR to the ramp — for a 45° ramp that is exactly the up-left ↖ direction. The normal force is smaller than the weight.",
     },
     {
-      text: "A block sliding down a rough ramp (~28°) at constant velocity.",
-      incline: 28,
+      text: "A block sliding down a rough 45° ramp at constant velocity.",
+      incline: 45,
       forces: { gravity: "down", normal: "up-left", friction: "up-right" },
       magnitude: [["gravity", ">", "normal"]],
-      mag: { gravity: 4, normal: 3, friction: 3 },
-      hint: "Sliding DOWN the ramp ⇒ kinetic friction points UP the ramp (up-and-right here). Constant velocity ⇒ the normal force and friction together balance gravity.",
+      mag: { gravity: 5, normal: 3, friction: 3 },
+      hint: "Sliding DOWN a 45° ramp ⇒ friction points UP the ramp, exactly the up-right ↗ direction. Constant velocity ⇒ the normal force ↖ and friction ↗ together balance gravity ↓.",
     },
   ];
 
@@ -448,12 +462,19 @@
       const sx = canvas.clientWidth ? canvas.clientWidth / canvas.width : 1;
       const sy = canvas.clientHeight ? canvas.clientHeight / canvas.height : 1;
 
-      FORCES.forEach((f) => {
-        if (!state.on[f.key]) return;
+      const active = FORCES.filter((f) => state.on[f.key]);
+      active.forEach((f) => {
         const d = DIRS[state.dir[f.key]];
+        // only nudge the tail sideways if another force shares this axis
+        // (same or opposite direction); a lone force runs along the axis.
+        const shared = active.some((g) => {
+          if (g.key === f.key) return false;
+          const e = DIRS[state.dir[g.key]];
+          return Math.abs(d.dx * e.dx + d.dy * e.dy) > 0.9;
+        });
         const px = -d.dy;
         const py = d.dx;
-        const off = f.lane * 0.7;
+        const off = shared ? f.lane * 0.7 : 0;
         const tx = cx + d.dx * (r + 1) + px * off;
         const ty = cy + d.dy * (r + 1) + py * off;
         const L = forceLen(f);

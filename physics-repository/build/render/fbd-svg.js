@@ -275,14 +275,18 @@ export function renderFbdSvg(spec) {
       `  <line x1="${r(CX)}" y1="${r(CY)}" x2="${r(sx + (right ? 6 : -6))}" y2="${r(CY)}" stroke="${COLORS.surface}" stroke-width="1" stroke-dasharray="3 2"/>`,
       `  <path d="M ${r(sx)} ${r(sy)} A ${R} ${R} 0 0 ${sweep} ${r(ex)} ${r(ey)}" fill="none" stroke="${COLORS.surface}" stroke-width="1.2"/>`
     );
-    const midRad = ((right ? deg / 2 : 180 - deg / 2) * Math.PI) / 180;
-    const lx = CX + (R + 12) * Math.cos(midRad);
-    const ly = CY - (R + 12) * Math.sin(midRad);
+    // place the label in the open wedge, a bit past the arc; for a narrow
+    // wedge (small angle) sit it a touch above the mid-line so it reads clear.
+    const labelDeg = deg < 25 ? deg * 0.75 + 5 : deg / 2;
+    const midRad = ((right ? labelDeg : 180 - labelDeg) * Math.PI) / 180;
+    const lr = R + 16;
+    const lx = CX + lr * Math.cos(midRad);
+    const ly = CY - lr * Math.sin(midRad);
     angleParts.push(
       `  <text x="${r(lx)}" y="${r(ly)}" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="11" fill="${COLORS.surface}">${escapeAttr(ang.label || deg + "°")}</text>`
     );
-    grow(lx - 10, ly - 8);
-    grow(lx + 10, ly + 8);
+    grow(lx - 12, ly - 9);
+    grow(lx + 12, ly + 9);
     grow(right ? sx + 8 : sx - 8, CY);
   }
 
