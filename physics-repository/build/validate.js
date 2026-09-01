@@ -74,6 +74,13 @@ export function validateContent({ taxonomies }) {
     } else if (!VALID_CED_TOPICS.has(obj.cedTopic)) {
       errors.push(`${where}: cedTopic "${obj.cedTopic}" is not a real AP Physics 1 Unit 2 CED topic (2.1–2.9)`);
     }
+    // clusterId is the bare cluster number, must agree with objective (§9.2)
+    const bareCluster = obj.objective.replace(/^C/, "");
+    if (obj.clusterId == null) {
+      errors.push(`${where}: has "objective" but no "clusterId" (§9.2 — expected "${bareCluster}")`);
+    } else if (obj.clusterId !== bareCluster) {
+      errors.push(`${where}: clusterId "${obj.clusterId}" disagrees with objective "${obj.objective}"`);
+    }
   }
 
   function checkVocab(where, obj) {

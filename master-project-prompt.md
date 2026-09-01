@@ -272,10 +272,12 @@ Create interactive tools that demonstrate these connections where practical.
 3. **Dot style:** the object is **one small dot (~0.5 cm)** and **every** arrow — field *and* contact — starts at the **edge of the dot**.
 4. **No two arrows coincide.** Parallel or antiparallel forces (e.g. gravity and normal) are drawn **side by side with a small lateral offset** so every tail and every arrowhead is visible.
 5. **Relative lengths carry meaning.** Balanced forces are drawn the **same length**; if the object accelerates one way, the arrow that way is drawn **visibly longer**. Rough estimates are fine — the *ordering* must be right. Never draw all arrows the same length in a non-equilibrium situation.
-6. **Label every arrow** with its type ($\vec{F}_g$, $\vec{F}_N$, $\vec{F}_T$, $\vec{f}$, $\vec{F}_\text{app}$, $\vec{F}_s$); place the label clear of the arrow line and of other labels. Use real LaTeX, not plain-text approximations, wherever the renderer allows.
+6. **Label every arrow** with its type ($\vec{F}_g$, $\vec{F}_N$, $\vec{F}_T$, $\vec{f}$, $\vec{F}_\text{app}$, $\vec{F}_s$). Use real LaTeX, not plain-text approximations, wherever the renderer allows.
 7. **Nothing else on the diagram:** no velocity/acceleration arrow, no net-force arrow, no third-law partner that acts on another object, no source-less force.
 
-Each authored FBD SVG carries a short comment at the top pointing back to these rules.
+**Labels must never overlap — every diagram, drawing, and graph (added 2026-09-01, permanent).** A label may not touch or cross the object, an arrow/curve, an axis, another label, or a gridline. Place each label *beyond the end of the thing it names* (past the arrowhead, past the end of the curve), offset outward, with clear space around it; expand the canvas / viewBox rather than crowd the drawing. Axis titles sit outside the plot area and never sit on the tick numbers. If a label cannot be placed clear, the figure is too small — make it bigger. This is a hard requirement: an overlapping label is a defect, not a style preference.
+
+The FBD SVGs are generated from specs by `build/gen-diagrams.js` (via `build/render/fbd-svg.js`), which auto-places every label clear of the object, the arrows, and the other labels and fits the viewBox to the result — run `node build/gen-diagrams.js` after changing a spec. Hand-authored diagrams and graph renderers must meet the same bar.
 
 ## 12. Formula Relationship Explorer
 
@@ -542,6 +544,14 @@ Before finalizing any lesson:
 **Curriculum Verification** — check whether AP material matches the current AP framework; IB material matches the current IB Physics syllabus; SL/HL distinctions are accurate.
 
 If current curriculum information may have changed, flag it for verification against official College Board or IB documentation rather than guessing.
+
+**Reference library (added 2026-09-01).** Before building any lesson, question, diagram, or artifact, consult `resources/` to calibrate rigor, depth, and topic scope — you still decide how to *present* the concept, but the reference material is the yardstick for how far a topic goes:
+- `resources/course guides/` — the official CEDs (AP Physics 1 / 2 / C-Mechanics / C-E&M) and the IB DP Physics subject brief. **Authority for scope**, equation-sheet values, and the science/assessment practices.
+- `resources/book resources/` — OpenStax (High-School, College/AP, University Physics), Tsokos + Oxford (IB DP), *College Physics: A Strategic Approach* 3e (with test bank + solutions). Calibrate explanation depth, worked-example style, and distractor design.
+- `resources/test resources/` — IB DP past papers + mark schemes (2016–2022). Calibrate assessment difficulty and mark-scheme granularity.
+- `resources/FCIv95_cannon.pdf` — Force Concept Inventory; design method for the concept-inventory diagnostics.
+
+`resources/` is **gitignored and copyrighted** — read it for reference only; never copy its text into content, never commit or deploy it.
 
 ## 33. Lesson Generation Template
 

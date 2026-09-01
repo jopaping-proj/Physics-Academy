@@ -1,11 +1,12 @@
 [
   {
-    "id": "ap1-u2-frq-01",
+    "id": "AP1-U2-FRQ-001",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "free-response",
@@ -39,12 +40,13 @@
     "scoringNotes": "Full credit on (a) requires exactly three forces, correctly directed; partial credit for omitting a force or mislabeling a direction. (b) and (c) require correct trigonometric component selection and correct substitution; award partial credit for correct setup with an arithmetic error."
   },
   {
-    "id": "ap1-u2-frq-02",
+    "id": "AP1-U2-FRQ-002",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "justify-with-principle",
     "representation": "numerical",
     "type": "free-response",
@@ -78,12 +80,13 @@
     "scoringNotes": "Part (c) must reference the inverse proportionality explicitly, not just state a new numeric answer, to receive full credit — a correct number alone without the proportional-reasoning justification earns partial credit only."
   },
   {
-    "id": "ap1-u2-frq-03",
+    "id": "AP1-U2-FRQ-003",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "free-response",
@@ -117,12 +120,13 @@
     "scoringNotes": "Part (b) requires both the correct numerical slope and its unit-consistent physical interpretation (1/m) for full credit."
   },
   {
-    "id": "ap1-u2-frq-04",
+    "id": "AP1-U2-FRQ-004",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "identify-principle",
     "representation": "free-body-diagram",
     "type": "free-response",
@@ -156,12 +160,13 @@
     "scoringNotes": "Part (c) must correctly name both the magnitude and the object/direction of the reaction force; stating only 'equal and opposite' without identifying which object it acts on earns partial credit."
   },
   {
-    "id": "ap1-u2-frq-05",
+    "id": "AP1-U2-FRQ-005",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "free-response",
@@ -195,12 +200,13 @@
     "scoringNotes": "Parts (a) and (b) require correctly identifying N = mg for a horizontal surface with no other vertical forces; part (c) requires an explicit μk ≤ μs comparison, not just a restatement of the numbers."
   },
   {
-    "id": "ap1-u2-frq-06",
+    "id": "AP1-U2-FRQ-006",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "free-response",
@@ -234,12 +240,13 @@
     "scoringNotes": "Part (c) requires addressing both the sin θ and cos θ trends — addressing only one earns partial credit."
   },
   {
-    "id": "ap1-u2-frq-07",
+    "id": "AP1-U2-FRQ-007",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "free-response",
@@ -273,12 +280,13 @@
     "scoringNotes": "Part (b) may be solved from either block's equation; award full credit either way provided the answer is consistency-checked or correctly derived from one block alone."
   },
   {
-    "id": "ap1-u2-frq-08",
+    "id": "AP1-U2-FRQ-008",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "free-response",
@@ -312,12 +320,13 @@
     "scoringNotes": "Part (c) requires recognizing the resulting nonzero net force and its direction, not just stating 'it would speed up' without justification."
   },
   {
-    "id": "ap1-u2-frq-09",
+    "id": "AP1-U2-FRQ-009",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.5",
+    "clusterId": "2.10",
     "skill": "justify-with-principle",
     "representation": "numerical",
     "type": "free-response",
@@ -351,12 +360,13 @@
     "scoringNotes": "Part (c) must derive the sign relationship from N − mg = ma rather than simply asserting the result; full credit requires the explicit equation."
   },
   {
-    "id": "ap1-u2-frq-10",
+    "id": "AP1-U2-FRQ-010",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "error-analysis",
     "representation": "verbal",
     "type": "free-response",
@@ -390,12 +400,13 @@
     "scoringNotes": "Follows the four-step error-analysis structure (identify → explain → correct reasoning → correct result); part (c) requires both numerical accelerations and the explicit comparison."
   },
   {
-    "id": "ap1-u2-frq-11",
+    "id": "AP1-U2-FRQ-011",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "experimental-design",
     "representation": "numerical",
     "type": "free-response",
@@ -429,12 +440,13 @@
     "scoringNotes": "Any physically valid uncertainty source is acceptable in (c) (e.g., air resistance, sensor resolution, track incline) provided the direction of its effect on μk is correctly justified."
   },
   {
-    "id": "ap1-u2-frq-12",
+    "id": "AP1-U2-FRQ-012",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "free-response",
@@ -468,12 +480,13 @@
     "scoringNotes": "Part (b) requires stating the slope equals mass explicitly, not just naming the numerical values."
   },
   {
-    "id": "ap1-u2-frq-13",
+    "id": "AP1-U2-FRQ-013",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.8",
+    "clusterId": "2.10",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "free-response",
@@ -507,12 +520,13 @@
     "scoringNotes": "Part (a) must correctly identify the spring force as upward (restoring), not simply 'the spring force,' to receive full credit."
   },
   {
-    "id": "ap1-u2-frq-14",
+    "id": "AP1-U2-FRQ-014",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "justify-with-principle",
     "representation": "verbal",
     "type": "free-response",
@@ -534,12 +548,13 @@
     "scoringNotes": "Full credit requires explicitly correcting the student's conflation of 'a forward force exists' with 'the net force is forward' — this is the central reasoning error. Partial credit for correctly stating F_net = 0 without addressing why the student's framing is subtly wrong."
   },
   {
-    "id": "ap1-u2-frq-15",
+    "id": "AP1-U2-FRQ-015",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "free-response",

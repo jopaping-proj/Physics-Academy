@@ -228,12 +228,19 @@
     const box = makePanel("Box diagram");
     const dot = makePanel("Dot diagram");
 
-    function placeLabel(panel, cx_px, cy_px, tex, color) {
+    // `dir` is the force's unit direction; the label is shifted so it sits
+    // fully beyond the arrowhead, never on the arrow (master §11).
+    function placeLabel(panel, cx_px, cy_px, tex, color, dir) {
       const span = document.createElement("span");
       span.className = "fbd-label";
       span.style.left = cx_px + "px";
       span.style.top = cy_px + "px";
       span.style.color = color;
+      if (dir) {
+        const tx = dir.dx > 0.3 ? "0" : dir.dx < -0.3 ? "-100%" : "-50%";
+        const ty = dir.dy > 0.3 ? "0" : dir.dy < -0.3 ? "-100%" : "-50%";
+        span.style.transform = `translate(${tx}, ${ty})`;
+      }
       if (window.katex) {
         try {
           window.katex.render(tex, span, { throwOnError: false });
@@ -323,7 +330,7 @@
         const ex = tx + d.dx * L;
         const ey = ty + d.dy * L;
         drawArrow(ctx, tx, ty, ex, ey, cssVar(f.color, "#e0e0e0"));
-        placeLabel(box, (ex + d.dx * 12) * sx, (ey + d.dy * 12) * sy, f.tex, cssVar(f.color, "#e0e0e0"));
+        placeLabel(box, (ex + d.dx * 14) * sx, (ey + d.dy * 14) * sy, f.tex, cssVar(f.color, "#e0e0e0"), d);
       });
 
       emptyHint(box, ctx);
@@ -362,7 +369,7 @@
         const ex = tx + d.dx * L;
         const ey = ty + d.dy * L;
         drawArrow(ctx, tx, ty, ex, ey, cssVar(f.color, "#e0e0e0"));
-        placeLabel(dot, (ex + d.dx * 10) * sx, (ey + d.dy * 10) * sy, f.tex, cssVar(f.color, "#e0e0e0"));
+        placeLabel(dot, (ex + d.dx * 12) * sx, (ey + d.dy * 12) * sy, f.tex, cssVar(f.color, "#e0e0e0"), d);
       });
 
       emptyHint(dot, ctx);

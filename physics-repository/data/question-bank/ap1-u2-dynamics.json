@@ -1,11 +1,12 @@
 [
   {
-    "id": "ap1-u2-l3-fp01",
+    "id": "AP1-U2-MCQ-001",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -33,12 +34,13 @@
     "solution": "Equilibrium requires the vertical components of the two tension segments to sum to the frame's weight; the horizontal components cancel by symmetry."
   },
   {
-    "id": "ap1-u2-l3-fp02",
+    "id": "AP1-U2-MCQ-002",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.3",
     "cedTopic": "2.5",
+    "clusterId": "2.3",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -61,12 +63,13 @@
     "solution": "$F_{net} = 18\\text{ N} - 6\\text{ N} = 12\\text{ N}$ (rightward). $a = F_{net}/m = 12/4.0 = 3.0\\text{ m/s}^2$, rightward."
   },
   {
-    "id": "ap1-u2-l3-fp03",
+    "id": "AP1-U2-MCQ-003",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "proportional-reasoning",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -89,12 +92,13 @@
     "solution": "a ∝ F and a ∝ 1/m, so combined: $a_{new} = a \\times \\tfrac{1}{2} \\times \\tfrac{1}{4} = a/8$."
   },
   {
-    "id": "ap1-u2-l3-fp04",
+    "id": "AP1-U2-MCQ-004",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "multiple-choice",
@@ -117,12 +121,13 @@
     "solution": "Matching $a = F_{net}\\cdot(1/m)$ to $y=(\\text{slope})x$ shows slope $= F_{net}$."
   },
   {
-    "id": "ap1-u2-l3-fp05",
+    "id": "AP1-U2-MCQ-005",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "synthesis",
     "representation": "equation",
     "type": "multiple-choice",
@@ -145,12 +150,13 @@
     "solution": "$2mg - T = 2ma$ and $T - mg = ma$. Adding: $mg = 3ma$, so $a = g/3$."
   },
   {
-    "id": "ap1-u2-l3-fp06",
+    "id": "AP1-U2-MCQ-006",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Free-Body Diagrams",
     "objective": "C2.2",
     "cedTopic": "2.2",
+    "clusterId": "2.2",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -178,12 +184,13 @@
     "solution": "Four forces act: push, weight, normal force, and static friction (equal and opposite to the push's component along the surface)."
   },
   {
-    "id": "ap1-u2-l3-fp07",
+    "id": "AP1-U2-MCQ-007",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Free-Body Diagrams",
     "objective": "C2.2",
     "cedTopic": "2.2",
+    "clusterId": "2.2",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -211,12 +218,13 @@
     "solution": "Only gravity acts on the ball throughout its flight, including at the highest point."
   },
   {
-    "id": "ap1-u2-l3-fp08",
+    "id": "AP1-U2-MCQ-008",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "construct-model",
     "representation": "vector-diagram",
     "type": "multiple-choice",
@@ -239,12 +247,13 @@
     "solution": "$T\\sin 37° = W \\Rightarrow T = 60/0.60 = 100\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp09",
+    "id": "AP1-U2-MCQ-009",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -272,12 +281,13 @@
     "solution": "The interaction forces are equal and opposite by Newton's third law; the car's smaller mass gives it a much larger acceleration for that same-magnitude force."
   },
   {
-    "id": "ap1-u2-l3-fp10",
+    "id": "AP1-U2-MCQ-010",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "misconception-diagnosis",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -305,12 +315,13 @@
     "solution": "The reaction force is the book pushing down on the table, equal in magnitude and opposite in direction — both are normal forces from the same book-table contact interaction."
   },
   {
-    "id": "ap1-u2-l3-fp11",
+    "id": "AP1-U2-MCQ-011",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -333,12 +344,13 @@
     "solution": "$a = 20/(3.0+2.0) = 4.0\\text{ m/s}^2$. Isolating B: $F_{A\\to B} = m_B a = 2.0\\times4.0 = 8.0\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp12",
+    "id": "AP1-U2-MCQ-012",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -361,12 +373,13 @@
     "solution": "$f_{s,max} = \\mu_s mg = 0.40\\times10\\times9.8 = 39.2\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp13",
+    "id": "AP1-U2-MCQ-013",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "misconception-diagnosis",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -394,12 +407,13 @@
     "solution": "No horizontal applied force or tendency to slide exists, so the friction force on the block is zero."
   },
   {
-    "id": "ap1-u2-l3-fp14",
+    "id": "AP1-U2-MCQ-014",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -422,12 +436,13 @@
     "solution": "$a=v_0^2/(2d)=0.80\\text{ m/s}^2$; from $\\mu_k mg = ma$, $\\mu_k = a/g \\approx 0.082$."
   },
   {
-    "id": "ap1-u2-l3-fp15",
+    "id": "AP1-U2-MCQ-015",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -450,12 +465,13 @@
     "solution": "For block A alone: $T - m_Ag = 0 \\Rightarrow T = 3.0\\times9.8 = 29.4\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp16",
+    "id": "AP1-U2-MCQ-016",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -478,12 +494,13 @@
     "solution": "$a=g\\sin\\theta=9.8\\times0.50=4.9\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp17",
+    "id": "AP1-U2-MCQ-017",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -511,12 +528,13 @@
     "solution": "$mg\\sin\\theta \\approx 6.7\\text{ N}$ vs. $\\mu_s mg\\cos\\theta \\approx 9.2\\text{ N}$. Since max static friction exceeds the gravity component, the block remains at rest."
   },
   {
-    "id": "ap1-u2-l3-fp18",
+    "id": "AP1-U2-MCQ-018",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "limiting-case-analysis",
     "representation": "equation",
     "type": "multiple-choice",
@@ -544,12 +562,13 @@
     "solution": "$a=g\\sin\\theta$; since sin θ increases from 0 to 1 as θ goes from 0° to 90°, acceleration increases with incline angle, correctly reaching g in the vertical limit."
   },
   {
-    "id": "ap1-u2-l3-fp19",
+    "id": "AP1-U2-MCQ-019",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -572,12 +591,13 @@
     "solution": "$T=mg\\sin\\theta=5.0\\times9.8\\times0.42\\approx20.6\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp20",
+    "id": "AP1-U2-MCQ-020",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.8",
+    "clusterId": "2.10",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -600,12 +620,13 @@
     "solution": "$F=kx=250\\times0.12=30\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp21",
+    "id": "AP1-U2-MCQ-021",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.8",
+    "clusterId": "2.10",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -628,12 +649,13 @@
     "solution": "$k=mg/x=(0.50\\times9.8)/0.098=50\\text{ N/m}$."
   },
   {
-    "id": "ap1-u2-l3-fp22",
+    "id": "AP1-U2-MCQ-022",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.5",
+    "clusterId": "2.10",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -656,12 +678,13 @@
     "solution": "$N=m(g+a)=60\\times(9.8+2.0)=708\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp23",
+    "id": "AP1-U2-MCQ-023",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.5",
+    "clusterId": "2.10",
     "skill": "limiting-case-analysis",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -689,12 +712,13 @@
     "solution": "During free fall, $a=g$ downward for both person and scale, so $N=m(g-g)=0$."
   },
   {
-    "id": "ap1-u2-l3-fp24",
+    "id": "AP1-U2-MCQ-024",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.3",
     "cedTopic": "2.5",
+    "clusterId": "2.3",
     "skill": "evaluate-assumptions",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -717,12 +741,13 @@
     "solution": "$F_{net}=ma=25\\times0.80=20\\text{ N}$; the lunar gravitational field strength is not needed for this horizontal-acceleration scenario."
   },
   {
-    "id": "ap1-u2-l3-fp25",
+    "id": "AP1-U2-MCQ-025",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.3",
     "cedTopic": "2.5",
+    "clusterId": "2.3",
     "skill": "construct-model",
     "representation": "vector-diagram",
     "type": "multiple-choice",
@@ -745,12 +770,13 @@
     "solution": "$F_x=F\\cos60°=12\\times0.50=6.0\\text{ N}$; $a_x=F_x/m=6.0/3.0=2.0\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp26",
+    "id": "AP1-U2-MCQ-026",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "proportional-reasoning",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -773,12 +799,13 @@
     "solution": "a ∝ 1/m with F_net fixed, so doubling mass halves acceleration: $a_A = a_B/2$."
   },
   {
-    "id": "ap1-u2-l3-fp27",
+    "id": "AP1-U2-MCQ-027",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "proportional-reasoning",
     "representation": "equation",
     "type": "multiple-choice",
@@ -801,12 +828,13 @@
     "solution": "$a_{new}=(2F)/(2m)=F/m=a$ — unchanged."
   },
   {
-    "id": "ap1-u2-l3-fp28",
+    "id": "AP1-U2-MCQ-028",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "proportional-reasoning",
     "representation": "equation",
     "type": "multiple-choice",
@@ -829,12 +857,13 @@
     "solution": "$a_{new}=\\dfrac{F/3}{m/2}=\\dfrac{2}{3}a$."
   },
   {
-    "id": "ap1-u2-l3-fp29",
+    "id": "AP1-U2-MCQ-029",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.4",
     "cedTopic": "2.5",
+    "clusterId": "2.4",
     "skill": "proportional-reasoning",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -857,12 +886,13 @@
     "solution": "$a_1=3$, $a_2=3$, $a_3=4\\text{ m/s}^2$. Ranking: $3 > 1 = 2$."
   },
   {
-    "id": "ap1-u2-l3-fp30",
+    "id": "AP1-U2-MCQ-030",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "multiple-choice",
@@ -885,12 +915,13 @@
     "solution": "Matching $F_{net}=ma$ to $y=(\\text{slope})x$ shows slope = m."
   },
   {
-    "id": "ap1-u2-l3-fp31",
+    "id": "AP1-U2-MCQ-031",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "multiple-choice",
@@ -918,12 +949,13 @@
     "solution": "a = F_net/m is an inverse relationship: a decreasing curve approaching zero as m grows, never reaching zero or going negative."
   },
   {
-    "id": "ap1-u2-l3-fp32",
+    "id": "AP1-U2-MCQ-032",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "multiple-choice",
@@ -951,12 +983,13 @@
     "solution": "Constant negative slope (0–4 s) → constant net force. Zero slope afterward → zero net force, despite continued motion."
   },
   {
-    "id": "ap1-u2-l3-fp33",
+    "id": "AP1-U2-MCQ-033",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.5",
     "cedTopic": "2.5",
+    "clusterId": "2.5",
     "skill": "multi-representation-reasoning",
     "representation": "graph",
     "type": "multiple-choice",
@@ -979,12 +1012,13 @@
     "solution": "At t = 1.5 s, $F_{net}=8.0\\text{ N}$ (before the drop). $a=F_{net}/m=8.0/2.0=4.0\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp34",
+    "id": "AP1-U2-MCQ-034",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "construct-model",
     "representation": "vector-diagram",
     "type": "multiple-choice",
@@ -1012,12 +1046,13 @@
     "solution": "Resultant of Ropes 1 & 2: $\\sqrt{30^2+40^2}=50\\text{ N}$, north of east. Rope 3 = 50 N, opposite direction (south of west)."
   },
   {
-    "id": "ap1-u2-l3-fp35",
+    "id": "AP1-U2-MCQ-035",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -1045,12 +1080,13 @@
     "solution": "Constant velocity ⇒ a = 0 ⇒ F_net = 0. Vertically, gravity and normal force balance; horizontally, zero force is needed and present."
   },
   {
-    "id": "ap1-u2-l3-fp36",
+    "id": "AP1-U2-MCQ-036",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Free-Body Diagrams",
     "objective": "C2.2",
     "cedTopic": "2.2",
+    "clusterId": "2.2",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -1078,12 +1114,13 @@
     "solution": "Three forces: weight, normal force, and static friction."
   },
   {
-    "id": "ap1-u2-l3-fp37",
+    "id": "AP1-U2-MCQ-037",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Free-Body Diagrams",
     "objective": "C2.2",
     "cedTopic": "2.2",
+    "clusterId": "2.2",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -1111,12 +1148,13 @@
     "solution": "Isolating one block: only its own weight (down) and the string tension (up) act on it directly."
   },
   {
-    "id": "ap1-u2-l3-fp38",
+    "id": "AP1-U2-MCQ-038",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Free-Body Diagrams",
     "objective": "C2.2",
     "cedTopic": "2.2",
+    "clusterId": "2.2",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -1144,12 +1182,13 @@
     "solution": "Four forces: applied push, wall's normal force, weight, and vertical static friction supporting the weight."
   },
   {
-    "id": "ap1-u2-l3-fp39",
+    "id": "AP1-U2-MCQ-039",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -1177,12 +1216,13 @@
     "solution": "The rocket-exhaust interaction pair: rocket pushes gas backward, gas pushes rocket forward — no external medium required."
   },
   {
-    "id": "ap1-u2-l3-fp40",
+    "id": "AP1-U2-MCQ-040",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -1210,12 +1250,13 @@
     "solution": "Third-law pair: swimmer's feet push back on the wall; wall pushes forward on the swimmer's feet."
   },
   {
-    "id": "ap1-u2-l3-fp41",
+    "id": "AP1-U2-MCQ-041",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Third Law",
     "objective": "C2.6",
     "cedTopic": "2.3",
+    "clusterId": "2.6",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -1238,12 +1279,13 @@
     "solution": "$F=m_Aa_A=50\\times3.0=150\\text{ N}$. $a_B=F/m_B=150/75=2.0\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp42",
+    "id": "AP1-U2-MCQ-042",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's First Law and Equilibrium",
     "objective": "C2.1",
     "cedTopic": "2.4",
+    "clusterId": "2.1",
     "skill": "limiting-case-analysis",
     "representation": "equation",
     "type": "multiple-choice",
@@ -1271,12 +1313,13 @@
     "solution": "$T=W/(2\\sin\\theta)$; as θ→0°, T→∞."
   },
   {
-    "id": "ap1-u2-l3-fp43",
+    "id": "AP1-U2-MCQ-043",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.3",
     "cedTopic": "2.5",
+    "clusterId": "2.3",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -1299,12 +1342,13 @@
     "solution": "$F_{net}=30-8=22\\text{ N}$; $a=22/6.0\\approx3.7\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp44",
+    "id": "AP1-U2-MCQ-044",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Newton's Second Law",
     "objective": "C2.3",
     "cedTopic": "2.5",
+    "clusterId": "2.3",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -1327,12 +1371,13 @@
     "solution": "$a=-1.5\\text{ m/s}^2$ (downward, while moving up). $T=m(g+a)=900\\times8.3\\approx7470\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp45",
+    "id": "AP1-U2-MCQ-045",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -1355,12 +1400,13 @@
     "solution": "$a=m_Bg/(m_A+m_B)=(2.0\\times9.8)/6.0\\approx3.3\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp46",
+    "id": "AP1-U2-MCQ-046",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Connected Objects and Systems",
     "objective": "C2.7",
     "cedTopic": "2.5",
+    "clusterId": "2.7",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
@@ -1383,12 +1429,13 @@
     "solution": "$a=25/(2.0+3.0)=5.0\\text{ m/s}^2$. Isolating D: $T=m_Da=3.0\\times5.0=15\\text{ N}$."
   },
   {
-    "id": "ap1-u2-l3-fp47",
+    "id": "AP1-U2-MCQ-047",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "identify-principle",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -1416,12 +1463,13 @@
     "solution": "Generally, $\\mu_k \\le \\mu_s$."
   },
   {
-    "id": "ap1-u2-l3-fp48",
+    "id": "AP1-U2-MCQ-048",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Friction",
     "objective": "C2.8",
     "cedTopic": "2.7",
+    "clusterId": "2.8",
     "skill": "construct-model",
     "representation": "free-body-diagram",
     "type": "multiple-choice",
@@ -1444,12 +1492,13 @@
     "solution": "$a=g\\sin\\theta+\\mu_kg\\cos\\theta=9.8(0.50)+0.20(9.8)(0.87)\\approx6.6\\text{ m/s}^2$."
   },
   {
-    "id": "ap1-u2-l3-fp49",
+    "id": "AP1-U2-MCQ-049",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Inclined Planes",
     "objective": "C2.9",
     "cedTopic": "2.5",
+    "clusterId": "2.9",
     "skill": "limiting-case-analysis",
     "representation": "verbal",
     "type": "multiple-choice",
@@ -1477,12 +1526,13 @@
     "solution": "Equal final speeds ($v=\\sqrt{2gh}$, height-dependent only); the steeper incline's larger acceleration and shorter path give it the shorter time."
   },
   {
-    "id": "ap1-u2-l3-fp50",
+    "id": "AP1-U2-MCQ-050",
     "course": "AP Physics 1",
     "unit": "Unit 2: Dynamics",
     "lesson": "Springs and Apparent Weight",
     "objective": "C2.10",
     "cedTopic": "2.8",
+    "clusterId": "2.10",
     "skill": "construct-model",
     "representation": "numerical",
     "type": "multiple-choice",
