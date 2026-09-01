@@ -461,6 +461,12 @@
   max-height: 240px;
 }
 
+/* an opt-in ("size": "lg" on the figure entry) for a diagram or graph
+   that carries enough instructional detail to earn the extra room —
+   takes the full row width instead of sharing it. */
+.figure--lg { flex-basis: 100%; }
+.figure--lg svg { max-height: 420px; }
+
 .figure figcaption {
   margin-top: var(--space-2);
   font-size: var(--text-sm);

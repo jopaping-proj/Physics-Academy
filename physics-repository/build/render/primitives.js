@@ -65,7 +65,8 @@ export function renderFigure(fig) {
   }
   svg = svg.replace(/<\?xml[^>]*\?>\s*/i, "").trim();
   const caption = fig.caption ? `<figcaption>${mdInline(fig.caption)}</figcaption>` : "";
-  return `<figure class="figure">${svg}${caption}</figure>`;
+  const cls = fig.size === "lg" ? "figure figure--lg" : "figure";
+  return `<figure class="${cls}">${svg}${caption}</figure>`;
 }
 
 export function renderFigures(figures) {

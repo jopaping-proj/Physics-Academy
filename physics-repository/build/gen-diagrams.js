@@ -241,6 +241,18 @@ const DIAGRAMS = {
       { sym: "f_k", dir: "left", mag: 2, anchor: [166, 134], color: "red", label: { lift: 14 } },
     ],
   },
+
+  "friction/dot-sliding-nopush.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a box sliding to the right with nobody pushing it. Gravity down and the normal force up are equal and cancel. Kinetic friction is the only horizontal force, pointing left, opposite the sliding, so the box decelerates.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
+      { sym: "f_k", dir: "left", mag: 3, anchor: [142, 112], color: "red" },
+    ],
+  },
 };
 
 let n = 0;

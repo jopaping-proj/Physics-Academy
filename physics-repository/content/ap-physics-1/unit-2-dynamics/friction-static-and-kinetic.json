@@ -43,7 +43,7 @@
       "title": "Two Kinds of Friction",
       "concept": "Friction is a contact force between two surfaces, always **parallel to the surface**. It comes in two regimes.\n\n**Kinetic friction** acts while the surfaces slide across each other. Its size is fixed:\n$$f_k = \\mu_k F_N$$\nIt does **not** depend on how fast the object slides or on how hard you push — only on the surfaces ($\\mu_k$) and how hard they are pressed together ($F_N$). It points **opposite the sliding**.\n\n**Static friction** acts while the surfaces are **not** sliding. It is whatever value is needed to keep the object from sliding — it grows to match the force trying to move the object — but only up to a maximum:\n$$f_s \\le \\mu_s F_N$$\nThe instant the applied force exceeds $\\mu_s F_N$, static friction has run out, the object breaks free, and friction switches to kinetic. Because $\\mu_s > \\mu_k$ for almost every pair of surfaces, ==friction *drops* the moment something starts to slide== — that is the lurch you feel when a stuck drawer suddenly gives.\n\nEither way, friction opposes **relative sliding or the tendency to slide**, not necessarily the object's motion or your push.",
       "conceptFigures": [
-        { "svg": "friction/friction-vs-applied.svg", "caption": "As you push harder on a stationary object, static friction rises to match ($f_s = F_{app}$) until it reaches $\\mu_s F_N$. Then the object slips and friction drops to the constant kinetic value $\\mu_k F_N$, which no longer depends on the push." }
+        { "svg": "friction/friction-vs-applied.svg", "size": "lg", "caption": "As you push harder on a stationary object, static friction rises to match ($f_s = F_{app}$) until it reaches $\\mu_s F_N$. Then the object slips and friction drops to the constant kinetic value $\\mu_k F_N$, which no longer depends on the push." }
       ],
       "figures": [
         { "svg": "friction/fbd-push-not-sliding.svg", "caption": "A heavy crate pushed but **not** sliding: static friction has grown to exactly equal the push, so $\\sum F_x = 0$ and the crate stays put." }
@@ -198,6 +198,9 @@
           }
         },
         "hint": ["With no push, friction is the only horizontal force. Find $f_k = \\mu_k mg$, then $a = f_k/m$."],
+        "hintFigures": [
+          { "svg": "friction/dot-sliding-nopush.svg", "caption": "Dot free-body diagram: gravity and the normal force cancel; kinetic friction is the only horizontal force, so it alone determines the acceleration." }
+        ],
         "solution": "$f_k = \\mu_k mg = 25\\text{ N}$; $a = 25/10 = 2.5\\text{ m/s}^2$ opposite the motion."
       }
     },
@@ -358,7 +361,7 @@
         "Redo the calculation correctly, formula first.",
         "State a quick check on whether the crate slides at all."
       ],
-      "modelResponse": "**(1)** The student used the *static* coefficient $\\mu_s$ to find the friction force on a crate that is **sliding**. **(2)** Once an object is sliding, friction is kinetic: $f_k = \\mu_k F_N$. The static coefficient only sets the *threshold* to start it moving; it never gives the friction force during sliding. **(3)** $F_N = mg = (8.0)(10) = 80\\text{ N}$. $f_k = \\mu_k F_N = (0.30)(80) = 24\\text{ N}$. Then $\\sum F_x = ma_x \\Rightarrow a_x = \\dfrac{F_{app} - f_k}{m} = \\dfrac{60 - 24}{8.0} = \\dfrac{36}{8.0} = 4.5\\text{ m/s}^2$. **(4)** It does slide: the maximum static friction is $\\mu_s F_N = 0.50 \\times 80 = 40\\text{ N}$, and the $60\\text{ N}$ push exceeds it.",
+      "modelResponse": "1. The student used the *static* coefficient $\\mu_s$ to find the friction force on a crate that is **sliding**.\n2. Once an object is sliding, friction is kinetic: $f_k = \\mu_k F_N$. The static coefficient only sets the *threshold* to start it moving; it never gives the friction force during sliding.\n3. Redo it: $F_N = mg = (8.0)(10) = 80\\text{ N}$. $f_k = \\mu_k F_N = (0.30)(80) = 24\\text{ N}$. Then $\\sum F_x = ma_x \\Rightarrow a_x = \\dfrac{F_{app} - f_k}{m} = \\dfrac{60 - 24}{8.0} = \\dfrac{36}{8.0} = 4.5\\text{ m/s}^2$.\n4. Quick check: the maximum static friction is $\\mu_s F_N = 0.50 \\times 80 = 40\\text{ N}$, and the $60\\text{ N}$ push exceeds it — so the crate does slide, confirming kinetic friction is the right model.",
       "modelFigures": [
         { "svg": "friction/fbd-sliding.svg", "caption": "Sliding crate: friction is kinetic ($f_k = \\mu_k F_N$), drawn shorter than the push, so the net force is forward." }
       ],

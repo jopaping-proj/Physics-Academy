@@ -118,11 +118,14 @@
 
       const px = (n) => 3 + n * 3.0; // N -> px, shared scale for F_app and f
 
-      // gravity + normal (fixed reference length)
-      arrow(ctx, cx + 10, cy, cx + 10, cy + 44, cG, { width: 3, head: 9, tailDot: true });
-      arrow(ctx, cx - 12, cy + hh, cx - 12, cy + hh - 44, cN, { width: 3, head: 9, tailDot: true });
-      label("F_g", cx + 16, cy + 52, cG);
-      label("F_N", cx - 18, cy + hh - 52, cN);
+      // gravity + normal — both scale with the mass slider (F_N = mg here,
+      // since the push is horizontal), so they stay equal to each other
+      // and visibly grow/shrink together as the mass changes.
+      const wLen = 18 + (state.m - 1) * 3.5; // mass 1..12 kg -> 18..56.5 px
+      arrow(ctx, cx + 10, cy, cx + 10, cy + wLen, cG, { width: 3, head: 9, tailDot: true });
+      arrow(ctx, cx - 12, cy + hh, cx - 12, cy + hh - wLen, cN, { width: 3, head: 9, tailDot: true });
+      label("F_g", cx + 16, cy + wLen + 8, cG);
+      label("F_N", cx - 18, cy + hh - wLen - 8, cN);
 
       // applied push — from the left face
       if (state.F > 0.5) {
