@@ -74,11 +74,28 @@
  *   "needsPlotly": false                   // set true only if an interactive actually wants Plotly
  * }
  * ("md" fields support the shared Markdown subset in js/markdown.js —
- * **bold**, *italic*, ==highlight==, [[key term]], `code`.)
+ * **bold**, *italic*, ==highlight==, [[key term]], `code`, a "- " bullet
+ * list, and a GFM pipe table.)
+ *
+ * ---- CONCEPT-INVENTORY PAGES ----
+ * A content file with `"format": "concept-inventory"` is NOT a slide
+ * deck. It builds through build/templates/concept-inventory.html into a
+ * single score-only form run by js/concept-inventory.js. Schema:
+ * {
+ *   "format": "concept-inventory",
+ *   "lessonTitle": "…", "course": "…", "unit": "…",
+ *   "diagnosticKey": "ap1-u2",       // localStorage attempt log key
+ *   "intro": "md",                    // the policy notice
+ *   "items": [ { "id": "ci-01", "misconception": "slug|newtonian-anchor",
+ *                "pairId": "…", "stem": "md", "choices": ["md"], "correct": 2 } ]
+ * }
+ * Questions + choices are shuffled at runtime; only the score/percentage
+ * is shown. See docs/ap-physics-1-unit-2-architecture.md §10.
  */
 
 import fs from "node:fs";
 import path from "node:path";
+import { mdToHtml } from "../js/markdown.js";
 import { ROOT, CONTENT_DIR, DIST_DIR, TEMPLATES_DIR } from "./render/paths.js";
 import { esc } from "./render/primitives.js";
 import { loadQuestionBank, renderLessonBody, renderSidebarToc } from "./render/sections.js";
@@ -111,15 +128,37 @@ function copyStaticDirs() {
   }
 }
 
-function buildLesson(file, lessonTemplate) {
+function buildLesson(file, templates) {
   const relFromContent = path.relative(CONTENT_DIR, file);
   const lesson = JSON.parse(fs.readFileSync(file, "utf8"));
-  const bank = loadQuestionBank(lesson);
 
   const outRel = relFromContent.replace(/\.json$/, ".html");
   const outPath = path.join(DIST_DIR, outRel);
   const depth = outRel.split(path.sep).length - 1;
   const rootPrefix = depth > 0 ? "../".repeat(depth) : "./";
+
+  // Concept-inventory pages are not slide decks — a single form, score-only
+  // feedback, questions and options shuffled at runtime (js/concept-inventory.js).
+  // See docs/ap-physics-1-unit-2-architecture.md §10.
+  if (lesson.format === "concept-inventory") {
+    const html = templates.conceptInventory
+      .replaceAll("{{ROOT}}", rootPrefix)
+      .replace("{{TITLE}}", esc(lesson.lessonTitle || lesson.id))
+      .replace(
+        "{{BREADCRUMB}}",
+        [lesson.course, lesson.unit, "Concept Check"].filter(Boolean).map(esc).join(" › ")
+      )
+      .replace("{{HEADING}}", esc(lesson.lessonTitle || "Concept Check"))
+      .replace("{{INTRO}}", mdToHtml(lesson.intro || ""))
+      .replace("{{CI_DATA_JSON}}", JSON.stringify({ diagnosticKey: lesson.diagnosticKey || lesson.id, items: lesson.items || [] }));
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html, "utf8");
+    console.log(`[build] ${relFromContent} -> dist/${outRel} (concept inventory)`);
+    return { ...lesson, outRel };
+  }
+
+  const lessonTemplate = templates.lesson;
+  const bank = loadQuestionBank(lesson);
 
   const plotlyScript = lesson.needsPlotly
     ? '<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>'
@@ -182,8 +221,11 @@ function build() {
 
   copyStaticDirs();
 
-  const lessonTemplate = fs.readFileSync(path.join(TEMPLATES_DIR, "lesson.html"), "utf8");
-  const builtLessons = findLessonFiles(CONTENT_DIR).map((file) => buildLesson(file, lessonTemplate));
+  const templates = {
+    lesson: fs.readFileSync(path.join(TEMPLATES_DIR, "lesson.html"), "utf8"),
+    conceptInventory: fs.readFileSync(path.join(TEMPLATES_DIR, "concept-inventory.html"), "utf8"),
+  };
+  const builtLessons = findLessonFiles(CONTENT_DIR).map((file) => buildLesson(file, templates));
 
   buildHomepage(builtLessons);
   console.log(`[build] Done. ${builtLessons.length} lesson page(s) built.`);

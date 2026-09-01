@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{TITLE}} · Physics Academy</title>
+<link rel="stylesheet" href="{{ROOT}}css/variables.css" />
+<link rel="stylesheet" href="{{ROOT}}css/base.css" />
+<link rel="stylesheet" href="{{ROOT}}css/layout.css" />
+<link rel="stylesheet" href="{{ROOT}}css/components.css" />
+<link rel="stylesheet" href="{{ROOT}}css/lessons.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="site-header__brand" href="{{ROOT}}index.html">Physics Academy</a>
+</header>
+
+<main class="ci-page">
+  <div class="breadcrumb">{{BREADCRUMB}}</div>
+  <h1>{{HEADING}}</h1>
+
+  <div class="ci-intro card">
+{{INTRO}}
+  </div>
+
+  <form id="ci-form" novalidate>
+    <ol class="ci-items" id="ci-items"></ol>
+    <div class="ci-actions">
+      <button type="submit" class="ci-submit">Submit answers</button>
+      <p class="ci-progress" id="ci-progress" aria-live="polite"></p>
+    </div>
+  </form>
+
+  <div class="ci-result card" id="ci-result" hidden aria-live="polite"></div>
+</main>
+
+<script type="application/json" id="ci-data">
+{{CI_DATA_JSON}}
+</script>
+<script src="{{ROOT}}js/concept-inventory.js"></script>
+</body>
+</html>
