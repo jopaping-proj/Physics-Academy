@@ -195,15 +195,24 @@ function renderFreeResponse(container, question) {
       prompt.innerHTML = mdInline(part.prompt || "") + pts;
       li.appendChild(prompt);
 
-      if (part.modelResponse) {
+      if (part.modelResponse || part.modelFigureHtml) {
         const d = document.createElement("details");
         d.className = "disclosure";
         const s = document.createElement("summary");
         s.textContent = "Model response";
         d.appendChild(s);
-        const body = document.createElement("div");
-        body.innerHTML = mdInline(part.modelResponse);
-        d.appendChild(body);
+        if (part.modelFigureHtml) {
+          // pre-inlined SVG figures from the build (renderFormativeCheck)
+          const figWrap = document.createElement("div");
+          figWrap.className = "frq__model-figure";
+          figWrap.innerHTML = part.modelFigureHtml;
+          d.appendChild(figWrap);
+        }
+        if (part.modelResponse) {
+          const body = document.createElement("div");
+          body.innerHTML = mdInline(part.modelResponse);
+          d.appendChild(body);
+        }
         li.appendChild(d);
       }
       list.appendChild(li);

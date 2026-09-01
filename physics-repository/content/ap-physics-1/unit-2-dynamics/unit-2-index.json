@@ -1,0 +1,26 @@
+{
+  "format": "unit-index",
+  "id": "ap1-u2-index",
+  "slug": "unit-2-index",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "lessonTitle": "Unit 2 · Force and Translational Dynamics",
+  "intro": "**Force and Translational Dynamics** — 18–23% of the AP Physics 1 exam. Work through it in order. **Take the Concept Check first**, before any lesson: it is calculator-free, not graded, and only shows you your score. After the last module, take **the same Concept Check again** to see how far your thinking has moved.\n\nModules marked *planned* are not built yet.",
+  "sequence": [
+    { "type": "concept-check", "phase": "pre", "slug": "unit-2-concept-check", "title": "Unit 2 Concept Check", "note": "Take this first — calculator-free, score only, ~25 min." },
+    { "type": "module", "label": "Module 1a", "slug": null, "title": "Systems and Center of Mass", "cluster": "C2.11", "status": "planned" },
+    { "type": "module", "label": "Module 1", "slug": "forces-and-free-body-diagrams", "title": "Forces and Free-Body Diagrams", "cluster": "C2.2", "status": "draft" },
+    { "type": "module", "label": "Module 2", "slug": null, "title": "Newton's First Law, Inertia, and Equilibrium", "cluster": "C2.1", "status": "planned" },
+    { "type": "module", "label": "Module 3", "slug": "newtons-second-law", "title": "Newton's Second Law: Force, Mass, and Acceleration", "cluster": "C2.3", "status": "reference" },
+    { "type": "module", "label": "Module 4", "slug": null, "title": "Newton's Second Law: Multi-Force and Two-Axis Problems", "cluster": "C2.5", "status": "planned" },
+    { "type": "module", "label": "Module 5", "slug": null, "title": "Newton's Third Law: Interaction Pairs vs Balanced Forces", "cluster": "C2.6", "status": "planned" },
+    { "type": "module", "label": "Module 6", "slug": null, "title": "Friction: Static and Kinetic", "cluster": "C2.8", "status": "planned" },
+    { "type": "module", "label": "Module 7", "slug": null, "title": "Connected Objects and Systems", "cluster": "C2.7", "status": "planned" },
+    { "type": "module", "label": "Module 8", "slug": null, "title": "Gravitation, Springs, and Apparent Weight", "cluster": "C2.10", "status": "planned" },
+    { "type": "module", "label": "Module 9", "slug": null, "title": "Inclined Planes (synthesis capstone)", "cluster": "C2.9", "status": "planned" },
+    { "type": "module", "label": "Module 10", "slug": null, "title": "Circular Motion", "cluster": "C2.12", "status": "planned" },
+    { "type": "module", "label": "Module 11", "slug": null, "title": "Unit 2 Synthesis and Transfer", "cluster": "—", "status": "planned" },
+    { "type": "concept-check", "phase": "post", "slug": "unit-2-concept-check", "title": "Unit 2 Concept Check — retake", "note": "The same check. Your score is compared to your first attempt." }
+  ]
+}

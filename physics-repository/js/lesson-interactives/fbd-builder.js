@@ -23,13 +23,19 @@
  * why this is not an ES module.
  */
 (function () {
+  // anchor: where the arrow's TAIL sits on the box (master §11).
+  //   "centre"  — field force, from the centre dot (gravity only)
+  //   "back"    — contact face opposite the force direction (a push)
+  //   "toward"  — contact face on the side the force points (a rope/spring)
+  //   "floor"   — the resting surface, i.e. the box's bottom edge (friction)
+  // lane: fixed lateral shift (px) so parallel/opposing arrows never coincide.
   const FORCES = [
-    { key: "gravity", label: "Gravity", tex: "\\vec{F}_g", color: "--sim-text", field: true, perp: -11 },
-    { key: "normal", label: "Normal force", tex: "\\vec{F}_N", color: "--sim-teal", perp: 12 },
-    { key: "tension", label: "Tension", tex: "\\vec{F}_T", color: "--sim-amber", along: true, perp: 9 },
-    { key: "friction", label: "Friction", tex: "\\vec{f}", color: "--sim-red", floor: true, perp: 14 },
-    { key: "applied", label: "Applied push / pull", tex: "\\vec{F}_\\text{app}", color: "--sim-amber", perp: -14 },
-    { key: "spring", label: "Spring force", tex: "\\vec{F}_s", color: "--sim-green", along: true, perp: -20 },
+    { key: "gravity", label: "Gravity", tex: "\\vec{F}_g", color: "--sim-text", field: true, anchor: "centre", lane: 9 },
+    { key: "normal", label: "Normal force", tex: "\\vec{F}_N", color: "--sim-teal", anchor: "back", lane: 9 },
+    { key: "tension", label: "Tension", tex: "\\vec{F}_T", color: "--sim-amber", anchor: "toward", lane: 0 },
+    { key: "friction", label: "Friction", tex: "\\vec{f}", color: "--sim-red", anchor: "floor", lane: 0 },
+    { key: "applied", label: "Applied push / pull", tex: "\\vec{F}_\\text{app}", color: "--sim-amber", anchor: "back", lane: 9 },
+    { key: "spring", label: "Spring force", tex: "\\vec{F}_s", color: "--sim-green", anchor: "toward", lane: 0 },
   ];
 
   const DIRS = {
@@ -48,24 +54,28 @@
       text: "A book resting on a level table.",
       forces: { gravity: "down", normal: "up" },
       magnitude: [["normal", "=", "gravity"]],
+      mag: { gravity: 3, normal: 3 },
       hint: "At rest ⇒ the up force and the down force are equal.",
     },
     {
       text: "A ball hanging at rest from a single vertical string.",
       forces: { gravity: "down", tension: "up" },
       magnitude: [["tension", "=", "gravity"]],
+      mag: { gravity: 3, tension: 3 },
       hint: "At rest ⇒ the string's tension balances gravity exactly.",
     },
     {
       text: "A crate pushed to the right across a rough floor — and speeding up.",
       forces: { gravity: "down", normal: "up", applied: "right", friction: "left" },
       magnitude: [["normal", "=", "gravity"], ["applied", ">", "friction"]],
+      mag: { gravity: 3, normal: 3, applied: 4, friction: 2 },
       hint: "Speeding up ⇒ the push beats friction. Vertically the forces still balance.",
     },
     {
       text: "A crate dragged at constant speed by a rope pulling up-and-to-the-right.",
       forces: { gravity: "down", normal: "up", tension: "up-right", friction: "left" },
       magnitude: [["normal", "<", "gravity"]],
+      mag: { gravity: 4, normal: 2, tension: 4, friction: 3 },
       hint: "The rope pulls partly up, so the floor supports less than the full weight: F_N < F_g.",
     },
   ];
@@ -237,7 +247,9 @@
     }
 
     function forceLen(f) {
-      return 22 + state.mag[f.key] * 12; // canvas px
+      // wide range so a length-2 arrow reads as clearly shorter than a
+      // length-4 arrow — relative lengths are meant to carry meaning.
+      return 20 + state.mag[f.key] * 16; // canvas px, mag 1..5 -> 36..100
     }
 
     /** Box diagram: contact forces from the contact surface, gravity
@@ -252,16 +264,17 @@
       box.overlay.innerHTML = "";
 
       const cx = canvas.width / 2;
-      const cy = canvas.height / 2;
-      const bw = 62;
-      const bh = 48;
+      const cy = canvas.height / 2 + 4;
+      const hw = 38; // half width
+      const hh = 24; // half height
 
-      // ground hint when a floor force is present
+      // ground line under the box when a resting-surface force is present
       if (state.on.normal || state.on.friction) {
         ctx.strokeStyle = "#3a4a6c";
+        ctx.lineWidth = 1.5;
         ctx.beginPath();
-        ctx.moveTo(30, cy + bh / 2);
-        ctx.lineTo(canvas.width - 30, cy + bh / 2);
+        ctx.moveTo(24, cy + hh);
+        ctx.lineTo(canvas.width - 24, cy + hh);
         ctx.stroke();
       }
 
@@ -269,7 +282,7 @@
       ctx.fillStyle = "rgba(230,237,243,0.05)";
       ctx.lineWidth = 1.5;
       ctx.beginPath();
-      ctx.rect(cx - bw / 2, cy - bh / 2, bw, bh);
+      ctx.rect(cx - hw, cy - hh, hw * 2, hh * 2);
       ctx.fill();
       ctx.stroke();
       ctx.fillStyle = cssVar("--sim-text", "#e0e0e0");
@@ -283,33 +296,34 @@
       FORCES.forEach((f) => {
         if (!state.on[f.key]) return;
         const d = DIRS[state.dir[f.key]];
-        // tail anchor on the box
+        // --- tail anchor on the box (master §11) ---
         let tx = cx;
         let ty = cy;
-        if (!f.field) {
-          if (f.floor) {
-            ty = cy + bh / 2; // friction along the resting surface
-          } else if (f.along) {
-            // rope / spring attaches on the side it pulls toward
-            tx = cx + (d.dx) * (bw / 2);
-            ty = cy + (d.dy) * (bh / 2);
-          } else {
-            // pushing surface is opposite the force direction
-            tx = cx - d.dx * (bw / 2);
-            ty = cy - d.dy * (bh / 2);
-          }
-        }
-        // perpendicular nudge so parallel arrows don't coincide
+        if (f.anchor === "back") {
+          // the surface opposite the force direction (you push on the back face)
+          tx = cx - d.dx * hw;
+          ty = cy - d.dy * hh;
+        } else if (f.anchor === "toward") {
+          // a rope / spring attaches on the side it pulls toward
+          tx = cx + d.dx * hw;
+          ty = cy + d.dy * hh;
+        } else if (f.anchor === "floor") {
+          // friction acts along the resting (bottom) surface
+          ty = cy + hh;
+        } // "centre" (gravity): stays at (cx, cy)
+
+        // fixed lateral shift along the arrow's left-perpendicular, so an
+        // up arrow and a down arrow (or two parallel arrows) never overlap.
         const px = -d.dy;
         const py = d.dx;
-        tx += px * (f.perp / 2);
-        ty += py * (f.perp / 2);
+        tx += px * f.lane;
+        ty += py * f.lane;
 
         const L = forceLen(f);
         const ex = tx + d.dx * L;
         const ey = ty + d.dy * L;
         drawArrow(ctx, tx, ty, ex, ey, cssVar(f.color, "#e0e0e0"));
-        placeLabel(box, (ex + d.dx * 10) * sx, (ey + d.dy * 10) * sy, f.tex, cssVar(f.color, "#e0e0e0"));
+        placeLabel(box, (ex + d.dx * 12) * sx, (ey + d.dy * 12) * sy, f.tex, cssVar(f.color, "#e0e0e0"));
       });
 
       emptyHint(box, ctx);
@@ -326,8 +340,8 @@
       dot.overlay.innerHTML = "";
 
       const cx = canvas.width / 2;
-      const cy = canvas.height / 2;
-      const r = 6;
+      const cy = canvas.height / 2 + 4;
+      const r = 8; // small dot (~0.5 cm on screen); every arrow starts at its edge
       ctx.fillStyle = cssVar("--sim-text", "#e0e0e0");
       ctx.beginPath();
       ctx.arc(cx, cy, r, 0, Math.PI * 2);
@@ -341,7 +355,7 @@
         const d = DIRS[state.dir[f.key]];
         const px = -d.dy;
         const py = d.dx;
-        const off = f.perp / 2.4;
+        const off = f.lane * 0.7;
         const tx = cx + d.dx * (r + 1) + px * off;
         const ty = cy + d.dy * (r + 1) + py * off;
         const L = forceLen(f);
@@ -428,21 +442,22 @@
     // ---- scenario change / reset ----
     function loadScenario(i) {
       state.scenario = SCENARIOS[i];
+      const seed = state.scenario.mag || {};
       FORCES.forEach((f) => {
         state.on[f.key] = false;
-        state.mag[f.key] = 3;
+        state.mag[f.key] = seed[f.key] || 3;
       });
-      grid.querySelectorAll(".fbd__row").forEach((row) => {
+      grid.querySelectorAll(".fbd__row").forEach((row, idx) => {
         row.dataset.on = "false";
         const cb = row.querySelector('input[type="checkbox"]');
         if (cb) cb.checked = false;
         const mag = row.querySelector('input[type="range"]');
-        if (mag) mag.value = "3";
+        if (mag) mag.value = String(state.mag[FORCES[idx].key]);
       });
       feedback.hidden = true;
       if (insightEl) {
         insightEl.innerHTML =
-          "<p>Ask <strong>what is touching the object</strong> — each contact is a normal force, maybe friction, or a tension — then add gravity. In the <em>box</em> diagram, contact arrows start at the surface they act on; gravity starts at the centre. Set the relative lengths to match the motion.</p>";
+          "<p>Ask <strong>what is touching the object</strong> — each contact is a normal force, maybe friction, or a tension — then add gravity. In the <em>box</em> diagram a contact arrow starts <strong>at the surface it acts on</strong>; only gravity starts at the centre. In the <em>dot</em> diagram every arrow starts at the edge of the dot.</p><p><strong>Arrow length shows relative strength.</strong> Two arrows the same length mean those forces balance (no acceleration that way); if the object speeds up in some direction, the arrow that way must be visibly longer. Estimates are fine — get the <em>ordering</em> right.</p>";
       }
       redraw();
     }

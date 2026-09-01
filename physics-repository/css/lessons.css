@@ -461,6 +461,51 @@
   margin-bottom: var(--space-3);
 }
 
+/* a free-response part whose model answer IS the diagram */
+.frq__model-figure { margin: var(--space-2) 0 var(--space-3); }
+.frq__model-figure .figure-row { margin: 0; }
+.frq__model-figure .figure { background: var(--bg-panel); }
+
+/* ---- unit index (concept-check → modules → concept-check) ---- */
+.unit-index { max-width: 760px; margin: 0 auto; padding: var(--space-5); }
+.unit-index__intro { padding: var(--space-4); margin: var(--space-3) 0 var(--space-5); }
+.unit-index__sequence { list-style: none; margin: 0; padding: 0; }
+.unit-index__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  border-left: 3px solid var(--border-subtle);
+  margin-bottom: 2px;
+  background: var(--bg-panel);
+}
+.unit-index__item.is-concept-check { border-left-color: var(--sim-amber, #f0c27a); background: var(--bg-panel-raised); }
+.unit-index__item.is-draft { border-left-color: var(--sim-teal, #48c9b0); }
+.unit-index__item.is-unbuilt { opacity: 0.55; }
+.unit-index__item a { font-weight: 600; }
+.unit-index__todo { font-weight: 600; }
+.unit-index__phase,
+.unit-index__label {
+  flex: 0 0 auto;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  min-width: 5.5rem;
+}
+.unit-index__cluster { font-size: var(--text-sm); color: var(--text-secondary); }
+.unit-index__status {
+  font-size: var(--text-xs, 0.72rem);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 1px 6px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm, 4px);
+  color: var(--text-secondary);
+}
+.unit-index__note { flex-basis: 100%; font-size: var(--text-sm); color: var(--text-secondary); }
+
 /* ------------------------------------------------------ FBD builder */
 
 .fbd__scenario {

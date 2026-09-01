@@ -1,5 +1,5 @@
 {
-  "_comment": "Controlled vocabulary for question-bank and lesson metadata. Extend by adding new values here first — never invent a skill/representation label inline inside a content or question-bank file.",
+  "_comment": "Controlled vocabulary for question-bank and lesson metadata. Extend by adding new values here first — never invent a skill/representation label inline inside a content or question-bank file. `build/validate.js` fails the build on any value not listed here. Note: `objective` is the C-prefixed cluster id (e.g. \"C2.5\", from the unit architecture §2) and `cedTopic` is the College Board CED topic number (e.g. \"2.5\"); both are required on every item and lesson.",
 
   "courses": {
     "_comment": "Course-reuse index. Every question, lesson, and topic carries a `courses` array listing every course it can be used in as-is. The build/filter for a given course includes only items whose `courses` contains that course. This replaces the retired `apIbConnection` field: materials are tagged by where they can be reused, not by exam-framework code. An item shared across AP and IB gets multiple values; the pedagogical reasoning type lives in `skill`/`representation`/`cognitiveLevel`, which are already course-neutral.",

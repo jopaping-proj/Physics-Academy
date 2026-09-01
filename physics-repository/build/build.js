@@ -91,6 +91,25 @@
  * }
  * Questions + choices are shuffled at runtime; only the score/percentage
  * is shown. See docs/ap-physics-1-unit-2-architecture.md §10.
+ *
+ * ---- UNIT INDEX PAGES ----
+ * A content file with `"format": "unit-index"` builds through
+ * build/templates/unit-index.html into a static ordered map of the unit:
+ * concept-check (pre) → modules → concept-check (post). Schema:
+ * {
+ *   "format": "unit-index", "lessonTitle": "…", "course": "…", "unit": "…",
+ *   "intro": "md",
+ *   "sequence": [ { "type": "concept-check"|"module", "phase": "pre"|"post",
+ *                   "label": "Module 1", "slug": "…" (null = not built yet),
+ *                   "title": "…", "cluster": "C2.x", "status": "…", "note": "md" } ]
+ * }
+ *
+ * ---- ITEM ALIGNMENT FIELDS ----
+ * Every question and every lesson carries `objective` in the C-prefixed
+ * cluster form ("C2.5") AND a `cedTopic` naming the real CED topic
+ * ("2.5"); `courses` is a non-empty array of taxonomies.json course ids.
+ * build/validate.js enforces all three (and the vocab of skill /
+ * representation / difficulty / cognitiveLevel) and aborts the build.
  */
 
 import fs from "node:fs";
@@ -99,6 +118,7 @@ import { mdToHtml } from "../js/markdown.js";
 import { ROOT, CONTENT_DIR, DIST_DIR, TEMPLATES_DIR } from "./render/paths.js";
 import { esc } from "./render/primitives.js";
 import { loadQuestionBank, renderLessonBody, renderSidebarToc } from "./render/sections.js";
+import { validateContent } from "./validate.js";
 
 // componentKey -> script path (relative to the repo root). Each script
 // self-mounts on DOMContentLoaded by querying its own
@@ -157,6 +177,44 @@ function buildLesson(file, templates) {
     return { ...lesson, outRel };
   }
 
+  // Unit index — an ordered map of the unit: concept-check (pre) →
+  // modules in sequence → concept-check (post). Server-rendered, no JS.
+  // See docs/ap-physics-1-unit-2-architecture.md §12.12.
+  if (lesson.format === "unit-index") {
+    const dir = path.dirname(outRel);
+    // index and its modules sit in the same directory
+    const linkFor = (slug) => `${slug}.html`;
+    const items = (lesson.sequence || []).map((s) => {
+      const built = s.slug && fs.existsSync(path.join(DIST_DIR, dir, s.slug + ".html"));
+      const cls = ["unit-index__item", `is-${s.type}`, s.status ? `is-${s.status}` : "", built ? "" : "is-unbuilt"]
+        .filter(Boolean).join(" ");
+      const tag =
+        s.type === "concept-check" ? `<span class="unit-index__phase">${esc(s.phase)}</span>`
+        : `<span class="unit-index__label">${esc(s.label || "")}</span>`;
+      const meta = [
+        s.cluster ? `<span class="unit-index__cluster">${esc(s.cluster)}</span>` : "",
+        s.status && s.status !== "reference" ? `<span class="unit-index__status">${esc(s.status)}</span>` : "",
+        s.note ? `<span class="unit-index__note">${esc(s.note)}</span>` : "",
+      ].filter(Boolean).join(" ");
+      const title = esc(s.title || s.slug || "");
+      const inner = built
+        ? `<a href="${linkFor(s.slug)}">${title}</a>`
+        : `<span class="unit-index__todo">${title}</span>`;
+      return `    <li class="${cls}">${tag} ${inner} ${meta}</li>`;
+    });
+    const html = templates.unitIndex
+      .replaceAll("{{ROOT}}", rootPrefix)
+      .replace("{{TITLE}}", esc(lesson.lessonTitle || lesson.id))
+      .replace("{{BREADCRUMB}}", [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "))
+      .replace("{{HEADING}}", esc(lesson.lessonTitle || lesson.unit || "Unit"))
+      .replace("{{INTRO}}", mdToHtml(lesson.intro || ""))
+      .replace("{{SEQUENCE}}", items.join("\n"));
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html, "utf8");
+    console.log(`[build] ${relFromContent} -> dist/${outRel} (unit index)`);
+    return { ...lesson, outRel };
+  }
+
   const lessonTemplate = templates.lesson;
   const bank = loadQuestionBank(lesson);
 
@@ -195,14 +253,33 @@ function buildHomepage(lessons) {
   const byCourse = {};
   for (const l of lessons) (byCourse[l.course] = byCourse[l.course] || []).push(l);
 
+  const label = (l) =>
+    l.format === "concept-inventory" ? `${l.lessonTitle} (concept check)` : l.lessonTitle;
+
   const courseList = Object.entries(byCourse)
-    .map(
-      ([course, ls]) => `
+    .map(([course, ls]) => {
+      // group by unit; a unit-index page, if present, heads its unit
+      const byUnit = {};
+      for (const l of ls) (byUnit[l.unit || ""] = byUnit[l.unit || ""] || []).push(l);
+      const units = Object.entries(byUnit)
+        .map(([unit, us]) => {
+          const idx = us.find((u) => u.format === "unit-index");
+          const rest = us.filter((u) => u.format !== "unit-index");
+          const heading = idx
+            ? `<h4><a href="${esc(idx.outRel)}">${esc(unit || idx.lessonTitle)}</a></h4>`
+            : unit
+              ? `<h4>${esc(unit)}</h4>`
+              : "";
+          return `${heading}
+      <ul>
+        ${rest.map((l) => `<li><a href="${esc(l.outRel)}">${esc(label(l))}</a></li>`).join("\n        ")}
+      </ul>`;
+        })
+        .join("\n");
+      return `
     <h3>${esc(course)}</h3>
-    <ul>
-      ${ls.map((l) => `<li><a href="${esc(l.outRel)}">${esc(l.lessonTitle)}</a></li>`).join("\n")}
-    </ul>`
-    )
+    ${units}`;
+    })
     .join("\n");
 
   const html = homepageTemplate.replace(
@@ -212,7 +289,23 @@ function buildHomepage(lessons) {
   fs.writeFileSync(path.join(DIST_DIR, "index.html"), html, "utf8");
 }
 
+function runValidation() {
+  const taxonomies = JSON.parse(
+    fs.readFileSync(path.join(ROOT, "data", "taxonomies.json"), "utf8")
+  );
+  const { errors, warnings } = validateContent({ taxonomies });
+  for (const w of warnings) console.warn(`[validate] WARNING ${w}`);
+  if (errors.length) {
+    for (const e of errors) console.error(`[validate] ERROR   ${e}`);
+    console.error(`\n[validate] ${errors.length} error(s) — build aborted. Fix the content or update data/taxonomies.json.`);
+    process.exit(1);
+  }
+  console.log(`[validate] content OK (${warnings.length} warning(s))`);
+}
+
 function build() {
+  runValidation();
+
   if (fs.existsSync(DIST_DIR)) fs.rmSync(DIST_DIR, { recursive: true });
   fs.mkdirSync(DIST_DIR, { recursive: true });
 
@@ -224,8 +317,16 @@ function build() {
   const templates = {
     lesson: fs.readFileSync(path.join(TEMPLATES_DIR, "lesson.html"), "utf8"),
     conceptInventory: fs.readFileSync(path.join(TEMPLATES_DIR, "concept-inventory.html"), "utf8"),
+    unitIndex: fs.readFileSync(path.join(TEMPLATES_DIR, "unit-index.html"), "utf8"),
   };
-  const builtLessons = findLessonFiles(CONTENT_DIR).map((file) => buildLesson(file, templates));
+  // Build unit-index files last: they check which module pages actually
+  // got emitted into dist/.
+  const lessonFiles = findLessonFiles(CONTENT_DIR).sort((a, b) => {
+    const ai = a.includes("-index.json") ? 1 : 0;
+    const bi = b.includes("-index.json") ? 1 : 0;
+    return ai - bi || a.localeCompare(b);
+  });
+  const builtLessons = lessonFiles.map((file) => buildLesson(file, templates));
 
   buildHomepage(builtLessons);
   console.log(`[build] Done. ${builtLessons.length} lesson page(s) built.`);

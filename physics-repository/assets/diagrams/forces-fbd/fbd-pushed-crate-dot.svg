@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" role="img"
+     aria-label="Dot free-body diagram of the same crate being pushed to the right across a rough floor while speeding up. The crate is drawn as a single small dot. Four forces radiate from the edge of the dot: gravity down, the normal force up and equal in length to gravity, a long applied-push arrow to the right, and a shorter kinetic-friction arrow to the left.">
+  <!-- DIAGRAM RULE (master-project-prompt.md §11): in a DOT diagram the
+       object is one small dot (about 0.5 cm) and EVERY force arrow starts
+       at the edge of the dot. Relative arrow lengths carry meaning. -->
+  <defs>
+    <marker id="pcd-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8b96a5"/></marker>
+    <marker id="pcd-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#58a6ff"/></marker>
+    <marker id="pcd-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f0c27a"/></marker>
+    <marker id="pcd-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f85149"/></marker>
+  </defs>
+
+  <!-- the object: one small dot -->
+  <circle cx="130" cy="115" r="8" fill="#e6edf3"/>
+
+  <!-- gravity: from the bottom edge of the dot, straight down -->
+  <line x1="130" y1="123" x2="130" y2="182" stroke="#8b96a5" stroke-width="2.5" marker-end="url(#pcd-grey)"/>
+  <text x="134" y="176" font-family="system-ui, sans-serif" font-size="13" fill="#8b96a5">F</text>
+  <text x="142" y="180" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">g</text>
+
+  <!-- normal: from the top edge of the dot, straight up; equal length to gravity -->
+  <line x1="130" y1="107" x2="130" y2="48" stroke="#58a6ff" stroke-width="2.5" marker-end="url(#pcd-blue)"/>
+  <text x="134" y="52" font-family="system-ui, sans-serif" font-size="13" fill="#58a6ff">F</text>
+  <text x="142" y="56" font-family="system-ui, sans-serif" font-size="10" fill="#58a6ff">N</text>
+
+  <!-- applied push: from the right edge, to the right; longest arrow (speeding up) -->
+  <line x1="138" y1="115" x2="236" y2="115" stroke="#f0c27a" stroke-width="3.5" marker-end="url(#pcd-amber)"/>
+  <text x="214" y="107" font-family="system-ui, sans-serif" font-size="13" fill="#f0c27a">F</text>
+  <text x="222" y="111" font-family="system-ui, sans-serif" font-size="10" fill="#f0c27a">app</text>
+
+  <!-- kinetic friction: from the left edge, to the left; shorter than the push -->
+  <line x1="122" y1="115" x2="66" y2="115" stroke="#f85149" stroke-width="3.5" marker-end="url(#pcd-red)"/>
+  <text x="52" y="109" font-family="system-ui, sans-serif" font-size="13" font-style="italic" fill="#f85149">f</text>
+</svg>

@@ -261,7 +261,21 @@ kinematic equations
 
 Create interactive tools that demonstrate these connections where practical.
 
-**Figures (added 2026-08-31).** Diagrams that instruction refers to must actually be shown. Author them as SVG under `assets/diagrams/<lesson>/`, referenced from content JSON — `chunk.figures: [{ svg, caption }]` renders them on the representation card; `workedExample.figure` shows one at the top of a worked example. SVG is inlined at build time (themeable, one request) and carries its own `role="img"` + `aria-label`. Never write "the diagram above/below" for a diagram that does not exist.
+**Figures (added 2026-08-31).** Diagrams that instruction refers to must actually be shown. Author them as SVG under `assets/diagrams/<lesson>/`, referenced from content JSON — `chunk.figures: [{ svg, caption }]` renders them on the representation card; `workedExample.figure` shows one at the top of a worked example; a free-response `parts[].figure` / `parts[].figures` is the correct diagram for that part and is inlined into the model-response disclosure at build time. SVG is inlined at build time (themeable, one request) and carries its own `role="img"` + `aria-label`. Never write "the diagram above/below" for a diagram that does not exist.
+
+**Free-body diagram drawing rules (added 2026-09-01 — permanent; applies to every FBD, hand-authored SVG or interactive).**
+
+1. **Every force arrow starts *at* the object** and points the way the force acts. An arrow never *ends* on the object.
+2. **Box style — where the tail sits:**
+   - **Field force (gravity only):** tail at the **centre** of the box.
+   - **Contact force (normal, friction, tension, applied, spring):** tail at the **surface / point of contact** — the face the surface touches, the face the rope attaches to, the face being pushed. Not the centre.
+3. **Dot style:** the object is **one small dot (~0.5 cm)** and **every** arrow — field *and* contact — starts at the **edge of the dot**.
+4. **No two arrows coincide.** Parallel or antiparallel forces (e.g. gravity and normal) are drawn **side by side with a small lateral offset** so every tail and every arrowhead is visible.
+5. **Relative lengths carry meaning.** Balanced forces are drawn the **same length**; if the object accelerates one way, the arrow that way is drawn **visibly longer**. Rough estimates are fine — the *ordering* must be right. Never draw all arrows the same length in a non-equilibrium situation.
+6. **Label every arrow** with its type ($\vec{F}_g$, $\vec{F}_N$, $\vec{F}_T$, $\vec{f}$, $\vec{F}_\text{app}$, $\vec{F}_s$); place the label clear of the arrow line and of other labels. Use real LaTeX, not plain-text approximations, wherever the renderer allows.
+7. **Nothing else on the diagram:** no velocity/acceleration arrow, no net-force arrow, no third-law partner that acts on another object, no source-less force.
+
+Each authored FBD SVG carries a short comment at the top pointing back to these rules.
 
 ## 12. Formula Relationship Explorer
 

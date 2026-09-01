@@ -73,11 +73,27 @@ export function renderFigures(figures) {
   return `<div class="figure-row">${figures.map(renderFigure).join("\n")}</div>`;
 }
 
-/** Emits an empty mount + embedded question JSON. js/assessment.js renders it. */
+/** Emits an empty mount + embedded question JSON. js/assessment.js renders it.
+ * A free-response part may carry `figure` / `figures` (same shape as a
+ * chunk figure) — the correct diagram for that part. assessment.js can't
+ * read the filesystem, so we inline those SVGs here into `modelFigureHtml`
+ * and drop the raw paths. */
 export function renderFormativeCheck(check, idSuffix) {
   if (!check) return "";
+  let prepared = check;
+  if (Array.isArray(check.parts) && check.parts.some((p) => p && (p.figure || p.figures))) {
+    prepared = {
+      ...check,
+      parts: check.parts.map((p) => {
+        const figs = p && (p.figures || (p.figure ? [p.figure] : null));
+        if (!figs) return p;
+        const { figure, figures, ...rest } = p;
+        return { ...rest, modelFigureHtml: renderFigures(figs) };
+      }),
+    };
+  }
   return `
   <div class="quiz-mount" id="formative-check-${esc(idSuffix)}">
-    <script type="application/json" class="quiz-question-data">${JSON.stringify(check)}</script>
+    <script type="application/json" class="quiz-question-data">${JSON.stringify(prepared)}</script>
   </div>`;
 }
