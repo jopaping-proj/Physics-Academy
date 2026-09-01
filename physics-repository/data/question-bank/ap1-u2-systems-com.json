@@ -1,0 +1,196 @@
+[
+  {
+    "id": "AP1-U2-MCQ-059",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "You choose a single soccer ball as your system. A player's foot kicks it. The kick force is:",
+    "choices": [
+      "internal, because it is a contact force",
+      "external, because the foot is outside the chosen system",
+      "internal, because it makes the ball move",
+      "neither, because the foot only touches the ball briefly"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the system is only the ball, and the foot is outside it, so the foot's push is an external force. It changes the ball's (and therefore the system's) center-of-mass motion.",
+      "incorrect": {
+        "0": "'Contact force' does not mean 'internal'. Internal vs external is about the boundary: the foot is outside the ball-only system, so its push is external.",
+        "2": "Causing motion does not make a force internal — external forces are exactly the ones that change a system's center-of-mass motion.",
+        "3": "Brief or not, while the foot is touching the ball it exerts a real external force on the system."
+      }
+    },
+    "hint": ["Is the foot inside or outside the boundary you drew around 'the ball'?"],
+    "solution": "The foot is outside the ball-only system, so the kick is an external force."
+  },
+  {
+    "id": "AP1-U2-MCQ-060",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A 1.0 kg mass is at $x = 0$ and a 3.0 kg mass is at $x = 8.0\\text{ m}$. The center of mass of the two is at:",
+    "choices": ["$x = 4.0\\text{ m}$", "$x = 6.0\\text{ m}$", "$x = 2.0\\text{ m}$", "$x = 8.0\\text{ m}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $x_{cm} = \\dfrac{(1.0)(0) + (3.0)(8.0)}{1.0 + 3.0} = \\dfrac{24}{4} = 6.0\\text{ m}$. The center of mass is three-quarters of the way toward the heavier 3.0 kg mass.",
+      "incorrect": {
+        "0": "$4.0\\text{ m}$ is the plain midpoint — that would be the answer only if the masses were equal.",
+        "2": "This places the center of mass close to the *light* mass; it belongs close to the *heavy* one.",
+        "3": "The center of mass reaches the heavy mass only if the other mass is zero; the 1.0 kg shifts it to $6.0\\text{ m}$."
+      }
+    },
+    "hint": ["$x_{cm} = \\dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$."],
+    "solution": "$x_{cm} = \\dfrac{(1.0)(0)+(3.0)(8.0)}{4.0} = 6.0\\text{ m}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-061",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "misconception-diagnosis",
+    "representation": "physical-model",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "center-of-mass-is-the-geometric-centre",
+    "question": "Two identical steel balls are joined by a light rigid rod, like a dumbbell. The center of mass of the dumbbell is:",
+    "choices": [
+      "at the center of one of the balls",
+      "at the midpoint of the rod, in the empty space between the balls",
+      "there is no single center of mass for two separate objects",
+      "wherever you hold it"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the balls are equal in mass, so the mass-weighted average position is exactly halfway between them, which is a point on the rod with no ball there. A center of mass need not lie inside any piece of material.",
+      "incorrect": {
+        "0": "That would require one ball to have all the mass. The balls are identical, so the balance point is midway between them.",
+        "2": "Every system has exactly one center of mass; for two equal masses it is at their midpoint.",
+        "3": "The center of mass is a fixed property of the mass distribution — it does not depend on where you grip the object."
+      }
+    },
+    "hint": ["Equal masses ⇒ the center of mass is at their midpoint. Is there material there?"],
+    "solution": "Equal masses ⇒ center of mass at the midpoint of the rod, in empty space."
+  },
+  {
+    "id": "AP1-U2-MCQ-062",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+    "question": "A firecracker sits at rest on a frictionless sheet of ice and explodes into three unequal fragments that slide away. Ignoring friction and air, the center of mass of the three fragments afterward:",
+    "choices": [
+      "moves in the direction of the largest fragment",
+      "stays exactly where the firecracker was",
+      "moves outward in all directions with the fragments",
+      "cannot be determined without the fragment masses and speeds"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the explosion is entirely internal forces, and there is no net external force (frictionless ice, gravity balanced by the normal force). The center of mass was at rest and stays at rest, no matter how the fragments fly.",
+      "incorrect": {
+        "0": "The fragments' motions are arranged by the internal forces so their mass-weighted average stays put — the large fragment moving one way is balanced by the others moving the opposite way.",
+        "2": "Individual fragments move outward, but their *center of mass* is a single point, and with no external force it does not move.",
+        "3": "You do not need any numbers: no net external force and starting at rest is enough to conclude the center of mass stays fixed."
+      }
+    },
+    "hint": ["What kind of forces act during an explosion? Is there any net external force on the ice?"],
+    "solution": "Explosion forces are internal; no net external force ⇒ the center of mass stays at rest."
+  },
+  {
+    "id": "AP1-U2-MCQ-063",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "transfer",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+    "question": "An 80 kg person stands at the stern of a 240 kg boat that floats at rest on still water (treat it as frictionless). The person walks 3.0 m toward the bow and stops. Relative to the water, the boat moves:",
+    "choices": [
+      "3.0 m toward the bow",
+      "0.75 m toward the stern",
+      "2.25 m toward the stern",
+      "not at all"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the person–boat forces are internal, so the center of mass stays fixed relative to the water: $m_p\\,\\Delta x_p = m_b\\,\\Delta x_b$ in size. The 3.0 m is the person's displacement *relative to the boat*, so $\\Delta x_p + \\Delta x_b = 3.0$. With $80\\,\\Delta x_p = 240\\,\\Delta x_b$, i.e. $\\Delta x_p = 3\\,\\Delta x_b$: $4\\,\\Delta x_b = 3.0 \\Rightarrow \\Delta x_b = 0.75\\text{ m}$ toward the stern (opposite the person).",
+      "incorrect": {
+        "0": "The boat moves *opposite* to the person, not with them, and by less than 3.0 m.",
+        "2": "This is the person's displacement relative to the water ($3\\,\\Delta x_b = 2.25\\text{ m}$), not the boat's.",
+        "3": "The person's steps push backward on the boat — an internal pair — so the boat must move so the center of mass stays put."
+      }
+    },
+    "hint": ["Center of mass fixed ⇒ $80\\,\\Delta x_p = 240\\,\\Delta x_b$. The 3.0 m is relative to the boat, so $\\Delta x_p + \\Delta x_b = 3.0$."],
+    "solution": "$\\Delta x_p = 3\\,\\Delta x_b$ and $\\Delta x_p + \\Delta x_b = 3.0 \\Rightarrow \\Delta x_b = 0.75\\text{ m}$ toward the stern."
+  },
+  {
+    "id": "AP1-U2-MCQ-064",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "question": "At the top of its arc a projectile is moving horizontally at speed $v$ when an internal charge splits it into a piece of mass $m$ and a piece of mass $3m$. Just after the split, the small piece $m$ is momentarily at rest. Ignoring air resistance, the large piece $3m$ moves horizontally at:",
+    "choices": ["$v$", "$\\tfrac{4}{3}v$", "$3v$", "$\\tfrac{3}{4}v$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the split is internal, so the center of mass keeps the horizontal velocity $v$ it had. $\\dfrac{m(0) + 3m\\,v_{\\text{large}}}{4m} = v \\Rightarrow v_{\\text{large}} = \\dfrac{4}{3}v$. The heavy piece speeds up to carry the average.",
+      "incorrect": {
+        "0": "If the large piece kept speed $v$ while the small piece stopped, the center of mass would slow to $\\tfrac34 v$ — but an internal force cannot change the center-of-mass velocity.",
+        "2": "That would make the center-of-mass speed $\\tfrac{3m(3v)}{4m} = \\tfrac94 v$, far more than $v$. Internal forces do not change the center-of-mass velocity.",
+        "3": "$\\tfrac34 v$ is the center-of-mass speed you'd wrongly get by averaging $0$ and $v$; the correct condition is that the average *stays* $v$."
+      }
+    },
+    "hint": ["The center of mass keeps its velocity $v$ through the (internal) split. Set the mass-weighted average of the two pieces' velocities equal to $v$."],
+    "solution": "$\\dfrac{m(0) + 3m\\,v_L}{4m} = v \\Rightarrow v_L = \\tfrac{4}{3}v$."
+  }
+]

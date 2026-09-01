@@ -71,6 +71,38 @@
     ]
   },
 
+  "misconception": {
+    "_comment": "Controlled vocabulary for the CONCEPT-INVENTORY `misconception` field (architecture §6 / §10.3). build/validate.js warns when a concept-inventory item uses a slug not listed here. `newtonian-anchor` tags a baseline (no-misconception) item. Bank items' free-form `misconceptionTested` (the specific wrong reasoning a distractor encodes) is intentionally NOT constrained to this list.",
+    "values": [
+      "motion-requires-a-sustaining-force",
+      "motionless-implies-no-forces-act",
+      "net-force-equals-a-single-applied-force",
+      "mass-and-weight-are-the-same",
+      "heavier-objects-require-more-force-for-same-net-force-scenario",
+      "third-law-pair-acts-on-the-same-object",
+      "any-equal-and-opposite-pair-is-a-third-law-pair",
+      "larger-object-exerts-larger-force-in-collision",
+      "third-law-implies-equal-accelerations",
+      "friction-only-opposes-motion-not-tendency-to-move",
+      "friction-always-acts-and-opposes-weight",
+      "normal-force-always-equals-weight",
+      "centripetal-force-is-a-separate-force",
+      "objects-need-something-external-to-push-against-to-accelerate",
+      "newtonian-anchor",
+      "surfaces-exert-forces-beyond-normal-and-friction",
+      "draws-velocity-or-acceleration-as-a-force-on-the-fbd",
+      "confuses-a-force-and-its-effect-with-a-third-law-pair",
+      "steeper-cable-angle-does-not-change-tension",
+      "internal-forces-can-change-a-system-center-of-mass-motion",
+      "center-of-mass-is-the-geometric-centre"
+    ]
+  },
+
+  "conceptInventoryItemFields": {
+    "_comment": "Extra schema fields a concept-inventory item carries beyond the standard question schema (architecture §10.4). `objective`/`cedTopic`/`clusterId` point at the cluster the correct answer turns on (for internal per-cluster analysis, never shown to students).",
+    "fields": ["misconception", "pairId", "newtonianAnchor", "diagnosticForm", "calculatorFree", "revealFeedback", "objective", "cedTopic", "clusterId"]
+  },
+
   "lessonThreeTier": {
     "_source": "rigor-standard-addendum.md §3 — page-layout grouping only, maps onto the difficulty scale above",
     "mapping": {

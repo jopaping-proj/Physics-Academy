@@ -8,13 +8,16 @@
   "topic": "Concept Check",
   "lessonTitle": "▶ Unit 2 Concept Check — take this first",
   "diagnosticKey": "ap1-u2",
-  "status": "draft — items seeded toward the 27-item blueprint in docs/ap-physics-1-unit-2-architecture.md §10.3; not yet pilot-analysed (§10.5)",
+  "status": "approved — physics reviewed 2026-09-01 (docs/reviews/2026-09-01-unit-2-forces-fbd-review.md); 27-item blueprint per architecture §10.3. Form still to be frozen after pilot item-analysis (§10.5, §12.11).",
   "intro": "This is a short check of how you already think about **force and motion** — before the unit teaches it.\n\n- It is **not graded** and does **not** affect anything.\n- You will only be shown your **score and percentage**. You will **not** be told which questions you missed, or why — no item analysis is provided.\n- You will take **this same check again at the end of the unit**, so you can see how much your thinking changed.\n- No calculator, no equation sheet, no formulas — every question is answerable by reasoning. Answer every one; there is exactly one best answer.\n\nThe end-of-unit version shuffles the questions and the answer choices, so don't try to memorise positions.",
   "items": [
     {
       "id": "ci-sustain-1",
       "misconception": "motion-requires-a-sustaining-force",
       "pairId": "sustain",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A puck is given one quick shove and then slides across frictionless ice at a steady speed. While it is sliding steadily, the horizontal forces on it are:",
       "choices": [
         "a forward force, equal to the shove, that keeps it moving",
@@ -28,6 +31,9 @@
       "id": "ci-sustain-2",
       "misconception": "motion-requires-a-sustaining-force",
       "pairId": "sustain",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A spacecraft far from any star is coasting in a straight line with its engine switched off. Its velocity is:",
       "choices": [
         "slowly decreasing, because there is no engine thrust",
@@ -41,6 +47,9 @@
       "id": "ci-sustain-3",
       "misconception": "motion-requires-a-sustaining-force",
       "pairId": "sustain",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A ball rolls across a level floor and gradually slows to a stop. The best explanation is:",
       "choices": [
         "the 'force of motion' it was given gradually wears off",
@@ -54,6 +63,9 @@
       "id": "ci-motionless-1",
       "misconception": "motionless-implies-no-forces-act",
       "pairId": "motionless",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A book lies at rest on a level table. Which statement is correct?",
       "choices": [
         "No forces act on the book, since it is not moving.",
@@ -67,6 +79,9 @@
       "id": "ci-motionless-2",
       "misconception": "motionless-implies-no-forces-act",
       "pairId": "motionless",
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A picture frame hangs motionless on a wall from a nail. The number of forces acting on the frame is:",
       "choices": [
         "zero — it is not moving",
@@ -80,6 +95,9 @@
       "id": "ci-netforce-1",
       "misconception": "net-force-equals-a-single-applied-force",
       "pairId": "netforce",
+      "objective": "C2.2",
+      "cedTopic": "2.2",
+      "clusterId": "2.2",
       "stem": "Two people push on a heavy crate from opposite sides: one pushes right with 300 N, the other pushes left with 250 N. The crate:",
       "choices": [
         "does not move, because two people are pushing it",
@@ -93,6 +111,9 @@
       "id": "ci-netforce-2",
       "misconception": "net-force-equals-a-single-applied-force",
       "pairId": "netforce",
+      "objective": "C2.2",
+      "cedTopic": "2.2",
+      "clusterId": "2.2",
       "stem": "A box is pushed across a floor and moves at a perfectly constant velocity. About the horizontal forces on the box:",
       "choices": [
         "the push is the only horizontal force",
@@ -106,6 +127,9 @@
       "id": "ci-gG-1",
       "misconception": "mass-and-weight-are-the-same",
       "pairId": "gG",
+      "objective": "C2.10",
+      "cedTopic": "2.6",
+      "clusterId": "2.10",
       "stem": "An astronaut takes a 2 kg rock from Earth to the Moon. On the Moon, compared with on Earth, the rock's mass and weight are:",
       "choices": [
         "both smaller",
@@ -119,6 +143,9 @@
       "id": "ci-gG-2",
       "misconception": "mass-and-weight-are-the-same",
       "pairId": "gG",
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
       "stem": "Which quantity is a measure of how hard it is to change an object's motion, and does not depend on where the object is?",
       "choices": [
         "its weight",
@@ -132,6 +159,9 @@
       "id": "ci-heavier-1",
       "misconception": "heavier-objects-require-more-force-for-same-net-force-scenario",
       "pairId": "heavier",
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
       "stem": "The same net force is applied to a full shopping cart and to an identical empty one. Compared with the empty cart, the full cart's acceleration is:",
       "choices": [
         "larger, because it has more mass to carry it forward",
@@ -145,6 +175,9 @@
       "id": "ci-heavier-2",
       "misconception": "heavier-objects-require-more-force-for-same-net-force-scenario",
       "pairId": "heavier",
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
       "stem": "Block X has twice the mass of block Y. Each experiences the same net force. Which block has the greater acceleration?",
       "choices": [
         "block X (more mass)",
@@ -158,6 +191,9 @@
       "id": "ci-third-same-1",
       "misconception": "third-law-pair-acts-on-the-same-object",
       "pairId": "third-same",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "You push horizontally on a wall with your hand. The Newton's-third-law reaction to the force your hand exerts on the wall is:",
       "choices": [
         "the wall pushing back on your hand",
@@ -171,6 +207,9 @@
       "id": "ci-third-same-2",
       "misconception": "third-law-pair-acts-on-the-same-object",
       "pairId": "third-same",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "The Earth pulls down on a falling apple with a force of 1 N. The Newton's-third-law reaction to this force is:",
       "choices": [
         "the air pushing up on the apple",
@@ -184,6 +223,9 @@
       "id": "ci-third-balanced-1",
       "misconception": "any-equal-and-opposite-pair-is-a-third-law-pair",
       "pairId": "third-balanced",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "A book rests on a table. Its weight (Earth pulling down) and the normal force (table pushing up) are equal and opposite. Are they a Newton's-third-law pair?",
       "choices": [
         "Yes — they are equal and opposite",
@@ -197,6 +239,9 @@
       "id": "ci-third-balanced-2",
       "misconception": "any-equal-and-opposite-pair-is-a-third-law-pair",
       "pairId": "third-balanced",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "A lamp hangs at rest from a cord. The cord's upward pull on the lamp and the lamp's weight are equal in size. The third-law partner of the cord's pull on the lamp is:",
       "choices": [
         "the lamp's weight",
@@ -210,6 +255,9 @@
       "id": "ci-third-effect-1",
       "misconception": "larger-object-exerts-larger-force-in-collision",
       "pairId": "third-effect",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "A large truck collides head-on with a small car. During the collision, the force the truck exerts on the car compared with the force the car exerts on the truck is:",
       "choices": [
         "larger, because the truck is more massive",
@@ -223,6 +271,9 @@
       "id": "ci-third-effect-2",
       "misconception": "third-law-implies-equal-accelerations",
       "pairId": "third-effect",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "Two ice skaters, one heavy and one light, push off from each other. They push with equal and opposite forces. Immediately after, the lighter skater:",
       "choices": [
         "moves off with the greater speed",
@@ -236,6 +287,9 @@
       "id": "ci-friction-1",
       "misconception": "friction-only-opposes-motion-not-tendency-to-move",
       "pairId": "friction",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
       "stem": "A heavy box sits on the floor. You push horizontally on it, but it does not move. The friction force from the floor on the box is:",
       "choices": [
         "zero, because the box is not sliding",
@@ -249,6 +303,9 @@
       "id": "ci-friction-2",
       "misconception": "friction-always-acts-and-opposes-weight",
       "pairId": "friction",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
       "stem": "A block slides across a rough table and slows to a stop. While it is sliding, the friction force on the block points:",
       "choices": [
         "downward, opposing its weight",
@@ -262,6 +319,9 @@
       "id": "ci-normal-1",
       "misconception": "normal-force-always-equals-weight",
       "pairId": "normal",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
       "stem": "A block sits on a ramp that is tilted at an angle. The normal force the ramp exerts on the block is:",
       "choices": [
         "equal to the block's weight",
@@ -275,6 +335,9 @@
       "id": "ci-centripetal-1",
       "misconception": "centripetal-force-is-a-separate-force",
       "pairId": "centripetal",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
       "stem": "A ball on a string is whirled in a circle at constant speed on a smooth, level tabletop. The net force on the ball points:",
       "choices": [
         "forward, in the direction the ball is moving",
@@ -288,6 +351,9 @@
       "id": "ci-centripetal-2",
       "misconception": "centripetal-force-is-a-separate-force",
       "pairId": "centripetal",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
       "stem": "A car drives around a flat circular track at constant speed. On a free-body diagram of the car, you should draw:",
       "choices": [
         "gravity, the normal force, and a separate 'centripetal force' toward the centre",
@@ -301,6 +367,9 @@
       "id": "ci-push-against-1",
       "misconception": "objects-need-something-external-to-push-against-to-accelerate",
       "pairId": "push-against",
+      "objective": "C2.6",
+      "cedTopic": "2.3",
+      "clusterId": "2.6",
       "stem": "A rocket is in deep space, far from any planet or air. It fires its engine. Can it accelerate?",
       "choices": [
         "No — there is nothing for the exhaust to push against",
@@ -314,6 +383,9 @@
       "id": "ci-anchor-1",
       "misconception": "newtonian-anchor",
       "pairId": null,
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "An elevator moves upward at a constant speed. The net force on a person standing inside it is:",
       "choices": [
         "upward, in the direction of motion",
@@ -327,6 +399,9 @@
       "id": "ci-anchor-2",
       "misconception": "newtonian-anchor",
       "pairId": null,
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
       "stem": "Two balls, one twice as heavy as the other, are dropped from the same height at the same instant (ignore air resistance). They:",
       "choices": [
         "land at the same time",
@@ -340,6 +415,9 @@
       "id": "ci-anchor-3",
       "misconception": "newtonian-anchor",
       "pairId": null,
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
       "stem": "A ball is thrown straight up. At the exact highest point of its path, its acceleration is:",
       "choices": [
         "zero, because its velocity is momentarily zero",
@@ -353,6 +431,9 @@
       "id": "ci-anchor-4",
       "misconception": "newtonian-anchor",
       "pairId": null,
+      "objective": "C2.1",
+      "cedTopic": "2.4",
+      "clusterId": "2.1",
       "stem": "A truck tows a trailer along a straight, level road at a steady 60 km/h. The forward pull of the truck on the trailer, compared with the total backward resistive force on the trailer, is:",
       "choices": [
         "larger",

@@ -557,11 +557,13 @@ If current curriculum information may have changed, flag it for verification aga
 
 Whenever asked to create a new lesson, first produce a concise lesson architecture using this format:
 
+Every lesson carries a **`lessonNumber`** — its position in the unit's teaching order (`"1"`, `"2"`, …). It is shown to students as "Lesson N" in the breadcrumb, the homepage, and the unit index, and the build fails without it. Numbers follow the unit architecture's instructional sequence; a lesson's internal `id` is a separate stable key and does not have to match.
+
 ```
 Course:
 Unit:
 Topic:
-Lesson:
+Lesson (number + title):
 Prerequisites:
 
 Major Learning Objective:

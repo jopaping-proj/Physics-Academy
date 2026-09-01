@@ -51,6 +51,7 @@ export function validateContent({ taxonomies }) {
   const diffs = new Set(taxonomies.difficulty.values);
   const courses = new Set(taxonomies.courses.values);
   const cogLevels = new Set(taxonomies.cognitiveLevel.values.map((v) => v.level));
+  const misconceptions = new Set(taxonomies.misconception?.values || []);
 
   const rel = (f) => path.relative(ROOT, f);
 
@@ -164,6 +165,9 @@ export function validateContent({ taxonomies }) {
       (lesson.items || []).forEach((it, i) => {
         const w = `${where} [${it.id || i}]`;
         if (!it.misconception) errors.push(`${w}: concept-inventory item has no "misconception" tag (§10.4)`);
+        else if (misconceptions.size && !misconceptions.has(it.misconception))
+          warnings.push(`${w}: misconception "${it.misconception}" not in taxonomies.json (add it there)`);
+        checkObjective(w, it);
         if (!Array.isArray(it.choices) || it.choices.length < 2) {
           errors.push(`${w}: needs at least 2 choices`);
         } else {
@@ -178,9 +182,16 @@ export function validateContent({ taxonomies }) {
       continue;
     }
 
+    if (lesson.format === "unit-index") {
+      checkCourses(where, lesson);
+      continue;
+    }
+
     // regular lesson deck
     checkCourses(where, lesson);
     checkObjective(where, lesson);
+    if (lesson.lessonNumber == null || lesson.lessonNumber === "")
+      errors.push(`${where}: lesson deck has no "lessonNumber" (its place in the unit's teaching order)`);
 
     const embedded = [];
     (lesson.chunks || []).forEach((ch) => ch.formativeCheck && embedded.push(ch.formativeCheck));

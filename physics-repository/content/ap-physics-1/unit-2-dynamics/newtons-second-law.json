@@ -5,6 +5,7 @@
   "courses": ["ap-physics-1"],
   "unit": "Unit 2: Force and Translational Dynamics",
   "topic": "Newton's Laws",
+  "lessonNumber": "4",
   "objective": "C2.3",
   "cedTopic": "2.5",
   "clusterId": "2.3",

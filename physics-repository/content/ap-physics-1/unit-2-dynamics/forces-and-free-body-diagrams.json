@@ -5,6 +5,7 @@
   "courses": ["ap-physics-1"],
   "unit": "Unit 2: Force and Translational Dynamics",
   "topic": "Forces and Free-Body Diagrams",
+  "lessonNumber": "2",
   "objective": "C2.2",
   "cedTopic": "2.2",
   "clusterId": "2.2",

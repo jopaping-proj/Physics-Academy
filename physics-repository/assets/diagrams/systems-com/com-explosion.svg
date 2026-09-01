@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 210" role="img"
+     aria-label="A projectile follows a dashed parabolic arc. At the top it explodes and several fragments scatter away from the peak. An open circle on the arc, just past the peak, marks the centre of mass, which stays on the original parabola because gravity is the only external force.">
+  <!-- Labels are placed clear of the arc, the fragments, and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="ce-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f85149"/></marker>
+  </defs>
+
+  <!-- ground -->
+  <line x1="16" y1="188" x2="344" y2="188" stroke="#8b96a5" stroke-width="1.5"/>
+  <g stroke="#8b96a5" stroke-width="1.1">
+    <line x1="30" y1="188" x2="22" y2="198"/><line x1="64" y1="188" x2="56" y2="198"/>
+    <line x1="98" y1="188" x2="90" y2="198"/><line x1="132" y1="188" x2="124" y2="198"/>
+    <line x1="166" y1="188" x2="158" y2="198"/><line x1="200" y1="188" x2="192" y2="198"/>
+    <line x1="234" y1="188" x2="226" y2="198"/><line x1="268" y1="188" x2="260" y2="198"/>
+    <line x1="302" y1="188" x2="294" y2="198"/><line x1="336" y1="188" x2="328" y2="198"/>
+  </g>
+
+  <!-- the original parabola (kept, dashed); peak near (175, 67) -->
+  <path d="M45 185 Q 175 -55 305 185" fill="none" stroke="#f0c27a" stroke-width="2" stroke-dasharray="6 4"/>
+
+  <!-- explosion burst at the peak -->
+  <g stroke="#f85149" stroke-width="1.6">
+    <line x1="175" y1="67" x2="163" y2="55"/><line x1="175" y1="67" x2="187" y2="55"/>
+    <line x1="175" y1="67" x2="159" y2="70"/><line x1="175" y1="67" x2="191" y2="70"/>
+    <line x1="175" y1="67" x2="170" y2="52"/><line x1="175" y1="67" x2="181" y2="52"/>
+  </g>
+
+  <!-- scattered fragments, kept to the upper / left region so the label area stays clear -->
+  <g fill="#f85149">
+    <circle cx="150" cy="44" r="3"/><circle cx="171" cy="36" r="3"/>
+    <circle cx="196" cy="46" r="3"/><circle cx="150" cy="86" r="3"/>
+  </g>
+  <g stroke="#f85149" stroke-width="1.4">
+    <line x1="150" y1="44" x2="134" y2="33" marker-end="url(#ce-red)"/>
+    <line x1="171" y1="36" x2="168" y2="20" marker-end="url(#ce-red)"/>
+    <line x1="196" y1="46" x2="209" y2="34" marker-end="url(#ce-red)"/>
+    <line x1="150" y1="86" x2="134" y2="98" marker-end="url(#ce-red)"/>
+  </g>
+
+  <!-- centre of mass: open circle ON the parabola, just past the peak -->
+  <circle cx="214" cy="83" r="6" fill="none" stroke="#f0c27a" stroke-width="2.5"/>
+  <line x1="221" y1="79" x2="243" y2="64" stroke="#f0c27a" stroke-width="1"/>
+  <text x="248" y="60" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">centre of mass —</text>
+  <text x="248" y="74" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">stays on the arc</text>
+
+  <text x="188" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">gravity is the only external force</text>
+</svg>

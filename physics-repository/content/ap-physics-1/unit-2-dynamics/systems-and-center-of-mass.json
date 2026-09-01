@@ -1,0 +1,488 @@
+{
+  "id": "ap1-u2-scm",
+  "slug": "systems-and-center-of-mass",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Systems and Center of Mass",
+  "lessonNumber": "1",
+  "objective": "C2.11",
+  "cedTopic": "2.1",
+  "clusterId": "2.11",
+  "lessonTitle": "Systems and Center of Mass",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Position, displacement, velocity, and acceleration along a line (Unit 1)",
+    "Weighted average of a set of numbers",
+    "The everyday idea that an outside push speeds an object up or slows it down"
+  ],
+  "majorObjective": "Choose a system and its boundary, classify every force on it as internal or external, locate the system's center of mass (qualitatively, and with the two-point-mass formula), and predict how that center of mass moves — it responds only to the net external force, so the whole system can be treated as one particle of the total mass located there.",
+  "subObjectives": [
+    "Define a [[system]] by drawing its boundary, and list which objects are inside it.",
+    "Classify a force as internal (both objects are in the system) or external (one object is outside it).",
+    "State that the [[center of mass]] is the mass-weighted average position of a system, and that it lies closer to the more massive part.",
+    "Calculate the center of mass of two point masses on a line with $x_{cm} = \\dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$.",
+    "State that internal forces come in opposite pairs and cannot change the motion of the center of mass.",
+    "Predict the motion of a system's center of mass when only internal forces act (unchanged) versus when there is a net external force (it accelerates).",
+    "Treat an extended object or a multi-object system as a single particle of total mass $M$ located at its center of mass."
+  ],
+  "hook": {
+    "prompt": "A firework shell is launched and follows a smooth arc through the air. At the top of the arc it **explodes** into dozens of glowing fragments that fly off in all directions. Ignoring air resistance, what does the **average position of all the fragments** (their center of mass) do right after the explosion?",
+    "choices": [
+      "It stops in mid-air, because the explosion pushed the pieces in every direction and they cancel out.",
+      "It keeps following the exact same arc the shell was on, as if nothing had exploded.",
+      "It drops straight down, because the pieces are no longer held together.",
+      "It speeds up outward, carried by the force of the blast."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "You already track an object's **position** along a line and describe how it moves with **velocity** and **acceleration** (Unit 1). You also know a **weighted average**: to average test scores that count differently, you multiply each score by its weight, add, and divide by the total weight. The center of mass is exactly that idea, with **mass** as the weight.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Choosing a System",
+      "concept": "Before you can analyze forces or motion, you decide **what you are analyzing**. That choice is the [[system]]: you draw an imaginary **boundary** and everything inside it is the system; everything outside is the *environment*.\n\nThe choice is yours, but once made it fixes how you label every force:\n\n- An **internal force** acts between **two objects that are both inside** the system.\n- An **external force** is exerted **by something outside** the system on something inside it.\n\n==The same physical push can be internal or external depending on where you drew the boundary.== When two train cars push on each other: if your system is *both cars*, that push is internal; if your system is *just the front car*, the same push is external.\n\nWhy it matters: internal forces always come in **equal and opposite pairs** (each object pushes back just as hard on the other), so they cancel when you look at the system as a whole. Only **external** forces can change how the system moves overall.",
+      "representation": "Pick the system, then sort the forces:\n\n| Situation | System you choose | A force that is *internal* | A force that is *external* |\n|---|---|---|---|\n| Two skaters push off each other | both skaters | each skater's push on the other | gravity; the ice's normal force |\n| A book resting on a table | the book alone | — (nothing else is in the system) | gravity; the table's push |\n| A car towing a trailer | car + trailer | the tow-bar force between them | friction/drive force from the road; gravity |\n| A person jumping off the ground | the person | — | the ground's push up; gravity |\n\nIf a force's two objects are **both inside** your boundary, it is internal. If one end of the interaction is **outside**, it is external.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student stands on a stationary skateboard and then throws a heavy ball forward. Taking the **student + skateboard + ball** as the system, classify every force that acts during the throw. Then do it again for the system **student + skateboard only**.",
+        "phases": [
+          {
+            "label": "System 1: student + skateboard + ball — draw the boundary",
+            "steps": [
+              "Inside the boundary: the student, the skateboard, and the ball.",
+              "Outside: the Earth, the ground."
+            ]
+          },
+          {
+            "label": "System 1 — classify each force",
+            "steps": [
+              "The student's hands push the ball forward, and the ball pushes back on the hands. **Both objects are inside** ⇒ this is an **internal** force pair.",
+              "Gravity (Earth pulls each object down) and the ground's normal force (up on the wheels) come from **outside** ⇒ **external**.",
+              "**Net external force during the throw:** the vertical forces balance and there is no outside horizontal force, so the net external force is zero — the center of mass of the whole system does not accelerate horizontally."
+            ]
+          },
+          {
+            "label": "System 2: student + skateboard only — redraw the boundary",
+            "steps": [
+              "Now the ball is **outside** the system.",
+              "The push between the student's hands and the ball now has **one end outside** ⇒ it becomes an **external** force on this smaller system.",
+              "That external push is backward on the student, so *this* system's center of mass accelerates backward — the student rolls back as the ball goes forward."
+            ]
+          }
+        ],
+        "keyMove": "The hand–ball push did not change — only the boundary did. Drawing the boundary around *both* objects makes the push internal (it cancels); drawing it around only one makes the same push external (it counts)."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-scm-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Systems and Center of Mass",
+        "objective": "C2.11",
+        "cedTopic": "2.1",
+        "clusterId": "2.11",
+        "skill": "construct-model",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "",
+        "question": "Two dancers on frictionless ice hold hands and pull themselves toward each other. If the **system is both dancers together**, the hand-pull forces between them are:",
+        "choices": [
+          "external, because they cause motion",
+          "internal, because both dancers are inside the system — and they come in an equal-and-opposite pair",
+          "internal, but they still change the motion of the system's center of mass",
+          "external, because the dancers are separate objects"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — both dancers are inside the chosen system, so the hand-pull is an internal force, and by interaction it comes as an equal-and-opposite pair. Internal pairs cancel for the system as a whole, so the center of mass of the two dancers does not move.",
+          "incorrect": {
+            "0": "'Causes motion' does not make a force external. Internal forces do move the *individual* parts (each dancer slides inward) — they just cannot move the system's *center of mass*. What makes a force external is that one of the two interacting objects is outside the boundary.",
+            "2": "Internal forces move the individual parts but never the center of mass of the whole system — the equal-and-opposite pair cancels.",
+            "3": "Being separate objects does not make the force external. Both dancers are inside the system boundary you chose, so the force between them is internal."
+          }
+        },
+        "hint": ["Are both interacting objects inside the boundary you drew? If yes, the force is internal."],
+        "solution": "Both dancers are inside the system, so the hand-pull is an internal equal-and-opposite pair; it moves each dancer but not the system's center of mass."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Where the Mass Balances: the Center of Mass",
+      "concept": "The [[center of mass]] of a system is its **mass-weighted average position** — the single point that behaves as if all the mass were there.\n\nFor two point masses on a line at positions $x_1$ and $x_2$:\n\n$$x_{cm} = \\frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$$\n\nRead it as a weighted average: each position is weighted by its mass, and you divide by the total mass. Consequences:\n\n- The center of mass always lies **between** the two masses, and **closer to the heavier one**. If $m_2 = 3m_1$, the center of mass sits three-quarters of the way toward $m_2$.\n- For a **single uniform, symmetric object** (a ruler, a ball, a disk), the center of mass is at its **geometric center**.\n- The center of mass does **not have to be located in any object**. For a system of two separated masses it sits in the empty space between them; for a ring or a boomerang it can be outside the material entirely.\n\nMore than two masses, or two dimensions? Same idea, one weighted average per axis: $x_{cm} = \\dfrac{\\sum m_i x_i}{\\sum m_i}$.",
+      "representation": "$m_1 = 2.0\\text{ kg}$ at $x_1 = 0$ and $m_2 = 6.0\\text{ kg}$ at $x_2 = 4.0\\text{ m}$:\n\n$$x_{cm} = \\frac{(2.0)(0) + (6.0)(4.0)}{2.0 + 6.0} = \\frac{24}{8} = 3.0\\text{ m}$$\n\nThe center of mass is at $3.0\\text{ m}$ — three-quarters of the way from the $2\\text{ kg}$ to the $6\\text{ kg}$, because the $6\\text{ kg}$ is three times heavier and pulls the balance point toward itself.",
+      "figures": [
+        { "svg": "systems-com/com-two-masses.svg", "caption": "The center of mass of a $2\\text{ kg}$ and a $6\\text{ kg}$ mass sits at $3.0\\text{ m}$ — between them, and closer to the heavier mass (a $1:3$ split of the gap)." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A $3.0\\text{ kg}$ tool box sits at $x = 2.0\\text{ m}$ and a $1.0\\text{ kg}$ tool box sits at $x = 10.0\\text{ m}$ along a shelf. Find the center of mass of the two-box system.",
+        "figure": { "svg": "systems-com/com-two-masses.svg", "caption": "Same idea for any two masses: weight each position by its mass, add, divide by the total." },
+        "phases": [
+          {
+            "label": "Set up the weighted average",
+            "steps": [
+              "$m_1 = 3.0\\text{ kg}$ at $x_1 = 2.0\\text{ m}$; $m_2 = 1.0\\text{ kg}$ at $x_2 = 10.0\\text{ m}$.",
+              "Total mass $M = m_1 + m_2 = 4.0\\text{ kg}$."
+            ]
+          },
+          {
+            "label": "Substitute and solve",
+            "steps": [
+              "$x_{cm} = \\dfrac{(3.0)(2.0) + (1.0)(10.0)}{4.0} = \\dfrac{6.0 + 10.0}{4.0} = \\dfrac{16.0}{4.0}$.",
+              "$x_{cm} = 4.0\\text{ m}$."
+            ]
+          },
+          {
+            "label": "Check that it makes sense",
+            "steps": [
+              "$4.0\\text{ m}$ is **between** $2.0\\text{ m}$ and $10.0\\text{ m}$ ✓.",
+              "It is much closer to the $3.0\\text{ kg}$ box at $2.0\\text{ m}$ (only $2\\text{ m}$ away) than to the $1.0\\text{ kg}$ box at $10.0\\text{ m}$ ($6\\text{ m}$ away) — a $1:3$ split, matching the $3:1$ mass ratio. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Recognising \"center of mass\" as a weighted average and checking the answer by the mass ratio: the distances to the center of mass are in the *inverse* ratio of the masses."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-scm-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Systems and Center of Mass",
+        "objective": "C2.11",
+        "cedTopic": "2.1",
+        "clusterId": "2.11",
+        "skill": "proportional-reasoning",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "center-of-mass-is-the-geometric-centre",
+        "question": "A light rod holds a $1.0\\text{ kg}$ ball at one end and a $4.0\\text{ kg}$ ball at the other end, $1.0\\text{ m}$ apart. The center of mass of the two-ball system is:",
+        "choices": [
+          "at the midpoint, $0.50\\text{ m}$ from each ball",
+          "$0.20\\text{ m}$ from the $4.0\\text{ kg}$ ball",
+          "$0.20\\text{ m}$ from the $1.0\\text{ kg}$ ball",
+          "at the $4.0\\text{ kg}$ ball, since it has almost all the mass"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — put the $1.0\\text{ kg}$ ball at $x = 0$ and the $4.0\\text{ kg}$ at $x = 1.0\\text{ m}$: $x_{cm} = \\dfrac{(1.0)(0) + (4.0)(1.0)}{5.0} = 0.80\\text{ m}$, which is $0.20\\text{ m}$ from the heavy ball. The center of mass sits close to the heavier mass — the distances are in the inverse ratio of the masses ($1:4$ mass ⇒ $4:1$ distance).",
+          "incorrect": {
+            "0": "The midpoint would be the center of mass only if the two balls had *equal* mass. Here the $4\\text{ kg}$ ball pulls the balance point strongly toward itself.",
+            "2": "This puts the center of mass close to the *light* ball. It belongs close to the *heavy* one — the $4\\text{ kg}$ ball's larger mass weights the average toward its position.",
+            "3": "Close, but the center of mass is not *at* the heavy ball — the $1\\text{ kg}$ still shifts it $0.20\\text{ m}$ toward the light end. It would only reach the heavy ball if the other mass were zero."
+          }
+        },
+        "hint": ["Set $x = 0$ at one ball and use $x_{cm} = \\dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$. The distances from the center of mass to each ball are in the inverse ratio of the masses."],
+        "solution": "$x_{cm} = \\dfrac{(1.0)(0) + (4.0)(1.0)}{5.0} = 0.80\\text{ m}$ from the light ball, i.e. $0.20\\text{ m}$ from the $4.0\\text{ kg}$ ball."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "What Moves the Center of Mass",
+      "concept": "Here is the payoff. **The center of mass of a system moves as if it were a single particle of the total mass $M$, pushed only by the net external force:**\n\n$$\\vec{F}_{net,\\,external} = M\\,\\vec{a}_{cm}$$\n\n**Internal forces do not appear.** Every internal force is half of an equal-and-opposite pair, and the two halves add to zero for the system as a whole — so they can rearrange the parts but cannot accelerate the center of mass. You cannot lift yourself by pulling on your own shoelaces.\n\nConsequences you can use immediately:\n\n- **No net external force ⇒ the center of mass keeps a constant velocity** (or stays at rest). Two astronauts pushing apart in deep space: each moves, but their center of mass does not.\n- **An explosion or a collision is all internal forces** — the center of mass sails through untouched. The firework fragments spread out, but their center of mass stays on the original parabola set by gravity (the only external force).\n- **To treat a whole system as one object** — a train, a person, a car + trailer — put all the mass at the center of mass and add up only the outside forces.",
+      "representation": "The exploding firework, drawn: before the blast the shell is on a parabola set by gravity. The blast is an **internal** force, so it changes where the *pieces* go but not where their *center of mass* goes — the center of mass continues along the **same parabola** until a piece hits the ground.\n\nThe two-astronaut push: start at rest, center of mass fixed. The push is internal, so the center of mass **stays exactly where it was** — a $60\\text{ kg}$ astronaut and a $90\\text{ kg}$ astronaut end up meeting at that fixed point, with the lighter one having travelled $\\frac{90}{150} = 60\\%$ of the gap.",
+      "figures": [
+        { "svg": "systems-com/com-explosion.svg", "caption": "The shell explodes at the top of its arc. The fragments scatter, but with gravity the only external force, their center of mass (open circle) stays on the original parabola." }
+      ],
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "Two astronauts float **at rest** in deep space, $12\\text{ m}$ apart, holding the two ends of a taut rope. One astronaut has mass $60\\text{ kg}$, the other $90\\text{ kg}$. They pull hand-over-hand until they meet. How far does each astronaut travel?",
+        "figure": { "svg": "systems-com/com-explosion.svg", "caption": "No external force ⇒ the center of mass does not move. Each astronaut travels to that fixed point." },
+        "phases": [
+          {
+            "label": "Identify the external forces",
+            "steps": [
+              "System: both astronauts + rope. Deep space ⇒ no gravity, no contact with anything outside.",
+              "The rope tension is **internal** (both astronauts are in the system). **Net external force = 0.**"
+            ]
+          },
+          {
+            "label": "Apply the center-of-mass rule",
+            "steps": [
+              "No net external force and the center of mass starts at rest ⇒ the center of mass **stays fixed** for the whole process.",
+              "So the astronauts meet **at the center of mass**."
+            ]
+          },
+          {
+            "label": "Locate the center of mass and read off the distances",
+            "steps": [
+              "Put the $60\\text{ kg}$ astronaut at $x = 0$ and the $90\\text{ kg}$ at $x = 12\\text{ m}$: $x_{cm} = \\dfrac{(60)(0) + (90)(12)}{150} = \\dfrac{1080}{150} = 7.2\\text{ m}$.",
+              "The $60\\text{ kg}$ astronaut travels $7.2\\text{ m}$; the $90\\text{ kg}$ astronaut travels $12 - 7.2 = 4.8\\text{ m}$.",
+              "Check: the lighter astronaut moves farther, and $7.2 : 4.8 = 3 : 2 = 90 : 60$ — distances in the inverse ratio of the masses. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Seeing that the rope force is internal, so with no external force the center of mass cannot move — which turns \"how far does each travel?\" into \"where is the center of mass?\""
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-scm-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Systems and Center of Mass",
+        "objective": "C2.11",
+        "cedTopic": "2.1",
+        "clusterId": "2.11",
+        "skill": "transfer",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+        "question": "A closed railroad car rolls without friction along a straight, level track at a steady speed. A person inside runs from the back of the car to the front. While the person is running, the center of mass of the **person + car** system:",
+        "choices": [
+          "speeds up, because the person is now moving faster than the car",
+          "keeps moving at the same steady velocity it had before",
+          "slows down, because the person's push on the floor is backward",
+          "shifts toward the front of the car"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the only horizontal force involved (the person's feet against the floor) is **internal** to the person + car system. With no net external horizontal force, the system's center of mass keeps exactly the velocity it started with. (Inside the car, the car actually drifts backward a little so the center of mass stays on track — but its velocity is unchanged.)",
+          "incorrect": {
+            "0": "The person speeding up is balanced by the car slowing slightly — the person's push on the floor and the floor's push on the person are an internal equal-and-opposite pair. The center of mass velocity does not change.",
+            "2": "The person's push on the floor is internal and is matched by the floor's push on the person. Internal forces cannot change the center-of-mass velocity in either direction.",
+            "3": "The center of mass does not shift within the ground frame — the *car* shifts backward under the running person precisely so that the center of mass stays where its constant velocity carries it."
+          }
+        },
+        "hint": ["Is the force between the person's feet and the floor internal or external to the 'person + car' system? What can internal forces do to the center of mass?"],
+        "solution": "The foot–floor force is internal, so with no net external horizontal force the center of mass velocity is unchanged."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "center-of-mass-explorer",
+    "title": "Center-of-Mass Explorer",
+    "subtitle": "Move the masses; push from outside vs. from inside",
+    "componentKey": "center-of-mass-explorer",
+    "description": "Drag the two masses along the track and change their values — the **★ center-of-mass marker** updates live as the mass-weighted average. Then run the two experiments: an **external push** (an outside force on one mass) accelerates the center of mass; an **internal 'explosion'** (the masses shove *each other* apart) sends the masses flying but leaves the center of mass exactly where it was.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-scm-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Systems and Center of Mass",
+      "objective": "C2.11",
+      "cedTopic": "2.1",
+      "clusterId": "2.11",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+      "question": "An astronaut is stranded at rest a few metres from her spacecraft, holding a wrench. She is a system by herself (plus the wrench). Which statement is correct?",
+      "choices": [
+        "She can reach the ship by swinging her arms and legs hard enough.",
+        "She can reach the ship by throwing the wrench directly away from it — that makes the wrench external, and its push sends her toward the ship.",
+        "Nothing she does to herself or the wrench can move her center of mass; she is stuck unless something outside pushes her.",
+        "She should push the wrench toward the ship so it pulls her along."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — while the wrench is in her hands it is part of her system and the muscle forces are internal, so flailing does nothing. But the instant she *throws* the wrench, the wrench leaves the system: her push on it is now an external force, its reaction drives her the opposite way, and she coasts toward the ship.",
+        "incorrect": {
+          "0": "Swinging her limbs is all internal forces — the pairs cancel and her center of mass does not move. This is the classic 'you can't lift yourself by your bootstraps.'",
+          "2": "This is true *only as long as she keeps everything in the system*. Throwing the wrench removes it from the system, which is exactly how she gets unstuck — see the correct answer.",
+          "3": "Throwing the wrench *toward* the ship pushes her *away* from it (the reaction is opposite to the throw). She must throw the wrench directly away from the ship."
+        }
+      },
+      "hint": ["Internal forces can't move a system's center of mass. What is the one way to change the system — and which direction should she throw?"],
+      "solution": "Internal forces (flailing) do nothing. Throwing the wrench away from the ship makes it external; the reaction pushes her toward the ship."
+    },
+    {
+      "id": "ap1-u2-scm-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Systems and Center of Mass",
+      "objective": "C2.11",
+      "cedTopic": "2.1",
+      "clusterId": "2.11",
+      "skill": "misconception-diagnosis",
+      "representation": "physical-model",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "center-of-mass-is-the-geometric-centre",
+      "question": "Where is the center of mass of a donut (a uniform ring of dough)?",
+      "choices": [
+        "At the center of the hole — a point with no dough in it at all.",
+        "Somewhere in the dough, since the center of mass must be inside the material.",
+        "There is no single center of mass for a ring shape.",
+        "Spread evenly around the ring, not at one point."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — by symmetry every bit of dough is balanced by a bit on the opposite side, so the mass-weighted average position is the geometric center of the ring: the middle of the hole. The center of mass does not have to lie in any material.",
+        "incorrect": {
+          "1": "The center of mass is a mass-weighted *average* position; there is no rule that it lands inside the object. A ring, a boomerang, and a system of two separated masses all have their center of mass in empty space.",
+          "2": "Every system has exactly one center of mass. For a symmetric ring it is at the geometric center.",
+          "3": "The center of mass is a single point, not a distribution. For the ring it is the one point at the center of the hole."
+        }
+      },
+      "hint": ["Pair up opposite bits of the ring. Where does each pair balance?"],
+      "solution": "By symmetry, the center of mass of a uniform ring is at its geometric center — in the empty middle."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $2.0\\text{ kg}$ block sits at $x = 1.0\\text{ m}$ and a $6.0\\text{ kg}$ block sits at $x = 5.0\\text{ m}$. Find the center of mass.\n\n**Student's work:** \"The center of mass is halfway between them: $x_{cm} = \\dfrac{1.0 + 5.0}{2} = 3.0\\text{ m}$.\"",
+      "prompts": [
+        "Identify the student's error.",
+        "Explain why their method only works in a special case.",
+        "Carry out the correct calculation.",
+        "State a quick check that would have caught the mistake."
+      ],
+      "modelResponse": "**(1)** The student averaged the *positions* without weighting by mass — they computed the geometric midpoint, not the center of mass. **(2)** The plain average $\\frac{x_1 + x_2}{2}$ equals the center of mass only when the two masses are *equal*; then each has weight $\\frac12$. Here the masses are $2.0\\text{ kg}$ and $6.0\\text{ kg}$, so the heavier block must be weighted more. **(3)** $x_{cm} = \\dfrac{(2.0)(1.0) + (6.0)(5.0)}{2.0 + 6.0} = \\dfrac{2.0 + 30.0}{8.0} = \\dfrac{32.0}{8.0} = 4.0\\text{ m}$. **(4)** The center of mass must be closer to the heavier block. The $6.0\\text{ kg}$ block is at $5.0\\text{ m}$; a center of mass at $3.0\\text{ m}$ is actually closer to the *lighter* block, which is impossible — that alone shows the answer is wrong.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "One system lives in several representations at once: the **words** ('two astronauts pull themselves together'); the **boundary diagram** (a loop around both, tension arrows inside it); the **center-of-mass rule** ($\\vec{F}_{net,ext} = M\\vec{a}_{cm}$, with the internal tension absent); and the **numbers** ($x_{cm} = 7.2\\text{ m}$, so the astronauts travel $7.2\\text{ m}$ and $4.8\\text{ m}$). The boundary diagram is the hinge: it is what tells you which forces are internal and therefore drop out of the center-of-mass equation.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-scm-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Systems and Center of Mass",
+      "objective": "C2.11",
+      "cedTopic": "2.1",
+      "clusterId": "2.11",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "question": "You choose a rocket **plus all of its fuel and exhaust gas** as one system, drifting in deep space. The rocket then fires its engine. For this system, the force the engine exerts on the exhaust gas (and the gas's push back on the rocket) is:",
+      "choices": [
+        "external — it is what makes the rocket accelerate",
+        "internal — the rocket and the gas are both inside the chosen system",
+        "external — exhaust gas is not really part of the rocket",
+        "neither internal nor external, because the gas leaves the system"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — you drew the boundary around the rocket *and* its gas, so the engine's push on the gas and the gas's push on the rocket are an internal pair. The center of mass of (rocket + all gas) keeps drifting at constant velocity; the rocket speeds up only because the gas it expels goes the other way.",
+        "incorrect": {
+          "0": "It makes the *rocket* accelerate, but 'causes motion' does not make a force external. Both interacting objects (rocket, gas) are inside this system, so the force is internal and the system's center of mass keeps constant velocity.",
+          "2": "You explicitly included the exhaust gas in the system, so it *is* part of it here. (If you had drawn the boundary around the rocket alone, the gas's push would be external.)",
+          "3": "While the gas is still in the system the force is internal. The gas physically leaving later is a separate issue from how the force is classified during the interaction."
+        }
+      },
+      "hint": ["The classification depends only on the boundary you drew. Are both objects — rocket and gas — inside it?"],
+      "solution": "Both the rocket and the exhaust gas are in the chosen system, so the engine force is internal."
+    },
+    {
+      "id": "ap1-u2-scm-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Systems and Center of Mass",
+      "objective": "C2.11",
+      "cedTopic": "2.1",
+      "clusterId": "2.11",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+      "scenario": "A $4.0\\text{ kg}$ cart and a $12.0\\text{ kg}$ cart sit at rest on a frictionless track, touching, with a compressed spring held between them by a string. Position is measured along the track: the $4.0\\text{ kg}$ cart's center is at $x = 0$ and the $12.0\\text{ kg}$ cart's center is at $x = 0.80\\text{ m}$. The string is burned; the spring pushes the carts apart and drops out.",
+      "parts": [
+        { "label": "(a)", "prompt": "Find the center of mass of the two-cart system before the string is burned.", "points": 2, "modelResponse": "$x_{cm} = \\dfrac{(4.0)(0) + (12.0)(0.80)}{4.0 + 12.0} = \\dfrac{9.6}{16.0} = 0.60\\text{ m}$ (measured from the $4.0\\text{ kg}$ cart, so $0.20\\text{ m}$ from the $12.0\\text{ kg}$ cart)." },
+        { "label": "(b)", "prompt": "The spring force acts only between the two carts. Is it internal or external to the two-cart system? What does that tell you about the motion of the system's center of mass after the string is burned?", "points": 3, "modelResponse": "The spring pushes on both carts, and both carts are in the system, so the spring force is **internal**. The track is frictionless and the vertical forces (gravity, normal) balance, so the **net external force is zero**. The center of mass was at rest and stays at rest — it does not move at all, even though both carts do." },
+        { "label": "(c)", "prompt": "When the carts have moved apart, the $4.0\\text{ kg}$ cart is $0.90\\text{ m}$ to the left of where it started. How far, and in which direction, has the $12.0\\text{ kg}$ cart moved?", "points": 3, "modelResponse": "The center of mass cannot move, so the carts' displacements must keep it fixed: $m_1 |{\\Delta x_1}| = m_2 |{\\Delta x_2}|$. So $(4.0)(0.90) = (12.0)|{\\Delta x_2}| \\Rightarrow |{\\Delta x_2}| = \\dfrac{3.6}{12.0} = 0.30\\text{ m}$, to the **right** (opposite the light cart). The light cart moves three times as far as the heavy cart." }
+      ],
+      "totalPoints": 8,
+      "scoringNotes": "(a) 1 pt for the weighted-average setup, 1 pt for $0.60\\text{ m}$. (b) 1 pt internal, 1 pt net external force zero, 1 pt center of mass stays at rest. (c) 1 pt for using 'center of mass fixed', 1 pt for the inverse-mass-ratio relation, 1 pt for $0.30\\text{ m}$ to the right. Award (c) in full if the student uses a correct method with an (a)/(b) error carried forward consistently."
+    },
+    {
+      "id": "ap1-u2-scm-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Systems and Center of Mass",
+      "objective": "C2.11",
+      "cedTopic": "2.1",
+      "clusterId": "2.11",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A dog of mass $m$ stands at the left end of a raft of mass $3m$ that floats at rest on still water (treat the water as frictionless). The dog walks to the right end of the raft and stops. Ignoring water resistance, when the dog stops walking, the raft has moved:",
+      "choices": [
+        "to the right, the same distance the dog walked along the raft",
+        "to the left, one-quarter of the raft's length",
+        "not at all — only the dog moved",
+        "to the left, three-quarters of the raft's length"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the dog–raft forces are internal and the water is frictionless, so the center of mass of (dog + raft) stays fixed. If the raft has length $L$, the dog moves right and the raft moves left so that $m\\,\\Delta x_{dog} + 3m\\,\\Delta x_{raft} = 0$. The dog's displacement relative to the ground is $L$ minus the raft's leftward shift; solving gives the raft shifting left by $L/4$ (and the dog moving right by $3L/4$ over the ground).",
+          "incorrect": {
+          "0": "That is how far the dog moves *relative to the raft*. Relative to the water, the raft slides backward, so the dog's ground displacement is less than $L$.",
+          "2": "The dog's steps push backward on the raft (an internal pair), so the raft must move. 'Only the dog moved' would shift the center of mass, which no internal force can do.",
+          "3": "This has the mass ratio backwards. The raft ($3m$) is heavier than the dog ($m$), so the raft moves the *smaller* distance — $L/4$, not $3L/4$."
+        }
+      },
+      "hint": ["The center of mass of dog + raft can't move. Write $m\\,\\Delta x_{dog} = 3m\\,\\Delta x_{raft}$ in size, with the dog's and raft's ground displacements adding to the raft length $L$."],
+      "solution": "Center of mass fixed ⇒ $m\\,\\Delta x_{dog} = 3m\\,\\Delta x_{raft}$; with $\\Delta x_{dog} + \\Delta x_{raft} = L$, the raft moves $L/4$ to the left."
+    }
+  ],
+  "examConnection": "This topic is the foundation the rest of Unit 2 stands on. On the exam you will: **choose a system** and justify treating it as a single particle at its center of mass; **classify forces** as internal or external (internal forces never appear in a system-level Newton's-second-law equation); **compute a two-mass center of mass**; and **reason about center-of-mass motion** in explosions, collisions, and 'person walks on a raft/boat/cart' scenarios — the answer always starts from 'the net external force is zero, so the center of mass does not accelerate.' A frequent trap on free-response: letting an internal force (a spring, a rope, a muscle, an engine's push on its own exhaust) into the system equation.",
+  "summary": "- A **system** is whatever you enclose in a boundary you draw. A force is **internal** if both interacting objects are inside, **external** if one is outside.\n- **Internal forces come in equal-and-opposite pairs and cancel for the system as a whole** — they rearrange the parts but never move the center of mass.\n- The **center of mass** is the mass-weighted average position: $x_{cm} = \\dfrac{\\sum m_i x_i}{\\sum m_i}$. It lies between the masses, closer to the heavier one, and need not be inside any object.\n- The center of mass moves like a single particle of total mass $M$ driven **only by the net external force**: $\\vec{F}_{net,ext} = M\\vec{a}_{cm}$.\n- **No net external force ⇒ the center of mass keeps constant velocity** (explosions, collisions, pushing off, walking on a raft — the center of mass sails straight through).",
+  "exitQuestion": {
+    "id": "ap1-u2-scm-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Systems and Center of Mass",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+    "question": "A cannonball is fired and, at the top of its arc, splits into two equal pieces by an internal charge. One piece falls straight down from the split point. Ignoring air resistance, the other piece lands:",
+    "choices": [
+      "at the same spot the first piece lands",
+      "farther downrange than a whole cannonball would have landed",
+      "exactly where a whole cannonball would have landed",
+      "straight down as well, on the other side"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the split is internal, so the center of mass of the two pieces stays on the original parabola and lands where the whole ball would have. One piece drops straight down (landing short, at the point below the split); for the center of mass of the two equal pieces to land at the original spot, the other piece must land **beyond** it — farther downrange.",
+      "incorrect": {
+        "0": "One piece falls from the split point and lands short of the original target. If both landed there, the center of mass would land short too — but it can't, because the explosion is internal.",
+        "2": "The *center of mass* lands where the whole ball would have — but that is the average of the two pieces. One piece lands short, so the other must land beyond that point.",
+        "3": "Only one piece was described as falling straight down. The other keeps the forward motion the ball had (plus a forward kick from the charge) and travels downrange."
+      }
+    },
+    "hint": [
+      "The explosion is internal, so the center of mass of the two pieces keeps going along the original parabola and lands at the original target point.",
+      "That landing point is the average of where the two equal pieces land. If one lands short (straight down), where must the other land?"
+    ],
+    "solution": "The center of mass lands at the original target. One equal piece lands short (straight down), so the other must land farther downrange."
+  },
+  "questionBankFile": "ap1-u2-systems-com.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-059", "AP1-U2-MCQ-060", "AP1-U2-MCQ-061",
+    "AP1-U2-MCQ-062", "AP1-U2-MCQ-063", "AP1-U2-MCQ-064"
+  ]
+}

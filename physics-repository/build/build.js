@@ -44,6 +44,7 @@
  *   "unit": "Unit 2: Dynamics",
  *   "topic": "Newton's Laws",
  *   "lessonTitle": "…",
+ *   "lessonNumber": "1",                   // REQUIRED — place in the unit's teaching order; shown as "Lesson 1" in the breadcrumb, homepage, unit index
  *   "prerequisites": ["…"],
  *   "majorObjective": "…",
  *   "subObjectives": ["…"],
@@ -126,6 +127,7 @@ import { validateContent } from "./validate.js";
 const COMPONENT_SCRIPTS = {
   "newtons-second-law-explorer": "js/lesson-interactives/newtons-second-law-explorer.js",
   "fbd-builder": "js/lesson-interactives/fbd-builder.js",
+  "center-of-mass-explorer": "js/lesson-interactives/center-of-mass-explorer.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 
@@ -229,12 +231,16 @@ function buildLesson(file, templates) {
     .map((src) => `<script src="${rootPrefix}${src}"></script>`)
     .join("\n");
 
+  const lessonLabel = lesson.lessonNumber
+    ? `Lesson ${lesson.lessonNumber} — ${lesson.lessonTitle}`
+    : lesson.lessonTitle;
+
   const html = lessonTemplate
     .replaceAll("{{ROOT}}", rootPrefix)
-    .replace("{{TITLE}}", esc(lesson.lessonTitle || lesson.id))
+    .replace("{{TITLE}}", esc(lessonLabel || lesson.id))
     .replace(
       "{{BREADCRUMB}}",
-      [lesson.course, lesson.unit, lesson.topic].filter(Boolean).map(esc).join(" › ")
+      [lesson.course, lesson.unit, lessonLabel].filter(Boolean).map(esc).join(" › ")
     )
     .replace("{{SIDEBAR_TOC}}", renderSidebarToc(lesson, bank))
     .replace("{{LESSON_BODY}}", renderLessonBody(lesson, bank))
@@ -254,7 +260,11 @@ function buildHomepage(lessons) {
   for (const l of lessons) (byCourse[l.course] = byCourse[l.course] || []).push(l);
 
   const label = (l) =>
-    l.format === "concept-inventory" ? `${l.lessonTitle} (concept check)` : l.lessonTitle;
+    l.format === "concept-inventory"
+      ? `${l.lessonTitle} (concept check)`
+      : l.lessonNumber
+        ? `Lesson ${l.lessonNumber} — ${l.lessonTitle}`
+        : l.lessonTitle;
 
   const courseList = Object.entries(byCourse)
     .map(([course, ls]) => {
@@ -264,7 +274,13 @@ function buildHomepage(lessons) {
       const units = Object.entries(byUnit)
         .map(([unit, us]) => {
           const idx = us.find((u) => u.format === "unit-index");
-          const rest = us.filter((u) => u.format !== "unit-index");
+          const rest = us
+            .filter((u) => u.format !== "unit-index")
+            .sort((a, b) => {
+              // concept check first, then by lesson number
+              const rank = (x) => (x.format === "concept-inventory" ? -1 : parseFloat(x.lessonNumber) || 99);
+              return rank(a) - rank(b);
+            });
           const heading = idx
             ? `<h4><a href="${esc(idx.outRel)}">${esc(unit || idx.lessonTitle)}</a></h4>`
             : unit
@@ -311,6 +327,12 @@ function build() {
 
   // Tell GitHub Pages not to run Jekyll over the output (harmless elsewhere).
   fs.writeFileSync(path.join(DIST_DIR, ".nojekyll"), "");
+
+  // If a custom domain is configured (physics-repository/CNAME), carry it
+  // into the published artifact so a "GitHub Actions" Pages deploy keeps
+  // the domain. Optional — no file, no CNAME.
+  const cnameSrc = path.join(ROOT, "CNAME");
+  if (fs.existsSync(cnameSrc)) fs.copyFileSync(cnameSrc, path.join(DIST_DIR, "CNAME"));
 
   copyStaticDirs();
 

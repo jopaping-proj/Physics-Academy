@@ -17,6 +17,11 @@ A second, independent physics reader is still needed.
 
 ## Verdict
 
+**Concept inventory (all 27 items): APPROVED** by the project owner 2026-09-01 —
+`unit-2-concept-check.json` `status` updated. (Form still to be frozen after pilot
+item-analysis, §10.5.) The lesson and the FBD bank remain **draft** pending the
+independent human read of the physics.
+
 **No blocking physics or numerical errors found.** Every worked-example number, every
 MCQ key, and the FRQ point split were recomputed from scratch and agree:
 
