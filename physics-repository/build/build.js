@@ -133,6 +133,7 @@ const COMPONENT_SCRIPTS = {
   "fbd-builder": "js/lesson-interactives/fbd-builder.js",
   "center-of-mass-explorer": "js/lesson-interactives/center-of-mass-explorer.js",
   "interaction-pair-explorer": "js/lesson-interactives/interaction-pair-explorer.js",
+  "friction-explorer": "js/lesson-interactives/friction-explorer.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 

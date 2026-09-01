@@ -214,6 +214,33 @@ const DIAGRAMS = {
       { sym: "T_2", dir: 15, mag: 5, anchor: [158, 110], color: "amber" },
     ],
   },
+
+  // ---- Lesson 7 · Friction: Static and Kinetic ----
+  "friction/fbd-push-not-sliding.svg": {
+    style: "box",
+    surface: { side: "bottom" },
+    ariaLabel:
+      "Box free-body diagram of a heavy crate being pushed horizontally but not moving. Gravity down from the centre and the normal force up from the bottom surface are equal. The applied push to the right and the static friction force to the left, along the bottom surface, are also exactly equal — static friction has grown to match the push, so the crate stays in equilibrium.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 112], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [134, 134], color: "blue" },
+      { sym: "F_app", dir: "right", mag: 4, anchor: [116, 104], color: "amber" },
+      { sym: "f_s", dir: "left", mag: 4, anchor: [166, 134], color: "red", label: { lift: 14 } },
+    ],
+  },
+
+  "friction/fbd-sliding.svg": {
+    style: "box",
+    surface: { side: "bottom" },
+    ariaLabel:
+      "Box free-body diagram of a crate sliding to the right across a rough floor while speeding up. Gravity down from the centre and the normal force up from the bottom surface are equal. The applied push to the right is the longest arrow. Kinetic friction to the left along the bottom surface is fixed and shorter than the push, so the net force is to the right.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 112], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [134, 134], color: "blue" },
+      { sym: "F_app", dir: "right", mag: 5, anchor: [116, 104], color: "amber" },
+      { sym: "f_k", dir: "left", mag: 2, anchor: [166, 134], color: "red", label: { lift: 14 } },
+    ],
+  },
 };
 
 let n = 0;

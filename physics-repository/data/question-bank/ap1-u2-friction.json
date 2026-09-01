@@ -1,0 +1,181 @@
+[
+  {
+    "id": "AP1-U2-MCQ-083",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "identify-principle",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A $12\\text{ kg}$ box slides across a level floor with a coefficient of kinetic friction $\\mu_k = 0.30$. Taking $g = 10\\text{ m/s}^2$, the kinetic friction force on the box is:",
+    "choices": ["$36\\text{ N}$", "$3.6\\text{ N}$", "$120\\text{ N}$", "$40\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — on a level floor with no vertical applied force, $F_N = mg = (12)(10) = 120\\text{ N}$. Then $f_k = \\mu_k F_N = (0.30)(120) = 36\\text{ N}$.",
+      "incorrect": {
+        "1": "This is $\\mu_k \\times m$, not $\\mu_k \\times F_N$. Friction depends on the normal force ($120\\text{ N}$), not the mass directly.",
+        "2": "$120\\text{ N}$ is the normal force $F_N = mg$. Multiply by $\\mu_k$: $0.30 \\times 120 = 36\\text{ N}$.",
+        "3": "$40\\text{ N}$ would need $F_N \\approx 133\\text{ N}$ or $\\mu_k = 1/3$. With $\\mu_k = 0.30$ and $F_N = 120\\text{ N}$, $f_k = 36\\text{ N}$."
+      }
+    },
+    "hint": ["$f_k = \\mu_k F_N$. On a level floor with a horizontal (or no) push, $F_N = mg$."],
+    "solution": "$F_N = mg = 120\\text{ N}$; $f_k = \\mu_k F_N = 0.30 \\times 120 = 36\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-084",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "question": "A crate is sliding to the **east** across a rough floor while a worker pushes it toward the east. The kinetic friction force on the crate points:",
+    "choices": ["east, the same way as the push", "west, opposite the sliding", "down, into the floor", "there is no friction because the crate is being pushed"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — kinetic friction opposes the **relative sliding** of the surfaces. The crate slides east across the floor, so friction on the crate points west.",
+      "incorrect": {
+        "0": "Friction never points the same way as the motion it resists. It opposes the sliding, so it points west.",
+        "2": "Friction is *parallel* to the surface, not into it. The force into the floor is the normal force's partner.",
+        "3": "Friction acts whenever surfaces slide, regardless of who is pushing. It points opposite the sliding (west)."
+      }
+    },
+    "hint": ["Kinetic friction opposes the sliding of one surface across the other. Which way is the crate sliding relative to the floor?"],
+    "solution": "West — kinetic friction opposes the eastward sliding."
+  },
+  {
+    "id": "AP1-U2-MCQ-085",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "misconception-diagnosis",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "question": "A $5.0\\text{ kg}$ block sits on a level floor with $\\mu_s = 0.40$ and $\\mu_k = 0.25$ ($g = 10\\text{ m/s}^2$). A horizontal force of $15\\text{ N}$ is applied and the block does not move. The friction force on the block is:",
+    "choices": ["$20\\text{ N}$", "$15\\text{ N}$", "$12.5\\text{ N}$", "$0\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the block is in equilibrium, so static friction equals the applied force: $f_s = 15\\text{ N}$. (The maximum available is $\\mu_s F_N = 0.40 \\times 50 = 20\\text{ N}$, which the $15\\text{ N}$ force has not reached.)",
+      "incorrect": {
+        "0": "$20\\text{ N} = \\mu_s F_N$ is the *maximum* static friction, not its value here. Friction only supplies the $15\\text{ N}$ needed for equilibrium.",
+        "2": "$12.5\\text{ N} = \\mu_k F_N$ is kinetic friction, which applies only while sliding. This block is stationary.",
+        "3": "If friction were zero, the $15\\text{ N}$ force would accelerate the block. It stays still because friction supplies $15\\text{ N}$."
+      }
+    },
+    "hint": ["The block is not accelerating, so $\\sum F_x = 0$. Static friction adjusts to whatever value keeps that true — as long as it does not exceed $\\mu_s F_N$."],
+    "solution": "$f_s = 15\\text{ N}$ (equals the applied force). $\\mu_s F_N = 20\\text{ N}$ is only the maximum."
+  },
+  {
+    "id": "AP1-U2-MCQ-086",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "question": "A $40\\text{ kg}$ crate on a level floor has $\\mu_s = 0.50$ and $\\mu_k = 0.40$ ($g = 10\\text{ m/s}^2$). A worker pushes horizontally with $220\\text{ N}$. The crate's acceleration is:",
+    "choices": ["$0$ — it does not move", "$0.5\\text{ m/s}^2$", "$1.5\\text{ m/s}^2$", "$5.5\\text{ m/s}^2$"],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — $F_N = mg = 400\\text{ N}$. Maximum static friction $= \\mu_s F_N = 200\\text{ N}$; the $220\\text{ N}$ push exceeds it, so the crate slides. $f_k = \\mu_k F_N = (0.40)(400) = 160\\text{ N}$. Then $a = (F_{app} - f_k)/m = (220 - 160)/40 = 60/40 = 1.5\\text{ m/s}^2$.",
+      "incorrect": {
+        "0": "The push ($220\\text{ N}$) exceeds the maximum static friction ($\\mu_s F_N = 200\\text{ N}$), so the crate does slide.",
+        "1": "This uses $\\mu_s$ for the sliding friction: $(220 - 200)/40 = 0.5$. Once sliding, friction is kinetic: $f_k = \\mu_k F_N = 160\\text{ N}$.",
+        "3": "$5.5\\text{ m/s}^2$ ignores friction entirely ($220/40$). Kinetic friction ($160\\text{ N}$) opposes the push."
+      }
+    },
+    "hint": ["Check slide-or-stay with $\\mu_s F_N$. If it slides, friction is $\\mu_k F_N$; then $a = (F_{app} - f_k)/m$."],
+    "solution": "Slides ($220 > \\mu_s F_N = 200$); $f_k = \\mu_k F_N = 160\\text{ N}$; $a = (220 - 160)/40 = 1.5\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-087",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "question": "A crate slides across a level floor at **constant velocity** when pushed horizontally with a force $P$. A second, identical crate is then stacked on top of the first. To slide the stacked pair across the same floor at constant velocity, the horizontal push needed is:",
+    "choices": ["$P$", "$2P$", "$4P$", "$P/2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — at constant velocity the push equals the kinetic friction, $P = \\mu_k F_N = \\mu_k mg$. Stacking an identical crate doubles the weight resting on the floor, so $F_N$ doubles, $f_k$ doubles, and the push needed to balance it doubles to $2P$.",
+      "incorrect": {
+        "0": "The normal force from the floor now supports two crates, so friction is larger and $P$ is no longer enough.",
+        "2": "Friction is proportional to $F_N$, which doubled — not quadrupled. $f_k = \\mu_k(2mg) = 2\\mu_k mg = 2P$.",
+        "3": "More weight means *more* friction to overcome, so the push goes up, not down."
+      }
+    },
+    "hint": ["At constant velocity, push $= f_k = \\mu_k F_N$. What happens to $F_N$ when you double the weight on the floor?"],
+    "solution": "$2P$ — doubling the load doubles $F_N$, hence doubles $f_k$, hence doubles the constant-velocity push."
+  },
+  {
+    "id": "AP1-U2-MCQ-088",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "",
+    "question": "Two identical blocks are pushed across the same floor. Block A is pushed with a steady horizontal force just barely enough to keep it moving at constant speed. Block B is pushed with a much larger horizontal force and is speeding up. The kinetic friction force on block B compared with block A is:",
+    "choices": [
+      "larger, because B is pushed harder",
+      "the same, because kinetic friction is $\\mu_k F_N$ and $F_N$ (= $mg$) is the same for both",
+      "larger, because B is moving faster",
+      "smaller, because B's larger push 'overpowers' the friction"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — kinetic friction is $f_k = \\mu_k F_N$. Both blocks are on the same floor (same $\\mu_k$) with the same weight and a horizontal push (same $F_N = mg$), so the friction force is identical. B's extra push does not go into friction — it goes into acceleration.",
+      "incorrect": {
+        "0": "Kinetic friction does not depend on the applied force. Push A or push B harder — as long as $F_N$ is unchanged, $f_k$ is unchanged.",
+        "2": "To a good approximation kinetic friction does not depend on sliding speed either. Same $\\mu_k$ and same $F_N$ ⇒ same friction.",
+        "3": "A larger push does not reduce friction. It just leaves more net force for acceleration."
+      }
+    },
+    "hint": ["$f_k = \\mu_k F_N$. What is $F_N$ for each block, and does $f_k$ depend on the push or the speed?"],
+    "solution": "The same — $f_k = \\mu_k F_N$ with identical $\\mu_k$ and $F_N = mg$; the applied force and speed do not affect kinetic friction."
+  }
+]

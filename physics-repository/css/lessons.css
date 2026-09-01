@@ -562,9 +562,39 @@
   border-radius: var(--radius-sm);
 }
 
+/* ---- friction explorer (Lesson 7) ---- */
+.fx2__stage { margin: var(--space-2) 0 var(--space-3); }
+.fx2__stage canvas { display: block; width: 100%; height: auto; border-radius: var(--radius-sm); }
+.fx2__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+}
+.fx2__name { min-width: 6.5rem; font-weight: 600; color: var(--text-primary); }
+.fx2__row input[type="range"] { flex: 1; min-width: 8rem; }
+.fx2__val { min-width: 3.5rem; text-align: right; color: var(--text-secondary); font-family: var(--font-mono); }
+.fx2__verdict {
+  margin-top: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+  background: var(--bg-panel-raised);
+  border-left: 3px solid var(--border-subtle);
+}
+.fx2__verdict.is-stay { border-left-color: var(--sim-green, #51cf66); }
+.fx2__verdict.is-slip { border-left-color: var(--sim-red, #ff6b6b); }
+
 /* ---- unit index (concept-check → modules → concept-check) ---- */
 .unit-index { max-width: 760px; margin: 0 auto; padding: var(--space-5); }
 .unit-index__intro { padding: var(--space-4); margin: var(--space-3) 0 var(--space-5); }
+.unit-index__outcomes { margin: 0 0 var(--space-5); }
+.unit-index__outcomes h2 { margin-bottom: var(--space-3); }
+.unit-index__outcome-cluster { margin-bottom: var(--space-2); padding: var(--space-3) var(--space-4); }
+.unit-index__outcome-cluster summary { cursor: pointer; display: flex; justify-content: space-between; gap: var(--space-3); font-weight: 650; }
+.unit-index__outcome-cluster summary span { color: var(--text-secondary); font-size: var(--text-sm); }
+.unit-index__outcome-cluster ul { margin: var(--space-3) 0 0; }
 .unit-index__sequence { list-style: none; margin: 0; padding: 0; }
 .unit-index__item {
   display: flex;

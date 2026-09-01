@@ -1,0 +1,507 @@
+{
+  "id": "ap1-u2-fric",
+  "slug": "friction-static-and-kinetic",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Newton's Laws",
+  "lessonNumber": "7",
+  "objective": "C2.8",
+  "cedTopic": "2.7",
+  "clusterId": "2.8",
+  "lessonTitle": "Friction: Static and Kinetic",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Building a free-body diagram and using $\\sum F_y = 0$ to find the normal force (Lessons 2, 5)",
+    "The normal force is whatever $\\sum F_\\perp = 0$ requires — not always $mg$ (Lesson 5)",
+    "Newton's second law along the direction of motion, $\\sum F_x = ma_x$ (Lessons 4–5)",
+    "Static equilibrium: the forces on a motionless object sum to zero (Lesson 3)"
+  ],
+  "majorObjective": "Model friction with $|\\vec f_k| = \\mu_k |\\vec F_N|$ (kinetic — fixed once sliding) and $|\\vec f_s| \\le \\mu_s |\\vec F_N|$ (static — variable, up to a maximum), direct it opposite the sliding or the tendency to slide, and use it to decide whether a described object slides or stays put and to find its acceleration when it does.",
+  "subObjectives": [
+    "State the two friction models: $f_k = \\mu_k F_N$ (a fixed value once the object is sliding) and $f_s \\le \\mu_s F_N$ (an adjustable value up to a maximum).",
+    "Explain that static friction takes **whatever value is needed** to prevent sliding, up to its limit $\\mu_s F_N$.",
+    "Direct the friction force opposite to the object's **sliding**, or — for a stationary object — opposite to the direction it **would** slide.",
+    "Find the friction force in a horizontal-surface problem by computing $F_N$ first, then $f$, then applying Newton's second law along the motion.",
+    "Decide whether a described object slides or stays put by comparing the force that would have to be resisted to $\\mu_s F_N$.",
+    "Predict, without a full calculation, how a change in $\\mu$, in $F_N$, or in the applied force changes the acceleration or the slide / no-slide outcome."
+  ],
+  "hook": {
+    "prompt": "You push horizontally on a heavy box with a steadily increasing force. It stays still, then still, then suddenly breaks free and slides. **Just before** it broke free, the friction force on the box was:",
+    "choices": [
+      "zero — friction only acts once something is moving",
+      "equal to your push, and growing right along with it, until it hit its maximum",
+      "a fixed value $\\mu_k mg$ the whole time",
+      "larger than your push, which is why the box did not move"
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "You can already draw a free-body diagram, use $\\sum F_y = 0$ to get the normal force (Lesson 5 — remember it is **not** always $mg$), and apply $\\sum F_x = ma_x$ along the motion (Lessons 4–5). This lesson adds one more force to the diagram — friction — with a rule for its size and a rule for its direction.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Two Kinds of Friction",
+      "concept": "Friction is a contact force between two surfaces, always **parallel to the surface**. It comes in two regimes.\n\n**Kinetic friction** acts while the surfaces slide across each other. Its size is fixed:\n$$f_k = \\mu_k F_N$$\nIt does **not** depend on how fast the object slides or on how hard you push — only on the surfaces ($\\mu_k$) and how hard they are pressed together ($F_N$). It points **opposite the sliding**.\n\n**Static friction** acts while the surfaces are **not** sliding. It is whatever value is needed to keep the object from sliding — it grows to match the force trying to move the object — but only up to a maximum:\n$$f_s \\le \\mu_s F_N$$\nThe instant the applied force exceeds $\\mu_s F_N$, static friction has run out, the object breaks free, and friction switches to kinetic. Because $\\mu_s > \\mu_k$ for almost every pair of surfaces, ==friction *drops* the moment something starts to slide== — that is the lurch you feel when a stuck drawer suddenly gives.\n\nEither way, friction opposes **relative sliding or the tendency to slide**, not necessarily the object's motion or your push.",
+      "conceptFigures": [
+        { "svg": "friction/friction-vs-applied.svg", "caption": "As you push harder on a stationary object, static friction rises to match ($f_s = F_{app}$) until it reaches $\\mu_s F_N$. Then the object slips and friction drops to the constant kinetic value $\\mu_k F_N$, which no longer depends on the push." }
+      ],
+      "figures": [
+        { "svg": "friction/fbd-push-not-sliding.svg", "caption": "A heavy crate pushed but **not** sliding: static friction has grown to exactly equal the push, so $\\sum F_x = 0$ and the crate stays put." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $20\\text{ kg}$ crate sits on a level floor. The coefficients are $\\mu_s = 0.60$ and $\\mu_k = 0.40$. A worker pushes horizontally with $100\\text{ N}$. Take $g = 9.8\\text{ m/s}^2$. Does the crate move, and what is the friction force on it?",
+        "figure": { "svg": "friction/fbd-push-not-sliding.svg", "caption": "Weight down, normal force up, the $100\\text{ N}$ push forward, and static friction backward." },
+        "phases": [
+          {
+            "label": "Normal force first",
+            "steps": [
+              "The push is horizontal, so the only vertical forces are $F_N$ (up) and $mg$ (down).",
+              "$\\sum F_y = 0$: $F_N - mg = 0 \\Rightarrow F_N = mg$.",
+              "Substitute: $F_N = (20)(9.8) = 196\\text{ N}$."
+            ]
+          },
+          {
+            "label": "How much static friction is available?",
+            "steps": [
+              "Maximum static friction: $f_{s,\\max} = \\mu_s F_N$.",
+              "Substitute: $f_{s,\\max} = (0.60)(196) = 118\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Compare, then decide",
+            "steps": [
+              "The push is $100\\text{ N}$; the most static friction can supply is $118\\text{ N}$.",
+              "$100\\text{ N} < 118\\text{ N}$, so static friction can still balance the push — the crate **does not move**.",
+              "Since it is in equilibrium, $\\sum F_x = 0$: $F_{app} - f_s = 0 \\Rightarrow f_s = F_{app} = 100\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "The friction force is $100\\text{ N}$, **not** $118\\text{ N}$ and **not** $\\mu_k F_N = 78\\text{ N}$ — static friction only supplies what is needed.",
+              "If the worker eased off to an $80\\text{ N}$ push, static friction would drop to $80\\text{ N}$ to match. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Comparing the push to $\\mu_s F_N$ to decide slide-or-stay, then — because it stays — setting $f_s$ equal to the push, not to $\\mu_s F_N$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-fric-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Friction: Static and Kinetic",
+        "objective": "C2.8",
+        "cedTopic": "2.7",
+        "clusterId": "2.8",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+        "question": "A book lies on a level table. You push it horizontally with $3\\text{ N}$ and it does not move. The friction force on the book from the table is:",
+        "choices": [
+          "$3\\text{ N}$, opposite your push",
+          "zero, because the book is not moving",
+          "$\\mu_s mg$, opposite your push",
+          "$\\mu_k mg$, opposite your push"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the book is in equilibrium, so $\\sum F_x = 0$: friction exactly balances your $3\\text{ N}$ push. Static friction supplies only what is needed, not its maximum.",
+          "incorrect": {
+            "1": "Friction acts on stationary objects too — static friction opposes the *tendency* to slide. If it were zero, your $3\\text{ N}$ push would accelerate the book.",
+            "2": "$\\mu_s mg$ is the *maximum* static friction — the value right before it slips. With only a $3\\text{ N}$ push, static friction is just $3\\text{ N}$.",
+            "3": "$\\mu_k mg$ is *kinetic* friction, which acts only once the book is sliding. This book is stationary."
+          }
+        },
+        "hint": ["The book is not accelerating. What must the horizontal forces add to? Static friction adjusts itself to make that happen."],
+        "solution": "$f_s = 3\\text{ N}$, opposite the push — static friction matches the push because $\\sum F_x = 0$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Once It Slides: Friction and Acceleration",
+      "concept": "Once an object **is** sliding, friction is kinetic and its size is locked in at $f_k = \\mu_k F_N$ — no longer adjustable. The recipe is the same two-axis method from Lesson 5, with friction as one more force on the motion axis:\n\n1. **Normal force first** from the perpendicular axis: $\\sum F_\\perp = 0$. (On a level surface with a horizontal push, $F_N = mg$; a rope at an angle or a downward push changes it.)\n2. **Friction** from the model: $f_k = \\mu_k F_N$, pointing opposite the slide.\n3. **Newton's second law along the motion:** $\\sum F_x = m a_x$, with $f_k$ entering as a negative (opposing) term.\n\nFor a horizontal push $F_{app}$ on a sliding object,\n$$F_{app} - f_k = m a_x \\quad\\Rightarrow\\quad a_x = \\frac{F_{app} - \\mu_k F_N}{m}.$$\nIf nobody is pushing, $f_k$ is the only horizontal force and the object **decelerates**: $a_x = -\\mu_k g$.",
+      "figures": [
+        { "svg": "friction/fbd-sliding.svg", "caption": "A crate sliding right and speeding up: the push is the longest arrow, kinetic friction is fixed and shorter, so the net force — and the acceleration — point forward." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "The same $20\\text{ kg}$ crate ($\\mu_s = 0.60$, $\\mu_k = 0.40$, $g = 9.8\\text{ m/s}^2$) is now pushed horizontally with $150\\text{ N}$. Find the friction force and the crate's acceleration.",
+        "figure": { "svg": "friction/fbd-sliding.svg", "caption": "Now the push exceeds the maximum static friction, so the crate slides and friction is kinetic." },
+        "phases": [
+          {
+            "label": "Does it slide?",
+            "steps": [
+              "$F_N = mg = (20)(9.8) = 196\\text{ N}$ (horizontal push, level floor).",
+              "Maximum static friction: $\\mu_s F_N = (0.60)(196) = 118\\text{ N}$.",
+              "The push is $150\\text{ N} > 118\\text{ N}$, so the crate **breaks free and slides**."
+            ]
+          },
+          {
+            "label": "Kinetic friction",
+            "steps": [
+              "Now friction is kinetic and fixed: $f_k = \\mu_k F_N$.",
+              "Substitute: $f_k = (0.40)(196) = 78\\text{ N}$, opposite the motion."
+            ]
+          },
+          {
+            "label": "Newton's second law along the floor",
+            "steps": [
+              "$\\sum F_x = m a_x$: $F_{app} - f_k = m a_x$.",
+              "Isolate the unknown: $a_x = \\dfrac{F_{app} - f_k}{m}$.",
+              "Substitute: $a_x = \\dfrac{150 - 78}{20} = \\dfrac{72}{20} = 3.6\\text{ m/s}^2$, forward."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "The friction force *dropped* from $118\\text{ N}$ (the value it reached just before slipping) to $78\\text{ N}$ once sliding — because $\\mu_k < \\mu_s$.",
+              "If the worker now held the push at exactly $78\\text{ N}$, the crate would slide at constant velocity. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Switching friction from 'as much as needed' to the fixed value $\\mu_k F_N$ the moment the push exceeds $\\mu_s F_N$, then using $F_{app} - f_k = ma_x$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-fric-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Friction: Static and Kinetic",
+        "objective": "C2.8",
+        "cedTopic": "2.7",
+        "clusterId": "2.8",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "",
+        "question": "A $10\\text{ kg}$ box slides across a level floor with $\\mu_k = 0.25$. Nobody is pushing it. Taking $g = 10\\text{ m/s}^2$, the box's acceleration is:",
+        "choices": [
+          "$0$ — no push, no acceleration",
+          "$2.5\\text{ m/s}^2$, opposite its motion",
+          "$25\\text{ m/s}^2$, opposite its motion",
+          "$10\\text{ m/s}^2$ downward"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — kinetic friction is the only horizontal force: $f_k = \\mu_k F_N = \\mu_k mg = (0.25)(10)(10) = 25\\text{ N}$. Then $a = f_k/m = 25/10 = 2.5\\text{ m/s}^2$, opposite the motion (a deceleration).",
+          "incorrect": {
+            "0": "Friction is a force even when nobody pushes. It acts opposite the sliding, so the box decelerates.",
+            "2": "$25\\text{ N}$ is the friction *force*, not the acceleration. Divide by the mass: $25/10 = 2.5$.",
+            "3": "$10\\text{ m/s}^2$ downward is free fall. The box is on the floor; the relevant acceleration is horizontal, caused by friction."
+          }
+        },
+        "hint": ["With no push, friction is the only horizontal force. Find $f_k = \\mu_k mg$, then $a = f_k/m$."],
+        "solution": "$f_k = \\mu_k mg = 25\\text{ N}$; $a = 25/10 = 2.5\\text{ m/s}^2$ opposite the motion."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Slide or Stay — and What Changes It",
+      "concept": "Many problems ask only: **does it move?** The test is always the same — find the force that friction would have to resist, and compare it to the maximum static friction $\\mu_s F_N$:\n\n- required friction $\\le \\mu_s F_N$ → **stays put** (static friction supplies exactly the required amount).\n- required friction $> \\mu_s F_N$ → **slides** (then use $f_k = \\mu_k F_N$ and Newton's second law).\n\nThe smallest push that *just* starts an object moving is therefore $F_{app} = \\mu_s F_N$.\n\nOnce you can find $\\mu_s F_N$, you can reason about changes without numbers:\n\n- **More mass on top** (or pressing down): $F_N$ rises, so both $\\mu_s F_N$ and $f_k$ rise — harder to start, and once sliding, larger friction.\n- **A rope pulling partly upward**: $F_N$ *falls*, so friction falls — easier to drag (this is why you lift the front of a heavy box).\n- **Rougher surfaces** ($\\mu$ larger): more friction, both regimes.\n- **Pushing harder** while it is already sliding: friction is unchanged ($f_k$ is fixed), so the extra push goes straight into acceleration.",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A $4.0\\text{ kg}$ book sits on a shelf with $\\mu_s = 0.50$ and $\\mu_k = 0.30$. Take $g = 9.8\\text{ m/s}^2$. (a) What is the smallest horizontal force that will start the book sliding? (b) If you then keep pushing with that same force once it is moving, what is the book's acceleration?",
+        "phases": [
+          {
+            "label": "(a) The force to break it free",
+            "steps": [
+              "$F_N = mg = (4.0)(9.8) = 39.2\\text{ N}$.",
+              "The book starts to slide when the push reaches the maximum static friction: $F_{app} = \\mu_s F_N$.",
+              "Substitute: $F_{app} = (0.50)(39.2) = 19.6\\text{ N} \\approx 20\\text{ N}$."
+            ]
+          },
+          {
+            "label": "(b) Acceleration just after it breaks free",
+            "steps": [
+              "Now friction is kinetic: $f_k = \\mu_k F_N = (0.30)(39.2) = 11.8\\text{ N}$.",
+              "$\\sum F_x = m a_x$: $F_{app} - f_k = m a_x \\Rightarrow a_x = \\dfrac{F_{app} - f_k}{m}$.",
+              "Substitute: $a_x = \\dfrac{19.6 - 11.8}{4.0} = \\dfrac{7.8}{4.0} = 2.0\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "Why it 'jumps'",
+            "steps": [
+              "The same $19.6\\text{ N}$ push produced $a = 0$ a moment earlier (static, friction $= 19.6\\text{ N}$) and $a = 2.0\\text{ m/s}^2$ now (kinetic, friction $= 11.8\\text{ N}$).",
+              "Nothing about the push changed — friction dropped, because $\\mu_k < \\mu_s$."
+            ]
+          }
+        ],
+        "keyMove": "The threshold push is $\\mu_s F_N$; the instant it is exceeded, friction falls to $\\mu_k F_N$ and the leftover force becomes acceleration."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-fric-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Friction: Static and Kinetic",
+        "objective": "C2.8",
+        "cedTopic": "2.7",
+        "clusterId": "2.8",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "normal-force-always-equals-weight",
+        "question": "A crate is hard to start sliding across the floor with a horizontal push. A coworker suggests attaching a rope and pulling it up-and-forward at an angle instead, with the same total force. Compared with the horizontal push, pulling at an angle makes the crate:",
+        "choices": [
+          "harder to start, because part of the force is 'wasted' going upward",
+          "easier to start, because the upward part of the pull reduces the normal force, which reduces the maximum static friction",
+          "exactly as hard to start — friction depends only on the surfaces and the weight",
+          "start immediately regardless of the coefficients"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the rope's vertical component makes $\\sum F_y = 0$ give $F_N = mg - T\\sin\\theta < mg$. Since $f_{s,\\max} = \\mu_s F_N$, a smaller $F_N$ means less friction to overcome. The horizontal component is a bit smaller than the full force, but the drop in friction usually wins for a reasonable angle.",
+          "incorrect": {
+            "0": "The upward component is not wasted — it lightens the load on the floor, cutting friction. That is the whole point of tilting the pull.",
+            "2": "Friction depends on the **normal force**, not the weight directly. An angled pull changes $F_N$ (Lesson 5), so it changes friction.",
+            "3": "The coefficients still matter — the crate starts sliding when the horizontal component reaches the (now smaller) $\\mu_s F_N$."
+          }
+        },
+        "hint": ["What does an upward pull do to $\\sum F_y = 0$ and therefore to $F_N$? And what does $F_N$ do to the maximum static friction?"],
+        "solution": "Easier: the upward component lowers $F_N$, so $\\mu_s F_N$ (the friction to beat) drops."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "friction-explorer",
+    "title": "Friction Explorer",
+    "subtitle": "Push harder and watch friction fight back — then give way",
+    "componentKey": "friction-explorer",
+    "description": "Set the push, the mass, and the two coefficients. While the block stays put, the **static-friction arrow grows to match your push** exactly. Push past $\\mu_s F_N$ and it **snaps** to the shorter kinetic value and the block accelerates. Try: raise $\\mu_s$ but keep $\\mu_k$ low, then push through the threshold — see friction drop. Then lower the mass and watch the threshold fall.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-fric-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Friction: Static and Kinetic",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+      "question": "A student says: 'A box sitting still on a flat floor has no friction on it, because friction only acts on things that are moving.' When is this student's statement true?",
+      "choices": [
+        "Always — a stationary object never has friction on it.",
+        "Only when no other horizontal force acts on the box; if something pushes or pulls it horizontally (without moving it), static friction acts to balance that force.",
+        "Never — there is always a friction force, even on an isolated box.",
+        "Only on very smooth floors."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — friction is a *response*. With no horizontal force applied, there is nothing for static friction to oppose, so it is zero. Apply a horizontal push (too small to move the box) and static friction appears, equal and opposite, keeping $\\sum F_x = 0$.",
+        "incorrect": {
+          "0": "Push a stationary box gently and it does not move — something is balancing your push. That something is static friction.",
+          "2": "A box on a floor with no horizontal force on it has **no** friction — static friction only shows up to oppose a sliding tendency.",
+          "3": "Roughness sets the *maximum* static friction ($\\mu_s F_N$); it does not determine whether any friction acts. That depends on whether there is a horizontal force to resist."
+        }
+      },
+      "hint": ["Static friction opposes a *tendency* to slide. If nothing is trying to slide the box, how much static friction is there?"],
+      "solution": "Friction is zero when no horizontal force acts; static friction appears (equal and opposite) as soon as a horizontal force is applied that is too small to move the box."
+    },
+    {
+      "id": "ap1-u2-fric-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Friction: Static and Kinetic",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
+      "skill": "misconception-diagnosis",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+      "question": "A $6.0\\text{ kg}$ block is pushed horizontally with $12\\text{ N}$ and does not move. The coefficients are $\\mu_s = 0.50$, $\\mu_k = 0.35$; $g = 10\\text{ m/s}^2$. A student writes: 'friction $= \\mu_s F_N = 0.50 \\times 60 = 30\\text{ N}$.' What is the actual friction force?",
+      "choices": [
+        "$30\\text{ N}$ — the student is right",
+        "$12\\text{ N}$ — static friction equals the push, since the block is in equilibrium",
+        "$21\\text{ N}$ — using $\\mu_k F_N$",
+        "$0\\text{ N}$ — the block is not moving"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the block is in equilibrium, so $\\sum F_x = 0$ and static friction equals the $12\\text{ N}$ push. $\\mu_s F_N = 30\\text{ N}$ is only the *maximum* static friction — the value friction would reach if the push were increased to $30\\text{ N}$. Right now friction is supplying just $12\\text{ N}$.",
+        "incorrect": {
+          "0": "$\\mu_s F_N$ is the ceiling on static friction, not its current value. The block would need a $30\\text{ N}$ push for friction to actually be $30\\text{ N}$.",
+          "2": "$\\mu_k F_N$ applies only while the block is *sliding*. This block is stationary.",
+          "3": "If friction were zero, the $12\\text{ N}$ push would accelerate the block. It stays still because friction supplies $12\\text{ N}$."
+        }
+      },
+      "hint": ["Is the block accelerating? Then $\\sum F_x = 0$. What must the friction force equal? $\\mu_s F_N$ is a maximum, not the answer."],
+      "solution": "$f_s = 12\\text{ N}$ (equals the push, by $\\sum F_x = 0$). $\\mu_s F_N = 30\\text{ N}$ is only the maximum."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** an $8.0\\text{ kg}$ crate is pushed horizontally across a level floor with $60\\text{ N}$ and slides. $\\mu_s = 0.50$, $\\mu_k = 0.30$, $g = 10\\text{ m/s}^2$. Find the acceleration.\n\n**Student's work:** '$F_N = mg = 80\\text{ N}$. Friction $= \\mu_s F_N = 0.50 \\times 80 = 40\\text{ N}$. So $a = (60 - 40)/8.0 = 2.5\\text{ m/s}^2$.'",
+      "prompts": [
+        "Identify the student's error.",
+        "State the rule they broke.",
+        "Redo the calculation correctly, formula first.",
+        "State a quick check on whether the crate slides at all."
+      ],
+      "modelResponse": "**(1)** The student used the *static* coefficient $\\mu_s$ to find the friction force on a crate that is **sliding**. **(2)** Once an object is sliding, friction is kinetic: $f_k = \\mu_k F_N$. The static coefficient only sets the *threshold* to start it moving; it never gives the friction force during sliding. **(3)** $F_N = mg = (8.0)(10) = 80\\text{ N}$. $f_k = \\mu_k F_N = (0.30)(80) = 24\\text{ N}$. Then $\\sum F_x = ma_x \\Rightarrow a_x = \\dfrac{F_{app} - f_k}{m} = \\dfrac{60 - 24}{8.0} = \\dfrac{36}{8.0} = 4.5\\text{ m/s}^2$. **(4)** It does slide: the maximum static friction is $\\mu_s F_N = 0.50 \\times 80 = 40\\text{ N}$, and the $60\\text{ N}$ push exceeds it.",
+      "modelFigures": [
+        { "svg": "friction/fbd-sliding.svg", "caption": "Sliding crate: friction is kinetic ($f_k = \\mu_k F_N$), drawn shorter than the push, so the net force is forward." }
+      ],
+      "responseMaxLength": 800
+    }
+  ],
+  "representationConnections": "Friction links: the **free-body diagram** (one more arrow, parallel to the surface, opposing the slide or its tendency); the **normal-force equation** ($\\sum F_\\perp = 0$, which sets the size of $\\mu F_N$ and is often *not* $mg$); the **friction model** ($f_k = \\mu_k F_N$ fixed, or $f_s \\le \\mu_s F_N$ variable); and the **friction-vs-applied-force graph** (the 45° static line, the peak at $\\mu_s F_N$, the drop to the flat kinetic value). Deciding slide-or-stay is reading whether the required friction is left or right of that peak.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-fric-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Friction: Static and Kinetic",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A $25\\text{ kg}$ sled is pulled horizontally across packed snow at **constant velocity**. The kinetic friction force on it is $50\\text{ N}$. The coefficient of kinetic friction is (take $g = 10\\text{ m/s}^2$):",
+      "choices": ["$0.20$", "$0.50$", "$2.0$", "$5.0$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $F_N = mg = (25)(10) = 250\\text{ N}$. From $f_k = \\mu_k F_N$, $\\mu_k = f_k / F_N = 50/250 = 0.20$.",
+        "incorrect": {
+          "1": "$0.50$ would need $f_k = 125\\text{ N}$. Here $f_k = 50\\text{ N}$ and $F_N = 250\\text{ N}$, so $\\mu_k = 0.20$.",
+          "2": "$\\mu_k = f_k / F_N$, not $f_k / m$. Divide by the normal force ($250\\text{ N}$), not the mass.",
+          "3": "A coefficient of friction is a dimensionless ratio, almost always less than 1. Recheck: $50/250 = 0.20$."
+        }
+      },
+      "hint": ["$\\mu_k = f_k / F_N$. Find $F_N = mg$ first. (Constant velocity means the pull equals friction, but you already have $f_k$.)"],
+      "solution": "$F_N = mg = 250\\text{ N}$; $\\mu_k = f_k / F_N = 50/250 = 0.20$."
+    },
+    {
+      "id": "ap1-u2-fric-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Friction: Static and Kinetic",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
+      "skill": "multi-representation-reasoning",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "qualitative-plus-calculation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+      "scenario": "A $30\\text{ kg}$ crate sits on a level warehouse floor. The coefficients are $\\mu_s = 0.40$ and $\\mu_k = 0.30$. Use $g = 10\\text{ m/s}^2$.",
+      "figures": [
+        { "svg": "friction/fbd-push-not-sliding.svg", "caption": "Start every part from this free-body diagram: weight, normal force, the horizontal push, and friction." }
+      ],
+      "parts": [
+        { "label": "(a)", "prompt": "A worker pushes horizontally with $90\\text{ N}$. Show that the crate does not move, and state the friction force on it.", "points": 3, "modelResponse": "$F_N = mg = (30)(10) = 300\\text{ N}$. Maximum static friction $= \\mu_s F_N = (0.40)(300) = 120\\text{ N}$. The push ($90\\text{ N}$) is less than $120\\text{ N}$, so static friction can balance it and the crate stays still. Being in equilibrium, $\\sum F_x = 0$, so $f_s = 90\\text{ N}$ (opposite the push)." },
+        { "label": "(b)", "prompt": "What is the smallest horizontal push that would just start the crate sliding?", "points": 2, "modelResponse": "The crate starts to move when the push reaches the maximum static friction: $F_{app} = \\mu_s F_N = (0.40)(300) = 120\\text{ N}$." },
+        { "label": "(c)", "prompt": "The worker pushes with $150\\text{ N}$. Find the crate's acceleration.", "points": 3, "modelResponse": "$150\\text{ N} > 120\\text{ N}$, so the crate slides and friction is kinetic: $f_k = \\mu_k F_N = (0.30)(300) = 90\\text{ N}$. $\\sum F_x = ma_x$: $F_{app} - f_k = ma_x \\Rightarrow a_x = \\dfrac{150 - 90}{30} = \\dfrac{60}{30} = 2.0\\text{ m/s}^2$." },
+        { "label": "(d)", "prompt": "The worker keeps pushing with $150\\text{ N}$ but a second worker now presses straight down on top of the crate with $200\\text{ N}$. Does the crate still slide? Justify with a calculation.", "points": 2, "modelResponse": "The downward press adds to the normal force: $F_N = mg + 200 = 300 + 200 = 500\\text{ N}$. Maximum static friction is now $\\mu_s F_N = (0.40)(500) = 200\\text{ N}$, which exceeds the $150\\text{ N}$ push. So the crate **stops sliding / does not slide** — pressing down increased the friction it must overcome." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt $F_N = 300\\text{ N}$, 1 pt compares push to $\\mu_s F_N = 120\\text{ N}$, 1 pt $f_s = 90\\text{ N}$ (not $120$). (b) 1 pt uses $\\mu_s F_N$, 1 pt $120\\text{ N}$. (c) 1 pt identifies sliding ⇒ $f_k$, 1 pt $f_k = 90\\text{ N}$, 1 pt $a = 2.0\\text{ m/s}^2$. (d) 1 pt $F_N = 500\\text{ N}$ (adds the press), 1 pt concludes no-slide with $\\mu_s F_N = 200\\text{ N} > 150\\text{ N}$. Carry-through from an earlier $F_N$ error is fine."
+    },
+    {
+      "id": "ap1-u2-fric-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Friction: Static and Kinetic",
+      "objective": "C2.8",
+      "cedTopic": "2.7",
+      "clusterId": "2.8",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A car brakes hard. If the wheels keep rolling (not skidding), the tires grip the road with **static** friction; if the wheels lock and the car skids, the tires slide with **kinetic** friction. Given that $\\mu_s > \\mu_k$ for rubber on road, a car stops in the shortest distance when:",
+      "choices": [
+        "the wheels lock and the car skids, because a sliding tire has more friction",
+        "the wheels keep rolling just short of skidding, using the larger static friction — which is what anti-lock brakes are designed to maintain",
+        "it makes no difference; friction is friction",
+        "the wheels lock, because kinetic friction does not depend on speed"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a rolling tire is not sliding at the contact point, so it can use static friction, up to $\\mu_s F_N$. Once it skids, friction drops to the smaller kinetic value $\\mu_k F_N$, the deceleration drops, and the stopping distance grows. Anti-lock brakes pulse the brakes to keep the tire on the verge of slipping without locking.",
+        "incorrect": {
+          "0": "Because $\\mu_s > \\mu_k$, a *sliding* (skidding) tire has **less** friction than a gripping one. Skidding lengthens the stop.",
+          "2": "Static and kinetic friction differ: $\\mu_s > \\mu_k$. Which one applies (grip vs skid) changes the deceleration.",
+          "3": "It is true that kinetic friction is roughly speed-independent, but that does not help — the kinetic value is still smaller than the static value the rolling tire could have used."
+        }
+      },
+      "hint": ["A rolling (non-skidding) tire is not sliding at the road, so which friction regime applies? Which coefficient is bigger?"],
+      "solution": "Shortest stop: wheels rolling on the verge of slipping, using static friction ($\\mu_s > \\mu_k$). Skidding switches to the smaller kinetic friction and lengthens the stop — the reason for anti-lock brakes."
+    }
+  ],
+  "examConnection": "Friction on the AP exam is rarely the whole problem — it is one term inside a Newton's-second-law setup. The reliable places to lose points: (1) using $\\mu_s F_N$ as the friction force on an object that is not on the verge of slipping (it is only the *maximum*); (2) using $\\mu_s$ instead of $\\mu_k$ for a sliding object; (3) taking $F_N = mg$ when an angled rope or a downward push has changed it (Lesson 5); (4) getting the *direction* of friction wrong — it opposes the sliding **or the tendency to slide**, not your push and not the object's velocity in every case. Expect at least one 'does it slide?' decision and one 'find the acceleration once it slides' calculation.",
+  "summary": "- Friction is parallel to the surface and opposes **sliding or the tendency to slide**.\n- **Kinetic:** $f_k = \\mu_k F_N$ — a fixed value once sliding, independent of speed and of how hard you push.\n- **Static:** $f_s \\le \\mu_s F_N$ — takes whatever value is needed to prevent sliding, up to the maximum $\\mu_s F_N$.\n- ==Because $\\mu_s > \\mu_k$, friction *drops* the instant an object breaks free and starts to slide.==\n- **Method:** normal force first ($\\sum F_\\perp = 0$ — not always $mg$), then $f$, then $\\sum F_x = ma_x$ with friction opposing the motion.\n- **Slide or stay:** compare the force friction must resist to $\\mu_s F_N$. The smallest push that starts motion is $\\mu_s F_N$.\n- Changing $F_N$ (extra load, an angled pull) changes both $\\mu_s F_N$ and $f_k$; pushing harder on an already-sliding object does not change friction, only the acceleration.",
+  "exitQuestion": {
+    "id": "ap1-u2-fric-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Friction: Static and Kinetic",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "question": "A box rests on a ramp and does not slide. A student says the friction on it must be $\\mu_s F_N$. A second student says it could be less. Who is right, and why?",
+    "choices": [
+      "The first student — a box on a ramp is always on the verge of slipping.",
+      "The second student — static friction equals only what is needed for equilibrium (here, the component of gravity along the ramp); it reaches $\\mu_s F_N$ only if the box is right on the verge of sliding.",
+      "The first student — friction on a ramp is always at its maximum.",
+      "Neither — there is no friction on a stationary box."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for a box sitting still on a ramp, $\\sum F_\\parallel = 0$ requires $f_s = mg\\sin\\theta$, the pull of gravity along the ramp. That is usually *less* than $\\mu_s F_N$. Static friction only equals $\\mu_s F_N$ at the steepest angle the box can sit on without sliding.",
+      "incorrect": {
+        "0": "A box can sit on a gentle ramp with friction to spare — it is not on the verge of slipping unless the ramp is steep enough.",
+        "2": "Static friction is at its maximum only at the verge of sliding. On a shallow ramp it supplies just $mg\\sin\\theta$.",
+        "3": "Without friction the box would slide down. Static friction (equal to $mg\\sin\\theta$) is exactly what holds it."
+      }
+    },
+    "hint": [
+      "The box is in equilibrium on the ramp. What has to balance the component of gravity along the ramp?",
+      "Is static friction always at its maximum, or only sometimes?"
+    ],
+    "solution": "The second student. Static friction equals what equilibrium needs ($mg\\sin\\theta$ along the ramp), reaching $\\mu_s F_N$ only at the verge of slipping."
+  },
+  "questionBankFile": "ap1-u2-friction.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-083", "AP1-U2-MCQ-084", "AP1-U2-MCQ-085",
+    "AP1-U2-MCQ-086", "AP1-U2-MCQ-087", "AP1-U2-MCQ-088"
+  ]
+}

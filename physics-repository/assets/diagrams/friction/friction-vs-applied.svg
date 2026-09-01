@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 244" role="img"
+     aria-label="A graph of friction force against applied force. While the object stays still, friction rises along the 45-degree line f equals the applied force. It reaches a maximum of mu-s times F-N, the largest static friction. The moment the applied force exceeds that, the object slips and the friction drops to a lower constant value, mu-k times F-N — kinetic friction, which does not change as the applied force grows.">
+  <!-- Hand-authored graph. Labels placed clear of the axes, the curve,
+       the guide lines, and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="fr-ax" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="72" y1="200" x2="352" y2="200" stroke="#8b96a5" stroke-width="1.5" marker-end="url(#fr-ax)"/>
+  <line x1="72" y1="200" x2="72" y2="20" stroke="#8b96a5" stroke-width="1.5" marker-end="url(#fr-ax)"/>
+  <text x="212" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">applied force</text>
+  <text x="72" y="13" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">friction force</text>
+
+  <!-- guide lines to the two friction levels -->
+  <line x1="72" y1="72" x2="200" y2="72" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+  <line x1="72" y1="108" x2="332" y2="108" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+  <line x1="200" y1="200" x2="200" y2="72" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <text x="66" y="72" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#f85149">&#956;&#8347; F&#8345;</text>
+  <text x="66" y="108" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#f85149">&#956;&#8342; F&#8345;</text>
+
+  <!-- the friction curve -->
+  <!-- static branch: f = F_app, the 45-degree line up to the breakaway -->
+  <line x1="72" y1="200" x2="200" y2="72" stroke="#f85149" stroke-width="2.5"/>
+  <!-- the drop at breakaway -->
+  <line x1="200" y1="72" x2="200" y2="108" stroke="#f85149" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <!-- kinetic branch: constant f_k -->
+  <line x1="200" y1="108" x2="332" y2="108" stroke="#f85149" stroke-width="2.5"/>
+
+  <!-- region labels -->
+  <text x="124" y="124" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5" transform="rotate(-45 124 124)">static: f&#8347; = F<tspan font-size="8" dy="2">app</tspan></text>
+  <text x="266" y="96" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">kinetic: f&#8342; = &#956;&#8342; F&#8345;</text>
+
+  <text x="200" y="216" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">object slips</text>
+</svg>

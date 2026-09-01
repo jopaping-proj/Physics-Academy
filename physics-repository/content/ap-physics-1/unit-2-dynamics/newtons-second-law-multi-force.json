@@ -10,7 +10,7 @@
   "cedTopic": "2.5",
   "clusterId": "2.5",
   "lessonTitle": "Newton's Second Law: Multi-Force and Two-Axis Problems",
-  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "status": "approved — physics reviewed 2026-09-01",
   "prerequisites": [
     "Newton's second law $\\vec{F}_{net} = m\\vec{a}$ for a single net force (Lesson 4)",
     "Building a free-body diagram and resolving an angled force into components (Lesson 2)",
