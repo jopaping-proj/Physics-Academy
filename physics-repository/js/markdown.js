@@ -38,13 +38,36 @@ export function mdInline(text) {
     .replace(/&gt;/g, ">");
 }
 
+/** Split one pipe-table row into trimmed cell strings, dropping the
+ * empty cells that a leading / trailing `|` produces. */
+function tableCells(line) {
+  const cells = line.split("|").map((c) => c.trim());
+  if (cells.length && cells[0] === "") cells.shift();
+  if (cells.length && cells[cells.length - 1] === "") cells.pop();
+  return cells;
+}
+
+/** A GFM-style pipe table: header row, a `|---|---|` separator row
+ * (dashes / colons / pipes / spaces only), then body rows. */
+function renderTable(lines) {
+  const header = tableCells(lines[0]);
+  const rows = lines.slice(2).map(tableCells);
+  const thead = `<thead><tr>${header.map((c) => `<th>${mdInline(c)}</th>`).join("")}</tr></thead>`;
+  const tbody = rows
+    .map(
+      (r) =>
+        `<tr>${header.map((_, i) => `<td>${mdInline(r[i] ?? "")}</td>`).join("")}</tr>`
+    )
+    .join("");
+  return `<div class="md-table-wrap"><table class="md-table">${thead}<tbody>${tbody}</tbody></table></div>`;
+}
+
 /**
- * Converts a blank-line-separated block of Markdown into <p> paragraphs
- * — except a block where every line starts with "- ", which becomes a
- * <ul class="md-list"> instead (styled in css/base.css). This is the
- * only block-level construct beyond paragraphs; keep content authoring
- * to paragraphs and this one list form rather than reaching for
- * anything richer.
+ * Converts a blank-line-separated block of Markdown into <p> paragraphs.
+ * Two richer block forms are supported: a block where every line starts
+ * with "- " becomes a <ul class="md-list">, and a GFM pipe table (header
+ * row + `|---|` separator + rows) becomes a <table class="md-table">.
+ * Keep authoring to paragraphs, this list form, and small tables.
  */
 export function mdToHtml(md) {
   if (!md) return "";
@@ -53,11 +76,21 @@ export function mdToHtml(md) {
     .split(/\n\s*\n/)
     .map((block) => {
       const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
-      const isList = lines.length > 0 && lines.every((l) => l.startsWith("- "));
+      if (!lines.length) return "";
+
+      const isTable =
+        lines.length >= 2 &&
+        lines[0].includes("|") &&
+        /^\|?[\s:|-]*-[\s:|-]*\|?$/.test(lines[1]) &&
+        lines[1].includes("|");
+      if (isTable) return renderTable(lines);
+
+      const isList = lines.every((l) => l.startsWith("- "));
       if (isList) {
         const items = lines.map((l) => `<li>${mdInline(l.slice(2))}</li>`).join("\n");
         return `<ul class="md-list">${items}</ul>`;
       }
+
       return `<p>${mdInline(block)}</p>`;
     })
     .join("\n");

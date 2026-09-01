@@ -107,6 +107,36 @@ ul.md-list li {
   max-width: var(--line-length-max);
 }
 
+/* ---- Prose tables (js/markdown.js pipe-table output) ---- */
+.md-table-wrap {
+  margin: 0 0 var(--space-3);
+  overflow-x: auto;
+}
+
+table.md-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: var(--text-sm);
+}
+
+table.md-table th,
+table.md-table td {
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+table.md-table th {
+  color: var(--text-primary);
+  font-weight: 600;
+  border-bottom-color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+table.md-table tr:last-child td { border-bottom: none; }
+table.md-table td { color: var(--text-secondary); }
+
 [hidden] {
   display: none !important;
 }

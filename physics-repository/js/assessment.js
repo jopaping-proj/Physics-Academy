@@ -142,6 +142,8 @@ function mountFormativeCheck(container, question) {
 
   if (question.type === "multiple-choice" && Array.isArray(question.choices)) {
     renderMultipleChoice(container, question);
+  } else if (question.type === "free-response" || Array.isArray(question.parts)) {
+    renderFreeResponse(container, question);
   } else {
     const prompt = document.createElement("p");
     prompt.innerHTML = mdInline(question.question || "");
@@ -153,6 +155,80 @@ function mountFormativeCheck(container, question) {
   }
 
   typesetMath(container);
+}
+
+/**
+ * Renders a free-response question: the scenario, each part with its
+ * point value and a progressive-disclosure "Model response", the point
+ * total, and optional scoring notes. FRQs are self-check — the student
+ * works them on paper and grades against the model answer — so there is
+ * no submit, and the deck treats the card as content (js/lesson-slides.js).
+ */
+function renderFreeResponse(container, question) {
+  container.classList.add("frq");
+  container.setAttribute("role", "group");
+  container.setAttribute("aria-label", "Free-response question");
+
+  const note = document.createElement("p");
+  note.className = "frq__note";
+  note.innerHTML =
+    "<strong>Free response.</strong> Work every part on paper, then open each model response and grade yourself against it.";
+  container.appendChild(note);
+
+  const scenario = document.createElement("p");
+  scenario.className = "frq__scenario";
+  scenario.innerHTML = mdInline(question.scenario || question.question || "");
+  container.appendChild(scenario);
+
+  const parts = Array.isArray(question.parts) ? question.parts : [];
+  if (parts.length) {
+    const list = document.createElement("ol");
+    list.className = "frq__parts";
+    parts.forEach((part) => {
+      const li = document.createElement("li");
+      const prompt = document.createElement("p");
+      prompt.className = "frq__prompt";
+      const pts =
+        part.points != null
+          ? ` <span class="frq__points">(${part.points} pt${part.points === 1 ? "" : "s"})</span>`
+          : "";
+      prompt.innerHTML = mdInline(part.prompt || "") + pts;
+      li.appendChild(prompt);
+
+      if (part.modelResponse) {
+        const d = document.createElement("details");
+        d.className = "disclosure";
+        const s = document.createElement("summary");
+        s.textContent = "Model response";
+        d.appendChild(s);
+        const body = document.createElement("div");
+        body.innerHTML = mdInline(part.modelResponse);
+        d.appendChild(body);
+        li.appendChild(d);
+      }
+      list.appendChild(li);
+    });
+    container.appendChild(list);
+  }
+
+  if (question.totalPoints != null) {
+    const total = document.createElement("p");
+    total.className = "frq__total";
+    total.textContent = `Total: ${question.totalPoints} points`;
+    container.appendChild(total);
+  }
+
+  if (question.scoringNotes) {
+    const d = document.createElement("details");
+    d.className = "disclosure";
+    const s = document.createElement("summary");
+    s.textContent = "Scoring notes";
+    d.appendChild(s);
+    const body = document.createElement("p");
+    body.innerHTML = mdInline(question.scoringNotes);
+    d.appendChild(body);
+    container.appendChild(d);
+  }
 }
 
 /**
