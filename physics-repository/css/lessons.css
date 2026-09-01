@@ -589,6 +589,18 @@
 /* ---- unit index (concept-check → modules → concept-check) ---- */
 .unit-index { max-width: 760px; margin: 0 auto; padding: var(--space-5); }
 .unit-index__intro { padding: var(--space-4); margin: var(--space-3) 0 var(--space-5); }
+/* ---- external-html pages (a tracked, approved HTML page shown inside our
+   site chrome — see build.js's "external-html" lesson format) ---- */
+.external-html-shell { max-width: 900px; margin: 0 auto; padding: var(--space-5); }
+.external-html-card {
+  background: #ffffff;
+  color: #172033;
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-panel);
+}
+.external-html-card img { border-radius: var(--radius-sm); }
+
 .unit-index__outcomes { margin: 0 0 var(--space-5); }
 .unit-index__outcomes h2 { margin-bottom: var(--space-3); }
 .unit-index__outcome-cluster { margin-bottom: var(--space-2); padding: var(--space-3) var(--space-4); }

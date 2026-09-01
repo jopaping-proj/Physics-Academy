@@ -175,6 +175,49 @@ function buildLesson(file, templates) {
   const depth = outRel.split(path.sep).length - 1;
   const rootPrefix = depth > 0 ? "../".repeat(depth) : "./";
 
+  // Tracked, independently validated HTML package. The JSON wrapper keeps
+  // course registration and navigation in the common content architecture,
+  // while preserving the approved form without a lossy schema conversion.
+  // The source's own markup, CSS, and script are used verbatim — only
+  // wrapped in the site header + theme (build/templates/external-html.html)
+  // so it reads as part of Physics Academy instead of a bare document;
+  // nothing about the approved instrument's questions or behavior changes.
+  if (lesson.format === "external-html") {
+    const sourcePath = path.join(ROOT, lesson.sourceFile || "");
+    if (!fs.existsSync(sourcePath)) throw new Error(`${relFromContent}: missing external HTML source ${lesson.sourceFile}`);
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    const source = fs.readFileSync(sourcePath, "utf8");
+    const titleMatch = /<title>([\s\S]*?)<\/title>/i.exec(source);
+    const styleMatch = /<style>([\s\S]*?)<\/style>/i.exec(source);
+    const bodyMatch = /<body[^>]*>([\s\S]*)<\/body>/i.exec(source);
+    if (titleMatch && bodyMatch) {
+      // retarget a `body{...}` selector (top-level or inside @media) to the
+      // card that now holds this content, so the source's own typesetting
+      // governs the card rather than bleeding onto our page chrome.
+      const style = (styleMatch ? styleMatch[1] : "").replace(/([{},]\s*|^\s*)body(\s*\{)/g, "$1.external-html-card$2");
+      const html = renderTemplate(templates.externalHtml.replaceAll("{{ROOT}}", rootPrefix), {
+        TITLE: esc((titleMatch[1] || lesson.lessonTitle || "").trim()),
+        BREADCRUMB: [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "),
+        SOURCE_STYLE: style,
+        SOURCE_BODY: bodyMatch[1],
+      });
+      fs.writeFileSync(outPath, html, "utf8");
+    } else {
+      // couldn't confidently extract title/style/body — ship the tracked
+      // source byte-for-byte rather than risk mangling an approved page.
+      console.warn(`[build] WARNING: ${relFromContent} — couldn't parse <title>/<body> for the site shell; copied verbatim (unthemed).`);
+      fs.copyFileSync(sourcePath, outPath);
+    }
+    if (lesson.assetDirectory?.source && lesson.assetDirectory?.destination) {
+      const assetSource = path.join(ROOT, lesson.assetDirectory.source);
+      const assetTarget = path.resolve(path.dirname(outPath), lesson.assetDirectory.destination);
+      if (!fs.existsSync(assetSource)) throw new Error(`${relFromContent}: missing external asset directory ${lesson.assetDirectory.source}`);
+      fs.cpSync(assetSource, assetTarget, { recursive: true });
+    }
+    console.log(`[build] ${relFromContent} -> dist/${outRel} (external HTML package)`);
+    return { ...lesson, outRel };
+  }
+
   // Concept-inventory pages are not slide decks — a single form, score-only
   // feedback, questions and options shuffled at runtime (js/concept-inventory.js).
   // See docs/ap-physics-1-unit-2-architecture.md §10.
@@ -276,12 +319,24 @@ function buildHomepage(lessons) {
         ? `Lesson ${l.lessonNumber} — ${l.lessonTitle}`
         : l.lessonTitle;
 
+  // "Unit 2: Kinematics" -> 2. Units render in this numeric order, not the
+  // order the file walk happened to first meet them (which depends on
+  // which unit had a built lesson lowest in alpha order — see the 2026-09
+  // BASIS Physics 8 integration, where "Unit 2" briefly rendered before
+  // "Unit 1" on the homepage for exactly this reason).
+  const unitNumber = (unit) => {
+    const m = /Unit\s+(\d+)/i.exec(unit || "");
+    return m ? Number(m[1]) : Infinity;
+  };
+
   const courseList = Object.entries(byCourse)
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([course, ls]) => {
       // group by unit; a unit-index page, if present, heads its unit
       const byUnit = {};
       for (const l of ls) (byUnit[l.unit || ""] = byUnit[l.unit || ""] || []).push(l);
       const units = Object.entries(byUnit)
+        .sort(([a], [b]) => unitNumber(a) - unitNumber(b) || a.localeCompare(b))
         .map(([unit, us]) => {
           const idx = us.find((u) => u.format === "unit-index");
           const rest = us
@@ -349,6 +404,7 @@ function build() {
     lesson: fs.readFileSync(path.join(TEMPLATES_DIR, "lesson.html"), "utf8"),
     conceptInventory: fs.readFileSync(path.join(TEMPLATES_DIR, "concept-inventory.html"), "utf8"),
     unitIndex: fs.readFileSync(path.join(TEMPLATES_DIR, "unit-index.html"), "utf8"),
+    externalHtml: fs.readFileSync(path.join(TEMPLATES_DIR, "external-html.html"), "utf8"),
   };
   // Build unit-index files last: they check which module pages actually
   // got emitted into dist/.

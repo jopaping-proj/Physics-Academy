@@ -9,28 +9,23 @@
 <link rel="stylesheet" href="{{ROOT}}css/layout.css" />
 <link rel="stylesheet" href="{{ROOT}}css/components.css" />
 <link rel="stylesheet" href="{{ROOT}}css/lessons.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+<!-- The tracked source's own <style> block, unchanged except its `body`
+     selector is retargeted to `.external-html-card` (see build.js) so its
+     approved typography/colors/spacing govern the card, not our page
+     chrome — the instrument itself is not modified. -->
+<style>
+{{SOURCE_STYLE}}
+</style>
 </head>
 <body>
 <header class="site-header">
   <a class="site-header__brand" href="{{ROOT}}index.html">Physics Academy</a>
 </header>
-
-<main class="unit-index">
+<main class="external-html-shell">
   <div class="breadcrumb">{{BREADCRUMB}}</div>
-  <h1>{{HEADING}}</h1>
-  <div class="unit-index__intro card">
-{{INTRO}}
+  <div class="external-html-card">
+{{SOURCE_BODY}}
   </div>
-
-{{OUTCOMES}}
-
-  <ol class="unit-index__sequence">
-{{SEQUENCE}}
-  </ol>
 </main>
 </body>
 </html>
