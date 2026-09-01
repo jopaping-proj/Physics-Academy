@@ -13,7 +13,7 @@
     { "type": "module", "label": "Lesson 2", "slug": "forces-and-free-body-diagrams", "title": "Forces and Free-Body Diagrams", "cluster": "C2.2", "status": "draft" },
     { "type": "module", "label": "Lesson 3", "slug": "newtons-first-law", "title": "Newton's First Law: Inertia and Equilibrium", "cluster": "C2.1", "status": "draft" },
     { "type": "module", "label": "Lesson 4", "slug": "newtons-second-law", "title": "Newton's Second Law: Force, Mass, and Acceleration", "cluster": "C2.3", "status": "reference" },
-    { "type": "module", "label": "Lesson 5", "slug": null, "title": "Newton's Second Law: Multi-Force and Two-Axis Problems", "cluster": "C2.5", "status": "planned" },
+    { "type": "module", "label": "Lesson 5", "slug": "newtons-second-law-multi-force", "title": "Newton's Second Law: Multi-Force and Two-Axis Problems", "cluster": "C2.5", "status": "draft" },
     { "type": "module", "label": "Lesson 6", "slug": null, "title": "Newton's Third Law: Interaction Pairs vs Balanced Forces", "cluster": "C2.6", "status": "planned" },
     { "type": "module", "label": "Lesson 7", "slug": null, "title": "Friction: Static and Kinetic", "cluster": "C2.8", "status": "planned" },
     { "type": "module", "label": "Lesson 8", "slug": null, "title": "Connected Objects and Systems", "cluster": "C2.7", "status": "planned" },

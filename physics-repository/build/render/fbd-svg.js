@@ -33,6 +33,7 @@ const COLORS = {
   amber: "#f0c27a",
   red: "#f85149",
   green: "#3fb950",
+  violet: "#b98cf0",
   object: "#e6edf3",
   surface: "#8b96a5",
 };
@@ -150,16 +151,18 @@ export function renderFbdSvg(spec) {
     obstacles.push({ x1: a.ax, y1: a.ay, x2: a.tx, y2: a.ty });
   });
 
-  // the contact surface + its hatching is a keep-out for labels too
+  // the contact surface + its hatching is a keep-out for labels too — but
+  // not for the label of a force that legitimately runs ALONG that surface
+  // (friction), which is why these are tagged `isSurface`.
   if (spec.surface) {
     if (spec.surface.side === "bottom") {
       const y = objRect.y + objRect.h;
-      obstacles.push({ x1: CX - 200, y1: y, x2: CX + 200, y2: y });
-      obstacles.push({ x1: CX - 200, y1: y + 10, x2: CX + 200, y2: y + 10 });
+      obstacles.push({ x1: CX - 200, y1: y, x2: CX + 200, y2: y, isSurface: true });
+      obstacles.push({ x1: CX - 200, y1: y + 10, x2: CX + 200, y2: y + 10, isSurface: true });
     } else if (spec.surface.side === "left") {
       const x = objRect.x;
-      obstacles.push({ x1: x, y1: CY - 200, x2: x, y2: CY + 200 });
-      obstacles.push({ x1: x - 10, y1: CY - 200, x2: x - 10, y2: CY + 200 });
+      obstacles.push({ x1: x, y1: CY - 200, x2: x, y2: CY + 200, isSurface: true });
+      obstacles.push({ x1: x - 10, y1: CY - 200, x2: x - 10, y2: CY + 200, isSurface: true });
     }
   }
 
@@ -197,10 +200,14 @@ export function renderFbdSvg(spec) {
       alongY = uy;
     }
 
+    // `label.lift` raises the seed off a bottom surface (a friction label
+    // lifted clear of the floor it slides along); such a label also ignores
+    // the surface obstacles.
+    const lift = hint && hint.lift ? hint.lift : 0;
     let step = hint && hint.atTail ? 0 : 8;
     const seed = () => {
       let x = originX + alongX * step + (anchorH === "start" ? 2 : anchorH === "end" ? -2 : 0);
-      let y = originY + alongY * step + (anchorV === "hanging" ? 2 : anchorV === "baseline" ? -3 : 0);
+      let y = originY + alongY * step - lift + (anchorV === "hanging" ? 2 : anchorV === "baseline" ? -3 : 0);
       return [x, y];
     };
     let [lx, ly] = seed();
@@ -209,7 +216,7 @@ export function renderFbdSvg(spec) {
     let guard = 0;
     while (guard++ < 40) {
       const hitsObject = rectsOverlap(rect, objRect, 3);
-      const hitsArrow = obstacles.some((s) => !rectSegClear(rect, s, 4));
+      const hitsArrow = obstacles.some((s) => (lift && s.isSurface ? false : !rectSegClear(rect, s, 4)));
       const hitsLabel = placedLabels.some((L) => rectsOverlap(rect, L, 3));
       if (!hitsObject && !hitsArrow && !hitsLabel) break;
       step += 5;
@@ -246,6 +253,37 @@ export function renderFbdSvg(spec) {
         `  <text x="${r(left + mainGlyphW)}" y="${r(ly + 3.5)}" ${common} font-size="${SUB_FS}" font-weight="600">${m.sub}</text>`
       );
     }
+  }
+
+  // angle marks: an arc at the object centre between the horizontal and a
+  // ray at `deg`, with a short dashed horizontal reference and a label.
+  // spec.angles: [{ deg, side: "right"|"left", label }]
+  const angleParts = [];
+  for (const ang of spec.angles || []) {
+    const R = ang.r || 26;
+    const right = ang.side !== "left";
+    const deg = ang.deg;
+    const base = right ? 0 : 180;
+    const rad0 = (base * Math.PI) / 180;
+    const rad1 = ((right ? deg : 180 - deg) * Math.PI) / 180;
+    const sx = CX + R * Math.cos(rad0);
+    const sy = CY - R * Math.sin(rad0);
+    const ex = CX + R * Math.cos(rad1);
+    const ey = CY - R * Math.sin(rad1);
+    const sweep = right ? 0 : 1;
+    angleParts.push(
+      `  <line x1="${r(CX)}" y1="${r(CY)}" x2="${r(sx + (right ? 6 : -6))}" y2="${r(CY)}" stroke="${COLORS.surface}" stroke-width="1" stroke-dasharray="3 2"/>`,
+      `  <path d="M ${r(sx)} ${r(sy)} A ${R} ${R} 0 0 ${sweep} ${r(ex)} ${r(ey)}" fill="none" stroke="${COLORS.surface}" stroke-width="1.2"/>`
+    );
+    const midRad = ((right ? deg / 2 : 180 - deg / 2) * Math.PI) / 180;
+    const lx = CX + (R + 12) * Math.cos(midRad);
+    const ly = CY - (R + 12) * Math.sin(midRad);
+    angleParts.push(
+      `  <text x="${r(lx)}" y="${r(ly)}" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="11" fill="${COLORS.surface}">${escapeAttr(ang.label || deg + "°")}</text>`
+    );
+    grow(lx - 10, ly - 8);
+    grow(lx + 10, ly + 8);
+    grow(right ? sx + 8 : sx - 8, CY);
   }
 
   // surface (drawn last-but-under; add to bbox)
@@ -298,6 +336,7 @@ ${defs}
   </defs>
 ${surfaceParts}${objectPart}
 ${arrowParts.join("\n")}
+${angleParts.join("\n")}
 ${labelParts.join("\n")}
 </svg>
 `;

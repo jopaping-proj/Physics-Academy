@@ -1,0 +1,186 @@
+[
+  {
+    "id": "AP1-U2-MCQ-071",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "Three horizontal forces act on a $5.0\\text{ kg}$ block on frictionless ice: $30\\text{ N}$ right, $10\\text{ N}$ right, and $15\\text{ N}$ left. The block's acceleration is:",
+    "choices": ["$11\\text{ m/s}^2$ right", "$5.0\\text{ m/s}^2$ right", "$1.0\\text{ m/s}^2$ right", "$3.0\\text{ m/s}^2$ left"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — right is positive: $F_{net} = 30 + 10 - 15 = 25\\text{ N}$ right. Then $a = F_{net}/m = 25/5.0 = 5.0\\text{ m/s}^2$ right.",
+      "incorrect": {
+        "0": "This adds all three magnitudes ($55\\text{ N}$). The $15\\text{ N}$ force points left, so it is $-15\\text{ N}$.",
+        "2": "This looks like $(30 + 10 - 15)/5$ mis-evaluated. $30 + 10 - 15 = 25$, and $25/5.0 = 5.0$.",
+        "3": "The rightward forces ($40\\text{ N}$) beat the leftward force ($15\\text{ N}$), so the net force and acceleration are to the right."
+      }
+    },
+    "hint": ["Right is $+$. Give the $15\\text{ N}$ left force a minus sign, sum, divide by mass."],
+    "solution": "$F_{net} = 30 + 10 - 15 = 25\\text{ N}$; $a = 25/5.0 = 5.0\\text{ m/s}^2$ right."
+  },
+  {
+    "id": "AP1-U2-MCQ-072",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "A box slides along a level floor while being pushed by a rod at an angle **below** the horizontal (down and forward). To find the normal force from the floor, which equation should you use?",
+    "choices": [
+      "$\\sum F_x = ma_x$, the equation along the motion",
+      "$\\sum F_y = 0$, because the box has no vertical acceleration",
+      "$\\sum F_y = ma_y$ with $a_y = g$",
+      "$F_N = mg$ directly, since the floor is level"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the box stays on the floor, so its vertical acceleration is zero and $\\sum F_y = 0$. That equation contains $F_N$ (up), $mg$ (down), and the push's downward component, so it solves for $F_N$ — which here comes out *larger* than $mg$.",
+      "incorrect": {
+        "0": "The $x$-equation is about the motion and the acceleration; it does not contain the normal force.",
+        "2": "$a_y = g$ is free fall. The box is on the floor with $a_y = 0$.",
+        "3": "$F_N = mg$ only when $F_N$ and $mg$ are the *only* vertical forces. The angled push adds a vertical component, so you must write the full $\\sum F_y = 0$."
+      }
+    },
+    "hint": ["Which axis has zero acceleration? Which equation on that axis contains $F_N$?"],
+    "solution": "Use $\\sum F_y = 0$ (no vertical acceleration); it contains $F_N$ and solves for it."
+  },
+  {
+    "id": "AP1-U2-MCQ-073",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A $10\\text{ kg}$ suitcase is pulled along the floor by a handle at $37°$ above the horizontal with a force of $50\\text{ N}$. Using $g = 9.8\\text{ m/s}^2$ and $\\sin 37° = 0.60$, the normal force from the floor is:",
+    "choices": ["$98\\text{ N}$", "$68\\text{ N}$", "$128\\text{ N}$", "$30\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $\\sum F_y = 0$: $F_N + F\\sin 37° - mg = 0$, so $F_N = mg - F\\sin 37° = (10)(9.8) - (50)(0.60) = 98 - 30 = 68\\text{ N}$. The handle pulls up, reducing the load on the floor.",
+      "incorrect": {
+        "0": "$98\\text{ N} = mg$ ignores the handle's upward component. An angled pull *reduces* the normal force.",
+        "2": "$128\\text{ N}$ *adds* the handle's vertical component. That is what happens for a *downward* push; this handle pulls upward, so you subtract.",
+        "3": "$30\\text{ N}$ is the handle's vertical component $F\\sin 37°$ alone, not the normal force."
+      }
+    },
+    "hint": ["$\\sum F_y = 0$ with the handle's upward component. $F_N = mg - F\\sin 37°$."],
+    "solution": "$F_N = mg - F\\sin 37° = 98 - 30 = 68\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-074",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "question": "A $8.0\\text{ kg}$ crate is pulled across a floor by a rope at $37°$ above horizontal with tension $50\\text{ N}$. The kinetic friction force on the crate is $16\\text{ N}$. Using $\\cos 37° = 0.80$, the crate's acceleration is:",
+    "choices": ["$4.2\\text{ m/s}^2$", "$3.0\\text{ m/s}^2$", "$5.0\\text{ m/s}^2$", "$2.0\\text{ m/s}^2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — along the motion: $\\sum F_x = ma_x$, so $T\\cos 37° - f = ma_x$. Isolate: $a_x = \\dfrac{T\\cos 37° - f}{m} = \\dfrac{(50)(0.80) - 16}{8.0} = \\dfrac{40 - 16}{8.0} = \\dfrac{24}{8.0} = 3.0\\text{ m/s}^2$.",
+      "incorrect": {
+        "0": "$4.2\\text{ m/s}^2$ uses the full $50\\text{ N}$ tension: $(50 - 16)/8.0$. Only the horizontal component $T\\cos 37° = 40\\text{ N}$ acts along the motion.",
+        "2": "$5.0\\text{ m/s}^2$ is $T\\cos 37°/m = 40/8.0$ — it forgets to subtract friction.",
+        "3": "$2.0\\text{ m/s}^2$ subtracts friction twice, or uses $T\\sin 37°$. The horizontal component is $T\\cos 37° = 40\\text{ N}$."
+      }
+    },
+    "hint": ["Only $T\\cos 37°$ is along the motion. $\\sum F_x = ma_x$: $T\\cos 37° - f = ma_x$."],
+    "solution": "$a_x = \\dfrac{(50)(0.80) - 16}{8.0} = \\dfrac{24}{8.0} = 3.0\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-075",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "transfer",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "question": "A $1500\\text{ kg}$ car skids to a stop from $30\\text{ m/s}$ in a distance of $75\\text{ m}$ on a level road. The friction force from the road (the only horizontal force) is:",
+    "choices": ["$6000\\text{ N}$", "$9000\\text{ N}$", "$3000\\text{ N}$", "$18\\,000\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — kinematics first: $a = \\dfrac{v^2 - v_0^2}{2\\Delta x} = \\dfrac{0 - 30^2}{2(75)} = \\dfrac{-900}{150} = -6.0\\text{ m/s}^2$. Then $\\sum F_x = ma$: with friction the only horizontal force, $-f = ma$, so $f = -ma = -(1500)(-6.0) = 9000\\text{ N}$, backward.",
+      "incorrect": {
+        "0": "$6000\\text{ N}$ would come from $|a| = 4.0\\text{ m/s}^2$. Recheck: $a = 900/150 = 6.0\\text{ m/s}^2$.",
+        "2": "$3000\\text{ N}$ halves the answer — perhaps using $\\Delta x = 150\\text{ m}$ or $m = 750\\text{ kg}$.",
+        "3": "$18\\,000\\text{ N}$ multiplies $m$ by $v$ ($1500 \\times 12$) or mis-handles the kinematics. Use $a = (v^2 - v_0^2)/(2\\Delta x)$."
+      }
+    },
+    "hint": ["$a$ from $v^2 = v_0^2 + 2a\\Delta x$, then $f = m|a|$ (friction is the only horizontal force)."],
+    "solution": "$a = -900/150 = -6.0\\text{ m/s}^2$; $f = m|a| = (1500)(6.0) = 9000\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-076",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "question": "A crate is dragged across a rough floor by a rope of **fixed tension** $T$, at an angle $\\theta$ above the horizontal. The kinetic friction force equals $\\mu_k$ times the normal force. As $\\theta$ is increased from $0°$ toward $90°$, the crate's forward acceleration:",
+    "choices": [
+      "always increases, because the rope lifts more of the weight and reduces friction",
+      "always decreases, because less of the tension points forward",
+      "first increases, then decreases — there is an angle that gives the maximum acceleration",
+      "does not change, because the tension is fixed"
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — $ma_x = T\\cos\\theta - \\mu_k(mg - T\\sin\\theta)$. Raising $\\theta$ *helps* by cutting friction (the $+\\mu_k T\\sin\\theta$ term) but *hurts* by shrinking the forward pull ($T\\cos\\theta$). At small $\\theta$ the friction saving wins; at large $\\theta$ the loss of forward pull wins. Setting the derivative to zero gives a best angle, $\\tan\\theta = \\mu_k$.",
+      "incorrect": {
+        "0": "Reducing friction helps, but past a certain angle the shrinking forward component $T\\cos\\theta$ costs more than the friction saving.",
+        "1": "Losing forward pull hurts, but at small angles the friction reduction from $T\\sin\\theta$ more than makes up for it.",
+        "3": "The tension magnitude is fixed, but its *components* — and the normal force, and therefore friction — all change with $\\theta$."
+      }
+    },
+    "hint": ["Write $ma_x = T\\cos\\theta - \\mu_k(mg - T\\sin\\theta)$. One term grows and one shrinks as $\\theta$ rises — what does that imply about a maximum?"],
+    "solution": "$ma_x = T\\cos\\theta - \\mu_k(mg - T\\sin\\theta)$: raising $\\theta$ trades less forward pull for less friction, so $a_x$ peaks at an intermediate angle ($\\tan\\theta = \\mu_k$)."
+  }
+]

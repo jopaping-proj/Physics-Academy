@@ -193,6 +193,9 @@
       "id": "chunk-3",
       "title": "Solving Equilibrium Problems",
       "concept": "To find an unknown force on an object in equilibrium:\n\n1. Draw the free-body diagram.\n2. Choose $x$ and $y$ axes (pick directions that make the algebra easy).\n3. Resolve every angled force into components — a force $F$ at angle $\\theta$ to the $x$-axis has an $x$-part $F\\cos\\theta$ and a $y$-part $F\\sin\\theta$; **justify the sine/cosine choice from the geometry**, don't guess.\n4. Write $\\sum F_x = 0$ and $\\sum F_y = 0$.\n5. Solve the two equations for up to two unknowns.\n\n**Symmetry is a shortcut.** If two forces are mirror images about an axis, one equilibrium equation becomes automatic ($0 = 0$) and the other carries all the information.\n\nA key pattern: an object hung from **two cables at a shallow angle** needs a large tension, because only the small vertical component $T\\sin\\theta$ of each cable holds it up. As the cables flatten ($\\theta \\to 0$), $T \\to \\infty$ — which is why every real cable, clothesline, and power line sags.",
+      "conceptFigures": [
+        { "svg": "first-law/shallow-cables-scene.svg", "caption": "A sign hung from two cables that sag only slightly, so $\\theta$ is small. Each cable can only pull *along its own length*, so the part that actually holds the sign up — $T\\sin\\theta$ — is tiny, and the tension $T$ must be huge to compensate." }
+      ],
       "figures": [
         { "svg": "first-law/fbd-lamp-two-cables.svg", "caption": "A lamp hung from two cables, each $30°$ above the horizontal. Only the vertical components $F_T\\sin 30°$ support the weight; the horizontal components cancel by symmetry." }
       ],

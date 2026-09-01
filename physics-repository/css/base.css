@@ -97,12 +97,19 @@ mark.term-highlight {
 }
 
 /* ---- Prose lists (js/markdown.js "- " bullet output) ---- */
-ul.md-list {
+ul.md-list,
+ol.md-list {
   margin: 0 0 var(--space-3);
   padding-left: var(--space-4);
 }
 
-ul.md-list li {
+ol.md-list--ordered {
+  list-style: decimal;
+  padding-left: var(--space-5);
+}
+
+ul.md-list li,
+ol.md-list li {
   margin-bottom: var(--space-1);
   max-width: var(--line-length-max);
 }

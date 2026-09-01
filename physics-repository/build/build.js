@@ -78,7 +78,9 @@
  * }
  * ("md" fields support the shared Markdown subset in js/markdown.js —
  * **bold**, *italic*, ==highlight==, [[key term]], `code`, a "- " bullet
- * list, and a GFM pipe table.)
+ * list, a "1." ordered list, and a GFM pipe table. `$…$` / `$$…$$` math
+ * is passed straight through for KaTeX; use `$$` for a stand-alone
+ * equation that should render large and centred.)
  *
  * ---- CONCEPT-INVENTORY PAGES ----
  * A content file with `"format": "concept-inventory"` is NOT a slide

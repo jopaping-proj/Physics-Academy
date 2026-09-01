@@ -1,0 +1,499 @@
+{
+  "id": "ap1-u2-n2mf",
+  "slug": "newtons-second-law-multi-force",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Newton's Laws",
+  "lessonNumber": "5",
+  "objective": "C2.5",
+  "cedTopic": "2.5",
+  "clusterId": "2.5",
+  "lessonTitle": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Newton's second law $\\vec{F}_{net} = m\\vec{a}$ for a single net force (Lesson 4)",
+    "Building a free-body diagram and resolving an angled force into components (Lesson 2)",
+    "Equilibrium: $\\sum F_x = 0$ and $\\sum F_y = 0$ when $\\vec{a} = 0$ (Lesson 3)",
+    "The constant-acceleration relation $v^2 = v_0^2 + 2a\\,\\Delta x$ (Unit 1)"
+  ],
+  "majorObjective": "Solve motion problems with three or more forces by applying Newton's second law independently along two perpendicular axes — using $\\sum F_\\perp = 0$ to find the normal force and $\\sum F_\\parallel = ma$ along the motion — and work backward from a known acceleration to find an unknown force.",
+  "subObjectives": [
+    "Sum three or more signed forces along one axis to get the net force, then find the acceleration from $a = F_{net}/m$.",
+    "State that an object on a surface has **no acceleration perpendicular to the surface**, so $\\sum F_\\perp = 0$ on that axis.",
+    "Use $\\sum F_y = 0$ to solve for the normal force, and recognise that it is **not** always equal to $mg$.",
+    "Use $\\sum F_x = ma_x$ along the direction of motion to solve for the acceleration.",
+    "Resolve an angled force into components and place each component on the correct axis equation.",
+    "Given the acceleration (measured, or found from kinematics), work backward with $F_{net} = ma$ to isolate an unknown force.",
+    "Combine two perpendicular forces into a net force and acceleration using the Pythagorean theorem."
+  ],
+  "hook": {
+    "prompt": "A 5.0 kg box on a frictionless table is pulled by two horizontal ropes at right angles: one pulls with **30 N to the east**, the other with **40 N to the north**. What is the magnitude of the box's acceleration?",
+    "choices": [
+      "$14\\text{ m/s}^2$ — add the forces ($30 + 40 = 70\\text{ N}$) and divide by mass.",
+      "$10\\text{ m/s}^2$ — the net force is $\\sqrt{30^2 + 40^2} = 50\\text{ N}$, then $a = 50/5.0$.",
+      "$2\\text{ m/s}^2$ — subtract the forces ($40 - 30 = 10\\text{ N}$) and divide by mass.",
+      "$7\\text{ m/s}^2$ each way, so the box moves diagonally at $7\\text{ m/s}^2$."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "You can already apply $\\vec{F}_{net} = m\\vec{a}$ when you have a single net force (Lesson 4), and you can set $\\sum F_x = 0$ and $\\sum F_y = 0$ for an object in equilibrium (Lesson 3). This lesson keeps the free-body diagram and the component idea from Lesson 2, but now the object **is** accelerating along one axis while staying put on the other.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Adding Up Several Forces on One Line",
+      "concept": "When more than two forces act **along the same line**, the net force is still just their **signed sum**. Pick a positive direction, give each force a $+$ or $-$, add:\n\n$$F_{net} = \\sum F = F_1 + F_2 + F_3 + \\dots$$\n\nThen Newton's second law gives the acceleration:\n\n$$a = \\frac{F_{net}}{m}$$\n\nThe acceleration points the same way as the net force. On a **frictionless horizontal surface**, gravity and the normal force are vertical and cancel, so they don't enter the horizontal calculation at all — but you should still draw them.\n\n==A force that points *opposite* the motion is not 'used up' — it is a real force with a minus sign, and it makes the net force (and the acceleration) smaller.==",
+      "figures": [
+        { "svg": "multi-force/fbd-three-forces.svg", "caption": "A sled on frictionless ice with three horizontal forces: a $20\\text{ N}$ push and a $15\\text{ N}$ pull forward, a $5\\text{ N}$ wind backward. Gravity and the normal force are vertical and cancel." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $6.0\\text{ kg}$ sled sits on frictionless ice. A child pushes it forward with $20\\text{ N}$, a friend pulls it forward with a rope at $15\\text{ N}$ (horizontal), and a headwind pushes back on it with $5.0\\text{ N}$. Find the sled's acceleration.",
+        "figure": { "svg": "multi-force/fbd-three-forces.svg", "caption": "The three horizontal forces on the sled. The two forward forces add; the wind subtracts." },
+        "phases": [
+          {
+            "label": "Set up",
+            "steps": [
+              "**System:** the sled. **Positive $x$:** forward (the direction of the push).",
+              "The ice is frictionless, so the vertical forces (weight, normal force) cancel and do not affect the horizontal motion.",
+              "**Knowns:** $m = 6.0\\text{ kg}$; forward forces $20\\text{ N}$ and $15\\text{ N}$; backward force $5.0\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Net force along the motion",
+            "steps": [
+              "$F_{net} = \\sum F_x = (+20) + (+15) + (-5.0)$.",
+              "$F_{net} = +30\\text{ N}$ (forward)."
+            ]
+          },
+          {
+            "label": "Newton's second law → the acceleration",
+            "steps": [
+              "Principle: $F_{net} = ma$. Solve for the target: $a = \\dfrac{F_{net}}{m}$.",
+              "Substitute: $a = \\dfrac{30\\text{ N}}{6.0\\text{ kg}} = 5.0\\text{ m/s}^2$, forward."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Units: $\\text{N/kg} = \\text{m/s}^2$. ✓",
+              "The net force is forward, so the acceleration is forward — and the wind made it smaller than the $35\\text{ N}$ of forward force alone would give ($35/6.0 \\approx 5.8\\text{ m/s}^2$). ✓"
+            ]
+          }
+        ],
+        "keyMove": "Assigning a sign to every force from one chosen positive direction, so the backward wind enters as $-5.0\\text{ N}$ rather than being dropped or added."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n2mf-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+        "objective": "C2.5",
+        "cedTopic": "2.5",
+        "clusterId": "2.5",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "net-force-equals-a-single-applied-force",
+        "question": "Three horizontal forces act on a $4.0\\text{ kg}$ block on a frictionless surface: $18\\text{ N}$ east, $10\\text{ N}$ east, and $12\\text{ N}$ west. What is the block's acceleration?",
+        "choices": [
+          "$10\\text{ m/s}^2$ east",
+          "$4.0\\text{ m/s}^2$ east",
+          "$5.0\\text{ m/s}^2$ east",
+          "$1.5\\text{ m/s}^2$ west"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — take east as positive: $F_{net} = 18 + 10 - 12 = 16\\text{ N}$ east. Then $a = F_{net}/m = 16/4.0 = 4.0\\text{ m/s}^2$ east.",
+          "incorrect": {
+            "0": "This adds all three magnitudes ($18 + 10 + 12 = 40\\text{ N}$). The $12\\text{ N}$ force points *west*, so it enters with a minus sign.",
+            "2": "This looks like $(18 + 10 - 12)/4 = 16/4$ done as $20/4$ — recheck the sum: $18 + 10 - 12 = 16$.",
+            "3": "West would require the westward force to win. $18 + 10 = 28\\text{ N}$ east beats $12\\text{ N}$ west, so the net force and acceleration are east."
+          }
+        },
+        "hint": ["Choose east as $+$. Give the $12\\text{ N}$ west force a minus sign, add all three, then divide by the mass."],
+        "solution": "$F_{net} = 18 + 10 - 12 = 16\\text{ N}$ east; $a = 16/4.0 = 4.0\\text{ m/s}^2$ east."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Two Axes at Once: the Normal Force and the Motion",
+      "concept": "Most real problems have forces that are **not** all along one line — a rope at an angle, a ramp, a push that is partly downward. The move is to use Newton's second law **separately on two perpendicular axes**.\n\nFor an object sliding along a flat surface, choose $x$ along the motion and $y$ perpendicular to it. Then:\n\n- **Perpendicular axis ($y$):** the object stays on the surface — it has **no** $y$-acceleration — so\n$$\\sum F_y = 0$$\nThis equation is what gives you the **normal force**. Because an angled rope or push changes the $y$-forces, ==the normal force is generally *not* equal to $mg$.==\n- **Motion axis ($x$):** here the object accelerates, so\n$$\\sum F_x = m a_x$$\n\nResolve every angled force into an $x$-part and a $y$-part first, then put each part in the right equation. Two equations, and usually two unknowns (the normal force and the acceleration).",
+      "figures": [
+        { "svg": "multi-force/fbd-angled-pull-accel.svg", "caption": "A crate pulled across a rough floor by a rope at $30°$ above horizontal, speeding up. The rope's vertical part $T\\sin 30°$ reduces the normal force; its horizontal part $T\\cos 30°$ beats friction, so the crate accelerates." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A $20\\text{ kg}$ crate is pulled across a rough, level floor by a rope at $30°$ above the horizontal with a tension of $120\\text{ N}$. The kinetic friction force on the crate is $40\\text{ N}$. Take $g = 9.8\\text{ m/s}^2$. Find (a) the normal force from the floor and (b) the crate's acceleration.",
+        "figure": { "svg": "multi-force/fbd-angled-pull-accel.svg", "caption": "Free-body diagram: weight down, normal force up, friction back along the floor, and the rope tension up-and-forward at $30°$." },
+        "phases": [
+          {
+            "label": "Axes and components",
+            "steps": [
+              "$x$ = horizontal (direction of motion), $y$ = vertical.",
+              "Resolve the tension: $T_x = T\\cos 30° = 120(0.866) = 104\\text{ N}$ (forward); $T_y = T\\sin 30° = 120(0.500) = 60\\text{ N}$ (up).",
+              "Weight: $mg = (20)(9.8) = 196\\text{ N}$ (down)."
+            ]
+          },
+          {
+            "label": "Vertical axis → the normal force",
+            "steps": [
+              "No vertical motion ⇒ $\\sum F_y = 0$.",
+              "Vertical forces: $F_N$ (up), $T\\sin 30°$ (up), $mg$ (down). Equation: $F_N + T\\sin 30° - mg = 0$.",
+              "Isolate the unknown: $F_N = mg - T\\sin 30°$.",
+              "Substitute: $F_N = 196 - 60 = 136\\text{ N}$. (Less than $mg$ — the rope carries part of the weight.)"
+            ]
+          },
+          {
+            "label": "Horizontal axis → the acceleration",
+            "steps": [
+              "Along the motion: $\\sum F_x = m a_x$.",
+              "Horizontal forces: $T\\cos 30°$ (forward, $+$), friction $f$ (backward, $-$). Equation: $T\\cos 30° - f = m a_x$.",
+              "Isolate the unknown: $a_x = \\dfrac{T\\cos 30° - f}{m}$.",
+              "Substitute: $a_x = \\dfrac{104 - 40}{20} = \\dfrac{64}{20} = 3.2\\text{ m/s}^2$, forward."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "The $y$-equation was $\\sum F_y = 0$ (not $= ma$) because there is no vertical acceleration — that is what let it solve for $F_N$.",
+              "$F_N < mg$ because the rope lifts; $a_x > 0$ because the forward pull beats friction. Both make sense."
+            ]
+          }
+        ],
+        "keyMove": "Two different equations for the two axes: $\\sum F_y = 0$ (no perpendicular acceleration ⇒ solve for $F_N$) and $\\sum F_x = m a_x$ (motion ⇒ solve for $a_x$). The tension's components go one to each."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n2mf-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+        "objective": "C2.5",
+        "cedTopic": "2.5",
+        "clusterId": "2.5",
+        "skill": "multi-representation-reasoning",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "normal-force-always-equals-weight",
+        "question": "A person pushes a $15\\text{ kg}$ lawnmower across level ground with a force directed along the handle, which points **down and forward at $40°$ below the horizontal**. Compared with the mower just sitting still, while it is being pushed the normal force from the ground is:",
+        "choices": [
+          "the same, $mg$, because the ground is level",
+          "larger than $mg$, because the push has a downward component that the ground must also support",
+          "smaller than $mg$, because pushing helps lift the mower",
+          "zero along the vertical axis, since the push is mostly forward"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $\\sum F_y = 0$: $F_N - mg - F_{push}\\sin 40° = 0$, so $F_N = mg + F_{push}\\sin 40° > mg$. The downward part of the push adds to what the ground must hold up, so friction (which depends on $F_N$) also increases — that is why a down-angled push is hard work.",
+          "incorrect": {
+            "0": "The ground being level does not fix $F_N$ at $mg$. Any force with a vertical component changes it — here the push points partly *down*, so $F_N > mg$.",
+            "2": "This would be true for a push angled *upward*. This handle points down and forward, so its vertical component is downward and $F_N$ increases.",
+            "3": "There is still a full vertical equation: $F_N$ up, $mg$ down, and the push's downward component. They must sum to zero because the mower does not accelerate vertically."
+          }
+        },
+        "hint": ["Write $\\sum F_y = 0$. Which way does the vertical component of a *down-and-forward* push point? Does it add to or subtract from $mg$?"],
+        "solution": "$F_N = mg + F_{push}\\sin 40°$, which is larger than $mg$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Working Backward: Find a Force from the Acceleration",
+      "concept": "Newton's second law runs in both directions. If you can find the **acceleration** — it is given, or you get it from the motion using a kinematics equation like $v^2 = v_0^2 + 2a\\,\\Delta x$ — then\n\n$$F_{net} = ma$$\n\nis a known number. Set it equal to the signed sum of the forces and **isolate the one you don't know**:\n\n$$F_{net} = F_1 + F_2 + \\dots + F_{unknown} \\quad\\Rightarrow\\quad F_{unknown} = F_{net} - (F_1 + F_2 + \\dots)$$\n\nThis is how you find a friction force from a stopping distance, a cable tension from an elevator's acceleration, or a thrust from a measured speed-up.",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A $1200\\text{ kg}$ car travelling at $20\\text{ m/s}$ on a level road brakes to a stop in $40\\text{ m}$. Assuming the total friction force from the road is the only horizontal force, find its size.",
+        "phases": [
+          {
+            "label": "Get the acceleration from the motion",
+            "steps": [
+              "Constant-acceleration relation: $v^2 = v_0^2 + 2a\\,\\Delta x$.",
+              "Isolate $a$: $a = \\dfrac{v^2 - v_0^2}{2\\,\\Delta x}$.",
+              "Substitute: $a = \\dfrac{0 - (20)^2}{2(40)} = \\dfrac{-400}{80} = -5.0\\text{ m/s}^2$ (a deceleration)."
+            ]
+          },
+          {
+            "label": "Newton's second law → the force",
+            "steps": [
+              "$F_{net} = ma$. The only horizontal force is friction $f$, pointing opposite the motion, so $F_{net} = -f$.",
+              "$-f = ma \\;\\Rightarrow\\; f = -ma$.",
+              "Substitute: $f = -(1200)(-5.0) = 6000\\text{ N}$, directed backward (opposite the car's motion)."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$6000\\text{ N}$ on $1200\\text{ kg}$ gives $|a| = 5.0\\text{ m/s}^2 \\approx 0.5g$ — a firm but realistic stop.",
+              "The force came out positive after the two minus signs cancelled, and it opposes the motion, as friction must. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Two isolations in a row: first solve the kinematics equation for $a$, then solve $F_{net} = ma$ for the unknown force — numbers go in only at the end of each step."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-n2mf-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+        "objective": "C2.5",
+        "cedTopic": "2.5",
+        "clusterId": "2.5",
+        "skill": "transfer",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "",
+        "question": "A $500\\text{ kg}$ elevator accelerates **upward** at $2.0\\text{ m/s}^2$. Taking $g = 9.8\\text{ m/s}^2$, the tension in the supporting cable is:",
+        "choices": [
+          "$4900\\text{ N}$ — the weight of the elevator",
+          "$5900\\text{ N}$",
+          "$3900\\text{ N}$",
+          "$1000\\text{ N}$"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — take up as positive. $\\sum F_y = ma_y$: $T - mg = ma_y$. Isolate: $T = m(g + a_y) = 500(9.8 + 2.0) = 500(11.8) = 5900\\text{ N}$. Accelerating upward needs an upward net force, so $T > mg$.",
+          "incorrect": {
+            "0": "$mg = 4900\\text{ N}$ would be the tension only if the elevator were in equilibrium ($a = 0$). It is accelerating upward, so $T$ must exceed the weight.",
+            "2": "$3900\\text{ N}$ uses $T = m(g - a_y)$ — that would be for a *downward* acceleration. Upward acceleration needs $T > mg$.",
+            "3": "$1000\\text{ N} = ma_y$ is just the net force, not the tension. The cable also has to hold up the weight: $T = mg + ma_y$."
+          }
+        },
+        "hint": ["Up is positive. Write $\\sum F_y = ma_y$ with $T$ up and $mg$ down, then isolate $T$. Should $T$ be more or less than $mg$?"],
+        "solution": "$T - mg = ma_y \\Rightarrow T = m(g + a_y) = 500(11.8) = 5900\\text{ N}$."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "fbd-builder",
+    "title": "FBD Builder — two-axis scenarios",
+    "subtitle": "Build the diagram, then check each axis",
+    "componentKey": "fbd-builder",
+    "description": "Use the moving scenarios — especially **the crate pushed and speeding up** and **the crate dragged by an angled rope** — to practise two-axis reasoning. Set each force and its **relative length**, then press **Check**: for the vertical axis the up and down forces must balance (no vertical acceleration); along the motion, the arrow in the direction of travel must be *longer* when the object speeds up. Then try the **ramp** scenarios.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-n2mf-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "question": "A student solving a problem where a box is dragged across a floor by a rope at $25°$ above horizontal writes: 'The floor is horizontal, so the normal force equals the weight, $F_N = mg$.' Is this correct?",
+      "choices": [
+        "Yes — the normal force always equals $mg$ on a horizontal surface.",
+        "No — the rope has an upward component, so $\\sum F_y = 0$ gives $F_N = mg - T\\sin 25°$, which is less than $mg$.",
+        "No — the normal force should be $F_N = mg + T\\sin 25°$.",
+        "Yes, but only because the box is not accelerating vertically."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the normal force is whatever $\\sum F_y = 0$ requires. Here the vertical forces are $F_N$ (up), $T\\sin 25°$ (up), and $mg$ (down): $F_N + T\\sin 25° - mg = 0 \\Rightarrow F_N = mg - T\\sin 25° < mg$. The rope carries part of the weight.",
+        "incorrect": {
+          "0": "$F_N = mg$ only when the *only* vertical forces are $F_N$ and $mg$. An angled rope adds a third vertical force.",
+          "2": "That would be right if the rope pulled *downward* at an angle (like a lawnmower handle). This rope pulls *up* and forward, so its vertical component is upward and $F_N$ is *reduced*.",
+          "3": "The box not accelerating vertically is exactly why $\\sum F_y = 0$ — but that equation still includes the rope's upward component, so $F_N \\ne mg$."
+        }
+      },
+      "hint": ["List the vertical forces on the box. The rope pulls up and forward — does that add a vertical force? Then $\\sum F_y = 0$."],
+      "solution": "$F_N = mg - T\\sin 25°$, which is less than $mg$ — the upward pull of the rope reduces the normal force."
+    },
+    {
+      "id": "ap1-u2-n2mf-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "",
+      "question": "A block accelerates horizontally across a rough floor while being pulled by a rope at an angle above the horizontal. Which statement about the two axis-equations is correct?",
+      "choices": [
+        "Both axes use $\\sum F = ma$, with the same $a$ on each.",
+        "The vertical axis uses $\\sum F_y = 0$ (no vertical acceleration); the horizontal axis uses $\\sum F_x = ma_x$.",
+        "The vertical axis uses $\\sum F_y = ma_y$ where $a_y = g$; the horizontal axis uses $\\sum F_x = 0$.",
+        "You add the vertical and horizontal net forces, then divide the total by $m$ to get one acceleration."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the block stays on the floor, so it has no vertical acceleration and $\\sum F_y = 0$ (this gives the normal force). It *does* accelerate horizontally, so $\\sum F_x = ma_x$ (this gives $a_x$). Same object, two independent equations.",
+        "incorrect": {
+          "0": "There is no vertical acceleration, so the vertical equation is $\\sum F_y = 0$, not $\\sum F_y = ma$.",
+          "2": "$a_y = g$ would be free fall. The block is on the floor with $a_y = 0$. And it *does* accelerate horizontally, so $\\sum F_x \\ne 0$.",
+          "3": "You never add forces from perpendicular axes together — each axis is its own equation. (You could combine the components into a resultant, but the normal-force equation still stands alone as $\\sum F_y = 0$.)"
+        }
+      },
+      "hint": ["Does the block accelerate vertically? Horizontally? Each answer sets the right-hand side of that axis's equation."],
+      "solution": "$\\sum F_y = 0$ (no vertical acceleration) and $\\sum F_x = ma_x$ (horizontal motion) — two separate equations."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** three horizontal forces act on a $4.0\\text{ kg}$ box on frictionless ice: $12\\text{ N}$ east, $8.0\\text{ N}$ east, and $6.0\\text{ N}$ west. Find the acceleration.\n\n**Student's work:** '$F_{net} = 12 + 8.0 + 6.0 = 26\\text{ N}$, so $a = \\dfrac{26}{4.0} = 6.5\\text{ m/s}^2$.'",
+      "prompts": [
+        "Identify the student's error.",
+        "Explain the rule they broke.",
+        "Redo the calculation correctly, formula first.",
+        "State a check that shows the student's answer is too large."
+      ],
+      "modelResponse": "**(1)** The student added all three force magnitudes, treating the $6.0\\text{ N}$ west force as if it also pointed east. **(2)** The net force is a *signed* sum: after choosing a positive direction, forces the other way get a minus sign. With east positive, the $6.0\\text{ N}$ west force is $-6.0\\text{ N}$. **(3)** $F_{net} = \\sum F_x = (+12) + (+8.0) + (-6.0) = +14\\text{ N}$ (east). Then $F_{net} = ma \\Rightarrow a = \\dfrac{F_{net}}{m} = \\dfrac{14}{4.0} = 3.5\\text{ m/s}^2$, east. **(4)** The two eastward forces alone give $20\\text{ N}$, so $a$ cannot exceed $20/4.0 = 5.0\\text{ m/s}^2$. The westward force can only *reduce* the acceleration, so $6.5\\text{ m/s}^2$ is impossible.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "The two-axis method links: the **free-body diagram** (weight, normal force, friction, angled rope); the **component split** (the rope becomes $T\\cos\\theta$ on $x$ and $T\\sin\\theta$ on $y$); the **two equations** ($\\sum F_y = 0$ and $\\sum F_x = ma_x$); and the **two answers** ($F_N$ and $a_x$). The diagram is where the sine/cosine assignment is decided; the phrase 'stays on the floor' is what makes the $y$-equation equal zero instead of $ma_y$.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-n2mf-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A $2.0\\text{ kg}$ puck on frictionless ice is pushed by two horizontal forces at right angles: $6.0\\text{ N}$ north and $8.0\\text{ N}$ east. The magnitude of the puck's acceleration is:",
+      "choices": ["$7.0\\text{ m/s}^2$", "$5.0\\text{ m/s}^2$", "$1.0\\text{ m/s}^2$", "$10\\text{ m/s}^2$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the forces are perpendicular, so the net force is $F_{net} = \\sqrt{(6.0)^2 + (8.0)^2} = \\sqrt{100} = 10\\text{ N}$. Then $a = F_{net}/m = 10/2.0 = 5.0\\text{ m/s}^2$.",
+        "incorrect": {
+          "0": "This averages the two forces ($(6.0 + 8.0)/2$). Perpendicular forces combine by the Pythagorean theorem, not by averaging.",
+          "2": "This subtracts the forces ($8.0 - 6.0 = 2.0\\text{ N}$). Subtraction is for forces along the *same* line; these are perpendicular.",
+          "3": "$10$ is the net *force* in newtons, not the acceleration. Divide by the mass: $10/2.0 = 5.0$."
+        }
+      },
+      "hint": ["Perpendicular forces: $F_{net} = \\sqrt{F_1^2 + F_2^2}$. Then $a = F_{net}/m$."],
+      "solution": "$F_{net} = \\sqrt{6.0^2 + 8.0^2} = 10\\text{ N}$; $a = 10/2.0 = 5.0\\text{ m/s}^2$."
+    },
+    {
+      "id": "ap1-u2-n2mf-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
+      "skill": "multi-representation-reasoning",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "scenario": "A $25\\text{ kg}$ crate is pulled across a rough, level floor by a rope at $37°$ above the horizontal. The tension is $150\\text{ N}$ and the kinetic friction force on the crate is $60\\text{ N}$. Take $g = 9.8\\text{ m/s}^2$, $\\sin 37° = 0.60$, $\\cos 37° = 0.80$.",
+      "figures": [
+        { "svg": "multi-force/fbd-angled-pull-accel.svg", "caption": "The crate's free-body diagram: weight down, normal force up, friction back, rope tension at an angle up and forward." }
+      ],
+      "parts": [
+        { "label": "(a)", "prompt": "Resolve the tension into horizontal and vertical components.", "points": 2, "modelResponse": "$T_x = T\\cos 37° = 150(0.80) = 120\\text{ N}$ (forward); $T_y = T\\sin 37° = 150(0.60) = 90\\text{ N}$ (up)." },
+        { "label": "(b)", "prompt": "Find the normal force the floor exerts on the crate.", "points": 3, "modelResponse": "No vertical acceleration ⇒ $\\sum F_y = 0$: $F_N + T\\sin 37° - mg = 0$. Isolate: $F_N = mg - T\\sin 37°$. Substitute: $F_N = (25)(9.8) - 90 = 245 - 90 = 155\\text{ N}$. (Less than the $245\\text{ N}$ weight because the rope lifts.)" },
+        { "label": "(c)", "prompt": "Find the crate's acceleration.", "points": 3, "modelResponse": "Along the motion: $\\sum F_x = m a_x$: $T\\cos 37° - f = m a_x$. Isolate: $a_x = \\dfrac{T\\cos 37° - f}{m}$. Substitute: $a_x = \\dfrac{120 - 60}{25} = \\dfrac{60}{25} = 2.4\\text{ m/s}^2$, forward." },
+        { "label": "(d)", "prompt": "The rope is lowered so it pulls horizontally, with the same $150\\text{ N}$ tension and the friction force still $60\\text{ N}$. State, with reasoning, whether the acceleration is larger or smaller than in part (c). (A full numerical answer is not required.)", "points": 2, "modelResponse": "Now all $150\\text{ N}$ of tension is horizontal, so $T_x = 150\\text{ N}$ (up from $120\\text{ N}$): the forward force is larger. So $a_x = (150 - 60)/25 = 3.6\\text{ m/s}^2$ — **larger** than part (c). (The normal force also rises to the full $245\\text{ N}$, but since the friction force is stated as fixed at $60\\text{ N}$, only the larger horizontal component matters here.)" }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt each component. (b) 1 pt $\\sum F_y = 0$ with the tension's vertical component, 1 pt isolate $F_N = mg - T\\sin 37°$, 1 pt $155\\text{ N}$. (c) 1 pt $\\sum F_x = ma_x$, 1 pt isolate, 1 pt $2.4\\text{ m/s}^2$. (d) 1 pt 'larger', 1 pt reason (full tension now horizontal ⇒ bigger forward force). Carry (a) errors forward through (b)–(c)."
+    },
+    {
+      "id": "ap1-u2-n2mf-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+      "objective": "C2.5",
+      "cedTopic": "2.5",
+      "clusterId": "2.5",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A rocket sled on a level track speeds up from rest to $80\\text{ m/s}$ over a distance of $200\\text{ m}$. Its mass is $500\\text{ kg}$ and the track exerts a constant $2000\\text{ N}$ of friction. The thrust force (horizontal) is closest to:",
+      "choices": ["$8000\\text{ N}$", "$10\\,000\\text{ N}$", "$6000\\text{ N}$", "$16\\,000\\text{ N}$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — first the acceleration from kinematics: $a = \\dfrac{v^2 - v_0^2}{2\\Delta x} = \\dfrac{80^2 - 0}{2(200)} = \\dfrac{6400}{400} = 16\\text{ m/s}^2$. Then $\\sum F_x = ma_x$: $F_{thrust} - f = ma_x$, so $F_{thrust} = ma_x + f = (500)(16) + 2000 = 8000 + 2000 = 10\\,000\\text{ N}$.",
+        "incorrect": {
+          "0": "$8000\\text{ N} = ma_x$ is the *net* force. The thrust also has to overcome the $2000\\text{ N}$ of friction: $F_{thrust} = ma_x + f$.",
+          "2": "$6000\\text{ N}$ subtracts friction instead of adding it. Friction opposes the motion, so the thrust must be *larger* than the net force, not smaller.",
+          "3": "$16\\,000\\text{ N}$ is $m$ times $a$ done as $1000 \\times 16$, or it forgets to divide the kinematics result. Recheck: $a = 6400/400 = 16$, and $ma = 500 \\times 16 = 8000$."
+        }
+      },
+      "hint": ["Get $a$ from $v^2 = v_0^2 + 2a\\Delta x$. Then $F_{thrust} - f = ma_x$, so add friction back: $F_{thrust} = ma_x + f$."],
+      "solution": "$a = 6400/400 = 16\\text{ m/s}^2$; $F_{thrust} = ma_x + f = 8000 + 2000 = 10\\,000\\text{ N}$."
+    }
+  ],
+  "examConnection": "This is the most common AP free-response setup in Unit 2: an object on a surface with an angled force, solved on two axes. Expect to **draw the FBD**, **resolve the angled force**, write **$\\sum F_y = 0$** to get the normal force (and be marked down for assuming $F_N = mg$), write **$\\sum F_x = ma_x$** to get the acceleration, and sometimes **work backward** from a kinematics result to an unknown force. The single most common lost point: putting an acceleration on the perpendicular axis, or leaving the angled force's component off one of the two equations.",
+  "summary": "- Several forces on one line: $F_{net}$ is their **signed sum**; then $a = F_{net}/m$, in the direction of $F_{net}$.\n- Perpendicular forces combine by the **Pythagorean theorem**: $F_{net} = \\sqrt{F_x^2 + F_y^2}$.\n- On a surface, apply Newton's second law **separately on two axes**: $\\sum F_y = 0$ (no perpendicular acceleration) and $\\sum F_x = ma_x$ (motion).\n- ==The normal force comes from $\\sum F_y = 0$ and is generally **not** $mg$== — an angled rope or push changes it.\n- Resolve every angled force first; put each component in the right axis equation.\n- **Working backward:** if you know $a$ (given or from $v^2 = v_0^2 + 2a\\Delta x$), then $F_{net} = ma$ and you can isolate any one unknown force.",
+  "exitQuestion": {
+    "id": "ap1-u2-n2mf-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Newton's Second Law: Multi-Force and Two-Axis Problems",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "justify-with-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A $10\\text{ kg}$ box is dragged across a level floor by a rope at $30°$ above horizontal with tension $80\\text{ N}$. To find the box's acceleration, a student writes only one equation: '$80\\cos 30° - f = 10a$', and looks up the friction force from a table using $F_N = mg = 98\\text{ N}$. What is the flaw in the method (not the arithmetic)?",
+    "choices": [
+      "Nothing — that is the correct single equation for the acceleration.",
+      "The normal force is not $mg$ here: $\\sum F_y = 0$ gives $F_N = mg - 80\\sin 30° = 58\\text{ N}$, so any friction that depends on $F_N$ is overestimated. The vertical equation must be written first.",
+      "The horizontal equation should be $80\\cos 30° - f = 0$ because the box moves at constant speed.",
+      "The student should use $80$ (the full tension), not $80\\cos 30°$, in the horizontal equation."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the method skips the vertical axis. Because the rope pulls partly upward, $\\sum F_y = 0$ gives $F_N = mg - T\\sin 30° = 98 - 40 = 58\\text{ N}$, well below $mg$. A friction force read from a table at $F_N = mg$ is too big, so the computed acceleration is too small. You must write the $y$-equation to get the right $F_N$ before doing the $x$-equation.",
+      "incorrect": {
+        "0": "The horizontal equation is fine on its own, but it depends on $f$, which depends on $F_N$ — and the student got $F_N$ wrong by skipping the vertical equation.",
+        "2": "The box is being dragged and its speed is not stated as constant. In general $\\sum F_x = ma_x$, not $0$.",
+        "3": "Only the horizontal *component* $T\\cos 30°$ acts along the motion axis. Using the full $80\\text{ N}$ there would be the error, not the fix."
+      }
+    },
+    "hint": [
+      "Which axis did the student never write an equation for?",
+      "Does the rope have a vertical component? What does that do to $F_N$, and therefore to a friction force that depends on $F_N$?"
+    ],
+    "solution": "The method never writes $\\sum F_y = 0$, so it uses $F_N = mg$ instead of $F_N = mg - T\\sin 30° = 58\\text{ N}$ — overestimating friction and underestimating the acceleration."
+  },
+  "questionBankFile": "ap1-u2-multi-force.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-071", "AP1-U2-MCQ-072", "AP1-U2-MCQ-073",
+    "AP1-U2-MCQ-074", "AP1-U2-MCQ-075", "AP1-U2-MCQ-076"
+  ]
+}

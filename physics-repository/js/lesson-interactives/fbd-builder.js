@@ -30,23 +30,27 @@
   //   "floor"   — the resting surface, i.e. the box's bottom edge (friction)
   // lane: fixed lateral shift (px) so parallel/opposing arrows never coincide.
   const FORCES = [
-    { key: "gravity", label: "Gravity", tex: "\\vec{F}_g", color: "--sim-text", field: true, anchor: "centre", lane: 9 },
+    { key: "gravity", label: "Gravity", tex: "\\vec{F}_g", color: "--sim-text", field: true, anchor: "centre", lane: 0 },
     { key: "normal", label: "Normal force", tex: "\\vec{F}_N", color: "--sim-teal", anchor: "back", lane: 9 },
     { key: "tension", label: "Tension", tex: "\\vec{F}_T", color: "--sim-amber", anchor: "toward", lane: 0 },
     { key: "friction", label: "Friction", tex: "\\vec{f}", color: "--sim-red", anchor: "floor", lane: 0 },
     { key: "applied", label: "Applied push / pull", tex: "\\vec{F}_\\text{app}", color: "--sim-amber", anchor: "back", lane: 9 },
     { key: "spring", label: "Spring force", tex: "\\vec{F}_s", color: "--sim-green", anchor: "toward", lane: 0 },
+    { key: "drag", label: "Air resistance", tex: "\\vec{F}_\\text{air}", color: "--sim-violet", anchor: "centre", lane: -9 },
   ];
 
+  const S = 0.7071;
   const DIRS = {
     up: { dx: 0, dy: -1, glyph: "↑" },
     down: { dx: 0, dy: 1, glyph: "↓" },
     left: { dx: -1, dy: 0, glyph: "←" },
     right: { dx: 1, dy: 0, glyph: "→" },
-    "up-right": { dx: 0.7, dy: -0.7, glyph: "↗" },
-    "up-left": { dx: -0.7, dy: -0.7, glyph: "↖" },
+    "up-right": { dx: S, dy: -S, glyph: "↗" },
+    "up-left": { dx: -S, dy: -S, glyph: "↖" },
+    "down-right": { dx: S, dy: S, glyph: "↘" },
+    "down-left": { dx: -S, dy: S, glyph: "↙" },
   };
-  const DIR_ORDER = ["up", "down", "left", "right", "up-right", "up-left"];
+  const DIR_ORDER = ["up", "down", "left", "right", "up-right", "up-left", "down-right", "down-left"];
 
   // magnitude relationships to check: [a, op, b], op in "=" "<" ">"
   const SCENARIOS = [
@@ -77,6 +81,57 @@
       magnitude: [["normal", "<", "gravity"]],
       mag: { gravity: 4, normal: 2, tension: 4, friction: 3 },
       hint: "The rope pulls partly up, so the floor supports less than the full weight: F_N < F_g.",
+    },
+    {
+      text: "A skydiver falling straight down at constant (terminal) speed.",
+      forces: { gravity: "down", drag: "up" },
+      magnitude: [["drag", "=", "gravity"]],
+      mag: { gravity: 3, drag: 3 },
+      hint: "Terminal speed ⇒ constant velocity ⇒ air resistance up exactly balances gravity down.",
+    },
+    {
+      text: "A coffee filter dropped from rest — still speeding up, not yet at terminal speed.",
+      forces: { gravity: "down", drag: "up" },
+      magnitude: [["gravity", ">", "drag"]],
+      mag: { gravity: 4, drag: 2 },
+      hint: "Still speeding up ⇒ the net force is downward, so gravity beats the (growing) air resistance.",
+    },
+    {
+      text: "A ball thrown straight up — still on the way up, with noticeable air resistance.",
+      forces: { gravity: "down", drag: "down" },
+      magnitude: [],
+      mag: { gravity: 3, drag: 2 },
+      hint: "Air resistance opposes the motion. The ball moves up, so drag points DOWN — the same way as gravity, so the ball slows faster than in free fall.",
+    },
+    {
+      text: "A car cruising on a level highway at a constant 100 km/h.",
+      forces: { gravity: "down", normal: "up", applied: "right", drag: "left" },
+      magnitude: [["normal", "=", "gravity"], ["applied", "=", "drag"]],
+      mag: { gravity: 3, normal: 3, applied: 3, drag: 3 },
+      hint: "Constant speed ⇒ the forward drive force exactly balances air resistance backward; the road's normal force balances gravity.",
+    },
+    {
+      text: "A box sliding across a rough floor, slowing to a stop — nobody is pushing it.",
+      forces: { gravity: "down", normal: "up", friction: "left" },
+      magnitude: [["normal", "=", "gravity"]],
+      mag: { gravity: 3, normal: 3, friction: 3 },
+      hint: "No push now — friction is the only horizontal force, so the net force points backward and the box decelerates. It keeps moving only by inertia. (Motion is to the right, friction points left.)",
+    },
+    {
+      text: "A block sliding down a frictionless ramp inclined at ~28°, speeding up.",
+      incline: 28,
+      forces: { gravity: "down", normal: "up-left" },
+      magnitude: [["gravity", ">", "normal"]],
+      mag: { gravity: 4, normal: 3 },
+      hint: "Only two forces: gravity straight DOWN (the full weight) and the normal force PERPENDICULAR to the ramp surface (up-and-left here). The normal force is smaller than the weight.",
+    },
+    {
+      text: "A block sliding down a rough ramp (~28°) at constant velocity.",
+      incline: 28,
+      forces: { gravity: "down", normal: "up-left", friction: "up-right" },
+      magnitude: [["gravity", ">", "normal"]],
+      mag: { gravity: 4, normal: 3, friction: 3 },
+      hint: "Sliding DOWN the ramp ⇒ kinetic friction points UP the ramp (up-and-right here). Constant velocity ⇒ the normal force and friction together balance gravity.",
     },
   ];
 
@@ -274,24 +329,42 @@
       const cy = canvas.height / 2 + 4;
       const hw = 38; // half width
       const hh = 24; // half height
+      const incDeg = state.scenario.incline || 0;
+      const inc = (-incDeg * Math.PI) / 180; // ramp rises to the right
 
-      // ground line under the box when a resting-surface force is present
-      if (state.on.normal || state.on.friction) {
+      // ground / ramp line
+      if (incDeg || state.on.normal || state.on.friction) {
         ctx.strokeStyle = "#3a4a6c";
         ctx.lineWidth = 1.5;
+        ctx.save();
+        ctx.translate(cx, cy + hh);
+        ctx.rotate(inc);
         ctx.beginPath();
-        ctx.moveTo(24, cy + hh);
-        ctx.lineTo(canvas.width - 24, cy + hh);
+        ctx.moveTo(-(cx - 24), 0);
+        ctx.lineTo(cx - 24, 0);
         ctx.stroke();
+        // hatching
+        for (let x = -(cx - 30); x < cx - 30; x += 20) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x - 7, 9);
+          ctx.stroke();
+        }
+        ctx.restore();
       }
 
+      // the box (tilted to sit on the ramp)
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(inc);
       ctx.strokeStyle = cssVar("--sim-text", "#e0e0e0");
       ctx.fillStyle = "rgba(230,237,243,0.05)";
       ctx.lineWidth = 1.5;
       ctx.beginPath();
-      ctx.rect(cx - hw, cy - hh, hw * 2, hh * 2);
+      ctx.rect(-hw, -hh, hw * 2, hh * 2);
       ctx.fill();
       ctx.stroke();
+      ctx.restore();
       ctx.fillStyle = cssVar("--sim-text", "#e0e0e0");
       ctx.beginPath();
       ctx.arc(cx, cy, 2, 0, Math.PI * 2);
@@ -306,7 +379,10 @@
         // --- tail anchor on the box (master §11) ---
         let tx = cx;
         let ty = cy;
-        if (f.anchor === "back") {
+        if (incDeg) {
+          // on a ramp, draw every force from the centre (the tilted faces
+          // make surface anchors ambiguous); relative lengths still matter.
+        } else if (f.anchor === "back") {
           // the surface opposite the force direction (you push on the back face)
           tx = cx - d.dx * hw;
           ty = cy - d.dy * hh;
@@ -349,6 +425,21 @@
       const cx = canvas.width / 2;
       const cy = canvas.height / 2 + 4;
       const r = 8; // small dot (~0.5 cm on screen); every arrow starts at its edge
+
+      // ramp indicator beneath the dot, for incline scenarios
+      if (state.scenario.incline) {
+        ctx.strokeStyle = "#3a4a6c";
+        ctx.lineWidth = 1.5;
+        ctx.save();
+        ctx.translate(cx, cy + 26);
+        ctx.rotate((-state.scenario.incline * Math.PI) / 180);
+        ctx.beginPath();
+        ctx.moveTo(-70, 0);
+        ctx.lineTo(70, 0);
+        ctx.stroke();
+        ctx.restore();
+      }
+
       ctx.fillStyle = cssVar("--sim-text", "#e0e0e0");
       ctx.beginPath();
       ctx.arc(cx, cy, r, 0, Math.PI * 2);

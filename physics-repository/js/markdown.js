@@ -11,7 +11,9 @@
  *   ==highlighted==         -> <mark class="term-highlight"> (background highlight)
  *   [[key term]]            -> <span class="key-term"> (slightly larger, for first-use vocabulary)
  *   `code`                  -> <code>
- * Inline $...$ / $$...$$ math is left untouched for KaTeX auto-render.
+ * Block forms (mdToHtml only): "- " bullet list, "1." ordered list, and a
+ * GFM pipe table. Inline $...$ / $$...$$ math is left untouched for KaTeX
+ * auto-render.
  *
  * Use ==...== to flag a critical relationship or warning worth a visual
  * flag ("the net force, not just one applied force"). Use [[...]] the
@@ -89,6 +91,15 @@ export function mdToHtml(md) {
       if (isList) {
         const items = lines.map((l) => `<li>${mdInline(l.slice(2))}</li>`).join("\n");
         return `<ul class="md-list">${items}</ul>`;
+      }
+
+      // ordered list: every line starts "1. " / "2. " …
+      const isOrdered = lines.length >= 2 && lines.every((l) => /^\d+\.\s/.test(l));
+      if (isOrdered) {
+        const items = lines
+          .map((l) => `<li>${mdInline(l.replace(/^\d+\.\s+/, ""))}</li>`)
+          .join("\n");
+        return `<ol class="md-list md-list--ordered">${items}</ol>`;
       }
 
       return `<p>${mdInline(block)}</p>`;
