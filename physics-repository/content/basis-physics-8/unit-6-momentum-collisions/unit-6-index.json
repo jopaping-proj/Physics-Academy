@@ -1,0 +1,94 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u6-index",
+  "slug": "unit-6-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 6: Momentum and Collisions",
+  "lessonTitle": "Unit 6 · Momentum and Collisions",
+  "source": "resources/physics8/resources/unit6_momentum_collisions_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Momentum",
+      "outcomes": [
+        "Define momentum mathematically.",
+        "Calculate momentum for a single object, or a system of 2 objects.",
+        "Calculate the change in momentum for a single object.",
+        "Compare the momenta of two objects."
+      ]
+    },
+    {
+      "title": "Impulse",
+      "outcomes": [
+        "Define impulse and describe its effect upon an object's momentum.",
+        "Calculate the impulse of an object, force, or time given the other two variables."
+      ]
+    },
+    {
+      "title": "Conservation of Momentum",
+      "outcomes": [
+        "Apply conservation of momentum to any closed system."
+      ]
+    },
+    {
+      "title": "Collisions",
+      "outcomes": [
+        "Distinguish between an elastic and inelastic collision.",
+        "Mathematically analyze a 2-object collision of either type (given all but one variable)."
+      ]
+    }
+  ],
+  "intro": "**Momentum and Collisions** is part of the BASIS Physics 8 course map.\n\nThe source defines **9 learning outcomes** across **4 topic clusters**.\n\nSource: `resources/physics8/resources/unit6_momentum_collisions_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": null,
+      "title": "Unit 6 Entry Diagnostic",
+      "status": "planned",
+      "note": "Placeholder — no native diagnostic has been approved for this unit."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": null,
+      "title": "Momentum",
+      "cluster": "BP8.6.1",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Impulse",
+      "cluster": "BP8.6.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Conservation of Momentum",
+      "cluster": "BP8.6.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Collisions",
+      "cluster": "BP8.6.4",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 6 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "basis-p8-u2-l1",
+  "slug": "motion-language-reference-frames",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Motion foundations",
+  "lessonTitle": "Motion Language and Reference Frames",
+  "lessonNumber": "1",
+  "status": "approved",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_01_motion_language_and_reference_frames.md",
+  "sourceApproval": "Founder-approved under DEC-040",
+  "prerequisites": [
+    "None — this lesson establishes the vocabulary and reference-frame conventions used throughout Unit 2."
+  ],
+  "majorObjective": "Distinguish scalar and vector quantities, establish a reference frame, and calculate distance and signed displacement for one-dimensional journeys.",
+  "subObjectives": [
+    "Classify physical quantities as scalars or vectors using magnitude and direction.",
+    "Declare an origin and positive direction before assigning signed positions.",
+    "Distinguish total path length from signed change in position.",
+    "Calculate displacement using $\\Delta x=x_f-x_i$ and explain a zero-displacement round trip."
+  ],
+  "hook": {
+    "prompt": "A runner completes one full lap and stops exactly where they started. Which statement is defensible?",
+    "choices": [
+      "The runner traveled zero distance.",
+      "The runner's displacement is zero even though the distance is not.",
+      "Both distance and displacement must be the lap length.",
+      "Displacement cannot be discussed without knowing the runner's speed."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "No physics prerequisite is assumed. This lesson establishes the controlled notation $x_i$, $x_f$, and $\\Delta x$, with a declared origin and positive direction.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Scalars, vectors, and reference frames",
+      "concept": "A **scalar** has magnitude only. A **vector** has magnitude and direction. Distance, speed, time, mass, and temperature are scalars; displacement, velocity, and acceleration are vectors. In one dimension, a sign records direction only after an origin and positive direction have been declared.",
+      "representation": "Build every one-dimensional model in this order:\n1. Choose an origin.\n2. Declare the positive direction.\n3. Mark signed positions.\n4. Keep that convention fixed for the entire problem.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/motion-language-reference-frames/number-line.svg",
+          "caption": "A reusable one-dimensional reference frame with a fixed origin and positive direction."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A cart is described as 6 m left of a door. Construct one valid reference frame and state the cart's signed position.",
+        "phases": [
+          {
+            "label": "Declare the frame",
+            "steps": [
+              "Choose the door as $x=0$ and declare right as positive."
+            ]
+          },
+          {
+            "label": "Translate the description",
+            "steps": [
+              "Left is the negative direction in this frame, so the cart is at $x=-6\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Check consistency",
+            "steps": [
+              "A left-positive frame would instead give $x=+6\\ \\mathrm{m}$; either is valid if declared and used consistently."
+            ]
+          }
+        ],
+        "keyMove": "The sign comes from the declared coordinate direction, not from the object itself."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L1-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "foundation",
+        "cognitiveLevel": 2,
+        "question": "Which list contains only vector quantities?",
+        "choices": [
+          "displacement, velocity, acceleration",
+          "distance, velocity, time",
+          "speed, displacement, acceleration",
+          "distance, speed, position magnitude"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — every quantity in the list requires both magnitude and direction.",
+          "incorrect": {
+            "1": "Distance and time are scalars.",
+            "2": "Speed is a scalar.",
+            "3": "All three quantities are scalars as written."
+          }
+        }
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Position, distance, and displacement",
+      "concept": "**Position** is a signed location in the chosen frame. **Distance** is total path length and is always nonnegative. **Displacement** is the signed change from initial to final position: $$\\Delta x=x_f-x_i$$ A reversal increases distance but can reduce the magnitude of displacement. A round trip has nonzero distance and zero displacement.",
+      "representation": "Track distance by adding the magnitude of every path segment. Track displacement by ignoring intermediate stops and subtracting the initial position from the final position.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student starts at $x_i=+2\\ \\mathrm{m}$, walks to $+8\\ \\mathrm{m}$, then back to $x_f=+5\\ \\mathrm{m}$. Find distance and displacement.",
+        "phases": [
+          {
+            "label": "Distance",
+            "steps": [
+              "First leg: $|8-2|=6\\ \\mathrm{m}$.",
+              "Second leg: $|5-8|=3\\ \\mathrm{m}$.",
+              "Total distance: $6+3=9\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Displacement",
+            "steps": [
+              "Use only the endpoints: $\\Delta x=x_f-x_i=5-2=+3\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Interpret",
+            "steps": [
+              "The positive displacement means the final position is 3 m in the positive direction from the starting position."
+            ]
+          }
+        ],
+        "keyMove": "Distance follows the path; displacement compares only the endpoints."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L1-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "Take east as positive. A cyclist starts at $x_i=-4\\ \\mathrm{m}$, rides to $+11\\ \\mathrm{m}$, then returns to $x_f=+2\\ \\mathrm{m}$. Which pair gives distance and displacement?",
+        "choices": [
+          "distance $24\\ \\mathrm{m}$; displacement $+6\\ \\mathrm{m}$",
+          "distance $6\\ \\mathrm{m}$; displacement $24\\ \\mathrm{m}$",
+          "distance $24\\ \\mathrm{m}$; displacement $-6\\ \\mathrm{m}$",
+          "distance $15\\ \\mathrm{m}$; displacement $+2\\ \\mathrm{m}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the path is $15+9=24\\ \\mathrm{m}$, while $\\Delta x=2-(-4)=+6\\ \\mathrm{m}$.",
+          "incorrect": {
+            "1": "This swaps total path length and endpoint change.",
+            "2": "The distance is correct, but the displacement sign conflicts with the east-positive frame.",
+            "3": "This uses only part of the journey and reports the final position instead of displacement."
+          }
+        }
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L1-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "question": "A robot makes a round trip and returns to its starting position. Which statement is correct?",
+      "choices": [
+        "Both distance and displacement are zero.",
+        "Distance is nonzero and displacement is zero.",
+        "Distance is zero and displacement is nonzero.",
+        "Distance and displacement must have equal nonzero values."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the robot accumulated path length but had no net change in position.",
+        "incorrect": {
+          "0": "Returning to the start makes displacement zero, not the path length.",
+          "2": "Distance cannot be zero if motion occurred.",
+          "3": "Reversing direction makes distance exceed displacement magnitude."
+        }
+      }
+    }
+  ],
+  "representationConnections": "A verbal journey becomes a number-line model; the model fixes signed positions; those positions support separate calculations of distance and displacement.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L1-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "numerical",
+      "difficulty": "developing",
+      "cognitiveLevel": 4,
+      "question": "A robot starts at $+3\\ \\mathrm{m}$, travels to $-5\\ \\mathrm{m}$, then to $+8\\ \\mathrm{m}$. Which result is correct?",
+      "choices": [
+        "distance $21\\ \\mathrm{m}$; displacement $+5\\ \\mathrm{m}$",
+        "distance $5\\ \\mathrm{m}$; displacement $21\\ \\mathrm{m}$",
+        "distance $21\\ \\mathrm{m}$; displacement $-5\\ \\mathrm{m}$",
+        "distance $13\\ \\mathrm{m}$; displacement $+8\\ \\mathrm{m}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — distance is $8+13=21\\ \\mathrm{m}$ and displacement is $8-3=+5\\ \\mathrm{m}$.",
+        "incorrect": {
+          "1": "This swaps path length and endpoint change.",
+          "2": "The displacement sign is inconsistent with the final position relative to the start.",
+          "3": "This omits the first path segment and uses final position as displacement."
+        }
+      }
+    }
+  ],
+  "examConnection": "This lesson establishes the signed-position and vector language required for every later kinematics representation and calculation.",
+  "summary": "Declare a reference frame before using signs. Scalars have magnitude only; vectors have magnitude and direction. Distance accumulates the path, while displacement is $x_f-x_i$.",
+  "exitQuestion": {
+    "id": "BP8-U2-L1-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "question": "Two observers use different origins but the same positive direction for the same journey. What must agree?",
+    "choices": [
+      "Every signed position",
+      "The calculated displacement",
+      "The initial-position number",
+      "The final-position number"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — translating the origin changes both endpoint coordinates equally, so their difference is unchanged.",
+      "incorrect": {
+        "0": "Positions depend on the chosen origin.",
+        "2": "The initial coordinate changes when the origin changes.",
+        "3": "The final coordinate also changes when the origin changes."
+      }
+    }
+  },
+  "needsPlotly": false
+}

@@ -1,0 +1,167 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u2-index",
+  "slug": "unit-2-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "lessonTitle": "Unit 2 · Kinematics",
+  "source": "resources/physics8/resources/unit2_kinematics_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Position-Time Graphs",
+      "outcomes": [
+        "Read a position-time graph for position values and displacement over time.",
+        "Determine whether an object has been displaced from a description of the motion.",
+        "Calculate the velocity (slope) from a position-time graph.",
+        "Identify the appropriately shaped position-time graph given a description of the motion."
+      ]
+    },
+    {
+      "title": "Kinematics Equations (Displacement & Velocity)",
+      "outcomes": [
+        "Calculate the displacement of an object using the appropriate kinematics equation.",
+        "Calculate the velocity of an object using the appropriate kinematics equation."
+      ]
+    },
+    {
+      "title": "Velocity-Time Graphs",
+      "outcomes": [
+        "Read a velocity-time graph for velocity values and to identify constant vs. changing velocity over time.",
+        "Determine whether an object is undergoing constant velocity from a description of the motion.",
+        "Calculate the acceleration (slope) from a velocity-time graph.",
+        "Calculate the displacement (area under the curve) from a velocity-time graph.",
+        "Identify the appropriately-shaped velocity-time graph given a description of the motion."
+      ]
+    },
+    {
+      "title": "Acceleration",
+      "outcomes": [
+        "Identify whether an object is undergoing acceleration from a description of its motion.",
+        "Read acceleration of an object from an acceleration-time graph.",
+        "Match the action of the object to the appropriately-shaped acceleration-time graph.",
+        "Calculate the velocity (area under the curve) from an acceleration-time graph.",
+        "Calculate the acceleration of an object using the appropriate kinematics equations."
+      ]
+    },
+    {
+      "title": "One-Dimensional Free Fall",
+      "outcomes": [
+        "Apply the constant-acceleration model to one-dimensional free fall near Earth's surface using $|g|=9.8\\ \\mathrm{m/s^2}$, with the sign determined by the chosen positive direction.",
+        "Solve and explain cases in which an object is dropped, thrown downward, or thrown upward, including the velocity and acceleration at the highest point.",
+        "Represent one-dimensional free-fall motion consistently using verbal descriptions, motion graphs, and kinematics equations."
+      ]
+    },
+    {
+      "title": "Vectors",
+      "outcomes": [
+        "Identify vectors.",
+        "Decompose a vector into horizontal and vertical components.",
+        "Find the magnitude of a vector given the horizontal and vertical components.",
+        "Find direction of a vector given the horizontal and vertical components."
+      ]
+    },
+    {
+      "title": "Right-Triangle Mathematics for Vectors",
+      "outcomes": [
+        "Identify the opposite side, adjacent side, and hypotenuse relative to a specified angle in a right triangle.",
+        "Use the sine, cosine, and tangent ratios to calculate unknown sides in right triangles and apply them when decomposing vectors.",
+        "Use inverse trigonometric ratios to calculate an angle and determine vector direction with the correct quadrant or direction convention.",
+        "Apply and, when needed, review the Pythagorean theorem when reconstructing a vector's magnitude from perpendicular components."
+      ]
+    }
+  ],
+  "intro": "**Kinematics** is part of the BASIS Physics 8 course map.\n\nThe source defines **27 learning outcomes** across **7 topic clusters**.\n\nSource: `resources/physics8/resources/unit2_kinematics_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": "diagnostic/student/online-form",
+      "title": "Unit 2 Entry Diagnostic",
+      "status": "approved",
+      "note": "Production v0.3.15 · 30 points · 25–30 minutes · Founder risk exception."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": "motion-language-reference-frames",
+      "title": "Motion Language and Reference Frames",
+      "cluster": "BP8.2.1",
+      "status": "approved"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Position-Time Graphs",
+      "cluster": "BP8.2.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Velocity and Constant-Velocity Motion",
+      "cluster": "BP8.2.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Velocity-Time Graphs",
+      "cluster": "BP8.2.4",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": null,
+      "title": "Acceleration-Time Graphs",
+      "cluster": "BP8.2.5",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 6",
+      "slug": null,
+      "title": "Constant-Acceleration Equations",
+      "cluster": "BP8.2.6",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 7",
+      "slug": null,
+      "title": "One-Dimensional Free Fall",
+      "cluster": "BP8.2.7",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 8",
+      "slug": null,
+      "title": "SOHCAHTOA and Vector Components",
+      "cluster": "BP8.2.8",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 9",
+      "slug": null,
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.2.9",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 2 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

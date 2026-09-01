@@ -55,6 +55,7 @@ const NUMERIC_OPTION = /^\s*[-+]?\$?\d[\d.,\s]*\s*(N|kg|m|s|J|W|Hz|N\/m|m\/s\^?2
 export function validateContent({ taxonomies }) {
   const errors = [];
   const warnings = [];
+  const manifestIds = new Set();
   const skills = new Set(taxonomies.skill.values);
   const reps = new Set(taxonomies.representation.values);
   const diffs = new Set(taxonomies.difficulty.values);
@@ -164,6 +165,27 @@ export function validateContent({ taxonomies }) {
     let data;
     try { data = JSON.parse(fs.readFileSync(f, "utf8")); }
     catch (e) { errors.push(`${rel(f)}: invalid JSON — ${e.message}`); continue; }
+    if (!Array.isArray(data) && Array.isArray(data.entries) && /test-bank-index$/.test(data.id || "")) {
+      if (!data.courseId || !courses.has(data.courseId))
+        errors.push(`${rel(f)}: manifest courseId "${data.courseId || ""}" is not in taxonomies.json`);
+      const active = data.entries.filter((e) => e.state !== "retired");
+      const retired = data.entries.filter((e) => e.state === "retired");
+      if (data.counts?.active !== active.length)
+        errors.push(`${rel(f)}: counts.active ${data.counts?.active} does not match ${active.length} active entries`);
+      if (data.counts?.retired !== retired.length)
+        errors.push(`${rel(f)}: counts.retired ${data.counts?.retired} does not match ${retired.length} retired entries`);
+      if (data.counts?.totalRecords !== data.entries.length)
+        errors.push(`${rel(f)}: counts.totalRecords ${data.counts?.totalRecords} does not match ${data.entries.length} entries`);
+      for (const entry of data.entries) {
+        if (!/^BP8-U\d+-(MCQ|FRQ)-\d+$/.test(entry.id || ""))
+          errors.push(`${rel(f)}: manifest entry id "${entry.id || ""}" does not use the BP8-U#-MCQ/FRQ-# namespace`);
+        if (manifestIds.has(entry.id)) errors.push(`${rel(f)}: duplicate manifest entry id "${entry.id}"`);
+        manifestIds.add(entry.id);
+        if (!entry.sourceId || !entry.sourceFile)
+          errors.push(`${rel(f)} [${entry.id || "?"}]: missing sourceId or sourceFile provenance`);
+      }
+      continue;
+    }
     const items = Array.isArray(data) ? data : data.items || data.questions || [];
     items.forEach((q) => checkItem(`${rel(f)} [${q.id || "?"}]`, q));
   }
@@ -174,6 +196,16 @@ export function validateContent({ taxonomies }) {
     try { lesson = JSON.parse(fs.readFileSync(f, "utf8")); }
     catch (e) { errors.push(`${rel(f)}: invalid JSON — ${e.message}`); continue; }
     const where = rel(f);
+
+    if (lesson.format === "external-html") {
+      checkCourses(where, lesson);
+      if (!lesson.sourceFile) errors.push(`${where}: external-html page has no sourceFile`);
+      else if (!fs.existsSync(path.join(ROOT, lesson.sourceFile)))
+        errors.push(`${where}: external-html sourceFile does not exist: ${lesson.sourceFile}`);
+      if (lesson.assetDirectory?.source && !fs.existsSync(path.join(ROOT, lesson.assetDirectory.source)))
+        errors.push(`${where}: external-html assetDirectory does not exist: ${lesson.assetDirectory.source}`);
+      continue;
+    }
 
     if (lesson.format === "concept-inventory") {
       checkCourses(where, lesson);

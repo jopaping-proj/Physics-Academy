@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390" role="img" aria-labelledby="title desc">
+  <title id="title">Q13 two-vector diagram</title>
+  <desc id="desc">Panel A shows Vector A with magnitude 14.0 newtons directed 35.0 degrees north of west. Panel B shows Vector B only by its components: negative 9.0 newtons horizontally and negative 12.0 newtons vertically. East is positive x and north is positive y in both panels.</desc>
+  <rect width="760" height="390" fill="white"/>
+  <g font-family="Arial" fill="#111827"><text x="25" y="30" font-size="22" font-weight="bold">Vector A</text><text x="405" y="30" font-size="22" font-weight="bold">Vector B</text><text x="92" y="70" font-size="16">north (+y)</text><text x="270" y="178" font-size="16">east (+x)</text><text x="472" y="70" font-size="16">north (+y)</text><text x="650" y="178" font-size="16">east (+x)</text><text x="88" y="112" font-size="17">14.0 N</text><text id="vector-a-angle-label" x="74" y="174" font-size="17">35.0°</text><text x="474" y="350" font-size="17">Fₓ = −9.0 N</text><text x="580" y="270" font-size="17">Fᵧ = −12.0 N</text></g>
+  <g stroke="#111827" stroke-width="2" fill="none"><path id="vector-a-axes" d="M190 330V55M50 195H340"/><path d="M570 330V55M430 195H720"/></g>
+  <g stroke="#1769aa" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path id="vector-a-line" d="M190 195L80 118L94 121M80 118L86 132"/><path d="M570 195L480 315L484 299M480 315L496 311"/></g>
+  <path id="vector-a-angle-arc" d="M132 195A58 58 0 0 1 143 162" stroke="#6b7280" stroke-width="2" fill="none"/><g stroke="#6b7280" stroke-width="2" stroke-dasharray="5 4" fill="none"><path d="M480 315V195M480 315H570"/></g>
+</svg>

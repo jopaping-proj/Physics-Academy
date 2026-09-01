@@ -1,0 +1,169 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u3-index",
+  "slug": "unit-3-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "lessonTitle": "Unit 3 · Forces and Newton's Laws",
+  "source": "resources/physics8/resources/unit3_forces_newtonslaws_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Gravity",
+      "outcomes": [
+        "Describe gravity as a force that acts towards the center of mass.",
+        "Understand conceptually the proportional relationships between the force of gravity, mass, and distance between the objects.",
+        "Calculate any of the variables using the equation:"
+      ]
+    },
+    {
+      "title": "Inertia & Newton's First Law",
+      "outcomes": [
+        "State the definition of inertial mass.",
+        "Define inertia and explain how it is related to Newton’s first law.",
+        "Apply Newton’s first law to identify the acceleration state of an object or objects given a description in words."
+      ]
+    },
+    {
+      "title": "Forces & Free-Body Diagrams",
+      "outcomes": [
+        "Identify the forces acting in a description of a physical situation.",
+        "Calculate the net force acting on an object along a single axis.",
+        "Create a free-body diagram for a given situation."
+      ]
+    },
+    {
+      "title": "Equilibrium",
+      "outcomes": [
+        "Define static and dynamic equilibrium.",
+        "Use a free-body diagram to calculate net force and determine equilibrium states.",
+        "Identify whether an object is in static or dynamic equilibrium given a description of the motion.",
+        "Identify that an object in equilibrium has zero acceleration."
+      ]
+    },
+    {
+      "title": "Inclined Planes (with and without friction)",
+      "outcomes": [
+        "Identify all the forces acting on a body that is on an inclined plane (with and without friction).",
+        "Calculate the net force acting on an object on an inclined plane (with and without friction).",
+        "Calculate the acceleration of an object on an inclined plane (with and without friction)."
+      ]
+    },
+    {
+      "title": "Newton's Second Law",
+      "outcomes": [
+        "Apply Newton’s second law to a description of a problem to determine the acceleration state of the object.",
+        "Use a free-body diagram to calculate the acceleration of an object."
+      ]
+    },
+    {
+      "title": "Action/Reaction Pairs (Newton's Third Law)",
+      "outcomes": [
+        "Identify an action/reaction pair.",
+        "Identify an action/reaction pair as acting on two separate objects.",
+        "Contrast action/reaction pairs and balanced forces."
+      ]
+    },
+    {
+      "title": "Hooke's Law & Springs",
+      "outcomes": [
+        "State Hooke’s law both mathematically and conceptually.",
+        "Calculate the spring force or the spring constant given the other two variables.",
+        "Calculate the spring constant of a spring from a force-extension graph."
+      ]
+    }
+  ],
+  "intro": "**Forces and Newton's Laws** is part of the BASIS Physics 8 course map.\n\nThe source defines **24 learning outcomes** across **8 topic clusters**.\n\nSource: `resources/physics8/resources/unit3_forces_newtonslaws_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": null,
+      "title": "Unit 3 Entry Diagnostic",
+      "status": "planned",
+      "note": "Placeholder — no native diagnostic has been approved for this unit."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": null,
+      "title": "Gravity",
+      "cluster": "BP8.3.1",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Inertia and Newton's First Law",
+      "cluster": "BP8.3.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Force Identification and Free-Body Diagrams",
+      "cluster": "BP8.3.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Equilibrium",
+      "cluster": "BP8.3.4",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": null,
+      "title": "Newton's Second Law",
+      "cluster": "BP8.3.5",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 6",
+      "slug": null,
+      "title": "Inclined Planes",
+      "cluster": "BP8.3.6",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 7",
+      "slug": null,
+      "title": "Newton's Third Law",
+      "cluster": "BP8.3.7",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 8",
+      "slug": null,
+      "title": "Hooke's Law and Springs",
+      "cluster": "BP8.3.8",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 9",
+      "slug": null,
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.3.9",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 3 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

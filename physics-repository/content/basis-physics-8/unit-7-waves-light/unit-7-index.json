@@ -1,0 +1,129 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u7-index",
+  "slug": "unit-7-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 7: Waves and Light",
+  "lessonTitle": "Unit 7 · Waves and Light",
+  "source": "resources/physics8/resources/unit7_waves_light_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Basic Concepts & Definitions",
+      "outcomes": [
+        "Define transparent and opaque.",
+        "Define the normal.",
+        "State the speed of light in vacuum.",
+        "State the difference between reflection, refraction, and absorption of light.",
+        "Define focal length, focal point, principal axis, and image."
+      ]
+    },
+    {
+      "title": "Reflection & Plane Mirrors",
+      "outcomes": [
+        "State the law of reflection.",
+        "Describe the properties of images formed by plane mirrors, including their size, orientation, type, and location.",
+        "Create a simple ray diagram for an image formed by a plane mirror, showing the location of the object, the mirror, and the virtual image.",
+        "Use the law of reflection to determine the angles of incidence and reflection in a problem."
+      ]
+    },
+    {
+      "title": "Spherical Mirrors (Concave & Convex)",
+      "outcomes": [
+        "Identify the concave and convex mirror.",
+        "Create ray diagrams for concave and convex mirrors, including the location of the object, image, and focal point.",
+        "Describe the characteristics of images formed by concave and convex mirrors, including their size, orientation, type, and location."
+      ]
+    },
+    {
+      "title": "Refraction & Index of Refraction",
+      "outcomes": [
+        "Calculate the speed of light in any medium using the index of refraction ($n = \\frac{c}{v}$).",
+        "Describe the cause of refraction as the change of speed of light in a material.",
+        "Use Snell's law to calculate the index of refraction of either material (solve for index of refraction only)."
+      ]
+    },
+    {
+      "title": "Diffraction & Dispersion",
+      "outcomes": [
+        "Describe how different frequencies of light bend differently and use this to explain diffraction of light."
+      ]
+    },
+    {
+      "title": "Total Internal Reflection",
+      "outcomes": [
+        "Identify and calculate the critical angle.",
+        "Define total internal reflection and when it occurs."
+      ]
+    }
+  ],
+  "intro": "**Waves and Light** is part of the BASIS Physics 8 course map.\n\nThe source defines **18 learning outcomes** across **6 topic clusters**.\n\nSource: `resources/physics8/resources/unit7_waves_light_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": null,
+      "title": "Unit 7 Entry Diagnostic",
+      "status": "planned",
+      "note": "Placeholder — no native diagnostic has been approved for this unit."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": null,
+      "title": "Basic Concepts & Definitions",
+      "cluster": "BP8.7.1",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Reflection & Plane Mirrors",
+      "cluster": "BP8.7.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Spherical Mirrors (Concave & Convex)",
+      "cluster": "BP8.7.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Refraction & Index of Refraction",
+      "cluster": "BP8.7.4",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": null,
+      "title": "Diffraction & Dispersion",
+      "cluster": "BP8.7.5",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 6",
+      "slug": null,
+      "title": "Total Internal Reflection",
+      "cluster": "BP8.7.6",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 7 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

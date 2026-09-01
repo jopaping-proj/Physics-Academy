@@ -1,0 +1,5037 @@
+{
+  "id": "basis-p8-u4-test-bank-index",
+  "course": "BASIS Physics 8",
+  "courseId": "basis-physics-8",
+  "unit": "Unit 4: Energy",
+  "sourceIndex": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/index/unit_04_energy_test_bank_index.json",
+  "generatedFromSourceAt": "2026-08-29T15:00:46+00:00",
+  "counts": {
+    "mcq": 250,
+    "frq": 50,
+    "active": 300,
+    "retired": 29,
+    "totalRecords": 329
+  },
+  "entries": [
+    {
+      "id": "BP8-U4-MCQ-001",
+      "sourceId": "U4-MCQ-001",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-002",
+      "sourceId": "U4-MCQ-002",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-003",
+      "sourceId": "U4-MCQ-003",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W2",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-004",
+      "sourceId": "U4-MCQ-004",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-005",
+      "sourceId": "U4-MCQ-005",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W2",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-006",
+      "sourceId": "U4-MCQ-006",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-008",
+      "sourceId": "U4-MCQ-008",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-009",
+      "sourceId": "U4-MCQ-009",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-010",
+      "sourceId": "U4-MCQ-010",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-011",
+      "sourceId": "U4-MCQ-011",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-012",
+      "sourceId": "U4-MCQ-012",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-013",
+      "sourceId": "U4-MCQ-013",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-014",
+      "sourceId": "U4-MCQ-014",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-017",
+      "sourceId": "U4-MCQ-017",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-018",
+      "sourceId": "U4-MCQ-018",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-019",
+      "sourceId": "U4-MCQ-019",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-020",
+      "sourceId": "U4-MCQ-020",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-021",
+      "sourceId": "U4-MCQ-021",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-022",
+      "sourceId": "U4-MCQ-022",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-023",
+      "sourceId": "U4-MCQ-023",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W2",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-024",
+      "sourceId": "U4-MCQ-024",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-025",
+      "sourceId": "U4-MCQ-025",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-026",
+      "sourceId": "U4-MCQ-026",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-027",
+      "sourceId": "U4-MCQ-027",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-028",
+      "sourceId": "U4-MCQ-028",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-029",
+      "sourceId": "U4-MCQ-029",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-030",
+      "sourceId": "U4-MCQ-030",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-251",
+      "sourceId": "U4-MCQ-251",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-252",
+      "sourceId": "U4-MCQ-252",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": "u4_mcq_work_fbd.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-253",
+      "sourceId": "U4-MCQ-253",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_work",
+      "outcomes": [
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-031",
+      "sourceId": "U4-MCQ-031",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-032",
+      "sourceId": "U4-MCQ-032",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-033",
+      "sourceId": "U4-MCQ-033",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-034",
+      "sourceId": "U4-MCQ-034",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-035",
+      "sourceId": "U4-MCQ-035",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-036",
+      "sourceId": "U4-MCQ-036",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-037",
+      "sourceId": "U4-MCQ-037",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-038",
+      "sourceId": "U4-MCQ-038",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-039",
+      "sourceId": "U4-MCQ-039",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-040",
+      "sourceId": "U4-MCQ-040",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-041",
+      "sourceId": "U4-MCQ-041",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-044",
+      "sourceId": "U4-MCQ-044",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-046",
+      "sourceId": "U4-MCQ-046",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-047",
+      "sourceId": "U4-MCQ-047",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-048",
+      "sourceId": "U4-MCQ-048",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-049",
+      "sourceId": "U4-MCQ-049",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-050",
+      "sourceId": "U4-MCQ-050",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-051",
+      "sourceId": "U4-MCQ-051",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-052",
+      "sourceId": "U4-MCQ-052",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-053",
+      "sourceId": "U4-MCQ-053",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-054",
+      "sourceId": "U4-MCQ-054",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-055",
+      "sourceId": "U4-MCQ-055",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-056",
+      "sourceId": "U4-MCQ-056",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-057",
+      "sourceId": "U4-MCQ-057",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-058",
+      "sourceId": "U4-MCQ-058",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-059",
+      "sourceId": "U4-MCQ-059",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-060",
+      "sourceId": "U4-MCQ-060",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-061",
+      "sourceId": "U4-MCQ-061",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-063",
+      "sourceId": "U4-MCQ-063",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-064",
+      "sourceId": "U4-MCQ-064",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-065",
+      "sourceId": "U4-MCQ-065",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-269",
+      "sourceId": "U4-MCQ-269",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-270",
+      "sourceId": "U4-MCQ-270",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-271",
+      "sourceId": "U4-MCQ-271",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-276",
+      "sourceId": "U4-MCQ-276",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": "u4_energy_bar_chart.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-066",
+      "sourceId": "U4-MCQ-066",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-067",
+      "sourceId": "U4-MCQ-067",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-068",
+      "sourceId": "U4-MCQ-068",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-069",
+      "sourceId": "U4-MCQ-069",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-070",
+      "sourceId": "U4-MCQ-070",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-071",
+      "sourceId": "U4-MCQ-071",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-072",
+      "sourceId": "U4-MCQ-072",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-073",
+      "sourceId": "U4-MCQ-073",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-075",
+      "sourceId": "U4-MCQ-075",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-076",
+      "sourceId": "U4-MCQ-076",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-077",
+      "sourceId": "U4-MCQ-077",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-078",
+      "sourceId": "U4-MCQ-078",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-079",
+      "sourceId": "U4-MCQ-079",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-080",
+      "sourceId": "U4-MCQ-080",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-081",
+      "sourceId": "U4-MCQ-081",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-082",
+      "sourceId": "U4-MCQ-082",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-083",
+      "sourceId": "U4-MCQ-083",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-084",
+      "sourceId": "U4-MCQ-084",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-086",
+      "sourceId": "U4-MCQ-086",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-087",
+      "sourceId": "U4-MCQ-087",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-090",
+      "sourceId": "U4-MCQ-090",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-091",
+      "sourceId": "U4-MCQ-091",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-093",
+      "sourceId": "U4-MCQ-093",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-095",
+      "sourceId": "U4-MCQ-095",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-096",
+      "sourceId": "U4-MCQ-096",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-097",
+      "sourceId": "U4-MCQ-097",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-098",
+      "sourceId": "U4-MCQ-098",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-100",
+      "sourceId": "U4-MCQ-100",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-262",
+      "sourceId": "U4-MCQ-262",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-263",
+      "sourceId": "U4-MCQ-263",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-264",
+      "sourceId": "U4-MCQ-264",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-265",
+      "sourceId": "U4-MCQ-265",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-266",
+      "sourceId": "U4-MCQ-266",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-267",
+      "sourceId": "U4-MCQ-267",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-268",
+      "sourceId": "U4-MCQ-268",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-101",
+      "sourceId": "U4-MCQ-101",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-102",
+      "sourceId": "U4-MCQ-102",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-103",
+      "sourceId": "U4-MCQ-103",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-104",
+      "sourceId": "U4-MCQ-104",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-105",
+      "sourceId": "U4-MCQ-105",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-106",
+      "sourceId": "U4-MCQ-106",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-107",
+      "sourceId": "U4-MCQ-107",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-108",
+      "sourceId": "U4-MCQ-108",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-109",
+      "sourceId": "U4-MCQ-109",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-110",
+      "sourceId": "U4-MCQ-110",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-111",
+      "sourceId": "U4-MCQ-111",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-112",
+      "sourceId": "U4-MCQ-112",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-113",
+      "sourceId": "U4-MCQ-113",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-114",
+      "sourceId": "U4-MCQ-114",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-115",
+      "sourceId": "U4-MCQ-115",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-116",
+      "sourceId": "U4-MCQ-116",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-118",
+      "sourceId": "U4-MCQ-118",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-121",
+      "sourceId": "U4-MCQ-121",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-122",
+      "sourceId": "U4-MCQ-122",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-123",
+      "sourceId": "U4-MCQ-123",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-124",
+      "sourceId": "U4-MCQ-124",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-126",
+      "sourceId": "U4-MCQ-126",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-129",
+      "sourceId": "U4-MCQ-129",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-130",
+      "sourceId": "U4-MCQ-130",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-132",
+      "sourceId": "U4-MCQ-132",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-133",
+      "sourceId": "U4-MCQ-133",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-134",
+      "sourceId": "U4-MCQ-134",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-135",
+      "sourceId": "U4-MCQ-135",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-254",
+      "sourceId": "U4-MCQ-254",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1",
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": "u4_gpe_height_reference.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-255",
+      "sourceId": "U4-MCQ-255",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-256",
+      "sourceId": "U4-MCQ-256",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-257",
+      "sourceId": "U4-MCQ-257",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-258",
+      "sourceId": "U4-MCQ-258",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1",
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": "u4_gpe_height_reference.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-272",
+      "sourceId": "U4-MCQ-272",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-273",
+      "sourceId": "U4-MCQ-273",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-136",
+      "sourceId": "U4-MCQ-136",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-137",
+      "sourceId": "U4-MCQ-137",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-138",
+      "sourceId": "U4-MCQ-138",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-139",
+      "sourceId": "U4-MCQ-139",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-140",
+      "sourceId": "U4-MCQ-140",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-141",
+      "sourceId": "U4-MCQ-141",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-142",
+      "sourceId": "U4-MCQ-142",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-143",
+      "sourceId": "U4-MCQ-143",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-144",
+      "sourceId": "U4-MCQ-144",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-145",
+      "sourceId": "U4-MCQ-145",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-146",
+      "sourceId": "U4-MCQ-146",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-148",
+      "sourceId": "U4-MCQ-148",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-149",
+      "sourceId": "U4-MCQ-149",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-150",
+      "sourceId": "U4-MCQ-150",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-151",
+      "sourceId": "U4-MCQ-151",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-152",
+      "sourceId": "U4-MCQ-152",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-153",
+      "sourceId": "U4-MCQ-153",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-155",
+      "sourceId": "U4-MCQ-155",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-156",
+      "sourceId": "U4-MCQ-156",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-157",
+      "sourceId": "U4-MCQ-157",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-158",
+      "sourceId": "U4-MCQ-158",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-159",
+      "sourceId": "U4-MCQ-159",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-161",
+      "sourceId": "U4-MCQ-161",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-162",
+      "sourceId": "U4-MCQ-162",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-163",
+      "sourceId": "U4-MCQ-163",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-164",
+      "sourceId": "U4-MCQ-164",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-165",
+      "sourceId": "U4-MCQ-165",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-166",
+      "sourceId": "U4-MCQ-166",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-167",
+      "sourceId": "U4-MCQ-167",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-168",
+      "sourceId": "U4-MCQ-168",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-169",
+      "sourceId": "U4-MCQ-169",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-170",
+      "sourceId": "U4-MCQ-170",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-171",
+      "sourceId": "U4-MCQ-171",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-172",
+      "sourceId": "U4-MCQ-172",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-173",
+      "sourceId": "U4-MCQ-173",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-174",
+      "sourceId": "U4-MCQ-174",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-175",
+      "sourceId": "U4-MCQ-175",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-176",
+      "sourceId": "U4-MCQ-176",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-177",
+      "sourceId": "U4-MCQ-177",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-178",
+      "sourceId": "U4-MCQ-178",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-179",
+      "sourceId": "U4-MCQ-179",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-180",
+      "sourceId": "U4-MCQ-180",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-181",
+      "sourceId": "U4-MCQ-181",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-182",
+      "sourceId": "U4-MCQ-182",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-183",
+      "sourceId": "U4-MCQ-183",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-184",
+      "sourceId": "U4-MCQ-184",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-185",
+      "sourceId": "U4-MCQ-185",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-186",
+      "sourceId": "U4-MCQ-186",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-187",
+      "sourceId": "U4-MCQ-187",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-188",
+      "sourceId": "U4-MCQ-188",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-189",
+      "sourceId": "U4-MCQ-189",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-190",
+      "sourceId": "U4-MCQ-190",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-191",
+      "sourceId": "U4-MCQ-191",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-192",
+      "sourceId": "U4-MCQ-192",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-193",
+      "sourceId": "U4-MCQ-193",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-194",
+      "sourceId": "U4-MCQ-194",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-195",
+      "sourceId": "U4-MCQ-195",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-275",
+      "sourceId": "U4-MCQ-275",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-277",
+      "sourceId": "U4-MCQ-277",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE2",
+        "COE3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": "u4_energy_bar_chart_before_after.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-278",
+      "sourceId": "U4-MCQ-278",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-196",
+      "sourceId": "U4-MCQ-196",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-197",
+      "sourceId": "U4-MCQ-197",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-198",
+      "sourceId": "U4-MCQ-198",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-199",
+      "sourceId": "U4-MCQ-199",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-200",
+      "sourceId": "U4-MCQ-200",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-201",
+      "sourceId": "U4-MCQ-201",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-202",
+      "sourceId": "U4-MCQ-202",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-203",
+      "sourceId": "U4-MCQ-203",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-204",
+      "sourceId": "U4-MCQ-204",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-205",
+      "sourceId": "U4-MCQ-205",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-207",
+      "sourceId": "U4-MCQ-207",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-208",
+      "sourceId": "U4-MCQ-208",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-209",
+      "sourceId": "U4-MCQ-209",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-210",
+      "sourceId": "U4-MCQ-210",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-213",
+      "sourceId": "U4-MCQ-213",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-214",
+      "sourceId": "U4-MCQ-214",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-215",
+      "sourceId": "U4-MCQ-215",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-216",
+      "sourceId": "U4-MCQ-216",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-218",
+      "sourceId": "U4-MCQ-218",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-219",
+      "sourceId": "U4-MCQ-219",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-220",
+      "sourceId": "U4-MCQ-220",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-259",
+      "sourceId": "U4-MCQ-259",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE1",
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": "u4_spe_spring_geometry.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-260",
+      "sourceId": "U4-MCQ-260",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-261",
+      "sourceId": "U4-MCQ-261",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-274",
+      "sourceId": "U4-MCQ-274",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-221",
+      "sourceId": "U4-MCQ-221",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-222",
+      "sourceId": "U4-MCQ-222",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-223",
+      "sourceId": "U4-MCQ-223",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-224",
+      "sourceId": "U4-MCQ-224",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-225",
+      "sourceId": "U4-MCQ-225",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-226",
+      "sourceId": "U4-MCQ-226",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-227",
+      "sourceId": "U4-MCQ-227",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-228",
+      "sourceId": "U4-MCQ-228",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-229",
+      "sourceId": "U4-MCQ-229",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-230",
+      "sourceId": "U4-MCQ-230",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-231",
+      "sourceId": "U4-MCQ-231",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-232",
+      "sourceId": "U4-MCQ-232",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-233",
+      "sourceId": "U4-MCQ-233",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-234",
+      "sourceId": "U4-MCQ-234",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-235",
+      "sourceId": "U4-MCQ-235",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-236",
+      "sourceId": "U4-MCQ-236",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-237",
+      "sourceId": "U4-MCQ-237",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-238",
+      "sourceId": "U4-MCQ-238",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-239",
+      "sourceId": "U4-MCQ-239",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-240",
+      "sourceId": "U4-MCQ-240",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-241",
+      "sourceId": "U4-MCQ-241",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-242",
+      "sourceId": "U4-MCQ-242",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-243",
+      "sourceId": "U4-MCQ-243",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-244",
+      "sourceId": "U4-MCQ-244",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-245",
+      "sourceId": "U4-MCQ-245",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-246",
+      "sourceId": "U4-MCQ-246",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-247",
+      "sourceId": "U4-MCQ-247",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-248",
+      "sourceId": "U4-MCQ-248",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1",
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-249",
+      "sourceId": "U4-MCQ-249",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-250",
+      "sourceId": "U4-MCQ-250",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-01",
+      "sourceId": "U4-FRQ-01",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W1",
+        "W3"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-02",
+      "sourceId": "U4-FRQ-02",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-03",
+      "sourceId": "U4-FRQ-03",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W1",
+        "W2"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-05",
+      "sourceId": "U4-FRQ-05",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-06",
+      "sourceId": "U4-FRQ-06",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W1",
+        "W2",
+        "W3"
+      ],
+      "difficulty": "High challenge",
+      "points": 11,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-51",
+      "sourceId": "U4-FRQ-51",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_work",
+      "outcomes": [
+        "W2",
+        "W3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": "u4_frq_incline_push.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-07",
+      "sourceId": "U4-FRQ-07",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED1",
+        "ED2"
+      ],
+      "difficulty": "Challenging",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-08",
+      "sourceId": "U4-FRQ-08",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED3",
+        "ED4"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-09",
+      "sourceId": "U4-FRQ-09",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-10",
+      "sourceId": "U4-FRQ-10",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED2",
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-11",
+      "sourceId": "U4-FRQ-11",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED1",
+        "ED2",
+        "ED3"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-12",
+      "sourceId": "U4-FRQ-12",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_energy_definitions",
+      "outcomes": [
+        "ED4",
+        "ED5"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_02_energy_definitions.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-13",
+      "sourceId": "U4-FRQ-13",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE1",
+        "KE2"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-14",
+      "sourceId": "U4-FRQ-14",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-15",
+      "sourceId": "U4-FRQ-15",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE1",
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-16",
+      "sourceId": "U4-FRQ-16",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE2",
+        "KE3"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-17",
+      "sourceId": "U4-FRQ-17",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-18",
+      "sourceId": "U4-FRQ-18",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE1",
+        "KE2",
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-19",
+      "sourceId": "U4-FRQ-19",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_kinetic_energy",
+      "outcomes": [
+        "KE2",
+        "KE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_03_kinetic_energy.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-20",
+      "sourceId": "U4-FRQ-20",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1",
+        "GPE2"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-21",
+      "sourceId": "U4-FRQ-21",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-22",
+      "sourceId": "U4-FRQ-22",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-23",
+      "sourceId": "U4-FRQ-23",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2",
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-24",
+      "sourceId": "U4-FRQ-24",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1",
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-25",
+      "sourceId": "U4-FRQ-25",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE2",
+        "GPE3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-26",
+      "sourceId": "U4-FRQ-26",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_gravitational_pe",
+      "outcomes": [
+        "GPE1",
+        "GPE2",
+        "GPE3"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_04_gravitational_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-27",
+      "sourceId": "U4-FRQ-27",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE1"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-28",
+      "sourceId": "U4-FRQ-28",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE2"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-29",
+      "sourceId": "U4-FRQ-29",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE3"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-30",
+      "sourceId": "U4-FRQ-30",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE4"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-31",
+      "sourceId": "U4-FRQ-31",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-32",
+      "sourceId": "U4-FRQ-32",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-33",
+      "sourceId": "U4-FRQ-33",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE2",
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-34",
+      "sourceId": "U4-FRQ-34",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE1",
+        "COE4"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-35",
+      "sourceId": "U4-FRQ-35",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE3",
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-36",
+      "sourceId": "U4-FRQ-36",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE5"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-37",
+      "sourceId": "U4-FRQ-37",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE2",
+        "COE4"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-38",
+      "sourceId": "U4-FRQ-38",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_conservation",
+      "outcomes": [
+        "COE2",
+        "COE3",
+        "COE5"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_05_conservation.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-39",
+      "sourceId": "U4-FRQ-39",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_spring_pe",
+      "outcomes": [
+        "SPE1"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-40",
+      "sourceId": "U4-FRQ-40",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-41",
+      "sourceId": "U4-FRQ-41",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_spring_pe",
+      "outcomes": [
+        "SPE1",
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-42",
+      "sourceId": "U4-FRQ-42",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_spring_pe",
+      "outcomes": [
+        "SPE2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-43",
+      "sourceId": "U4-FRQ-43",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_spring_pe",
+      "outcomes": [
+        "SPE1",
+        "SPE2"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_06_spring_pe.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-44",
+      "sourceId": "U4-FRQ-44",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1"
+      ],
+      "difficulty": "Moderate",
+      "points": 6,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-45",
+      "sourceId": "U4-FRQ-45",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-46",
+      "sourceId": "U4-FRQ-46",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1",
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-47",
+      "sourceId": "U4-FRQ-47",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-48",
+      "sourceId": "U4-FRQ-48",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1",
+        "WET2"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-49",
+      "sourceId": "U4-FRQ-49",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-FRQ-50",
+      "sourceId": "U4-FRQ-50",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_work_energy_theorem",
+      "outcomes": [
+        "WET1",
+        "WET2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_07_work_energy_theorem.md"
+    },
+    {
+      "id": "BP8-U4-MCQ-007",
+      "sourceId": "U4-MCQ-007",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md",
+      "retired": "28 Aug 2026",
+      "reason": "Original construct asked students to reason across continuously varying intermediate angles (0°→90°), violating Architecture §1's absolute 0°/90°/180°-only restriction (CAO-U4TB-003). Replaced during Batch 1 remediation, but the original text was overwritten in place rather than retired under a new ID at that time — a Specification §7 violation independently caught by the bank-level audit (U4BANK-006). This record formally retires the ID; the original defective text is not separately preserved (no git history exists for this file), but is described in `audits/batch_01_finding_reconciliation.md` and `audits/unit_04_spec_and_batch_01_cao_audit_v0.1.0.md` (Finding CAO-U4TB-003).",
+      "supersededBy": "BP8-U4-MCQ-251"
+    },
+    {
+      "id": "BP8-U4-MCQ-015",
+      "sourceId": "U4-MCQ-015",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md",
+      "retired": "28 Aug 2026",
+      "reason": "Original construct's asset and stem required ranking an angled rope-tension force whose angle was not 0°, 90°, or 180°, violating Architecture §1 (CAO-U4TB-004). Replaced during Batch 1 remediation, but the original text was overwritten in place rather than retired under a new ID at that time — a Specification §7 violation independently caught by the bank-level audit (U4BANK-006). This record formally retires the ID; the original defective text is not separately preserved (no git history exists for this file), but is described in `audits/batch_01_finding_reconciliation.md` and `audits/unit_04_spec_and_batch_01_cao_audit_v0.1.0.md` (Finding CAO-U4TB-004).",
+      "supersededBy": "BP8-U4-MCQ-252"
+    },
+    {
+      "id": "BP8-U4-MCQ-016",
+      "sourceId": "U4-MCQ-016",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_01_work.md",
+      "retired": "28 Aug 2026",
+      "reason": "Original construct used a force–displacement-graph \"area = work\" method not named in the Architecture (CAO-U4TB-007). Replaced during Batch 1 remediation with a data-table version (still MCQ-016 at the time), but the material representation-method change should have received a new ID under Specification §7 — a violation independently caught by the bank-level audit (U4BANK-006). This record formally retires the ID; the original graph-based text is not separately preserved (no git history exists for this file), but is described in `audits/batch_01_finding_reconciliation.md` and `audits/unit_04_spec_and_batch_01_cao_audit_v0.1.0.md` (Finding CAO-U4TB-007). The data-table version that replaced it in place is also retired here (rather than only the original), since it too never held its own distinct ID; it becomes the content of the superseding item below.",
+      "supersededBy": "BP8-U4-MCQ-253"
+    },
+    {
+      "id": "BP8-U4-MCQ-042",
+      "sourceId": "U4-MCQ-042",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md",
+      "retired": "28 Aug 2026",
+      "reason": "Retired to make room for a bar-chart-representation replacement addressing U4BANK-001 (representation breadth). This item's construct (sum KE and PE from given values, guarding against omitting one form — Architecture #12) is fully preserved in its replacement, now read from a bar-chart diagram instead of prose-stated values. See `audits/unit_04_bank_level_remediation_summary_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-276"
+    },
+    {
+      "id": "BP8-U4-MCQ-043",
+      "sourceId": "U4-MCQ-043",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-044/045/063 (Jaccard similarity up to 0.92) — a general KE-plus-PE_grav summation template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-269"
+    },
+    {
+      "id": "BP8-U4-MCQ-045",
+      "sourceId": "U4-MCQ-045",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-043/044/063 (Jaccard similarity up to 0.74) — a general KE-plus-PE_grav summation template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-270"
+    },
+    {
+      "id": "BP8-U4-MCQ-062",
+      "sourceId": "U4-MCQ-062",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_02_energy_definitions.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-042/050/065 (Jaccard similarity up to 0.94) — a three-term direct-summation template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-271"
+    },
+    {
+      "id": "BP8-U4-MCQ-074",
+      "sourceId": "U4-MCQ-074",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-073/089/094 (Jaccard similarity 1.0) — a plain-KE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-262"
+    },
+    {
+      "id": "BP8-U4-MCQ-085",
+      "sourceId": "U4-MCQ-085",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-075/099 (Jaccard similarity 0.86) — a plain-KE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-263"
+    },
+    {
+      "id": "BP8-U4-MCQ-088",
+      "sourceId": "U4-MCQ-088",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-080/092 (Jaccard similarity up to 1.0) — an inverse-solve-for-speed template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-264"
+    },
+    {
+      "id": "BP8-U4-MCQ-089",
+      "sourceId": "U4-MCQ-089",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-073/074/094 (Jaccard similarity 1.0) — a plain-KE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-265"
+    },
+    {
+      "id": "BP8-U4-MCQ-092",
+      "sourceId": "U4-MCQ-092",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-080/088 (Jaccard similarity 1.0) — an inverse-solve-for-speed template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-266"
+    },
+    {
+      "id": "BP8-U4-MCQ-094",
+      "sourceId": "U4-MCQ-094",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-073/074/089 (Jaccard similarity up to 1.0) — a plain-KE-calculation template differing only in the numeric inputs, with an inconsistent difficulty label (Moderate) relative to MCQ-073's original Challenging label for the same construct. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-267"
+    },
+    {
+      "id": "BP8-U4-MCQ-099",
+      "sourceId": "U4-MCQ-099",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_03_kinetic_energy.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-075/085 (Jaccard similarity 0.86) — a plain-KE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-268"
+    },
+    {
+      "id": "BP8-U4-MCQ-117",
+      "sourceId": "U4-MCQ-117",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-116 (Jaccard similarity 1.0) — a plain-PE-calculation template differing only in the numeric inputs, with an inconsistent difficulty label (Moderate) relative to other near-identical clones labeled Challenging. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-254"
+    },
+    {
+      "id": "BP8-U4-MCQ-119",
+      "sourceId": "U4-MCQ-119",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-116/117 (Jaccard similarity 1.0) — a plain-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-255"
+    },
+    {
+      "id": "BP8-U4-MCQ-120",
+      "sourceId": "U4-MCQ-120",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-116/117/119 (Jaccard similarity 1.0) — a plain-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-256"
+    },
+    {
+      "id": "BP8-U4-MCQ-125",
+      "sourceId": "U4-MCQ-125",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-116/117/119/120 (Jaccard similarity 1.0) — a plain-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-257"
+    },
+    {
+      "id": "BP8-U4-MCQ-127",
+      "sourceId": "U4-MCQ-127",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-124/131 (Jaccard similarity up to 0.92) — an inverse-solve-for-height template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-272"
+    },
+    {
+      "id": "BP8-U4-MCQ-128",
+      "sourceId": "U4-MCQ-128",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-116/117/119/120/125 (Jaccard similarity 0.79) — a plain-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-258"
+    },
+    {
+      "id": "BP8-U4-MCQ-131",
+      "sourceId": "U4-MCQ-131",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_04_gravitational_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-124/127 (Jaccard similarity up to 0.92) — an inverse-solve-for-height template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-273"
+    },
+    {
+      "id": "BP8-U4-MCQ-147",
+      "sourceId": "U4-MCQ-147",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-176 (Jaccard similarity 0.87) — both a generic \"given ME at one point and one component at another, solve for the other component\" template with only the specific unknown and numbers varying. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-275"
+    },
+    {
+      "id": "BP8-U4-MCQ-154",
+      "sourceId": "U4-MCQ-154",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md",
+      "retired": "28 Aug 2026",
+      "reason": "Retired to make room for a before/after-bar-chart-representation replacement addressing U4BANK-001 (representation breadth). This item's construct (identify the energy transformation occurring, PE-to-KE) is preserved and extended in its replacement, which additionally requires verifying conservation of the total from the chart. See `audits/unit_04_bank_level_remediation_summary_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-277"
+    },
+    {
+      "id": "BP8-U4-MCQ-160",
+      "sourceId": "U4-MCQ-160",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_05_conservation.md",
+      "retired": "28 Aug 2026",
+      "reason": "Retired to make room for a second independently-worded probe of Architecture #14 (energy destroyed vs. transformed), addressing U4BANK-007 — this misconception had only one probe (MCQ-159) bank-wide, short of Specification §6's \"at least two independently worded probes\" minimum. This item's construct (identify a spring→kinetic transformation) remains covered by other COE3 items in the cluster (e.g., MCQ-155, 162, 163). See `audits/unit_04_bank_level_remediation_summary_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-278"
+    },
+    {
+      "id": "BP8-U4-MCQ-206",
+      "sourceId": "U4-MCQ-206",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-203/211 (Jaccard similarity 1.0) — a plain-spring-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-259"
+    },
+    {
+      "id": "BP8-U4-MCQ-211",
+      "sourceId": "U4-MCQ-211",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-203/206 (Jaccard similarity 1.0) — a plain-spring-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-260"
+    },
+    {
+      "id": "BP8-U4-MCQ-212",
+      "sourceId": "U4-MCQ-212",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-208 (Jaccard similarity 0.90) — an inverse-solve-for-displacement template differing only in numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md` and `audits/semantic_duplication_register.md`.",
+      "supersededBy": "BP8-U4-MCQ-274"
+    },
+    {
+      "id": "BP8-U4-MCQ-217",
+      "sourceId": "U4-MCQ-217",
+      "state": "retired",
+      "type": "MCQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/mcq/mcq_06_spring_pe.md",
+      "retired": "28 Aug 2026",
+      "reason": "Bank-level audit (U4BANK-002/003) flagged this item as a normalized-stem near-duplicate of MCQ-203/204/206/211 (Jaccard similarity up to 1.0) — a plain-spring-PE-calculation template differing only in the numeric inputs. See `audits/unit_04_bank_level_cao_audit_v0.1.0.md`.",
+      "supersededBy": "BP8-U4-MCQ-261"
+    },
+    {
+      "id": "BP8-U4-FRQ-04",
+      "sourceId": "U4-FRQ-04",
+      "state": "retired",
+      "type": "FRQ",
+      "cluster": null,
+      "outcomes": [],
+      "difficulty": null,
+      "points": null,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/frq/frq_01_work.md",
+      "retired": "28 Aug 2026",
+      "reason": "Original part (c) named `90° + incline angle` as the expected reasoning target, an unambiguous non-cardinal-angle construct violating Architecture §1 (CAO-U4TB-005). Part (c) was rewritten in place during Batch 1 remediation (to a normal-force/zero-work part) rather than the whole item receiving a new ID under Specification §7's material-change rule — a violation independently caught by the bank-level audit (U4BANK-006). This record formally retires the ID; the original part (c) text is not separately preserved (no git history exists for this file), but is described in `audits/batch_01_finding_reconciliation.md` and `audits/unit_04_spec_and_batch_01_cao_audit_v0.1.0.md` (Finding CAO-U4TB-005). Parts (a) and (b), unchanged throughout, carry over verbatim into the superseding item.",
+      "supersededBy": "BP8-U4-FRQ-51"
+    }
+  ]
+}

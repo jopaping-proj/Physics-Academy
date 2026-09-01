@@ -1,0 +1,4624 @@
+{
+  "id": "basis-p8-u3-test-bank-index",
+  "course": "BASIS Physics 8",
+  "courseId": "basis-physics-8",
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "sourceIndex": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/index/unit_03_forces_test_bank_index.json",
+  "generatedFromSourceAt": "2026-08-25T22:28:44+00:00",
+  "counts": {
+    "mcq": 250,
+    "frq": 50,
+    "active": 300,
+    "retired": 0,
+    "totalRecords": 300
+  },
+  "entries": [
+    {
+      "id": "BP8-U3-MCQ-001",
+      "sourceId": "U3-MCQ-001",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-002",
+      "sourceId": "U3-MCQ-002",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-003",
+      "sourceId": "U3-MCQ-003",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-004",
+      "sourceId": "U3-MCQ-004",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-005",
+      "sourceId": "U3-MCQ-005",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-006",
+      "sourceId": "U3-MCQ-006",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-007",
+      "sourceId": "U3-MCQ-007",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-008",
+      "sourceId": "U3-MCQ-008",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-009",
+      "sourceId": "U3-MCQ-009",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-010",
+      "sourceId": "U3-MCQ-010",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-011",
+      "sourceId": "U3-MCQ-011",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-012",
+      "sourceId": "U3-MCQ-012",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-013",
+      "sourceId": "U3-MCQ-013",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-014",
+      "sourceId": "U3-MCQ-014",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-015",
+      "sourceId": "U3-MCQ-015",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-016",
+      "sourceId": "U3-MCQ-016",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3",
+        "G2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-017",
+      "sourceId": "U3-MCQ-017",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-018",
+      "sourceId": "U3-MCQ-018",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-019",
+      "sourceId": "U3-MCQ-019",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-020",
+      "sourceId": "U3-MCQ-020",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3",
+        "G2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-021",
+      "sourceId": "U3-MCQ-021",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-022",
+      "sourceId": "U3-MCQ-022",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G3",
+        "G1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-023",
+      "sourceId": "U3-MCQ-023",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-024",
+      "sourceId": "U3-MCQ-024",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G2",
+        "G3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-025",
+      "sourceId": "U3-MCQ-025",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_01_gravity",
+      "outcomes": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-026",
+      "sourceId": "U3-MCQ-026",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-027",
+      "sourceId": "U3-MCQ-027",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-028",
+      "sourceId": "U3-MCQ-028",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-029",
+      "sourceId": "U3-MCQ-029",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-030",
+      "sourceId": "U3-MCQ-030",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-031",
+      "sourceId": "U3-MCQ-031",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-032",
+      "sourceId": "U3-MCQ-032",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-033",
+      "sourceId": "U3-MCQ-033",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-034",
+      "sourceId": "U3-MCQ-034",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-035",
+      "sourceId": "U3-MCQ-035",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-036",
+      "sourceId": "U3-MCQ-036",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-037",
+      "sourceId": "U3-MCQ-037",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-038",
+      "sourceId": "U3-MCQ-038",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-039",
+      "sourceId": "U3-MCQ-039",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-040",
+      "sourceId": "U3-MCQ-040",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-041",
+      "sourceId": "U3-MCQ-041",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3",
+        "N1.2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-042",
+      "sourceId": "U3-MCQ-042",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1",
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-043",
+      "sourceId": "U3-MCQ-043",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-044",
+      "sourceId": "U3-MCQ-044",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2",
+        "N1.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-045",
+      "sourceId": "U3-MCQ-045",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-046",
+      "sourceId": "U3-MCQ-046",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-047",
+      "sourceId": "U3-MCQ-047",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-048",
+      "sourceId": "U3-MCQ-048",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-049",
+      "sourceId": "U3-MCQ-049",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-050",
+      "sourceId": "U3-MCQ-050",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-051",
+      "sourceId": "U3-MCQ-051",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-052",
+      "sourceId": "U3-MCQ-052",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-053",
+      "sourceId": "U3-MCQ-053",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-054",
+      "sourceId": "U3-MCQ-054",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-055",
+      "sourceId": "U3-MCQ-055",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-056",
+      "sourceId": "U3-MCQ-056",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-057",
+      "sourceId": "U3-MCQ-057",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2",
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-058",
+      "sourceId": "U3-MCQ-058",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-059",
+      "sourceId": "U3-MCQ-059",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-060",
+      "sourceId": "U3-MCQ-060",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3",
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-061",
+      "sourceId": "U3-MCQ-061",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-062",
+      "sourceId": "U3-MCQ-062",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3",
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-063",
+      "sourceId": "U3-MCQ-063",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-064",
+      "sourceId": "U3-MCQ-064",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-065",
+      "sourceId": "U3-MCQ-065",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-066",
+      "sourceId": "U3-MCQ-066",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-067",
+      "sourceId": "U3-MCQ-067",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3",
+        "FID1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-068",
+      "sourceId": "U3-MCQ-068",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-069",
+      "sourceId": "U3-MCQ-069",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-070",
+      "sourceId": "U3-MCQ-070",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-071",
+      "sourceId": "U3-MCQ-071",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-072",
+      "sourceId": "U3-MCQ-072",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-073",
+      "sourceId": "U3-MCQ-073",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-074",
+      "sourceId": "U3-MCQ-074",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-075",
+      "sourceId": "U3-MCQ-075",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID3",
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-076",
+      "sourceId": "U3-MCQ-076",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-077",
+      "sourceId": "U3-MCQ-077",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-078",
+      "sourceId": "U3-MCQ-078",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-079",
+      "sourceId": "U3-MCQ-079",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-080",
+      "sourceId": "U3-MCQ-080",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID2",
+        "FID3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-081",
+      "sourceId": "U3-MCQ-081",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-082",
+      "sourceId": "U3-MCQ-082",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-083",
+      "sourceId": "U3-MCQ-083",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-084",
+      "sourceId": "U3-MCQ-084",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ4"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-085",
+      "sourceId": "U3-MCQ-085",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ4",
+        "EQ1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-086",
+      "sourceId": "U3-MCQ-086",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-087",
+      "sourceId": "U3-MCQ-087",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-088",
+      "sourceId": "U3-MCQ-088",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-089",
+      "sourceId": "U3-MCQ-089",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-090",
+      "sourceId": "U3-MCQ-090",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-091",
+      "sourceId": "U3-MCQ-091",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-092",
+      "sourceId": "U3-MCQ-092",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-093",
+      "sourceId": "U3-MCQ-093",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2",
+        "EQ3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-094",
+      "sourceId": "U3-MCQ-094",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ4"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-095",
+      "sourceId": "U3-MCQ-095",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-096",
+      "sourceId": "U3-MCQ-096",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-097",
+      "sourceId": "U3-MCQ-097",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-098",
+      "sourceId": "U3-MCQ-098",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2",
+        "EQ4"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-099",
+      "sourceId": "U3-MCQ-099",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3",
+        "EQ1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-100",
+      "sourceId": "U3-MCQ-100",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-101",
+      "sourceId": "U3-MCQ-101",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-102",
+      "sourceId": "U3-MCQ-102",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-103",
+      "sourceId": "U3-MCQ-103",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-104",
+      "sourceId": "U3-MCQ-104",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2",
+        "EQ4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-105",
+      "sourceId": "U3-MCQ-105",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3",
+        "EQ1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-106",
+      "sourceId": "U3-MCQ-106",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-107",
+      "sourceId": "U3-MCQ-107",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-108",
+      "sourceId": "U3-MCQ-108",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-109",
+      "sourceId": "U3-MCQ-109",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ2",
+        "EQ1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-110",
+      "sourceId": "U3-MCQ-110",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_04_equilibrium",
+      "outcomes": [
+        "EQ4"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-111",
+      "sourceId": "U3-MCQ-111",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-112",
+      "sourceId": "U3-MCQ-112",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-113",
+      "sourceId": "U3-MCQ-113",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-114",
+      "sourceId": "U3-MCQ-114",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-115",
+      "sourceId": "U3-MCQ-115",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-116",
+      "sourceId": "U3-MCQ-116",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-117",
+      "sourceId": "U3-MCQ-117",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-118",
+      "sourceId": "U3-MCQ-118",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-119",
+      "sourceId": "U3-MCQ-119",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-120",
+      "sourceId": "U3-MCQ-120",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-121",
+      "sourceId": "U3-MCQ-121",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-122",
+      "sourceId": "U3-MCQ-122",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-123",
+      "sourceId": "U3-MCQ-123",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-124",
+      "sourceId": "U3-MCQ-124",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-125",
+      "sourceId": "U3-MCQ-125",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2",
+        "N2.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-126",
+      "sourceId": "U3-MCQ-126",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-127",
+      "sourceId": "U3-MCQ-127",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-128",
+      "sourceId": "U3-MCQ-128",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-129",
+      "sourceId": "U3-MCQ-129",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-130",
+      "sourceId": "U3-MCQ-130",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1",
+        "N2.2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-131",
+      "sourceId": "U3-MCQ-131",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-132",
+      "sourceId": "U3-MCQ-132",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-133",
+      "sourceId": "U3-MCQ-133",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1",
+        "N2.2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-134",
+      "sourceId": "U3-MCQ-134",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-135",
+      "sourceId": "U3-MCQ-135",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-136",
+      "sourceId": "U3-MCQ-136",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_incline_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-137",
+      "sourceId": "U3-MCQ-137",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": "../assets/u3_incline_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-138",
+      "sourceId": "U3-MCQ-138",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": "../assets/u3_incline_g3.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-139",
+      "sourceId": "U3-MCQ-139",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-140",
+      "sourceId": "U3-MCQ-140",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-141",
+      "sourceId": "U3-MCQ-141",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-142",
+      "sourceId": "U3-MCQ-142",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-143",
+      "sourceId": "U3-MCQ-143",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-144",
+      "sourceId": "U3-MCQ-144",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-145",
+      "sourceId": "U3-MCQ-145",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3",
+        "INC1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-146",
+      "sourceId": "U3-MCQ-146",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_incline_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-147",
+      "sourceId": "U3-MCQ-147",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-148",
+      "sourceId": "U3-MCQ-148",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-149",
+      "sourceId": "U3-MCQ-149",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-150",
+      "sourceId": "U3-MCQ-150",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-151",
+      "sourceId": "U3-MCQ-151",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-152",
+      "sourceId": "U3-MCQ-152",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-153",
+      "sourceId": "U3-MCQ-153",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-154",
+      "sourceId": "U3-MCQ-154",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-155",
+      "sourceId": "U3-MCQ-155",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3",
+        "INC1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-156",
+      "sourceId": "U3-MCQ-156",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-157",
+      "sourceId": "U3-MCQ-157",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-158",
+      "sourceId": "U3-MCQ-158",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-159",
+      "sourceId": "U3-MCQ-159",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-160",
+      "sourceId": "U3-MCQ-160",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-161",
+      "sourceId": "U3-MCQ-161",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-162",
+      "sourceId": "U3-MCQ-162",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-163",
+      "sourceId": "U3-MCQ-163",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-164",
+      "sourceId": "U3-MCQ-164",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-165",
+      "sourceId": "U3-MCQ-165",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-166",
+      "sourceId": "U3-MCQ-166",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-167",
+      "sourceId": "U3-MCQ-167",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-168",
+      "sourceId": "U3-MCQ-168",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-169",
+      "sourceId": "U3-MCQ-169",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-170",
+      "sourceId": "U3-MCQ-170",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-171",
+      "sourceId": "U3-MCQ-171",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-172",
+      "sourceId": "U3-MCQ-172",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-173",
+      "sourceId": "U3-MCQ-173",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-174",
+      "sourceId": "U3-MCQ-174",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-175",
+      "sourceId": "U3-MCQ-175",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-176",
+      "sourceId": "U3-MCQ-176",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-177",
+      "sourceId": "U3-MCQ-177",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-178",
+      "sourceId": "U3-MCQ-178",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-179",
+      "sourceId": "U3-MCQ-179",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-180",
+      "sourceId": "U3-MCQ-180",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-181",
+      "sourceId": "U3-MCQ-181",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-182",
+      "sourceId": "U3-MCQ-182",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-183",
+      "sourceId": "U3-MCQ-183",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2",
+        "N3.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-184",
+      "sourceId": "U3-MCQ-184",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-185",
+      "sourceId": "U3-MCQ-185",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-186",
+      "sourceId": "U3-MCQ-186",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-187",
+      "sourceId": "U3-MCQ-187",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-188",
+      "sourceId": "U3-MCQ-188",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-189",
+      "sourceId": "U3-MCQ-189",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-190",
+      "sourceId": "U3-MCQ-190",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-191",
+      "sourceId": "U3-MCQ-191",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-192",
+      "sourceId": "U3-MCQ-192",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-193",
+      "sourceId": "U3-MCQ-193",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-194",
+      "sourceId": "U3-MCQ-194",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-195",
+      "sourceId": "U3-MCQ-195",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-196",
+      "sourceId": "U3-MCQ-196",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2",
+        "N3.1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-197",
+      "sourceId": "U3-MCQ-197",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-198",
+      "sourceId": "U3-MCQ-198",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-199",
+      "sourceId": "U3-MCQ-199",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-200",
+      "sourceId": "U3-MCQ-200",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2",
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-201",
+      "sourceId": "U3-MCQ-201",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-202",
+      "sourceId": "U3-MCQ-202",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-203",
+      "sourceId": "U3-MCQ-203",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-204",
+      "sourceId": "U3-MCQ-204",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-205",
+      "sourceId": "U3-MCQ-205",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-206",
+      "sourceId": "U3-MCQ-206",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-207",
+      "sourceId": "U3-MCQ-207",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-208",
+      "sourceId": "U3-MCQ-208",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-209",
+      "sourceId": "U3-MCQ-209",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-210",
+      "sourceId": "U3-MCQ-210",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-211",
+      "sourceId": "U3-MCQ-211",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-212",
+      "sourceId": "U3-MCQ-212",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-213",
+      "sourceId": "U3-MCQ-213",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-214",
+      "sourceId": "U3-MCQ-214",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-215",
+      "sourceId": "U3-MCQ-215",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-216",
+      "sourceId": "U3-MCQ-216",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-217",
+      "sourceId": "U3-MCQ-217",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-218",
+      "sourceId": "U3-MCQ-218",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-219",
+      "sourceId": "U3-MCQ-219",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-220",
+      "sourceId": "U3-MCQ-220",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-221",
+      "sourceId": "U3-MCQ-221",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2",
+        "SPR1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-222",
+      "sourceId": "U3-MCQ-222",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_spring_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-223",
+      "sourceId": "U3-MCQ-223",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": "../assets/u3_spring_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-224",
+      "sourceId": "U3-MCQ-224",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": "../assets/u3_spring_g3.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-225",
+      "sourceId": "U3-MCQ-225",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3",
+        "SPR1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": "../assets/u3_spring_g3.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-226",
+      "sourceId": "U3-MCQ-226",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-227",
+      "sourceId": "U3-MCQ-227",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-228",
+      "sourceId": "U3-MCQ-228",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2",
+        "SPR1"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-229",
+      "sourceId": "U3-MCQ-229",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-230",
+      "sourceId": "U3-MCQ-230",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-231",
+      "sourceId": "U3-MCQ-231",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-232",
+      "sourceId": "U3-MCQ-232",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-233",
+      "sourceId": "U3-MCQ-233",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-234",
+      "sourceId": "U3-MCQ-234",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-235",
+      "sourceId": "U3-MCQ-235",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3",
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-236",
+      "sourceId": "U3-MCQ-236",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-237",
+      "sourceId": "U3-MCQ-237",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-238",
+      "sourceId": "U3-MCQ-238",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2",
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-239",
+      "sourceId": "U3-MCQ-239",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-240",
+      "sourceId": "U3-MCQ-240",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-241",
+      "sourceId": "U3-MCQ-241",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-242",
+      "sourceId": "U3-MCQ-242",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-243",
+      "sourceId": "U3-MCQ-243",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-244",
+      "sourceId": "U3-MCQ-244",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-245",
+      "sourceId": "U3-MCQ-245",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-246",
+      "sourceId": "U3-MCQ-246",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-247",
+      "sourceId": "U3-MCQ-247",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": null,
+      "answer": "B",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-248",
+      "sourceId": "U3-MCQ-248",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2",
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "D",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-249",
+      "sourceId": "U3-MCQ-249",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": null,
+      "answer": "A",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-MCQ-250",
+      "sourceId": "U3-MCQ-250",
+      "state": "active",
+      "type": "MCQ",
+      "cluster": "mcq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2",
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": null,
+      "answer": "C",
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/mcq/mcq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-01",
+      "sourceId": "U3-FRQ-01",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_gravity",
+      "outcomes": [
+        "G1",
+        "G3"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-02",
+      "sourceId": "U3-FRQ-02",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_gravity",
+      "outcomes": [
+        "G3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-03",
+      "sourceId": "U3-FRQ-03",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_gravity",
+      "outcomes": [
+        "G2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-04",
+      "sourceId": "U3-FRQ-04",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_gravity",
+      "outcomes": [
+        "G2",
+        "G3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-05",
+      "sourceId": "U3-FRQ-05",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_01_gravity",
+      "outcomes": [
+        "G2",
+        "G3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_01_gravity.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-06",
+      "sourceId": "U3-FRQ-06",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1",
+        "N1.2"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-07",
+      "sourceId": "U3-FRQ-07",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-08",
+      "sourceId": "U3-FRQ-08",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.2",
+        "N1.3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-09",
+      "sourceId": "U3-FRQ-09",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_02_inertia_and_n1",
+      "outcomes": [
+        "N1.1",
+        "N1.3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_02_inertia_and_n1.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-10",
+      "sourceId": "U3-FRQ-10",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-11",
+      "sourceId": "U3-FRQ-11",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-12",
+      "sourceId": "U3-FRQ-12",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-13",
+      "sourceId": "U3-FRQ-13",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-14",
+      "sourceId": "U3-FRQ-14",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-15",
+      "sourceId": "U3-FRQ-15",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID3",
+        "FID2"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-16",
+      "sourceId": "U3-FRQ-16",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_03_force_identification_and_fbds",
+      "outcomes": [
+        "FID1",
+        "FID2",
+        "FID3"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_03_force_identification_and_fbds.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-17",
+      "sourceId": "U3-FRQ-17",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ4"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-18",
+      "sourceId": "U3-FRQ-18",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ2",
+        "EQ4"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-19",
+      "sourceId": "U3-FRQ-19",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-20",
+      "sourceId": "U3-FRQ-20",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ4"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-21",
+      "sourceId": "U3-FRQ-21",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ2"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-22",
+      "sourceId": "U3-FRQ-22",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_04_equilibrium",
+      "outcomes": [
+        "EQ1",
+        "EQ2",
+        "EQ3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": "../assets/u3_fbd_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_04_equilibrium.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-23",
+      "sourceId": "U3-FRQ-23",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-24",
+      "sourceId": "U3-FRQ-24",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-25",
+      "sourceId": "U3-FRQ-25",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2",
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": "../assets/u3_fbd_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-26",
+      "sourceId": "U3-FRQ-26",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-27",
+      "sourceId": "U3-FRQ-27",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.1"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-28",
+      "sourceId": "U3-FRQ-28",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_05_newtons_second_law",
+      "outcomes": [
+        "N2.2",
+        "N2.1"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_05_newtons_second_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-29",
+      "sourceId": "U3-FRQ-29",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": 8,
+      "answer": null,
+      "asset": "../assets/u3_incline_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-30",
+      "sourceId": "U3-FRQ-30",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": "../assets/u3_incline_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-31",
+      "sourceId": "U3-FRQ-31",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-32",
+      "sourceId": "U3-FRQ-32",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-33",
+      "sourceId": "U3-FRQ-33",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC2"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-34",
+      "sourceId": "U3-FRQ-34",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-35",
+      "sourceId": "U3-FRQ-35",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-36",
+      "sourceId": "U3-FRQ-36",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC1",
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": "../assets/u3_incline_g2.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-37",
+      "sourceId": "U3-FRQ-37",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_06_inclined_planes",
+      "outcomes": [
+        "INC2",
+        "INC3"
+      ],
+      "difficulty": "High challenge",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_06_inclined_planes.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-38",
+      "sourceId": "U3-FRQ-38",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-39",
+      "sourceId": "U3-FRQ-39",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.3"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-40",
+      "sourceId": "U3-FRQ-40",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-41",
+      "sourceId": "U3-FRQ-41",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.2"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-42",
+      "sourceId": "U3-FRQ-42",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2",
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-43",
+      "sourceId": "U3-FRQ-43",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-44",
+      "sourceId": "U3-FRQ-44",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_07_newtons_third_law",
+      "outcomes": [
+        "N3.1",
+        "N3.2",
+        "N3.3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_07_newtons_third_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-45",
+      "sourceId": "U3-FRQ-45",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2"
+      ],
+      "difficulty": "Moderate",
+      "points": 7,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-46",
+      "sourceId": "U3-FRQ-46",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR1"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-47",
+      "sourceId": "U3-FRQ-47",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR2"
+      ],
+      "difficulty": "Challenging",
+      "points": 9,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-48",
+      "sourceId": "U3-FRQ-48",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR3"
+      ],
+      "difficulty": "Challenging",
+      "points": 8,
+      "answer": null,
+      "asset": "../assets/u3_spring_g1.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-49",
+      "sourceId": "U3-FRQ-49",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR3",
+        "SPR1"
+      ],
+      "difficulty": "High challenge",
+      "points": 9,
+      "answer": null,
+      "asset": "../assets/u3_spring_g3.svg",
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    },
+    {
+      "id": "BP8-U3-FRQ-50",
+      "sourceId": "U3-FRQ-50",
+      "state": "active",
+      "type": "FRQ",
+      "cluster": "frq_08_hookes_law",
+      "outcomes": [
+        "SPR1",
+        "SPR2",
+        "SPR3"
+      ],
+      "difficulty": "High challenge",
+      "points": 10,
+      "answer": null,
+      "asset": null,
+      "sourceFile": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/frq/frq_08_hookes_law.md"
+    }
+  ]
+}

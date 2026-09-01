@@ -1,0 +1,116 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u1-index",
+  "slug": "unit-1-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 1: Graphing and Dimensional Analysis",
+  "lessonTitle": "Unit 1 · Graphing and Dimensional Analysis",
+  "source": "resources/physics8/resources/unit1_graphing_and_dimensional_analysis_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Graphing Skills",
+      "outcomes": [
+        "Locate values on the vertical axis that correspond to a value on the horizontal axis.",
+        "Identify physical quantities measured on each axis.",
+        "Calculate the slope of a graph with numbers and units.",
+        "Identify a positive or negative slope by visual inspection.",
+        "Calculate the area under the curve of any curve with a constant slope (straight line graphs only).",
+        "Add graph segments together to find total area under the curve.",
+        "Identify the units on the area under the curve.",
+        "Identify graph points clearly."
+      ]
+    },
+    {
+      "title": "Algebra & Problem Solving",
+      "outcomes": [
+        "Apply algebra to solve for unknown variables symbolically."
+      ]
+    },
+    {
+      "title": "Measurement & Data Analysis",
+      "outcomes": [
+        "Choose appropriate measurement scales and use units in recording.",
+        "Identify relationships within variables from data tables.",
+        "Measure using measurement tools.",
+        "Differentiate between data sets that are accurate or precise."
+      ]
+    },
+    {
+      "title": "Experimental Design",
+      "outcomes": [
+        "Explain how to read graphs, and identify the experimental vs control groups and variables (independent, dependent, & control).",
+        "Distinguish the basic components of experimental design including types of variables, how to read graphs, and the difference between experimental and control groups."
+      ]
+    },
+    {
+      "title": "Units & Prefixes",
+      "outcomes": [
+        "State commonly used units in physics, and what they are used for.",
+        "Convert between prefixes from pico to tera.",
+        "Identify the SI units for distance, displacement, speed, velocity, acceleration, force, energy, work, power, momentum, impulse, charge, current, voltage, & resistance."
+      ]
+    }
+  ],
+  "intro": "**Graphing and Dimensional Analysis** is part of the BASIS Physics 8 course map.\n\nThe source defines **18 learning outcomes** across **5 topic clusters**.\n\nSource: `resources/physics8/resources/unit1_graphing_and_dimensional_analysis_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": null,
+      "title": "Unit 1 Entry Diagnostic",
+      "status": "planned",
+      "note": "Placeholder — no native diagnostic has been approved for this unit."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": null,
+      "title": "Graphing Skills",
+      "cluster": "BP8.1.1",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Algebra & Problem Solving",
+      "cluster": "BP8.1.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Measurement & Data Analysis",
+      "cluster": "BP8.1.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Experimental Design",
+      "cluster": "BP8.1.4",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": null,
+      "title": "Units & Prefixes",
+      "cluster": "BP8.1.5",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 1 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

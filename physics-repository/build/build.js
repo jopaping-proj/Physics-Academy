@@ -265,6 +265,15 @@ function buildLesson(file, templates) {
       BREADCRUMB: [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "),
       HEADING: esc(lesson.lessonTitle || lesson.unit || "Unit"),
       INTRO: mdToHtml(lesson.intro || ""),
+      OUTCOMES: (lesson.outcomeClusters || []).length
+        ? `<section class="unit-index__outcomes" aria-labelledby="learning-outcomes-heading">
+    <h2 id="learning-outcomes-heading">Learning outcomes</h2>
+    ${(lesson.outcomeClusters || []).map((cluster) => `<details class="unit-index__outcome-cluster card">
+      <summary>${esc(cluster.title || "Outcome cluster")} <span>${(cluster.outcomes || []).length}</span></summary>
+      ${mdToHtml((cluster.outcomes || []).map((outcome) => `- ${outcome}`).join("\n"))}
+    </details>`).join("\n    ")}
+  </section>`
+        : "",
       SEQUENCE: items.join("\n"),
     });
     fs.mkdirSync(path.dirname(outPath), { recursive: true });

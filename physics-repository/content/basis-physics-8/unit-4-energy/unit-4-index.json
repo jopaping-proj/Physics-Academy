@@ -1,0 +1,147 @@
+{
+  "format": "unit-index",
+  "id": "basis-p8-u4-index",
+  "slug": "unit-4-index",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "lessonTitle": "Unit 4 · Energy",
+  "source": "resources/physics8/resources/unit4_energy_outcomes.md",
+  "outcomeClusters": [
+    {
+      "title": "Work",
+      "outcomes": [
+        "State the full definition of work.",
+        "Describe the relationship between work and direction.",
+        "Calculate work done with an angle of 0°, 180°, or 90°."
+      ]
+    },
+    {
+      "title": "Energy Definitions & Types",
+      "outcomes": [
+        "Define total energy.",
+        "Define mechanical energy.",
+        "Identify potential energy and kinetic energy as types of mechanical energies.",
+        "Identify the total mechanical energy in a situation given the description.",
+        "Calculate the total mechanical energy of a system."
+      ]
+    },
+    {
+      "title": "Gravitational Potential Energy",
+      "outcomes": [
+        "Identify gravitational potential energy in a situation given an appropriate reference point.",
+        "Define gravitational potential energy.",
+        "Calculate gravitational potential energy."
+      ]
+    },
+    {
+      "title": "Kinetic Energy",
+      "outcomes": [
+        "Identify whether an object possesses kinetic energy in a situation.",
+        "Define kinetic energy.",
+        "Calculate kinetic energy."
+      ]
+    },
+    {
+      "title": "Conservation of Energy",
+      "outcomes": [
+        "Define open and closed systems for everyday situations.",
+        "Apply conservation of energy to isolated systems to be able to identify the relative amount of mechanical energy at each point in the system.",
+        "State what types of energy transformation are occurring in a given situation.",
+        "State when conservation of mechanical energy does not apply.",
+        "Calculate/describe the changes in potential, kinetic, or spring energies in an isolated system with changes in the others."
+      ]
+    },
+    {
+      "title": "Spring Potential Energy",
+      "outcomes": [
+        "Define spring potential energy.",
+        "Calculate spring potential energy from a description of a situation."
+      ]
+    },
+    {
+      "title": "Work-Energy Theorem",
+      "outcomes": [
+        "Apply the work-energy theorem to a given situation (i.e., identify that an increase in kinetic energy means positive work is applied).",
+        "Calculate or describe the amount of energy in the system given the amount of work done or vice versa."
+      ]
+    }
+  ],
+  "intro": "**Energy** is part of the BASIS Physics 8 course map.\n\nThe source defines **23 learning outcomes** across **7 topic clusters**.\n\nSource: `resources/physics8/resources/unit4_energy_outcomes.md`. Lessons and concept checks below are architectural placeholders; a non-null slug will indicate that a native interactive page has been built.",
+  "sequence": [
+    {
+      "type": "concept-check",
+      "phase": "pre",
+      "slug": null,
+      "title": "Unit 4 Entry Diagnostic",
+      "status": "planned",
+      "note": "Placeholder — no native diagnostic has been approved for this unit."
+    },
+    {
+      "type": "module",
+      "label": "Lesson 1",
+      "slug": null,
+      "title": "Work",
+      "cluster": "BP8.4.1",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 2",
+      "slug": null,
+      "title": "Energy Definitions & Types",
+      "cluster": "BP8.4.2",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 3",
+      "slug": null,
+      "title": "Gravitational Potential Energy",
+      "cluster": "BP8.4.3",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 4",
+      "slug": null,
+      "title": "Kinetic Energy",
+      "cluster": "BP8.4.4",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": null,
+      "title": "Conservation of Energy",
+      "cluster": "BP8.4.5",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 6",
+      "slug": null,
+      "title": "Spring Potential Energy",
+      "cluster": "BP8.4.6",
+      "status": "planned"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 7",
+      "slug": null,
+      "title": "Work-Energy Theorem",
+      "cluster": "BP8.4.7",
+      "status": "planned"
+    },
+    {
+      "type": "concept-check",
+      "phase": "post",
+      "slug": null,
+      "title": "Unit 4 Concept Check — retake",
+      "status": "planned",
+      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    }
+  ]
+}

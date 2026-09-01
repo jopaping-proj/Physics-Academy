@@ -1,0 +1,21 @@
+{
+  "format": "external-html",
+  "id": "basis-p8-u2-entry-diagnostic",
+  "slug": "online-form",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "lessonTitle": "Unit 2 Kinematics — Knowledge-Gap Diagnostic",
+  "sourceFile": "content/basis-physics-8/unit-2-kinematics/diagnostic/student/online-form.source.html",
+  "assetDirectory": {
+    "source": "content/basis-physics-8/unit-2-kinematics/diagnostic/assets",
+    "destination": "../assets"
+  },
+  "sourceStatus": "Approved for production deployment by Founder risk exception",
+  "sourceVersion": "0.3.15",
+  "points": 30,
+  "targetMinutes": "25–30",
+  "note": "Tracked, deployable copy of the validated source form; no answer key is embedded."
+}

@@ -1,0 +1,46 @@
+{
+  "id": "basis-p8-test-bank-index",
+  "course": "BASIS Physics 8",
+  "courseId": "basis-physics-8",
+  "status": "source-indexed",
+  "note": "These are recalibrated provenance manifests for the approved/proposed Markdown source banks. They are not native interactive question-bank arrays.",
+  "units": [
+    {
+      "unit": 2,
+      "name": "Kinematics",
+      "indexFile": "basis-p8-u2-kinematics-index.json",
+      "mcq": 250,
+      "frq": 50,
+      "active": 300,
+      "retired": 0,
+      "totalRecords": 300
+    },
+    {
+      "unit": 3,
+      "name": "Forces and Newton's Laws",
+      "indexFile": "basis-p8-u3-forces-and-newtons-laws-index.json",
+      "mcq": 250,
+      "frq": 50,
+      "active": 300,
+      "retired": 0,
+      "totalRecords": 300
+    },
+    {
+      "unit": 4,
+      "name": "Energy",
+      "indexFile": "basis-p8-u4-energy-index.json",
+      "mcq": 250,
+      "frq": 50,
+      "active": 300,
+      "retired": 29,
+      "totalRecords": 329
+    }
+  ],
+  "totals": {
+    "mcq": 750,
+    "frq": 150,
+    "active": 900,
+    "retired": 29,
+    "totalRecords": 929
+  }
+}
