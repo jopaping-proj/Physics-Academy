@@ -16,10 +16,7 @@
  * is not an ES module.
  */
 (function () {
-  function cssVar(name, fallback) {
-    const v = getComputedStyle(document.body).getPropertyValue(name).trim();
-    return v || fallback;
-  }
+  const cssVar = window.PA.panel.cssVar;
 
   // `mode`: "apart" — the two forces push the bodies away from each other
   // (a contact push); "together" — they pull the bodies toward each other
@@ -82,12 +79,8 @@
     },
   ];
 
-  function mount(container) {
-    const controls = container.querySelector(".interactive-panel__controls");
-    const canvasWrap = container.querySelector(".interactive-panel__canvas-wrap");
-    const promptEl = container.querySelector(".sim-prompt");
-    const insightEl = container.querySelector(".sim-insight");
-    if (!controls || !canvasWrap) return;
+  function mount({ container, controls, canvasWrap, promptEl, insightEl }) {
+    if (!canvasWrap) return;
 
     const state = { i: 0, showTrap: false };
 
@@ -291,14 +284,9 @@
         "<p>Every force is half of an interaction. Its third-law partner is the <strong>same type</strong>, <strong>equal in magnitude</strong>, <strong>opposite in direction</strong>, and acts on <strong>the other object</strong> — so the two never appear on the same free-body diagram and never cancel. Balanced forces on one object (like a book's weight and the table's push) are a different thing entirely.</p>";
     }
 
-    const slide = container.closest(".slide");
-    if (slide) slide.addEventListener("slide:shown", draw);
-    window.addEventListener("resize", draw);
     sync();
+    return draw;
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector('[data-component-key="interaction-pair-explorer"]');
-    if (container) mount(container);
-  });
+  window.PA.panel.register("interaction-pair-explorer", mount);
 })();

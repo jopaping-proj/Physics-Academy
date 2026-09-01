@@ -19,18 +19,11 @@
   const X_MAX = 10; // track units ("metres")
   const PAD = 42; // px inset on each side of the track
 
-  function cssVar(name, fallback) {
-    const v = getComputedStyle(document.body).getPropertyValue(name).trim();
-    return v || fallback;
-  }
+  const cssVar = window.PA.panel.cssVar;
   const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 
-  function mount(container) {
-    const controls = container.querySelector(".interactive-panel__controls");
-    const canvasWrap = container.querySelector(".interactive-panel__canvas-wrap");
-    const promptEl = container.querySelector(".sim-prompt");
-    const insightEl = container.querySelector(".sim-insight");
-    if (!controls || !canvasWrap) return;
+  function mount({ container, controls, canvasWrap, promptEl, insightEl }) {
+    if (!canvasWrap) return;
 
     const state = {
       m: [2, 6],
@@ -323,14 +316,8 @@
         "<p>The ★ marker is the <strong>mass-weighted average position</strong>: it always sits between the two masses and closer to the heavier one. An <strong>external</strong> push moves it; an <strong>internal</strong> shove between the masses never does.</p>";
     }
 
-    const slide = container.closest(".slide");
-    if (slide) slide.addEventListener("slide:shown", draw);
-    window.addEventListener("resize", draw);
-    draw();
+    return draw;
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector('[data-component-key="center-of-mass-explorer"]');
-    if (container) mount(container);
-  });
+  window.PA.panel.register("center-of-mass-explorer", mount);
 })();

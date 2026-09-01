@@ -149,10 +149,7 @@
     },
   ];
 
-  function cssVar(name, fallback) {
-    const v = getComputedStyle(document.body).getPropertyValue(name).trim();
-    return v || fallback;
-  }
+  const cssVar = window.PA.panel.cssVar;
 
   // Where a ray from the box centre, in direction (ux, uy), crosses the
   // box edge — so a contact force's tail sits ON the surface it acts on,
@@ -166,34 +163,14 @@
     return [ux * t, uy * t];
   }
 
+  // tail dot included, so a force's starting point (the surface it acts
+  // on) is unmistakable.
   function drawArrow(ctx, x1, y1, x2, y2, color) {
-    ctx.strokeStyle = color;
-    ctx.fillStyle = color;
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x1, y1);
-    ctx.lineTo(x2, y2);
-    ctx.stroke();
-    const a = Math.atan2(y2 - y1, x2 - x1);
-    const h = 10;
-    ctx.beginPath();
-    ctx.moveTo(x2, y2);
-    ctx.lineTo(x2 - h * Math.cos(a - Math.PI / 6), y2 - h * Math.sin(a - Math.PI / 6));
-    ctx.lineTo(x2 - h * Math.cos(a + Math.PI / 6), y2 - h * Math.sin(a + Math.PI / 6));
-    ctx.closePath();
-    ctx.fill();
-    // tail dot, so the starting point is unmistakable
-    ctx.beginPath();
-    ctx.arc(x1, y1, 2.5, 0, Math.PI * 2);
-    ctx.fill();
+    window.PA.panel.arrow(ctx, x1, y1, x2, y2, color, { width: 3, head: 10, tailDot: true });
   }
 
-  function mount(container) {
-    const controls = container.querySelector(".interactive-panel__controls");
-    const canvasWrap = container.querySelector(".interactive-panel__canvas-wrap");
-    const promptEl = container.querySelector(".sim-prompt");
-    const insightEl = container.querySelector(".sim-insight");
-    if (!controls || !canvasWrap) return;
+  function mount({ container, controls, canvasWrap, promptEl, insightEl }) {
+    if (!canvasWrap) return;
 
     const state = { scenario: SCENARIOS[0], on: {}, dir: {}, mag: {} };
     FORCES.forEach((f) => {
@@ -608,15 +585,9 @@
     }
     scenSelect.addEventListener("change", () => loadScenario(Number(scenSelect.value)));
 
-    const slide = container.closest(".slide");
-    if (slide) slide.addEventListener("slide:shown", redraw);
-    window.addEventListener("resize", redraw);
-
     loadScenario(0);
+    return redraw;
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector('[data-component-key="fbd-builder"]');
-    if (container) mount(container);
-  });
+  window.PA.panel.register("fbd-builder", mount);
 })();

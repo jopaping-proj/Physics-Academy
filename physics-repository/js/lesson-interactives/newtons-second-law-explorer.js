@@ -32,10 +32,7 @@ const MASS_RANGE = { min: 0.5, max: 10, step: 0.5, initial: 2 };
 const FORCE_RANGE = { min: 1, max: 20, step: 1, initial: 10 };
 const AUTO_EXPLORE_PHASE_MS = 2200;
 
-function cssVar(name, fallback) {
-  const v = getComputedStyle(document.body).getPropertyValue(name).trim();
-  return v || fallback;
-}
+const cssVar = window.PA.panel.cssVar;
 
 function makeSlider({ controls, key, label, unit, range, format, onInput }) {
   const group = document.createElement("div");
@@ -185,17 +182,14 @@ function drawPlot(canvas, { xMax, yMax, accel, point, frozen }) {
   }
 }
 
-function mount(container) {
-  const controls = container.querySelector(".interactive-panel__controls");
-  const readoutsRoot = container.querySelector(".sim-readouts");
-  const lockRow = container.querySelector(".sim-lock-row");
-  const graphsRoot = container.querySelector(".sim-graphs");
-  const promptEl = container.querySelector(".sim-prompt");
-  const insightEl = container.querySelector(".sim-insight");
+function mount({ container, controls, promptEl, insightEl, readoutsEl, lockRowEl, graphsEl }) {
+  const readoutsRoot = readoutsEl;
+  const lockRow = lockRowEl;
+  const graphsRoot = graphsEl;
   const graphWrap =
     container.querySelector('[data-graph="f-vs-m"]') ||
     container.querySelector(".interactive-panel__canvas-wrap");
-  if (!controls || !graphWrap) return;
+  if (!graphWrap) return;
 
   const state = {
     mass: MASS_RANGE.initial,
@@ -342,19 +336,13 @@ function mount(container) {
     lockRow.appendChild(autoBtn);
   }
 
-  // redraw when this slide becomes visible in the deck (canvas may have
-  // had zero layout size while hidden)
-  const slide = container.closest(".slide");
-  if (slide) slide.addEventListener("slide:shown", redraw);
-
   updateReadouts();
   updateCopy();
   commitShown();
-  redraw();
+  // register() re-runs `redraw` on slide:shown (canvas can have zero
+  // layout size while the slide is hidden) and on resize.
+  return redraw;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector('[data-component-key="newtons-second-law-explorer"]');
-  if (container) mount(container);
-});
+window.PA.panel.register("newtons-second-law-explorer", mount);
 })();
