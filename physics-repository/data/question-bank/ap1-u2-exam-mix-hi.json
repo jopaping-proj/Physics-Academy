@@ -1,0 +1,502 @@
+[
+  {
+    "id": "AP1-U2-MCQ-133",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+    "calculatorFree": true,
+    "question": "A $60\\text{ kg}$ person stands at one end of a $120\\text{ kg}$ raft floating at rest on still water. The person walks $3.0\\text{ m}$ along the raft (measured relative to the raft) toward the other end. Ignoring water resistance, how far does the raft move relative to the water?",
+    "choices": ["$1.0\\text{ m}$", "$3.0\\text{ m}$", "$1.5\\text{ m}$", "$2.0\\text{ m}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — walking is an internal force, so the centre of mass of the person + raft system stays fixed. If the raft moves back a distance $d$ and the person moves forward $3.0 - d$ relative to the water, then $60(3.0 - d) = 120\\,d$, giving $180 = 180d$… $d = 1.0\\text{ m}$.",
+      "incorrect": {
+        "1": "$3.0\\text{ m}$ is the person's displacement relative to the *raft*, not the raft's displacement relative to the water.",
+        "2": "$1.5\\text{ m}$ would be the answer if the masses were equal. The raft is twice as massive, so it moves less.",
+        "3": "This is the person's displacement relative to the water ($3.0 - 1.0$), not the raft's."
+      }
+    },
+    "hint": ["No external horizontal force ⇒ the system's centre of mass does not move. Let the raft move $d$ back; the person moves $3.0 - d$ forward. Balance $m_{person}(3.0-d) = m_{raft}\\,d$."],
+    "solution": "COM fixed: $60(3.0 - d) = 120 d \\Rightarrow d = 1.0\\text{ m}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-134",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "calculatorFree": true,
+    "question": "A $10\\text{ kg}$ crate is pulled up a $30°$ frictionless incline by a rope parallel to the incline. The crate accelerates up the slope at $2.0\\text{ m/s}^2$. Taking $g = 10\\text{ m/s}^2$, the rope tension is:",
+    "choices": ["$70\\text{ N}$", "$50\\text{ N}$", "$120\\text{ N}$", "$20\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — along the incline (up positive): $F_T - mg\\sin\\theta = ma$. So $F_T = m(a + g\\sin\\theta) = 10(2.0 + 10 \\times 0.5) = 10(7.0) = 70\\text{ N}$.",
+      "incorrect": {
+        "1": "$50\\text{ N}$ is just $mg\\sin\\theta$ — the tension needed to hold the crate still. To also accelerate it, add $ma = 20\\text{ N}$.",
+        "2": "$120\\text{ N}$ uses $mg$ (the full weight) instead of $mg\\sin\\theta$ for the down-slope pull.",
+        "3": "$20\\text{ N}$ is $ma$ alone — it ignores gravity's down-slope component that the tension also has to overcome."
+      }
+    },
+    "hint": ["Along the incline: $F_T - mg\\sin\\theta = ma$. Solve for $F_T$."],
+    "solution": "$F_T = m(a + g\\sin\\theta) = 10(2.0 + 5.0) = 70\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-135",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "Three blocks of mass $1.0\\text{ kg}$, $2.0\\text{ kg}$, and $3.0\\text{ kg}$ are connected in that order by light strings and pulled across a frictionless floor by a $12\\text{ N}$ force applied to the $1.0\\text{ kg}$ block. The tension in the string between the $2.0\\text{ kg}$ and $3.0\\text{ kg}$ blocks is:",
+    "choices": ["$6.0\\text{ N}$", "$12\\text{ N}$", "$4.0\\text{ N}$", "$2.0\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — system acceleration: $a = F/(m_1+m_2+m_3) = 12/6.0 = 2.0\\text{ m/s}^2$. That string only has to accelerate the last block: $F_T = m_3 a = (3.0)(2.0) = 6.0\\text{ N}$.",
+      "incorrect": {
+        "1": "$12\\text{ N}$ is the applied force on the front block. Each string carries less, because it only pulls the blocks behind it.",
+        "2": "$4.0\\text{ N}$ would accelerate a $2.0\\text{ kg}$ block — but this string pulls the $3.0\\text{ kg}$ block.",
+        "3": "$2.0$ is the acceleration in m/s², not a tension. Multiply by the mass behind the string ($3.0\\text{ kg}$)."
+      }
+    },
+    "hint": ["Find the common acceleration from the whole system, then isolate the block(s) that this string alone has to pull."],
+    "solution": "$a = 12/6.0 = 2.0\\text{ m/s}^2$; $F_T = m_3 a = (3.0)(2.0) = 6.0\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-136",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "Blocks A ($2\\text{ kg}$) and B ($4\\text{ kg}$) sit in contact on a frictionless floor. A force $F$ pushes on A, driving both to the right, and the contact force between the blocks is $C_1$. The experiment is repeated with the **same $F$** now pushing on B (from the right), driving both to the left; the contact force is $C_2$. Which is true?",
+    "choices": [
+      "$C_1 > C_2$: the contact force is larger when the push is applied to the lighter block",
+      "$C_1 = C_2$: the contact force does not depend on which block is pushed",
+      "$C_2 > C_1$: the contact force is larger when the push is applied to the heavier block",
+      "$C_1 = C_2 = F$ in both cases"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the common acceleration is $a = F/6$ either way. Pushing A, the contact force must accelerate B alone: $C_1 = m_B a = 4(F/6) = 2F/3$. Pushing B, the contact force must accelerate A alone: $C_2 = m_A a = 2(F/6) = F/3$. So $C_1 > C_2$ — the contact force is larger when you push the *lighter* block, because it then has to carry the *heavier* one.",
+      "incorrect": {
+        "1": "It does depend: pushing A, the contact force accelerates the $4\\text{ kg}$ block; pushing B, it accelerates the $2\\text{ kg}$ block — different forces for the same $a$.",
+        "2": "Backwards. Pushing the heavier block B means the contact force only carries the lighter block A, so $C_2$ is the *smaller* one.",
+        "3": "The contact force is always less than $F$: it only has to accelerate part of the system, not all of it."
+      }
+    },
+    "hint": ["Same $a = F/(m_A+m_B)$ both ways. The contact force equals (mass of the block it has to push) × $a$. Which block does it push in each case?"],
+    "solution": "Push A: $C_1 = m_B a = 2F/3$. Push B: $C_2 = m_A a = F/3$. So $C_1 > C_2$ — larger when the lighter block is pushed."
+  },
+  {
+    "id": "AP1-U2-MCQ-137",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "centripetal-force-is-a-separate-force",
+    "calculatorFree": true,
+    "question": "A ball on a string is swung in a horizontal circle (a conical pendulum), the string making an angle $\\theta$ with the vertical. Which relation is correct?",
+    "choices": [
+      "$\\tan\\theta = \\dfrac{v^2}{rg}$ — from the horizontal component $F_T\\sin\\theta = mv^2/r$ and the vertical component $F_T\\cos\\theta = mg$",
+      "$F_T = mg$, because the ball is not accelerating vertically",
+      "$F_T\\sin\\theta = mg$ and $F_T\\cos\\theta = mv^2/r$",
+      "$\\sin\\theta = v^2/(rg)$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the only forces are gravity (down) and tension (along the string). Vertical: $F_T\\cos\\theta = mg$ (no vertical acceleration). Horizontal (toward the centre): $F_T\\sin\\theta = mv^2/r$. Dividing: $\\tan\\theta = v^2/(rg)$.",
+      "incorrect": {
+        "1": "$F_T > mg$ here: its vertical component alone must equal $mg$, so $F_T = mg/\\cos\\theta$.",
+        "2": "The components are swapped. With $\\theta$ from the vertical, the vertical component is $F_T\\cos\\theta$ and the horizontal (centripetal) component is $F_T\\sin\\theta$.",
+        "3": "Dividing the two correct equations gives $\\tan\\theta$, not $\\sin\\theta$."
+      }
+    },
+    "hint": ["Resolve the tension into vertical and horizontal parts. Vertical part balances gravity; horizontal part is the centripetal force. Then divide."],
+    "solution": "$F_T\\cos\\theta = mg$, $F_T\\sin\\theta = mv^2/r$ ⇒ $\\tan\\theta = v^2/(rg)$."
+  },
+  {
+    "id": "AP1-U2-MCQ-138",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.10",
+    "cedTopic": "2.8",
+    "clusterId": "2.10",
+    "skill": "transfer",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "scale-always-reads-true-weight",
+    "calculatorFree": true,
+    "question": "A block hangs at rest from a vertical spring, stretching it $0.10\\text{ m}$. The whole system is then placed in an elevator that accelerates **upward** at $2.0\\text{ m/s}^2$. Taking $g = 10\\text{ m/s}^2$, the new stretch of the spring is:",
+    "choices": ["$0.12\\text{ m}$", "$0.10\\text{ m}$", "$0.20\\text{ m}$", "$0.08\\text{ m}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at rest, $kx_0 = mg$, so $k = mg/0.10$. Accelerating up, $kx - mg = ma \\Rightarrow kx = m(g + a)$. Divide by the rest equation: $x/x_0 = (g+a)/g = 12/10$, so $x = 1.2 \\times 0.10 = 0.12\\text{ m}$.",
+      "incorrect": {
+        "1": "The spring force must now provide $m(g+a)$, not just $mg$, so it stretches more than at rest.",
+        "2": "Doubling would need $a = g$. Here $a = 2.0\\text{ m/s}^2$, so the stretch grows by the factor $(g+a)/g = 1.2$.",
+        "3": "Accelerating *upward* makes the block's apparent weight — and the required spring force — *larger*, so the stretch increases, not decreases."
+      }
+    },
+    "hint": ["Rest: $kx_0 = mg$. Accelerating up: $kx = m(g+a)$. Take the ratio."],
+    "solution": "$x = x_0(g+a)/g = 0.10 \\times 12/10 = 0.12\\text{ m}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-139",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.3",
+    "cedTopic": "2.5",
+    "clusterId": "2.3",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 8,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A student measures the acceleration of a cart for several net forces (mass held constant) and plots acceleration (y) against net force (x). They claim: 'the graph is a straight line through the origin, and its slope is the cart's mass.' Evaluate the claim.",
+    "choices": [
+      "The line and the origin are right, but the slope is $1/m$, not $m$: $a = (1/m)F_{net}$.",
+      "The claim is completely correct.",
+      "The graph should be a curve, not a straight line.",
+      "The graph should not pass through the origin, because it takes some force to overcome the cart's inertia."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $a = F_{net}/m = (1/m)\\,F_{net}$, so plotting $a$ vs $F_{net}$ gives a straight line through the origin with slope $1/m$. The student inverted it: a steeper line means a *smaller* mass. (Reading mass as the slope works on an $F_{net}$-vs-$a$ graph, not this one.)",
+      "incorrect": {
+        "1": "The slope is wrong: it is $1/m$, so a $2\\text{ kg}$ cart gives slope $0.5$, not $2$.",
+        "2": "$a$ is directly proportional to $F_{net}$ at fixed mass, so the graph *is* a straight line through the origin.",
+        "3": "Inertia is not a force to be overcome. With zero net force the acceleration is zero, so the line passes through the origin."
+      }
+    },
+    "hint": ["Rearrange $F_{net} = ma$ to $a = (1/m)F_{net}$. On an $a$-vs-$F_{net}$ plot, what is the slope?"],
+    "solution": "Straight line through the origin, slope $= 1/m$ (not $m$)."
+  },
+  {
+    "id": "AP1-U2-MCQ-140",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "steeper-incline-always-means-faster-final-speed",
+    "calculatorFree": true,
+    "question": "A block is released from rest and slides down a **frictionless** incline, dropping a vertical height $h$. Its speed at the bottom is found using $a = g\\sin\\theta$ along the slope and $v^2 = 2aL$, where $L$ is the slope length. The result is:",
+    "choices": [
+      "$v = \\sqrt{2gh}$ — the angle cancels out",
+      "$v = \\sqrt{2gh\\sin\\theta}$",
+      "$v = \\sqrt{2gL}$",
+      "$v = \\sqrt{gh}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $L = h/\\sin\\theta$, so $v^2 = 2aL = 2(g\\sin\\theta)(h/\\sin\\theta) = 2gh$. The $\\sin\\theta$ cancels: every frictionless ramp of the same height gives the same bottom speed, $\\sqrt{2gh}$ — a steeper ramp gets there sooner but not faster.",
+      "incorrect": {
+        "1": "The $\\sin\\theta$ from the acceleration and the $1/\\sin\\theta$ from the longer slope length cancel exactly.",
+        "2": "This uses the slope length $L$ but not the relation $L = h/\\sin\\theta$ that lets the angle drop out.",
+        "3": "Missing the factor of 2 from $v^2 = 2aL$."
+      }
+    },
+    "hint": ["Substitute $L = h/\\sin\\theta$ into $v^2 = 2(g\\sin\\theta)L$ and simplify."],
+    "solution": "$v^2 = 2(g\\sin\\theta)(h/\\sin\\theta) = 2gh \\Rightarrow v = \\sqrt{2gh}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-141",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 8,
+    "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+    "calculatorFree": true,
+    "question": "A car travels along a straight, level road at a constant $25\\text{ m/s}$. A student's free-body diagram of the car shows: weight down, normal force up, a forward 'driving force', and a backward resistive force — with the forward arrow drawn **longer** than the backward one. What is wrong?",
+    "choices": [
+      "At constant velocity the acceleration is zero, so the net force is zero: the forward and backward horizontal forces must be drawn **equal** in length.",
+      "Nothing is wrong — a moving car needs a net forward force to keep moving.",
+      "The weight and normal force should not be shown, since the motion is horizontal.",
+      "There should also be a forward 'force of motion' arrow representing the car's inertia."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — 'constant velocity' means zero acceleration, hence zero net force (Newton's first law). The forward driving force and the backward resistance (drag + rolling friction) must be equal in magnitude. Drawing the forward one longer implies a net forward force and an acceleration the car does not have.",
+      "incorrect": {
+        "1": "This is the classic first-law error. A net forward force would speed the car up. At constant speed the horizontal forces balance.",
+        "2": "Gravity and the normal force are real forces on the car and belong on the diagram, even though they cancel.",
+        "3": "Inertia is not a force. There is no 'force of motion' arrow — that is the impetus misconception."
+      }
+    },
+    "hint": ["Constant velocity ⇒ $a = 0$ ⇒ $\\sum F = 0$. What does that say about the two horizontal arrows?"],
+    "solution": "The forward and backward horizontal forces must be equal (net force zero at constant velocity)."
+  },
+  {
+    "id": "AP1-U2-MCQ-142",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "calculatorFree": true,
+    "question": "A car drives over the top of a circular hill of radius $r$. As the car's speed increases from low values, the normal force from the road decreases. The speed at which the car's tyres just barely stay in contact with the road is:",
+    "choices": [
+      "$v = \\sqrt{gr}$ — at this speed gravity alone supplies exactly the centripetal force $mv^2/r$, so the normal force is zero",
+      "$v = \\sqrt{2gr}$",
+      "there is no such speed; the car stays on the road at any speed",
+      "$v = \\sqrt{gr/2}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at the crest, 'toward the centre' is downward: $mg - F_N = mv^2/r$. The tyres lose contact when $F_N = 0$, which gives $mg = mv^2/r$, i.e. $v = \\sqrt{gr}$. Above that speed the car would need *more* than gravity pulling it down to follow the curve — it leaves the road (becomes a projectile).",
+      "incorrect": {
+        "1": "$\\sqrt{2gr}$ comes from an energy calculation, not the contact condition. Set $F_N = 0$ in $mg - F_N = mv^2/r$.",
+        "2": "There *is* such a speed. Above $\\sqrt{gr}$ the required centripetal force exceeds what gravity provides, so the car lifts off.",
+        "3": "Check by substituting: at $v^2 = gr/2$ the normal force is $mg/2 \\ne 0$ — the car is still firmly on the road."
+      }
+    },
+    "hint": ["At the crest: $mg - F_N = mv^2/r$. 'Just barely in contact' means $F_N = 0$."],
+    "solution": "$F_N = 0 \\Rightarrow mg = mv^2/r \\Rightarrow v = \\sqrt{gr}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-143",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "multi-representation-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "calculatorFree": true,
+    "question": "A $2.0\\text{ kg}$ block on a level floor ($\\mu_k = 0.25$, $g = 10\\text{ m/s}^2$) is given a shove and released, moving at $6.0\\text{ m/s}$. How far does it slide before stopping?",
+    "choices": ["$7.2\\text{ m}$", "$3.6\\text{ m}$", "$14.4\\text{ m}$", "$2.4\\text{ m}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — kinetic friction is the only horizontal force: $f_k = \\mu_k mg = (0.25)(2.0)(10) = 5.0\\text{ N}$, so $a = -f_k/m = -2.5\\text{ m/s}^2$. Then $v^2 = v_0^2 + 2a d \\Rightarrow 0 = 36 + 2(-2.5)d \\Rightarrow d = 36/5.0 = 7.2\\text{ m}$.",
+      "incorrect": {
+        "1": "$3.6\\text{ m}$ drops the factor of 2 in $v^2 = v_0^2 + 2ad$ (or uses $a = 5.0$).",
+        "2": "$14.4\\text{ m}$ uses $a = 1.25\\text{ m/s}^2$ — check the friction: $a = \\mu_k g = 2.5\\text{ m/s}^2$.",
+        "3": "$2.4\\text{ m}$ would need a much larger deceleration than friction provides here."
+      }
+    },
+    "hint": ["Deceleration $a = \\mu_k g$. Then use $v^2 = v_0^2 + 2ad$ with final speed zero."],
+    "solution": "$a = \\mu_k g = 2.5\\text{ m/s}^2$; $d = v_0^2/(2a) = 36/5.0 = 7.2\\text{ m}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-144",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "objects-need-something-external-to-push-against-to-accelerate",
+    "calculatorFree": true,
+    "question": "A rocket accelerates in the vacuum of deep space. A student objects: 'there's nothing out there for the exhaust gas to push against, so the rocket can't accelerate.' The best response is:",
+    "choices": [
+      "The rocket pushes the exhaust gas backward, and by Newton's third law the gas pushes the rocket forward — no external surface is needed, only the interaction between rocket and gas.",
+      "The exhaust gas pushes against the vacuum, which provides the reaction force.",
+      "The student is right; rockets only work inside the atmosphere.",
+      "The rocket accelerates because burning fuel reduces its mass."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — Newton's third law only needs two objects interacting. The rocket exerts a large backward force on the expelled gas; the gas exerts an equal forward force on the rocket. Nothing external — no ground, no air — is involved. This is exactly why rockets work best in a vacuum.",
+      "incorrect": {
+        "1": "A vacuum is nothing — it cannot exert a force. The reaction comes from the exhaust gas, which is a real object.",
+        "2": "Rockets work *better* in a vacuum (no air resistance). The Moon landings and every spacecraft prove it.",
+        "3": "Losing mass alone does not produce a force. The thrust comes from pushing the exhaust gas backward (the third-law pair)."
+      }
+    },
+    "hint": ["A Newton's-third-law pair needs two objects. What are the two objects here — and does either one have to be 'the ground'?"],
+    "solution": "The rocket and the exhaust gas are the interacting pair: rocket pushes gas back, gas pushes rocket forward. No external surface required."
+  },
+  {
+    "id": "AP1-U2-MCQ-145",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "synthesis",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "internal-forces-can-change-a-system-center-of-mass-motion",
+    "calculatorFree": true,
+    "question": "An $80\\text{ kg}$ astronaut, initially at rest relative to her ship, throws a $2.0\\text{ kg}$ wrench away at $10\\text{ m/s}$. Just after the throw, which statement is correct?",
+    "choices": [
+      "The astronaut recoils at $0.25\\text{ m/s}$, and the centre of mass of the astronaut + wrench system stays at rest.",
+      "The astronaut recoils at $10\\text{ m/s}$, matching the wrench's speed.",
+      "The centre of mass of the system now moves in the direction the wrench was thrown.",
+      "The astronaut does not move, because she is much heavier than the wrench."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the throw is an internal interaction, so the system's centre of mass stays at rest. Equal and opposite forces act for the same time, so the momentum changes are equal and opposite: $(80)(v) = (2.0)(10) \\Rightarrow v = 0.25\\text{ m/s}$ backward.",
+      "incorrect": {
+        "1": "Newton's third law makes the *forces* equal, not the speeds. The astronaut is 40× heavier, so she recoils 40× slower: $0.25\\text{ m/s}$.",
+        "2": "Internal forces cannot move the centre of mass. It stays put; the astronaut and wrench move apart symmetrically about it.",
+        "3": "She moves — just slowly. Any non-zero force for a non-zero time gives a non-zero recoil speed."
+      }
+    },
+    "hint": ["Internal forces ⇒ system COM stays at rest. Equal-and-opposite forces for equal time ⇒ equal-and-opposite momentum change: $m_A v_A = m_w v_w$."],
+    "solution": "$v_A = (2.0)(10)/80 = 0.25\\text{ m/s}$ backward; the system COM stays at rest."
+  },
+  {
+    "id": "AP1-U2-MCQ-146",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+    "calculatorFree": true,
+    "question": "An Atwood machine has masses $3.0\\text{ kg}$ and $2.0\\text{ kg}$ over an ideal pulley. Taking $g = 10\\text{ m/s}^2$, the acceleration of the masses and the string tension are:",
+    "choices": [
+      "$a = 2.0\\text{ m/s}^2$, $F_T = 24\\text{ N}$",
+      "$a = 10\\text{ m/s}^2$, $F_T = 30\\text{ N}$",
+      "$a = 2.0\\text{ m/s}^2$, $F_T = 30\\text{ N}$",
+      "$a = 5.0\\text{ m/s}^2$, $F_T = 25\\text{ N}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — system: $a = \\dfrac{(m_1 - m_2)g}{m_1 + m_2} = \\dfrac{(1.0)(10)}{5.0} = 2.0\\text{ m/s}^2$. Isolate the $2.0\\text{ kg}$ mass (accelerating up): $F_T - m_2 g = m_2 a \\Rightarrow F_T = 2.0(10 + 2.0) = 24\\text{ N}$. (Check with the $3.0\\text{ kg}$ mass: $m_1 g - F_T = 30 - 24 = 6 = m_1 a = 6$. ✓)",
+      "incorrect": {
+        "1": "$a = g$ only if one side were in free fall. The tension couples the two masses, so $a$ is much less.",
+        "2": "$a$ is right, but $F_T = 30\\text{ N}$ is the full weight of the heavy mass — the tension is less than that because the heavy mass is accelerating downward.",
+        "3": "$a = 5.0\\text{ m/s}^2$ would need a mass difference of half the total. Here the difference is only $1.0\\text{ kg}$ out of $5.0\\text{ kg}$."
+      }
+    },
+    "hint": ["System: $a = (m_1 - m_2)g/(m_1 + m_2)$. Then isolate one mass for the tension: $F_T = m_2(g + a)$ for the lighter one."],
+    "solution": "$a = (1.0)(10)/5.0 = 2.0\\text{ m/s}^2$; $F_T = 2.0(10 + 2.0) = 24\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-147",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A racetrack curve is banked. Compared with an identical flat curve, a car can round the banked curve at a higher speed for the same tyres. The best explanation is:",
+    "choices": [
+      "On the banked curve, the inward (horizontal) component of the normal force adds to friction in supplying the centripetal force, so the total available inward force is larger.",
+      "Banking removes the need for friction entirely at all speeds.",
+      "The banked road is longer, so the car has more distance to turn.",
+      "Gravity has a larger component toward the centre on a banked curve."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — on a flat curve only friction ($\\le \\mu_s mg$) points toward the centre. On a banked curve the normal force tilts inward, so its horizontal component *also* points toward the centre and adds to friction. The maximum centripetal force — and hence the maximum cornering speed — is larger.",
+      "incorrect": {
+        "1": "Banking removes the friction requirement only at *one* speed (the design speed). Above it, friction is still needed — the point is that friction plus the normal-force component together can supply more.",
+        "2": "The extra path length is not why; it is about how much inward force is available at each instant.",
+        "3": "Gravity always points straight down. Its component toward the centre of a horizontal circle is zero, banked or not."
+      }
+    },
+    "hint": ["On a flat curve, what is the only force with an inward component? On a banked curve, what second force now also has an inward component?"],
+    "solution": "The tilted normal force contributes an inward component that adds to friction, raising the maximum centripetal force and the maximum speed."
+  }
+]
