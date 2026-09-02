@@ -311,6 +311,29 @@ const DIAGRAMS = {
       { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
     ],
   },
+
+  // ---- Lesson 9 · Gravitation, Springs, and Apparent Weight ----
+  "apparent-weight/dot-accel-up.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a person on a scale in an elevator accelerating upward. The scale's normal force acts up and is the longer arrow; gravity acts down and is shorter. Net force is upward, so F_N is greater than mg and the scale reads high.",
+    forces: [
+      { sym: "F_N", dir: "up", mag: 5, anchor: [150, 104], color: "blue" },
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+    ],
+  },
+
+  "apparent-weight/dot-accel-down.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a person on a scale in an elevator accelerating downward. The scale's normal force acts up and is the shorter arrow; gravity acts down and is longer. Net force is downward, so F_N is less than mg and the scale reads low.",
+    forces: [
+      { sym: "F_N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
+    ],
+  },
 };
 
 let n = 0;

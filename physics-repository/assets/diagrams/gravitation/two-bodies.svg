@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" role="img"
+     aria-label="Two masses m1 and m2, their centres a distance r apart. Each pulls the other with a gravitational force directed along the line joining the centres. The two forces are equal in magnitude and opposite in direction — a Newton's third law pair. The magnitude is G m1 m2 over r squared.">
+  <!-- Hand-authored. Labels placed clear of the bodies, the arrows and
+       the distance line (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="gr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
+    <marker id="gr-grey" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+
+  <!-- distance r -->
+  <line x1="72" y1="118" x2="288" y2="118" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2" marker-start="url(#gr-grey)" marker-end="url(#gr-grey)"/>
+  <text x="180" y="134" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">r</text>
+  <line x1="72" y1="112" x2="72" y2="122" stroke="#8b96a5" stroke-width="1"/>
+  <line x1="288" y1="112" x2="288" y2="122" stroke="#8b96a5" stroke-width="1"/>
+
+  <!-- bodies -->
+  <circle cx="72" cy="72" r="18" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="72" y="72" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#58a6ff">m&#8321;</text>
+  <circle cx="288" cy="72" r="12" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="288" y="72" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#58a6ff">m&#8322;</text>
+
+  <!-- the force pair, along the line of centres, pointing toward each other -->
+  <line x1="96" y1="72" x2="150" y2="72" stroke="#58a6ff" stroke-width="3" marker-end="url(#gr-blue)"/>
+  <text x="112" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">on m&#8321;</text>
+  <line x1="264" y1="72" x2="210" y2="72" stroke="#58a6ff" stroke-width="3" marker-end="url(#gr-blue)"/>
+  <text x="248" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">on m&#8322;</text>
+
+  <text x="180" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">equal, opposite, along the line of centres</text>
+  <text x="180" y="96" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">|F| = G m&#8321; m&#8322; / r&#178;</text>
+</svg>

@@ -99,7 +99,11 @@
       "objects-in-circular-or-turning-motion-feel-an-outward-force",
       "constant-velocity-implies-a-net-forward-force",
       "tension-in-a-multi-object-string-system-must-support-the-whole-system",
-      "treats-heavier-hanging-mass-as-being-in-free-fall"
+      "treats-heavier-hanging-mass-as-being-in-free-fall",
+      "g-and-G-are-the-same-quantity",
+      "spring-constant-changes-with-applied-force",
+      "scale-always-reads-true-weight",
+      "apparent-weightlessness-requires-zero-gravity"
     ]
   },
 

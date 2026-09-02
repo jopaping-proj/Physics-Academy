@@ -1,0 +1,186 @@
+[
+  {
+    "id": "AP1-U2-MCQ-095",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.6",
+    "clusterId": "2.10",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "mass-and-weight-are-the-same",
+    "question": "A $12\\text{ kg}$ rock is taken from Earth to the Moon. Which quantities stay the same?",
+    "choices": ["its mass only", "its weight only", "both its mass and its weight", "neither"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — mass (12 kg) is a property of the rock and does not change with location. Its weight ($mg$) is smaller on the Moon because $g_{\\text{Moon}} \\approx 1.6\\text{ N/kg}$ versus $9.8\\text{ N/kg}$ on Earth.",
+      "incorrect": {
+        "1": "Weight is $mg$; with a smaller $g$ on the Moon, the weight changes. Mass is what stays fixed.",
+        "2": "Weight changes with $g$, so it is not the same on the Moon.",
+        "3": "Mass does stay the same — it is location-independent."
+      }
+    },
+    "hint": ["One of these is measured in kilograms and is a property of the object; the other is a force in newtons that depends on the local $g$."],
+    "solution": "Mass stays the same (12 kg); weight decreases on the Moon because $g$ is smaller."
+  },
+  {
+    "id": "AP1-U2-MCQ-096",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.6",
+    "clusterId": "2.10",
+    "skill": "proportional-reasoning",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "The gravitational force between two masses is $F$. Both masses are doubled and the distance between their centres is halved. The new force is:",
+    "choices": ["$4F$", "$8F$", "$16F$", "$2F$"],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — $F_G \\propto \\dfrac{m_1 m_2}{r^2}$. Doubling each mass gives $\\times 2 \\times 2 = \\times 4$. Halving $r$ gives $\\times (1/0.5)^2 = \\times 4$. Total: $4 \\times 4 = 16$, so the new force is $16F$.",
+      "incorrect": {
+        "0": "This counts only the mass changes ($\\times 4$) and forgets that halving $r$ multiplies the force by $4$ as well.",
+        "1": "This is $\\times 4$ (masses) $\\times 2$ (distance) — but halving $r$ gives $\\times 1/(1/2)^2 = \\times 4$, not $\\times 2$.",
+        "3": "$2F$ ignores most of the changes. Two mass doublings and an inverse-square distance halving compound to $\\times 16$."
+      }
+    },
+    "hint": ["$F \\propto \\dfrac{m_1 m_2}{r^2}$. Each mass doubling: $\\times 2$. Halving $r$: $\\times \\dfrac{1}{(1/2)^2} = \\times 4$."],
+    "solution": "$2 \\times 2 \\times 4 = 16$, so $16F$."
+  },
+  {
+    "id": "AP1-U2-MCQ-097",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.8",
+    "clusterId": "2.10",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "A spring with spring constant $k = 120\\text{ N/m}$ is compressed $0.05\\text{ m}$ from its natural length. The magnitude of the spring force is:",
+    "choices": ["$6.0\\text{ N}$", "$2400\\text{ N}$", "$0.6\\text{ N}$", "$120\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $|F_s| = kx = (120)(0.05) = 6.0\\text{ N}$, directed back toward the natural length (pushing outward, since the spring is compressed).",
+      "incorrect": {
+        "1": "This divides ($120/0.05$). $F_s = kx$ multiplies: $(120)(0.05) = 6.0\\text{ N}$.",
+        "2": "This is $k \\times x^2$ or a decimal slip. $|F_s| = kx = (120)(0.05) = 6.0\\text{ N}$.",
+        "3": "$120$ is $k$ in N/m, not a force. Multiply by the compression: $6.0\\text{ N}$."
+      }
+    },
+    "hint": ["$|F_s| = kx$, with $x$ the compression from natural length."],
+    "solution": "$|F_s| = kx = (120)(0.05) = 6.0\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-098",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.8",
+    "clusterId": "2.10",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "spring-constant-changes-with-applied-force",
+    "question": "Two springs, P and Q, are tested. On a force–extension graph, spring P's line is steeper than spring Q's. This means:",
+    "choices": [
+      "P has a larger spring constant — it is stiffer",
+      "Q has a larger spring constant",
+      "P and Q have the same spring constant but different natural lengths",
+      "P stretches more easily than Q"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the slope of a force–extension line is the spring constant $k$. A steeper line means a larger $k$, which means the spring is stiffer: it takes more force for the same stretch.",
+      "incorrect": {
+        "1": "The steeper line has the larger slope, hence the larger $k$. That is P.",
+        "2": "Both lines pass through the origin; natural length is where $x = 0$. Different slopes mean different $k$, not different natural lengths.",
+        "3": "A steeper line (larger $k$) means the spring is *harder* to stretch — more force per metre, not less."
+      }
+    },
+    "hint": ["Slope of a force–extension line $= k$. Steeper line ⇒ larger $k$ ⇒ ?"],
+    "solution": "Steeper line ⇒ larger slope ⇒ larger $k$ ⇒ P is the stiffer spring."
+  },
+  {
+    "id": "AP1-U2-MCQ-099",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.5",
+    "clusterId": "2.10",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "scale-always-reads-true-weight",
+    "question": "A $70\\text{ kg}$ person stands on a scale in an elevator ($g = 10\\text{ m/s}^2$). The scale reads $840\\text{ N}$. The elevator's acceleration is:",
+    "choices": ["$2.0\\text{ m/s}^2$ upward", "$2.0\\text{ m/s}^2$ downward", "$12\\text{ m/s}^2$ upward", "zero"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — isolate the person, up positive: $F_N - mg = ma \\Rightarrow a = (F_N - mg)/m = (840 - 700)/70 = 140/70 = 2.0\\text{ m/s}^2$. Positive, so the acceleration is upward.",
+      "incorrect": {
+        "1": "The scale reads *more* than the $700\\text{ N}$ true weight, so the net force — and the acceleration — point upward, not downward.",
+        "2": "$12\\text{ m/s}^2$ is $F_N/m = 840/70$. That is $g + a$, not $a$. Subtract $g$: $a = 12 - 10 = 2.0\\text{ m/s}^2$.",
+        "3": "$a = 0$ would give a reading of $mg = 700\\text{ N}$. It reads $840\\text{ N}$, so the elevator is accelerating."
+      }
+    },
+    "hint": ["Isolate the person: $F_N - mg = ma$. Solve for $a$ and read its sign (up positive)."],
+    "solution": "$a = (840 - 700)/70 = 2.0\\text{ m/s}^2$ upward."
+  },
+  {
+    "id": "AP1-U2-MCQ-100",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Gravitation, Springs, and Apparent Weight",
+    "objective": "C2.10",
+    "cedTopic": "2.5",
+    "clusterId": "2.10",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "apparent-weightlessness-requires-zero-gravity",
+    "question": "In a 'zero-gravity' training flight, a plane flies a special curved path and everyone inside floats for about 25 seconds. During those 25 seconds, the plane is:",
+    "choices": [
+      "so high that Earth's gravity no longer reaches it",
+      "following a path where it (and everyone in it) is in free fall — moving only under gravity — so there is no floor force on the passengers",
+      "accelerating upward hard enough to cancel gravity",
+      "flying so fast that gravity cannot act on it"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the pilot flies the arc of a projectile: engines set so the plane accelerates downward at exactly $g$, like a thrown ball. Plane and passengers fall together, so the floor exerts no normal force — apparent weightlessness. Gravity is fully present (the plane is only a few km up); it is the *contact* force that has gone to zero.",
+      "incorrect": {
+        "0": "The plane is only a few kilometres up — essentially full Earth gravity. Altitude is not the reason.",
+        "2": "Accelerating *upward* would press people into the floor harder, not make them float. The plane accelerates *downward* at $g$.",
+        "3": "Speed does not shield an object from gravity. The floating comes from plane and passengers sharing the same free-fall acceleration."
+      }
+    },
+    "hint": ["What must the plane's acceleration be for the passengers to float? Is gravity actually absent a few km above the ground?"],
+    "solution": "The plane is in free fall (accelerating down at $g$) along a projectile arc, so $F_N = 0$ on the passengers — gravity is still fully present."
+  }
+]
