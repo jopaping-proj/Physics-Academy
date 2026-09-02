@@ -10,6 +10,7 @@
   "cedTopic": "2.5",
   "clusterId": "2.3",
   "lessonTitle": "Newton's Second Law: Force, Mass, and Acceleration",
+  "status": "approved — physics reviewed 2026-09-02 (reference implementation)",
   "prerequisites": [
     "Vectors and vector addition",
     "Definition of acceleration as the rate of change of velocity",
