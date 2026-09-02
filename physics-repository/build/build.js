@@ -121,7 +121,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { mdToHtml } from "../js/markdown.js";
 import { ROOT, CONTENT_DIR, DIST_DIR, TEMPLATES_DIR } from "./render/paths.js";
-import { esc } from "./render/primitives.js";
+import { esc, attr } from "./render/primitives.js";
 import { loadQuestionBank, renderLessonBody, renderSidebarToc } from "./render/sections.js";
 import { validateContent } from "./validate.js";
 
@@ -301,9 +301,26 @@ function buildLesson(file, templates) {
     ? `Lesson ${lesson.lessonNumber} — ${lesson.lessonTitle}`
     : lesson.lessonTitle;
 
+  // the unit-index page for this lesson's unit is the sibling *-index.json;
+  // linkify the breadcrumb so the sidebar doubles as repo navigation.
+  const siblingIndex = fs
+    .readdirSync(path.dirname(file))
+    .find((f) => f.endsWith("-index.json"));
+  const crumbs = [
+    { label: lesson.course, href: `${rootPrefix}index.html` },
+    { label: lesson.unit, href: siblingIndex ? siblingIndex.replace(/\.json$/, ".html") : null },
+    { label: lessonLabel },
+  ];
+  const breadcrumb = crumbs
+    .filter((c) => c.label)
+    .map((c, i, arr) =>
+      c.href && i < arr.length - 1 ? `<a href="${attr(c.href)}">${esc(c.label)}</a>` : `<span>${esc(c.label)}</span>`
+    )
+    .join(' <span class="breadcrumb__sep" aria-hidden="true">›</span> ');
+
   const html = renderTemplate(lessonTemplate.replaceAll("{{ROOT}}", rootPrefix), {
     TITLE: esc(lessonLabel || lesson.id),
-    BREADCRUMB: [lesson.course, lesson.unit, lessonLabel].filter(Boolean).map(esc).join(" › "),
+    BREADCRUMB: breadcrumb,
     SIDEBAR_TOC: renderSidebarToc(lesson, bank),
     LESSON_BODY: renderLessonBody(lesson, bank),
     LESSON_DATA_JSON: JSON.stringify(lesson),

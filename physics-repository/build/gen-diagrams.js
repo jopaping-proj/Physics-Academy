@@ -277,6 +277,40 @@ const DIAGRAMS = {
       { sym: "F_g", dir: "down", mag: 5, anchor: [150, 112], color: "grey" },
     ],
   },
+
+  "connected/dot-table-block.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of the block on the frictionless table. Gravity down and the normal force up are equal and cancel. The rope tension is the only horizontal force, pointing right toward the pulley, so it alone gives the block's acceleration: F_T = m a.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
+      { sym: "F_T", dir: "right", mag: 4, anchor: [158, 112], color: "amber" },
+    ],
+  },
+
+  "connected/dot-hanging-block.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of the hanging block. Two vertical forces: the rope tension up and gravity down. Gravity is the longer arrow, so the net force is downward and the block accelerates down — which means the tension is less than the weight, F_T = m(g - a).",
+    forces: [
+      { sym: "F_T", dir: "up", mag: 3, anchor: [150, 104], color: "amber" },
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
+    ],
+  },
+
+  "connected/dot-elevator-bag.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a bag on the floor of an elevator that accelerates upward. Two vertical forces: the floor's normal force up and gravity down. The normal force is the longer arrow, because the floor must support the bag's weight and also accelerate it upward: F_N = m(g + a).",
+    forces: [
+      { sym: "F_N", dir: "up", mag: 5, anchor: [150, 104], color: "blue" },
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+    ],
+  },
 };
 
 let n = 0;

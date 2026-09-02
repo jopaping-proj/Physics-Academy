@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 148" role="img"
+     aria-label="A cart tows a trailer along a level track. The trailer is behind, the cart in front, joined by a coupling. A forward force acts on the cart. Both sets of wheels rest on the track. When pulled, the cart and trailer accelerate together.">
+  <!-- Hand-authored scene. Labels placed clear of the boxes, wheels,
+       coupling and force arrow (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="ct-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+    <marker id="ct-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f0c27a"/></marker>
+  </defs>
+
+  <text x="170" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">pulled together &#8594; one acceleration</text>
+
+  <!-- track -->
+  <line x1="14" y1="112" x2="326" y2="112" stroke="#8b96a5" stroke-width="2"/>
+  <g stroke="#8b96a5" stroke-width="1.1">
+    <line x1="34" y1="112" x2="26" y2="122"/><line x1="74" y1="112" x2="66" y2="122"/>
+    <line x1="114" y1="112" x2="106" y2="122"/><line x1="154" y1="112" x2="146" y2="122"/>
+    <line x1="194" y1="112" x2="186" y2="122"/><line x1="234" y1="112" x2="226" y2="122"/>
+    <line x1="274" y1="112" x2="266" y2="122"/><line x1="314" y1="112" x2="306" y2="122"/>
+  </g>
+
+  <!-- trailer (rear) -->
+  <rect x="52" y="74" width="48" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="76" y="93" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#3fb950">trailer</text>
+  <circle cx="64" cy="106" r="6" fill="#8b96a5" fill-opacity="0.3" stroke="#8b96a5" stroke-width="1.2"/>
+  <circle cx="90" cy="106" r="6" fill="#8b96a5" fill-opacity="0.3" stroke="#8b96a5" stroke-width="1.2"/>
+
+  <!-- coupling -->
+  <line x1="100" y1="92" x2="122" y2="92" stroke="#8b96a5" stroke-width="2"/>
+
+  <!-- cart (front) -->
+  <rect x="122" y="66" width="62" height="38" rx="2" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="153" y="88" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">cart</text>
+  <circle cx="136" cy="106" r="6" fill="#8b96a5" fill-opacity="0.3" stroke="#8b96a5" stroke-width="1.2"/>
+  <circle cx="170" cy="106" r="6" fill="#8b96a5" fill-opacity="0.3" stroke="#8b96a5" stroke-width="1.2"/>
+
+  <!-- applied force -->
+  <line x1="184" y1="82" x2="234" y2="82" stroke="#f0c27a" stroke-width="3" marker-end="url(#ct-amber)"/>
+  <text x="242" y="82" text-anchor="start" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f0c27a">F</text>
+
+  <!-- acceleration -->
+  <line x1="196" y1="128" x2="228" y2="128" stroke="#8b96a5" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ct-grey)"/>
+  <text x="212" y="142" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">a</text>
+</svg>

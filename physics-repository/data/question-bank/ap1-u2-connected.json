@@ -26,6 +26,9 @@
       }
     },
     "hint": ["The string keeps the blocks moving together — one system of mass $2.0 + 6.0\\text{ kg}$, one external force."],
+    "hintFigures": [
+      { "svg": "connected/two-blocks-pulled.svg", "caption": "Two blocks, one string, one applied force: treat them as a single system. The string tension is internal." }
+    ],
     "solution": "$M = 8.0\\text{ kg}$; $a = 24/8.0 = 3.0\\text{ m/s}^2$."
   },
   {
@@ -89,6 +92,9 @@
       }
     },
     "hint": ["Get $a$ for the system. Then the string only tows the back block: $F_T = m_{back}\\,a$."],
+    "hintFigures": [
+      { "svg": "connected/dot-table-block.svg", "caption": "The towed (back) block as a dot: the string tension is its only horizontal force, so $F_T = m_{back}\\,a$." }
+    ],
     "solution": "$a = 30/6.0 = 5.0\\text{ m/s}^2$; $F_T = (2.0)(5.0) = 10\\text{ N}$."
   },
   {

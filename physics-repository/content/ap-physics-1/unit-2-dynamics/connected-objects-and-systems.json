@@ -48,6 +48,7 @@
       "workedExample": {
         "scaffold": "full",
         "problem": "Two blocks sit on a frictionless table, connected by a light string: a $3.0\\text{ kg}$ block in front and a $2.0\\text{ kg}$ block behind it. A horizontal force of $20\\text{ N}$ pulls the front block. Find the acceleration of the blocks.",
+        "figure": { "svg": "connected/two-blocks-pulled.svg", "caption": "The $20\\text{ N}$ pull is the only external horizontal force; the string tension between the blocks is internal to the two-block system." },
         "phases": [
           {
             "label": "Choose the system",
@@ -108,6 +109,9 @@
           }
         },
         "hint": ["The cart and trailer move together, so treat them as one object of mass $5.0 + 3.0\\text{ kg}$. The coupling force between them is internal — leave it out."],
+        "hintFigures": [
+          { "svg": "connected/cart-trailer.svg", "caption": "Cart and trailer, one system: the coupling force is internal, so only the forward $16\\text{ N}$ acts on the total $8.0\\text{ kg}$." }
+        ],
         "solution": "$M = 8.0\\text{ kg}$; $a = 16/8.0 = 2.0\\text{ m/s}^2$."
       }
     },
@@ -116,7 +120,7 @@
       "title": "Finding the Connecting Force: One Object at a Time",
       "concept": "The system method gives the acceleration but hides the connecting force. To find the **rope tension** (or the **contact force** between two blocks pushed together), you have to look at **one object on its own**.\n\nThe recipe:\n\n1. Get the common acceleration $a$ from the system method.\n2. Draw the free-body diagram for **one** object — the connecting force now appears, because it is external *to that one object*.\n3. Apply $\\sum F = ma$ for that object, using the shared $a$, and solve for the connecting force.\n\nPick the **simpler** object — usually the one with the fewest forces. Then **reconcile**: the tension you find must also make the *other* object's equation balance. If it does, both methods agree and the answer is trustworthy.",
       "figures": [
-        { "svg": "connected/fbd-table-block.svg", "caption": "The table block's free-body diagram. Its only horizontal force is the rope tension $F_T$, so $F_T = m_1 a$." }
+        { "svg": "connected/system-then-isolate.svg", "size": "lg", "caption": "First the whole system (the string tension is internal); then **isolate one block** — now the tension shows up on its free-body diagram, and since it is the block's only horizontal force, $F_T = m_2 a$." }
       ],
       "workedExample": {
         "scaffold": "partial",
@@ -188,7 +192,7 @@
         "hint": ["Find $a$ for the system first. Then isolate the box that the rope is *towing* (box P) — the rope is its only horizontal force, so $F_T = m_P a$."],
         "solution": "$a = 30/10 = 3.0\\text{ m/s}^2$; $F_T = m_P a = (4.0)(3.0) = 12\\text{ N}$.",
         "hintFigures": [
-          { "svg": "connected/fbd-table-block.svg", "caption": "Box P's free-body diagram: the rope tension is its only horizontal force, so $F_T = m_P a$." }
+          { "svg": "connected/dot-table-block.svg", "caption": "Box P as a dot: gravity and the normal force cancel; the rope tension is the only horizontal force, so $F_T = m_P a$." }
         ]
       }
     },
@@ -339,6 +343,9 @@
         }
       },
       "hint": ["The hanging block has a rope pulling *up* on it, so it is not in free fall. Use the system: $a = m_2 g/(m_1 + m_2)$ with the $3.0\\text{ kg}$ block hanging."],
+      "hintFigures": [
+        { "svg": "connected/dot-hanging-block.svg", "caption": "The hanging block as a dot: the rope tension pulls up, so gravity is not the only force — it is not in free fall." }
+      ],
       "solution": "$a = m_2 g/(m_1+m_2) = 30/4.0 = 7.5\\text{ m/s}^2$ — below $g$ because the rope tension opposes part of the weight."
     }
   ],
@@ -392,6 +399,9 @@
         }
       },
       "hint": ["Find $a$ for all three carts as one system. Then the rear rope only accelerates the one cart behind it: $F_T = m_{rear}\\,a$."],
+      "hintFigures": [
+        { "svg": "connected/fbd-table-block.svg", "caption": "The rear cart's free-body diagram: the rear rope's tension is its only horizontal force, so $F_T = m_{rear}\\,a$." }
+      ],
       "solution": "$a = 12/6.0 = 2.0\\text{ m/s}^2$; rear-rope tension $= (2.0)(2.0) = 4.0\\text{ N}$."
     },
     {
@@ -415,7 +425,7 @@
         { "svg": "connected/setup-table-pulley.svg", "caption": "The setup: $m_1 = 5.0\\text{ kg}$ on the table, $m_2 = 3.0\\text{ kg}$ hanging, connected over an ideal pulley." }
       ],
       "parts": [
-        { "label": "(a)", "prompt": "Draw a free-body diagram for each block. Label every force with the object exerting it.", "points": 2, "modelResponse": "Table block: weight $m_1 g$ down (Earth), normal force $F_N$ up (table), rope tension $F_T$ horizontal toward the pulley (rope). Hanging block: weight $m_2 g$ down (Earth), rope tension $F_T$ up (rope). The two $F_T$ arrows are equal in length — one rope, ideal pulley." },
+        { "label": "(a)", "prompt": "Draw a free-body diagram for each block. Label every force with the object exerting it.", "points": 2, "figures": [ { "svg": "connected/dot-table-block.svg", "caption": "Table block ($m_1$): normal force up, weight down (these cancel), rope tension toward the pulley." }, { "svg": "connected/dot-hanging-block.svg", "caption": "Hanging block ($m_2$): rope tension up, weight down — weight is longer, so it accelerates down." } ], "modelResponse": "Table block: weight $m_1 g$ down (Earth), normal force $F_N$ up (table), rope tension $F_T$ horizontal toward the pulley (rope). Hanging block: weight $m_2 g$ down (Earth), rope tension $F_T$ up (rope). The two $F_T$ arrows are equal in length — one rope, ideal pulley." },
         { "label": "(b)", "prompt": "Find the acceleration of the blocks.", "points": 3, "modelResponse": "System, total mass $M = 5.0 + 3.0 = 8.0\\text{ kg}$. The only external force along the motion is the hanging block's weight: $m_2 g = (3.0)(10) = 30\\text{ N}$. $a = F_{net,\\text{ext}}/M = 30/8.0 = 3.75\\text{ m/s}^2$." },
         { "label": "(c)", "prompt": "Find the tension in the rope.", "points": 3, "modelResponse": "Table block alone: its only horizontal force is $F_T$, so $\\sum F_x = m_1 a \\Rightarrow F_T = m_1 a = (5.0)(3.75) = 19\\text{ N}$. Check with the hanging block: $m_2 g - F_T = m_2 a \\Rightarrow F_T = m_2(g - a) = (3.0)(10 - 3.75) = (3.0)(6.25) = 19\\text{ N}$ ✓." },
         { "label": "(d)", "prompt": "The rope tension is $19\\text{ N}$, but the hanging block weighs $30\\text{ N}$. Explain in one or two sentences why the tension is smaller.", "points": 2, "modelResponse": "The hanging block is accelerating downward, so the net force on it must point down: $m_2 g - F_T = m_2 a > 0$, which forces $F_T < m_2 g$. The 'missing' $11\\text{ N}$ ($= m_2 a$) is exactly the net downward force that accelerates the block. The tension would equal the full weight only if $a = 0$." }
@@ -455,6 +465,9 @@
         }
       },
       "hint": ["Isolate the bag. It accelerates upward at $a$ with the elevator. Write $\\sum F = ma$ with the floor's normal force up and gravity down."],
+      "solutionFigures": [
+        { "svg": "connected/dot-elevator-bag.svg", "caption": "The bag as a dot: the floor's normal force (up) exceeds the weight (down), because it must support the bag *and* accelerate it upward — $F_N = m(g + a)$." }
+      ],
       "solution": "$F_N - mg = ma \\Rightarrow F_N = m(g + a)$ — the connecting (normal) force exceeds $mg$ when the acceleration is upward."
     }
   ],
@@ -494,6 +507,9 @@
     "hint": [
       "'Ideal rope' controls how tension varies *along* the rope, not its numerical value.",
       "Write $\\sum F = m_2 a$ for the hanging block. When is $F_T$ equal to $m_2 g$?"
+    ],
+    "hintFigures": [
+      { "svg": "connected/dot-hanging-block.svg", "caption": "The hanging block's free-body diagram: $m_2 g$ (down) exceeds $F_T$ (up), so $m_2 g - F_T = m_2 a$ and $F_T = m_2(g - a)$." }
     ],
     "solution": "$F_T = m_2(g - a) < m_2 g$ while accelerating; equal to $m_2 g$ only when $a = 0$ (system at rest or at constant velocity)."
   },

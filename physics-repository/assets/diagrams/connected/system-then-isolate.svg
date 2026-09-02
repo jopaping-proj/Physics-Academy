@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 186" role="img"
+     aria-label="Two panels. Left: the whole two-block system on a table, pulled by a force F, with a dashed box highlighting the back block. Right: the back block isolated on its own, with its free-body diagram — the normal force up, gravity down, and the rope tension F_T to the right as the only horizontal force, so F_T equals the back block's mass times the common acceleration.">
+  <!-- Hand-authored two-panel figure. Labels placed clear of the blocks,
+       arrows and each other (master-project-prompt.md §11). -->
+  <defs>
+    <marker id="si-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
+    <marker id="si-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+    <marker id="si-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#f0c27a"/></marker>
+  </defs>
+
+  <line x1="228" y1="10" x2="228" y2="176" stroke="#8b96a5" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- ===== LEFT: the whole system ===== -->
+  <text x="114" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#8b96a5">1 &#183; the whole system</text>
+  <line x1="16" y1="118" x2="212" y2="118" stroke="#8b96a5" stroke-width="2"/>
+  <g stroke="#8b96a5" stroke-width="1.1">
+    <line x1="34" y1="118" x2="26" y2="128"/><line x1="72" y1="118" x2="64" y2="128"/>
+    <line x1="110" y1="118" x2="102" y2="128"/><line x1="148" y1="118" x2="140" y2="128"/>
+    <line x1="186" y1="118" x2="178" y2="128"/>
+  </g>
+  <rect x="46" y="90" width="44" height="28" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="68" y="108" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#3fb950">m&#8322;</text>
+  <line x1="90" y1="104" x2="118" y2="104" stroke="#f0c27a" stroke-width="2.5"/>
+  <rect x="118" y="86" width="50" height="32" rx="2" fill="#58a6ff" fill-opacity="0.16" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="143" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#58a6ff">m&#8321;</text>
+  <line x1="168" y1="96" x2="202" y2="96" stroke="#f0c27a" stroke-width="3" marker-end="url(#si-amber)"/>
+  <text x="200" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f0c27a">F</text>
+  <rect x="40" y="84" width="56" height="40" rx="3" fill="none" stroke="#8b96a5" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="68" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">isolate this one &#8594;</text>
+
+  <!-- ===== RIGHT: isolate the back block ===== -->
+  <text x="344" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#3fb950">2 &#183; one block, one free-body diagram</text>
+  <rect x="322" y="80" width="46" height="30" rx="2" fill="#3fb950" fill-opacity="0.16" stroke="#3fb950" stroke-width="1.5"/>
+  <circle cx="345" cy="95" r="2" fill="#e6edf3"/>
+  <text x="345" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#3fb950">m&#8322;</text>
+  <!-- normal force up, from the bottom face -->
+  <line x1="332" y1="110" x2="332" y2="70" stroke="#58a6ff" stroke-width="3" marker-end="url(#si-blue)"/>
+  <text x="332" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">F<tspan font-size="8" dy="2">N</tspan></text>
+  <!-- gravity down, from the centre -->
+  <line x1="358" y1="95" x2="358" y2="135" stroke="#8b96a5" stroke-width="3" marker-end="url(#si-grey)"/>
+  <text x="358" y="148" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#8b96a5">F<tspan font-size="8" dy="2">g</tspan></text>
+  <!-- tension right, from the right face (the only horizontal force) -->
+  <line x1="368" y1="90" x2="410" y2="90" stroke="#f0c27a" stroke-width="3" marker-end="url(#si-amber)"/>
+  <text x="418" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f0c27a">F<tspan font-size="8" dy="2">T</tspan></text>
+  <text x="344" y="172" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#8b96a5">only one horizontal force &#8594; F&#8348; = m&#8322; a</text>
+</svg>

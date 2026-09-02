@@ -26,7 +26,20 @@
   font-size: var(--text-xs);
   color: var(--text-secondary);
   margin-bottom: var(--space-3);
+  line-height: 1.5;
 }
+.breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px dotted color-mix(in srgb, currentColor 55%, transparent);
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  color: var(--accent);
+  border-bottom-style: solid;
+  border-bottom-color: currentColor;
+}
+.breadcrumb__sep { opacity: 0.5; margin: 0 0.15em; }
 
 /* ---- Generic panel card, base for most components below ---- */
 .card {
