@@ -10,7 +10,7 @@
   "cedTopic": "2.5",
   "clusterId": "2.7",
   "lessonTitle": "Connected Objects and Systems",
-  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "status": "approved — physics reviewed 2026-09-02",
   "prerequisites": [
     "Newton's second law along the direction of motion, $\\sum F_x = m a_x$ (Lessons 4–5)",
     "A rope's tension is one force of a third-law pair — it pulls the same on each end of an ideal rope (Lesson 6)",
