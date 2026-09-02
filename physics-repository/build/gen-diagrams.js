@@ -312,6 +312,18 @@ const DIAGRAMS = {
     ],
   },
 
+  "circular/dot-car-curve.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a car rounding a flat (unbanked) curve at constant speed, seen from behind. Gravity acts down and the normal force up, equal and cancelling. The only horizontal force is static friction from the road, pointing sideways toward the centre of the curve — that friction is the entire centripetal force. There is no outward force.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
+      { sym: "f_s", dir: "left", mag: 3, anchor: [142, 112], color: "red" },
+    ],
+  },
+
   // ---- Lesson 9 · Gravitation, Springs, and Apparent Weight ----
   // ---- Lesson 10 · Inclined Planes ----
   "incline/dot-frictionless.svg": {

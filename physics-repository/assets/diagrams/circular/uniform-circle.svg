@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 236" role="img"
+     aria-label="Top-down view of an object in uniform circular motion. It travels clockwise around a circle of radius r. At the top of the circle the velocity vector points horizontally (tangent, along the direction of travel) and the acceleration vector points straight down toward the centre, with magnitude v squared over r. The speed is constant; only the direction of the velocity changes.">
+  <defs>
+    <marker id="cm1-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#3fb950"/></marker>
+    <marker id="cm1-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1 L10 5 L0 9 z" fill="#d29922"/></marker>
+  </defs>
+
+  <!-- circular path -->
+  <circle cx="176" cy="138" r="66" fill="none" stroke="#8b96a5" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="176" cy="138" r="3" fill="#8b96a5"/>
+
+  <!-- radius line from centre up to the puck -->
+  <line x1="176" y1="138" x2="176" y2="72" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="166" y="108" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">r</text>
+
+  <!-- puck at the top of the circle -->
+  <circle cx="176" cy="72" r="6" fill="#e6edf3" stroke="#16213e" stroke-width="1.5"/>
+
+  <!-- velocity: tangent, horizontal (clockwise travel at the top goes to the right) -->
+  <line x1="176" y1="72" x2="248" y2="72" stroke="#3fb950" stroke-width="2.5" marker-end="url(#cm1-green)"/>
+  <text x="256" y="72" font-family="system-ui, sans-serif" font-size="12" font-weight="700" font-style="italic" fill="#3fb950">v</text>
+
+  <!-- acceleration: radially inward, straight down toward the centre -->
+  <line x1="176" y1="72" x2="176" y2="126" stroke="#d29922" stroke-width="2.5" marker-end="url(#cm1-amber)"/>
+  <text x="186" y="104" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#d29922">a = v&#178;/r</text>
+
+  <text x="180" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">speed constant, velocity turning &#8212; acceleration points at the centre</text>
+</svg>

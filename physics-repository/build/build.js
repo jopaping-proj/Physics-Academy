@@ -136,6 +136,7 @@ const COMPONENT_SCRIPTS = {
   "friction-explorer": "js/lesson-interactives/friction-explorer.js",
   "connected-systems-explorer": "js/lesson-interactives/connected-systems-explorer.js",
   "spring-graph-explorer": "js/lesson-interactives/spring-graph-explorer.js",
+  "circular-motion-explorer": "js/lesson-interactives/circular-motion-explorer.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 

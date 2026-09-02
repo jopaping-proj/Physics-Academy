@@ -1,0 +1,503 @@
+{
+  "id": "ap1-u2-circular",
+  "slug": "circular-motion",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Forces",
+  "lessonNumber": "11",
+  "objective": "C2.12",
+  "cedTopic": "2.9",
+  "clusterId": "2.12",
+  "lessonTitle": "Circular Motion",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Velocity is a vector: changing its direction is an acceleration, even at constant speed (Unit 1)",
+    "Newton's first law: no net force ⇒ straight-line, constant-velocity motion (Lesson 3)",
+    "Newton's second law on a chosen axis: $\\sum F = ma$ (Lessons 4–5)",
+    "Free-body diagrams list only real contact and field forces (Lesson 2)",
+    "Friction $f \\le \\mu_s F_N$, and the normal force from perpendicular equilibrium (Lessons 7, 10)"
+  ],
+  "majorObjective": "Treat uniform circular motion as an application of Newton's second law: the object has a centripetal acceleration $a_c = v^2/r$ directed at the centre (speed constant, velocity turning), and the **net of the real forces** — tension, friction, the normal force, gravity — supplies it. Write $\\sum F_r = m v^2 / r$ along the radial direction and solve for a force, the speed, or the radius; reason through limiting cases (a car losing grip on a curve; the string that breaks and the object then goes straight).",
+  "subObjectives": [
+    "State that an object in uniform circular motion has acceleration $a_c = v^2/r$ directed toward the centre, and explain why there is an acceleration even though the speed is constant.",
+    "Identify the real force or forces whose net points toward the centre and provides the centripetal acceleration in a described scenario — without adding a separate 'centripetal force' arrow to the free-body diagram.",
+    "Apply Newton's second law radially, $\\sum F_r = m v^2 / r$, and solve for a force, the speed, or the radius.",
+    "Reason about how changing $v$, $r$, or $m$ changes the required net inward force ($F_c \\propto v^2$, $F_c \\propto 1/r$, $F_c \\propto m$).",
+    "Predict a limiting case: the maximum speed for a car on an unbanked curve ($v_{\\max} = \\sqrt{\\mu_s g r}$), and the straight-line tangential path an object takes the instant the inward force is removed."
+  ],
+  "hook": {
+    "prompt": "A ball is whirled in a circle on the end of a string. The string suddenly breaks. Viewed from above, which path does the ball follow immediately after?",
+    "choices": [
+      "it spirals outward, away from the centre",
+      "it flies straight outward, directly away from the centre",
+      "it continues in a straight line, tangent to the circle (the direction it was moving)",
+      "it keeps curving along the same circle for a moment, then straightens out"
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "You already know that a net force produces an acceleration in its own direction (Lessons 4–5), and that with *no* net force an object moves in a straight line at constant velocity (Lesson 3). Circular motion is just those two ideas together: the velocity vector is turning, so there is an acceleration pointing at the centre, so there must be a net force pointing at the centre — supplied by ordinary forces you already know how to draw.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Turning Is Accelerating: $a_c = v^2/r$",
+      "concept": "**Uniform circular motion** means going around a circle at *constant speed*. The speed is constant — but the **velocity** is not, because its direction is always changing. A changing velocity is an **acceleration**.\n\nFor uniform circular motion this acceleration:\n\n- has magnitude $$a_c = \\frac{v^2}{r}$$\n- points **toward the centre** of the circle (it is called *centripetal*, meaning 'centre-seeking'), **perpendicular to the velocity** at every instant.\n\nThe velocity is always **tangent** to the circle; the acceleration is always **radially inward**. They are at right angles, which is exactly why the speed stays constant while the direction keeps changing — the acceleration only turns the velocity, it never lengthens it.\n\n==Notice the $v^2$: doubling the speed **quadruples** the centripetal acceleration. And $a_c \\propto 1/r$: a tighter circle (smaller $r$) at the same speed needs a bigger acceleration.==",
+      "conceptFigures": [
+        { "svg": "circular/uniform-circle.svg", "size": "lg", "caption": "The velocity is tangent to the circle; the acceleration is radially inward, magnitude $v^2/r$. They are perpendicular, so the acceleration turns the velocity without changing its size." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A car drives around a circular track of radius $50\\text{ m}$ at a constant speed of $15\\text{ m/s}$. (a) Find the magnitude of its acceleration. (b) State its direction. (c) Is the car in equilibrium?",
+        "figure": { "svg": "circular/uniform-circle.svg", "caption": "Constant speed around a circle — still accelerating, toward the centre." },
+        "phases": [
+          {
+            "label": "(a) Magnitude — formula first",
+            "steps": [
+              "Uniform circular motion: $a_c = \\dfrac{v^2}{r}$.",
+              "Substitute: $a_c = \\dfrac{(15)^2}{50} = \\dfrac{225}{50} = 4.5\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "(b) Direction",
+            "steps": [
+              "The centripetal acceleration always points toward the centre of the circle — here, from the car straight in toward the middle of the track.",
+              "It is perpendicular to the car's velocity, which is tangent to the track."
+            ]
+          },
+          {
+            "label": "(c) Equilibrium?",
+            "steps": [
+              "No. Equilibrium means zero acceleration. The car has $a_c = 4.5\\text{ m/s}^2$, so there must be a non-zero net force on it — pointing toward the centre.",
+              "That net force is supplied by friction between the tyres and the road (next section)."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$4.5\\text{ m/s}^2$ is about half of $g$ — a firm but ordinary cornering acceleration. ✓",
+              "Constant *speed* fooled us into thinking 'no acceleration', but the velocity vector is turning the whole time. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Recognising that 'constant speed' is not 'constant velocity' — the direction change alone is an acceleration, and it points at the centre."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-circular-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Circular Motion",
+        "objective": "C2.12",
+        "cedTopic": "2.9",
+        "clusterId": "2.12",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "",
+        "question": "A car rounds a curve of radius $r$ at speed $v$, with centripetal acceleration $a_c$. On a second curve it travels **twice as fast** around a circle of **half the radius**. Its new centripetal acceleration is:",
+        "choices": ["$2a_c$", "$4a_c$", "$8a_c$", "$a_c$"],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct — $a_c = v^2/r$. Doubling $v$ multiplies by $2^2 = 4$; halving $r$ multiplies by $1/(1/2) = 2$. Together: $4 \\times 2 = 8$, so the new acceleration is $8a_c$.",
+          "incorrect": {
+            "0": "This counts only the radius change. The speed change matters more — it enters as $v^2$.",
+            "1": "This counts only the speed change ($\\times 4$) and forgets that halving the radius doubles the acceleration as well.",
+            "3": "Both changes *increase* $a_c$ here, so it cannot stay the same. $v^2/r$ with a bigger $v$ and a smaller $r$ is much larger."
+          }
+        },
+        "hint": ["$a_c = v^2/r$. What does $v \\to 2v$ do? What does $r \\to r/2$ do? Multiply the two factors."],
+        "solution": "$a_c = v^2/r$: $(2)^2 \\times \\dfrac{1}{1/2} = 4 \\times 2 = 8$, so $8a_c$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Real Forces Do the Job: $\\sum F_r = mv^2/r$",
+      "concept": "There is **no such thing as a 'centripetal force'** you add to a free-body diagram. 'Centripetal' just names a *direction* — toward the centre. The inward acceleration is produced by the **ordinary forces already acting**: a string's **tension**, a road's **friction**, a wall or track's **normal force**, **gravity**. Their vector sum points toward the centre and equals $ma_c$.\n\nSo the method is the same as always — draw the real forces, then apply Newton's second law, but along the **radial** direction (positive toward the centre):\n\n$$\\sum F_r = m a_c = \\frac{m v^2}{r}$$\n\nExamples of *what plays the inward role*:\n\n- **Ball on a string, horizontal circle on a frictionless table:** the string tension is the whole inward force. $F_T = mv^2/r$.\n- **Car on a flat (unbanked) curve:** static friction between tyres and road points inward. $f_s = mv^2/r$.\n- **Car on a banked curve (Lesson 10):** the inward horizontal component of the normal force. $F_N\\sin\\theta = mv^2/r$.\n- **A rider at the bottom of a dip:** the normal force (up) minus gravity (down) gives the inward (upward) net: $F_N - mg = mv^2/r$, so the seat pushes *harder* than $mg$ — you feel heavy.\n\n==If the real forces cannot supply $mv^2/r$ — the friction maxes out, the string breaks — the object stops following the circle and moves in a straight line.==",
+      "conceptFigures": [
+        { "svg": "circular/dot-car-curve.svg", "caption": "A car on a flat curve, seen from behind. Gravity and the normal force cancel vertically; **static friction** is the only horizontal force, pointing toward the centre — it *is* the centripetal force. No extra arrow." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A $1200\\text{ kg}$ car rounds a flat, unbanked curve of radius $80\\text{ m}$ at a steady $18\\text{ m/s}$. Take $g = 9.8\\text{ m/s}^2$. (a) What net inward force is required? (b) What real force provides it, and how large is it? (c) If the road–tyre coefficient of static friction is $\\mu_s = 0.55$, can the car make the turn?",
+        "figure": { "svg": "circular/dot-car-curve.svg", "caption": "Real forces: gravity down, normal force up, friction inward. Friction is the centripetal force." },
+        "phases": [
+          {
+            "label": "(a) Required inward force",
+            "steps": [
+              "Radial direction, toward the centre positive: $\\sum F_r = \\dfrac{mv^2}{r}$.",
+              "Substitute: $\\dfrac{(1200)(18)^2}{80} = \\dfrac{(1200)(324)}{80} = \\dfrac{388800}{80} = 4860\\text{ N}$."
+            ]
+          },
+          {
+            "label": "(b) Which real force",
+            "steps": [
+              "On a flat road the only horizontal force available is **static friction** from the tyres. So $f_s = 4860\\text{ N}$, directed toward the centre of the curve.",
+              "(Gravity and the normal force are vertical; they cancel and contribute nothing radially.)"
+            ]
+          },
+          {
+            "label": "(c) Is that possible?",
+            "steps": [
+              "Maximum static friction: $f_{s,\\max} = \\mu_s F_N = \\mu_s mg = (0.55)(1200)(9.8) = 6468\\text{ N}$.",
+              "Required $4860\\text{ N} < 6468\\text{ N}$ available, so yes — the car makes the turn with friction to spare."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "If the car went faster, the required $mv^2/r$ would rise as $v^2$; at $v_{\\max} = \\sqrt{\\mu_s g r} = \\sqrt{(0.55)(9.8)(80)} \\approx 20.8\\text{ m/s}$ friction would be maxed out. $18\\text{ m/s}$ is safely under. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Naming the real force that points inward (here, static friction) instead of inventing a 'centripetal force' — then setting it equal to $mv^2/r$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-circular-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Circular Motion",
+        "objective": "C2.12",
+        "cedTopic": "2.9",
+        "clusterId": "2.12",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "centripetal-force-is-a-separate-force",
+        "question": "A puck moves in a circle on a frictionless table, held by a string. Which free-body diagram of the puck (top view) is correct?",
+        "choices": [
+          "the string tension pointing inward, plus a separate 'centripetal force' also pointing inward",
+          "the string tension pointing inward, and nothing else horizontal — the tension *is* the centripetal force",
+          "the string tension inward and an equal 'centrifugal force' outward, so the puck is in equilibrium",
+          "only an outward force, because the puck is thrown outward"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the only horizontal force on the puck is the string tension, pointing toward the centre. It alone provides the centripetal acceleration: $F_T = mv^2/r$. 'Centripetal force' is not an extra arrow; it is the *name for the role* the tension is playing.",
+          "incorrect": {
+            "0": "That double-counts. There is one inward force — the tension. Calling it 'the centripetal force' does not create a second one.",
+            "2": "There is no outward 'centrifugal force' in the ground frame. If the forces balanced, the puck would move in a straight line, not a circle.",
+            "3": "Nothing pushes the puck outward. It is pulled *inward* by the string; without that pull it would fly off tangentially, not outward."
+          }
+        },
+        "hint": ["List only forces something physically exerts on the puck: the string. Which way does the string pull? Is there a second thing touching the puck?"],
+        "solution": "One inward force — the string tension — and it is the centripetal force. No extra inward arrow, no outward arrow.",
+        "hintFigures": [
+          { "svg": "circular/dot-car-curve.svg", "caption": "Same idea for a car on a flat curve: one inward real force (friction). The 'centripetal force' is that force, not an addition to it." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Limiting Cases: Losing Grip, and the String That Breaks",
+      "concept": "Two limiting cases pin down the ideas.\n\n**Maximum speed on an unbanked curve.** Static friction supplies the centripetal force, but it has a ceiling: $f_s \\le \\mu_s mg$. The fastest the car can corner is when friction is maxed out:\n$$\\mu_s mg = \\frac{m v_{\\max}^2}{r} \\;\\Rightarrow\\; v_{\\max} = \\sqrt{\\mu_s\\, g\\, r}.$$\nThe mass cancels — a loaded truck and an empty one skid at the same speed on the same curve. Go faster than $v_{\\max}$ and friction cannot bend the path tightly enough: the car slides toward the *outside* of the curve (it keeps going too straight).\n\n**The string breaks.** While the string holds, its tension bends the object's path into a circle. The instant it snaps, the inward force is gone. Newton's first law takes over: **the object moves in a straight line, tangent to the circle, at constant speed.** It does *not* fly radially outward — nothing ever pushed it outward. It simply stops being pulled inward and continues in the direction it was already going.\n\n==\"Feeling thrown outward\" on a fast turn is your body obeying Newton's first law — trying to go straight — while the car door pushes you inward. There is no outward force; there is a missing inward one relative to your straight-line tendency.==",
+      "conceptFigures": [
+        { "svg": "circular/string-break.svg", "size": "lg", "caption": "The instant the string snaps, no force acts along the table. The puck goes straight — tangent to the circle — at constant speed. Not outward." }
+      ],
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A stone is tied to a $0.90\\text{ m}$ string and whirled in a horizontal circle on a frictionless table. The string will break if its tension exceeds $60\\text{ N}$. The stone's mass is $0.40\\text{ kg}$. (a) Find the maximum speed the stone can have. (b) The string breaks at that speed. Describe the stone's motion just after.",
+        "figure": { "svg": "circular/string-break.svg", "caption": "At the breaking point, the tension is at its 60 N limit; just after, there is no force." },
+        "phases": [
+          {
+            "label": "(a) Set the tension to its limit",
+            "steps": [
+              "Radial equation: the tension is the whole centripetal force, so $F_T = \\dfrac{m v^2}{r}$.",
+              "At the breaking point $F_T = 60\\text{ N}$: $60 = \\dfrac{(0.40)\\,v^2}{0.90}$.",
+              "Solve: $v^2 = \\dfrac{(60)(0.90)}{0.40} = \\dfrac{54}{0.40} = 135$, so $v = \\sqrt{135} \\approx 11.6\\text{ m/s}$."
+            ]
+          },
+          {
+            "label": "(b) After the break",
+            "steps": [
+              "The string is gone; on the frictionless table gravity and the normal force cancel, so the **net force is zero**.",
+              "By Newton's first law the stone moves in a **straight line at constant $11.6\\text{ m/s}$**, along the tangent to the circle at the point where the string broke — not radially outward."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Rearranged, $v_{\\max} = \\sqrt{F_{T,\\max}\\, r / m} = \\sqrt{(60)(0.90)/0.40} = \\sqrt{135}$ — same thing. ✓",
+              "Bigger allowed tension, or a longer string, or a lighter stone ⇒ higher $v_{\\max}$. All match intuition. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Reading 'the string breaks at $60\\text{ N}$' as 'set $F_T = 60\\text{ N}$ in $F_T = mv^2/r$', and knowing that 'no force' after the break means straight-line, not outward."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-circular-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Circular Motion",
+        "objective": "C2.12",
+        "cedTopic": "2.9",
+        "clusterId": "2.12",
+        "skill": "limiting-case-analysis",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+        "question": "A car takes an unbanked curve too fast and begins to skid. Which way does it slide, and why?",
+        "choices": [
+          "toward the centre of the curve, because the centripetal force is too strong",
+          "toward the outside of the curve, because friction can no longer bend the path sharply enough — the car keeps going too straight",
+          "toward the outside, pushed by a centrifugal force that appears at high speed",
+          "straight down, because the tyres lose contact with the road"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — friction is the only thing turning the car, and it maxes out at $\\mu_s mg$. Above $v_{\\max} = \\sqrt{\\mu_s g r}$ the required $mv^2/r$ exceeds that ceiling, so the car cannot turn tightly enough and its path drifts to the outside of the curve — it is trying to go straighter than the road curves.",
+          "incorrect": {
+            "0": "The problem is that the inward force is *insufficient*, not excessive. Too much centripetal force would pull the car toward the centre — the opposite of a skid-out.",
+            "2": "No new outward force appears. The car slides out because its straight-line tendency (Newton's first law) is no longer being overcome by enough inward friction.",
+            "3": "Skidding on a flat curve is a horizontal loss of grip; the tyres stay on the road. Losing vertical contact is a different situation (a crest, not a curve)."
+          }
+        },
+        "hint": ["Friction has a maximum, $\\mu_s mg$. If $mv^2/r$ needs more than that, which way does the unturned car go — toward or away from the centre?"],
+        "solution": "Toward the outside: friction can't supply enough $mv^2/r$, so the car keeps going too straight and drifts off the curve's outer edge.",
+        "hintFigures": [
+          { "svg": "circular/string-break.svg", "caption": "Same principle as the snapped string: when the inward force runs out, the object goes straighter than the circle — which means toward the outside." }
+        ]
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "circular-motion-explorer",
+    "title": "Circular Motion Explorer",
+    "subtitle": "A puck on a string — the string is the whole centripetal force",
+    "componentKey": "circular-motion-explorer",
+    "description": "A puck whirled on a string on a frictionless table (top view). Set the speed $v$, radius $r$, mass $m$, and the tension at which the string breaks. Watch the **velocity** vector stay tangent (constant length, always turning) and the **acceleration** vector point at the centre with magnitude $v^2/r$. The string tension equals the required centripetal force $F_c = mv^2/r$; push $v$ or $m$ up or $r$ down far enough and the string snaps — and the puck leaves along the **tangent**, in a straight line at constant speed.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-circular-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Circular Motion",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+      "question": "A student says: 'When I swing a bucket of water in a vertical circle fast enough, the water stays in because centrifugal force presses it against the bottom of the bucket.' What is the correct account?",
+      "choices": [
+        "The student is right — centrifugal force holds the water in.",
+        "At the top, gravity (down) and the bucket's normal force (down, from the base pushing on the water) both point toward the centre and together provide $mv^2/r$. If the bucket goes fast enough, $mg$ alone is less than $mv^2/r$, so the base must push too — there is no outward force, just enough inward force.",
+        "The water stays in because the bucket is airtight.",
+        "The water is weightless at the top, so it cannot fall out."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — at the top of the loop 'toward the centre' is *downward*. The real forces are gravity and the normal force from the bucket base, both downward there. Newton's second law: $mg + F_N = mv^2/r$. Spin fast enough that $mv^2/r > mg$ and $F_N$ is positive (the base really does push on the water). Too slow and you'd need $F_N < 0$ — impossible — so the water falls out. No outward force anywhere.",
+        "incorrect": {
+          "0": "There is no outward force in the ground frame. The water is held in a circle by forces pointing *inward* (toward the centre of the loop).",
+          "2": "Buckets used for this demo are open. Airtightness is irrelevant — it is about whether the inward forces can supply $mv^2/r$.",
+          "3": "The water is in free fall only if $F_N = 0$ *and* $mg$ exactly equals $mv^2/r$. In general the bucket base also pushes on it. 'Weightless' is not why it stays in."
+        }
+      },
+      "hint": ["At the top of the circle, which direction is 'toward the centre'? Which real forces point that way?"],
+      "solution": "At the top, gravity and the base's normal force both point inward (down) and sum to $mv^2/r$: $mg + F_N = mv^2/r$. No outward force is involved."
+    },
+    {
+      "id": "ap1-u2-circular-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Circular Motion",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "centripetal-force-is-a-separate-force",
+      "question": "On an FRQ, a student draws a free-body diagram for a car on a flat curve showing: gravity down, normal force up, friction inward, **and** a separate arrow labelled '$F_c$' also pointing inward. Why will this lose credit?",
+      "choices": [
+        "The friction arrow should point outward, not inward.",
+        "'$F_c$' is not a distinct physical force — it is the name for the net inward force, which here is *already* the friction. Drawing it as a separate arrow double-counts the inward force.",
+        "Gravity and the normal force should not be on a circular-motion diagram.",
+        "Nothing is wrong; the diagram is complete."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a free-body diagram shows only real forces (what physically pushes or pulls the object): gravity, the normal force, friction. 'Centripetal' describes the *direction* of the net force, not a new interaction. Here friction already is the net inward force; adding '$F_c$' counts it twice and the radial equation comes out wrong.",
+        "incorrect": {
+          "0": "Friction on a car rounding a curve points *toward* the centre — it is what turns the car. Inward is correct.",
+          "2": "Gravity and the normal force are real forces on the car and belong on every free-body diagram, even if they cancel vertically here.",
+          "3": "The extra '$F_c$' arrow is the error. It is not a real force; it is a redundant label for the friction that is already drawn."
+        }
+      },
+      "hint": ["A free-body diagram contains only forces exerted by something physical. Is 'centripetal force' a thing that touches or acts on the car, or a description of a direction?"],
+      "solution": "'$F_c$' is not a separate force — it is the role the friction is already playing. Drawing both double-counts the inward force."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $0.30\\text{ kg}$ ball on a $0.50\\text{ m}$ string moves in a horizontal circle on a frictionless table at $4.0\\text{ m/s}$. Find the string tension.\n\n**Student's work:** 'Forces on the ball: tension $F_T$ inward, and centrifugal force $F_{cf} = mv^2/r$ outward. The ball moves at constant speed, so it is in equilibrium: $F_T = F_{cf} = \\dfrac{(0.30)(4.0)^2}{0.50} = 9.6\\text{ N}$. The tension is $9.6\\text{ N}$.'",
+      "prompts": [
+        "Identify the student's conceptual error.",
+        "State the rule they broke.",
+        "Redo the reasoning correctly, formula first.",
+        "Note whether the final number is right, and why that is misleading."
+      ],
+      "modelResponse": "1. The student invented an outward 'centrifugal force' and treated the ball as being in equilibrium. It is not in equilibrium — it is accelerating toward the centre.\n2. In the ground (inertial) frame there is no centrifugal force. The only real horizontal force is the string tension, and Newton's second law radially is $\\sum F_r = mv^2/r$, not $\\sum F_r = 0$.\n3. Real forces (top view): tension $F_T$ inward, nothing else horizontal. Radial second law, inward positive: $F_T = \\dfrac{mv^2}{r} = \\dfrac{(0.30)(4.0)^2}{0.50} = \\dfrac{4.8}{0.50} = 9.6\\text{ N}$.\n4. The number, $9.6\\text{ N}$, is correct — but only by luck: the student set $F_T$ equal to the same quantity $mv^2/r$, just for the wrong reason ('equilibrium' instead of 'net inward force = $mv^2/r$'). On a problem where gravity or another force also acts radially (a vertical circle, a banked curve), the fake-equilibrium method gives the wrong answer.",
+      "modelFigures": [
+        { "svg": "circular/dot-car-curve.svg", "caption": "The correct diagram has one inward real force and no outward force. $\\sum F_r = mv^2/r$, not $\\sum F_r = 0$." }
+      ],
+      "responseMaxLength": 950
+    }
+  ],
+  "representationConnections": "This lesson connects: the **motion diagram / vectors** (velocity tangent, acceleration radially inward, always perpendicular); the **free-body diagram** (only real forces — tension, friction, normal, gravity — with their net pointing at the centre); the **equation** ($\\sum F_r = mv^2/r$, and the derived $v_{\\max} = \\sqrt{\\mu_s g r}$); and **Newton's first law** (remove the inward force and the path becomes the tangent line). The organising idea: circular motion is not a new law, it is $\\sum F = ma$ with the acceleration written as $v^2/r$ toward the centre.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-circular-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Circular Motion",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "proportional-reasoning",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A ball on a string moves in a horizontal circle. The string tension is $F$. Keeping the radius and speed the same but using a ball of **three times the mass**, the tension becomes:",
+      "choices": ["$F$", "$3F$", "$F/3$", "$9F$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the tension is the centripetal force: $F_T = mv^2/r$. It is directly proportional to $m$, so tripling the mass triples the tension.",
+        "incorrect": {
+          "0": "$F_T = mv^2/r$ contains $m$ directly. A heavier ball at the same speed and radius needs a proportionally larger inward force.",
+          "2": "Tension increases with mass, not decreases — more inertia to turn means more force.",
+          "3": "Mass enters $mv^2/r$ to the first power, not squared. Tripling $m$ triples $F_T$."
+        }
+      },
+      "hint": ["The tension is the whole centripetal force: $F_T = mv^2/r$. How does it depend on $m$?"],
+      "solution": "$F_T = mv^2/r \\propto m$, so $3\\times$ the mass gives $3F$."
+    },
+    {
+      "id": "ap1-u2-circular-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Circular Motion",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "synthesis",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "centripetal-force-is-a-separate-force",
+      "scenario": "A $0.50\\text{ kg}$ puck slides on a frictionless horizontal table, tied by a string of length $0.80\\text{ m}$ to a fixed peg, moving in a circle at constant speed. The string breaks if its tension exceeds $40\\text{ N}$.",
+      "parts": [
+        { "label": "(a)", "prompt": "Draw a free-body diagram of the puck as seen from above, and separately from the side. Name the force that provides the centripetal acceleration.", "points": 2, "modelResponse": "Side view: gravity $mg$ down, normal force $F_N$ up (equal, cancelling). Top view: string tension $F_T$ pointing along the string toward the peg (the centre) — and no other horizontal force. The string tension is the force that provides the centripetal acceleration." },
+        { "label": "(b)", "prompt": "The puck moves at $6.0\\text{ m/s}$. Find the string tension.", "points": 2, "modelResponse": "Radial second law, toward the centre positive: $F_T = \\dfrac{mv^2}{r} = \\dfrac{(0.50)(6.0)^2}{0.80} = \\dfrac{18}{0.80} = 22.5\\text{ N}$." },
+        { "label": "(c)", "prompt": "Find the maximum speed the puck can have before the string breaks.", "points": 3, "modelResponse": "Set $F_T$ to its limit: $F_{T,\\max} = \\dfrac{m v_{\\max}^2}{r} \\Rightarrow v_{\\max} = \\sqrt{\\dfrac{F_{T,\\max}\\, r}{m}} = \\sqrt{\\dfrac{(40)(0.80)}{0.50}} = \\sqrt{64} = 8.0\\text{ m/s}$." },
+        { "label": "(d)", "prompt": "At that maximum speed the string breaks. Describe the puck's subsequent path and speed, and justify with a physical principle.", "points": 3, "modelResponse": "After the string breaks there is no horizontal force on the puck (the table is frictionless; gravity and the normal force cancel). By Newton's first law, with zero net force the puck moves in a straight line at constant speed — $8.0\\text{ m/s}$ — along the tangent to the circle at the point where the string broke. It does not curve outward, because no force ever pushed it outward." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt correct real forces in both views (no 'centripetal force' arrow), 1 pt names string tension as the centripetal force. (b) 1 pt $F_T = mv^2/r$ set up, 1 pt $22.5\\text{ N}$. (c) 1 pt sets tension to the $40\\text{ N}$ limit, 1 pt solves for $v_{\\max}$ symbolically, 1 pt $8.0\\text{ m/s}$. (d) 1 pt straight line / tangent, 1 pt constant speed $8.0\\text{ m/s}$, 1 pt cites Newton's first law / zero net force. Deduct 1 pt (once) for any 'flies radially outward' claim.",
+      "figures": [
+        { "svg": "circular/string-break.svg", "caption": "Part (d): with the inward force gone, the path is the tangent line, at constant speed." }
+      ]
+    },
+    {
+      "id": "ap1-u2-circular-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Circular Motion",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+      "question": "You are a passenger in a car that turns sharply left. You feel pressed against the right-hand door. The correct physical description is:",
+      "choices": [
+        "A rightward (outward) force pushes you into the door.",
+        "Your body tends to keep moving in a straight line (Newton's first law) while the car turns left underneath you; the door then pushes you left (toward the centre of the turn), and that door force is what curves your path. The 'press' you feel is you pushing on the door — the reaction to it pushing you.",
+        "Gravity is redirected sideways during the turn.",
+        "The door pushes you right, providing the centripetal force."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — nothing pushes you outward. Left to yourself you would go straight; the car's floor doesn't grip you enough, so you continue straight relative to the ground, which means you move toward the right side of the car. The door then contacts you and pushes you *left* (inward), supplying your centripetal force. By Newton's third law you push right on the door — that mutual push is the 'pressed against the door' sensation.",
+        "incorrect": {
+          "0": "There is no outward force. The sensation comes from your inertia (straight-line tendency) plus the inward push of the door once you reach it.",
+          "2": "Gravity still points straight down. It is not involved in the horizontal turning.",
+          "3": "The door pushes you *toward* the centre of the turn (leftward, for a left turn), not away from it. That inward push is the centripetal force; the outward push in this option is backwards."
+        }
+      },
+      "hint": ["If no force acted on you, which way would you go as the car turns left? What object do you then run into, and which way does it push you?"],
+      "solution": "Newton's first law: you keep going straight, so you slide toward the right door; the door pushes you inward (left), providing your centripetal force. No outward force exists — you feel the reaction to the door's inward push."
+    }
+  ],
+  "examConnection": "On the exam circular motion is an **application of Newton's second law**, not a separate topic. Expect: an MCQ on the direction of the acceleration (toward the centre) or velocity (tangent); a 'which real force is centripetal here' item (friction / tension / normal-force component / gravity); a proportional-reasoning item with $F_c = mv^2/r$; and an FRQ part asking for a free-body diagram plus $\\sum F_r = mv^2/r$. Reliable lost points: adding a 'centripetal force' (or a 'centrifugal force') arrow to the FBD, saying a snapped-string object flies radially outward instead of tangentially, and forgetting that at the top of a vertical circle 'toward the centre' points downward.",
+  "summary": "- **Uniform circular motion is accelerated motion:** speed constant, velocity turning ⇒ $a_c = v^2/r$ directed at the centre, perpendicular to $v$.\n- $F_c \\propto v^2$ (double the speed → quadruple the required force) and $F_c \\propto 1/r$.\n- ==There is no 'centripetal force' to add to a free-body diagram.== The inward acceleration is produced by the **real forces** — tension, friction, normal force, gravity — whose net points at the centre: $\\sum F_r = mv^2/r$.\n- **Unbanked curve:** friction is the centripetal force; $v_{\\max} = \\sqrt{\\mu_s g r}$ (mass-independent). Go faster and the car slides toward the *outside*.\n- **Remove the inward force** (string breaks) and Newton's first law takes over: straight line, tangent to the circle, constant speed — never radially outward.",
+  "exitQuestion": {
+    "id": "ap1-u2-circular-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "centripetal-force-is-a-separate-force",
+    "question": "A coin sits on a flat turntable, $0.10\\text{ m}$ from the centre, rotating so the coin moves at $0.60\\text{ m/s}$. The coin does not slide. Which statement is correct?",
+    "choices": [
+      "No net force acts on the coin, since it stays in the same spot on the turntable.",
+      "Static friction from the turntable surface points toward the centre and provides the centripetal force $mv^2/r$; if the turntable spun faster, at some speed friction would max out and the coin would slide off.",
+      "A centrifugal force pushes the coin outward, balanced by friction inward.",
+      "Gravity provides the centripetal force."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the coin is in uniform circular motion, so it accelerates toward the centre at $v^2/r = (0.60)^2/0.10 = 3.6\\text{ m/s}^2$. The only horizontal force available is static friction between coin and turntable, and it points inward, supplying $mv^2/r$. Spin faster and the required force grows as $v^2$; once it exceeds $\\mu_s mg$, the coin slides outward.",
+      "incorrect": {
+        "0": "The coin stays put *relative to the turntable*, but relative to the ground it moves in a circle — it is accelerating, so there is a net force (inward).",
+        "2": "No outward force acts. Friction alone points inward and is unopposed horizontally — that is why the coin accelerates toward the centre.",
+        "3": "Gravity points straight down and is balanced by the normal force. It has no horizontal component to turn the coin."
+      }
+    },
+    "hint": [
+      "The coin moves in a circle relative to the ground, so it has an inward acceleration $v^2/r$.",
+      "What horizontal force does the turntable surface exert on the coin, and which way?"
+    ],
+    "solution": "Static friction points toward the centre and is the centripetal force ($f_s = mv^2/r$). Beyond $v = \\sqrt{\\mu_s g r}$ it can't keep up and the coin slides off."
+  },
+  "questionBankFile": "ap1-u2-circular.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-107", "AP1-U2-MCQ-108", "AP1-U2-MCQ-109",
+    "AP1-U2-MCQ-110", "AP1-U2-MCQ-111", "AP1-U2-MCQ-112"
+  ]
+}

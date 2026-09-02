@@ -1,0 +1,186 @@
+[
+  {
+    "id": "AP1-U2-MCQ-107",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "An object moves in a circle at constant speed. The direction of its acceleration is:",
+    "choices": ["in the direction of motion (tangent)", "toward the centre of the circle", "away from the centre of the circle", "zero — the speed is constant"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — in uniform circular motion the acceleration is centripetal: it points toward the centre, perpendicular to the velocity. The speed is constant, but the velocity's direction changes, and that change is the acceleration.",
+      "incorrect": {
+        "0": "The velocity is tangent to the circle. The acceleration is perpendicular to it, pointing inward — not along the motion.",
+        "2": "The acceleration points *toward* the centre (centripetal), not away. An outward acceleration would spiral the object out.",
+        "3": "Constant speed does not mean zero acceleration. The velocity vector is turning, and a turning velocity is an acceleration."
+      }
+    },
+    "hint": ["Constant speed, changing direction. A changing velocity is an acceleration — which way does it point for a circle?"],
+    "solution": "Toward the centre (centripetal), perpendicular to the tangential velocity."
+  },
+  {
+    "id": "AP1-U2-MCQ-108",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A $0.25\\text{ kg}$ ball moves in a horizontal circle of radius $0.50\\text{ m}$ at $4.0\\text{ m/s}$ on a frictionless table, held by a string. The string tension is:",
+    "choices": ["$8.0\\text{ N}$", "$2.0\\text{ N}$", "$0.50\\text{ N}$", "$16\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the string tension is the whole centripetal force: $F_T = mv^2/r = (0.25)(4.0)^2/(0.50) = (0.25)(16)/0.50 = 4.0/0.50 = 8.0\\text{ N}$.",
+      "incorrect": {
+        "1": "This looks like $mv/r$ or a dropped square. The speed enters squared: $v^2 = 16$, giving $F_T = 8.0\\text{ N}$.",
+        "2": "This is roughly $mv^2/r$ with the mass and radius swapped, or several slips. Recompute: $(0.25)(16)/0.50 = 8.0\\text{ N}$.",
+        "3": "This uses $v^2/r$ without... actually $2mv^2/r$. Only one factor of $m$: $F_T = (0.25)(16)/0.50 = 8.0\\text{ N}$."
+      }
+    },
+    "hint": ["The string tension supplies all of the centripetal force: $F_T = mv^2/r$."],
+    "solution": "$F_T = mv^2/r = (0.25)(16)/0.50 = 8.0\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-109",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "misconception-diagnosis",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "centripetal-force-is-a-separate-force",
+    "question": "Which of the following belongs on the free-body diagram of a car rounding a flat, unbanked curve at constant speed?",
+    "choices": [
+      "gravity, normal force, friction toward the centre, and a separate centripetal force",
+      "gravity, normal force, and friction toward the centre",
+      "gravity, normal force, friction toward the centre, and a centrifugal force away from the centre",
+      "only a centripetal force toward the centre"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a free-body diagram shows only real forces. Here they are gravity (down), the normal force (up), and static friction (horizontal, toward the centre of the curve). Friction is the net inward force — it *is* the centripetal force; there is no separate arrow for it.",
+      "incorrect": {
+        "0": "'Centripetal force' names the net inward force, which is already the friction. Adding it as a separate arrow double-counts.",
+        "2": "There is no centrifugal force in the ground frame. Adding an outward force would wrongly balance the inward friction, and the car could not turn.",
+        "3": "Gravity and the normal force are real forces on the car and must be shown, even though they cancel vertically."
+      }
+    },
+    "hint": ["List only forces a physical object exerts on the car: the Earth, the road surface (normal), the road surface (friction). Is 'centripetal force' one of those?"],
+    "solution": "Gravity, normal force, and inward friction. Friction is the centripetal force — no extra arrow."
+  },
+  {
+    "id": "AP1-U2-MCQ-110",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "limiting-case-analysis",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "",
+    "question": "A car rounds an unbanked curve of radius $45\\text{ m}$. The coefficient of static friction between tyres and road is $\\mu_s = 0.80$. Taking $g = 10\\text{ m/s}^2$, the maximum speed at which it can round the curve without skidding is:",
+    "choices": ["$19\\text{ m/s}$", "$36\\text{ m/s}$", "$6.0\\text{ m/s}$", "$27\\text{ m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at the limit, $\\mu_s mg = mv_{\\max}^2/r$, so $v_{\\max} = \\sqrt{\\mu_s g r} = \\sqrt{(0.80)(10)(45)} = \\sqrt{360} \\approx 19\\text{ m/s}$. The mass cancels.",
+      "incorrect": {
+        "1": "This is $\\mu_s g r = 360$ without the square root. $v_{\\max} = \\sqrt{360} \\approx 19\\text{ m/s}$.",
+        "2": "This looks like $\\sqrt{\\mu_s g r}$ with $r$ left out, or $\\sqrt{\\mu_s g}$. Include the radius: $\\sqrt{(0.80)(10)(45)} \\approx 19\\text{ m/s}$.",
+        "3": "This may come from using $g = 9.8$ oddly or omitting $\\mu_s$. With the given numbers, $\\sqrt{360} \\approx 19\\text{ m/s}$."
+      }
+    },
+    "hint": ["Friction maxes out at $\\mu_s mg$; set that equal to $mv^2/r$ and solve for $v$. The mass cancels."],
+    "solution": "$v_{\\max} = \\sqrt{\\mu_s g r} = \\sqrt{(0.80)(10)(45)} = \\sqrt{360} \\approx 19\\text{ m/s}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-111",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "justify-with-principle",
+    "representation": "motion-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "question": "A ball is swung counter-clockwise in a horizontal circle (viewed from above) on a string. When the ball is at the easternmost (3 o'clock) point of the circle, the string breaks. Which way does the ball move immediately after?",
+    "choices": ["east (radially outward)", "north (tangent, the direction it was travelling)", "west (radially inward)", "south (tangent, opposite the direction of travel)"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — moving counter-clockwise, at the 3 o'clock point the ball's velocity points north (tangent to the circle). Once the string breaks there is no force along the table, so by Newton's first law the ball continues north in a straight line at constant speed.",
+      "incorrect": {
+        "0": "Nothing pushes the ball outward. The string was pulling it *inward*; removing that pull just lets it continue in the direction it was already going — tangentially, not radially.",
+        "2": "West is toward the centre — the direction the string was pulling. With the string gone there is no inward force either.",
+        "3": "South is backwards along the tangent. The ball keeps moving the way it was going (north), not reversing."
+      }
+    },
+    "hint": ["Which way is the ball actually moving at the 3 o'clock point? After the string breaks, no force acts — so it keeps doing exactly that."],
+    "solution": "North — tangent to the circle, the direction of travel. Straight line, constant speed (Newton's first law)."
+  },
+  {
+    "id": "AP1-U2-MCQ-112",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Circular Motion",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "question": "At the lowest point of a vertical circular loop, a rider of mass $m$ moves at speed $v$ on a radius $r$ track. The magnitude of the normal force the seat exerts on the rider is:",
+    "choices": [
+      "$mg$",
+      "$mg - \\dfrac{mv^2}{r}$",
+      "$mg + \\dfrac{mv^2}{r}$",
+      "$\\dfrac{mv^2}{r}$"
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — at the bottom, 'toward the centre' is straight up. Real forces: normal force $F_N$ up, gravity $mg$ down. Radial second law (up positive): $F_N - mg = mv^2/r$, so $F_N = mg + mv^2/r$. The seat pushes harder than the rider's weight — this is the 'heavy' feeling at the bottom of a loop or dip.",
+      "incorrect": {
+        "0": "$F_N = mg$ only when there is no vertical acceleration. Here the rider accelerates upward (toward the centre) at $v^2/r$, so $F_N$ must exceed $mg$.",
+        "1": "This has the sign wrong. The net upward force is $F_N - mg$ and it equals $+mv^2/r$ (upward), so $F_N$ is *larger* than $mg$, not smaller.",
+        "3": "$mv^2/r$ is the net inward force, not the normal force alone. You must add back the weight the normal force also has to overcome: $F_N = mg + mv^2/r$."
+      }
+    },
+    "hint": ["At the bottom of the loop, which way is the centre? Write $\\sum F_r = mv^2/r$ with up as positive, using only the real forces (normal force, gravity)."],
+    "solution": "$F_N - mg = mv^2/r \\Rightarrow F_N = mg + mv^2/r$."
+  }
+]
