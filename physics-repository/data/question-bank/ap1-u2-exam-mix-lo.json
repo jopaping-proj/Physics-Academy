@@ -1,0 +1,252 @@
+[
+  {
+    "id": "AP1-U2-MCQ-148",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.3",
+    "cedTopic": "2.5",
+    "clusterId": "2.3",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "Newton's second law is most completely written as:",
+    "choices": [
+      "$\\vec{F}_{net} = m\\vec{a}$ — the net force equals mass times acceleration, and it points the same way as the acceleration",
+      "$F = mv$",
+      "$a = mF$",
+      "$\\vec{F}_{net} = 0$ for all objects"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the *net* (total) force on an object equals its mass times its acceleration, and the two vectors point in the same direction.",
+      "incorrect": {
+        "1": "$mv$ is momentum, not force.",
+        "2": "Acceleration is $F_{net}/m$ — force divided by mass, not multiplied.",
+        "3": "$\\vec{F}_{net} = 0$ only for objects in equilibrium (at rest or constant velocity), not all objects."
+      }
+    },
+    "hint": ["Which quantity, times mass, gives the net force?"],
+    "solution": "$\\vec{F}_{net} = m\\vec{a}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-149",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "motion-requires-a-sustaining-force",
+    "calculatorFree": true,
+    "question": "A hockey puck slides across frictionless ice at constant velocity. The net force on it is:",
+    "choices": ["zero", "a small forward force keeping it moving", "equal to its weight", "increasing as it slides"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — constant velocity means zero acceleration, so by Newton's first (and second) law the net force is zero. No force is needed to *keep* something moving.",
+      "incorrect": {
+        "1": "Nothing needs to push it forward. A forward net force would speed it up; it moves at constant velocity.",
+        "2": "Its weight is a downward force, balanced by the normal force from the ice — the *net* force is zero.",
+        "3": "The net force stays zero the whole time it glides at constant velocity."
+      }
+    },
+    "hint": ["Constant velocity ⇒ zero acceleration ⇒ what net force?"],
+    "solution": "Zero — constant velocity means no acceleration, so no net force."
+  },
+  {
+    "id": "AP1-U2-MCQ-150",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "third-law-pair-acts-on-the-same-object",
+    "calculatorFree": true,
+    "question": "You push on a wall with $20\\text{ N}$. The wall pushes back on you with:",
+    "choices": ["$20\\text{ N}$", "$0\\text{ N}$, since the wall does not move", "less than $20\\text{ N}$", "more than $20\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — Newton's third law: the wall pushes back on you with exactly $20\\text{ N}$, in the opposite direction. The forces of an interaction pair are always equal in magnitude.",
+      "incorrect": {
+        "1": "The wall does not have to move to push back. It exerts $20\\text{ N}$ on you.",
+        "2": "The pair forces are equal, not smaller for the 'passive' object.",
+        "3": "Equal, not more."
+      }
+    },
+    "hint": ["Newton's third law: the two forces of an interaction are equal in size and opposite in direction."],
+    "solution": "$20\\text{ N}$, opposite in direction."
+  },
+  {
+    "id": "AP1-U2-MCQ-151",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A $3.0\\text{ kg}$ object accelerates at $4.0\\text{ m/s}^2$. The net force on it is:",
+    "choices": ["$12\\text{ N}$", "$0.75\\text{ N}$", "$7.0\\text{ N}$", "$1.3\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $F_{net} = ma = (3.0)(4.0) = 12\\text{ N}$.",
+      "incorrect": {
+        "1": "This divides ($3.0/4.0$). $F_{net} = ma$ multiplies.",
+        "2": "This adds ($3.0 + 4.0$). Use $F = ma$.",
+        "3": "This divides the other way. $F_{net} = ma = 12\\text{ N}$."
+      }
+    },
+    "hint": ["$F_{net} = ma$."],
+    "solution": "$F_{net} = (3.0)(4.0) = 12\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-152",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "Two boxes connected by a light rope are pulled across a floor. Compared with the rope tension, the pulling force applied to the front box is:",
+    "choices": [
+      "larger — it has to move both boxes, while the rope only moves the back box",
+      "smaller",
+      "exactly equal",
+      "zero"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the applied force accelerates the whole system (both boxes); the rope only has to accelerate the box behind it. So the applied force is the larger of the two.",
+      "incorrect": {
+        "1": "The rope carries only part of the load (the back box), so its tension is *less* than the total applied force.",
+        "2": "They are equal only if the front box has negligible mass.",
+        "3": "The applied force is what is driving the whole system — it is not zero."
+      }
+    },
+    "hint": ["The applied force moves both boxes; the rope moves only the one behind it. Which is bigger?"],
+    "solution": "Larger — the applied force accelerates the whole system; the rope only the trailing box."
+  },
+  {
+    "id": "AP1-U2-MCQ-153",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "An object moves in a circle of radius $2.0\\text{ m}$ at a constant speed of $4.0\\text{ m/s}$. Its centripetal acceleration is:",
+    "choices": ["$8.0\\text{ m/s}^2$", "$2.0\\text{ m/s}^2$", "$16\\text{ m/s}^2$", "$0\\text{ m/s}^2$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $a_c = v^2/r = (4.0)^2/2.0 = 16/2.0 = 8.0\\text{ m/s}^2$.",
+      "incorrect": {
+        "1": "This is $v/r$. The speed enters squared: $v^2/r = 16/2.0 = 8.0\\text{ m/s}^2$.",
+        "2": "This is $v^2$ without dividing by $r$.",
+        "3": "The speed is constant, but the direction changes, so the acceleration is not zero."
+      }
+    },
+    "hint": ["$a_c = v^2/r$."],
+    "solution": "$a_c = (4.0)^2/2.0 = 8.0\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-154",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "incline-weight-components-sine-cosine-swapped",
+    "calculatorFree": true,
+    "question": "A block rests on an incline of angle $\\theta$. The component of the block's weight **along** the slope (down the slope) is:",
+    "choices": ["$mg\\sin\\theta$", "$mg\\cos\\theta$", "$mg\\tan\\theta$", "$mg$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the along-slope (parallel) component of the weight is $mg\\sin\\theta$; the into-slope (perpendicular) component is $mg\\cos\\theta$. Check: at $\\theta = 0$ (flat), $mg\\sin 0 = 0$ — no pull along the ground, as expected.",
+      "incorrect": {
+        "1": "$mg\\cos\\theta$ is the component *perpendicular* to the slope (into the surface), which the normal force balances.",
+        "2": "$\\tan\\theta$ does not appear in a component of the weight.",
+        "3": "$mg$ is the full weight; only part of it acts along the slope."
+      }
+    },
+    "hint": ["Which function goes to zero when the slope is flat ($\\theta = 0$)? That is the along-slope component."],
+    "solution": "$mg\\sin\\theta$ (parallel to the slope); $mg\\cos\\theta$ is perpendicular."
+  },
+  {
+    "id": "AP1-U2-MCQ-155",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.10",
+    "cedTopic": "2.6",
+    "clusterId": "2.10",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "mass-and-weight-are-the-same",
+    "calculatorFree": true,
+    "question": "Which quantity is a force, measured in newtons, and changes if you take the object to the Moon?",
+    "choices": ["weight", "mass", "inertia", "the number of atoms in the object"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — weight is the gravitational force on the object ($mg$), measured in newtons; it is smaller on the Moon because $g$ is smaller there. Mass, inertia, and atom count are all unchanged by location.",
+      "incorrect": {
+        "1": "Mass (kilograms) is a property of the object and does not change with location.",
+        "2": "Inertia is measured by the mass — location-independent.",
+        "3": "Moving an object does not add or remove atoms."
+      }
+    },
+    "hint": ["Which one is a force (newtons) that depends on the local gravitational field?"],
+    "solution": "Weight — the gravitational force $mg$, smaller on the Moon."
+  }
+]
