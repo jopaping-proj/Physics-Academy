@@ -116,14 +116,14 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 4,
     "misconceptionTested": "spring-constant-changes-with-applied-force",
-    "scenario": "A spring is loaded with hanging weights and the stretch from natural length is recorded:\n\n| Force (N) | Stretch (m) |\n|---|---|\n| 0 | 0 |\n| 1.0 | 0.020 |\n| 2.0 | 0.040 |\n| 3.0 | 0.058 |\n| 4.0 | 0.082 |",
+    "scenario": "A spring is loaded with hanging weights and the stretch from natural length is recorded:\n\n| Force (N) | Stretch (m) |\n|---|---|\n| 0 | 0 |\n| 1.0 | 0.020 |\n| 2.0 | 0.040 |\n| 3.0 | 0.060 |\n| 4.0 | 0.090 |",
     "parts": [
-      { "label": "(a)", "prompt": "Describe the shape of a graph of force (y) against stretch (x), and identify the region where Hooke's law applies.", "points": 3, "modelResponse": "For the first three points the graph is a straight line through the origin — Hooke's law applies there. Beyond about $3.0\\text{ N}$ the line begins to curve (the $4.0\\text{ N}$ point sits above the straight-line trend), so the spring is past its elastic limit and Hooke's law no longer applies." },
-      { "label": "(b)", "prompt": "Determine the spring constant from the linear region.", "points": 2, "modelResponse": "Slope of the straight part: $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{2.0 - 0}{0.040 - 0} = 50\\text{ N/m}$ (the $1.0/0.020$ pair gives the same value)." },
-      { "label": "(c)", "prompt": "Predict the stretch for a $2.5\\text{ N}$ load, and state the assumption you are making.", "points": 2, "modelResponse": "$x = F/k = 2.5/50 = 0.050\\text{ m}$. Assumption: $2.5\\text{ N}$ is still within the linear (Hooke's-law) region, which it is — it is below the $\\sim 3.0\\text{ N}$ where the graph starts to bend." }
+      { "label": "(a)", "prompt": "Describe the shape of a graph of force (y) against stretch (x), and identify the region where Hooke's law applies.", "points": 3, "modelResponse": "The first four points $(0,0)$ to $(3.0, 0.060)$ lie on a straight line through the origin — force is proportional to stretch, so Hooke's law applies there. The $4.0\\text{ N}$ point shows a stretch of $0.090\\text{ m}$, but the straight line predicts only $0.080\\text{ m}$: the spring has stretched *more* than proportionally. It has passed its **elastic limit**, so beyond about $3\\text{ N}$ the graph curves away from the line and $F = kx$ no longer holds." },
+      { "label": "(b)", "prompt": "Determine the spring constant from the linear region.", "points": 2, "modelResponse": "Slope of the straight part: $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{3.0 - 0}{0.060 - 0} = 50\\text{ N/m}$ (any pair from the first four points gives the same value, e.g. $2.0/0.040 = 50$)." },
+      { "label": "(c)", "prompt": "Predict the stretch for a $2.5\\text{ N}$ load, and state the assumption you are making.", "points": 2, "modelResponse": "$x = F/k = 2.5/50 = 0.050\\text{ m}$. Assumption: $2.5\\text{ N}$ is still within the linear (Hooke's-law) region — it is below the $\\sim 3\\text{ N}$ where the graph starts to bend, so $F = kx$ applies." }
     ],
     "totalPoints": 7,
-    "scoringNotes": "(a) 1 pt straight line through origin for small loads, 1 pt identifies deviation beyond $\\sim 3\\text{ N}$, 1 pt links to elastic limit / Hooke's law breaking down. (b) 1 pt slope method on the linear part, 1 pt $k = 50\\text{ N/m}$. (c) 1 pt $x = F/k = 0.050\\text{ m}$, 1 pt states the linear-range assumption."
+    "scoringNotes": "(a) 1 pt straight line through origin for the first four points, 1 pt identifies that the $4.0\\text{ N}$ point deviates (more stretch than the line predicts, $0.090$ vs $0.080\\text{ m}$), 1 pt links to the elastic limit / Hooke's law breaking down. (b) 1 pt slope method on the linear part, 1 pt $k = 50\\text{ N/m}$. (c) 1 pt $x = F/k = 0.050\\text{ m}$, 1 pt states the linear-range assumption."
   },
   {
     "id": "AP1-U2-FRQ-021",
