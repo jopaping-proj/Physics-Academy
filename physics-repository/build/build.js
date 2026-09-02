@@ -153,6 +153,28 @@ function renderTemplate(tpl, map) {
   return tpl.replace(/\{\{([A-Z_]+)\}\}/g, (m, key) => (key in map ? map[key] : m));
 }
 
+/**
+ * A linked breadcrumb: course → homepage, unit → the sibling *-index.json
+ * page (if present), then an optional final plain label. Used by every
+ * page type so the header doubles as repo navigation.
+ */
+function linkedBreadcrumb(file, lesson, rootPrefix, lastLabel, { linkUnit = true } = {}) {
+  const siblingIndex = fs.readdirSync(path.dirname(file)).find((f) => f.endsWith("-index.json"));
+  const crumbs = [
+    { label: lesson.course, href: `${rootPrefix}index.html` },
+    { label: lesson.unit, href: linkUnit && siblingIndex ? siblingIndex.replace(/\.json$/, ".html") : null },
+  ];
+  if (lastLabel) crumbs.push({ label: lastLabel });
+  return crumbs
+    .filter((c) => c.label)
+    .map((c, i, arr) =>
+      c.href && i < arr.length - 1
+        ? `<a href="${attr(c.href)}">${esc(c.label)}</a>`
+        : `<span>${esc(c.label)}</span>`
+    )
+    .join(' <span class="breadcrumb__sep" aria-hidden="true">›</span> ');
+}
+
 function findLessonFiles(dir) {
   const results = [];
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -201,7 +223,7 @@ function buildLesson(file, templates) {
       const style = (styleMatch ? styleMatch[1] : "").replace(/([{},]\s*|^\s*)body(\s*\{)/g, "$1.external-html-card$2");
       const html = renderTemplate(templates.externalHtml.replaceAll("{{ROOT}}", rootPrefix), {
         TITLE: esc((titleMatch[1] || lesson.lessonTitle || "").trim()),
-        BREADCRUMB: [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "),
+        BREADCRUMB: linkedBreadcrumb(file, lesson, rootPrefix, null),
         SOURCE_STYLE: style,
         SOURCE_BODY: bodyMatch[1],
       });
@@ -228,7 +250,7 @@ function buildLesson(file, templates) {
   if (lesson.format === "concept-inventory") {
     const html = renderTemplate(templates.conceptInventory.replaceAll("{{ROOT}}", rootPrefix), {
       TITLE: esc(lesson.lessonTitle || lesson.id),
-      BREADCRUMB: [lesson.course, lesson.unit, "Concept Check"].filter(Boolean).map(esc).join(" › "),
+      BREADCRUMB: linkedBreadcrumb(file, lesson, rootPrefix, "Concept Check"),
       HEADING: esc(lesson.lessonTitle || "Concept Check"),
       INTRO: mdToHtml(lesson.intro || ""),
       CI_DATA_JSON: JSON.stringify({ diagnosticKey: lesson.diagnosticKey || lesson.id, items: lesson.items || [] }),
@@ -248,7 +270,7 @@ function buildLesson(file, templates) {
     for (const w of warnings) console.warn(`[build] unit-test ${lesson.id}: ${w}`);
     const html = renderTemplate(templates.unitTest.replaceAll("{{ROOT}}", rootPrefix), {
       TITLE: esc(lesson.lessonTitle || lesson.id),
-      BREADCRUMB: [lesson.course, lesson.unit, "Unit Test"].filter(Boolean).map(esc).join(" › "),
+      BREADCRUMB: linkedBreadcrumb(file, lesson, rootPrefix, "Unit Test"),
       HEADING: esc(lesson.lessonTitle || "Unit Test"),
       INTRO: mdToHtml(lesson.intro || ""),
       UT_DATA_JSON: JSON.stringify(payload),
@@ -286,7 +308,7 @@ function buildLesson(file, templates) {
     });
     const html = renderTemplate(templates.unitIndex.replaceAll("{{ROOT}}", rootPrefix), {
       TITLE: esc(lesson.lessonTitle || lesson.id),
-      BREADCRUMB: [lesson.course, lesson.unit].filter(Boolean).map(esc).join(" › "),
+      BREADCRUMB: linkedBreadcrumb(file, lesson, rootPrefix, null, { linkUnit: false }),
       HEADING: esc(lesson.lessonTitle || lesson.unit || "Unit"),
       INTRO: mdToHtml(lesson.intro || ""),
       OUTCOMES: (lesson.outcomeClusters || []).length

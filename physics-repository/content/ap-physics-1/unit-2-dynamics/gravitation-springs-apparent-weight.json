@@ -2,7 +2,9 @@
   "id": "ap1-u2-grav-spring-aw",
   "slug": "gravitation-springs-apparent-weight",
   "course": "AP Physics 1",
-  "courses": ["ap-physics-1"],
+  "courses": [
+    "ap-physics-1"
+  ],
   "unit": "Unit 2: Force and Translational Dynamics",
   "topic": "Forces",
   "lessonNumber": "9",
@@ -43,12 +45,18 @@
       "title": "Gravitation: Mass, Weight, and the Inverse-Square Law",
       "concept": "**Mass** is how much matter an object has — in kilograms, the same everywhere. **Weight** is the *gravitational force* on that object — in newtons, and it changes with location. Near Earth's surface, weight $= mg$ with $g \\approx 9.8\\text{ N/kg}$.\n\nDon't confuse the local field strength $g$ with the universal constant $G = 6.67\\times10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$. Every pair of masses attracts:\n\n$$F_G = \\frac{G\\,m_1 m_2}{r^2}$$\n\nwhere $r$ is the distance between their **centres**. This force acts **along the line joining the centres** and is a Newton's-third-law pair — $m_1$ pulls $m_2$ exactly as hard as $m_2$ pulls $m_1$, whatever their masses.\n\nThe useful skill is **proportional reasoning**:\n\n- double $m_1$ → the force **doubles**;\n- double $r$ → the force drops to **one quarter** (inverse square: $F \\propto 1/r^2$);\n- triple $r$ → the force drops to **one ninth**.\n\n==Gravity between everyday objects is unimaginably weak — you need a planet-sized mass before it matters.==",
       "conceptFigures": [
-        { "svg": "gravitation/two-bodies.svg", "caption": "Each mass pulls the other along the line of centres, equally hard (third law). The magnitude is $G m_1 m_2 / r^2$ — it falls off as the square of the separation." }
+        {
+          "svg": "gravitation/two-bodies.svg",
+          "caption": "Each mass pulls the other along the line of centres, equally hard (third law). The magnitude is $G m_1 m_2 / r^2$ — it falls off as the square of the separation."
+        }
       ],
       "workedExample": {
         "scaffold": "full",
         "problem": "Two $6.0\\text{ kg}$ bowling balls have their centres $0.40\\text{ m}$ apart. (a) Find the gravitational force between them. (b) If they were moved so their centres were $0.80\\text{ m}$ apart, what would the force become?",
-        "figure": { "svg": "gravitation/two-bodies.svg", "caption": "Two equal masses attracting along the line of centres." },
+        "figure": {
+          "svg": "gravitation/two-bodies.svg",
+          "caption": "Two equal masses attracting along the line of centres."
+        },
         "phases": [
           {
             "label": "(a) Apply the law — formula first",
@@ -79,7 +87,9 @@
       "formativeCheck": {
         "id": "ap1-u2-grav-spring-aw-q01",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Gravitation, Springs, and Apparent Weight",
         "objective": "C2.10",
@@ -92,7 +102,12 @@
         "cognitiveLevel": 3,
         "misconceptionTested": "",
         "question": "Two objects attract each other gravitationally with a force $F$. If one mass is tripled and the distance between their centres is also tripled, the new gravitational force is:",
-        "choices": ["$3F$", "$F/3$", "$F/9$", "$9F$"],
+        "choices": [
+          "$3F$",
+          "$F/3$",
+          "$F/9$",
+          "$9F$"
+        ],
         "correctAnswer": 1,
         "feedback": {
           "correct": "Correct — tripling a mass multiplies the force by $3$; tripling $r$ multiplies it by $1/3^2 = 1/9$. Together: $3 \\times \\frac{1}{9} = \\frac{1}{3}$, so the new force is $F/3$.",
@@ -102,22 +117,35 @@
             "3": "$F \\propto m/r^2$, so a larger $r$ *reduces* the force. Tripling $r$ divides by $9$, not multiplies."
           }
         },
-        "hint": ["$F_G \\propto \\dfrac{m}{r^2}$. Tripling $m$ multiplies by $3$; tripling $r$ multiplies by $1/9$. Combine them."],
+        "hint": [
+          "$F_G \\propto \\dfrac{m}{r^2}$. Tripling $m$ multiplies by $3$; tripling $r$ multiplies by $1/9$. Combine them."
+        ],
         "solution": "$3 \\times \\dfrac{1}{3^2} = \\dfrac{3}{9} = \\dfrac{1}{3}$, so the force becomes $F/3$."
       }
     },
     {
       "id": "chunk-2",
-      "title": "The Spring Force: $F_s = -kx$ and the Graph",
+      "title": "The Spring Force and the Force–Extension Graph",
       "concept": "Stretch or compress an ideal spring by a distance $x$ from its **natural length**, and it pushes or pulls back with a force proportional to $x$. This is **Hooke's law**:\n\n$$F_s = -k x$$\n\n- $k$ is the **spring constant** (N/m) — a fixed property of that spring. A stiffer spring has a larger $k$. ==$k$ is **always positive**; it does not change with how hard you pull.==\n- The **minus sign** is a direction statement: the spring force always points **back toward natural length** — opposite the displacement. Stretch the spring right, it pulls left; push it left, it pushes right.\n- $x$ is measured **from the natural length**, not from the floor or the wall.\n\n**The elastic limit.** Hooke's law only holds while the spring is not stretched too far. Past a point called the **elastic limit**, the force is no longer proportional to $x$ — the spring deforms permanently and $F_s = -kx$ fails. ==Unless a problem tells you a spring has been over-stretched, assume every force it gives you is within the elastic limit, so Hooke's law applies.==\n\n**Read it off the graph.** Plot spring-force magnitude against stretch and you get a **force–extension ($F$–$x$) graph**. In the elastic region it is a **straight line through the origin**, and **its slope is $k$**. That single fact does a lot of work:\n\n- **Find $k$** = rise/run of the line — no formula, no substitution.\n- **Predict a force** at any extension: go up from that $x$ to the line, read across. $F = kx$.\n- **Predict an extension** for a given force: go the other way.\n- A **steeper** line means a **stiffer** spring (bigger $k$); the line **bending over** marks the elastic limit.\n\nOn the AP/IB exam, spring questions are very often *graph* questions — being fluent at reading $k$ as a slope, and reading a force or a stretch off the line, is the core skill here.",
       "conceptFigures": [
-        { "svg": "springs/force-extension-graph.svg", "size": "lg", "caption": "The **force–extension graph**. In the elastic region it is a straight line through the origin whose **slope is $k$** ($F = kx$). Past the **elastic limit** the line bends over and Hooke's law no longer applies." },
-        { "svg": "springs/spring-cases.svg", "size": "lg", "caption": "The spring force always points **back toward natural length** — that is what the minus sign in $F_s = -kx$ records. Stretched: it pulls back. Compressed: it pushes back." }
+        {
+          "svg": "springs/force-extension-graph.svg",
+          "size": "lg",
+          "caption": "The **force–extension graph**. In the elastic region it is a straight line through the origin whose **slope is $k$** ($F = kx$). Past the **elastic limit** the line bends over and Hooke's law no longer applies."
+        },
+        {
+          "svg": "springs/spring-cases.svg",
+          "size": "lg",
+          "caption": "The spring force always points **back toward natural length** — that is what the minus sign in $F_s = -kx$ records. Stretched: it pulls back. Compressed: it pushes back."
+        }
       ],
       "workedExample": {
         "scaffold": "partial",
         "problem": "A spring hangs vertically. When a $6.0\\text{ N}$ weight is hung from it, the spring stretches $0.12\\text{ m}$ from its natural length. (a) Find the spring constant. (b) What hanging force would stretch it $0.20\\text{ m}$? (c) A force–extension graph of this spring is a straight line — what is its slope?",
-        "figure": { "svg": "springs/hanging-spring-stretch.svg", "caption": "At rest the upward spring force balances the $6.0\\text{ N}$ weight, so $|F_s| = 6.0\\text{ N}$ at $x = 0.12\\text{ m}$. (Assume this is within the elastic limit.)" },
+        "figure": {
+          "svg": "springs/hanging-spring-stretch.svg",
+          "caption": "At rest the upward spring force balances the $6.0\\text{ N}$ weight, so $|F_s| = 6.0\\text{ N}$ at $x = 0.12\\text{ m}$. (Assume this is within the elastic limit.)"
+        },
         "phases": [
           {
             "label": "(a) Spring constant",
@@ -153,7 +181,9 @@
       "formativeCheck": {
         "id": "ap1-u2-grav-spring-aw-q02",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Gravitation, Springs, and Apparent Weight",
         "objective": "C2.10",
@@ -167,9 +197,17 @@
         "misconceptionTested": "spring-constant-changes-with-applied-force",
         "question": "The force–extension graph for a spring is shown: a straight line through the origin passing through $(0.05\\text{ m}, 4.0\\text{ N})$. What force is needed to stretch this spring $0.15\\text{ m}$?",
         "figures": [
-          { "svg": "springs/force-extension-q02.svg", "caption": "Force–extension graph for the spring. The marked point is $(0.05\\text{ m}, 4.0\\text{ N})$." }
+          {
+            "svg": "springs/force-extension-q02.svg",
+            "caption": "Force–extension graph for the spring. The marked point is $(0.05\\text{ m}, 4.0\\text{ N})$."
+          }
         ],
-        "choices": ["$4.0\\text{ N}$", "$12\\text{ N}$", "$80\\text{ N}$", "$1.3\\text{ N}$"],
+        "choices": [
+          "$4.0\\text{ N}$",
+          "$12\\text{ N}$",
+          "$80\\text{ N}$",
+          "$1.3\\text{ N}$"
+        ],
         "correctAnswer": 1,
         "feedback": {
           "correct": "Correct — the slope is $k = 4.0/0.05 = 80\\text{ N/m}$. At $x = 0.15\\text{ m}$: $F = kx = (80)(0.15) = 12\\text{ N}$. (Or: $0.15\\text{ m}$ is $3\\times$ the given $0.05\\text{ m}$, and the line is straight, so the force is $3 \\times 4.0 = 12\\text{ N}$.)",
@@ -179,7 +217,9 @@
             "3": "This divides instead of multiplying. $F = kx$, so a *larger* extension needs a *larger* force."
           }
         },
-        "hint": ["Slope $k = $ rise/run $= 4.0/0.05$. Then $F = kx$ at the new $x$. Or just scale: $0.15$ is $3\\times 0.05$."],
+        "hint": [
+          "Slope $k = $ rise/run $= 4.0/0.05$. Then $F = kx$ at the new $x$. Or just scale: $0.15$ is $3\\times 0.05$."
+        ],
         "solution": "$k = 4.0/0.05 = 80\\text{ N/m}$; $F = (80)(0.15) = 12\\text{ N}$."
       }
     },
@@ -188,17 +228,30 @@
       "title": "Apparent Weight: What the Scale Really Reads",
       "concept": "A bathroom scale does not measure your weight $mg$. It measures the **normal force** it pushes up on you with — and displays that as a 'weight'. Call it your **apparent weight**.\n\nIsolate the person, up positive, and apply Newton's second law:\n$$F_N - mg = m a$$\nso\n$$F_N = m(g + a)$$\nwhere $a$ is the (signed) vertical acceleration of the elevator.\n\n- **At rest or constant velocity** ($a = 0$): $F_N = mg$. The scale reads true weight.\n- **Accelerating upward** ($a > 0$): $F_N = m(g + a) > mg$. You feel — and read — **heavier**.\n- **Accelerating downward** ($a < 0$): $F_N = m(g - |a|) < mg$. You read **lighter**.\n- **Free fall** ($a = -g$): $F_N = m(g - g) = 0$. ==The scale reads zero — 'apparent weightlessness'. Gravity is still acting; there is just no contact force.== This is exactly what an astronaut in an orbiting station experiences: continuous free fall around the Earth.\n\nThe direction of the **acceleration** is what sets the sign — not the direction the elevator is *moving*. An elevator moving up but slowing down has a **downward** acceleration, so the scale reads low.",
       "conceptFigures": [
-        { "svg": "apparent-weight/scale-in-elevator.svg", "size": "lg", "caption": "The scale reads the **normal force** $F_N$ on the person, not the weight $mg$. From $\\sum F = ma$: $F_N = m(g + a)$, where $a$ is the elevator's signed acceleration (shown here pointing **up**, so $F_N > mg$)." }
+        {
+          "svg": "apparent-weight/scale-in-elevator.svg",
+          "size": "lg",
+          "caption": "The scale reads the **normal force** $F_N$ on the person, not the weight $mg$. From $\\sum F = ma$: $F_N = m(g + a)$, where $a$ is the elevator's signed acceleration (shown here pointing **up**, so $F_N > mg$)."
+        }
       ],
       "representation": "Two free-body diagrams of the person, with the elevator's **acceleration** marked. Up: the net force is up, so $F_N > mg$ (reads high). Down: the net force is down, so $F_N < mg$ (reads low). The velocity does not appear anywhere — only the acceleration.",
       "figures": [
-        { "svg": "apparent-weight/dot-accel-up.svg", "caption": "Accelerating **upward** ($a$ up): $F_N > mg$, reading is **high**." },
-        { "svg": "apparent-weight/dot-accel-down.svg", "caption": "Accelerating **downward** ($a$ down): $F_N < mg$, reading is **low**." }
+        {
+          "svg": "apparent-weight/dot-accel-up.svg",
+          "caption": "Accelerating **upward** ($a$ up): $F_N > mg$, reading is **high**."
+        },
+        {
+          "svg": "apparent-weight/dot-accel-down.svg",
+          "caption": "Accelerating **downward** ($a$ down): $F_N < mg$, reading is **low**."
+        }
       ],
       "workedExample": {
         "scaffold": "hinted",
         "problem": "A $60\\text{ kg}$ student stands on a scale in an elevator. Take $g = 9.8\\text{ m/s}^2$. What does the scale read (a) when the elevator is at rest, (b) when it accelerates upward at $2.0\\text{ m/s}^2$, and (c) when it accelerates downward at $2.0\\text{ m/s}^2$?",
-        "figure": { "svg": "apparent-weight/dot-accel-down.svg", "caption": "For part (c): accelerating downward, the net force is down, so $F_N < mg$ and the scale reads low." },
+        "figure": {
+          "svg": "apparent-weight/dot-accel-down.svg",
+          "caption": "For part (c): accelerating downward, the net force is down, so $F_N < mg$ and the scale reads low."
+        },
         "phases": [
           {
             "label": "The governing equation",
@@ -231,7 +284,9 @@
       "formativeCheck": {
         "id": "ap1-u2-grav-spring-aw-q03",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Gravitation, Springs, and Apparent Weight",
         "objective": "C2.10",
@@ -259,7 +314,9 @@
             "3": "There is no real outward force in the ground frame — the only real force is gravity, which provides the centripetal acceleration. 'Weightlessness' is the absence of a *contact* force, not a force balance."
           }
         },
-        "hint": ["Is gravity actually zero at the ISS's altitude? If not, what other quantity is zero for a floating astronaut — and when else does that same quantity go to zero?"],
+        "hint": [
+          "Is gravity actually zero at the ISS's altitude? If not, what other quantity is zero for a floating astronaut — and when else does that same quantity go to zero?"
+        ],
         "solution": "Continuous free fall ⇒ no normal force ($F_N = 0$), so 'weightless'. Gravity is still ~$90\\%$ of surface strength — it is what keeps the station in orbit."
       }
     }
@@ -277,7 +334,9 @@
     {
       "id": "ap1-u2-grav-spring-aw-mc01",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Gravitation, Springs, and Apparent Weight",
       "objective": "C2.10",
@@ -305,13 +364,17 @@
           "3": "It is the other way around: weight depends on location (through $g$); mass does not."
         }
       },
-      "hint": ["Which quantity is measured in kilograms, and does it depend on where you are? Which is measured in newtons?"],
+      "hint": [
+        "Which quantity is measured in kilograms, and does it depend on where you are? Which is measured in newtons?"
+      ],
       "solution": "Mass (kg) is location-independent; only weight (N $= mg$) is smaller on the Moon, because $g$ is smaller there."
     },
     {
       "id": "ap1-u2-grav-spring-aw-mc02",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Gravitation, Springs, and Apparent Weight",
       "objective": "C2.10",
@@ -339,7 +402,9 @@
           "3": "The spring force is not always downward. Its direction is 'opposite the displacement', which could be any direction depending on how the spring is oriented and deformed."
         }
       },
-      "hint": ["Does the *stiffness* of a spring change depending on whether you stretch or compress it? What does 'opposite the displacement' mean as a direction?"],
+      "hint": [
+        "Does the *stiffness* of a spring change depending on whether you stretch or compress it? What does 'opposite the displacement' mean as a direction?"
+      ],
       "solution": "$k > 0$ always (it is the stiffness); the minus sign encodes that $F_s$ points opposite $x$ — back toward natural length."
     }
   ],
@@ -354,7 +419,10 @@
       ],
       "modelResponse": "1. The student used the direction of the **velocity** (upward) to set the sign of $a$, instead of the direction of the **acceleration**.\n2. In $F_N = m(g + a)$, the $a$ is the *acceleration*, with a sign from the chosen positive direction. 'Moving up but slowing down' means the velocity is up while the acceleration is **down** (opposite the motion). With up positive, $a = -3.0\\text{ m/s}^2$.\n3. $F_N - mg = ma \\Rightarrow F_N = m(g + a) = 50\\big(10 + (-3.0)\\big) = 50(7.0) = 350\\text{ N}$.\n4. Slowing while moving up = accelerating down = feeling **lighter**, so the reading should be *below* the true weight of $500\\text{ N}$. $350\\text{ N} < 500\\text{ N}$ ✓. The student's $650\\text{ N}$ (heavier) points the wrong way.",
       "modelFigures": [
-        { "svg": "apparent-weight/dot-accel-down.svg", "caption": "Slowing while rising ⇒ the **acceleration $a$ points down** (dashed arrow) ⇒ net force down ⇒ $F_N < mg$: the scale reads low." }
+        {
+          "svg": "apparent-weight/dot-accel-down.svg",
+          "caption": "Slowing while rising ⇒ the **acceleration $a$ points down** (dashed arrow) ⇒ net force down ⇒ $F_N < mg$: the scale reads low."
+        }
       ],
       "responseMaxLength": 800
     }
@@ -364,7 +432,9 @@
     {
       "id": "ap1-u2-grav-spring-aw-la01",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Gravitation, Springs, and Apparent Weight",
       "objective": "C2.10",
@@ -377,7 +447,12 @@
       "cognitiveLevel": 3,
       "misconceptionTested": "",
       "question": "A planet has twice Earth's mass and twice Earth's radius. The gravitational field strength $g$ at its surface, compared with Earth's, is:",
-      "choices": ["twice as large", "half as large", "the same", "four times as large"],
+      "choices": [
+        "twice as large",
+        "half as large",
+        "the same",
+        "four times as large"
+      ],
       "correctAnswer": 1,
       "feedback": {
         "correct": "Correct — surface field $g = GM/R^2$. Doubling $M$ multiplies by $2$; doubling $R$ multiplies by $1/2^2 = 1/4$. Net: $2 \\times \\frac{1}{4} = \\frac{1}{2}$, so $g$ is half of Earth's.",
@@ -387,13 +462,17 @@
           "3": "$g \\propto M/R^2$, so a bigger radius *reduces* $g$. It cannot be four times larger."
         }
       },
-      "hint": ["Surface field: $g = GM/R^2$. Scale it: $M \\to 2M$ gives $\\times 2$; $R \\to 2R$ gives $\\times 1/4$."],
+      "hint": [
+        "Surface field: $g = GM/R^2$. Scale it: $M \\to 2M$ gives $\\times 2$; $R \\to 2R$ gives $\\times 1/4$."
+      ],
       "solution": "$g \\propto M/R^2$: $2 \\times \\dfrac{1}{2^2} = \\dfrac{1}{2}$ — half of Earth's."
     },
     {
       "id": "ap1-u2-grav-spring-aw-la02",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Gravitation, Springs, and Apparent Weight",
       "objective": "C2.10",
@@ -408,21 +487,46 @@
       "misconceptionTested": "spring-constant-changes-with-applied-force",
       "scenario": "A student hangs different weights from a spring and records the stretch from natural length:\n\n| Force (N) | Stretch (m) |\n|---|---|\n| 0 | 0 |\n| 2.0 | 0.04 |\n| 4.0 | 0.08 |\n| 6.0 | 0.12 |\n| 8.0 | 0.16 |",
       "parts": [
-        { "label": "(a)", "prompt": "Describe the graph of force (y) against stretch (x), and find the spring constant from it.", "points": 3, "modelResponse": "The points lie on a straight line through the origin. The spring constant is the slope: $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{8.0 - 0}{0.16 - 0} = 50\\text{ N/m}$ (any pair of points gives the same value, e.g. $2.0/0.04 = 50$)." },
-        { "label": "(b)", "prompt": "Predict the stretch when a $5.0\\text{ N}$ weight is hung. State the assumption you are making.", "points": 2, "modelResponse": "$x = F/k = 5.0/50 = 0.10\\text{ m}$. Assumption: the spring is still in its linear (Hooke's-law) range — the line stays straight, i.e. it has not been over-stretched." },
-        { "label": "(c)", "prompt": "The student claims 'the spring constant is bigger for the $8.0\\text{ N}$ weight than for the $2.0\\text{ N}$ weight, because it is stretched more'. Evaluate this claim.", "points": 2, "modelResponse": "The claim is wrong. $k$ is the slope of the (straight) line, which is the same everywhere: $2.0/0.04 = 50$ and $8.0/0.16 = 50$. A larger force produces a proportionally larger stretch, leaving the ratio — and therefore $k$ — unchanged. $k$ is a fixed property of the spring." },
-        { "label": "(d)", "prompt": "Sketch how the graph would differ for a stiffer spring with the same natural length.", "points": 2, "modelResponse": "Also a straight line through the origin, but with a **steeper** slope (larger $k$) — for any given stretch it takes more force, or for any given force it stretches less." }
+        {
+          "label": "(a)",
+          "prompt": "Describe the graph of force (y) against stretch (x), and find the spring constant from it.",
+          "points": 3,
+          "modelResponse": "The points lie on a straight line through the origin. The spring constant is the slope: $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{8.0 - 0}{0.16 - 0} = 50\\text{ N/m}$ (any pair of points gives the same value, e.g. $2.0/0.04 = 50$)."
+        },
+        {
+          "label": "(b)",
+          "prompt": "Predict the stretch when a $5.0\\text{ N}$ weight is hung. State the assumption you are making.",
+          "points": 2,
+          "modelResponse": "$x = F/k = 5.0/50 = 0.10\\text{ m}$. Assumption: the spring is still in its linear (Hooke's-law) range — the line stays straight, i.e. it has not been over-stretched."
+        },
+        {
+          "label": "(c)",
+          "prompt": "The student claims 'the spring constant is bigger for the $8.0\\text{ N}$ weight than for the $2.0\\text{ N}$ weight, because it is stretched more'. Evaluate this claim.",
+          "points": 2,
+          "modelResponse": "The claim is wrong. $k$ is the slope of the (straight) line, which is the same everywhere: $2.0/0.04 = 50$ and $8.0/0.16 = 50$. A larger force produces a proportionally larger stretch, leaving the ratio — and therefore $k$ — unchanged. $k$ is a fixed property of the spring."
+        },
+        {
+          "label": "(d)",
+          "prompt": "Sketch how the graph would differ for a stiffer spring with the same natural length.",
+          "points": 2,
+          "modelResponse": "Also a straight line through the origin, but with a **steeper** slope (larger $k$) — for any given stretch it takes more force, or for any given force it stretches less."
+        }
       ],
       "totalPoints": 9,
       "scoringNotes": "(a) 1 pt 'straight line through origin', 1 pt slope method, 1 pt $k = 50\\text{ N/m}$. (b) 1 pt $x = F/k = 0.10\\text{ m}$, 1 pt states the linear-range assumption. (c) 1 pt identifies $k$ as the constant slope, 1 pt shows two points give the same ratio. (d) 1 pt straight line through origin, 1 pt steeper.",
       "figures": [
-        { "svg": "springs/spring-cases.svg", "caption": "Reference: the spring force is proportional to the stretch and opposes it. The force–extension graph is the straight-line record of that proportionality." }
+        {
+          "svg": "springs/spring-cases.svg",
+          "caption": "Reference: the spring force is proportional to the stretch and opposes it. The force–extension graph is the straight-line record of that proportionality."
+        }
       ]
     },
     {
       "id": "ap1-u2-grav-spring-aw-la03",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Gravitation, Springs, and Apparent Weight",
       "objective": "C2.10",
@@ -450,7 +554,9 @@
           "3": "Free fall ($a = -g = -10\\text{ m/s}^2$) would make the scale read $0\\text{ N}$. It reads $320\\text{ N}$, so $|a| = 2.0\\text{ m/s}^2$."
         }
       },
-      "hint": ["The scale reads the rope tension. Isolate the crate: $F_T - mg = ma$. Solve for $a$ and check its sign."],
+      "hint": [
+        "The scale reads the rope tension. Isolate the crate: $F_T - mg = ma$. Solve for $a$ and check its sign."
+      ],
       "solution": "$a = (F_T - mg)/m = (320 - 400)/40 = -2.0\\text{ m/s}^2$ — accelerating downward at $2.0\\text{ m/s}^2$."
     }
   ],
@@ -459,7 +565,9 @@
   "exitQuestion": {
     "id": "ap1-u2-grav-spring-aw-qexit",
     "course": "AP Physics 1",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "unit": "Unit 2",
     "lesson": "Gravitation, Springs, and Apparent Weight",
     "objective": "C2.10",
@@ -495,7 +603,11 @@
   },
   "questionBankFile": "ap1-u2-grav-spring-aw.json",
   "furtherPracticeQuestionIds": [
-    "AP1-U2-MCQ-095", "AP1-U2-MCQ-096", "AP1-U2-MCQ-097",
-    "AP1-U2-MCQ-098", "AP1-U2-MCQ-099", "AP1-U2-MCQ-100"
+    "AP1-U2-MCQ-095",
+    "AP1-U2-MCQ-096",
+    "AP1-U2-MCQ-097",
+    "AP1-U2-MCQ-098",
+    "AP1-U2-MCQ-099",
+    "AP1-U2-MCQ-100"
   ]
 }

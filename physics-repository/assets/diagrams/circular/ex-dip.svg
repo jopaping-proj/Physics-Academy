@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 140" role="img"
+     aria-label="Side view of a rider at the bottom of a dip in the track. The seat's normal force up is larger than gravity down, so the net force points up, toward the centre of the dip which is above.">
+  <defs>
+    <marker id="ed-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
+    <marker id="ed-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+  <!-- dip: quadratic bezier, lowest point ~ (76, 100) -->
+  <path d="M14 56 Q 76 144 138 56" fill="none" stroke="#8b96a5" stroke-width="1.4"/>
+  <circle cx="76" cy="100" r="5" fill="#e6edf3" stroke="#16213e" stroke-width="1.3"/>
+  <line x1="83" y1="102" x2="83" y2="126" stroke="#8b96a5" stroke-width="2.2" marker-end="url(#ed-grey)"/>
+  <text x="88" y="122" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#8b96a5">mg</text>
+  <line x1="69" y1="96" x2="69" y2="46" stroke="#58a6ff" stroke-width="2.5" marker-end="url(#ed-blue)"/>
+  <text x="61" y="40" text-anchor="end" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">N</tspan></text>
+  <text x="76" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8.5" fill="#8b96a5">net force up = inward</text>
+</svg>

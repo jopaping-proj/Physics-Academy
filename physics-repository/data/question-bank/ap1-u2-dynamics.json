@@ -13,7 +13,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "motionless-implies-no-forces-act",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A picture frame hangs motionless from a wire whose two segments run from a single nail to the frame's top corners. Which statement must be true about the forces acting on the frame?",
     "choices": [
       "The tension in the wire must be greater than the frame's weight.",
@@ -30,7 +32,9 @@
         "3": "This is only true if each wire segment happens to be vertical. For an angled wire, each segment's tension is generally larger than half the weight, not equal to the full weight."
       }
     },
-    "hint": ["Start from ΣF = 0 for the frame as a whole, then identify which forces act on it and in which directions."],
+    "hint": [
+      "Start from ΣF = 0 for the frame as a whole, then identify which forces act on it and in which directions."
+    ],
     "solution": "Equilibrium requires the vertical components of the two tension segments to sum to the frame's weight; the horizontal components cancel by symmetry."
   },
   {
@@ -47,19 +51,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "Two horizontal forces act on a 4.0 kg block on a frictionless surface: 18 N to the right and 6.0 N to the left. What is the block's acceleration?",
-    "choices": ["3.0 m/s², to the right", "6.0 m/s², to the right", "4.5 m/s², to the right", "1.5 m/s², to the right"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Two horizontal forces act on a $4.0\\text{ kg}$ block on a frictionless surface: $18\\text{ N}$ to the right and $6.0\\text{ N}$ to the left. What is the block's acceleration?",
+    "choices": [
+      "$3.0\\text{ m/s}^2$, to the right",
+      "$6.0\\text{ m/s}^2$, to the right",
+      "$4.5\\text{ m/s}^2$, to the right",
+      "$1.5\\text{ m/s}^2$, to the right"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — the two forces act in opposite directions, so $F_{net} = 18\\text{ N} - 6\\text{ N} = 12\\text{ N}$ to the right. Then $a = F_{net}/m = 12/4.0 = 3.0\\text{ m/s}^2$, to the right.",
       "incorrect": {
         "1": "This adds the two forces as if they pointed the same direction. Since they act in opposite directions, finding $F_{net}$ requires subtracting, not adding.",
-        "2": "This uses only the 18 N force and ignores the 6 N force acting the other way. Both forces contribute to $F_{net}$.",
-        "3": "This correctly finds $F_{net} = 12\\text{ N}$ but then divides by the wrong mass — the block's mass is 4.0 kg, not 8.0 kg."
+        "2": "This uses only the $18\\text{ N}$ force and ignores the $6\\text{ N}$ force acting the other way. Both forces contribute to $F_{net}$.",
+        "3": "This correctly finds $F_{net} = 12\\text{ N}$ but then divides by the wrong mass — the block's mass is $4.0\\text{ kg}$, not $8.0\\text{ kg}$."
       }
     },
-    "hint": ["First combine the two given forces into a single net force, accounting for their directions, then apply F_net = ma."],
+    "hint": [
+      "First combine the two given forces into a single net force, accounting for their directions, then apply F_net = ma."
+    ],
     "solution": "$F_{net} = 18\\text{ N} - 6\\text{ N} = 12\\text{ N}$ (rightward). $a = F_{net}/m = 12/4.0 = 3.0\\text{ m/s}^2$, rightward."
   },
   {
@@ -76,9 +89,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "treats-combined-proportional-changes-as-additive-rather-than-multiplicative",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "If an object's mass is quadrupled while the net force on it is halved, by what factor does its acceleration change?",
-    "choices": ["It becomes 1/8 as large.", "It becomes 1/2 as large.", "It becomes 1/4 as large.", "It stays the same."],
+    "choices": [
+      "It becomes 1/8 as large.",
+      "It becomes 1/2 as large.",
+      "It becomes 1/4 as large.",
+      "It stays the same."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — $a_{new} = \\dfrac{F/2}{4m} = \\dfrac{1}{8}\\dfrac{F}{m} = a/8$. The two proportional changes compound rather than add.",
@@ -88,7 +108,9 @@
         "3": "Acceleration only stays the same if force and mass change by the same factor in the same direction — here they change in opposite directions and by different factors."
       }
     },
-    "hint": ["Handle the two changes separately first: what does halving F alone do to a? What does quadrupling m alone do to a? Then combine the two factors."],
+    "hint": [
+      "Handle the two changes separately first: what does halving F alone do to a? What does quadrupling m alone do to a? Then combine the two factors."
+    ],
     "solution": "a ∝ F and a ∝ 1/m, so combined: $a_{new} = a \\times \\tfrac{1}{2} \\times \\tfrac{1}{4} = a/8$."
   },
   {
@@ -105,9 +127,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A student holds net force constant and plots acceleration (y-axis) against $1/m$ (x-axis) for several trials with different masses. The result is a straight line through the origin. What does the ==slope== of this line represent?",
-    "choices": ["The net force used in the trials.", "The object's mass.", "The object's acceleration.", "The coefficient of friction."],
+    "choices": [
+      "The net force used in the trials.",
+      "The object's mass.",
+      "The object's acceleration.",
+      "The coefficient of friction."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — since $a = F_{net} \\cdot (1/m)$, plotting $a$ against $1/m$ ==linearizes== the inverse relationship into a line through the origin with slope $F_{net}$.",
@@ -117,7 +146,9 @@
         "3": "Nothing about this graph involves friction — both axes come directly from $F_{net}=ma$."
       }
     },
-    "hint": ["Rewrite a = F_net × (1/m) and compare it to y = (slope)·x."],
+    "hint": [
+      "Rewrite a = F_net × (1/m) and compare it to y = (slope)·x."
+    ],
     "solution": "Matching $a = F_{net}\\cdot(1/m)$ to $y=(\\text{slope})x$ shows slope $= F_{net}$."
   },
   {
@@ -134,9 +165,16 @@
     "difficulty": "distinction-stretch",
     "cognitiveLevel": 7,
     "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "In an Atwood machine, a block of mass $2m$ and a block of mass $m$ hang from a light string over a frictionless, massless pulley. What is the magnitude of the system's acceleration, in terms of $g$?",
-    "choices": ["$g/3$", "$g/2$", "$g$", "$3g$"],
+    "choices": [
+      "$g/3$",
+      "$g/2$",
+      "$g$",
+      "$3g$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — writing Newton's second law separately for each block ($2mg - T = 2ma$ and $T - mg = ma$) and adding the two equations eliminates $T$ and gives $a = g/3$.",
@@ -146,7 +184,9 @@
         "3": "This inverts the result of the algebra. Recheck the sign and the division after adding the two blocks' equations together."
       }
     },
-    "hint": ["Write Newton's second law separately for each block, using the same tension T and the same magnitude of acceleration a for both — they're connected by an inextensible string. Then add the two equations to eliminate T."],
+    "hint": [
+      "Write Newton's second law separately for each block, using the same tension T and the same magnitude of acceleration a for both — they're connected by an inextensible string. Then add the two equations to eliminate T."
+    ],
     "solution": "$2mg - T = 2ma$ and $T - mg = ma$. Adding: $mg = 3ma$, so $a = g/3$."
   },
   {
@@ -163,7 +203,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A block sits at rest on a rough horizontal surface. A person pushes horizontally on the block with a force too small to make it slide. Which set of forces correctly and completely describes what acts on the block?",
     "choices": [
       "Applied push, weight, and normal force only.",
@@ -180,7 +222,9 @@
         "3": "A 'net forward force' isn't a separate physical force — this misapplies Newton's second law backward. Since the block isn't accelerating, the net force is zero; adding a force to explain motion that isn't happening isn't physically justified."
       }
     },
-    "hint": ["List every object touching the block, then ask what force each contact could exert. Then check whether the block is accelerating to decide whether any of those forces must balance."],
+    "hint": [
+      "List every object touching the block, then ask what force each contact could exert. Then check whether the block is accelerating to decide whether any of those forces must balance."
+    ],
     "solution": "Four forces act: push, weight, normal force, and static friction (equal and opposite to the push's component along the surface)."
   },
   {
@@ -197,7 +241,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "zero-velocity-implies-zero-force",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A ball is thrown straight upward and is momentarily at its highest point. Ignoring air resistance, which force(s) act on the ball at that instant?",
     "choices": [
       "Only the upward force that was needed to throw it.",
@@ -214,7 +260,9 @@
         "3": "This confuses zero velocity with zero force. At the highest point, velocity is momentarily zero, but gravity is still acting — that's precisely why the ball doesn't stay at rest and immediately begins to fall back down."
       }
     },
-    "hint": ["Ask: after the ball leaves contact with the thrower's hand, what is still physically touching or interacting with the ball? Only ongoing contact or field interactions can exert force."],
+    "hint": [
+      "Ask: after the ball leaves contact with the thrower's hand, what is still physically touching or interacting with the ball? Only ongoing contact or field interactions can exert force."
+    ],
     "solution": "Only gravity acts on the ball throughout its flight, including at the highest point."
   },
   {
@@ -231,19 +279,28 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 60 N sign hangs in equilibrium from a hinge on a wall and a support cable. The cable makes a 37° angle with the horizontal wall and pulls up and outward on the sign's outer edge; a horizontal strut from the wall holds that edge out and exerts no vertical force. Using sin 37° ≈ 0.60 and cos 37° ≈ 0.80, what is the tension in the cable?",
-    "choices": ["100 N", "60 N", "36 N", "48 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $60\\text{ N}$ sign hangs in equilibrium from a hinge on a wall and a support cable. The cable makes a $37^\\circ$ angle with the horizontal wall and pulls up and outward on the sign's outer edge; a horizontal strut from the wall holds that edge out and exerts no vertical force. Using $\\sin 37^\\circ \\approx 0.60$ and $\\cos 37^\\circ \\approx 0.80$, what is the tension in the cable?",
+    "choices": [
+      "$100\\text{ N}$",
+      "$60\\text{ N}$",
+      "$36\\text{ N}$",
+      "$48\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — the strut carries no vertical load, so the cable's vertical component alone supports the weight: $T\\sin 37° = 60\\text{ N} \\Rightarrow T = 60/0.60 = 100\\text{ N}$.",
       "incorrect": {
         "1": "This ignores the cable's angle entirely. Only the *vertical component* of the tension must equal the weight, not the full tension itself — an angled cable needs more tension than the weight it supports.",
-        "2": "This multiplies by sin 37° instead of dividing by it. Since $T\\sin 37° = 60\\text{ N}$, solving for T means dividing 60 N by sin 37°, not multiplying.",
-        "3": "This uses cos 37° instead of sin 37°. It's the *vertical* component of tension — governed by sine, since 37° is measured from the horizontal — that must balance the vertical weight."
+        "2": "This multiplies by $\\sin 37^\\circ$ instead of dividing by it. Since $T\\sin 37° = 60\\text{ N}$, solving for T means dividing $60\\text{ N}$ by $\\sin 37^\\circ$, not multiplying.",
+        "3": "This uses $\\cos 37^\\circ$ instead of $\\sin 37^\\circ$. It's the *vertical* component of tension — governed by sine, since $37^\\circ$ is measured from the horizontal — that must balance the vertical weight."
       }
     },
-    "hint": ["The strut is horizontal-only, so the cable's vertical component alone must support the entire weight of the sign."],
+    "hint": [
+      "The strut is horizontal-only, so the cable's vertical component alone must support the entire weight of the sign."
+    ],
     "solution": "$T\\sin 37° = W \\Rightarrow T = 60/0.60 = 100\\text{ N}$."
   },
   {
@@ -260,7 +317,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "larger-object-exerts-larger-force-in-collision",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A large truck collides head-on with a small car. Which statement about the forces during the collision is correct, according to Newton's third law?",
     "choices": [
       "The truck exerts a much larger force on the car than the car exerts on the truck, because the truck has much greater mass.",
@@ -277,7 +336,9 @@
         "3": "Third-law force pairs are equal at every instant of the interaction, regardless of the relative speeds involved; speed differences don't break the equality."
       }
     },
-    "hint": ["Separate the third-law question (are the two interaction forces equal?) from the second-law question (why does the car respond so much more dramatically?). They have different answers."],
+    "hint": [
+      "Separate the third-law question (are the two interaction forces equal?) from the second-law question (why does the car respond so much more dramatically?). They have different answers."
+    ],
     "solution": "The interaction forces are equal and opposite by Newton's third law; the car's smaller mass gives it a much larger acceleration for that same-magnitude force."
   },
   {
@@ -294,7 +355,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "weight-and-normal-force-are-a-third-law-pair",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A book rests on a table. The table pushes up on the book with a normal force. According to Newton's third law, what is the reaction force to this normal force?",
     "choices": [
       "The book's weight, pulling the book down.",
@@ -311,7 +374,9 @@
         "3": "Nothing pushes the book horizontally in this scenario, so there's no such sideways force for anything to be a reaction to."
       }
     },
-    "hint": ["A third-law pair always involves the same two objects, with the forces swapped in direction and each acting on the other object. Ask: what force does the book exert back on the table?"],
+    "hint": [
+      "A third-law pair always involves the same two objects, with the forces swapped in direction and each acting on the other object. Ask: what force does the book exert back on the table?"
+    ],
     "solution": "The reaction force is the book pushing down on the table, equal in magnitude and opposite in direction — both are normal forces from the same book-table contact interaction."
   },
   {
@@ -328,19 +393,28 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "Two blocks, A (3.0 kg) and B (2.0 kg), are in contact and pushed together across a frictionless floor by a single horizontal 20 N force applied to block A, pushing both blocks to the right. What is the magnitude of the contact force that block A exerts on block B?",
-    "choices": ["8.0 N", "20 N", "12 N", "4.0 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Two blocks, A ($3.0\\text{ kg}$) and B ($2.0\\text{ kg}$), are in contact and pushed together across a frictionless floor by a single horizontal $20\\text{ N}$ force applied to block A, pushing both blocks to the right. What is the magnitude of the contact force that block A exerts on block B?",
+    "choices": [
+      "$8.0\\text{ N}$",
+      "$20\\text{ N}$",
+      "$12\\text{ N}$",
+      "$4.0\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — first treat the two blocks as one system: $a = F/(m_A+m_B) = 20/5.0 = 4.0\\text{ m/s}^2$. Then isolate block B alone: the only horizontal force on it is the contact push from A, so $F_{A\\to B} = m_B a = 2.0\\times4.0 = 8.0\\text{ N}$.",
       "incorrect": {
-        "1": "This assumes all 20 N reaches block B, but some of that force only needs to accelerate block A itself. Isolating block B shows less force actually reaches it.",
+        "1": "This assumes all $20\\text{ N}$ reaches block B, but some of that force only needs to accelerate block A itself. Isolating block B shows less force actually reaches it.",
         "2": "This uses block A's mass instead of block B's when isolating block B. The contact force is what accelerates block B, so B's mass is the one that belongs in $F=ma$ here.",
         "3": "This uses the system's acceleration value in place of a force. The contact force equals block B's mass times that acceleration, not the acceleration alone."
       }
     },
-    "hint": ["Treat the two-block system together first to find the acceleration, then isolate block B by itself — the only horizontal force on B is the contact force from A."],
+    "hint": [
+      "Treat the two-block system together first to find the acceleration, then isolate block B by itself — the only horizontal force on B is the contact force from A."
+    ],
     "solution": "$a = 20/(3.0+2.0) = 4.0\\text{ m/s}^2$. Isolating B: $F_{A\\to B} = m_B a = 2.0\\times4.0 = 8.0\\text{ N}$."
   },
   {
@@ -357,9 +431,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 10 kg crate rests on a horizontal floor. The coefficient of static friction between the crate and floor is 0.40. What is the minimum horizontal force needed to start the crate sliding? (Use g = 9.8 m/s².)",
-    "choices": ["39.2 N", "98 N", "4.0 N", "3.92 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $10\\text{ kg}$ crate rests on a horizontal floor. The coefficient of static friction between the crate and floor is 0.40. What is the minimum horizontal force needed to start the crate sliding? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "$39.2\\text{ N}$",
+      "$98\\text{ N}$",
+      "$4.0\\text{ N}$",
+      "$3.92\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — $f_{s,max} = \\mu_s N = \\mu_s mg = 0.40\\times10\\times9.8 = 39.2\\text{ N}$. The normal force equals the crate's weight here since the floor is horizontal and no other vertical forces act.",
@@ -369,7 +450,9 @@
         "3": "This multiplies $\\mu_s$ by $g$ alone ($0.40\\times9.8$) but leaves out the mass. Normal force depends on the full weight, $mg$, not $g$ alone."
       }
     },
-    "hint": ["Maximum static friction is f_s,max = μs·N. On a horizontal surface with nothing else pushing vertically, N equals the object's weight, mg."],
+    "hint": [
+      "Maximum static friction is f_s,max = $\\mu_s$·N. On a horizontal surface with nothing else pushing vertically, N equals the object's weight, mg."
+    ],
     "solution": "$f_{s,max} = \\mu_s mg = 0.40\\times10\\times9.8 = 39.2\\text{ N}$."
   },
   {
@@ -386,7 +469,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "friction-always-acts-and-opposes-weight",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A wooden block sits on a wooden table. No one is pushing on it. Which statement about friction on the block is correct?",
     "choices": [
       "Static friction acts on the block, opposing its weight.",
@@ -403,7 +488,9 @@
         "3": "This confuses friction with the normal force and assumes friction must be nonzero. Nothing here calls for a horizontal friction force at all, let alone one equal to the weight — and friction acts horizontally, along the surface, not vertically opposing weight."
       }
     },
-    "hint": ["Friction only responds to a force (or a tendency toward motion) along the contact surface. Ask: is anything trying to slide the block horizontally?"],
+    "hint": [
+      "Friction only responds to a force (or a tendency toward motion) along the contact surface. Ask: is anything trying to slide the block horizontally?"
+    ],
     "solution": "No horizontal applied force or tendency to slide exists, so the friction force on the block is zero."
   },
   {
@@ -420,9 +507,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A hockey puck slides across the ice at 8.0 m/s and coasts to a stop after traveling 40 m. Assuming the ice exerts a constant kinetic friction force on the puck, what is the coefficient of kinetic friction between the puck and the ice? (Use g = 9.8 m/s².)",
-    "choices": ["≈0.082", "≈0.16", "≈0.80", "≈12"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A hockey puck slides across the ice at $8.0\\text{ m/s}$ and coasts to a stop after traveling $40\\text{ m}$. Assuming the ice exerts a constant kinetic friction force on the puck, what is the coefficient of kinetic friction between the puck and the ice? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "≈0.082",
+      "≈0.16",
+      "≈0.80",
+      "≈12"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — using $v^2=v_0^2-2ad$ with $v=0$: $a=v_0^2/(2d)=64/80=0.80\\text{ m/s}^2$. Then, since kinetic friction is the only horizontal force, $\\mu_k mg = ma \\Rightarrow \\mu_k = a/g = 0.80/9.8 \\approx 0.082$.",
@@ -432,7 +526,9 @@
         "3": "This inverts the relationship, dividing g by a instead of a by g. A coefficient of friction this large is also a red flag: real coefficients of friction are almost always well below 1.5, so an answer this large should be rejected as physically unreasonable on inspection alone."
       }
     },
-    "hint": ["Use kinematics to find the puck's deceleration first. Then relate that deceleration to μk through Newton's second law: the only horizontal force on the puck is kinetic friction, μk·mg, and this equals ma."],
+    "hint": [
+      "Use kinematics to find the puck's deceleration first. Then relate that deceleration to $\\mu_k$ through Newton's second law: the only horizontal force on the puck is kinetic friction, $\\mu_k$·mg, and this equals ma."
+    ],
     "solution": "$a=v_0^2/(2d)=0.80\\text{ m/s}^2$; from $\\mu_k mg = ma$, $\\mu_k = a/g \\approx 0.082$."
   },
   {
@@ -449,9 +545,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "tension-in-a-multi-object-string-system-must-support-the-whole-system",
-    "courses": ["ap-physics-1"],
-    "question": "Two blocks connected by a light, inextensible string hang vertically at rest from a fixed support: block A (3.0 kg) hangs directly below block B (2.0 kg), which is attached to the support by a second string. What is the tension in the string connecting A and B?  (Use g = 9.8 m/s².)",
-    "choices": ["29.4 N", "49.0 N", "19.6 N", "9.8 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Two blocks connected by a light, inextensible string hang vertically at rest from a fixed support: block A ($3.0\\text{ kg}$) hangs directly below block B ($2.0\\text{ kg}$), which is attached to the support by a second string. What is the tension in the string connecting A and B?  (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "$29.4\\text{ N}$",
+      "$49.0\\text{ N}$",
+      "$19.6\\text{ N}$",
+      "$9.8\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — isolate block A alone: only two forces act on it, the tension pulling up and its own weight pulling down. Since A is in equilibrium, $T = m_A g = 3.0\\times9.8 = 29.4\\text{ N}$.",
@@ -461,7 +564,9 @@
         "3": "Tension isn't found by subtracting the two masses. Each string's tension is found by isolating the object(s) it supports and applying Newton's second law to that specific object, not by comparing the two masses directly."
       }
     },
-    "hint": ["Isolate block A by itself. What forces act only on A, and what does equilibrium require of them?"],
+    "hint": [
+      "Isolate block A by itself. What forces act only on A, and what does equilibrium require of them?"
+    ],
     "solution": "For block A alone: $T - m_Ag = 0 \\Rightarrow T = 3.0\\times9.8 = 29.4\\text{ N}$."
   },
   {
@@ -478,19 +583,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A block slides down a frictionless incline angled at 30° above the horizontal. What is the magnitude of its acceleration down the incline? (Use g = 9.8 m/s², sin 30° = 0.50)",
-    "choices": ["4.9 m/s²", "9.8 m/s²", "8.49 m/s²", "2.45 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A block slides down a frictionless incline angled at $30^\\circ$ above the horizontal. What is the magnitude of its acceleration down the incline? (Use $g = 9.8\\text{ m/s}^2$, $\\sin 30^\\circ = 0.50$)",
+    "choices": [
+      "$4.9\\text{ m/s}^2$",
+      "$9.8\\text{ m/s}^2$",
+      "$8.49\\text{ m/s}^2$",
+      "$2.45\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — resolving gravity along the frictionless incline gives $a=g\\sin\\theta=9.8\\times0.50=4.9\\text{ m/s}^2$; the normal force balances only the perpendicular component of gravity.",
       "incorrect": {
         "1": "This uses g directly, as if the block were in free fall. On an incline, only the *component* of gravity along the surface, $g\\sin\\theta$, accelerates the block — not the full value of g.",
-        "2": "This uses cos 30° instead of sin 30°. The component of gravity *along* the incline uses sine of the angle measured from the horizontal; cosine gives the component perpendicular to the incline, which the normal force balances instead.",
+        "2": "This uses $\\cos 30^\\circ$ instead of $\\sin 30^\\circ$. The component of gravity *along* the incline uses sine of the angle measured from the horizontal; cosine gives the component perpendicular to the incline, which the normal force balances instead.",
         "3": "This divides the correct value by 2 with no physical basis. Recompute directly from $a=g\\sin\\theta$."
       }
     },
-    "hint": ["Decompose gravity into components parallel and perpendicular to the incline surface. Only the parallel component accelerates the block down the slope."],
+    "hint": [
+      "Decompose gravity into components parallel and perpendicular to the incline surface. Only the parallel component accelerates the block down the slope."
+    ],
     "solution": "$a=g\\sin\\theta=9.8\\times0.50=4.9\\text{ m/s}^2$."
   },
   {
@@ -507,10 +621,12 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 5,
     "misconceptionTested": "gravity-always-overcomes-friction-on-an-incline",
-    "courses": ["ap-physics-1"],
-    "question": "A 2.0 kg block sits on an incline angled at 20° above horizontal. The coefficient of static friction between block and incline is 0.50. Does the block remain at rest, and why? (Use g = 9.8 m/s², sin 20° ≈ 0.34, cos 20° ≈ 0.94)",
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $2.0\\text{ kg}$ block sits on an incline angled at $20^\\circ$ above horizontal. The coefficient of static friction between block and incline is 0.50. Does the block remain at rest, and why? (Use $g = 9.8\\text{ m/s}^2$, $\\sin 20^\\circ \\approx 0.34$, $\\cos 20^\\circ \\approx 0.94$)",
     "choices": [
-      "Yes, it remains at rest, because the maximum static friction force (≈9.2 N) exceeds the component of gravity pulling it down the incline (≈6.7 N).",
+      "Yes, it remains at rest, because the maximum static friction force (≈$9.2\\text{ N}$) exceeds the component of gravity pulling it down the incline (≈$6.7\\text{ N}$).",
       "No, it slides, because gravity always overcomes friction on an incline.",
       "Yes, it remains at rest, because the normal force is larger than the block's weight.",
       "No, it slides, because the coefficient of static friction is less than 1."
@@ -520,11 +636,13 @@
       "correct": "Correct — gravity's component down the slope is $mg\\sin\\theta \\approx 6.7\\text{ N}$, while the maximum available static friction is $\\mu_s mg\\cos\\theta \\approx 9.2\\text{ N}$. Since maximum static friction exceeds what's needed to prevent sliding, friction adjusts to exactly balance gravity's component, and the block stays at rest.",
       "incorrect": {
         "1": "Gravity doesn't automatically overcome friction — whether an object slides depends on comparing the gravity component along the incline to the *maximum available* static friction, which must actually be calculated.",
-        "2": "The normal force here (≈18.4 N) is actually smaller than the block's weight (≈19.6 N), since only part of gravity presses into the incline on a tilted surface — and even if it were larger, that alone wouldn't determine whether the block slides.",
-        "3": "There's no rule that μs < 1 causes sliding — coefficients of friction well below 1 are common and often still prevent sliding, exactly as they do here. Whether the block slides depends on comparing forces, not the size of μs relative to 1."
+        "2": "The normal force here (≈$18.4\\text{ N}$) is actually smaller than the block's weight (≈$19.6\\text{ N}$), since only part of gravity presses into the incline on a tilted surface — and even if it were larger, that alone wouldn't determine whether the block slides.",
+        "3": "There's no rule that $\\mu_s$ < 1 causes sliding — coefficients of friction well below 1 are common and often still prevent sliding, exactly as they do here. Whether the block slides depends on comparing forces, not the size of $\\mu_s$ relative to 1."
       }
     },
-    "hint": ["Compute the two competing quantities along the incline: the gravity component that tends to cause sliding (mg sinθ) and the maximum static friction available to resist it (μs·mg cosθ). Compare them."],
+    "hint": [
+      "Compute the two competing quantities along the incline: the gravity component that tends to cause sliding (mg sinθ) and the maximum static friction available to resist it ($\\mu_s$·mg cosθ). Compare them."
+    ],
     "solution": "$mg\\sin\\theta \\approx 6.7\\text{ N}$ vs. $\\mu_s mg\\cos\\theta \\approx 9.2\\text{ N}$. Since max static friction exceeds the gravity component, the block remains at rest."
   },
   {
@@ -541,25 +659,29 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "For a frictionless incline, how does the acceleration of a block sliding down depend on the incline angle θ?",
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "For a frictionless incline, how does the acceleration of a block sliding down depend on the incline angle $\\theta$?",
     "choices": [
-      "a = g sin θ, so acceleration increases with θ, reaching g at θ = 90°.",
-      "a = g cos θ, so acceleration decreases with θ.",
-      "a is independent of θ, always equal to g.",
-      "a = g sin θ, so acceleration decreases with θ."
+      "a = g sin $\\theta$, so acceleration increases with $\\theta$, reaching g at $\\theta$ = $90^\\circ$.",
+      "a = g cos $\\theta$, so acceleration decreases with $\\theta$.",
+      "a is independent of $\\theta$, always equal to g.",
+      "a = g sin $\\theta$, so acceleration decreases with $\\theta$."
     ],
     "correctAnswer": 0,
     "feedback": {
-      "correct": "Correct — $a=g\\sin\\theta$ increases monotonically as θ increases from 0° to 90°, correctly reaching the limiting case of free fall ($a=g$) when the incline becomes vertical.",
+      "correct": "Correct — $a=g\\sin\\theta$ increases monotonically as $\\theta$ increases from $0^\\circ$ to $90^\\circ$, correctly reaching the limiting case of free fall ($a=g$) when the incline becomes vertical.",
       "incorrect": {
-        "1": "This uses cosine instead of sine and predicts acceleration decreasing with steepness — but a steeper incline should accelerate the block more, not less, which cos θ gets backward.",
+        "1": "This uses cosine instead of sine and predicts acceleration decreasing with steepness — but a steeper incline should accelerate the block more, not less, which cos $\\theta$ gets backward.",
         "2": "This ignores the incline's angle entirely. Only in the limiting case of a vertical incline (free fall) does a equal g; for any shallower angle, less than the full gravitational acceleration acts along the surface.",
-        "3": "This has the correct formula but the wrong trend — sin θ *increases* as θ increases from 0° to 90°, so acceleration increases with steepness, not decreases."
+        "3": "This has the correct formula but the wrong trend — sin $\\theta$ *increases* as $\\theta$ increases from $0^\\circ$ to $90^\\circ$, so acceleration increases with steepness, not decreases."
       }
     },
-    "hint": ["Check the limiting cases: at θ=0° (flat), acceleration should be 0. At θ=90° (vertical, i.e. free fall), acceleration should equal g. Which formula and trend match both limits?"],
-    "solution": "$a=g\\sin\\theta$; since sin θ increases from 0 to 1 as θ goes from 0° to 90°, acceleration increases with incline angle, correctly reaching g in the vertical limit."
+    "hint": [
+      "Check the limiting cases: at $\\theta$=$0^\\circ$ (flat), acceleration should be 0. At $\\theta$=$90^\\circ$ (vertical, i.e. free fall), acceleration should equal g. Which formula and trend match both limits?"
+    ],
+    "solution": "$a=g\\sin\\theta$; since sin $\\theta$ increases from 0 to 1 as $\\theta$ goes from $0^\\circ$ to $90^\\circ$, acceleration increases with incline angle, correctly reaching g in the vertical limit."
   },
   {
     "id": "AP1-U2-MCQ-019",
@@ -575,19 +697,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 5.0 kg crate is pulled at constant velocity up a frictionless 25° incline by a rope parallel to the incline surface. What is the tension in the rope? (Use g = 9.8 m/s², sin 25° ≈ 0.42)",
-    "choices": ["≈20.6 N", "≈49 N", "≈44.3 N", "≈10.3 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $5.0\\text{ kg}$ crate is pulled at constant velocity up a frictionless $25^\\circ$ incline by a rope parallel to the incline surface. What is the tension in the rope? (Use $g = 9.8\\text{ m/s}^2$, $\\sin 25^\\circ \\approx 0.42$)",
+    "choices": [
+      "≈$20.6\\text{ N}$",
+      "≈$49\\text{ N}$",
+      "≈$44.3\\text{ N}$",
+      "≈$10.3\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — constant velocity means zero acceleration, so the net force along the incline is zero. With the rope parallel to the incline and no friction, $T=mg\\sin\\theta=5.0\\times9.8\\times0.42\\approx20.6\\text{ N}$.",
       "incorrect": {
         "1": "This uses the crate's full weight, mg, as if the rope needed to support the crate vertically. On an incline, the rope only needs to balance the *component* of gravity along the incline, not the full weight.",
-        "2": "This uses cos 25° instead of sin 25°. The component of gravity *along* the incline — which the rope must balance — uses sine of the angle from horizontal; cosine gives the perpendicular component that the normal force balances instead.",
-        "3": "This is half the correct value, with no physical basis for that factor. Recompute directly from equilibrium along the incline: T = mg sin θ."
+        "2": "This uses $\\cos 25^\\circ$ instead of $\\sin 25^\\circ$. The component of gravity *along* the incline — which the rope must balance — uses sine of the angle from horizontal; cosine gives the perpendicular component that the normal force balances instead.",
+        "3": "This is half the correct value, with no physical basis for that factor. Recompute directly from equilibrium along the incline: T = mg sin $\\theta$."
       }
     },
-    "hint": ["Constant velocity means the crate is in equilibrium — the net force along the incline is zero. Since the rope is parallel to the incline and there's no friction, only tension and the component of gravity act along that direction."],
+    "hint": [
+      "Constant velocity means the crate is in equilibrium — the net force along the incline is zero. Since the rope is parallel to the incline and there's no friction, only tension and the component of gravity act along that direction."
+    ],
     "solution": "$T=mg\\sin\\theta=5.0\\times9.8\\times0.42\\approx20.6\\text{ N}$."
   },
   {
@@ -604,9 +735,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 2,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A spring with spring constant k = 250 N/m is compressed 0.12 m from its natural length. What is the magnitude of the force the spring exerts?",
-    "choices": ["30 N", "2083 N", "0.00048 N", "262 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A spring with spring constant $k = 250\\text{ N/m}$ is compressed $0.12\\text{ m}$ from its natural length. What is the magnitude of the force the spring exerts?",
+    "choices": [
+      "$30\\text{ N}$",
+      "$2083\\text{ N}$",
+      "$0.00048\\text{ N}$",
+      "$262\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — Hooke's law gives $F=kx=250\\times0.12=30\\text{ N}$.",
@@ -616,7 +754,9 @@
         "3": "This adds k and x as if they could be combined directly, but they have completely different units (N/m and m). Hooke's law requires multiplying them, not adding."
       }
     },
-    "hint": ["Apply Hooke's law directly: F = kx, using the given spring constant and displacement from natural length."],
+    "hint": [
+      "Apply Hooke's law directly: F = kx, using the given spring constant and displacement from natural length."
+    ],
     "solution": "$F=kx=250\\times0.12=30\\text{ N}$."
   },
   {
@@ -633,19 +773,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 0.50 kg mass hangs at rest from a vertical spring, stretching it 0.098 m from its natural length. What is the spring constant? (Use g = 9.8 m/s².)",
-    "choices": ["50 N/m", "4.9 N/m", "0.96 N/m", "24.5 N/m"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $0.50\\text{ kg}$ mass hangs at rest from a vertical spring, stretching it $0.098\\text{ m}$ from its natural length. What is the spring constant? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "$50\\text{ N/m}$",
+      "$4.9\\text{ N/m}$",
+      "$0.96\\text{ N/m}$",
+      "$24.5\\text{ N/m}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — at equilibrium, the spring force balances the weight: $kx=mg \\Rightarrow k=mg/x=(0.50\\times9.8)/0.098=50\\text{ N/m}$.",
       "incorrect": {
-        "1": "This reports mg itself (4.9 N) without dividing by the displacement x. Solving $kx=mg$ for k requires dividing by x, not stopping at the weight.",
+        "1": "This reports mg itself ($4.9\\text{ N}$) without dividing by the displacement x. Solving $kx=mg$ for k requires dividing by x, not stopping at the weight.",
         "2": "This inverts the relationship, computing x/(mg) instead of mg/x. Recheck which side of $k=mg/x$ each quantity belongs on.",
         "3": "This doesn't match $k=mg/x$ with the given values — recompute mg and x separately, then divide, rather than combining them some other way."
       }
     },
-    "hint": ["At equilibrium, the upward spring force equals the downward weight: kx = mg. Solve this for k."],
+    "hint": [
+      "At equilibrium, the upward spring force equals the downward weight: kx = mg. Solve this for k."
+    ],
     "solution": "$k=mg/x=(0.50\\times9.8)/0.098=50\\text{ N/m}$."
   },
   {
@@ -662,9 +811,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "scale-always-reads-true-weight",
-    "courses": ["ap-physics-1"],
-    "question": "A 60 kg person stands on a scale inside an elevator that is accelerating upward at 2.0 m/s². What does the scale read? (Use g = 9.8 m/s².)",
-    "choices": ["708 N", "588 N", "468 N", "120 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $60\\text{ kg}$ person stands on a scale inside an elevator that is accelerating upward at $2.0\\text{ m/s}^2$. What does the scale read? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "$708\\text{ N}$",
+      "$588\\text{ N}$",
+      "$468\\text{ N}$",
+      "$120\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — the scale reading equals the normal force N. With upward positive: $N-mg=ma \\Rightarrow N=m(g+a)=60\\times(9.8+2.0)=708\\text{ N}$.",
@@ -674,7 +830,9 @@
         "3": "This computes ma alone and leaves out gravity entirely. The scale must still support the person's ordinary weight *in addition to* providing the extra force needed for the upward acceleration."
       }
     },
-    "hint": ["The scale reading is the normal force N. Apply Newton's second law to the person, taking upward as positive: N − mg = ma, then solve for N."],
+    "hint": [
+      "The scale reading is the normal force N. Apply Newton's second law to the person, taking upward as positive: N − mg = ma, then solve for N."
+    ],
     "solution": "$N=m(g+a)=60\\times(9.8+2.0)=708\\text{ N}$."
   },
   {
@@ -691,7 +849,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 5,
     "misconceptionTested": "apparent-weightlessness-requires-zero-gravity",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "The cable holding an elevator snaps, and the elevator (with a person inside) falls freely, with air resistance negligible. What does a scale under the person's feet read during the fall?",
     "choices": [
       "Zero — both the person and the elevator floor accelerate downward at g together, so there's no compression force between them.",
@@ -708,7 +868,9 @@
         "3": "The scale reading depends on the *relative acceleration* between the person and the scale, not on speed. Since both fall at the same acceleration g regardless of how fast they're already moving, the reading is zero throughout the fall, not just at one instant."
       }
     },
-    "hint": ["Apply Newton's second law to the person alone during the fall: what is the person's acceleration, and what does that require the normal force to be?"],
+    "hint": [
+      "Apply Newton's second law to the person alone during the fall: what is the person's acceleration, and what does that require the normal force to be?"
+    ],
     "solution": "During free fall, $a=g$ downward for both person and scale, so $N=m(g-g)=0$."
   },
   {
@@ -725,19 +887,28 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "extra-given-numbers-must-all-be-used",
-    "courses": ["ap-physics-1"],
-    "question": "An astronaut's equipment has a mass of 25 kg. On the Moon, where the gravitational field strength is 1.6 N/kg, what net force is required to give the equipment an acceleration of 0.80 m/s² across the lunar surface (ignoring friction)?",
-    "choices": ["20 N", "40 N", "32 N", "31.25 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "An astronaut's equipment has a mass of $25\\text{ kg}$. On the Moon, where the gravitational field strength is $1.6\\text{ N/kg}$, what net force is required to give the equipment an acceleration of $0.80\\text{ m/s}^2$ across the lunar surface (ignoring friction)?",
+    "choices": [
+      "$20\\text{ N}$",
+      "$40\\text{ N}$",
+      "$32\\text{ N}$",
+      "$31.25\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — Newton's second law depends only on mass and acceleration: $F_{net}=ma=25\\times0.80=20\\text{ N}$. Mass doesn't change with location, and the Moon's gravitational field strength is irrelevant here since the described motion is horizontal, not falling.",
       "incorrect": {
-        "1": "This uses the Moon's gravitational field strength ($25\\times1.6$) in place of the given acceleration. That field strength describes free-fall/weight on the Moon — it has nothing to do with this problem's horizontal acceleration of 0.80 m/s².",
+        "1": "This uses the Moon's gravitational field strength ($25\\times1.6$) in place of the given acceleration. That field strength describes free-fall/weight on the Moon — it has nothing to do with this problem's horizontal acceleration of $0.80\\text{ m/s}^2$.",
         "2": "This multiplies in the Moon's gravitational field strength as well as the acceleration, but $F_{net}=ma$ only involves mass and the acceleration actually given — the lunar field strength is an irrelevant distractor here.",
         "3": "This divides mass by acceleration ($25/0.80$) instead of multiplying. Newton's second law is $F_{net}=ma$, a product, not a quotient."
       }
     },
-    "hint": ["Newton's second law only needs mass and the acceleration actually described in the problem. Check whether every given number is actually relevant before using it."],
+    "hint": [
+      "Newton's second law only needs mass and the acceleration actually described in the problem. Check whether every given number is actually relevant before using it."
+    ],
     "solution": "$F_{net}=ma=25\\times0.80=20\\text{ N}$; the lunar gravitational field strength is not needed for this horizontal-acceleration scenario."
   },
   {
@@ -754,19 +925,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 3.0 kg object experiences a single 12 N force directed 60° above the horizontal. What is the horizontal component of the object's acceleration? (Use sin 60° ≈ 0.87, cos 60° = 0.50)",
-    "choices": ["2.0 m/s²", "3.5 m/s²", "4.0 m/s²", "1.0 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $3.0\\text{ kg}$ object experiences a single $12\\text{ N}$ force directed $60^\\circ$ above the horizontal. What is the horizontal component of the object's acceleration? (Use $\\sin 60^\\circ \\approx 0.87$, $\\cos 60^\\circ = 0.50$)",
+    "choices": [
+      "$2.0\\text{ m/s}^2$",
+      "$3.5\\text{ m/s}^2$",
+      "$4.0\\text{ m/s}^2$",
+      "$1.0\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — only the horizontal component of the force produces horizontal acceleration: $F_x=F\\cos60°=12\\times0.50=6.0\\text{ N}$, so $a_x=F_x/m=6.0/3.0=2.0\\text{ m/s}^2$.",
       "incorrect": {
-        "1": "This uses sin 60° instead of cos 60° to find the horizontal component. Since the angle is measured from the horizontal, the *horizontal* component uses cosine, and the *vertical* component uses sine.",
-        "2": "This applies the full 12 N force to $F=ma$ without resolving it into components, but only the horizontal component of the force contributes to horizontal acceleration.",
+        "1": "This uses $\\sin 60^\\circ$ instead of $\\cos 60^\\circ$ to find the horizontal component. Since the angle is measured from the horizontal, the *horizontal* component uses cosine, and the *vertical* component uses sine.",
+        "2": "This applies the full $12\\text{ N}$ force to $F=ma$ without resolving it into components, but only the horizontal component of the force contributes to horizontal acceleration.",
         "3": "This is half the correct value, with no clear basis in the geometry. Recompute directly: find $F_x$ first, then divide by mass."
       }
     },
-    "hint": ["Only the horizontal component of the applied force contributes to horizontal acceleration. Resolve the 12 N force into horizontal and vertical components first."],
+    "hint": [
+      "Only the horizontal component of the applied force contributes to horizontal acceleration. Resolve the $12\\text{ N}$ force into horizontal and vertical components first."
+    ],
     "solution": "$F_x=F\\cos60°=12\\times0.50=6.0\\text{ N}$; $a_x=F_x/m=6.0/3.0=2.0\\text{ m/s}^2$."
   },
   {
@@ -783,9 +963,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "Object A has twice the mass of Object B. Equal net forces act on both objects. How does the acceleration of A compare to the acceleration of B?",
-    "choices": ["A's acceleration is half of B's.", "A's acceleration is twice B's.", "A and B have the same acceleration.", "A's acceleration is four times B's."],
+    "choices": [
+      "A's acceleration is half of B's.",
+      "A's acceleration is twice B's.",
+      "A and B have the same acceleration.",
+      "A's acceleration is four times B's."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — since $a=F_{net}/m$ and both objects experience the same $F_{net}$, acceleration is inversely proportional to mass. Doubling the mass (with force fixed) halves the acceleration.",
@@ -795,7 +982,9 @@
         "3": "This confuses a linear inverse relationship with a squared one. Acceleration is inversely proportional to mass to the first power, not the square of mass."
       }
     },
-    "hint": ["Hold F_net fixed in a = F_net/m and ask what happens to a when m doubles."],
+    "hint": [
+      "Hold F_net fixed in a = F_net/m and ask what happens to a when m doubles."
+    ],
     "solution": "a ∝ 1/m with F_net fixed, so doubling mass halves acceleration: $a_A = a_B/2$."
   },
   {
@@ -812,9 +1001,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "proportional-changes-in-same-direction-always-compound",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "If the net force on an object is doubled and its mass is also doubled, by what factor does its acceleration change?",
-    "choices": ["It stays the same.", "It doubles.", "It quadruples.", "It is cut in half."],
+    "choices": [
+      "It stays the same.",
+      "It doubles.",
+      "It quadruples.",
+      "It is cut in half."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — $a=F_{net}/m$. Doubling both the numerator and the denominator by the same factor leaves the ratio, and therefore the acceleration, unchanged.",
@@ -824,7 +1020,9 @@
         "3": "This only accounts for the mass doubling and ignores that the force also doubled, which tends to increase acceleration by the same factor."
       }
     },
-    "hint": ["Write the new acceleration symbolically as (2F)/(2m) before simplifying, rather than reasoning about the two changes in isolation."],
+    "hint": [
+      "Write the new acceleration symbolically as (2F)/($2\\text{ m}$) before simplifying, rather than reasoning about the two changes in isolation."
+    ],
     "solution": "$a_{new}=(2F)/(2m)=F/m=a$ — unchanged."
   },
   {
@@ -841,9 +1039,16 @@
     "difficulty": "distinction-stretch",
     "cognitiveLevel": 5,
     "misconceptionTested": "inverse-proportional-changes-always-compound-multiplicatively-in-same-direction",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "An object's net force is reduced to one-third of its original value, and its mass is reduced to one-half of its original value. What is the new acceleration, in terms of the original acceleration a?",
-    "choices": ["(2/3)a", "(1/6)a", "(3/2)a", "(1/3)a"],
+    "choices": [
+      "(2/3)a",
+      "(1/6)a",
+      "(3/2)a",
+      "(1/3)a"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — $a_{new}=\\dfrac{F/3}{m/2}=\\dfrac{2}{3}\\cdot\\dfrac{F}{m}=\\dfrac{2}{3}a$. The mass decrease (which alone would *increase* acceleration) partially offsets the force decrease.",
@@ -853,7 +1058,9 @@
         "3": "This only accounts for the force being cut to one-third and ignores that the mass also decreased — a mass decrease alone increases acceleration, partially offsetting the force decrease."
       }
     },
-    "hint": ["Write the new acceleration symbolically as (F/3)/(m/2) and simplify algebraically, rather than combining the two given fractions by intuition."],
+    "hint": [
+      "Write the new acceleration symbolically as (F/3)/(m/2) and simplify algebraically, rather than combining the two given fractions by intuition."
+    ],
     "solution": "$a_{new}=\\dfrac{F/3}{m/2}=\\dfrac{2}{3}a$."
   },
   {
@@ -870,19 +1077,28 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "ranks-by-a-single-raw-quantity-instead-of-the-relevant-ratio",
-    "courses": ["ap-physics-1"],
-    "question": "Three objects experience the following net forces and have the following masses: Object 1 (F = 6 N, m = 2 kg), Object 2 (F = 9 N, m = 3 kg), Object 3 (F = 4 N, m = 1 kg). Rank the objects by acceleration, from greatest to least.",
-    "choices": ["3 > 1 = 2", "2 > 1 > 3", "1 = 2 > 3", "All three accelerations are equal."],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Three objects experience the following net forces and have the following masses: Object 1 (F = $6\\text{ N}$, $m = 2\\text{ kg}$), Object 2 (F = $9\\text{ N}$, $m = 3\\text{ kg}$), Object 3 (F = $4\\text{ N}$, $m = 1\\text{ kg}$). Rank the objects by acceleration, from greatest to least.",
+    "choices": [
+      "3 > 1 = 2",
+      "2 > 1 > 3",
+      "1 = 2 > 3",
+      "All three accelerations are equal."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — computing $a=F/m$ for each: $a_1=6/2=3$, $a_2=9/3=3$, $a_3=4/1=4\\text{ m/s}^2$. Object 3 has the greatest acceleration, and Objects 1 and 2 tie.",
       "incorrect": {
         "1": "This ranks the objects by net force alone (9 > 6 > 4), without dividing by each object's own mass. Acceleration depends on the *ratio* F/m, not on force by itself.",
         "2": "This computes m/F instead of F/m for each object, which inverts the actual ranking — a smaller m/F ratio corresponds to a *larger* acceleration, not a smaller one.",
-        "3": "The three objects don't share a common force-to-mass ratio — only Objects 1 and 2 happen to match (both give a = 3 m/s²); Object 3's ratio (4/1 = 4) is different from both."
+        "3": "The three objects don't share a common force-to-mass ratio — only Objects 1 and 2 happen to match (both give $a = 3\\text{ m/s}^2$); Object 3's ratio (4/1 = 4) is different from both."
       }
     },
-    "hint": ["Acceleration depends on the ratio F/m for each object individually — compute a = F/m separately for all three before comparing."],
+    "hint": [
+      "Acceleration depends on the ratio F/m for each object individually — compute a = F/m separately for all three before comparing."
+    ],
     "solution": "$a_1=3$, $a_2=3$, $a_3=4\\text{ m/s}^2$. Ranking: $3 > 1 = 2$."
   },
   {
@@ -899,9 +1115,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A student varies the net force applied to a cart of fixed mass and measures the resulting acceleration for each trial, then plots net force (y-axis) against acceleration (x-axis). The result is a straight line through the origin. What does the slope of this line represent?",
-    "choices": ["The cart's mass.", "The cart's weight.", "The coefficient of friction.", "The net force used in a single trial."],
+    "choices": [
+      "The cart's mass.",
+      "The cart's weight.",
+      "The coefficient of friction.",
+      "The net force used in a single trial."
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — since $F_{net}=ma$, plotting $F_{net}$ against $a$ gives a line through the origin with slope $m$.",
@@ -911,7 +1134,9 @@
         "3": "The slope is a single fixed number describing the whole line, not one particular trial's force value — it represents the underlying relationship across all trials, not any one data point."
       }
     },
-    "hint": ["Rewrite F_net = ma as y = (slope)x, matching F_net to y and a to x."],
+    "hint": [
+      "Rewrite F_net = ma as y = (slope)x, matching F_net to y and a to x."
+    ],
     "solution": "Matching $F_{net}=ma$ to $y=(\\text{slope})x$ shows slope = m."
   },
   {
@@ -928,7 +1153,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "inverse-relationships-graph-as-straight-lines",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A student holds net force constant and varies the mass of a cart, measuring the resulting acceleration for each mass, then plots acceleration (y-axis) against mass (x-axis). Which best describes the shape of this graph?",
     "choices": [
       "A curve that decreases and approaches (but never reaches) zero as mass increases — an inverse relationship.",
@@ -945,7 +1172,9 @@
         "3": "Acceleration does depend on mass here — $F_{net}$ is what's held fixed, not the acceleration. A horizontal line would only occur if a were independent of m, which contradicts $a=F_{net}/m$."
       }
     },
-    "hint": ["Before sketching, ask: as mass gets very large, what happens to acceleration? As mass approaches zero, what happens? A relationship where one variable is in the denominator produces a specific characteristic curve, not a straight line."],
+    "hint": [
+      "Before sketching, ask: as mass gets very large, what happens to acceleration? As mass approaches zero, what happens? A relationship where one variable is in the denominator produces a specific characteristic curve, not a straight line."
+    ],
     "solution": "a = F_net/m is an inverse relationship: a decreasing curve approaching zero as m grows, never reaching zero or going negative."
   },
   {
@@ -962,7 +1191,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 4,
     "misconceptionTested": "motion-implies-nonzero-net-force",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A cart's velocity-time graph is a straight line with constant negative slope for the first 4 seconds, then becomes horizontal (zero slope, nonzero velocity) afterward. What does this indicate about the net force on the cart during each interval?",
     "choices": [
       "A constant, nonzero net force acts during the first 4 seconds; the net force is zero afterward.",
@@ -979,8 +1210,10 @@
         "3": "This has the two intervals reversed. The sloped portion of the graph is where acceleration — and therefore net force — is nonzero; the flat portion is where it's zero."
       }
     },
-    "hint": ["On a v-t graph, the slope at each moment is the acceleration. Use F_net = ma to connect each interval's slope to the net force during that interval."],
-    "solution": "Constant negative slope (0–4 s) → constant net force. Zero slope afterward → zero net force, despite continued motion."
+    "hint": [
+      "On a v-t graph, the slope at each moment is the acceleration. Use F_net = ma to connect each interval's slope to the net force during that interval."
+    ],
+    "solution": "Constant negative slope (0–$4\\text{ s}$) → constant net force. Zero slope afterward → zero net force, despite continued motion."
   },
   {
     "id": "AP1-U2-MCQ-033",
@@ -996,20 +1229,29 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A force-time graph shows the net horizontal force on a 2.0 kg cart varying with time: a horizontal line at 8.0 N from t = 0 to t = 3 s, then a horizontal line at 0 N afterward. What is the cart's acceleration at t = 1.5 s?",
-    "choices": ["4.0 m/s²", "8.0 m/s²", "0 m/s²", "2.0 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A force-time graph shows the net horizontal force on a $2.0\\text{ kg}$ cart varying with time: a horizontal line at $8.0\\text{ N}$ from t = 0 to $t = 3\\text{ s}$, then a horizontal line at $0\\text{ N}$ afterward. What is the cart's acceleration at $t = 1.5\\text{ s}$?",
+    "choices": [
+      "$4.0\\text{ m/s}^2$",
+      "$8.0\\text{ m/s}^2$",
+      "$0\\text{ m/s}^2$",
+      "$2.0\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
-      "correct": "Correct — at t = 1.5 s, the graph shows $F_{net}=8.0\\text{ N}$ still in effect (before the drop at t = 3 s). Applying $F_{net}=ma$: $a=F_{net}/m=8.0/2.0=4.0\\text{ m/s}^2$.",
+      "correct": "Correct — at $t = 1.5\\text{ s}$, the graph shows $F_{net}=8.0\\text{ N}$ still in effect (before the drop at $t = 3\\text{ s}$). Applying $F_{net}=ma$: $a=F_{net}/m=8.0/2.0=4.0\\text{ m/s}^2$.",
       "incorrect": {
         "1": "This reports the force value itself, not the acceleration. Force and acceleration are related by $F_{net}=ma$, not numerically equal — dividing by the mass is still required.",
-        "2": "This reads the force value from *after* the drop at t = 3 s, but the question asks about t = 1.5 s, which is still within the first (8.0 N) interval.",
-        "3": "This divides by twice the actual mass. The cart's mass is 2.0 kg, not 4.0 kg — recheck the value used in the denominator."
+        "2": "This reads the force value from *after* the drop at $t = 3\\text{ s}$, but the question asks about $t = 1.5\\text{ s}$, which is still within the first ($8.0\\text{ N}$) interval.",
+        "3": "This divides by twice the actual mass. The cart's mass is $2.0\\text{ kg}$, not $4.0\\text{ kg}$ — recheck the value used in the denominator."
       }
     },
-    "hint": ["First locate t = 1.5 s on the graph to find which force value applies at that instant, then apply F_net = ma using the cart's actual mass."],
-    "solution": "At t = 1.5 s, $F_{net}=8.0\\text{ N}$ (before the drop). $a=F_{net}/m=8.0/2.0=4.0\\text{ m/s}^2$."
+    "hint": [
+      "First locate $t = 1.5\\text{ s}$ on the graph to find which force value applies at that instant, then apply F_net = ma using the cart's actual mass."
+    ],
+    "solution": "At $t = 1.5\\text{ s}$, $F_{net}=8.0\\text{ N}$ (before the drop). $a=F_{net}/m=8.0/2.0=4.0\\text{ m/s}^2$."
   },
   {
     "id": "AP1-U2-MCQ-034",
@@ -1025,25 +1267,29 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "Three ropes pull horizontally on a ring, all in the same plane, holding it in equilibrium. Rope 1 pulls with 30 N due east. Rope 2 pulls with 40 N due north. What must be the magnitude and approximate direction of the force from Rope 3?",
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Three ropes pull horizontally on a ring, all in the same plane, holding it in equilibrium. Rope 1 pulls with $30\\text{ N}$ due east. Rope 2 pulls with $40\\text{ N}$ due north. What must be the magnitude and approximate direction of the force from Rope 3?",
     "choices": [
-      "50 N, directed opposite to the combined pull of Ropes 1 and 2 (south of west).",
-      "70 N, directed south of west (simply summing the two magnitudes).",
-      "10 N, directed south of west (subtracting the two magnitudes).",
-      "50 N, directed the same way as the combined pull of Ropes 1 and 2 (north of east)."
+      "$50\\text{ N}$, directed opposite to the combined pull of Ropes 1 and 2 (south of west).",
+      "$70\\text{ N}$, directed south of west (simply summing the two magnitudes).",
+      "$10\\text{ N}$, directed south of west (subtracting the two magnitudes).",
+      "$50\\text{ N}$, directed the same way as the combined pull of Ropes 1 and 2 (north of east)."
     ],
     "correctAnswer": 0,
     "feedback": {
-      "correct": "Correct — for the ring to be in equilibrium, Rope 3's force must exactly cancel the vector sum of Ropes 1 and 2. That sum has magnitude $\\sqrt{30^2+40^2}=50\\text{ N}$, directed north of east; Rope 3 must pull with 50 N in the exact opposite direction.",
+      "correct": "Correct — for the ring to be in equilibrium, Rope 3's force must exactly cancel the vector sum of Ropes 1 and 2. That sum has magnitude $\\sqrt{30^2+40^2}=50\\text{ N}$, directed north of east; Rope 3 must pull with $50\\text{ N}$ in the exact opposite direction.",
       "incorrect": {
         "1": "This simply adds the two given magnitudes (30 + 40) instead of combining them as vectors at right angles. Perpendicular vectors combine using the Pythagorean theorem, not simple addition.",
-        "2": "This subtracts the two magnitudes, but Ropes 1 and 2 don't oppose each other — they act along perpendicular directions, so their combined effect must be found using vector addition (giving a resultant of 50 N), not subtraction.",
+        "2": "This subtracts the two magnitudes, but Ropes 1 and 2 don't oppose each other — they act along perpendicular directions, so their combined effect must be found using vector addition (giving a resultant of $50\\text{ N}$), not subtraction.",
         "3": "For equilibrium, Rope 3 must *oppose* the combined pull of the other two ropes, not reinforce it — pulling the same direction would make the net force larger, not zero."
       }
     },
-    "hint": ["First find the vector sum (resultant) of Ropes 1 and 2 using the Pythagorean theorem, since they're perpendicular. Rope 3 must be equal in magnitude and exactly opposite in direction to that resultant."],
-    "solution": "Resultant of Ropes 1 & 2: $\\sqrt{30^2+40^2}=50\\text{ N}$, north of east. Rope 3 = 50 N, opposite direction (south of west)."
+    "hint": [
+      "First find the vector sum (resultant) of Ropes 1 and 2 using the Pythagorean theorem, since they're perpendicular. Rope 3 must be equal in magnitude and exactly opposite in direction to that resultant."
+    ],
+    "solution": "Resultant of Ropes 1 & 2: $\\sqrt{30^2+40^2}=50\\text{ N}$, north of east. Rope 3 = $50\\text{ N}$, opposite direction (south of west)."
   },
   {
     "id": "AP1-U2-MCQ-035",
@@ -1059,7 +1305,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "motion-requires-a-sustaining-force-in-its-direction",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A puck slides across a horizontal, frictionless air-hockey table at a constant velocity. Which statement about the forces acting on the puck is correct?",
     "choices": [
       "No forces act on the puck at all.",
@@ -1076,7 +1324,9 @@
         "3": "The problem states the table is frictionless and specifies constant velocity — introducing unmentioned air resistance contradicts the scenario as given."
       }
     },
-    "hint": ["Constant velocity means zero acceleration. Apply Newton's second law: what must the net force be, and what does that require of the horizontal forces specifically?"],
+    "hint": [
+      "Constant velocity means zero acceleration. Apply Newton's second law: what must the net force be, and what does that require of the horizontal forces specifically?"
+    ],
     "solution": "Constant velocity ⇒ a = 0 ⇒ F_net = 0. Vertically, gravity and normal force balance; horizontally, zero force is needed and present."
   },
   {
@@ -1093,7 +1343,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "surfaces-exert-forces-beyond-normal-and-friction",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A block sits at rest on an incline that is NOT frictionless. Which set of forces acts on the block?",
     "choices": [
       "Weight, normal force, and static friction.",
@@ -1110,7 +1362,9 @@
         "3": "There is no separate 'incline force' — the incline can only exert a normal force (perpendicular to its surface) and friction (along its surface); it cannot push the block directly up the slope as a third, independent contact force."
       }
     },
-    "hint": ["List each object touching the block (the incline surface, and Earth via gravity), then identify what type(s) of force each contact can exert."],
+    "hint": [
+      "List each object touching the block (the incline surface, and Earth via gravity), then identify what type(s) of force each contact can exert."
+    ],
     "solution": "Three forces: weight, normal force, and static friction."
   },
   {
@@ -1127,7 +1381,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "forces-on-other-system-objects-act-directly-on-this-object",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "In an Atwood machine, two blocks of different mass hang from a light string over a frictionless, massless pulley. Considering only the lighter block by itself, which forces act on it?",
     "choices": [
       "Its own weight, downward, and the string tension, upward.",
@@ -1144,7 +1400,9 @@
         "3": "The pulley isn't in direct contact with either hanging block — the string is what touches the block, and the string can only exert tension, not a normal force."
       }
     },
-    "hint": ["To draw a valid free-body diagram, only include forces from objects or fields in direct contact with the object you're isolating — not forces acting on other parts of the system."],
+    "hint": [
+      "To draw a valid free-body diagram, only include forces from objects or fields in direct contact with the object you're isolating — not forces acting on other parts of the system."
+    ],
     "solution": "Isolating one block: only its own weight (down) and the string tension (up) act on it directly."
   },
   {
@@ -1161,7 +1419,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "friction-only-acts-horizontally-on-horizontal-surfaces",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A block is pressed horizontally against a vertical wall by a horizontal force and remains at rest, held up only by friction against the wall (there is no floor beneath it). Which forces act on the block?",
     "choices": [
       "The horizontal applied force, the wall's normal force (horizontal), the block's weight (down), and static friction (vertical, upward, from the wall).",
@@ -1178,7 +1438,9 @@
         "3": "Normal force and friction are two distinct forces acting in perpendicular directions (normal force horizontal, friction vertical here) — they can't be combined into a single force; each has its own physical origin."
       }
     },
-    "hint": ["Separate the wall's two distinct effects on the block: the normal force (perpendicular to the wall) and friction (parallel to the wall, i.e. vertical here). Then ask what other force(s) act on the block besides the push."],
+    "hint": [
+      "Separate the wall's two distinct effects on the block: the normal force (perpendicular to the wall) and friction (parallel to the wall, i.e. vertical here). Then ask what other force(s) act on the block besides the push."
+    ],
     "solution": "Four forces: applied push, wall's normal force, weight, and vertical static friction supporting the weight."
   },
   {
@@ -1195,7 +1457,9 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 4,
     "misconceptionTested": "objects-need-something-external-to-push-against-to-accelerate",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A rocket in the vacuum of space fires its engines, expelling hot gas out the back. What pushes the rocket forward?",
     "choices": [
       "The gas pushes backward on the rocket's engine; by Newton's third law, the rocket pushes the gas backward, and the gas pushes the rocket forward — this thrust doesn't require anything external to push against.",
@@ -1212,7 +1476,9 @@
         "3": "This is a common misconception. Rockets do accelerate in a vacuum precisely because the third-law pair is between the rocket and its own expelled exhaust, not between the rocket and any external medium."
       }
     },
-    "hint": ["Identify the two objects actually interacting with each other in this scenario. It isn't the rocket and 'space' — it's the rocket and something it's actively expelling."],
+    "hint": [
+      "Identify the two objects actually interacting with each other in this scenario. It isn't the rocket and 'space' — it's the rocket and something it's actively expelling."
+    ],
     "solution": "The rocket-exhaust interaction pair: rocket pushes gas backward, gas pushes rocket forward — no external medium required."
   },
   {
@@ -1229,7 +1495,9 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "confuses-a-force-and-its-effect-with-a-third-law-pair",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "A swimmer pushes off a pool wall with their feet to start swimming. Identify the Newton's-third-law force pair in this interaction.",
     "choices": [
       "The swimmer's feet push backward on the wall; the wall pushes forward on the swimmer's feet.",
@@ -1246,7 +1514,9 @@
         "3": "Both of these forces act on the *same* object (the swimmer) — a push forward and drag backward. A genuine third-law pair always acts on two *different* objects, not both on the swimmer."
       }
     },
-    "hint": ["A genuine Newton's-third-law pair always involves exactly two objects and two forces — one object exerting a force on the other, and that other object exerting the equal, opposite force back."],
+    "hint": [
+      "A genuine Newton's-third-law pair always involves exactly two objects and two forces — one object exerting a force on the other, and that other object exerting the equal, opposite force back."
+    ],
     "solution": "Third-law pair: swimmer's feet push back on the wall; wall pushes forward on the swimmer's feet."
   },
   {
@@ -1263,19 +1533,28 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 5,
     "misconceptionTested": "third-law-implies-equal-accelerations",
-    "courses": ["ap-physics-1"],
-    "question": "Two ice skaters, initially at rest and facing each other, push off one another. Skater A has mass 50 kg and Skater B has mass 75 kg. If Skater A experiences an acceleration of magnitude 3.0 m/s² during the push, what is the magnitude of Skater B's acceleration during the same push?",
-    "choices": ["2.0 m/s²", "3.0 m/s²", "4.5 m/s²", "1.2 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Two ice skaters, initially at rest and facing each other, push off one another. Skater A has mass $50\\text{ kg}$ and Skater B has mass $75\\text{ kg}$. If Skater A experiences an acceleration of magnitude $3.0\\text{ m/s}^2$ during the push, what is the magnitude of Skater B's acceleration during the same push?",
+    "choices": [
+      "$2.0\\text{ m/s}^2$",
+      "$3.0\\text{ m/s}^2$",
+      "$4.5\\text{ m/s}^2$",
+      "$1.2\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — by Newton's third law, the push-off forces on both skaters are equal in magnitude: $F=m_Aa_A=50\\times3.0=150\\text{ N}$. Applying this same force to Skater B: $a_B=F/m_B=150/75=2.0\\text{ m/s}^2$.",
       "incorrect": {
         "1": "This assumes the two skaters have equal accelerations, but Newton's third law guarantees equal *forces*, not equal accelerations — since the skaters have different masses, their accelerations must differ.",
         "2": "This applies the mass ratio in the wrong direction. The heavier skater (B) should experience the *smaller* acceleration for the same force, not a larger one.",
-        "3": "This divides the shared force by the *combined* mass of both skaters (125 kg) instead of Skater B's mass alone (75 kg). Each skater's acceleration depends only on their own individual mass and the shared force."
+        "3": "This divides the shared force by the *combined* mass of both skaters ($125\\text{ kg}$) instead of Skater B's mass alone ($75\\text{ kg}$). Each skater's acceleration depends only on their own individual mass and the shared force."
       }
     },
-    "hint": ["The push-off forces are equal in magnitude for both skaters (Newton's third law). Use Skater A's known mass and acceleration to find that shared force, then apply it to Skater B using Skater B's own mass."],
+    "hint": [
+      "The push-off forces are equal in magnitude for both skaters (Newton's third law). Use Skater A's known mass and acceleration to find that shared force, then apply it to Skater B using Skater B's own mass."
+    ],
     "solution": "$F=m_Aa_A=50\\times3.0=150\\text{ N}$. $a_B=F/m_B=150/75=2.0\\text{ m/s}^2$."
   },
   {
@@ -1292,25 +1571,29 @@
     "difficulty": "distinction-stretch",
     "cognitiveLevel": 6,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A traffic light of weight W hangs at rest, supported by two cables of equal length attached to poles on either side, both making the same angle θ with the horizontal. As θ decreases (the cables become closer to horizontal), what happens to the tension in each cable?",
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A traffic light of weight W hangs at rest, supported by two cables of equal length attached to poles on either side, both making the same angle $\\theta$ with the horizontal. As $\\theta$ decreases (the cables become closer to horizontal), what happens to the tension in each cable?",
     "choices": [
-      "The tension increases without bound as θ approaches 0°.",
-      "The tension decreases as θ decreases, approaching zero.",
-      "The tension stays the same regardless of θ, since the light's weight doesn't change.",
-      "The tension is undefined for any θ other than 90°."
+      "The tension increases without bound as $\\theta$ approaches $0^\\circ$.",
+      "The tension decreases as $\\theta$ decreases, approaching zero.",
+      "The tension stays the same regardless of $\\theta$, since the light's weight doesn't change.",
+      "The tension is undefined for any $\\theta$ other than $90^\\circ$."
     ],
     "correctAnswer": 0,
     "feedback": {
-      "correct": "Correct — by symmetry, $2T\\sin\\theta=W$, so $T=W/(2\\sin\\theta)$. As θ→0°, sin θ→0, so T grows without bound — an almost-horizontal cable needs enormous tension to supply even a small vertical component.",
+      "correct": "Correct — by symmetry, $2T\\sin\\theta=W$, so $T=W/(2\\sin\\theta)$. As $\\theta$→$0^\\circ$, sin $\\theta$→0, so T grows without bound — an almost-horizontal cable needs enormous tension to supply even a small vertical component.",
       "incorrect": {
         "1": "This has the trend backwards. As the cables flatten out, each cable's vertical component of tension shrinks for the same total tension, so *more* tension is needed to still support the same weight — not less.",
-        "2": "Tension isn't fixed by the weight alone — it also depends on the geometry (angle θ). The same weight requires very different tensions depending on how steeply the cables are angled.",
-        "3": "The relationship $T=W/(2\\sin\\theta)$ is defined for any θ between 0° and 90° — it isn't restricted to θ = 90° only; it simply grows very large as θ approaches 0°."
+        "2": "Tension isn't fixed by the weight alone — it also depends on the geometry (angle $\\theta$). The same weight requires very different tensions depending on how steeply the cables are angled.",
+        "3": "The relationship $T=W/(2\\sin\\theta)$ is defined for any $\\theta$ between $0^\\circ$ and $90^\\circ$ — it isn't restricted to $\\theta$ = $90^\\circ$ only; it simply grows very large as $\\theta$ approaches $0^\\circ$."
       }
     },
-    "hint": ["Write the vertical equilibrium equation for the two cables symmetrically sharing the weight: 2T sin θ = W. Solve for T and examine what happens as θ gets very small."],
-    "solution": "$T=W/(2\\sin\\theta)$; as θ→0°, T→∞."
+    "hint": [
+      "Write the vertical equilibrium equation for the two cables symmetrically sharing the weight: 2T sin $\\theta$ = W. Solve for T and examine what happens as $\\theta$ gets very small."
+    ],
+    "solution": "$T=W/(2\\sin\\theta)$; as $\\theta$→$0^\\circ$, T→∞."
   },
   {
     "id": "AP1-U2-MCQ-043",
@@ -1326,9 +1609,16 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 3,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 6.0 kg box on a horizontal floor is pushed with a horizontal force of 30 N. The floor exerts 8.0 N of kinetic friction opposing the motion. What is the box's acceleration?",
-    "choices": ["≈3.7 m/s²", "5.0 m/s²", "≈6.3 m/s²", "≈1.3 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $6.0\\text{ kg}$ box on a horizontal floor is pushed with a horizontal force of $30\\text{ N}$. The floor exerts $8.0\\text{ N}$ of kinetic friction opposing the motion. What is the box's acceleration?",
+    "choices": [
+      "≈$3.7\\text{ m/s}^2$",
+      "$5.0\\text{ m/s}^2$",
+      "≈$6.3\\text{ m/s}^2$",
+      "≈$1.3\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — friction opposes the applied force, so $F_{net}=30-8=22\\text{ N}$. Then $a=F_{net}/m=22/6.0\\approx3.7\\text{ m/s}^2$.",
@@ -1338,7 +1628,9 @@
         "3": "This uses only the friction force as if it were the entire net force, ignoring the applied force. Both forces act on the box and must be combined to find $F_{net}$."
       }
     },
-    "hint": ["Kinetic friction opposes the applied force. Find the net force by combining the two forces with their correct directions, then apply F_net = ma."],
+    "hint": [
+      "Kinetic friction opposes the applied force. Find the net force by combining the two forces with their correct directions, then apply F_net = ma."
+    ],
     "solution": "$F_{net}=30-8=22\\text{ N}$; $a=22/6.0\\approx3.7\\text{ m/s}^2$."
   },
   {
@@ -1355,9 +1647,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 5,
     "misconceptionTested": "deceleration-direction-confused-with-velocity-direction",
-    "courses": ["ap-physics-1"],
-    "question": "A 900 kg elevator, moving upward, needs to decelerate at 1.5 m/s² to stop smoothly. What is the tension in the supporting cable during this deceleration? (Use g = 9.8 m/s².)",
-    "choices": ["≈7470 N", "≈10170 N", "≈8820 N", "≈1350 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $900\\text{ kg}$ elevator, moving upward, needs to decelerate at $1.5\\text{ m/s}^2$ to stop smoothly. What is the tension in the supporting cable during this deceleration? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "≈$7470\\text{ N}$",
+      "≈$10170\\text{ N}$",
+      "≈$8820\\text{ N}$",
+      "≈$1350\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — while moving upward but decelerating, the elevator's acceleration points *downward* (opposite its velocity). Taking up as positive, $a=-1.5\\text{ m/s}^2$: $T-mg=ma \\Rightarrow T=m(g+a)=900\\times(9.8-1.5)=900\\times8.3\\approx7470\\text{ N}$, less than the elevator's weight.",
@@ -1367,7 +1666,9 @@
         "3": "This computes $ma$ alone and leaves out the weight entirely. The cable must still support the elevator's ordinary weight, with the deceleration only adjusting that value up or down."
       }
     },
-    "hint": ["Carefully determine the direction of the acceleration: the elevator is moving upward but slowing down, so its acceleration vector points downward, opposite its velocity. Use that signed acceleration in T − mg = ma."],
+    "hint": [
+      "Carefully determine the direction of the acceleration: the elevator is moving upward but slowing down, so its acceleration vector points downward, opposite its velocity. Use that signed acceleration in T − mg = ma."
+    ],
     "solution": "$a=-1.5\\text{ m/s}^2$ (downward, while moving up). $T=m(g+a)=900\\times8.3\\approx7470\\text{ N}$."
   },
   {
@@ -1384,9 +1685,16 @@
     "difficulty": "ap5-ib7-target",
     "cognitiveLevel": 5,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 4.0 kg block (Block A) rests on a frictionless horizontal table and is connected by a light string over a frictionless, massless pulley at the table's edge to a hanging 2.0 kg block (Block B). What is the magnitude of the system's acceleration? (Use g = 9.8 m/s².)",
-    "choices": ["≈3.3 m/s²", "9.8 m/s²", "4.9 m/s²", "19.6 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $4.0\\text{ kg}$ block (Block A) rests on a frictionless horizontal table and is connected by a light string over a frictionless, massless pulley at the table's edge to a hanging $2.0\\text{ kg}$ block (Block B). What is the magnitude of the system's acceleration? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "≈$3.3\\text{ m/s}^2$",
+      "$9.8\\text{ m/s}^2$",
+      "$4.9\\text{ m/s}^2$",
+      "$19.6\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — Block B's weight is the only force driving the system, since Block A moves horizontally on a frictionless table. Both blocks share the same acceleration magnitude, so the entire system's mass resists that driving force: $a=m_Bg/(m_A+m_B)=(2.0\\times9.8)/6.0\\approx3.3\\text{ m/s}^2$.",
@@ -1396,7 +1704,9 @@
         "3": "This reports Block B's weight itself, in newtons, as if it were the system's acceleration — but force and acceleration are related by $F=ma$, not numerically equal; dividing by the total system mass is still required."
       }
     },
-    "hint": ["Only Block B's weight drives the system (Block A is on a frictionless horizontal surface). Since the two blocks are connected and must move together, treat them as one system with combined mass A + B."],
+    "hint": [
+      "Only Block B's weight drives the system (Block A is on a frictionless horizontal surface). Since the two blocks are connected and must move together, treat them as one system with combined mass A + B."
+    ],
     "solution": "$a=m_Bg/(m_A+m_B)=(2.0\\times9.8)/6.0\\approx3.3\\text{ m/s}^2$."
   },
   {
@@ -1413,19 +1723,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 4,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "Blocks C (2.0 kg) and D (3.0 kg) are connected by a light string and rest on a frictionless horizontal table. A horizontal 25 N force pulls block C, which pulls block D via the string, accelerating both blocks together. What is the tension in the string connecting C and D?",
-    "choices": ["15 N", "25 N", "10 N", "5.0 N"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "Blocks C ($2.0\\text{ kg}$) and D ($3.0\\text{ kg}$) are connected by a light string and rest on a frictionless horizontal table. A horizontal $25\\text{ N}$ force pulls block C, which pulls block D via the string, accelerating both blocks together. What is the tension in the string connecting C and D?",
+    "choices": [
+      "$15\\text{ N}$",
+      "$25\\text{ N}$",
+      "$10\\text{ N}$",
+      "$5.0\\text{ N}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — first treat both blocks as one system: $a=F/(m_C+m_D)=25/5.0=5.0\\text{ m/s}^2$. Then isolate block D alone: the only horizontal force on D is the string's tension, so $T=m_Da=3.0\\times5.0=15\\text{ N}$.",
       "incorrect": {
-        "1": "This assumes the full applied force transmits through the string unchanged, but part of that 25 N force is needed just to accelerate block C itself — isolating block D shows less force actually reaches it through the string.",
+        "1": "This assumes the full applied force transmits through the string unchanged, but part of that $25\\text{ N}$ force is needed just to accelerate block C itself — isolating block D shows less force actually reaches it through the string.",
         "2": "This uses block C's mass instead of block D's. Since the string's tension is the force that accelerates block D specifically, D's own mass belongs in $F=ma$ here, not C's.",
         "3": "This reports the system's acceleration value as if it were the tension. Tension is a force, found by multiplying block D's mass by that acceleration, not the acceleration alone."
       }
     },
-    "hint": ["Treat the two-block system together first to find the acceleration, then isolate block D by itself — the only horizontal force acting on D is the string's tension pulling it forward."],
+    "hint": [
+      "Treat the two-block system together first to find the acceleration, then isolate block D by itself — the only horizontal force acting on D is the string's tension pulling it forward."
+    ],
     "solution": "$a=25/(2.0+3.0)=5.0\\text{ m/s}^2$. Isolating D: $T=m_Da=3.0\\times5.0=15\\text{ N}$."
   },
   {
@@ -1442,24 +1761,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 2,
     "misconceptionTested": "static-and-kinetic-friction-coefficients-are-always-equal",
-    "courses": ["ap-physics-1"],
-    "question": "For a given pair of surfaces, how does the coefficient of kinetic friction (μk) generally compare to the coefficient of static friction (μs)?",
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "For a given pair of surfaces, how does the coefficient of kinetic friction ($\\mu_k$) generally compare to the coefficient of static friction ($\\mu_s$)?",
     "choices": [
-      "μk is generally less than or equal to μs.",
-      "μk is always greater than μs.",
-      "μk and μs are always exactly equal for any two surfaces.",
-      "There is no general relationship — μk can be larger or smaller than μs unpredictably, depending only on the applied force."
+      "$\\mu_k$ is generally less than or equal to $\\mu_s$.",
+      "$\\mu_k$ is always greater than $\\mu_s$.",
+      "$\\mu_k$ and $\\mu_s$ are always exactly equal for any two surfaces.",
+      "There is no general relationship — $\\mu_k$ can be larger or smaller than $\\mu_s$ unpredictably, depending only on the applied force."
     ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — once an object starts sliding, it generally takes less force to keep it sliding than it took to start it moving, so $\\mu_k \\le \\mu_s$ for most real surface pairs. This is why an object can suddenly 'lurch' forward once it breaks free of static friction.",
       "incorrect": {
         "1": "This has the general relationship backwards. It's harder to *start* something sliding than to *keep* it sliding, meaning static friction is generally the larger (or equal) coefficient, not kinetic.",
-        "2": "While μk and μs can be numerically close for some surface pairs, they are not defined to be equal — they describe two physically different situations and are measured independently.",
-        "3": "Applied force doesn't determine the *coefficients* of friction at all — μs and μk are properties of the two surfaces in contact, and their relationship (μk ≤ μs) holds quite generally, not unpredictably."
+        "2": "While $\\mu_k$ and $\\mu_s$ can be numerically close for some surface pairs, they are not defined to be equal — they describe two physically different situations and are measured independently.",
+        "3": "Applied force doesn't determine the *coefficients* of friction at all — $\\mu_s$ and $\\mu_k$ are properties of the two surfaces in contact, and their relationship ($\\mu_k$ ≤ $\\mu_s$) holds quite generally, not unpredictably."
       }
     },
-    "hint": ["Think about the everyday experience of pushing a heavy object: is it harder to get it moving from rest, or to keep it moving once it's already sliding?"],
+    "hint": [
+      "Think about the everyday experience of pushing a heavy object: is it harder to get it moving from rest, or to keep it moving once it's already sliding?"
+    ],
     "solution": "Generally, $\\mu_k \\le \\mu_s$."
   },
   {
@@ -1476,9 +1799,16 @@
     "difficulty": "distinction-stretch",
     "cognitiveLevel": 6,
     "misconceptionTested": "friction-direction-fixed-rather-than-opposing-actual-motion",
-    "courses": ["ap-physics-1"],
-    "question": "A block is given an initial push up a rough incline (angle 30° above horizontal, coefficient of kinetic friction μk = 0.20) and then released to slide freely. While the block is still moving up the incline, what is the magnitude of its deceleration? (Use g = 9.8 m/s², sin 30° = 0.50, cos 30° ≈ 0.87)",
-    "choices": ["≈6.6 m/s²", "≈4.9 m/s²", "≈3.2 m/s²", "≈1.7 m/s²"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A block is given an initial push up a rough incline (angle $30^\\circ$ above horizontal, coefficient of kinetic friction $\\mu_k$ = 0.20) and then released to slide freely. While the block is still moving up the incline, what is the magnitude of its deceleration? (Use $g = 9.8\\text{ m/s}^2$, $\\sin 30^\\circ = 0.50$, $\\cos 30^\\circ \\approx 0.87$)",
+    "choices": [
+      "≈$6.6\\text{ m/s}^2$",
+      "≈$4.9\\text{ m/s}^2$",
+      "≈$3.2\\text{ m/s}^2$",
+      "≈$1.7\\text{ m/s}^2$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — while moving up, both gravity's component along the incline AND kinetic friction act down the incline, since friction always opposes the block's actual (upward) motion — so they add: $a=g\\sin\\theta+\\mu_kg\\cos\\theta=4.9+1.7\\approx6.6\\text{ m/s}^2$.",
@@ -1488,7 +1818,9 @@
         "3": "This uses only the friction term and leaves out the gravity component along the incline entirely, even though gravity clearly still acts on the block."
       }
     },
-    "hint": ["Carefully determine the direction of kinetic friction: it always opposes the object's actual velocity. While the block is still moving up the incline, which direction does that put friction relative to gravity's component along the incline?"],
+    "hint": [
+      "Carefully determine the direction of kinetic friction: it always opposes the object's actual velocity. While the block is still moving up the incline, which direction does that put friction relative to gravity's component along the incline?"
+    ],
     "solution": "$a=g\\sin\\theta+\\mu_kg\\cos\\theta=9.8(0.50)+0.20(9.8)(0.87)\\approx6.6\\text{ m/s}^2$."
   },
   {
@@ -1505,7 +1837,9 @@
     "difficulty": "distinction-stretch",
     "cognitiveLevel": 6,
     "misconceptionTested": "steeper-incline-always-means-faster-final-speed",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "question": "Two frictionless inclines have the same height h but different angles: Incline 1 is steeper (larger angle) than Incline 2. A block is released from rest at the top of each. Which reaches the bottom with the greater speed, and which takes less time?",
     "choices": [
       "Both blocks reach the bottom with the same speed, but the block on the steeper incline (Incline 1) takes less time.",
@@ -1522,7 +1856,9 @@
         "3": "The normal force does no work on the block (it's always perpendicular to the motion) and has no effect on the block's speed along the incline. Also, the shallower incline actually takes *longer*, not less time, since its acceleration along the surface is smaller."
       }
     },
-    "hint": ["Separate the two questions: what determines the final speed (think about the height dropped), and what determines the time taken (think about the acceleration and distance traveled along each incline)?"],
+    "hint": [
+      "Separate the two questions: what determines the final speed (think about the height dropped), and what determines the time taken (think about the acceleration and distance traveled along each incline)?"
+    ],
     "solution": "Equal final speeds ($v=\\sqrt{2gh}$, height-dependent only); the steeper incline's larger acceleration and shorter path give it the shorter time."
   },
   {
@@ -1539,19 +1875,28 @@
     "difficulty": "ap-ib-standard",
     "cognitiveLevel": 2,
     "misconceptionTested": "",
-    "courses": ["ap-physics-1"],
-    "question": "A 1.2 kg block rests in equilibrium on top of a vertical spring, compressing it by 0.060 m from its natural length. What is the spring constant? (Use g = 9.8 m/s².)",
-    "choices": ["196 N/m", "20 N/m", "11.76 N/m", "≈0.0051 N/m"],
+    "courses": [
+      "ap-physics-1"
+    ],
+    "question": "A $1.2\\text{ kg}$ block rests in equilibrium on top of a vertical spring, compressing it by $0.060\\text{ m}$ from its natural length. What is the spring constant? (Use $g = 9.8\\text{ m/s}^2$.)",
+    "choices": [
+      "$196\\text{ N/m}$",
+      "$20\\text{ N/m}$",
+      "$11.76\\text{ N/m}$",
+      "≈$0.0051\\text{ N/m}$"
+    ],
     "correctAnswer": 0,
     "feedback": {
       "correct": "Correct — at equilibrium, the spring's upward force balances the block's weight: $kx=mg \\Rightarrow k=mg/x=(1.2\\times9.8)/0.060=196\\text{ N/m}$.",
       "incorrect": {
         "1": "This uses mass alone instead of weight ($m/x$ instead of $mg/x$), leaving out g entirely.",
-        "2": "This reports mg itself (11.76 N) without dividing by the compression x. Solving $kx=mg$ for k requires dividing by x.",
+        "2": "This reports mg itself ($11.76\\text{ N}$) without dividing by the compression x. Solving $kx=mg$ for k requires dividing by x.",
         "3": "This inverts the relationship, computing x/(mg) instead of mg/x. Recheck which side of $k=mg/x$ each quantity belongs on."
       }
     },
-    "hint": ["At equilibrium, the upward spring force equals the downward weight, regardless of whether the spring is compressed or stretched: kx = mg. Solve this for k."],
+    "hint": [
+      "At equilibrium, the upward spring force equals the downward weight, regardless of whether the spring is compressed or stretched: kx = mg. Solve this for k."
+    ],
     "solution": "$k=mg/x=(1.2\\times9.8)/0.060=196\\text{ N/m}$."
   }
 ]

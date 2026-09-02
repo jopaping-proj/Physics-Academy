@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 104" role="img"
+     aria-label="Top view: a puck on a string moving in a horizontal circle on a frictionless table. A dashed line joins the puck to the centre. The only horizontal force on the puck is the string tension, an arrow pointing from the puck toward the centre.">
+  <defs><marker id="es-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker></defs>
+  <line x1="134" y1="56" x2="48" y2="56" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+  <circle cx="134" cy="56" r="2.5" fill="#8b96a5"/>
+  <text x="134" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#8b96a5">centre</text>
+  <circle cx="40" cy="56" r="6" fill="#e6edf3" stroke="#16213e" stroke-width="1.3"/>
+  <line x1="48" y1="56" x2="90" y2="56" stroke="#58a6ff" stroke-width="2.6" marker-end="url(#es-blue)"/>
+  <text x="66" y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">F<tspan font-size="8" dy="2">T</tspan></text>
+</svg>
