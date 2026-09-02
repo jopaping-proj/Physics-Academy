@@ -456,7 +456,7 @@ Delivered as one lesson with three chunked strands (they are independent; see §
 **Boundary:** uniform circular motion only; non-uniform (changing speed) and vertical-circle energy analysis are later-unit material.
 **Mastery evidence:** identify the real centripetal-providing forces and solve $\sum F_r = mv^2/r$ for an unfamiliar scenario; reason through one limiting case (Level 5, stretch 8).
 
-### Lesson 12 — Unit 2 Synthesis and Transfer — BUILT (draft)
+### Lesson 12 — Unit 2 Synthesis and Transfer — BUILT — approved 2026-09-02
 
 **Built as** `unit-2-synthesis.json` (`ap1-u2-synthesis`, lessonNumber 12, no lesson-level `objective` — per-item clusters span C2.3/2.5/2.6/2.7/2.9/2.10/2.12). 4 chunks, interleaved by design: recognise-the-four-types (a classification table + reasonableness-check habit) / interaction task (attribute forces, third-law pairs vs balanced, box-on-box) / uncued multi-force task (incline + rope pulling at an angle above the surface — perpendicular axis with two off-axis components) / graph task (force–extension slope, predict, linear-range assumption). Reuses `componentKey: "fbd-builder"` (all scenarios). Vertical-circle fake-equilibrium error analysis; two cross-cutting misconceptions (`net-force-equals-a-single-applied-force`, `centripetal-force-is-a-separate-force`); Level-6 multi-part FRQ (incline + pulley + hanging mass whose released acceleration comes out ≈ 0, so the "motion" in the prompt does not occur — a sign-interpretation test); a 4-way reasonableness-check exit question. Bank `ap1-u2-synthesis.json` (`AP1-U2-MCQ-113…118`, interleaved). No new diagrams. This is the on-ramp to the unit test bank.
 

@@ -364,9 +364,14 @@ function buildLesson(file, templates) {
     )
     .join(' <span class="breadcrumb__sep" aria-hidden="true">›</span> ');
 
+  // where the "End of lesson" button sends the student: the unit index page
+  // if there is one, otherwise the homepage.
+  const unitIndexHref = siblingIndex ? siblingIndex.replace(/\.json$/, ".html") : `${rootPrefix}index.html`;
+
   const html = renderTemplate(lessonTemplate.replaceAll("{{ROOT}}", rootPrefix), {
     TITLE: esc(lessonLabel || lesson.id),
     BREADCRUMB: breadcrumb,
+    UNIT_INDEX_HREF: attr(unitIndexHref),
     SIDEBAR_TOC: renderSidebarToc(lesson, bank),
     LESSON_BODY: renderLessonBody(lesson, bank),
     LESSON_DATA_JSON: JSON.stringify(lesson),

@@ -209,14 +209,20 @@
       return mode === "slides" && requireAnswers && isGateable(s) && !done.has(s.id);
     }
 
+    const unitIndexHref = deck.dataset.unitIndex || "";
+
     function refreshNav() {
       const atEnd = index === slides.length - 1;
       if (prevBtn) prevBtn.disabled = index === 0;
       if (!nextBtn) return;
       const blocked = nextBlocked();
-      nextBtn.disabled = atEnd || blocked;
+      // On the last card the "Next" button becomes "Back to the unit" and
+      // navigates to the unit index page (kept enabled, not a dead end).
+      const endLink = atEnd && !!unitIndexHref;
+      nextBtn.dataset.end = endLink ? "true" : "";
+      nextBtn.disabled = (atEnd && !endLink) || blocked;
       nextBtn.textContent = atEnd
-        ? "End of lesson"
+        ? (endLink ? "Back to the unit ▸" : "End of lesson")
         : blocked
         ? gateLabel(slideKind(slides[index]))
         : "Next ▸";
@@ -311,7 +317,10 @@
     // ---- wiring ----
 
     prevBtn?.addEventListener("click", () => go(-1));
-    nextBtn?.addEventListener("click", () => go(1));
+    nextBtn?.addEventListener("click", () => {
+      if (nextBtn.dataset.end === "true") window.location.href = unitIndexHref;
+      else go(1);
+    });
     modeBtn?.addEventListener("click", () =>
       applyMode(mode === "slides" ? "scroll" : "slides", { focus: true })
     );
