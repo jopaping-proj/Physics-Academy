@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{TITLE}} · Physics Academy</title>
+<link rel="stylesheet" href="{{ROOT}}css/variables.css" />
+<link rel="stylesheet" href="{{ROOT}}css/base.css" />
+<link rel="stylesheet" href="{{ROOT}}css/layout.css" />
+<link rel="stylesheet" href="{{ROOT}}css/components.css" />
+<link rel="stylesheet" href="{{ROOT}}css/lessons.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="site-header__brand" href="{{ROOT}}index.html">Physics Academy</a>
+</header>
+
+<main class="ut-page">
+  <div class="breadcrumb">{{BREADCRUMB}}</div>
+  <h1>{{HEADING}}</h1>
+  <div class="ut-intro card">
+{{INTRO}}
+  </div>
+  <div id="ut-root"></div>
+</main>
+
+<script type="application/json" id="ut-data">
+{{UT_DATA_JSON}}
+</script>
+<script src="{{ROOT}}js/unit-test.js"></script>
+</body>
+</html>

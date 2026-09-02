@@ -10,5 +10,6 @@ export const ROOT = path.dirname(path.dirname(path.dirname(fileURLToPath(import.
 export const CONTENT_DIR = path.join(ROOT, "content");
 export const DIST_DIR = path.join(ROOT, "dist");
 export const TEMPLATES_DIR = path.join(ROOT, "build", "templates");
+export const DATA_DIR = path.join(ROOT, "data");
 export const QUESTION_BANK_DIR = path.join(ROOT, "data", "question-bank");
 export const DIAGRAMS_DIR = path.join(ROOT, "assets", "diagrams");

@@ -1,0 +1,27 @@
+{
+  "format": "unit-test",
+  "id": "ap1-u2-unit-test",
+  "slug": "unit-2-test",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "lessonTitle": "Unit 2 Test",
+  "intro": "A **45-minute** timed test on the whole of Force and Translational Dynamics. It is **generated fresh every time you open it** — a new set of questions, drawn from every lesson in the unit, in a new order, with the answer choices shuffled. The mix follows the Physics Academy test blueprint (`docs/test-generation.md`): the median question sits at the AP-standard level and about a third are at or above the AP-5 line, so clearing this comfortably means you are on track for **90%+** on the real exam.\n\nMultiple choice is scored automatically. Free response is scored by you, against the model answer and rubric. A calculator **is** permitted (matching the AP Physics 1 exam).",
+  "config": { "mode": "time", "minutes": 45 },
+  "calculatorPolicy": "allowed",
+  "mcqBanks": [
+    "ap1-u2-systems-com.json",
+    "ap1-u2-forces-fbd.json",
+    "ap1-u2-first-law.json",
+    "ap1-u2-dynamics.json",
+    "ap1-u2-multi-force.json",
+    "ap1-u2-third-law.json",
+    "ap1-u2-friction.json",
+    "ap1-u2-connected.json",
+    "ap1-u2-grav-spring-aw.json",
+    "ap1-u2-inclines.json",
+    "ap1-u2-circular.json",
+    "ap1-u2-synthesis.json"
+  ],
+  "frqBanks": ["ap1-u2-dynamics-frq.json"]
+}

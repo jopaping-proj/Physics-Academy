@@ -1,0 +1,61 @@
+{
+  "_comment": "CANONICAL test-composition target for EVERY generated test in EVERY course of Physics Academy. Referenced by build/render/unit-test.js (assembly-time pool check) and js/unit-test.js (attempt-time stratified sampling). It is also the authoring target for the question banks: a unit's bank should hold enough items in each difficulty and cognitive band to let a 45-minute test be drawn to this distribution. Rationale, sources, and how-to in docs/test-generation.md. Change this file only with a matching docs update and a version bump.",
+  "version": "1.0.0",
+  "updated": "2026-09-02",
+
+  "pointSplit": {
+    "_comment": "Share of TOTAL TEST POINTS from each section, not item count. An MCQ is worth 1 point; an FRQ is worth its totalPoints. AP Physics 1 (2025) weights the multiple-choice and free-response sections exactly 50/50; IB Physics (2025 syllabus) leans more to constructed response, but a 50/50 practice split builds both the fast-recognition and the extended-reasoning skills a 90%+ student needs.",
+    "mcq": 0.5,
+    "frq": 0.5
+  },
+
+  "difficultyDistribution": {
+    "_comment": "Target share of ITEMS at each taxonomies.json difficulty level. Deliberately HARDER than a live exam (which, mapped to this scale, runs roughly 15/25/35/20/5). The median practice item is 'ap-ib-standard' and 35% sit AT OR ABOVE the AP-5 / IB-7 line, so a student who comfortably clears our tests is well past the ~70% composite that earns a 5 or a 7 and is on track for 90%+. See docs/test-generation.md 'Why train above the exam'.",
+    "foundation": 0.10,
+    "developing": 0.20,
+    "ap-ib-standard": 0.35,
+    "ap5-ib7-target": 0.25,
+    "distinction-stretch": 0.10
+  },
+
+  "cognitiveDistribution": {
+    "_comment": "Target share of items per cognitive band. Bands group the 8-level cognitiveLevel scale in rigor-standard-addendum.md section 2. AP Physics 1 and IB Physics are reasoning-first exams (the CED science practices and the IB assessment objectives are dominated by application, analysis and evaluation), so band C is intentionally large.",
+    "bands": {
+      "recall-application": { "levels": [1, 2], "share": 0.25 },
+      "conceptual-multirepresentation": { "levels": [3, 4], "share": 0.40 },
+      "modeling-transfer-synthesis-evaluation": { "levels": [5, 6, 7, 8], "share": 0.35 }
+    }
+  },
+
+  "timing": {
+    "_comment": "Per-item minute estimates for time-budget mode (config.mode == 'time'). MCQ figure is the AP Physics 1 2025 rate (80 min / 40 questions). FRQ figure is scaled down from the AP rate (100 min / 4 fifteen-point questions ~ 1.6 min/pt) because our lesson-style FRQs are shorter and lower-stakes.",
+    "mcqMinutes": 2.0,
+    "frqMinutesPerPoint": 0.8,
+    "frqMinutesOverhead": 1.5
+  },
+
+  "calculatorPolicyByCourse": {
+    "_comment": "Default calculator policy for the MCQ section of a generated test, by course. When 'not-allowed', js/unit-test.js shows a no-calculator banner AND the assembler draws the MCQ pool only from items flagged calculatorFree:true. NOTE: the CURRENT IB Physics syllabus (first exams 2025) PERMITS a calculator on Paper 1A; the pre-2025 Paper 1 did not. The default below follows the project owner's directive that DP MCQ practice be doable without a calculator; flip to 'allowed' to match the 2025 syllabus. A per-test `calculatorPolicy` in the content file overrides this.",
+    "ap-physics-1": "allowed",
+    "ap-physics-2": "allowed",
+    "ib-physics-sl": "not-allowed",
+    "ib-physics-hl": "not-allowed",
+    "basis-physics-8": "not-allowed"
+  },
+
+  "unitTest": {
+    "_comment": "Every unit in every course gets exactly one of these, delivered as a `format: \"unit-test\"` page.",
+    "timeLimitMinutes": 45,
+    "randomizedEveryAttempt": true,
+    "shuffleQuestions": true,
+    "shuffleOptions": true,
+    "reviewAfterSubmit": true,
+    "passMarkPercent": 60,
+    "targetMarkPercent": 90
+  },
+
+  "toleranceOnDistribution": {
+    "_comment": "How far the attempt-time draw may fall from the target shares before js/unit-test.js stops trying to match and just fills from the remaining pool. Also the slack the assembler's pool-adequacy warning allows.",
+    "perBucketAbsolute": 0.12
+  }
+}

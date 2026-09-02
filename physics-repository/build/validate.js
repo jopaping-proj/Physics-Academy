@@ -234,6 +234,24 @@ export function validateContent({ taxonomies }) {
       continue;
     }
 
+    if (lesson.format === "unit-test") {
+      checkCourses(where, lesson);
+      const banks = [...(lesson.mcqBanks || []), ...(lesson.frqBanks || [])];
+      if (!banks.length) errors.push(`${where}: unit-test names no mcqBanks/frqBanks`);
+      for (const b of banks) {
+        if (!fs.existsSync(path.join(ROOT, "data", "question-bank", b)))
+          errors.push(`${where}: unit-test bank not found: data/question-bank/${b}`);
+      }
+      const cfg = lesson.config;
+      if (cfg && cfg.mode && !["time", "count"].includes(cfg.mode))
+        errors.push(`${where}: unit-test config.mode must be "time" or "count" (got "${cfg.mode}")`);
+      if (cfg && cfg.mode === "count" && cfg.mcq == null && cfg.frq == null)
+        errors.push(`${where}: unit-test config.mode "count" needs config.mcq and/or config.frq`);
+      if (lesson.calculatorPolicy && !["allowed", "not-allowed"].includes(lesson.calculatorPolicy))
+        errors.push(`${where}: unit-test calculatorPolicy must be "allowed" or "not-allowed"`);
+      continue;
+    }
+
     // regular lesson deck
     checkCourses(where, lesson);
     checkObjective(where, lesson);

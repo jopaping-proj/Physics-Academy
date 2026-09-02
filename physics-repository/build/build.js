@@ -123,6 +123,7 @@ import { mdToHtml } from "../js/markdown.js";
 import { ROOT, CONTENT_DIR, DIST_DIR, TEMPLATES_DIR } from "./render/paths.js";
 import { esc, attr } from "./render/primitives.js";
 import { loadQuestionBank, renderLessonBody, renderSidebarToc } from "./render/sections.js";
+import { assembleUnitTest, loadBlueprint } from "./render/unit-test.js";
 import { validateContent } from "./validate.js";
 
 // componentKey -> script path (relative to the repo root). Each script
@@ -235,6 +236,26 @@ function buildLesson(file, templates) {
     fs.mkdirSync(path.dirname(outPath), { recursive: true });
     fs.writeFileSync(outPath, html, "utf8");
     console.log(`[build] ${relFromContent} -> dist/${outRel} (concept inventory)`);
+    return { ...lesson, outRel };
+  }
+
+  // Unit test — a timed, attempt-time-randomized practice test drawn from
+  // the unit's question banks to the data/test-blueprint.json distribution.
+  // See docs/test-generation.md. Server emits only the candidate pool; the
+  // draw happens in js/unit-test.js.
+  if (lesson.format === "unit-test") {
+    const { payload, warnings } = assembleUnitTest(lesson, loadBlueprint());
+    for (const w of warnings) console.warn(`[build] unit-test ${lesson.id}: ${w}`);
+    const html = renderTemplate(templates.unitTest.replaceAll("{{ROOT}}", rootPrefix), {
+      TITLE: esc(lesson.lessonTitle || lesson.id),
+      BREADCRUMB: [lesson.course, lesson.unit, "Unit Test"].filter(Boolean).map(esc).join(" › "),
+      HEADING: esc(lesson.lessonTitle || "Unit Test"),
+      INTRO: mdToHtml(lesson.intro || ""),
+      UT_DATA_JSON: JSON.stringify(payload),
+    });
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html, "utf8");
+    console.log(`[build] ${relFromContent} -> dist/${outRel} (unit test)`);
     return { ...lesson, outRel };
   }
 
@@ -434,6 +455,7 @@ function build() {
     conceptInventory: fs.readFileSync(path.join(TEMPLATES_DIR, "concept-inventory.html"), "utf8"),
     unitIndex: fs.readFileSync(path.join(TEMPLATES_DIR, "unit-index.html"), "utf8"),
     externalHtml: fs.readFileSync(path.join(TEMPLATES_DIR, "external-html.html"), "utf8"),
+    unitTest: fs.readFileSync(path.join(TEMPLATES_DIR, "unit-test.html"), "utf8"),
   };
   // Build unit-index files last: they check which module pages actually
   // got emitted into dist/.
