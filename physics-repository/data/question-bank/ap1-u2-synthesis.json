@@ -1,0 +1,201 @@
+[
+  {
+    "id": "AP1-U2-MCQ-113",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "A problem describes a crate on a truck bed as the truck accelerates forward on a straight, level road, and asks for the friction force on the crate. The correct framework is:",
+    "choices": [
+      "circular motion — the crate is on a moving vehicle",
+      "Newton's second law along the direction of motion — static friction accelerates the crate with the truck, $f_s = ma$",
+      "equilibrium — the crate does not slide relative to the truck",
+      "Hooke's law — the crate compresses the truck bed"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the road is straight, so the motion is along a line. The crate accelerates with the truck, and the only horizontal force on it is static friction from the bed: $f_s = ma$. This is a Newton's-second-law problem.",
+      "incorrect": {
+        "0": "The road is straight — no curved path, no centripetal term. Being on a vehicle does not make it circular motion.",
+        "2": "The crate is accelerating (with the truck), so it is not in equilibrium. The net horizontal force is $ma \\ne 0$.",
+        "3": "There is no spring here. The relevant force is friction between the crate and the bed."
+      }
+    },
+    "hint": ["Straight road ⇒ straight-line motion. What single horizontal force acts on the crate, and what does it equal?"],
+    "solution": "Newton's second law: $f_s = ma$, static friction accelerating the crate with the truck."
+  },
+  {
+    "id": "AP1-U2-MCQ-114",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "misconception-diagnosis",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "third-law-pair-acts-on-the-same-object",
+    "question": "A book rests on a table. Which pair of forces is a Newton's third-law (action–reaction) pair?",
+    "choices": [
+      "the table's push up on the book, and Earth's pull down on the book",
+      "Earth's pull down on the book, and the book's pull up on Earth",
+      "the table's push up on the book, and the book's weight",
+      "the book's weight, and the normal force — they are equal and opposite"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a third-law pair is the same interaction seen from both objects: 'Earth pulls book down' and 'book pulls Earth up' are gravitational, equal, opposite, and act on different objects. The book's tiny pull on the Earth is real, just producing negligible acceleration.",
+      "incorrect": {
+        "0": "Both of these act on the *book* — they are two different interactions (contact and gravity) that happen to balance. Same object ⇒ not a third-law pair.",
+        "2": "Both act on the book; 'weight' is Earth's gravity on the book. Balanced forces on one object, not a pair.",
+        "3": "Equal and opposite is necessary but not sufficient. These both act on the book, so they are balanced forces, not action–reaction."
+      }
+    },
+    "hint": ["A third-law pair acts on two *different* objects and is the same type of interaction. Which option has one force on the book and one on the Earth?"],
+    "solution": "Earth pulls book down / book pulls Earth up — same interaction, two objects, equal and opposite."
+  },
+  {
+    "id": "AP1-U2-MCQ-115",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.10",
+    "cedTopic": "2.8",
+    "clusterId": "2.10",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "spring-constant-changes-with-applied-force",
+    "question": "Two force–extension datasets are taken for the same spring, one loading it up to $5\\text{ N}$ and one up to $9\\text{ N}$ (both within the elastic limit). The spring constants found from the two straight-line fits should be:",
+    "choices": [
+      "larger for the $9\\text{ N}$ dataset",
+      "the same, within experimental uncertainty",
+      "smaller for the $9\\text{ N}$ dataset",
+      "impossible to compare"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $k$ is a fixed property of the spring: the slope of its (straight) force–extension line. As long as both datasets stay in the elastic range, the line is the same line, so both fits give the same $k$.",
+      "incorrect": {
+        "0": "A larger applied force produces a proportionally larger extension, so the ratio $F/x$ — the slope — is unchanged.",
+        "2": "Same reasoning: the slope does not decrease with more force while the spring stays linear.",
+        "3": "They are directly comparable — both are slopes of the same physical line, and should agree."
+      }
+    },
+    "hint": ["$k$ is the slope of the force–extension line. Does the slope of a straight line depend on how far along it you measure?"],
+    "solution": "The same — $k$ is the (constant) slope of the elastic-range line."
+  },
+  {
+    "id": "AP1-U2-MCQ-116",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "question": "A car crests a circular hump of radius $r$ at speed $v$. At the very top, the normal force from the road on the car is:",
+    "choices": [
+      "$mg + \\dfrac{mv^2}{r}$",
+      "$mg - \\dfrac{mv^2}{r}$",
+      "$mg$ always",
+      "$\\dfrac{mv^2}{r}$"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — at the top of a hump 'toward the centre' points **downward**. Real forces: normal force $F_N$ up, gravity $mg$ down. Radial second law (down positive): $mg - F_N = mv^2/r$, so $F_N = mg - mv^2/r$. The car feels lighter; at $v = \\sqrt{gr}$ the road force reaches zero and the car is about to leave the surface.",
+      "incorrect": {
+        "0": "That is the answer for the *bottom* of a dip, where the normal force must exceed the weight. At the top of a hump it is less.",
+        "2": "$F_N = mg$ only with no vertical acceleration. Here the car accelerates downward (toward the centre of the hump) at $v^2/r$.",
+        "3": "$mv^2/r$ is the net inward force, not the normal force. $F_N = mg - mv^2/r$."
+      }
+    },
+    "hint": ["At the top of the hump, which way is the centre? Write $\\sum F_r = mv^2/r$ with the real forces (normal, gravity)."],
+    "solution": "$mg - F_N = mv^2/r \\Rightarrow F_N = mg - mv^2/r$."
+  },
+  {
+    "id": "AP1-U2-MCQ-117",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A $4.0\\text{ kg}$ block is held at rest on a $30°$ incline by a horizontal force $P$ pushing it into the hill. The incline is frictionless. Take $g = 10\\text{ m/s}^2$. The magnitude of $P$ is:",
+    "choices": ["$23\\text{ N}$", "$20\\text{ N}$", "$40\\text{ N}$", "$35\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — resolve along the incline (frictionless, in equilibrium): the down-slope weight component $mg\\sin\\theta$ must be balanced by the up-slope component of the horizontal push, $P\\cos\\theta$. So $P\\cos 30° = mg\\sin 30° \\Rightarrow P = mg\\tan 30° = (4.0)(10)(0.577) = 23\\text{ N}$.",
+      "incorrect": {
+        "1": "$20\\text{ N}$ is $mg\\sin 30°$, the down-slope weight component itself — but the *horizontal* push only contributes $P\\cos\\theta$ along the slope, so $P$ must be larger.",
+        "2": "$40\\text{ N}$ is $mg$; the full weight is not what balances along the incline.",
+        "3": "$35\\text{ N}$ ≈ $mg\\cos 30°$ — that is the size of the perpendicular weight component, not the equilibrium push."
+      }
+    },
+    "hint": ["Along the incline, in equilibrium: the up-slope part of $P$ (which is $P\\cos\\theta$) balances the down-slope weight component $mg\\sin\\theta$."],
+    "solution": "$P\\cos\\theta = mg\\sin\\theta \\Rightarrow P = mg\\tan 30° \\approx 23\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-118",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.3",
+    "cedTopic": "2.5",
+    "clusterId": "2.3",
+    "skill": "reasonableness-check",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "A student computes the acceleration of a $1500\\text{ kg}$ car under a net forward force of $3000\\text{ N}$ and gets $a = 4500\\text{ m/s}^2$. The quickest way to know this is wrong is:",
+    "choices": [
+      "the units don't work out",
+      "$a = F/m$, and dividing $3000$ by $1500$ gives $2$, not $4500$ — the student multiplied instead of divided",
+      "cars cannot accelerate forward",
+      "the net force should have been $1500\\text{ N}$"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $a = F_{net}/m = 3000/1500 = 2.0\\text{ m/s}^2$, a sensible car acceleration. The student's $4500$ is $3000 \\times 1500$: they multiplied. A quick 'is $2\\text{ m/s}^2$ reasonable? yes; is $4500$? absurd' catches it instantly.",
+      "incorrect": {
+        "0": "The units are fine (N/kg = m/s²); the error is arithmetic — multiplying instead of dividing.",
+        "2": "Cars accelerate forward all the time. The problem is the number's size.",
+        "3": "The net force is given as $3000\\text{ N}$; nothing says it should be $1500\\text{ N}$. The mistake is in the division step."
+      }
+    },
+    "hint": ["$a = F/m$. Estimate $3000/1500$ in your head. Is $4500\\text{ m/s}^2$ anywhere near a real car's acceleration?"],
+    "solution": "$a = F/m = 3000/1500 = 2.0\\text{ m/s}^2$; the student multiplied instead of dividing."
+  }
+]

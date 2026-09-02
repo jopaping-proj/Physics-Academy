@@ -1,0 +1,582 @@
+{
+  "id": "ap1-u2-synthesis",
+  "slug": "unit-2-synthesis",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Forces",
+  "lessonNumber": "12",
+  "lessonTitle": "Unit 2 Synthesis and Transfer",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "All of Lessons 1–11 — this lesson assumes every framework in the unit",
+    "Newton's second law on a chosen axis, two-axis problems, connected systems (Lessons 4, 5, 8)",
+    "Friction and inclined planes (Lessons 7, 10)",
+    "Newton's third law: interaction pairs vs balanced forces (Lesson 6)",
+    "Circular motion as $\\sum F_r = mv^2/r$ (Lesson 11)",
+    "Gravitation, springs, apparent weight, force–extension graphs (Lesson 9)"
+  ],
+  "majorObjective": "Consolidate the unit by deciding — with no cue — which framework a problem needs, then executing it. Four recurring problem types: a multi-force object (often on an incline, often with an angled applied force); a multi-object interaction (attribute every force, tell third-law pairs from balanced forces); a circular-motion scenario (name the real radial forces, apply $\\sum F_r = mv^2/r$, check a limiting case); and a force–extension dataset (find $k$ from a slope, predict an untested value). This is the on-ramp to the unit test bank, where items are interleaved and you choose the tool.",
+  "subObjectives": [
+    "Given an uncued problem, identify which framework applies from its structure — an object accelerating along a surface, an interaction between objects, motion on a curved path, or a proportional force–deformation relationship.",
+    "For a multi-force object: draw the free-body diagram, choose axes that match the acceleration, resolve off-axis forces, and solve $\\sum F = ma$ on each axis.",
+    "For a multi-object interaction: attribute every force to its source, identify third-law pairs (two objects, same interaction) versus balanced forces (one object), and analyse system then part.",
+    "For circular motion: identify the real force(s) whose net points to the centre, apply $\\sum F_r = mv^2/r$, and reason about a limiting case (max speed, string breaks, top vs bottom).",
+    "For a force–extension dataset: read $k$ as the slope, predict a force or displacement for an untested value, and state the linear-range assumption.",
+    "Run a reasonableness check on every result: units, limiting cases, sign/direction, rough size."
+  ],
+  "hook": {
+    "prompt": "A problem gives you a mass, a speed, a radius, and a coefficient of friction, and asks 'will the car make the turn?'. Before any numbers, the single most useful first move is:",
+    "choices": [
+      "plug every given number into $F = ma$",
+      "recognise this as a circular-motion problem: the net inward force must equal $mv^2/r$, and friction (capped at $\\mu_s mg$) is what supplies it",
+      "assume the car is in equilibrium because its speed is constant",
+      "convert everything to base SI units and wait for a formula"
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "You have built every tool this unit uses. What is new here is doing it **without being told which tool** — the exam never labels a problem 'friction' or 'circular motion'. The recognition step is the skill: read the situation, decide what kind of problem it is, then execute the method you already know.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Recognise It: Four Problem Types",
+      "concept": "Almost every Unit 2 problem is one of four types. Learn to spot which from the **structure**, not from keywords.\n\n| If the problem is about… | It is a… | Core move |\n|---|---|---|\n| one object speeding up / slowing down along a surface or a line (incline, rope pull, push at an angle) | **multi-force / Newton's second law** problem | FBD → axes along the acceleration → resolve off-axis forces → $\\sum F = ma$ per axis |\n| two or more objects pushing or pulling on **each other** | **interaction** problem | attribute each force to its source → third-law pairs (2 objects) vs balanced forces (1 object) → system then part |\n| anything moving on a **curved path** at (roughly) constant speed | **circular-motion** problem | name the real inward force(s) → $\\sum F_r = \\dfrac{mv^2}{r}$ → limiting case |\n| a **spring / stretch / force–extension** relationship or dataset | **Hooke's-law / graph** problem | $k$ = slope of the force–extension line → $F = kx$ → predict, stating the linear-range assumption |\n\n==Two different problems can share numbers and still need different frameworks. The mass, the speed, and a coefficient could be a friction problem *or* a circular-motion problem — the giveaway is whether the path is straight or curved.==\n\nAfter every solution, run the **reasonableness check**: units, a limiting case, the sign/direction, and whether the size is sensible.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify each, and name the first equation you would write. (a) 'A $3\\text{ kg}$ block is pushed up a $20°$ ramp by a $25\\text{ N}$ force parallel to the ramp; $\\mu_k = 0.1$. Find its acceleration.' (b) 'A $0.5\\text{ kg}$ ball on a $1.2\\text{ m}$ string is swung in a horizontal circle at $4\\text{ m/s}$. Find the tension.' (c) 'A $2\\text{ kg}$ cart pushes a $3\\text{ kg}$ cart across frictionless ice with a $10\\text{ N}$ force on the pair. Find the force between the carts.' (d) 'Hanging $2\\text{ N}$ stretches a spring $5\\text{ cm}$. How far does $5\\text{ N}$ stretch it?'",
+        "phases": [
+          {
+            "label": "(a)",
+            "steps": [
+              "Structure: one object accelerating along an incline, with friction and an applied force. **Multi-force / Newton's second law** problem.",
+              "First equations: perpendicular axis $F_N = mg\\cos\\theta$ (to get friction), then along the ramp $\\sum F_\\parallel = F_{app} - mg\\sin\\theta - f_k = ma$."
+            ]
+          },
+          {
+            "label": "(b)",
+            "steps": [
+              "Structure: motion on a curved (circular) path at constant speed. **Circular-motion** problem.",
+              "First equation: $F_T = \\dfrac{mv^2}{r}$ (the string tension is the whole centripetal force)."
+            ]
+          },
+          {
+            "label": "(c)",
+            "steps": [
+              "Structure: two objects pushing on each other. **Interaction** problem.",
+              "First equations: system $a = \\dfrac{F_{ext}}{m_1 + m_2}$, then isolate the second cart: $F_{12} = m_2 a$."
+            ]
+          },
+          {
+            "label": "(d)",
+            "steps": [
+              "Structure: a force–stretch proportionality with a dataset. **Hooke's-law / graph** problem.",
+              "First move: $k = \\dfrac{F}{x} = \\dfrac{2}{0.05} = 40\\text{ N/m}$ (the slope), then $x = \\dfrac{F}{k} = \\dfrac{5}{40} = 0.125\\text{ m}$, assuming the spring is still linear."
+            ]
+          }
+        ],
+        "keyMove": "Reading the *structure* — one object on a line, objects on each other, a curved path, or a spring relationship — before touching the numbers."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-synthesis-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Unit 2 Synthesis and Transfer",
+        "objective": "C2.12",
+        "cedTopic": "2.9",
+        "clusterId": "2.12",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "",
+        "question": "'A $1000\\text{ kg}$ car travels at $25\\text{ m/s}$. The coefficient of friction with the road is $0.7$.' Which added sentence would make this a **circular-motion** problem rather than a straight-line friction problem?",
+        "choices": [
+          "'The driver brakes to a stop.'",
+          "'The road curves with a radius of $120\\text{ m}$.'",
+          "'The car is on a $5°$ downhill slope.'",
+          "'The car tows a trailer.'"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a radius of curvature means the path is curved, so there is a centripetal acceleration $v^2/r$ and the question becomes whether friction can supply $mv^2/r$. The other additions keep the motion along a line (braking, a slope) or make it an interaction problem (the trailer).",
+          "incorrect": {
+            "0": "Braking is straight-line motion — a Newton's-second-law / friction problem along the direction of travel, no curvature.",
+            "2": "A downhill slope is an inclined-plane problem: still straight-line motion along the slope.",
+            "3": "Towing a trailer is a connected-objects (interaction) problem, still along a straight line."
+          }
+        },
+        "hint": ["Circular motion needs a curved path. Which addition introduces a radius of curvature?"],
+        "solution": "'The road curves with a radius of $120\\text{ m}$' — a curved path means a centripetal requirement $mv^2/r$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Interaction Task: Attribute Every Force",
+      "concept": "When two or more objects act on each other, the recognition cue is **'on each other'** — a hand on a box, a box on a box, a rope between two carts, the ground on your feet.\n\nThe method:\n\n1. **Attribute** every force to the object that exerts it (\"the rope pulls the cart\", \"the Earth pulls the box\"). If you cannot name the exerter, it is not a real force — drop it.\n2. **Third-law pairs** act on **two different objects**, are the **same type** of interaction, and are always equal and opposite — even during a collision, even when the objects have very different masses. **Balanced forces** act on **one object** and happen to sum to zero.\n3. Analyse the **system** first (external forces only → the common acceleration), then **isolate** one object to find an internal force.\n\n==A force and 'the effect it causes' are not a third-law pair. Gravity on a book (down) and the table's normal force on the book (up) act on the *same* object — they are balanced forces, not partners. The partner of 'Earth pulls book down' is 'book pulls Earth up'.==",
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A $4.0\\text{ kg}$ box (A) sits on top of a $6.0\\text{ kg}$ box (B) on a frictionless floor. You push horizontally on B with $20\\text{ N}$; the boxes move together (enough friction between A and B). Take $g = 10\\text{ m/s}^2$. (a) Find the acceleration. (b) Find the horizontal force B exerts on A, and name its third-law partner. (c) Is the normal force B exerts up on A a third-law pair with A's weight?",
+        "phases": [
+          {
+            "label": "(a) System",
+            "steps": [
+              "External horizontal force on the A+B system: the $20\\text{ N}$ push. Total mass $10\\text{ kg}$.",
+              "$a = \\dfrac{F_{ext}}{m_A + m_B} = \\dfrac{20}{10} = 2.0\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "(b) Isolate A",
+            "steps": [
+              "The only horizontal force on A is friction from B. $\\sum F_x = m_A a$: $f_{B\\to A} = (4.0)(2.0) = 8.0\\text{ N}$, forward.",
+              "Third-law partner: the friction force **A exerts backward on B**, also $8.0\\text{ N}$ — same interaction, opposite object, opposite direction."
+            ]
+          },
+          {
+            "label": "(c) Normal force vs weight",
+            "steps": [
+              "No. B's normal force up on A, and Earth's gravity down on A, both act **on A** — one object. They are (here) balanced forces, not a third-law pair.",
+              "The partner of 'B pushes A up' is 'A pushes B down' (same size). The partner of 'Earth pulls A down' is 'A pulls Earth up'."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$f_{B\\to A} = 8.0\\text{ N} < 20\\text{ N}$ push — the leftover $12\\text{ N}$ accelerates B's own $6.0\\text{ kg}$: $(6.0)(2.0) = 12\\text{ N}$. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Isolating the top box and realising the *only* horizontal force on it is friction from the box below — that friction is what accelerates it."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-synthesis-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Unit 2 Synthesis and Transfer",
+        "objective": "C2.6",
+        "cedTopic": "2.3",
+        "clusterId": "2.6",
+        "skill": "misconception-diagnosis",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "confuses-a-force-and-its-effect-with-a-third-law-pair",
+        "question": "A loaded truck and a small car collide head-on. During the collision, the force the truck exerts on the car compared with the force the car exerts on the truck is:",
+        "choices": [
+          "much larger — the truck is more massive",
+          "exactly equal in magnitude and opposite in direction (Newton's third law), even though the car's acceleration is far greater",
+          "larger only if the truck was moving faster",
+          "zero on both, since they push equally and cancel"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the two forces are a third-law pair: equal magnitude, opposite direction, always, regardless of mass or speed. The car suffers a much bigger *acceleration* ($a = F/m$ with a small $m$), but the *forces* are identical in size.",
+          "incorrect": {
+            "0": "Mass changes the acceleration, not the interaction force. $F_{truck\\to car} = F_{car\\to truck}$ exactly.",
+            "2": "Speed does not break the third law either. The mutual forces are equal at every instant of contact.",
+            "3": "The forces act on *different objects*, so they do not cancel — each object feels its own force and accelerates."
+          }
+        },
+        "hint": ["Third-law pairs act on two different objects and are always equal and opposite. Does mass or speed change that?"],
+        "solution": "Equal and opposite (third law). The car's larger acceleration comes from its smaller mass, not a larger force."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Force Task: The Uncued Multi-Force Problem",
+      "concept": "The exam's hardest force problems combine an incline, friction, and an applied force at an angle — with no hint about method. The recognition cue: **one object, accelerating along a definite direction, several forces**.\n\nThe method never changes:\n\n1. **Free-body diagram** — every real force, from its correct point of application.\n2. **Axes along the acceleration.** On an incline, tilt them. On a banked curve, keep them horizontal/vertical. The rule: put one axis along the direction the object actually accelerates.\n3. **Resolve** whatever forces are off-axis into components.\n4. **$\\sum F = ma$ on each axis** — the perpendicular axis (often $= 0$) usually gives the normal force; the motion axis gives the acceleration.\n5. **Reasonableness check.**\n\n==The single most common error: using $F_N = mg$ for the friction force on an incline or under an angled pull. Always get $F_N$ from the perpendicular-axis equation first.==",
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A $2.0\\text{ kg}$ block is on a $30°$ incline. A rope pulls it **up the slope** with $18\\text{ N}$, at $20°$ **above the incline surface**. $\\mu_k = 0.15$ between block and incline; the block slides up. Take $g = 9.8\\text{ m/s}^2$, $\\sin 30° = 0.50$, $\\cos 30° = 0.866$, $\\sin 20° = 0.342$, $\\cos 20° = 0.940$. Find the acceleration along the incline.",
+        "phases": [
+          {
+            "label": "Axes and components",
+            "steps": [
+              "Axes: $x$ up the slope, $y$ perpendicular to the slope.",
+              "Rope: $T_x = 18\\cos 20° = 16.9\\text{ N}$ (up-slope), $T_y = 18\\sin 20° = 6.16\\text{ N}$ (away from surface).",
+              "Weight: $W_x = mg\\sin 30° = (2.0)(9.8)(0.50) = 9.8\\text{ N}$ (down-slope), $W_y = mg\\cos 30° = (2.0)(9.8)(0.866) = 16.97\\text{ N}$ (into surface)."
+            ]
+          },
+          {
+            "label": "Perpendicular axis → normal force",
+            "steps": [
+              "$\\sum F_y = 0$: $F_N + T_y - W_y = 0 \\Rightarrow F_N = W_y - T_y = 16.97 - 6.16 = 10.8\\text{ N}$.",
+              "Note $F_N$ is well below $mg = 19.6\\text{ N}$ — the incline *and* the rope's lift both reduce it."
+            ]
+          },
+          {
+            "label": "Friction and the motion axis",
+            "steps": [
+              "Block slides up ⇒ kinetic friction acts down the slope: $f_k = \\mu_k F_N = (0.15)(10.8) = 1.62\\text{ N}$.",
+              "$\\sum F_x = ma$: $T_x - W_x - f_k = ma \\Rightarrow 16.9 - 9.8 - 1.62 = 5.48\\text{ N}$.",
+              "$a = 5.48 / 2.0 = 2.7\\text{ m/s}^2$ up the slope."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Using $F_N = mg\\cos\\theta = 16.97\\text{ N}$ (ignoring the rope's lift) would have given $f_k = 2.55\\text{ N}$ and $a = 2.3\\text{ m/s}^2$ — a real error. The perpendicular axis matters. ✓",
+              "Units and signs: net up-slope force positive, block accelerates up-slope. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Doing the perpendicular axis first — with **both** the weight component and the rope's perpendicular component — to get the true $F_N$ before computing friction."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-synthesis-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Unit 2 Synthesis and Transfer",
+        "objective": "C2.9",
+        "cedTopic": "2.5",
+        "clusterId": "2.9",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "normal-force-always-equals-weight",
+        "question": "A crate is dragged across level ground by a rope at $30°$ above horizontal. To find the friction force, you must first find the normal force, which is:",
+        "choices": [
+          "$mg$ — the ground always supports the full weight",
+          "$mg - T\\sin 30°$ — the rope's upward component carries part of the weight, so the ground supports less",
+          "$mg + T\\sin 30°$ — the rope adds to the downward force",
+          "$T\\cos 30°$ — the horizontal component of the tension"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — vertical equilibrium: $F_N + T\\sin 30° - mg = 0$, so $F_N = mg - T\\sin 30°$. The rope lifts part of the weight, so the ground pushes up with less than $mg$, and the friction $\\mu F_N$ is correspondingly smaller.",
+          "incorrect": {
+            "0": "Only true when all other forces are horizontal. Here the rope has an upward component that shares the load.",
+            "2": "The rope pulls *up* and forward, not down. Its vertical component subtracts from what the ground must supply.",
+            "3": "$T\\cos 30°$ is horizontal — it has nothing to do with the vertical balance that sets $F_N$."
+          }
+        },
+        "hint": ["Write $\\sum F_y = 0$ with the normal force up, gravity down, and the rope's vertical component up. Solve for $F_N$."],
+        "solution": "$F_N = mg - T\\sin 30°$ — the rope's upward pull reduces the normal force."
+      }
+    },
+    {
+      "id": "chunk-4",
+      "title": "Graph Task: Read the Slope, Predict the Value",
+      "concept": "A force–extension (or force–deformation) dataset is a **graph problem**. Cue: a table or graph of force against stretch, or a spring described by how much it deforms under a load.\n\nThe method:\n\n1. The relationship $F = kx$ is a **straight line through the origin**. Plot it (or picture it).\n2. **$k$ is the slope** — rise over run, using any two points (or a best-fit line). Units N/m.\n3. Once you have $k$, **predict**: $F = kx$ for a new stretch, or $x = F/k$ for a new force.\n4. **State the assumption:** the prediction is valid only while the spring stays in its linear range (the data still fall on the straight line — it has not been over-stretched).\n\n==$k$ is one fixed number for a given spring. A bigger force gives a proportionally bigger stretch, so the *ratio* $F/x$ — and the slope — does not change.==\n\nThis is the same graph-slope skill from Unit 1 kinematics ($a$ as the slope of $v$–$t$), reused.",
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "A spring is loaded and its stretch recorded: $(2.0\\text{ N}, 0.05\\text{ m})$, $(4.0\\text{ N}, 0.10\\text{ m})$, $(6.0\\text{ N}, 0.15\\text{ m})$, $(8.0\\text{ N}, 0.20\\text{ m})$. (a) Find $k$. (b) Predict the stretch under $5.0\\text{ N}$. (c) A student loads it with $50\\text{ N}$ and predicts $x = 1.25\\text{ m}$. Comment.",
+        "phases": [
+          {
+            "label": "(a) Slope",
+            "steps": [
+              "The points are collinear through the origin. $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{8.0 - 2.0}{0.20 - 0.05} = \\dfrac{6.0}{0.15} = 40\\text{ N/m}$.",
+              "(Any single pair agrees: $2.0/0.05 = 40$.)"
+            ]
+          },
+          {
+            "label": "(b) Predict",
+            "steps": [
+              "$x = \\dfrac{F}{k} = \\dfrac{5.0}{40} = 0.125\\text{ m}$, assuming the spring is still linear at $5.0\\text{ N}$ (it is — that is within the tested range)."
+            ]
+          },
+          {
+            "label": "(c) Comment",
+            "steps": [
+              "The arithmetic ($50/40 = 1.25\\text{ m}$) is fine, but $50\\text{ N}$ is far outside the tested range ($\\le 8.0\\text{ N}$).",
+              "A real spring will exceed its elastic limit long before that — the line stops being straight, so $F = kx$ no longer applies and the prediction is unreliable."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$k = 40\\text{ N/m}$: the interactive's Spring Graph Explorer shows a line of exactly this slope. Predictions inside the data range are trustworthy; extrapolation far beyond it is not. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Getting $k$ from the slope, then flagging that a prediction far outside the measured range assumes linearity that was never tested."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-synthesis-q04",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Unit 2 Synthesis and Transfer",
+        "objective": "C2.10",
+        "cedTopic": "2.8",
+        "clusterId": "2.10",
+        "skill": "data-analysis",
+        "representation": "graph",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "spring-constant-changes-with-applied-force",
+        "question": "A force–extension graph for a spring is a straight line from the origin through $(0.10\\text{ m}, 3.0\\text{ N})$, then it curves and flattens beyond $x = 0.10\\text{ m}$. For a stretch of $0.06\\text{ m}$, the force is:",
+        "choices": ["$1.8\\text{ N}$", "$3.0\\text{ N}$", "$5.0\\text{ N}$", "cannot be found"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $0.06\\text{ m}$ is inside the straight-line (linear) region. There $k = 3.0/0.10 = 30\\text{ N/m}$, so $F = kx = (30)(0.06) = 1.8\\text{ N}$.",
+          "incorrect": {
+            "1": "$3.0\\text{ N}$ is the force at $0.10\\text{ m}$, not $0.06\\text{ m}$. On the straight part, scale down: $0.06$ is $0.6 \\times 0.10$, so $0.6 \\times 3.0 = 1.8\\text{ N}$.",
+            "2": "$5.0\\text{ N}$ would require reading off the curved (non-linear) region, which is beyond $0.10\\text{ m}$. At $0.06\\text{ m}$ the spring is still linear.",
+            "3": "It can be found — $0.06\\text{ m}$ is in the linear region, where $F = kx$ with $k$ from the slope."
+          }
+        },
+        "hint": ["Is $0.06\\text{ m}$ in the straight part of the graph or the curved part? On the straight part, $F = kx$ with $k$ = slope."],
+        "solution": "$k = 3.0/0.10 = 30\\text{ N/m}$ in the linear region; $F = (30)(0.06) = 1.8\\text{ N}$."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "fbd-builder",
+    "title": "Free-Body Diagram Builder — All Scenarios",
+    "subtitle": "Pick any scenario and build its diagram from scratch",
+    "componentKey": "fbd-builder",
+    "description": "The builder from Lessons 2, 3, 5, and 10, with every scenario available — level pushes, angled ropes, wall friction, spring forces, and the two $45°$ ramp cases. For each: decide which forces are present, set their directions, set their relative lengths, then **Check**. Use it to rehearse step 1 of every force problem — an FBD you can defend — before you write a single equation.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-synthesis-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.3",
+      "cedTopic": "2.5",
+      "clusterId": "2.3",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "net-force-equals-a-single-applied-force",
+      "question": "A student solves every Unit 2 problem by writing '$F = ma$' with $F$ equal to whichever force is named first in the problem. Why does this fail so often?",
+      "choices": [
+        "It doesn't fail — the first-named force is always the net force.",
+        "$\\vec{F}$ in $\\vec{F}_{net} = m\\vec{a}$ is the **vector sum of all** forces on the object. You must draw the free-body diagram and combine every force (with direction) before applying the second law.",
+        "The problem should always use the last-named force instead.",
+        "$F = ma$ only works for objects at rest."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the second law uses the *net* force: the vector sum of gravity, normal, friction, tension, applied pushes — everything acting on the chosen object. Skipping the FBD and grabbing one named force ignores the others and their directions.",
+        "incorrect": {
+          "0": "The first-named force is just one of several. On an incline with friction and a push, three forces act along the motion axis alone.",
+          "2": "There is no rule about naming order. Every real force on the object counts, whatever order the problem lists them.",
+          "3": "$\\vec{F}_{net} = m\\vec{a}$ applies whether the object is at rest ($a = 0$) or accelerating. The point is that $\\vec{F}$ is always the total."
+        }
+      },
+      "hint": ["What does the $\\vec{F}$ in $\\vec{F}_{net} = m\\vec{a}$ actually stand for — one force, or all of them combined?"],
+      "solution": "$\\vec{F}_{net}$ is the vector sum of every force on the object; you must build the FBD and combine them, not use a single named force."
+    },
+    {
+      "id": "ap1-u2-synthesis-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "centripetal-force-is-a-separate-force",
+      "question": "On a synthesis FRQ, which of these is a sign that a student has picked the **wrong framework** for a problem about a car on a curved, flat road?",
+      "choices": [
+        "They write $\\sum F_r = mv^2/r$ with friction as the inward force.",
+        "They set the net force to zero 'because the speed is constant', concluding the car is in equilibrium.",
+        "They note that the normal force equals $mg$ because the road is flat.",
+        "They check the limiting case $v_{\\max} = \\sqrt{\\mu_s g r}$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — constant *speed* on a curve is **not** equilibrium: the velocity direction changes, so there is a centripetal acceleration and a non-zero net force pointing inward. Treating it as equilibrium is the wrong framework and gives the wrong answer.",
+        "incorrect": {
+          "0": "That is exactly right for this problem — the correct framework.",
+          "2": "On a flat road with only vertical forces besides friction, $F_N = mg$ is correct.",
+          "3": "Checking $v_{\\max} = \\sqrt{\\mu_s g r}$ is a good limiting-case check for this framework."
+        }
+      },
+      "hint": ["Is an object moving at constant speed around a curve in equilibrium? What is happening to its velocity vector?"],
+      "solution": "Setting $\\sum F = 0$ 'because speed is constant' — a curved path has a centripetal acceleration, so the net force is non-zero and inward."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $0.40\\text{ kg}$ ball on a $0.80\\text{ m}$ string is swung in a **vertical** circle. At the **top** of the circle its speed is $4.0\\text{ m/s}$. Take $g = 10\\text{ m/s}^2$. Find the string tension at the top.\n\n**Student's work:** 'At the top, tension is up and gravity is down. The ball moves in a circle at constant speed, so it's in equilibrium: $F_T = mg = (0.40)(10) = 4.0\\text{ N}$.'",
+      "prompts": [
+        "Identify the two errors (one about the framework, one about a direction).",
+        "State the correct principle and the direction of 'toward the centre' at the top.",
+        "Redo the calculation, formula first.",
+        "Give a reasonableness check."
+      ],
+      "modelResponse": "1. Framework error: the ball is **not in equilibrium** — it is in circular motion, accelerating toward the centre at $v^2/r$. Direction error: at the top of a vertical circle, 'toward the centre' points **downward**, and the string (running from the ball up to the centre... no — the ball is at the top, the centre is below it, so the string pulls the ball **down**, toward the centre). Both the tension and gravity point down at the top.\n2. Correct principle: $\\sum F_r = \\dfrac{mv^2}{r}$, with the positive direction toward the centre (downward at the top). Both $F_T$ and $mg$ are in that direction: $F_T + mg = \\dfrac{mv^2}{r}$.\n3. $F_T = \\dfrac{mv^2}{r} - mg = \\dfrac{(0.40)(4.0)^2}{0.80} - (0.40)(10) = \\dfrac{6.4}{0.80} - 4.0 = 8.0 - 4.0 = 4.0\\text{ N}$.\n4. The number happens to match the student's, but the reasoning was wrong: had the speed been $3.0\\text{ m/s}$, the correct tension would be $\\dfrac{(0.40)(9)}{0.80} - 4.0 = 4.5 - 4.0 = 0.5\\text{ N}$, while the fake-equilibrium method would still say $4.0\\text{ N}$. Reasonableness: at the minimum top speed $v = \\sqrt{gr} = \\sqrt{8} = 2.83\\text{ m/s}$, tension would be zero — gravity alone provides $mv^2/r$. At $4.0\\text{ m/s}$ we are above that, so a small positive tension ($4.0\\text{ N}$) is sensible. ✓",
+      "responseMaxLength": 1000
+    }
+  ],
+  "representationConnections": "This lesson is entirely about moving between representations under time pressure: reading a **verbal** scenario and classifying it; translating to a **free-body diagram**; choosing **axes** and resolving into components; writing the **equations** ($\\sum F = ma$, $\\sum F_r = mv^2/r$, $F = kx$); reading a **graph** slope; and running back to a **limiting case** or a **motion diagram** to check. The unifying principle across all four problem types is the same one the unit opened with: define the object, find the net force, and $\\vec{F}_{net} = m\\vec{a}$.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-synthesis-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.10",
+      "cedTopic": "2.6",
+      "clusterId": "2.10",
+      "skill": "proportional-reasoning",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "Two planets have the same radius, but planet Y has four times the mass of planet X. An object's weight on Y compared with its weight on X is:",
+      "choices": ["the same", "twice as much", "four times as much", "sixteen times as much"],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — surface gravity $g = GM/R^2$. Same $R$, four times $M$ ⇒ four times $g$ ⇒ four times the weight $mg$ for the same object.",
+        "incorrect": {
+          "0": "Weight depends on the local $g$, which depends on the planet's mass. More mass, more weight.",
+          "1": "$g \\propto M$ at fixed radius, so four times the mass gives four times $g$, not two.",
+          "3": "That would be $M^2$ or a radius effect. Here only $M$ changes, linearly: $\\times 4$."
+        }
+      },
+      "hint": ["Surface gravity $g = GM/R^2$. If $R$ is unchanged and $M \\to 4M$, what happens to $g$ (and hence to $mg$)?"],
+      "solution": "$g \\propto M/R^2$; same $R$, $4\\times M$ ⇒ $4\\times g$ ⇒ four times the weight."
+    },
+    {
+      "id": "ap1-u2-synthesis-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+      "question": "On a frictionless table, a $3.0\\text{ kg}$ block is connected over a pulley to a $2.0\\text{ kg}$ block that hangs. Take $g = 10\\text{ m/s}^2$. The acceleration of the system is:",
+      "choices": ["$10\\text{ m/s}^2$", "$4.0\\text{ m/s}^2$", "$6.7\\text{ m/s}^2$", "$2.0\\text{ m/s}^2$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the only external force driving the system is the weight of the hanging block, $m_2 g = 20\\text{ N}$; the total mass being accelerated is $m_1 + m_2 = 5.0\\text{ kg}$. $a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{20}{5.0} = 4.0\\text{ m/s}^2$.",
+        "incorrect": {
+          "0": "The hanging block is not in free fall — the rope tension holds it back. Only if the table block had zero mass would $a = g$.",
+          "2": "$6.7\\text{ m/s}^2$ is $m_2 g / m_1 = 20/3$ — dividing by the wrong mass. The whole system (both blocks) is accelerating.",
+          "3": "$2.0\\text{ m/s}^2$ divides by the wrong thing. $a = m_2 g/(m_1+m_2) = 20/5 = 4.0\\text{ m/s}^2$."
+        }
+      },
+      "hint": ["Treat both blocks as one system. External driving force = weight of the hanging block. Total mass = both blocks."],
+      "solution": "$a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{(2.0)(10)}{5.0} = 4.0\\text{ m/s}^2$."
+    },
+    {
+      "id": "ap1-u2-synthesis-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.12",
+      "cedTopic": "2.9",
+      "clusterId": "2.12",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+      "question": "A ball on a string hangs from the ceiling of a car. When the car turns a corner at steady speed, the string hangs at an angle, tilted toward the **outside** of the turn. The horizontal component of the string tension:",
+      "choices": [
+        "points outward, balancing a centrifugal force",
+        "points toward the centre of the turn, and provides the ball's centripetal force $mv^2/r$",
+        "is zero — the ball is in equilibrium",
+        "points backward, opposing the car's motion"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the string tilts so that its horizontal component points **toward the centre** of the turn (even though the ball itself is displaced toward the outside). That inward component is the net horizontal force and equals $mv^2/r$; the vertical component balances gravity. $\\tan\\theta = v^2/(rg)$ — the same relation as a banked curve or a conical pendulum.",
+        "incorrect": {
+          "0": "The ball is displaced outward, but the *force* on it from the string points inward. There is no centrifugal force in the ground frame.",
+          "2": "The ball accelerates toward the centre of the turn, so it is not in equilibrium — there is a net inward horizontal force.",
+          "3": "At steady speed there is no forward or backward acceleration, so no horizontal force along the direction of motion. The net horizontal force is perpendicular to the motion, toward the centre."
+        }
+      },
+      "hint": ["The ball moves in a circle (the car's turn), so it needs a net force toward the centre. Which component of the tension can supply that?"],
+      "solution": "The horizontal component of the tension points toward the centre of the turn and equals $mv^2/r$; $\\tan\\theta = v^2/(rg)$."
+    },
+    {
+      "id": "ap1-u2-synthesis-la04",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Unit 2 Synthesis and Transfer",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "synthesis",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "scenario": "A $2.0\\text{ kg}$ box is on a $37°$ incline. A light rope, parallel to the incline surface, runs up the slope, over a frictionless pulley at the top, and down to a hanging $1.5\\text{ kg}$ mass. The coefficient of kinetic friction between box and incline is $\\mu_k = 0.20$. The system is released and the hanging mass descends, dragging the box up the incline. Take $g = 10\\text{ m/s}^2$, $\\sin 37° = 0.60$, $\\cos 37° = 0.80$.",
+      "parts": [
+        { "label": "(a)", "prompt": "Draw a free-body diagram for the box and a separate one for the hanging mass. On the box diagram, mark which axis you will use for Newton's second law and why.", "points": 3, "modelResponse": "Box: weight $mg$ down, normal force $F_N$ perpendicular to the incline, tension $F_T$ up the slope, kinetic friction $f_k$ **down** the slope (the box moves up, so friction opposes that). Axes tilted to the incline; the box accelerates along the slope, so the motion axis is along the incline (up-slope positive). Hanging mass: tension $F_T$ up, weight $m_2 g$ down; it accelerates downward." },
+        { "label": "(b)", "prompt": "Find the normal force on the box and the kinetic friction force.", "points": 2, "modelResponse": "Perpendicular axis for the box: $F_N = mg\\cos 37° = (2.0)(10)(0.80) = 16\\text{ N}$. Friction: $f_k = \\mu_k F_N = (0.20)(16) = 3.2\\text{ N}$, directed down the slope." },
+        { "label": "(c)", "prompt": "Write Newton's second law for each object (taking the direction of motion as positive) and solve for the acceleration.", "points": 3, "modelResponse": "Box (up-slope positive): $F_T - mg\\sin 37° - f_k = m_1 a \\Rightarrow F_T - (2.0)(10)(0.60) - 3.2 = 2.0a \\Rightarrow F_T - 15.2 = 2.0a$. Hanging mass (downward positive): $m_2 g - F_T = m_2 a \\Rightarrow 15 - F_T = 1.5a$. Add: $15 - 15.2 = 3.5a \\Rightarrow a = -0.057\\text{ m/s}^2$." },
+        { "label": "(d)", "prompt": "Interpret the sign of your acceleration. Does the system actually move as described? Justify.", "points": 2, "modelResponse": "The acceleration comes out slightly negative ($\\approx -0.06\\text{ m/s}^2$), meaning the assumed motion (hanging mass down, box up) cannot be sustained — the driving weight $m_2 g = 15\\text{ N}$ is essentially balanced by $mg\\sin\\theta + f_k = 15.2\\text{ N}$. Released from rest, the system stays at rest (static friction, which can be at least as large as $f_k$, holds it): $15\\text{ N}$ is not enough to overcome $mg\\sin\\theta + f_{s} $. The scenario's 'the hanging mass descends' does not occur." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt box forces all present and correctly directed (friction down-slope, justified by up-slope motion), 1 pt hanging-mass diagram, 1 pt names the incline-aligned motion axis. (b) 1 pt $F_N = mg\\cos\\theta = 16\\text{ N}$ (not $mg$), 1 pt $f_k = 3.2\\text{ N}$. (c) 1 pt each correct N2L equation, 1 pt combine and solve $a \\approx -0.06\\text{ m/s}^2$ (accept $-0.05$ to $-0.06$). (d) 1 pt recognises the negative result means the assumed motion fails, 1 pt concludes the system stays at rest with a supporting argument. Full credit for a student who instead argues at part (c) that the system won't move and computes the static check.",
+      "figures": [
+        { "svg": "incline/incline-friction.svg", "caption": "The box on the incline: $F_N = mg\\cos\\theta$, friction opposes the (attempted) up-slope motion. The rope tension replaces the applied push of the Lesson 10 example." }
+      ]
+    }
+  ],
+  "examConnection": "The unit test bank and the exam interleave these four problem types with no labels. Practice the **recognition** step explicitly: for each problem, name the type ('multi-force', 'interaction', 'circular', 'graph') and the first equation before computing anything. The highest-value habits from the whole unit: define the object and draw its FBD before writing $\\vec{F}_{net} = m\\vec{a}$; get $F_N$ from the perpendicular axis, never assume $F_N = mg$; keep third-law pairs (two objects) distinct from balanced forces (one object); treat 'centripetal' as a direction, not a force; and read $k$ as a slope.",
+  "summary": "- **Four problem types**, recognised by structure: multi-force (one object, a line or incline), interaction (objects on each other), circular (curved path), graph (force–extension).\n- **Multi-force:** FBD → axes along the acceleration → resolve → $\\sum F = ma$ per axis. Get $F_N$ from the perpendicular axis first.\n- **Interaction:** attribute every force to its source; third-law pairs act on two objects, balanced forces on one; system then part.\n- **Circular:** name the real inward force(s); $\\sum F_r = mv^2/r$; check a limiting case. Constant speed on a curve is *not* equilibrium.\n- **Graph:** $k$ = slope of the force–extension line; $F = kx$; state the linear-range assumption.\n- **Always** finish with a reasonableness check: units, limiting case, sign, size.",
+  "exitQuestion": {
+    "id": "ap1-u2-synthesis-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Unit 2 Synthesis and Transfer",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "reasonableness-check",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "",
+    "question": "A student solves four Unit 2 problems and gets: (i) a block on a frictionless $30°$ incline accelerating at $9.8\\text{ m/s}^2$ down the slope; (ii) a normal force on an incline larger than $mg$; (iii) a car rounding a curve with the friction pointing away from the centre; (iv) a spring constant that comes out negative. How many of these results are physically impossible or clearly wrong?",
+    "choices": ["one", "two", "three", "all four"],
+    "correctAnswer": 3,
+    "feedback": {
+      "correct": "Correct — all four fail a reasonableness check. (i) On a frictionless $30°$ incline $a = g\\sin 30° = 4.9\\text{ m/s}^2$, not $9.8$ (that would be free fall). (ii) $F_N = mg\\cos\\theta < mg$ on an incline — it cannot exceed $mg$ without an extra downward push. (iii) Friction on a car rounding a curve points *toward* the centre — it is the centripetal force. (iv) A spring constant is always positive; a negative $k$ would mean a spring that pushes away from its natural length.",
+      "incorrect": {
+        "0": "More than one is wrong. Check each against a limiting case or a known sign.",
+        "1": "Still more are wrong — check the incline acceleration against $g\\sin\\theta$ and the friction direction on a curve.",
+        "2": "One more is also wrong: a normal force on a plain incline cannot exceed $mg$."
+      }
+    },
+    "hint": ["Take each result to a limiting case or a known bound: what is $a$ on a frictionless incline? Can $F_N$ exceed $mg$ with no extra downward force? Which way does friction point on a curve? Can $k$ be negative?"],
+    "solution": "All four are wrong: (i) $a = g\\sin\\theta = 4.9\\text{ m/s}^2$; (ii) $F_N = mg\\cos\\theta < mg$; (iii) friction points toward the centre; (iv) $k > 0$ always."
+  },
+  "questionBankFile": "ap1-u2-synthesis.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-113", "AP1-U2-MCQ-114", "AP1-U2-MCQ-115",
+    "AP1-U2-MCQ-116", "AP1-U2-MCQ-117", "AP1-U2-MCQ-118"
+  ]
+}
