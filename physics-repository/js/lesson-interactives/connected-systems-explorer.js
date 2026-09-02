@@ -167,14 +167,14 @@
       const nearStatic = M.a < 1.2;
       readout.innerHTML =
         `<p class="ipe__pair"><span class="ipe__k">System</span> total mass ${M.M} kg; the only external force along the motion is m₂g = <b>${M.ext.toFixed(0)} N</b>. &nbsp;⇒&nbsp; a = m₂g / (m₁+m₂) = <b>${M.a.toFixed(2)} m/s²</b>.</p>` +
-        `<p><span class="ipe__k">m₁ alone</span> F_T = m₁a = <b>${M.FT.toFixed(1)} N</b>.</p>` +
-        `<p><span class="ipe__k">m₂ alone</span> m₂g − F_T = m₂a  ⇒  F_T = m₂(g − a) = <b>${M.FTcheck.toFixed(1)} N</b> ✓ same tension.</p>` +
-        `<p class="ipe__rule">F_T = <b>${M.FT.toFixed(1)} N</b> is ${nearStatic ? "nearly" : "well"} below the hanging weight m₂g = ${M.ext.toFixed(0)} N — the gap (m₂a) is the net force that accelerates m₂ downward. Make m₂ small next to m₁ and the acceleration shrinks, so F_T closes in on m₂g.</p>`;
+        `<p><span class="ipe__k">m₁ alone</span> F<sub>T</sub> = m₁a = <b>${M.FT.toFixed(1)} N</b>.</p>` +
+        `<p><span class="ipe__k">m₂ alone</span> m₂g − F<sub>T</sub> = m₂a  ⇒  F<sub>T</sub> = m₂(g − a) = <b>${M.FTcheck.toFixed(1)} N</b> ✓ same tension.</p>` +
+        `<p class="ipe__rule">F<sub>T</sub> = <b>${M.FT.toFixed(1)} N</b> is ${nearStatic ? "nearly" : "well"} below the hanging weight m₂g = ${M.ext.toFixed(0)} N — the gap (m₂a) is the net force that accelerates m₂ downward. Make m₂ small next to m₁ and the acceleration shrinks, so F<sub>T</sub> closes in on m₂g.</p>`;
     }
 
     if (insightEl) {
       insightEl.innerHTML =
-        "<p>Use the <strong>system</strong> (both blocks as one mass, external forces only) to get the common acceleration fast. Then take <strong>one object at a time</strong> to get the rope tension — the internal force the system view can't see.</p><p>The tension never reaches m₂'s full weight while the system accelerates. Make the hanging block much lighter than the table block: the acceleration drops and F_T closes in on m₂g.</p>";
+        "<p>Use the <strong>system</strong> (both blocks as one mass, external forces only) to get the common acceleration fast. Then take <strong>one object at a time</strong> to get the rope tension — the internal force the system view can't see.</p><p>The tension never reaches m₂'s full weight while the system accelerates. Make the hanging block much lighter than the table block: the acceleration drops and F<sub>T</sub> closes in on m₂g.</p>";
     }
 
     return draw;
