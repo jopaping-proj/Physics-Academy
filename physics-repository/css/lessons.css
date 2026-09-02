@@ -828,6 +828,7 @@
 }
 
 .frq__scenario { font-weight: 500; }
+.frq__scenario .md-table-wrap { font-weight: 400; margin: var(--space-3) 0 0; }
 
 .frq__parts {
   margin: var(--space-3) 0;

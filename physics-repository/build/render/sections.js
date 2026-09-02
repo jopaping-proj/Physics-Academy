@@ -345,12 +345,31 @@ export function furtherPracticeSlides(lesson, bank) {
 /** The ordered slide descriptors for a lesson — the single source both
  * the page body and the sidebar TOC are built from. */
 export function collectSlideSpecs(lesson, bank) {
+  const ic = lesson.interactiveComponent;
+  // The interactive normally sits after every concept chunk. If it declares
+  // `afterChunk: "<chunk id>"`, splice it in right after that chunk instead —
+  // e.g. a graph explorer that belongs immediately after the graph concept.
+  const icAfterChunk = ic && ic.afterChunk ? String(ic.afterChunk) : null;
+  let icPlaced = false;
+  const chunkSpecs = (lesson.chunks || []).flatMap((c, i) => {
+    const specs = chunkSlides(c, i + 1);
+    if (icAfterChunk && (c.id || `chunk-${i + 1}`) === icAfterChunk) {
+      specs.push(...interactiveComponentSlides(ic));
+      icPlaced = true;
+    }
+    return specs;
+  });
+  if (icAfterChunk && !icPlaced) {
+    console.warn(`[build] WARNING: interactiveComponent.afterChunk "${icAfterChunk}" matched no chunk; placing it after all chunks`);
+  }
+  const icTrailing = icAfterChunk && icPlaced ? [] : interactiveComponentSlides(ic);
+
   return [
     ...hookSlides(lesson.hook),
     ...objectivesSlides(lesson),
     ...priorKnowledgeSlides(lesson.priorKnowledge),
-    ...(lesson.chunks || []).flatMap((c, i) => chunkSlides(c, i + 1)),
-    ...interactiveComponentSlides(lesson.interactiveComponent),
+    ...chunkSpecs,
+    ...icTrailing,
     ...simulationSlides(lesson.simulation),
     ...misconceptionSlides(lesson.misconceptions),
     ...errorAnalysisSlides(lesson.errorAnalysis),

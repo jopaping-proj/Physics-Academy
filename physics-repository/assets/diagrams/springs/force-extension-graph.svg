@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 250" role="img"
+     aria-label="A force versus extension graph for a spring. From the origin the graph is a straight line: force is proportional to extension, and the slope of that line is the spring constant k. This is the linear region, where Hooke's law F equals k x holds. At a point marked the elastic limit the line stops being straight and curves, flattening out; beyond the elastic limit F equals k x no longer applies.">
+  <defs>
+    <marker id="fe-axis" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="46" y1="210" x2="310" y2="210" stroke="#8b96a5" stroke-width="1.5" marker-end="url(#fe-axis)"/>
+  <line x1="46" y1="210" x2="46" y2="20" stroke="#8b96a5" stroke-width="1.5" marker-end="url(#fe-axis)"/>
+  <text x="178" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5">extension  x</text>
+  <text x="20" y="115" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#8b96a5" transform="rotate(-90 20 115)">spring force  F</text>
+
+  <!-- linear region: straight line from origin -->
+  <line x1="46" y1="210" x2="196" y2="70" stroke="#3fb950" stroke-width="3"/>
+  <!-- non-linear region: bends and flattens past the elastic limit -->
+  <path d="M196 70 Q 240 40 300 34" fill="none" stroke="#3fb950" stroke-width="3" stroke-dasharray="1 0"/>
+
+  <!-- elastic-limit marker -->
+  <circle cx="196" cy="70" r="3.5" fill="#f0c27a"/>
+  <line x1="196" y1="70" x2="196" y2="210" stroke="#8b96a5" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="204" y="60" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">elastic limit</text>
+
+  <!-- slope callout, parked in the open space above the straight segment -->
+  <text x="56" y="104" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">slope = k</text>
+
+  <!-- Hooke's-law annotation, low-left in the open wedge under the line -->
+  <text x="104" y="176" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">straight line: F = k x</text>
+  <text x="248" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">past the limit,</text>
+  <text x="248" y="126" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">F = k x fails</text>
+</svg>

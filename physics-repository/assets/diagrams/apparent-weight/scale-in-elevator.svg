@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 248" role="img"
+     aria-label="A person stands on a bathroom scale on the floor of an elevator car that hangs from a cable. Two forces act on the person: gravity pulls straight down from the centre of the body, and the scale pushes up on the feet with the normal force. The scale displays that normal force as the apparent weight. A dashed arrow beside the car shows the elevator's acceleration; when it is non-zero the normal force differs from the true weight m g.">
+  <defs>
+    <marker id="se-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
+    <marker id="se-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
+    <marker id="se-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#3fb950"/></marker>
+  </defs>
+
+  <!-- ceiling + cable -->
+  <line x1="95" y1="12" x2="165" y2="12" stroke="#8b96a5" stroke-width="2"/>
+  <g stroke="#8b96a5" stroke-width="1">
+    <line x1="107" y1="12" x2="100" y2="4"/><line x1="125" y1="12" x2="118" y2="4"/>
+    <line x1="143" y1="12" x2="136" y2="4"/><line x1="161" y1="12" x2="154" y2="4"/>
+  </g>
+  <line x1="130" y1="12" x2="130" y2="32" stroke="#8b96a5" stroke-width="1.5"/>
+
+  <!-- elevator car -->
+  <rect x="46" y="32" width="168" height="196" rx="4" fill="#8b96a5" fill-opacity="0.06" stroke="#8b96a5" stroke-width="1.5"/>
+
+  <!-- scale on the floor -->
+  <rect x="98" y="202" width="64" height="16" rx="2" fill="#58a6ff" fill-opacity="0.14" stroke="#58a6ff" stroke-width="1.4"/>
+  <text x="130" y="214" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#58a6ff">SCALE</text>
+
+  <!-- person -->
+  <g stroke="#c9d3de" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <circle cx="130" cy="82" r="13" stroke-width="2.5"/>
+    <line x1="130" y1="95" x2="130" y2="150"/>
+    <line x1="130" y1="112" x2="112" y2="134"/>
+    <line x1="130" y1="112" x2="148" y2="134"/>
+    <line x1="130" y1="150" x2="118" y2="202"/>
+    <line x1="130" y1="150" x2="142" y2="202"/>
+  </g>
+  <circle cx="130" cy="123" r="2" fill="#e6edf3"/>
+
+  <!-- gravity: from the body's centre, straight down along the spine -->
+  <line x1="130" y1="123" x2="130" y2="168" stroke="#8b96a5" stroke-width="2.5" marker-end="url(#se-grey)"/>
+  <text x="137" y="150" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#8b96a5">F<tspan font-size="8" dy="2">g</tspan><tspan dy="-2"> = m g</tspan></text>
+
+  <!-- normal force: from the feet, straight up; drawn just left of the spine and
+       longer than gravity (the illustrated case is accelerating upward) -->
+  <line x1="114" y1="201" x2="114" y2="112" stroke="#58a6ff" stroke-width="2.5" marker-end="url(#se-blue)"/>
+  <text x="108" y="112" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#58a6ff">F<tspan font-size="8" dy="2">N</tspan></text>
+
+  <!-- elevator acceleration, beside the car -->
+  <line x1="236" y1="150" x2="236" y2="100" stroke="#3fb950" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#se-green)"/>
+  <text x="244" y="128" font-family="system-ui, sans-serif" font-size="12" font-weight="600" font-style="italic" fill="#3fb950">a</text>
+</svg>

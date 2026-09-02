@@ -175,9 +175,15 @@ function renderFreeResponse(container, question) {
     "<strong>Free response.</strong> Work every part on paper, then open each model response and grade yourself against it.";
   container.appendChild(note);
 
-  const scenario = document.createElement("p");
+  // `scenarioHtml` is pre-rendered at build time when the scenario contains
+  // block markdown (e.g. a data table) that the inline pass can't handle.
+  const scenario = document.createElement(question.scenarioHtml ? "div" : "p");
   scenario.className = "frq__scenario";
-  scenario.innerHTML = mdInline(question.scenario || question.question || "");
+  if (question.scenarioHtml) {
+    scenario.innerHTML = question.scenarioHtml;
+  } else {
+    scenario.innerHTML = mdInline(question.scenario || question.question || "");
+  }
   container.appendChild(scenario);
 
   if (question.figureHtml) {

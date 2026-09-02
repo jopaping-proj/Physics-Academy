@@ -109,13 +109,15 @@
     {
       "id": "chunk-2",
       "title": "The Spring Force: $F_s = -kx$ and the Graph",
-      "concept": "Stretch or compress an ideal spring by a distance $x$ from its **natural length**, and it pushes or pulls back with a force proportional to $x$:\n\n$$F_s = -k x$$\n\n- $k$ is the **spring constant** (N/m) — a fixed property of that spring. A stiffer spring has a larger $k$. ==$k$ is **always positive**; it does not change with how hard you pull.==\n- The **minus sign** is a direction statement: the spring force always points **back toward natural length** — opposite the displacement. Stretch the spring right, it pulls left; push it left, it pushes right.\n- $x$ is measured **from the natural length**, not from the floor or the wall.\n\nOn a **force–extension graph** (force magnitude vs stretch), the data fall on a straight line through the origin, and **the slope of that line is $k$**. So you can find $k$ from a graph without any numbers plugged into a formula, and then read the force at any extension straight off the line.",
+      "concept": "Stretch or compress an ideal spring by a distance $x$ from its **natural length**, and it pushes or pulls back with a force proportional to $x$. This is **Hooke's law**:\n\n$$F_s = -k x$$\n\n- $k$ is the **spring constant** (N/m) — a fixed property of that spring. A stiffer spring has a larger $k$. ==$k$ is **always positive**; it does not change with how hard you pull.==\n- The **minus sign** is a direction statement: the spring force always points **back toward natural length** — opposite the displacement. Stretch the spring right, it pulls left; push it left, it pushes right.\n- $x$ is measured **from the natural length**, not from the floor or the wall.\n\n**The elastic limit.** Hooke's law only holds while the spring is not stretched too far. Past a point called the **elastic limit**, the force is no longer proportional to $x$ — the spring deforms permanently and $F_s = -kx$ fails. ==Unless a problem tells you a spring has been over-stretched, assume every force it gives you is within the elastic limit, so Hooke's law applies.==\n\n**Read it off the graph.** Plot spring-force magnitude against stretch and you get a **force–extension ($F$–$x$) graph**. In the elastic region it is a **straight line through the origin**, and **its slope is $k$**. That single fact does a lot of work:\n\n- **Find $k$** = rise/run of the line — no formula, no substitution.\n- **Predict a force** at any extension: go up from that $x$ to the line, read across. $F = kx$.\n- **Predict an extension** for a given force: go the other way.\n- A **steeper** line means a **stiffer** spring (bigger $k$); the line **bending over** marks the elastic limit.\n\nOn the AP/IB exam, spring questions are very often *graph* questions — being fluent at reading $k$ as a slope, and reading a force or a stretch off the line, is the core skill here.",
       "conceptFigures": [
+        { "svg": "springs/force-extension-graph.svg", "size": "lg", "caption": "The **force–extension graph**. In the elastic region it is a straight line through the origin whose **slope is $k$** ($F = kx$). Past the **elastic limit** the line bends over and Hooke's law no longer applies." },
         { "svg": "springs/spring-cases.svg", "size": "lg", "caption": "The spring force always points **back toward natural length** — that is what the minus sign in $F_s = -kx$ records. Stretched: it pulls back. Compressed: it pushes back." }
       ],
       "workedExample": {
         "scaffold": "partial",
         "problem": "A spring hangs vertically. When a $6.0\\text{ N}$ weight is hung from it, the spring stretches $0.12\\text{ m}$ from its natural length. (a) Find the spring constant. (b) What hanging force would stretch it $0.20\\text{ m}$? (c) A force–extension graph of this spring is a straight line — what is its slope?",
+        "figure": { "svg": "springs/hanging-spring-stretch.svg", "caption": "At rest the upward spring force balances the $6.0\\text{ N}$ weight, so $|F_s| = 6.0\\text{ N}$ at $x = 0.12\\text{ m}$. (Assume this is within the elastic limit.)" },
         "phases": [
           {
             "label": "(a) Spring constant",
@@ -128,7 +130,7 @@
           {
             "label": "(b) Force for a different stretch",
             "steps": [
-              "$|F_s| = kx$ with the same $k$.",
+              "$|F_s| = kx$ with the same $k$ — valid as long as $0.20\\text{ m}$ is still within the elastic limit (assume it is, since the problem does not say otherwise).",
               "Substitute: $|F_s| = (50)(0.20) = 10\\text{ N}$."
             ]
           },
@@ -163,7 +165,10 @@
         "difficulty": "ap-ib-standard",
         "cognitiveLevel": 4,
         "misconceptionTested": "spring-constant-changes-with-applied-force",
-        "question": "A force–extension graph for a spring is a straight line through the origin passing through the point $(0.05\\text{ m}, 4.0\\text{ N})$. What force is needed to stretch this spring $0.15\\text{ m}$?",
+        "question": "The force–extension graph for a spring is shown: a straight line through the origin passing through $(0.05\\text{ m}, 4.0\\text{ N})$. What force is needed to stretch this spring $0.15\\text{ m}$?",
+        "figures": [
+          { "svg": "springs/force-extension-q02.svg", "caption": "Force–extension graph for the spring. The marked point is $(0.05\\text{ m}, 4.0\\text{ N})$." }
+        ],
         "choices": ["$4.0\\text{ N}$", "$12\\text{ N}$", "$80\\text{ N}$", "$1.3\\text{ N}$"],
         "correctAnswer": 1,
         "feedback": {
@@ -181,9 +186,14 @@
     {
       "id": "chunk-3",
       "title": "Apparent Weight: What the Scale Really Reads",
-      "concept": "A bathroom scale does not measure your weight $mg$. It measures the **normal force** it pushes up on you with — and displays that as a 'weight'. Call it your **apparent weight**.\n\nIsolate the person, up positive, and apply Newton's second law:\n$$F_N - mg = m a$$\nso\n$$F_N = m(g + a)$$\nwhere $a$ is the (signed) vertical acceleration of the elevator.\n\n- **At rest or constant velocity** ($a = 0$): $F_N = mg$. The scale reads true weight.\n- **Accelerating upward** ($a > 0$): $F_N = m(g + a) > mg$. You feel — and read — **heavier**.\n- **Accelerating downward** ($a < 0$): $F_N = m(g - |a|) < mg$. You read **lighter**.\n- **Free fall** ($a = -g$): $F_N = m(g - g) = 0$. ==The scale reads zero — 'apparent weightlessness'. Gravity is still acting; there is just no contact force.== This is exactly what an astronaut in an orbiting station experiences: continuous free fall around the Earth.",
+      "concept": "A bathroom scale does not measure your weight $mg$. It measures the **normal force** it pushes up on you with — and displays that as a 'weight'. Call it your **apparent weight**.\n\nIsolate the person, up positive, and apply Newton's second law:\n$$F_N - mg = m a$$\nso\n$$F_N = m(g + a)$$\nwhere $a$ is the (signed) vertical acceleration of the elevator.\n\n- **At rest or constant velocity** ($a = 0$): $F_N = mg$. The scale reads true weight.\n- **Accelerating upward** ($a > 0$): $F_N = m(g + a) > mg$. You feel — and read — **heavier**.\n- **Accelerating downward** ($a < 0$): $F_N = m(g - |a|) < mg$. You read **lighter**.\n- **Free fall** ($a = -g$): $F_N = m(g - g) = 0$. ==The scale reads zero — 'apparent weightlessness'. Gravity is still acting; there is just no contact force.== This is exactly what an astronaut in an orbiting station experiences: continuous free fall around the Earth.\n\nThe direction of the **acceleration** is what sets the sign — not the direction the elevator is *moving*. An elevator moving up but slowing down has a **downward** acceleration, so the scale reads low.",
+      "conceptFigures": [
+        { "svg": "apparent-weight/scale-in-elevator.svg", "size": "lg", "caption": "The scale reads the **normal force** $F_N$ on the person, not the weight $mg$. From $\\sum F = ma$: $F_N = m(g + a)$, where $a$ is the elevator's signed acceleration (shown here pointing **up**, so $F_N > mg$)." }
+      ],
+      "representation": "Two free-body diagrams of the person, with the elevator's **acceleration** marked. Up: the net force is up, so $F_N > mg$ (reads high). Down: the net force is down, so $F_N < mg$ (reads low). The velocity does not appear anywhere — only the acceleration.",
       "figures": [
-        { "svg": "apparent-weight/dot-accel-up.svg", "caption": "Accelerating **upward**: the scale's normal force must both hold you up and accelerate you up, so $F_N > mg$ and the reading is high." }
+        { "svg": "apparent-weight/dot-accel-up.svg", "caption": "Accelerating **upward** ($a$ up): $F_N > mg$, reading is **high**." },
+        { "svg": "apparent-weight/dot-accel-down.svg", "caption": "Accelerating **downward** ($a$ down): $F_N < mg$, reading is **low**." }
       ],
       "workedExample": {
         "scaffold": "hinted",
@@ -259,6 +269,7 @@
     "title": "Spring Force–Extension Graph",
     "subtitle": "The slope is the spring constant",
     "componentKey": "spring-graph-explorer",
+    "afterChunk": "chunk-2",
     "description": "The force–extension graph of an ideal spring is a straight line through the origin, and its **slope is $k$**. Set $k$ and watch the line tilt. Then set a **test extension** and follow the dashed guides up to the line: that is the force $F = kx$ at that stretch — read straight off the graph, no formula. A stiffer spring (bigger $k$) makes a steeper line.",
     "graphs": []
   },
@@ -343,7 +354,7 @@
       ],
       "modelResponse": "1. The student used the direction of the **velocity** (upward) to set the sign of $a$, instead of the direction of the **acceleration**.\n2. In $F_N = m(g + a)$, the $a$ is the *acceleration*, with a sign from the chosen positive direction. 'Moving up but slowing down' means the velocity is up while the acceleration is **down** (opposite the motion). With up positive, $a = -3.0\\text{ m/s}^2$.\n3. $F_N - mg = ma \\Rightarrow F_N = m(g + a) = 50\\big(10 + (-3.0)\\big) = 50(7.0) = 350\\text{ N}$.\n4. Slowing while moving up = accelerating down = feeling **lighter**, so the reading should be *below* the true weight of $500\\text{ N}$. $350\\text{ N} < 500\\text{ N}$ ✓. The student's $650\\text{ N}$ (heavier) points the wrong way.",
       "modelFigures": [
-        { "svg": "apparent-weight/dot-accel-down.svg", "caption": "Slowing while rising ⇒ acceleration points down ⇒ net force down ⇒ $F_N < mg$: the scale reads low." }
+        { "svg": "apparent-weight/dot-accel-down.svg", "caption": "Slowing while rising ⇒ the **acceleration $a$ points down** (dashed arrow) ⇒ net force down ⇒ $F_N < mg$: the scale reads low." }
       ],
       "responseMaxLength": 800
     }
@@ -395,7 +406,7 @@
       "difficulty": "ap5-ib7-target",
       "cognitiveLevel": 5,
       "misconceptionTested": "spring-constant-changes-with-applied-force",
-      "scenario": "A student hangs different weights from a spring and records the stretch from natural length:\n\n| Force (N) | 0 | 2.0 | 4.0 | 6.0 | 8.0 |\n|---|---|---|---|---|---|\n| Stretch (m) | 0 | 0.04 | 0.08 | 0.12 | 0.16 |",
+      "scenario": "A student hangs different weights from a spring and records the stretch from natural length:\n\n| Force (N) | Stretch (m) |\n|---|---|\n| 0 | 0 |\n| 2.0 | 0.04 |\n| 4.0 | 0.08 |\n| 6.0 | 0.12 |\n| 8.0 | 0.16 |",
       "parts": [
         { "label": "(a)", "prompt": "Describe the graph of force (y) against stretch (x), and find the spring constant from it.", "points": 3, "modelResponse": "The points lie on a straight line through the origin. The spring constant is the slope: $k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{8.0 - 0}{0.16 - 0} = 50\\text{ N/m}$ (any pair of points gives the same value, e.g. $2.0/0.04 = 50$)." },
         { "label": "(b)", "prompt": "Predict the stretch when a $5.0\\text{ N}$ weight is hung. State the assumption you are making.", "points": 2, "modelResponse": "$x = F/k = 5.0/50 = 0.10\\text{ m}$. Assumption: the spring is still in its linear (Hooke's-law) range — the line stays straight, i.e. it has not been over-stretched." },

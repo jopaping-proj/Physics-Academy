@@ -292,6 +292,31 @@ export function renderFbdSvg(spec) {
     grow(right ? sx + 8 : sx - 8, CY);
   }
 
+  // optional kinematic annotation: a dashed acceleration arrow drawn BESIDE
+  // the object (it is not a force, so it never starts at the object), with
+  // its own italic label. spec.accel: { dir, label?, color? }
+  const accelParts = [];
+  if (spec.accel) {
+    const [aux, auy] = unit(spec.accel.dir);
+    const acol = COLORS[spec.accel.color] || COLORS.green;
+    const gap = (isDot ? dotR : box.hw) + 30;
+    const ox = CX + gap;
+    const half = 20;
+    const x1 = ox - aux * half, y1 = CY - auy * half;
+    const x2 = ox + aux * half, y2 = CY + auy * half;
+    usedColors.add(spec.accel.color || "green");
+    accelParts.push(
+      `  <line x1="${r(x1)}" y1="${r(y1)}" x2="${r(x2)}" y2="${r(y2)}" stroke="${acol}" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#fbd-${spec.accel.color || "green"})"/>`
+    );
+    const lx = ox + 12;
+    accelParts.push(
+      `  <text x="${r(lx)}" y="${r(CY)}" text-anchor="start" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="${FS}" font-weight="600" font-style="italic" fill="${acol}">${escapeAttr(spec.accel.label || "a")}</text>`
+    );
+    grow(x1, y1);
+    grow(x2, y2);
+    grow(lx + 12, CY);
+  }
+
   // surface (drawn last-but-under; add to bbox)
   let surfaceParts = "";
   if (spec.surface) {
@@ -341,7 +366,7 @@ export function renderFbdSvg(spec) {
 ${defs}
   </defs>
 ${surfaceParts}${objectPart}
-${arrowParts.join("\n")}
+${arrowParts.join("\n")}${accelParts.length ? "\n" + accelParts.join("\n") : ""}
 ${angleParts.join("\n")}
 ${labelParts.join("\n")}
 </svg>

@@ -5,7 +5,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { mdInline } from "../../js/markdown.js";
+import { mdInline, mdToHtml } from "../../js/markdown.js";
 import { DIAGRAMS_DIR } from "./paths.js";
 
 export function esc(str) {
@@ -98,6 +98,13 @@ export function renderFormativeCheck(check, idSuffix) {
   if (check.solutionFigures) {
     delete prepared.solutionFigures;
     prepared.solutionFigureHtml = renderFigures(check.solutionFigures);
+  }
+
+  // assessment.js renders question text with an inline-only markdown pass, so
+  // block markdown in an FRQ scenario (notably a GFM data table) is inert there.
+  // Pre-render it to HTML at build time with the full renderer.
+  if (typeof check.scenario === "string" && /(^|\n)\s*\|.*\|/.test(check.scenario)) {
+    prepared.scenarioHtml = mdToHtml(check.scenario);
   }
 
   if (Array.isArray(check.parts) && check.parts.some((p) => p && (p.figure || p.figures))) {

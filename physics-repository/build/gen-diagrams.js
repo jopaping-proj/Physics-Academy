@@ -353,7 +353,8 @@ const DIAGRAMS = {
     style: "dot",
     dot: { r: 8 },
     ariaLabel:
-      "Dot free-body diagram of a person on a scale in an elevator accelerating upward. The scale's normal force acts up and is the longer arrow; gravity acts down and is shorter. Net force is upward, so F_N is greater than mg and the scale reads high.",
+      "Dot free-body diagram of a person on a scale in an elevator accelerating upward. The scale's normal force acts up and is the longer arrow; gravity acts down and is shorter. Net force is upward, so F_N is greater than mg and the scale reads high. A dashed acceleration arrow beside the dot points up.",
+    accel: { dir: "up", label: "a" },
     forces: [
       { sym: "F_N", dir: "up", mag: 5, anchor: [150, 104], color: "blue" },
       { sym: "F_g", dir: "down", mag: 3, anchor: [150, 120], color: "grey" },
@@ -364,7 +365,8 @@ const DIAGRAMS = {
     style: "dot",
     dot: { r: 8 },
     ariaLabel:
-      "Dot free-body diagram of a person on a scale in an elevator accelerating downward. The scale's normal force acts up and is the shorter arrow; gravity acts down and is longer. Net force is downward, so F_N is less than mg and the scale reads low.",
+      "Dot free-body diagram of a person on a scale in an elevator accelerating downward. The scale's normal force acts up and is the shorter arrow; gravity acts down and is longer. Net force is downward, so F_N is less than mg and the scale reads low. A dashed acceleration arrow beside the dot points down.",
+    accel: { dir: "down", label: "a" },
     forces: [
       { sym: "F_N", dir: "up", mag: 3, anchor: [150, 104], color: "blue" },
       { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
