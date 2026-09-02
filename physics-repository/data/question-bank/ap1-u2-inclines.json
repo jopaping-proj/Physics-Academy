@@ -31,6 +31,7 @@
       }
     },
     "hint": ["'Normal' means perpendicular. Perpendicular to what — the ground, or the actual surface the block touches?"],
+    "hintFigures": [{ "svg": "incline/dot-frictionless.svg", "caption": "Dot free-body diagram of a block on a frictionless incline: $F_N$ is perpendicular to the ramp surface, not vertical." }],
     "solution": "Perpendicular to the ramp surface, pointing away from it."
   },
   {
@@ -60,6 +61,7 @@
       }
     },
     "hint": ["Frictionless incline: $a = g\\sin\\theta$. Does the $6.0\\text{ kg}$ matter?"],
+    "hintFigures": [{ "svg": "incline/dot-frictionless.svg", "caption": "Only two forces: $F_N$ perpendicular to the surface and $mg$ straight down. Their unbalanced part is $mg\\sin\\theta$ down the slope, so $a = g\\sin\\theta$." }],
     "solution": "$a = g\\sin 30° = 4.9\\text{ m/s}^2$."
   },
   {
@@ -89,6 +91,7 @@
       }
     },
     "hint": ["First $F_N = mg\\cos\\theta$, then $f_k = \\mu_k F_N$, then net force $= mg\\sin\\theta - f_k$."],
+    "hintFigures": [{ "svg": "incline/dot-friction.svg", "caption": "Sliding down: gravity straight down, $F_N$ perpendicular to the surface, kinetic friction up the slope. Get $F_N = mg\\cos\\theta$ first, then $f_k = \\mu_k F_N$." }],
     "solution": "$a = g(\\sin\\theta - \\mu_k\\cos\\theta) = 10(0.60 - 0.16) = 4.4\\text{ m/s}^2$."
   },
   {
@@ -123,6 +126,7 @@
       }
     },
     "hint": ["Write $mg\\sin\\theta = \\mu_s mg\\cos\\theta$ and divide by $mg\\cos\\theta$. What is left?"],
+    "hintFigures": [{ "svg": "incline/dot-friction.svg", "caption": "At the slipping angle, static friction is at its maximum $\\mu_s mg\\cos\\theta$ up the slope and just balances $mg\\sin\\theta$ down the slope." }],
     "solution": "$\\tan\\theta = \\mu_s$ — mass-independent, so still $32°$."
   },
   {

@@ -326,6 +326,9 @@
         }
       },
       "hint": ["Set $\\theta = 0$ (flat ground) in each version and ask which one gives 'no pull along the ground, full normal force'."],
+      "hintFigures": [
+        { "svg": "incline/dot-frictionless.svg", "caption": "The weight (down) resolves into a component **into** the slope and a component **along** it. Which one shrinks to zero as the slope flattens?" }
+      ],
       "solution": "$F_{g,\\parallel} = mg\\sin\\theta$, $F_{g,\\perp} = mg\\cos\\theta$: at $\\theta = 0$ this correctly gives $0$ along and $mg$ into the surface. The swapped version fails that check."
     },
     {
@@ -428,7 +431,7 @@
       "misconceptionTested": "normal-force-always-equals-weight",
       "scenario": "A worker pushes a $5.0\\text{ kg}$ crate **up** a ramp inclined at $25°$ to the horizontal. The push is a force of $40\\text{ N}$ directed **parallel to the ramp surface, up the slope**. The coefficient of kinetic friction between crate and ramp is $\\mu_k = 0.15$. Take $g = 9.8\\text{ m/s}^2$, $\\sin 25° = 0.423$, $\\cos 25° = 0.906$.",
       "parts": [
-        { "label": "(a)", "prompt": "Draw a free-body diagram of the crate and list every force with its direction. State which way the crate is accelerating and therefore which way kinetic friction points.", "points": 3, "modelResponse": "Four forces: weight $mg$ straight down; normal force $F_N$ perpendicular to the ramp (away from the surface); applied push $F_{\\text{app}} = 40\\text{ N}$ up the slope; kinetic friction $f_k$ along the surface. The crate is being pushed up the slope and moves up the slope, so kinetic friction points **down** the slope (opposing the motion)." },
+        { "label": "(a)", "prompt": "Draw a free-body diagram of the crate and list every force with its direction. State which way the crate is accelerating and therefore which way kinetic friction points.", "points": 3, "modelResponse": "Four forces: weight $mg$ straight down; normal force $F_N$ perpendicular to the ramp (away from the surface); applied push $F_{\\text{app}} = 40\\text{ N}$ up the slope; kinetic friction $f_k$ along the surface. The crate is being pushed up the slope and moves up the slope, so kinetic friction points **down** the slope (opposing the motion).", "figures": [ { "svg": "incline/dot-friction.svg", "caption": "Dot free-body diagram. Here the applied push is up the slope, so the crate moves up the slope and $f_k$ points **down** the slope — the opposite of the sliding-down case drawn here. $F_N$ is still perpendicular to the surface, gravity still straight down." } ] },
         { "label": "(b)", "prompt": "Find the normal force on the crate.", "points": 2, "modelResponse": "The push is parallel to the ramp, so it has no perpendicular component. Perpendicular axis: $F_N - mg\\cos\\theta = 0 \\Rightarrow F_N = mg\\cos\\theta = (5.0)(9.8)(0.906) = 44.4\\text{ N}$. (Note $F_N < mg = 49\\text{ N}$.)" },
         { "label": "(c)", "prompt": "Find the magnitude and direction of the kinetic friction force.", "points": 2, "modelResponse": "$f_k = \\mu_k F_N = (0.15)(44.4) = 6.7\\text{ N}$, directed **down the slope** (opposite the crate's up-slope motion)." },
         { "label": "(d)", "prompt": "Find the acceleration of the crate along the ramp. State its direction.", "points": 3, "modelResponse": "Take up-slope positive. $\\sum F_\\parallel = F_{\\text{app}} - mg\\sin\\theta - f_k = 40 - (5.0)(9.8)(0.423) - 6.7 = 40 - 20.7 - 6.7 = 12.6\\text{ N}$. $a = \\sum F_\\parallel / m = 12.6/5.0 = 2.5\\text{ m/s}^2$, directed **up the slope**." }
