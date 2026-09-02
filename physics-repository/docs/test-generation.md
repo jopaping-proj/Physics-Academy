@@ -198,13 +198,43 @@ For **IB courses**, every MCQ that could appear on a `not-allowed` test
 needs `"calculatorFree": true` and must be answerable by hand (clean
 numbers, ratio reasoning, no multi-step arithmetic).
 
-**AP Physics 1 Unit 2 pool status (2026-09-02):** 132 MCQ + 15 FRQ.
-Difficulty spread is within tolerance of §2.2 after
-`ap1-u2-exam-mix.json` (`AP1-U2-MCQ-119…132`) topped up the thin
-`foundation` / `developing` and higher-order buckets. Still leans the
-conceptual cognitive band (§2.3 band B) over the higher-order band —
-adding ~15 more transfer/synthesis MCQs is tracked in the Unit 2
-architecture changelog (0.9.16).
+**AP Physics 1 Unit 2 pool status (2026-09-02):** **155 MCQ + 25 FRQ**
+across 17 bank files. Difficulty spread within tolerance of §2.2;
+cognitive spread A/B/C ≈ 23 / 46 / 31 % (target 25 / 40 / 35 — close).
+No `build/render/unit-test.js` pool warnings.
+
+---
+
+## 4a. Adding a unit test to a new unit
+
+Every unit in every course gets one `format: "unit-test"` page. The
+steps:
+
+1. **Author (or convert) a native question bank** for the unit — one or
+   more JSON arrays under `data/question-bank/`, each item in the
+   standard question schema (`build/build.js` schema comment). This is
+   the gating requirement: the assembler draws only from native arrays,
+   not from the Markdown provenance manifests (`BP8-*-index.json` etc.).
+2. **Write `content/<course>/<unit>/<unit>-test.json`** —
+   `format: "unit-test"`, `id`, `slug`, `course`, `courses`, `unit`,
+   `lessonTitle`, `intro`, `config`, `mcqBanks`, `frqBanks`. Copy
+   `content/ap-physics-1/unit-2-dynamics/unit-2-test.json` as the model.
+3. **Set the calculator policy.** Omit `calculatorPolicy` to inherit
+   `data/test-blueprint.json` → `calculatorPolicyByCourse`; for an IB
+   course the inherited default is `"not-allowed"`, so **every MCQ that
+   could be drawn needs `"calculatorFree": true`** and must be hand-solvable.
+4. **Add the entry to the unit's `*-index.json` sequence** — a
+   `{ "type": "module", "label": "Unit Test", "slug": "<unit>-test", … }`
+   after the post concept-check.
+5. **Build.** `build/render/unit-test.js` warns if the pool is thin
+   against the blueprint; treat those as the bank-gap checklist (§4).
+
+**Current blocker for the other courses:** AP Physics 2, IB Physics
+SL/HL, and BASIS Physics 8 have **no native question banks** — BASIS has
+only the `BP8-*` provenance manifests (Markdown ledgers). Until at least
+one unit of one of those courses has a native bank, its unit test cannot
+be generated. The infrastructure (blueprint, assembler, runtime,
+calculator-policy filter, linked headers) is course-neutral and ready.
 
 ---
 

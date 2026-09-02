@@ -54,6 +54,7 @@
  *     { "id": "chunk-1", "title": "…", "concept": "md", "representation": "md",
  *       "conceptFigures": [ { "svg": "…", "caption": "md" } ],               // on the concept card
  *       "figures": [ { "svg": "<lesson>/fbd-box.svg", "caption": "md" } ],   // on the representation card
+ *       "figuresFirst": true,   // put `figures` ABOVE the representation text (for derivations that refer back to a diagram)
  *       "workedExample": { "scaffold": "full", "problem": "…",
  *                          "figure": { "svg": "…", "caption": "md" },
  *                          "phases": [ { "label": "…", "steps": ["md"] } ],
