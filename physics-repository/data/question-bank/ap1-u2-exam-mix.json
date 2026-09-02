@@ -1,0 +1,447 @@
+[
+  {
+    "id": "AP1-U2-MCQ-119",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.3",
+    "cedTopic": "2.5",
+    "clusterId": "2.3",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A $4.0\\text{ kg}$ object on a frictionless surface feels three horizontal forces: $10\\text{ N}$ east, $4.0\\text{ N}$ west, and $2.0\\text{ N}$ west. Its acceleration is:",
+    "choices": ["$1.0\\text{ m/s}^2$ east", "$4.0\\text{ m/s}^2$ east", "$1.5\\text{ m/s}^2$ west", "$16\\text{ m/s}^2$ east"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — net force $= 10 - 4.0 - 2.0 = 4.0\\text{ N}$ east. $a = F_{net}/m = 4.0/4.0 = 1.0\\text{ m/s}^2$ east.",
+      "incorrect": {
+        "1": "$4.0\\text{ N}$ is the net force, not the acceleration. Divide by the mass: $4.0/4.0 = 1.0\\text{ m/s}^2$.",
+        "2": "The eastward force ($10\\text{ N}$) beats the two westward forces ($6.0\\text{ N}$ total), so the net force — and the acceleration — point east.",
+        "3": "This multiplies ($4.0 \\times 4.0$). $a = F_{net}/m$ divides."
+      }
+    },
+    "hint": ["Add the forces with signs to get the net force, then $a = F_{net}/m$."],
+    "solution": "$F_{net} = 10 - 4.0 - 2.0 = 4.0\\text{ N east}$; $a = 4.0/4.0 = 1.0\\text{ m/s}^2$ east."
+  },
+  {
+    "id": "AP1-U2-MCQ-120",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "calculatorFree": true,
+    "question": "A $5.0\\text{ kg}$ box sits at rest on a level floor with no forces on it other than gravity and the floor's normal force. Taking $g = 10\\text{ m/s}^2$, the normal force on the box is:",
+    "choices": ["$50\\text{ N}$", "$5.0\\text{ N}$", "$0\\text{ N}$", "$10\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — vertical equilibrium: $F_N - mg = 0$, so $F_N = mg = (5.0)(10) = 50\\text{ N}$. (On a level floor with only vertical forces, the normal force equals the weight — this is the *one* case where it does.)",
+      "incorrect": {
+        "1": "That is the mass in kilograms, not a force. $F_N = mg = 50\\text{ N}$.",
+        "2": "If the normal force were zero the box would be in free fall. It is at rest, so $F_N$ balances gravity.",
+        "3": "That is $g$, not the weight. Multiply by the mass: $F_N = mg = 50\\text{ N}$."
+      }
+    },
+    "hint": ["Vertical forces balance: $F_N = mg$ here, because the only vertical forces are gravity and the normal force."],
+    "solution": "$F_N = mg = (5.0)(10) = 50\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-121",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A $2.0\\text{ kg}$ block slides across a level floor where the coefficient of kinetic friction is $0.30$. Taking $g = 10\\text{ m/s}^2$, the kinetic friction force on the block is:",
+    "choices": ["$6.0\\text{ N}$", "$0.60\\text{ N}$", "$20\\text{ N}$", "$0.30\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — on a level floor $F_N = mg = 20\\text{ N}$, so $f_k = \\mu_k F_N = (0.30)(20) = 6.0\\text{ N}$.",
+      "incorrect": {
+        "1": "This uses $\\mu_k \\times m$ instead of $\\mu_k \\times F_N$. $F_N = mg = 20\\text{ N}$, so $f_k = 6.0\\text{ N}$.",
+        "2": "$20\\text{ N}$ is the normal force. Kinetic friction is $\\mu_k$ times that: $6.0\\text{ N}$.",
+        "3": "$0.30$ is the coefficient (dimensionless), not a force. Multiply by $F_N = 20\\text{ N}$."
+      }
+    },
+    "hint": ["$f_k = \\mu_k F_N$, and on a level floor $F_N = mg$."],
+    "solution": "$F_N = mg = 20\\text{ N}$; $f_k = (0.30)(20) = 6.0\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-122",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.6",
+    "cedTopic": "2.3",
+    "clusterId": "2.6",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "larger-object-exerts-larger-force-in-collision",
+    "calculatorFree": true,
+    "question": "A hammer drives a nail into wood, exerting $60\\text{ N}$ on the nail at one instant. At that instant, the force the nail exerts on the hammer is:",
+    "choices": ["$60\\text{ N}$, in the opposite direction", "much less than $60\\text{ N}$, since the nail is small", "zero, since the nail is not moving", "$60\\text{ N}$, in the same direction"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — Newton's third law: the hammer-on-nail and nail-on-hammer forces are equal in magnitude ($60\\text{ N}$) and opposite in direction, always, regardless of size or motion. (That backward force on the hammer is what decelerates it.)",
+      "incorrect": {
+        "1": "Size does not matter for a third-law pair. The two forces are equal at every instant.",
+        "2": "The nail's lack of motion is irrelevant. The interaction force is $60\\text{ N}$ each way.",
+        "3": "A third-law pair is equal and *opposite*. The nail pushes back on the hammer, not forward with it."
+      }
+    },
+    "hint": ["Third-law pairs are equal in magnitude and opposite in direction — no exceptions for size or speed."],
+    "solution": "$60\\text{ N}$, opposite in direction (Newton's third law)."
+  },
+  {
+    "id": "AP1-U2-MCQ-123",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.11",
+    "cedTopic": "2.1",
+    "clusterId": "2.11",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "center-of-mass-is-the-geometric-centre",
+    "calculatorFree": true,
+    "question": "A $2.0\\text{ kg}$ ball sits at $x = 0$ and a $6.0\\text{ kg}$ ball sits at $x = 8.0\\text{ m}$ on a light rod. The centre of mass of the two-ball system is at:",
+    "choices": ["$x = 6.0\\text{ m}$", "$x = 4.0\\text{ m}$", "$x = 2.0\\text{ m}$", "$x = 8.0\\text{ m}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $x_{cm} = \\dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2} = \\dfrac{(2.0)(0) + (6.0)(8.0)}{8.0} = \\dfrac{48}{8.0} = 6.0\\text{ m}$. The centre of mass sits closer to the heavier ball.",
+      "incorrect": {
+        "1": "$4.0\\text{ m}$ is the geometric midpoint. The centre of mass is pulled toward the *heavier* ball, so it is past the middle.",
+        "2": "This is toward the lighter ball — the wrong direction. The $6.0\\text{ kg}$ ball dominates.",
+        "3": "That is the position of the heavier ball itself. The lighter ball still shifts the centre of mass back a bit."
+      }
+    },
+    "hint": ["$x_{cm} = \\dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$. It lands closer to the heavier mass."],
+    "solution": "$x_{cm} = \\dfrac{(2.0)(0) + (6.0)(8.0)}{8.0} = 6.0\\text{ m}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-124",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "motionless-implies-no-forces-act",
+    "calculatorFree": true,
+    "question": "A heavy crate sits motionless on a warehouse floor. Which statement about the forces on it is correct?",
+    "choices": [
+      "The net force is zero; gravity down and the normal force up are equal and opposite.",
+      "There are no forces on the crate, because it is not moving.",
+      "Gravity acts, but there is no upward force since nothing is pushing.",
+      "The net force points down, which is why the crate stays on the floor."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — 'at rest' means zero acceleration, which means zero *net* force, not zero forces. Gravity pulls down and the floor's normal force pushes up with an equal magnitude; they cancel.",
+      "incorrect": {
+        "1": "Gravity always acts, and the floor pushes back. 'Motionless' means the forces *balance*, not that there are none.",
+        "2": "The floor does push up — that is the normal force, and it must equal the weight for the crate to stay at rest.",
+        "3": "A downward net force would accelerate the crate downward (into the floor). At rest, the net force is zero."
+      }
+    },
+    "hint": ["At rest ⇒ $a = 0$ ⇒ net force $= 0$. That is not the same as 'no forces'."],
+    "solution": "Net force zero: gravity down and an equal normal force up."
+  },
+  {
+    "id": "AP1-U2-MCQ-125",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.10",
+    "cedTopic": "2.8",
+    "clusterId": "2.10",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A spring with spring constant $k = 200\\text{ N/m}$ is stretched $0.04\\text{ m}$ from its natural length. The magnitude of the spring force is:",
+    "choices": ["$8.0\\text{ N}$", "$5000\\text{ N}$", "$0.8\\text{ N}$", "$200\\text{ N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $|F_s| = kx = (200)(0.04) = 8.0\\text{ N}$, directed back toward the natural length.",
+      "incorrect": {
+        "1": "This divides ($200 / 0.04$). $F_s = kx$ multiplies.",
+        "2": "A decimal slip: $(200)(0.04) = 8.0\\text{ N}$, not $0.8$.",
+        "3": "$200$ is $k$ in N/m, not a force. Multiply by the extension: $8.0\\text{ N}$."
+      }
+    },
+    "hint": ["$|F_s| = kx$ with $x$ the stretch from natural length."],
+    "solution": "$|F_s| = (200)(0.04) = 8.0\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-126",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.2",
+    "cedTopic": "2.2",
+    "clusterId": "2.2",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "Which of these is NOT a contact force?",
+    "choices": ["gravity", "kinetic friction", "the normal force", "rope tension"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — gravity is a long-range (field) force: it acts without the objects touching. Friction, the normal force, and tension all require physical contact.",
+      "incorrect": {
+        "1": "Friction acts between two surfaces that are touching — it is a contact force.",
+        "2": "The normal force is the push of one surface on another in contact — a contact force.",
+        "3": "Tension is transmitted through a rope that is physically attached — a contact force."
+      }
+    },
+    "hint": ["Which one acts even when the objects are not touching?"],
+    "solution": "Gravity — it is a field (long-range) force, not a contact force."
+  },
+  {
+    "id": "AP1-U2-MCQ-127",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.3",
+    "cedTopic": "2.5",
+    "clusterId": "2.3",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "The newton, expressed in SI base units, is:",
+    "choices": ["$\\text{kg}\\cdot\\text{m}/\\text{s}^2$", "$\\text{kg}\\cdot\\text{m}/\\text{s}$", "$\\text{kg}\\cdot\\text{m}^2/\\text{s}^2$", "$\\text{kg}/\\text{m}\\cdot\\text{s}^2$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — from $F = ma$: force = mass × acceleration = $\\text{kg} \\times \\text{m/s}^2 = \\text{kg}\\cdot\\text{m}/\\text{s}^2$.",
+      "incorrect": {
+        "1": "$\\text{kg}\\cdot\\text{m}/\\text{s}$ is momentum ($mv$), not force.",
+        "2": "$\\text{kg}\\cdot\\text{m}^2/\\text{s}^2$ is the joule (energy), not the newton.",
+        "3": "Acceleration is $\\text{m}/\\text{s}^2$, so $F = ma$ gives $\\text{kg}\\cdot\\text{m}/\\text{s}^2$, with metres in the numerator."
+      }
+    },
+    "hint": ["$F = ma$. Multiply the units of mass and acceleration."],
+    "solution": "$\\text{kg}\\cdot\\text{m}/\\text{s}^2$ (from $F = ma$)."
+  },
+  {
+    "id": "AP1-U2-MCQ-128",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.1",
+    "cedTopic": "2.4",
+    "clusterId": "2.1",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "misconceptionTested": "mass-and-weight-are-the-same",
+    "calculatorFree": true,
+    "question": "The property of an object that measures how much it resists a change in its state of motion is its:",
+    "choices": ["inertial mass", "weight", "net force", "momentum"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — inertial mass is the measure of resistance to acceleration: in $a = F_{net}/m$, a larger $m$ means a smaller acceleration for the same net force.",
+      "incorrect": {
+        "1": "Weight is the gravitational force on the object (in newtons); it varies with location. Resistance to acceleration does not.",
+        "2": "Net force is what *causes* acceleration, not what resists it.",
+        "3": "Momentum ($mv$) depends on how fast the object is already moving; inertia does not."
+      }
+    },
+    "hint": ["Which quantity appears in the denominator of $a = F_{net}/m$?"],
+    "solution": "Inertial mass — the $m$ in $a = F_{net}/m$."
+  },
+  {
+    "id": "AP1-U2-MCQ-129",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "calculatorFree": true,
+    "question": "A curve is banked so that a car travelling at the design speed needs no friction. A car takes the same curve **more slowly** than the design speed. On this car, friction must act:",
+    "choices": [
+      "up the bank (toward the outside), because the car tends to slide down the bank",
+      "down the bank (toward the inside), because the car tends to slide up the bank",
+      "there is still no friction needed at any speed on a banked curve",
+      "backward, opposing the car's motion along the road"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at the design speed the inward component of the normal force exactly supplies $mv^2/r$. Going slower needs *less* inward force, so the surplus inward push makes the car tend to slide **down** the bank (toward the centre); friction then acts **up** the bank to hold it on line.",
+      "incorrect": {
+        "1": "That is the fast case. Going *faster* than design speed needs more inward force than $F_N$ provides, so the car tends to ride up the bank and friction acts down it.",
+        "2": "No-friction only works at exactly one speed (the design speed). Off that speed, friction is needed.",
+        "3": "The friction that matters here is across the road (up/down the bank), holding the car in its circular path — not along the direction of travel."
+      }
+    },
+    "hint": ["At design speed, $F_N$'s inward component = $mv^2/r$ exactly. Slower ⇒ you need *less* inward force ⇒ which way does the car drift, and which way must friction point to stop it?"],
+    "solution": "Up the bank — slower than design speed means a surplus inward force, so the car tends to slide down and friction must resist that."
+  },
+  {
+    "id": "AP1-U2-MCQ-130",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.8",
+    "cedTopic": "2.7",
+    "clusterId": "2.8",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "",
+    "calculatorFree": true,
+    "question": "A block rests on an incline at exactly the angle where it is on the verge of slipping. A second identical block is now placed on top of the first. What happens?",
+    "choices": [
+      "Nothing slips — the critical angle $\\tan\\theta = \\mu_s$ does not depend on mass.",
+      "Both blocks slide, because the weight pressing down the slope has doubled.",
+      "Only the top block slides off the bottom one.",
+      "The bottom block slides but the top one stays."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at the verge of slipping, $mg\\sin\\theta = \\mu_s mg\\cos\\theta$, i.e. $\\tan\\theta = \\mu_s$. Doubling the mass doubles *both* the down-slope pull and the maximum static friction, so the balance is unchanged. The stack stays (just barely).",
+      "incorrect": {
+        "1": "The down-slope weight component doubled — but so did the maximum static friction ($\\mu_s mg\\cos\\theta$). They scale together.",
+        "2": "The blocks are described as identical and stacked; there is no reason for the top one to slide relative to the bottom one here (assume enough friction between them).",
+        "3": "Same reasoning — the incline's grip on the bottom block scales with the total weight on it."
+      }
+    },
+    "hint": ["The slipping condition is $\\tan\\theta = \\mu_s$. Is there an $m$ in it?"],
+    "solution": "Nothing slips — the critical angle is mass-independent; doubling the load doubles both the driving force and the maximum friction."
+  },
+  {
+    "id": "AP1-U2-MCQ-131",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.5",
+    "cedTopic": "2.5",
+    "clusterId": "2.5",
+    "skill": "transfer",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "calculatorFree": true,
+    "question": "A $2.0\\text{ kg}$ block is pressed against a vertical wall by a horizontal force of $30\\text{ N}$. The coefficient of static friction between block and wall is $0.50$. Taking $g = 10\\text{ m/s}^2$, the block:",
+    "choices": [
+      "slides down, because the most static friction the wall can provide ($15\\text{ N}$) is less than the block's weight ($20\\text{ N}$)",
+      "stays put, because the $30\\text{ N}$ push is larger than the $20\\text{ N}$ weight",
+      "slides down, because there is no upward force on it at all",
+      "accelerates upward, because friction acts up and exceeds gravity"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the wall's normal force is $F_N = 30\\text{ N}$ (it balances the horizontal push). Maximum static friction is $\\mu_s F_N = (0.50)(30) = 15\\text{ N}$, acting upward. The weight is $mg = 20\\text{ N}$ down. Since $15\\text{ N} < 20\\text{ N}$, friction cannot hold the block and it slides down.",
+      "incorrect": {
+        "1": "The $30\\text{ N}$ push is horizontal — it does not hold the block up. What holds it up is friction, capped at $\\mu_s F_N = 15\\text{ N}$, which is less than the $20\\text{ N}$ weight.",
+        "2": "There *is* an upward force: static friction from the wall, up to $15\\text{ N}$. It is just not enough here.",
+        "3": "Static friction cannot exceed $\\mu_s F_N = 15\\text{ N}$, which is less than gravity, so there is no net upward force."
+      }
+    },
+    "hint": ["The horizontal push sets $F_N$. Friction (vertical, up) maxes out at $\\mu_s F_N$. Compare that to the weight."],
+    "solution": "$F_N = 30\\text{ N}$; $f_{s,\\max} = (0.50)(30) = 15\\text{ N} < mg = 20\\text{ N}$, so the block slides down."
+  },
+  {
+    "id": "AP1-U2-MCQ-132",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Unit 2 mixed practice",
+    "objective": "C2.12",
+    "cedTopic": "2.9",
+    "clusterId": "2.12",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "calculatorFree": true,
+    "question": "A ball on a string is swung in a vertical circle of radius $r$. At the very top of the circle, the slowest speed for which the string stays taut satisfies:",
+    "choices": [
+      "$v = \\sqrt{g r}$ — at this speed gravity alone provides the centripetal force and the string tension is zero",
+      "$v = \\sqrt{2 g r}$ — the ball must have enough speed to reach the top",
+      "$v = 0$ — the string is taut at any speed at the top",
+      "$v = \\sqrt{g / r}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at the top, 'toward the centre' is downward, and the real downward forces are gravity and tension: $mg + F_T = mv^2/r$. The string goes slack when $F_T = 0$, which needs $mg = mv^2/r$, i.e. $v = \\sqrt{gr}$. Slower than that and the required centripetal force is less than gravity alone — the ball falls inward.",
+      "incorrect": {
+        "1": "$\\sqrt{2gr}$ is the speed from an energy argument about *getting* to the top from the bottom, not the minimum for the string to stay taut at the top.",
+        "2": "At low speed the centripetal requirement $mv^2/r$ is smaller than $mg$, so gravity over-supplies the inward force and the ball leaves the circular path — the string goes slack.",
+        "3": "Check the units: $\\sqrt{g/r}$ has units of $1/\\text{s}$, not m/s. The right combination is $\\sqrt{gr}$."
+      }
+    },
+    "hint": ["At the top, $mg + F_T = mv^2/r$. The string is on the verge of going slack when $F_T = 0$."],
+    "solution": "$F_T = 0 \\Rightarrow mg = mv^2/r \\Rightarrow v = \\sqrt{gr}$."
+  }
+]

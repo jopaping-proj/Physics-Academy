@@ -18,13 +18,15 @@
   <!-- elastic-limit marker -->
   <circle cx="196" cy="70" r="3.5" fill="#f0c27a"/>
   <line x1="196" y1="70" x2="196" y2="210" stroke="#8b96a5" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="204" y="60" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">elastic limit</text>
+  <!-- label parked above-left of the point, clear of the line and the curve, with a short leader -->
+  <path d="M190 55 L196 67" fill="none" stroke="#f0c27a" stroke-width="0.9"/>
+  <text x="187" y="52" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f0c27a">elastic limit</text>
 
-  <!-- slope callout, parked in the open space above the straight segment -->
-  <text x="56" y="104" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">slope = k</text>
+  <!-- slope callout, in the open triangle above the straight segment -->
+  <text x="58" y="96" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#3fb950">slope = k</text>
 
-  <!-- Hooke's-law annotation, low-left in the open wedge under the line -->
-  <text x="104" y="176" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">straight line: F = k x</text>
-  <text x="248" y="112" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">past the limit,</text>
-  <text x="248" y="126" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">F = k x fails</text>
+  <!-- Hooke's-law annotation, in the open wedge below the straight line -->
+  <text x="112" y="182" font-family="system-ui, sans-serif" font-size="11" fill="#8b96a5">F = k x</text>
+  <text x="252" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">past the limit,</text>
+  <text x="252" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#8b96a5">F = k x fails</text>
 </svg>

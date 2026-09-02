@@ -198,6 +198,14 @@ For **IB courses**, every MCQ that could appear on a `not-allowed` test
 needs `"calculatorFree": true` and must be answerable by hand (clean
 numbers, ratio reasoning, no multi-step arithmetic).
 
+**AP Physics 1 Unit 2 pool status (2026-09-02):** 132 MCQ + 15 FRQ.
+Difficulty spread is within tolerance of §2.2 after
+`ap1-u2-exam-mix.json` (`AP1-U2-MCQ-119…132`) topped up the thin
+`foundation` / `developing` and higher-order buckets. Still leans the
+conceptual cognitive band (§2.3 band B) over the higher-order band —
+adding ~15 more transfer/synthesis MCQs is tracked in the Unit 2
+architecture changelog (0.9.16).
+
 ---
 
 ## 5. Sources

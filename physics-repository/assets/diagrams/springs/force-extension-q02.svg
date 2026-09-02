@@ -32,7 +32,8 @@
   <!-- line through the origin (46,200) and (0.05, 4.0)=(107.5,157), extended to (0.20,16)=(292,28) -->
   <line x1="46" y1="200" x2="292" y2="28" stroke="#3fb950" stroke-width="3"/>
 
-  <!-- given point -->
+  <!-- given point, labelled below-right in the open area with a short leader -->
   <circle cx="107.5" cy="157" r="4" fill="#f0c27a"/>
-  <text x="115" y="150" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#f0c27a">(0.05 m, 4.0 N)</text>
+  <path d="M110 161 L118 173" fill="none" stroke="#f0c27a" stroke-width="0.9"/>
+  <text x="116" y="184" font-family="system-ui, sans-serif" font-size="10.5" font-weight="600" fill="#f0c27a">(0.05 m, 4.0 N)</text>
 </svg>

@@ -21,7 +21,8 @@
     "ap1-u2-grav-spring-aw.json",
     "ap1-u2-inclines.json",
     "ap1-u2-circular.json",
-    "ap1-u2-synthesis.json"
+    "ap1-u2-synthesis.json",
+    "ap1-u2-exam-mix.json"
   ],
   "frqBanks": ["ap1-u2-dynamics-frq.json"]
 }
