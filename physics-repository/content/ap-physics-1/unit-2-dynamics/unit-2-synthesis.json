@@ -2,7 +2,9 @@
   "id": "ap1-u2-synthesis",
   "slug": "unit-2-synthesis",
   "course": "AP Physics 1",
-  "courses": ["ap-physics-1"],
+  "courses": [
+    "ap-physics-1"
+  ],
   "unit": "Unit 2: Force and Translational Dynamics",
   "topic": "Forces",
   "lessonNumber": "12",
@@ -79,7 +81,9 @@
       "formativeCheck": {
         "id": "ap1-u2-synthesis-q01",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Unit 2 Synthesis and Transfer",
         "objective": "C2.12",
@@ -107,7 +111,9 @@
             "3": "Towing a trailer is a connected-objects (interaction) problem, still along a straight line."
           }
         },
-        "hint": ["Circular motion needs a curved path. Which addition introduces a radius of curvature?"],
+        "hint": [
+          "Circular motion needs a curved path. Which addition introduces a radius of curvature?"
+        ],
         "solution": "'The road curves with a radius of $120\\text{ m}$' — a curved path means a centripetal requirement $mv^2/r$."
       }
     },
@@ -152,7 +158,9 @@
       "formativeCheck": {
         "id": "ap1-u2-synthesis-q02",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Unit 2 Synthesis and Transfer",
         "objective": "C2.6",
@@ -180,7 +188,9 @@
             "3": "The forces act on *different objects*, so they do not cancel — each object feels its own force and accelerates."
           }
         },
-        "hint": ["Third-law pairs act on two different objects and are always equal and opposite. Does mass or speed change that?"],
+        "hint": [
+          "Third-law pairs act on two different objects and are always equal and opposite. Does mass or speed change that?"
+        ],
         "solution": "Equal and opposite (third law). The car's larger acceleration comes from its smaller mass, not a larger force."
       }
     },
@@ -223,12 +233,18 @@
             ]
           }
         ],
-        "keyMove": "Doing the perpendicular axis first — with **both** the weight component and the rope's perpendicular component — to get the true $F_N$ before computing friction."
+        "keyMove": "Doing the perpendicular axis first — with **both** the weight component and the rope's perpendicular component — to get the true $F_N$ before computing friction.",
+        "figure": {
+          "svg": "incline/fbd-rope-above-surface.svg",
+          "caption": "Free-body diagram for Step 1. Four forces: $mg$ from the centre, $F_N$ from the contact face (perpendicular), the rope tension $F_T$ from the block at $20^\\circ$ above the surface, and kinetic friction $f_k$ from the contact face **down** the slope (the block slides up)."
+        }
       },
       "formativeCheck": {
         "id": "ap1-u2-synthesis-q03",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Unit 2 Synthesis and Transfer",
         "objective": "C2.9",
@@ -256,7 +272,9 @@
             "3": "$T\\cos 30°$ is horizontal — it has nothing to do with the vertical balance that sets $F_N$."
           }
         },
-        "hint": ["Write $\\sum F_y = 0$ with the normal force up, gravity down, and the rope's vertical component up. Solve for $F_N$."],
+        "hint": [
+          "Write $\\sum F_y = 0$ with the normal force up, gravity down, and the rope's vertical component up. Solve for $F_N$."
+        ],
         "solution": "$F_N = mg - T\\sin 30°$ — the rope's upward pull reduces the normal force."
       }
     },
@@ -300,7 +318,9 @@
       "formativeCheck": {
         "id": "ap1-u2-synthesis-q04",
         "course": "AP Physics 1",
-        "courses": ["ap-physics-1"],
+        "courses": [
+          "ap-physics-1"
+        ],
         "unit": "Unit 2",
         "lesson": "Unit 2 Synthesis and Transfer",
         "objective": "C2.10",
@@ -313,7 +333,12 @@
         "cognitiveLevel": 4,
         "misconceptionTested": "spring-constant-changes-with-applied-force",
         "question": "A force–extension graph for a spring is a straight line from the origin through $(0.10\\text{ m}, 3.0\\text{ N})$, then it curves and flattens beyond $x = 0.10\\text{ m}$. For a stretch of $0.06\\text{ m}$, the force is:",
-        "choices": ["$1.8\\text{ N}$", "$3.0\\text{ N}$", "$5.0\\text{ N}$", "cannot be found"],
+        "choices": [
+          "$1.8\\text{ N}$",
+          "$3.0\\text{ N}$",
+          "$5.0\\text{ N}$",
+          "cannot be found"
+        ],
         "correctAnswer": 0,
         "feedback": {
           "correct": "Correct — $0.06\\text{ m}$ is inside the straight-line (linear) region. There $k = 3.0/0.10 = 30\\text{ N/m}$, so $F = kx = (30)(0.06) = 1.8\\text{ N}$.",
@@ -323,7 +348,9 @@
             "3": "It can be found — $0.06\\text{ m}$ is in the linear region, where $F = kx$ with $k$ from the slope."
           }
         },
-        "hint": ["Is $0.06\\text{ m}$ in the straight part of the graph or the curved part? On the straight part, $F = kx$ with $k$ = slope."],
+        "hint": [
+          "Is $0.06\\text{ m}$ in the straight part of the graph or the curved part? On the straight part, $F = kx$ with $k$ = slope."
+        ],
         "solution": "$k = 3.0/0.10 = 30\\text{ N/m}$ in the linear region; $F = (30)(0.06) = 1.8\\text{ N}$."
       }
     }
@@ -340,7 +367,9 @@
     {
       "id": "ap1-u2-synthesis-mc01",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.3",
@@ -368,13 +397,17 @@
           "3": "$\\vec{F}_{net} = m\\vec{a}$ applies whether the object is at rest ($a = 0$) or accelerating. The point is that $\\vec{F}$ is always the total."
         }
       },
-      "hint": ["What does the $\\vec{F}$ in $\\vec{F}_{net} = m\\vec{a}$ actually stand for — one force, or all of them combined?"],
+      "hint": [
+        "What does the $\\vec{F}$ in $\\vec{F}_{net} = m\\vec{a}$ actually stand for — one force, or all of them combined?"
+      ],
       "solution": "$\\vec{F}_{net}$ is the vector sum of every force on the object; you must build the FBD and combine them, not use a single named force."
     },
     {
       "id": "ap1-u2-synthesis-mc02",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.12",
@@ -402,7 +435,9 @@
           "3": "Checking $v_{\\max} = \\sqrt{\\mu_s g r}$ is a good limiting-case check for this framework."
         }
       },
-      "hint": ["Is an object moving at constant speed around a curve in equilibrium? What is happening to its velocity vector?"],
+      "hint": [
+        "Is an object moving at constant speed around a curve in equilibrium? What is happening to its velocity vector?"
+      ],
       "solution": "Setting $\\sum F = 0$ 'because speed is constant' — a curved path has a centripetal acceleration, so the net force is non-zero and inward."
     }
   ],
@@ -424,7 +459,9 @@
     {
       "id": "ap1-u2-synthesis-la01",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.10",
@@ -437,7 +474,12 @@
       "cognitiveLevel": 3,
       "misconceptionTested": "",
       "question": "Two planets have the same radius, but planet Y has four times the mass of planet X. An object's weight on Y compared with its weight on X is:",
-      "choices": ["the same", "twice as much", "four times as much", "sixteen times as much"],
+      "choices": [
+        "the same",
+        "twice as much",
+        "four times as much",
+        "sixteen times as much"
+      ],
       "correctAnswer": 2,
       "feedback": {
         "correct": "Correct — surface gravity $g = GM/R^2$. Same $R$, four times $M$ ⇒ four times $g$ ⇒ four times the weight $mg$ for the same object.",
@@ -447,13 +489,17 @@
           "3": "That would be $M^2$ or a radius effect. Here only $M$ changes, linearly: $\\times 4$."
         }
       },
-      "hint": ["Surface gravity $g = GM/R^2$. If $R$ is unchanged and $M \\to 4M$, what happens to $g$ (and hence to $mg$)?"],
+      "hint": [
+        "Surface gravity $g = GM/R^2$. If $R$ is unchanged and $M \\to 4M$, what happens to $g$ (and hence to $mg$)?"
+      ],
       "solution": "$g \\propto M/R^2$; same $R$, $4\\times M$ ⇒ $4\\times g$ ⇒ four times the weight."
     },
     {
       "id": "ap1-u2-synthesis-la02",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.7",
@@ -466,7 +512,12 @@
       "cognitiveLevel": 4,
       "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
       "question": "On a frictionless table, a $3.0\\text{ kg}$ block is connected over a pulley to a $2.0\\text{ kg}$ block that hangs. Take $g = 10\\text{ m/s}^2$. The acceleration of the system is:",
-      "choices": ["$10\\text{ m/s}^2$", "$4.0\\text{ m/s}^2$", "$6.7\\text{ m/s}^2$", "$2.0\\text{ m/s}^2$"],
+      "choices": [
+        "$10\\text{ m/s}^2$",
+        "$4.0\\text{ m/s}^2$",
+        "$6.7\\text{ m/s}^2$",
+        "$2.0\\text{ m/s}^2$"
+      ],
       "correctAnswer": 1,
       "feedback": {
         "correct": "Correct — the only external force driving the system is the weight of the hanging block, $m_2 g = 20\\text{ N}$; the total mass being accelerated is $m_1 + m_2 = 5.0\\text{ kg}$. $a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{20}{5.0} = 4.0\\text{ m/s}^2$.",
@@ -476,13 +527,17 @@
           "3": "$2.0\\text{ m/s}^2$ divides by the wrong thing. $a = m_2 g/(m_1+m_2) = 20/5 = 4.0\\text{ m/s}^2$."
         }
       },
-      "hint": ["Treat both blocks as one system. External driving force = weight of the hanging block. Total mass = both blocks."],
+      "hint": [
+        "Treat both blocks as one system. External driving force = weight of the hanging block. Total mass = both blocks."
+      ],
       "solution": "$a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{(2.0)(10)}{5.0} = 4.0\\text{ m/s}^2$."
     },
     {
       "id": "ap1-u2-synthesis-la03",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.12",
@@ -510,13 +565,17 @@
           "3": "At steady speed there is no forward or backward acceleration, so no horizontal force along the direction of motion. The net horizontal force is perpendicular to the motion, toward the centre."
         }
       },
-      "hint": ["The ball moves in a circle (the car's turn), so it needs a net force toward the centre. Which component of the tension can supply that?"],
+      "hint": [
+        "The ball moves in a circle (the car's turn), so it needs a net force toward the centre. Which component of the tension can supply that?"
+      ],
       "solution": "The horizontal component of the tension points toward the centre of the turn and equals $mv^2/r$; $\\tan\\theta = v^2/(rg)$."
     },
     {
       "id": "ap1-u2-synthesis-la04",
       "course": "AP Physics 1",
-      "courses": ["ap-physics-1"],
+      "courses": [
+        "ap-physics-1"
+      ],
       "unit": "Unit 2",
       "lesson": "Unit 2 Synthesis and Transfer",
       "objective": "C2.9",
@@ -531,15 +590,44 @@
       "misconceptionTested": "normal-force-always-equals-weight",
       "scenario": "A $2.0\\text{ kg}$ box is on a $37°$ incline. A light rope, parallel to the incline surface, runs up the slope, over a frictionless pulley at the top, and down to a hanging $1.5\\text{ kg}$ mass. The coefficient of kinetic friction between box and incline is $\\mu_k = 0.20$. The system is released and the hanging mass descends, dragging the box up the incline. Take $g = 10\\text{ m/s}^2$, $\\sin 37° = 0.60$, $\\cos 37° = 0.80$.",
       "parts": [
-        { "label": "(a)", "prompt": "Draw a free-body diagram for the box and a separate one for the hanging mass. On the box diagram, mark which axis you will use for Newton's second law and why.", "points": 3, "modelResponse": "Box: weight $mg$ down, normal force $F_N$ perpendicular to the incline, tension $F_T$ up the slope, kinetic friction $f_k$ **down** the slope (the box moves up, so friction opposes that). Axes tilted to the incline; the box accelerates along the slope, so the motion axis is along the incline (up-slope positive). Hanging mass: tension $F_T$ up, weight $m_2 g$ down; it accelerates downward.", "figures": [ { "svg": "incline/fbd-drag-up-pulley.svg", "caption": "The box (four forces; $f_k$ points **down** the slope because the box is dragged **up**) and the hanging mass (tension up, weight down — weight wins, so it descends)." } ] },
-        { "label": "(b)", "prompt": "Find the normal force on the box and the kinetic friction force.", "points": 2, "modelResponse": "Perpendicular axis for the box: $F_N = mg\\cos 37° = (2.0)(10)(0.80) = 16\\text{ N}$. Friction: $f_k = \\mu_k F_N = (0.20)(16) = 3.2\\text{ N}$, directed down the slope." },
-        { "label": "(c)", "prompt": "Write Newton's second law for each object (taking the direction of motion as positive) and solve for the acceleration.", "points": 3, "modelResponse": "Box (up-slope positive): $F_T - mg\\sin 37° - f_k = m_1 a \\Rightarrow F_T - (2.0)(10)(0.60) - 3.2 = 2.0a \\Rightarrow F_T - 15.2 = 2.0a$. Hanging mass (downward positive): $m_2 g - F_T = m_2 a \\Rightarrow 15 - F_T = 1.5a$. Add: $15 - 15.2 = 3.5a \\Rightarrow a = -0.057\\text{ m/s}^2$." },
-        { "label": "(d)", "prompt": "Interpret the sign of your acceleration. Does the system actually move as described? Justify.", "points": 2, "modelResponse": "The acceleration comes out slightly negative ($\\approx -0.06\\text{ m/s}^2$), meaning the assumed motion (hanging mass down, box up) cannot be sustained — the driving weight $m_2 g = 15\\text{ N}$ is essentially balanced by $mg\\sin\\theta + f_k = 15.2\\text{ N}$. Released from rest, the system stays at rest (static friction, which can be at least as large as $f_k$, holds it): $15\\text{ N}$ is not enough to overcome $mg\\sin\\theta + f_{s} $. The scenario's 'the hanging mass descends' does not occur." }
+        {
+          "label": "(a)",
+          "prompt": "Draw a free-body diagram for the box and a separate one for the hanging mass. On the box diagram, mark which axis you will use for Newton's second law and why.",
+          "points": 3,
+          "modelResponse": "Box: weight $mg$ down, normal force $F_N$ perpendicular to the incline, tension $F_T$ up the slope, kinetic friction $f_k$ **down** the slope (the box moves up, so friction opposes that). Axes tilted to the incline; the box accelerates along the slope, so the motion axis is along the incline (up-slope positive). Hanging mass: tension $F_T$ up, weight $m_2 g$ down; it accelerates downward.",
+          "figures": [
+            {
+              "svg": "incline/fbd-drag-up-pulley.svg",
+              "caption": "The box (four forces; $f_k$ points **down** the slope because the box is dragged **up**) and the hanging mass (tension up, weight down — weight wins, so it descends)."
+            }
+          ]
+        },
+        {
+          "label": "(b)",
+          "prompt": "Find the normal force on the box and the kinetic friction force.",
+          "points": 2,
+          "modelResponse": "Perpendicular axis for the box: $F_N = mg\\cos 37° = (2.0)(10)(0.80) = 16\\text{ N}$. Friction: $f_k = \\mu_k F_N = (0.20)(16) = 3.2\\text{ N}$, directed down the slope."
+        },
+        {
+          "label": "(c)",
+          "prompt": "Write Newton's second law for each object (taking the direction of motion as positive) and solve for the acceleration.",
+          "points": 3,
+          "modelResponse": "Box (up-slope positive): $F_T - mg\\sin 37° - f_k = m_1 a \\Rightarrow F_T - (2.0)(10)(0.60) - 3.2 = 2.0a \\Rightarrow F_T - 15.2 = 2.0a$. Hanging mass (downward positive): $m_2 g - F_T = m_2 a \\Rightarrow 15 - F_T = 1.5a$. Add: $15 - 15.2 = 3.5a \\Rightarrow a = -0.057\\text{ m/s}^2$."
+        },
+        {
+          "label": "(d)",
+          "prompt": "Interpret the sign of your acceleration. Does the system actually move as described? Justify.",
+          "points": 2,
+          "modelResponse": "The acceleration comes out slightly negative ($\\approx -0.06\\text{ m/s}^2$), meaning the assumed motion (hanging mass down, box up) cannot be sustained — the driving weight $m_2 g = 15\\text{ N}$ is essentially balanced by $mg\\sin\\theta + f_k = 15.2\\text{ N}$. Released from rest, the system stays at rest (static friction, which can be at least as large as $f_k$, holds it): $15\\text{ N}$ is not enough to overcome $mg\\sin\\theta + f_{s} $. The scenario's 'the hanging mass descends' does not occur."
+        }
       ],
       "totalPoints": 10,
       "scoringNotes": "(a) 1 pt box forces all present and correctly directed (friction down-slope, justified by up-slope motion), 1 pt hanging-mass diagram, 1 pt names the incline-aligned motion axis. (b) 1 pt $F_N = mg\\cos\\theta = 16\\text{ N}$ (not $mg$), 1 pt $f_k = 3.2\\text{ N}$. (c) 1 pt each correct N2L equation, 1 pt combine and solve $a \\approx -0.06\\text{ m/s}^2$ (accept $-0.05$ to $-0.06$). (d) 1 pt recognises the negative result means the assumed motion fails, 1 pt concludes the system stays at rest with a supporting argument. Full credit for a student who instead argues at part (c) that the system won't move and computes the static check.",
       "figures": [
-        { "svg": "incline/fbd-drag-up-pulley.svg", "caption": "Set-up. Box: gravity down, $F_N$ perpendicular to the surface, rope tension $F_T$ up the slope, kinetic friction $f_k$ **down** the slope (the box is dragged **up**). Hanging mass: tension up, weight down." }
+        {
+          "svg": "incline/fbd-drag-up-pulley.svg",
+          "caption": "Set-up. Box: gravity down, $F_N$ perpendicular to the surface, rope tension $F_T$ up the slope, kinetic friction $f_k$ **down** the slope (the box is dragged **up**). Hanging mass: tension up, weight down."
+        }
       ]
     }
   ],
@@ -548,7 +636,9 @@
   "exitQuestion": {
     "id": "ap1-u2-synthesis-qexit",
     "course": "AP Physics 1",
-    "courses": ["ap-physics-1"],
+    "courses": [
+      "ap-physics-1"
+    ],
     "unit": "Unit 2",
     "lesson": "Unit 2 Synthesis and Transfer",
     "objective": "C2.5",
@@ -561,7 +651,12 @@
     "cognitiveLevel": 5,
     "misconceptionTested": "",
     "question": "A student solves four Unit 2 problems and gets: (i) a block on a frictionless $30°$ incline accelerating at $9.8\\text{ m/s}^2$ down the slope; (ii) a normal force on an incline larger than $mg$; (iii) a car rounding a curve with the friction pointing away from the centre; (iv) a spring constant that comes out negative. How many of these results are physically impossible or clearly wrong?",
-    "choices": ["one", "two", "three", "all four"],
+    "choices": [
+      "one",
+      "two",
+      "three",
+      "all four"
+    ],
     "correctAnswer": 3,
     "feedback": {
       "correct": "Correct — all four fail a reasonableness check. (i) On a frictionless $30°$ incline $a = g\\sin 30° = 4.9\\text{ m/s}^2$, not $9.8$ (that would be free fall). (ii) $F_N = mg\\cos\\theta < mg$ on an incline — it cannot exceed $mg$ without an extra downward push. (iii) Friction on a car rounding a curve points *toward* the centre — it is the centripetal force. (iv) A spring constant is always positive; a negative $k$ would mean a spring that pushes away from its natural length.",
@@ -571,12 +666,18 @@
         "2": "One more is also wrong: a normal force on a plain incline cannot exceed $mg$."
       }
     },
-    "hint": ["Take each result to a limiting case or a known bound: what is $a$ on a frictionless incline? Can $F_N$ exceed $mg$ with no extra downward force? Which way does friction point on a curve? Can $k$ be negative?"],
+    "hint": [
+      "Take each result to a limiting case or a known bound: what is $a$ on a frictionless incline? Can $F_N$ exceed $mg$ with no extra downward force? Which way does friction point on a curve? Can $k$ be negative?"
+    ],
     "solution": "All four are wrong: (i) $a = g\\sin\\theta = 4.9\\text{ m/s}^2$; (ii) $F_N = mg\\cos\\theta < mg$; (iii) friction points toward the centre; (iv) $k > 0$ always."
   },
   "questionBankFile": "ap1-u2-synthesis.json",
   "furtherPracticeQuestionIds": [
-    "AP1-U2-MCQ-113", "AP1-U2-MCQ-114", "AP1-U2-MCQ-115",
-    "AP1-U2-MCQ-116", "AP1-U2-MCQ-117", "AP1-U2-MCQ-118"
+    "AP1-U2-MCQ-113",
+    "AP1-U2-MCQ-114",
+    "AP1-U2-MCQ-115",
+    "AP1-U2-MCQ-116",
+    "AP1-U2-MCQ-117",
+    "AP1-U2-MCQ-118"
   ]
 }

@@ -18,7 +18,7 @@
     { "type": "module", "label": "Lesson 7", "slug": "friction-static-and-kinetic", "title": "Friction: Static and Kinetic", "cluster": "C2.8", "status": "approved" },
     { "type": "module", "label": "Lesson 8", "slug": "connected-objects-and-systems", "title": "Connected Objects and Systems", "cluster": "C2.7", "status": "approved" },
     { "type": "module", "label": "Lesson 9", "slug": "gravitation-springs-apparent-weight", "title": "Gravitation, Springs, and Apparent Weight", "cluster": "C2.10", "status": "approved" },
-    { "type": "module", "label": "Lesson 10", "slug": "inclined-planes", "title": "Inclined Planes (synthesis capstone)", "cluster": "C2.9", "status": "draft" },
+    { "type": "module", "label": "Lesson 10", "slug": "inclined-planes", "title": "Inclined Planes (synthesis capstone)", "cluster": "C2.9", "status": "approved" },
     { "type": "module", "label": "Lesson 11", "slug": "circular-motion", "title": "Circular Motion", "cluster": "C2.12", "status": "draft" },
     { "type": "module", "label": "Lesson 12", "slug": "unit-2-synthesis", "title": "Unit 2 Synthesis and Transfer", "cluster": "—", "status": "draft" },
     { "type": "concept-check", "phase": "post", "slug": "unit-2-concept-check", "title": "Unit 2 Concept Check — retake", "note": "The same check. Your score is compared to your first attempt." },

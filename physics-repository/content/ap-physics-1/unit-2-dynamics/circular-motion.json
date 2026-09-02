@@ -135,7 +135,8 @@
           "$a_c = v^2/r$. What does $v \\to 2v$ do? What does $r \\to r/2$ do? Multiply the two factors."
         ],
         "solution": "$a_c = v^2/r$: $(2)^2 \\times \\dfrac{1}{1/2} = 4 \\times 2 = 8$, so $8a_c$."
-      }
+      },
+      "figuresFirst": true
     },
     {
       "id": "chunk-2",

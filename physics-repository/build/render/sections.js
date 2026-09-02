@@ -90,13 +90,17 @@ export function chunkSlides(chunk, index) {
   });
 
   if (chunk.representation || (chunk.figures && chunk.figures.length)) {
+    const repFigs = renderFigures(chunk.figures);
+    const repText = mdToHtml(chunk.representation);
+    // `figuresFirst` puts the diagram at the top of the card so the prose
+    // below can refer back to it (used for step-by-step derivations).
     slides.push({
       id: `${base}-representation`,
       group: base,
       groupLabel,
       subtitle: "Another way to see it",
       cls: (chunk.figures && chunk.figures.length) ? "slide--scroller" : "",
-      body: `${mdToHtml(chunk.representation)}${renderFigures(chunk.figures)}`,
+      body: chunk.figuresFirst ? `${repFigs}${repText}` : `${repText}${repFigs}`,
     });
   }
 
