@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 128" role="img"
-     aria-label="Free-body diagram of a puck on a string moving in a horizontal circle on a frictionless table. Left, top view: the puck is a dot; the only horizontal force is the string tension, an arrow from the dot toward the centre of the circle. Right, side view: the puck is a box resting on the table. Gravity acts down from the centre; the normal force acts up from the bottom contact face and is equal to gravity; the string tension acts horizontally from the side of the box, toward the centre. There is no vertical net force; the horizontal net force is the tension.">
+     aria-label="Free-body diagram of a puck on a string moving in a horizontal circle on a frictionless table, with the centre of the circle to the right in both views. Left, top view: the puck is a dot; the only horizontal force is the string tension, an arrow from the dot pointing right toward the centre. Right, side view: the puck is a box resting on the table. Gravity acts down from the centre; the normal force acts up from the bottom contact face and equals gravity; the string tension acts horizontally to the right, from the side of the box toward the centre. There is no vertical net force; the horizontal net force is the tension, pointing toward the centre in both views.">
   <defs>
     <marker id="p2-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#58a6ff"/></marker>
     <marker id="p2-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1 L10 5 L0 9 z" fill="#8b96a5"/></marker>
@@ -7,7 +7,7 @@
   <g font-family="system-ui, sans-serif">
   <line x1="152" y1="12" x2="152" y2="118" stroke="#8b96a5" stroke-width="0.6" stroke-opacity="0.4"/>
 
-  <!-- ===== top view ===== -->
+  <!-- ===== top view (centre to the right) ===== -->
   <text x="72" y="16" text-anchor="middle" font-size="9" font-weight="600" fill="#8b96a5">top view</text>
   <line x1="120" y1="66" x2="52" y2="66" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
   <circle cx="120" cy="66" r="2" fill="#8b96a5"/>
@@ -16,26 +16,29 @@
   <line x1="51.5" y1="66" x2="88" y2="66" stroke="#58a6ff" stroke-width="2.5" marker-end="url(#p2-blue)"/>
   <text x="70" y="57" text-anchor="middle" font-size="10" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">T</tspan></text>
 
-  <!-- ===== side view ===== -->
+  <!-- ===== side view (centre also to the right; tension points right, matching the top view) ===== -->
   <text x="238" y="16" text-anchor="middle" font-size="9" font-weight="600" fill="#8b96a5">side view</text>
   <!-- table -->
-  <line x1="172" y1="94" x2="312" y2="94" stroke="#8b96a5" stroke-width="1.3"/>
+  <line x1="170" y1="94" x2="312" y2="94" stroke="#8b96a5" stroke-width="1.3"/>
   <g stroke="#8b96a5" stroke-width="0.9">
-    <line x1="182" y1="94" x2="176" y2="100"/><line x1="200" y1="94" x2="194" y2="100"/>
-    <line x1="218" y1="94" x2="212" y2="100"/><line x1="298" y1="94" x2="292" y2="100"/>
+    <line x1="180" y1="94" x2="174" y2="100"/><line x1="198" y1="94" x2="192" y2="100"/>
+    <line x1="216" y1="94" x2="210" y2="100"/><line x1="300" y1="94" x2="294" y2="100"/>
   </g>
-  <!-- box on the table -->
-  <rect x="250" y="78" width="30" height="16" rx="1.5" fill="#58a6ff" fill-opacity="0.12" stroke="#58a6ff" stroke-width="1.3"/>
-  <circle cx="265" cy="86" r="1.6" fill="#e6edf3"/>
+  <!-- box on the table (left side) -->
+  <rect x="196" y="78" width="30" height="16" rx="1.5" fill="#58a6ff" fill-opacity="0.12" stroke="#58a6ff" stroke-width="1.3"/>
+  <circle cx="211" cy="86" r="1.6" fill="#e6edf3"/>
+  <!-- string continues to the centre, on the right -->
+  <line x1="290" y1="83" x2="228" y2="83" stroke="#8b96a5" stroke-width="1" stroke-dasharray="3 2"/>
+  <circle cx="290" cy="83" r="2" fill="#8b96a5"/>
+  <text x="290" y="76" text-anchor="middle" font-size="8" fill="#8b96a5">centre</text>
   <!-- gravity: from the CENTRE, straight down -->
-  <line x1="265" y1="86" x2="265" y2="116" stroke="#8b96a5" stroke-width="2.4" marker-end="url(#p2-grey)"/>
-  <text x="271" y="112" font-size="9.5" font-weight="700" fill="#8b96a5">mg</text>
+  <line x1="211" y1="86" x2="211" y2="116" stroke="#8b96a5" stroke-width="2.4" marker-end="url(#p2-grey)"/>
+  <text x="217" y="112" font-size="9.5" font-weight="700" fill="#8b96a5">mg</text>
   <!-- normal force: from the BOTTOM CONTACT FACE, straight up -->
-  <line x1="259" y1="94" x2="259" y2="52" stroke="#58a6ff" stroke-width="2.4" marker-end="url(#p2-blue)"/>
-  <text x="254" y="47" text-anchor="end" font-size="9.5" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">N</tspan></text>
-  <!-- string tension: horizontal, from the SIDE FACE, toward the centre -->
-  <line x1="250" y1="83" x2="214" y2="83" stroke="#58a6ff" stroke-width="2.4" marker-end="url(#p2-blue)"/>
-  <text x="232" y="76" text-anchor="middle" font-size="9.5" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">T</tspan></text>
-  <text x="292" y="70" text-anchor="middle" font-size="8" fill="#8b96a5">F<tspan font-size="6" dy="1.5">N</tspan><tspan dy="-1.5"> = mg</tspan></text>
+  <line x1="205" y1="94" x2="205" y2="52" stroke="#58a6ff" stroke-width="2.4" marker-end="url(#p2-blue)"/>
+  <text x="200" y="47" text-anchor="end" font-size="9.5" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">N</tspan></text>
+  <!-- string tension: horizontal, from the SIDE FACE, to the RIGHT toward the centre (matches top view) -->
+  <line x1="226" y1="83" x2="262" y2="83" stroke="#58a6ff" stroke-width="2.4" marker-end="url(#p2-blue)"/>
+  <text x="244" y="76" text-anchor="middle" font-size="9.5" font-weight="700" fill="#58a6ff">F<tspan font-size="7" dy="2">T</tspan></text>
   </g>
 </svg>
