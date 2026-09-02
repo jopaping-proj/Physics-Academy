@@ -1,0 +1,196 @@
+[
+  {
+    "id": "AP1-U2-MCQ-101",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A block rests on a ramp inclined at $30°$. Which arrow correctly shows the direction of the normal force the ramp exerts on the block?",
+    "choices": [
+      "straight up (vertically)",
+      "perpendicular to the ramp surface, pointing away from it",
+      "straight down into the ramp",
+      "horizontally, into the hill"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the normal force is always perpendicular to the contact surface. On a ramp tilted at $30°$, it points $30°$ away from vertical, perpendicular to the slope and away from it.",
+      "incorrect": {
+        "0": "Straight up would be the direction only for a horizontal surface. The normal force follows the tilt of the surface it comes from.",
+        "2": "The normal force is a push *on* the block, away from the surface — never into it.",
+        "3": "Horizontal would be the normal from a vertical wall. This surface is tilted $30°$ from horizontal, so its normal is tilted $30°$ from vertical."
+      }
+    },
+    "hint": ["'Normal' means perpendicular. Perpendicular to what — the ground, or the actual surface the block touches?"],
+    "solution": "Perpendicular to the ramp surface, pointing away from it."
+  },
+  {
+    "id": "AP1-U2-MCQ-102",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A $6.0\\text{ kg}$ block is on a frictionless incline at $30°$. Taking $g = 9.8\\text{ m/s}^2$, its acceleration down the incline is:",
+    "choices": ["$9.8\\text{ m/s}^2$", "$4.9\\text{ m/s}^2$", "$8.5\\text{ m/s}^2$", "$2.9\\text{ m/s}^2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — on a frictionless incline $a = g\\sin\\theta = (9.8)\\sin 30° = (9.8)(0.5) = 4.9\\text{ m/s}^2$. The mass does not enter.",
+      "incorrect": {
+        "0": "That is free fall ($a = g$). On a $30°$ incline only the component $g\\sin\\theta$ drives the motion.",
+        "2": "That is $g\\cos 30°$. The component *along* the slope uses $\\sin\\theta$, not $\\cos\\theta$.",
+        "3": "This looks like $g\\sin 30°$ divided by something extra, or a $\\tan$ slip. $a = g\\sin\\theta = 4.9\\text{ m/s}^2$ exactly."
+      }
+    },
+    "hint": ["Frictionless incline: $a = g\\sin\\theta$. Does the $6.0\\text{ kg}$ matter?"],
+    "solution": "$a = g\\sin 30° = 4.9\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-103",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "normal-force-always-equals-weight",
+    "question": "A $10\\text{ kg}$ crate slides down a $37°$ incline with $\\mu_k = 0.20$. Take $g = 10\\text{ m/s}^2$, $\\sin 37° = 0.60$, $\\cos 37° = 0.80$. The acceleration down the incline is:",
+    "choices": ["$6.0\\text{ m/s}^2$", "$4.4\\text{ m/s}^2$", "$4.0\\text{ m/s}^2$", "$3.6\\text{ m/s}^2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $F_N = mg\\cos\\theta = (10)(10)(0.80) = 80\\text{ N}$; $f_k = \\mu_k F_N = (0.20)(80) = 16\\text{ N}$ up the slope. Net down-slope $= mg\\sin\\theta - f_k = 60 - 16 = 44\\text{ N}$; $a = 44/10 = 4.4\\text{ m/s}^2$. (Or $a = g(\\sin\\theta - \\mu_k\\cos\\theta) = 10(0.60 - 0.16) = 4.4\\text{ m/s}^2$.)",
+      "incorrect": {
+        "0": "That is the frictionless value $g\\sin\\theta$. Friction reduces it.",
+        "2": "This uses $f_k = \\mu_k mg = (0.20)(100) = 20\\text{ N}$ — the full weight for the normal force. On an incline $F_N = mg\\cos\\theta = 80\\text{ N}$, so $f_k = 16\\text{ N}$.",
+        "3": "This subtracts $\\mu_k g$ instead of $\\mu_k g\\cos\\theta$: $10(0.60 - 0.20) = 4.0$… still not matching. The friction term is $\\mu_k g\\cos\\theta = 1.6\\text{ m/s}^2$, giving $a = 4.4\\text{ m/s}^2$."
+      }
+    },
+    "hint": ["First $F_N = mg\\cos\\theta$, then $f_k = \\mu_k F_N$, then net force $= mg\\sin\\theta - f_k$."],
+    "solution": "$a = g(\\sin\\theta - \\mu_k\\cos\\theta) = 10(0.60 - 0.16) = 4.4\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-104",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "A block just begins to slide when a plank it rests on is tilted to $32°$ from the horizontal. If a second block, three times as heavy but of the same material, is placed on the same plank, it will begin to slide at:",
+    "choices": [
+      "a smaller angle, because it is heavier",
+      "the same angle, $32°$",
+      "a larger angle, because it presses down harder",
+      "$3 \\times 32° = 96°$"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the slipping condition is $mg\\sin\\theta = \\mu_s mg\\cos\\theta$, i.e. $\\tan\\theta = \\mu_s$. The mass cancels, so the critical angle depends only on the surfaces, not the weight. Same material ⇒ same $\\mu_s$ ⇒ same $32°$.",
+      "incorrect": {
+        "0": "Heavier means both the driving force ($mg\\sin\\theta$) and the maximum friction ($\\mu_s mg\\cos\\theta$) scale up together. The angle where they balance is unchanged.",
+        "2": "Same reasoning — pressing harder increases friction in exact proportion to the increased driving force.",
+        "3": "The critical angle is $\\arctan\\mu_s$, a fixed number set by the materials; it does not scale with mass, and $96°$ is not even a valid incline angle."
+      }
+    },
+    "hint": ["Write $mg\\sin\\theta = \\mu_s mg\\cos\\theta$ and divide by $mg\\cos\\theta$. What is left?"],
+    "solution": "$\\tan\\theta = \\mu_s$ — mass-independent, so still $32°$."
+  },
+  {
+    "id": "AP1-U2-MCQ-105",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "question": "A block is sliding **up** a rough incline, having been given a shove from the bottom. While it is still moving upward, the kinetic friction force on it points:",
+    "choices": [
+      "up the incline, helping it along",
+      "down the incline",
+      "there is no friction while it moves up",
+      "horizontally"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — kinetic friction opposes the relative sliding. The block slides up, so friction acts down the incline. On the way up, gravity's component and friction both point down the slope, so the block decelerates quickly. (After it stops and slides back down, friction flips to point up the slope.)",
+      "incorrect": {
+        "0": "Friction never speeds up a sliding object along its direction of motion — it opposes the sliding.",
+        "2": "The block is sliding on the surface, so kinetic friction is definitely present. It points opposite the motion — down the slope.",
+        "3": "Friction acts along the contact surface, i.e. along the incline, not horizontally."
+      }
+    },
+    "hint": ["Kinetic friction opposes the direction the surfaces are sliding past each other. Which way is the block sliding right now?"],
+    "solution": "Down the incline — opposite the upward sliding motion."
+  },
+  {
+    "id": "AP1-U2-MCQ-106",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "objects-in-circular-or-turning-motion-feel-an-outward-force",
+    "question": "A car rounds a frictionless banked curve at exactly the design speed, so it needs no friction. The forces acting on the car are:",
+    "choices": [
+      "gravity, the normal force, and an outward centrifugal force that the bank balances",
+      "only gravity and the normal force; the horizontal component of the normal force is the net (centripetal) force",
+      "gravity, the normal force, and a forward driving force equal to $mv^2/r$",
+      "only the normal force, which points toward the centre of the curve"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the only real forces are gravity (down) and the normal force (perpendicular to the road, tilted by the bank angle). Their vertical parts cancel; the leftover horizontal part of the normal force points toward the centre of the curve and *is* the net force, producing the centripetal acceleration $v^2/r$. Dividing the two axis equations gives $\\tan\\theta = v^2/rg$.",
+      "incorrect": {
+        "0": "There is no outward 'centrifugal force' in the ground frame. The net force points *inward*; nothing balances it — that is why the car accelerates toward the centre.",
+        "2": "No forward force of size $mv^2/r$ acts here. The centripetal requirement is met by the inward component of the normal force, not a separate push.",
+        "3": "Gravity certainly still acts. And the normal force is perpendicular to the road surface, not aimed at the centre of the curve."
+      }
+    },
+    "hint": ["List only the forces something actually touches or that act at a distance: the road (normal force) and the Earth (gravity). Is either one pointing at the centre of the circle?"],
+    "solution": "Gravity and the normal force only; the horizontal component of $F_N$ is the unbalanced centripetal force, giving $\\tan\\theta = v^2/rg$."
+  }
+]

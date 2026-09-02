@@ -103,7 +103,9 @@
       "g-and-G-are-the-same-quantity",
       "spring-constant-changes-with-applied-force",
       "scale-always-reads-true-weight",
-      "apparent-weightlessness-requires-zero-gravity"
+      "apparent-weightlessness-requires-zero-gravity",
+      "incline-weight-components-sine-cosine-swapped",
+      "steeper-incline-always-means-faster-final-speed"
     ]
   },
 

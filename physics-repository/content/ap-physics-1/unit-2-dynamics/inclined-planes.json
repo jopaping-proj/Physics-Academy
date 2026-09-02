@@ -1,0 +1,524 @@
+{
+  "id": "ap1-u2-inclines",
+  "slug": "inclined-planes",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Forces",
+  "lessonNumber": "10",
+  "objective": "C2.9",
+  "cedTopic": "2.5",
+  "clusterId": "2.9",
+  "lessonTitle": "Inclined Planes",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Resolving a vector into perpendicular components with trigonometry (Unit 1)",
+    "Free-body diagrams for a single object, box and dot conventions (Lesson 2)",
+    "Two-axis Newton's second law: $\\sum F_x = ma_x$, $\\sum F_y = ma_y$ on independent axes (Lesson 5)",
+    "The normal force comes from $\\sum F_\\perp = ma_\\perp$ — it is not automatically $mg$ (Lessons 5, 8, 9)",
+    "Static vs kinetic friction and $f = \\mu F_N$ (Lesson 7)"
+  ],
+  "majorObjective": "Solve an inclined-plane problem end to end: identify every force, choose incline-aligned axes, resolve the weight into $mg\\sin\\theta$ down the slope and $mg\\cos\\theta$ into the slope (with the trig assignment *justified*, not memorised), get the normal force from perpendicular-axis equilibrium ($F_N = mg\\cos\\theta < mg$), and combine the parallel weight component, friction, and any applied force into $F_{\\text{net},\\parallel}$ and $a = F_{\\text{net},\\parallel}/m$ — then recognise the same structure in a disguised context (a banked road, an accelerating wedge, a block on a block).",
+  "subObjectives": [
+    "Identify all forces on an object on an incline — weight (vertical), normal force (perpendicular to the surface), friction (along the surface, opposing the sliding tendency), any applied force — each correctly directed.",
+    "Choose axes along and perpendicular to the incline, and explain why that choice makes the problem one-dimensional along the motion.",
+    "Resolve the weight into $mg\\sin\\theta$ (parallel, down-slope) and $mg\\cos\\theta$ (perpendicular, into the surface), and justify which function goes with which component using the geometry and the $\\theta\\to0$ / $\\theta\\to90°$ limiting cases.",
+    "Find the normal force from perpendicular-axis equilibrium: $F_N = mg\\cos\\theta$ (adjusted for any perpendicular component of an applied force), and explain why $F_N < mg$ on an incline.",
+    "Combine the parallel weight component, friction, and any applied force into the net force along the incline, then $a = F_{\\text{net},\\parallel}/m$, with correct signs.",
+    "Decide slide-or-stay for a block on an incline: it stays while $mg\\sin\\theta \\le \\mu_s mg\\cos\\theta$, i.e. while $\\tan\\theta \\le \\mu_s$; it slips at $\\tan\\theta = \\mu_s$.",
+    "Recognise the inclined-plane structure in an unfamiliar problem where no incline is drawn (banked turn, accelerating wedge, block on a block)."
+  ],
+  "hook": {
+    "prompt": "A block is released from rest on a frictionless ramp. If you make the ramp steeper (larger angle), the normal force the ramp pushes on the block with:",
+    "choices": [
+      "increases — a steeper ramp pushes harder",
+      "stays equal to $mg$ — the ramp always supports the full weight",
+      "decreases — less of the weight presses into the surface",
+      "becomes zero immediately"
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "You can already draw a free-body diagram, split forces onto two axes, write $\\sum F = ma$ on each axis, and compute friction as $\\mu F_N$ (Lessons 2, 5, 7). The incline adds nothing new in principle — it is the task that makes you use all of it at once, with a tilted set of axes. This is the designed synthesis capstone of the mechanics core.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The Frictionless Incline: Tilt the Axes, Split the Weight",
+      "concept": "A block on a ramp inclined at angle $\\theta$, no friction. Two forces act:\n\n- **Weight** $mg$, straight **down** (from the centre).\n- **Normal force** $F_N$, **perpendicular to the ramp surface** — *not* straight up.\n\nThe smart move is to **tilt the axes**: one axis **along** the incline (call down-slope positive), one **perpendicular** to it. Then the block only moves along one axis, and $F_N$ lies entirely on the other.\n\nOnly the weight is now off-axis, so resolve **it**:\n\n$$F_{g,\\parallel} = mg\\sin\\theta \\quad(\\text{down the slope}) \\qquad F_{g,\\perp} = mg\\cos\\theta \\quad(\\text{into the surface})$$\n\n**Why $\\sin$ for the parallel part?** The angle between the weight (straight down) and the perpendicular-to-slope direction is exactly $\\theta$ — rotate the ground by $\\theta$ and you rotate its normal by $\\theta$ too. So the *adjacent* part (perpendicular, $\\cos$) and the *opposite* part (parallel, $\\sin$). Check it against the limits:\n\n- $\\theta \\to 0$ (flat): $\\sin\\theta \\to 0$ so no pull along the ground ✓, and $\\cos\\theta \\to 1$ so $F_N \\to mg$ ✓.\n- $\\theta \\to 90°$ (vertical cliff): $\\sin\\theta \\to 1$ so the block is in free fall along the \"slope\" ✓, and $\\cos\\theta \\to 0$ so $F_N \\to 0$ ✓ (nothing presses on a vertical wall).\n\n**Perpendicular axis** (no acceleration off the ramp): $F_N - mg\\cos\\theta = 0 \\Rightarrow F_N = mg\\cos\\theta$. ==Because $\\cos\\theta < 1$ for any real incline, $F_N < mg$ — the ramp never carries the full weight.==\n\n**Along the incline:** the only unbalanced force is $mg\\sin\\theta$, so\n$$a = \\frac{F_{\\text{net},\\parallel}}{m} = \\frac{mg\\sin\\theta}{m} = g\\sin\\theta \\quad(\\text{down the slope}).$$\nNotice the mass cancels — every object slides down a frictionless incline of a given angle with the same acceleration.",
+      "conceptFigures": [
+        { "svg": "incline/incline-frictionless.svg", "size": "lg", "caption": "Tilt the axes to the slope. The weight splits into $mg\\sin\\theta$ down the slope (the only unbalanced force) and $mg\\cos\\theta$ into the surface (balanced by $F_N$). Since $\\cos\\theta < 1$, $F_N = mg\\cos\\theta < mg$." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\text{ kg}$ block is released from rest on a frictionless ramp inclined at $30°$. Take $g = 9.8\\text{ m/s}^2$. Find (a) the normal force on the block, and (b) its acceleration down the ramp.",
+        "figure": { "svg": "incline/incline-frictionless.svg", "caption": "Frictionless incline: $F_N$ balances $mg\\cos\\theta$; $mg\\sin\\theta$ is unbalanced." },
+        "phases": [
+          {
+            "label": "Set up — axes and forces",
+            "steps": [
+              "Axes: $x$ along the ramp (down-slope positive), $y$ perpendicular to the ramp.",
+              "Forces: weight $mg$ straight down; normal force $F_N$ along $+y$.",
+              "Resolve the weight: $F_{g,\\parallel} = mg\\sin\\theta$ along $+x$, $F_{g,\\perp} = mg\\cos\\theta$ along $-y$."
+            ]
+          },
+          {
+            "label": "(a) Perpendicular axis — formula first",
+            "steps": [
+              "No acceleration perpendicular to the ramp: $\\sum F_y = 0$.",
+              "$F_N - mg\\cos\\theta = 0 \\Rightarrow F_N = mg\\cos\\theta$.",
+              "Substitute: $F_N = (2.0)(9.8)\\cos 30° = (19.6)(0.866) = 17\\text{ N}$."
+            ]
+          },
+          {
+            "label": "(b) Parallel axis — formula first",
+            "steps": [
+              "$\\sum F_x = ma$: $mg\\sin\\theta = ma \\Rightarrow a = g\\sin\\theta$.",
+              "Substitute: $a = (9.8)\\sin 30° = (9.8)(0.5) = 4.9\\text{ m/s}^2$ down the ramp."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$F_N = 17\\text{ N}$ is less than the weight $mg = 19.6\\text{ N}$ — correct for an incline.",
+              "$a = 4.9\\text{ m/s}^2$ is half of $g$, and $\\sin 30° = 0.5$ — consistent with $a = g\\sin\\theta$.",
+              "The $2.0\\text{ kg}$ never mattered for part (b): $a = g\\sin\\theta$ is mass-independent. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Tilting the axes to the slope so the motion is purely along $x$ and $F_N$ is purely along $y$ — then only the weight needs resolving."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-inclines-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Inclined Planes",
+        "objective": "C2.9",
+        "cedTopic": "2.5",
+        "clusterId": "2.9",
+        "skill": "limiting-case-analysis",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "normal-force-always-equals-weight",
+        "question": "A $3.0\\text{ kg}$ box sits on a frictionless incline. As the incline angle is increased from $20°$ toward $60°$, the normal force on the box:",
+        "choices": [
+          "stays equal to $mg$ the whole time",
+          "increases, because a steeper ramp pushes back harder",
+          "decreases, because $F_N = mg\\cos\\theta$ and $\\cos\\theta$ shrinks as $\\theta$ grows",
+          "first increases, then decreases"
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct — perpendicular-axis equilibrium gives $F_N = mg\\cos\\theta$. As $\\theta$ goes from $20°$ to $60°$, $\\cos\\theta$ falls from $0.94$ to $0.50$, so $F_N$ drops from about $27.6\\text{ N}$ to $14.7\\text{ N}$. Less of the weight presses into the surface as the ramp tilts.",
+          "incorrect": {
+            "0": "$F_N = mg$ only when the surface is horizontal ($\\theta = 0$). On an incline the surface only has to balance the *perpendicular* part of the weight, $mg\\cos\\theta$, which is less than $mg$.",
+            "1": "A steeper ramp presses *less* into the surface, not more — the weight tips more toward 'along the slope' and away from 'into the slope'.",
+            "3": "$\\cos\\theta$ decreases monotonically from $\\theta = 0$ to $\\theta = 90°$, so $F_N$ only decreases over this range."
+          }
+        },
+        "hint": ["Perpendicular to the ramp: $F_N = mg\\cos\\theta$. What does $\\cos\\theta$ do as $\\theta$ increases from $20°$ to $60°$?"],
+        "solution": "$F_N = mg\\cos\\theta$; $\\cos\\theta$ decreases as $\\theta$ increases, so $F_N$ decreases.",
+        "hintFigures": [
+          { "svg": "incline/dot-frictionless.svg", "caption": "Only the weight is off-axis. $F_N$ balances $mg\\cos\\theta$; the shorter $F_N$ arrow shows $F_N < mg$." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Adding Friction: Slide or Stay",
+      "concept": "Now the ramp is rough. Friction acts **along the surface**, opposing the **sliding tendency** — not the motion, the *tendency*.\n\n**Case 1 — the block is sliding down.** Kinetic friction points **up the slope**:\n$$f_k = \\mu_k F_N = \\mu_k mg\\cos\\theta.$$\nNet force along the incline (down-slope positive):\n$$F_{\\text{net},\\parallel} = mg\\sin\\theta - \\mu_k mg\\cos\\theta, \\qquad a = g(\\sin\\theta - \\mu_k\\cos\\theta).$$\nIf $\\mu_k\\cos\\theta > \\sin\\theta$ the bracket is negative — the block is *decelerating* as it slides.\n\n**Case 2 — will it move at all?** A block placed at rest on the incline stays put as long as static friction can supply the balancing force:\n$$mg\\sin\\theta \\le f_{s,\\max} = \\mu_s mg\\cos\\theta.$$\nDivide both sides by $mg\\cos\\theta$:\n$$\\tan\\theta \\le \\mu_s.$$\n==The block starts to slip exactly when $\\tan\\theta = \\mu_s$. That critical angle depends only on $\\mu_s$ — not on the mass.== It is a standard way to *measure* $\\mu_s$: tilt until it slides, read the angle.\n\nOnce it is moving, use $\\mu_k$ (usually smaller), so a block that just barely breaks loose often then accelerates down.",
+      "conceptFigures": [
+        { "svg": "incline/incline-friction.svg", "size": "lg", "caption": "Sliding down ⇒ kinetic friction points **up the slope**. The net force along the incline is $mg\\sin\\theta - f$, and $f = \\mu_k mg\\cos\\theta$." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "The same $2.0\\text{ kg}$ block is on a $30°$ incline, now with $\\mu_k = 0.20$ and $\\mu_s = 0.35$. Take $g = 9.8\\text{ m/s}^2$. (a) If the block is given a small push and released while moving down, find its acceleration. (b) If instead it is simply placed at rest on the incline, does it stay?",
+        "figure": { "svg": "incline/dot-friction.svg", "caption": "Sliding down: gravity down, $F_N$ perpendicular, kinetic friction up the slope." },
+        "phases": [
+          {
+            "label": "(a) Normal force, then friction",
+            "steps": [
+              "Perpendicular axis unchanged: $F_N = mg\\cos\\theta = (2.0)(9.8)(0.866) = 17.0\\text{ N}$.",
+              "$f_k = \\mu_k F_N = (0.20)(17.0) = 3.4\\text{ N}$, directed up the slope (opposing the downhill slide)."
+            ]
+          },
+          {
+            "label": "(a) Net force and acceleration",
+            "steps": [
+              "Down-slope positive: $F_{\\text{net},\\parallel} = mg\\sin\\theta - f_k = (2.0)(9.8)(0.5) - 3.4 = 9.8 - 3.4 = 6.4\\text{ N}$.",
+              "$a = F_{\\text{net},\\parallel}/m = 6.4/2.0 = 3.2\\text{ m/s}^2$ down the slope.",
+              "Or directly: $a = g(\\sin\\theta - \\mu_k\\cos\\theta) = 9.8(0.5 - 0.20 \\times 0.866) = 9.8(0.327) = 3.2\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "(b) Slide-or-stay test",
+            "steps": [
+              "Compare the driving force to the maximum static friction: $mg\\sin\\theta = 9.8\\text{ N}$ versus $f_{s,\\max} = \\mu_s mg\\cos\\theta = (0.35)(17.0) = 6.0\\text{ N}$.",
+              "$9.8\\text{ N} > 6.0\\text{ N}$: static friction cannot hold it. The block slides.",
+              "Shortcut: $\\tan 30° = 0.577 > \\mu_s = 0.35$, so it slips — same conclusion."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Part (a): $3.2\\text{ m/s}^2 < 4.9\\text{ m/s}^2$ (the frictionless value) — friction correctly reduced the acceleration. ✓",
+              "Part (b): the critical angle is $\\arctan(0.35) \\approx 19°$; $30°$ is well past it, so 'slides' is right. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Getting $F_N = mg\\cos\\theta$ first, then feeding it into $f = \\mu F_N$ — and for slide-or-stay, comparing $mg\\sin\\theta$ with $\\mu_s mg\\cos\\theta$ (equivalently $\\tan\\theta$ with $\\mu_s$)."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-inclines-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Inclined Planes",
+        "objective": "C2.9",
+        "cedTopic": "2.5",
+        "clusterId": "2.9",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "",
+        "question": "A crate rests on a plank. One end of the plank is slowly lifted. The crate first begins to slide when the plank makes $25°$ with the horizontal. The coefficient of static friction between crate and plank is closest to:",
+        "choices": ["$0.42$", "$0.47$", "$0.91$", "$0.25$"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — at the slipping angle, $mg\\sin\\theta = \\mu_s mg\\cos\\theta$, so $\\mu_s = \\tan\\theta = \\tan 25° \\approx 0.47$. The mass and $g$ cancel — the critical angle depends only on $\\mu_s$.",
+          "incorrect": {
+            "0": "This is $\\sin 25°$. The condition is $\\mu_s = \\tan\\theta$, not $\\sin\\theta$ — divide the driving force $mg\\sin\\theta$ by the perpendicular part $mg\\cos\\theta$.",
+            "2": "This is $\\cos 25°$. That is the factor in $F_N = mg\\cos\\theta$, not the coefficient of friction.",
+            "3": "This just restates the angle in degrees as a decimal. You need $\\tan$ of the angle: $\\tan 25° \\approx 0.47$."
+          }
+        },
+        "hint": ["At the instant of slipping, $mg\\sin\\theta = \\mu_s mg\\cos\\theta$. Divide through by $mg\\cos\\theta$."],
+        "solution": "$\\mu_s = \\tan\\theta = \\tan 25° \\approx 0.47$.",
+        "hintFigures": [
+          { "svg": "incline/dot-friction.svg", "caption": "At the slipping angle, static friction is at its maximum $\\mu_s mg\\cos\\theta$ and exactly balances $mg\\sin\\theta$." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "The Incline in Disguise: Transfer",
+      "concept": "The incline problem is really one pattern: **pick axes that make the motion one-dimensional, resolve the off-axis forces, apply $\\sum F = ma$ on each axis.** Once you see that, you spot inclines where none are drawn.\n\n**A frictionless banked turn.** A car rounds a curve of radius $r$ on a road banked at angle $\\theta$, no friction needed. The forces are just weight (down) and the normal force (perpendicular to the road surface — tilted by $\\theta$). The acceleration is **horizontal**, toward the centre of the circle, magnitude $v^2/r$. So this time keep the axes **horizontal and vertical**:\n\n- Vertical: $F_N\\cos\\theta - mg = 0$.\n- Horizontal: $F_N\\sin\\theta = \\dfrac{mv^2}{r}$.\n\nDivide: $\\tan\\theta = \\dfrac{v^2}{rg}$ — the bank angle that needs no friction depends only on the design speed and the radius, not the mass.\n\n**An accelerating wedge.** A block sits on a frictionless wedge (angle $\\theta$) that is pushed horizontally so the block does **not** slide on it. Both accelerate together, horizontally. Again axes horizontal/vertical: the only forces on the block are $mg$ down and $F_N$ perpendicular to the wedge face. Vertical: $F_N\\cos\\theta = mg$. Horizontal: $F_N\\sin\\theta = ma$. Divide: $a = g\\tan\\theta$ — the exact acceleration that keeps the block pinned to the face.\n\n==The lesson: **which axes** you choose depends on **which way the acceleration points** — down the slope for a block released on a ramp, horizontal for a banked turn or an accelerating wedge. The force-resolution machinery is identical.==",
+      "conceptFigures": [
+        { "svg": "incline/incline-frictionless.svg", "caption": "The same two forces — weight and a surface-perpendicular normal force — drive the banked turn and the accelerating wedge. Only the direction of the acceleration (and hence the smart axis choice) changes." }
+      ],
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A curve of radius $50\\text{ m}$ is to be banked so that a car travelling at $20\\text{ m/s}$ needs no friction to round it. Take $g = 10\\text{ m/s}^2$. Find the required bank angle $\\theta$.",
+        "figure": { "svg": "incline/incline-frictionless.svg", "caption": "Banked turn: weight down, normal force perpendicular to the road. The horizontal component of $F_N$ supplies the centripetal force." },
+        "phases": [
+          {
+            "label": "Choose axes to match the acceleration",
+            "steps": [
+              "The car's acceleration is horizontal, pointing at the centre of the curve, magnitude $a_c = v^2/r$.",
+              "So use **horizontal and vertical** axes (not slope-aligned). Forces on the car: weight $mg$ down, normal force $F_N$ perpendicular to the road (tilted $\\theta$ from vertical)."
+            ]
+          },
+          {
+            "label": "Write both axis equations",
+            "steps": [
+              "Vertical (no vertical acceleration): $F_N\\cos\\theta - mg = 0$.",
+              "Horizontal (toward centre): $F_N\\sin\\theta = \\dfrac{mv^2}{r}$."
+            ]
+          },
+          {
+            "label": "Eliminate $F_N$",
+            "steps": [
+              "Divide the horizontal equation by the vertical: $\\dfrac{F_N\\sin\\theta}{F_N\\cos\\theta} = \\dfrac{mv^2/r}{mg}$.",
+              "$\\tan\\theta = \\dfrac{v^2}{rg} = \\dfrac{(20)^2}{(50)(10)} = \\dfrac{400}{500} = 0.80$.",
+              "$\\theta = \\arctan(0.80) \\approx 39°$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "The mass cancelled — a truck and a motorcycle need the same bank angle at the same speed. ✓",
+              "Faster design speed or tighter radius ⇒ larger $\\tan\\theta$ ⇒ steeper bank. Matches intuition about racetrack curves. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Recognising that the acceleration is horizontal, so the axes stay horizontal/vertical and it is $F_N$ that gets resolved — then dividing the two axis equations to eliminate $F_N$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-inclines-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Inclined Planes",
+        "objective": "C2.9",
+        "cedTopic": "2.5",
+        "clusterId": "2.9",
+        "skill": "transfer",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 6,
+        "misconceptionTested": "",
+        "question": "A block rests on a frictionless wedge of angle $\\theta$. You push the wedge horizontally so that the block stays put relative to the wedge (it does not slide up or down the face). As you push harder (larger acceleration $a$), what must happen for the block to stay pinned to the face?",
+        "choices": [
+          "Nothing special — the block stays put at any acceleration.",
+          "The relation $a = g\\tan\\theta$ must hold; a different $a$ makes the block slide on the face, so for a fixed $\\theta$ there is exactly one acceleration that keeps it pinned.",
+          "The normal force must become zero.",
+          "Friction must appear to hold the block."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the only forces on the block are $mg$ (down) and $F_N$ (perpendicular to the face). Vertical: $F_N\\cos\\theta = mg$. Horizontal: $F_N\\sin\\theta = ma$. Dividing gives $a = g\\tan\\theta$. For a given wedge angle, that is the one acceleration for which the perpendicular normal force alone can produce the right horizontal push and still balance gravity. Push harder and the block rides up the face; push less and it slides down.",
+          "incorrect": {
+            "0": "With no friction, the horizontal force on the block can only come from the horizontal component of $F_N$. That component is fixed once $\\theta$ and $F_N$ are set, and $F_N$ is fixed by the vertical balance — so only one $a$ works.",
+            "2": "If $F_N = 0$ there is no force on the block at all and it would just fall. $F_N$ stays finite; it is $F_N = mg/\\cos\\theta$.",
+            "3": "The wedge is frictionless — that is the whole point. The pinning is done entirely by the geometry of the normal force."
+          }
+        },
+        "hint": ["Only two forces act on the block: $mg$ down and $F_N$ perpendicular to the face. Write $\\sum F$ vertically and horizontally, then divide."],
+        "solution": "$F_N\\cos\\theta = mg$ and $F_N\\sin\\theta = ma$ ⇒ $a = g\\tan\\theta$: exactly one acceleration keeps the block pinned.",
+        "hintFigures": [
+          { "svg": "incline/dot-frictionless.svg", "caption": "Same two forces as a released block on a ramp — but here the acceleration is horizontal, so the axes stay horizontal/vertical and $F_N$ is the one that gets resolved." }
+        ]
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "fbd-builder",
+    "title": "Free-Body Diagram Builder — Ramp Scenarios",
+    "subtitle": "Build the diagram for a block on a 45° ramp, then check it",
+    "componentKey": "fbd-builder",
+    "description": "Pick one of the ramp scenarios — *block sliding down a frictionless 45° ramp* or *block sliding down a rough 45° ramp at constant velocity*. For each force decide whether it is present, set its direction, and set its length relative to the others; the box tilts to sit on the ramp so the perpendicular (↖) and parallel (↗) directions line up with the surface. Then press **Check**. At $45°$ the normal force and the down-slope weight component are equal, which is why the constant-velocity case needs friction exactly as long as $F_N$.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-inclines-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Inclined Planes",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "misconception-diagnosis",
+      "representation": "vector-diagram",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "incline-weight-components-sine-cosine-swapped",
+      "question": "For a block on an incline at angle $\\theta$ measured from the horizontal, a student writes 'the component of weight along the slope is $mg\\cos\\theta$ and the component into the slope is $mg\\sin\\theta$.' How can you tell this is backwards without memorising a rule?",
+      "choices": [
+        "You cannot — it is a convention and either assignment is fine.",
+        "Take $\\theta \\to 0$ (a flat surface): the student's formula gives an along-slope pull of $mg\\cos 0 = mg$ and an into-surface force of $mg\\sin 0 = 0$ — i.e. the block accelerates and the surface carries nothing, which is absurd for a flat table. The correct assignment ($\\sin$ along, $\\cos$ into) gives $0$ and $mg$.",
+        "The student forgot to include friction.",
+        "The components should each be $mg/2$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the limiting-case check settles it. On a flat surface ($\\theta = 0$) there is no along-surface pull and the normal force is the full $mg$. Only $F_{g,\\parallel} = mg\\sin\\theta$, $F_{g,\\perp} = mg\\cos\\theta$ gives that. The other way round fails the check.",
+        "incorrect": {
+          "0": "It is not a free convention. The geometry fixes it: the angle between the weight and the slope-normal is $\\theta$, so the perpendicular (adjacent) part is $\\cos$ and the parallel (opposite) part is $\\sin$.",
+          "2": "Friction is a separate force; it has nothing to do with how the *weight* resolves into components.",
+          "3": "The components are $mg/2$ each only at the special angle $\\theta = 45°$ (where $\\sin\\theta = \\cos\\theta$), not in general."
+        }
+      },
+      "hint": ["Set $\\theta = 0$ (flat ground) in each version and ask which one gives 'no pull along the ground, full normal force'."],
+      "solution": "$F_{g,\\parallel} = mg\\sin\\theta$, $F_{g,\\perp} = mg\\cos\\theta$: at $\\theta = 0$ this correctly gives $0$ along and $mg$ into the surface. The swapped version fails that check."
+    },
+    {
+      "id": "ap1-u2-inclines-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Inclined Planes",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "steeper-incline-always-means-faster-final-speed",
+      "question": "Two identical blocks are released from rest and slide down two ramps of the **same height** $h$ but different angles — ramp A is steep, ramp B is shallow. Both ramps have the same coefficient of kinetic friction $\\mu_k$. Which block reaches the bottom moving faster?",
+      "choices": [
+        "Block A (steeper ramp) always — steeper means faster.",
+        "Block B (shallow ramp) always.",
+        "Block A, but the reason is friction: on the shallower ramp the block travels a longer distance along the surface, so friction removes more energy — the steeper ramp actually loses *less* to friction for the same drop $h$.",
+        "They arrive with the same speed, because the height dropped is the same."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — with friction, 'steeper = faster' happens to be right here, but not for the naive reason. For the same vertical drop $h$, the shallower ramp is longer ($L = h/\\sin\\theta$), and friction $f_k = \\mu_k mg\\cos\\theta$ acts over that longer length, so the friction work $\\mu_k mg\\cos\\theta \\cdot (h/\\sin\\theta) = \\mu_k mgh/\\tan\\theta$ is larger for small $\\theta$. The steeper ramp wastes less. If the ramps were frictionless, both blocks would arrive at exactly the same speed $\\sqrt{2gh}$.",
+        "incorrect": {
+          "0": "'Steeper is faster' is not a law — it is only true here because of how friction scales with ramp length. On frictionless ramps of equal height the final speeds are equal.",
+          "1": "The shallow ramp is the slower one: it is longer, so friction drains more energy over the trip.",
+          "3": "That is the frictionless answer. With friction, the energy lost differs between the two ramps because the sliding distances differ."
+        }
+      },
+      "hint": ["Same height $h$, but the shallow ramp is longer. Friction force is $\\mu_k mg\\cos\\theta$ and it acts over the whole ramp length. Which ramp loses more energy to friction?"],
+      "solution": "Shallow ramp is longer ⇒ more friction work ($\\propto 1/\\tan\\theta$) ⇒ block B arrives slower. Frictionless ramps of equal height give equal final speeds."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $4.0\\text{ kg}$ block is on a $37°$ incline with $\\mu_k = 0.25$. It is sliding **down** the incline. Take $g = 10\\text{ m/s}^2$, $\\sin 37° = 0.60$, $\\cos 37° = 0.80$. Find the block's acceleration.\n\n**Student's work:** 'Down the incline: $mg\\sin\\theta = (4.0)(10)(0.60) = 24\\text{ N}$. Friction: $f = \\mu_k mg = (0.25)(4.0)(10) = 10\\text{ N}$, up the incline. Net $= 24 - 10 = 14\\text{ N}$. $a = 14/4.0 = 3.5\\text{ m/s}^2$ down the incline.'",
+      "prompts": [
+        "Identify the student's error.",
+        "State the rule they broke.",
+        "Redo the calculation correctly, formula first.",
+        "State a quick sanity check on the result."
+      ],
+      "modelResponse": "1. The student computed friction as $\\mu_k mg$ instead of $\\mu_k F_N$, using the full weight for the normal force.\n2. On an incline the normal force is **not** $mg$. Perpendicular-axis equilibrium gives $F_N = mg\\cos\\theta$, and friction is $f_k = \\mu_k F_N = \\mu_k mg\\cos\\theta$.\n3. $F_N = mg\\cos\\theta = (4.0)(10)(0.80) = 32\\text{ N}$. $f_k = \\mu_k F_N = (0.25)(32) = 8.0\\text{ N}$ up the incline. $F_{\\text{net},\\parallel} = mg\\sin\\theta - f_k = 24 - 8.0 = 16\\text{ N}$. $a = 16/4.0 = 4.0\\text{ m/s}^2$ down the incline.\n4. Since $F_N = mg\\cos\\theta < mg$, the true friction ($8.0\\text{ N}$) is smaller than the student's ($10\\text{ N}$), so the true acceleration must be *larger* than their $3.5\\text{ m/s}^2$. It is: $4.0\\text{ m/s}^2$. Also $a < g\\sin\\theta = 6.0\\text{ m/s}^2$ (the frictionless value), as it must be. ✓",
+      "modelFigures": [
+        { "svg": "incline/incline-friction.svg", "caption": "$F_N = mg\\cos\\theta$, not $mg$ — so $f_k = \\mu_k mg\\cos\\theta$. The perpendicular axis must be solved before the friction force is known." }
+      ],
+      "responseMaxLength": 900
+    }
+  ],
+  "representationConnections": "This lesson ties together: the **free-body diagram** (weight vertical, normal perpendicular to the surface, friction along it); the **tilted axes** (a coordinate choice driven by the direction of the acceleration); the **trigonometric decomposition** ($mg\\sin\\theta$ parallel, $mg\\cos\\theta$ perpendicular, justified by geometry and limiting cases); and the **equations** ($F_N = mg\\cos\\theta$, $a = g(\\sin\\theta - \\mu_k\\cos\\theta)$, $\\tan\\theta = \\mu_s$ at slipping, $\\tan\\theta = v^2/rg$ for a banked turn). The organising habit: choose axes so the acceleration lies on one of them, then resolve whatever force is left off-axis.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-inclines-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Inclined Planes",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "proportional-reasoning",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A block slides down a frictionless incline with acceleration $a$. A second block of **twice the mass** is released on the **same incline**. Its acceleration is:",
+      "choices": ["$2a$", "$a$", "$a/2$", "$4a$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — on a frictionless incline $a = g\\sin\\theta$, which has no $m$ in it. The driving force $mg\\sin\\theta$ doubles, but so does the inertia, and the two cancel. Both blocks accelerate at $g\\sin\\theta$.",
+        "incorrect": {
+          "0": "The force $mg\\sin\\theta$ does double, but $a = F/m$ and $m$ also doubled. The ratio is unchanged.",
+          "2": "Acceleration does not fall when mass rises here, because the gravitational driving force rises in exact proportion.",
+          "3": "Nothing in this scenario scales as mass-squared."
+        }
+      },
+      "hint": ["Write the acceleration of a block on a frictionless incline in terms of $g$ and $\\theta$. Does $m$ appear?"],
+      "solution": "$a = g\\sin\\theta$ — mass-independent, so the acceleration is unchanged: $a$."
+    },
+    {
+      "id": "ap1-u2-inclines-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Inclined Planes",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "synthesis",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "scenario": "A worker pushes a $5.0\\text{ kg}$ crate **up** a ramp inclined at $25°$ to the horizontal. The push is a force of $40\\text{ N}$ directed **parallel to the ramp surface, up the slope**. The coefficient of kinetic friction between crate and ramp is $\\mu_k = 0.15$. Take $g = 9.8\\text{ m/s}^2$, $\\sin 25° = 0.423$, $\\cos 25° = 0.906$.",
+      "parts": [
+        { "label": "(a)", "prompt": "Draw a free-body diagram of the crate and list every force with its direction. State which way the crate is accelerating and therefore which way kinetic friction points.", "points": 3, "modelResponse": "Four forces: weight $mg$ straight down; normal force $F_N$ perpendicular to the ramp (away from the surface); applied push $F_{\\text{app}} = 40\\text{ N}$ up the slope; kinetic friction $f_k$ along the surface. The crate is being pushed up the slope and moves up the slope, so kinetic friction points **down** the slope (opposing the motion)." },
+        { "label": "(b)", "prompt": "Find the normal force on the crate.", "points": 2, "modelResponse": "The push is parallel to the ramp, so it has no perpendicular component. Perpendicular axis: $F_N - mg\\cos\\theta = 0 \\Rightarrow F_N = mg\\cos\\theta = (5.0)(9.8)(0.906) = 44.4\\text{ N}$. (Note $F_N < mg = 49\\text{ N}$.)" },
+        { "label": "(c)", "prompt": "Find the magnitude and direction of the kinetic friction force.", "points": 2, "modelResponse": "$f_k = \\mu_k F_N = (0.15)(44.4) = 6.7\\text{ N}$, directed **down the slope** (opposite the crate's up-slope motion)." },
+        { "label": "(d)", "prompt": "Find the acceleration of the crate along the ramp. State its direction.", "points": 3, "modelResponse": "Take up-slope positive. $\\sum F_\\parallel = F_{\\text{app}} - mg\\sin\\theta - f_k = 40 - (5.0)(9.8)(0.423) - 6.7 = 40 - 20.7 - 6.7 = 12.6\\text{ N}$. $a = \\sum F_\\parallel / m = 12.6/5.0 = 2.5\\text{ m/s}^2$, directed **up the slope**." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt all four forces present and correctly directed, 1 pt $F_N$ perpendicular to the surface (not vertical), 1 pt friction down-slope with the up-slope-motion justification. (b) 1 pt $\\sum F_\\perp = 0$ with $F_N = mg\\cos\\theta$, 1 pt $44.4\\text{ N}$ (accept $44$–$45$). (c) 1 pt $f_k = \\mu_k F_N$ using the incline $F_N$ (not $\\mu_k mg$), 1 pt $6.7\\text{ N}$ down-slope. (d) 1 pt correct signed sum of three parallel forces, 1 pt $a = 2.5\\text{ m/s}^2$, 1 pt direction up the slope. Max 1 pt penalty carried once for using $F_N = mg$.",
+      "figures": [
+        { "svg": "incline/incline-friction.svg", "caption": "Reference geometry. Here the applied push is up the slope and friction opposes the up-slope motion, so friction points down the slope — but $F_N = mg\\cos\\theta$ regardless." }
+      ]
+    },
+    {
+      "id": "ap1-u2-inclines-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Inclined Planes",
+      "objective": "C2.9",
+      "cedTopic": "2.5",
+      "clusterId": "2.9",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "A small bead is on the inside of a smooth (frictionless) cone-shaped bowl, whose wall makes $50°$ with the horizontal. The bead moves in a horizontal circle at constant speed, staying at a fixed height on the wall. Which single equation set correctly describes it (take the wall's normal force $F_N$ perpendicular to the wall surface, $\\theta = 50°$ from horizontal)?",
+      "choices": [
+        "$F_N = mg$ and $F_N = mv^2/r$ — the normal force does both jobs directly.",
+        "$F_N\\sin\\theta = mg$ and $F_N\\cos\\theta = mv^2/r$ — vertical balance from the up-the-wall component, centripetal from the horizontal component.",
+        "$F_N\\cos\\theta = mg$ and $F_N\\sin\\theta = mv^2/r$ — but with $\\theta$ measured from the vertical.",
+        "$mg\\sin\\theta = mv^2/r$ — the along-wall weight component provides the centripetal force."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — this is a banked-surface problem with the geometry turned inside out. The wall's normal force points away from the wall, up and inward. With $\\theta$ from the horizontal, its vertical part is $F_N\\sin\\theta$ (balances gravity) and its horizontal part is $F_N\\cos\\theta$ (points toward the axis, supplies $mv^2/r$). Dividing gives $\\tan\\theta = gr/v^2$.",
+        "incorrect": {
+          "0": "The normal force is a single vector at $50°$ to the horizontal; it cannot simultaneously equal $mg$ (vertical) and $mv^2/r$ (horizontal). You must resolve it into components.",
+          "2": "The component split is right in spirit, but with $\\theta$ measured from the horizontal the vertical component is $F_N\\sin\\theta$ and the horizontal is $F_N\\cos\\theta$ — this option has them swapped for that angle convention.",
+          "3": "There is no friction and the bead is not sliding along the wall — the weight has no unbalanced along-wall role here. The centripetal force comes from the horizontal component of $F_N$."
+        }
+      },
+      "hint": ["Only two forces act on the bead: gravity down and $F_N$ perpendicular to the wall. The acceleration is horizontal (toward the axis of the circle). Resolve $F_N$ into vertical and horizontal parts with $\\theta$ from the horizontal."],
+      "solution": "$F_N\\sin\\theta = mg$ (vertical balance), $F_N\\cos\\theta = mv^2/r$ (centripetal). Same machinery as a banked turn."
+    }
+  ],
+  "examConnection": "On the exam inclined planes appear as: a **multi-part FRQ** (FBD → resolve weight → normal force → friction → acceleration, often with an applied force at an angle), and **MCQs** on the normal force being $mg\\cos\\theta$, the mass-independence of $a = g\\sin\\theta$, the slipping condition $\\tan\\theta = \\mu_s$, and a transfer item where the incline is disguised (banked turn, wedge). Reliable lost points: using $F_N = mg$ for the friction force, swapping $\\sin\\theta$ and $\\cos\\theta$, forgetting that friction opposes the *tendency* to slide (so its direction flips depending on whether the block is sliding up or down), and choosing vertical/horizontal axes when the acceleration is along the slope (or vice versa).",
+  "summary": "- **Tilt the axes** to the incline: one along the slope (the direction of motion), one perpendicular. Only the weight is then off-axis.\n- **Resolve the weight:** $mg\\sin\\theta$ down the slope, $mg\\cos\\theta$ into the surface. Justify it with the $\\theta\\to0$ / $\\theta\\to90°$ limits, don't memorise.\n- **Normal force:** $F_N = mg\\cos\\theta$ from perpendicular-axis equilibrium. ==$\\cos\\theta < 1$, so $F_N < mg$ on any incline.==\n- **Acceleration along the slope:** frictionless, $a = g\\sin\\theta$ (mass cancels). With kinetic friction opposing the slide, $a = g(\\sin\\theta - \\mu_k\\cos\\theta)$.\n- **Slide or stay:** a resting block holds while $\\tan\\theta \\le \\mu_s$; it slips at $\\tan\\theta = \\mu_s$ — a mass-independent critical angle.\n- **Transfer:** a banked turn ($\\tan\\theta = v^2/rg$) and an accelerating wedge ($a = g\\tan\\theta$) are the same problem with the acceleration pointing horizontally — choose the axes to match the acceleration.",
+  "exitQuestion": {
+    "id": "ap1-u2-inclines-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Inclined Planes",
+    "objective": "C2.9",
+    "cedTopic": "2.5",
+    "clusterId": "2.9",
+    "skill": "justify-with-principle",
+    "representation": "free-body-diagram",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "friction-only-opposes-motion-not-tendency-to-move",
+    "question": "A block is held at rest on a rough incline ($\\tan\\theta > \\mu_s$, so it would slide if released) by a rope running straight **up the slope**. The rope is slowly loosened until the block is on the verge of sliding **down**. At that instant, the static friction force on the block is:",
+    "choices": [
+      "zero — friction only acts once the block is moving",
+      "up the slope, at its maximum value $\\mu_s mg\\cos\\theta$",
+      "down the slope, at its maximum value $\\mu_s mg\\cos\\theta$",
+      "up the slope, but smaller than $\\mu_s mg\\cos\\theta$"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'on the verge of sliding down' means the block's *tendency* is to slide down, so static friction acts **up the slope** to resist that tendency, and 'on the verge' means it has reached its maximum, $\\mu_s mg\\cos\\theta$. Static friction acts against the tendency to move, not only against actual motion.",
+      "incorrect": {
+        "0": "Static friction acts on a stationary object whenever there is a net tendency to slide. Here gravity's along-slope component would move the block, so friction is present and resisting it.",
+        "2": "Friction opposes the *tendency* to slide. The block tends to slide **down**, so friction points **up** the slope, not down.",
+        "3": "'On the verge of sliding' is exactly the condition where static friction has been pushed to its maximum. If it were still below maximum, the block would not yet be about to slip."
+      }
+    },
+    "hint": [
+      "Which way would the block move if friction vanished? Static friction points the opposite way.",
+      "'On the verge of sliding' tells you the magnitude: static friction is at its ceiling, $\\mu_s F_N$."
+    ],
+    "solution": "The block tends to slide down, so static friction acts up the slope; 'on the verge' means it is at its maximum $\\mu_s mg\\cos\\theta$.",
+    "hintFigures": [
+      { "svg": "incline/dot-friction.svg", "caption": "Tendency to slide down ⇒ friction (here labelled $f_k$, but the same direction for $f_s$) points up the slope." }
+    ]
+  },
+  "questionBankFile": "ap1-u2-inclines.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-101", "AP1-U2-MCQ-102", "AP1-U2-MCQ-103",
+    "AP1-U2-MCQ-104", "AP1-U2-MCQ-105", "AP1-U2-MCQ-106"
+  ]
+}

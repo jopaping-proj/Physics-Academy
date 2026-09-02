@@ -313,6 +313,30 @@ const DIAGRAMS = {
   },
 
   // ---- Lesson 9 · Gravitation, Springs, and Apparent Weight ----
+  // ---- Lesson 10 · Inclined Planes ----
+  "incline/dot-frictionless.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a block on a frictionless incline that rises to the right at angle theta. Only two forces: gravity straight down (the longer arrow), and the normal force perpendicular to the surface, pointing up and to the left (shorter than gravity, because it equals m g cosine theta). The two do not cancel, so the net force points down the slope.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: 120, mag: 3, anchor: [146, 105], color: "blue" },
+    ],
+  },
+
+  "incline/dot-friction.svg": {
+    style: "dot",
+    dot: { r: 8 },
+    ariaLabel:
+      "Dot free-body diagram of a block sliding down a rough incline that rises to the right at angle theta. Three forces: gravity straight down (the longest arrow); the normal force perpendicular to the surface, up and to the left; and kinetic friction along the surface, pointing up the slope (up and to the right), opposing the downhill slide.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 120], color: "grey" },
+      { sym: "F_N", dir: 120, mag: 3, anchor: [146, 105], color: "blue" },
+      { sym: "f_k", dir: 30, mag: 2, anchor: [158, 106], color: "red" },
+    ],
+  },
+
   "apparent-weight/dot-accel-up.svg": {
     style: "dot",
     dot: { r: 8 },
