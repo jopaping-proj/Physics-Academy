@@ -95,7 +95,11 @@
             "2": "Speed is a scalar.",
             "3": "All three quantities are scalars as written."
           }
-        }
+        },
+        "hint": [
+          "A vector needs **both** a magnitude and a direction. For each quantity ask: does 'how much' fully describe it, or do you also need 'which way'?"
+        ],
+        "solution": "Displacement, velocity, and acceleration each require a direction, so they are vectors. Distance, speed, and time are fully specified by a magnitude alone — they are scalars. Only the first list is all vectors."
       }
     },
     {
@@ -155,7 +159,12 @@
             "2": "The distance is correct, but the displacement sign conflicts with the east-positive frame.",
             "3": "This uses only part of the journey and reports the final position instead of displacement."
           }
-        }
+        },
+        "hint": [
+          "Distance adds the length of every leg: $|11-(-4)|$ for the first, then $|2-11|$ for the return.",
+          "Displacement uses only the endpoints: $\\Delta x = x_f - x_i = 2-(-4)$."
+        ],
+        "solution": "Distance $= |11-(-4)| + |2-11| = 15 + 9 = 24\\ \\mathrm{m}$. Displacement $= x_f - x_i = 2-(-4) = +6\\ \\mathrm{m}$."
       }
     }
   ],
@@ -185,7 +194,12 @@
           "2": "Distance cannot be zero if motion occurred.",
           "3": "Reversing direction makes distance exceed displacement magnitude."
         }
-      }
+      },
+      "hint": [
+        "Did the robot travel along a path? Then distance is greater than zero.",
+        "Did its position change from start to finish? If not, $\\Delta x = 0$."
+      ],
+      "solution": "Motion occurred, so the distance (accumulated path length) is nonzero. The start and end positions are identical, so $\\Delta x = x_f - x_i = 0$."
     }
   ],
   "representationConnections": "A verbal journey becomes a number-line model; the model fixes signed positions; those positions support separate calculations of distance and displacement.",
@@ -215,7 +229,12 @@
           "2": "The displacement sign is inconsistent with the final position relative to the start.",
           "3": "This omits the first path segment and uses final position as displacement."
         }
-      }
+      },
+      "hint": [
+        "Distance: add each leg — $|-5-3|$ then $|8-(-5)|$.",
+        "Displacement: endpoints only — $x_f - x_i = 8 - 3$."
+      ],
+      "solution": "Distance $= |-5-3| + |8-(-5)| = 8 + 13 = 21\\ \\mathrm{m}$. Displacement $= 8 - 3 = +5\\ \\mathrm{m}$."
     }
   ],
   "examConnection": "This lesson establishes the signed-position and vector language required for every later kinematics representation and calculation.",
@@ -245,7 +264,12 @@
         "2": "The initial coordinate changes when the origin changes.",
         "3": "The final coordinate also changes when the origin changes."
       }
-    }
+    },
+    "hint": [
+      "Shifting the origin adds the same constant to every position, including $x_i$ and $x_f$.",
+      "What happens to $x_f - x_i$ when the same constant is added to both terms?"
+    ],
+    "solution": "A different origin shifts $x_i$ and $x_f$ by the same amount, so $\\Delta x = x_f - x_i$ is unchanged. The individual position numbers differ between the observers; the displacement agrees."
   },
   "needsPlotly": false
 }
