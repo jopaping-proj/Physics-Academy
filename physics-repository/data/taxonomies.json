@@ -97,7 +97,9 @@
       "internal-forces-can-change-a-system-center-of-mass-motion",
       "center-of-mass-is-the-geometric-centre",
       "objects-in-circular-or-turning-motion-feel-an-outward-force",
-      "constant-velocity-implies-a-net-forward-force"
+      "constant-velocity-implies-a-net-forward-force",
+      "tension-in-a-multi-object-string-system-must-support-the-whole-system",
+      "treats-heavier-hanging-mass-as-being-in-free-fall"
     ]
   },
 

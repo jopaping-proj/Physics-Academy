@@ -1,0 +1,505 @@
+{
+  "id": "ap1-u2-connected",
+  "slug": "connected-objects-and-systems",
+  "course": "AP Physics 1",
+  "courses": ["ap-physics-1"],
+  "unit": "Unit 2: Force and Translational Dynamics",
+  "topic": "Newton's Laws",
+  "lessonNumber": "8",
+  "objective": "C2.7",
+  "cedTopic": "2.5",
+  "clusterId": "2.7",
+  "lessonTitle": "Connected Objects and Systems",
+  "status": "draft — physics not yet independently reviewed (master-project-prompt.md §31–§32)",
+  "prerequisites": [
+    "Newton's second law along the direction of motion, $\\sum F_x = m a_x$ (Lessons 4–5)",
+    "A rope's tension is one force of a third-law pair — it pulls the same on each end of an ideal rope (Lesson 6)",
+    "Internal forces between parts of a system cancel; only external forces move the centre of mass (Lesson 1)",
+    "Building a free-body diagram for one chosen object (Lesson 2)"
+  ],
+  "majorObjective": "Solve a connected two-body problem two ways: treat the linked objects as one system of total mass to get their common acceleration from the external forces, then analyse one object on its own — with that common acceleration — to find the internal connecting force (rope tension or contact force), including the result that a connecting rope's tension is **not** equal to a hanging object's weight whenever the system accelerates.",
+  "subObjectives": [
+    "Treat two or more connected objects as a single system of total mass $M$, and find the common acceleration from $a = F_{net,\\text{ext}}/M$ using only the **external** forces.",
+    "Explain that the connecting force is **internal** to the whole system, so it does not appear in the system equation.",
+    "Draw the free-body diagram for **one** object, apply $\\sum F = ma$ with the common acceleration, and solve for the connecting rope tension or contact force.",
+    "Reconcile the two methods: the tension found from one object must satisfy the other object's equation too.",
+    "State and justify that a connecting rope's tension is **less** than a hanging object's weight when the system accelerates ($F_T = m(g - a)$), and equal to it only when $a = 0$.",
+    "Apply the ideal-pulley model: a massless rope over a massless, frictionless pulley has the **same tension throughout**; the pulley only redirects it."
+  ],
+  "hook": {
+    "prompt": "A $2\\text{ kg}$ block hangs from a rope that runs over a pulley to a $4\\text{ kg}$ block on a frictionless table. After release, the tension in the rope is:",
+    "choices": [
+      "$20\\text{ N}$ — equal to the hanging block's weight",
+      "less than $20\\text{ N}$ — part of the hanging block's weight goes into accelerating it downward",
+      "$60\\text{ N}$ — it has to support the whole $6\\text{ kg}$ system",
+      "zero until the blocks reach constant speed"
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "From Lesson 6, an ideal rope pulls **equally hard on whatever is tied to each end** — the tension is one force of a third-law pair. From Lesson 1, forces **inside** a system cancel in pairs, so only **external** forces change the system's motion. This lesson puts those two ideas together: use the system view for the acceleration, then one free-body diagram for the tension.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Two Objects, One Acceleration: the System Method",
+      "concept": "When objects are connected by a rope that does not stretch, they all move together — **one acceleration for the whole set**. The fastest way to that acceleration is to treat the connected objects as a **single system**.\n\nFor a system of total mass $M = m_1 + m_2 + \\dots$, Newton's second law uses only the **external** forces — forces from outside the system:\n\n$$a = \\frac{F_{net,\\text{ext}}}{M}$$\n\nThe rope pulling one object forward also pulls the next object back by the same amount (third law). Those forces are **internal** to the system, so they cancel and never appear in this equation. ==A connecting rope's tension is an internal force — the system method cannot see it, and does not need to.==\n\nExternal forces are the ones that count: an applied pull, gravity on a hanging part, friction from a surface the system slides on.",
+      "conceptFigures": [
+        { "svg": "connected/setup-table-pulley.svg", "caption": "One rope means both blocks share a single acceleration $a$. To the whole system, the rope tension is internal — only the outside forces (here, gravity on $m_2$) set $a$." }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Two blocks sit on a frictionless table, connected by a light string: a $3.0\\text{ kg}$ block in front and a $2.0\\text{ kg}$ block behind it. A horizontal force of $20\\text{ N}$ pulls the front block. Find the acceleration of the blocks.",
+        "phases": [
+          {
+            "label": "Choose the system",
+            "steps": [
+              "Take **both blocks together** as one system.",
+              "Total mass: $M = 3.0 + 2.0 = 5.0\\text{ kg}$."
+            ]
+          },
+          {
+            "label": "External forces along the motion",
+            "steps": [
+              "The only horizontal external force is the $20\\text{ N}$ pull. (The string tension between the blocks is **internal** — it does not count.)",
+              "The table is frictionless, and gravity and the normal force are vertical and cancel.",
+              "$F_{net,\\text{ext}} = 20\\text{ N}$, forward."
+            ]
+          },
+          {
+            "label": "Newton's second law for the system",
+            "steps": [
+              "Principle: $F_{net,\\text{ext}} = Ma$. Solve for the target: $a = \\dfrac{F_{net,\\text{ext}}}{M}$.",
+              "Substitute: $a = \\dfrac{20\\text{ N}}{5.0\\text{ kg}} = 4.0\\text{ m/s}^2$, forward."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "Both blocks have this same $4.0\\text{ m/s}^2$ — the string keeps them moving as one.",
+              "Units: $\\text{N/kg} = \\text{m/s}^2$. ✓"
+            ]
+          }
+        ],
+        "keyMove": "Adding the masses and using **only** the external $20\\text{ N}$ pull — deliberately leaving the internal string tension out of the system equation."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-connected-q01",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Connected Objects and Systems",
+        "objective": "C2.7",
+        "cedTopic": "2.5",
+        "clusterId": "2.7",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "type": "multiple-choice",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "misconceptionTested": "",
+        "question": "A $5.0\\text{ kg}$ cart tows a $3.0\\text{ kg}$ trailer along a level, frictionless track. A forward force of $16\\text{ N}$ acts on the cart. The acceleration of the cart-and-trailer is:",
+        "choices": ["$3.2\\text{ m/s}^2$", "$2.0\\text{ m/s}^2$", "$5.3\\text{ m/s}^2$", "$1.0\\text{ m/s}^2$"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — system of total mass $M = 5.0 + 3.0 = 8.0\\text{ kg}$; the only external horizontal force is the $16\\text{ N}$ pull. $a = F_{net,\\text{ext}}/M = 16/8.0 = 2.0\\text{ m/s}^2$.",
+          "incorrect": {
+            "0": "This divides $16\\text{ N}$ by only the cart's mass ($5.0\\text{ kg}$). The cart has to accelerate the trailer too — use the total mass.",
+            "2": "This divides by only the trailer's mass ($3.0\\text{ kg}$). Use the whole system's mass, $8.0\\text{ kg}$.",
+            "3": "$1.0\\text{ m/s}^2$ would need a $24\\text{ N}$ total mass or an $8\\text{ N}$ force. Recheck: $16/8.0 = 2.0$."
+          }
+        },
+        "hint": ["The cart and trailer move together, so treat them as one object of mass $5.0 + 3.0\\text{ kg}$. The coupling force between them is internal — leave it out."],
+        "solution": "$M = 8.0\\text{ kg}$; $a = 16/8.0 = 2.0\\text{ m/s}^2$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Finding the Connecting Force: One Object at a Time",
+      "concept": "The system method gives the acceleration but hides the connecting force. To find the **rope tension** (or the **contact force** between two blocks pushed together), you have to look at **one object on its own**.\n\nThe recipe:\n\n1. Get the common acceleration $a$ from the system method.\n2. Draw the free-body diagram for **one** object — the connecting force now appears, because it is external *to that one object*.\n3. Apply $\\sum F = ma$ for that object, using the shared $a$, and solve for the connecting force.\n\nPick the **simpler** object — usually the one with the fewest forces. Then **reconcile**: the tension you find must also make the *other* object's equation balance. If it does, both methods agree and the answer is trustworthy.",
+      "figures": [
+        { "svg": "connected/fbd-table-block.svg", "caption": "The table block's free-body diagram. Its only horizontal force is the rope tension $F_T$, so $F_T = m_1 a$." }
+      ],
+      "workedExample": {
+        "scaffold": "partial",
+        "problem": "For the same two blocks on the frictionless table — a $3.0\\text{ kg}$ block in front pulled by $20\\text{ N}$, a $2.0\\text{ kg}$ block behind, connected by a light string, accelerating at $4.0\\text{ m/s}^2$ — find the tension in the connecting string.",
+        "figure": { "svg": "connected/fbd-table-block.svg", "caption": "Take the **back** block: the string is its only horizontal force." },
+        "phases": [
+          {
+            "label": "Pick the simpler object",
+            "steps": [
+              "The **back** ($2.0\\text{ kg}$) block has just one horizontal force on it: the string tension $F_T$, pulling it forward.",
+              "(The front block also feels the $20\\text{ N}$ pull, so its equation has two terms — more work.)"
+            ]
+          },
+          {
+            "label": "Newton's second law for the back block",
+            "steps": [
+              "$\\sum F_x = m_2 a$: $F_T = m_2 a$.",
+              "Substitute: $F_T = (2.0)(4.0) = 8.0\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Reconcile with the front block",
+            "steps": [
+              "Front block: $\\sum F_x = m_1 a$ gives $20 - F_T = (3.0)(4.0) = 12\\text{ N}$.",
+              "So $F_T = 20 - 12 = 8.0\\text{ N}$ — the same value. ✓ The two objects agree."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "The string tension ($8.0\\text{ N}$) is **less** than the $20\\text{ N}$ applied pull — the string only has to accelerate the back block, not both.",
+              "If the blocks were swapped (pull the $2.0\\text{ kg}$ block, tow the $3.0\\text{ kg}$), the tension would be $(3.0)(4.0) = 12\\text{ N}$ — the rope tows the heavier block now."
+            ]
+          }
+        ],
+        "keyMove": "Isolating the back block, whose *only* horizontal force is the tension, so $\\sum F = ma$ becomes simply $F_T = m_2 a$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-connected-q02",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Connected Objects and Systems",
+        "objective": "C2.7",
+        "cedTopic": "2.5",
+        "clusterId": "2.7",
+        "skill": "multi-representation-reasoning",
+        "representation": "free-body-diagram",
+        "type": "multiple-choice",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "misconceptionTested": "tension-in-a-multi-object-string-system-must-support-the-whole-system",
+        "question": "Boxes P ($4.0\\text{ kg}$) and Q ($6.0\\text{ kg}$) sit on a frictionless floor, connected by a light rope, with a $30\\text{ N}$ horizontal force pulling Q. The rope tension is:",
+        "choices": [
+          "$30\\text{ N}$ — the rope carries the whole applied force",
+          "$12\\text{ N}$",
+          "$18\\text{ N}$",
+          "$50\\text{ N}$ — it supports both boxes"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — system: $a = 30/(4.0+6.0) = 3.0\\text{ m/s}^2$. Then box P alone (the rope is its only horizontal force): $F_T = m_P a = (4.0)(3.0) = 12\\text{ N}$.",
+          "incorrect": {
+            "0": "The rope only has to accelerate box P, not deliver the full applied force. $F_T = m_P a = 12\\text{ N}$, well under $30\\text{ N}$.",
+            "2": "$18\\text{ N}$ is $m_Q a = (6.0)(3.0)$ — that is the *net* force on Q, not the rope tension. The rope pulls P: use $m_P a$.",
+            "3": "Tension is not a sum of weights or masses. Isolate one box: $F_T = m_P a = 12\\text{ N}$."
+          }
+        },
+        "hint": ["Find $a$ for the system first. Then isolate the box that the rope is *towing* (box P) — the rope is its only horizontal force, so $F_T = m_P a$."],
+        "solution": "$a = 30/10 = 3.0\\text{ m/s}^2$; $F_T = m_P a = (4.0)(3.0) = 12\\text{ N}$.",
+        "hintFigures": [
+          { "svg": "connected/fbd-table-block.svg", "caption": "Box P's free-body diagram: the rope tension is its only horizontal force, so $F_T = m_P a$." }
+        ]
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Hanging Masses, Pulleys, and Why the Tension Isn't the Weight",
+      "concept": "A very common setup: a block on a table connected by a rope, over a **pulley** at the edge, to a block hanging in the air. An **ideal pulley** — massless and frictionless, with a massless rope — just **redirects** the rope: ==the tension is the same all along the rope.==\n\nThe system still has one acceleration. Take the whole system (both blocks); the only external force along the motion is gravity on the hanging block, $m_2 g$:\n$$a = \\frac{m_2\\,g}{m_1 + m_2}$$\n\nNow the key point. Look at the **hanging block alone**: the forces on it are its weight $m_2 g$ (down) and the tension $F_T$ (up), and it accelerates **downward** at $a$:\n$$m_2 g - F_T = m_2 a \\quad\\Rightarrow\\quad F_T = m_2(g - a)$$\n==While the system accelerates, $F_T$ is **less** than the hanging weight $m_2 g$== — the missing bit, $m_2 a$, is exactly what pulls the hanging block down. The tension equals the full weight only when $a = 0$ (nothing moving, or moving at constant speed).\n\nThe same logic runs an **Atwood machine** (two blocks hanging from one rope over a pulley): the heavier side falls, $a = \\dfrac{(m_1 - m_2)\\,g}{m_1 + m_2}$, and the single rope tension sits **between** the two weights.",
+      "conceptFigures": [
+        { "svg": "connected/atwood.svg", "caption": "An Atwood machine. One rope, so one tension — the same on both sides. The heavier block falls; the tension is larger than the lighter weight and smaller than the heavier one." }
+      ],
+      "figures": [
+        { "svg": "connected/fbd-hanging-block.svg", "caption": "The hanging block: weight down (long), tension up (shorter). The net force is downward, so $F_T = m_2(g - a) < m_2 g$." }
+      ],
+      "workedExample": {
+        "scaffold": "hinted",
+        "problem": "A $4.0\\text{ kg}$ block on a frictionless table is connected by a light rope, over an ideal pulley, to a $2.0\\text{ kg}$ block hanging off the edge. Take $g = 10\\text{ m/s}^2$. Find (a) the acceleration of the blocks and (b) the tension in the rope.",
+        "figure": { "svg": "connected/fbd-hanging-block.svg", "caption": "The hanging block's free-body diagram: use it to get the tension once $a$ is known." },
+        "phases": [
+          {
+            "label": "(a) Acceleration from the system",
+            "steps": [
+              "System: total mass $M = 4.0 + 2.0 = 6.0\\text{ kg}$.",
+              "The only external force along the motion is gravity on the hanging block: $m_2 g = (2.0)(10) = 20\\text{ N}$. (The rope tension is internal to the whole system.)",
+              "$a = \\dfrac{F_{net,\\text{ext}}}{M} = \\dfrac{20}{6.0} = 3.3\\text{ m/s}^2$."
+            ]
+          },
+          {
+            "label": "(b) Tension from the hanging block",
+            "steps": [
+              "Hanging block alone, taking down as positive (it accelerates down): $\\sum F = m_2 a$ gives $m_2 g - F_T = m_2 a$.",
+              "Isolate the unknown: $F_T = m_2(g - a)$.",
+              "Substitute: $F_T = (2.0)(10 - 3.3) = (2.0)(6.7) = 13\\text{ N}$."
+            ]
+          },
+          {
+            "label": "Reconcile with the table block",
+            "steps": [
+              "Table block: its only horizontal force is $F_T$, so $F_T = m_1 a = (4.0)(3.3) = 13\\text{ N}$. ✓ Same tension.",
+              "$F_T = 13\\text{ N}$ is less than the hanging weight $m_2 g = 20\\text{ N}$ — as expected while the system accelerates."
+            ]
+          }
+        ],
+        "keyMove": "Getting $a$ from the system, then using the hanging block's equation $F_T = m_2(g - a)$ — never assuming $F_T = m_2 g$."
+      },
+      "formativeCheck": {
+        "id": "ap1-u2-connected-q03",
+        "course": "AP Physics 1",
+        "courses": ["ap-physics-1"],
+        "unit": "Unit 2",
+        "lesson": "Connected Objects and Systems",
+        "objective": "C2.7",
+        "cedTopic": "2.5",
+        "clusterId": "2.7",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "type": "multiple-choice",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+        "question": "In an Atwood machine, a $5\\text{ kg}$ block and a $3\\text{ kg}$ block hang from one rope over an ideal pulley. Which statement is correct?",
+        "choices": [
+          "The $5\\text{ kg}$ block falls with acceleration $g$, since gravity pulls it down.",
+          "Both blocks have the same acceleration magnitude, which is less than $g$, because the rope tension partly opposes each block's weight.",
+          "The rope tension equals $5g$ on one side and $3g$ on the other.",
+          "The blocks do not move, because the rope holds them in place."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — one inextensible rope means equal-magnitude accelerations. $a = (5-3)g/(5+3) = g/4$, well below $g$. The tension ($F_T = 2m_1 m_2 g/(m_1+m_2) = 2(5)(3)g/8 = 3.75g$) is the same throughout the rope and sits between the two weights.",
+          "incorrect": {
+            "0": "The $5\\text{ kg}$ block is not in free fall — the rope pulls up on it. Its acceleration is $(5-3)g/8 = g/4$, not $g$.",
+            "2": "One rope has one tension. It cannot be $5g$ and $3g$ at the same time — it is a single value between them.",
+            "3": "The rope is not fixed to a wall; it runs over a pulley. Unequal weights ⇒ a net force ⇒ the blocks accelerate."
+          }
+        },
+        "hint": ["One rope ⇒ one tension and one acceleration magnitude. Is the heavier block in free fall, or is something pulling up on it?"],
+        "solution": "Equal acceleration magnitudes, $a = (m_1-m_2)g/(m_1+m_2) < g$; one tension throughout the rope, between the two weights."
+      }
+    }
+  ],
+  "interactiveComponent": {
+    "type": "connected-systems-explorer",
+    "title": "Connected-Systems Explorer",
+    "subtitle": "Solve it as one system, then one block at a time",
+    "componentKey": "connected-systems-explorer",
+    "description": "A block $m_1$ on a frictionless table, a rope over an ideal pulley, a hanging block $m_2$. Set the two masses and read the situation solved **both ways**: the **system** gives the common acceleration from the outside forces; **each block alone** gives the rope tension — and the two tensions match. Watch $F_T$ stay **below** the hanging weight $m_2 g$ while the system accelerates; make $m_2$ small next to $m_1$ and the acceleration shrinks, so $F_T$ closes in on $m_2 g$.",
+    "graphs": []
+  },
+  "misconceptions": [
+    {
+      "id": "ap1-u2-connected-mc01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Connected Objects and Systems",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "tension-in-a-multi-object-string-system-must-support-the-whole-system",
+      "question": "A student solving a table-block-plus-hanging-block problem writes: 'The rope has to hold up both blocks, so its tension is $(m_1 + m_2)g$.' What is wrong with this?",
+      "choices": [
+        "Nothing — the rope does support the whole system.",
+        "The rope is not holding the system up. It transmits a force between the two blocks; isolating either block gives a tension far smaller than $(m_1+m_2)g$.",
+        "The tension should be $(m_1 + m_2)a$ instead.",
+        "The rope tension is always exactly $m_1 g$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — 'supporting the system's weight' is what a rope does when it hangs the whole system from a ceiling at rest. Here the rope connects two blocks that are free to accelerate. Isolate the table block: $F_T = m_1 a$. Isolate the hanging block: $F_T = m_2(g - a)$. Both are much less than $(m_1+m_2)g$.",
+        "incorrect": {
+          "0": "The rope connects two moving blocks; it is not a support cable. Its tension comes from one block's $\\sum F = ma$, not from adding weights.",
+          "2": "$(m_1+m_2)a$ is the *net external force* on the system, not the internal tension. The tension is found from one object alone.",
+          "3": "$F_T = m_1 a$ only for the table block in *this* setup. Change the arrangement and that changes; the point is to isolate one object, not memorise a formula."
+        }
+      },
+      "hint": ["A rope 'supports a weight' only when it hangs something at rest. Here the blocks accelerate — so find the tension from one block's $\\sum F = ma$."],
+      "solution": "Isolate one block: $F_T = m_1 a$ (table block) or $F_T = m_2(g-a)$ (hanging block) — both far below $(m_1+m_2)g$."
+    },
+    {
+      "id": "ap1-u2-connected-mc02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Connected Objects and Systems",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "misconception-diagnosis",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+      "question": "A $3.0\\text{ kg}$ block hangs from a rope over an ideal pulley, connected to a $1.0\\text{ kg}$ block on a frictionless table ($g = 10\\text{ m/s}^2$). A student says the hanging block falls at $10\\text{ m/s}^2$. The actual acceleration is:",
+      "choices": ["$10\\text{ m/s}^2$", "$7.5\\text{ m/s}^2$", "$3.3\\text{ m/s}^2$", "$30\\text{ m/s}^2$"],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the hanging block is not in free fall: the rope pulls up on it. System: $a = m_2 g/(m_1 + m_2) = (3.0)(10)/(1.0 + 3.0) = 30/4.0 = 7.5\\text{ m/s}^2$. Less than $g$, because the tension holds back part of the weight.",
+        "incorrect": {
+          "0": "Free fall ($10\\text{ m/s}^2$) would need *no* rope. The rope's upward tension reduces the acceleration below $g$.",
+          "2": "$3.3\\text{ m/s}^2$ swaps the masses — it uses $m_2 = 1.0\\text{ kg}$ hanging. Here the $3.0\\text{ kg}$ block hangs, so $a = 30/4.0 = 7.5$.",
+          "3": "$30\\text{ m/s}^2$ divides the $30\\text{ N}$ weight by only the hanging mass, ignoring that the table block is also being accelerated. Use the total mass."
+        }
+      },
+      "hint": ["The hanging block has a rope pulling *up* on it, so it is not in free fall. Use the system: $a = m_2 g/(m_1 + m_2)$ with the $3.0\\text{ kg}$ block hanging."],
+      "solution": "$a = m_2 g/(m_1+m_2) = 30/4.0 = 7.5\\text{ m/s}^2$ — below $g$ because the rope tension opposes part of the weight."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "**Problem:** a $6.0\\text{ kg}$ block on a frictionless table is connected by a rope over an ideal pulley to a $4.0\\text{ kg}$ hanging block. Take $g = 10\\text{ m/s}^2$. Find the acceleration and the rope tension.\n\n**Student's work:** 'The hanging block's weight is $(4.0)(10) = 40\\text{ N}$, so the rope tension is $40\\text{ N}$. Then for the table block, $a = F_T/m_1 = 40/6.0 = 6.7\\text{ m/s}^2$.'",
+      "prompts": [
+        "Identify the student's error.",
+        "State the rule they broke.",
+        "Redo the problem correctly, formula first.",
+        "State a check that shows the student's tension is too large."
+      ],
+      "modelResponse": "1. The student set the rope tension equal to the hanging block's weight, $F_T = m_2 g = 40\\text{ N}$.\n2. $F_T = m_2 g$ only holds when the hanging block is **not accelerating**. Here the block accelerates downward, so its equation is $m_2 g - F_T = m_2 a$, which makes $F_T$ **less** than $m_2 g$.\n3. System first: $a = \\dfrac{m_2 g}{m_1 + m_2} = \\dfrac{40}{6.0 + 4.0} = 4.0\\text{ m/s}^2$. Then the hanging block: $F_T = m_2(g - a) = (4.0)(10 - 4.0) = 24\\text{ N}$. Check with the table block: $F_T = m_1 a = (6.0)(4.0) = 24\\text{ N}$ ✓.\n4. If $F_T$ were the full $40\\text{ N}$, the hanging block would have zero net force and would not accelerate at all — contradicting the fact that the system is speeding up. The tension must be below $40\\text{ N}$.",
+      "modelFigures": [
+        { "svg": "connected/fbd-hanging-block.svg", "caption": "The hanging block accelerates downward, so the weight arrow is longer than the tension arrow: $F_T = m_2(g - a) < m_2 g$." }
+      ],
+      "responseMaxLength": 850
+    }
+  ],
+  "representationConnections": "A connected-system problem links: the **scene** (which objects share a rope, which way each one moves); the **system equation** ($F_{net,\\text{ext}} = Ma$, one acceleration, no internal forces); the **individual free-body diagrams** (one per object, the connecting force now visible); and the **reconciliation** (the tension from one object must satisfy the other's $\\sum F = ma$). The single most useful habit: solve for $a$ with the system, then never write $F_T = mg$ for a hanging object — write $F_T = m(g - a)$.",
+  "lessonAssessment": [
+    {
+      "id": "ap1-u2-connected-la01",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Connected Objects and Systems",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "type": "multiple-choice",
+      "difficulty": "developing",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "Three identical $2.0\\text{ kg}$ carts are linked in a train on a frictionless track. A $12\\text{ N}$ force pulls the front cart. The acceleration of the train and the tension in the rope between the **middle and rear** carts are:",
+      "choices": [
+        "$a = 2.0\\text{ m/s}^2$; tension $= 4.0\\text{ N}$",
+        "$a = 2.0\\text{ m/s}^2$; tension $= 8.0\\text{ N}$",
+        "$a = 6.0\\text{ m/s}^2$; tension $= 12\\text{ N}$",
+        "$a = 2.0\\text{ m/s}^2$; tension $= 12\\text{ N}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — system: $a = 12/(3 \\times 2.0) = 2.0\\text{ m/s}^2$. The rope between the middle and rear carts only has to accelerate the **rear** cart: $F_T = (2.0)(2.0) = 4.0\\text{ N}$.",
+        "incorrect": {
+          "1": "$8.0\\text{ N}$ is the tension in the *front* rope, which tows two carts ($4.0\\text{ kg}$). The rear rope tows only one cart.",
+          "2": "$a = 6.0\\text{ m/s}^2$ divides $12\\text{ N}$ by one cart's mass. The force accelerates all three: $a = 12/6.0 = 2.0\\text{ m/s}^2$.",
+          "3": "$12\\text{ N}$ is the applied force, not the rope tension. Isolate the rear cart: $F_T = m a = 4.0\\text{ N}$."
+        }
+      },
+      "hint": ["Find $a$ for all three carts as one system. Then the rear rope only accelerates the one cart behind it: $F_T = m_{rear}\\,a$."],
+      "solution": "$a = 12/6.0 = 2.0\\text{ m/s}^2$; rear-rope tension $= (2.0)(2.0) = 4.0\\text{ N}$."
+    },
+    {
+      "id": "ap1-u2-connected-la02",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Connected Objects and Systems",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "multi-representation-reasoning",
+      "representation": "free-body-diagram",
+      "type": "free-response",
+      "frqType": "multi-part-quantitative",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+      "scenario": "A $5.0\\text{ kg}$ block rests on a frictionless horizontal table. A light rope from the block runs horizontally to an ideal pulley at the table's edge and then straight down to a $3.0\\text{ kg}$ block hanging in the air. The system is released from rest. Take $g = 10\\text{ m/s}^2$.",
+      "figures": [
+        { "svg": "connected/setup-table-pulley.svg", "caption": "The setup: $m_1 = 5.0\\text{ kg}$ on the table, $m_2 = 3.0\\text{ kg}$ hanging, connected over an ideal pulley." }
+      ],
+      "parts": [
+        { "label": "(a)", "prompt": "Draw a free-body diagram for each block. Label every force with the object exerting it.", "points": 2, "modelResponse": "Table block: weight $m_1 g$ down (Earth), normal force $F_N$ up (table), rope tension $F_T$ horizontal toward the pulley (rope). Hanging block: weight $m_2 g$ down (Earth), rope tension $F_T$ up (rope). The two $F_T$ arrows are equal in length — one rope, ideal pulley." },
+        { "label": "(b)", "prompt": "Find the acceleration of the blocks.", "points": 3, "modelResponse": "System, total mass $M = 5.0 + 3.0 = 8.0\\text{ kg}$. The only external force along the motion is the hanging block's weight: $m_2 g = (3.0)(10) = 30\\text{ N}$. $a = F_{net,\\text{ext}}/M = 30/8.0 = 3.75\\text{ m/s}^2$." },
+        { "label": "(c)", "prompt": "Find the tension in the rope.", "points": 3, "modelResponse": "Table block alone: its only horizontal force is $F_T$, so $\\sum F_x = m_1 a \\Rightarrow F_T = m_1 a = (5.0)(3.75) = 19\\text{ N}$. Check with the hanging block: $m_2 g - F_T = m_2 a \\Rightarrow F_T = m_2(g - a) = (3.0)(10 - 3.75) = (3.0)(6.25) = 19\\text{ N}$ ✓." },
+        { "label": "(d)", "prompt": "The rope tension is $19\\text{ N}$, but the hanging block weighs $30\\text{ N}$. Explain in one or two sentences why the tension is smaller.", "points": 2, "modelResponse": "The hanging block is accelerating downward, so the net force on it must point down: $m_2 g - F_T = m_2 a > 0$, which forces $F_T < m_2 g$. The 'missing' $11\\text{ N}$ ($= m_2 a$) is exactly the net downward force that accelerates the block. The tension would equal the full weight only if $a = 0$." }
+      ],
+      "totalPoints": 10,
+      "scoringNotes": "(a) 1 pt each correct FBD with named agents (equal-length tensions). (b) 1 pt system mass, 1 pt identifies $m_2 g$ as the only external driving force, 1 pt $a = 3.75\\text{ m/s}^2$. (c) 1 pt isolates one block, 1 pt $\\sum F = ma$ with the common $a$, 1 pt $F_T = 19\\text{ N}$. (d) 1 pt cites $m_2 g - F_T = m_2 a$, 1 pt concludes $F_T < m_2 g$ (equal only if $a = 0$). Carry (b)'s $a$ forward into (c)–(d)."
+    },
+    {
+      "id": "ap1-u2-connected-la03",
+      "course": "AP Physics 1",
+      "courses": ["ap-physics-1"],
+      "unit": "Unit 2",
+      "lesson": "Connected Objects and Systems",
+      "objective": "C2.7",
+      "cedTopic": "2.5",
+      "clusterId": "2.7",
+      "skill": "transfer",
+      "representation": "verbal",
+      "type": "multiple-choice",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "An elevator of mass $M$ is pulled upward by a cable and accelerates upward at $a$. A light bag of groceries of mass $m$ sits on the elevator floor. Treating the bag as an object connected to the elevator by the normal force, the force the floor exerts on the bag is:",
+      "choices": [
+        "$mg$ — the floor just supports the bag's weight",
+        "$m(g + a)$ — larger than $mg$, because the floor must also accelerate the bag upward",
+        "$m(g - a)$ — smaller than $mg$",
+        "$Ma$ — the same force that accelerates the elevator"
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — same structure as a connecting force. Isolate the bag: $F_N - mg = ma$ (up is positive, it accelerates up with the elevator), so $F_N = m(g + a)$. The floor supplies the bag's weight *plus* the extra force to accelerate it — which is why you feel heavier in an accelerating-upward elevator.",
+        "incorrect": {
+          "0": "$F_N = mg$ only if the bag is not accelerating. It accelerates upward with the elevator, so the floor must push harder than $mg$.",
+          "2": "$m(g - a)$ is for *downward* acceleration. This elevator accelerates upward, so $F_N > mg$.",
+          "3": "$Ma$ is (part of) the force on the elevator, not the bag. Isolate the bag: $F_N = m(g + a)$."
+        }
+      },
+      "hint": ["Isolate the bag. It accelerates upward at $a$ with the elevator. Write $\\sum F = ma$ with the floor's normal force up and gravity down."],
+      "solution": "$F_N - mg = ma \\Rightarrow F_N = m(g + a)$ — the connecting (normal) force exceeds $mg$ when the acceleration is upward."
+    }
+  ],
+  "examConnection": "Connected-system problems are a staple AP free-response type. The reliable method: (1) **system** for the acceleration — total mass, external forces only, internal connecting force left out; (2) **one free-body diagram** for the connecting force — pick the object with fewer forces, use the common $a$; (3) **reconcile** against the other object. Lost points cluster on: adding weights to get a tension, writing $F_T = mg$ for an accelerating hanging mass, dividing the applied force by only one object's mass, and forgetting that an ideal pulley keeps the tension the same on both sides.",
+  "summary": "- Connected objects (inextensible rope) share **one acceleration**.\n- **System method:** total mass $M$, external forces only. $a = F_{net,\\text{ext}}/M$. The internal connecting force does not appear.\n- **Individual method:** to find the connecting force, isolate **one** object, use the common $a$, solve $\\sum F = ma$. Pick the object with fewer forces.\n- **Reconcile:** the connecting force must satisfy the other object's equation too.\n- ==A hanging object's rope tension is $F_T = m(g - a)$, **less** than $mg$ whenever the system accelerates== (equal only when $a = 0$).\n- **Ideal pulley** (massless, frictionless, massless rope): same tension throughout; it only redirects the rope.\n- **Atwood machine:** $a = \\dfrac{(m_1 - m_2)g}{m_1 + m_2}$; the single tension sits between the two weights.",
+  "exitQuestion": {
+    "id": "ap1-u2-connected-qexit",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "tension-in-a-multi-object-string-system-must-support-the-whole-system",
+    "question": "Two blocks connected by a rope over an ideal pulley (one on a frictionless table, one hanging) are released and speed up. A student claims: 'Since the rope is ideal, the tension equals the hanging block's weight.' What is the flaw, and when *would* the claim be true?",
+    "choices": [
+      "No flaw — an ideal rope always has tension equal to the weight it connects to.",
+      "The flaw: while the system accelerates, the hanging block's equation is $m_2 g - F_T = m_2 a$, so $F_T = m_2(g - a) < m_2 g$. The claim is true only when $a = 0$ — e.g. if the table had just enough friction to hold the system at constant velocity, or at rest.",
+      "The flaw: the tension actually equals $(m_1 + m_2)g$.",
+      "The claim is true only for an Atwood machine, not for a table-and-pulley setup."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'ideal rope' means the same tension throughout, not tension equal to a weight. The hanging block accelerates, so $F_T = m_2(g - a)$, which is below $m_2 g$. The tension reaches the full weight only when $a = 0$: the system at rest, or moving at constant velocity (which here would require friction on the table).",
+      "incorrect": {
+        "0": "An ideal rope has *uniform* tension; its value comes from $\\sum F = ma$ for a connected object, not from a weight.",
+        "2": "$(m_1+m_2)g$ would be the tension if a single rope held the whole system hanging from a ceiling at rest — not this arrangement.",
+        "3": "The $F_T \\ne m_2 g$ result applies to both setups. In an Atwood machine the tension sits between the two weights."
+      }
+    },
+    "hint": [
+      "'Ideal rope' controls how tension varies *along* the rope, not its numerical value.",
+      "Write $\\sum F = m_2 a$ for the hanging block. When is $F_T$ equal to $m_2 g$?"
+    ],
+    "solution": "$F_T = m_2(g - a) < m_2 g$ while accelerating; equal to $m_2 g$ only when $a = 0$ (system at rest or at constant velocity)."
+  },
+  "questionBankFile": "ap1-u2-connected.json",
+  "furtherPracticeQuestionIds": [
+    "AP1-U2-MCQ-089", "AP1-U2-MCQ-090", "AP1-U2-MCQ-091",
+    "AP1-U2-MCQ-092", "AP1-U2-MCQ-093", "AP1-U2-MCQ-094"
+  ]
+}

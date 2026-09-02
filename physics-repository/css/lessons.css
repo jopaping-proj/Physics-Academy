@@ -601,6 +601,10 @@
 .external-html-card {
   background: #ffffff;
   color: #172033;
+  /* the site runs color-scheme: dark, which makes native radios / selects /
+     text inputs render dark — wrong on this white "paper" card. Force the
+     light UA appearance for the controls inside it. */
+  color-scheme: light;
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow-panel);

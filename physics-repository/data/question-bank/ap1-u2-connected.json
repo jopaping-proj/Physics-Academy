@@ -1,0 +1,186 @@
+[
+  {
+    "id": "AP1-U2-MCQ-089",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "misconceptionTested": "",
+    "question": "A $2.0\\text{ kg}$ block and a $6.0\\text{ kg}$ block are connected by a light string on a frictionless surface. A $24\\text{ N}$ horizontal force pulls the pair. Their acceleration is:",
+    "choices": ["$3.0\\text{ m/s}^2$", "$12\\text{ m/s}^2$", "$4.0\\text{ m/s}^2$", "$6.0\\text{ m/s}^2$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — treat the two blocks as one system: $M = 2.0 + 6.0 = 8.0\\text{ kg}$, and the only external horizontal force is $24\\text{ N}$. $a = 24/8.0 = 3.0\\text{ m/s}^2$.",
+      "incorrect": {
+        "1": "This divides $24\\text{ N}$ by only the $2.0\\text{ kg}$ block. The force accelerates both blocks — use the total mass.",
+        "2": "This divides by only the $6.0\\text{ kg}$ block. Use the whole system, $8.0\\text{ kg}$.",
+        "3": "$6.0\\text{ m/s}^2$ would need a $4.0\\text{ kg}$ total mass. $24/8.0 = 3.0$."
+      }
+    },
+    "hint": ["The string keeps the blocks moving together — one system of mass $2.0 + 6.0\\text{ kg}$, one external force."],
+    "solution": "$M = 8.0\\text{ kg}$; $a = 24/8.0 = 3.0\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-090",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "misconceptionTested": "",
+    "question": "Why does the tension in the rope between two connected blocks not appear when you write Newton's second law for the whole two-block system?",
+    "choices": [
+      "Because tension is always zero for an ideal rope",
+      "Because it is an internal force — the rope pulls the two blocks with equal and opposite forces, which cancel within the system",
+      "Because tension acts perpendicular to the motion",
+      "Because the rope is massless"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the rope pulls block A forward and block B backward (or vice versa) with equal magnitude — a third-law pair *inside* the system. Internal forces cancel in the system equation, which is why it uses only external forces.",
+      "incorrect": {
+        "0": "Tension is generally not zero — it is just internal to the whole system, so it drops out of the system equation (but appears when you isolate one block).",
+        "2": "For blocks connected by a horizontal rope, the tension is along the motion, not perpendicular. It still cancels — because it is internal.",
+        "3": "The rope being massless makes the tension uniform, but the reason it drops out of the system equation is that it is an internal action–reaction pair."
+      }
+    },
+    "hint": ["The rope pulls on both blocks. How do those two pulls compare (third law)? Are they internal or external to the two-block system?"],
+    "solution": "It is an internal action–reaction pair (equal and opposite on the two blocks), so it cancels in the system equation."
+  },
+  {
+    "id": "AP1-U2-MCQ-091",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "tension-in-a-multi-object-string-system-must-support-the-whole-system",
+    "question": "A $4.0\\text{ kg}$ block (front) and a $2.0\\text{ kg}$ block (back) are joined by a light string on a frictionless floor. A $30\\text{ N}$ force pulls the front block forward. The string tension is:",
+    "choices": ["$30\\text{ N}$", "$10\\text{ N}$", "$20\\text{ N}$", "$15\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — system: $a = 30/(4.0 + 2.0) = 5.0\\text{ m/s}^2$. The string only has to accelerate the back block: $F_T = m_{back}\\,a = (2.0)(5.0) = 10\\text{ N}$.",
+      "incorrect": {
+        "0": "The string does not carry the whole applied force — only enough to accelerate the back block. $F_T = (2.0)(5.0) = 10\\text{ N}$.",
+        "2": "$20\\text{ N}$ is the net force on the front block ($m_{front}\\,a = 4.0 \\times 5.0$), not the string tension. Isolate the back block.",
+        "3": "$15\\text{ N}$ is half the applied force — not how tension works. Use $F_T = m_{back}\\,a$."
+      }
+    },
+    "hint": ["Get $a$ for the system. Then the string only tows the back block: $F_T = m_{back}\\,a$."],
+    "solution": "$a = 30/6.0 = 5.0\\text{ m/s}^2$; $F_T = (2.0)(5.0) = 10\\text{ N}$."
+  },
+  {
+    "id": "AP1-U2-MCQ-092",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+    "question": "A $2.0\\text{ kg}$ block on a frictionless table is connected over an ideal pulley to a $3.0\\text{ kg}$ hanging block ($g = 10\\text{ m/s}^2$). The acceleration of the system is:",
+    "choices": ["$10\\text{ m/s}^2$", "$6.0\\text{ m/s}^2$", "$15\\text{ m/s}^2$", "$5.0\\text{ m/s}^2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — system: total mass $5.0\\text{ kg}$, external driving force $m_2 g = (3.0)(10) = 30\\text{ N}$. $a = 30/5.0 = 6.0\\text{ m/s}^2$.",
+      "incorrect": {
+        "0": "The hanging block is not in free fall — the rope pulls up on it. $a = m_2 g/(m_1 + m_2) = 30/5.0 = 6.0\\text{ m/s}^2$, below $g$.",
+        "2": "$15\\text{ m/s}^2$ divides the $30\\text{ N}$ weight by only the hanging mass, ignoring that the table block is accelerated too.",
+        "3": "$5.0\\text{ m/s}^2$ uses a total mass of $6\\text{ kg}$ or a force of $25\\text{ N}$. Recheck: $30/5.0 = 6.0$."
+      }
+    },
+    "hint": ["System: $a = m_2 g/(m_1 + m_2)$, with the $3.0\\text{ kg}$ block hanging."],
+    "solution": "$a = (3.0)(10)/(2.0 + 3.0) = 30/5.0 = 6.0\\text{ m/s}^2$."
+  },
+  {
+    "id": "AP1-U2-MCQ-093",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "justify-with-principle",
+    "representation": "numerical",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "misconceptionTested": "treats-heavier-hanging-mass-as-being-in-free-fall",
+    "question": "For the setup in the previous problem ($2.0\\text{ kg}$ on the table, $3.0\\text{ kg}$ hanging, $a = 6.0\\text{ m/s}^2$, $g = 10\\text{ m/s}^2$), the rope tension is:",
+    "choices": ["$30\\text{ N}$", "$12\\text{ N}$", "$18\\text{ N}$", "$50\\text{ N}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — table block alone: $F_T = m_1 a = (2.0)(6.0) = 12\\text{ N}$. Check with the hanging block: $F_T = m_2(g - a) = (3.0)(10 - 6.0) = (3.0)(4.0) = 12\\text{ N}$ ✓. Less than the $30\\text{ N}$ hanging weight, as expected while accelerating.",
+      "incorrect": {
+        "0": "$30\\text{ N}$ is the hanging block's weight. The tension is less than the weight while the block accelerates downward: $F_T = m_2(g - a) = 12\\text{ N}$.",
+        "2": "$18\\text{ N}$ is the *net* force on the hanging block ($m_2 a = 3.0 \\times 6.0$), not the tension. Tension $= m_2 g - m_2 a = 30 - 18 = 12\\text{ N}$.",
+        "3": "$50\\text{ N}$ is the total weight of both blocks — not how tension works. Isolate one block: $F_T = m_1 a = 12\\text{ N}$."
+      }
+    },
+    "hint": ["Isolate the table block: its only horizontal force is $F_T$, so $F_T = m_1 a$. (Or use $F_T = m_2(g - a)$ for the hanging block.)"],
+    "solution": "$F_T = m_1 a = (2.0)(6.0) = 12\\text{ N}$ (= $m_2(g-a) = 12\\text{ N}$)."
+  },
+  {
+    "id": "AP1-U2-MCQ-094",
+    "course": "AP Physics 1",
+    "courses": ["ap-physics-1"],
+    "unit": "Unit 2: Force and Translational Dynamics",
+    "lesson": "Connected Objects and Systems",
+    "objective": "C2.7",
+    "cedTopic": "2.5",
+    "clusterId": "2.7",
+    "skill": "transfer",
+    "representation": "verbal",
+    "type": "multiple-choice",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "misconceptionTested": "",
+    "question": "A person stands in an elevator on a bathroom scale. The elevator accelerates **downward**. Compared with standing still, the scale now reads:",
+    "choices": [
+      "the same — the scale always reads true weight",
+      "less — the floor (scale) exerts $F_N = m(g - a)$, which is less than $mg$ when the acceleration is downward",
+      "more — the scale must also decelerate the person",
+      "zero — the person is in free fall"
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — isolate the person: with up positive and a downward acceleration ($a_y = -a$), $F_N - mg = m(-a)$, so $F_N = m(g - a) < mg$. The scale reads the normal force, so it reads low. This is the same 'connecting force $\\ne mg$ when accelerating' result as a hanging block.",
+      "incorrect": {
+        "0": "A scale reads the normal force it exerts, which depends on the acceleration. Only when $a = 0$ does it read $mg$.",
+        "2": "Downward acceleration means the net force is downward, so the upward normal force must be *less* than $mg$, not more.",
+        "3": "Free fall ($F_N = 0$) needs $a = g$. For a smaller downward acceleration the scale reads $m(g - a)$, not zero."
+      }
+    },
+    "hint": ["Isolate the person. Which way is the net force? Write $\\sum F = ma$ with $F_N$ up and $mg$ down, for a downward acceleration."],
+    "solution": "$F_N = m(g - a) < mg$ — the scale reads less during downward acceleration."
+  }
+]

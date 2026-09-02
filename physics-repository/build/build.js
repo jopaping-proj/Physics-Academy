@@ -134,6 +134,7 @@ const COMPONENT_SCRIPTS = {
   "center-of-mass-explorer": "js/lesson-interactives/center-of-mass-explorer.js",
   "interaction-pair-explorer": "js/lesson-interactives/interaction-pair-explorer.js",
   "friction-explorer": "js/lesson-interactives/friction-explorer.js",
+  "connected-systems-explorer": "js/lesson-interactives/connected-systems-explorer.js",
   "cart-force-mass": "simulations/cart-force-mass/index.js",
 };
 

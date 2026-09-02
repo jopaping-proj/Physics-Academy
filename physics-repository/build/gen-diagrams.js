@@ -253,6 +253,30 @@ const DIAGRAMS = {
       { sym: "f_k", dir: "left", mag: 3, anchor: [142, 112], color: "red" },
     ],
   },
+
+  // ---- Lesson 8 · Connected Objects and Systems ----
+  "connected/fbd-table-block.svg": {
+    style: "box",
+    surface: { side: "bottom" },
+    ariaLabel:
+      "Box free-body diagram of a block on a frictionless table connected by a rope that runs to the right toward a pulley. Gravity down from the centre and the normal force up from the bottom surface are equal. The rope tension acts to the right, from the right face — the only horizontal force, so the block accelerates toward the pulley.",
+    forces: [
+      { sym: "F_g", dir: "down", mag: 3, anchor: [150, 112], color: "grey" },
+      { sym: "F_N", dir: "up", mag: 3, anchor: [134, 134], color: "blue" },
+      { sym: "F_T", dir: "right", mag: 4, anchor: [184, 108], color: "amber" },
+    ],
+  },
+
+  "connected/fbd-hanging-block.svg": {
+    style: "box",
+    box: { hw: 24, hh: 28 },
+    ariaLabel:
+      "Box free-body diagram of a block hanging from a rope and accelerating downward. The rope tension acts up from the top face. Gravity acts down from the centre and is the longer arrow, so the net force — and the acceleration — point downward. The tension is therefore less than the weight.",
+    forces: [
+      { sym: "F_T", dir: "up", mag: 3, anchor: [150, 84], color: "amber" },
+      { sym: "F_g", dir: "down", mag: 5, anchor: [150, 112], color: "grey" },
+    ],
+  },
 };
 
 let n = 0;
