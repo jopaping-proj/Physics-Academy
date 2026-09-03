@@ -90,50 +90,58 @@
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
-      "title": "Energy Definitions & Types",
+      "slug": "energy-total-and-mechanical",
+      "title": "Total and Mechanical Energy",
       "cluster": "BP8.4.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
-      "title": "Gravitational Potential Energy",
+      "slug": "kinetic-energy",
+      "title": "Kinetic Energy",
       "cluster": "BP8.4.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
-      "title": "Kinetic Energy",
+      "slug": "work-energy-theorem",
+      "title": "The Work-Energy Theorem",
       "cluster": "BP8.4.4",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
-      "title": "Conservation of Energy",
+      "slug": "gravitational-potential-energy",
+      "title": "Gravitational Potential Energy",
       "cluster": "BP8.4.5",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 6",
-      "slug": null,
+      "slug": "spring-potential-energy",
       "title": "Spring Potential Energy",
       "cluster": "BP8.4.6",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 7",
-      "slug": null,
-      "title": "Work-Energy Theorem",
+      "slug": "conservation-of-energy",
+      "title": "Conservation of Energy and Total Mechanical Energy",
       "cluster": "BP8.4.7",
-      "status": "planned"
+      "status": "draft"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 8",
+      "slug": "synthesis-and-transfer",
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.4.8",
+      "status": "draft"
     },
     {
       "type": "concept-check",

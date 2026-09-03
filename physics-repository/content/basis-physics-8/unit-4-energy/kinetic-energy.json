@@ -1,0 +1,421 @@
+{
+  "id": "basis-p8-u4-l3",
+  "slug": "kinetic-energy",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Kinetic Energy",
+  "lessonTitle": "Kinetic Energy",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 3, outcomes KE1-KE3)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the approved outcome register (KE1-KE3) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 2 \u2014 kinetic energy is the motion part of a system's mechanical energy.",
+    "Unit 2 \u2014 speed is the size of an object's velocity, in metres per second."
+  ],
+  "majorObjective": "Decide whether an object has kinetic energy from a description of its motion, state what kinetic energy depends on, and calculate $KE = \\tfrac{1}{2}mv^2$.",
+  "subObjectives": [
+    "State that an object has kinetic energy if and only if it is moving \u2014 a stationary object has zero kinetic energy no matter what forces act on it.",
+    "State that kinetic energy is the energy of motion and depends on the mass and on the *square* of the speed.",
+    "Calculate kinetic energy with $KE = \\tfrac{1}{2}mv^2$, in joules.",
+    "Reason proportionally: doubling the speed multiplies the kinetic energy by four; doubling the mass doubles it."
+  ],
+  "hook": {
+    "prompt": "Car A and car B have the same mass. Car B is going twice as fast as car A. How many times more kinetic energy does car B have?",
+    "choices": [
+      "Twice as much.",
+      "Four times as much.",
+      "The same \u2014 mass is what matters.",
+      "Eight times as much."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Kinetic energy is the energy an object has because it is moving. A moving object can do work on whatever it hits \u2014 that is what \u201cenergy of motion\u201d means. This lesson makes that quantitative.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "When does an object have kinetic energy?",
+      "concept": "An object has **kinetic energy** exactly when it is **moving** \u2014 when its speed is not zero.\n\n- Speed $> 0$ \u2192 kinetic energy $> 0$.\n- Speed $= 0$ \u2192 kinetic energy $= 0$, **even if forces are acting on it**.\n\nA book pressed hard against a wall, a car stopped at a red light with the engine revving, a ball at the very top of its flight for the instant its vertical speed is zero \u2014 all have **zero** kinetic energy at that moment, because nothing is moving (or, for the ball at the top, its speed is momentarily zero if it was thrown straight up).\n\nKinetic energy also does not care about *direction*. An object moving left and an identical object moving right at the same speed have the same kinetic energy. That is because kinetic energy is a **scalar** \u2014 a plain amount of energy, with no direction.",
+      "representation": "To decide if an object has kinetic energy, ask one question:\n\n**Is it moving right now?**\n\n- Yes \u2192 it has kinetic energy (how much depends on mass and speed).\n- No \u2192 its kinetic energy is zero, regardless of any pushes, pulls, or \u2018potential\u2019 to move.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "State whether each object has kinetic energy: (a) a car waiting at a stop sign; (b) a satellite coasting in orbit; (c) a ball thrown straight up, at the exact top of its path; (d) a heavy crate being pushed but not yet sliding.",
+        "phases": [
+          {
+            "label": "(a) Car at a stop sign",
+            "steps": [
+              "Speed is zero \u2192 **no kinetic energy**, even though the engine is running."
+            ]
+          },
+          {
+            "label": "(b) Satellite in orbit",
+            "steps": [
+              "It is moving (very fast) \u2192 **it has kinetic energy**, even though no engine is pushing it."
+            ]
+          },
+          {
+            "label": "(c) Ball at the top of its path",
+            "steps": [
+              "Thrown straight up, its speed is momentarily zero at the top \u2192 **no kinetic energy** for that instant. (All its energy there is gravitational potential energy.)"
+            ]
+          },
+          {
+            "label": "(d) Crate pushed but not sliding",
+            "steps": [
+              "Not moving \u2192 **no kinetic energy**. A force is acting, but force is not motion."
+            ]
+          }
+        ],
+        "keyMove": "Kinetic energy tracks *motion*, not force and not \u2018about to move.\u2019 Zero speed means zero kinetic energy."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L3-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A wrecking ball hangs motionless from a crane cable, pulled to one side and held there by a rope, ready to be released. How much kinetic energy does it have while it is held?",
+        "choices": [
+          "A large amount, because it is about to swing.",
+          "Zero, because it is not moving.",
+          "It equals its weight times the height it was raised.",
+          "Half of the energy it will have at the bottom of the swing."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 kinetic energy is the energy of *motion*. While the ball is held still, its speed is zero, so its kinetic energy is zero. (Its energy is stored as gravitational potential energy.)",
+          "incorrect": {
+            "0": "\u2018About to move\u2019 is not moving. Kinetic energy is zero until the speed is non-zero.",
+            "2": "That is the *gravitational potential energy* it has while held \u2014 not its kinetic energy.",
+            "3": "The kinetic energy while held is exactly zero, not a fraction of a later value."
+          }
+        },
+        "hint": [
+          "Is the wrecking ball moving at the instant described?"
+        ],
+        "solution": "Kinetic energy depends only on the object's speed. A held wrecking ball has zero speed, so zero kinetic energy. The energy that will become kinetic energy at the bottom of the swing is currently stored as gravitational potential energy because the ball has been raised."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "What kinetic energy depends on",
+      "concept": "The kinetic energy of a moving object is\n\n$$KE = \\tfrac{1}{2}mv^2$$\n\nwhere $m$ is the mass in kilograms, $v$ is the speed in metres per second, and $KE$ comes out in **joules**.\n\nTwo features matter:\n\n- **Mass appears once.** Double the mass \u2192 double the kinetic energy (same speed).\n- **Speed is squared.** Double the speed \u2192 **four times** the kinetic energy. Triple the speed \u2192 **nine times**.\n\nThe squared speed is why a small increase in speed makes a big difference to stopping distance, to the damage in a crash, and to how much work is needed to speed something up. It is the single most important idea in this lesson.",
+      "representation": "Reading $KE = \\tfrac{1}{2}mv^2$ as a proportional statement:\n\n- $KE \\propto m$ \u2014 linear in mass.\n- $KE \\propto v^2$ \u2014 quadratic in speed.\n\nSo a factor $f$ change in speed changes $KE$ by a factor $f^2$; a factor $f$ change in mass changes $KE$ by a factor $f$.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/kinetic-energy/ke-vs-speed.svg",
+          "caption": "Kinetic energy against speed for a fixed mass. The curve bends upward: at speed $2v$ the kinetic energy is four times its value at speed $v$, because $KE \\propto v^2$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $1200\\ \\mathrm{kg}$ car travels at $10\\ \\mathrm{m/s}$. (a) Find its kinetic energy. (b) Without recomputing from scratch, find its kinetic energy at $20\\ \\mathrm{m/s}$. (c) Find the kinetic energy of a $2400\\ \\mathrm{kg}$ truck also travelling at $10\\ \\mathrm{m/s}$.",
+        "phases": [
+          {
+            "label": "(a) Car at 10 m/s",
+            "steps": [
+              "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(1200\\ \\mathrm{kg})(10\\ \\mathrm{m/s})^2$",
+              "$= \\tfrac{1}{2}(1200)(100) = 60{,}000\\ \\mathrm{J} = 6.0 \\times 10^4\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Car at 20 m/s \u2014 use proportional reasoning",
+            "steps": [
+              "Speed doubled, and $KE \\propto v^2$, so $KE$ is multiplied by $2^2 = 4$.",
+              "$KE = 4 \\times 60{,}000\\ \\mathrm{J} = 240{,}000\\ \\mathrm{J} = 2.4 \\times 10^5\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) Truck at 10 m/s",
+            "steps": [
+              "Mass doubled, same speed, and $KE \\propto m$, so $KE$ is multiplied by $2$.",
+              "$KE = 2 \\times 60{,}000\\ \\mathrm{J} = 120{,}000\\ \\mathrm{J} = 1.2 \\times 10^5\\ \\mathrm{J}$."
+            ]
+          }
+        ],
+        "keyMove": "Change the speed by a factor $f$ \u2192 multiply $KE$ by $f^2$. Change the mass by a factor $f$ \u2192 multiply $KE$ by $f$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L3-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A cyclist triples their speed on a downhill stretch. By what factor does their kinetic energy increase (mass unchanged)?",
+        "choices": [
+          "3",
+          "6",
+          "9",
+          "It does not change \u2014 only mass affects kinetic energy."
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct \u2014 kinetic energy is proportional to speed *squared*, so tripling the speed multiplies the kinetic energy by $3^2 = 9$.",
+          "incorrect": {
+            "0": "That would be true if $KE$ were proportional to $v$. It is proportional to $v^2$.",
+            "1": "$6$ is $2 \\times 3$; there is no such combination here. The factor is $3^2 = 9$.",
+            "3": "Speed matters a great deal \u2014 more than mass, in fact, because it is squared."
+          }
+        },
+        "hint": [
+          "$KE \\propto v^2$. If $v$ becomes $3v$, what happens to $v^2$?"
+        ],
+        "solution": "In $KE = \\tfrac{1}{2}mv^2$, the speed is squared. Multiplying the speed by $3$ multiplies $v^2$ by $9$, so the kinetic energy becomes $9$ times as large."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Calculating kinetic energy",
+      "concept": "To calculate kinetic energy from a description:\n\n1. Identify the mass $m$ (kg) and the speed $v$ (m/s). Convert units first if needed.\n2. Substitute into $KE = \\tfrac{1}{2}mv^2$. **Square the speed before multiplying.**\n3. The answer is in joules. Kinetic energy is never negative \u2014 $v^2$ is never negative, and neither is $\\tfrac{1}{2}m$.\n\nA very common slip is to write $\\tfrac{1}{2}(mv)^2$ or to forget the square entirely. Square only the speed: $KE = \\tfrac{1}{2}\\,m\\,(v^2)$.\n\nWorking backward is also fair game: given $KE$ and $m$, solve $v = \\sqrt{2\\,KE/m}$; given $KE$ and $v$, solve $m = 2\\,KE/v^2$.",
+      "representation": "The formula rearranges three ways:\n\n- for energy: $KE = \\tfrac{1}{2}mv^2$\n- for speed: $v = \\sqrt{\\dfrac{2\\,KE}{m}}$\n- for mass: $m = \\dfrac{2\\,KE}{v^2}$",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A $0.15\\ \\mathrm{kg}$ baseball is pitched at $40\\ \\mathrm{m/s}$. Find its kinetic energy. (b) A $60\\ \\mathrm{kg}$ runner has $1080\\ \\mathrm{J}$ of kinetic energy. Find their speed.",
+        "phases": [
+          {
+            "label": "(a) Kinetic energy of the baseball",
+            "steps": [
+              "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(0.15\\ \\mathrm{kg})(40\\ \\mathrm{m/s})^2$",
+              "Square first: $(40)^2 = 1600$.",
+              "$KE = \\tfrac{1}{2}(0.15)(1600) = 120\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Speed of the runner",
+            "steps": [
+              "Rearrange: $v = \\sqrt{\\dfrac{2\\,KE}{m}} = \\sqrt{\\dfrac{2(1080)}{60}}$.",
+              "$= \\sqrt{\\dfrac{2160}{60}} = \\sqrt{36} = 6.0\\ \\mathrm{m/s}$."
+            ]
+          }
+        ],
+        "keyMove": "Square the speed before multiplying; to find speed from energy, take the square root of $2\\,KE/m$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L3-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $2.0\\ \\mathrm{kg}$ ball moves at $3.0\\ \\mathrm{m/s}$. What is its kinetic energy?",
+        "choices": [
+          "$9.0\\ \\mathrm{J}$",
+          "$6.0\\ \\mathrm{J}$",
+          "$18\\ \\mathrm{J}$",
+          "$3.0\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 $KE = \\tfrac{1}{2}(2.0)(3.0)^2 = \\tfrac{1}{2}(2.0)(9.0) = 9.0\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "This is $\\tfrac{1}{2}mv = \\tfrac{1}{2}(2.0)(3.0)$ \u2014 the speed was not squared.",
+            "2": "This is $mv^2 = (2.0)(9.0)$ \u2014 the factor of $\\tfrac{1}{2}$ was dropped.",
+            "3": "This is just the speed value; the kinetic energy needs the full formula."
+          }
+        },
+        "hint": [
+          "$KE = \\tfrac{1}{2}mv^2$. Compute $(3.0)^2$ first, then multiply by $\\tfrac{1}{2}(2.0)$."
+        ],
+        "solution": "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(2.0\\ \\mathrm{kg})(3.0\\ \\mathrm{m/s})^2 = \\tfrac{1}{2}(2.0)(9.0) = 9.0\\ \\mathrm{J}$. The two most common errors are forgetting to square the speed and dropping the $\\tfrac{1}{2}$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L3-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: \u201cA car going 30 m/s has three times the kinetic energy of the same car going 10 m/s, because it is going three times as fast.\u201d What is wrong?",
+      "choices": [
+        "Nothing \u2014 the student is correct.",
+        "Kinetic energy depends on the *square* of the speed, so tripling the speed multiplies the kinetic energy by nine, not three.",
+        "Kinetic energy does not depend on speed at all, only on mass.",
+        "The kinetic energy would be one third as large, not three times."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 $KE = \\tfrac{1}{2}mv^2$. Tripling $v$ multiplies $v^2$ (and so $KE$) by $9$.",
+        "incorrect": {
+          "0": "The student used a linear relationship. Kinetic energy is quadratic in speed.",
+          "2": "Speed is the dominant factor \u2014 it is squared. Mass matters, but only linearly.",
+          "3": "Faster means *more* kinetic energy, and by a factor of $3^2 = 9$, not less."
+        }
+      },
+      "hint": [
+        "Underweighting the square is the classic error. What is $3^2$?"
+      ],
+      "solution": "The relationship $KE = \\tfrac{1}{2}mv^2$ has the speed squared. Going from $10\\ \\mathrm{m/s}$ to $30\\ \\mathrm{m/s}$ triples $v$, which multiplies $v^2$ by $9$. The faster car has *nine* times the kinetic energy, which is why crash energy and stopping distance rise so steeply with speed."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $4.0\\ \\mathrm{kg}$ bowling ball rolls at $5.0\\ \\mathrm{m/s}$. Find its kinetic energy.\n\nStudent's response: \u201c$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(4.0 \\times 5.0)^2 = \\tfrac{1}{2}(20)^2 = \\tfrac{1}{2}(400) = 200\\ \\mathrm{J}$.\u201d",
+      "prompts": [
+        "State exactly which quantity in $KE = \\tfrac{1}{2}mv^2$ gets squared.",
+        "Identify the student's algebra error.",
+        "Give the correct kinetic energy."
+      ],
+      "modelResponse": "In $KE = \\tfrac{1}{2}mv^2$, only the *speed* $v$ is squared \u2014 not the product $mv$. The student computed $\\tfrac{1}{2}(mv)^2$ by multiplying mass and speed first and then squaring, which is a different quantity. Correct work: square the speed only, $(5.0)^2 = 25$, then $KE = \\tfrac{1}{2}(4.0)(25) = 50\\ \\mathrm{J}$. The student's answer of $200\\ \\mathrm{J}$ is four times too large because it effectively squared the mass as well.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal description gives motion (so $KE > 0$), a mass, and a speed; $KE = \\tfrac{1}{2}mv^2$ turns them into a value in joules; the graph of $KE$ against $v$ shows the upward-bending $v^2$ dependence; and proportional reasoning ($KE \\propto m$, $KE \\propto v^2$) lets you scale a known result without recomputing. Lesson 4 connects a *change* in this quantity to the net work done.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L3-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.50\\ \\mathrm{kg}$ ball is thrown with a kinetic energy of $25\\ \\mathrm{J}$. What is its speed?",
+      "choices": [
+        "$10\\ \\mathrm{m/s}$",
+        "$5.0\\ \\mathrm{m/s}$",
+        "$50\\ \\mathrm{m/s}$",
+        "$7.1\\ \\mathrm{m/s}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $v = \\sqrt{2\\,KE/m} = \\sqrt{2(25)/0.50} = \\sqrt{100} = 10\\ \\mathrm{m/s}$.",
+        "incorrect": {
+          "1": "This is $KE/m = 25/0.50 \\div 10$? Check the rearrangement: $v = \\sqrt{2\\,KE/m}$, and $2(25)/0.50 = 100$, so $v = 10$.",
+          "2": "This is $2\\,KE/m = 100$ without taking the square root.",
+          "3": "$\\sqrt{50}$ comes from forgetting the factor of $2$: it should be $\\sqrt{2(25)/0.50} = \\sqrt{100}$."
+        }
+      },
+      "hint": [
+        "Rearrange $KE = \\tfrac{1}{2}mv^2$ to $v = \\sqrt{2\\,KE/m}$, then substitute."
+      ],
+      "solution": "Solving $KE = \\tfrac{1}{2}mv^2$ for speed: $v = \\sqrt{\\dfrac{2\\,KE}{m}} = \\sqrt{\\dfrac{2(25\\ \\mathrm{J})}{0.50\\ \\mathrm{kg}}} = \\sqrt{100} = 10\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "BP8-U4-L3-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Object P has mass $m$ and speed $2v$. Object Q has mass $4m$ and speed $v$. How do their kinetic energies compare?",
+      "choices": [
+        "P and Q have equal kinetic energy.",
+        "P has twice the kinetic energy of Q.",
+        "Q has twice the kinetic energy of P.",
+        "Q has four times the kinetic energy of P."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $KE_P = \\tfrac{1}{2}m(2v)^2 = \\tfrac{1}{2}m\\,(4v^2) = 2mv^2$; $KE_Q = \\tfrac{1}{2}(4m)v^2 = 2mv^2$. They are equal.",
+        "incorrect": {
+          "1": "Compute both: $KE_P = \\tfrac{1}{2}m(2v)^2 = 2mv^2$ and $KE_Q = \\tfrac{1}{2}(4m)v^2 = 2mv^2$ \u2014 equal.",
+          "2": "The doubled speed of P is squared to a factor of $4$, which matches Q's factor-of-$4$ mass. They tie.",
+          "3": "Q's mass is $4\\times$, but P's speed advantage is also worth $4\\times$ once squared."
+        }
+      },
+      "hint": [
+        "Write $KE = \\tfrac{1}{2}mv^2$ for each. Remember the speed gets squared."
+      ],
+      "solution": "$KE_P = \\tfrac{1}{2}(m)(2v)^2 = \\tfrac{1}{2}m(4v^2) = 2mv^2$. $KE_Q = \\tfrac{1}{2}(4m)(v)^2 = 2mv^2$. The speed advantage of P, once squared, exactly matches the mass advantage of Q, so the kinetic energies are equal."
+    },
+    {
+      "id": "BP8-U4-L3-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $1000\\ \\mathrm{kg}$ car is driving at $15\\ \\mathrm{m/s}$ when the driver brakes to a stop. A second, identical car is driving at $30\\ \\mathrm{m/s}$ when it brakes to a stop on the same road. Both cars brake with the same constant friction force from the tyres.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the kinetic energy of each car before braking.",
+          "modelResponse": "Slow car: $KE = \\tfrac{1}{2}(1000)(15)^2 = \\tfrac{1}{2}(1000)(225) = 112{,}500\\ \\mathrm{J}$. Fast car: $KE = \\tfrac{1}{2}(1000)(30)^2 = \\tfrac{1}{2}(1000)(900) = 450{,}000\\ \\mathrm{J}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) State the ratio of the fast car's kinetic energy to the slow car's, and explain it using the formula.",
+          "modelResponse": "The ratio is $450{,}000 : 112{,}500 = 4 : 1$. The fast car is going twice as fast, and $KE \\propto v^2$, so its kinetic energy is $2^2 = 4$ times as large. The mass is the same for both, so mass does not change the ratio.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The braking force does negative work equal in size to each car's kinetic energy (this stops the car). With the same braking force, the fast car needs how many times the stopping distance of the slow car? Justify briefly.",
+          "modelResponse": "Work done by the brakes has size (force) x (distance). To remove four times as much kinetic energy with the same force, the fast car needs four times the distance. So the fast car's stopping distance is $4\\times$ the slow car's \u2014 a direct consequence of the speed being squared in the kinetic energy.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The $v^2$ dependence of kinetic energy is one of the most tested ideas in AP Physics 1 and IB: proportional-reasoning questions (double the speed, quadruple the KE), the link between kinetic energy and stopping distance, and straightforward $KE = \\tfrac{1}{2}mv^2$ calculations all appear regularly. Watch for the \u2018forgot to square\u2019 and \u2018squared $mv$\u2019 errors.",
+  "summary": "An object has kinetic energy only while it is moving \u2014 zero speed means zero kinetic energy, regardless of any forces or any \u2018potential\u2019 to move. Kinetic energy is a scalar (no direction) given by $KE = \\tfrac{1}{2}mv^2$ in joules. It is proportional to mass and to the *square* of the speed: double the mass doubles $KE$, but double the speed quadruples it. When calculating, square the speed first; to find speed from energy, use $v = \\sqrt{2\\,KE/m}$.",
+  "exitQuestion": {
+    "id": "BP8-U4-L3-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "Two identical shopping carts roll toward a wall. Cart 1 is empty; cart 2 carries a load that doubles its total mass. Both move at the same speed. How do their kinetic energies compare?",
+    "choices": [
+      "Cart 2 has four times the kinetic energy of cart 1.",
+      "Cart 2 has twice the kinetic energy of cart 1.",
+      "They have equal kinetic energy, because the speeds are equal.",
+      "Cart 1 has more, because it is lighter and easier to move."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 $KE = \\tfrac{1}{2}mv^2$ is proportional to mass. Doubling the mass at the same speed doubles the kinetic energy.",
+      "incorrect": {
+        "0": "The factor of four applies to *speed* changes (because speed is squared). Mass appears only once.",
+        "2": "Speed is not the only factor \u2014 mass matters too, linearly. Cart 2 is heavier, so it has more KE.",
+        "3": "Being \u2018easier to move\u2019 is not the same as having more kinetic energy. At equal speed, more mass means more kinetic energy."
+      }
+    },
+    "hint": [
+      "Mass appears to the first power in $KE = \\tfrac{1}{2}mv^2$. Speed is unchanged here."
+    ],
+    "solution": "Kinetic energy is $KE = \\tfrac{1}{2}mv^2$. With the speed held fixed, kinetic energy is directly proportional to mass, so doubling the mass doubles the kinetic energy. (Only a change in speed would bring in the squared factor.)"
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-066",
+    "BP8-U4-MCQ-068",
+    "BP8-U4-MCQ-073",
+    "BP8-U4-MCQ-079",
+    "BP8-U4-MCQ-084",
+    "BP8-U4-MCQ-072"
+  ],
+  "needsPlotly": false
+}

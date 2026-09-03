@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="330" viewBox="0 0 620 330" role="img" aria-labelledby="t d">
+<title id="t">Gravitational potential energy depends on the chosen reference level</title>
+<desc id="d">The same ball is shown twice at the same physical position, on a shelf above a floor. On the left the height h is measured from the shelf, giving a small height. On the right the height h is measured from the floor, giving a larger height. Because gravitational potential energy is m g h, the value is larger when measured from the floor.</desc>
+<rect width="620" height="330" fill="white"/>
+<defs>
+ <marker id="tri" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#5b6675"/></marker>
+</defs>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <!-- LEFT: reference = shelf -->
+ <text x="150" y="26" font-size="13" font-weight="bold" text-anchor="middle">Reference: the shelf</text>
+ <circle cx="120" cy="70" r="15" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <line x1="60" y1="150" x2="240" y2="150" stroke="#111827" stroke-width="3"/>
+ <text x="150" y="168" fill="#5b6675" text-anchor="middle">shelf  (h = 0 here)</text>
+ <line x1="60" y1="270" x2="240" y2="270" stroke="#111827" stroke-width="3"/>
+ <text x="150" y="288" fill="#5b6675" text-anchor="middle">floor</text>
+ <line x1="285" y1="85" x2="285" y2="150" stroke="#5b6675" stroke-width="1.5" marker-start="url(#tri)" marker-end="url(#tri)"/>
+ <text x="296" y="122" font-size="13">h  (small)</text>
+
+ <!-- RIGHT: reference = floor -->
+ <text x="450" y="26" font-size="13" font-weight="bold" text-anchor="middle">Reference: the floor</text>
+ <circle cx="420" cy="70" r="15" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <line x1="360" y1="150" x2="540" y2="150" stroke="#111827" stroke-width="3"/>
+ <text x="450" y="168" fill="#5b6675" text-anchor="middle">shelf</text>
+ <line x1="360" y1="270" x2="540" y2="270" stroke="#111827" stroke-width="3"/>
+ <text x="450" y="288" fill="#5b6675" text-anchor="middle">floor  (h = 0 here)</text>
+ <line x1="575" y1="85" x2="575" y2="270" stroke="#5b6675" stroke-width="1.5" marker-start="url(#tri)" marker-end="url(#tri)"/>
+ <text x="556" y="182" font-size="13" text-anchor="end">h  (large)</text>
+
+ <text x="310" y="318" font-size="11" fill="#5b6675" text-anchor="middle">Same ball, same place. A different reference means a different h, so a different value of m g h.</text>
+</g>
+</svg>

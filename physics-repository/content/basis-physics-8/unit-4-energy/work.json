@@ -277,7 +277,7 @@
       "responseMaxLength": 650
     }
   ],
-  "representationConnections": "A verbal scenario gives a force and a displacement; the angle between them fixes the sign of the work ($0^\\circ \\to +$, $90^\\circ \\to 0$, $180^\\circ \\to -$); $W = \\pm Fd$ gives the value in joules; and the sign says whether energy was added to or removed from the object. This is the bridge into the rest of the unit — the work-energy theorem (Lesson 7) makes 'energy added' precise as $W_{net} = \\Delta KE$.",
+  "representationConnections": "A verbal scenario gives a force and a displacement; the angle between them fixes the sign of the work ($0^\\circ \\to +$, $90^\\circ \\to 0$, $180^\\circ \\to -$); $W = \\pm Fd$ gives the value in joules; and the sign says whether energy was added to or removed from the object. This is the bridge into the rest of the unit — the work-energy theorem (Lesson 4) makes 'energy added' precise as $W_{net} = \\Delta KE$.",
   "lessonAssessment": [
     {
       "id": "BP8-U4-L1-LA-001",

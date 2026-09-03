@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="340" viewBox="0 0 460 340" role="img" aria-labelledby="t d">
+<title id="t">Kinetic energy versus speed for a fixed mass</title>
+<desc id="d">A curve of kinetic energy against speed for an object of fixed mass. The curve bends upward. At speed v the kinetic energy is one unit; at speed 2v the kinetic energy is four units, showing that doubling the speed quadruples the kinetic energy.</desc>
+<rect width="460" height="340" fill="white"/>
+<g font-family="Arial" fill="#111827">
+ <line x1="60" y1="40" x2="60" y2="280" stroke="#111827" stroke-width="2"/>
+ <line x1="60" y1="280" x2="420" y2="280" stroke="#111827" stroke-width="2"/>
+ <text x="30" y="160" font-size="12" fill="#5b6675" text-anchor="middle" transform="rotate(-90 30 160)">Kinetic energy</text>
+ <text x="240" y="312" font-size="12" fill="#5b6675" text-anchor="middle">Speed</text>
+
+ <line x1="200" y1="280" x2="200" y2="240" stroke="#d5dbe3" stroke-width="1"/>
+ <line x1="340" y1="280" x2="340" y2="72" stroke="#d5dbe3" stroke-width="1"/>
+ <line x1="60" y1="240" x2="200" y2="240" stroke="#d5dbe3" stroke-width="1"/>
+ <line x1="60" y1="72" x2="340" y2="72" stroke="#d5dbe3" stroke-width="1"/>
+
+ <path d="M60,280 Q220,278 260,232 T340,72" fill="none" stroke="#1769aa" stroke-width="3"/>
+
+ <circle cx="200" cy="240" r="4" fill="#1769aa"/>
+ <circle cx="340" cy="72" r="4" fill="#1769aa"/>
+
+ <text x="200" y="298" font-size="12" text-anchor="middle">v</text>
+ <text x="340" y="298" font-size="12" text-anchor="middle">2v</text>
+ <text x="52" y="244" font-size="12" text-anchor="end">1</text>
+ <text x="52" y="76" font-size="12" text-anchor="end">4</text>
+
+ <text x="360" y="60" font-size="12" fill="#b35f00">double the speed</text>
+ <text x="360" y="76" font-size="12" fill="#b35f00">= 4x the KE</text>
+</g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="t d">
+<title id="t">Total energy split into mechanical energy and other forms</title>
+<desc id="d">Total energy is the whole capacity of a system to cause change. It divides into mechanical energy — the sum of kinetic energy and potential energy (gravitational and spring) — and other forms such as thermal, chemical, and electrical energy that are not mechanical.</desc>
+<rect width="640" height="300" fill="white"/>
+<g font-family="Arial" fill="#111827">
+ <rect x="230" y="16" width="180" height="40" rx="6" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <text x="320" y="41" font-size="14" font-weight="bold" text-anchor="middle">Total energy</text>
+ <line x1="320" y1="56" x2="320" y2="78" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="150" y1="78" x2="490" y2="78" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="150" y1="78" x2="150" y2="100" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="490" y1="78" x2="490" y2="100" stroke="#5b6675" stroke-width="1.5"/>
+
+ <rect x="40" y="100" width="220" height="40" rx="6" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <text x="150" y="125" font-size="13" font-weight="bold" text-anchor="middle">Mechanical energy = KE + PE</text>
+
+ <rect x="380" y="100" width="220" height="40" rx="6" fill="#f4f4f5" stroke="#5b6675" stroke-width="1.5"/>
+ <text x="490" y="119" font-size="12" text-anchor="middle">Other forms (not mechanical):</text>
+ <text x="490" y="134" font-size="11" fill="#5b6675" text-anchor="middle">thermal, chemical, electrical, ...</text>
+
+ <line x1="150" y1="140" x2="150" y2="162" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="90" y1="162" x2="210" y2="162" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="90" y1="162" x2="90" y2="184" stroke="#5b6675" stroke-width="1.5"/>
+ <line x1="210" y1="162" x2="210" y2="184" stroke="#5b6675" stroke-width="1.5"/>
+
+ <rect x="24" y="184" width="132" height="42" rx="6" fill="#fff" stroke="#1769aa" stroke-width="1.5"/>
+ <text x="90" y="203" font-size="12" font-weight="bold" text-anchor="middle">Kinetic energy</text>
+ <text x="90" y="218" font-size="11" fill="#5b6675" text-anchor="middle">energy of motion</text>
+
+ <rect x="168" y="184" width="150" height="42" rx="6" fill="#fff" stroke="#1769aa" stroke-width="1.5"/>
+ <text x="243" y="203" font-size="12" font-weight="bold" text-anchor="middle">Potential energy</text>
+ <text x="243" y="218" font-size="11" fill="#5b6675" text-anchor="middle">gravitational, spring</text>
+
+ <text x="320" y="270" font-size="11" fill="#5b6675" text-anchor="middle">Mechanical energy is one part of the total, not a synonym for it.</text>
+</g>
+</svg>

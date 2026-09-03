@@ -1,0 +1,426 @@
+{
+  "id": "basis-p8-u4-l6",
+  "slug": "spring-potential-energy",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Spring Potential Energy",
+  "lessonTitle": "Spring Potential Energy",
+  "lessonNumber": "6",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 6, outcomes SPE1-SPE2)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the approved outcome register (SPE1-SPE2) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 2 \u2014 spring potential energy is one of the potential-energy forms in mechanical energy.",
+    "Unit 3 \u2014 Hooke's law: a spring pushes or pulls back with force $F_s = -kx$, where $k$ is the spring constant and $x$ is the displacement from natural length."
+  ],
+  "majorObjective": "Define spring potential energy and calculate $PE_{spring} = \\tfrac{1}{2}kx^2$ from a description of a stretched or compressed spring.",
+  "subObjectives": [
+    "State that spring potential energy is the energy stored in a stretched or compressed spring, depending on the spring constant and on the square of the displacement from natural length.",
+    "State that $PE_{spring}$ is a scalar and is never negative \u2014 unlike Unit 3's signed spring *force*.",
+    "Calculate $PE_{spring} = \\tfrac{1}{2}kx^2$ in joules from a description.",
+    "Reason proportionally: doubling the displacement $x$ multiplies the stored energy by four."
+  ],
+  "hook": {
+    "prompt": "A spring is compressed $2\\ \\mathrm{cm}$ and stores $0.5\\ \\mathrm{J}$. The same spring is then compressed $6\\ \\mathrm{cm}$. How much energy does it store now?",
+    "choices": [
+      "$1.5\\ \\mathrm{J}$ \u2014 three times as much.",
+      "$4.5\\ \\mathrm{J}$ \u2014 nine times as much.",
+      "$1.0\\ \\mathrm{J}$ \u2014 twice as much.",
+      "$0.5\\ \\mathrm{J}$ \u2014 the spring constant did not change."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "In Unit 3 you met Hooke's law: stretch or squash a spring by $x$ and it pushes back with force $kx$. Doing that stretching or squashing takes work, and the work is stored in the spring as spring potential energy \u2014 released again when the spring is let go.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What spring potential energy is",
+      "concept": "**Spring potential energy** ($PE_{spring}$, also called elastic potential energy) is the energy stored in a spring \u2014 or any springy material \u2014 when it is **stretched or compressed away from its natural length**.\n\nIt depends on two things:\n\n- the **spring constant $k$** (in N/m): a stiffer spring stores more energy for the same squeeze;\n- the **displacement from natural length $x$** (in m): how far the spring is stretched or compressed. It is the *square* of this that matters.\n\nThe natural (unstretched) length is the reference: there, $x = 0$ and $PE_{spring} = 0$. Stretch it or compress it \u2014 either way \u2014 and energy is stored.\n\nWhere it comes from: pushing the spring in by $x$ takes work against the spring force. Because the spring force grows from $0$ up to $kx$ as you push, the *average* force is $\\tfrac{1}{2}kx$, and the work stored is $(\\tfrac{1}{2}kx)(x) = \\tfrac{1}{2}kx^2$.",
+      "representation": "To recognise spring potential energy in a scene:\n\n1. Is there a spring, elastic band, bow, trampoline bed, or springy bumper?\n2. Is it stretched or compressed away from its natural length?\n3. If yes to both \u2192 it stores $PE_{spring}$, and the amount depends on $k$ and $x^2$.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/spring-potential-energy/spring-natural-and-compressed.svg",
+          "caption": "At natural length ($x = 0$) the spring stores no energy. Compressed (or stretched) by $x$, it stores $PE_{spring} = \\tfrac{1}{2}kx^2$ \u2014 always a positive amount, whichever way it is displaced."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, state whether spring potential energy is stored, and on what it depends: (a) a relaxed spring lying on a bench; (b) a drawn bow, held; (c) a pogo stick spring at the moment it is fully compressed; (d) a stretched bungee cord at the bottom of a jump.",
+        "phases": [
+          {
+            "label": "(a) Relaxed spring",
+            "steps": [
+              "At natural length, $x = 0$ \u2192 **no spring potential energy stored.**"
+            ]
+          },
+          {
+            "label": "(b) Drawn bow",
+            "steps": [
+              "The limbs are bent away from their natural shape (a stretch-type deformation) \u2192 **energy stored**, depending on the bow's stiffness and how far it is drawn (squared)."
+            ]
+          },
+          {
+            "label": "(c) Fully compressed pogo spring",
+            "steps": [
+              "Compressed a large $x$ from natural length \u2192 **energy stored**, and it is at its maximum for that jump because $x$ is largest there."
+            ]
+          },
+          {
+            "label": "(d) Stretched bungee cord",
+            "steps": [
+              "Stretched well beyond natural length \u2192 **energy stored**; a stretch stores energy just as a compression does."
+            ]
+          }
+        ],
+        "keyMove": "Any deformation from natural length \u2014 stretch or compress \u2014 stores energy; only the natural length stores none."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L6-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A spring is stretched $5\\ \\mathrm{cm}$ past its natural length and held. Which statement is correct about its spring potential energy?",
+        "choices": [
+          "It is zero, because the spring is not moving.",
+          "It is a positive amount, stored because the spring is displaced from its natural length.",
+          "It is negative, because stretching is the opposite of compressing.",
+          "It depends only on the spring constant, not on how far it is stretched."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 a stretched spring stores a positive $PE_{spring}$, depending on $k$ and on $x^2$. Whether it is moving is irrelevant to the stored energy.",
+          "incorrect": {
+            "0": "Potential energy is stored energy of configuration \u2014 it is present whether or not the spring is moving.",
+            "2": "$PE_{spring} = \\tfrac{1}{2}kx^2$ is never negative; $x^2$ is positive whether $x$ is a stretch or a compression.",
+            "3": "It depends on both: $\\tfrac{1}{2}kx^2$. Stretching it further stores more energy (as the square)."
+          }
+        },
+        "hint": [
+          "Does a stretched spring have the ability to do work when released? Then it stores energy."
+        ],
+        "solution": "A stretched spring stores spring potential energy $PE_{spring} = \\tfrac{1}{2}kx^2$, a positive quantity set by the spring constant $k$ and the square of the displacement $x$ from natural length. It is stored energy of configuration, present whether the spring is held still or moving."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The formula, and why it is never negative",
+      "concept": "$$PE_{spring} = \\tfrac{1}{2}kx^2$$\n\nwith $k$ in N/m, $x$ in m (measured from natural length), and $PE_{spring}$ in **joules**.\n\n**Compare with Unit 3.** The spring *force* was $F_s = -kx$ \u2014 signed, because the force points *back toward* natural length (opposite to the displacement). But spring *potential energy* has $x^2$, not $x$:\n\n- Compress by $x = -0.1\\ \\mathrm{m}$: $PE_{spring} = \\tfrac{1}{2}k(-0.1)^2 = \\tfrac{1}{2}k(0.01)$ \u2014 **positive**.\n- Stretch by $x = +0.1\\ \\mathrm{m}$: $PE_{spring} = \\tfrac{1}{2}k(+0.1)^2 = \\tfrac{1}{2}k(0.01)$ \u2014 **the same positive value**.\n\nEnergy is a scalar. Squaring $x$ removes the sign, so $PE_{spring}$ is always $\\ge 0$. Do not carry the minus sign from $F_s = -kx$ into the energy.",
+      "representation": "The formula rearranges as:\n\n- for energy: $PE_{spring} = \\tfrac{1}{2}kx^2$\n- for displacement: $x = \\sqrt{\\dfrac{2\\,PE_{spring}}{k}}$\n- for spring constant: $k = \\dfrac{2\\,PE_{spring}}{x^2}$\n\nUse the magnitude of $x$; a compression and a stretch of the same size store the same energy.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A spring has $k = 400\\ \\mathrm{N/m}$. (a) Find the energy stored when it is compressed $0.050\\ \\mathrm{m}$. (b) Find the energy stored when it is stretched $0.050\\ \\mathrm{m}$ instead. (c) A student writes the compression answer as a negative number. What should you tell them?",
+        "phases": [
+          {
+            "label": "(a) Compressed 0.050 m",
+            "steps": [
+              "$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(400)(0.050)^2$",
+              "$= \\tfrac{1}{2}(400)(0.0025) = 0.50\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Stretched 0.050 m",
+            "steps": [
+              "Same size $x$, and $x$ is squared, so the answer is identical: $PE_{spring} = 0.50\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) The negative-sign error",
+            "steps": [
+              "The minus sign belongs to the spring *force* ($F_s = -kx$), not the energy.",
+              "$PE_{spring} = \\tfrac{1}{2}kx^2$ has $x^2 \\ge 0$, so the stored energy is $+0.50\\ \\mathrm{J}$ \u2014 a spring cannot store a negative amount of energy."
+            ]
+          }
+        ],
+        "keyMove": "Square $x$ first \u2014 the sign disappears \u2014 then multiply by $\\tfrac{1}{2}k$. Stretch and compress of equal size store equal energy."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L6-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A spring with $k = 200\\ \\mathrm{N/m}$ is compressed $0.10\\ \\mathrm{m}$. How much spring potential energy is stored?",
+        "choices": [
+          "$1.0\\ \\mathrm{J}$",
+          "$-1.0\\ \\mathrm{J}$",
+          "$10\\ \\mathrm{J}$",
+          "$2.0\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 $PE_{spring} = \\tfrac{1}{2}(200)(0.10)^2 = \\tfrac{1}{2}(200)(0.010) = 1.0\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "The minus sign belongs to the spring force $F_s = -kx$, not the energy. Energy is a non-negative scalar.",
+            "2": "This forgot to square $x$: $\\tfrac{1}{2}(200)(0.10) = 10$. You need $(0.10)^2 = 0.010$.",
+            "3": "This dropped the factor of $\\tfrac{1}{2}$: $kx^2 = 200 \\times 0.010 = 2.0$, then halve it to $1.0\\ \\mathrm{J}$."
+          }
+        },
+        "hint": [
+          "$PE_{spring} = \\tfrac{1}{2}kx^2$. Compute $(0.10)^2 = 0.010$ first."
+        ],
+        "solution": "$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(200\\ \\mathrm{N/m})(0.10\\ \\mathrm{m})^2 = \\tfrac{1}{2}(200)(0.010) = 1.0\\ \\mathrm{J}$. The energy is positive; compressing and stretching both store energy."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "The squared relationship",
+      "concept": "Because $PE_{spring} = \\tfrac{1}{2}kx^2$, the stored energy is proportional to the **square of the displacement**:\n\n- Double $x$ \u2192 **four times** the stored energy.\n- Triple $x$ \u2192 **nine times**.\n- Halve $x$ \u2192 **one quarter**.\n\nIt is also proportional to $k$: a spring twice as stiff stores twice the energy at the same $x$.\n\nThis is the same \u2018squared\u2019 pattern as kinetic energy ($v^2$) and it is under-weighted just as often. When a problem says a spring is compressed \u2018three times as far,\u2019 the stored energy is nine times greater, not three.",
+      "representation": "As proportional statements:\n\n- $PE_{spring} \\propto k$ \u2014 linear in stiffness.\n- $PE_{spring} \\propto x^2$ \u2014 quadratic in displacement.\n\nSo a factor $f$ change in $x$ changes $PE_{spring}$ by $f^2$; a factor $f$ change in $k$ changes it by $f$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A toy launcher's spring stores $2.0\\ \\mathrm{J}$ when pulled back $4.0\\ \\mathrm{cm}$. (a) How much does it store when pulled back $8.0\\ \\mathrm{cm}$? (b) How much when pulled back $2.0\\ \\mathrm{cm}$? (c) A stiffer replacement spring has double the spring constant. How much would *it* store at $4.0\\ \\mathrm{cm}$?",
+        "phases": [
+          {
+            "label": "(a) Pulled back 8.0 cm",
+            "steps": [
+              "$x$ doubled, and $PE_{spring} \\propto x^2$, so multiply by $2^2 = 4$.",
+              "$PE_{spring} = 4 \\times 2.0\\ \\mathrm{J} = 8.0\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Pulled back 2.0 cm",
+            "steps": [
+              "$x$ halved \u2192 multiply by $(\\tfrac{1}{2})^2 = \\tfrac{1}{4}$.",
+              "$PE_{spring} = \\tfrac{1}{4} \\times 2.0\\ \\mathrm{J} = 0.50\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) Double the spring constant, same 4.0 cm",
+            "steps": [
+              "$k$ doubled, $PE_{spring} \\propto k$, so multiply by $2$.",
+              "$PE_{spring} = 2 \\times 2.0\\ \\mathrm{J} = 4.0\\ \\mathrm{J}$."
+            ]
+          }
+        ],
+        "keyMove": "Change $x$ by a factor $f$ \u2192 multiply $PE_{spring}$ by $f^2$. Change $k$ by a factor $f$ \u2192 multiply by $f$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L6-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A spring stores $E$ joules when compressed a distance $x$. It is then compressed to $3x$. How much energy does it store?",
+        "choices": [
+          "$3E$",
+          "$6E$",
+          "$9E$",
+          "$E/3$"
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct \u2014 $PE_{spring} \\propto x^2$, so tripling $x$ multiplies the stored energy by $3^2 = 9$.",
+          "incorrect": {
+            "0": "That treats the relationship as linear. The displacement is squared.",
+            "1": "$6$ is not a square factor. Tripling a squared quantity multiplies it by $9$.",
+            "3": "Compressing it *further* stores *more* energy, not less."
+          }
+        },
+        "hint": [
+          "$PE_{spring} = \\tfrac{1}{2}kx^2$. What does replacing $x$ with $3x$ do to $x^2$?"
+        ],
+        "solution": "Since $PE_{spring} = \\tfrac{1}{2}kx^2$, replacing $x$ with $3x$ gives $\\tfrac{1}{2}k(3x)^2 = \\tfrac{1}{2}k(9x^2) = 9\\left(\\tfrac{1}{2}kx^2\\right) = 9E$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L6-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "spring-constant-changes-with-applied-force",
+      "question": "A student writes: \u201cThe spring is compressed, and in Unit 3 the spring force was $F_s = -kx$, so the stored energy must be negative: $PE_{spring} = -\\tfrac{1}{2}kx^2$.\u201d What is the correct response?",
+      "choices": [
+        "Agreed \u2014 compression stores negative energy, stretching stores positive energy.",
+        "The minus sign belongs to the spring *force* (which points back toward natural length). The *energy* is $\\tfrac{1}{2}kx^2$ with $x^2 \\ge 0$, so it is always positive \u2014 for a compression and a stretch alike.",
+        "The energy is zero for a compression and positive only for a stretch.",
+        "The formula should be $PE_{spring} = -kx$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 force is a vector and carries a direction (sign); energy is a scalar. Squaring $x$ in $\\tfrac{1}{2}kx^2$ removes the sign, so stored energy is never negative.",
+        "incorrect": {
+          "0": "A spring stores energy whenever it is deformed \u2014 the stored energy is positive for both a stretch and a compression.",
+          "2": "A compressed spring stores just as much energy as a stretched one of the same $|x|$ \u2014 not zero.",
+          "3": "$-kx$ is the *force*. The energy is $\\tfrac{1}{2}kx^2$."
+        }
+      },
+      "hint": [
+        "Is energy a vector or a scalar? What does squaring $x$ do to its sign?"
+      ],
+      "solution": "In Unit 3, $F_s = -kx$ is a force \u2014 a vector \u2014 and the minus sign encodes that the spring pushes back toward its natural length. Spring potential energy is a scalar: $PE_{spring} = \\tfrac{1}{2}kx^2$. Because $x$ is squared, the result is non-negative regardless of whether the spring is stretched or compressed. There is no such thing as negative stored spring energy."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A spring gun's spring ($k = 800\\ \\mathrm{N/m}$) is compressed $6.0\\ \\mathrm{cm}$. Find the stored spring potential energy.\n\nStudent's response: \u201c$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(800)(6.0)^2 = \\tfrac{1}{2}(800)(36) = 14{,}400\\ \\mathrm{J}$.\u201d",
+      "prompts": [
+        "State the units required for $k$ and $x$ in $PE_{spring} = \\tfrac{1}{2}kx^2$.",
+        "Identify the student's error.",
+        "Give the correct stored energy."
+      ],
+      "modelResponse": "For $PE_{spring} = \\tfrac{1}{2}kx^2$ to give joules, $k$ must be in N/m and $x$ in **metres**. The student used $x = 6.0$ (centimetres) instead of $x = 0.060\\ \\mathrm{m}$. Correct: $x = 0.060\\ \\mathrm{m}$, so $x^2 = 0.0036\\ \\mathrm{m^2}$, and $PE_{spring} = \\tfrac{1}{2}(800)(0.0036) = 1.44\\ \\mathrm{J} \\approx 1.4\\ \\mathrm{J}$. The student's answer is off by a factor of $100^2 = 10{,}000$ because the centimetre error is inside the square.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal scenario names a spring and how far it is stretched or compressed; that displacement magnitude is $x$; $PE_{spring} = \\tfrac{1}{2}kx^2$ turns $k$ and $x$ into joules (always non-negative); and proportional reasoning ($PE_{spring} \\propto x^2$) scales a known value. This stored energy is one of the terms in the mechanical-energy balance of Lesson 7, and it connects back to the Unit 3 spring *force* $F_s = -kx$ \u2014 same $k$ and $x$, different (vector vs scalar) quantity.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L6-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A spring stores $18\\ \\mathrm{J}$ when stretched $0.30\\ \\mathrm{m}$. What is its spring constant?",
+      "choices": [
+        "$400\\ \\mathrm{N/m}$",
+        "$120\\ \\mathrm{N/m}$",
+        "$200\\ \\mathrm{N/m}$",
+        "$60\\ \\mathrm{N/m}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $k = \\dfrac{2\\,PE_{spring}}{x^2} = \\dfrac{2(18)}{(0.30)^2} = \\dfrac{36}{0.09} = 400\\ \\mathrm{N/m}$.",
+        "incorrect": {
+          "1": "This is $2\\,PE_{spring}/x = 36/0.30$ \u2014 the displacement was not squared.",
+          "2": "This is $PE_{spring}/x^2 = 18/0.09$ \u2014 the factor of $2$ from $\\tfrac{1}{2}$ was dropped.",
+          "3": "This divides in the wrong place. Use $k = 2\\,PE_{spring}/x^2$."
+        }
+      },
+      "hint": [
+        "Rearrange $PE_{spring} = \\tfrac{1}{2}kx^2$ to $k = 2\\,PE_{spring}/x^2$, and square $0.30$ first."
+      ],
+      "solution": "Solving $PE_{spring} = \\tfrac{1}{2}kx^2$ for $k$: $k = \\dfrac{2\\,PE_{spring}}{x^2} = \\dfrac{2(18\\ \\mathrm{J})}{(0.30\\ \\mathrm{m})^2} = \\dfrac{36}{0.09} = 400\\ \\mathrm{N/m}$."
+    },
+    {
+      "id": "BP8-U4-L6-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Spring P ($k = 300\\ \\mathrm{N/m}$) is compressed $0.20\\ \\mathrm{m}$. Spring Q ($k = 600\\ \\mathrm{N/m}$) is compressed $0.10\\ \\mathrm{m}$. Which stores more energy?",
+      "choices": [
+        "Q, because it is stiffer.",
+        "P, because $\\tfrac{1}{2}kx^2$ is $6.0\\ \\mathrm{J}$ for P versus $3.0\\ \\mathrm{J}$ for Q.",
+        "They store the same, because $k$ and $x$ trade off.",
+        "Q, because its compression is smaller so less energy is lost."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 P: $\\tfrac{1}{2}(300)(0.20)^2 = \\tfrac{1}{2}(300)(0.04) = 6.0\\ \\mathrm{J}$. Q: $\\tfrac{1}{2}(600)(0.10)^2 = \\tfrac{1}{2}(600)(0.01) = 3.0\\ \\mathrm{J}$. P stores more.",
+        "incorrect": {
+          "0": "Stiffness is only half the story \u2014 P's larger displacement, once squared, more than makes up for its lower $k$.",
+          "2": "They do not trade off evenly here: Q has $2\\times$ the $k$ but P has $2\\times$ the $x$, and $x$ is squared, so P wins.",
+          "3": "\u2018Energy lost\u2019 is not relevant \u2014 both are ideal springs storing $\\tfrac{1}{2}kx^2$. Compute and compare."
+        }
+      },
+      "hint": [
+        "Compute $\\tfrac{1}{2}kx^2$ for each. Remember $x$ is squared, so P's factor-of-2 displacement is worth a factor of 4."
+      ],
+      "solution": "P: $PE_{spring} = \\tfrac{1}{2}(300)(0.20)^2 = 6.0\\ \\mathrm{J}$. Q: $PE_{spring} = \\tfrac{1}{2}(600)(0.10)^2 = 3.0\\ \\mathrm{J}$. Although Q is twice as stiff, P is compressed twice as far, and because the displacement is squared, P stores four times as much *from that factor* \u2014 net, P stores twice Q's energy."
+    },
+    {
+      "id": "BP8-U4-L6-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A spring-loaded dart launcher has a spring with $k = 250\\ \\mathrm{N/m}$. A child pushes the dart in, compressing the spring $0.080\\ \\mathrm{m}$, and holds it. The dart has mass $0.020\\ \\mathrm{kg}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the spring potential energy stored while the launcher is held compressed.",
+          "modelResponse": "$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(250)(0.080)^2 = \\tfrac{1}{2}(250)(0.0064) = 0.80\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) The child then compresses it twice as far, to $0.160\\ \\mathrm{m}$. State the new stored energy without a full recalculation, and justify.",
+          "modelResponse": "Because $PE_{spring} \\propto x^2$, doubling the compression multiplies the stored energy by $2^2 = 4$. New stored energy $= 4 \\times 0.80\\ \\mathrm{J} = 3.2\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A student claims that because the spring pushes back with a force $F_s = -kx$ (negative), the stored energy at $x = 0.080\\ \\mathrm{m}$ 'should really be $-0.80\\ \\mathrm{J}$.' Explain why this is wrong.",
+          "modelResponse": "The minus sign in $F_s = -kx$ is a direction label on a *force* (a vector): the spring pushes back toward its natural length, opposite to the displacement. Spring potential energy is a *scalar*, given by $PE_{spring} = \\tfrac{1}{2}kx^2$. Because $x$ is squared, the result is $+0.80\\ \\mathrm{J}$ whether the spring is compressed or stretched. A spring cannot store a negative amount of energy \u2014 it has the capacity to do positive work on the dart when released.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 and IB test $PE_{spring} = \\tfrac{1}{2}kx^2$ with attention to: converting $x$ to metres (the error is squared), the non-negative scalar nature of the energy versus the signed spring force, and the $x^2$ proportional reasoning. Spring energy is then a standard term in conservation-of-energy problems.",
+  "summary": "Spring potential energy is the energy stored when a spring is stretched or compressed from its natural length: $PE_{spring} = \\tfrac{1}{2}kx^2$, in joules, with $k$ in N/m and $x$ in metres. It is a scalar and is never negative \u2014 unlike the signed Unit 3 spring force $F_s = -kx$ \u2014 because $x$ is squared, so a stretch and a compression of equal size store equal energy. It is proportional to the stiffness $k$ and to the *square* of the displacement: triple the compression, nine times the stored energy. Convert $x$ to metres before squaring.",
+  "exitQuestion": {
+    "id": "BP8-U4-L6-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "Two identical springs are displaced from natural length by the same distance \u2014 one stretched, one compressed. How do their stored spring potential energies compare?",
+    "choices": [
+      "The stretched one stores more, because stretching adds length.",
+      "The compressed one stores negative energy, so the stretched one stores more.",
+      "They store the same amount, because $PE_{spring} = \\tfrac{1}{2}kx^2$ depends on $x^2$.",
+      "Neither stores any energy unless it is moving."
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct \u2014 the displacement is squared in $\\tfrac{1}{2}kx^2$, so a stretch and a compression of equal magnitude store exactly the same positive energy.",
+      "incorrect": {
+        "0": "\u2018Adding length\u2019 is not the mechanism \u2014 the stored energy depends on $x^2$, which is the same for equal stretch and compression.",
+        "1": "$PE_{spring}$ is never negative; $x^2$ removes the sign for both cases.",
+        "3": "Potential energy is stored energy of configuration \u2014 present whether the spring is held still or moving."
+      }
+    },
+    "hint": [
+      "Put $x = +d$ and $x = -d$ into $\\tfrac{1}{2}kx^2$. What do you get each time?"
+    ],
+    "solution": "$PE_{spring} = \\tfrac{1}{2}kx^2$ depends on the square of the displacement from natural length. A stretch of $+d$ and a compression of $-d$ both give $x^2 = d^2$, so both store $\\tfrac{1}{2}kd^2$ \u2014 the same positive amount."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-196",
+    "BP8-U4-MCQ-200",
+    "BP8-U4-MCQ-197",
+    "BP8-U4-MCQ-199",
+    "BP8-U4-MCQ-207",
+    "BP8-U4-MCQ-202"
+  ],
+  "needsPlotly": false
+}

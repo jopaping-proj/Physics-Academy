@@ -1,0 +1,409 @@
+{
+  "id": "basis-p8-u4-l5",
+  "slug": "gravitational-potential-energy",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Gravitational Potential Energy",
+  "lessonTitle": "Gravitational Potential Energy",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 5, outcomes GPE1-GPE3)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the approved outcome register (GPE1-GPE3) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 2 \u2014 gravitational potential energy is one of the potential-energy forms in mechanical energy.",
+    "Unit 3 \u2014 near Earth's surface the weight of an object of mass $m$ is $mg$ with $g = 9.8\\ \\mathrm{m/s^2}$."
+  ],
+  "majorObjective": "Identify gravitational potential energy in a described situation given a reference point, define it, and calculate $PE_{grav} = mgh$.",
+  "subObjectives": [
+    "State that gravitational potential energy is stored energy an object has because of its height above a chosen reference point, arising from the gravitational force.",
+    "Given a stated or clearly implied reference point, identify the height $h$ that is relevant to gravitational potential energy.",
+    "Explain that the value of $PE_{grav}$ depends on the chosen reference, so the same object at the same place can have different $PE_{grav}$ values.",
+    "Calculate $PE_{grav} = mgh$ in joules, using $g = 9.8\\ \\mathrm{m/s^2}$."
+  ],
+  "hook": {
+    "prompt": "A $2\\ \\mathrm{kg}$ book sits on a desk that is $0.8\\ \\mathrm{m}$ above the floor, on the second storey of a building $4\\ \\mathrm{m}$ up. What is the book's gravitational potential energy?",
+    "choices": [
+      "About $16\\ \\mathrm{J}$ \u2014 measured from the desk it sits on.",
+      "About $94\\ \\mathrm{J}$ \u2014 measured from the ground floor.",
+      "Either, depending on which reference point you choose \u2014 the question is incomplete without one.",
+      "Zero \u2014 the book is not moving."
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "When you lift an object, you do positive work against gravity, and that energy is stored \u2014 released again if the object falls. That stored energy is gravitational potential energy. It only has a definite value once you say \u2018height measured from where?\u2019.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What gravitational potential energy is, and why the reference matters",
+      "concept": "**Gravitational potential energy** ($PE_{grav}$) is the energy an object stores because of its **height above a chosen reference point**. It exists because of the gravitational force: lifting the object required positive work against gravity, and that work is \u2018banked\u2019 as $PE_{grav}$, ready to be released if the object descends.\n\nThe key subtlety: **height is measured from a reference point you choose.** There is no universal \u2018zero height.\u2019 A book on a second-floor desk has one $PE_{grav}$ relative to the desk, a larger one relative to the ground floor, and a different one again relative to the basement.\n\nThis is not a contradiction. What has physical meaning is the **change** in $PE_{grav}$ as the object moves between two heights \u2014 and that change is the same no matter which reference you picked. Always state (or read) the reference before assigning a value.",
+      "representation": "To pin down $PE_{grav}$ in a problem:\n\n1. Find the reference point \u2014 stated (\u2018take the ground as $h = 0$\u2019) or clearly implied (\u2018how much energy could this do if it fell to the floor?\u2019 \u2192 floor is the reference).\n2. Measure $h$ as the vertical height of the object **above that reference** (below it, $h$ is negative).\n3. Only now does $PE_{grav} = mgh$ have a number.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/gravitational-potential-energy/height-from-reference.svg",
+          "caption": "The same ball at the same place has a small height $h$ measured from the tabletop and a large height $h$ measured from the floor. Because $PE_{grav} = mgh$, the value is larger relative to the floor \u2014 the reference must be stated."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $3.0\\ \\mathrm{kg}$ flowerpot sits on a balcony railing $5.0\\ \\mathrm{m}$ above the pavement and $2.0\\ \\mathrm{m}$ above the balcony floor. (a) State its height for gravitational potential energy relative to the balcony floor, and relative to the pavement. (b) A neighbour asks \u2018how much energy would it release if it fell off?\u2019 \u2014 which reference is implied?",
+        "phases": [
+          {
+            "label": "(a) Two references, two heights",
+            "steps": [
+              "Relative to the **balcony floor**: $h = 2.0\\ \\mathrm{m}$.",
+              "Relative to the **pavement**: $h = 5.0\\ \\mathrm{m}$.",
+              "Same pot, same spot \u2014 different $h$ because the reference is different."
+            ]
+          },
+          {
+            "label": "(b) The implied reference",
+            "steps": [
+              "\u2018If it fell off\u2019 means it would fall to the **pavement**, so the pavement is the implied reference and $h = 5.0\\ \\mathrm{m}$ is the relevant height."
+            ]
+          }
+        ],
+        "keyMove": "\u2018Height\u2019 for $PE_{grav}$ always means height above the reference \u2014 identify the reference first."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L5-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which statement about gravitational potential energy is correct?",
+        "choices": [
+          "It has one true value for an object, set by its height above sea level.",
+          "It is stored energy due to an object's height above a chosen reference point, and its value depends on that choice.",
+          "It depends only on the object's mass, not its height.",
+          "It is the energy an object has because it is moving downward."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 $PE_{grav}$ is height-above-a-reference energy, and different reference choices give different values (only the change between two heights is reference-independent).",
+          "incorrect": {
+            "0": "Sea level is just one possible reference. Any level can be chosen, and the value changes with it.",
+            "2": "Height is essential \u2014 $PE_{grav} = mgh$. An object on the ground (at the reference) has $PE_{grav} = 0$ no matter its mass.",
+            "3": "That describes kinetic energy. $PE_{grav}$ is stored energy of position, present even when the object is at rest."
+          }
+        },
+        "hint": [
+          "Can you assign a number to $PE_{grav}$ before someone tells you where $h = 0$ is?"
+        ],
+        "solution": "Gravitational potential energy is the stored energy an object has due to its height above a reference point, resulting from the gravitational force. Because 'height' is measured from a chosen reference, the numerical value of $PE_{grav}$ depends on that choice; what is physically meaningful is the change in $PE_{grav}$ between two positions."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The formula PE_grav = mgh",
+      "concept": "Near Earth's surface,\n\n$$PE_{grav} = mgh$$\n\nwhere $m$ is the mass in kilograms, $g = 9.8\\ \\mathrm{m/s^2}$, and $h$ is the height **above the reference point** in metres. $PE_{grav}$ comes out in **joules**.\n\nWhere it comes from: to lift the object at constant speed you must apply an upward force equal to its weight $mg$ through a height $h$, doing work $W = (mg)(h) = mgh$. That work is stored as $PE_{grav}$.\n\n- $PE_{grav}$ is **proportional to height**: double the height \u2192 double the energy.\n- $PE_{grav}$ is **proportional to mass**: double the mass \u2192 double the energy.\n- At the reference ($h = 0$), $PE_{grav} = 0$. Below the reference, $h < 0$ and $PE_{grav} < 0$ \u2014 which is fine, because only changes matter.",
+      "representation": "The formula rearranges the usual three ways:\n\n- for energy: $PE_{grav} = mgh$\n- for height: $h = \\dfrac{PE_{grav}}{mg}$\n- for mass: $m = \\dfrac{PE_{grav}}{gh}$",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A $1.5\\ \\mathrm{kg}$ textbook is lifted from the floor to a shelf $2.0\\ \\mathrm{m}$ up. Taking the floor as the reference, find its gravitational potential energy on the shelf. (b) How much gravitational potential energy does a $50\\ \\mathrm{kg}$ diver gain by climbing from the pool deck to a $10\\ \\mathrm{m}$ platform?",
+        "phases": [
+          {
+            "label": "(a) Book on the shelf",
+            "steps": [
+              "$PE_{grav} = mgh = (1.5\\ \\mathrm{kg})(9.8\\ \\mathrm{m/s^2})(2.0\\ \\mathrm{m})$",
+              "$= 29.4\\ \\mathrm{J} \\approx 29\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Diver climbing to the platform",
+            "steps": [
+              "The *gain* is $\\Delta PE_{grav} = mg\\,\\Delta h = (50)(9.8)(10)$",
+              "$= 4900\\ \\mathrm{J}$."
+            ]
+          }
+        ],
+        "keyMove": "Substitute mass, $g = 9.8$, and the height above the reference; for a change in height, use $\\Delta h$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L5-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $4.0\\ \\mathrm{kg}$ box is raised $3.0\\ \\mathrm{m}$ above the ground. Taking the ground as the reference and $g = 9.8\\ \\mathrm{m/s^2}$, what is its gravitational potential energy?",
+        "choices": [
+          "$118\\ \\mathrm{J}$",
+          "$12\\ \\mathrm{J}$",
+          "$39.2\\ \\mathrm{J}$",
+          "$1.3\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 $PE_{grav} = mgh = (4.0)(9.8)(3.0) = 117.6 \\approx 118\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "This is $mh = 4.0 \\times 3.0$ \u2014 the factor $g = 9.8$ was left out.",
+            "2": "This is $mg = 4.0 \\times 9.8$ \u2014 the height was left out. That is the weight, not the energy.",
+            "3": "This divides somewhere. $PE_{grav} = mgh$ is a product: $4.0 \\times 9.8 \\times 3.0$."
+          }
+        },
+        "hint": [
+          "$PE_{grav} = mgh$. Multiply all three: $4.0 \\times 9.8 \\times 3.0$."
+        ],
+        "solution": "$PE_{grav} = mgh = (4.0\\ \\mathrm{kg})(9.8\\ \\mathrm{m/s^2})(3.0\\ \\mathrm{m}) = 117.6\\ \\mathrm{J}$, which rounds to $118\\ \\mathrm{J}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Comparing situations and changing the reference",
+      "concept": "Two common tasks:\n\n**Comparing objects or positions.** Because $PE_{grav} = mgh$, whichever object has the larger product $m \\times h$ (above the same reference) has more gravitational potential energy. A light object high up can have more $PE_{grav}$ than a heavy object barely off the ground.\n\n**Recomputing under a new reference.** If you move the reference down by an amount $D$, every height increases by $D$, so every $PE_{grav}$ increases by $mgD$. The *differences* between positions are unchanged \u2014 which is why the choice of reference never affects a conservation-of-energy answer (Lesson 7).\n\nWhen a problem gives no reference, the safe move is to choose the lowest point the object reaches and state that you have done so.",
+      "representation": "Two positions, one object:\n\n$$\\Delta PE_{grav} = PE_2 - PE_1 = mgh_2 - mgh_1 = mg(h_2 - h_1) = mg\\,\\Delta h$$\n\n$\\Delta PE_{grav}$ depends only on the *change* in height, not on where the reference sits.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\ \\mathrm{kg}$ ball is on a table $1.0\\ \\mathrm{m}$ above the floor. (a) Find its $PE_{grav}$ with the floor as reference. (b) Find its $PE_{grav}$ with the tabletop as reference. (c) The ball rolls off and falls to the floor. Find the change $\\Delta PE_{grav}$ using each reference, and confirm they agree.",
+        "phases": [
+          {
+            "label": "(a) Floor as reference",
+            "steps": [
+              "$h = 1.0\\ \\mathrm{m}$: $PE_{grav} = (2.0)(9.8)(1.0) = 19.6\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Tabletop as reference",
+            "steps": [
+              "$h = 0$: $PE_{grav} = (2.0)(9.8)(0) = 0\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) The change on falling to the floor",
+            "steps": [
+              "Floor reference: $\\Delta PE_{grav} = 0 - 19.6 = -19.6\\ \\mathrm{J}$.",
+              "Tabletop reference: at the floor $h = -1.0\\ \\mathrm{m}$, so $PE_{grav} = -19.6\\ \\mathrm{J}$; $\\Delta PE_{grav} = -19.6 - 0 = -19.6\\ \\mathrm{J}$.",
+              "**Both give $-19.6\\ \\mathrm{J}$** \u2014 the change does not depend on the reference."
+            ]
+          }
+        ],
+        "keyMove": "Absolute $PE_{grav}$ values shift with the reference; the *change* between two heights does not."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L5-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Object A has mass $6\\ \\mathrm{kg}$ and is $2\\ \\mathrm{m}$ above the ground. Object B has mass $3\\ \\mathrm{kg}$ and is $5\\ \\mathrm{m}$ above the ground. Using the ground as reference, which has more gravitational potential energy?",
+        "choices": [
+          "A, because it is heavier.",
+          "B, because $m \\times h$ is $15$ for B versus $12$ for A.",
+          "They are equal.",
+          "B, because it is higher \u2014 height is all that matters."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 $PE_{grav} = mgh$, so compare $m \\times h$: A gives $6 \\times 2 = 12$, B gives $3 \\times 5 = 15$. B has more (by the factor $15/12$).",
+          "incorrect": {
+            "0": "Mass alone does not decide it \u2014 B is lighter but much higher. Compare the product $mh$.",
+            "2": "$6 \\times 2 = 12$ and $3 \\times 5 = 15$ are not equal.",
+            "3": "Height matters, but so does mass \u2014 the right comparison is the product $mh$, which favours B here anyway."
+          }
+        },
+        "hint": [
+          "$g$ is the same for both, so compare $m \\times h$."
+        ],
+        "solution": "With the same reference and the same $g$, gravitational potential energy is proportional to $m \\times h$. Object A: $6 \\times 2 = 12$. Object B: $3 \\times 5 = 15$. Object B has the greater gravitational potential energy."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L5-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: \u201cThe gravitational potential energy of that rock is $500\\ \\mathrm{J}$ \u2014 that is just a fact about the rock, like its mass.\u201d What is the correct response?",
+      "choices": [
+        "Agreed \u2014 $PE_{grav}$ is a fixed property of an object.",
+        "$PE_{grav}$ is only defined once a reference point is chosen; with a different reference the same rock in the same place has a different $PE_{grav}$. Only changes in $PE_{grav}$ are reference-independent.",
+        "$PE_{grav}$ is never a real number \u2014 it is always zero.",
+        "The student should have used kinetic energy instead."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 unlike mass, $PE_{grav}$ is not intrinsic. It is a height-above-a-reference quantity, so its value moves with the reference.",
+        "incorrect": {
+          "0": "Mass is intrinsic; $PE_{grav}$ is not \u2014 it needs a reference to have a value.",
+          "2": "$PE_{grav}$ is a perfectly good number *once a reference is chosen* \u2014 it is just not unique without one.",
+          "3": "A stationary rock has no kinetic energy; the student is right to use potential energy, just wrong to treat it as reference-free."
+        }
+      },
+      "hint": [
+        "Which of these can you state without any extra information: the rock's mass, or its $PE_{grav}$?"
+      ],
+      "solution": "Gravitational potential energy depends on the height above a chosen reference point, so it is not an intrinsic property like mass. The same rock at the same location has $PE_{grav} = mgh_1$ relative to one level and $mgh_2$ relative to another. What is physically meaningful \u2014 and reference-independent \u2014 is the *change* in $PE_{grav}$ as the rock moves between two heights."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $0.40\\ \\mathrm{kg}$ ball is dropped from a window $12\\ \\mathrm{m}$ above the ground. Taking the ground as the reference, how much gravitational potential energy does it have at the window, and how much when it is halfway down?\n\nStudent's response: \u201cAt the window: $PE = mgh = 0.40 \\times 9.8 \\times 12 = 47\\ \\mathrm{J}$. Halfway down it has fallen, so it has *more* stored energy: $PE = 0.40 \\times 9.8 \\times 12 + \\text{the fall} = $ about $70\\ \\mathrm{J}$.\u201d",
+      "prompts": [
+        "State how $h$ is measured for $PE_{grav} = mgh$.",
+        "Explain why the student's 'halfway down' value is wrong in both size and direction.",
+        "Give the correct $PE_{grav}$ at the window and at the halfway point."
+      ],
+      "modelResponse": "In $PE_{grav} = mgh$, $h$ is the height of the object *above the reference* \u2014 here, above the ground. As the ball falls, $h$ *decreases*, so $PE_{grav}$ *decreases* (that lost potential energy becomes kinetic energy). The student both increased it and added a vague 'fall' term. Correct: at the window, $h = 12\\ \\mathrm{m}$, $PE_{grav} = (0.40)(9.8)(12) = 47\\ \\mathrm{J}$. Halfway down, $h = 6.0\\ \\mathrm{m}$, $PE_{grav} = (0.40)(9.8)(6.0) = 24\\ \\mathrm{J}$ \u2014 about half the starting value.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal scenario states or implies a reference point; the vertical distance above it is $h$; $PE_{grav} = mgh$ turns mass and height into joules; and comparing two positions gives $\\Delta PE_{grav} = mg\\,\\Delta h$, which is what feeds into the energy balance of Lesson 7. Lifting work from Lesson 1 ($W = mgh$) is the same quantity seen as a transfer.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L5-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A hiker of mass $65\\ \\mathrm{kg}$ climbs a hill, rising $120\\ \\mathrm{m}$ in height. Using $g = 9.8\\ \\mathrm{m/s^2}$, how much gravitational potential energy does the hiker gain?",
+      "choices": [
+        "About $76{,}000\\ \\mathrm{J}$",
+        "About $7800\\ \\mathrm{J}$",
+        "About $640\\ \\mathrm{J}$",
+        "About $1200\\ \\mathrm{J}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $\\Delta PE_{grav} = mg\\,\\Delta h = (65)(9.8)(120) = 76{,}440\\ \\mathrm{J} \\approx 7.6 \\times 10^4\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "Check the arithmetic: $65 \\times 9.8 \\approx 637$, then $\\times 120 \\approx 76{,}000$, not $7800$.",
+          "2": "This is $mg = 65 \\times 9.8$ \u2014 the height rise was not included.",
+          "3": "This looks like $m \\times \\Delta h / \\text{something}$. The formula is a straight product $mg\\,\\Delta h$."
+        }
+      },
+      "hint": [
+        "$\\Delta PE_{grav} = mg\\,\\Delta h = 65 \\times 9.8 \\times 120$."
+      ],
+      "solution": "The gain in gravitational potential energy is $\\Delta PE_{grav} = mg\\,\\Delta h = (65\\ \\mathrm{kg})(9.8\\ \\mathrm{m/s^2})(120\\ \\mathrm{m}) \\approx 76{,}000\\ \\mathrm{J}$."
+    },
+    {
+      "id": "BP8-U4-L5-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A ball on a $1.0\\ \\mathrm{m}$-high table is analysed twice: once with the table as the $h = 0$ reference, once with the floor as the reference. In which analysis is the ball's *loss* of gravitational potential energy larger when it rolls off and lands on the floor?",
+      "choices": [
+        "With the table as the reference.",
+        "With the floor as the reference.",
+        "The loss is the same in both analyses.",
+        "There is no loss \u2014 potential energy is conserved."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct \u2014 the *change* in $PE_{grav}$ depends only on the $1.0\\ \\mathrm{m}$ drop: $\\Delta PE_{grav} = mg\\,\\Delta h$ is the same with any reference. Only the absolute values differ.",
+        "incorrect": {
+          "0": "With the table as reference the ball starts at $PE = 0$ and ends at $PE = -mg(1.0)$; the change is still $-mg(1.0)$.",
+          "1": "With the floor as reference the ball starts at $+mg(1.0)$ and ends at $0$; the change is again $-mg(1.0)$.",
+          "3": "Potential energy is *not* conserved on its own \u2014 it converts to kinetic energy as the ball falls. It is *total* energy that is conserved."
+        }
+      },
+      "hint": [
+        "Write $\\Delta PE_{grav} = mg\\,\\Delta h$. Does $\\Delta h$ depend on where you put $h = 0$?"
+      ],
+      "solution": "The drop is $1.0\\ \\mathrm{m}$ in both analyses, so $\\Delta PE_{grav} = mg\\,\\Delta h = -mg(1.0\\ \\mathrm{m})$ regardless of the reference. Shifting the reference adds the same constant to the start and end values, leaving the difference unchanged \u2014 which is why the choice of reference never affects an energy-conservation result."
+    },
+    {
+      "id": "BP8-U4-L5-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $1.2\\ \\mathrm{kg}$ book starts on the floor of a room. It is placed on a desk $0.75\\ \\mathrm{m}$ high, then onto a shelf $2.4\\ \\mathrm{m}$ above the floor. Use $g = 9.8\\ \\mathrm{m/s^2}$ and take the floor as the reference.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the book's gravitational potential energy on the floor, on the desk, and on the shelf.",
+          "modelResponse": "Floor: $PE_{grav} = (1.2)(9.8)(0) = 0\\ \\mathrm{J}$. Desk: $PE_{grav} = (1.2)(9.8)(0.75) = 8.82 \\approx 8.8\\ \\mathrm{J}$. Shelf: $PE_{grav} = (1.2)(9.8)(2.4) = 28.2 \\approx 28\\ \\mathrm{J}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) How much work, at minimum, must be done against gravity to move the book from the floor to the shelf? Explain how you know.",
+          "modelResponse": "The minimum work against gravity equals the gain in gravitational potential energy, $\\Delta PE_{grav} = 28.2 - 0 = 28\\ \\mathrm{J}$ (to two significant figures). This is because lifting at constant speed requires an upward force equal to the weight, $mg$, applied through the total rise $h$, giving work $mgh = \\Delta PE_{grav}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) Does the route taken (straight up, or via the desk) change the answer to part (b)? Justify.",
+          "modelResponse": "No. Gravitational potential energy depends only on the start and end heights, not on the path between them, so $\\Delta PE_{grav}$ from floor to shelf is $28\\ \\mathrm{J}$ whether the book goes straight up or pauses on the desk. Any extra work spent carrying it horizontally does no work against gravity (horizontal motion is perpendicular to the weight).",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 and IB expect fluent use of $PE_{grav} = mgh$, explicit attention to the reference level, the fact that only $\\Delta PE_{grav}$ is physically meaningful, and the path-independence of gravitational potential energy. These ideas are the setup for energy-conservation problems.",
+  "summary": "Gravitational potential energy is stored energy an object has because of its height above a chosen reference point, arising from the gravitational force. Its value, $PE_{grav} = mgh$ (joules, with $g = 9.8\\ \\mathrm{m/s^2}$), depends on where you put the reference \u2014 so a problem must state or imply one \u2014 but the *change* $\\Delta PE_{grav} = mg\\,\\Delta h$ between two heights does not. $PE_{grav}$ is proportional to both mass and height, is zero at the reference, and depends only on height, not on the path taken to get there.",
+  "exitQuestion": {
+    "id": "BP8-U4-L5-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "Two identical crates are lifted onto the same $2\\ \\mathrm{m}$ platform. Crate X is carried straight up; crate Y is pushed up a long ramp to the same platform. Comparing only the change in gravitational potential energy, which crate gains more?",
+    "choices": [
+      "Crate X, because it went straight up.",
+      "Crate Y, because it travelled a longer distance.",
+      "They gain the same amount, because they end at the same height.",
+      "Neither \u2014 gravitational potential energy does not change when you use a ramp."
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct \u2014 $\\Delta PE_{grav} = mg\\,\\Delta h$ depends only on the height gained, not the path. Same mass, same $2\\ \\mathrm{m}$ rise, same gain.",
+      "incorrect": {
+        "0": "Path does not matter for $\\Delta PE_{grav}$ \u2014 only the change in height does.",
+        "1": "Distance along the ramp is irrelevant to $PE_{grav}$; the crate may do extra work against friction, but its potential-energy gain is set by the height.",
+        "3": "Using a ramp still raises the crate by $2\\ \\mathrm{m}$, so its gravitational potential energy does increase \u2014 by $mg(2\\ \\mathrm{m})$."
+      }
+    },
+    "hint": [
+      "$\\Delta PE_{grav} = mg\\,\\Delta h$. Both crates have the same $\\Delta h$."
+    ],
+    "solution": "Gravitational potential energy depends only on the height above the reference, so its change depends only on the change in height. Both crates rise by $2\\ \\mathrm{m}$ and have the same mass, so both gain $\\Delta PE_{grav} = mg(2\\ \\mathrm{m})$ \u2014 the ramp changes the force and distance needed, but not the potential-energy gain."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-103",
+    "BP8-U4-MCQ-109",
+    "BP8-U4-MCQ-102",
+    "BP8-U4-MCQ-112",
+    "BP8-U4-MCQ-124",
+    "BP8-U4-MCQ-115"
+  ],
+  "needsPlotly": false
+}

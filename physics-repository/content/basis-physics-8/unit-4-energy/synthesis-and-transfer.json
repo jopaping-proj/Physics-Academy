@@ -1,0 +1,410 @@
+{
+  "id": "basis-p8-u4-l8",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Synthesis and Transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "8",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 8, transfer tasks)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the Unit 4 curriculum architecture's Module 8 transfer specification.",
+  "prerequisites": [
+    "Lessons 1\u20137 of this unit \u2014 work, kinetic energy, the work-energy theorem, gravitational and spring potential energy, and conservation of energy.",
+    "Unit 3 \u2014 force identification, free-body diagrams, net force, friction ($|F_f| = \\mu |F_N|$), and inclined-plane force resolution."
+  ],
+  "majorObjective": "Integrate the whole unit: track energy through a multi-stage scenario that combines a height change, a speed change, and a spring interaction; decide whether mechanical energy is conserved in a Unit 3-style force scenario and apply the right tool; and name the sequence of energy transformations in an unfamiliar situation.",
+  "subObjectives": [
+    "Given an unfamiliar multi-stage scenario, identify which energy forms are present at each stage and set up a single energy-conservation equation across the stages.",
+    "For a scenario with friction or an incline carried from Unit 3, decide whether to use $ME_i = ME_f$, $ME_i = ME_f + E_{thermal}$, or the work-energy theorem, and justify the choice.",
+    "Name the full sequence of energy transformations in a described situation and state whether mechanical energy is conserved.",
+    "Choose the reference point and system boundary that make a problem simplest, and check that an answer is reasonable."
+  ],
+  "hook": {
+    "prompt": "A cart rolls from rest down a frictionless ramp of height $h$, crosses a short flat section, and compresses a spring bumper. At the instant the spring is fully compressed, where is (almost) all of the energy?",
+    "choices": [
+      "Kinetic energy \u2014 the cart was just moving fast.",
+      "Gravitational potential energy \u2014 measured from the top of the ramp.",
+      "Spring potential energy \u2014 the cart is momentarily at rest and the spring is maximally squeezed.",
+      "It has been used up bringing the cart to a stop."
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "Each lesson gave you one tool. Real problems arrive without a label saying which tool to use. This lesson is about *choosing*: reading a scenario, deciding which energy forms matter, deciding whether friction breaks mechanical-energy conservation, and setting up one clean equation.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The multi-stage energy problem: one equation across all stages",
+      "concept": "When an object moves through several stages \u2014 down a ramp, across a floor, into a spring \u2014 you do **not** need a separate calculation for each stage. Pick a **start state** and an **end state**, list the energy forms at each, and write **one** conservation equation:\n\n$$ME_{start} = ME_{end} \\quad\\text{(closed, frictionless)}$$\n\n$$KE_1 + PE_{grav,1} + PE_{spring,1} \\;=\\; KE_2 + PE_{grav,2} + PE_{spring,2}$$\n\nThe skill is choosing the two states so that as many terms as possible are zero:\n\n- **at rest** \u2192 drop $KE$;\n- **at the reference height** \u2192 drop $PE_{grav}$;\n- **spring relaxed** \u2192 drop $PE_{spring}$.\n\nEverything that happens *between* the two states \u2014 the exact path, the speed partway \u2014 is irrelevant if the system is closed and frictionless.",
+      "representation": "Setting up a multi-stage problem:\n\n1. Sketch the stages; mark heights, speeds, spring compressions.\n2. Choose the reference height (usually the lowest point).\n3. Pick start and end states that zero out the most terms.\n4. Write $ME_{start} = ME_{end}$, keep only the non-zero terms, solve for the unknown.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/synthesis-and-transfer/ramp-into-spring-stages.svg",
+          "caption": "A cart on a frictionless track: all gravitational potential energy at the top, all kinetic energy at the bottom, all spring potential energy at full compression. On a frictionless track the three amounts are equal, so any one can be equated to any other."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.50\\ \\mathrm{kg}$ cart starts from rest at the top of a frictionless ramp $0.80\\ \\mathrm{m}$ high. It rolls down and along a flat frictionless section into a spring bumper ($k = 400\\ \\mathrm{N/m}$). (a) Find the cart's speed at the bottom of the ramp. (b) Find how far it compresses the spring.",
+        "phases": [
+          {
+            "label": "(a) Speed at the bottom \u2014 states: top (at rest) and bottom (spring relaxed)",
+            "steps": [
+              "Reference height = the flat section. Top: $KE = 0$, $PE_{grav} = mgh$, $PE_{spring} = 0$. Bottom: $KE = \\tfrac{1}{2}mv^2$, $PE_{grav} = 0$, $PE_{spring} = 0$.",
+              "$mgh = \\tfrac{1}{2}mv^2 \\;\\Rightarrow\\; v = \\sqrt{2gh} = \\sqrt{2(9.8)(0.80)} = \\sqrt{15.68} \\approx 4.0\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(b) Spring compression \u2014 states: top (at rest, no spring) and full compression (at rest, spring squeezed)",
+            "steps": [
+              "At full compression the cart is momentarily at rest: $KE = 0$, $PE_{grav} = 0$ (still on the flat), $PE_{spring} = \\tfrac{1}{2}kx^2$.",
+              "So $mgh = \\tfrac{1}{2}kx^2 \\;\\Rightarrow\\; x = \\sqrt{\\dfrac{2mgh}{k}} = \\sqrt{\\dfrac{2(0.50)(9.8)(0.80)}{400}} = \\sqrt{\\dfrac{7.84}{400}} = \\sqrt{0.0196} = 0.14\\ \\mathrm{m}$."
+            ]
+          }
+        ],
+        "keyMove": "Equate the top state directly to the full-compression state \u2014 skip the bottom entirely \u2014 because $ME$ is the same at all three points."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L8-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A ball rolls off a frictionless track and you want its speed at a point $2\\ \\mathrm{m}$ lower. Which piece of information is *not* needed?",
+        "choices": [
+          "The height drop between the two points.",
+          "The ball's speed at the starting point.",
+          "The exact shape of the track between the two points.",
+          "The value of $g$."
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct \u2014 on a frictionless track, conservation of mechanical energy depends only on the endpoint heights and speeds, not on the path shape between them.",
+          "incorrect": {
+            "0": "The height drop sets the $\\Delta PE_{grav}$, which becomes $\\Delta KE$ \u2014 you need it.",
+            "1": "The starting speed sets the initial kinetic energy, part of $ME_i$ \u2014 you need it.",
+            "3": "$g$ appears in $PE_{grav} = mgh$ \u2014 you need it."
+          }
+        },
+        "hint": [
+          "Which quantities appear in $KE_i + PE_i = KE_f + PE_f$? Is 'path shape' one of them?"
+        ],
+        "solution": "Conservation of mechanical energy for a frictionless track gives $\\tfrac{1}{2}mv_i^2 + mgh_i = \\tfrac{1}{2}mv_f^2 + mgh_f$. Only the endpoint speeds and heights (and $g$) appear \u2014 the path between them does not affect the result. So the exact shape of the track is not needed."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Choosing the tool: is mechanical energy conserved here?",
+      "concept": "Before writing any equation, ask **one question: does a non-conservative force (friction, air resistance) act between my two states?**\n\n| Situation | Tool |\n|---|---|\n| Closed, no friction/air resistance | $ME_i = ME_f$ |\n| Friction or air resistance acts, and you know the friction force and distance | $ME_i = ME_f + |F_f|\\,d$ &nbsp; (the thermal energy is $|F_f|\\,d$) |\n| You only care about the speed change and know the *net* force over a distance | work-energy theorem, $W_{net} = \\Delta KE$ |\n| An external force (hand, motor) does work on the system | add that work: $ME_i + W_{ext} = ME_f$ |\n\nFor an **incline with friction** (a Unit 3 favourite): the friction force is $|F_f| = \\mu |F_N| = \\mu mg\\cos\\theta$, and it acts over the distance travelled along the slope. The energy it removes is $|F_f| \\times (\\text{slope distance})$.",
+      "representation": "The general energy statement, from which every case is a special version:\n\n$$ME_i + W_{ext} = ME_f + E_{thermal}$$\n\n- Frictionless, no external work \u2192 $ME_i = ME_f$.\n- Friction only \u2192 $ME_i = ME_f + E_{thermal}$, with $E_{thermal} = |F_f|\\,d$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\ \\mathrm{kg}$ box is given a push and slides up a ramp inclined at $30^\\circ$. It leaves the hand at $4.0\\ \\mathrm{m/s}$ and slides $1.2\\ \\mathrm{m}$ along the ramp before stopping. (a) Decide whether mechanical energy is conserved. (b) Find the friction force on the box. Use $g = 9.8\\ \\mathrm{m/s^2}$; the vertical rise over $1.2\\ \\mathrm{m}$ of slope at $30^\\circ$ is $1.2\\sin 30^\\circ = 0.60\\ \\mathrm{m}$.",
+        "phases": [
+          {
+            "label": "(a) Conserved?",
+            "steps": [
+              "The box slides along a ramp surface \u2192 kinetic friction acts \u2192 **mechanical energy is not conserved**. Use $ME_i = ME_f + E_{thermal}$."
+            ]
+          },
+          {
+            "label": "(b) Friction force",
+            "steps": [
+              "Start (bottom, moving): $ME_i = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(2.0)(4.0)^2 = 16\\ \\mathrm{J}$.",
+              "End (stopped, raised $0.60\\ \\mathrm{m}$): $ME_f = mgh = (2.0)(9.8)(0.60) = 11.76\\ \\mathrm{J}$.",
+              "$E_{thermal} = ME_i - ME_f = 16 - 11.76 = 4.24\\ \\mathrm{J}$.",
+              "$E_{thermal} = |F_f|\\,d \\;\\Rightarrow\\; |F_f| = \\dfrac{4.24}{1.2} \\approx 3.5\\ \\mathrm{N}$."
+            ]
+          }
+        ],
+        "keyMove": "See a sliding contact \u2192 mechanical energy is not conserved \u2192 the shortfall $ME_i - ME_f$ equals $|F_f|\\,d$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L8-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "You want the speed of a block at the bottom of a rough ramp, released from rest at the top. Which setup is correct?",
+        "choices": [
+          "$mgh = \\tfrac{1}{2}mv^2$, because energy is always conserved.",
+          "$mgh = \\tfrac{1}{2}mv^2 + |F_f|\\,d$, where $d$ is the distance along the ramp \u2014 friction converts some $PE_{grav}$ to thermal energy.",
+          "$\\tfrac{1}{2}mv^2 = mgh + |F_f|\\,d$, adding the friction energy to the height term.",
+          "$mgh = |F_f|\\,d$, because friction stops the block."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 the initial $PE_{grav}$ splits between final kinetic energy and thermal energy generated by friction: $mgh = \\tfrac{1}{2}mv^2 + |F_f|\\,d$.",
+          "incorrect": {
+            "0": "The ramp is rough, so *mechanical* energy is not conserved \u2014 you must include the thermal term.",
+            "2": "This puts the friction energy on the wrong side. The starting energy ($mgh$) is what gets divided between $KE$ and heat.",
+            "3": "The block does not stop \u2014 it reaches the bottom moving. Only some of the $PE_{grav}$ goes to heat; the rest is kinetic energy."
+          }
+        },
+        "hint": [
+          "Start energy = end mechanical energy + energy lost to friction. Which term is the start energy here?"
+        ],
+        "solution": "Released from rest at height $h$, the block's initial mechanical energy is $mgh$. On a rough ramp this divides into final kinetic energy $\\tfrac{1}{2}mv^2$ and thermal energy $|F_f|\\,d$ (friction force times slope distance): $mgh = \\tfrac{1}{2}mv^2 + |F_f|\\,d$. Solve for $v$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Naming transformations and checking reasonableness",
+      "concept": "The last transfer skill is **describing** an unfamiliar situation in energy language: name the ordered sequence of transformations, and state whether mechanical energy is conserved.\n\nExamples:\n\n- **Bouncing ball (real):** gravitational $PE \\to KE \\to$ elastic $PE$ (in the squashed ball) $\\to KE \\to$ gravitational $PE$, with a little $\\to$ thermal each bounce. Mechanical energy **decreases** each bounce.\n- **Archer's bow:** chemical $PE$ (muscles) $\\to$ elastic $PE$ (drawn bow) $\\to KE$ (arrow). Mechanical energy of the arrow is *gained* from an external source, then roughly conserved in flight (ignoring air).\n- **Car braking:** $KE \\to$ thermal (brakes, tyres, road). Mechanical energy **decreases** to near zero.\n\n**Reasonableness checks:** a speed from energy conservation should be positive and not absurd; a spring compression should be a few centimetres, not metres; energy 'lost' to friction should be less than the starting energy, never more.",
+      "representation": "For any scenario:\n\n1. List the stages in order.\n2. At each transition, name \u2018form X $\\to$ form Y\u2019.\n3. Mark any transition where friction/air resistance also sends energy $\\to$ thermal.\n4. Conclude: mechanical energy conserved (only gravity/ideal springs) or not (any non-conservative force).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A child on a swing is given one push from rest at the bottom, swings up to a maximum height, comes back down, and \u2014 with no further pushes \u2014 eventually swings lower and lower. (a) Name the transformations for the first up-swing. (b) Is mechanical energy conserved over many swings? (c) A student computes the maximum height on the first swing as $3.0\\ \\mathrm{m}$ from a push speed of $2.0\\ \\mathrm{m/s}$. Check reasonableness.",
+        "phases": [
+          {
+            "label": "(a) First up-swing",
+            "steps": [
+              "The push adds kinetic energy (from the pusher's muscles \u2014 external).",
+              "Then, rising: $KE \\to$ gravitational $PE$, reaching all-$PE$ at the top of the swing."
+            ]
+          },
+          {
+            "label": "(b) Over many swings",
+            "steps": [
+              "Air resistance and friction at the pivot act \u2192 **mechanical energy is not conserved**; it decreases each swing, converting to thermal energy, which is why the swings get smaller."
+            ]
+          },
+          {
+            "label": "(c) Reasonableness check",
+            "steps": [
+              "Frictionless estimate: $\\tfrac{1}{2}v^2 = gh \\Rightarrow h = \\dfrac{v^2}{2g} = \\dfrac{(2.0)^2}{2(9.8)} = \\dfrac{4.0}{19.6} \\approx 0.20\\ \\mathrm{m}$.",
+              "The student's $3.0\\ \\mathrm{m}$ is about $15\\times$ too big \u2014 a $2\\ \\mathrm{m/s}$ push (a slow walk) cannot lift a child $3\\ \\mathrm{m}$. They likely forgot to square the speed or divided wrong. **Not reasonable.**"
+            ]
+          }
+        ],
+        "keyMove": "Name each transformation in order; flag friction/air as a thermal leak; sanity-check the number against everyday experience."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L8-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "reasonableness-check",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A student uses energy conservation and finds that a marble dropped from $0.45\\ \\mathrm{m}$ hits the ground at $30\\ \\mathrm{m/s}$. What is the quickest way to see this is wrong?",
+        "choices": [
+          "$30\\ \\mathrm{m/s}$ is about $110\\ \\mathrm{km/h}$ \u2014 far too fast for a drop of less than half a metre.",
+          "The marble's mass was not given, so no speed can be found.",
+          "Energy conservation cannot be used for falling objects.",
+          "The answer should be negative."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 a sub-metre drop gives a speed of a few m/s ($v = \\sqrt{2gh} = \\sqrt{2(9.8)(0.45)} \\approx 3\\ \\mathrm{m/s}$). $30\\ \\mathrm{m/s}$ is ten times too big \u2014 almost certainly a missing square root.",
+          "incorrect": {
+            "1": "Mass cancels in $mgh = \\tfrac{1}{2}mv^2$, so the speed does not depend on it.",
+            "2": "Energy conservation is a standard and correct method for a freely falling object.",
+            "3": "Speed is a magnitude \u2014 it should be positive. The problem is the size, not the sign."
+          }
+        },
+        "hint": [
+          "Roughly how fast is something moving after a short fall? Compare with 30 m/s (highway speed)."
+        ],
+        "solution": "For a drop of $0.45\\ \\mathrm{m}$, $v = \\sqrt{2gh} = \\sqrt{2(9.8)(0.45)} \\approx 3.0\\ \\mathrm{m/s}$. A result of $30\\ \\mathrm{m/s}$ (about $110\\ \\mathrm{km/h}$) from half a metre is physically absurd \u2014 the fastest reasonableness check is to compare the number with everyday experience. The likely error is taking $2gh$ without the square root."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L8-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "",
+      "question": "For a cart rolling down a rough ramp, a student writes $mgh = \\tfrac{1}{2}mv^2$ and solves for $v$. What is the consequence of this choice, and how should it be fixed?",
+      "choices": [
+        "No consequence \u2014 friction is usually small enough to ignore.",
+        "It overestimates the final speed, because it assumes all the gravitational PE becomes kinetic energy; the fix is $mgh = \\tfrac{1}{2}mv^2 + |F_f|\\,d$, sending some energy to heat.",
+        "It underestimates the final speed; the fix is to add friction energy to the kinetic term.",
+        "It gives a negative speed, which signals the error."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 ignoring friction credits all of $mgh$ to kinetic energy, so the predicted speed is too high. Including $|F_f|\\,d$ on the right removes the thermal share first.",
+        "incorrect": {
+          "0": "On a *rough* ramp friction can take a large fraction of the energy \u2014 it is not safe to ignore when the problem specifies it.",
+          "2": "Ignoring friction makes the speed come out *too high*, not too low \u2014 more energy is assigned to motion than really is.",
+          "3": "The equation still gives a positive speed; it is just larger than the true value. Nothing flags the error automatically."
+        }
+      },
+      "hint": [
+        "If you pretend friction does not exist, do you credit too much or too little energy to the cart's motion?"
+      ],
+      "solution": "Writing $mgh = \\tfrac{1}{2}mv^2$ assumes a closed, frictionless system, so every joule of lost gravitational potential energy becomes kinetic energy. On a rough ramp, friction diverts some of that energy to heat, so the real final speed is lower. The correct statement is $mgh = \\tfrac{1}{2}mv^2 + |F_f|\\,d$, where $|F_f|\\,d$ is the thermal energy generated over the slope distance $d$."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $0.30\\ \\mathrm{kg}$ ball is launched horizontally from a spring ($k = 300\\ \\mathrm{N/m}$) compressed $0.10\\ \\mathrm{m}$ on a frictionless table, then leaves the table edge. Find the ball's speed the instant it leaves the spring (still on the table).\n\nStudent's response: \u201cSpring PE goes to KE and to gravitational PE. $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2 + mgh$. But I do not know $h$, so the problem is impossible.\u201d",
+      "prompts": [
+        "State which energy forms are present just before release and just as the ball leaves the spring (still on the table).",
+        "Identify the unnecessary term the student included.",
+        "Set up the correct equation and find the speed."
+      ],
+      "modelResponse": "Just before release: spring potential energy only (ball at rest on the table). Just as the ball leaves the spring: kinetic energy only \u2014 the ball is still on the table, so its height has not changed and there is no gravitational PE *change* to account for. The student wrongly added an $mgh$ term; the ball moves horizontally along the table while the spring pushes it, so $\\Delta PE_{grav} = 0$ for that stage. Correct: $\\tfrac{1}{2}kx^2 = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{\\dfrac{kx^2}{m}} = \\sqrt{\\dfrac{(300)(0.10)^2}{0.30}} = \\sqrt{\\dfrac{3.0}{0.30}} = \\sqrt{10} \\approx 3.2\\ \\mathrm{m/s}$.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal multi-stage scenario becomes a sketch with marked heights, speeds, and compressions; that becomes a single equation $ME_i + W_{ext} = ME_f + E_{thermal}$ with only the non-zero terms kept; the formulas from Lessons 3\u20136 fill in each term; and a reasonableness check on the numerical answer closes the loop. The choice of tool ($ME_i = ME_f$ vs the work-energy theorem vs the thermal-term version) is itself the transfer skill this unit builds toward.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L8-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A $0.20\\ \\mathrm{kg}$ ball is released from rest at height $1.0\\ \\mathrm{m}$ on a frictionless track and runs into a spring ($k = 160\\ \\mathrm{N/m}$) on the flat part. How far does it compress the spring? (Take $g = 9.8\\ \\mathrm{m/s^2}$.)",
+      "choices": [
+        "$0.16\\ \\mathrm{m}$",
+        "$0.025\\ \\mathrm{m}$",
+        "$0.35\\ \\mathrm{m}$",
+        "$0.012\\ \\mathrm{m}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 at full compression the ball is at rest on the flat, so $mgh = \\tfrac{1}{2}kx^2$: $x = \\sqrt{2mgh/k} = \\sqrt{2(0.20)(9.8)(1.0)/160} = \\sqrt{3.92/160} = \\sqrt{0.0245} \\approx 0.16\\ \\mathrm{m}$.",
+        "incorrect": {
+          "1": "This looks like $mgh/k$ without the factor of $2$ and without the square root: $3.92/160 = 0.0245$, then $\\sqrt{\\;}$ gives $0.16$.",
+          "2": "This forgot to halve $kx^2$: using $mgh = kx^2$ gives a larger $x$. The spring energy is $\\tfrac{1}{2}kx^2$.",
+          "3": "This is $2mgh/k$ without the square root: $0.0245$... check again, $\\sqrt{0.0245} \\approx 0.16$."
+        }
+      },
+      "hint": [
+        "Equate the top state (at rest, height $h$) directly to full compression (at rest, spring squeezed $x$): $mgh = \\tfrac{1}{2}kx^2$."
+      ],
+      "solution": "The ball is at rest at both the start (height $1.0\\ \\mathrm{m}$) and at full spring compression (on the flat), so all the initial gravitational potential energy becomes spring potential energy: $mgh = \\tfrac{1}{2}kx^2$. Solving, $x = \\sqrt{\\dfrac{2mgh}{k}} = \\sqrt{\\dfrac{2(0.20)(9.8)(1.0)}{160}} = \\sqrt{0.0245} \\approx 0.16\\ \\mathrm{m}$."
+    },
+    {
+      "id": "BP8-U4-L8-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A roller-coaster car crests the first hill slowly, races through a dip, and rises over a second hill that is lower than the first \u2014 arriving at the top of the second hill with more speed than it had at the top of the first. Ignoring friction, which statement is correct?",
+      "choices": [
+        "Impossible \u2014 the car cannot gain energy.",
+        "Consistent \u2014 the second hill is lower, so it has less gravitational PE there; the 'missing' PE has become extra kinetic energy, i.e. more speed.",
+        "Consistent only if a motor pushed the car in the dip.",
+        "Impossible without friction to slow it on the first hill."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 total mechanical energy is the same at both hilltops (frictionless). The lower hilltop has less $PE_{grav}$, so it must have more $KE$ \u2014 the car is faster there.",
+        "incorrect": {
+          "0": "The car does not gain total energy \u2014 it converts gravitational PE into kinetic energy because the second hilltop is lower.",
+          "2": "No motor is needed. A lower hilltop naturally corresponds to a higher speed under energy conservation.",
+          "3": "Friction is not required. With energy conserved, lower height at the same total ME simply means higher speed."
+        }
+      },
+      "hint": [
+        "$ME$ is the same at both hilltops. If $PE_{grav}$ is smaller at the second, what must $KE$ be?"
+      ],
+      "solution": "With no friction, the total mechanical energy at the top of the second hill equals that at the top of the first. The second hilltop is lower, so its gravitational potential energy is smaller; the difference appears as extra kinetic energy, meaning a higher speed. No energy was created \u2014 gravitational PE was converted to KE."
+    },
+    {
+      "id": "BP8-U4-L8-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "A $1.5\\ \\mathrm{kg}$ block is held against a spring ($k = 500\\ \\mathrm{N/m}$) compressed $0.20\\ \\mathrm{m}$ at the bottom of a ramp inclined at $30^\\circ$. When released, the spring launches the block up the ramp. The ramp has friction: the constant friction force on the block is $4.0\\ \\mathrm{N}$. Use $g = 9.8\\ \\mathrm{m/s^2}$; take the block's starting position as the height reference. (For a distance $d$ along the ramp, the height gained is $d\\sin 30^\\circ = 0.50\\,d$.)",
+      "parts": [
+        {
+          "prompt": "(a) Find the spring potential energy stored before release, and name every energy transformation that occurs as the block travels up the ramp and momentarily stops.",
+          "modelResponse": "$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(500)(0.20)^2 = \\tfrac{1}{2}(500)(0.04) = 10\\ \\mathrm{J}$. Transformations: spring potential energy converts to kinetic energy (while the spring pushes), then kinetic energy converts to gravitational potential energy (as the block climbs) and to thermal energy (friction between block and ramp). At the highest point the block is at rest, so the energy is gravitational PE plus the thermal energy generated.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Write the full energy-conservation equation from 'just before release' to 'momentarily at rest a distance $d$ up the ramp,' and solve for $d$.",
+          "modelResponse": "Just before release: $ME = PE_{spring} = 10\\ \\mathrm{J}$ (at rest, at reference height, so no KE or $PE_{grav}$). At the top: at rest, so $ME = mg(0.50\\,d)$, and thermal energy $= (4.0)\\,d$. Energy statement: $PE_{spring} = mg(0.50\\,d) + (4.0)\\,d$. Substitute: $10 = (1.5)(9.8)(0.50\\,d) + 4.0\\,d = 7.35\\,d + 4.0\\,d = 11.35\\,d$. So $d = \\dfrac{10}{11.35} \\approx 0.88\\ \\mathrm{m}$.",
+          "points": 5
+        },
+        {
+          "prompt": "(c) If the ramp were frictionless, would the block travel farther, and by roughly what factor? Justify with the equation, not a recalculation from scratch.",
+          "modelResponse": "Frictionless: $10 = 7.35\\,d$, so $d = 1.36\\ \\mathrm{m}$. That is farther, by a factor of about $1.36/0.88 \\approx 1.5$. In the equation, removing the $4.0\\,d$ friction term shrinks the denominator from $11.35$ to $7.35$, so $d$ grows by the ratio $11.35/7.35 \\approx 1.5$. Physically, without friction none of the spring energy is diverted to heat, so more of it becomes gravitational PE and the block climbs higher.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 1 and IB free-response problems routinely combine a spring launch, a height change, and friction in a single multi-part question, and reward students who write *one* energy equation between well-chosen states rather than kinematics stage by stage. The 'is mechanical energy conserved here?' decision, and the $E_{thermal} = |F_f|\\,d$ term, are directly assessed.",
+  "summary": "A multi-stage energy problem needs just one equation: choose a start and end state that zero out the most terms, write $ME_i + W_{ext} = ME_f + E_{thermal}$, keep the non-zero terms, and solve. The path between the states does not matter for a closed, frictionless system. Before writing anything, decide the tool: $ME_i = ME_f$ (no friction), $ME_i = ME_f + |F_f|\\,d$ (friction, with the thermal energy equal to friction force times distance), or the work-energy theorem (net force over a distance). Name transformations in order, flag every friction/air-resistance step as a thermal leak, and check that the final number is physically reasonable.",
+  "exitQuestion": {
+    "id": "BP8-U4-L8-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "question": "You must find the speed of a block at the bottom of a ramp. What should you determine *first*, before choosing any equation?",
+    "choices": [
+      "The block's mass.",
+      "Whether friction or air resistance acts between the start and end points.",
+      "The length of the ramp.",
+      "The angle of the ramp."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 that single question decides whether you can use $ME_i = ME_f$ or must include a thermal term. Everything else follows from that choice.",
+      "incorrect": {
+        "0": "Mass often cancels in energy-conservation problems \u2014 it is not the first thing to settle.",
+        "2": "The ramp length only matters if friction acts (to compute $|F_f|\\,d$); you need to know about friction first.",
+        "3": "The angle matters for resolving forces, but the prior decision is whether mechanical energy is even conserved."
+      }
+    },
+    "hint": [
+      "Which fact changes *which equation* you are allowed to write?"
+    ],
+    "solution": "The first decision in any energy problem is whether a non-conservative force (friction, air resistance) acts between the two states. If not, use $ME_i = ME_f$. If so, use $ME_i = ME_f + E_{thermal}$ with $E_{thermal} = |F_f|\\,d$. This choice determines the entire setup; details like mass, length, and angle are filled in afterward."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-146",
+    "BP8-U4-MCQ-153",
+    "BP8-U4-MCQ-084",
+    "BP8-U4-MCQ-124",
+    "BP8-U4-MCQ-207",
+    "BP8-U4-MCQ-115"
+  ],
+  "needsPlotly": false
+}

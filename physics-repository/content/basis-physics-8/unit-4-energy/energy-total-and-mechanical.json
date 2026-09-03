@@ -1,0 +1,426 @@
+{
+  "id": "basis-p8-u4-l2",
+  "slug": "energy-total-and-mechanical",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Energy Definitions and Types",
+  "lessonTitle": "Total and Mechanical Energy",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 2, outcomes ED1-ED3)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 — this lesson is authored from the approved outcome register (ED1-ED3) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 1 — work is a transfer of energy by a force acting through a displacement, measured in joules.",
+    "Unit 3 — a spring constant $k$ describes how stiff a spring is."
+  ],
+  "majorObjective": "Define total energy and mechanical energy, and classify the energy in a described situation as kinetic, potential, both, or a form that is not mechanical at all.",
+  "subObjectives": [
+    "State that total energy is the complete capacity of a system to do work or cause change, adding up every form present.",
+    "State that mechanical energy is the sum of a system's kinetic energy and potential energy.",
+    "Identify kinetic energy and potential energy (gravitational and spring) as the two types of mechanical energy.",
+    "Given a described situation, state which mechanical energy forms are present, and recognise when energy is stored in a non-mechanical form."
+  ],
+  "hook": {
+    "prompt": "A charged phone battery, a stretched slingshot, and a moving skateboard all \u201chave energy.\u201d Which of them stores its energy as *mechanical* energy?",
+    "choices": [
+      "All three \u2014 energy is energy.",
+      "Only the moving skateboard and the stretched slingshot.",
+      "Only the moving skateboard.",
+      "Only the charged battery, because it can power things."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Energy is the capacity to do work or cause change. It comes in many forms \u2014 motion, position, heat, chemical bonds, electricity, light. This lesson names the group of forms tied to motion and position: mechanical energy.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Total energy",
+      "concept": "The **total energy** of a system is its complete capacity to do work or cause change \u2014 the sum of **every** form of energy present.\n\nThose forms include:\n\n- **kinetic energy** \u2014 energy of motion;\n- **potential energy** \u2014 stored energy of position or configuration (an object raised up, a spring squeezed);\n- **thermal energy** \u2014 the energy of the random jiggling of particles (what we feel as temperature);\n- **chemical energy** \u2014 energy stored in the bonds of fuel, food, or a battery;\n- and others (electrical, light, sound, nuclear).\n\nWhen we say energy is *conserved*, we mean this grand total never changes in a closed system \u2014 forms convert into one another, but the sum stays fixed. Energy is measured in **joules (J)** whatever form it is in.",
+      "representation": "Total energy is an accounting total:\n\n$$E_{total} = KE + PE + \\text{thermal} + \\text{chemical} + \\ldots$$\n\nYou rarely list every term. The point is that \u201ctotal energy\u201d means *all of it*, not just the part you are tracking.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/energy-total-and-mechanical/energy-forms-tree.svg",
+          "caption": "Total energy is every form a system has. Mechanical energy \u2014 kinetic plus potential \u2014 is one branch of it, alongside thermal, chemical, and other forms."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A car is driving along a level road at a steady speed. List the forms of energy that are part of the car's total energy, and say which one is being *used up* to keep it moving.",
+        "phases": [
+          {
+            "label": "List the forms present",
+            "steps": [
+              "**Kinetic energy** \u2014 the car is moving.",
+              "**Chemical energy** \u2014 stored in the fuel in the tank.",
+              "**Thermal energy** \u2014 the engine, tyres, and exhaust are hot.",
+              "(Gravitational potential energy is not changing, since the road is level.)"
+            ]
+          },
+          {
+            "label": "Identify what is being consumed",
+            "steps": [
+              "At steady speed the kinetic energy is constant, so that is not the source.",
+              "**Chemical energy** in the fuel is steadily converted \u2014 partly into thermal energy (engine heat, and heat from air resistance and rolling friction), keeping the car moving against those resistive forces."
+            ]
+          }
+        ],
+        "keyMove": "\u201cTotal energy\u201d includes forms you are not tracking \u2014 here, the chemical energy of the fuel is doing the work even though the kinetic energy never changes."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L2-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which statement best describes the total energy of a system?",
+        "choices": [
+          "The kinetic energy plus the gravitational potential energy, and nothing else.",
+          "The complete capacity of the system to do work or cause change, summing every form of energy present.",
+          "Only the energy that is currently doing work.",
+          "The largest single form of energy the system contains."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 total energy is the sum of *all* forms: kinetic, potential, thermal, chemical, and any others present.",
+          "incorrect": {
+            "0": "That is *mechanical* energy, which is only one part of the total. Thermal and chemical energy also count toward the total.",
+            "2": "Stored energy that is not doing work yet (a full battery, a raised weight) is still part of the total.",
+            "3": "Total energy is the sum of every form, not just the biggest one."
+          }
+        },
+        "hint": [
+          "Does a warm, switched-off phone still have energy? Then total energy must include more than motion and height."
+        ],
+        "solution": "Total energy is the system's entire capacity to cause change \u2014 every form added together (kinetic, potential, thermal, chemical, electrical, and so on). It is what stays constant when energy is conserved."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Mechanical energy = kinetic + potential",
+      "concept": "**Mechanical energy** is the part of the total energy tied to an object's **motion** and its **position or configuration**:\n\n$$ME = KE + PE$$\n\n- **Kinetic energy ($KE$)** is the energy an object has because it is *moving*.\n- **Potential energy ($PE$)** is energy *stored* by position or shape. In this unit there are two kinds:\n  - **gravitational potential energy** \u2014 stored by lifting an object to a height (Lesson 5);\n  - **spring potential energy** \u2014 stored by stretching or compressing a spring (Lesson 6).\n\nSo the full picture for this unit is $ME = KE + PE_{grav} + PE_{spring}$, using whichever terms are actually present.\n\nMechanical energy is **not** a synonym for total energy. Thermal energy, chemical energy, and light are real energy, but they are not mechanical energy. When friction turns motion into heat, mechanical energy *decreases* even though total energy does not.",
+      "representation": "To find the mechanical energy of a system:\n\n1. Is anything moving? Add a $KE$ term.\n2. Is anything raised above the stated reference height? Add a $PE_{grav}$ term.\n3. Is a spring stretched or compressed? Add a $PE_{spring}$ term.\n4. $ME$ is the sum of those terms. Heat and chemical energy are *not* included.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each system, state which mechanical energy forms are present: (a) a book resting on a high shelf; (b) a hockey puck sliding across level ice; (c) a compressed spring in a toy that is being held still on the floor; (d) a warm cup of coffee sitting on a table.",
+        "phases": [
+          {
+            "label": "(a) Book on a shelf",
+            "steps": [
+              "Not moving \u2192 no $KE$.",
+              "Raised above the floor \u2192 **gravitational $PE$**. That is the only mechanical energy here."
+            ]
+          },
+          {
+            "label": "(b) Puck on ice",
+            "steps": [
+              "Moving \u2192 **kinetic energy**.",
+              "On the ice, not raised, no spring \u2192 no $PE$. $KE$ only."
+            ]
+          },
+          {
+            "label": "(c) Compressed spring, held still on the floor",
+            "steps": [
+              "Not moving, not raised \u2192 no $KE$, no gravitational $PE$.",
+              "Spring compressed \u2192 **spring potential energy**. That is the only mechanical energy."
+            ]
+          },
+          {
+            "label": "(d) Warm coffee",
+            "steps": [
+              "Not moving, on the table, no spring \u2192 **no mechanical energy**.",
+              "Its extra energy is **thermal**, which is not mechanical energy."
+            ]
+          }
+        ],
+        "keyMove": "Check three things \u2014 motion, height, spring. Heat does not count as mechanical energy."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L2-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A sled is sliding down a snowy hill and slowing slightly because of friction. Which statement is correct?",
+        "choices": [
+          "The sled's mechanical energy is constant, because energy is always conserved.",
+          "The sled's mechanical energy is decreasing, because friction converts some of it to thermal energy \u2014 but the total energy is still conserved.",
+          "The sled has no mechanical energy while friction is acting.",
+          "The sled's thermal energy is part of its mechanical energy."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 friction moves energy out of the mechanical account (KE + PE) and into thermal energy. Mechanical energy falls; total energy is unchanged.",
+          "incorrect": {
+            "0": "*Total* energy is conserved, but *mechanical* energy is not \u2014 friction bleeds it into heat.",
+            "2": "The sled is moving and losing height, so it has both KE and gravitational PE \u2014 that is mechanical energy.",
+            "3": "Thermal energy is a form of total energy, but it is not counted as mechanical energy."
+          }
+        },
+        "hint": [
+          "Mechanical energy is KE + PE only. Where does the energy \u2018lost\u2019 to friction actually go?"
+        ],
+        "solution": "Mechanical energy is the sum of kinetic and potential energy. Friction converts some of the sled's kinetic energy into thermal energy in the snow and runners, so the mechanical energy decreases. That energy is not destroyed \u2014 the total (mechanical + thermal) is still conserved."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Classifying the energy in a situation",
+      "concept": "Given a described situation, you should be able to name which energy forms are present and label each as **kinetic**, **potential**, or **not mechanical**.\n\nQuick tests:\n\n- **Is it moving?** \u2192 it has kinetic energy.\n- **Is it held up at a height above the reference, or on a slope it could slide down?** \u2192 gravitational potential energy.\n- **Is a spring (or springy material) stretched or squashed?** \u2192 spring potential energy.\n- **Is something hot, burning, charged, glowing, or making sound?** \u2192 thermal / chemical / electrical / light / sound \u2014 real energy, but **not mechanical**.\n\nAn object can have several at once: a ball thrown upward is moving (KE) *and* rising above the ground (gravitational PE). Add every form that applies.",
+      "representation": "Sort each described quantity into one bucket:\n\n| Clue in the description | Energy form | Mechanical? |\n|---|---|---|\n| moving, has a speed | kinetic | yes |\n| raised to a height, on a ledge or ramp | gravitational potential | yes |\n| spring stretched or compressed | spring potential | yes |\n| hot / warm / temperature rise | thermal | no |\n| fuel, food, battery | chemical | no |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A child at the top of a slide is about to go down. Halfway down they are moving. At the bottom they scrape to a stop on a rough mat. Classify the mechanical energy at each of the three moments, and say what happens to the mechanical energy overall.",
+        "phases": [
+          {
+            "label": "Top of the slide",
+            "steps": [
+              "At rest \u2192 no kinetic energy.",
+              "Raised well above the ground \u2192 **gravitational potential energy** (large). Mechanical energy is all PE."
+            ]
+          },
+          {
+            "label": "Halfway down",
+            "steps": [
+              "Moving \u2192 **kinetic energy** (some).",
+              "Still above the ground, but lower \u2192 **gravitational potential energy** (smaller than at the top). Mechanical energy is part KE, part PE."
+            ]
+          },
+          {
+            "label": "Stopped at the bottom on the rough mat",
+            "steps": [
+              "At rest \u2192 no kinetic energy. At ground level \u2192 no gravitational potential energy. **Mechanical energy \u2248 0.**",
+              "The mechanical energy did not vanish \u2014 friction on the mat turned it into **thermal energy** (the mat and clothes warm up). Total energy is still conserved."
+            ]
+          }
+        ],
+        "keyMove": "Track KE and PE moment by moment; when mechanical energy seems to \u2018disappear,\u2019 look for friction turning it into heat."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L2-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A diver stands motionless on a high platform, then jumps and is falling toward the water. Which describes the mechanical energy forms present *while falling*?",
+        "choices": [
+          "Gravitational potential energy only.",
+          "Kinetic energy only.",
+          "Both kinetic energy and gravitational potential energy.",
+          "Thermal energy only."
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct \u2014 while falling, the diver is moving (kinetic energy) and is still above the water (gravitational potential energy). Both are present, and the PE is steadily converting into KE.",
+          "incorrect": {
+            "0": "The diver is moving while falling, so kinetic energy is present too.",
+            "1": "The diver is still above the water, so gravitational potential energy is present too \u2014 it is being converted into KE.",
+            "3": "Air resistance produces a little thermal energy, but the diver's own energy while falling is mechanical: KE plus gravitational PE."
+          }
+        },
+        "hint": [
+          "Ask both questions: is the diver moving? Is the diver above the reference level?"
+        ],
+        "solution": "While falling, the diver has a speed (kinetic energy) and is still at some height above the water (gravitational potential energy). As the fall continues, gravitational PE decreases and KE increases by the same amount \u2014 the total mechanical energy stays essentially constant until the diver hits the water."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L2-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: \u201cWhen a moving box slides to a stop because of friction, its energy is gone \u2014 so energy is not really conserved in real life.\u201d What is the correct response?",
+      "choices": [
+        "The student is right \u2014 friction destroys energy.",
+        "The box's *mechanical* energy did decrease, but that energy became thermal energy in the surfaces; the *total* energy is still conserved.",
+        "The box never had any energy, because it was going to stop anyway.",
+        "Energy is only conserved for objects that are lifted, not for objects that slide."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 conservation of energy is about the *total*. Friction converts mechanical energy into thermal energy; nothing is destroyed.",
+        "incorrect": {
+          "0": "Friction does not destroy energy \u2014 it converts kinetic energy into thermal energy (heat in the box and the floor).",
+          "2": "The moving box clearly had kinetic energy; \u2018it was going to stop\u2019 does not remove that.",
+          "3": "Conservation of *total* energy holds in every situation. It is *mechanical* energy that is not conserved when friction acts."
+        }
+      },
+      "hint": [
+        "Feel the floor after something heavy slides across it. Where did the motion energy go?"
+      ],
+      "solution": "The box's mechanical energy (all kinetic, since it was on level ground) dropped to zero as it stopped. That energy was transferred to thermal energy in the box and floor \u2014 they warm up slightly. Total energy is conserved; it is only mechanical energy that is not, because friction is a non-mechanical pathway out of the KE + PE account."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: \u201cA toy car is wound up (its spring is tight) and sitting still on a shelf. List its mechanical energy forms.\u201d\n\nStudent's response: \u201cIt has chemical energy in the spring, and gravitational potential energy from being on the shelf, and kinetic energy because it is about to move. So all three mechanical forms are present.\u201d",
+      "prompts": [
+        "State the two types of mechanical energy and the two kinds of potential energy in this unit.",
+        "Identify each error in the student's list.",
+        "Give the correct list of mechanical energy forms present right now."
+      ],
+      "modelResponse": "Mechanical energy is kinetic energy plus potential energy; the two kinds of potential energy here are gravitational (from height) and spring (from a stretched or compressed spring). Errors: (1) a wound spring stores *spring potential energy*, not chemical energy \u2014 chemical energy is fuel/food/battery energy; (2) the car is sitting still, so it has *no* kinetic energy \u2014 \u2018about to move\u2019 is not motion; (3) gravitational PE is only relevant if we compare the shelf to a lower reference, which is fine to include if a reference is stated. Correct list right now: spring potential energy (from the wound spring), and gravitational potential energy relative to the floor. No kinetic energy.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal scenario names objects that are moving, raised, or springy; each clue maps to a mechanical energy term ($KE$, $PE_{grav}$, $PE_{spring}$); the sum of those terms is the mechanical energy $ME$; and any heat, fuel, or charge in the scene is total energy but not mechanical energy. Lessons 3\u20136 make each term into a formula, and Lesson 7 adds them up and tracks the total.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L2-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Which of these systems has mechanical energy but stores *none* of it as potential energy?",
+      "choices": [
+        "A ball held at rest near the ceiling.",
+        "A hockey puck gliding across level ice at constant speed.",
+        "A stretched rubber band lying still on a desk.",
+        "A book sitting on a high shelf."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 the puck is moving (kinetic energy) but is not raised and has no spring, so it has no potential energy. Its mechanical energy is entirely kinetic.",
+        "incorrect": {
+          "0": "A ball held at rest near the ceiling is not moving \u2014 its mechanical energy is entirely gravitational potential energy.",
+          "2": "A still, stretched rubber band has spring potential energy and no motion \u2014 all its mechanical energy is potential.",
+          "3": "A book on a shelf is not moving \u2014 its mechanical energy is gravitational potential energy."
+        }
+      },
+      "hint": [
+        "You need something moving (for KE) that is also not raised and has no spring (so PE = 0)."
+      ],
+      "solution": "Mechanical energy with no potential energy means kinetic energy only: something moving that is neither raised above the reference nor connected to a stretched or compressed spring. The gliding puck fits; the other three are all at rest with stored potential energy."
+    },
+    {
+      "id": "BP8-U4-L2-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A lit candle sits on a windowsill. A student claims its total energy equals its mechanical energy. Which is the best evaluation of that claim?",
+      "choices": [
+        "Correct \u2014 all energy is mechanical energy.",
+        "Incorrect \u2014 the candle stores chemical energy in its wax and releases thermal energy and light, none of which are mechanical energy; its mechanical energy is only the small gravitational PE from its height.",
+        "Correct \u2014 because the candle is not moving, all its energy is potential, which is mechanical.",
+        "Incorrect \u2014 the candle has kinetic energy from the flickering flame, so mechanical energy exceeds total energy."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 the candle's dominant energy stores (chemical energy in the wax; thermal energy and light being emitted) are not mechanical. Total energy is much larger than the tiny mechanical part.",
+        "incorrect": {
+          "0": "Chemical, thermal, and light energy are all real energy and none of them are mechanical.",
+          "2": "The candle does have a small gravitational PE, but that ignores the chemical energy of the wax and the heat and light it gives off.",
+          "3": "Mechanical energy can never *exceed* total energy \u2014 it is a part of it. The flame's motion is negligible anyway."
+        }
+      },
+      "hint": [
+        "Mechanical energy is only KE + PE. What is a candle mostly \u2018made of,\u2019 energy-wise?"
+      ],
+      "solution": "Total energy sums every form. The candle holds a large amount of chemical energy in its wax and is continuously releasing thermal energy and light. Its mechanical energy is just the modest gravitational potential energy from sitting on the windowsill (plus a negligible amount of motion in the flame). So total energy is far greater than mechanical energy \u2014 the claim is wrong."
+    },
+    {
+      "id": "BP8-U4-L2-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "multi-representation-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A student pulls a toy launcher's spring back and holds it, with a ball resting against the spring. They release it; the ball shoots up off the end of the launcher and rises through the air, then falls back down. Finally the ball lands in sand and stops.",
+      "parts": [
+        {
+          "prompt": "(a) While the student holds the spring back (ball at rest against it), state which mechanical energy forms are present.",
+          "modelResponse": "The spring is compressed, so there is spring potential energy. The ball is at rest and (taking the launcher position as the reference) not raised, so there is no kinetic energy and no gravitational potential energy at this moment. Mechanical energy is spring potential energy only.",
+          "points": 2
+        },
+        {
+          "prompt": "(b) Just after release, while the ball is moving upward and rising, state which mechanical energy forms the ball has.",
+          "modelResponse": "The ball is moving, so it has kinetic energy, and it is above the launch point and rising, so it has gravitational potential energy. Both are present; the spring potential energy has already been transferred to the ball.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) After the ball stops in the sand, its mechanical energy is about zero. Explain where that energy went, and state which conservation statement still holds.",
+          "modelResponse": "As the ball pushed into the sand, friction and the pushing-apart of sand grains converted the ball's kinetic energy into thermal energy (the ball and sand warm slightly) and a little sound. The ball's mechanical energy (KE + PE) is now near zero. Mechanical energy was not conserved \u2014 a non-mechanical pathway (friction in the sand) removed it \u2014 but conservation of total energy still holds: the mechanical energy became thermal energy and sound, so the total is unchanged.",
+          "points": 5
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 and IB both expect you to distinguish mechanical energy (KE + PE) from total energy, to recognise that friction removes mechanical energy without violating conservation of energy, and to identify which energy forms are present in a described situation. This vocabulary underlies every energy problem in the rest of the unit.",
+  "summary": "Total energy is a system's whole capacity to cause change \u2014 every form added up (kinetic, potential, thermal, chemical, and more), always in joules, and always conserved in a closed system. Mechanical energy is the KE + PE part only: kinetic energy from motion, plus gravitational and spring potential energy from position and configuration. Mechanical energy is not the same as total energy \u2014 when friction turns motion into heat, mechanical energy falls while total energy holds. To classify a situation, check for motion (KE), height (gravitational PE), and stretched or compressed springs (spring PE); treat heat, fuel, and charge as total energy that is not mechanical.",
+  "exitQuestion": {
+    "id": "BP8-U4-L2-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A trampolinist is momentarily at rest at the lowest point of a bounce, with the trampoline bed stretched down beneath them. At that instant, which mechanical energy form holds most of the energy?",
+    "choices": [
+      "Kinetic energy, because they are about to move upward.",
+      "Spring (elastic) potential energy, stored in the stretched trampoline bed.",
+      "Gravitational potential energy, because they are above the ground.",
+      "Thermal energy, from the friction of the bounce."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 at the lowest point the trampolinist is momentarily at rest (no KE) and lowest (least gravitational PE); the energy is stored as spring potential energy in the stretched bed, ready to launch them back up.",
+      "incorrect": {
+        "0": "\u2018About to move\u2019 is not moving \u2014 at the lowest point the speed is zero, so kinetic energy is zero.",
+        "2": "At the lowest point the trampolinist is at their *lowest* height, so gravitational PE is at its smallest, not its largest.",
+        "3": "A little energy is lost to heat each bounce, but the bulk is stored elastically in the stretched bed."
+      }
+    },
+    "hint": [
+      "At the lowest point: speed is zero, height is lowest. What is stretched?"
+    ],
+    "solution": "At the bottom of the bounce the trampolinist is instantaneously at rest, so kinetic energy is zero, and they are at their lowest height, so gravitational potential energy is at a minimum. The stretched trampoline bed stores the energy as spring (elastic) potential energy, which then does positive work to push the trampolinist back upward."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-031",
+    "BP8-U4-MCQ-036",
+    "BP8-U4-MCQ-034",
+    "BP8-U4-MCQ-052",
+    "BP8-U4-MCQ-032",
+    "BP8-U4-MCQ-276"
+  ],
+  "needsPlotly": false
+}

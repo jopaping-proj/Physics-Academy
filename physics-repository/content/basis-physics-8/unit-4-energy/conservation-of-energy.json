@@ -1,0 +1,426 @@
+{
+  "id": "basis-p8-u4-l7",
+  "slug": "conservation-of-energy",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Conservation of Energy",
+  "lessonTitle": "Conservation of Energy and Total Mechanical Energy",
+  "lessonNumber": "7",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 7, outcomes COE1-COE5, ED4-ED5)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the approved outcome register (COE1-COE5, ED4-ED5) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 3 \u2014 $KE = \\tfrac{1}{2}mv^2$.",
+    "Lesson 5 \u2014 $PE_{grav} = mgh$.",
+    "Lesson 6 \u2014 $PE_{spring} = \\tfrac{1}{2}kx^2$.",
+    "Lesson 4 \u2014 the work-energy theorem $W_{net} = \\Delta KE$."
+  ],
+  "majorObjective": "Distinguish open and closed systems, apply conservation of mechanical energy ($ME_i = ME_f$) to isolated systems, identify energy transformations, state when mechanical energy is not conserved, and calculate the total mechanical energy of a system.",
+  "subObjectives": [
+    "Define open and closed (isolated) systems for everyday situations.",
+    "Identify and sum every mechanical energy form present ($KE$, $PE_{grav}$, $PE_{spring}$) to get the total mechanical energy of a system.",
+    "Apply $ME_i = ME_f$ to a closed, frictionless system to compare or calculate energies at two or more points.",
+    "Name the energy transformations occurring in a described situation.",
+    "State that mechanical energy is not conserved when a non-conservative force (friction, air resistance) acts, and that total energy is still conserved."
+  ],
+  "hook": {
+    "prompt": "A ball is dropped from rest and falls freely (no air resistance). Just before it lands, compared with the moment it was released, its total mechanical energy is\u2026",
+    "choices": [
+      "greater, because it is now moving fast.",
+      "smaller, because it has fallen and lost height.",
+      "the same \u2014 gravitational potential energy converted entirely into kinetic energy.",
+      "zero, because it is about to hit the ground."
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "Lessons 3\u20136 gave you a formula for each mechanical energy form. This lesson adds them up into one number \u2014 the total mechanical energy \u2014 and tracks that number as an object moves. In a closed, frictionless system it does not change: energy just moves between forms.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Open and closed systems, and total mechanical energy",
+      "concept": "A **system** is the object (or group of objects) you choose to track.\n\n- A **closed** (or **isolated**) system exchanges **no energy** with its surroundings \u2014 or only through forms you are accounting for.\n- An **open** system does exchange energy with its surroundings (a hand pushes it, a motor drives it, friction bleeds heat out).\n\n\u2018Closed\u2019 does **not** mean \u2018not touching anything.\u2019 A ball falling freely through the air is a good closed system for mechanical energy (ignoring air resistance) even though it is surrounded by air \u2014 nothing is adding or removing mechanical energy.\n\nThe **total mechanical energy** of a system is the sum of every mechanical energy form present:\n\n$$ME = KE + PE_{grav} + PE_{spring}$$\n\nusing whichever terms actually apply. To find it: list what is moving ($KE$), what is raised ($PE_{grav}$), what spring is deformed ($PE_{spring}$), compute each, and add.",
+      "representation": "Deciding if a system is closed *for mechanical energy*:\n\n1. Is anything outside the system doing work on it (a push, a pull, a motor)? \u2192 open.\n2. Is friction or air resistance converting its mechanical energy to heat? \u2192 open (for mechanical energy).\n3. If only gravity and ideal springs act internally \u2192 closed; $ME$ stays constant.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/conservation-of-energy/pe-to-ke-bar-chart.svg",
+          "caption": "A ball falling in a closed, frictionless system: gravitational potential energy (80 J) converts entirely into kinetic energy (80 J). The total mechanical energy is 80 J at both points."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.50\\ \\mathrm{kg}$ ball is moving at $4.0\\ \\mathrm{m/s}$ at a height of $3.0\\ \\mathrm{m}$ above the ground (the reference). No spring is involved. (a) Find each mechanical energy form present. (b) Find the total mechanical energy. (c) Is this a closed system if we ignore air resistance?",
+        "phases": [
+          {
+            "label": "(a) Each form",
+            "steps": [
+              "Moving \u2192 $KE = \\tfrac{1}{2}(0.50)(4.0)^2 = \\tfrac{1}{2}(0.50)(16) = 4.0\\ \\mathrm{J}$.",
+              "Raised \u2192 $PE_{grav} = (0.50)(9.8)(3.0) = 14.7\\ \\mathrm{J}$.",
+              "No spring \u2192 $PE_{spring} = 0$."
+            ]
+          },
+          {
+            "label": "(b) Total mechanical energy",
+            "steps": [
+              "$ME = KE + PE_{grav} + PE_{spring} = 4.0 + 14.7 + 0 = 18.7\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) Closed?",
+            "steps": [
+              "Only gravity acts on the ball; nothing external does work and (ignoring air resistance) nothing bleeds energy to heat.",
+              "\u2192 **Yes, closed for mechanical energy.** $ME$ will stay $18.7\\ \\mathrm{J}$ throughout the flight."
+            ]
+          }
+        ],
+        "keyMove": "Total mechanical energy = add every form present. A system with only gravity/ideal springs acting internally is closed, so that total holds."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L7-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which of these is the best example of a *closed* system for mechanical energy?",
+        "choices": [
+          "A block being dragged across a rough floor by a rope.",
+          "A pendulum swinging in a vacuum, with a frictionless pivot.",
+          "A toy car driven by its electric motor.",
+          "A parachutist descending at a steady speed."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 with no friction, no air resistance, and nothing external doing work, the pendulum's mechanical energy stays constant. It is closed.",
+          "incorrect": {
+            "0": "The rope (external) does work and friction converts energy to heat \u2014 open on both counts.",
+            "2": "The motor supplies energy from the battery (external chemical energy) \u2014 open.",
+            "3": "Air resistance is removing mechanical energy as fast as gravity adds it \u2014 open for mechanical energy."
+          }
+        },
+        "hint": [
+          "Closed means nothing external does work and no friction or air resistance drains the mechanical energy."
+        ],
+        "solution": "A closed system for mechanical energy has no external work and no non-conservative forces (friction, air resistance). The pendulum in a vacuum with a frictionless pivot has only gravity acting, so its mechanical energy is conserved. The other three each have an external energy exchange."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Conservation of mechanical energy and energy transformations",
+      "concept": "In a **closed, frictionless** system, the total mechanical energy is **conserved**:\n\n$$ME_i = ME_f \\qquad\\Longleftrightarrow\\qquad KE_i + PE_i = KE_f + PE_f$$\n\nThe individual forms change \u2014 potential energy turns into kinetic energy and back \u2014 but their sum is fixed. This lets you compare or calculate energies at different points **without knowing the forces or the time**:\n\n- At the highest point of a frictionless ramp: most $PE_{grav}$, least $KE$.\n- At the lowest point: least $PE_{grav}$, most $KE$.\n- The drop in $PE_{grav}$ equals the rise in $KE$, exactly.\n\n**Naming the transformation** means saying which form becomes which: a falling ball is \u2018gravitational $PE \\to KE$\u2019; a ball fired upward by a spring is \u2018spring $PE \\to KE \\to$ gravitational $PE$\u2019; a pendulum swinging down then up is \u2018$PE \\to KE \\to PE$.\u2019",
+      "representation": "The conservation equation, ready to solve:\n\n$$\\tfrac{1}{2}mv_i^2 + mgh_i + \\tfrac{1}{2}kx_i^2 \\;=\\; \\tfrac{1}{2}mv_f^2 + mgh_f + \\tfrac{1}{2}kx_f^2$$\n\nDrop any term that is zero at both points. Solve for the one unknown.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\ \\mathrm{kg}$ cart starts from rest at the top of a frictionless ramp, $1.8\\ \\mathrm{m}$ above the bottom. (a) Name the energy transformation. (b) Find its speed at the bottom. (c) The ramp is made twice as tall. Is the bottom speed twice as large?",
+        "phases": [
+          {
+            "label": "(a) The transformation",
+            "steps": [
+              "Gravitational potential energy \u2192 kinetic energy, as the cart descends."
+            ]
+          },
+          {
+            "label": "(b) Speed at the bottom",
+            "steps": [
+              "Closed, frictionless: $ME_i = ME_f$. Take the bottom as $h = 0$.",
+              "$KE_i + PE_i = KE_f + PE_f \\;\\Rightarrow\\; 0 + mgh = \\tfrac{1}{2}mv_f^2 + 0$.",
+              "$mgh = \\tfrac{1}{2}mv_f^2 \\;\\Rightarrow\\; v_f = \\sqrt{2gh} = \\sqrt{2(9.8)(1.8)} = \\sqrt{35.28} \\approx 5.9\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(c) Twice the height?",
+            "steps": [
+              "$v_f = \\sqrt{2gh}$, so $v_f \\propto \\sqrt{h}$.",
+              "Doubling $h$ multiplies $v_f$ by $\\sqrt{2} \\approx 1.4$, **not** by $2$."
+            ]
+          }
+        ],
+        "keyMove": "Set $ME_i = ME_f$, cancel the zero terms, solve. Note $v_f = \\sqrt{2gh}$ \u2014 speed grows with the square root of the height."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L7-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $1.0\\ \\mathrm{kg}$ ball is released from rest $5.0\\ \\mathrm{m}$ above the ground and falls freely. Using conservation of mechanical energy, what is its kinetic energy just before it lands? (Take the ground as the reference, $g = 9.8\\ \\mathrm{m/s^2}$.)",
+        "choices": [
+          "$49\\ \\mathrm{J}$",
+          "$5.0\\ \\mathrm{J}$",
+          "$9.8\\ \\mathrm{J}$",
+          "$98\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 all the initial $PE_{grav} = mgh = (1.0)(9.8)(5.0) = 49\\ \\mathrm{J}$ converts to kinetic energy, so $KE_f = 49\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "This is just the height value. The energy is $mgh = 1.0 \\times 9.8 \\times 5.0$.",
+            "2": "This is $mg$. Multiply by the height too: $mgh = 49\\ \\mathrm{J}$.",
+            "3": "This doubled somewhere. $mgh = (1.0)(9.8)(5.0) = 49\\ \\mathrm{J}$."
+          }
+        },
+        "hint": [
+          "Starts at rest, so $KE_i = 0$. All the $PE_{grav}$ at the top becomes $KE$ at the bottom: $KE_f = mgh$."
+        ],
+        "solution": "The ball starts at rest, so its total mechanical energy is all gravitational potential energy: $ME_i = mgh = (1.0)(9.8)(5.0) = 49\\ \\mathrm{J}$. Just before landing, $h = 0$, so $ME_f$ is all kinetic: $KE_f = ME_f = ME_i = 49\\ \\mathrm{J}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "When mechanical energy is not conserved",
+      "concept": "Mechanical energy is conserved **only** in a closed system with no non-conservative forces. When **friction** or **air resistance** acts, it converts mechanical energy into **thermal energy**, so:\n\n$$ME_f < ME_i \\qquad\\text{(mechanical energy decreases)}$$\n\nThe missing amount is not destroyed \u2014 it became heat (and a little sound). **Total energy is still conserved:** $ME_i = ME_f + (\\text{thermal energy generated})$.\n\nA decrease in mechanical energy is a transformation, not a disappearance. Saying \u2018the energy was lost\u2019 is loose language for \u2018the energy left the mechanical account and entered the thermal account.\u2019\n\nSo before using $ME_i = ME_f$, always ask: **is there friction or air resistance?** If yes, you cannot set the mechanical energies equal \u2014 you need the extra thermal term, or the problem must tell you how much mechanical energy was lost.",
+      "representation": "The full statement:\n\n- **No friction / air resistance:** $ME_i = ME_f$ (mechanical energy conserved).\n- **Friction / air resistance present:** $ME_i = ME_f + E_{thermal}$, so $ME_f < ME_i$. Total energy still conserved.\n\nDecide which line applies *before* writing the equation.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $3.0\\ \\mathrm{kg}$ box slides down a ramp from a height of $2.0\\ \\mathrm{m}$. At the bottom it is moving at $5.0\\ \\mathrm{m/s}$. (a) Find $ME_i$ and $ME_f$ (bottom as reference). (b) Is mechanical energy conserved here? (c) How much energy became thermal, and what does that tell you?",
+        "phases": [
+          {
+            "label": "(a) Initial and final mechanical energy",
+            "steps": [
+              "Top (at rest): $ME_i = mgh = (3.0)(9.8)(2.0) = 58.8\\ \\mathrm{J}$.",
+              "Bottom: $ME_f = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(3.0)(5.0)^2 = \\tfrac{1}{2}(3.0)(25) = 37.5\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Conserved?",
+            "steps": [
+              "$ME_f = 37.5\\ \\mathrm{J} < ME_i = 58.8\\ \\mathrm{J}$ \u2192 **mechanical energy is not conserved.**"
+            ]
+          },
+          {
+            "label": "(c) Thermal energy generated",
+            "steps": [
+              "$E_{thermal} = ME_i - ME_f = 58.8 - 37.5 = 21.3\\ \\mathrm{J}$.",
+              "That $21.3\\ \\mathrm{J}$ went to heat in the ramp and box (friction). Total energy is conserved: $58.8 = 37.5 + 21.3$."
+            ]
+          }
+        ],
+        "keyMove": "If $ME_f < ME_i$, the difference is thermal energy from friction \u2014 total energy is still conserved."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L7-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A skateboarder rolls down into a half-pipe from one lip and comes up the other side, but not quite as high as they started. Which statement is correct?",
+        "choices": [
+          "Energy was destroyed by the ramp.",
+          "Mechanical energy decreased because friction and air resistance converted some of it to thermal energy; total energy is still conserved.",
+          "Mechanical energy is still conserved \u2014 they just did not push hard enough.",
+          "Gravitational potential energy is not conserved, but kinetic energy is."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 the shortfall in height means the mechanical energy at the second lip is less than at the first. Friction and air resistance carried that energy off as heat; nothing was destroyed.",
+          "incorrect": {
+            "0": "Energy is never destroyed \u2014 it was transformed into thermal energy.",
+            "2": "Coming up lower means mechanical energy really did decrease. \u2018Pushing harder\u2019 would be adding energy from an external source (the skater's muscles).",
+            "3": "Neither $PE_{grav}$ nor $KE$ is conserved on its own; it is their *sum* (mechanical energy) that is conserved \u2014 and here even that decreased, because of friction."
+          }
+        },
+        "hint": [
+          "Lower on the far side means less mechanical energy there. Where did it go \u2014 destroyed, or converted?"
+        ],
+        "solution": "Reaching a lower height on the far side means the mechanical energy at that point is smaller than at the start. Friction (wheels, bearings) and air resistance converted the difference into thermal energy. Mechanical energy was not conserved, but total energy was: mechanical energy lost equals thermal energy gained."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L7-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "",
+      "question": "A ball rolls along a frictionless track and passes point A moving slowly on a high ledge, then point B moving fast at ground level. A student says: \u201cAt A the ball has potential energy, and at B it has kinetic energy \u2014 so I only need one term at each point.\u201d Where does this reasoning fail?",
+      "choices": [
+        "It does not fail \u2014 that is the correct method.",
+        "At A the ball is also *moving*, so it has kinetic energy too; the total mechanical energy at A is $KE_A + PE_A$, and that whole sum equals the total at B.",
+        "At B the ball still has potential energy, so B needs two terms but A needs only one.",
+        "Neither point has kinetic energy, because the track is frictionless."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 the ball is moving at *both* points, so both have kinetic energy. Dropping the $KE_A$ term (because 'A is the potential-energy point') undercounts the total mechanical energy at A.",
+        "incorrect": {
+          "0": "Only points where the ball is momentarily at rest have zero $KE$; a point where it 'moves slowly' still has some.",
+          "2": "If ground level is the reference, $PE_B = 0$ \u2014 B genuinely needs only the $KE$ term. It is A that needs both.",
+          "3": "Frictionless means no energy is lost, not that the ball is not moving. It has $KE$ wherever it moves."
+        }
+      },
+      "hint": [
+        "Is the ball moving at point A? Then it has kinetic energy at A, whatever else it has."
+      ],
+      "solution": "Conservation of mechanical energy compares the *total* $ME = KE + PE$ at each point. At A the ball is moving (slowly), so it has both kinetic and potential energy; the correct statement is $KE_A + PE_A = KE_B + PE_B$. Only a point where the object is momentarily at rest can drop its kinetic-energy term. Omitting $KE_A$ because 'A is the PE point' is a common way to get the wrong answer."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $0.20\\ \\mathrm{kg}$ ball is thrown down a rough slide. It starts $1.5\\ \\mathrm{m}$ up moving at $2.0\\ \\mathrm{m/s}$ and reaches the bottom at $4.0\\ \\mathrm{m/s}$. Take the bottom as the reference. Is mechanical energy conserved, and by how much does it change?\n\nStudent's response: \u201cUse $ME_i = ME_f$. $ME_i = \\tfrac{1}{2}(0.20)(2.0)^2 + (0.20)(9.8)(1.5) = 0.4 + 2.94 = 3.34\\ \\mathrm{J}$. $ME_f = \\tfrac{1}{2}(0.20)(4.0)^2 = 1.6\\ \\mathrm{J}$. So $3.34 = 1.6$. That cannot be right, so I must have made an arithmetic mistake somewhere.\u201d",
+      "prompts": [
+        "State the condition required for $ME_i = ME_f$ to hold.",
+        "Explain why the student's numbers are actually correct even though $ME_i \\ne ME_f$.",
+        "State how much mechanical energy was converted to thermal energy, and write the correct energy statement."
+      ],
+      "modelResponse": "$ME_i = ME_f$ holds only for a closed system with no friction or air resistance. This slide is *rough*, so mechanical energy is not conserved \u2014 the student should not expect the two to be equal. The calculations are right: $ME_i = 3.34\\ \\mathrm{J}$ and $ME_f = 1.6\\ \\mathrm{J}$. The mechanical energy decreased by $3.34 - 1.6 = 1.74\\ \\mathrm{J} \\approx 1.7\\ \\mathrm{J}$, which friction converted to thermal energy. The correct statement is $ME_i = ME_f + E_{thermal}$, i.e. $3.34 = 1.6 + 1.74$. Total energy is conserved; mechanical energy is not.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal scenario tells you whether the system is closed and whether friction acts; the formulas from Lessons 3\u20136 give each energy form at each point; a bar chart shows the forms trading off with a fixed (or shrinking) total; and the equation $ME_i = ME_f$ (or $ME_i = ME_f + E_{thermal}$) solves for an unknown speed, height, or lost energy without needing forces or time. Lesson 8 combines all three energy forms in one problem.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L7-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.30\\ \\mathrm{kg}$ ball at height $2.0\\ \\mathrm{m}$ is moving at $3.0\\ \\mathrm{m/s}$. Taking the ground as the reference, what is its total mechanical energy?",
+      "choices": [
+        "$7.2\\ \\mathrm{J}$",
+        "$5.9\\ \\mathrm{J}$",
+        "$1.35\\ \\mathrm{J}$",
+        "$6.5\\ \\mathrm{J}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $KE = \\tfrac{1}{2}(0.30)(3.0)^2 = 1.35\\ \\mathrm{J}$; $PE_{grav} = (0.30)(9.8)(2.0) = 5.88\\ \\mathrm{J}$; $ME = 1.35 + 5.88 = 7.23 \\approx 7.2\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "This is only the $PE_{grav}$ term ($5.88\\ \\mathrm{J}$). Add the kinetic energy too.",
+          "2": "This is only the $KE$ term. Add the gravitational potential energy too.",
+          "3": "Check the $PE_{grav}$: $(0.30)(9.8)(2.0) = 5.88$, not $5.15$. Then add $KE = 1.35$."
+        }
+      },
+      "hint": [
+        "Total mechanical energy adds every form present: $KE + PE_{grav}$ here."
+      ],
+      "solution": "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(0.30)(3.0)^2 = 1.35\\ \\mathrm{J}$. $PE_{grav} = mgh = (0.30)(9.8)(2.0) = 5.88\\ \\mathrm{J}$. $ME = KE + PE_{grav} = 1.35 + 5.88 = 7.23\\ \\mathrm{J} \\approx 7.2\\ \\mathrm{J}$."
+    },
+    {
+      "id": "BP8-U4-L7-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "limiting-case-analysis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "On a frictionless track, a cart is released from rest at height $H$. Track A is a straight ramp; track B is a curvy ramp that also starts at height $H$ and ends at the same bottom point. How do the carts' speeds at the bottom compare?",
+      "choices": [
+        "Track A gives a higher bottom speed, because it is the direct route.",
+        "Track B gives a higher bottom speed, because the cart travels farther.",
+        "The bottom speeds are equal, because $ME_i = ME_f$ depends only on the start and end heights.",
+        "It cannot be determined without the shapes of the tracks."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct \u2014 with no friction, $mgh = \\tfrac{1}{2}mv^2$ at the bottom regardless of path, so $v = \\sqrt{2gH}$ for both. The shape does not matter; only the height drop does.",
+        "incorrect": {
+          "0": "Path length does not enter a frictionless energy-conservation calculation \u2014 only the height change.",
+          "1": "Travelling farther on a frictionless track costs no energy, so it does not change the bottom speed.",
+          "3": "It can be determined: both start and end at the same heights, so both reach $v = \\sqrt{2gH}$."
+        }
+      },
+      "hint": [
+        "Write $ME_i = ME_f$. Which quantities appear \u2014 heights and speeds, or path lengths?"
+      ],
+      "solution": "For a frictionless track, conservation of mechanical energy gives $mgH = \\tfrac{1}{2}mv^2$ at the bottom, so $v = \\sqrt{2gH}$. This depends only on the vertical drop $H$, not on the path taken. Both carts reach the same bottom speed. (The curvy track only changes *when* the cart arrives, not how fast.)"
+    },
+    {
+      "id": "BP8-U4-L7-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "scenario": "A $0.40\\ \\mathrm{kg}$ ball is launched straight up from ground level by a spring ($k = 250\\ \\mathrm{N/m}$) that was compressed $0.12\\ \\mathrm{m}$. Take ground level as the reference and ignore air resistance until part (c).",
+      "parts": [
+        {
+          "prompt": "(a) Find the spring potential energy stored just before release, and name the energy transformations that occur from release to the ball's highest point.",
+          "modelResponse": "$PE_{spring} = \\tfrac{1}{2}kx^2 = \\tfrac{1}{2}(250)(0.12)^2 = \\tfrac{1}{2}(250)(0.0144) = 1.8\\ \\mathrm{J}$. Transformations: spring potential energy converts to kinetic energy as the spring pushes the ball off, then kinetic energy converts to gravitational potential energy as the ball rises, reaching all-gravitational-PE at the highest point.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Using conservation of mechanical energy, find the maximum height the ball reaches above the launch point.",
+          "modelResponse": "At the highest point the ball is momentarily at rest, so all $1.8\\ \\mathrm{J}$ is gravitational potential energy: $mgh = 1.8\\ \\mathrm{J}$. So $h = \\dfrac{1.8}{mg} = \\dfrac{1.8}{(0.40)(9.8)} = \\dfrac{1.8}{3.92} \\approx 0.46\\ \\mathrm{m}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) With air resistance included, the ball only reaches $0.40\\ \\mathrm{m}$. How much mechanical energy was converted to thermal energy on the way up, and which conservation law still holds exactly?",
+          "modelResponse": "Mechanical energy at the top with air resistance: $mgh = (0.40)(9.8)(0.40) = 1.57\\ \\mathrm{J}$. Energy converted to thermal: $1.8 - 1.57 = 0.23\\ \\mathrm{J}$ (about $0.2\\ \\mathrm{J}$). Conservation of *mechanical* energy does not hold (air resistance is non-conservative), but conservation of *total* energy holds exactly: the $0.23\\ \\mathrm{J}$ became thermal energy in the ball and the air.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Conservation of mechanical energy is one of the highest-value tools in AP Physics 1 and IB: it finds speeds and heights without kinematics or forces, it is path-independent on frictionless tracks, and examiners routinely test the distinction between mechanical-energy conservation (fails with friction) and total-energy conservation (always holds). Energy bar charts are a common representation on both exams.",
+  "summary": "A closed (isolated) system exchanges no energy with its surroundings; 'closed' is about the energy boundary, not about physical contact. The total mechanical energy is $ME = KE + PE_{grav} + PE_{spring}$, summing every form present. In a closed, frictionless system mechanical energy is conserved: $ME_i = ME_f$, so potential and kinetic energy trade off with a fixed total \u2014 this solves for speeds and heights without forces or time, and is path-independent. When friction or air resistance acts, mechanical energy decreases (the difference becomes thermal energy) but total energy is still conserved: $ME_i = ME_f + E_{thermal}$.",
+  "exitQuestion": {
+    "id": "BP8-U4-L7-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A pendulum in air is released from a height and, swing after swing, rises to lower and lower heights until it stops. Which statement is exactly correct?",
+    "choices": [
+      "Both mechanical energy and total energy are conserved throughout.",
+      "Mechanical energy decreases each swing (converted to thermal energy by air resistance and pivot friction); total energy is conserved.",
+      "Total energy decreases each swing; mechanical energy is conserved.",
+      "Energy is destroyed a little at a time until the pendulum stops."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 non-conservative forces (air resistance, friction at the pivot) steadily move energy out of the mechanical account into thermal energy. Mechanical energy falls; total energy holds.",
+      "incorrect": {
+        "0": "If mechanical energy were conserved, the pendulum would rise to its original height every swing and never stop.",
+        "2": "Total energy is never lost \u2014 it is mechanical energy that decreases here.",
+        "3": "Energy is not destroyed. The lost mechanical energy has become thermal energy in the air and the pivot."
+      }
+    },
+    "hint": [
+      "The pendulum stopping is the giveaway: mechanical energy must be leaving. Leaving to where, and is the total affected?"
+    ],
+    "solution": "Air resistance and pivot friction are non-conservative forces. Each swing they convert some of the pendulum's mechanical energy into thermal energy, so the mechanical energy (and the height reached) decreases until it is zero and the pendulum hangs still. Total energy is conserved at every instant \u2014 the mechanical energy lost equals the thermal energy produced."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-136",
+    "BP8-U4-MCQ-139",
+    "BP8-U4-MCQ-144",
+    "BP8-U4-MCQ-150",
+    "BP8-U4-MCQ-141",
+    "BP8-U4-MCQ-146"
+  ],
+  "needsPlotly": false
+}

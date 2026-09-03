@@ -1,0 +1,419 @@
+{
+  "id": "basis-p8-u4-l4",
+  "slug": "work-energy-theorem",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Work-Energy Theorem",
+  "lessonTitle": "The Work-Energy Theorem",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/unit_04_architecture.md (Module 4, outcomes WET1-WET2)",
+  "sourceApproval": "Outcomes Founder-approved; curriculum architecture approved under DEC-044. No rescue_sprint lesson module exists for Unit 4 \u2014 this lesson is authored from the approved outcome register (WET1-WET2) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Lesson 1 \u2014 work is $W = \\pm Fd$ for a constant force at $0^\\circ$ or $180^\\circ$ to the displacement; positive work adds energy, negative work removes it.",
+    "Lesson 3 \u2014 $KE = \\tfrac{1}{2}mv^2$.",
+    "Unit 3 \u2014 the net force on an object is the vector sum of all forces on it."
+  ],
+  "majorObjective": "State and apply the work-energy theorem $W_{net} = \\Delta KE$: reason from a described change in speed to the sign of the net work, and calculate either $W_{net}$ or $\\Delta KE$ given the other.",
+  "subObjectives": [
+    "State that the net work done on an object equals the change in its kinetic energy: $W_{net} = KE_f - KE_i$.",
+    "State that positive net work speeds an object up, negative net work slows it down, and zero net work keeps its speed constant.",
+    "Given a described speed change, determine the sign of the net work; given the sign of the net work, describe the speed change.",
+    "Calculate $W_{net}$ from $\\Delta KE$, or $\\Delta KE$ (and a final speed) from $W_{net}$ and the initial state."
+  ],
+  "hook": {
+    "prompt": "A hockey puck slides across frictionless ice at a steady speed \u2014 no one touches it. How much *net* work is being done on the puck?",
+    "choices": [
+      "A lot \u2014 it keeps moving, so something must be doing work.",
+      "Zero \u2014 its kinetic energy is not changing.",
+      "Negative \u2014 it will eventually slow down.",
+      "It depends on how fast the puck is going."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Lesson 1 said positive work adds energy to an object and negative work removes it. This lesson makes \u2018energy added to a moving object\u2019 precise: the *net* work done on an object is exactly the change in its kinetic energy.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The theorem: net work equals the change in kinetic energy",
+      "concept": "The **work-energy theorem** says:\n\n$$W_{net} = \\Delta KE = KE_f - KE_i$$\n\nThe **net work** \u2014 the total work done by *all* forces on an object, which is the same as the work done by the net force \u2014 equals the **change in the object's kinetic energy**.\n\nConsequences:\n\n- **$W_{net} > 0$** (net force has a component along the motion) \u2192 $KE$ increases \u2192 the object **speeds up**.\n- **$W_{net} < 0$** (net force opposes the motion) \u2192 $KE$ decreases \u2192 the object **slows down**.\n- **$W_{net} = 0$** (no net force, or net force perpendicular to the motion) \u2192 $KE$ constant \u2192 **constant speed**.\n\nThis theorem is only about **kinetic** energy \u2014 not potential energy, not total energy. And it uses **net** work, not the work of one chosen force.",
+      "representation": "Reading the theorem both directions:\n\n- Speed change $\\to$ sign of $W_{net}$: faster $\\Rightarrow W_{net} > 0$; slower $\\Rightarrow W_{net} < 0$; same speed $\\Rightarrow W_{net} = 0$.\n- Sign of $W_{net} \\to$ speed change: $+ \\Rightarrow$ faster; $- \\Rightarrow$ slower; $0 \\Rightarrow$ unchanged.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/work-energy-theorem/net-work-changes-ke.svg",
+          "caption": "A net force acting through a displacement $d$ does positive net work on the block, and the block's kinetic energy rises from its start value to its end value by exactly that amount."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each object, state the sign of the net work done on it: (a) a car accelerating from a stop light; (b) a book sliding to rest across a table; (c) a satellite coasting at constant speed in a circular orbit; (d) an elevator descending at a steady speed.",
+        "phases": [
+          {
+            "label": "(a) Car accelerating",
+            "steps": [
+              "Speed increases \u2192 $KE$ increases \u2192 $W_{net} > 0$ (**positive**)."
+            ]
+          },
+          {
+            "label": "(b) Book sliding to rest",
+            "steps": [
+              "Speed decreases to zero \u2192 $KE$ decreases \u2192 $W_{net} < 0$ (**negative**; friction does it)."
+            ]
+          },
+          {
+            "label": "(c) Satellite at constant speed",
+            "steps": [
+              "Speed constant \u2192 $KE$ constant \u2192 $W_{net} = 0$. (Gravity is perpendicular to the motion at every instant, so it does no work.)"
+            ]
+          },
+          {
+            "label": "(d) Elevator descending at steady speed",
+            "steps": [
+              "Speed constant \u2192 $KE$ constant \u2192 $W_{net} = 0$. (The cable's negative work and gravity's positive work cancel.)"
+            ]
+          }
+        ],
+        "keyMove": "Look only at the *speed*: rising \u2192 positive net work; falling \u2192 negative; steady \u2192 zero."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L4-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A crate slides across a rough floor and gradually slows to a stop. What is the sign of the net work done on the crate as it slows?",
+        "choices": [
+          "Positive, because it is moving.",
+          "Negative, because its kinetic energy decreases.",
+          "Zero, because no one is pushing it.",
+          "It cannot be determined without the crate's mass."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 the crate slows down, so its kinetic energy decreases, so $\\Delta KE < 0$, so $W_{net} = \\Delta KE < 0$.",
+          "incorrect": {
+            "0": "Moving does not require positive net work \u2014 only *speeding up* does. This crate is slowing.",
+            "2": "There is a force doing work: kinetic friction, which does negative work as the crate slides.",
+            "3": "The *sign* follows from the speed change alone. The mass would only be needed for the numerical value."
+          }
+        },
+        "hint": [
+          "Is the kinetic energy going up or down? $W_{net}$ has the same sign as $\\Delta KE$."
+        ],
+        "solution": "By the work-energy theorem $W_{net} = \\Delta KE$. The crate slows down, so $KE_f < KE_i$ and $\\Delta KE$ is negative; therefore the net work is negative. Kinetic friction is the force doing that negative work, converting the crate's kinetic energy into thermal energy."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Reasoning from speed changes, and spotting bad premises",
+      "concept": "Because $W_{net} = \\Delta KE$, a statement about how an object's speed changes is a statement about the net work \u2014 and vice versa. This lets you check whether a described situation is even consistent.\n\n**Example of an inconsistent premise:** \u201cA box moves at constant speed while a single net force pushes it forward.\u201d If there is a net force forward, it does positive net work, so the kinetic energy must rise and the box must speed up. \u201cConstant speed\u201d and \u201cnon-zero net force\u201d cannot both be true. Either the speed is actually increasing, or the forces actually balance (zero net force) and \u201cnet force\u201d was the wrong word for one applied force.\n\nThis is the same idea as Newton's first law from Unit 3, now stated in energy language: constant speed in a straight line \u21d4 zero net force \u21d4 zero net work.",
+      "representation": "Consistency check for a described motion:\n\n| Claim about speed | Required net work | Required net force |\n|---|---|---|\n| speeding up | positive | component along motion |\n| slowing down | negative | component against motion |\n| constant speed, straight line | zero | zero |\n\nIf a description violates a row, the description has an error.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student writes: \u201cA puck slides on frictionless ice at a steady $4\\ \\mathrm{m/s}$. The net force on it is $2\\ \\mathrm{N}$ forward, so over $3\\ \\mathrm{m}$ the net work is $6\\ \\mathrm{J}$ and the puck's kinetic energy went up by $6\\ \\mathrm{J}$.\u201d Identify the contradiction and correct the statement.",
+        "phases": [
+          {
+            "label": "Test the premise",
+            "steps": [
+              "The puck moves at a *steady* speed, so $\\Delta KE = 0$, so $W_{net} = 0$.",
+              "But the student also claims a $2\\ \\mathrm{N}$ forward net force over $3\\ \\mathrm{m}$, which would give $W_{net} = +6\\ \\mathrm{J} \\ne 0$. Contradiction."
+            ]
+          },
+          {
+            "label": "Resolve it",
+            "steps": [
+              "On frictionless ice with nothing pushing it, the puck has **zero net force** (Newton's first law).",
+              "So $W_{net} = 0$ and $\\Delta KE = 0$ \u2014 consistent with the steady $4\\ \\mathrm{m/s}$. The \u2018$2\\ \\mathrm{N}$ net force\u2019 was invented; there is no such force."
+            ]
+          }
+        ],
+        "keyMove": "\u2018Constant speed\u2019 forces $W_{net} = 0$ and net force $= 0$. Any non-zero net force in the same sentence is a mistake."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L4-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "An object's kinetic energy is the same at the end of a trip as at the start, but it sped up and slowed down along the way. What is the net work done over the whole trip?",
+        "choices": [
+          "Positive, because it moved.",
+          "Zero, because the final and initial kinetic energies are equal.",
+          "Negative, because it slowed down at some point.",
+          "It cannot be zero if the speed changed during the trip."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 $W_{net} = KE_f - KE_i$. If $KE_f = KE_i$, then $W_{net} = 0$ for the whole trip, regardless of what happened in between.",
+          "incorrect": {
+            "0": "Net work depends only on the endpoints' kinetic energies, not on whether the object moved.",
+            "2": "It also sped up at some point. Only the *net* effect over the whole trip counts, and that is zero here.",
+            "3": "The theorem compares only the start and end. Equal start and end kinetic energies means zero net work, even with changes in between."
+          }
+        },
+        "hint": [
+          "$W_{net}$ over an interval depends only on $KE$ at the two ends of that interval."
+        ],
+        "solution": "The work-energy theorem $W_{net} = KE_f - KE_i$ compares only the initial and final kinetic energies. If they are equal, the net work over that interval is zero. Positive net work during the speed-ups was exactly cancelled by negative net work during the slow-downs."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Calculating with the theorem",
+      "concept": "The theorem is an equation, so it solves for whichever quantity is unknown:\n\n- **Net work from a speed change:** compute $KE_i = \\tfrac{1}{2}mv_i^2$ and $KE_f = \\tfrac{1}{2}mv_f^2$, then $W_{net} = KE_f - KE_i$.\n- **Final speed from the net work:** $KE_f = KE_i + W_{net}$, then $v_f = \\sqrt{2\\,KE_f/m}$.\n- **Net work from individual forces:** add up the work done by each force (Lesson 1), keeping signs \u2014 that sum is $W_{net}$, and it equals $\\Delta KE$.\n\nSign discipline is everything: $W_{net}$ is negative when the object slows, and $KE_f = KE_i + W_{net}$ must stay $\\ge 0$.",
+      "representation": "Two rearrangements:\n\n- for net work: $W_{net} = \\tfrac{1}{2}mv_f^2 - \\tfrac{1}{2}mv_i^2$\n- for final speed: $v_f = \\sqrt{\\dfrac{2(KE_i + W_{net})}{m}}$",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\ \\mathrm{kg}$ toy car is moving at $3.0\\ \\mathrm{m/s}$. A child pushes it in the direction of motion with a steady $5.0\\ \\mathrm{N}$ force over $4.0\\ \\mathrm{m}$ (assume friction is negligible). (a) Find the net work done on the car. (b) Find its final kinetic energy. (c) Find its final speed.",
+        "phases": [
+          {
+            "label": "(a) Net work",
+            "steps": [
+              "Only one force does work, along the motion ($0^\\circ$): $W_{net} = +Fd = +(5.0\\ \\mathrm{N})(4.0\\ \\mathrm{m}) = +20\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Final kinetic energy",
+            "steps": [
+              "$KE_i = \\tfrac{1}{2}(2.0)(3.0)^2 = \\tfrac{1}{2}(2.0)(9.0) = 9.0\\ \\mathrm{J}$.",
+              "$KE_f = KE_i + W_{net} = 9.0 + 20 = 29\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) Final speed",
+            "steps": [
+              "$v_f = \\sqrt{\\dfrac{2\\,KE_f}{m}} = \\sqrt{\\dfrac{2(29)}{2.0}} = \\sqrt{29} \\approx 5.4\\ \\mathrm{m/s}$."
+            ]
+          }
+        ],
+        "keyMove": "Add $W_{net}$ to the initial kinetic energy to get the final kinetic energy, then convert back to a speed."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L4-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $4.0\\ \\mathrm{kg}$ box moving at $6.0\\ \\mathrm{m/s}$ is brought to rest. What is the net work done on the box?",
+        "choices": [
+          "$-72\\ \\mathrm{J}$",
+          "$+72\\ \\mathrm{J}$",
+          "$-24\\ \\mathrm{J}$",
+          "$0\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 $KE_i = \\tfrac{1}{2}(4.0)(6.0)^2 = 72\\ \\mathrm{J}$, $KE_f = 0$, so $W_{net} = KE_f - KE_i = 0 - 72 = -72\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "The box *loses* kinetic energy, so the net work is negative, not positive.",
+            "2": "This is $\\tfrac{1}{2}mv$ without squaring the speed. $KE_i = \\tfrac{1}{2}(4.0)(36) = 72\\ \\mathrm{J}$.",
+            "3": "The speed changes from $6.0\\ \\mathrm{m/s}$ to $0$, so $\\Delta KE \\ne 0$ and the net work is not zero."
+          }
+        },
+        "hint": [
+          "$W_{net} = KE_f - KE_i$. Here $KE_f = 0$, so $W_{net} = -KE_i$."
+        ],
+        "solution": "$KE_i = \\tfrac{1}{2}(4.0\\ \\mathrm{kg})(6.0\\ \\mathrm{m/s})^2 = \\tfrac{1}{2}(4.0)(36) = 72\\ \\mathrm{J}$. The box comes to rest, so $KE_f = 0$ and $W_{net} = KE_f - KE_i = -72\\ \\mathrm{J}$. The negative sign shows energy was removed from the box (by friction or brakes)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L4-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: \u201cThe work-energy theorem says the work done on an object equals its total energy change.\u201d What is the precise correction?",
+      "choices": [
+        "Nothing \u2014 the statement is exactly right.",
+        "It relates the *net* work to the change in *kinetic* energy specifically \u2014 not the work of one force, and not the total energy.",
+        "It relates the work of any single force to the change in potential energy.",
+        "It only applies when the object starts from rest."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 $W_{net} = \\Delta KE$. The two key words are *net* (all forces together) and *kinetic* (not potential, not total).",
+        "incorrect": {
+          "0": "\u2018Work\u2019 must be *net* work, and \u2018energy change\u2019 must be the *kinetic* energy change specifically.",
+          "2": "That describes potential energy's definition, not the work-energy theorem.",
+          "3": "It works for any initial speed \u2014 $W_{net} = KE_f - KE_i$ with any $KE_i$."
+        }
+      },
+      "hint": [
+        "Which two words in \u2018net work equals the change in kinetic energy\u2019 are doing the work?"
+      ],
+      "solution": "The work-energy theorem is $W_{net} = \\Delta KE$. It equates the *net* work (the sum over all forces, equivalently the work of the net force) with the change in *kinetic* energy only. Potential energy and other forms are not part of this statement \u2014 they are handled by conservation of energy in Lesson 7."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $3.0\\ \\mathrm{kg}$ block moving at $2.0\\ \\mathrm{m/s}$ has $+30\\ \\mathrm{J}$ of net work done on it. Find its final speed.\n\nStudent's response: \u201c$W_{net} = \\Delta KE$, so $\\Delta KE = 30\\ \\mathrm{J}$. Then $v_f = v_i + \\Delta KE / m = 2.0 + 30/3.0 = 12\\ \\mathrm{m/s}$.\u201d",
+      "prompts": [
+        "State the correct relationship between $\\Delta KE$, $KE_i$, and $KE_f$.",
+        "Identify the student's error in going from $\\Delta KE$ to $v_f$.",
+        "Give the correct final speed."
+      ],
+      "modelResponse": "$\\Delta KE = KE_f - KE_i$, and each kinetic energy is $\\tfrac{1}{2}mv^2$ \u2014 you cannot add an energy directly to a speed. The student added $\\Delta KE/m$ to $v_i$, which mixes units (J/kg is not m/s) and skips the squaring. Correct: $KE_i = \\tfrac{1}{2}(3.0)(2.0)^2 = 6.0\\ \\mathrm{J}$; $KE_f = KE_i + W_{net} = 6.0 + 30 = 36\\ \\mathrm{J}$; $v_f = \\sqrt{2\\,KE_f/m} = \\sqrt{2(36)/3.0} = \\sqrt{24} \\approx 4.9\\ \\mathrm{m/s}$.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal description of a speed change fixes the sign of $\\Delta KE$, and so of $W_{net}$; $KE = \\tfrac{1}{2}mv^2$ (Lesson 3) turns speeds into energies; $W = \\pm Fd$ (Lesson 1) turns forces and displacements into work; and the theorem $W_{net} = \\Delta KE$ ties the two together, letting a force-and-distance problem be solved as an energy problem. Lesson 7 extends this from kinetic energy alone to the full mechanical-energy balance.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L4-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $1500\\ \\mathrm{kg}$ car speeds up from $8.0\\ \\mathrm{m/s}$ to $12\\ \\mathrm{m/s}$. What is the net work done on it?",
+      "choices": [
+        "$+60{,}000\\ \\mathrm{J}$",
+        "$+6000\\ \\mathrm{J}$",
+        "$+3000\\ \\mathrm{J}$",
+        "$+108{,}000\\ \\mathrm{J}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $KE_i = \\tfrac{1}{2}(1500)(8.0)^2 = 48{,}000\\ \\mathrm{J}$; $KE_f = \\tfrac{1}{2}(1500)(12)^2 = 108{,}000\\ \\mathrm{J}$; $W_{net} = 108{,}000 - 48{,}000 = 60{,}000\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "Check the kinetic energies: $\\tfrac{1}{2}(1500)(64) = 48{,}000$ and $\\tfrac{1}{2}(1500)(144) = 108{,}000$; the difference is $60{,}000\\ \\mathrm{J}$.",
+          "2": "This looks like $\\tfrac{1}{2}m(v_f - v_i)^2 = \\tfrac{1}{2}(1500)(4.0)^2$ \u2014 you cannot subtract the speeds first and then square. Compute each kinetic energy separately.",
+          "3": "This is $KE_f$ alone. The net work is the *change*, $KE_f - KE_i$."
+        }
+      },
+      "hint": [
+        "Compute $KE_i$ and $KE_f$ separately with $\\tfrac{1}{2}mv^2$, then subtract."
+      ],
+      "solution": "$KE_i = \\tfrac{1}{2}(1500\\ \\mathrm{kg})(8.0\\ \\mathrm{m/s})^2 = 48{,}000\\ \\mathrm{J}$. $KE_f = \\tfrac{1}{2}(1500)(12\\ \\mathrm{m/s})^2 = 108{,}000\\ \\mathrm{J}$. $W_{net} = \\Delta KE = 108{,}000 - 48{,}000 = 60{,}000\\ \\mathrm{J}$."
+    },
+    {
+      "id": "BP8-U4-L4-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A ball is thrown straight up. Ignoring air resistance, what is the sign of the net work done on the ball by gravity during the upward part of the flight, and what does that tell you?",
+      "choices": [
+        "Positive \u2014 gravity always adds energy.",
+        "Negative \u2014 gravity acts downward while the ball moves upward, so it does negative work and the ball's kinetic energy decreases (it slows down).",
+        "Zero \u2014 gravity is perpendicular to the motion.",
+        "It depends on how hard the ball was thrown."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 on the way up, gravity (down) is opposite the displacement (up), so it does negative net work; by $W_{net} = \\Delta KE$, the kinetic energy falls and the ball slows, reaching zero speed at the top.",
+        "incorrect": {
+          "0": "Gravity does positive work only when the object moves *downward*. On the way up it does negative work.",
+          "2": "Straight-up motion is parallel to gravity, not perpendicular \u2014 the angle is $180^\\circ$, so the work is negative and non-zero.",
+          "3": "The *sign* is negative regardless of the throw speed; only the amount depends on the details."
+        }
+      },
+      "hint": [
+        "Which way does the ball move going up? Which way does gravity point? Angle $\\to$ sign of work $\\to$ speed change."
+      ],
+      "solution": "During the rise, the displacement is upward and the gravitational force is downward, an angle of $180^\\circ$, so gravity does negative work. By the work-energy theorem the ball's kinetic energy decreases, so it slows down \u2014 exactly matching the observation that the ball reaches zero speed at the top of its path."
+    },
+    {
+      "id": "BP8-U4-L4-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $5.0\\ \\mathrm{kg}$ sled is moving at $4.0\\ \\mathrm{m/s}$ on level snow. A dog pulls it forward with a steady horizontal force of $18\\ \\mathrm{N}$; kinetic friction on the sled is $6.0\\ \\mathrm{N}$. The sled travels $10\\ \\mathrm{m}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the work done on the sled by the pulling force and by friction over the $10\\ \\mathrm{m}$.",
+          "modelResponse": "Pull ($0^\\circ$): $W = +Fd = +(18)(10) = +180\\ \\mathrm{J}$. Friction ($180^\\circ$): $W = -Fd = -(6.0)(10) = -60\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the net work done on the sled and, using the work-energy theorem, its final kinetic energy.",
+          "modelResponse": "$W_{net} = (+180) + (-60) = +120\\ \\mathrm{J}$ (the weight and normal force are perpendicular to the motion and do no work). $KE_i = \\tfrac{1}{2}(5.0)(4.0)^2 = 40\\ \\mathrm{J}$. By $W_{net} = \\Delta KE$: $KE_f = KE_i + W_{net} = 40 + 120 = 160\\ \\mathrm{J}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Find the sled's final speed.",
+          "modelResponse": "$v_f = \\sqrt{2\\,KE_f/m} = \\sqrt{2(160)/5.0} = \\sqrt{64} = 8.0\\ \\mathrm{m/s}$.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The work-energy theorem is a core AP Physics 1 and IB tool: it lets you find a final speed without kinematics when a force acts over a known distance, it explains why stopping distance grows with speed squared, and it appears in reasoning items about the sign of work done by gravity or friction. Examiners test the \u2018net\u2019 and \u2018kinetic\u2019 qualifiers directly.",
+  "summary": "The work-energy theorem states $W_{net} = \\Delta KE = KE_f - KE_i$: the total work done by all forces on an object equals the change in its kinetic energy. Positive net work speeds an object up, negative net work slows it down, zero net work keeps its speed constant \u2014 the energy restatement of Newton's first law. It concerns *net* work and *kinetic* energy only. To use it numerically, find $KE_i$ and $KE_f$ with $\\tfrac{1}{2}mv^2$ and take the difference, or add $W_{net}$ to $KE_i$ to get $KE_f$ and then the final speed. A described 'constant speed' with a non-zero net force is an inconsistent premise.",
+  "exitQuestion": {
+    "id": "BP8-U4-L4-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "An object's speed does not change as it moves through a region. What can you conclude about the net work done on it there?",
+    "choices": [
+      "It is positive, because the object keeps moving.",
+      "It is zero, because the kinetic energy does not change.",
+      "It is negative, because no energy is being added.",
+      "Nothing can be concluded without knowing the forces."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 constant speed means constant kinetic energy, so $\\Delta KE = 0$ and $W_{net} = \\Delta KE = 0$.",
+      "incorrect": {
+        "0": "Constant speed, not increasing speed \u2014 so no positive net work is required or done.",
+        "2": "Zero net work is not the same as negative net work. The kinetic energy is unchanged, so $W_{net} = 0$ exactly.",
+        "3": "You can conclude it directly: the speed is constant, so $\\Delta KE = 0$, so $W_{net} = 0$ \u2014 whatever the individual forces are, they must sum to zero work."
+      }
+    },
+    "hint": [
+      "Constant speed \u2192 constant kinetic energy \u2192 what does $W_{net} = \\Delta KE$ give?"
+    ],
+    "solution": "If the speed does not change, the kinetic energy does not change, so $\\Delta KE = 0$. By the work-energy theorem $W_{net} = \\Delta KE = 0$: the net work done on the object over that region is zero, even if individual forces each do non-zero work that cancels."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-221",
+    "BP8-U4-MCQ-224",
+    "BP8-U4-MCQ-226",
+    "BP8-U4-MCQ-233",
+    "BP8-U4-MCQ-230",
+    "BP8-U4-MCQ-235"
+  ],
+  "needsPlotly": false
+}
