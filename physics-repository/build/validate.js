@@ -63,6 +63,16 @@ export function validateContent({ taxonomies }) {
   const cogLevels = new Set(taxonomies.cognitiveLevel.values.map((v) => v.level));
   const misconceptions = new Set(taxonomies.misconception?.values || []);
 
+  // topicId controlled vocabulary for native question banks (data/question-bank-topics.json).
+  // Kept out of taxonomies.json deliberately — it is bank-specific. Optional: absent file skips the check.
+  let bankTopics = {};
+  try {
+    const tp = path.join(ROOT, "data", "question-bank-topics.json");
+    if (fs.existsSync(tp)) bankTopics = JSON.parse(fs.readFileSync(tp, "utf8")).topics || {};
+  } catch (e) {
+    warnings.push(`data/question-bank-topics.json is present but unreadable — ${e.message}`);
+  }
+
   const rel = (f) => path.relative(ROOT, f);
 
   function checkCourses(where, obj) {
@@ -187,7 +197,21 @@ export function validateContent({ taxonomies }) {
       continue;
     }
     const items = Array.isArray(data) ? data : data.items || data.questions || [];
-    items.forEach((q) => checkItem(`${rel(f)} [${q.id || "?"}]`, q));
+    items.forEach((q) => {
+      const where = `${rel(f)} [${q.id || "?"}]`;
+      checkItem(where, q);
+      if (q.topicId != null && Object.keys(bankTopics).length) {
+        const topic = bankTopics[q.topicId];
+        if (!topic) {
+          errors.push(`${where}: topicId "${q.topicId}" is not in data/question-bank-topics.json`);
+        } else if (Array.isArray(q.courses)) {
+          const allowed = new Set([...(topic.courses || []), ...(topic.plannedCourses || [])]);
+          for (const c of q.courses)
+            if (!allowed.has(c))
+              errors.push(`${where}: course "${c}" is not listed for topic "${q.topicId}" in data/question-bank-topics.json (add it to courses/plannedCourses there before cross-tagging)`);
+        }
+      }
+    });
   }
 
   // ---- lesson content files ----

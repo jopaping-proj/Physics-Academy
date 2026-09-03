@@ -158,10 +158,10 @@
     {
       "type": "concept-check",
       "phase": "post",
-      "slug": null,
+      "slug": "diagnostic/student/online-form",
       "title": "Unit 2 Concept Check — retake",
-      "status": "planned",
-      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+      "status": "approved",
+      "note": "Retake the same entry diagnostic (production v0.3.15) at the end of the unit and compare your two scores. It self-scores in the browser."
     },
     {
       "type": "module",

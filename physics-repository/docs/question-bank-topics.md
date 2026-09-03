@@ -24,17 +24,26 @@ That key is `topicId`.
 ## 2. `topicId`
 
 A lowercase, hyphenated slug naming a coherent teaching topic, **independent of
-any course's unit numbering**. It is a free-text field on bank items (not yet a
-controlled vocabulary in `data/taxonomies.json` — that promotion is a later
-step once the topic list stabilises). One `topicId` maps to exactly one shared
-bank file pair (`<topicId>.json` for MCQ, `<topicId>-frq.json` for FRQ).
+any course's unit numbering**. It is a **controlled vocabulary**: the valid
+values, their bank files, and their eligible courses live in
+**`data/question-bank-topics.json`**, and `build/validate.js` fails the build if
+a bank item carries an unknown `topicId` or lists a `course` the topic has not
+declared (in `courses` or `plannedCourses`). It is kept out of
+`data/taxonomies.json` deliberately — it is bank-specific, not a general
+item taxonomy. One `topicId` maps to exactly one shared bank file pair
+(`<topicId>.json` for MCQ, `<topicId>-frq.json` for FRQ).
 
 ### Registry
 
-| `topicId` | Bank files | Courses that draw from it | Notes |
-|---|---|---|---|
-| `kinematics-1d` | `kinematics-1d.json`, `kinematics-1d-frq.json` | `basis-physics-8` (live) · `ap-physics-1`, `ib-physics-sl`, `ib-physics-hl` (planned) | One-dimensional motion only: motion language, `x`/`v`/`a`–`t` graphs, constant-acceleration equations, 1-D free fall, vector components / SOHCAHTOA. **No** projectile motion, force-based reasoning, or calculus — those live in other topics. 250 MCQ + 50 FRQ converted from the Founder-approved BASIS Unit 2 test bank. |
-| `forces-and-newtons-laws` | `forces-and-newtons-laws.json`, `forces-and-newtons-laws-frq.json` | `basis-physics-8` (live) · `ap-physics-1` (planned) | Gravity (`F_G = G m₁m₂/r²`), inertia and Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with/without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines; no 2-D vector force addition beyond incline components. 250 MCQ + 50 FRQ converted from `resources/physics8/rescue_sprint/unit_03_forces/test_bank/`. The 10 universal-gravitation numerical items are `calculatorFree: false` (a scientific calculator is permitted for that outcome per DEC-040). |
+`data/question-bank-topics.json` is the source of truth; this table mirrors it.
+`courses` = drawn from today; `plannedCourses` = pre-declared so the validator
+permits the eventual cross-tag (move a slug from `plannedCourses` to `courses`
+when the target course's unit is built and reviewed).
+
+| `topicId` | Bank files | `courses` (live) | `plannedCourses` | Notes |
+|---|---|---|---|---|
+| `kinematics-1d` | `kinematics-1d.json`, `kinematics-1d-frq.json` | `basis-physics-8` | `ap-physics-1`, `ib-physics-sl`, `ib-physics-hl` | One-dimensional motion only: motion language, `x`/`v`/`a`–`t` graphs, constant-acceleration equations, 1-D free fall, vector components / SOHCAHTOA. **No** projectile motion, force-based reasoning, or calculus. 250 MCQ + 50 FRQ from the Founder-approved BASIS Unit 2 test bank. |
+| `forces-and-newtons-laws` | `forces-and-newtons-laws.json`, `forces-and-newtons-laws-frq.json` | `basis-physics-8` | `ap-physics-1` | Gravity, inertia / Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with/without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines. 250 MCQ + 50 FRQ from `resources/physics8/rescue_sprint/unit_03_forces/test_bank/`. The 10 universal-gravitation numerical MCQs are `calculatorFree: false` (a scientific calculator is permitted for that outcome per DEC-040). |
 
 The existing AP Physics 1 Unit 2 banks (`ap1-u2-*.json`) predate this model and
 are **not** migrated yet; they stay course-keyed until a later pass. New banks
@@ -135,6 +144,10 @@ ap5-ib7-target ~24%, distinction-stretch ~2% — within blueprint tolerance; the
 runtime sampler backfills the thin `foundation` / `distinction-stretch` buckets
 for a 15-item draw.
 
+**Done:** `topicId` is now a controlled vocabulary (`data/question-bank-topics.json`
++ `build/validate.js` check).
+
 **Not started:** independent physics review of the auto-assigned tags and
-synthesised hints; promoting `topicId` to a controlled vocabulary; cross-tagging
-to AP/IB; migrating the `ap1-u2-*` banks.
+synthesised hints; the actual cross-tag to AP/IB (deferred by owner decision
+until each target course's unit is built — the registry's `plannedCourses`
+holds the intent); migrating the `ap1-u2-*` banks onto `topicId`.

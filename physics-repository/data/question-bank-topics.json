@@ -1,0 +1,22 @@
+{
+  "_comment": "Controlled vocabulary for the topicId field on native question-bank items. One entry per physics topic, independent of any course's unit numbering. build/validate.js checks every bank item's topicId against this list and confirms the item's courses are a subset of the topic's declared courses. Prose rationale and the conversion workflow live in docs/question-bank-topics.md.",
+  "version": "1.0.0",
+  "topics": {
+    "kinematics-1d": {
+      "title": "One-dimensional kinematics",
+      "banks": ["kinematics-1d.json", "kinematics-1d-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-1", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Motion language, position/velocity/acceleration-time graphs, constant-acceleration equations, 1-D free fall, vector components and SOHCAHTOA. No projectile motion, force-based reasoning, or calculus.",
+      "source": "resources/physics8/rescue_sprint/unit_02_kinematics/test_bank/"
+    },
+    "forces-and-newtons-laws": {
+      "title": "Forces and Newton's laws (introductory)",
+      "banks": ["forces-and-newtons-laws.json", "forces-and-newtons-laws-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-1"],
+      "scope": "Gravity (universal gravitation), inertia and Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with and without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines; no 2-D vector force addition beyond incline components.",
+      "source": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/"
+    }
+  }
+}
