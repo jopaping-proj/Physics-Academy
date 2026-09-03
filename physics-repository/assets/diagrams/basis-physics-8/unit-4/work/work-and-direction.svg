@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="260" viewBox="0 0 660 260" role="img" aria-labelledby="t d">
+<title id="t">Work done for a force at 0, 90, and 180 degrees to the displacement</title>
+<desc id="d">Three cases. Left: force in the same direction as the displacement does positive work, W equals plus F d. Middle: force perpendicular to the displacement does zero work. Right: force opposite the displacement does negative work, W equals minus F d.</desc>
+<rect width="660" height="260" fill="white"/>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1769aa"/></marker>
+<marker id="ag" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#5b6675"/></marker></defs>
+<g font-family="Arial">
+ <g>
+  <text x="105" y="26" font-size="13" font-weight="bold" fill="#0f3d61" text-anchor="middle">Force with the motion</text>
+  <line x1="40" y1="150" x2="170" y2="150" stroke="#5b6675" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="105" y="170" font-size="11" fill="#5b6675" text-anchor="middle">displacement d</text>
+  <line x1="55" y1="110" x2="150" y2="110" stroke="#1769aa" stroke-width="3" marker-end="url(#a)"/>
+  <text x="102" y="100" font-size="12" fill="#1769aa" text-anchor="middle">F  (0&#176;)</text>
+  <text x="105" y="210" font-size="13" font-weight="bold" fill="#1a7f37" text-anchor="middle">W = +F d</text>
+  <text x="105" y="228" font-size="11" fill="#5b6675" text-anchor="middle">energy added</text>
+ </g>
+ <g transform="translate(215,0)">
+  <text x="105" y="26" font-size="13" font-weight="bold" fill="#0f3d61" text-anchor="middle">Force across the motion</text>
+  <line x1="40" y1="150" x2="170" y2="150" stroke="#5b6675" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="105" y="170" font-size="11" fill="#5b6675" text-anchor="middle">displacement d</text>
+  <line x1="105" y1="150" x2="105" y2="80" stroke="#1769aa" stroke-width="3" marker-end="url(#a)"/>
+  <text x="135" y="105" font-size="12" fill="#1769aa" text-anchor="middle">F  (90&#176;)</text>
+  <text x="105" y="210" font-size="13" font-weight="bold" fill="#b3261e" text-anchor="middle">W = 0</text>
+  <text x="105" y="228" font-size="11" fill="#5b6675" text-anchor="middle">no energy transfer</text>
+ </g>
+ <g transform="translate(430,0)">
+  <text x="105" y="26" font-size="13" font-weight="bold" fill="#0f3d61" text-anchor="middle">Force against the motion</text>
+  <line x1="40" y1="150" x2="170" y2="150" stroke="#5b6675" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="105" y="170" font-size="11" fill="#5b6675" text-anchor="middle">displacement d</text>
+  <line x1="150" y1="110" x2="55" y2="110" stroke="#1769aa" stroke-width="3" marker-end="url(#a)"/>
+  <text x="102" y="100" font-size="12" fill="#1769aa" text-anchor="middle">F  (180&#176;)</text>
+  <text x="105" y="210" font-size="13" font-weight="bold" fill="#c0392b" text-anchor="middle">W = &#8722;F d</text>
+  <text x="105" y="228" font-size="11" fill="#5b6675" text-anchor="middle">energy removed</text>
+ </g>
+</g>
+</svg>

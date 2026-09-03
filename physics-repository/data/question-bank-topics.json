@@ -18,6 +18,14 @@
       "scope": "Gravity (universal gravitation), inertia and Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with and without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines; no 2-D vector force addition beyond incline components. The pre-AP subset of `newtonian-dynamics`.",
       "source": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/"
     },
+    "mechanical-energy": {
+      "title": "Mechanical energy (introductory)",
+      "banks": ["mechanical-energy.json", "mechanical-energy-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-1"],
+      "scope": "Work ($W = Fd$ for angles $0^\\circ$, $90^\\circ$, $180^\\circ$), total and mechanical energy, gravitational potential energy ($mgh$), kinetic energy ($\\tfrac12 mv^2$), conservation of mechanical energy in isolated systems, spring potential energy ($\\tfrac12 kx^2$), and the work-energy theorem ($W_{net} = \\Delta KE$). Scalar energy accounting; no 2-D work integrals or power.",
+      "source": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/"
+    },
     "newtonian-dynamics": {
       "title": "Newtonian dynamics (AP Physics 1 Unit 2)",
       "banks": [

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="380" viewBox="0 0 560 380" role="img" aria-labelledby="t d"><title id="t">Before-and-after bar charts of kinetic and potential energy</title><desc id="d">Two side-by-side bar-chart panels sharing the same energy axis. The left panel, labeled Before, shows a tall PE bar at 80 joules and a short KE bar at 0 joules. The right panel, labeled After, shows a short PE bar at 20 joules and a tall KE bar at 60 joules. Horizontal gridlines mark 0, 20, 40, 60, and 80 joules.</desc>
+<g font-family="Arial" font-size="14">
+<path d="M70 40V320H520" stroke="#111" stroke-width="2" fill="none"/>
+<path d="M70 320H520M70 256H520M70 192H520M70 128H520M70 64H520" stroke="#ddd" stroke-width="1"/>
+<path d="M70 320H60M70 256H60M70 192H60M70 128H60M70 64H60" stroke="#111" stroke-width="1"/>
+<text x="50" y="325" text-anchor="end">0</text>
+<text x="50" y="261" text-anchor="end">20</text>
+<text x="50" y="197" text-anchor="end">40</text>
+<text x="50" y="133" text-anchor="end">60</text>
+<text x="50" y="69" text-anchor="end">80</text>
+<text x="20" y="180" text-anchor="middle" transform="rotate(-90 20 180)">Energy (J)</text>
+
+<text x="140" y="20" text-anchor="middle" font-weight="bold">Before</text>
+<rect x="100" y="316" width="40" height="4" fill="#145a9c"/>
+<text x="120" y="345" text-anchor="middle">KE</text>
+<text x="120" y="310" text-anchor="middle">0 J</text>
+<rect x="170" y="64" width="40" height="256" fill="#b3261e"/>
+<text x="190" y="345" text-anchor="middle">PE</text>
+<text x="190" y="58" text-anchor="middle">80 J</text>
+
+<path d="M230 180H260" stroke="#555" stroke-width="2" marker-end="url(#ah)"/>
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#555"/></marker></defs>
+
+<text x="400" y="20" text-anchor="middle" font-weight="bold">After</text>
+<rect x="360" y="128" width="40" height="192" fill="#145a9c"/>
+<text x="380" y="345" text-anchor="middle">KE</text>
+<text x="380" y="122" text-anchor="middle">60 J</text>
+<rect x="430" y="256" width="40" height="64" fill="#b3261e"/>
+<text x="450" y="345" text-anchor="middle">PE</text>
+<text x="450" y="250" text-anchor="middle">20 J</text>
+</g>
+</svg>

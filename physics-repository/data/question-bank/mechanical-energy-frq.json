@@ -1,0 +1,2022 @@
+[
+  {
+    "id": "BP8-U4-FRQ-01",
+    "sourceId": "U4-FRQ-01",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W1",
+      "W3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA warehouse worker pushes a 30 kg crate a distance of 5.0 m across a level floor, applying a constant horizontal force of 90 N in the same direction as the crate's motion.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the work done on the crate by the worker's applied force. Show your equation and substitution.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $W = Fd\\cos\\theta$. 1 point: correct substitution, $W = (90\\ \\mathrm{N})(5.0\\ \\mathrm{m})\\cos(0°)$. 1 point: correct value with unit and sign, $W = +450\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the angle between the applied force and the crate's displacement that you used in part (a), and explain in one or two sentences why that angle applies to this situation.",
+        "points": 3,
+        "modelResponse": "1 point: states $\\theta = 0°$. 1 point: correctly explains that the applied force and the crate's displacement point in the same direction. 1 point: connects this to $\\cos(0°) = 1$, so the full magnitude of $Fd$ contributes to the work with a positive sign."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-02",
+    "sourceId": "U4-FRQ-02",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W1",
+      "W2",
+      "W3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 4 independently scorable parts; integrates 3 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 16 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA mover carries a box across a room, holding it up with a constant vertical force of 60 N while walking 4.0 m horizontally at a constant height. Separately, on the return trip, the mover sets the box down and instead drags it 4.0 m back along the floor using a horizontal force of 35 N in the direction of motion, while a 12 N kinetic friction force opposes the drag.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the work done on the box by the mover's carrying force during the first (carrying) trip.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the carrying force (vertical) is perpendicular to the horizontal displacement, so $\\theta = 90°$. 1 point: correct equation and substitution, $W = (60\\ \\mathrm{N})(4.0\\ \\mathrm{m})\\cos(90°)$. 1 point: correct value, $W = 0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the work done on the box by the mover's dragging force during the return trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct equation and substitution, $W = (35\\ \\mathrm{N})(4.0\\ \\mathrm{m})\\cos(0°)$. 1 point: correct value with unit and sign, $W = +140\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the work done on the box by friction during the return trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct equation and substitution, $W = (12\\ \\mathrm{N})(4.0\\ \\mathrm{m})\\cos(180°)$. 1 point: correct value with unit and sign, $W = -48\\ \\mathrm{J}$."
+      },
+      {
+        "label": "d",
+        "prompt": "Explain why the carrying force in part (a) does no work, even though the mover is clearly exerting a force the entire time.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that work requires a force component along the direction of displacement, and a vertical force has no component along a horizontal displacement. 1 point: correctly distinguishes this from the amount of effort exerted — exerting a force, even continuously, does not by itself guarantee nonzero work."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U4-FRQ-03",
+    "sourceId": "U4-FRQ-03",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W1",
+      "W2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA student writes the following claim on a homework assignment: \"If I push on a wall with 200 N of force for 30 seconds and the wall doesn't move, I have still done 6000 J of work, because work equals force times time.\"\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify what is physically incorrect about the student's claim.",
+        "points": 2,
+        "modelResponse": "1 point: identifies that work is not force multiplied by time; there is no time variable in the definition of work. 1 point: identifies that the wall does not move, so there is no displacement for the force to act through."
+      },
+      {
+        "label": "b",
+        "prompt": "State the correct amount of work done on the wall in this scenario, and justify your answer using the definition of work.",
+        "points": 3,
+        "modelResponse": "1 point: states the work done on the wall is $0\\ \\mathrm{J}$. 1 point: correctly cites $W = Fd\\cos\\theta$ (or equivalent) as the governing relationship. 1 point: correctly reasons that since $d = 0$, the work is zero regardless of how large the force is or how long it is applied."
+      },
+      {
+        "label": "c",
+        "prompt": "The student then says: \"Okay, so work is force times how long you push. Is that right?\" Write a corrected statement of what work actually depends on.",
+        "points": 3,
+        "modelResponse": "1 point: states that work depends on the force and the object's displacement, not on time. 1 point: states that work depends specifically on the component of the force along the direction of the displacement (equivalently, the angle between them). 1 point: response is written as a general, correct restatement (not merely repeating the original incorrect claim with \"time\" replaced by another wrong term)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-05",
+    "sourceId": "U4-FRQ-05",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W1",
+      "W2",
+      "W3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 3 outcomes; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 18 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA tutoring student submits the following work for a problem in which a 50 N force acts on an object at an angle of 90° to its 8.0 m displacement:\n\n> \"W = Fd = (50 N)(8.0 m) = 400 J. Since the object moved the whole time the force was acting, the work must be positive, so the final answer is +400 J.\"\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify every error in the student's reasoning and calculation. Be specific about what physical principle each error violates.",
+        "points": 6,
+        "modelResponse": "1 point: identifies that the student omitted the $\\cos\\theta$ factor from the work equation entirely. 1 point: identifies that the correct angle here, 90°, gives $\\cos(90°) = 0$, which the student's calculation never used. 1 point: identifies that the student's reasoning (\"moved the whole time, so work must be positive\") incorrectly assumes that any nonzero displacement during force application guarantees positive work. 1 point: identifies that the direction of the displacement relative to the force — not merely whether displacement occurred — determines the sign (and possible zero value) of the work. 1 point: identifies that a force perpendicular to the entire displacement does zero work regardless of the force or displacement magnitudes. 1 point: response is organized so each distinct error is separately identifiable (not merged into one vague statement), reflecting genuine diagnostic reasoning rather than a single generic correction."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a fully corrected solution, including the correct equation, substitution, and final answer with correct sign.",
+        "points": 2,
+        "modelResponse": "1 point: correct equation and substitution, $W = (50\\ \\mathrm{N})(8.0\\ \\mathrm{m})\\cos(90°)$. 1 point: correct final value, $W = 0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Suppose the same 50 N force instead acted at 180° to an 8.0 m displacement. State the work done in that case, and explain how this result and the 90° result illustrate that \"the object moved the whole time\" is not, by itself, enough information to determine whether work is positive, negative, or zero.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that at 180°, $W = (50\\ \\mathrm{N})(8.0\\ \\mathrm{m})\\cos(180°) = -400\\ \\mathrm{J}$. 1 point: correctly explains that the same force and displacement magnitudes produced 0 J at 90° and −400 J at 180° — two different, non-positive results despite motion occurring in both cases — showing that the angle between force and displacement, not merely the presence of motion, governs the sign and value of work."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U4-FRQ-06",
+    "sourceId": "U4-FRQ-06",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W1",
+      "W2",
+      "W3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 5 independently scorable parts; integrates 3 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 20 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 12 kg cart is pushed 6.0 m to the right across a level floor by a constant horizontal applied force of 40 N acting in the direction of motion, while a 10 N kinetic friction force opposes the cart's motion the entire time. After traveling the 6.0 m, the cart is then pushed back 6.0 m to the left along the same path by a different constant horizontal applied force of 25 N (now acting to the left, in the direction of this return motion), while the same 10 N kinetic friction force again opposes the cart's motion (now acting to the right, since the cart now moves left).\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the work done by the first applied force (40 N) during the outward 6.0 m trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $W = (40\\ \\mathrm{N})(6.0\\ \\mathrm{m})\\cos(0°)$. 1 point: correct value, $W = +240\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the work done by friction during the outward 6.0 m trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $W = (10\\ \\mathrm{N})(6.0\\ \\mathrm{m})\\cos(180°)$. 1 point: correct value, $W = -60\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the work done by the second applied force (25 N) during the 6.0 m return trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $W = (25\\ \\mathrm{N})(6.0\\ \\mathrm{m})\\cos(0°)$, recognizing that the second applied force and the return displacement are in the same direction. 1 point: correct value, $W = +150\\ \\mathrm{J}$."
+      },
+      {
+        "label": "d",
+        "prompt": "Calculate the work done by friction during the 6.0 m return trip.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $W = (10\\ \\mathrm{N})(6.0\\ \\mathrm{m})\\cos(180°)$, recognizing that friction again opposes the (now leftward) motion. 1 point: correct value, $W = -60\\ \\mathrm{J}$."
+      },
+      {
+        "label": "e",
+        "prompt": "Calculate the total work done by friction over the complete round trip (outward plus return), and explain why this total is not zero even though the cart returns to its starting position.",
+        "points": 3,
+        "modelResponse": "1 point: correctly sums the two friction legs, $-60\\ \\mathrm{J} + (-60\\ \\mathrm{J}) = -120\\ \\mathrm{J}$. 1 point: correctly explains that friction reverses direction on each leg to keep opposing whichever way the cart is currently moving, so its work is negative on both the outward and return legs. 1 point: correctly states that these two negative contributions add together rather than canceling, which is why the total friction work is not zero even though the cart returns to its starting position."
+      }
+    ],
+    "totalPoints": 11
+  },
+  {
+    "id": "BP8-U4-FRQ-07",
+    "sourceId": "U4-FRQ-07",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED1",
+      "ED2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 10 min\n**Numeric contract:** `none`\n\nA system consists of a spinning flywheel (kinetic energy), a raised weight connected to it (gravitational potential energy), and a warm bearing that has generated some heat from friction (thermal energy).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the system's mechanical energy in terms of the energy forms listed above.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that mechanical energy is the sum of kinetic and potential energy. 1 point: correctly identifies the flywheel's kinetic energy and the raised weight's gravitational potential energy as the two contributors, giving mechanical energy = (flywheel KE) + (weight's PE_grav)."
+      },
+      {
+        "label": "b",
+        "prompt": "State the system's total energy in terms of the energy forms listed above.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that total energy includes every form present, not mechanical energy alone. 1 point: correctly identifies total energy = (flywheel KE) + (weight's PE_grav) + (bearing's thermal energy)."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the system's total energy and its mechanical energy are not equal to each other in this case.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the bearing's thermal energy is part of the system's total energy but is not one of the mechanical energy forms (kinetic or potential). 1 point: correctly concludes that because thermal energy is present and excluded from mechanical energy, total energy exceeds mechanical energy by exactly that thermal-energy amount."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-08",
+    "sourceId": "U4-FRQ-08",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED3",
+      "ED4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA skier is partway down a slope, already moving, and has not yet reached the bottom. Use the bottom of the slope as the height reference.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify whether the skier has kinetic energy at this instant, and explain your reasoning.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that the skier has nonzero kinetic energy. 1 point: correctly explains that the skier is already moving (nonzero speed), and kinetic energy depends on speed."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify whether the skier has gravitational potential energy at this instant, and explain your reasoning.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that the skier has nonzero gravitational potential energy. 1 point: correctly explains that the skier's height above the bottom-of-slope reference is greater than zero."
+      },
+      {
+        "label": "c",
+        "prompt": "State which type(s) of mechanical energy the skier possesses at this instant, and explain how this relates to the definition of mechanical energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the skier possesses both kinetic energy and gravitational potential energy. 1 point: correctly explains that mechanical energy is defined as the sum of kinetic and potential energy, so both forms present here count toward it."
+      },
+      {
+        "label": "d",
+        "prompt": "A classmate claims the skier's gravitational potential energy is the skier's total energy. Explain what is incorrect about this claim.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that gravitational potential energy is only one component of mechanical energy (and mechanical energy is only one component of total energy), not the whole of either. 1 point: correctly explains that the skier's total energy would need to also include kinetic energy (and any non-mechanical forms present), not gravitational potential energy alone."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-09",
+    "sourceId": "U4-FRQ-09",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED5"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 6.0 kg object moves at 5.0 m/s at a height of 2.5 m above a chosen reference point. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE = \\tfrac12(6.0)(5.0)^2$. 1 point: correct value, $KE = 75.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's gravitational potential energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE_{grav} = (6.0)(9.8)(2.5)$. 1 point: correct value, $PE_{grav} = 147.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the object's total mechanical energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly sums the two prior parts. 1 point: correct value, $ME = 75.0 + 147.0 = 222.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "d",
+        "prompt": "State whether your answer to part (c) would change if the reference point were chosen differently, and briefly explain why or why not.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states that the mechanical energy value would change, because gravitational potential energy — and therefore the mechanical energy total — depends on the height measured relative to whichever reference point is chosen."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-10",
+    "sourceId": "U4-FRQ-10",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED2",
+      "ED5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA system's total mechanical energy is 180 J. The system consists of an object with kinetic energy, gravitational potential energy of 60 J, and spring potential energy of 45 J.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's kinetic energy.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that mechanical energy is the sum of kinetic, gravitational potential, and spring potential energy here. 1 point: correct substitution, $KE = 180 - 60 - 45$. 1 point: correct value, $KE = 75\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A second, separate system has the same total mechanical energy of 180 J, but all of it is kinetic energy, with zero potential energy present. Explain how two systems can have equal mechanical energy while having different amounts of kinetic energy and potential energy individually.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that mechanical energy is a single summed total, not a fixed split between kinetic and potential energy. 1 point: correctly explains that different systems can distribute the same total differently between kinetic and potential energy and still sum to the same mechanical energy value. 1 point: correctly connects this to the two given systems, one with a KE/PE split and one entirely kinetic, both summing to 180 J."
+      },
+      {
+        "label": "c",
+        "prompt": "State whether it is possible for a system to have negative mechanical energy under the conventions used in this unit (nonnegative spring potential energy, and gravitational potential energy measured relative to a stated reference), and briefly justify your answer for each energy type.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that spring potential energy is defined as a nonnegative scalar, so it cannot be negative, while gravitational potential energy can be negative if the object is below the stated reference point. 1 point: correctly concludes that a system's mechanical energy could, in principle, be negative only if a negative gravitational potential energy term makes the sum negative, not from the spring term."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-11",
+    "sourceId": "U4-FRQ-11",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED1",
+      "ED2",
+      "ED3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** misconception-diagnosis-and-correction task (identify the specific error(s), then produce a fully corrected solution) — a documented override under Specification Sec.4's misconception-suppression criterion, combining error-identification and independent re-solution as two compounding demands\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA tutoring student writes the following explanation: \"Total energy, mechanical energy, kinetic energy, and potential energy are basically all the same thing — they're just different names physicists use for how much energy something has.\"\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify every error in the student's explanation. Be specific about which two (or more) of the four terms are being incorrectly treated as equivalent, and why each pair is not equivalent.",
+        "points": 5,
+        "modelResponse": "1 point: identifies that kinetic energy and potential energy are not the same as each other — kinetic energy depends on motion, potential energy depends on position or configuration. 1 point: identifies that mechanical energy is not the same as kinetic energy alone or potential energy alone — mechanical energy is defined as their sum. 1 point: identifies that mechanical energy is not the same as total energy — mechanical energy is one component (kinetic + potential) of a system's total energy. 1 point: identifies that total energy can include non-mechanical forms (such as thermal or chemical energy) that neither kinetic, potential, nor mechanical energy account for. 1 point: identifies that treating all four terms as interchangeable would make it impossible to correctly answer a question that depends on distinguishing them (for example, computing mechanical energy specifically when thermal energy is also present)."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a corrected explanation that correctly relates all four terms to one another.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that kinetic energy (motion-dependent) and potential energy (position/configuration-dependent) are two distinct forms. 1 point: correctly states that mechanical energy is the sum of kinetic and potential energy. 1 point: correctly states that total energy is the complete capacity of a system to do work or cause change across all forms present, of which mechanical energy is one part, alongside any non-mechanical forms (such as thermal or chemical energy) that may also be present."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-12",
+    "sourceId": "U4-FRQ-12",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "energy_definitions",
+    "sourceOutcomes": [
+      "ED4",
+      "ED5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA ball is released from rest at a height of 3.0 m above the ground and falls straight down. The ground is used as the height reference. The ball has a mass of 0.80 kg. Use $|g| = 9.8\\ \\mathrm{m/s^2}$. (You do not need any equations of motion to answer this question — only the given information and energy definitions.)\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State which energy form(s) the ball possesses the instant it is released, and calculate its mechanical energy at that instant.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that at release, the ball is at rest (zero kinetic energy) but at height 3.0 m (nonzero gravitational potential energy), so only gravitational potential energy is present. 1 point: correct substitution, $PE_{grav} = (0.80)(9.8)(3.0)$. 1 point: correct value, $ME = 23.52\\ \\mathrm{J}$ (accept 23.5 J)."
+      },
+      {
+        "label": "b",
+        "prompt": "State which energy form(s) the ball possesses the instant just before it strikes the ground, and calculate its mechanical energy at that instant, given that the ball's total mechanical energy is conserved during the fall (no air resistance).",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that just before striking the ground, the ball's height above the ground reference is zero, so gravitational potential energy is zero and only kinetic energy is present. 1 point: correctly states that because mechanical energy is conserved (given), the mechanical energy just before impact equals the mechanical energy at release. 1 point: correct value, $ME = 23.52\\ \\mathrm{J}$ (accept 23.5 J), same as part (a)."
+      },
+      {
+        "label": "c",
+        "prompt": "Using your answers to (a) and (b), state the ball's kinetic energy the instant just before it strikes the ground.",
+        "points": 2,
+        "modelResponse": "1 point: correctly reasons that since gravitational potential energy is zero just before impact, all of the mechanical energy found in part (b) is kinetic energy. 1 point: correct value, $KE = 23.52\\ \\mathrm{J}$ (accept 23.5 J)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-13",
+    "sourceId": "U4-FRQ-13",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE1",
+      "KE2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `none`\n\nA gymnast is standing completely still on a balance beam.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether the gymnast has kinetic energy at this instant, and explain your reasoning using the definition of kinetic energy.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that the gymnast has zero kinetic energy while standing still. 1 point: correctly identifies that kinetic energy depends on an object's speed. 1 point: correctly explains that the gymnast's speed is zero while standing still, so kinetic energy is zero."
+      },
+      {
+        "label": "b",
+        "prompt": "The gymnast then begins walking along the beam at a steady pace. State whether the gymnast now has kinetic energy, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that the gymnast now has nonzero kinetic energy. 1 point: correctly identifies that walking gives the gymnast a nonzero speed. 1 point: correctly explains that nonzero speed means nonzero kinetic energy, regardless of how steady or slow the pace is."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-14",
+    "sourceId": "U4-FRQ-14",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 0.145 kg baseball is thrown at a speed of 40.0 m/s.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the baseball's kinetic energy.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(0.145)(40.0)^2$. 1 point: correct intermediate value, $v^2=1600$. 1 point: correct final value, $KE=116\\ \\mathrm{J}$ (accept 116.0 J)."
+      },
+      {
+        "label": "b",
+        "prompt": "A second baseball with the same mass is thrown at half the speed (20.0 m/s). Calculate its kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(0.145)(20.0)^2$. 1 point: correct value, $KE=29.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the ratio of the first baseball's kinetic energy to the second baseball's kinetic energy, and explain why this ratio is not simply 2:1 even though the first ball's speed is only twice the second's.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the ratio is 4:1, not 2:1. 1 point: correctly explains that kinetic energy depends on the square of speed, so doubling the speed quadruples the kinetic energy rather than doubling it."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-15",
+    "sourceId": "U4-FRQ-15",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE1",
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 1200 kg car brakes from 24.0 m/s to a complete stop.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the car's kinetic energy while it is moving at 24.0 m/s.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(1200)(24.0)^2$. 1 point: correct intermediate value, $v^2=576$. 1 point: correct final value, $KE=345{,}600\\ \\mathrm{J}$ (accept 3.456 × 10⁵ J)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the car's kinetic energy once it has come to a complete stop.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that speed is zero once stopped. 1 point: correct value, $KE=0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A passenger claims the car \"loses all of its energy\" when it stops. Evaluate this claim, distinguishing between the car's kinetic energy specifically and its total energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that the car's kinetic energy specifically does go to zero, so the claim is correct about kinetic energy. 1 point: correctly explains that the car's total energy is not lost — the kinetic energy is converted to other forms (such as thermal energy from the brakes and tires), so \"loses all of its energy\" overstates what actually happens if taken to mean total energy."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-16",
+    "sourceId": "U4-FRQ-16",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE2",
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `none`\n\nA tutoring student submits the following work: \"A 2.0 kg ball moves at 6.0 m/s, so its kinetic energy is $KE = mv^2 = (2.0)(6.0)^2 = 72\\ \\mathrm{J}$.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the error in the student's calculation. Be specific about which part of the formula was applied incorrectly.",
+        "points": 3,
+        "modelResponse": "1 point: identifies that the student omitted the $\\tfrac12$ factor from the kinetic-energy formula. 1 point: correctly states the full formula, $KE=\\tfrac12mv^2$, not $KE=mv^2$. 1 point: notes that every other part of the substitution (mass and velocity values) was applied correctly; only the missing factor is the error."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a fully corrected solution, including the correct equation, substitution, and final answer with units.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(2.0)(6.0)^2$. 1 point: correct intermediate value, $v^2=36$. 1 point: correct final value, $KE=36\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State by what factor the student's incorrect answer differs from the correct answer, and explain why.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the student's answer is exactly twice the correct answer (72 J vs. 36 J). 1 point: correctly explains that omitting the $\\tfrac12$ factor doubles the result, since the true formula includes multiplying by one-half."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-17",
+    "sourceId": "U4-FRQ-17",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nAn object's kinetic energy is 250 J when it moves at 5.0 m/s.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's mass.",
+        "points": 3,
+        "modelResponse": "1 point: correctly rearranges $KE=\\tfrac12mv^2$ to solve for mass, $m=\\dfrac{2\\,KE}{v^2}$. 1 point: correct substitution, $m=\\dfrac{2(250)}{(5.0)^2}$. 1 point: correct value, $m=20.0\\ \\mathrm{kg}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The same object's speed later changes to 15.0 m/s. Calculate its new kinetic energy, using the mass found in part (a).",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(20.0)(15.0)^2$. 1 point: correct value, $KE=2250\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the factor by which the object's speed changed from part (a) to part (b), and the factor by which its kinetic energy changed. Explain the mathematical relationship between these two factors.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the speed changed by a factor of 3 (from 5.0 to 15.0 m/s). 1 point: correctly states the kinetic energy changed by a factor of 9 (from 250 J to 2250 J). 1 point: correctly explains that because $KE\\propto v^2$, a threefold increase in speed produces a $3^2=9$-fold increase in kinetic energy."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-18",
+    "sourceId": "U4-FRQ-18",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE1",
+      "KE2",
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA roller coaster car of mass 500 kg is at the top of a hill, momentarily at rest, about to descend. Later, partway down the hill, it moves at 8.0 m/s.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the car's kinetic energy at the top of the hill, and explain your reasoning.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the car's kinetic energy at the top is zero. 1 point: correctly explains that the car is momentarily at rest, so its speed — and therefore its kinetic energy — is zero."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the car's kinetic energy partway down the hill, where it moves at 8.0 m/s.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(500)(8.0)^2$. 1 point: correct intermediate value, $v^2=64$. 1 point: correct final value, $KE=16{,}000\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain, in terms of the definition of kinetic energy, why the car's kinetic energy increased between the top of the hill and partway down, even though no one pushed the car during the descent.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the car's speed increased between the two points. 1 point: correctly states that kinetic energy depends on speed, so an increase in speed produces an increase in kinetic energy. 1 point: correctly notes that no person needed to push the car for its speed (and thus kinetic energy) to increase — gravity acting on the car as it descends is sufficient to increase its speed, and no external push is required for the kinetic-energy definition to apply."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-19",
+    "sourceId": "U4-FRQ-19",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "kinetic_energy",
+    "sourceOutcomes": [
+      "KE2",
+      "KE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nObject M has a mass of 8.0 kg and moves at 3.0 m/s. Object N has a mass of 2.0 kg and moves at 6.0 m/s.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the kinetic energy of object M.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE_M=\\tfrac12(8.0)(3.0)^2$. 1 point: correct value, $KE_M=36.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the kinetic energy of object N.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE_N=\\tfrac12(2.0)(6.0)^2$. 1 point: correct value, $KE_N=36.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student claims that object N must have more kinetic energy than object M, \"since kinetic energy depends on speed, and N is faster.\" Evaluate this claim using your answers to parts (a) and (b).",
+        "points": 4,
+        "modelResponse": "1 point: correctly states that the claim is incorrect (or, at best, coincidentally true only in the specific numeric sense that both values happen to be equal here). 1 point: correctly reports that both objects actually have equal kinetic energy, 36.0 J each. 1 point: correctly explains that kinetic energy depends on both mass and speed, not speed alone, so a faster but lighter object does not automatically have more kinetic energy than a slower but heavier one. 1 point: correctly connects this to the specific values given — object M's greater mass compensates for its lower speed, producing equal kinetic energy in this case."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-20",
+    "sourceId": "U4-FRQ-20",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE1",
+      "GPE2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA vase sits on a mantel 1.8 m above the floor. A problem states that the floor is the reference point.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the height that should be used to calculate the vase's gravitational potential energy, and explain your reasoning.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies 1.8 m as the relevant height. 1 point: correctly explains that this is the vase's height above the stated floor reference."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain, in terms of the definition of gravitational potential energy, why the vase possesses this energy even though it is not moving.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that gravitational potential energy is stored energy due to position (height) relative to a reference, not due to motion. 1 point: correctly explains that the vase's elevation above the floor gives it this stored energy regardless of whether it is moving."
+      },
+      {
+        "label": "c",
+        "prompt": "If the same vase were instead placed on a shelf only 0.9 m above the floor, state whether its gravitational potential energy would be greater than, less than, or equal to its value on the mantel, and explain why.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that the gravitational potential energy on the shelf (0.9 m) would be less than on the mantel (1.8 m). 1 point: correctly explains that gravitational potential energy increases with height above the reference, so the lower shelf height gives a smaller value."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-21",
+    "sourceId": "U4-FRQ-21",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 7.5 kg object is 4.0 m above a stated reference point. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's gravitational potential energy.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE_{grav}=(7.5)(9.8)(4.0)$. 1 point: correct arithmetic. 1 point: correct final value, $PE_{grav}=294.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The same object is moved to a new height where its gravitational potential energy is 441.0 J. Calculate its new height above the reference point.",
+        "points": 3,
+        "modelResponse": "1 point: correctly rearranges $PE_{grav}=mgh$ to solve for height, $h=\\dfrac{PE_{grav}}{mg}$. 1 point: correct substitution, $h=\\dfrac{441.0}{(7.5)(9.8)}$. 1 point: correct value, $h=6.0\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State whether the object moved up or down between the two heights described in parts (a) and (b), and briefly justify your answer using the two height values.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states the object moved up, since its height increased from 4.0 m to 6.0 m."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-22",
+    "sourceId": "U4-FRQ-22",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA construction crane lifts a 200 kg beam from ground level to the top of a building under construction, 30 m above the ground. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Using the ground as the reference point, calculate the beam's gravitational potential energy once it reaches the top of the building.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies 30 m as the relevant height above the ground reference. 1 point: correct substitution, $PE_{grav}=(200)(9.8)(30)$. 1 point: correct value, $PE_{grav}=58{,}800\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A site engineer instead wants the beam's gravitational potential energy relative to the 4th floor of the building, which is 12 m above the ground. Calculate the beam's height relative to this new reference point, and then its gravitational potential energy relative to it.",
+        "points": 3,
+        "modelResponse": "1 point: correctly computes the new height as $30-12=18\\ \\mathrm{m}$ above the 4th-floor reference. 1 point: correct substitution, $PE_{grav}=(200)(9.8)(18)$. 1 point: correct value, $PE_{grav}=35{,}280\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the two gravitational-potential-energy values from parts (a) and (b) are different even though the beam's actual position has not changed between the two calculations.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that gravitational potential energy depends on height measured relative to the chosen reference point. 1 point: correctly explains that changing the reference point (ground vs. 4th floor) changes the relevant height, even though the beam's actual physical position is unchanged, producing two different valid values for the same beam."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-23",
+    "sourceId": "U4-FRQ-23",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE2",
+      "GPE3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `none`\n\nA tutoring student submits the following work: \"A 6.0 kg object is 5.0 m above the ground, so its gravitational potential energy is $PE_{grav} = m + gh = 6.0 + (9.8)(5.0) = 55.0\\ \\mathrm{J}$.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the error in the student's calculation. Be specific about which operation was applied incorrectly.",
+        "points": 3,
+        "modelResponse": "1 point: identifies that the student added the mass to the product of $g$ and $h$ instead of multiplying all three quantities together. 1 point: correctly states the formula should be $PE_{grav}=mgh$, not $PE_{grav}=m+gh$. 1 point: notes that the numeric values used for mass, $g$, and height were each individually correct; only the operation combining them was wrong."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a fully corrected solution, including the correct equation, substitution, and final answer with units.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE_{grav}=(6.0)(9.8)(5.0)$. 1 point: correct arithmetic. 1 point: correct final value, $PE_{grav}=294.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain, using the definition of gravitational potential energy, why mass, $g$, and height must all be multiplied together rather than combined with addition.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that gravitational potential energy must scale proportionally with each of mass, $g$, and height individually (doubling any one of them should double the energy). 1 point: correctly explains that only multiplication produces this proportional scaling for all three quantities simultaneously; addition would not make the result scale correctly with, for example, a doubled mass."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-24",
+    "sourceId": "U4-FRQ-24",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE1",
+      "GPE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nAn elevator carries a 65 kg passenger from the lobby (ground level) up to the 10th floor, 28 m above the lobby. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Using the lobby as the reference point, calculate the passenger's gravitational potential energy at the 10th floor.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies 28 m as the relevant height. 1 point: correct substitution, $PE_{grav}=(65)(9.8)(28)$. 1 point: correct value, $PE_{grav}=17{,}836\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The elevator then descends to a parking garage level 6.0 m below the lobby. Using the lobby as the reference point, state the sign of the passenger's height at the parking garage level, and calculate the passenger's gravitational potential energy there.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that the height is negative ($h=-6.0\\ \\mathrm{m}$) since the parking garage is below the lobby reference. 1 point: correct substitution, $PE_{grav}=(65)(9.8)(-6.0)$. 1 point: correct value, $PE_{grav}=-3822\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the gravitational potential energy in part (b) is negative, using the sign convention for height relative to the stated reference point.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that height below the stated reference point is assigned a negative value in this unit's sign convention. 1 point: correctly explains that multiplying a positive mass and positive $g$ by a negative height produces a negative gravitational-potential-energy value."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-25",
+    "sourceId": "U4-FRQ-25",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE2",
+      "GPE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nObject A has mass 4.0 kg at height 6.0 m above a reference point. Object B has mass 12.0 kg at height 2.0 m above the same reference point. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the gravitational potential energy of object A.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE_A=(4.0)(9.8)(6.0)$. 1 point: correct value, $PE_A=235.2\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the gravitational potential energy of object B.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE_B=(12.0)(9.8)(2.0)$. 1 point: correct value, $PE_B=235.2\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student claims object B must have more gravitational potential energy than object A \"because it has more mass.\" Evaluate this claim using your answers to parts (a) and (b), and explain the relationship between mass and height in the formula.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states that the claim is not supported by these values (both objects have equal gravitational potential energy here). 1 point: correctly reports that both objects have equal gravitational potential energy, 235.2 J each. 1 point: correctly explains that gravitational potential energy depends on both mass and height together ($PE_{grav}=mgh$), not mass alone, so greater mass does not automatically mean greater gravitational potential energy. 1 point: correctly connects this to the specific values given — object A's greater height compensates for its smaller mass, producing equal gravitational potential energy in this case."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-26",
+    "sourceId": "U4-FRQ-26",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "gravitational_pe",
+    "sourceOutcomes": [
+      "GPE1",
+      "GPE2",
+      "GPE3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 3 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 3.0 kg drone hovers at a height that is not directly stated. A problem instead states that the drone is 8.0 m above a rooftop landing pad, and that the landing pad itself is 15 m above street level. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Using street level as the reference point, calculate the drone's total height above the reference.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the two given heights must be added (8.0 m above the pad, plus the pad's 15 m above the street). 1 point: correct value, $h=23\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the drone's gravitational potential energy relative to street level.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE_{grav}=(3.0)(9.8)(23)$. 1 point: correct arithmetic. 1 point: correct value, $PE_{grav}=676.2\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second problem asks for the drone's gravitational potential energy relative to the rooftop landing pad instead. State this value, and explain why it differs from your answer to part (b) even though the drone itself has not moved.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the value relative to the rooftop landing pad: $PE_{grav}=(3.0)(9.8)(8.0)=235.2\\ \\mathrm{J}$. 1 point: correctly identifies that this value is smaller than the street-level value because the drone's height above the rooftop reference (8.0 m) is smaller than its height above the street-level reference (23 m). 1 point: correctly explains that gravitational potential energy depends on height relative to whichever reference point is chosen, so a different (but equally valid) reference point produces a different value for the same physical drone position."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-27",
+    "sourceId": "U4-FRQ-27",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `none`\n\nA sealed, insulated thermos contains hot soup, with no way for heat or matter to escape or enter. A separate open pot of soup sits on a stove, releasing steam and heat into the kitchen air.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether the thermos is an open or closed system, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the thermos is a closed system. 1 point: correctly identifies that a closed system is defined by no energy exchange with the surroundings. 1 point: correctly connects this to the thermos, since it is sealed and insulated, allowing no energy to cross its boundary."
+      },
+      {
+        "label": "b",
+        "prompt": "State whether the pot on the stove is an open or closed system, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the pot is an open system. 1 point: correctly identifies that an open system exchanges energy with its surroundings. 1 point: correctly connects this to the pot, since it releases steam and heat into the surrounding kitchen air."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-28",
+    "sourceId": "U4-FRQ-28",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `none`\n\nA ball rolls without friction inside a bowl-shaped track (a closed, conservative system), passing through point A (near the rim, high up) and point B (at the bottom of the bowl).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State how the ball's mechanical energy at point A compares to its mechanical energy at point B, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the mechanical energy at A equals the mechanical energy at B. 1 point: correctly identifies that this is a closed, conservative (frictionless) system. 1 point: correctly explains that mechanical energy is conserved throughout such a system, so it is the same at every point, including A and B."
+      },
+      {
+        "label": "b",
+        "prompt": "State how the ball's kinetic energy at point A compares to its kinetic energy at point B, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the kinetic energy at B is greater than at A. 1 point: correctly identifies that point B (the bottom) has less height, and therefore less potential energy, than point A. 1 point: correctly explains that since mechanical energy is conserved (constant), less potential energy at B means correspondingly more kinetic energy there."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-29",
+    "sourceId": "U4-FRQ-29",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 9 min\n**Numeric contract:** `none`\n\nA child winds up a toy car (storing energy in its internal spring mechanism), then releases it on the floor, where it drives forward before gradually slowing to a stop due to friction with the floor.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the energy transformation that occurs as the child winds up the toy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the child's own energy (chemical energy from their muscles) is the source. 1 point: correctly states that this chemical energy transforms into spring (elastic) potential energy stored in the toy's wound mechanism."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify the energy transformation that occurs as the toy is released and begins moving.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the toy's spring potential energy is the source at this stage. 1 point: correctly states that this spring potential energy transforms into the toy's kinetic energy as it begins moving."
+      },
+      {
+        "label": "c",
+        "prompt": "Identify the energy transformation that occurs as the toy gradually slows to a stop.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that friction between the toy and the floor is responsible for the slowing. 1 point: correctly states that the toy's kinetic energy transforms into thermal energy due to friction. 1 point: correctly notes that this thermal energy is generated at the surfaces in contact (tires/wheels and floor) and is why the toy's kinetic energy — and therefore its speed — decreases until it stops."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-30",
+    "sourceId": "U4-FRQ-30",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** two independently scorable parts; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 11 min\n**Numeric contract:** `none`\n\nA skier descends a slope. On the upper, groomed section, friction between the skis and snow is negligible. On the lower, rocky section, friction is significant.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether conservation of mechanical energy applies to the skier on the upper section, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that conservation of mechanical energy does apply on the upper section. 1 point: correctly identifies that friction is negligible there, meaning no significant non-conservative force is acting. 1 point: correctly explains that with no non-conservative force acting, the skier's mechanical energy is conserved on this section."
+      },
+      {
+        "label": "b",
+        "prompt": "State whether conservation of mechanical energy applies to the skier on the lower section, and explain your reasoning.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states that conservation of mechanical energy does not apply on the lower section. 1 point: correctly identifies that friction is significant there, and friction is a non-conservative force. 1 point: correctly explains that the non-conservative friction force converts some of the skier's mechanical energy into thermal energy. 1 point: correctly notes that the skier's total energy is still conserved overall — it is specifically mechanical energy that is not conserved due to the conversion into a non-mechanical form."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-31",
+    "sourceId": "U4-FRQ-31",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 3.0 kg object is released from rest at a height of 6.0 m above the ground in a closed, frictionless system. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's gravitational potential energy at the moment of release.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE=(3.0)(9.8)(6.0)$. 1 point: correct value, $PE=176.4\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's kinetic energy just before it reaches the ground.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that at the ground (height 0), all of the initial mechanical energy has converted to kinetic energy, since $ME_i=ME_f$. 1 point: correct value, $KE=176.4\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the object's speed just before it reaches the ground.",
+        "points": 3,
+        "modelResponse": "1 point: correctly sets up $KE=\\tfrac12mv^2$ to solve for speed. 1 point: correct substitution, $v^2=\\dfrac{2(176.4)}{3.0}$. 1 point: correct value, $v=\\sqrt{117.6}\\approx10.8\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-32",
+    "sourceId": "U4-FRQ-32",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 2.5 kg pendulum bob swings in a closed, frictionless system. At its highest point, it is at rest at a height of 1.2 m above the lowest point of its arc (the reference point). Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the bob's mechanical energy at its highest point.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $ME=(2.5)(9.8)(1.2)$, recognizing that at rest, mechanical energy is entirely potential. 1 point: correct value, $ME=29.4\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the bob's speed at the lowest point of its arc.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that at the lowest point, all 29.4 J is kinetic energy (potential energy is zero there). 1 point: correct substitution, $v^2=\\dfrac{2(29.4)}{2.5}$. 1 point: correct value, $v=\\sqrt{23.52}\\approx4.85\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "At a different point along the swing, the bob's height above the lowest point is 0.5 m. Calculate the bob's kinetic energy and speed at this point.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution for potential energy at 0.5 m, $PE=(2.5)(9.8)(0.5)=12.25\\ \\mathrm{J}$, and kinetic energy $KE=29.4-12.25=17.15\\ \\mathrm{J}$. 1 point: correct substitution for speed, $v^2=\\dfrac{2(17.15)}{2.5}$. 1 point: correct value, $v=\\sqrt{13.72}\\approx3.70\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-33",
+    "sourceId": "U4-FRQ-33",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE2",
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nIn a closed, conservative system, an object passes through three points, A, B, and C, all with the same total mechanical energy of 150 J. At point A, its kinetic energy is 60 J. At point B, its potential energy is 100 J. At point C, its kinetic energy equals its potential energy.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's potential energy at point A.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $ME=KE+PE$ to isolate potential energy. 1 point: correct value, $PE_A=150-60=90\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's kinetic energy at point B.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $ME=KE+PE$ to isolate kinetic energy. 1 point: correct value, $KE_B=150-100=50\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the object's kinetic energy and potential energy at point C.",
+        "points": 4,
+        "modelResponse": "1 point: correctly sets up the condition $KE_C=PE_C$. 1 point: correctly reasons that $KE_C+PE_C=150\\ \\mathrm{J}$, so $2\\,KE_C=150\\ \\mathrm{J}$. 1 point: correct value, $KE_C=75\\ \\mathrm{J}$. 1 point: correct value, $PE_C=75\\ \\mathrm{J}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-34",
+    "sourceId": "U4-FRQ-34",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE1",
+      "COE4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `none`\n\nA block slides across a rough floor inside a sealed, perfectly insulated room, with no way for energy to cross the room's boundary. Friction acts on the block throughout its slide, generating thermal energy that stays entirely within the room.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether the block-floor-room system is open or closed, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the system is closed. 1 point: correctly identifies that a closed system exchanges no energy with its surroundings. 1 point: correctly connects this to the sealed, insulated room, from which no energy can escape or enter."
+      },
+      {
+        "label": "b",
+        "prompt": "State whether the block's mechanical energy is conserved as it slides, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the block's mechanical energy is not conserved. 1 point: correctly identifies that friction is a non-conservative force acting on the block. 1 point: correctly explains that friction converts some of the block's mechanical energy into thermal energy as it slides."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain how both of your answers to (a) and (b) can be correct at the same time, even though one says something is \"conserved\" and the other does not.",
+        "points": 2,
+        "modelResponse": "1 point: correctly explains that \"closed\" refers to whether the system's total energy is affected by exchange with the surroundings, which it is not here (the thermal energy stays inside the room). 1 point: correctly explains that \"mechanical energy conserved\" is a separate, stricter question about whether mechanical energy specifically (not total energy) stays constant, which it does not here, since some of it converts to thermal energy within the closed system."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-35",
+    "sourceId": "U4-FRQ-35",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE3",
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; multiple quantitative operations\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 0.40 kg dart is loaded into a spring-loaded dart gun, compressing the spring and storing 8.0 J of spring potential energy. When released (in a closed, frictionless system, on a level, horizontal path), the spring launches the dart horizontally.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the energy transformation that occurs as the dart is launched, and calculate the dart's kinetic energy immediately after leaving the spring.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that spring potential energy transforms into kinetic energy. 1 point: correctly states that, with no friction, all 8.0 J of spring potential energy converts to kinetic energy. 1 point: correct value, $KE=8.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the dart's speed immediately after leaving the spring.",
+        "points": 3,
+        "modelResponse": "1 point: correctly sets up $KE=\\tfrac12mv^2$ to solve for speed. 1 point: correct substitution, $v^2=\\dfrac{2(8.0)}{0.40}$. 1 point: correct value, $v=\\sqrt{40.0}\\approx6.32\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "The dart then travels upward at an angle after leaving a ramp at the end of its horizontal path (still frictionless), reaching a maximum height of 0.75 m. Using energy reasoning (not equations of motion), calculate the dart's kinetic energy at that maximum height. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.",
+        "points": 2,
+        "modelResponse": "1 point: correctly calculates the gravitational potential energy gained at 0.75 m, $PE=(0.40)(9.8)(0.75)=2.94\\ \\mathrm{J}$, and subtracts it from the mechanical energy (8.0 J, conserved throughout, since the system remains frictionless). 1 point: correct value, $KE=8.0-2.94=5.06\\ \\mathrm{J}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-36",
+    "sourceId": "U4-FRQ-36",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 4.0 kg cart in a closed, conservative system starts at rest at the top of a track, at height $h$ above the bottom. At the bottom of the track, its speed is measured to be 7.0 m/s. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the cart's kinetic energy at the bottom of the track.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE=\\tfrac12(4.0)(7.0)^2$. 1 point: correct value, $KE=98.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the height $h$ of the track.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that, starting from rest, all 98.0 J of initial potential energy converts to kinetic energy at the bottom. 1 point: correct substitution, $h=\\dfrac{98.0}{(4.0)(9.8)}$. 1 point: correct value, $h=2.5\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "The track is then modified so the cart starts from the same height $h$, but a small amount of friction is introduced, causing 15.0 J of the cart's mechanical energy to convert to thermal energy by the time it reaches the bottom. Calculate the cart's new speed at the bottom under this modification.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the kinetic energy at the bottom is now reduced by the 15.0 J lost to thermal energy: $KE'=98.0-15.0=83.0\\ \\mathrm{J}$. 1 point: correct substitution, $v^2=\\dfrac{2(83.0)}{4.0}$. 1 point: correct value, $v=\\sqrt{41.5}\\approx6.44\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-37",
+    "sourceId": "U4-FRQ-37",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE2",
+      "COE4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "energy-bar-chart",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** misconception-diagnosis-and-correction task (identify the specific error(s), then produce a fully corrected solution) — a documented override under Specification Sec.4's misconception-suppression criterion, combining error-identification and independent re-solution as two compounding demands\n**Estimated time:** 14 min\n**Numeric contract:** `none`\n\nA tutoring student submits the following work: \"A ball rolls down a hill with some friction present. Since energy is always conserved, the ball's kinetic energy at the bottom must equal its potential energy at the top, exactly as it would with no friction.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify every error in the student's reasoning. Be specific about which physical principle each error violates.",
+        "points": 5,
+        "modelResponse": "1 point: identifies that the student conflates \"energy is always conserved\" (true, referring to total energy) with \"mechanical energy is always conserved\" (not true when a non-conservative force acts). 1 point: identifies that friction is a non-conservative force present in this scenario. 1 point: identifies that friction converts some of the ball's mechanical energy into thermal energy as the ball descends. 1 point: identifies that this means the kinetic energy at the bottom will be less than the potential energy at the top, not exactly equal. 1 point: identifies that \"exactly as it would with no friction\" is the specific incorrect claim, since the presence of friction is precisely what breaks the equality that would otherwise hold in a frictionless case."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a corrected explanation of what actually happens to the ball's mechanical energy as it descends the hill with friction present.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that the ball's total energy is still conserved overall. 1 point: correctly states that its mechanical energy is not conserved, since friction removes some of it as thermal energy. 1 point: correctly concludes that the ball's kinetic energy at the bottom will be less than its potential energy at the top, by an amount equal to the thermal energy generated by friction."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-38",
+    "sourceId": "U4-FRQ-38",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "conservation",
+    "sourceOutcomes": [
+      "COE2",
+      "COE3",
+      "COE5"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "energy-bar-chart",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 3 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 1.5 kg ball is dropped from rest at a height of 4.0 m onto a trampoline (closed, frictionless system), which stretches and then launches the ball back upward. Use $|g| = 9.8\\ \\mathrm{m/s^2}$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the ball's kinetic energy and speed just before it contacts the trampoline.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that, starting from rest, all of the initial gravitational potential energy, $(1.5)(9.8)(4.0)=58.8\\ \\mathrm{J}$, converts to kinetic energy just before contact. 1 point: correct value, $KE=58.8\\ \\mathrm{J}$. 1 point: correct speed, $v=\\sqrt{2(58.8)/1.5}\\approx8.85\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "At the lowest point of the trampoline's stretch, the ball is momentarily at rest (0 m above the ground, the reference point). State what has happened to the ball's kinetic energy at this instant, in terms of an energy transformation, and calculate the trampoline's spring potential energy at this instant.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that the ball's kinetic energy has transformed into the trampoline's spring potential energy. 1 point: correctly identifies that, with the ball momentarily at rest and at height 0 (zero gravitational potential energy), all of the mechanical energy is now spring potential energy. 1 point: correct value, $PE_{spring}=58.8\\ \\mathrm{J}$ (unchanged from the system's constant mechanical energy, since the system remains frictionless)."
+      },
+      {
+        "label": "c",
+        "prompt": "If the trampoline then launches the ball back upward and the ball reaches a maximum height of 3.6 m (less than the original 4.0 m), explain what this tells you about whether the trampoline-ball system lost any mechanical energy during the bounce, and by how much.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that yes, the system lost mechanical energy, since the ball does not return to its original 4.0 m height. 1 point: correctly calculates the amount lost: initial $ME=58.8\\ \\mathrm{J}$; final (at 3.6 m, momentarily at rest) $ME=(1.5)(9.8)(3.6)=52.92\\ \\mathrm{J}$; loss $=58.8-52.92=5.88\\ \\mathrm{J}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-39",
+    "sourceId": "U4-FRQ-39",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "spring_pe",
+    "sourceOutcomes": [
+      "SPE1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA spring is compressed 0.12 m from its natural length. A second, identical spring is stretched 0.12 m from its natural length.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the two quantities that determine a spring's spring potential energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the spring constant. 1 point: correctly identifies the displacement from natural length."
+      },
+      {
+        "label": "b",
+        "prompt": "State whether the two springs described above have equal, or different, spring potential energy, and explain your reasoning using the spring-potential-energy formula.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the two springs have equal spring potential energy. 1 point: correctly states the formula $PE_{spring}=\\tfrac12kx^2$. 1 point: correctly identifies that both springs have the same magnitude of displacement (0.12 m) and the same spring constant (identical springs). 1 point: correctly explains that because $x$ is squared, the sign of the displacement (compression vs. stretch) does not affect the resulting energy value, so the two springs store equal energy."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-40",
+    "sourceId": "U4-FRQ-40",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "spring_pe",
+    "sourceOutcomes": [
+      "SPE2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA spring with spring constant 180 N/m is compressed 0.15 m from its natural length.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the spring's spring potential energy.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE=\\tfrac12(180)(0.15)^2$. 1 point: correct intermediate value, $x^2=0.0225$. 1 point: correct final value, $PE=2.025\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The spring is then compressed further to 0.30 m from its natural length (double the original displacement). Calculate its new spring potential energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE=\\tfrac12(180)(0.30)^2$. 1 point: correct value, $PE=8.1\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the factor by which the spring potential energy changed from part (a) to part (b), and explain why this factor is not simply 2, even though the displacement doubled.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the factor is 4, not 2. 1 point: correctly explains that spring potential energy depends on the square of the displacement, so doubling the displacement quadruples the energy rather than doubling it."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-41",
+    "sourceId": "U4-FRQ-41",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "spring_pe",
+    "sourceOutcomes": [
+      "SPE1",
+      "SPE2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `none`\n\nA tutoring student submits the following work: \"A spring with spring constant 50 N/m is stretched 0.20 m, so its spring potential energy is $PE = kx = (50)(0.20) = 10\\ \\mathrm{J}$.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the error in the student's calculation. Be specific about which part of the formula was applied incorrectly.",
+        "points": 3,
+        "modelResponse": "1 point: identifies that the student used $PE=kx$ instead of $PE=\\tfrac12kx^2$. 1 point: notes that the student omitted the $\\tfrac12$ factor. 1 point: notes that the student did not square the displacement."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a fully corrected solution, including the correct equation, substitution, and final answer with units.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE=\\tfrac12(50)(0.20)^2$. 1 point: correct intermediate value, $x^2=0.04$. 1 point: correct final value, $PE=1.0\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A classmate asks whether the answer would be different if the spring had instead been compressed 0.20 m rather than stretched. Answer this question and briefly justify it.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the answer would not change. 1 point: correctly explains that spring potential energy depends on the squared displacement, which has the same value (0.04) whether the displacement is +0.20 m (stretch) or −0.20 m (compression)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-42",
+    "sourceId": "U4-FRQ-42",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "spring_pe",
+    "sourceOutcomes": [
+      "SPE2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA spring stores 6.75 J of spring potential energy when compressed 0.30 m from its natural length.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the spring's spring constant.",
+        "points": 3,
+        "modelResponse": "1 point: correctly rearranges $PE_{spring}=\\tfrac12kx^2$ to solve for $k$, $k=\\dfrac{2\\,PE_{spring}}{x^2}$. 1 point: correct substitution, $k=\\dfrac{2(6.75)}{(0.30)^2}$. 1 point: correct value, $k=150\\ \\mathrm{N/m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using the spring constant found in part (a), calculate the spring potential energy if the same spring were instead compressed 0.10 m from its natural length.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $PE=\\tfrac12(150)(0.10)^2$. 1 point: correct intermediate value, $x^2=0.01$. 1 point: correct final value, $PE=0.75\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the ratio of your answer in part (b) to the original 6.75 J, and explain this ratio in terms of the change in displacement.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the ratio is 1:9 (0.75 J is one-ninth of 6.75 J). 1 point: correctly explains that the displacement was cut to one-third (0.30 m to 0.10 m), and since energy depends on the square of displacement, cutting displacement to one-third cuts the energy to $\\left(\\tfrac13\\right)^2=\\tfrac19$ of its original value."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-43",
+    "sourceId": "U4-FRQ-43",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "spring_pe",
+    "sourceOutcomes": [
+      "SPE1",
+      "SPE2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nSpring A has spring constant 40 N/m and is compressed 0.30 m. Spring B has spring constant 90 N/m and is compressed by an unknown displacement $x_B$.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate spring A's spring potential energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $PE_A=\\tfrac12(40)(0.30)^2$. 1 point: correct value, $PE_A=1.8\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "If spring B has exactly the same spring potential energy as spring A, calculate spring B's displacement, $x_B$.",
+        "points": 3,
+        "modelResponse": "1 point: correctly rearranges $PE_{spring}=\\tfrac12kx^2$ to solve for $x$, $x=\\sqrt{\\dfrac{2\\,PE_{spring}}{k}}$. 1 point: correct substitution, $x_B=\\sqrt{\\dfrac{2(1.8)}{90}}$. 1 point: correct value, $x_B=0.20\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student claims that spring B, having the larger spring constant, \"must have less displacement than spring A\" whenever the two springs have equal spring potential energy, \"since a stiffer spring stores more energy for the same displacement.\" Evaluate this claim using your answers to parts (a) and (b), and explain the reasoning generally (not just for these specific numbers).",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the claim is supported by these values (spring B, with the larger spring constant of 90 N/m, does have the smaller displacement of 0.20 m, compared to spring A's 0.30 m). 1 point: correctly explains the general reasoning: since $PE_{spring}=\\tfrac12kx^2$, for a fixed energy value, $x$ is inversely proportional to $\\sqrt{k}$, so a larger spring constant does require a smaller displacement to reach the same stored energy. 1 point: correctly notes that this is a general mathematical relationship (following from solving the formula for $x$ at fixed $PE_{spring}$), not merely a coincidence of these particular numbers."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-44",
+    "sourceId": "U4-FRQ-44",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** single core construct applied directly across all parts, with no representation translation, misconception critique, or integration of a materially different outcome\n**Estimated time:** 8 min\n**Numeric contract:** `none`\n\nA cyclist's speed increases as they pedal down a straight road. Later, on a different stretch, their speed decreases as they coast uphill.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the sign of the net work done on the cyclist while speeding up, and explain your reasoning using the work-energy theorem.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the net work is positive. 1 point: correctly states the work-energy theorem, $W_{net}=\\Delta KE$. 1 point: correctly explains that an increase in speed means an increase in kinetic energy, which corresponds to positive net work."
+      },
+      {
+        "label": "b",
+        "prompt": "State the sign of the net work done on the cyclist while slowing down, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the net work is negative. 1 point: correctly identifies that a decrease in speed means a decrease in kinetic energy. 1 point: correctly explains that a decrease in kinetic energy corresponds to negative net work, by the same theorem."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U4-FRQ-45",
+    "sourceId": "U4-FRQ-45",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations\n**Estimated time:** 11 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 4.0 kg object has an initial kinetic energy of 18 J. The net work done on it is +54 J.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's final kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $KE_f=KE_i+W_{net}$. 1 point: correct value, $KE_f=18+54=72\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's initial speed.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $18=\\tfrac12(4.0)v_i^2$. 1 point: correct value, $v_i=3.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the object's final speed.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution, $72=\\tfrac12(4.0)v_f^2$. 1 point: correct intermediate value, $v_f^2=36.0$. 1 point: correct final value, $v_f=6.0\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U4-FRQ-46",
+    "sourceId": "U4-FRQ-46",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET1",
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; integrates 2 outcomes; multiple quantitative operations; requires explanation, justification, comparison, or evaluation\n**Estimated time:** 14 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 2.5 kg cart has three forces acting on it as it moves 4.0 m across a level, horizontal track: an applied push doing +40 J of work, friction doing −15 J of work, and the (vertical) normal force and gravity together doing 0 J of work.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the net work done on the cart.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the net work sums all forces' work: $40+(-15)+0=25\\ \\mathrm{J}$. 1 point: correct value, $W_{net}=25\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State, using the work-energy theorem, whether the cart speeds up, slows down, or maintains constant speed, and explain your reasoning.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the cart speeds up. 1 point: correctly explains that positive net work means positive $\\Delta KE$, which means increasing kinetic energy and therefore increasing speed."
+      },
+      {
+        "label": "c",
+        "prompt": "If the cart's initial speed was 2.0 m/s, calculate its final speed.",
+        "points": 4,
+        "modelResponse": "1 point: correct substitution for initial kinetic energy, $KE_i=\\tfrac12(2.5)(2.0)^2=5.0\\ \\mathrm{J}$. 1 point: correctly applies $KE_f=KE_i+W_{net}=5.0+25=30.0\\ \\mathrm{J}$. 1 point: correct substitution, $30.0=\\tfrac12(2.5)v_f^2$. 1 point: correct final value, $v_f^2=24.0$, so $v_f=\\sqrt{24.0}\\approx4.90\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-47",
+    "sourceId": "U4-FRQ-47",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 1500 kg car brakes from 25.0 m/s to 10.0 m/s.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the car's initial kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE_i=\\tfrac12(1500)(25.0)^2$. 1 point: correct value, $KE_i=468{,}750\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the car's final kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $KE_f=\\tfrac12(1500)(10.0)^2$. 1 point: correct value, $KE_f=75{,}000\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the net work done on the car by the braking force (and any other forces present) during this time.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $W_{net}=KE_f-KE_i$. 1 point: correct value, $W_{net}=75{,}000-468{,}750=-393{,}750\\ \\mathrm{J}$."
+      },
+      {
+        "label": "d",
+        "prompt": "State the sign of your answer to part (c), and explain what this sign means physically in terms of the car's motion.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the sign is negative. 1 point: correctly explains that a negative net work corresponds to a decrease in kinetic energy, consistent with the car braking (slowing down)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-48",
+    "sourceId": "U4-FRQ-48",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET1",
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** misconception-diagnosis-and-correction task (identify the specific error(s), then produce a fully corrected solution) — a documented override under Specification Sec.4's misconception-suppression criterion, combining error-identification and independent re-solution as two compounding demands\n**Estimated time:** 14 min\n**Numeric contract:** `none`\n\nA tutoring student submits the following work: \"A 5.0 kg object speeds up from 2.0 m/s to 4.0 m/s. Since speed doubled, kinetic energy must also double, so the net work done on it is $W_{net}=KE_i=\\tfrac12(5.0)(2.0)^2=10.0\\ \\mathrm{J}$.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify every error in the student's reasoning and calculation. Be specific about which physical relationship each error violates.",
+        "points": 5,
+        "modelResponse": "1 point: identifies that kinetic energy depends on the square of speed, not speed directly, so doubling speed quadruples kinetic energy rather than doubling it. 1 point: identifies that the student's claimed \"net work equals $KE_i$\" reasoning does not follow from the work-energy theorem; the correct relationship is $W_{net}=KE_f-KE_i$, the change in kinetic energy, not the initial kinetic energy alone. 1 point: identifies that the student never actually calculated $KE_f$ using the final speed (4.0 m/s), despite having it. 1 point: identifies that even the value 10.0 J the student computed is $KE_i$, not any correctly derived net-work quantity. 1 point: identifies that the correct net work (found by correctly computing $KE_f-KE_i$) is substantially larger than 10.0 J, since kinetic energy quadruples, not doubles, when speed doubles."
+      },
+      {
+        "label": "b",
+        "prompt": "Write a fully corrected solution, including the correct equation, substitution, and final answer with units.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution for both kinetic energies, $KE_i=\\tfrac12(5.0)(2.0)^2=10.0\\ \\mathrm{J}$ and $KE_f=\\tfrac12(5.0)(4.0)^2=40.0\\ \\mathrm{J}$. 1 point: correctly applies $W_{net}=KE_f-KE_i$. 1 point: correct final value, $W_{net}=40.0-10.0=30.0\\ \\mathrm{J}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-49",
+    "sourceId": "U4-FRQ-49",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** 3 independently scorable parts; multiple quantitative operations\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nA 3.0 kg object undergoes a two-stage process. In stage 1, its kinetic energy changes from 20 J to 50 J. In stage 2, its kinetic energy changes from 50 J back down to 35 J.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the net work done on the object during stage 1.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $W_{net,1}=KE_{after1}-KE_{before1}$. 1 point: correct value, $W_{net,1}=50-20=30\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the net work done on the object during stage 2.",
+        "points": 2,
+        "modelResponse": "1 point: correctly applies $W_{net,2}=KE_{after2}-KE_{before2}$. 1 point: correct value, $W_{net,2}=35-50=-15\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the total net work done on the object over both stages combined, and calculate the object's final speed.",
+        "points": 4,
+        "modelResponse": "1 point: correctly sums the two stages, $W_{net,total}=30+(-15)=15\\ \\mathrm{J}$ (equivalently, $35-20=15\\ \\mathrm{J}$). 1 point: correctly identifies the final kinetic energy as 35 J (the value at the end of stage 2). 1 point: correct substitution, $35=\\tfrac12(3.0)v_f^2$. 1 point: correct final value, $v_f^2\\approx23.33$, so $v_f\\approx4.83\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-50",
+    "sourceId": "U4-FRQ-50",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work_energy_theorem",
+    "sourceOutcomes": [
+      "WET1",
+      "WET2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n\nObject A (mass 3.0 kg) and object B (mass 12.0 kg) both start at rest. Equal net work of +54 J is done on each object.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate object A's final kinetic energy and final speed.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that, starting from rest, $KE_{f,A}=0+54=54\\ \\mathrm{J}$. 1 point: correct substitution, $54=\\tfrac12(3.0)v_A^2$. 1 point: correct value, $v_A^2=36.0$, so $v_A=6.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate object B's final kinetic energy and final speed.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that, starting from rest, $KE_{f,B}=0+54=54\\ \\mathrm{J}$. 1 point: correct substitution, $54=\\tfrac12(12.0)v_B^2$. 1 point: correct value, $v_B^2=9.0$, so $v_B=3.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Both objects received equal net work, but they do not have equal final speeds. Explain why, using the work-energy theorem and the definition of kinetic energy.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that equal net work produces equal final kinetic energy (both objects reach 54 J), regardless of mass, since the work-energy theorem relates net work directly to the change in kinetic energy. 1 point: correctly explains that equal kinetic energy does not mean equal speed when the masses differ, since $KE=\\tfrac12mv^2$; the more massive object (B) reaches the same kinetic energy at a lower speed than the less massive object (A)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U4-FRQ-51",
+    "sourceId": "U4-FRQ-51",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "mechanical-energy",
+    "unit": "Unit 4: Energy",
+    "cluster": "work",
+    "sourceOutcomes": [
+      "W2",
+      "W3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "**Difficulty basis:** sequential application of one core quantitative model across parts, or a single comparative/conceptual demand beyond direct calculation, without a second independent, qualitatively distinct demand feature\n**Estimated time:** 13 min\n**Numeric contract:** `{\"responseMode\":\"constructed-response\",\"roundingDecimalPlaces\":1,\"absoluteTolerance\":0.05,\"canonicalValuesSource\":\"scoring-rubric\",\"boundaryRule\":\"lower-inclusive-upper-exclusive\"}`\n**Supersedes:** U4-FRQ-04 (retired 28 Aug 2026; see stub above)\n\nA 15 kg block is pushed 3.0 m up a frictionless ramp inclined at an angle, by a force applied parallel to the ramp's surface, in the same direction as the block's motion up the ramp. The applied force has a magnitude of 80 N. The diagram shows the block, the ramp, and the applied force arrow, all directed along the ramp's surface.\n\n\nRound each numerical answer to one decimal place.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the work done on the block by the applied force.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the applied force and the block's displacement are both directed along the ramp's surface, in the same direction, so $\\theta = 0°$. 1 point: correct substitution, $W = (80\\ \\mathrm{N})(3.0\\ \\mathrm{m})\\cos(0°)$. 1 point: correct value with unit and sign, $W = +240\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The block's weight is a force directed straight down (not along the ramp). Explain why you cannot simply use the block's full weight and the 3.0 m ramp distance in the equation $W = Fd\\cos\\theta$ using $\\theta = 0°$ to find the work done by gravity in this situation.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that gravity acts straight down, while the block's displacement is along the ramp's surface, not straight down. 1 point: correctly states that $\\theta = 0°$ would only be valid if the force and displacement were in exactly the same direction, which is not the case here. 1 point: correctly concludes that the angle between gravity and the ramp-direction displacement is neither 0° nor 180°, so using $\\theta = 0°$ directly would misrepresent the geometry (full numeric resolution of that angle is not required for this outcome)."
+      },
+      {
+        "label": "c",
+        "prompt": "State the work done on the block by the ramp's normal force as the block moves 3.0 m up the ramp, and explain your reasoning in terms of the angle between the normal force and the block's displacement.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the normal force is always directed perpendicular to the ramp's surface, which is also the surface along which the block is displaced, so $\\theta = 90°$. 1 point: correctly concludes that because $\\cos(90°) = 0$, the normal force does zero work on the block, regardless of the ramp's specific incline angle."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-4/energy-bank/u4_frq_incline_push.svg",
+        "caption": "Diagram for this item."
+      }
+    ]
+  }
+]

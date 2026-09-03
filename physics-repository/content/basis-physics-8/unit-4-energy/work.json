@@ -1,0 +1,416 @@
+{
+  "id": "basis-p8-u4-l1",
+  "slug": "work",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 4: Energy",
+  "topic": "Work",
+  "lessonTitle": "Work",
+  "lessonNumber": "1",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit4_energy_outcomes.md; resources/physics8/rescue_sprint/unit_04_energy/curriculum_architecture/",
+  "sourceApproval": "Outcomes Founder-approved; no rescue_sprint lesson module exists for Unit 4 — this lesson is authored from the approved outcome register (W1–W3) and the Unit 4 curriculum architecture.",
+  "prerequisites": [
+    "Unit 3 — a force is a push or pull with a direction; the component of a force along an axis.",
+    "Unit 2 — displacement is the signed change in position; distance is the total path length."
+  ],
+  "majorObjective": "State the full physics definition of work, describe how work depends on the angle between the force and the displacement, and calculate the work done when that angle is $0^\\circ$, $90^\\circ$, or $180^\\circ$.",
+  "subObjectives": [
+    "State that work is done on an object when a force acts on it through a displacement, and depends only on the component of the force along that displacement.",
+    "State that a force does positive work when it has a component along the motion, negative work when it has a component against the motion, and zero work when it is perpendicular to the motion.",
+    "Calculate $W = Fd$ (angle $0^\\circ$), $W = -Fd$ (angle $180^\\circ$), and $W = 0$ (angle $90^\\circ$).",
+    "Interpret the sign of the work as energy added to ($+$) or removed from ($-$) the object."
+  ],
+  "hook": {
+    "prompt": "You hold a heavy box perfectly still at arm's length for a full minute. How much work do you do on the box?",
+    "choices": [
+      "A lot — your arms are straining the whole time.",
+      "Zero — the box does not move, so there is no displacement.",
+      "It equals the box's weight times one minute.",
+      "It depends on how heavy the box is."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "In physics, “work” has a precise meaning that is narrower than the everyday one. It is the way a force transfers energy to or from an object by acting through a displacement.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The physics definition of work",
+      "concept": "**Work** is done on an object when a **force** acts on it while the object undergoes a **displacement**, and the work depends only on the **component of the force along that displacement**.\n\nThree things must all be true for a force to do work on an object:\n\n1. There is a force on the object.\n2. The object moves (there is a displacement).\n3. The force has a component **along** the direction of that displacement.\n\nIf the object does not move, no work is done — no matter how hard the force pushes. Holding a box still, or pushing on a wall that does not budge, does **zero** work in the physics sense.\n\nWork is measured in **joules (J)**, the same unit as energy — because work *is* a transfer of energy.",
+      "representation": "To decide whether a force does work on an object, check in order:\n\n1. Does the object move? No → zero work, stop here.\n2. Is there a force on it? No → zero work.\n3. Does the force have a part pointing along (or against) the motion? No (it's perpendicular) → zero work. Yes → work is done.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each case, state whether work is done on the object and why: (a) a student holds a $15\\ \\mathrm{kg}$ box stationary at arm's length; (b) a worker pushes a crate $4.0\\ \\mathrm{m}$ across a floor with a horizontal force; (c) a waiter carries a tray at a constant height across a level room.",
+        "phases": [
+          {
+            "label": "(a) Holding the box still",
+            "steps": [
+              "There is an upward force from the arms, but the box has no displacement.",
+              "No displacement → **zero work**, despite the effort."
+            ]
+          },
+          {
+            "label": "(b) Pushing the crate across the floor",
+            "steps": [
+              "There is a horizontal force, and the crate moves $4.0\\ \\mathrm{m}$ horizontally.",
+              "The force is along the displacement → **work is done** (positive, energy added to the crate's motion)."
+            ]
+          },
+          {
+            "label": "(c) Carrying the tray across the room",
+            "steps": [
+              "The waiter's hand pushes *up* on the tray, but the tray moves *horizontally* — the force is perpendicular to the displacement.",
+              "Perpendicular force → **zero work** on the tray by the carrying force."
+            ]
+          }
+        ],
+        "keyMove": "No displacement, or a force perpendicular to the displacement, means zero work — regardless of how much effort it feels like."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L1-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A person pushes as hard as they can against a large boulder, but the boulder does not move. How much work does the person do on the boulder?",
+        "choices": [
+          "A large amount, because a large force is applied.",
+          "Zero, because the boulder does not move (no displacement).",
+          "It equals the force times the time spent pushing.",
+          "Half of the applied force, because effort is wasted."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — work requires a displacement. The boulder does not move, so no work is done on it, no matter how large the force.",
+          "incorrect": {
+            "0": "A large force with no displacement still does zero work. Work is force acting *through a distance*, not just force.",
+            "2": "Work does not involve time — that would be a different quantity (power). Work is force times displacement (along the force).",
+            "3": "Work is not ‘half’ of anything here. With zero displacement, the work is exactly zero."
+          }
+        },
+        "hint": [
+          "Work needs all three: a force, a displacement, and the force along the displacement. Which one is missing here?"
+        ],
+        "solution": "Work is done only when a force acts through a displacement. The boulder does not move, so the displacement is zero and the work done on it is zero — independent of how hard the person pushes."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Work and direction",
+      "concept": "The **angle between the force and the displacement** decides the sign of the work:\n\n- **Force along the motion ($0^\\circ$):** the force has a full component in the direction of travel → **positive work**. Energy is added to the object.\n- **Force against the motion ($180^\\circ$):** the force points opposite the travel → **negative work**. Energy is removed from the object (friction and air resistance do this).\n- **Force perpendicular to the motion ($90^\\circ$):** the force has *no* component along the travel → **zero work**. (The normal force on a sliding box, or gravity on something moving horizontally, does no work.)\n\nPositive work speeds an object up or lifts it; negative work slows it down or lowers it; perpendicular forces just change the direction, not the energy.",
+      "representation": "Match the angle to the sign:\n\n- $0^\\circ$ (with the motion) → $W = +Fd$\n- $90^\\circ$ (across the motion) → $W = 0$\n- $180^\\circ$ (against the motion) → $W = -Fd$",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-4/work/work-and-direction.svg",
+          "caption": "Left: a force along the displacement does positive work ($W = +Fd$), adding energy. Middle: a force perpendicular to the displacement does zero work. Right: a force against the displacement does negative work ($W = -Fd$), removing energy."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A sled slides $6.0\\ \\mathrm{m}$ across level snow. State the sign of the work done on the sled by (a) a rope pulling it forward, (b) the kinetic friction from the snow, (c) the sled's weight.",
+        "phases": [
+          {
+            "label": "(a) The rope",
+            "steps": [
+              "The rope pulls in the direction the sled moves ($0^\\circ$). **Positive work** — energy is added to the sled."
+            ]
+          },
+          {
+            "label": "(b) Kinetic friction",
+            "steps": [
+              "Friction opposes the sliding, so it points opposite the displacement ($180^\\circ$). **Negative work** — energy is removed from the sled (turned into heat)."
+            ]
+          },
+          {
+            "label": "(c) The weight",
+            "steps": [
+              "The weight points straight down; the sled moves horizontally. The force is perpendicular to the displacement ($90^\\circ$). **Zero work**."
+            ]
+          }
+        ],
+        "keyMove": "Along → positive; against → negative; perpendicular → zero."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L1-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A ball on a string is whirled in a horizontal circle at a constant speed. How much work does the string tension do on the ball over one full circle?",
+        "choices": [
+          "Positive work, because the tension keeps the ball moving.",
+          "Zero, because the tension always points toward the centre — perpendicular to the ball's motion.",
+          "Negative work, because the tension pulls the ball back.",
+          "It cannot be determined without the ball's speed."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the tension always points toward the centre of the circle, which is perpendicular to the ball's velocity (tangent to the circle) at every instant. A perpendicular force does zero work, and the ball's speed (and kinetic energy) stays constant.",
+          "incorrect": {
+            "0": "The tension does not add energy — it only changes the ball's *direction*. The speed is constant, so no work is done.",
+            "2": "The tension is perpendicular to the motion, not opposite it, so the work is zero, not negative.",
+            "3": "The angle alone settles it: a force always perpendicular to the displacement does zero work regardless of speed."
+          }
+        },
+        "hint": [
+          "Which way does the string pull? Which way is the ball moving at that instant? What is the angle between them?"
+        ],
+        "solution": "For circular motion the tension points toward the centre and the velocity is tangent to the circle — they are perpendicular ($90^\\circ$) at every instant. A perpendicular force does zero work, which is consistent with the ball's speed and kinetic energy staying constant."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Calculating work in the three cases",
+      "concept": "For a **constant** force and a straight-line displacement, when the angle between them is $0^\\circ$, $90^\\circ$, or $180^\\circ$:\n\n| Angle | Work | Meaning |\n|---|---|---|\n| $0^\\circ$ (force along $d$) | $W = +Fd$ | energy added |\n| $90^\\circ$ (force across $d$) | $W = 0$ | no energy transfer |\n| $180^\\circ$ (force against $d$) | $W = -Fd$ | energy removed |\n\nHere $F$ is the size of the force (newtons) and $d$ is the size of the displacement (metres); the answer is in **joules**. Always state the sign, and say what it means physically.",
+      "representation": "To calculate the work done by one force:\n\n1. Find the angle between that force and the displacement.\n2. $0^\\circ \\to W = +Fd$;  $90^\\circ \\to W = 0$;  $180^\\circ \\to W = -Fd$.\n3. Attach joules, and interpret: $+$ means energy added, $-$ means energy removed.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A tow cable pulls a stalled car $12\\ \\mathrm{m}$ forward with a steady horizontal force of $400\\ \\mathrm{N}$. Meanwhile rolling friction of $150\\ \\mathrm{N}$ acts backward on the car. Find the work done by (a) the cable and (b) friction, and (c) the total work done on the car.",
+        "phases": [
+          {
+            "label": "(a) Work by the cable",
+            "steps": [
+              "The cable's force is along the displacement ($0^\\circ$): $W_{cable} = +Fd = +(400\\ \\mathrm{N})(12\\ \\mathrm{m}) = +4800\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Work by friction",
+            "steps": [
+              "Friction is opposite the displacement ($180^\\circ$): $W_{friction} = -Fd = -(150\\ \\mathrm{N})(12\\ \\mathrm{m}) = -1800\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(c) Total work",
+            "steps": [
+              "$W_{total} = W_{cable} + W_{friction} = (+4800) + (-1800) = +3000\\ \\mathrm{J}$ — a net $3000\\ \\mathrm{J}$ of energy added to the car."
+            ]
+          }
+        ],
+        "keyMove": "Compute each force's work with its own angle, keep the signs, then add for the total."
+      },
+      "formativeCheck": {
+        "id": "BP8-U4-L1-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $6.0\\ \\mathrm{N}$ kinetic friction force acts on a box that slides $2.5\\ \\mathrm{m}$. What work does friction do on the box?",
+        "choices": [
+          "$-15\\ \\mathrm{J}$",
+          "$+15\\ \\mathrm{J}$",
+          "$0\\ \\mathrm{J}$",
+          "$-2.4\\ \\mathrm{J}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — friction opposes the sliding ($180^\\circ$), so $W = -Fd = -(6.0\\ \\mathrm{N})(2.5\\ \\mathrm{m}) = -15\\ \\mathrm{J}$. Energy is removed from the box.",
+          "incorrect": {
+            "1": "Friction acts *against* the motion, so it does negative work, not positive.",
+            "2": "Friction is along the line of motion (opposite to it), not perpendicular, so it does non-zero work.",
+            "3": "This divides instead of multiplying. $W = Fd = 6.0 \\times 2.5 = 15$, with a minus sign for friction."
+          }
+        },
+        "hint": [
+          "Friction opposes the slide, so the angle is $180^\\circ$: $W = -Fd$."
+        ],
+        "solution": "Kinetic friction points opposite the displacement, so the angle is $180^\\circ$ and $W = -Fd = -(6.0\\ \\mathrm{N})(2.5\\ \\mathrm{m}) = -15\\ \\mathrm{J}$. The negative sign means friction removes $15\\ \\mathrm{J}$ of energy from the box (it becomes heat)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U4-L1-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: “The waiter works really hard carrying that heavy tray across the restaurant, so he must be doing a lot of work on the tray.” What is the physics view?",
+      "choices": [
+        "Correct — more effort always means more work.",
+        "The carrying force is vertical (holding the tray up) while the tray moves horizontally, so that force does zero work on the tray, even though it feels effortful.",
+        "The waiter does negative work, because carrying is tiring.",
+        "Work cannot be calculated for a moving person."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — physics work is force times displacement *along the force*. The waiter's hand pushes up; the tray moves sideways. Perpendicular force, zero work — regardless of how tiring it is.",
+        "incorrect": {
+          "0": "The everyday meaning of ‘work’ (effort) is not the physics meaning. A perpendicular force does zero work no matter the effort.",
+          "2": "The work is exactly zero, not negative. Negative work would need a force pointing against the motion.",
+          "3": "Work is well-defined here: the relevant force (upward) is perpendicular to the motion (horizontal), so it is zero."
+        }
+      },
+      "hint": [
+        "Which way does the waiter's hand push the tray? Which way does the tray move? What is the angle between them?"
+      ],
+      "solution": "The physics definition of work counts only the force component along the displacement. The waiter holds the tray up (vertical force) while walking it across the room (horizontal displacement) — the force is perpendicular to the motion, so it does zero work on the tray. The feeling of effort comes from the biology of holding muscles tensed, not from doing physics work."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $40\\ \\mathrm{N}$ horizontal force pushes a box $3.0\\ \\mathrm{m}$ to the right. Kinetic friction of $10\\ \\mathrm{N}$ acts on the box. Find the total work done on the box.\n\nStudent's response: “The push does $W = 40 \\times 3.0 = 120\\ \\mathrm{J}$. Friction also does $10 \\times 3.0 = 30\\ \\mathrm{J}$. Total work $= 120 + 30 = 150\\ \\mathrm{J}$.”",
+      "prompts": [
+        "State the sign rule for the work done by a force at $0^\\circ$ and at $180^\\circ$ to the displacement.",
+        "Identify the error in the student's friction term.",
+        "Give the correct total work, with a brief interpretation of the sign."
+      ],
+      "modelResponse": "A force along the displacement ($0^\\circ$) does positive work, $W = +Fd$; a force opposite the displacement ($180^\\circ$) does negative work, $W = -Fd$. The error is writing friction's work as $+30\\ \\mathrm{J}$: friction opposes the rightward slide, so its angle is $180^\\circ$ and its work is $-30\\ \\mathrm{J}$. Correct total: $W_{total} = (+120\\ \\mathrm{J}) + (-30\\ \\mathrm{J}) = +90\\ \\mathrm{J}$. The positive sign means a net $90\\ \\mathrm{J}$ of energy was added to the box (which would show up as an increase in its kinetic energy).",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal scenario gives a force and a displacement; the angle between them fixes the sign of the work ($0^\\circ \\to +$, $90^\\circ \\to 0$, $180^\\circ \\to -$); $W = \\pm Fd$ gives the value in joules; and the sign says whether energy was added to or removed from the object. This is the bridge into the rest of the unit — the work-energy theorem (Lesson 7) makes 'energy added' precise as $W_{net} = \\Delta KE$.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U4-L1-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A crane lifts a $200\\ \\mathrm{N}$ crate straight up by $5.0\\ \\mathrm{m}$ at a constant speed. How much work does the crane's cable do on the crate?",
+      "choices": [
+        "$+1000\\ \\mathrm{J}$",
+        "$-1000\\ \\mathrm{J}$",
+        "$0\\ \\mathrm{J}$",
+        "$+40\\ \\mathrm{J}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — at constant speed the cable tension equals the weight, $200\\ \\mathrm{N}$, and it points up, the same direction as the $5.0\\ \\mathrm{m}$ displacement ($0^\\circ$). $W = +Fd = +(200)(5.0) = +1000\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "The cable pulls *up* and the crate moves *up* — same direction, so positive work. (Gravity does the $-1000\\ \\mathrm{J}$.)",
+          "2": "The force is along the displacement, not perpendicular, so the work is not zero.",
+          "3": "This divides ($200/5.0$). Work is force times displacement: $200 \\times 5.0 = 1000$."
+        }
+      },
+      "hint": [
+        "The cable pulls up; the crate moves up — angle $0^\\circ$, so $W = +Fd$. At constant speed the tension equals the weight."
+      ],
+      "solution": "Lifting at constant speed means the cable tension equals the crate's weight, $200\\ \\mathrm{N}$, directed upward. The displacement is $5.0\\ \\mathrm{m}$ upward, so the force and displacement are parallel ($0^\\circ$): $W = +Fd = +(200\\ \\mathrm{N})(5.0\\ \\mathrm{m}) = +1000\\ \\mathrm{J}$."
+    },
+    {
+      "id": "BP8-U4-L1-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A box slides at a constant speed across a rough, level floor while a rope pulls it horizontally forward. Which statement about the work done on the box is correct?",
+      "choices": [
+        "The rope does positive work, friction does an equal amount of negative work, and the total work on the box is zero.",
+        "The rope and friction both do positive work.",
+        "The total work on the box is positive, because the rope is pulling it.",
+        "No forces do any work, since the speed is constant."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — constant speed means the kinetic energy is unchanged, so the total work is zero. The rope's positive work is exactly cancelled by friction's negative work; the normal force and weight (both perpendicular to the motion) do zero work.",
+        "incorrect": {
+          "1": "Friction opposes the motion, so it does *negative* work, not positive.",
+          "2": "If the total work were positive, the box would speed up. At a constant speed the total work is zero.",
+          "3": "The rope and friction each do non-zero work — they just cancel. ‘Constant speed’ means the *total* is zero, not that each force does zero work."
+        }
+      },
+      "hint": [
+        "Constant speed → constant kinetic energy → total work is zero. The rope adds energy; what removes an equal amount?"
+      ],
+      "solution": "The box moves at a constant speed, so its kinetic energy does not change and the total work done on it is zero. The rope does positive work (force along the motion); friction does an equal-magnitude negative work (force against the motion); the weight and normal force are perpendicular to the motion and do zero work. The positive and negative contributions cancel."
+    },
+    {
+      "id": "BP8-U4-L1-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $4.0\\ \\mathrm{kg}$ box is pushed $8.0\\ \\mathrm{m}$ to the right along a level floor by a steady horizontal force of $25\\ \\mathrm{N}$. Kinetic friction on the box is $9.0\\ \\mathrm{N}$. The box's weight is $39.2\\ \\mathrm{N}$ and the normal force from the floor is $39.2\\ \\mathrm{N}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the work done on the box by each of the four forces (applied, friction, weight, normal).",
+          "modelResponse": "Applied force ($0^\\circ$): $W = +Fd = +(25)(8.0) = +200\\ \\mathrm{J}$. Friction ($180^\\circ$): $W = -Fd = -(9.0)(8.0) = -72\\ \\mathrm{J}$. Weight ($90^\\circ$ to the horizontal motion): $W = 0$. Normal force ($90^\\circ$): $W = 0$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Find the total (net) work done on the box.",
+          "modelResponse": "$W_{total} = (+200) + (-72) + 0 + 0 = +128\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A student says the weight ‘must do negative work because gravity is always pulling the box down.’ Explain why this is wrong here.",
+          "modelResponse": "Work depends on the force component *along the displacement*. The box moves horizontally, and the weight points straight down — they are perpendicular ($90^\\circ$), so the weight does zero work, not negative work. Gravity would do work only if the box also moved vertically (up or down). ‘Always pulling down’ does not mean ‘always doing work.’",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The sign of work ($0^\\circ$, $90^\\circ$, $180^\\circ$), the fact that holding something still or carrying it horizontally does zero work, and friction doing negative work are standard AP Physics 1 and IB items. Work is the entry point to the whole energy unit and to the work-energy theorem.",
+  "summary": "Work is done when a force acts on an object through a displacement, and it depends only on the force component along that displacement (in joules). No displacement, or a force perpendicular to the displacement, means zero work — no matter the effort. A force along the motion ($0^\\circ$) does positive work ($W = +Fd$, energy added); against the motion ($180^\\circ$) does negative work ($W = -Fd$, energy removed); across the motion ($90^\\circ$) does zero work. Compute each force's work with its own angle and add for the total.",
+  "exitQuestion": {
+    "id": "BP8-U4-L1-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "An object is carried at a constant height across a room. How much work does the carrying (upward) force do on the object, and why?",
+    "choices": [
+      "Positive work, because the object is being supported against gravity.",
+      "Zero work, because the upward force is perpendicular to the horizontal displacement.",
+      "Negative work, because the force opposes the object's weight.",
+      "Equal to the object's weight times the width of the room."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the carrying force is vertical and the displacement is horizontal, so the angle is $90^\\circ$ and the work is zero. The force supports the object but transfers no energy to it.",
+      "incorrect": {
+        "0": "Supporting an object against gravity while it moves horizontally does no work — the force is perpendicular to the motion.",
+        "2": "The carrying force is perpendicular to the displacement, not opposite it, so the work is zero, not negative.",
+        "3": "That formula would apply only if the object moved *in the direction of the force* (vertically). It moves horizontally, so the work is zero."
+      }
+    },
+    "hint": [
+      "The carrying force points up; the object moves sideways. What is the angle, and what work does a force at that angle do?"
+    ],
+    "solution": "The carrying force is directed upward while the object's displacement is horizontal — the two are perpendicular ($90^\\circ$). A force perpendicular to the displacement does zero work, so the carrying force does no work on the object even though it holds it up the whole way."
+  },
+  "questionBankFile": "mechanical-energy.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U4-MCQ-009",
+    "BP8-U4-MCQ-003",
+    "BP8-U4-MCQ-006",
+    "BP8-U4-MCQ-030"
+  ],
+  "needsPlotly": false
+}

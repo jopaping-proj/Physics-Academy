@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="450" viewBox="0 0 700 450" role="img" aria-labelledby="t d"><title id="t">Free-body diagram of a box pulled by a horizontal rope across a floor</title><desc id="d">A box on a horizontal floor is pulled by a rope held horizontal, in the same direction as the box's rightward sliding motion. Four labeled forces act on the box: rope tension pointing right, gravity straight down, the normal force straight up, and friction pointing left, directly opposing the box's motion.</desc>
+<path d="M40 320H660" stroke="#111" stroke-width="3"/>
+<rect x="260" y="240" width="100" height="80" fill="#eaf2f7" stroke="#145a9c" stroke-width="2"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#111"/></marker></defs>
+<path d="M310 240L310 165" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M310 320L310 390" stroke="#111" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M360 265L470 265" stroke="#b3261e" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M260 300L170 300" stroke="#8a5a12" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M520 210L590 210" stroke="#555" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<g font-family="Arial" font-size="18">
+<text x="322" y="158">F<tspan baseline-shift="sub" font-size="12">N</tspan></text>
+<text x="322" y="408">F<tspan baseline-shift="sub" font-size="12">g</tspan></text>
+<text x="415" y="255" text-anchor="middle">T</text>
+<text x="160" y="290" text-anchor="end">F<tspan baseline-shift="sub" font-size="12">f</tspan></text>
+<text x="555" y="200" text-anchor="middle">motion</text>
+</g>
+</svg>

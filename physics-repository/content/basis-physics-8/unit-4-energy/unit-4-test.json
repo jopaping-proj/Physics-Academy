@@ -1,0 +1,14 @@
+{
+  "format": "unit-test",
+  "id": "basis-p8-u4-unit-test",
+  "slug": "unit-4-test",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 4: Energy",
+  "lessonTitle": "Unit 4 Test",
+  "intro": "A **45-minute** timed test on the whole of Energy — work, energy definitions and types, gravitational potential energy, kinetic energy, conservation of energy, spring potential energy, and the work-energy theorem. It is **generated fresh every time you open it**: a new set of questions drawn from across the unit, in a new order, with the answer choices shuffled.\n\nThe mix follows the Physics Academy test blueprint (`docs/test-generation.md`). BASIS Physics 8 is a pre-AP course, so the energy accounting stays scalar (no 2-D work or power), but the reasoning is held to AP Physics 1 rigor.\n\n**No calculator.** Every multiple-choice item is built to be solved by hand. Multiple choice is scored automatically; free response is scored by you against the model answer and rubric.",
+  "config": { "mode": "time", "minutes": 45 },
+  "calculatorPolicy": "not-allowed",
+  "mcqBanks": ["mechanical-energy.json"],
+  "frqBanks": ["mechanical-energy-frq.json"]
+}
