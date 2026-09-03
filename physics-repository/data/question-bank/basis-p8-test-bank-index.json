@@ -3,8 +3,19 @@
   "course": "BASIS Physics 8",
   "courseId": "basis-physics-8",
   "status": "source-indexed",
-  "note": "These are recalibrated provenance manifests for the approved/proposed Markdown source banks. They are not native interactive question-bank arrays.",
+  "note": "Unit 1 is a native interactive draft bank; Units 2–4 are recalibrated provenance manifests for approved/proposed Markdown source banks and are not native interactive arrays.",
   "units": [
+    {
+      "unit": 1,
+      "name": "Graphing and Dimensional Analysis",
+      "indexFile": "basis-p8-u1-graphing-dimensional-analysis-index.json",
+      "bankFormat": "native-interactive",
+      "mcq": 50,
+      "frq": 15,
+      "active": 65,
+      "retired": 0,
+      "totalRecords": 65
+    },
     {
       "unit": 2,
       "name": "Kinematics",
@@ -37,10 +48,10 @@
     }
   ],
   "totals": {
-    "mcq": 750,
-    "frq": 150,
-    "active": 900,
+    "mcq": 800,
+    "frq": 165,
+    "active": 965,
     "retired": 29,
-    "totalRecords": 929
+    "totalRecords": 994
   }
 }

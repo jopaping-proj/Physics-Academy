@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node build/build.js",
     "import:basis-physics-8": "node build/import-basis-physics-8.js",
+    "import:basis-physics-8-unit-1": "node build/import-basis-p8-unit1.js .",
     "serve": "node build/build.js && node build/serve.js"
   },
   "engines": {
