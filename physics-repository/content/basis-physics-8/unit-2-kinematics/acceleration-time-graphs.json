@@ -1,0 +1,423 @@
+{
+  "id": "basis-p8-u2-l5",
+  "slug": "acceleration-time-graphs",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Acceleration and acceleration-time graphs",
+  "lessonTitle": "Acceleration and Acceleration-Time Graphs",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_05_acceleration_time_graphs.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 3 — velocity is signed; constant velocity needs unchanged speed AND direction.",
+    "Lesson 4 — the slope of a velocity-time segment is the acceleration; the signed area under a graph is an accumulated quantity."
+  ],
+  "majorObjective": "Define acceleration as any change in velocity, read a signed acceleration from an acceleration-time graph, match a described motion history to the right acceleration-time graph, and use the area under an acceleration-time segment as $\\Delta v$ (then $v_f = v_i + \\Delta v$).",
+  "subObjectives": [
+    "State that acceleration is a change in velocity — a change in speed, direction, or both.",
+    "Read a signed acceleration value at a stated time from an acceleration-time graph.",
+    "Decide whether an object is speeding up or slowing down by comparing the sign of acceleration with the sign of velocity — not from the sign of acceleration alone.",
+    "Match a verbal motion history to an acceleration-time graph, segment by segment.",
+    "Calculate $\\Delta v$ as the signed area under an acceleration-time segment, then combine it with a given initial velocity: $v_f = v_i + \\Delta v$."
+  ],
+  "hook": {
+    "prompt": "An object moving in the negative direction has a negative acceleration. Is it speeding up or slowing down?",
+    "choices": [
+      "Slowing down — negative acceleration always means slowing.",
+      "Speeding up — the acceleration and the velocity have the same sign.",
+      "Neither — negative acceleration on a moving object means constant speed.",
+      "It cannot be decided without a numerical value for the acceleration."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Acceleration is the rate at which velocity changes — the slope of a velocity-time graph from Lesson 4. This lesson treats acceleration as a quantity in its own right, with its own graph.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Acceleration is any change in velocity",
+      "concept": "**Acceleration is a change in velocity** — a change in speed, a change in direction, or both. Because velocity is signed, a one-dimensional reversal (moving $+3\\ \\mathrm{m/s}$, then $-3\\ \\mathrm{m/s}$) is an acceleration even though the *speed* never changed.\n\nOn an **acceleration-time graph**, read a signed acceleration value at a time just as you read velocity on a velocity-time graph. A positive value means the velocity is increasing in the positive-direction sense; a negative value means it is decreasing in that sense.\n\nA negative acceleration does **not** automatically mean “slowing down.” Whether an object speeds up or slows down depends on how the acceleration's sign compares with the **velocity's** sign:\n\n- **Same sign** (both $+$ or both $-$) → speeding up.\n- **Opposite signs** → slowing down.",
+      "representation": "Every time a signed acceleration is discussed, make two separate judgements:\n\n1. What is the sign of the acceleration?\n2. What is the sign of the velocity at that moment?\n\nSame sign means the speed is growing; opposite signs mean the speed is shrinking. “Negative” by itself decides nothing.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_at_g4.svg",
+          "caption": "An acceleration-time graph made of flat segments at different signed values. Reading a value at a time is a direct look-up; the segments' signs tell you which way the velocity is being pushed."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A car moving west (negative direction) at $12\\ \\mathrm{m/s}$ has an acceleration of $-2.0\\ \\mathrm{m/s^2}$. Is it speeding up or slowing down? Then repeat for a car moving east at $12\\ \\mathrm{m/s}$ with the same acceleration.",
+        "phases": [
+          {
+            "label": "West-moving car — compare signs",
+            "steps": [
+              "Velocity: $-12\\ \\mathrm{m/s}$ (negative). Acceleration: $-2.0\\ \\mathrm{m/s^2}$ (negative).",
+              "Same sign → the speed is growing. The car is speeding up, moving faster and faster to the west."
+            ]
+          },
+          {
+            "label": "East-moving car — compare signs",
+            "steps": [
+              "Velocity: $+12\\ \\mathrm{m/s}$ (positive). Acceleration: $-2.0\\ \\mathrm{m/s^2}$ (negative).",
+              "Opposite signs → the speed is shrinking. The car is slowing down."
+            ]
+          },
+          {
+            "label": "Conclusion",
+            "steps": [
+              "The same acceleration ($-2.0\\ \\mathrm{m/s^2}$) speeds one car up and slows the other down. Only the comparison with the velocity's sign decides which."
+            ]
+          }
+        ],
+        "keyMove": "Sign of $a$ versus sign of $v$: same → faster, opposite → slower."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L5-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "An object has velocity $+5\\ \\mathrm{m/s}$ and acceleration $+3\\ \\mathrm{m/s^2}$. A moment later, another object has velocity $-5\\ \\mathrm{m/s}$ and acceleration $+3\\ \\mathrm{m/s^2}$. Which is speeding up?",
+        "choices": [
+          "Only the first object.",
+          "Only the second object.",
+          "Both objects.",
+          "Neither object."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the first has $v$ and $a$ both positive (same sign) so it speeds up; the second has $v$ negative and $a$ positive (opposite signs) so it slows down.",
+          "incorrect": {
+            "1": "The second object has opposite signs for $v$ and $a$, so it is slowing down, not speeding up.",
+            "2": "Only the first object has $v$ and $a$ matching in sign. The second has them opposed.",
+            "3": "The first object has $v$ and $a$ both positive, which means speeding up."
+          }
+        },
+        "hint": [
+          "Same sign for $v$ and $a$ → speeding up. Opposite signs → slowing down. Check each object."
+        ],
+        "solution": "Object 1: $v = +5$, $a = +3$ — same sign, so speeding up. Object 2: $v = -5$, $a = +3$ — opposite signs, so slowing down. Only the first object is speeding up."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Matching a motion history to an acceleration-time graph",
+      "concept": "To build or choose an acceleration-time graph for a described motion history, break the description into **segments** and match each one:\n\n- “speeding up steadily (in the $+$ direction)” → a positive, constant segment.\n- “no change in velocity” / “steady velocity” → a segment on the axis ($a = 0$).\n- “slowing down steadily (while moving $+$)” → a negative, constant segment.\n\nThis is the same “check one element at a time” discipline used for position-time and velocity-time graphs, now applied to the acceleration history.",
+      "representation": "Take the description one phase at a time. For each phase, decide:\n\n1. Is the velocity changing? No → $a = 0$ (segment on the axis).\n2. If it is changing, in which direction is it being pushed? → sign of the segment.\n3. Is the push steady? Steady → a flat (horizontal) segment at that value.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A train speeds up steadily from a station, then travels at a steady cruising speed, then brakes steadily to a stop. Sketch the acceleration-time graph, phase by phase.",
+        "phases": [
+          {
+            "label": "Phase 1 — speeding up steadily",
+            "steps": [
+              "Velocity is increasing in the direction of travel, steadily → a positive, constant segment (a flat line above the axis)."
+            ]
+          },
+          {
+            "label": "Phase 2 — steady cruising speed",
+            "steps": [
+              "Velocity is not changing → the acceleration is zero → a segment sitting on the time axis."
+            ]
+          },
+          {
+            "label": "Phase 3 — braking steadily to a stop",
+            "steps": [
+              "Velocity is decreasing while the train still moves forward, steadily → a negative, constant segment (a flat line below the axis)."
+            ]
+          }
+        ],
+        "keyMove": "Three phases → three flat segments: above the axis, on the axis, below the axis."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L5-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "An object moves at a constant velocity for several seconds. What does its acceleration-time graph look like during that time?",
+        "choices": [
+          "A horizontal segment sitting on the time axis ($a = 0$).",
+          "A horizontal segment above the time axis.",
+          "A straight line sloping upward.",
+          "A horizontal segment below the time axis."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — constant velocity means the velocity is not changing, so the acceleration is zero: a segment right on the time axis.",
+          "incorrect": {
+            "1": "A segment above the axis is a positive, non-zero acceleration — the velocity would be increasing, not constant.",
+            "2": "A sloped line means the acceleration itself is changing. Constant velocity means the acceleration is a constant zero.",
+            "3": "A segment below the axis is a negative acceleration — the velocity would be decreasing, not constant."
+          }
+        },
+        "hint": [
+          "Constant velocity → no change in velocity → what value of acceleration?"
+        ],
+        "solution": "Constant velocity means the velocity is not changing at all, so the rate of change of velocity — the acceleration — is zero. On an acceleration-time graph that is a horizontal segment lying exactly on the time axis."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Area under the acceleration-time graph is the change in velocity",
+      "concept": "The **signed area between an acceleration-time segment and the time axis is the change in velocity, $\\Delta v$**, over that interval — the same area idea as Lesson 4, one level up.\n\nThe key extra step: $\\Delta v$ is **not** the final velocity. You must combine it with the velocity the object already had entering the interval: $$v_f = v_i + \\Delta v$$ This is a **two-step** calculation. Objects rarely start from rest, so $v_i$ usually matters.\n\nArea below the time axis is a negative $\\Delta v$.",
+      "representation": "Two steps, in order:\n\n1. **Area → $\\Delta v$.** Find the signed area under the acceleration-time segment (rectangle for constant $a$). Attach a $-$ sign if the segment is below the axis.\n2. **Add the initial velocity.** $v_f = v_i + \\Delta v$, keeping every sign.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/acceleration-time-graphs/at-area-is-delta-v.svg",
+          "caption": "A constant $+2\\ \\mathrm{m/s^2}$ for $4\\ \\mathrm{s}$ gives an area of $+8\\ \\mathrm{m/s}$ — that is $\\Delta v$, the change in velocity. The final velocity is $v_i + 8\\ \\mathrm{m/s}$, whatever $v_i$ was."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An object enters an interval with $v_i = -3.0\\ \\mathrm{m/s}$. Its acceleration is a constant $+2.0\\ \\mathrm{m/s^2}$ for $4.0\\ \\mathrm{s}$. Find $\\Delta v$ and the final velocity, and describe the motion.",
+        "phases": [
+          {
+            "label": "Step 1 — area gives Δv",
+            "steps": [
+              "Constant $+2.0\\ \\mathrm{m/s^2}$ for $4.0\\ \\mathrm{s}$: area $= (2.0)(4.0) = +8.0\\ \\mathrm{m/s}$.",
+              "So $\\Delta v = +8.0\\ \\mathrm{m/s}$ — the change in velocity, not the final velocity."
+            ]
+          },
+          {
+            "label": "Step 2 — add the initial velocity",
+            "steps": [
+              "$v_f = v_i + \\Delta v = (-3.0\\ \\mathrm{m/s}) + (+8.0\\ \\mathrm{m/s}) = +5.0\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "Describe the motion",
+            "steps": [
+              "It started at $-3.0\\ \\mathrm{m/s}$ (moving negative), with $a$ positive — opposite signs, so it slowed, reached $v = 0$, then reversed and sped up to $+5.0\\ \\mathrm{m/s}$ by the end."
+            ]
+          }
+        ],
+        "keyMove": "Area is $\\Delta v$, not $v_f$. Always add $v_i$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L5-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "graph",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "An object has $v_i = +10\\ \\mathrm{m/s}$. Its acceleration-time graph is a constant $-4\\ \\mathrm{m/s^2}$ for $3\\ \\mathrm{s}$. What is its final velocity?",
+        "choices": [
+          "$-2\\ \\mathrm{m/s}$",
+          "$-12\\ \\mathrm{m/s}$",
+          "$+10\\ \\mathrm{m/s}$",
+          "$+22\\ \\mathrm{m/s}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — area $= (-4)(3) = -12\\ \\mathrm{m/s}$, so $\\Delta v = -12\\ \\mathrm{m/s}$. Then $v_f = v_i + \\Delta v = (+10) + (-12) = -2\\ \\mathrm{m/s}$.",
+          "incorrect": {
+            "1": "$-12\\ \\mathrm{m/s}$ is $\\Delta v$, the change in velocity, not the final velocity. Add the initial $+10\\ \\mathrm{m/s}$.",
+            "2": "This ignores the acceleration entirely. The area under the segment is a real velocity change.",
+            "3": "This adds the magnitude of the area to $v_i$. The segment is below the axis, so $\\Delta v$ is $-12\\ \\mathrm{m/s}$, not $+12$."
+          }
+        },
+        "hint": [
+          "Step 1: area $= (-4\\ \\mathrm{m/s^2})(3\\ \\mathrm{s}) = \\Delta v$. Step 2: $v_f = v_i + \\Delta v$."
+        ],
+        "solution": "Area under the segment: $(-4\\ \\mathrm{m/s^2})(3\\ \\mathrm{s}) = -12\\ \\mathrm{m/s} = \\Delta v$. Final velocity: $v_f = v_i + \\Delta v = (+10\\ \\mathrm{m/s}) + (-12\\ \\mathrm{m/s}) = -2\\ \\mathrm{m/s}$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L5-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "A ball is thrown straight up. At the exact top of its flight its velocity is zero. What is its acceleration at that instant (up is positive)?",
+      "choices": [
+        "Zero, because the velocity is zero.",
+        "$-9.8\\ \\mathrm{m/s^2}$ — the same as during the rest of the flight.",
+        "$+9.8\\ \\mathrm{m/s^2}$, because it is about to fall.",
+        "Undefined at the turning point."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — acceleration describes how velocity is *changing*, which is a separate question from what the velocity *is*. At the top, $v = 0$ for an instant, but it is changing at the same constant rate, $-9.8\\ \\mathrm{m/s^2}$, as everywhere else.",
+        "incorrect": {
+          "0": "Zero velocity and zero acceleration are different statements. The ball is momentarily at rest, but its velocity is still changing rapidly.",
+          "2": "The magnitude is right but the sign is not: with up positive, gravity's acceleration is negative throughout, including at the top.",
+          "3": "Nothing about the acceleration is undefined at the top — it is the same steady $-9.8\\ \\mathrm{m/s^2}$."
+        }
+      },
+      "hint": [
+        "Acceleration is the rate of change of velocity, not the value of velocity. Look at the velocity-time graph: does its slope flatten at the top?"
+      ],
+      "solution": "The velocity is instantaneously zero at the top, but it is changing from positive (going up) to negative (coming down). That rate of change — the acceleration — is the constant $-9.8\\ \\mathrm{m/s^2}$ of gravity throughout the whole flight. A zero value of velocity does not force a zero value of acceleration."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: An object moving in the negative direction at $-6\\ \\mathrm{m/s}$ has a constant acceleration of $-3\\ \\mathrm{m/s^2}$ for $2\\ \\mathrm{s}$. Is it speeding up or slowing down, and what is its final velocity?\n\nStudent's response: “The acceleration is negative, so the object is slowing down. Final velocity: $\\Delta v = (-3)(2) = -6$, and slowing down means the speed decreases, so $v_f = -6 + 6 = 0\\ \\mathrm{m/s}$.”",
+      "prompts": [
+        "State the rule for deciding whether an object speeds up or slows down.",
+        "Identify the first step that is not supported by that rule.",
+        "Repair the response: state speeding up or slowing down, and give the correct final velocity from $v_f = v_i + \\Delta v$."
+      ],
+      "modelResponse": "The rule: compare the sign of the acceleration with the sign of the velocity — same sign means speeding up, opposite signs means slowing down. The first unsupported step is “the acceleration is negative, so the object is slowing down”: here the velocity ($-6\\ \\mathrm{m/s}$) is also negative, so the signs match and the object is speeding up (moving faster in the negative direction). The velocity calculation should just be $v_f = v_i + \\Delta v = (-6\\ \\mathrm{m/s}) + (-6\\ \\mathrm{m/s}) = -12\\ \\mathrm{m/s}$. The speed went from $6\\ \\mathrm{m/s}$ to $12\\ \\mathrm{m/s}$ — it sped up, confirming the sign comparison.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal motion history breaks into phases; each phase is a segment of the acceleration-time graph (sign, and flat vs. sloped); the signed area of a segment is $\\Delta v$; and $v_f = v_i + \\Delta v$ links that change back to an actual velocity. Whether the object speeds up or slows down is a separate reading, from the sign of $a$ against the sign of $v$.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L5-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "An object is momentarily at rest ($v = 0$) but has a non-zero acceleration. Which is possible?",
+      "choices": [
+        "This is impossible — zero velocity forces zero acceleration.",
+        "A ball at the top of a vertical throw: $v = 0$ for an instant, $a = -9.8\\ \\mathrm{m/s^2}$.",
+        "Only an object that has been at rest for a long time.",
+        "Only if the object is on a frictionless surface."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — being momentarily at rest says nothing about whether the velocity is changing. At the top of a throw the velocity is zero for an instant while changing at $-9.8\\ \\mathrm{m/s^2}$.",
+        "incorrect": {
+          "0": "Zero velocity and zero acceleration are independent. An object can be at rest for an instant while its velocity changes rapidly.",
+          "2": "An object at rest for a long time has zero acceleration too. The interesting case is *momentarily* at rest — a turning point.",
+          "3": "Surface friction is not the point. The vertical-throw turning point is the standard example, and it has nothing to do with a surface."
+        }
+      },
+      "hint": [
+        "Acceleration is the *rate of change* of velocity. Can a quantity be zero at an instant while still changing?"
+      ],
+      "solution": "Yes — the classic case is the top of a vertical throw. The velocity is exactly zero for one instant as it changes from upward to downward, but the rate of that change (the acceleration) is the steady $-9.8\\ \\mathrm{m/s^2}$ of gravity the whole time."
+    },
+    {
+      "id": "BP8-U2-L5-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "An object's acceleration-time graph is $+3\\ \\mathrm{m/s^2}$ for $0$ to $2\\ \\mathrm{s}$, then $0$ for $2$ to $5\\ \\mathrm{s}$, then $-3\\ \\mathrm{m/s^2}$ for $5$ to $7\\ \\mathrm{s}$. If it starts at rest, what is its velocity at $t = 7\\ \\mathrm{s}$?",
+      "choices": [
+        "$0\\ \\mathrm{m/s}$",
+        "$+6\\ \\mathrm{m/s}$",
+        "$-6\\ \\mathrm{m/s}$",
+        "$+12\\ \\mathrm{m/s}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — area 1: $(+3)(2) = +6$; area 2: $0$; area 3: $(-3)(2) = -6$. Net $\\Delta v = +6 + 0 - 6 = 0$, and $v_f = 0 + 0 = 0\\ \\mathrm{m/s}$.",
+        "incorrect": {
+          "1": "$+6\\ \\mathrm{m/s}$ is the velocity after the first segment. The third segment removes that $\\Delta v$ again.",
+          "2": "$-6\\ \\mathrm{m/s}$ is only the third segment's $\\Delta v$. It must be added to the $+6\\ \\mathrm{m/s}$ already built up.",
+          "3": "This adds the magnitudes of the first and third areas instead of using their signs. The third area is negative."
+        }
+      },
+      "hint": [
+        "Find $\\Delta v$ for each of the three segments (signed area), add them, then add the initial velocity of $0$.",
+        "The middle segment has $a = 0$, so its area is $0$."
+      ],
+      "solution": "Segment areas (each is $\\Delta v$): $(+3)(2) = +6\\ \\mathrm{m/s}$; $(0)(3) = 0$; $(-3)(2) = -6\\ \\mathrm{m/s}$. Total $\\Delta v = +6 + 0 - 6 = 0$. Starting from rest, $v_f = 0 + 0 = 0\\ \\mathrm{m/s}$ — it speeds up, cruises, then slows back to a stop."
+    },
+    {
+      "id": "BP8-U2-L5-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take east as positive. An object enters an interval with an initial velocity of $v_i = +4\\ \\mathrm{m/s}$. Its acceleration-time graph has two segments:\n\n| Segment | Interval | Acceleration |\n|---|---|---|\n| 1 | $0$ s to $3$ s | $-2\\ \\mathrm{m/s^2}$ |\n| 2 | $3$ s to $5$ s | $+1\\ \\mathrm{m/s^2}$ |",
+      "parts": [
+        {
+          "prompt": "(a) Find $\\Delta v$ for each segment (signed area), and the object's velocity at $t = 3\\ \\mathrm{s}$ and at $t = 5\\ \\mathrm{s}$.",
+          "modelResponse": "Segment 1: $\\Delta v_1 = (-2)(3) = -6\\ \\mathrm{m/s}$. Velocity at $t = 3\\ \\mathrm{s}$: $v = v_i + \\Delta v_1 = (+4) + (-6) = -2\\ \\mathrm{m/s}$. Segment 2: $\\Delta v_2 = (+1)(2) = +2\\ \\mathrm{m/s}$. Velocity at $t = 5\\ \\mathrm{s}$: $v = (-2) + (+2) = 0\\ \\mathrm{m/s}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) During segment 1, is the object speeding up or slowing down? Answer carefully — the velocity changes sign partway through.",
+          "modelResponse": "At the start of segment 1, $v = +4\\ \\mathrm{m/s}$ (positive) and $a = -2\\ \\mathrm{m/s^2}$ (negative) — opposite signs, so it is slowing down. It reaches $v = 0$ at $t = 2\\ \\mathrm{s}$ (since $\\Delta v = -4$ takes $2\\ \\mathrm{s}$). After that, $v$ is negative and $a$ is still negative — same sign, so it speeds up (now moving west). So: slowing for the first $2\\ \\mathrm{s}$, then speeding up for the last $1\\ \\mathrm{s}$ of segment 1.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A student says “the acceleration is negative for 3 seconds, so the object must be slower at $t = 3\\ \\mathrm{s}$ than at the start.” Evaluate this using your numbers.",
+          "modelResponse": "The claim happens to be false here. Speed at the start: $|{+4}| = 4\\ \\mathrm{m/s}$. Speed at $t = 3\\ \\mathrm{s}$: $|{-2}| = 2\\ \\mathrm{m/s}$ — actually slower, so the conclusion is right *this time*. But the reasoning is wrong: a negative acceleration does not guarantee a lower speed. If the object had started at $v_i = -4\\ \\mathrm{m/s}$ instead, the same negative acceleration would have made it faster. The sign of $a$ alone does not decide speeding up or slowing down — you must compare it with the sign of $v$, which changes partway through here.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The sign-of-$a$-versus-sign-of-$v$ rule, the turning-point case ($v = 0$, $a \\neq 0$), and area-as-$\\Delta v$ with a non-zero initial velocity are all standard AP and IB Paper 1 traps. This lesson is also the direct setup for free fall, where $a = g$ is constant through a velocity that changes sign.",
+  "summary": "Acceleration is any change in velocity — speed, direction, or both. Read it as a signed value from an acceleration-time graph. A negative acceleration does not mean “slowing”: compare its sign with the velocity's — same sign speeds the object up, opposite signs slow it down. An object can be momentarily at rest ($v = 0$) with a non-zero acceleration. The signed area under an acceleration-time segment is $\\Delta v$, and $v_f = v_i + \\Delta v$ — a two-step calculation.",
+  "exitQuestion": {
+    "id": "BP8-U2-L5-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "An object's acceleration is a constant $+2\\ \\mathrm{m/s^2}$ for $5\\ \\mathrm{s}$. Which quantity can you find from this alone, without knowing the initial velocity?",
+    "choices": [
+      "The final velocity.",
+      "The change in velocity, $\\Delta v$.",
+      "The average velocity.",
+      "The displacement."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $\\Delta v$ is the area under the acceleration-time segment: $(+2)(5) = +10\\ \\mathrm{m/s}$. It needs only the acceleration and the time.",
+      "incorrect": {
+        "0": "The final velocity is $v_i + \\Delta v$ — it depends on $v_i$, which is not given.",
+        "2": "Average velocity depends on the actual velocities during the interval, which depend on $v_i$.",
+        "3": "Displacement depends on the velocities during the interval (the area under the *velocity*-time graph), so it needs $v_i$ too."
+      }
+    },
+    "hint": [
+      "The area under an acceleration-time segment gives one specific quantity directly. Which one?"
+    ],
+    "solution": "The area under an acceleration-time segment is $\\Delta v$, the change in velocity: $(+2\\ \\mathrm{m/s^2})(5\\ \\mathrm{s}) = +10\\ \\mathrm{m/s}$. Everything else — final velocity, average velocity, displacement — depends on the initial velocity, which is not given."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-096",
+    "BP8-U2-MCQ-097",
+    "BP8-U2-MCQ-100",
+    "BP8-U2-MCQ-105"
+  ],
+  "needsPlotly": false
+}

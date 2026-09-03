@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="360" viewBox="0 0 620 360" role="img" aria-labelledby="t d">
+<title id="t">Velocity-time graph: one sloped segment crossing zero</title>
+<desc id="d">A straight line falls from plus 6 metres per second at 0 seconds to minus 2 metres per second at 4 seconds, crossing zero velocity at 3 seconds. The slope is minus 2 metres per second squared and the calculation is the same right through the zero crossing.</desc>
+<rect width="620" height="360" fill="white"/>
+<g stroke="#d5dbe3" stroke-width="1">
+<path d="M70 40V300M170 40V300M270 40V300M370 40V300M470 40V300M570 40V300"/>
+<path d="M70 87H570M70 133H570M70 180H570M70 227H570M70 274H570"/>
+</g>
+<g stroke="#111827" stroke-width="2">
+<path d="M70 40V310"/>
+<path d="M60 227H590"/>
+</g>
+<g fill="#111827" font-family="Arial" font-size="13">
+<text x="320" y="338" text-anchor="middle">t (s)</text>
+<text x="24" y="34">v (m/s)</text>
+</g>
+<g fill="#111827" font-family="Arial" font-size="12" text-anchor="middle">
+<text x="70" y="292">0</text><text x="170" y="292">1</text><text x="270" y="292">2</text><text x="370" y="292">3</text><text x="470" y="292">4</text>
+</g>
+<g fill="#111827" font-family="Arial" font-size="12" text-anchor="end">
+<text x="62" y="91">+6</text><text x="62" y="184">+2</text><text x="62" y="231">0</text><text x="62" y="278">&#8722;2</text>
+</g>
+<path d="M70 87H470V274" stroke="#e07b00" stroke-width="1.5" fill="none" stroke-dasharray="5 4"/>
+<g fill="#b35f00" font-family="Arial" font-size="12">
+<text x="230" y="79">&#916;t = 4 s</text>
+<text x="478" y="185">&#916;v = &#8722;8 m/s</text>
+</g>
+<polyline points="70,87 470,274" fill="none" stroke="#1769aa" stroke-width="4"/>
+<circle cx="70" cy="87" r="5" fill="#1769aa"/>
+<circle cx="470" cy="274" r="5" fill="#1769aa"/>
+<circle cx="370" cy="227" r="5" fill="#c0392b"/>
+<path d="M300 250L363 231" stroke="#c0392b" stroke-width="1"/>
+<text x="296" y="255" font-family="Arial" font-size="12" fill="#c0392b" text-anchor="end">v = 0 at t = 3 s</text>
+<text x="96" y="140" font-family="Arial" font-size="13" font-weight="bold" fill="#1769aa">slope = &#916;v/&#916;t = &#8722;2 m/s&#178;</text>
+</svg>

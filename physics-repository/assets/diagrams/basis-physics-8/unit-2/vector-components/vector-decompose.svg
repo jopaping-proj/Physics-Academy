@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="360" viewBox="0 0 500 360" role="img" aria-labelledby="t d">
+<title id="t">Decomposing a vector into components with SOHCAHTOA</title>
+<desc id="d">A vector of magnitude V points at 30 degrees above the positive x axis. Its horizontal component, along the side adjacent to the 30 degree angle, is V cosine theta. Its vertical component, along the opposite side, is V sine theta. The vector itself is the hypotenuse.</desc>
+<rect width="500" height="360" fill="white"/>
+<g stroke="#111827" stroke-width="1.5">
+<path d="M50 300H450"/>
+<path d="M60 40V310"/>
+</g>
+<g fill="#5b6675" font-family="Arial" font-size="13">
+<text x="452" y="296">+x</text>
+<text x="64" y="40">+y</text>
+<text x="46" y="316">O</text>
+</g>
+<line x1="60" y1="300" x2="315" y2="300" stroke="#1769aa" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="315" y1="300" x2="315" y2="153" stroke="#1769aa" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M110 300 A 50 50 0 0 0 103.3 274.5" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+<text x="120" y="284" font-family="Arial" font-size="13" fill="#c0392b">&#952; = 30&#176;</text>
+<line x1="60" y1="300" x2="315" y2="153" stroke="#111827" stroke-width="3" marker-end="url(#ah)"/>
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#111827"/></marker></defs>
+<text x="322" y="150" font-family="Arial" font-size="13" font-weight="bold" fill="#111827">V  (hypotenuse)</text>
+<text x="150" y="322" font-family="Arial" font-size="12" fill="#1769aa">adjacent: v_x = V cos &#952;</text>
+<text x="324" y="235" font-family="Arial" font-size="12" fill="#1769aa">opposite:</text>
+<text x="324" y="251" font-family="Arial" font-size="12" fill="#1769aa">v_y = V sin &#952;</text>
+</svg>

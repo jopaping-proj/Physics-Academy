@@ -1,0 +1,423 @@
+{
+  "id": "basis-p8-u2-l6",
+  "slug": "constant-acceleration-equations",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "The constant-acceleration equations",
+  "lessonTitle": "Constant-Acceleration Equations",
+  "lessonNumber": "6",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_06_constant_acceleration_equations.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 3 — $\\Delta x = v\\,\\Delta t$ for constant velocity; carry the sign of $v$.",
+    "Lesson 5 — the area under an acceleration-time graph is $\\Delta v$, and $v_f = v_i + \\Delta v$."
+  ],
+  "majorObjective": "Choose the correct constant-acceleration equation from a known/unknown inventory, verify that the constant-acceleration model applies before using it, and solve for the unknown with correct signs and a graphical sanity check.",
+  "subObjectives": [
+    "Check that acceleration is constant for the described scenario before selecting any equation.",
+    "List the five kinematic quantities ($v_i$, $v_f$, $a$, $\\Delta x$, $t$), mark the knowns and the one unknown, and select the equation that uses exactly those four.",
+    "Solve the selected equation for the unknown, rearranging first when needed, with units and signs.",
+    "Interpret the sign of the answer as a direction and cross-check it against what a quick graph would predict."
+  ],
+  "hook": {
+    "prompt": "You know $v_i$, $a$, and $t$, and you want $\\Delta x$. Which equation should you use?",
+    "choices": [
+      "$v_f = v_i + at$",
+      "$\\Delta x = v_i t + \\tfrac{1}{2}at^2$",
+      "$v_f^2 = v_i^2 + 2a\\,\\Delta x$",
+      "Any of them — they all work for any motion."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "For motion with constant acceleration, four equations connect the five quantities $v_i$, $v_f$, $a$, $\\Delta x$, $t$. Each equation uses exactly four of the five, leaving one out. This lesson is about choosing the right one, not memorising harder.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "First check the model, then inventory knowns and unknowns",
+      "concept": "Before any equation is written, answer one question in writing: **is the acceleration constant for this scenario?** If the description says the acceleration changes, or the object is not in free-flight/uniform-acceleration conditions, **none** of these equations apply. Skipping this check is the single most common error.\n\nOnce the model is confirmed, make a **known/unknown inventory** of the five quantities:\n\n| Quantity | Meaning |\n|---|---|\n| $v_i$ | velocity at the start of the interval |\n| $v_f$ | velocity at the end of the interval |\n| $a$ | the (constant) acceleration |\n| $\\Delta x$ | displacement over the interval |\n| $t$ | duration of the interval |\n\nMark each as known (with its value and sign) or unknown. Exactly one should be the unknown you want; one more will be neither given nor needed.",
+      "representation": "Write two lines of work before touching an equation:\n\n1. “Constant acceleration? Yes, because …” (quote the scenario).\n2. Known: … ; Want: … ; Not needed: …",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A car speeds up from $8.0\\ \\mathrm{m/s}$ at a constant $2.5\\ \\mathrm{m/s^2}$ for $6.0\\ \\mathrm{s}$. Set up the inventory for finding the displacement.",
+        "phases": [
+          {
+            "label": "Model check",
+            "steps": [
+              "The problem says “at a constant $2.5\\ \\mathrm{m/s^2}$” — the constant-acceleration model applies."
+            ]
+          },
+          {
+            "label": "Inventory the five quantities",
+            "steps": [
+              "Known: $v_i = +8.0\\ \\mathrm{m/s}$, $a = +2.5\\ \\mathrm{m/s^2}$, $t = 6.0\\ \\mathrm{s}$.",
+              "Want: $\\Delta x$.",
+              "Not given and not needed: $v_f$."
+            ]
+          },
+          {
+            "label": "Name the equation that fits",
+            "steps": [
+              "We need the equation with $v_i$, $a$, $t$, and $\\Delta x$ — and without $v_f$. That is $\\Delta x = v_i t + \\tfrac{1}{2}at^2$."
+            ]
+          }
+        ],
+        "keyMove": "The equation you want is the one that contains all your knowns plus the unknown — and leaves out the quantity you were not given."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L6-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "A problem states: “A cart's acceleration increases steadily from $1\\ \\mathrm{m/s^2}$ to $4\\ \\mathrm{m/s^2}$ over $3\\ \\mathrm{s}$.” Can you use the constant-acceleration equations to find its displacement?",
+        "choices": [
+          "Yes — there is an acceleration and a time given.",
+          "No — the acceleration is not constant, so none of the four equations apply.",
+          "Yes, but only the equation $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t$.",
+          "Yes — use the average acceleration of $2.5\\ \\mathrm{m/s^2}$ in any equation."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the equations are derived assuming acceleration is constant. “Increases steadily” means it is changing, so the model does not apply and no equation in the set is valid here.",
+          "incorrect": {
+            "0": "Having an acceleration value is not enough — it must be *constant*. Here it changes from $1$ to $4\\ \\mathrm{m/s^2}$.",
+            "2": "That equation also assumes constant acceleration (it comes from the same derivation). It is not a loophole.",
+            "3": "Substituting an average acceleration into these equations is not valid — they are built on the acceleration being the same throughout, not just on average."
+          }
+        },
+        "hint": [
+          "Every one of the four equations comes from assuming $a$ does not change. What does “increases steadily” tell you about $a$?"
+        ],
+        "solution": "The four constant-acceleration equations are derived on the assumption that $a$ is the same at every instant of the interval. Here the acceleration increases from $1\\ \\mathrm{m/s^2}$ to $4\\ \\mathrm{m/s^2}$, so it is not constant and none of the equations apply. You would need a different method (for example, the area under the acceleration-time graph)."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The four equations, and which variable each one leaves out",
+      "concept": "For constant acceleration, these four equations relate the five quantities. Each leaves **one** quantity out — match that to whichever quantity you were not given:\n\n| Equation | Leaves out | Use when you don't have / don't need |\n|---|---|---|\n| $v_f = v_i + at$ | $\\Delta x$ | displacement |\n| $\\Delta x = v_i t + \\tfrac{1}{2}at^2$ | $v_f$ | final velocity |\n| $v_f^2 = v_i^2 + 2a\\,\\Delta x$ | $t$ | time |\n| $\\Delta x = \\tfrac{1}{2}(v_i + v_f)\\,t$ | $a$ | acceleration |\n\nEvery quantity keeps the sign from your declared positive direction. After solving, read the sign of the answer as a direction, and do a quick sanity check: if $v_i$ and $a$ are both positive, $v_f$ should come out larger and positive — does it?",
+      "representation": "Selection rule, in order:\n\n1. From the inventory, note the one quantity that is neither given nor wanted.\n2. Pick the equation that leaves *that* quantity out.\n3. Substitute the knowns with their signs; rearrange if the unknown is not already alone.\n4. Solve, attach units, and sanity-check the sign against a rough graph.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ball rolls up a ramp, starting at $v_i = +6.0\\ \\mathrm{m/s}$ with a constant acceleration of $a = -2.0\\ \\mathrm{m/s^2}$ (down the ramp). How far up the ramp is it when its velocity first reaches zero?",
+        "phases": [
+          {
+            "label": "Model check and inventory",
+            "steps": [
+              "Constant acceleration is stated. Known: $v_i = +6.0\\ \\mathrm{m/s}$, $v_f = 0$, $a = -2.0\\ \\mathrm{m/s^2}$. Want: $\\Delta x$. Not needed: $t$."
+            ]
+          },
+          {
+            "label": "Select the equation that leaves out t",
+            "steps": [
+              "The equation without $t$ is $v_f^2 = v_i^2 + 2a\\,\\Delta x$."
+            ]
+          },
+          {
+            "label": "Rearrange and substitute",
+            "steps": [
+              "$\\Delta x = \\dfrac{v_f^2 - v_i^2}{2a} = \\dfrac{0 - (6.0)^2}{2(-2.0)} = \\dfrac{-36}{-4.0} = +9.0\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Sanity check",
+            "steps": [
+              "Positive $\\Delta x$ — the ball moved $9.0\\ \\mathrm{m}$ up the ramp (the positive direction) before stopping. That matches the picture of a ball slowing as it climbs."
+            ]
+          }
+        ],
+        "keyMove": "No time asked, no time given — that points straight at $v_f^2 = v_i^2 + 2a\\,\\Delta x$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L6-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "An object starts at $v_i = +3.0\\ \\mathrm{m/s}$ and reaches $v_f = +15.0\\ \\mathrm{m/s}$ after travelling $\\Delta x = +27\\ \\mathrm{m}$ with constant acceleration. To find the acceleration $a$, which equation is the direct choice?",
+        "choices": [
+          "$v_f^2 = v_i^2 + 2a\\,\\Delta x$",
+          "$v_f = v_i + at$",
+          "$\\Delta x = v_i t + \\tfrac{1}{2}at^2$",
+          "$\\Delta x = \\tfrac{1}{2}(v_i + v_f)\\,t$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — you have $v_i$, $v_f$, and $\\Delta x$, and you want $a$. Time is neither given nor wanted, so use the equation that leaves out $t$: $v_f^2 = v_i^2 + 2a\\,\\Delta x$.",
+          "incorrect": {
+            "1": "This one contains $t$, which you were not given. You would have to find $t$ first — an extra step.",
+            "2": "This also contains $t$ (twice), and does not contain $v_f$, which you do have. Not the direct choice.",
+            "3": "This leaves out $a$ — the very quantity you are trying to find. It cannot help here."
+          }
+        },
+        "hint": [
+          "List what you have: $v_i$, $v_f$, $\\Delta x$. List what you want: $a$. Which quantity is missing? Pick the equation that omits it."
+        ],
+        "solution": "Knowns: $v_i$, $v_f$, $\\Delta x$. Unknown wanted: $a$. The fifth quantity, $t$, is neither given nor needed — so choose the equation that leaves out $t$: $v_f^2 = v_i^2 + 2a\\,\\Delta x$. Rearranged: $a = (v_f^2 - v_i^2)/(2\\,\\Delta x) = (225 - 9)/54 = +4.0\\ \\mathrm{m/s^2}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Handling extra information",
+      "concept": "Real problems often give you **more** than you need. Extra numbers are not a signal to use a bigger or more complex equation — they are a distractor. Trust the inventory: pick the equation that matches the quantity you actually want and the quantities you actually have, and ignore the rest.\n\nIf two quantities are both given and both would work, either equation is fine — choose the one that needs less rearranging.",
+      "representation": "When a problem seems to give “too much”:\n\n1. Still do the model check.\n2. Still write Known / Want / Not needed — the extra quantity lands in “not needed.”\n3. Select the equation for what you want, using only the knowns it requires.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A sled starts from rest and accelerates at a constant $3.0\\ \\mathrm{m/s^2}$. After $4.0\\ \\mathrm{s}$ it is moving at $12\\ \\mathrm{m/s}$ and has travelled $24\\ \\mathrm{m}$. Find its displacement after the first $2.0\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "Sort what matters",
+            "steps": [
+              "Constant acceleration is stated. We want $\\Delta x$ over the first $2.0\\ \\mathrm{s}$.",
+              "Known for that interval: $v_i = 0$, $a = +3.0\\ \\mathrm{m/s^2}$, $t = 2.0\\ \\mathrm{s}$.",
+              "The $12\\ \\mathrm{m/s}$ and $24\\ \\mathrm{m}$ are for a *different* interval ($4.0\\ \\mathrm{s}$) — not needed here."
+            ]
+          },
+          {
+            "label": "Select and solve",
+            "steps": [
+              "Want $\\Delta x$, don't need $v_f$ → use $\\Delta x = v_i t + \\tfrac{1}{2}at^2$.",
+              "$\\Delta x = (0)(2.0) + \\tfrac{1}{2}(3.0)(2.0)^2 = 0 + \\tfrac{1}{2}(3.0)(4.0) = +6.0\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Sanity check",
+            "steps": [
+              "In the first $2.0\\ \\mathrm{s}$ the sled goes $6.0\\ \\mathrm{m}$; over the full $4.0\\ \\mathrm{s}$ it goes $24\\ \\mathrm{m}$. Since displacement grows with $t^2$, the first half of the time should cover much less than half the distance — $6$ out of $24$ fits."
+            ]
+          }
+        ],
+        "keyMove": "Extra numbers go in “not needed.” Match the equation to the interval and the unknown you actually want."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L6-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A problem gives $v_i$, $a$, $t$, $v_f$, and $\\Delta x$ for a constant-acceleration motion and asks only for $\\Delta x$. What is the best approach?",
+        "choices": [
+          "Use every quantity given, in the most complete equation available.",
+          "Pick any equation containing $\\Delta x$ plus quantities you were given — for example $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t$ — and ignore the rest.",
+          "You cannot solve it — too much information is given.",
+          "Average all the given values first."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — with everything given, any equation containing $\\Delta x$ works. Choose one that needs no rearranging, substitute, and ignore the unused quantities.",
+          "incorrect": {
+            "0": "There is no “most complete” equation, and using more numbers does not make an answer more correct. Pick one equation that fits.",
+            "2": "Extra information never makes a problem unsolvable — it just means more than one equation would work.",
+            "3": "Averaging the given values is not a valid operation. Select one equation and substitute the relevant knowns."
+          }
+        },
+        "hint": [
+          "If everything is known, the only question is which equation is least work. Pick one with $\\Delta x$ already isolated."
+        ],
+        "solution": "When all five quantities are given and only $\\Delta x$ is wanted, any equation that contains $\\Delta x$ will do. The least work is $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t$, which already has $\\Delta x$ alone. The other quantities are simply unused — extra information is a distractor, not a requirement."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L6-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student uses $\\Delta x = v_i t + \\tfrac{1}{2}at^2$ to analyse a car braking hard, then releasing the brakes, then braking again. What is the problem?",
+      "choices": [
+        "Nothing — the equation works for any motion with a starting velocity.",
+        "The acceleration is not constant over that whole motion, so the equation does not apply to the interval as a whole.",
+        "The equation needs $v_f$, which was not given.",
+        "The student should have used $v_f^2 = v_i^2 + 2a\\,\\Delta x$ instead."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — braking, coasting, and braking again means the acceleration changes between phases. The equation is only valid over an interval where $a$ is a single constant value.",
+        "incorrect": {
+          "0": "The equation is derived assuming a single constant acceleration. “Brake, release, brake” has at least three different accelerations.",
+          "2": "That equation deliberately leaves out $v_f$ — not needing $v_f$ is a feature, not the problem. The problem is the changing acceleration.",
+          "3": "Switching to a different constant-acceleration equation does not help; *all four* assume constant acceleration."
+        }
+      },
+      "hint": [
+        "All four equations share one assumption. Does “brake, release, brake” satisfy it?"
+      ],
+      "solution": "Every constant-acceleration equation is derived for an interval over which the acceleration has one fixed value. A motion that goes “brake hard – release – brake again” has different accelerations in different phases, so no single equation applies to the whole thing. It would have to be split into constant-acceleration phases and each phase handled separately."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A stone is thrown so that it slows down, stops, and falls back — its speed is $20\\ \\mathrm{m/s}$ up at first and it is in the air for $4.0\\ \\mathrm{s}$ total. A student writes: “Average acceleration $= 20/4.0 = 5\\ \\mathrm{m/s^2}$. Using $\\Delta x = v_i t + \\tfrac{1}{2}at^2$ with $v_i = 20$, $a = 5$, $t = 4$: $\\Delta x = 80 + 40 = 120\\ \\mathrm{m}$.”",
+      "prompts": [
+        "State the required first line of work for any constant-acceleration equation problem.",
+        "Identify the first step that violates that requirement.",
+        "Explain why the student's numbers are not trustworthy, and state what the constant acceleration actually is for a thrown stone."
+      ],
+      "modelResponse": "The required first line is the model check: “is the acceleration constant here, and what is its value?” The first violating step is “Average acceleration $= 20/4.0 = 5\\ \\mathrm{m/s^2}$” — the student invented an ‘average acceleration’ and treated it as the constant $a$. For a stone thrown straight up, the acceleration is *already* a known constant: $g = -9.8\\ \\mathrm{m/s^2}$ (with up positive), the same the entire flight. There is no need to compute an average, and doing so gives the wrong value and the wrong sign. With $v_i = +20\\ \\mathrm{m/s}$, $a = -9.8\\ \\mathrm{m/s^2}$, $t = 4.0\\ \\mathrm{s}$: $\\Delta x = (20)(4.0) + \\tfrac{1}{2}(-9.8)(4.0)^2 = 80 - 78.4 = +1.6\\ \\mathrm{m}$ — the stone lands almost back at the launch height, which makes sense. The student's $120\\ \\mathrm{m}$ is not physical.",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "A verbal scenario becomes a model check (constant $a$?) plus a known/unknown inventory; the inventory picks one of four equations by which quantity it leaves out; the equation is solved with signs; and a quick mental graph confirms the sign and rough size of the answer. The equations are just the algebra version of the slope-and-area relationships from Lessons 2–5.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L6-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "A train decelerates from $30\\ \\mathrm{m/s}$ to a stop in $12\\ \\mathrm{s}$ at constant acceleration. Which equation gives the stopping distance in one step, and what is it?",
+      "choices": [
+        "$\\Delta x = \\tfrac{1}{2}(v_i + v_f)t$; $\\Delta x = 180\\ \\mathrm{m}$.",
+        "$v_f = v_i + at$; $\\Delta x = 360\\ \\mathrm{m}$.",
+        "$\\Delta x = \\tfrac{1}{2}(v_i + v_f)t$; $\\Delta x = 360\\ \\mathrm{m}$.",
+        "$v_f^2 = v_i^2 + 2a\\,\\Delta x$; $\\Delta x = 180\\ \\mathrm{m}$."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — you have $v_i = 30$, $v_f = 0$, $t = 12$, and want $\\Delta x$; $a$ is not needed. Use $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t = \\tfrac{1}{2}(30 + 0)(12) = 180\\ \\mathrm{m}$.",
+        "incorrect": {
+          "1": "$v_f = v_i + at$ solves for $a$ or $v_f$, not $\\Delta x$. And $360\\ \\mathrm{m}$ would be $30 \\times 12$, forgetting the factor of one-half for a decelerating object.",
+          "2": "The equation is right but the arithmetic is not: $\\tfrac{1}{2}(30 + 0)(12) = 180\\ \\mathrm{m}$, not $360$. The train's *average* velocity is $15\\ \\mathrm{m/s}$, not $30$.",
+          "3": "This works too, but it needs $a$ first (an extra step), so it is not the one-step choice. $a = -2.5\\ \\mathrm{m/s^2}$ then gives $\\Delta x = 180\\ \\mathrm{m}$."
+        }
+      },
+      "hint": [
+        "You have both velocities and the time, and you want distance. Which equation leaves out $a$?"
+      ],
+      "solution": "Knowns: $v_i = 30\\ \\mathrm{m/s}$, $v_f = 0$, $t = 12\\ \\mathrm{s}$; want $\\Delta x$; $a$ not needed. The equation without $a$ is $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t = \\tfrac{1}{2}(30 + 0)(12) = 180\\ \\mathrm{m}$."
+    },
+    {
+      "id": "BP8-U2-L6-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "evaluate-assumptions",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Which of these scenarios can be solved with a single constant-acceleration equation?",
+      "choices": [
+        "A car accelerates uniformly from $10\\ \\mathrm{m/s}$ to $25\\ \\mathrm{m/s}$ over $200\\ \\mathrm{m}$.",
+        "A ball rolls at steady speed, then hits a ramp and slows down at a different steady rate.",
+        "A rocket's thrust increases continuously during launch.",
+        "A cyclist speeds up, coasts, then brakes."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — “accelerates uniformly” means one constant acceleration for the whole interval, so a single equation applies ($v_f^2 = v_i^2 + 2a\\,\\Delta x$ gives $a$, for instance).",
+        "incorrect": {
+          "1": "Two phases with two different accelerations — you would need one equation per phase, not one overall.",
+          "2": "“Increases continuously” means the acceleration is never constant, so none of the equations apply at all.",
+          "3": "Three phases (speeding up, coasting, braking), three different accelerations — not a single-equation problem."
+        }
+      },
+      "hint": [
+        "A single constant-acceleration equation needs a single constant acceleration for the whole interval described."
+      ],
+      "solution": "Only the first scenario has one constant acceleration throughout. “Accelerates uniformly from $10$ to $25\\ \\mathrm{m/s}$ over $200\\ \\mathrm{m}$” gives $v_i$, $v_f$, $\\Delta x$ and a constant $a$ — solvable with $v_f^2 = v_i^2 + 2a\\,\\Delta x$. The others involve multiple phases or a continuously changing acceleration."
+    },
+    {
+      "id": "BP8-U2-L6-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take the direction of travel as positive. A motorcycle accelerates uniformly from rest. After some time it is moving at $18\\ \\mathrm{m/s}$ and has covered $54\\ \\mathrm{m}$. Assume constant acceleration throughout.",
+      "parts": [
+        {
+          "prompt": "(a) State the model check and write the known/unknown inventory for finding the acceleration.",
+          "modelResponse": "Model check: the problem says “accelerates uniformly … constant acceleration throughout,” so a single equation applies. Inventory — Known: $v_i = 0$, $v_f = +18\\ \\mathrm{m/s}$, $\\Delta x = +54\\ \\mathrm{m}$. Want: $a$. Not given / not needed: $t$.",
+          "points": 2
+        },
+        {
+          "prompt": "(b) Select the equation and find the acceleration.",
+          "modelResponse": "Time is neither given nor wanted, so use the equation without $t$: $v_f^2 = v_i^2 + 2a\\,\\Delta x$. Rearrange: $a = \\dfrac{v_f^2 - v_i^2}{2\\,\\Delta x} = \\dfrac{(18)^2 - 0}{2(54)} = \\dfrac{324}{108} = +3.0\\ \\mathrm{m/s^2}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) Now find the time taken, and cross-check the displacement with a second equation.",
+          "modelResponse": "Use $v_f = v_i + at$: $18 = 0 + (3.0)t$, so $t = 6.0\\ \\mathrm{s}$. Cross-check with $\\Delta x = \\tfrac{1}{2}(v_i + v_f)t = \\tfrac{1}{2}(0 + 18)(6.0) = 54\\ \\mathrm{m}$ — matches the given displacement, so the answers are consistent.",
+          "points": 3
+        },
+        {
+          "prompt": "(d) The acceleration came out positive. Explain briefly why that is the expected sign here, using a quick graph description.",
+          "modelResponse": "The motorcycle starts from rest and speeds up in the positive direction, so its velocity-time graph is a straight line rising from the origin — a positive slope, i.e. a positive acceleration. A negative answer would have contradicted “speeds up in the direction of travel,” so $+3.0\\ \\mathrm{m/s^2}$ is the expected sign.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP and IB Paper 1 kinematics problems are almost always “pick the right equation from a known/unknown list.” The model-validity check and the sign-and-graph sanity check are exactly the habits examiners reward, and they carry straight into the free-fall lesson and into dynamics.",
+  "summary": "For constant acceleration, four equations link $v_i$, $v_f$, $a$, $\\Delta x$, $t$; each leaves one out. Always check the acceleration is constant first. Then inventory the knowns and the one unknown, and pick the equation that leaves out the quantity you were not given. Solve with signs, and sanity-check the answer's sign against a quick graph. Extra information is a distractor, not a requirement.",
+  "exitQuestion": {
+    "id": "BP8-U2-L6-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "You know $v_i$, $v_f$, and $a$, and you want $t$. Which equation is the direct choice?",
+    "choices": [
+      "$v_f = v_i + at$",
+      "$\\Delta x = v_i t + \\tfrac{1}{2}at^2$",
+      "$v_f^2 = v_i^2 + 2a\\,\\Delta x$",
+      "$\\Delta x = \\tfrac{1}{2}(v_i + v_f)\\,t$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $v_i$, $v_f$, $a$, $t$ and no $\\Delta x$: that is $v_f = v_i + at$, rearranged to $t = (v_f - v_i)/a$.",
+      "incorrect": {
+        "1": "This contains $\\Delta x$, which you were not given, and is awkward to solve for $t$.",
+        "2": "This contains $\\Delta x$ (not given) and leaves out $t$ (what you want) — the opposite of what you need.",
+        "3": "This contains $\\Delta x$, which you were not given."
+      }
+    },
+    "hint": [
+      "Which of the five quantities is missing from your list? Pick the equation that leaves it out."
+    ],
+    "solution": "Knowns: $v_i$, $v_f$, $a$. Want: $t$. Missing: $\\Delta x$. The equation without $\\Delta x$ is $v_f = v_i + at$; solve for $t = (v_f - v_i)/a$."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-136",
+    "BP8-U2-MCQ-140",
+    "BP8-U2-MCQ-137",
+    "BP8-U2-MCQ-157"
+  ],
+  "needsPlotly": false
+}

@@ -110,50 +110,50 @@
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
+      "slug": "velocity-time-graphs",
       "title": "Velocity-Time Graphs",
       "cluster": "BP8.2.4",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
+      "slug": "acceleration-time-graphs",
       "title": "Acceleration-Time Graphs",
       "cluster": "BP8.2.5",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 6",
-      "slug": null,
+      "slug": "constant-acceleration-equations",
       "title": "Constant-Acceleration Equations",
       "cluster": "BP8.2.6",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 7",
-      "slug": null,
+      "slug": "one-dimensional-free-fall",
       "title": "One-Dimensional Free Fall",
       "cluster": "BP8.2.7",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 8",
-      "slug": null,
+      "slug": "sohcahtoa-and-vector-components",
       "title": "SOHCAHTOA and Vector Components",
       "cluster": "BP8.2.8",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 9",
-      "slug": null,
+      "slug": "synthesis-and-transfer",
       "title": "Synthesis and Transfer",
       "cluster": "BP8.2.9",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "concept-check",

@@ -1,0 +1,420 @@
+{
+  "id": "basis-p8-u2-l7",
+  "slug": "one-dimensional-free-fall",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "One-dimensional free fall",
+  "lessonTitle": "One-Dimensional Free Fall",
+  "lessonNumber": "7",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_07_one_dimensional_free_fall.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 5 — an object can be momentarily at rest ($v = 0$) with a non-zero acceleration; area under an acceleration-time graph is $\\Delta v$.",
+    "Lesson 6 — the four constant-acceleration equations and the known/unknown inventory for choosing one."
+  ],
+  "majorObjective": "Apply the constant-acceleration model to one-dimensional free fall near Earth's surface with $|g| = 9.8\\ \\mathrm{m/s^2}$, using one fixed sign convention across the dropped, thrown-down, and thrown-up cases, and explain the turning point of an upward throw.",
+  "subObjectives": [
+    "Choose one positive direction and apply $g$ with the correct sign, held constant for the entire flight.",
+    "Set up dropped ($v_i = 0$), thrown-down ($v_i$ against the positive direction), and thrown-up ($v_i$ along the positive direction) cases with the same equation set, changing only $v_i$.",
+    "State that at the highest point of an upward throw the velocity is zero for an instant but the acceleration is still $g$.",
+    "State that under the ideal model $g$ is the same for every object regardless of mass."
+  ],
+  "hook": {
+    "prompt": "A ball is thrown straight up. At the highest point of its path, what are its velocity and acceleration (take up as positive)?",
+    "choices": [
+      "$v = 0$ and $a = 0$.",
+      "$v = 0$ and $a = -9.8\\ \\mathrm{m/s^2}$.",
+      "$v = -9.8\\ \\mathrm{m/s}$ and $a = 0$.",
+      "$v = 0$ and $a = +9.8\\ \\mathrm{m/s^2}$."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Free fall is not a new model — it is the constant-acceleration model of Lesson 6 with the acceleration fixed at $g$. “Free fall” means gravity is the only influence (air resistance is neglected).",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "One sign convention, held constant for the whole flight",
+      "concept": "**Free fall** is motion under gravity alone, with air resistance neglected. Near Earth's surface the acceleration has magnitude $|g| = 9.8\\ \\mathrm{m/s^2}$, directed **downward**, and it is **constant for the entire flight** — going up, at the top, and coming down alike.\n\nPick **one** positive direction and keep it for the whole problem. The common choice is **up is positive**, which makes $g = -9.8\\ \\mathrm{m/s^2}$. (Down-positive is equally valid; then $g = +9.8\\ \\mathrm{m/s^2}$.) Once chosen, every velocity, displacement, and the value of $g$ carries a sign from that one convention.\n\nUnder this ideal model, $g$ is the **same for every object**, heavy or light. Mass does not appear.",
+      "representation": "Start every free-fall problem with two fixed lines:\n\n1. “Up is positive.” (or down — state it once)\n2. “$a = g = -9.8\\ \\mathrm{m/s^2}$, constant for the whole flight.”\n\nThen it is just a Lesson 6 constant-acceleration problem with $a$ already known.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/free-fall/free-fall-up-throw-vt.svg",
+          "caption": "A ball thrown straight up: the velocity-time graph is one straight line of constant slope $-9.8\\ \\mathrm{m/s^2}$, passing through $v = 0$ at the top without flattening."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An object is dropped from rest. Take up as positive. Find its velocity and displacement after $2.0\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "Convention and known acceleration",
+            "steps": [
+              "Up is positive, so $a = g = -9.8\\ \\mathrm{m/s^2}$, constant.",
+              "“Dropped from rest” → $v_i = 0$."
+            ]
+          },
+          {
+            "label": "Velocity after 2.0 s",
+            "steps": [
+              "Use $v_f = v_i + at = 0 + (-9.8)(2.0) = -19.6\\ \\mathrm{m/s}$.",
+              "Negative → moving downward at $19.6\\ \\mathrm{m/s}$, as expected for a falling object."
+            ]
+          },
+          {
+            "label": "Displacement after 2.0 s",
+            "steps": [
+              "Use $\\Delta x = v_i t + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(-9.8)(2.0)^2 = \\tfrac{1}{2}(-9.8)(4.0) = -19.6\\ \\mathrm{m}$.",
+              "Negative → the object is $19.6\\ \\mathrm{m}$ *below* its starting point."
+            ]
+          }
+        ],
+        "keyMove": "Free fall = constant-acceleration equations with $a = g$ fixed. The sign of $g$ comes from the convention you declared."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L7-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "Take down as positive. An object is dropped from rest. What is its velocity after $3.0\\ \\mathrm{s}$?",
+        "choices": [
+          "$+29.4\\ \\mathrm{m/s}$",
+          "$-29.4\\ \\mathrm{m/s}$",
+          "$+9.8\\ \\mathrm{m/s}$",
+          "$0\\ \\mathrm{m/s}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — with down positive, $g = +9.8\\ \\mathrm{m/s^2}$. $v_f = v_i + at = 0 + (9.8)(3.0) = +29.4\\ \\mathrm{m/s}$ (downward).",
+          "incorrect": {
+            "1": "The magnitude is right, but with *down* declared as positive, a downward velocity is positive, not negative.",
+            "2": "$+9.8\\ \\mathrm{m/s}$ is the velocity after $1.0\\ \\mathrm{s}$, or the value of $g$ with units confused. Multiply by the full $3.0\\ \\mathrm{s}$.",
+            "3": "The object is released and accelerates — it does not stay at rest."
+          }
+        },
+        "hint": [
+          "Down is positive here, so $g = +9.8\\ \\mathrm{m/s^2}$. Then $v_f = v_i + at$ with $v_i = 0$."
+        ],
+        "solution": "With down declared positive, $g = +9.8\\ \\mathrm{m/s^2}$. Dropped from rest: $v_i = 0$. $v_f = v_i + at = 0 + (9.8\\ \\mathrm{m/s^2})(3.0\\ \\mathrm{s}) = +29.4\\ \\mathrm{m/s}$ — positive, meaning downward in this convention."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Three launch cases — only the initial velocity changes",
+      "concept": "Dropped, thrown down, and thrown up are the **same** free-fall problem. The acceleration is $g$ in all three. The **only** thing that differs is the initial velocity $v_i$ (take up as positive):\n\n- **Dropped:** $v_i = 0$.\n- **Thrown downward:** $v_i$ is negative (against the positive direction).\n- **Thrown upward:** $v_i$ is positive (along the positive direction).\n\nFor each case, use the same known/unknown inventory from Lesson 6 to pick an equation, substituting $a = g$ and the case's $v_i$.",
+      "representation": "Same recipe, three starting values:\n\n1. Declare up positive; $a = -9.8\\ \\mathrm{m/s^2}$.\n2. Read $v_i$ from the launch: $0$ (dropped), negative (thrown down), positive (thrown up).\n3. Inventory knowns; pick the equation; solve with signs.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ball is thrown straight up from the ground at $19.6\\ \\mathrm{m/s}$. Take up as positive. Find (a) how long it takes to reach the highest point and (b) its velocity $3.0\\ \\mathrm{s}$ after launch.",
+        "phases": [
+          {
+            "label": "Set up",
+            "steps": [
+              "Up positive: $a = -9.8\\ \\mathrm{m/s^2}$. Thrown up: $v_i = +19.6\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(a) Time to the top",
+            "steps": [
+              "At the top, $v_f = 0$. Known: $v_i$, $v_f$, $a$; want $t$; $\\Delta x$ not needed → use $v_f = v_i + at$.",
+              "$0 = 19.6 + (-9.8)t \\Rightarrow t = 19.6 / 9.8 = 2.0\\ \\mathrm{s}$."
+            ]
+          },
+          {
+            "label": "(b) Velocity at t = 3.0 s",
+            "steps": [
+              "$v_f = v_i + at = 19.6 + (-9.8)(3.0) = 19.6 - 29.4 = -9.8\\ \\mathrm{m/s}$.",
+              "Negative → by $3.0\\ \\mathrm{s}$ the ball has passed the top ($t = 2.0\\ \\mathrm{s}$) and is moving downward at $9.8\\ \\mathrm{m/s}$."
+            ]
+          }
+        ],
+        "keyMove": "Same equation, same $a$, all three cases — only $v_i$'s sign and value change."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L7-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "Take up as positive. A stone is thrown straight downward from a bridge at $5.0\\ \\mathrm{m/s}$. What is its velocity after $2.0\\ \\mathrm{s}$?",
+        "choices": [
+          "$-24.6\\ \\mathrm{m/s}$",
+          "$-14.6\\ \\mathrm{m/s}$",
+          "$+24.6\\ \\mathrm{m/s}$",
+          "$-19.6\\ \\mathrm{m/s}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — thrown downward means $v_i = -5.0\\ \\mathrm{m/s}$. $v_f = v_i + at = -5.0 + (-9.8)(2.0) = -5.0 - 19.6 = -24.6\\ \\mathrm{m/s}$.",
+          "incorrect": {
+            "1": "This used $v_i = +5.0\\ \\mathrm{m/s}$. The stone is thrown *downward*, which is the negative direction with up positive.",
+            "2": "The magnitude is close but the sign is wrong: a downward-moving stone has negative velocity in an up-positive frame.",
+            "3": "This ignored the initial speed and treated it as dropped from rest ($v_i = 0$)."
+          }
+        },
+        "hint": [
+          "Thrown *downward* with up positive → $v_i = -5.0\\ \\mathrm{m/s}$. Then $v_f = v_i + at$ with $a = -9.8\\ \\mathrm{m/s^2}$."
+        ],
+        "solution": "Up is positive, so a downward throw gives $v_i = -5.0\\ \\mathrm{m/s}$ and $a = g = -9.8\\ \\mathrm{m/s^2}$. $v_f = v_i + at = (-5.0) + (-9.8)(2.0) = -5.0 - 19.6 = -24.6\\ \\mathrm{m/s}$ — moving downward at $24.6\\ \\mathrm{m/s}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "The turning point: zero velocity, gravity unchanged",
+      "concept": "At the **highest point** of an upward throw, the velocity is exactly **zero for a single instant** — the ball has stopped rising and has not yet started falling. But the **acceleration is still $g$**, unchanged, at that instant and throughout the flight.\n\nThe velocity-time graph proves it: for the whole flight it is **one straight line** of constant slope $-9.8\\ \\mathrm{m/s^2}$. It passes through $v = 0$ without bending or flattening. A flat spot in the graph would mean the velocity briefly stopped changing — which never happens in free fall.\n\nThis is the same idea as Lesson 5's turning point: a zero *value* of velocity does not force a zero *rate of change*.",
+      "representation": "At the top of a throw, state three things separately:\n\n1. Velocity: $v = 0$ (for an instant only).\n2. Acceleration: $a = g = -9.8\\ \\mathrm{m/s^2}$ (unchanged).\n3. The velocity-time graph: still a straight line of slope $g$ through the crossing.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ball is thrown up at $14.7\\ \\mathrm{m/s}$ (up positive). Describe its velocity and acceleration at $t = 0$, at the top, and $1.0\\ \\mathrm{s}$ after the top.",
+        "phases": [
+          {
+            "label": "At launch (t = 0)",
+            "steps": [
+              "$v = +14.7\\ \\mathrm{m/s}$ (upward). $a = -9.8\\ \\mathrm{m/s^2}$."
+            ]
+          },
+          {
+            "label": "At the top",
+            "steps": [
+              "The top is reached when $v = 0$: from $v_f = v_i + at$, $0 = 14.7 + (-9.8)t$, so $t = 1.5\\ \\mathrm{s}$.",
+              "At that instant $v = 0$, but $a = -9.8\\ \\mathrm{m/s^2}$ still — unchanged."
+            ]
+          },
+          {
+            "label": "1.0 s after the top (t = 2.5 s)",
+            "steps": [
+              "$v = v_i + at = 14.7 + (-9.8)(2.5) = 14.7 - 24.5 = -9.8\\ \\mathrm{m/s}$ (downward). $a = -9.8\\ \\mathrm{m/s^2}$, still unchanged.",
+              "The acceleration never changed value at any point — only the velocity did."
+            ]
+          }
+        ],
+        "keyMove": "Velocity passes through zero at the top; acceleration stays at $g$ the whole time."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L7-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "graph",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "Which velocity-time graph correctly represents a ball thrown straight up and caught again at the same height (up positive)?",
+        "choices": [
+          "A straight line of constant negative slope, from a positive value through zero to a negative value of the same size.",
+          "A straight line down to zero, a flat segment at zero, then a straight line continuing down.",
+          "A curve that flattens out as it approaches zero, then steepens again.",
+          "A horizontal line at zero for the whole flight."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the acceleration is a constant $-9.8\\ \\mathrm{m/s^2}$ throughout, so the graph is a single straight line of that slope, crossing zero at the top with no flat spot.",
+          "incorrect": {
+            "1": "A flat segment at zero would mean the velocity stopped changing — that would need zero acceleration, but gravity never switches off.",
+            "2": "A curve means the acceleration is changing. In free fall the acceleration is constant, so the graph is a straight line.",
+            "3": "The ball is moving for almost the entire flight; its velocity is only zero for a single instant at the top."
+          }
+        },
+        "hint": [
+          "The acceleration is constant at $-9.8\\ \\mathrm{m/s^2}$ the whole time. What shape does a constant slope give?"
+        ],
+        "solution": "Free fall has a constant acceleration of $-9.8\\ \\mathrm{m/s^2}$, so the velocity-time graph is a single straight line with that slope. It starts positive (going up), crosses zero at the top (one instant, no flat spot), and continues to a negative value of equal magnitude when caught at the same height."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L7-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A heavy rock and a light pebble are dropped from the same height at the same instant, with air resistance neglected. Which hits the ground first?",
+      "choices": [
+        "The rock, because it is heavier and has a larger $g$.",
+        "Neither — they land at the same time, because $g$ is the same for both.",
+        "The pebble, because it is lighter and speeds up faster.",
+        "It depends on the exact masses."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — under the ideal free-fall model, $g = 9.8\\ \\mathrm{m/s^2}$ for every object regardless of mass. Same starting height, same acceleration, same $v_i = 0$ → same time.",
+        "incorrect": {
+          "0": "$g$ does not depend on the falling object's mass. Both objects accelerate at $9.8\\ \\mathrm{m/s^2}$.",
+          "2": "Lighter does not mean faster-accelerating in free fall. Both have the same acceleration $g$.",
+          "3": "Mass does not enter the free-fall model at all — the times are equal for any masses."
+        }
+      },
+      "hint": [
+        "Does the value of $g$ in the free-fall model depend on the mass of the falling object?"
+      ],
+      "solution": "In the ideal free-fall model (air resistance neglected), the acceleration is $g = 9.8\\ \\mathrm{m/s^2}$ for every object, independent of mass. Dropped from the same height from rest, the rock and the pebble have identical motion and land at the same instant. (Why $g$ is mass-independent is a Unit 3 question about forces; here it is a stated feature of the model.)"
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Take up as positive. A ball is thrown straight up at $24.5\\ \\mathrm{m/s}$. Find its velocity and acceleration at the highest point.\n\nStudent's response: “At the highest point the ball stops, so $v = 0$. Since it has stopped, there is no motion, so the acceleration is also $0$ at that point. Then gravity takes over and it starts to fall.”",
+      "prompts": [
+        "State the definition of acceleration.",
+        "Identify the step in the student's reasoning that does not follow from that definition.",
+        "Give the correct velocity and acceleration at the highest point, and support the acceleration answer with the shape of the velocity-time graph."
+      ],
+      "modelResponse": "Acceleration is the rate at which velocity is changing — not a statement about what the velocity currently is. The step that does not follow is “since it has stopped … the acceleration is also $0$”: a zero velocity value does not imply a zero rate of change. At the highest point $v = 0$ (for one instant), but $a = g = -9.8\\ \\mathrm{m/s^2}$, unchanged. The velocity-time graph confirms this: it is a single straight line of slope $-9.8\\ \\mathrm{m/s^2}$ for the whole flight, crossing $v = 0$ at the top without flattening — a flat spot would be needed for the acceleration to be zero there, and there is none. “Gravity takes over” is also wrong: gravity acted the entire time, including on the way up.",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "A free-fall scenario becomes: one declared positive direction → a fixed value of $a = g$ → a Lesson 6 constant-acceleration problem (inventory, equation, solve with signs) → a velocity-time graph that is a single straight line of slope $g$. The three launch cases differ only in where that line starts on the $v$-axis.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L7-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "Take up as positive. A ball is thrown straight up at $9.8\\ \\mathrm{m/s}$ from a rooftop. What is its velocity $2.0\\ \\mathrm{s}$ after launch?",
+      "choices": [
+        "$-9.8\\ \\mathrm{m/s}$",
+        "$+9.8\\ \\mathrm{m/s}$",
+        "$-29.4\\ \\mathrm{m/s}$",
+        "$0\\ \\mathrm{m/s}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $v_f = v_i + at = (+9.8) + (-9.8)(2.0) = 9.8 - 19.6 = -9.8\\ \\mathrm{m/s}$: it reached the top at $t = 1.0\\ \\mathrm{s}$ and is now falling at $9.8\\ \\mathrm{m/s}$.",
+        "incorrect": {
+          "1": "That is the launch velocity. After $2.0\\ \\mathrm{s}$ of downward acceleration the velocity has changed sign.",
+          "2": "This forgot to include the initial upward velocity: $v_f = v_i + at$, not just $at$.",
+          "3": "$v = 0$ happens at $t = 1.0\\ \\mathrm{s}$ (the top), not at $t = 2.0\\ \\mathrm{s}$."
+        }
+      },
+      "hint": [
+        "$v_f = v_i + at$ with $v_i = +9.8\\ \\mathrm{m/s}$, $a = -9.8\\ \\mathrm{m/s^2}$, $t = 2.0\\ \\mathrm{s}$."
+      ],
+      "solution": "$v_f = v_i + at = (+9.8\\ \\mathrm{m/s}) + (-9.8\\ \\mathrm{m/s^2})(2.0\\ \\mathrm{s}) = 9.8 - 19.6 = -9.8\\ \\mathrm{m/s}$. The ball reached its highest point at $t = 1.0\\ \\mathrm{s}$ and by $t = 2.0\\ \\mathrm{s}$ is moving downward at $9.8\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "BP8-U2-L7-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two balls are launched at the same instant from the same height: ball A is dropped, ball B is thrown straight down. On a single velocity-time graph (up positive), how do their lines compare before either lands?",
+      "choices": [
+        "Two parallel straight lines with the same slope, B's starting lower on the $v$-axis than A's.",
+        "Two lines with different slopes, because B is moving faster.",
+        "A's line is straight; B's line is curved because it was thrown.",
+        "The lines cross, because B slows down to match A."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — both are in free fall, so both graphs have slope $-9.8\\ \\mathrm{m/s^2}$ (parallel). A starts at $v = 0$; B starts at a negative $v$ (thrown down), so B's line begins lower.",
+        "incorrect": {
+          "1": "Both balls have the same acceleration, $g$, so the two lines have the same slope regardless of speed.",
+          "2": "Being thrown gives B a non-zero starting velocity, but its acceleration is still the constant $g$ — a straight line, not a curve.",
+          "3": "Neither ball's speed decreases: both accelerate downward the whole time, so the gap between the lines stays constant."
+        }
+      },
+      "hint": [
+        "Both balls are in free fall. What does that fix about the *slope* of each velocity-time line?"
+      ],
+      "solution": "Both balls fall freely, so both velocity-time graphs are straight lines with slope $g = -9.8\\ \\mathrm{m/s^2}$ — they are parallel. Ball A (dropped) starts at $v_i = 0$. Ball B (thrown down) starts at a negative $v_i$, so its line begins below A's and stays a fixed distance below it."
+    },
+    {
+      "id": "BP8-U2-L7-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "numerical",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take up as positive; use $g = -9.8\\ \\mathrm{m/s^2}$ and neglect air resistance. A ball is thrown straight up from the edge of a cliff with an initial speed of $19.6\\ \\mathrm{m/s}$. It rises, falls back past the launch point, and lands on the ground $39.2\\ \\mathrm{m}$ below the launch point.",
+      "parts": [
+        {
+          "prompt": "(a) Find the time for the ball to reach its highest point, and its velocity and acceleration there.",
+          "modelResponse": "At the top, $v_f = 0$. Use $v_f = v_i + at$: $0 = 19.6 + (-9.8)t$, so $t = 2.0\\ \\mathrm{s}$. At the top: velocity $= 0$; acceleration $= g = -9.8\\ \\mathrm{m/s^2}$ (unchanged).",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the ball's velocity the instant it lands. (Its displacement from launch to landing is $-39.2\\ \\mathrm{m}$.)",
+          "modelResponse": "Use $v_f^2 = v_i^2 + 2a\\,\\Delta x = (19.6)^2 + 2(-9.8)(-39.2) = 384.16 + 768.32 = 1152.48$; $v_f = \\pm\\sqrt{1152.48} \\approx \\pm 33.9\\ \\mathrm{m/s}$. The ball is moving downward when it lands, so $v_f \\approx -33.9\\ \\mathrm{m/s}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A second ball is dropped from rest (not thrown) from the same launch point at the same instant as the first is thrown. Would it take a longer, shorter, or the same time to fall the $39.2\\ \\mathrm{m}$ to the ground? Explain without computing the exact time.",
+          "modelResponse": "The dropped ball takes a *shorter* time. Both balls have the same downward acceleration $g$, but the thrown ball first spends time going up and coming back to the launch point (with zero net displacement over that part), so it only *starts* its net descent later. The dropped ball begins descending immediately. Same acceleration, but the dropped ball has a head start on the net downward trip, so it reaches the ground first.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Free fall is the most-tested single context in AP and IB kinematics. The turning-point question ($v = 0$, $a = g$), the sign convention held constant, and the mass-independence of $g$ are recurring exam items, and this lesson's equation practice feeds directly into projectile motion and dynamics later.",
+  "summary": "Free fall is the constant-acceleration model with $a = g$ fixed ($|g| = 9.8\\ \\mathrm{m/s^2}$, downward). Declare one positive direction and hold it for the whole flight. Dropped, thrown-down, and thrown-up cases use the same equations — only $v_i$ changes. At the highest point of a throw the velocity is zero for an instant but the acceleration is still $g$; the velocity-time graph is one straight line of slope $g$ through the crossing. Under the ideal model $g$ is the same for every mass.",
+  "exitQuestion": {
+    "id": "BP8-U2-L7-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "A ball thrown straight up takes $2.0\\ \\mathrm{s}$ to reach its highest point. Neglecting air resistance, how long does it take to fall from the highest point back to the launch height?",
+    "choices": [
+      "Less than $2.0\\ \\mathrm{s}$, because it is falling.",
+      "Exactly $2.0\\ \\mathrm{s}$, by the symmetry of constant-acceleration free fall.",
+      "More than $2.0\\ \\mathrm{s}$, because it starts from rest at the top.",
+      "It cannot be found without the initial speed."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the acceleration is the same constant $g$ throughout, so the downward trip mirrors the upward trip: the speed at the launch height on the way down equals the launch speed, and the time is the same $2.0\\ \\mathrm{s}$.",
+      "incorrect": {
+        "0": "The trip up and the trip back to the same height take equal times, because the acceleration is the same constant value for both.",
+        "2": "Starting from rest at the top is exactly mirrored by ending at rest at the top on the way up — the two halves are symmetric.",
+        "3": "The symmetry gives the answer directly: the fall to the launch height takes the same time as the rise from it, $2.0\\ \\mathrm{s}$."
+      }
+    },
+    "hint": [
+      "The acceleration is the same on the way up and the way down. The velocity-time graph is one straight line — what does that say about the two halves?"
+    ],
+    "solution": "Because the acceleration is a single constant $g$ for the whole flight, the motion is symmetric about the highest point: the time to fall back to the launch height equals the time it took to rise from it. So it takes $2.0\\ \\mathrm{s}$, and it arrives back at the launch height moving at the original launch speed (downward)."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-171",
+    "BP8-U2-MCQ-173",
+    "BP8-U2-MCQ-184",
+    "BP8-U2-MCQ-195"
+  ],
+  "needsPlotly": false
+}

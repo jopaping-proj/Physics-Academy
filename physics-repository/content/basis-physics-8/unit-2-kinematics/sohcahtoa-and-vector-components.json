@@ -1,0 +1,423 @@
+{
+  "id": "basis-p8-u2-l8",
+  "slug": "sohcahtoa-and-vector-components",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "SOHCAHTOA and vector components",
+  "lessonTitle": "SOHCAHTOA and Vector Components",
+  "lessonNumber": "8",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_08_sohcahtoa_and_vector_components.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 1 — a vector has a magnitude and a direction.",
+    "Basic right-triangle geometry and use of a calculator's sine, cosine, and tangent keys (BASIS Physics 8 Unit 1)."
+  ],
+  "majorObjective": "Identify the parts of a right triangle relative to a reference angle, use the sine, cosine, and tangent ratios (and their inverses) to find unknown sides and angles, and apply them to decompose a vector into components, rebuild a magnitude, and find a direction with a quadrant check.",
+  "subObjectives": [
+    "Identify the hypotenuse as the side opposite the right angle, in any orientation.",
+    "Label the opposite and adjacent sides relative to a stated reference angle, and swap them correctly if the other acute angle is used.",
+    "Select sine, cosine, or tangent from which two sides a problem involves, and use inverse ratios to find an angle.",
+    "Decompose a vector: $v_x = V\\cos\\theta$, $v_y = V\\sin\\theta$ (re-derived from the triangle), rebuild $V = \\sqrt{v_x^2 + v_y^2}$, and find the direction from $\\tan^{-1}$ plus a quadrant check from the component signs."
+  ],
+  "hook": {
+    "prompt": "In a right triangle, which side is the hypotenuse?",
+    "choices": [
+      "The longest side you can see in the drawing.",
+      "The side opposite the right angle — whatever the triangle's orientation.",
+      "The side drawn along the bottom.",
+      "The side adjacent to the reference angle."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "A right triangle has one $90^\\circ$ angle. The side opposite it is the hypotenuse; the other two are the legs. “Opposite” and “adjacent” always mean *relative to a chosen reference angle*.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The hypotenuse, and the Pythagorean theorem",
+      "concept": "The **hypotenuse** of a right triangle is the side **opposite the right angle** — not “the longest side in the picture” and not “the bottom side.” In a rotated or tilted triangle the hypotenuse can point in any direction; find it by locating the $90^\\circ$ angle and looking across from it.\n\nThe hypotenuse is always the longest side, but you identify it by its **position relative to the right angle**, not by measuring. The three sides are linked by the **Pythagorean theorem**: $$c^2 = a^2 + b^2$$ where $c$ is the hypotenuse and $a$, $b$ are the legs.",
+      "representation": "To find the hypotenuse in any drawing:\n\n1. Locate the right angle (the small square, or the $90^\\circ$ label).\n2. The hypotenuse is the one side that does **not** touch the right angle — it runs from one end of one leg to one end of the other.\n3. Check: it should be the longest side. If it is not, you have mis-identified the right angle.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/vector-components/vector-decompose.svg",
+          "caption": "The vector is the hypotenuse of the right triangle formed with its components. The right angle is where the two dashed component legs meet; the hypotenuse runs across from it."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A right triangle has legs of $9\\ \\mathrm{m}$ and $12\\ \\mathrm{m}$. It is drawn tilted so that the $12\\ \\mathrm{m}$ leg looks like it is on top. Find the hypotenuse.",
+        "phases": [
+          {
+            "label": "Identify the hypotenuse",
+            "steps": [
+              "The two given sides ($9\\ \\mathrm{m}$ and $12\\ \\mathrm{m}$) are the legs — they meet at the right angle. The hypotenuse is the third side, opposite that right angle, regardless of how the triangle is tilted."
+            ]
+          },
+          {
+            "label": "Apply the Pythagorean theorem",
+            "steps": [
+              "$c^2 = a^2 + b^2 = 9^2 + 12^2 = 81 + 144 = 225$.",
+              "$c = \\sqrt{225} = 15\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$15\\ \\mathrm{m} > 12\\ \\mathrm{m} > 9\\ \\mathrm{m}$ — the hypotenuse is the longest side, as it must be."
+            ]
+          }
+        ],
+        "keyMove": "Find the right angle first; the hypotenuse is the side across from it, no matter the orientation."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L8-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "physical-model",
+        "difficulty": "foundation",
+        "cognitiveLevel": 2,
+        "question": "A right triangle is drawn so that its longest-looking side runs vertically up the left edge, and the right angle is at the bottom-right corner. Which side is the hypotenuse?",
+        "choices": [
+          "The vertical side up the left edge.",
+          "The side opposite the bottom-right corner.",
+          "Whichever side is drawn horizontally.",
+          "You cannot tell without measuring all three sides."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the hypotenuse is the side opposite the right angle. The right angle is at the bottom-right corner, so the hypotenuse is the side across from it.",
+          "incorrect": {
+            "0": "“Longest-looking” is a visual guess. Identify the hypotenuse by its position relative to the right angle instead.",
+            "2": "Orientation on the page does not matter. Locate the right angle and look opposite it.",
+            "3": "You do not need to measure — the hypotenuse is defined as the side opposite the $90^\\circ$ angle."
+          }
+        },
+        "hint": [
+          "The hypotenuse is always opposite the right angle. Where is the right angle in this triangle?"
+        ],
+        "solution": "The hypotenuse is the side opposite the right angle. Here the right angle is at the bottom-right corner, so the hypotenuse is the side joining the other two corners — the one that does not touch the bottom-right corner. Its orientation on the page is irrelevant."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "SOHCAHTOA, always relative to a reference angle",
+      "concept": "For a chosen **reference angle** $\\theta$ (one of the two acute angles), label the legs:\n\n- **opposite** — the leg across the triangle from $\\theta$.\n- **adjacent** — the leg touching $\\theta$ (that is not the hypotenuse).\n\nIf you switch to the *other* acute angle, opposite and adjacent **swap**. The three ratios are:\n$$\\sin\\theta = \\frac{\\text{opp}}{\\text{hyp}}, \\quad \\cos\\theta = \\frac{\\text{adj}}{\\text{hyp}}, \\quad \\tan\\theta = \\frac{\\text{opp}}{\\text{adj}}$$ (“SOH-CAH-TOA”). Pick the ratio that uses the two sides your problem involves. To find an **angle** from two known sides, use the inverse: $\\theta = \\tan^{-1}(\\text{opp}/\\text{adj})$, and so on. Always check the calculator is in **degree mode** before an angle calculation.",
+      "representation": "For each right-triangle problem:\n\n1. Mark the reference angle $\\theta$.\n2. Label opp, adj, hyp relative to $\\theta$.\n3. List the two sides in the problem (one known, one wanted — or two known for an angle).\n4. Choose the ratio (SOH / CAH / TOA) that uses exactly those two sides; solve, in degree mode.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ramp makes a $30^\\circ$ angle with the ground. A box is $8.0\\ \\mathrm{m}$ up the ramp (along the slope). How high above the ground is it, and how far horizontally has it moved?",
+        "phases": [
+          {
+            "label": "Set the reference angle and label sides",
+            "steps": [
+              "Reference angle: $\\theta = 30^\\circ$ at the base of the ramp.",
+              "The $8.0\\ \\mathrm{m}$ slope distance is the hypotenuse. Height above ground is the leg *opposite* $\\theta$; horizontal distance is the leg *adjacent* to $\\theta$."
+            ]
+          },
+          {
+            "label": "Height — opposite and hypotenuse → SOH",
+            "steps": [
+              "$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}} \\Rightarrow \\text{height} = 8.0\\sin 30^\\circ = 8.0(0.50) = 4.0\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Horizontal distance — adjacent and hypotenuse → CAH",
+            "steps": [
+              "$\\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}} \\Rightarrow \\text{horizontal} = 8.0\\cos 30^\\circ \\approx 8.0(0.866) \\approx 6.9\\ \\mathrm{m}$."
+            ]
+          }
+        ],
+        "keyMove": "Name the reference angle, label opp/adj/hyp against it, then pick the ratio that pairs the two sides you care about."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L8-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "physical-model",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "In a right triangle, you know the side adjacent to the reference angle and you want the side opposite it. Which ratio connects exactly those two sides?",
+        "choices": [
+          "$\\tan\\theta = \\text{opp}/\\text{adj}$",
+          "$\\sin\\theta = \\text{opp}/\\text{hyp}$",
+          "$\\cos\\theta = \\text{adj}/\\text{hyp}$",
+          "The Pythagorean theorem."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — tangent relates the opposite and adjacent legs directly (TOA), so $\\text{opp} = \\text{adj}\\times\\tan\\theta$ with no need for the hypotenuse.",
+          "incorrect": {
+            "1": "Sine uses the opposite and the hypotenuse. You do not have the hypotenuse here.",
+            "2": "Cosine uses the adjacent and the hypotenuse. You do not have the hypotenuse.",
+            "3": "The Pythagorean theorem needs two sides but no angle — and you would still be missing the hypotenuse. Tangent uses the angle plus the one side you have."
+          }
+        },
+        "hint": [
+          "Which ratio is built from the opposite and adjacent legs only, with no hypotenuse?"
+        ],
+        "solution": "Tangent connects the opposite and adjacent legs: $\\tan\\theta = \\text{opp}/\\text{adj}$. With the adjacent side and the angle known, $\\text{opp} = \\text{adj}\\times\\tan\\theta$. Sine and cosine both involve the hypotenuse, which is not given."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Decomposing a vector, rebuilding it, and finding its direction",
+      "concept": "A vector of magnitude $V$ at angle $\\theta$ from a reference direction has a **right triangle** with the vector as the hypotenuse and the components as the legs.\n\n- **Components:** the component *along* the reference direction is adjacent to $\\theta$, so it uses cosine; the perpendicular one is opposite, so it uses sine. For the standard “$\\theta$ above the $+x$ axis” case: $v_x = V\\cos\\theta$, $v_y = V\\sin\\theta$. Re-derive this from the triangle each time rather than memorising a fixed pairing — if $\\theta$ is measured from a different axis, the sine and cosine swap.\n- **Magnitude from components:** $V = \\sqrt{v_x^2 + v_y^2}$, always reported as a positive number.\n- **Direction from components:** $\\theta_{\\text{ref}} = \\tan^{-1}\\!\\left(\\dfrac{|v_y|}{|v_x|}\\right)$ gives a **reference angle** only. The actual direction depends on the **signs** of $v_x$ and $v_y$ — determine the quadrant from those signs *first*, then place the angle.",
+      "representation": "Round trip both ways:\n\n1. **Magnitude + angle → components:** draw the triangle, label opp/adj against $\\theta$, apply sine/cosine, attach signs from the direction.\n2. **Components → magnitude + direction:** $V = \\sqrt{v_x^2 + v_y^2}$; quadrant from the signs of $v_x$, $v_y$; reference angle from $\\tan^{-1}(|v_y|/|v_x|)$; combine.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vec_g1.svg",
+          "caption": "A vector of magnitude $50\\ \\mathrm{m/s}$ at $37^\\circ$ above the $+x$ axis. The horizontal leg (adjacent) is $V\\cos 37^\\circ$; the vertical leg (opposite) is $V\\sin 37^\\circ$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A velocity is $50\\ \\mathrm{m/s}$ at $37^\\circ$ above the $+x$ axis. Find its components (use $\\sin 37^\\circ = 0.60$, $\\cos 37^\\circ = 0.80$). (b) A different vector has components $v_x = -6.0\\ \\mathrm{m}$, $v_y = +8.0\\ \\mathrm{m}$. Find its magnitude and direction.",
+        "phases": [
+          {
+            "label": "(a) Components from magnitude and angle",
+            "steps": [
+              "The vector is the hypotenuse. $v_x$ is adjacent to $37^\\circ$: $v_x = 50\\cos 37^\\circ = 50(0.80) = +40\\ \\mathrm{m/s}$.",
+              "$v_y$ is opposite $37^\\circ$: $v_y = 50\\sin 37^\\circ = 50(0.60) = +30\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(b) Magnitude from components",
+            "steps": [
+              "$V = \\sqrt{v_x^2 + v_y^2} = \\sqrt{(-6.0)^2 + (8.0)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\ \\mathrm{m}$ (positive)."
+            ]
+          },
+          {
+            "label": "(b) Direction — quadrant first, then angle",
+            "steps": [
+              "Signs: $v_x < 0$, $v_y > 0$ → the vector points up and to the left (second quadrant).",
+              "Reference angle: $\\tan^{-1}(|v_y|/|v_x|) = \\tan^{-1}(8.0/6.0) = \\tan^{-1}(1.33) \\approx 53^\\circ$.",
+              "Place it in the second quadrant: the direction is $53^\\circ$ above the $-x$ axis, i.e. a standard-position angle of $180^\\circ - 53^\\circ = 127^\\circ$."
+            ]
+          }
+        ],
+        "keyMove": "Re-derive $\\cos$ for the along-axis component and $\\sin$ for the perpendicular one from the triangle; for direction, get the quadrant from the signs before trusting the calculator's angle."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L8-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "vector-diagram",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A vector has components $v_x = +3.0\\ \\mathrm{m}$ and $v_y = -4.0\\ \\mathrm{m}$. Which statement about its magnitude and direction is correct?",
+        "choices": [
+          "Magnitude $5.0\\ \\mathrm{m}$; points below the $+x$ axis (fourth quadrant), about $53^\\circ$ below it.",
+          "Magnitude $5.0\\ \\mathrm{m}$; points above the $+x$ axis, about $53^\\circ$ above it.",
+          "Magnitude $1.0\\ \\mathrm{m}$; direction $\\tan^{-1}(4/3)$ with no quadrant check needed.",
+          "Magnitude $7.0\\ \\mathrm{m}$; points into the third quadrant."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $V = \\sqrt{3^2 + 4^2} = 5.0\\ \\mathrm{m}$. Signs $v_x > 0$, $v_y < 0$ put it in the fourth quadrant; the reference angle $\\tan^{-1}(4/3) \\approx 53^\\circ$ goes below the $+x$ axis.",
+          "incorrect": {
+            "1": "The magnitude is right, but $v_y$ is negative, so the vector points *below* the $+x$ axis, not above it.",
+            "2": "Magnitude is $\\sqrt{3^2 + 4^2} = 5.0\\ \\mathrm{m}$, not $1.0\\ \\mathrm{m}$ — that would be $\\sqrt{|3| - |4|}$, which is not the rule. And a quadrant check is always needed.",
+            "3": "$7.0\\ \\mathrm{m}$ adds the component magnitudes ($3 + 4$). The Pythagorean rule squares, adds, then square-roots. Also $v_x > 0$ rules out the third quadrant."
+          }
+        },
+        "hint": [
+          "Magnitude: $\\sqrt{v_x^2 + v_y^2}$. Direction: use the signs of $v_x$ and $v_y$ to fix the quadrant, then the reference angle."
+        ],
+        "solution": "$V = \\sqrt{(3.0)^2 + (-4.0)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5.0\\ \\mathrm{m}$. The signs are $v_x > 0$, $v_y < 0$, which is the fourth quadrant (right and down). The reference angle is $\\tan^{-1}(4.0/3.0) \\approx 53^\\circ$, measured below the $+x$ axis."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L8-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "vector-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "A vector has $v_x = -5.0\\ \\mathrm{m}$ and $v_y = -5.0\\ \\mathrm{m}$. A student computes $\\tan^{-1}(5.0/5.0) = 45^\\circ$ and reports the direction as “$45^\\circ$ above the $+x$ axis.” What went wrong?",
+      "choices": [
+        "Nothing — $45^\\circ$ is correct.",
+        "The inverse tangent gives only a reference angle; both components are negative, so the vector is in the third quadrant — the direction is $45^\\circ$ below the $-x$ axis ($225^\\circ$).",
+        "The student should have divided $v_x$ by $v_y$ instead.",
+        "The magnitude is wrong, so the angle cannot be found."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $\\tan^{-1}(5/5) = 45^\\circ$ is just the reference angle. Because $v_x < 0$ and $v_y < 0$, the vector points down and to the left (third quadrant): $45^\\circ$ below the $-x$ axis, a standard-position angle of $225^\\circ$.",
+        "incorrect": {
+          "0": "$45^\\circ$ above the $+x$ axis would need both components positive. Here both are negative.",
+          "2": "Swapping the ratio just changes which reference angle you get — it does not fix the missing quadrant check.",
+          "3": "The magnitude ($\\sqrt{50} \\approx 7.1\\ \\mathrm{m}$) is fine. The error is skipping the quadrant determination from the component signs."
+        }
+      },
+      "hint": [
+        "$\\tan^{-1}$ on a calculator returns an angle in only two of the four quadrants. What do the signs of $v_x$ and $v_y$ tell you here?"
+      ],
+      "solution": "The inverse tangent gives a reference-angle magnitude ($45^\\circ$) only. The actual direction requires the quadrant, found from the component signs: $v_x < 0$ and $v_y < 0$ means the vector points down-and-left, into the third quadrant. So the direction is $45^\\circ$ below the $-x$ axis — equivalently, a standard-position angle of $180^\\circ + 45^\\circ = 225^\\circ$."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A vector has magnitude $20\\ \\mathrm{m}$ and points at $60^\\circ$ measured from the $+y$ axis (toward the $+x$ axis). Find its $x$- and $y$-components.\n\nStudent's response: “$v_x = 20\\cos 60^\\circ = 20(0.5) = 10\\ \\mathrm{m}$ and $v_y = 20\\sin 60^\\circ = 20(0.866) = 17.3\\ \\mathrm{m}$, because $x$ always uses cosine and $y$ always uses sine.”",
+      "prompts": [
+        "State the rule for which component uses cosine.",
+        "Identify the assumption in the student's work that does not hold here.",
+        "Redo the decomposition correctly, re-deriving the ratios from the triangle."
+      ],
+      "modelResponse": "The rule: the component *along the side adjacent to the reference angle* uses cosine; the *opposite* one uses sine. The faulty assumption is “$x$ always uses cosine and $y$ always uses sine” — that is only true when the angle is measured from the $+x$ axis. Here the angle is measured from the $+y$ axis, so the $y$-component is *adjacent* to the $60^\\circ$ angle and the $x$-component is *opposite* it. Re-derived: $v_y = 20\\cos 60^\\circ = 20(0.5) = 10\\ \\mathrm{m}$ and $v_x = 20\\sin 60^\\circ = 20(0.866) \\approx 17.3\\ \\mathrm{m}$ — the sine and cosine are swapped relative to the student's answer.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A vector (magnitude + angle) and its pair of components are two descriptions of the same thing, connected by a right triangle: the vector is the hypotenuse, the components are the legs. SOHCAHTOA moves one way (angle → components); the Pythagorean theorem and inverse tangent move back (components → magnitude and direction), with a quadrant check from the component signs.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L8-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "vector-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A displacement is $26\\ \\mathrm{m}$ at $23^\\circ$ above the $+x$ axis. Using $\\sin 23^\\circ \\approx 0.39$ and $\\cos 23^\\circ \\approx 0.92$, which pair of components is correct?",
+      "choices": [
+        "$v_x \\approx +24\\ \\mathrm{m}$, $v_y \\approx +10\\ \\mathrm{m}$",
+        "$v_x \\approx +10\\ \\mathrm{m}$, $v_y \\approx +24\\ \\mathrm{m}$",
+        "$v_x \\approx +26\\ \\mathrm{m}$, $v_y \\approx +26\\ \\mathrm{m}$",
+        "$v_x \\approx +13\\ \\mathrm{m}$, $v_y \\approx +13\\ \\mathrm{m}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — measured from the $+x$ axis, $v_x = V\\cos\\theta = 26(0.92) \\approx 24\\ \\mathrm{m}$ (adjacent) and $v_y = V\\sin\\theta = 26(0.39) \\approx 10\\ \\mathrm{m}$ (opposite).",
+        "incorrect": {
+          "1": "This swaps sine and cosine. The angle is small ($23^\\circ$), so the vector is mostly horizontal — $v_x$ should be the larger component.",
+          "2": "Both components equal to the magnitude would only happen at $\\theta$ near $45^\\circ$ and even then not exactly. Apply the ratios.",
+          "3": "Halving the magnitude is not a valid decomposition. Use $V\\cos\\theta$ and $V\\sin\\theta$."
+        }
+      },
+      "hint": [
+        "Angle from the $+x$ axis: $v_x = V\\cos\\theta$ (adjacent), $v_y = V\\sin\\theta$ (opposite). A small angle means $v_x$ is close to $V$."
+      ],
+      "solution": "The angle is measured from the $+x$ axis, so $v_x$ is adjacent: $v_x = 26\\cos 23^\\circ \\approx 26(0.92) \\approx 24\\ \\mathrm{m}$. $v_y$ is opposite: $v_y = 26\\sin 23^\\circ \\approx 26(0.39) \\approx 10\\ \\mathrm{m}$. The vector is mostly horizontal, which fits a $23^\\circ$ angle."
+    },
+    {
+      "id": "BP8-U2-L8-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "vector-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two vectors have the same reference angle from the horizontal, $\\tan^{-1}(3/4) \\approx 37^\\circ$. Vector 1 has components $(+4, +3)$; vector 2 has components $(-4, -3)$. How do their actual directions compare?",
+      "choices": [
+        "Identical — same reference angle means same direction.",
+        "Opposite — vector 1 points $37^\\circ$ above the $+x$ axis; vector 2 points $37^\\circ$ below the $-x$ axis, which is the reverse direction ($180^\\circ$ apart).",
+        "$90^\\circ$ apart.",
+        "Vector 2 has no defined direction because its components are negative."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the inverse tangent gives $37^\\circ$ for both, but the signs place vector 1 in the first quadrant and vector 2 in the third quadrant. Those directions are exact opposites, $180^\\circ$ apart.",
+        "incorrect": {
+          "0": "Same reference angle does not mean same direction — that is exactly the trap. The component signs decide the quadrant.",
+          "2": "First quadrant and third quadrant are $180^\\circ$ apart, not $90^\\circ$.",
+          "3": "Negative components are completely normal. Vector 2's direction is well defined: into the third quadrant."
+        }
+      },
+      "hint": [
+        "Both give $\\tan^{-1}(3/4) \\approx 37^\\circ$. Now use the signs: where does $(+4, +3)$ point? Where does $(-4, -3)$ point?"
+      ],
+      "solution": "Both vectors give the same reference angle, $\\tan^{-1}(3/4) \\approx 37^\\circ$. But $(+4, +3)$ has both components positive — first quadrant, $37^\\circ$ above the $+x$ axis. $(-4, -3)$ has both negative — third quadrant, $37^\\circ$ below the $-x$ axis. Those two directions are $180^\\circ$ apart: the vectors point exactly opposite ways."
+    },
+    {
+      "id": "BP8-U2-L8-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "proportional-reasoning",
+      "representation": "vector-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A hiker walks $100\\ \\mathrm{m}$ in a straight line at $53^\\circ$ west of north. Take east as the $+x$ direction and north as the $+y$ direction. Use $\\sin 53^\\circ \\approx 0.80$ and $\\cos 53^\\circ \\approx 0.60$.",
+      "parts": [
+        {
+          "prompt": "(a) Sketch the right triangle for this displacement. Identify which component is opposite the $53^\\circ$ angle and which is adjacent, when the angle is measured from north.",
+          "modelResponse": "The displacement is the hypotenuse ($100\\ \\mathrm{m}$). The angle $53^\\circ$ is measured from the north ($+y$) direction. The north–south component ($y$) is *adjacent* to that angle; the east–west component ($x$) is *opposite* it.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the $x$- and $y$-components of the displacement, with correct signs.",
+          "modelResponse": "$y$-component (adjacent, from north): $+100\\cos 53^\\circ = +100(0.60) = +60\\ \\mathrm{m}$ (north). $x$-component (opposite): magnitude $100\\sin 53^\\circ = 100(0.80) = 80\\ \\mathrm{m}$; the hiker goes *west*, which is $-x$, so $v_x = -80\\ \\mathrm{m}$. Components: $(-80\\ \\mathrm{m},\\ +60\\ \\mathrm{m})$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Confirm the magnitude from the components using the Pythagorean theorem, and state which quadrant the displacement points into.",
+          "modelResponse": "$V = \\sqrt{(-80)^2 + (60)^2} = \\sqrt{6400 + 3600} = \\sqrt{10000} = 100\\ \\mathrm{m}$ — matches the given magnitude. Signs $v_x < 0$, $v_y > 0$: the displacement points up-and-left, into the second quadrant (north-west), which matches “west of north.”",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Vector decomposition and reconstruction are used constantly once motion goes two-dimensional — projectiles, forces on inclines, momentum. AP and IB reward the explicit quadrant check for direction and the habit of re-deriving sine/cosine from the triangle rather than assuming “$x$ is always cosine.”",
+  "summary": "The hypotenuse of a right triangle is the side opposite the right angle, in any orientation ($c^2 = a^2 + b^2$). Opposite and adjacent are defined relative to a chosen reference angle and swap if you use the other acute angle. SOH-CAH-TOA picks the ratio from the two sides involved; inverse ratios find angles (check degree mode). For a vector: the along-axis component uses cosine, the perpendicular one sine (re-derive from the triangle); rebuild the magnitude with $\\sqrt{v_x^2 + v_y^2}$; find the direction from $\\tan^{-1}$ plus a quadrant check from the signs of $v_x$ and $v_y$.",
+  "exitQuestion": {
+    "id": "BP8-U2-L8-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "Why must you check the quadrant separately when finding a vector's direction from its components, instead of just reporting the calculator's $\\tan^{-1}$ output?",
+    "choices": [
+      "Because calculators are often set to the wrong units.",
+      "Because $\\tan^{-1}$ returns an angle in only two of the four quadrants — it cannot tell $(+v_x, +v_y)$ from $(-v_x, -v_y)$, which point opposite ways.",
+      "Because the magnitude must be found first.",
+      "Because $\\tan\\theta$ is undefined for some angles."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $\\tan\\theta = \\tan(\\theta + 180^\\circ)$, so $\\tan^{-1}$ collapses two opposite directions to the same reference angle. The signs of $v_x$ and $v_y$ are what distinguish the actual quadrant.",
+      "incorrect": {
+        "0": "Degree mode matters, but even with correct units the inverse tangent still cannot resolve the quadrant on its own.",
+        "2": "The magnitude and the direction are independent calculations — order does not cause the quadrant ambiguity.",
+        "3": "Tangent being undefined at $90^\\circ$ is a separate edge case, not the reason a quadrant check is always needed."
+      }
+    },
+    "hint": [
+      "$\\tan(30^\\circ)$ and $\\tan(210^\\circ)$ are equal. What does that mean for $\\tan^{-1}$?"
+    ],
+    "solution": "Because $\\tan\\theta$ repeats every $180^\\circ$, the inverse tangent gives back only a reference angle — it maps both $(+v_x, +v_y)$ and $(-v_x, -v_y)$ to the same number, even though those vectors point in exactly opposite directions. Only the signs of the components fix which of the four quadrants the vector is actually in."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-215",
+    "BP8-U2-MCQ-219",
+    "BP8-U2-MCQ-213",
+    "BP8-U2-MCQ-221"
+  ],
+  "needsPlotly": false
+}

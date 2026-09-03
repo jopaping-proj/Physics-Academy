@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="280" viewBox="0 0 700 280" role="img" aria-labelledby="t d">
+<title id="t">One motion shown as position-time, velocity-time, and acceleration-time graphs</title>
+<desc id="d">An object starting from rest with constant positive acceleration. The position-time graph is an upward-curving line whose steepness increases. The velocity-time graph is a straight line rising from zero. The acceleration-time graph is a horizontal line at a constant positive value.</desc>
+<rect width="700" height="280" fill="white"/>
+<g font-family="Arial">
+ <g>
+  <text x="30" y="24" font-size="13" font-weight="bold" fill="#0f3d61">position vs time</text>
+  <path d="M40 190H210" stroke="#111827" stroke-width="1.5"/>
+  <path d="M45 40V195" stroke="#111827" stroke-width="1.5"/>
+  <text x="214" y="194" font-size="12" fill="#111827">t</text>
+  <text x="34" y="38" font-size="12" fill="#111827">x</text>
+  <path d="M45 190 Q 150 185 200 55" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="60" y="214" font-size="11" fill="#5b6675">curve steepens</text>
+ </g>
+ <g transform="translate(235,0)">
+  <text x="30" y="24" font-size="13" font-weight="bold" fill="#0f3d61">velocity vs time</text>
+  <path d="M40 190H210" stroke="#111827" stroke-width="1.5"/>
+  <path d="M45 40V195" stroke="#111827" stroke-width="1.5"/>
+  <text x="214" y="194" font-size="12" fill="#111827">t</text>
+  <text x="34" y="38" font-size="12" fill="#111827">v</text>
+  <path d="M45 190L200 60" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="60" y="214" font-size="11" fill="#5b6675">straight line, rising</text>
+ </g>
+ <g transform="translate(470,0)">
+  <text x="20" y="24" font-size="13" font-weight="bold" fill="#0f3d61">acceleration vs time</text>
+  <path d="M40 190H210" stroke="#111827" stroke-width="1.5"/>
+  <path d="M45 40V195" stroke="#111827" stroke-width="1.5"/>
+  <text x="214" y="194" font-size="12" fill="#111827">t</text>
+  <text x="30" y="38" font-size="12" fill="#111827">a</text>
+  <path d="M45 95H200" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="60" y="214" font-size="11" fill="#5b6675">horizontal, constant</text>
+ </g>
+ <text x="340" y="256" font-size="12" fill="#111827" text-anchor="middle">Same motion. Slope of x&#8211;t gives v&#8211;t; slope of v&#8211;t gives a&#8211;t.</text>
+</g>
+</svg>

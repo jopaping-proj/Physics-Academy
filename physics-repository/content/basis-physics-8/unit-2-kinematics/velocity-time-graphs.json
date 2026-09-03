@@ -1,0 +1,429 @@
+{
+  "id": "basis-p8-u2-l4",
+  "slug": "velocity-time-graphs",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Velocity-time graphs: slope and area",
+  "lessonTitle": "Velocity-Time Graphs",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_04_velocity_time_graphs.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 2 — the slope of a graph is rise over run; the slope of a position-time graph is velocity.",
+    "Lesson 3 — velocity is signed; on a velocity-time graph a horizontal segment is constant velocity; $\\Delta x = v\\,\\Delta t$ is the area of that segment."
+  ],
+  "majorObjective": "Read a velocity-time graph quantitatively: the slope of a segment is the acceleration, the signed area between the graph and the time axis is the displacement, and a described motion can be matched to the correctly shaped velocity-time graph.",
+  "subObjectives": [
+    "Calculate the slope $\\Delta v / \\Delta t$ of a velocity-time segment and interpret it as an acceleration, including for a segment that crosses zero velocity.",
+    "Calculate displacement as the area under a velocity-time segment — a rectangle for constant velocity, a triangle for constant acceleration.",
+    "Combine areas above and below the time axis as a signed sum to get a net displacement.",
+    "Match a verbal description of a motion to a velocity-time graph by checking sign, constancy, and pattern of change one element at a time."
+  ],
+  "hook": {
+    "prompt": "A velocity-time graph is a straight line from $+6\\ \\mathrm{m/s}$ down to $-2\\ \\mathrm{m/s}$ over $4\\ \\mathrm{s}$. What is the slope, and does the calculation change at the moment the line crosses zero?",
+    "choices": [
+      "Slope $= -2\\ \\mathrm{m/s^2}$; the calculation is the same right through the zero crossing.",
+      "Slope $= -2\\ \\mathrm{m/s^2}$ before the crossing and $+2\\ \\mathrm{m/s^2}$ after it.",
+      "Slope $= -8\\ \\mathrm{m/s^2}$; the crossing has no effect.",
+      "The slope is undefined at the instant the line crosses zero."
+    ],
+    "correctIndex": 0
+  },
+  "priorKnowledge": "On a velocity-time graph the height is the signed velocity. This lesson adds the two quantitative readings: the slope (a rate of change of velocity, i.e. acceleration) and the signed area (a displacement).",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The slope of a velocity-time segment is the acceleration",
+      "concept": "The **slope** of a straight velocity-time segment is the rate at which the velocity is changing: $$\\text{slope} = \\frac{\\Delta v}{\\Delta t} = \\frac{v_2 - v_1}{t_2 - t_1}$$ Its unit is $\\mathrm{m/s^2}$ — metres per second, per second. This rate is the **acceleration** (the next lesson defines acceleration formally; here it is just this slope).\n\nA segment that **crosses zero velocity** — an object slowing to a stop and then moving off the other way — is a good stress test. Nothing special happens to the slope calculation at the crossing point: you still take one point before and one point after and divide. The line stays straight right through $v = 0$.",
+      "representation": "To get the slope of a velocity-time segment:\n\n1. Pick two points on the same straight segment.\n2. Rise: $\\Delta v = v_2 - v_1$, keeping the sign.\n3. Run: $\\Delta t = t_2 - t_1$, always positive.\n4. Divide, and attach $\\mathrm{m/s^2}$. A downward-sloping segment gives a negative rate whether or not it crosses zero.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/velocity-time-graphs/vt-slope-crosses-zero.svg",
+          "caption": "The segment runs from $+6\\ \\mathrm{m/s}$ to $-2\\ \\mathrm{m/s}$ over $4\\ \\mathrm{s}$: slope $= -8/4 = -2\\ \\mathrm{m/s^2}$. It crosses $v = 0$ at $t = 3\\ \\mathrm{s}$, and the slope is the same on both sides."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "From the graph above, find the acceleration on the segment, and state what the object is doing just before and just after $t = 3\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "Read two points and take rise over run",
+            "steps": [
+              "Endpoints: $(0\\ \\mathrm{s},\\ +6\\ \\mathrm{m/s})$ and $(4\\ \\mathrm{s},\\ -2\\ \\mathrm{m/s})$.",
+              "$\\Delta v = (-2) - (+6) = -8\\ \\mathrm{m/s}$;  $\\Delta t = 4 - 0 = 4\\ \\mathrm{s}$."
+            ]
+          },
+          {
+            "label": "Divide",
+            "steps": [
+              "$\\text{slope} = \\dfrac{\\Delta v}{\\Delta t} = \\dfrac{-8\\ \\mathrm{m/s}}{4\\ \\mathrm{s}} = -2\\ \\mathrm{m/s^2}$ — a constant acceleration in the negative direction."
+            ]
+          },
+          {
+            "label": "Describe the motion around the crossing",
+            "steps": [
+              "Before $t = 3\\ \\mathrm{s}$: velocity is positive and shrinking — moving in the positive direction, slowing down.",
+              "At $t = 3\\ \\mathrm{s}$: $v = 0$ — momentarily at rest.",
+              "After $t = 3\\ \\mathrm{s}$: velocity is negative and growing in size — now moving in the negative direction, speeding up. The acceleration was $-2\\ \\mathrm{m/s^2}$ the whole time."
+            ]
+          }
+        ],
+        "keyMove": "The zero crossing changes what the object is doing, but not the slope — read the slope from any two points on the segment."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L4-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A velocity-time segment goes from $(1\\ \\mathrm{s},\\ -4\\ \\mathrm{m/s})$ to $(5\\ \\mathrm{s},\\ +8\\ \\mathrm{m/s})$. What is the acceleration?",
+        "choices": [
+          "$+3\\ \\mathrm{m/s^2}$",
+          "$-3\\ \\mathrm{m/s^2}$",
+          "$+12\\ \\mathrm{m/s^2}$",
+          "$+4\\ \\mathrm{m/s^2}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $\\Delta v = (+8) - (-4) = +12\\ \\mathrm{m/s}$, $\\Delta t = 5 - 1 = 4\\ \\mathrm{s}$, so slope $= +12/4 = +3\\ \\mathrm{m/s^2}$.",
+          "incorrect": {
+            "1": "The velocity rises as time goes on, so the slope is positive. Check the order: later value minus earlier value.",
+            "2": "$+12\\ \\mathrm{m/s}$ is the rise $\\Delta v$ alone. Divide by the run $\\Delta t = 4\\ \\mathrm{s}$.",
+            "3": "The run is $5 - 1 = 4\\ \\mathrm{s}$, but the rise is $(+8) - (-4) = +12$, not $+16$. Subtracting a negative adds."
+          }
+        },
+        "hint": [
+          "$\\Delta v = v_2 - v_1$ with the later point second. Subtracting $-4$ adds $4$."
+        ],
+        "solution": "$\\Delta v = (+8\\ \\mathrm{m/s}) - (-4\\ \\mathrm{m/s}) = +12\\ \\mathrm{m/s}$. $\\Delta t = 5\\ \\mathrm{s} - 1\\ \\mathrm{s} = 4\\ \\mathrm{s}$. Slope $= +12 / 4 = +3\\ \\mathrm{m/s^2}$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The signed area is the displacement",
+      "concept": "The **area between a velocity-time segment and the time axis** is the displacement over that interval.\n\n- A **constant-velocity** segment gives a **rectangle**: $\\Delta x = v\\,\\Delta t = \\text{height} \\times \\text{base}$.\n- A **constant-acceleration** segment gives a **triangle** (or a rectangle plus a triangle): area $= \\tfrac{1}{2}\\,\\text{base} \\times \\text{height}$ for the triangular part.\n\nArea **below** the time axis is **negative** displacement. When a graph has regions both above and below the axis, do not make the lower area positive and add it — combine the regions as a **signed sum**. The result is the net change in position, which can be smaller than either piece or even zero.",
+      "representation": "For a multi-region velocity-time graph:\n\n1. Split it into rectangles and triangles.\n2. Find each area, and attach a $+$ sign if the region is above the axis, a $-$ sign if below.\n3. Add the signed areas.\n4. The total is the net displacement; its sign is the overall direction.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/velocity-time-graphs/vt-signed-area.svg",
+          "caption": "Above the axis: $(+5\\ \\mathrm{m/s})(2\\ \\mathrm{s}) = +10\\ \\mathrm{m}$. Below the axis: $(-3\\ \\mathrm{m/s})(4\\ \\mathrm{s}) = -12\\ \\mathrm{m}$. Net displacement $= (+10) + (-12) = -2\\ \\mathrm{m}$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An object's velocity-time graph has two segments: $+8\\ \\mathrm{m/s}$ (constant) from $0$ to $3\\ \\mathrm{s}$, then a straight fall from $+8\\ \\mathrm{m/s}$ to $0$ over the next $2\\ \\mathrm{s}$. Find the total displacement from $0$ to $5\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "First segment — a rectangle",
+            "steps": [
+              "Constant $+8\\ \\mathrm{m/s}$ for $3\\ \\mathrm{s}$: area $= (8)(3) = +24\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Second segment — a triangle",
+            "steps": [
+              "The velocity drops from $8\\ \\mathrm{m/s}$ to $0$ over $2\\ \\mathrm{s}$ — a triangle with base $2\\ \\mathrm{s}$ and height $8\\ \\mathrm{m/s}$.",
+              "Area $= \\tfrac{1}{2}(2)(8) = +8\\ \\mathrm{m}$ (still above the axis, so positive)."
+            ]
+          },
+          {
+            "label": "Add the signed areas",
+            "steps": [
+              "$\\Delta x = (+24\\ \\mathrm{m}) + (+8\\ \\mathrm{m}) = +32\\ \\mathrm{m}$ — the object finishes $32\\ \\mathrm{m}$ in the positive direction."
+            ]
+          }
+        ],
+        "keyMove": "Rectangle for the constant part, triangle for the sloped part; sign each by which side of the axis it is on, then add."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L4-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "graph",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A velocity-time graph is $+4\\ \\mathrm{m/s}$ (constant) from $0$ to $3\\ \\mathrm{s}$, then $-4\\ \\mathrm{m/s}$ (constant) from $3\\ \\mathrm{s}$ to $9\\ \\mathrm{s}$. What is the net displacement over the whole $9\\ \\mathrm{s}$?",
+        "choices": [
+          "$-12\\ \\mathrm{m}$",
+          "$+36\\ \\mathrm{m}$",
+          "$0\\ \\mathrm{m}$",
+          "$+12\\ \\mathrm{m}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — above: $(4)(3) = +12\\ \\mathrm{m}$; below: $(-4)(6) = -24\\ \\mathrm{m}$; net $= (+12) + (-24) = -12\\ \\mathrm{m}$.",
+          "incorrect": {
+            "1": "This adds the magnitudes ($12 + 24$) as if both regions were positive. The region below the axis is negative displacement.",
+            "2": "The two regions do not cancel: the negative segment lasts $6\\ \\mathrm{s}$, twice as long as the positive one, so its area is larger.",
+            "3": "$+12\\ \\mathrm{m}$ is just the first region. The second region ($-24\\ \\mathrm{m}$) more than cancels it."
+          }
+        },
+        "hint": [
+          "Area above the axis is positive, area below is negative. The below region is $-4\\ \\mathrm{m/s}$ for $6\\ \\mathrm{s}$.",
+          "Net $= (+12) + (-24)$."
+        ],
+        "solution": "Above the axis: $(+4\\ \\mathrm{m/s})(3\\ \\mathrm{s}) = +12\\ \\mathrm{m}$. Below the axis: $(-4\\ \\mathrm{m/s})(6\\ \\mathrm{s}) = -24\\ \\mathrm{m}$. Net displacement $= (+12) + (-24) = -12\\ \\mathrm{m}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Matching a description to a velocity-time graph",
+      "concept": "To choose the right velocity-time graph for a described motion, break the description into **three separate checks** and test a candidate graph against each:\n\n- **Sign** — is the velocity positive, negative, or does it change sign?\n- **Constancy** — is the velocity holding steady (horizontal) or changing (sloped)?\n- **Pattern of change** — if it is changing, how? Uniform slowing, a brief rest, uniform speeding up the other way, and so on.\n\nA candidate graph has to pass **all three**. Checking them one at a time is faster and more reliable than trying to picture the whole graph at once.",
+      "representation": "Turn the words into graph features:\n\n- “moving forward / backward” → segment above / below the axis.\n- “steady speed” → horizontal segment.\n- “slowing to a stop” → sloped segment heading toward the axis.\n- “stopped for a moment” → the graph touches the axis (it need not flatten).\n- “speeding up the other way” → the segment continues past the axis with the same slope.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A cart moves in the positive direction, slows uniformly to a stop, and then speeds up uniformly in the negative direction — all at the same rate. Describe the velocity-time graph, element by element.",
+        "phases": [
+          {
+            "label": "Sign",
+            "steps": [
+              "It starts moving positive, ends moving negative, so the graph starts above the axis and finishes below it — it must cross the axis once."
+            ]
+          },
+          {
+            "label": "Constancy",
+            "steps": [
+              "The velocity is changing the whole time (slowing, then speeding up), so the graph is sloped, not horizontal, throughout."
+            ]
+          },
+          {
+            "label": "Pattern of change",
+            "steps": [
+              "“Uniformly … at the same rate” means one constant slope. So the graph is a single straight line running from a positive value, down through zero, to a negative value — it does not bend or flatten at the crossing."
+            ]
+          }
+        ],
+        "keyMove": "One straight sloped line through the axis — the description of “slow down, stop, reverse at the same rate” is exactly a constant slope."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L4-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "An object travels in the positive direction at a steady speed, then abruptly stops and stays at rest. Which velocity-time graph matches?",
+        "choices": [
+          "A horizontal segment above the axis, then a horizontal segment on the axis.",
+          "A horizontal segment above the axis, then a horizontal segment below the axis.",
+          "A single sloped line from a positive value down to zero.",
+          "A horizontal segment on the axis, then a horizontal segment above it."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — steady positive speed is a horizontal segment above the axis; at rest is a horizontal segment sitting on the axis ($v = 0$).",
+          "incorrect": {
+            "1": "A segment below the axis means moving in the negative direction. The object stops, it does not reverse.",
+            "2": "A sloped line means the velocity changes gradually. This object stops abruptly, and “steady speed” before that is horizontal, not sloped.",
+            "3": "This has the object at rest first and then moving — the reverse of the description."
+          }
+        },
+        "hint": [
+          "Steady speed → horizontal. Moving forward → above the axis. At rest → on the axis."
+        ],
+        "solution": "Steady speed in the positive direction is a horizontal segment above the time axis. Coming to rest and staying there is a horizontal segment exactly on the time axis ($v = 0$). No part of the motion is in the negative direction, so nothing goes below the axis."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L4-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "graph-area-as-slope",
+      "question": "A velocity-time graph is $+6\\ \\mathrm{m/s}$ for $2\\ \\mathrm{s}$, then $-6\\ \\mathrm{m/s}$ for $2\\ \\mathrm{s}$. A student says the total displacement is $24\\ \\mathrm{m}$ “because the two areas are each $12\\ \\mathrm{m}$ and $12 + 12 = 24$.” What is the correct total displacement?",
+      "choices": [
+        "$24\\ \\mathrm{m}$ — the student is right.",
+        "$0\\ \\mathrm{m}$ — the area below the axis is $-12\\ \\mathrm{m}$, and $(+12) + (-12) = 0$.",
+        "$12\\ \\mathrm{m}$ — only the first area counts.",
+        "$-24\\ \\mathrm{m}$ — both areas are negative."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the first region is $+12\\ \\mathrm{m}$ (above the axis) and the second is $-12\\ \\mathrm{m}$ (below). The signed sum is $0$: the object returns to its starting position.",
+        "incorrect": {
+          "0": "The student added the magnitudes. Area below the time axis represents negative displacement and must be subtracted, not added as a positive.",
+          "2": "The second region is real displacement too — it just happens to be negative. Both regions count.",
+          "3": "Only the second region is below the axis. The first is above it and positive."
+        }
+      },
+      "hint": [
+        "The two regions are on opposite sides of the time axis. What sign does each displacement have?"
+      ],
+      "solution": "Displacement is the signed area. Region 1: $(+6\\ \\mathrm{m/s})(2\\ \\mathrm{s}) = +12\\ \\mathrm{m}$. Region 2: $(-6\\ \\mathrm{m/s})(2\\ \\mathrm{s}) = -12\\ \\mathrm{m}$. Net $= (+12) + (-12) = 0\\ \\mathrm{m}$ — the object ends where it began. The total distance travelled is $24\\ \\mathrm{m}$, but that is not the displacement."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A velocity-time graph is $+10\\ \\mathrm{m/s}$ (constant) from $0$ to $2\\ \\mathrm{s}$, then $-5\\ \\mathrm{m/s}$ (constant) from $2\\ \\mathrm{s}$ to $8\\ \\mathrm{s}$. Find the net displacement.\n\nStudent's response: “First area: $10 \\times 2 = 20\\ \\mathrm{m}$. Second area: $5 \\times 6 = 30\\ \\mathrm{m}$. Total displacement $= 20 + 30 = 50\\ \\mathrm{m}$.”",
+      "prompts": [
+        "State the rule for the sign of an area that lies below the time axis.",
+        "Identify the first step that is not supported by that rule.",
+        "Repair the response: give the correct net displacement with its sign, and check it against the two regions."
+      ],
+      "modelResponse": "The rule: an area below the time axis is a negative displacement — it is subtracted, not added as a positive. The first unsupported step is “Second area $= 5 \\times 6 = 30\\ \\mathrm{m}$” written as a positive: the segment is at $-5\\ \\mathrm{m/s}$, below the axis, so that area is $-30\\ \\mathrm{m}$. Correct: net displacement $= (+20\\ \\mathrm{m}) + (-30\\ \\mathrm{m}) = -10\\ \\mathrm{m}$. Check: the object went $+20\\ \\mathrm{m}$ forward, then $30\\ \\mathrm{m}$ back, finishing $10\\ \\mathrm{m}$ behind the start — a negative net displacement, which matches.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal motion becomes a velocity-time graph; the graph's slope is the acceleration (a rate, in $\\mathrm{m/s^2}$); the graph's signed area is the displacement (an accumulation, in $\\mathrm{m}$); and the three verbal checks — sign, constancy, pattern of change — are exactly the three features that fix the graph's shape. Slope and area are the same two operations you met for position-time graphs, one level up.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L4-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "On a velocity-time graph, a segment is horizontal at $-3\\ \\mathrm{m/s}$ for $5\\ \\mathrm{s}$. Which pair of statements is correct?",
+      "choices": [
+        "Acceleration $= 0$; displacement $= -15\\ \\mathrm{m}$.",
+        "Acceleration $= -3\\ \\mathrm{m/s^2}$; displacement $= -15\\ \\mathrm{m}$.",
+        "Acceleration $= 0$; displacement $= +15\\ \\mathrm{m}$.",
+        "Acceleration $= -0.6\\ \\mathrm{m/s^2}$; displacement $= -3\\ \\mathrm{m}$."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — a horizontal segment has zero slope, so acceleration $= 0$. The area is $(-3\\ \\mathrm{m/s})(5\\ \\mathrm{s}) = -15\\ \\mathrm{m}$, below the axis.",
+        "incorrect": {
+          "1": "$-3$ is the velocity, not the acceleration. A horizontal segment has zero slope, so the acceleration is $0$.",
+          "2": "The segment is below the time axis, so the displacement is negative: $-15\\ \\mathrm{m}$, not $+15\\ \\mathrm{m}$.",
+          "3": "Dividing $-3$ by $5$ is not how you get either quantity here. Slope is zero (horizontal); area is height times base."
+        }
+      },
+      "hint": [
+        "Horizontal segment → slope (acceleration) is zero. Area → height $\\times$ base, signed by which side of the axis."
+      ],
+      "solution": "A horizontal segment has zero slope, so the acceleration is $0$. The displacement is the area: $(-3\\ \\mathrm{m/s}) \\times (5\\ \\mathrm{s}) = -15\\ \\mathrm{m}$ (negative, because the segment is below the time axis)."
+    },
+    {
+      "id": "BP8-U2-L4-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A velocity-time graph starts at $+10\\ \\mathrm{m/s}$ and falls along a straight line to $0$ at $t = 4\\ \\mathrm{s}$, then continues along the same line to $-5\\ \\mathrm{m/s}$ at $t = 6\\ \\mathrm{s}$. Which statement is correct?",
+      "choices": [
+        "The acceleration changes sign at $t = 4\\ \\mathrm{s}$ because the velocity does.",
+        "The acceleration is $-2.5\\ \\mathrm{m/s^2}$ for the whole $0$-to-$6\\ \\mathrm{s}$ interval.",
+        "The acceleration is zero at $t = 4\\ \\mathrm{s}$ because the velocity is zero there.",
+        "The displacement over $0$ to $6\\ \\mathrm{s}$ is $+25\\ \\mathrm{m}$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — it is one straight line, so one constant slope: $\\Delta v / \\Delta t = (-5 - 10)/(6 - 0) = -15/6 = -2.5\\ \\mathrm{m/s^2}$ throughout.",
+        "incorrect": {
+          "0": "The line does not bend at $t = 4\\ \\mathrm{s}$ — same slope before and after. The velocity changing sign does not make the slope change sign.",
+          "2": "The slope of the line at $t = 4\\ \\mathrm{s}$ is the same as everywhere else on it. A zero *velocity* does not mean a zero *slope*.",
+          "3": "The area from $4$ to $6\\ \\mathrm{s}$ is below the axis and negative. Above: $\\tfrac{1}{2}(4)(10) = +20\\ \\mathrm{m}$; below: $\\tfrac{1}{2}(2)(5) = -5\\ \\mathrm{m}$; net $= +15\\ \\mathrm{m}$."
+        }
+      },
+      "hint": [
+        "It is a single straight line from $(0, +10)$ to $(6, -5)$. How many different slopes does one straight line have?"
+      ],
+      "solution": "The graph is one straight line, so it has one slope: $\\dfrac{\\Delta v}{\\Delta t} = \\dfrac{(-5) - (+10)}{6 - 0} = \\dfrac{-15}{6} = -2.5\\ \\mathrm{m/s^2}$, constant over the whole interval. The velocity passing through zero at $t = 4\\ \\mathrm{s}$ does not change the slope."
+    },
+    {
+      "id": "BP8-U2-L4-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take east as positive. A robot's velocity-time graph is made of three straight segments:\n\n| Segment | Interval | Velocity |\n|---|---|---|\n| 1 | $0$ s to $4$ s | constant $+6\\ \\mathrm{m/s}$ |\n| 2 | $4$ s to $8$ s | straight line from $+6\\ \\mathrm{m/s}$ to $-2\\ \\mathrm{m/s}$ |\n| 3 | $8$ s to $12$ s | constant $-2\\ \\mathrm{m/s}$ |",
+      "parts": [
+        {
+          "prompt": "(a) Find the robot's acceleration on each segment. Show $\\Delta v$, $\\Delta t$, and the sign.",
+          "modelResponse": "Segment 1: horizontal, $\\Delta v = 0$, so $a_1 = 0$. Segment 2: $\\Delta v = (-2) - (+6) = -8\\ \\mathrm{m/s}$, $\\Delta t = 4\\ \\mathrm{s}$, $a_2 = -8/4 = -2\\ \\mathrm{m/s^2}$. Segment 3: horizontal, $\\Delta v = 0$, so $a_3 = 0$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the displacement during each segment (use area; segment 2 is a rectangle plus a triangle, or split at the zero crossing).",
+          "modelResponse": "Segment 1: $(+6)(4) = +24\\ \\mathrm{m}$. Segment 2: the line crosses zero at $t = 7\\ \\mathrm{s}$ (three-quarters of the way). Above the axis, $0$ to $3\\ \\mathrm{s}$ into the segment: triangle $\\tfrac12(3)(6) = +9\\ \\mathrm{m}$. Below the axis, last $1\\ \\mathrm{s}$: triangle $\\tfrac12(1)(2) = -1\\ \\mathrm{m}$. Segment 2 total: $+9 + (-1) = +8\\ \\mathrm{m}$. Segment 3: $(-2)(4) = -8\\ \\mathrm{m}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Find the robot's net displacement over the full $12\\ \\mathrm{s}$, and describe where it ends up relative to the start.",
+          "modelResponse": "Net $= (+24) + (+8) + (-8) = +24\\ \\mathrm{m}$. The robot finishes $24\\ \\mathrm{m}$ east of where it started.",
+          "points": 2
+        },
+        {
+          "prompt": "(d) A student says segment 2 shows the robot “accelerating, then decelerating” because the velocity is positive then negative. Explain what is wrong.",
+          "modelResponse": "Segment 2 is a single straight line, so the acceleration is one constant value, $-2\\ \\mathrm{m/s^2}$, the whole time — it never switches between “accelerating” and “decelerating.” What changes is the relationship between velocity and acceleration: while $v > 0$ the object slows (a opposes v); at $v = 0$ it is momentarily at rest; while $v < 0$ it speeds up (a and v now agree). The slope — the acceleration — is unchanged throughout.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 11
+    }
+  ],
+  "examConnection": "Reading acceleration from a velocity-time slope and displacement from its signed area — including regions below the axis — is standard AP and IB Paper 1 material, and the “match the description to the graph” task recurs across kinematics. This lesson also sets up free fall, where the velocity-time graph is a single straight line through zero.",
+  "summary": "On a velocity-time graph, the slope of a segment is the acceleration ($\\Delta v / \\Delta t$, in $\\mathrm{m/s^2}$) — unchanged through a zero-velocity crossing — and the signed area between the graph and the time axis is the displacement: a rectangle for constant velocity, a triangle for constant acceleration, negative below the axis, combined as a signed sum. To match a description to a graph, check sign, constancy, and pattern of change one at a time.",
+  "exitQuestion": {
+    "id": "BP8-U2-L4-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "Two velocity-time graphs cover the same $0$-to-$10\\ \\mathrm{s}$ interval. Graph P is horizontal at $+2\\ \\mathrm{m/s}$. Graph Q is a straight line from $+6\\ \\mathrm{m/s}$ down to $-2\\ \\mathrm{m/s}$. Which quantities must be equal for the two motions?",
+    "choices": [
+      "Their accelerations.",
+      "Their displacements over the interval.",
+      "Their velocities at $t = 5\\ \\mathrm{s}$.",
+      "Their final velocities."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — Graph P's area is $(2)(10) = +20\\ \\mathrm{m}$. Graph Q's area is a triangle above ($\\tfrac12 \\cdot 7.5 \\cdot 6 = +22.5$) plus a triangle below ($\\tfrac12 \\cdot 2.5 \\cdot 2 = -2.5$), net $+20\\ \\mathrm{m}$. Equal displacements.",
+      "incorrect": {
+        "0": "Graph P has zero slope; Graph Q has slope $-0.8\\ \\mathrm{m/s^2}$. Different accelerations.",
+        "2": "At $t = 5\\ \\mathrm{s}$, Graph P reads $+2\\ \\mathrm{m/s}$; Graph Q reads $+2\\ \\mathrm{m/s}$ as well — but this is a coincidence of these numbers, not something that *must* be equal for the described motions in general. The guaranteed equality is the displacement (equal signed area).",
+        "3": "Graph P ends at $+2\\ \\mathrm{m/s}$; Graph Q ends at $-2\\ \\mathrm{m/s}$. Different final velocities."
+      }
+    },
+    "hint": [
+      "Displacement is the area between the graph and the time axis. Compare the two areas."
+    ],
+    "solution": "Displacement is the signed area. Graph P: $(+2\\ \\mathrm{m/s})(10\\ \\mathrm{s}) = +20\\ \\mathrm{m}$. Graph Q (straight line from $+6$ to $-2$ over $10\\ \\mathrm{s}$, crossing zero at $t = 7.5\\ \\mathrm{s}$): area above $= \\tfrac12(7.5)(6) = +22.5\\ \\mathrm{m}$; area below $= \\tfrac12(2.5)(2) = -2.5\\ \\mathrm{m}$; net $= +20\\ \\mathrm{m}$. The displacements are equal; the accelerations and final velocities are not."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-052",
+    "BP8-U2-MCQ-056",
+    "BP8-U2-MCQ-060",
+    "BP8-U2-MCQ-064"
+  ],
+  "needsPlotly": false
+}

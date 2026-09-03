@@ -1,0 +1,422 @@
+{
+  "id": "basis-p8-u2-l9",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Kinematics synthesis and transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "9",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_09_synthesis_and_transfer.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lessons 1–8 of this unit — signed position and displacement, position-time and velocity-time and acceleration-time graphs, the constant-acceleration equations, free fall, and vector components."
+  ],
+  "majorObjective": "Integrate the whole unit: move fluently among a verbal description, position-time, velocity-time, and acceleration-time graphs, and the constant-acceleration equations for one motion; run the vector decomposition round trip; and judge whether an unfamiliar real-world claim about motion is actually supported by the information given.",
+  "subObjectives": [
+    "Given any one representation of a constant-acceleration motion, produce the other three consistently.",
+    "Use slope and area to connect the three motion graphs (slope of $x$-$t$ is $v$-$t$; slope of $v$-$t$ is $a$-$t$; area runs the other way).",
+    "Decompose a vector into components and rebuild its magnitude and quadrant-correct direction.",
+    "Decide what a stated claim about motion does and does not establish, and name the missing information when a claim is underspecified."
+  ],
+  "hook": {
+    "prompt": "An object's velocity-time graph is a straight line rising from zero. What do its position-time and acceleration-time graphs look like?",
+    "choices": [
+      "Position-time: upward curve that steepens. Acceleration-time: horizontal line above the axis.",
+      "Position-time: straight rising line. Acceleration-time: straight rising line.",
+      "Position-time: horizontal line. Acceleration-time: upward curve.",
+      "Both are straight lines through the origin."
+    ],
+    "correctIndex": 0
+  },
+  "priorKnowledge": "This lesson introduces no new physics. It practises connecting everything from Lessons 1–8 on single problems, the way the unit test and later units will demand.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "One motion, four representations",
+      "concept": "A single constant-acceleration motion can be told four ways — in **words**, as a **position-time** graph, as a **velocity-time** graph, and as an **acceleration-time** graph — plus the **equations**. They must all agree.\n\nThe graphs are linked by slope and area:\n\n- Slope of the **position-time** graph at a time = the **velocity** at that time.\n- Slope of the **velocity-time** graph = the **acceleration**.\n- Area under the **acceleration-time** graph = the **change in velocity**; area under the **velocity-time** graph = the **displacement**.\n\nSo if you are given any one representation, you can build the others: differentiate (read slopes) to go “down” the chain $x \\to v \\to a$, or accumulate (read areas) to go “up” it.",
+      "representation": "To convert between representations:\n\n1. Identify what you are given (words, or which graph).\n2. To get the next graph down ($x \\to v$, or $v \\to a$): read the slope of each segment.\n3. To get the next graph up ($a \\to v$, or $v \\to x$): read the signed area, and remember the starting value ($v_i$ or $x_i$).\n4. Check the verbal description against every graph: sign, constancy, pattern of change.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/synthesis/three-graphs-one-motion.svg",
+          "caption": "One motion — starting from rest with constant positive acceleration — shown three ways. The position-time curve steepens; the velocity-time line rises straight; the acceleration-time line is flat."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An object starts at rest at the origin. Its velocity-time graph is a straight line from $(0\\ \\mathrm{s},\\ 0)$ to $(4\\ \\mathrm{s},\\ +12\\ \\mathrm{m/s})$. Describe the acceleration-time graph and the position-time graph, and find the displacement over the $4\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "Acceleration-time graph (slope of v-t)",
+            "steps": [
+              "The velocity-time graph is one straight line, slope $= (12 - 0)/(4 - 0) = +3\\ \\mathrm{m/s^2}$.",
+              "So the acceleration-time graph is a horizontal line at $+3\\ \\mathrm{m/s^2}$ for the whole interval."
+            ]
+          },
+          {
+            "label": "Position-time graph (area of v-t, and shape)",
+            "steps": [
+              "The velocity grows steadily from $0$, so the position-time graph starts flat (velocity $0$) and gets steeper — an upward-curving line from the origin.",
+              "Its steepness at each time equals the velocity at that time."
+            ]
+          },
+          {
+            "label": "Displacement (area under v-t)",
+            "steps": [
+              "Area under the velocity-time line is a triangle: $\\Delta x = \\tfrac{1}{2}(4\\ \\mathrm{s})(12\\ \\mathrm{m/s}) = +24\\ \\mathrm{m}$.",
+              "Check with an equation: $\\Delta x = v_i t + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(3)(4)^2 = +24\\ \\mathrm{m}$. Agrees."
+            ]
+          }
+        ],
+        "keyMove": "Slope takes you $x \\to v \\to a$; area takes you $a \\to v \\to x$. The equations are a shortcut for the same relationships."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L9-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "An object's position-time graph is a straight line with a constant positive slope. What do its velocity-time and acceleration-time graphs look like?",
+        "choices": [
+          "Velocity-time: horizontal line above the axis. Acceleration-time: horizontal line on the axis.",
+          "Velocity-time: rising straight line. Acceleration-time: horizontal line above the axis.",
+          "Velocity-time: horizontal line on the axis. Acceleration-time: horizontal line on the axis.",
+          "Velocity-time: upward curve. Acceleration-time: rising straight line."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — a constant slope on the position-time graph means constant velocity: a horizontal velocity-time line above the axis. Constant velocity means zero acceleration: a horizontal acceleration-time line on the axis.",
+          "incorrect": {
+            "1": "A rising velocity-time line would come from a position-time graph that curves (steepening), not a straight one.",
+            "2": "A velocity-time line on the axis is zero velocity — but the position is changing (positive slope), so the velocity is a non-zero constant.",
+            "3": "Curves and rising lines correspond to changing velocity. A straight position-time graph has constant velocity."
+          }
+        },
+        "hint": [
+          "Slope of position-time = velocity. A constant slope means what kind of velocity? Then slope of that velocity graph = acceleration."
+        ],
+        "solution": "A straight position-time graph has one constant slope, so the velocity is a non-zero constant: the velocity-time graph is a horizontal line above the axis. A constant velocity has zero slope, so the acceleration-time graph is a horizontal line sitting on the axis ($a = 0$)."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The vector round trip",
+      "concept": "When motion or a quantity has a direction that is not simply $+$ or $-$ along one line, use the **vector round trip** from Lesson 8:\n\n- **Magnitude + angle → components:** the component along the reference axis uses cosine, the perpendicular one uses sine (re-derive from the triangle; watch which axis the angle is measured from). Attach signs from the direction.\n- **Components → magnitude + direction:** $V = \\sqrt{v_x^2 + v_y^2}$ (positive); quadrant from the signs of $v_x$ and $v_y$; reference angle from $\\tan^{-1}(|v_y|/|v_x|)$.\n\nThe two directions are consistent only if a decomposition and a reconstruction of the same vector give back the same magnitude and direction.",
+      "representation": "For a vector problem inside a motion question:\n\n1. Draw the vector and its right triangle; mark the reference angle and the axis it is measured from.\n2. Go the direction the problem needs (components, or magnitude + direction).\n3. Verify by going back the other way and checking you recover the start.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A drone's displacement is $50\\ \\mathrm{m}$ at $37^\\circ$ north of east. Take east as $+x$, north as $+y$; use $\\sin 37^\\circ = 0.60$, $\\cos 37^\\circ = 0.80$. Find the components, then reconstruct the magnitude and direction to check.",
+        "phases": [
+          {
+            "label": "Components",
+            "steps": [
+              "Angle measured from east ($+x$). East component is adjacent: $v_x = 50\\cos 37^\\circ = 50(0.80) = +40\\ \\mathrm{m}$.",
+              "North component is opposite: $v_y = 50\\sin 37^\\circ = 50(0.60) = +30\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Reconstruct the magnitude",
+            "steps": [
+              "$V = \\sqrt{(40)^2 + (30)^2} = \\sqrt{1600 + 900} = \\sqrt{2500} = 50\\ \\mathrm{m}$ — matches."
+            ]
+          },
+          {
+            "label": "Reconstruct the direction",
+            "steps": [
+              "Both components positive → first quadrant (north-east). Reference angle $= \\tan^{-1}(30/40) = \\tan^{-1}(0.75) \\approx 37^\\circ$ above east — matches the given direction."
+            ]
+          }
+        ],
+        "keyMove": "Decompose, then reconstruct: if the magnitude and direction come back unchanged, the work is consistent."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L9-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "vector-diagram",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A boat's velocity has components $v_x = -12\\ \\mathrm{m/s}$ (east positive) and $v_y = +5\\ \\mathrm{m/s}$ (north positive). What is its speed, and roughly which way is it heading?",
+        "choices": [
+          "Speed $13\\ \\mathrm{m/s}$; heading north-west (up and to the left).",
+          "Speed $17\\ \\mathrm{m/s}$; heading north-east.",
+          "Speed $7\\ \\mathrm{m/s}$; heading south-west.",
+          "Speed $13\\ \\mathrm{m/s}$; heading north-east."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — speed $= \\sqrt{(-12)^2 + 5^2} = \\sqrt{169} = 13\\ \\mathrm{m/s}$. Signs $v_x < 0$ (west), $v_y > 0$ (north) → heading north-west.",
+          "incorrect": {
+            "1": "$17\\ \\mathrm{m/s}$ adds the component magnitudes ($12 + 5$). Speed is $\\sqrt{v_x^2 + v_y^2}$. And $v_x$ is negative, so it is not heading east.",
+            "2": "$7\\ \\mathrm{m/s}$ is $12 - 5$, which is not the rule. And $v_y > 0$ means north, not south.",
+            "3": "The magnitude is right, but $v_x$ is negative (west) and $v_y$ is positive (north), so the heading is north-*west*, not north-east."
+          }
+        },
+        "hint": [
+          "Speed $= \\sqrt{v_x^2 + v_y^2}$. Direction: $v_x$ negative means west; $v_y$ positive means north."
+        ],
+        "solution": "Speed $= \\sqrt{(-12)^2 + (5)^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13\\ \\mathrm{m/s}$. The signs $v_x < 0$, $v_y > 0$ place the velocity in the second quadrant — west and north — so the boat heads north-west."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Transfer: what does a claim actually establish?",
+      "concept": "An unfamiliar real-world claim about motion often states **less than it seems to**. The transfer skill is to separate what the claim **does** establish from what it **does not**, and — if it is underspecified — to name the missing piece.\n\nCommon gaps:\n\n- A **speed** or speedometer reading fixes speed but not direction (so not velocity, and not whether velocity is constant).\n- A **displacement** fixes the net change but not the path or the distance.\n- A **final position** relative to a start tells you the sign of the displacement but nothing about speeding up or slowing down.\n- A **single acceleration value** does not tell you whether the object speeds up or slows down — you also need the sign of the velocity.",
+      "representation": "For any claim about a motion:\n\n1. Restate exactly what quantity is given (speed? displacement? position? acceleration?).\n2. List what that quantity does fix.\n3. List what the claim asserts beyond that — and mark each as supported or not.\n4. If not supported, name the specific extra information that would settle it.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A news report says: “The drone travelled 2 km in 5 minutes, so it must have been flying at a constant speed of 24 km/h.” Evaluate the claim.",
+        "phases": [
+          {
+            "label": "What is actually given",
+            "steps": [
+              "A distance (or displacement) of $2\\ \\mathrm{km}$ over a time of $5\\ \\mathrm{min}$."
+            ]
+          },
+          {
+            "label": "What that fixes",
+            "steps": [
+              "The **average** speed: $2\\ \\mathrm{km} / 5\\ \\mathrm{min} = 0.4\\ \\mathrm{km/min} = 24\\ \\mathrm{km/h}$. That part of the arithmetic is fine."
+            ]
+          },
+          {
+            "label": "What the claim asserts beyond that",
+            "steps": [
+              "“Constant speed” — not supported. The drone could have flown fast, hovered, and sped up again, with the same average.",
+              "It also says nothing about direction, so “constant velocity” is even less supported."
+            ]
+          },
+          {
+            "label": "Name the missing information",
+            "steps": [
+              "To claim constant speed you would need the speed at several instants (or a statement that it was held steady) — and to claim constant velocity, also that the direction never changed."
+            ]
+          }
+        ],
+        "keyMove": "“Distance over time” gives an average, never a guarantee that the motion was steady."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L9-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A coach says: “The sprinter's displacement was $100\\ \\mathrm{m}$ down the track and her acceleration was negative the whole race, so she must have finished slower than she started.” Which response is correct?",
+        "choices": [
+          "The claim is fully supported — negative acceleration always means finishing slower.",
+          "The claim is not reliably supported — whether she finished slower depends on the sign of her velocity relative to her acceleration, not on the acceleration's sign alone.",
+          "The claim is wrong because displacement cannot be $100\\ \\mathrm{m}$ if she is slowing.",
+          "The claim needs the exact acceleration value to evaluate."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a negative acceleration slows an object only while its velocity is positive. If “down the track” is the negative direction, a negative acceleration would speed her up. The acceleration's sign alone does not settle it.",
+          "incorrect": {
+            "0": "Negative acceleration means “finishing slower” only when the velocity is positive. Compare the signs.",
+            "2": "Displacement and speeding up/slowing down are unrelated. She can cover $100\\ \\mathrm{m}$ whether her speed rises or falls.",
+            "3": "The exact value is not the issue — even with a number, you would still need the sign of her velocity to decide."
+          }
+        },
+        "hint": [
+          "Does a negative acceleration always slow an object down? What else do you need to know?"
+        ],
+        "solution": "Whether an object speeds up or slows down depends on the sign of its acceleration *compared with* the sign of its velocity — same sign speeds up, opposite signs slow down. The coach gives only the acceleration's sign. If “down the track” were the negative direction, a negative acceleration would actually speed her up. The claim is underspecified; you need the direction (sign) of her velocity."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L9-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "A position-time graph and a velocity-time graph are shown side by side for the same motion. At $t = 3\\ \\mathrm{s}$ the position-time graph is at its highest point (a smooth peak). What is true of the velocity-time graph at $t = 3\\ \\mathrm{s}$?",
+      "choices": [
+        "It is also at its highest point.",
+        "It crosses zero — the slope of the position-time graph is zero at a smooth peak, and that slope is the velocity.",
+        "It is at its lowest point.",
+        "Nothing can be said without numbers."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — at a smooth peak the position-time graph is momentarily flat, so its slope (the velocity) is zero. The velocity-time graph passes through zero at that instant.",
+        "incorrect": {
+          "0": "The height of the position-time graph and the height of the velocity-time graph are different quantities. A peak in position means zero *slope*, not a peak in velocity.",
+          "2": "The velocity is zero at the peak, not at a minimum. Whether the velocity-time graph is rising or falling there depends on the acceleration.",
+          "3": "The key fact needs no numbers: a smooth maximum has zero slope, and slope of position-time is velocity."
+        }
+      },
+      "hint": [
+        "The velocity is the *slope* of the position-time graph. What is the slope at the top of a smooth hill?"
+      ],
+      "solution": "At a smooth maximum, the position-time graph is instantaneously horizontal, so its slope is zero. Since the slope of the position-time graph is the velocity, the velocity is zero at $t = 3\\ \\mathrm{s}$ — the velocity-time graph crosses the time axis there. This is the height-versus-slope distinction applied across two graphs at once."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: An object's velocity-time graph is a horizontal line at $-4\\ \\mathrm{m/s}$ from $0$ to $6\\ \\mathrm{s}$. Sketch its position-time and acceleration-time graphs (it starts at $x = +10\\ \\mathrm{m}$).\n\nStudent's response: “The velocity is negative and constant. Position-time graph: a horizontal line at $-4$, because the velocity is $-4$. Acceleration-time graph: a horizontal line at $-4$, same as the velocity.”",
+      "prompts": [
+        "State what the slope of a position-time graph represents, and what the slope of a velocity-time graph represents.",
+        "Identify both errors in the student's sketches.",
+        "Give the correct position-time and acceleration-time graphs, with values."
+      ],
+      "modelResponse": "The slope of a position-time graph is the velocity; the slope of a velocity-time graph is the acceleration. Error 1: the student drew the position-time graph as a horizontal line at $-4$ — but a constant velocity of $-4\\ \\mathrm{m/s}$ means the position *changes* at a steady rate, so the position-time graph is a straight line with slope $-4\\ \\mathrm{m/s}$, starting at $x = +10\\ \\mathrm{m}$ and falling to $x = +10 + (-4)(6) = -14\\ \\mathrm{m}$ at $t = 6\\ \\mathrm{s}$. Error 2: the acceleration-time graph is not “same as the velocity.” The velocity-time graph is horizontal, so its slope — the acceleration — is zero: the acceleration-time graph is a horizontal line on the time axis ($a = 0$).",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "Every representation in this unit is one of: words, a position-time graph, a velocity-time graph, an acceleration-time graph, an equation, or a vector (magnitude + angle, or components). Slope moves down the graph chain ($x \\to v \\to a$); area moves up it ($a \\to v \\to x$); the equations shortcut the same links; SOHCAHTOA and the Pythagorean theorem convert between a vector and its components. A correct solution has all of them agreeing.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L9-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "An acceleration-time graph is a horizontal line at $-2\\ \\mathrm{m/s^2}$ for $5\\ \\mathrm{s}$. The object starts with $v_i = +6\\ \\mathrm{m/s}$. Which description of its velocity-time and position-time graphs is correct?",
+      "choices": [
+        "Velocity-time: straight line from $+6$ falling to $-4\\ \\mathrm{m/s}$. Position-time: rises, levels off at $t = 3\\ \\mathrm{s}$, then falls.",
+        "Velocity-time: horizontal at $-2\\ \\mathrm{m/s}$. Position-time: straight falling line.",
+        "Velocity-time: straight line from $+6$ rising. Position-time: upward curve.",
+        "Velocity-time: falls to zero at $t = 3\\ \\mathrm{s}$ and stays there. Position-time: rises then flat."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — constant $a = -2\\ \\mathrm{m/s^2}$ gives a velocity-time line of slope $-2$: from $+6$ down to $+6 + (-2)(5) = -4\\ \\mathrm{m/s}$, crossing zero at $t = 3\\ \\mathrm{s}$. The position rises while $v > 0$, peaks at $t = 3\\ \\mathrm{s}$, then falls.",
+        "incorrect": {
+          "1": "A horizontal velocity-time graph would need zero acceleration. Here $a = -2\\ \\mathrm{m/s^2}$, so the velocity changes steadily.",
+          "2": "Negative acceleration means the velocity-time line *falls*, not rises.",
+          "3": "The velocity does not stop at zero — the acceleration keeps acting, so it continues to $-4\\ \\mathrm{m/s}$. The position does not go flat; it starts decreasing after the peak."
+        }
+      },
+      "hint": [
+        "Constant negative acceleration → velocity-time line with a constant negative slope. Where does it cross zero? The position peaks there."
+      ],
+      "solution": "The acceleration is a constant $-2\\ \\mathrm{m/s^2}$, so the velocity-time graph is a straight line of slope $-2$: it runs from $v_i = +6\\ \\mathrm{m/s}$ down to $v = +6 + (-2)(5) = -4\\ \\mathrm{m/s}$, crossing zero at $t = 3\\ \\mathrm{s}$. The position-time graph rises (positive velocity) until $t = 3\\ \\mathrm{s}$, reaches a smooth peak there (velocity zero), then falls (negative velocity)."
+    },
+    {
+      "id": "BP8-U2-L9-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "evaluate-assumptions",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "“Car A and car B both travel from town X to town Y — the same $60\\ \\mathrm{km}$ — in exactly $45\\ \\mathrm{minutes}$.” Which conclusion is guaranteed?",
+      "choices": [
+        "They had the same average velocity for the trip.",
+        "They had the same speed at every instant.",
+        "They took the same route.",
+        "Neither ever stopped."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — average velocity is total displacement over total time. Same start and end points (same displacement) and same time means the same average velocity, regardless of what happened in between.",
+        "incorrect": {
+          "1": "Equal averages do not force equal instantaneous speeds — one car could have sped and slowed differently and still matched the average.",
+          "2": "Displacement depends only on the endpoints. The cars could have taken different roads of different lengths.",
+          "3": "Either car could have stopped and made up time elsewhere without changing the trip's total time."
+        }
+      },
+      "hint": [
+        "Average velocity = (displacement) / (time). Which of those two is the same for both cars?"
+      ],
+      "solution": "Both cars have the same displacement (X to Y) and the same total time, so their average velocities are equal — that is guaranteed. Nothing else is: instantaneous speeds, routes, distances travelled, and whether they stopped are all unconstrained by the information given."
+    },
+    {
+      "id": "BP8-U2-L9-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take east as positive. A cart's motion over $10\\ \\mathrm{s}$ is given by a velocity-time graph of three straight segments:\n\n| Segment | Interval | Velocity |\n|---|---|---|\n| 1 | $0$ s to $4$ s | constant $+3\\ \\mathrm{m/s}$ |\n| 2 | $4$ s to $6$ s | straight line from $+3\\ \\mathrm{m/s}$ to $-3\\ \\mathrm{m/s}$ |\n| 3 | $6$ s to $10$ s | constant $-3\\ \\mathrm{m/s}$ |\n\nThe cart starts at position $x_i = 0$.",
+      "parts": [
+        {
+          "prompt": "(a) Find the acceleration on each segment.",
+          "modelResponse": "Segment 1: horizontal, $a_1 = 0$. Segment 2: $a_2 = \\Delta v / \\Delta t = (-3 - 3)/(6 - 4) = -6/2 = -3\\ \\mathrm{m/s^2}$. Segment 3: horizontal, $a_3 = 0$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the displacement during each segment (use areas; segment 2 crosses zero at $t = 5\\ \\mathrm{s}$).",
+          "modelResponse": "Segment 1: $(+3)(4) = +12\\ \\mathrm{m}$. Segment 2: above the axis from $t = 4$ to $5\\ \\mathrm{s}$, triangle $\\tfrac12(1)(3) = +1.5\\ \\mathrm{m}$; below from $t = 5$ to $6\\ \\mathrm{s}$, triangle $\\tfrac12(1)(3) = -1.5\\ \\mathrm{m}$; segment 2 total $= 0\\ \\mathrm{m}$. Segment 3: $(-3)(4) = -12\\ \\mathrm{m}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Find the cart's final position at $t = 10\\ \\mathrm{s}$, and sketch (in words) the shape of its position-time graph.",
+          "modelResponse": "Final position: $x = x_i + (+12) + 0 + (-12) = 0\\ \\mathrm{m}$ — back at the start. Position-time graph: a straight rising line (slope $+3$) from $(0, 0)$ to $(4, +12)$; then a smooth curve rising to a peak of about $+13.5\\ \\mathrm{m}$ at $t = 5\\ \\mathrm{s}$ and curving back down to $+12\\ \\mathrm{m}$ at $t = 6\\ \\mathrm{s}$; then a straight falling line (slope $-3$) back to $(10, 0)$.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The unit test and later units expect you to switch representations without being told which one to use, and to spot when a stated claim outruns its evidence. This lesson is the rehearsal: one problem, all the tools.",
+  "summary": "One constant-acceleration motion has four consistent representations — words, position-time, velocity-time, acceleration-time — plus the equations. Slope moves down the chain ($x \\to v \\to a$); signed area moves up it ($a \\to v \\to x$). Vectors convert to components with SOHCAHTOA and back with the Pythagorean theorem plus a quadrant check. For an unfamiliar claim, separate what is given (speed? displacement? position? acceleration?) from what the claim asserts, and name the missing information when the claim is underspecified.",
+  "exitQuestion": {
+    "id": "BP8-U2-L9-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "question": "For a certain motion, the acceleration-time graph is a single horizontal line above the time axis. Which pair of graph shapes must the velocity-time and position-time graphs have?",
+    "choices": [
+      "Velocity-time: straight line with constant positive slope. Position-time: upward curve that steepens.",
+      "Velocity-time: horizontal line. Position-time: straight line.",
+      "Velocity-time: upward curve. Position-time: straight line.",
+      "Velocity-time: horizontal line above the axis. Position-time: upward curve."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — a constant positive acceleration is a positive slope on the velocity-time graph (a straight rising line), and a steadily rising velocity makes the position-time graph curve upward with increasing steepness.",
+      "incorrect": {
+        "1": "A horizontal velocity-time line means zero acceleration. Here the acceleration is a positive constant, not zero.",
+        "2": "The velocity-time graph is a straight line (constant slope = constant acceleration), not a curve. The curve appears one level up, in position-time.",
+        "3": "A horizontal velocity-time line is constant velocity, i.e. zero acceleration — contradicting the given positive acceleration."
+      }
+    },
+    "hint": [
+      "Constant acceleration → constant slope on the velocity-time graph. A steadily increasing velocity → what shape of position-time graph?"
+    ],
+    "solution": "A constant positive acceleration means the velocity-time graph has a constant positive slope — a straight rising line. The velocity therefore increases steadily, so the position-time graph gets steeper and steeper over time: an upward-curving line (the shape of $x = \\tfrac{1}{2}at^2$ from rest)."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-009",
+    "BP8-U2-MCQ-048",
+    "BP8-U2-MCQ-090",
+    "BP8-U2-MCQ-200"
+  ],
+  "needsPlotly": false
+}
