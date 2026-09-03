@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="320" viewBox="0 0 660 320" role="img" aria-labelledby="t d">
+<title id="t">Steady motion versus a reversal, on velocity-time graphs</title>
+<desc id="d">Left: velocity holds at plus 3 metres per second the whole time — constant velocity. Right: velocity is plus 3, ramps down through zero to minus 3, then holds — the speed is 3 metres per second before and after, but the velocity changed sign, so it is not constant.</desc>
+<rect width="660" height="320" fill="white"/>
+<g font-family="Arial">
+ <!-- LEFT: steady -->
+ <g>
+  <text x="40" y="24" font-size="14" font-weight="bold" fill="#0f3d61">Steady motion</text>
+  <g stroke="#d5dbe3" stroke-width="1"><path d="M40 70H270M40 120H270M40 170H270"/></g>
+  <path d="M40 45V235" stroke="#111827" stroke-width="2"/>
+  <path d="M30 120H285" stroke="#111827" stroke-width="2"/>
+  <text x="292" y="124" font-size="12" fill="#111827">t</text>
+  <text x="34" y="40" font-size="12" fill="#111827" text-anchor="end">v</text>
+  <text x="34" y="74" font-size="11" fill="#111827" text-anchor="end">+3</text>
+  <text x="34" y="124" font-size="11" fill="#111827" text-anchor="end">0</text>
+  <path d="M45 70H255" stroke="#1769aa" stroke-width="4" fill="none"/>
+  <text x="90" y="60" font-size="12" fill="#1769aa">v = +3 m/s throughout</text>
+  <text x="40" y="258" font-size="12" fill="#1a7f37">Velocity is constant — speed and</text>
+  <text x="40" y="274" font-size="12" fill="#1a7f37">direction both unchanged.</text>
+ </g>
+ <!-- RIGHT: reversal -->
+ <g transform="translate(330,0)">
+  <text x="40" y="24" font-size="14" font-weight="bold" fill="#0f3d61">A reversal</text>
+  <g stroke="#d5dbe3" stroke-width="1"><path d="M40 70H270M40 120H270M40 170H270"/></g>
+  <path d="M40 45V235" stroke="#111827" stroke-width="2"/>
+  <path d="M30 120H285" stroke="#111827" stroke-width="2"/>
+  <text x="292" y="124" font-size="12" fill="#111827">t</text>
+  <text x="34" y="40" font-size="12" fill="#111827" text-anchor="end">v</text>
+  <text x="34" y="74" font-size="11" fill="#111827" text-anchor="end">+3</text>
+  <text x="34" y="124" font-size="11" fill="#111827" text-anchor="end">0</text>
+  <text x="34" y="174" font-size="11" fill="#111827" text-anchor="end">&#8722;3</text>
+  <path d="M45 70H110L200 170H255" stroke="#1769aa" stroke-width="4" fill="none" stroke-linejoin="round"/>
+  <circle cx="155" cy="120" r="4.5" fill="#c0392b"/>
+  <path d="M118 96L150 116" stroke="#c0392b" stroke-width="1"/>
+  <text x="116" y="93" font-size="11" fill="#c0392b" text-anchor="end">passes through v = 0</text>
+  <text x="52" y="62" font-size="11" fill="#1769aa">speed 3</text>
+  <text x="210" y="192" font-size="11" fill="#1769aa">speed 3</text>
+  <text x="40" y="258" font-size="12" fill="#b3261e">Speed is the same before and after,</text>
+  <text x="40" y="274" font-size="12" fill="#b3261e">but the velocity changed — not constant.</text>
+ </g>
+</g>
+</svg>

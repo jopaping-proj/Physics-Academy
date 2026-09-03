@@ -271,5 +271,12 @@
     ],
     "solution": "A different origin shifts $x_i$ and $x_f$ by the same amount, so $\\Delta x = x_f - x_i$ is unchanged. The individual position numbers differ between the observers; the displacement agrees."
   },
-  "needsPlotly": false
+  "needsPlotly": false,
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-004",
+    "BP8-U2-MCQ-013",
+    "BP8-U2-MCQ-012",
+    "BP8-U2-MCQ-020"
+  ]
 }

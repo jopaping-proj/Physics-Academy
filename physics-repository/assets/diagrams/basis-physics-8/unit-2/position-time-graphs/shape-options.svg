@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="390" viewBox="0 0 600 390" role="img" aria-labelledby="t3 d3">
+<title id="t3">Four candidate position-time graphs</title>
+<desc id="d3">Graph A is a horizontal line. Graph B is a straight line with a gentle positive slope. Graph C is a straight line with a negative slope. Graph D is a straight line with a steep positive slope.</desc>
+<rect width="600" height="390" fill="white"/>
+<g font-family="Arial">
+ <g>
+  <path d="M50 150H265" stroke="#111827" stroke-width="1.5"/>
+  <path d="M55 34V155" stroke="#111827" stroke-width="1.5"/>
+  <text x="270" y="155" font-size="12" fill="#111827">t</text>
+  <text x="44" y="30" font-size="12" fill="#111827">x</text>
+  <path d="M62 78H255" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="28" y="32" font-size="17" font-weight="bold" fill="#0f3d61">A</text>
+ </g>
+ <g transform="translate(300,0)">
+  <path d="M50 150H265" stroke="#111827" stroke-width="1.5"/>
+  <path d="M55 34V155" stroke="#111827" stroke-width="1.5"/>
+  <text x="270" y="155" font-size="12" fill="#111827">t</text>
+  <text x="44" y="30" font-size="12" fill="#111827">x</text>
+  <path d="M62 132L255 52" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="28" y="32" font-size="17" font-weight="bold" fill="#0f3d61">B</text>
+ </g>
+ <g transform="translate(0,205)">
+  <path d="M50 150H265" stroke="#111827" stroke-width="1.5"/>
+  <path d="M55 34V155" stroke="#111827" stroke-width="1.5"/>
+  <text x="270" y="155" font-size="12" fill="#111827">t</text>
+  <text x="44" y="30" font-size="12" fill="#111827">x</text>
+  <path d="M62 46L255 134" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="28" y="32" font-size="17" font-weight="bold" fill="#0f3d61">C</text>
+ </g>
+ <g transform="translate(300,205)">
+  <path d="M50 150H265" stroke="#111827" stroke-width="1.5"/>
+  <path d="M55 34V155" stroke="#111827" stroke-width="1.5"/>
+  <text x="270" y="155" font-size="12" fill="#111827">t</text>
+  <text x="44" y="30" font-size="12" fill="#111827">x</text>
+  <path d="M72 140L168 44" stroke="#1769aa" stroke-width="3.5" fill="none"/>
+  <text x="28" y="32" font-size="17" font-weight="bold" fill="#0f3d61">D</text>
+ </g>
+</g>
+</svg>

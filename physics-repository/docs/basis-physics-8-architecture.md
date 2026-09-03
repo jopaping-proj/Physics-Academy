@@ -1,7 +1,7 @@
 # BASIS Physics 8 — Course Architecture
 
 **Document ID:** PA-BP8-ARCH-001
-**Version:** 0.1.0
+**Version:** 0.4.0
 **Status:** Draft — for review. Not the controlled BASIS Physics 8 authority.
 **Scope:** the structural map for the BASIS Physics 8 course inside Physics Academy — unit list, outcome-source provenance, lesson format, test-bank provenance, and what is and is not built. It is deliberately lighter than `ap-physics-1-unit-2-architecture.md`: BASIS Physics 8 reuses the AP build, template, validator, and interactive scaffolding rather than redefining them.
 
@@ -35,7 +35,7 @@ Every BASIS Physics 8 learning outcome comes **only** from the Markdown files un
 | Unit | Title | Outcome source | Unit index | Built lessons |
 |---|---|---|---|---|
 | 1 | Graphing and Dimensional Analysis | placeholder (title from the Numbers outline) | `unit-1-index.json` | none |
-| 2 | Kinematics | `resources/physics8/resources/unit2_kinematics_outcomes.md` (27 outcomes / 7 clusters) | `unit-2-index.json` | **Lesson 1** — Motion Language and Reference Frames (`motion-language-reference-frames.json`, **approved**); entry diagnostic (`format: "external-html"`, Founder-approved, **approved**) |
+| 2 | Kinematics | `resources/physics8/resources/unit2_kinematics_outcomes.md` (27 outcomes / 7 clusters) | `unit-2-index.json` | **L1** Motion Language and Reference Frames (**approved**); **L2** Position-Time Graphs (`position-time-graphs.json`, **draft**); **L3** Velocity and Constant-Velocity Motion (`velocity-and-constant-velocity-motion.json`, **draft**); entry diagnostic (`format: "external-html"`, Founder-approved, **approved**); **Unit Test** (`unit-2-test.json`, no-calculator, **draft**). L2 & L3 adapted from the Founder-approved `rescue_sprint/.../lessons/module_0N_*.md` modules to Physics Academy rigor. |
 | 3 | Forces and Newton's Laws | `resources/physics8/resources/` | `unit-3-index.json` | none |
 | 4 | Energy | `resources/physics8/resources/` | `unit-4-index.json` | none |
 | 5 | Thermal Physics | `resources/physics8/resources/` | `unit-5-index.json` | none |
@@ -57,17 +57,21 @@ BASIS Physics 8 lessons are the **same JSON schema** as AP lessons (see the sche
 
 ---
 
-## 4. Test-bank provenance
+## 4. Test-bank provenance and native conversion
 
-`data/question-bank/basis-p8-test-bank-index.json` and the per-unit `basis-p8-u<N>-*-index.json` files are **provenance manifests**, not native question arrays. They record the recalibrated inventory of the approved/proposed Markdown source banks (Units 2–4: 900 active + 29 retired Unit 4 records, `BP8-*` namespace) so the Markdown banks are preserved and auditable. They do **not** claim native interactive-question conversion — converting them to the native schema (as `ap1-u2-*.json` are) is future work, tracked below.
+`data/question-bank/basis-p8-test-bank-index.json` and the per-unit `basis-p8-u<N>-*-index.json` files are **provenance manifests**, not native question arrays. They record the recalibrated inventory of the approved/proposed Markdown source banks (Units 2–4: 900 active + 29 retired Unit 4 records, `BP8-*` namespace) so the Markdown banks are preserved and auditable.
+
+**Unit 2 is now natively converted — full bank.** `data/question-bank/kinematics-1d.json` (**250 MCQ**, 234 calculator-free) + `kinematics-1d-frq.json` (**50 FRQ**) are the native, validator-gated conversion of the Founder-approved `resources/physics8/rescue_sprint/unit_02_kinematics/test_bank/` (250 MCQ + 50 FRQ, 7 clusters, AP-Physics-1 rigor bounded to 1-D). This is a **topic-keyed shared bank** (`topicId: "kinematics-1d"`), designed to also serve AP Physics 1 / IB kinematics once those units exist — see `docs/question-bank-topics.md`. Difficulty is remapped from the source 3-band scale to the 5-band blueprint; `calculatorFree` is set per item so the no-calculator BASIS test filter works. The 24 source graph/vector SVGs were transferred + restyled into `assets/diagrams/basis-physics-8/unit-2/kinematics-bank/` (89 items carry a figure). It powers `content/basis-physics-8/unit-2-kinematics/unit-2-test.json` (`format: "unit-test"`, 45 min, no calculator, `status: draft`). Lessons 1–3 pull `furtherPracticeQuestionIds` from this bank.
+
+Units 3–8 still have only the `BP8-*` manifests; native conversion is future work.
 
 ---
 
 ## 5. Open items
 
-1. **Native question banks.** The `BP8-*` manifests are ledgers over Markdown. Converting even one unit to native `courses`-tagged question arrays (the AP shape) would let BASIS lessons pull `furtherPracticeQuestionIds` the way AP lessons do. Large; deferred.
+1. **Native question banks.** Unit 2 is fully converted (`kinematics-1d`, 250 MCQ + 50 FRQ, SVGs transferred — §4). Remaining: convert Units 3–8; independent physics review of the `kinematics-1d` bank; promote `topicId` to a controlled vocabulary; cross-tag `kinematics-1d` to `ap-physics-1` / IB once those kinematics units are built.
 2. **Unit 1 outcome source.** Unit 1 has only a placeholder title. It needs a real `unit1_*_outcomes.md` before any Unit 1 lesson is built.
-3. **Second built lesson.** Only Lesson 1 (Unit 2) is built. Lesson 2 (Position–Time Graphs) is the natural next one and would exercise the graph-figure path.
+3. **Unit 2 lesson build-out.** Lessons 1–2 built (Lesson 2 draft, physics review pending). Remaining: L3 Velocity and Constant-Velocity Motion, L4 Velocity-Time Graphs, L5 Acceleration-Time Graphs, L6 Constant-Acceleration Equations, L7 One-Dimensional Free Fall, L8 SOHCAHTOA and Vector Components, L9 Synthesis and Transfer, then the post concept-check and a unit test.
 4. **BASIS diagnostic progressive disclosure.** The entry diagnostic is an external-HTML page with its own self-test; it does not use the native hint/solution disclosure and is not expected to.
 
 ---
@@ -76,4 +80,7 @@ BASIS Physics 8 lessons are the **same JSON schema** as AP lessons (see the sche
 
 | Version | Date | Status | Summary |
 |---|---|---|---|
+| 0.4.0 | 2026-09-03 | Draft — for review | `kinematics-1d` bank completed to the full **250 MCQ + 50 FRQ** (tranche 2 merged): 24 source graph/vector SVGs transferred + restyled into `assets/diagrams/basis-physics-8/unit-2/kinematics-bank/`, `needsCalc()` extended to catch forward trig of non-convention angles (234/250 MCQ calculator-free). **Lesson 3 — Velocity and Constant-Velocity Motion** built (`velocity-and-constant-velocity-motion.json`, `status: draft`) from `module_03_*.md`, adapted to Physics Academy rigor: 3 concept chunks (signed velocity + v-t graph reading/classification, constant velocity needs speed AND direction, `Δx = vΔt`), 2 SVGs (`velocity-segments` transferred, `speed-vs-velocity` hand-authored), misconception (negative velocity ≠ slowing) + error-analysis + 3-item lesson check ending in a 10-pt FRQ. **`furtherPracticeQuestionIds`** wired into L1, L2, L3 from `kinematics-1d.json`. All builds clean (0 warnings); L3 + both unit-test flows browser-verified (0 KaTeX/JS errors). |
+| 0.3.0 | 2026-09-03 | Draft — for review | Unit 2 native question bank stood up: `kinematics-1d.json` (176 MCQ) + `kinematics-1d-frq.json` (35 FRQ), converted from the Founder-approved resource test bank via a parser + enrichment pass (difficulty 3-band→5-band remap, `skill`/`representation`/`cognitiveLevel` assignment, per-option feedback lifted from the source rationales, `calculatorFree` computed per item, 37°/53° convention prepended). First **topic-keyed shared bank** (`topicId`, `docs/question-bank-topics.md`) — built to also serve AP/IB kinematics later, tagged `basis-physics-8` only for now. BASIS Unit 2 unit test wired (`unit-2-test.json`, no-calculator, `status: draft`) and registered in the unit index. Build clean (0 warnings, assembler blueprint check passes); browser-verified end-to-end (cover → 15 MCQ + 1 FRQ draw → submit → marked review; 0 KaTeX/JS errors). Tranche 2 (graph-SVG items) pending. `docs/test-generation.md` §4a updated. |
+| 0.2.0 | 2026-09-02 | Draft — for review | Unit 2 Lesson 2 (Position-Time Graphs) built to AP Physics 1 rigor: three concept chunks (reading position/displacement from an `x`-`t` graph, slope = velocity, matching graph shape to a described motion), three hand-authored SVGs under `assets/diagrams/basis-physics-8/unit-2/position-time-graphs/` (`read-displacement`, `slope-velocity`, `shape-options`) following the §11 label-clearance rule, a misconception item (`graph-slope-as-height`), an error-analysis item, a 3-item lesson check ending in a 7-point FRQ with a data-table scenario, and progressive-disclosure `hint`/`solution` on every question item. Registered in `unit-2-index.json` (slug set, status `draft`). Build clean, 0 warnings; 0 KaTeX/JS errors in a browser walk-through. Physics review still pending before `approved`. |
 | 0.1.0 | 2026-09-02 | Draft — for review | Initial lightweight architecture doc. Consolidates what the parallel BASIS Physics 8 effort produced: 8 unit indexes (outcomes sourced only from `resources/physics8/resources/`), Lesson 1 of Unit 2 built and Founder-approved, the Unit 2 entry diagnostic as a themed `external-html` page, and the `BP8-*` test-bank provenance manifests (900 active records, Units 2–4). Records that BASIS Physics 8 reuses the AP build/template/validator/interactive scaffolding unchanged and does not adopt the `objective`/`cedTopic` scheme. Progressive-disclosure `hint`/`solution` added to all five Lesson 1 question items in the same pass. |

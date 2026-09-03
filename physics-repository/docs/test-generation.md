@@ -229,12 +229,20 @@ steps:
 5. **Build.** `build/render/unit-test.js` warns if the pool is thin
    against the blueprint; treat those as the bank-gap checklist (§4).
 
-**Current blocker for the other courses:** AP Physics 2, IB Physics
-SL/HL, and BASIS Physics 8 have **no native question banks** — BASIS has
-only the `BP8-*` provenance manifests (Markdown ledgers). Until at least
-one unit of one of those courses has a native bank, its unit test cannot
-be generated. The infrastructure (blueprint, assembler, runtime,
-calculator-policy filter, linked headers) is course-neutral and ready.
+**Shared, topic-keyed banks.** New banks are keyed by physics topic, not
+course-unit, so one file serves every course that teaches it — see
+`docs/question-bank-topics.md`. Items carry `topicId` plus the usual
+`courses: [...]`. `kinematics-1d.json` / `kinematics-1d-frq.json` is the
+first: 250 MCQ + 50 FRQ converted from the Founder-approved BASIS Unit 2
+Markdown bank (234 MCQ calculator-free), powering
+`content/basis-physics-8/unit-2-kinematics/unit-2-test.json`.
+
+**Remaining blocker for the other courses:** AP Physics 2 and IB Physics
+SL/HL still have **no native question banks**. BASIS Physics 8 now has one
+(`kinematics-1d`, Unit 2); its other units still have only the `BP8-*`
+provenance manifests (Markdown ledgers). The infrastructure (blueprint,
+assembler, runtime, calculator-policy filter, linked headers) is
+course-neutral and ready.
 
 ---
 

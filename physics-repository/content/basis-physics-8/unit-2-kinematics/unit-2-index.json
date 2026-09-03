@@ -94,18 +94,18 @@
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
+      "slug": "position-time-graphs",
       "title": "Position-Time Graphs",
       "cluster": "BP8.2.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
+      "slug": "velocity-and-constant-velocity-motion",
       "title": "Velocity and Constant-Velocity Motion",
       "cluster": "BP8.2.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
@@ -162,6 +162,14 @@
       "title": "Unit 2 Concept Check — retake",
       "status": "planned",
       "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-2-test",
+      "title": "Unit 2 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the Kinematics question bank (kinematics-1d) to the Physics Academy test blueprint. Bank is tranche 1 (text-only items); graph-figure items to follow."
     }
   ]
 }

@@ -1,0 +1,447 @@
+{
+  "id": "basis-p8-u2-l2",
+  "slug": "position-time-graphs",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Position-time graphs",
+  "lessonTitle": "Position-Time Graphs",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit2_kinematics_outcomes.md",
+  "prerequisites": [
+    "Lesson 1 — declare an origin and a positive direction before assigning signed positions; distance vs. signed displacement $\\Delta x = x_f - x_i$.",
+    "Read a value off a labelled axis and calculate the slope of a straight line as rise over run (BASIS Physics 8 Unit 1)."
+  ],
+  "majorObjective": "Read position and displacement from a position-time graph, calculate velocity as its slope, and match the shape of a position-time graph to a verbal description of the motion.",
+  "subObjectives": [
+    "Read the position of an object at a stated time, and the displacement between two times, directly from an $x$-$t$ graph.",
+    "Decide from a description of a motion whether the object has been displaced and in which direction.",
+    "Calculate velocity as the slope $v = \\dfrac{\\Delta x}{\\Delta t}$ of a straight segment, with a sign and a unit.",
+    "Select the correctly shaped $x$-$t$ graph for a description of the motion, using slope sign for direction and steepness for speed."
+  ],
+  "hook": {
+    "prompt": "On a position-time graph, an object's curve is a horizontal line for 4 s. What is the object doing during those 4 seconds?",
+    "choices": [
+      "Moving at a constant, non-zero velocity.",
+      "Staying at one position — its velocity is zero.",
+      "Speeding up, because the line is flat.",
+      "Moving backward toward the origin."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Position $x$ is a signed location in a declared frame. This lesson reads $x$ as the vertical quantity on a graph whose horizontal quantity is time $t$, and treats the slope $\\Delta x / \\Delta t$ as the velocity.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Reading position and displacement from the graph",
+      "concept": "A **position-time graph** plots signed position $x$ on the vertical axis against time $t$ on the horizontal axis. To read the position at a time, go up from that time to the curve, then across to the $x$-axis. The **displacement** between two times is the signed change in the height of the curve: $$\\Delta x = x_f - x_i$$ Reading up from a later time and subtracting the earlier position gives both the size and the direction of the displacement. The graph shows position, not the path — a flat section means the object held its position, not that it vanished.",
+      "representation": "Work in a fixed order:\n\n1. Read $x_i$ — the curve's height at the earlier time.\n2. Read $x_f$ — the curve's height at the later time.\n3. Subtract: $\\Delta x = x_f - x_i$, keeping the sign.\n4. State the direction the sign encodes in the declared frame.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/position-time-graphs/read-displacement.svg",
+          "caption": "A three-stage journey: constant-velocity climb from +1 m to +7 m, a pause at +7 m, then a return to +1 m. Each labelled point is an ordered pair (time, position)."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Using the graph above, find (a) the object's position at $t = 4\\ \\mathrm{s}$ and (b) its displacement between $t = 1\\ \\mathrm{s}$ and $t = 8\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "Read the position at t = 4 s",
+            "steps": [
+              "At $t = 4\\ \\mathrm{s}$ the curve is on the flat section between $t = 3\\ \\mathrm{s}$ and $t = 5\\ \\mathrm{s}$.",
+              "Read across to the axis: $x = +7\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Read the two endpoint positions",
+            "steps": [
+              "At $t = 1\\ \\mathrm{s}$ the curve is on the first sloped section, one-third of the way up: $x_i = +3\\ \\mathrm{m}$.",
+              "At $t = 8\\ \\mathrm{s}$ the curve has returned to its lowest labelled point: $x_f = +1\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Subtract for the displacement",
+            "steps": [
+              "$\\Delta x = x_f - x_i = (+1\\ \\mathrm{m}) - (+3\\ \\mathrm{m}) = -2\\ \\mathrm{m}$.",
+              "The negative sign means the object finished 2 m in the negative direction from where it was at $t = 1\\ \\mathrm{s}$, even though it went far in the positive direction in between."
+            ]
+          }
+        ],
+        "keyMove": "Displacement is a difference of two heights on the curve, not the length of the wiggle between them."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L2-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "On the journey graph above, what is the object's displacement between $t = 0\\ \\mathrm{s}$ and $t = 3\\ \\mathrm{s}$?",
+        "choices": [
+          "$+6\\ \\mathrm{m}$",
+          "$+7\\ \\mathrm{m}$",
+          "$+8\\ \\mathrm{m}$",
+          "$0\\ \\mathrm{m}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $x_i = +1\\ \\mathrm{m}$, $x_f = +7\\ \\mathrm{m}$, so $\\Delta x = +7 - (+1) = +6\\ \\mathrm{m}$.",
+          "incorrect": {
+            "1": "$+7\\ \\mathrm{m}$ is the final position $x_f$, not the change in position. Subtract the starting position.",
+            "2": "$+8\\ \\mathrm{m}$ would be the answer if the object started at the origin; here it started at $+1\\ \\mathrm{m}$.",
+            "3": "The curve is at two different heights at $t = 0$ and $t = 3\\ \\mathrm{s}$, so the displacement is not zero. A zero displacement needs equal heights."
+          }
+        },
+        "hint": [
+          "Displacement is $\\Delta x = x_f - x_i$. Read the height of the curve at $t = 3\\ \\mathrm{s}$ and at $t = 0\\ \\mathrm{s}$, then subtract."
+        ],
+        "solution": "At $t = 0\\ \\mathrm{s}$ the curve is at $x_i = +1\\ \\mathrm{m}$. At $t = 3\\ \\mathrm{s}$ it has climbed to $x_f = +7\\ \\mathrm{m}$. The displacement is $\\Delta x = x_f - x_i = (+7\\ \\mathrm{m}) - (+1\\ \\mathrm{m}) = +6\\ \\mathrm{m}$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Slope of a position-time graph is velocity",
+      "concept": "For a straight segment of a position-time graph, the **slope** is the velocity: $$v = \\frac{\\Delta x}{\\Delta t} = \\frac{x_2 - x_1}{t_2 - t_1}$$ The unit is metres per second, from position units divided by time units. The **sign** of the slope is the direction of motion in the declared frame: a line going up to the right is positive velocity, a line going down to the right is negative velocity, and a flat line is zero velocity. The **steepness** is the speed: a steeper line means a larger distance covered per second.",
+      "representation": "Pick two points on the same straight segment.\n\n1. Take the rise $\\Delta x = x_2 - x_1$, keeping its sign.\n2. Take the run $\\Delta t = t_2 - t_1$ — always positive, since time only increases.\n3. Divide, and attach the unit m/s.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/position-time-graphs/slope-velocity.svg",
+          "caption": "Two straight segments with their slope triangles. Segment 1: Δx = +8 m over Δt = 2 s gives v = +4 m/s. Segment 2: Δx = −6 m over Δt = 3 s gives v = −2 m/s."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "From the two-segment graph above, find the velocity on each segment and say which motion is faster.",
+        "phases": [
+          {
+            "label": "Segment 1 — read the two points",
+            "steps": [
+              "The segment runs from $(0\\ \\mathrm{s},\\ 0\\ \\mathrm{m})$ to $(2\\ \\mathrm{s},\\ +8\\ \\mathrm{m})$.",
+              "$\\Delta x = (+8\\ \\mathrm{m}) - (0\\ \\mathrm{m}) = +8\\ \\mathrm{m}$;  $\\Delta t = 2\\ \\mathrm{s} - 0\\ \\mathrm{s} = 2\\ \\mathrm{s}$."
+            ]
+          },
+          {
+            "label": "Segment 1 — divide",
+            "steps": [
+              "$v_1 = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{+8\\ \\mathrm{m}}{2\\ \\mathrm{s}} = +4\\ \\mathrm{m/s}$.",
+              "Positive: the object moves in the positive direction at $4\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "Segment 2 — read, then divide",
+            "steps": [
+              "From $(2\\ \\mathrm{s},\\ +8\\ \\mathrm{m})$ to $(5\\ \\mathrm{s},\\ +2\\ \\mathrm{m})$: $\\Delta x = (+2\\ \\mathrm{m}) - (+8\\ \\mathrm{m}) = -6\\ \\mathrm{m}$, $\\Delta t = 3\\ \\mathrm{s}$.",
+              "$v_2 = \\dfrac{-6\\ \\mathrm{m}}{3\\ \\mathrm{s}} = -2\\ \\mathrm{m/s}$ — motion in the negative direction."
+            ]
+          },
+          {
+            "label": "Compare the speeds",
+            "steps": [
+              "Speed is the size of the velocity: $|v_1| = 4\\ \\mathrm{m/s}$ versus $|v_2| = 2\\ \\mathrm{m/s}$.",
+              "Segment 1 is faster, which is why its line is steeper."
+            ]
+          }
+        ],
+        "keyMove": "Keep the sign on the rise; the run is always positive because time only moves forward."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L2-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "Take north as positive. A position-time graph is a straight line from $(2\\ \\mathrm{s},\\ +10\\ \\mathrm{m})$ to $(6\\ \\mathrm{s},\\ +2\\ \\mathrm{m})$. What is the velocity?",
+        "choices": [
+          "$+2\\ \\mathrm{m/s}$",
+          "$-2\\ \\mathrm{m/s}$",
+          "$-3\\ \\mathrm{m/s}$",
+          "$+8\\ \\mathrm{m/s}$"
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $\\Delta x = 2 - 10 = -8\\ \\mathrm{m}$, $\\Delta t = 6 - 2 = 4\\ \\mathrm{s}$, so $v = -8/4 = -2\\ \\mathrm{m/s}$ (2 m/s south).",
+          "incorrect": {
+            "0": "The height of the curve decreases as time goes forward, so the slope — and the velocity — must be negative.",
+            "2": "Check the run: $\\Delta t = 6 - 2 = 4\\ \\mathrm{s}$, not 3 s or 2.67 s. $-8\\ \\mathrm{m} \\div 4\\ \\mathrm{s} = -2\\ \\mathrm{m/s}$.",
+            "3": "$8\\ \\mathrm{m}$ is the size of $\\Delta x$ alone. Velocity is $\\Delta x$ divided by $\\Delta t$, and the sign is negative here."
+          }
+        },
+        "hint": [
+          "$v = \\dfrac{x_2 - x_1}{t_2 - t_1}$. Put the later point second in both the top and the bottom.",
+          "The position drops from $+10\\ \\mathrm{m}$ to $+2\\ \\mathrm{m}$ while time rises from 2 s to 6 s — expect a negative answer."
+        ],
+        "solution": "$\\Delta x = x_2 - x_1 = (+2\\ \\mathrm{m}) - (+10\\ \\mathrm{m}) = -8\\ \\mathrm{m}$. $\\Delta t = t_2 - t_1 = 6\\ \\mathrm{s} - 2\\ \\mathrm{s} = 4\\ \\mathrm{s}$. $v = \\dfrac{-8\\ \\mathrm{m}}{4\\ \\mathrm{s}} = -2\\ \\mathrm{m/s}$, i.e. 2 m/s in the negative (south) direction."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Matching the graph shape to the motion",
+      "concept": "Because slope is velocity, the **shape** of a position-time graph reports the motion directly:\n\n- **At rest** → a horizontal line (zero slope).\n- **Constant velocity in the positive direction** → a straight line sloping up to the right.\n- **Constant velocity in the negative direction** → a straight line sloping down to the right.\n- **Faster constant speed** → a steeper straight line (in whichever direction).\n\nA description of a motion can be turned into the right graph by asking, in order: is it moving? which direction? how fast compared with other parts?",
+      "representation": "Translate the words to slope features:\n\n- “stays” / “parked” / “held still” → flat.\n- “moves forward” / “away in the + direction” → slope up.\n- “moves back” / “returns” / “in the − direction” → slope down.\n- “faster” → steeper; “slower” → shallower.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/position-time-graphs/shape-options.svg",
+          "caption": "Four straight-line position-time graphs. A: horizontal (at rest). B: gentle upward slope (slow, positive velocity). C: downward slope (negative velocity). D: steep upward slope (fast, positive velocity)."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A drone hovers in place, then flies quickly away from its pilot in the positive direction at a steady speed. Which of graphs A–D matches the second stage, and why not the others?",
+        "phases": [
+          {
+            "label": "Name the motion of the second stage",
+            "steps": [
+              "“Flies away in the positive direction” → position increases, so the slope is positive.",
+              "“Quickly … at a steady speed” → a straight line, and a steep one."
+            ]
+          },
+          {
+            "label": "Test each option",
+            "steps": [
+              "A is horizontal — that is the hovering stage, not the flight.",
+              "C slopes down — that would be flying back toward the pilot.",
+              "B slopes up but only gently — that is a slow departure, not a quick one."
+            ]
+          },
+          {
+            "label": "Choose",
+            "steps": [
+              "D — a steep upward straight line — is the steady, fast departure in the positive direction."
+            ]
+          }
+        ],
+        "keyMove": "Decide direction from the sign of the slope first, then speed from the steepness."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L2-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "Take east as positive. A car drives west at a constant speed for the whole trip. Which position-time graph shape is correct?",
+        "choices": [
+          "A horizontal straight line.",
+          "A straight line sloping up to the right.",
+          "A straight line sloping down to the right.",
+          "A curve that gets steeper to the right."
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct — west is the negative direction, so position decreases steadily and the line slopes down to the right at a constant rate.",
+          "incorrect": {
+            "0": "A horizontal line is zero velocity — the car is not moving. This car is moving the whole time.",
+            "1": "An upward slope is positive velocity, i.e. moving east. This car moves west.",
+            "3": "A curve that steepens means the speed is changing. The car's speed is constant, so the graph is a straight line."
+          }
+        },
+        "hint": [
+          "West is negative in an east-positive frame, so the position becomes more negative as time goes on.",
+          "Constant speed → straight line; direction → sign of the slope."
+        ],
+        "solution": "In an east-positive frame, driving west means the position decreases as time increases, so the slope is negative — a line sloping down to the right. The speed is constant, so the line is straight, not curved."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L2-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "graph-slope-as-height",
+      "question": "Two objects are shown on the same position-time graph. At $t = 5\\ \\mathrm{s}$, object P's curve is higher than object Q's curve, but object Q's curve is steeper. Which object is moving faster at that moment?",
+      "choices": [
+        "Object P, because its curve is higher.",
+        "Object Q, because its curve is steeper.",
+        "They move at the same speed because they are on the same graph.",
+        "Object P, because a higher position always means a higher speed."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — speed is read from the slope, not the height. A steeper curve means a larger change in position per second.",
+        "incorrect": {
+          "0": "Height on a position-time graph is position, not speed. Being farther from the origin does not mean moving faster.",
+          "2": "Sharing a graph says nothing about the speeds — each curve has its own slope.",
+          "3": "Position and speed are different quantities. A parked car far from the origin has a high position and zero speed."
+        }
+      },
+      "hint": [
+        "On a position-time graph, what does the vertical height tell you? What does the slope tell you?",
+        "Speed is a rate of change of position, so it lives in the slope."
+      ],
+      "solution": "On a position-time graph the height is the position and the slope is the velocity. Object Q's curve is steeper, so its position changes faster — object Q is moving faster, regardless of which curve is higher at that instant."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Take up as positive. A lift's position-time graph is a straight line from $(0\\ \\mathrm{s},\\ +12\\ \\mathrm{m})$ to $(4\\ \\mathrm{s},\\ +4\\ \\mathrm{m})$. Find the velocity.\n\nStudent's response: “The change in position is $12 + 4 = 16\\ \\mathrm{m}$. The time is $4\\ \\mathrm{s}$. So $v = 16 / 4 = +4\\ \\mathrm{m/s}$ upward.”",
+      "prompts": [
+        "State the rule the student should have used for $\\Delta x$.",
+        "Identify the first step that is not supported by that rule.",
+        "Repair the response: give the correct velocity with sign and direction, and verify it against the graph."
+      ],
+      "modelResponse": "The rule is $\\Delta x = x_f - x_i$ — a subtraction, keeping signs. The first unsupported step is “$12 + 4 = 16\\ \\mathrm{m}$”: the student added the two positions instead of subtracting them, which also loses the direction information. Correct: $\\Delta x = x_f - x_i = (+4\\ \\mathrm{m}) - (+12\\ \\mathrm{m}) = -8\\ \\mathrm{m}$; $\\Delta t = 4\\ \\mathrm{s} - 0\\ \\mathrm{s} = 4\\ \\mathrm{s}$; $v = \\dfrac{-8\\ \\mathrm{m}}{4\\ \\mathrm{s}} = -2\\ \\mathrm{m/s}$, i.e. 2 m/s downward. Verify against the graph: the line goes down to the right, so the slope is negative, which matches a downward (negative) velocity.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal description fixes the direction and steadiness of the motion; that becomes a slope sign and a slope steepness; the slope is the velocity in m/s; and the heights of the curve at two times give the displacement. The same motion must read the same way in words, on the graph, and in the velocity calculation.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L2-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "A position-time graph is a straight line from $(1\\ \\mathrm{s},\\ -3\\ \\mathrm{m})$ to $(5\\ \\mathrm{s},\\ +9\\ \\mathrm{m})$. Which statement is fully correct?",
+      "choices": [
+        "Displacement $+12\\ \\mathrm{m}$; velocity $+3\\ \\mathrm{m/s}$.",
+        "Displacement $+6\\ \\mathrm{m}$; velocity $+3\\ \\mathrm{m/s}$.",
+        "Displacement $+12\\ \\mathrm{m}$; velocity $+12\\ \\mathrm{m/s}$.",
+        "Displacement $-12\\ \\mathrm{m}$; velocity $-3\\ \\mathrm{m/s}$."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $\\Delta x = (+9) - (-3) = +12\\ \\mathrm{m}$, and $v = \\Delta x / \\Delta t = +12\\ \\mathrm{m} / 4\\ \\mathrm{s} = +3\\ \\mathrm{m/s}$.",
+        "incorrect": {
+          "1": "The displacement is $x_f - x_i = (+9\\ \\mathrm{m}) - (-3\\ \\mathrm{m}) = +12\\ \\mathrm{m}$; subtracting a negative adds. The velocity value is right but the displacement is not.",
+          "2": "Velocity is displacement divided by the time interval $\\Delta t = 4\\ \\mathrm{s}$, not the displacement itself.",
+          "3": "The curve rises from $-3\\ \\mathrm{m}$ to $+9\\ \\mathrm{m}$ as time goes forward, so both the displacement and the velocity are positive."
+        }
+      },
+      "hint": [
+        "Displacement: $x_f - x_i = (+9\\ \\mathrm{m}) - (-3\\ \\mathrm{m})$. Watch the double negative.",
+        "Velocity: divide that displacement by $\\Delta t = 5\\ \\mathrm{s} - 1\\ \\mathrm{s}$."
+      ],
+      "solution": "$\\Delta x = x_f - x_i = (+9\\ \\mathrm{m}) - (-3\\ \\mathrm{m}) = +12\\ \\mathrm{m}$. $\\Delta t = 5\\ \\mathrm{s} - 1\\ \\mathrm{s} = 4\\ \\mathrm{s}$. $v = \\dfrac{+12\\ \\mathrm{m}}{4\\ \\mathrm{s}} = +3\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "BP8-U2-L2-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A cyclist rolls forward (positive direction) at a steady speed, stops at a light for a while, then rolls forward again at a slower steady speed. Which sequence of position-time segments matches this story?",
+      "choices": [
+        "Up-sloping line, then flat line, then a less steep up-sloping line.",
+        "Up-sloping line, then flat line, then a steeper up-sloping line.",
+        "Flat line, then up-sloping line, then down-sloping line.",
+        "Up-sloping line, then down-sloping line, then flat line."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — forward at a steady speed is a straight up-slope, the stop is a flat section, and the slower second ride is a shallower up-slope.",
+        "incorrect": {
+          "1": "A steeper second up-slope would mean the cyclist sped up. The story says the second ride is slower, so the slope must be shallower.",
+          "2": "Starting flat would mean the cyclist was stopped at the start, but the story begins with rolling forward.",
+          "3": "A down-sloping section is motion in the negative direction. The cyclist never rides backward in this story."
+        }
+      },
+      "hint": [
+        "Translate each phase: steady forward → straight up-slope; stopped → flat; slower forward → shallower up-slope.",
+        "Direction sets the sign of the slope; speed sets the steepness."
+      ],
+      "solution": "Rolling forward at a steady speed is a straight line sloping up. Stopping is a flat (zero-slope) section. Rolling forward again but slower is another upward line, less steep than the first because the speed is lower. That is the first option."
+    },
+    {
+      "id": "BP8-U2-L2-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take east as positive. A delivery robot's motion is recorded as a position-time graph made of three straight segments:\n\n| Segment | Start (t, x) | End (t, x) |\n|---|---|---|\n| 1 | (0 s, +2 m) | (4 s, +14 m) |\n| 2 | (4 s, +14 m) | (7 s, +14 m) |\n| 3 | (7 s, +14 m) | (10 s, +5 m) |",
+      "parts": [
+        {
+          "prompt": "(a) Find the robot's velocity on each of the three segments. Show $\\Delta x$, $\\Delta t$, and the sign for each.",
+          "modelResponse": "Segment 1: $\\Delta x = (+14) - (+2) = +12\\ \\mathrm{m}$, $\\Delta t = 4\\ \\mathrm{s}$, $v_1 = +12/4 = +3\\ \\mathrm{m/s}$ (east). Segment 2: $\\Delta x = (+14) - (+14) = 0\\ \\mathrm{m}$, $\\Delta t = 3\\ \\mathrm{s}$, $v_2 = 0\\ \\mathrm{m/s}$ (at rest). Segment 3: $\\Delta x = (+5) - (+14) = -9\\ \\mathrm{m}$, $\\Delta t = 3\\ \\mathrm{s}$, $v_3 = -9/3 = -3\\ \\mathrm{m/s}$ (west).",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the robot's total displacement over the whole 10 s, and state its direction.",
+          "modelResponse": "Displacement uses only the first and last points: $\\Delta x = x_f - x_i = (+5\\ \\mathrm{m}) - (+2\\ \\mathrm{m}) = +3\\ \\mathrm{m}$, i.e. 3 m east.",
+          "points": 2
+        },
+        {
+          "prompt": "(c) A student says “the robot's speed on segment 1 and segment 3 is the same, so those segments look identical on the graph.” Evaluate this claim.",
+          "modelResponse": "The speeds are equal in size ($|{+3}| = |{-3}| = 3\\ \\mathrm{m/s}$), so the two segments have equally steep lines. But the velocities have opposite signs: segment 1 slopes up to the right (moving east) and segment 3 slopes down to the right (moving west). The segments are mirror images in steepness, not identical — the slope directions are opposite.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 7
+    }
+  ],
+  "examConnection": "Every later kinematics representation is read the same way: slope is a rate, area is an accumulation, and height is the plotted quantity. Matching a described motion to the right graph and extracting a signed rate from a slope are recurring AP and IB Paper 1 tasks.",
+  "summary": "On a position-time graph, height is position and slope is velocity. Read displacement as $\\Delta x = x_f - x_i$ from the curve's heights at two times. Compute velocity as $v = \\Delta x / \\Delta t$ on a straight segment, keeping the sign for direction. Match a described motion to a shape by fixing direction from the slope's sign and speed from its steepness; a flat line is at rest, a straight sloped line is constant velocity, and a steeper line is faster.",
+  "exitQuestion": {
+    "id": "BP8-U2-L2-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "A position-time graph curve passes through $(2\\ \\mathrm{s},\\ +6\\ \\mathrm{m})$ and $(6\\ \\mathrm{s},\\ +6\\ \\mathrm{m})$. Between those two times the curve dips down to $+1\\ \\mathrm{m}$ and comes back. What is the displacement from $t = 2\\ \\mathrm{s}$ to $t = 6\\ \\mathrm{s}$?",
+    "choices": [
+      "$0\\ \\mathrm{m}$",
+      "$-5\\ \\mathrm{m}$",
+      "$+10\\ \\mathrm{m}$",
+      "$+6\\ \\mathrm{m}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — displacement compares only the endpoints, and the curve is at the same height $+6\\ \\mathrm{m}$ at both times, so $\\Delta x = 0$.",
+      "incorrect": {
+        "1": "$-5\\ \\mathrm{m}$ is how far down the dip goes, not the endpoint-to-endpoint change. Displacement ignores what happens in between.",
+        "2": "$+10\\ \\mathrm{m}$ looks like a distance built from the trip down and back up. Displacement is not path length.",
+        "3": "$+6\\ \\mathrm{m}$ is the position at each endpoint, not the change in position."
+      }
+    },
+    "hint": [
+      "Displacement is $x_f - x_i$ — only the two endpoint heights matter.",
+      "The curve starts and ends at the same height."
+    ],
+    "solution": "Displacement depends only on the initial and final positions: $x_i = +6\\ \\mathrm{m}$ at $t = 2\\ \\mathrm{s}$ and $x_f = +6\\ \\mathrm{m}$ at $t = 6\\ \\mathrm{s}$. $\\Delta x = x_f - x_i = 0\\ \\mathrm{m}$. The dip changes the distance travelled but not the displacement."
+  },
+  "needsPlotly": false,
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-043",
+    "BP8-U2-MCQ-046",
+    "BP8-U2-MCQ-035",
+    "BP8-U2-MCQ-048",
+    "BP8-U2-MCQ-050"
+  ]
+}

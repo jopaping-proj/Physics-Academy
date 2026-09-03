@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="380" viewBox="0 0 640 380" role="img" aria-labelledby="t1 d1">
+<title id="t1">Position-time graph of a three-stage journey</title>
+<desc id="d1">Position starts at plus 1 metre at 0 seconds, rises along a straight line to plus 7 metres at 3 seconds, stays at plus 7 metres until 5 seconds, then falls along a straight line back to plus 1 metre at 8 seconds.</desc>
+<rect width="640" height="380" fill="white"/>
+<g stroke="#d5dbe3" stroke-width="1">
+<path d="M80 40V330M145 40V330M210 40V330M275 40V330M340 40V330M405 40V330M470 40V330M535 40V330M600 40V330"/>
+<path d="M80 71H600M80 133H600M80 195H600M80 257H600"/>
+</g>
+<g stroke="#111827" stroke-width="2">
+<path d="M80 40V340"/>
+<path d="M70 289H612"/>
+</g>
+<g fill="#111827" font-family="Arial" font-size="15">
+<text x="330" y="368">t (s)</text>
+<text x="26" y="34">x (m)</text>
+</g>
+<g fill="#111827" font-family="Arial" font-size="13" text-anchor="middle">
+<text x="80" y="307">0</text>
+<text x="210" y="307">2</text>
+<text x="340" y="307">4</text>
+<text x="470" y="307">6</text>
+<text x="600" y="307">8</text>
+</g>
+<g fill="#111827" font-family="Arial" font-size="13" text-anchor="end">
+<text x="72" y="76">7</text>
+<text x="72" y="138">5</text>
+<text x="72" y="200">3</text>
+<text x="72" y="262">1</text>
+</g>
+<polyline points="80,258 275,71 405,71 600,258" fill="none" stroke="#1769aa" stroke-width="4" stroke-linejoin="round"/>
+<g fill="#1769aa">
+<circle cx="80" cy="258" r="5"/>
+<circle cx="275" cy="71" r="5"/>
+<circle cx="405" cy="71" r="5"/>
+<circle cx="600" cy="258" r="5"/>
+</g>
+<g fill="#0f3d61" font-family="Arial" font-size="13">
+<text x="96" y="281">(0 s, +1 m)</text>
+<text x="238" y="60">(3 s, +7 m)</text>
+<text x="372" y="60">(5 s, +7 m)</text>
+<text x="500" y="250">(8 s, +1 m)</text>
+</g>
+</svg>

@@ -1,0 +1,441 @@
+{
+  "id": "basis-p8-u2-l3",
+  "slug": "velocity-and-constant-velocity-motion",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 2: Kinematics",
+  "topic": "Velocity as a signed quantity",
+  "lessonTitle": "Velocity and Constant-Velocity Motion",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_02_kinematics/lessons/module_03_velocity_and_constant_velocity_motion.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 1 — scalars vs. vectors; declare an origin and a positive direction before assigning signs.",
+    "Lesson 2 — the slope of a position-time graph is the velocity; read a value off a labelled axis."
+  ],
+  "majorObjective": "Treat velocity as a signed quantity, read and classify segments of a velocity-time graph, decide whether a described motion is constant-velocity using both speed and direction, and calculate signed displacement for a constant-velocity interval with $\\Delta x = v\\,\\Delta t$.",
+  "subObjectives": [
+    "Read a signed velocity value at a stated time from a velocity-time graph.",
+    "Classify each segment of a velocity-time graph as constant velocity (horizontal) or changing velocity (sloped), without yet calculating a rate.",
+    "State that a negative velocity means motion in the negative direction — not, by itself, that the object is slowing down.",
+    "Judge from a description whether velocity is constant, requiring unchanged speed AND unchanged direction.",
+    "Calculate signed displacement over a constant-velocity interval using $\\Delta x = v\\,\\Delta t$ with a declared positive direction."
+  ],
+  "hook": {
+    "prompt": "A car's velocity is $-30\\ \\mathrm{km/h}$ for a full minute (positive is north). What does the minus sign tell you?",
+    "choices": [
+      "The car is slowing down during that minute.",
+      "The car is moving south at a steady $30\\ \\mathrm{km/h}$.",
+      "The car is moving backward relative to how it is pointed.",
+      "The car's speedometer would read a negative number."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Velocity is a vector: a speed together with a direction. In one dimension the direction is carried entirely by a sign, once a positive direction is declared. Speed is the size of the velocity and is never negative.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Velocity is signed, and a velocity-time graph shows it",
+      "concept": "A **velocity-time graph** plots signed velocity $v$ on the vertical axis against time $t$ on the horizontal axis. Read a velocity the same way you read a position on a position-time graph: go up from the time to the curve, across to the $v$-axis, and keep the sign.\n\nClassify each straight segment by its shape:\n\n- **Horizontal segment** → the velocity is not changing → **constant velocity** over that interval.\n- **Sloped segment** → the velocity is changing.\n\nThat is all this lesson asks of a sloped segment. *Why* the velocity changes — the rate, the acceleration — is Lesson 5's job. A **negative** velocity value (or a segment below the time axis) means the object is moving in the **negative direction**. It does **not**, on its own, mean the object is slowing down.",
+      "representation": "For each labelled point or segment:\n\n1. Read the velocity value, with its sign.\n2. Name the direction the sign means in the declared frame.\n3. Classify the segment: horizontal (constant) or sloped (changing).\n4. Judge “speeding up / slowing down” only by comparing consecutive speeds — never from the sign alone.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/velocity-constant-velocity/velocity-segments.svg",
+          "caption": "Segments A (+4 m/s) and B (−4 m/s) and C (+2 m/s) are each horizontal, so velocity is constant within each. The sloped parts (3–4 s and 7–8 s) are intervals of changing velocity."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "From the graph above, (a) read the velocity on segments A, B, and C, (b) list every constant-velocity interval and every changing-velocity interval, and (c) say whether segment B represents the object slowing down.",
+        "phases": [
+          {
+            "label": "Read the three segment velocities",
+            "steps": [
+              "Segment A sits on the $+4$ gridline: $v_A = +4\\ \\mathrm{m/s}$ (positive direction).",
+              "Segment B sits on the $-4$ gridline: $v_B = -4\\ \\mathrm{m/s}$ (negative direction).",
+              "Segment C sits on the $+2$ gridline: $v_C = +2\\ \\mathrm{m/s}$ (positive direction)."
+            ]
+          },
+          {
+            "label": "Classify the intervals",
+            "steps": [
+              "Horizontal (constant velocity): $0$–$3\\ \\mathrm{s}$, $4$–$7\\ \\mathrm{s}$, and $8$–$10\\ \\mathrm{s}$.",
+              "Sloped (changing velocity): $3$–$4\\ \\mathrm{s}$ and $7$–$8\\ \\mathrm{s}$."
+            ]
+          },
+          {
+            "label": "Judge segment B",
+            "steps": [
+              "Segment B is horizontal, so the velocity is not changing at all during it — the object is neither speeding up nor slowing down there.",
+              "The negative sign only says the motion is in the negative direction. “Slowing down” would require the speed to decrease over time, which a horizontal segment never shows."
+            ]
+          }
+        ],
+        "keyMove": "Sign is direction; shape (horizontal vs. sloped) is whether the velocity is changing. Read them as two separate facts."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L3-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "On the velocity-time graph above, which statement about the interval from $t = 4\\ \\mathrm{s}$ to $t = 7\\ \\mathrm{s}$ (segment B) is correct?",
+        "choices": [
+          "The object moves at a constant $4\\ \\mathrm{m/s}$ in the negative direction.",
+          "The object is slowing down because the velocity is negative.",
+          "The object is at rest because the segment is below the axis.",
+          "The object speeds up steadily from $0$ to $4\\ \\mathrm{m/s}$."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the segment is horizontal at $-4\\ \\mathrm{m/s}$: constant speed of $4\\ \\mathrm{m/s}$, in the negative direction.",
+          "incorrect": {
+            "1": "A negative velocity means “negative direction,” not “slowing down.” The segment is horizontal, so the speed is not changing.",
+            "2": "Below the axis means negative velocity, not zero velocity. At rest would be a horizontal segment sitting exactly on the time axis.",
+            "3": "A steady speed-up would be a sloped segment. This segment is horizontal, so the velocity is unchanging."
+          }
+        },
+        "hint": [
+          "The segment is horizontal — so the velocity is not changing. Its height is $-4$, so read that as a direction, not as a trend."
+        ],
+        "solution": "Segment B is a horizontal line at $v = -4\\ \\mathrm{m/s}$. Horizontal means constant velocity; the value $-4$ means the motion is in the negative direction at a steady speed of $4\\ \\mathrm{m/s}$. The sign says nothing about speeding up or slowing down."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Constant velocity needs unchanged speed AND direction",
+      "concept": "**Velocity is constant only when the speed and the direction are both unchanged.** Change either one and the velocity has changed.\n\nThe trap is a **reversal**. An object can move at $3\\ \\mathrm{m/s}$ one way, then $3\\ \\mathrm{m/s}$ back the other way — the *speed* is $3\\ \\mathrm{m/s}$ the whole time, but the *velocity* went from $+3$ to $-3\\ \\mathrm{m/s}$, passing through $0$ during the turn. Equal speed magnitudes before and after a reversal do **not** make the velocity constant.\n\nThe same point holds for turning motion: a car going around a bend at a steady $40\\ \\mathrm{km/h}$ has constant *speed* but changing *velocity*, because its direction keeps changing.",
+      "representation": "To judge a described motion, check two boxes:\n\n1. Is the speed unchanged for the whole interval?\n2. Is the direction unchanged for the whole interval?\n\nOnly if **both** are yes is the velocity constant. “The speedometer stayed at 40” answers box 1 only — you still need to know whether the direction held.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-2/velocity-constant-velocity/speed-vs-velocity.svg",
+          "caption": "Left: velocity holds steady — constant velocity. Right: the speed is 3 m/s before and after, but the velocity swings from +3 to −3 through zero — not constant velocity."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "On the first graph (segments A, B, C), a student says: “The object's speed is $4\\ \\mathrm{m/s}$ on segment A and $4\\ \\mathrm{m/s}$ on segment B, so its velocity is constant from $t = 0$ to $t = 7\\ \\mathrm{s}$.” Is the student right?",
+        "phases": [
+          {
+            "label": "Check the speed",
+            "steps": [
+              "Segment A: speed $= |{+4}| = 4\\ \\mathrm{m/s}$. Segment B: speed $= |{-4}| = 4\\ \\mathrm{m/s}$.",
+              "So the speed is indeed the same on both segments."
+            ]
+          },
+          {
+            "label": "Check the direction",
+            "steps": [
+              "Segment A is at $+4\\ \\mathrm{m/s}$ (positive direction); segment B is at $-4\\ \\mathrm{m/s}$ (negative direction).",
+              "The direction reversed between them."
+            ]
+          },
+          {
+            "label": "Decide",
+            "steps": [
+              "Constant velocity needs speed **and** direction unchanged. The direction changed, so the velocity is **not** constant from $0$ to $7\\ \\mathrm{s}$.",
+              "The graph shows it directly: the velocity ran from $+4$ down through $0$ to $-4\\ \\mathrm{m/s}$ during the $3$–$4\\ \\mathrm{s}$ transition."
+            ]
+          }
+        ],
+        "keyMove": "Equal speeds are not enough. A reversal keeps the speed and breaks the velocity."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L3-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A drone flies a large circle at a steady $6\\ \\mathrm{m/s}$ (its speed never changes). Is the drone's velocity constant?",
+        "choices": [
+          "Yes — the speed is unchanged, so the velocity is constant.",
+          "No — the direction is continuously changing, so the velocity is not constant even though the speed is.",
+          "Yes — flying in a circle always means constant velocity.",
+          "It cannot be decided without knowing the radius of the circle."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — constant velocity needs unchanged speed AND direction. Going around a circle, the direction changes at every instant, so the velocity is not constant.",
+          "incorrect": {
+            "0": "Unchanged speed is only half the test. The direction must also be unchanged, and on a circle it never is.",
+            "2": "Circular motion at steady speed is the classic case of *constant speed, changing velocity* — the direction turns the whole way around.",
+            "3": "The radius does not matter. Any circular path means the direction is always changing, so the velocity is never constant."
+          }
+        },
+        "hint": [
+          "Constant velocity = unchanged speed AND unchanged direction. Which one fails when you go around a circle?"
+        ],
+        "solution": "The speed is constant, but on a circular path the direction of motion changes continuously. Because velocity includes direction, a continuously changing direction means the velocity is not constant — regardless of the radius."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Displacement during constant-velocity motion",
+      "concept": "When the velocity is constant over an interval, the displacement is the velocity times the elapsed time: $$\\Delta x = v\\,\\Delta t$$ Because $v$ carries a sign, so does $\\Delta x$. The elapsed time $\\Delta t$ is always positive. Declare the positive direction first, substitute $v$ **with its sign**, and interpret the sign of the answer as a direction.\n\nOn a velocity-time graph, $v\\,\\Delta t$ is exactly the area between the horizontal segment and the time axis — a segment below the axis contributes a negative displacement.",
+      "representation": "Work in one order:\n\n1. Declare the positive direction.\n2. Write $v$ with its sign and $\\Delta t$ as a positive number.\n3. Multiply: $\\Delta x = v\\,\\Delta t$.\n4. State the result as a distance in a named direction.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A cart moves east at a steady $3.5\\ \\mathrm{m/s}$ for $6.0\\ \\mathrm{s}$. Take east as positive. Find its displacement. (b) A robot moves west at a steady $2.4\\ \\mathrm{m/s}$ for $7.5\\ \\mathrm{s}$, still with east as positive. Find its displacement.",
+        "phases": [
+          {
+            "label": "(a) Set up and substitute",
+            "steps": [
+              "East is positive, and the cart moves east, so $v = +3.5\\ \\mathrm{m/s}$; $\\Delta t = 6.0\\ \\mathrm{s}$.",
+              "$\\Delta x = v\\,\\Delta t = (+3.5\\ \\mathrm{m/s})(6.0\\ \\mathrm{s})$."
+            ]
+          },
+          {
+            "label": "(a) Evaluate and interpret",
+            "steps": [
+              "$\\Delta x = +21\\ \\mathrm{m}$ — the cart finishes $21\\ \\mathrm{m}$ east of where it started."
+            ]
+          },
+          {
+            "label": "(b) Substitute with the sign",
+            "steps": [
+              "The robot moves west, which is the negative direction here, so $v = -2.4\\ \\mathrm{m/s}$; $\\Delta t = 7.5\\ \\mathrm{s}$.",
+              "$\\Delta x = (-2.4\\ \\mathrm{m/s})(7.5\\ \\mathrm{s}) = -18\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "(b) Interpret",
+            "steps": [
+              "The negative sign means $18\\ \\mathrm{m}$ in the negative direction — the robot ends $18\\ \\mathrm{m}$ west of its start."
+            ]
+          }
+        ],
+        "keyMove": "Carry the sign of $v$ all the way through; the sign of $\\Delta x$ is the direction of the trip."
+      },
+      "formativeCheck": {
+        "id": "BP8-U2-L3-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "numerical",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "Take north as positive. A train travels south at a constant $25\\ \\mathrm{m/s}$ for $8.0\\ \\mathrm{s}$. What is its displacement?",
+        "choices": [
+          "$-200\\ \\mathrm{m}$",
+          "$+200\\ \\mathrm{m}$",
+          "$-3.1\\ \\mathrm{m}$",
+          "$+25\\ \\mathrm{m}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — south is negative, so $v = -25\\ \\mathrm{m/s}$ and $\\Delta x = (-25)(8.0) = -200\\ \\mathrm{m}$, i.e. $200\\ \\mathrm{m}$ south.",
+          "incorrect": {
+            "1": "The magnitude is right, but south is the negative direction in a north-positive frame, so the displacement must be negative.",
+            "2": "This divides instead of multiplying. $\\Delta x = v\\,\\Delta t$ is a product.",
+            "3": "This reports the speed, not the displacement. Multiply by the $8.0\\ \\mathrm{s}$ interval."
+          }
+        },
+        "hint": [
+          "South is the negative direction here, so write $v = -25\\ \\mathrm{m/s}$. Then $\\Delta x = v\\,\\Delta t$."
+        ],
+        "solution": "In a north-positive frame, travelling south means $v = -25\\ \\mathrm{m/s}$. $\\Delta x = v\\,\\Delta t = (-25\\ \\mathrm{m/s})(8.0\\ \\mathrm{s}) = -200\\ \\mathrm{m}$ — 200 m to the south."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U2-L3-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A velocity-time graph shows a horizontal segment at $-8\\ \\mathrm{m/s}$ followed by a horizontal segment at $-3\\ \\mathrm{m/s}$. A student says “the object sped up, because $-3$ is greater than $-8$.” What is the correct reading?",
+      "choices": [
+        "The object sped up, because the velocity value increased.",
+        "The object slowed down: its speed went from $8\\ \\mathrm{m/s}$ to $3\\ \\mathrm{m/s}$, both in the negative direction.",
+        "The object reversed direction between the two segments.",
+        "Nothing can be said, because both velocities are negative."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — speed is the size of the velocity: $|{-8}| = 8\\ \\mathrm{m/s}$ then $|{-3}| = 3\\ \\mathrm{m/s}$. The speed decreased, so the object slowed down, still moving in the negative direction.",
+        "incorrect": {
+          "0": "“Speeding up” is about speed, and the speed is $|v|$. From $8\\ \\mathrm{m/s}$ to $3\\ \\mathrm{m/s}$ the speed dropped.",
+          "2": "Both segments are negative, so the direction did not change. A reversal would need the sign to flip.",
+          "3": "Plenty can be said: compare the speeds $|{-8}|$ and $|{-3}|$ to see the object slowed down."
+        }
+      },
+      "hint": [
+        "Speed is the magnitude of velocity — ignore the sign for “faster or slower,” then use the sign for direction.",
+        "$|-8| = 8$, $|-3| = 3$. Did the speed rise or fall?"
+      ],
+      "solution": "Both velocities are negative, so the direction is unchanged (negative direction throughout). Speed is $|v|$: it goes from $8\\ \\mathrm{m/s}$ to $3\\ \\mathrm{m/s}$, a decrease. The object slowed down while continuing in the negative direction. Comparing the raw signed values ($-3 > -8$) is not how you judge speeding up or slowing down."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Take east as positive. A cyclist rides west at a steady $4.0\\ \\mathrm{m/s}$ for $12\\ \\mathrm{s}$. Find the displacement.\n\nStudent's response: “The cyclist moves at $4.0\\ \\mathrm{m/s}$ for $12\\ \\mathrm{s}$, so $\\Delta x = (4.0)(12) = +48\\ \\mathrm{m}$. The displacement is $48\\ \\mathrm{m}$ east.”",
+      "prompts": [
+        "State the rule for the sign of $v$ in $\\Delta x = v\\,\\Delta t$.",
+        "Identify the first step that is not supported by that rule.",
+        "Repair the response: give the correct signed displacement and its direction, and check it against the declared frame."
+      ],
+      "modelResponse": "The rule: $v$ is written with the sign of its direction in the declared frame; here east is positive, so motion west is $v = -4.0\\ \\mathrm{m/s}$. The first unsupported step is using $v = +4.0\\ \\mathrm{m/s}$: the cyclist rides west, which is negative in an east-positive frame, so the student dropped the sign. Correct: $\\Delta x = v\\,\\Delta t = (-4.0\\ \\mathrm{m/s})(12\\ \\mathrm{s}) = -48\\ \\mathrm{m}$, i.e. $48\\ \\mathrm{m}$ west. Check: a negative displacement in an east-positive frame does mean a westward finish, which matches “rides west.”",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal description gives speed and direction; the direction becomes a sign on $v$; a velocity-time graph shows that signed $v$ as a height and shows constant-vs-changing as horizontal-vs-sloped; and $\\Delta x = v\\,\\Delta t$ (the signed area of a horizontal segment) turns a constant-velocity interval into a signed displacement. Every representation must agree on both the size and the direction.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U2-L3-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "A velocity-time graph has three horizontal segments: $+5\\ \\mathrm{m/s}$ for $0$–$2\\ \\mathrm{s}$, $+5\\ \\mathrm{m/s}$ for $2$–$6\\ \\mathrm{s}$, and $-5\\ \\mathrm{m/s}$ for $6$–$10\\ \\mathrm{s}$. Over which interval is the velocity constant?",
+      "choices": [
+        "$0$–$6\\ \\mathrm{s}$ only.",
+        "$0$–$10\\ \\mathrm{s}$ (the whole trip), because the speed is $5\\ \\mathrm{m/s}$ throughout.",
+        "$6$–$10\\ \\mathrm{s}$ only.",
+        "None of the trip, because the graph has more than one segment."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — from $0$ to $6\\ \\mathrm{s}$ the velocity holds at $+5\\ \\mathrm{m/s}$ (same speed, same direction). At $t = 6\\ \\mathrm{s}$ it reverses to $-5\\ \\mathrm{m/s}$, so the velocity is not constant across that change.",
+        "incorrect": {
+          "1": "The speed is $5\\ \\mathrm{m/s}$ throughout, but the direction reverses at $t = 6\\ \\mathrm{s}$. Constant velocity needs both unchanged.",
+          "2": "The $6$–$10\\ \\mathrm{s}$ segment is constant velocity on its own, but so is $0$–$6\\ \\mathrm{s}$, and it is the longer constant-velocity interval.",
+          "3": "Multiple segments is fine — each horizontal segment is its own constant-velocity interval. The question asks for the interval where velocity holds steady, which is $0$–$6\\ \\mathrm{s}$."
+        }
+      },
+      "hint": [
+        "The first two segments are both $+5\\ \\mathrm{m/s}$ — same value, so together they are one constant-velocity interval.",
+        "At $t = 6\\ \\mathrm{s}$ the sign flips. Does the velocity stay constant across a sign flip?"
+      ],
+      "solution": "Segments $0$–$2\\ \\mathrm{s}$ and $2$–$6\\ \\mathrm{s}$ are both at $+5\\ \\mathrm{m/s}$, so the velocity is unchanged from $0$ to $6\\ \\mathrm{s}$. At $t = 6\\ \\mathrm{s}$ the velocity reverses to $-5\\ \\mathrm{m/s}$ (same speed, opposite direction), which is a change in velocity. So the velocity is constant only over $0$–$6\\ \\mathrm{s}$."
+    },
+    {
+      "id": "BP8-U2-L3-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A witness says: “The car had constant velocity — I watched the speedometer hold at $50\\ \\mathrm{km/h}$ for the whole block.” What additional information, if any, is needed to accept the claim?",
+      "choices": [
+        "Nothing more is needed; a steady speedometer reading proves constant velocity.",
+        "Whether the car's direction of travel stayed the same over that block.",
+        "The exact length of the block in metres.",
+        "The car's acceleration, which must be measured directly."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a steady speedometer establishes constant speed only. Constant velocity also requires an unchanged direction, so you need to know whether the car went straight or turned.",
+        "incorrect": {
+          "0": "The speedometer shows speed, not direction. If the car rounded a curve at $50\\ \\mathrm{km/h}$, its velocity was changing the whole time.",
+          "2": "The block length would let you find the displacement, but it says nothing about whether the velocity was constant.",
+          "3": "You do not need a direct acceleration measurement — knowing the direction held (together with the steady speed) is enough to confirm constant velocity."
+        }
+      },
+      "hint": [
+        "A speedometer reports speed. What is the other thing velocity depends on?"
+      ],
+      "solution": "Constant velocity requires unchanged speed AND unchanged direction. The witness has established constant speed only. The missing piece is whether the direction of travel stayed the same — i.e. whether the car went straight down the block or turned along it."
+    },
+    {
+      "id": "BP8-U2-L3-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take east as positive. A delivery cart's velocity-time graph is made of three horizontal segments:\n\n| Segment | Interval | Velocity |\n|---|---|---|\n| 1 | $0$ s to $4$ s | $+3\\ \\mathrm{m/s}$ |\n| 2 | $4$ s to $9$ s | $0\\ \\mathrm{m/s}$ |\n| 3 | $9$ s to $13$ s | $-2\\ \\mathrm{m/s}$ |",
+      "parts": [
+        {
+          "prompt": "(a) Classify each of the three segments as constant velocity or changing velocity, and describe the motion each represents in words (include direction).",
+          "modelResponse": "All three segments are horizontal, so each is a constant-velocity interval. Segment 1: moving east at $3\\ \\mathrm{m/s}$. Segment 2: at rest ($v = 0$). Segment 3: moving west at $2\\ \\mathrm{m/s}$. (The velocity is *not* constant across the whole trip, because it changes between segments.)",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the cart's displacement during each segment using $\\Delta x = v\\,\\Delta t$, keeping signs.",
+          "modelResponse": "Segment 1: $\\Delta x_1 = (+3\\ \\mathrm{m/s})(4\\ \\mathrm{s}) = +12\\ \\mathrm{m}$. Segment 2: $\\Delta x_2 = (0)(5\\ \\mathrm{s}) = 0\\ \\mathrm{m}$. Segment 3: $\\Delta x_3 = (-2\\ \\mathrm{m/s})(4\\ \\mathrm{s}) = -8\\ \\mathrm{m}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) Find the cart's total displacement from $t = 0$ to $t = 13\\ \\mathrm{s}$, and state its direction.",
+          "modelResponse": "Add the signed segment displacements: $\\Delta x = (+12) + 0 + (-8) = +4\\ \\mathrm{m}$. The cart finishes $4\\ \\mathrm{m}$ east of where it started.",
+          "points": 2
+        },
+        {
+          "prompt": "(d) A student claims segment 3 shows the cart “speeding up from rest” because it comes right after the cart was stopped. Explain what is wrong with this claim.",
+          "modelResponse": "Segment 3 is horizontal at $-2\\ \\mathrm{m/s}$, so the velocity is constant during it — the cart is not speeding up at all within the segment; it moves west at a steady $2\\ \\mathrm{m/s}$. The change from rest to $-2\\ \\mathrm{m/s}$ happens at the boundary at $t = 9\\ \\mathrm{s}$, not across segment 3. Also “speeding up” describes an increasing speed over time, which a horizontal segment never shows.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Signed velocity, the speed-vs-velocity distinction, and $\\Delta x = v\\,\\Delta t$ (as an area) are the foundation for velocity-time graph slope and area work in the next lesson and for choosing kinematics equations later. AP and IB Paper 1 routinely test whether a described or graphed motion is constant-velocity and whether a negative value means “backward” or “slowing.”",
+  "summary": "Velocity is signed: the sign is direction, and speed is its magnitude. On a velocity-time graph, a horizontal segment is constant velocity and a sloped segment is changing velocity; a negative value means the negative direction, not “slowing down.” Velocity is constant only when speed AND direction are both unchanged — a reversal (or a turn) keeps the speed but changes the velocity. For a constant-velocity interval, $\\Delta x = v\\,\\Delta t$, carrying the sign of $v$; this is the area between the segment and the time axis.",
+  "exitQuestion": {
+    "id": "BP8-U2-L3-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "An object moves in a straight line and never changes direction. Its speed is $6\\ \\mathrm{m/s}$ at the start and $6\\ \\mathrm{m/s}$ at the end of a $10\\ \\mathrm{s}$ interval. Can you conclude its velocity was constant for the whole interval?",
+    "choices": [
+      "Yes — same speed at both ends and no direction change means constant velocity.",
+      "No — the speed could have risen and fallen again in between, so the velocity need not have been constant throughout.",
+      "Yes — a straight-line path always means constant velocity.",
+      "No — constant velocity is impossible over a $10\\ \\mathrm{s}$ interval."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — matching the speed only at the two ends does not rule out changes in between. The velocity is constant only if the speed held at $6\\ \\mathrm{m/s}$ the entire time.",
+      "incorrect": {
+        "0": "Equal speeds at the endpoints do not guarantee equal speed throughout — the object could have sped up and slowed back down.",
+        "2": "A straight path fixes the direction but not the speed. The speed could still vary along the line.",
+        "3": "Constant velocity over $10\\ \\mathrm{s}$ is entirely possible; the point is that the given information does not confirm it."
+      }
+    },
+    "hint": [
+      "You are told the speed at the start and the end only. What might it have done in between?"
+    ],
+    "solution": "The direction is fixed (straight line, no reversal), so that box is checked. But the speed is only known at the two endpoints; it could have increased and then decreased back to $6\\ \\mathrm{m/s}$. Without knowing the speed held constant for the whole interval, you cannot conclude the velocity was constant throughout."
+  },
+  "questionBankFile": "kinematics-1d.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U2-MCQ-051",
+    "BP8-U2-MCQ-057",
+    "BP8-U2-MCQ-059",
+    "BP8-U2-MCQ-055"
+  ],
+  "needsPlotly": false
+}

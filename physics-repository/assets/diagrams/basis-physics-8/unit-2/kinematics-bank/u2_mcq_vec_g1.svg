@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" font-family="Helvetica, Arial">
+  <rect x="0" y="0" width="480" height="420" fill="#ffffff"/>
+  <!-- axes -->
+  <line x1="20" y1="350" x2="450" y2="350" stroke="#888888" stroke-width="1.5"/>
+  <line x1="150" y1="30" x2="150" y2="400" stroke="#888888" stroke-width="1.5"/>
+  <text x="440" y="338" font-size="14" fill="#5b6675">+x</text>
+  <text x="158" y="42" font-size="14" fill="#5b6675">+y</text>
+  <text x="126" y="378" font-size="13" fill="#111827">O</text>
+  <!-- dashed legs -->
+  <line x1="150" y1="350" x2="293.7" y2="350" stroke="#1f6fb2" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <line x1="293.7" y1="350" x2="293.7" y2="241.7" stroke="#1f6fb2" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <!-- angle arc -->
+  <path d="M 180 350 A 30 30 0 0 0 173.9 331.9" fill="none" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="205" y="330" font-size="14" fill="#c0392b">&#952; = 37&#176;</text>
+  <!-- vector -->
+  <line x1="150" y1="350" x2="293.7" y2="241.7" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#arrow1)"/>
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+  <text x="301" y="228" font-size="15" fill="#1a1a1a" font-weight="bold">v = 50 m/s</text>
+  <!-- leg labels -->
+  <text x="205" y="378" font-size="13" fill="#1f6fb2">adjacent</text>
+  <text x="299" y="300" font-size="13" fill="#1f6fb2">opposite</text>
+</svg>

@@ -1,0 +1,2157 @@
+[
+  {
+    "id": "BP8-U2-FRQ-01",
+    "sourceId": "U2-FRQ-01",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "motion_foundations",
+    "sourceOutcomes": [
+      "X1",
+      "P2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A delivery drone travels along a straight, one-dimensional flight corridor above a warehouse. The diagram below shows the corridor as a number line, with the positive direction toward the loading dock. The drone starts at $x_i=-4.0\\ \\mathrm{m}$ relative to the control tower, flies to $x=+10.0\\ \\mathrm{m}$ to pick up a package, then flies back to $x=+2.0\\ \\mathrm{m}$ to avoid a temporary obstacle, and finally lands at $x_f=+6.0\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether *distance* or *displacement* is the correct concept to describe what a flight odometer (a device that accumulates total path length) would report for this flight, and explain your reasoning without calculating a number.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies *distance* as the odometer-relevant concept. 1 point: correct reasoning — an odometer-style device accumulates every meter of path length regardless of direction, which is exactly what distance measures; displacement instead reflects only the net straight-line change between start and end and would not match what such a device reads."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the total distance traveled by the drone during this flight.",
+        "points": 2,
+        "modelResponse": "1 point: correct method — sum the length of each leg without regard to sign: $|{+10.0-(-4.0)}| + |{+2.0-10.0}| + |{+6.0-2.0}|$. 1 point: correct value with unit: $14.0+8.0+4.0=26.0\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the drone's total displacement from start to finish.",
+        "points": 2,
+        "modelResponse": "1 point: correct method — $\\Delta x = x_f - x_i$, using the correct signed starting and ending positions (not any intermediate position). 1 point: correct value with unit and direction: $\\Delta x = (+6.0)-(-4.0)=+10.0\\ \\mathrm{m}$ (toward the loading dock / positive direction)."
+      },
+      {
+        "label": "d",
+        "prompt": "A technician claims: \"The drone's distance traveled and displacement must always be equal, because the drone only moves in one dimension.\" Using your numeric answers from parts (b) and (c) as evidence, explain why this claim is incorrect.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that one-dimensional motion does **not**, by itself, guarantee equal distance and displacement — what determines whether they're equal is whether the object ever reverses direction, not how many dimensions it moves in. 1 point: correctly cites the numeric evidence from (b) and (c) — 26.0 m (distance) is not equal to 10.0 m (the magnitude of the displacement) — as support, and connects the mismatch to the drone's two direction reversals in this flight. **Full-credit note:** A response earning all 8 points must reach (b) and (c) through defensible methods (not just correct final numbers reached by an unclear or invalid process), consistent with this project's standing rule that final-value credit and reasoning credit are scored independently."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_frq_01.svg",
+        "caption": "Graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-02",
+    "sourceId": "U2-FRQ-02",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "motion_foundations",
+    "sourceOutcomes": [
+      "P2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A research submarine operates along a single vertical line, so its motion can be treated as one-dimensional. Depth is measured from the surface, with \"up\" (toward the surface) as the positive direction and the surface itself at $x=0\\ \\mathrm{m}$. The submarine's dive log records the following positions at four instants:\n\n| Instant | Position |\n|---|---|\n| $t_1$ | $x=-40\\ \\mathrm{m}$ |\n| $t_2$ | $x=-310\\ \\mathrm{m}$ |\n| $t_3$ | $x=-185\\ \\mathrm{m}$ |\n| $t_4$ | $x=-260\\ \\mathrm{m}$ |\n\nThe submarine moved directly and without pausing from each recorded instant to the next, in the order listed.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the submarine's displacement from $t_1$ to $t_4$.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x = x_{t_4}-x_{t_1}$. 1 point: correct value, $(-260)-(-40)=-220\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the total distance the submarine traveled from $t_1$ to $t_4$.",
+        "points": 3,
+        "modelResponse": "1 point: correct method — sum the magnitude of each leg: $|{-310-(-40)}|+|{-185-(-310)}|+|{-260-(-185)}|$. 1 point: correct leg values: 270 m, 125 m, 75 m. 1 point: correct total, $270+125+75=470\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A crew member states: \"Since the submarine ended up deeper than it started, its displacement should be a large positive number, since depth increased.\" Explain what is wrong with this statement, referring to the sign convention established in the problem.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that under this problem's convention, \"up\" is positive, so increasing depth (moving further from the surface, downward) corresponds to more negative position values, not larger positive ones. 1 point: correctly concludes the crew member's statement has the sign backwards — the displacement should be negative (as found in part (a)), not a large positive number, precisely because the submarine ended up *deeper*."
+      },
+      {
+        "label": "d",
+        "prompt": "Without doing any further calculation, state whether the magnitude of the displacement from (a) is *less than*, *equal to*, or *greater than* the distance from (b), and explain how you know this must be true for any motion, not just this specific dive.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the magnitude of displacement (220 m) is *less than* the distance (470 m). 1 point: correct general reasoning — distance sums the length of every leg regardless of direction, while displacement's magnitude can only reflect the *net* effect of those legs; any reversal of direction during the motion causes some of that leg length to partially cancel in the net calculation, so distance can never be less than the magnitude of displacement, and is strictly greater whenever any reversal occurs."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-03",
+    "sourceId": "U2-FRQ-03",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "motion_foundations",
+    "sourceOutcomes": [
+      "X1",
+      "P2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "Two hikers start at the same trailhead and hike for exactly one hour along the same straight, one-dimensional trail, with the mountain summit as the positive direction.\n\n- **Hiker 1** hikes steadily uphill (toward the summit) the entire hour, covering 4.0 km.\n- **Hiker 2** hikes uphill 3.0 km, then realizes she forgot her water bottle at the trailhead, hikes back downhill 3.0 km to retrieve it (returning exactly to the trailhead), then hikes uphill a further 4.0 km, ending the hour 4.0 km from the trailhead.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate each hiker's displacement at the end of the hour.",
+        "points": 2,
+        "modelResponse": "1 point: Hiker 1's displacement, $+4.0\\ \\mathrm{km}$ (straightforward, no reversal). 1 point: Hiker 2's displacement, $+4.0\\ \\mathrm{km}$ (net change from trailhead to final position, unaffected by the detour)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate each hiker's total distance traveled during the hour.",
+        "points": 2,
+        "modelResponse": "1 point: Hiker 1's distance, $4.0\\ \\mathrm{km}$ (equal to the displacement magnitude, since there was no reversal). 1 point: Hiker 2's distance, $3.0+3.0+4.0=10.0\\ \\mathrm{km}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A trail-app notification says: \"Hiker 1 and Hiker 2 had an identical hike this hour, since they ended up at the same spot.\" Using your answers from (a) and (b), explain whether this notification is accurate.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the notification is **not** accurate (or is accurate only in the narrow sense of ending at the same position). 1 point: correctly supports this using the distance values from (b) — the two hikers traveled very different total distances (4.0 km vs. 10.0 km) even though their displacements matched, so their hours were physically very different experiences despite the identical endpoint."
+      },
+      {
+        "label": "d",
+        "prompt": "Identify one physical quantity (other than final position) that *would* correctly distinguish these two hikers' hours from each other, and briefly explain why it differs between them.",
+        "points": 2,
+        "modelResponse": "1 point: names a defensible distinguishing quantity — total distance traveled (already shown in (b)) is the most direct correct answer; average speed is also acceptable, since Hiker 2's average speed over the hour was higher despite ending at the same place, given more distance covered in the same time. 1 point: gives a reasoning statement connecting the named quantity to the actual physical difference between the two hikes (e.g., Hiker 2 did more total walking, or expended more effort/time-at-higher-pace, even though her net progress up the mountain matched Hiker 1's)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-04",
+    "sourceId": "U2-FRQ-04",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "motion_foundations",
+    "sourceOutcomes": [
+      "X1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A student is building a personal glossary for their physics notebook and writes the following (not-yet-correct) definitions:\n\n> \"A **scalar** is any quantity you measure with a number. A **vector** is any quantity that changes over time.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain what is incorrect about each of the student's two definitions.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies that the scalar definition is too broad — vectors are *also* measured with a number (a magnitude), so \"measured with a number\" does not distinguish scalars from vectors. 1 point: gives or implies the missing criterion for scalars — a scalar has magnitude only, with no associated direction. 1 point: correctly identifies that the vector definition is wrong in a different way — many vectors (e.g., a constant velocity) do not change over time at all, and many scalars (e.g., a changing temperature) do change over time, so \"changes over time\" is unrelated to the scalar/vector distinction. 1 point: gives or implies the missing criterion for vectors — a vector has both a magnitude and a direction."
+      },
+      {
+        "label": "b",
+        "prompt": "Rewrite both definitions correctly, in your own words.",
+        "points": 2,
+        "modelResponse": "1 point: a correct restated definition of scalar (magnitude only, no direction), in the student's own words. 1 point: a correct restated definition of vector (magnitude and direction), in the student's own words."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U2-FRQ-05",
+    "sourceId": "U2-FRQ-05",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "position_time_graphs",
+    "sourceOutcomes": [
+      "P1",
+      "P3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The position–time graph below shows a cyclist's morning commute. She leaves home, rides to a store, waits there briefly, then continues to a park.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the cyclist's velocity during the ride from home to the store.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x/\\Delta t$ using the Home-to-Store segment. 1 point: correct value, $(6-0)/(8-0)=0.75\\ \\mathrm{km/min}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cyclist's velocity during the final segment, from the store to the park.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the relevant interval as Store to Park (12 to 20 min), not the whole remaining trip. 1 point: correct method, $\\Delta x/\\Delta t$ over that interval. 1 point: correct value, $(1-6)/(20-12)=-5/8=-0.625\\ \\mathrm{km/min}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the cyclist's average velocity for the entire trip, from home to the park.",
+        "points": 2,
+        "modelResponse": "1 point: correct method — use only the overall start and end, $(x_{20}-x_0)/(20-0)$. 1 point: correct value, $(1-0)/20=0.05\\ \\mathrm{km/min}$."
+      },
+      {
+        "label": "d",
+        "prompt": "Without doing any further calculation, explain whether the average velocity from (c) could be obtained by averaging the two segment velocities from (a) and (b) directly (i.e., simply adding them and dividing by two).",
+        "points": 3,
+        "modelResponse": "1 point: correctly states that simply averaging (a) and (b) would **not** give the correct answer from (c). 1 point: correct reasoning — a straight average of two segment velocities is only valid when the two segments take *equal* time; here the three actual phases (riding, waiting, riding) take very different amounts of time, so a simple two-value average has no way to account for the 4-minute waiting interval or the unequal riding durations. 1 point: supports the claim with the actual numbers — averaging (a) 0.75 and (b) −0.625 gives $(0.75+(-0.625))/2\\approx0.0625\\ \\mathrm{km/min}$, which does not match the correctly computed 0.05 km/min from (c)."
+      }
+    ],
+    "totalPoints": 10,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_frq_02_pt.svg",
+        "caption": "Graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-06",
+    "sourceId": "U2-FRQ-06",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "position_time_graphs",
+    "sourceOutcomes": [
+      "P1",
+      "P4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "The position–time graph below shows an elevator's motion in a building, starting at the 2nd floor equivalent height (2 m), rising, pausing with its doors open, then descending past its starting height to the basement.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "At what time does the elevator pass back through its starting height ($x=2\\ \\mathrm{m}$) during its descent? Show the reasoning you used to find this time, not just a final value.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies that the crossing occurs during the descending segment ($t=9$ to $16\\ \\mathrm{s}$), not any other segment. 1 point: sets up a valid method — e.g., writing the descending segment's slope and solving for the time at which position equals 2 m, or a clearly explained proportional-reasoning approach. 1 point: correct slope used, $(-4-9)/(16-9)=-13/7\\ \\mathrm{m/s}$. 1 point: correct final time, solving $9+(-13/7)(t-9)=2 \\Rightarrow t-9=\\frac{9-2}{13/7}=\\frac{7\\times7}{13}=\\frac{49}{13}\\approx3.77\\ \\mathrm{s}$, giving $t\\approx12.77\\ \\mathrm{s}$ (accept a reasonable rounding, e.g. $\\approx12.8\\ \\mathrm{s}$)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the elevator's velocity during the descent (from $t=9\\ \\mathrm{s}$ to $t=16\\ \\mathrm{s}$).",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x/\\Delta t$ over the descending segment. 1 point: correct value, $(-4-9)/(16-9)=-13/7\\approx-1.86\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student says: \"Since the elevator ends up below where it started, and started at rest, it must have been slowing down the whole trip.\" Explain why this statement does not follow from the graph.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the claim is not supported by the graph. 1 point: correctly identifies that the elevator was actually *at rest* (not moving at all, let alone slowing from a moving state) for the middle segment (doors open, $t=6$ to $9\\ \\mathrm{s}$), and moved at a *constant* rate during both the rise and the descent (each segment is a straight line, meaning constant velocity within that segment, not continuous slowing). 1 point: notes that \"ends up below where it started\" describes displacement's sign, which says nothing by itself about whether the object was speeding up, slowing down, or moving at a constant rate at any point — this is the same distinction as height/position vs. slope/velocity, applied to a claim about the *pattern* of motion rather than a single value."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_frq_03_pt.svg",
+        "caption": "Graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-07",
+    "sourceId": "U2-FRQ-07",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "position_time_graphs",
+    "sourceOutcomes": [
+      "P1",
+      "P4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A student is asked to describe an object's motion, given only the following table of position readings.\n\n| Time (s) | 0 | 2 | 4 | 6 | 8 |\n|---|---|---|---|---|---|\n| Position (m) | +10 | +6 | +2 | +2 | +2 |",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe, in words, what the object is doing during the interval from $t=0\\ \\mathrm{s}$ to $t=4\\ \\mathrm{s}$, and separately what it is doing from $t=4\\ \\mathrm{s}$ to $t=8\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "1 point: correctly describes the first interval as the object moving steadily in the negative direction (toward smaller position values). 1 point: correctly describes the second interval as the object at rest (position unchanged at +2 m). 1 point: response is precise about *which* interval is which, and does not conflate the two behaviors."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's velocity during the $t=0$ to $t=4\\ \\mathrm{s}$ interval.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x/\\Delta t$ using the $t=0$ and $t=4\\ \\mathrm{s}$ readings. 1 point: correct value, $(2-10)/(4-0)=-8/4=-2.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Sketch, in words (you do not need to draw), what a position–time graph of this motion would look like — describe its shape using terms like \"straight,\" \"sloped,\" \"flat,\" \"curved,\" referring to each of the two intervals.",
+        "points": 2,
+        "modelResponse": "1 point: correctly describes the first interval's shape as a straight, downward-sloping (negative-slope) line. 1 point: correctly describes the second interval's shape as a straight, flat (horizontal, zero-slope) line."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-08",
+    "sourceId": "U2-FRQ-08",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "position_time_graphs",
+    "sourceOutcomes": [
+      "P4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A verbal description reads: \"A student walks away from her locker at a slow, steady pace for 10 s. She then breaks into a run, still moving away from her locker, for the next 5 s, covering more distance in those 5 s than she did in the first 10 s.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Compare the slope of the position–time graph segment representing the first 10 s to the slope of the segment representing the next 5 s. Which is steeper, and how do you know from the description alone (no numbers are given)?",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the second segment (the running interval) as steeper. 1 point: correct reasoning — steepness (slope magnitude) reflects how much position changes per unit time; covering *more* distance in *less* time means a larger $\\Delta x/\\Delta t$. 1 point: response draws this conclusion using only the comparative information given (more distance in less time), without needing or inventing specific numbers."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain whether either segment of this motion should be drawn as a curved line, or whether both should be straight lines, based on the description given.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that both segments should be drawn as straight lines. 1 point: correct reasoning for the first segment — \"slow, steady pace\" describes a constant velocity, which is a straight (constant-slope) segment. 1 point: correct reasoning for the second segment — the description gives no indication of speeding up or slowing down *during* the run itself (only that the running pace overall differs from the walking pace), so absent further information, a constant velocity for each named phase is the appropriate straight-line reading; a curve would imply the velocity was changing continuously within a single phase, which the description does not support."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U2-FRQ-09",
+    "sourceId": "U2-FRQ-09",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "position_time_graphs",
+    "sourceOutcomes": [
+      "P1",
+      "P3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "An object's motion is described by two data points: at $t=0\\ \\mathrm{s}$, $x=-6\\ \\mathrm{m}$; at $t=4\\ \\mathrm{s}$, $x=+2\\ \\mathrm{m}$. Assume the object moves at a constant velocity for the entire interval.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's velocity.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x/\\Delta t$. 1 point: correct value, $(2-(-6))/(4-0)=8/4=+2.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's position at $t=2\\ \\mathrm{s}$.",
+        "points": 2,
+        "modelResponse": "1 point: correct method — using the velocity from (a) and the time elapsed from $t=0$, $x=x_i+v t$. 1 point: correct value, $x=-6+(2.0)(2)=-2\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second object starts at the same position ($x=-6\\ \\mathrm{m}$) at $t=0\\ \\mathrm{s}$ but moves at a constant velocity of $+1.0\\ \\mathrm{m/s}$. At $t=4\\ \\mathrm{s}$, which object is farther from its starting position, and by how much?",
+        "points": 4,
+        "modelResponse": "1 point: correctly calculates the first object's displacement at $t=4\\ \\mathrm{s}$: $2-(-6)=8\\ \\mathrm{m}$ (or directly from $v_1 t=2.0\\times4=8\\ \\mathrm{m}$). 1 point: correctly calculates the second object's displacement at $t=4\\ \\mathrm{s}$: $v_2 t=1.0\\times4=4\\ \\mathrm{m}$. 1 point: correctly identifies the first object as farther from its starting position. 1 point: correctly states the difference, $8-4=4\\ \\mathrm{m}$ farther."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-10",
+    "sourceId": "U2-FRQ-10",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V1",
+      "V2",
+      "V3",
+      "V4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The velocity–time graph below shows an object's motion from $t=0\\ \\mathrm{s}$ to $t=8\\ \\mathrm{s}$: a single straight segment from point A $(0\\ \\mathrm{s}, +5.0\\ \\mathrm{m/s})$ to point B $(8\\ \\mathrm{s}, -3.0\\ \\mathrm{m/s})$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Determine the time at which the object's velocity equals zero.",
+        "points": 2,
+        "modelResponse": "1 point: valid method — e.g., writing the line's equation $v(t)=5.0+at$ and solving $v=0$, or an equivalent proportional-reasoning approach. 1 point: correct value, using $a=-1.0\\ \\mathrm{m/s^2}$ (from part b): $0=5.0-1.0t \\Rightarrow t=5.0\\ \\mathrm{s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the object's acceleration.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$. 1 point: correct value, $(-3.0-5.0)/(8-0)=-1.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the object's net displacement over the full 8 s interval.",
+        "points": 3,
+        "modelResponse": "1 point: recognizes the interval must be split at the zero-crossing ($t=5.0\\ \\mathrm{s}$) into two triangular regions of opposite sign. 1 point: correctly computes both signed areas: $t=0$ to $5$: $\\tfrac{1}{2}(5.0)(5.0)=+12.5\\ \\mathrm{m}$; $t=5$ to $8$: $\\tfrac{1}{2}(3)(-3.0)=-4.5\\ \\mathrm{m}$. 1 point: correct total, $12.5+(-4.5)=+8.0\\ \\mathrm{m}$."
+      },
+      {
+        "label": "d",
+        "prompt": "At the instant found in part (a), is the object at rest in the same sense as an object sitting motionless for an extended interval? Explain.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the object is **not** at rest in the same sense — velocity equals zero only instantaneously, at a single moment, not over an extended interval. 1 point: correct reasoning — the object continues to accelerate through $t=5.0\\ \\mathrm{s}$ (constant $-1.0\\ \\mathrm{m/s^2}$, never flattening to zero slope), so it is momentarily at zero velocity while still changing velocity, unlike a genuinely at-rest object whose velocity stays at zero over a span of time."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vt_g1.svg",
+        "caption": "Velocity–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-11",
+    "sourceId": "U2-FRQ-11",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V1",
+      "V3",
+      "V4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "The velocity–time graph below shows a golf cart's motion: constant velocity from A $(0\\ \\mathrm{s}, +4.0\\ \\mathrm{m/s})$ to B $(5\\ \\mathrm{s}, +4.0\\ \\mathrm{m/s})$, then a straight decline to C $(11\\ \\mathrm{s}, -5.0\\ \\mathrm{m/s})$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the cart's velocity during the A-to-B segment, and explain how you can tell from the graph's shape that the velocity is constant during this segment (not just report its value).",
+        "points": 2,
+        "modelResponse": "1 point: correctly states $+4.0\\ \\mathrm{m/s}$. 1 point: correct reasoning — the segment is a horizontal (flat, zero-slope) line, and a zero-slope velocity–time segment means velocity is unchanging over that interval."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cart's acceleration during the B-to-C segment.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$ over the B-to-C segment. 1 point: correct value, $(-5.0-4.0)/(11-5)=-1.5\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the cart's net displacement over the entire 11 s interval.",
+        "points": 4,
+        "modelResponse": "1 point: correctly computes the A-to-B (rectangular) area: $4.0\\times5=+20\\ \\mathrm{m}$. 1 point: correctly computes the B-to-C (trapezoidal, signed) area: $\\tfrac{(4.0+(-5.0))}{2}\\times6=-3.0\\ \\mathrm{m}$. 1 point: correctly combines both with their signs (not magnitudes). 1 point: correct total, $20+(-3.0)=+17.0\\ \\mathrm{m}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vt_g2.svg",
+        "caption": "Velocity–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-12",
+    "sourceId": "U2-FRQ-12",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V3",
+      "V4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The velocity–time graph below shows a robot's motion through five points: A $(0, -4.0)$, B $(4, -4.0)$, C $(8, +6.0)$, D $(12, +6.0)$, E $(16, 0)$, with velocity in m/s and time in s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the time interval during which the robot's acceleration is positive, and justify your choice using the graph's shape.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the B-to-C interval ($t=4$ to $8\\ \\mathrm{s}$). 1 point: correct reasoning — this is the only segment with a positive (upward) slope; A-to-B and C-to-D are flat (zero acceleration), and D-to-E has a negative slope."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the robot's net displacement over the full 16 s interval.",
+        "points": 4,
+        "modelResponse": "1 point: correctly computes the A-to-B area: $-4.0\\times4=-16\\ \\mathrm{m}$. 1 point: correctly computes the B-to-C (trapezoidal) area: $\\tfrac{(-4.0+6.0)}{2}\\times4=+4.0\\ \\mathrm{m}$. 1 point: correctly computes the C-to-D area ($+24\\ \\mathrm{m}$) and D-to-E area ($+12\\ \\mathrm{m}$). 1 point: correct total, $-16+4.0+24+12=+24\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Is the robot's total distance traveled over the 16 s interval equal to the magnitude of the net displacement found in part (b)? Explain your reasoning, identifying by name any segment(s) that affect your answer.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states they are **not** equal. 1 point: correct reasoning — total distance requires taking the *magnitude* of motion at every instant, and any segment whose velocity changes sign contributes distance from both its positive and negative portions separately, which the net signed area cannot capture. 1 point: correctly identifies the B-to-C segment as the one containing a sign change — its velocity runs from $-4.0\\ \\mathrm{m/s}$ to $+6.0\\ \\mathrm{m/s}$, crossing zero partway through, unlike A-to-B, C-to-D, or D-to-E, none of which change sign within the segment itself. (Full credit does not require computing the exact distance value, only identifying that it cannot be read directly from part (b)'s signed total and naming the affected segment.)"
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vt_g4.svg",
+        "caption": "Velocity–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-13",
+    "sourceId": "U2-FRQ-13",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V3",
+      "V4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The velocity–time graph below shows a jet ski's motion through four points: A $(0, -3.0)$, B $(3, +6.0)$, C $(6, +6.0)$, D $(9, -4.0)$, with velocity in m/s and time in s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the jet ski's acceleration during the A-to-B segment.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$ over A-to-B. 1 point: correct value, $(6.0-(-3.0))/(3-0)=+3.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the jet ski's acceleration during the C-to-D segment.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$ over C-to-D. 1 point: correct value, $(-4.0-6.0)/(9-6)=-10/3\\approx-3.33\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the jet ski's net displacement over the full 9 s interval.",
+        "points": 4,
+        "modelResponse": "1 point: correctly computes the A-to-B (trapezoidal, signed) area: $\\tfrac{(-3.0+6.0)}{2}\\times3=+4.5\\ \\mathrm{m}$. 1 point: correctly computes the B-to-C (rectangular) area: $6.0\\times3=+18\\ \\mathrm{m}$. 1 point: correctly computes the C-to-D (trapezoidal, signed) area: $\\tfrac{(6.0+(-4.0))}{2}\\times3=+3.0\\ \\mathrm{m}$. 1 point: correct total, $4.5+18+3.0=+25.5\\ \\mathrm{m}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vt_g5.svg",
+        "caption": "Velocity–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-14",
+    "sourceId": "U2-FRQ-14",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V2",
+      "V3",
+      "V5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A go-kart's velocity is recorded every 2 seconds:\n\n| Time (s) | 0 | 2 | 4 | 6 | 8 |\n|---|---|---|---|---|---|\n| Velocity (m/s) | +6.0 | +6.0 | +6.0 | +2.0 | −2.0 |",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "During which interval(s) shown in the table is the go-kart's velocity constant? Justify your answer using the recorded values.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the $t=0$ to $t=4\\ \\mathrm{s}$ interval as constant. 1 point: correct justification — the recorded velocity is unchanged ($+6.0\\ \\mathrm{m/s}$) across all three readings in that span, whereas the readings at $t=6$ and $t=8\\ \\mathrm{s}$ each differ from their neighbors."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the go-kart's acceleration from $t=4\\ \\mathrm{s}$ to $t=8\\ \\mathrm{s}$, assuming it is constant over that span.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies this as a single interval to treat with one acceleration value ($\\Delta v/\\Delta t$ from $t=4$ to $t=8$). 1 point: correct method, using the endpoint values $+6.0\\ \\mathrm{m/s}$ and $-2.0\\ \\mathrm{m/s}$. 1 point: correct value, $(-2.0-6.0)/(8-4)=-2.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Using the terms \"speeding up\" and \"slowing down,\" describe what the go-kart is doing from $t=4\\ \\mathrm{s}$ to $t=6\\ \\mathrm{s}$, and separately from $t=6\\ \\mathrm{s}$ to $t=8\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "1 point: correctly describes $t=4$ to $6\\ \\mathrm{s}$ as slowing down — velocity decreases from $+6.0$ to $+2.0\\ \\mathrm{m/s}$, i.e. moving in the positive direction with decreasing speed. 1 point: correctly describes $t=6$ to $8\\ \\mathrm{s}$ as speeding up — velocity continues decreasing from $+2.0$ to $-2.0\\ \\mathrm{m/s}$, now moving in the negative direction with increasing speed (speed increases from 0 up to 2.0 m/s in the new direction). 1 point: response correctly distinguishes the two intervals rather than describing the whole $t=4$ to $8\\ \\mathrm{s}$ span with one label — the object's speed is not decreasing the entire time even though velocity decreases the entire time."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-15",
+    "sourceId": "U2-FRQ-15",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V1",
+      "V2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A cyclist's velocity is recorded at four instants:\n\n| Time (s) | 0 | 2 | 4 | 6 |\n|---|---|---|---|---|\n| Velocity (m/s) | +3.0 | +3.0 | −3.0 | −3.0 |",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the two intervals in the table during which the cyclist's velocity is constant.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies $t=0$ to $2\\ \\mathrm{s}$ (velocity unchanged at $+3.0\\ \\mathrm{m/s}$). 1 point: correctly identifies $t=4$ to $6\\ \\mathrm{s}$ (velocity unchanged at $-3.0\\ \\mathrm{m/s}$)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cyclist's acceleration during the $t=2\\ \\mathrm{s}$ to $t=4\\ \\mathrm{s}$ interval.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$. 1 point: correct value, $(-3.0-3.0)/(4-2)=-3.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "The cyclist has the same speed (3.0 m/s) at $t=0\\ \\mathrm{s}$ and at $t=6\\ \\mathrm{s}$. Explain why the cyclist's velocity is not the same at these two instants.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that speed only reports magnitude, while velocity reports both magnitude and direction. 1 point: correctly applies this to the given values — although both instants share the same magnitude (3.0 m/s), the cyclist is moving in opposite directions (positive at $t=0$, negative at $t=6\\ \\mathrm{s}$), so the velocities differ even though the speeds match."
+      }
+    ],
+    "totalPoints": 6
+  },
+  {
+    "id": "BP8-U2-FRQ-16",
+    "sourceId": "U2-FRQ-16",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "Consider any velocity–time graph segment that is a single straight line from an initial velocity $v_i$ to a final velocity $v_f$ over a time interval $T$. Two students propose different methods to find the displacement over this interval.\n\n- **Student 1:** \"I'll multiply the average of $v_i$ and $v_f$ by $T$: displacement $=\\dfrac{v_i+v_f}{2}\\,T$.\"\n- **Student 2:** \"I'll split the region into a rectangle (using $v_i$ for the full time $T$) plus a triangle on top (using the change in velocity): displacement $=v_i T+\\dfrac{1}{2}(v_f-v_i)T$.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Using algebra, show that Student 1's and Student 2's expressions are equivalent.",
+        "points": 4,
+        "modelResponse": "1 point: correctly expands Student 2's expression's triangle term: $\\tfrac{1}{2}(v_f-v_i)T=\\tfrac{1}{2}v_f T-\\tfrac{1}{2}v_i T$. 1 point: correctly combines with the rectangle term: $v_i T+\\tfrac{1}{2}v_f T-\\tfrac{1}{2}v_i T=\\tfrac{1}{2}v_i T+\\tfrac{1}{2}v_f T$. 1 point: correctly factors this as $\\tfrac{1}{2}(v_i+v_f)T$. 1 point: correctly identifies this as identical to Student 1's expression, $\\dfrac{v_i+v_f}{2}T$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using either method, calculate the displacement for a segment with $v_i=+2.0\\ \\mathrm{m/s}$, $v_f=+10.0\\ \\mathrm{m/s}$, and $T=4.0\\ \\mathrm{s}$.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, substituting the given values into either equivalent expression. 1 point: correct value, $\\dfrac{2.0+10.0}{2}\\times4.0=24\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why this equivalence still holds even when $v_i$ and $v_f$ have opposite signs.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the algebraic derivation in part (a) never assumed a sign for $v_i$ or $v_f$ — it holds for any real values substituted in. 1 point: correct physical interpretation — the rectangle/triangle decomposition still represents signed area even when part of the triangle or rectangle lies below the time axis (representing negative velocity), since the algebra tracks signed quantities throughout, not just magnitudes."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-17",
+    "sourceId": "U2-FRQ-17",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "velocity_time_graphs",
+    "sourceOutcomes": [
+      "V2",
+      "V5"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A delivery drone's motion is described as follows: it hovers motionless, then accelerates upward (treat \"upward\" as the positive direction) steadily for 5 s, reaching a top speed. It then cruises at that top speed for 4 s. It then decelerates steadily back to a stop over the next 3 s. Finally, it reverses direction, accelerating steadily downward (negative direction) for 4 s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe, phase by phase, the shape of the velocity–time graph that represents this entire motion (four phases). For each phase, state whether the segment is flat or sloped, and if sloped, whether the slope is positive or negative.",
+        "points": 4,
+        "modelResponse": "1 point: correctly describes phase 1 (hovering) as flat, at zero velocity. 1 point: correctly describes phase 2 (accelerating upward) as sloped with positive slope, rising from zero to the top speed. 1 point: correctly describes phase 3 (cruising) as flat, at the (positive) top-speed value. 1 point: correctly describes phase 4's first part (decelerating to a stop) as sloped with negative slope, falling from the top speed back to zero, and — for full internal consistency — the final reversal-and-downward-acceleration part as continuing with the same negative slope, extending below the time axis."
+      },
+      {
+        "label": "b",
+        "prompt": "Aside from the very start of the motion, is there another moment when the drone's velocity is zero? If so, identify which phase boundary this occurs at, and explain what this particular zero-velocity moment means physically for the drone — is the drone at rest for an extended time at this moment, the way it was at the very start?",
+        "points": 4,
+        "modelResponse": "1 point: correctly states there is another zero-velocity moment. 1 point: correctly identifies it as occurring at the boundary between the deceleration segment and the reversal segment (the instant the drone finishes slowing to a stop, just before it begins moving downward). 1 point: correctly explains that, unlike the initial hovering phase, this is only an instantaneous zero — the velocity continues changing (the slope does not flatten to zero at this instant), so the drone does not pause at rest here. 1 point: response explicitly contrasts this instant with the sustained, flat-segment zero velocity of the initial hovering phase, showing the two \"zero velocity\" moments are physically different even though both read as $v=0$ on the graph."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-18",
+    "sourceId": "U2-FRQ-18",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A1",
+      "A2",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "The acceleration–time graph below shows a single flat segment at $+3.0\\ \\mathrm{m/s^2}$ from $t=0\\ \\mathrm{s}$ to $t=6\\ \\mathrm{s}$, for a cyclist starting from an initial velocity of $+1.0\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the cyclist's acceleration at $t=2\\ \\mathrm{s}$ and at $t=5\\ \\mathrm{s}$. Is the cyclist's acceleration changing over this interval?",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the acceleration is $+3.0\\ \\mathrm{m/s^2}$ at both times (the segment is flat for the entire interval). 1 point: correctly states the acceleration is **not** changing — it is constant throughout the shown interval."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cyclist's change in velocity, $\\Delta v$, over the full 6 s interval.",
+        "points": 2,
+        "modelResponse": "1 point: correct method — the area under the flat segment (a rectangle). 1 point: correct value, $3.0\\times6=+18\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the cyclist's final velocity at $t=6\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the final velocity requires adding $\\Delta v$ to the given initial velocity. 1 point: correct method, $v_f=v_0+\\Delta v$. 1 point: correct value, $1.0+18=+19\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 7,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_at_g1.svg",
+        "caption": "Acceleration–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-19",
+    "sourceId": "U2-FRQ-19",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A2",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The acceleration–time graph below shows a delivery cart's motion: $+4.0\\ \\mathrm{m/s^2}$ from $t=0\\ \\mathrm{s}$ to $t=3\\ \\mathrm{s}$, then $-3.0\\ \\mathrm{m/s^2}$ from $t=3\\ \\mathrm{s}$ to $t=8\\ \\mathrm{s}$. The cart's initial velocity is $+5.0\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the cart's velocity at $t=3\\ \\mathrm{s}$, the moment the acceleration changes.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, using the first segment's area ($\\Delta v_1=a_1\\times\\Delta t_1$). 1 point: correct value, $\\Delta v_1=4.0\\times3=+12\\ \\mathrm{m/s}$. 1 point: correctly adds to the initial velocity, $v_3=5.0+12=+17\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cart's velocity at $t=8\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, using the second segment's area ($\\Delta v_2=a_2\\times\\Delta t_2$). 1 point: correct value, $\\Delta v_2=-3.0\\times5=-15\\ \\mathrm{m/s}$. 1 point: correctly combines with $v_3$, $v_8=17+(-15)=+2.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student claims: \"Since the acceleration is negative from $t=3$ to $8\\ \\mathrm{s}$, the cart must be slowing down for that entire interval.\" Using your answers from (a) and (b), evaluate whether this claim is fully correct.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the claim is **not** fully correct. 1 point: correct supporting reasoning — negative acceleration means velocity is *decreasing*, which is true throughout $t=3$ to $8\\ \\mathrm{s}$ (from $+17$ down to $+2.0\\ \\mathrm{m/s}$). 1 point: correctly notes that \"slowing down\" (losing speed) is only accurate as long as velocity stays positive — since $v_8=+2.0\\ \\mathrm{m/s}$ is still positive (never reaching or crossing zero within this interval), the cart is indeed losing speed for the *entire* shown interval in this specific case. 1 point: response correctly identifies that this conclusion depends on the specific numbers — had the velocity crossed zero before $t=8\\ \\mathrm{s}$, the cart would have started speeding up again (in the negative direction) after that crossing, so \"slowing down for the entire interval\" is not a claim that follows from the acceleration's sign alone, only from checking the actual velocity values as done in (a)–(b)."
+      }
+    ],
+    "totalPoints": 10,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_at_g2.svg",
+        "caption": "Acceleration–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-20",
+    "sourceId": "U2-FRQ-20",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A2",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The acceleration–time graph below shows a drone's motion in three phases: $+2.0\\ \\mathrm{m/s^2}$ from $t=0$ to $4\\ \\mathrm{s}$, $-3.0\\ \\mathrm{m/s^2}$ from $t=4$ to $7\\ \\mathrm{s}$, and $+1.0\\ \\mathrm{m/s^2}$ from $t=7$ to $12\\ \\mathrm{s}$. The drone's initial velocity is $-6.0\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the drone's velocity at $t=4\\ \\mathrm{s}$, $t=7\\ \\mathrm{s}$, and $t=12\\ \\mathrm{s}$. Show your work for each.",
+        "points": 6,
+        "modelResponse": "1 point: correct method for phase 1 ($\\Delta v_1=a_1\\Delta t_1$). 1 point: correct value, $v_4=-6.0+(2.0)(4)=+2.0\\ \\mathrm{m/s}$. 1 point: correct method and value for phase 2, $v_7=v_4+(-3.0)(3)=2.0-9.0=-7.0\\ \\mathrm{m/s}$. 1 point: correct method and value for phase 3, $v_{12}=v_7+(1.0)(5)=-7.0+5.0=-2.0\\ \\mathrm{m/s}$. 1 point: all three running values are correctly chained in sequence (each phase's starting velocity is the previous phase's ending velocity, not the original initial velocity restated each time). 1 point: final answer $v_{12}=-2.0\\ \\mathrm{m/s}$ correctly stated as the drone's overall final velocity."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify every time interval (if any) during which the drone is speeding up while moving in the negative direction.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies that \"speeding up in the negative direction\" requires velocity to be negative *and* becoming more negative (both conditions at once). 1 point: correctly checks phase 2 ($t=4$ to $7\\ \\mathrm{s}$) — velocity runs from $+2.0$ to $-7.0\\ \\mathrm{m/s}$; this phase is negative acceleration but velocity is only negative for part of it (after crossing zero), so only that portion qualifies. 1 point: correctly identifies that the drone crosses from positive to negative velocity partway through phase 2 (since $v_4=+2.0$ and $v_7=-7.0$), meaning it is genuinely speeding up in the negative direction only from that zero-crossing point onward to $t=7\\ \\mathrm{s}$, not for the full $t=4$ to $7\\ \\mathrm{s}$ span. 1 point: correctly rules out phase 3 ($t=7$ to $12\\ \\mathrm{s}$) — acceleration is positive there, so a negative velocity ($-7.0\\ \\mathrm{m/s}$ at $t=7$) is becoming *less* negative (moving toward zero, reaching $-2.0\\ \\mathrm{m/s}$), meaning the drone is slowing down in the negative direction, not speeding up, during phase 3."
+      }
+    ],
+    "totalPoints": 10,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_at_g5.svg",
+        "caption": "Acceleration–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-21",
+    "sourceId": "U2-FRQ-21",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A3",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The acceleration–time graph below shows a robot's motion in four phases: flat at $0\\ \\mathrm{m/s^2}$ from $t=0$ to $2\\ \\mathrm{s}$, $+5.0\\ \\mathrm{m/s^2}$ from $t=2$ to $5\\ \\mathrm{s}$, flat at $0\\ \\mathrm{m/s^2}$ from $t=5$ to $7\\ \\mathrm{s}$, and $-4.0\\ \\mathrm{m/s^2}$ from $t=7$ to $11\\ \\mathrm{s}$. The robot's initial velocity is $+3.0\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Write a verbal description of this robot's motion, phase by phase, using terms like \"constant velocity,\" \"speeding up,\" or \"slowing down\" as appropriate (you do not need any numeric values for this part).",
+        "points": 4,
+        "modelResponse": "1 point: correctly describes phase 1 ($t=0$ to $2\\ \\mathrm{s}$, zero acceleration) as constant velocity. 1 point: correctly describes phase 2 ($t=2$ to $5\\ \\mathrm{s}$, positive acceleration) as speeding up (the robot is already moving positively, so positive acceleration means gaining speed). 1 point: correctly describes phase 3 ($t=5$ to $7\\ \\mathrm{s}$, zero acceleration) as constant velocity again (at a new, higher value than phase 1). 1 point: correctly describes phase 4 ($t=7$ to $11\\ \\mathrm{s}$, negative acceleration) as slowing down, provided the response also correctly reasons that the robot's velocity stays positive throughout this final phase (consistent with part (b)'s result) rather than assuming a reversal."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the robot's velocity at $t=11\\ \\mathrm{s}$, the end of the interval shown.",
+        "points": 5,
+        "modelResponse": "1 point: correctly identifies that phases 1 and 3 (zero acceleration) contribute no change in velocity. 1 point: correct method and value for phase 2, $\\Delta v=5.0\\times3=+15\\ \\mathrm{m/s}$, giving $v_7=3.0+15=+18\\ \\mathrm{m/s}$. 1 point: correct method for phase 4, $\\Delta v=-4.0\\times4=-16\\ \\mathrm{m/s}$. 1 point: correctly chains this onto $v_7$, not the original initial velocity. 1 point: correct final value, $v_{11}=18+(-16)=+2.0\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_at_g4.svg",
+        "caption": "Acceleration–time graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-22",
+    "sourceId": "U2-FRQ-22",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A1",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A rocket sled's velocity changes from $-8.0\\ \\mathrm{m/s}$ to $+22.0\\ \\mathrm{m/s}$ over a 5.0 s interval of constant acceleration.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the rocket sled's acceleration.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta v/\\Delta t$. 1 point: correct $\\Delta v$, $22.0-(-8.0)=30.0\\ \\mathrm{m/s}$. 1 point: correct value, $30.0/5.0=+6.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Is the rocket sled accelerating for the entire 5.0 s interval, including the moment its velocity passes through zero? Justify your answer.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states yes, the sled is accelerating for the entire interval, including at the zero-velocity instant. 1 point: correct reasoning — the acceleration is constant and nonzero throughout; a momentarily zero velocity does not pause or interrupt the acceleration."
+      },
+      {
+        "label": "c",
+        "prompt": "A second rocket sled starts at the same initial velocity ($-8.0\\ \\mathrm{m/s}$) but has a constant acceleration of only half the value you found in part (a). Would this second sled also reach $+22.0\\ \\mathrm{m/s}$ after 5.0 s? Explain, without necessarily calculating its exact final velocity.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the second sled would **not** reach $+22.0\\ \\mathrm{m/s}$ after 5.0 s. 1 point: correct reasoning — since $\\Delta v=a\\Delta t$ and $\\Delta t$ is unchanged, halving the acceleration halves the resulting $\\Delta v$, producing a smaller final velocity. 1 point: response correctly avoids computing (or does not need) the exact final value to support this conclusion, reasoning instead from the direct proportionality between acceleration and $\\Delta v$ for a fixed time interval."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-23",
+    "sourceId": "U2-FRQ-23",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A2",
+      "A3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A description reads: \"A submarine descends, its downward speed increasing steadily for the first 20 s. It then continues downward at a fixed constant speed for the next 15 s. Finally, it steadily reduces its downward speed to zero over the last 10 s, coming to a stop.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe the shape of the acceleration–time graph that represents this motion, phase by phase (three phases). For each phase, state whether the segment would be flat and, if so, at what kind of value (zero, or nonzero and of which general sign, given \"downward\" as the positive direction for this scenario).",
+        "points": 4,
+        "modelResponse": "1 point: correctly describes phase 1 (0–20 s, speeding up downward) as a flat segment at a positive (nonzero) value. 1 point: correctly describes phase 2 (20–35 s, constant speed) as a flat segment at zero. 1 point: correctly describes phase 3 (35–45 s, slowing to a stop) as a flat segment at a negative (nonzero) value. 1 point: response correctly identifies all three segments as flat (not sloped), consistent with each phase being described as \"steady\" or \"fixed,\" which corresponds to constant acceleration within each phase."
+      },
+      {
+        "label": "b",
+        "prompt": "Which of the three phases has the largest-magnitude acceleration value, or is there not enough information given to determine this? Explain.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states there is not enough information given to determine this. 1 point: correct reasoning — the description gives elapsed times and qualitative behavior (\"steadily,\" \"fixed\") for each phase, but no actual speed values, so the magnitude of $\\Delta v$ (and therefore of $a=\\Delta v/\\Delta t$) cannot be computed or compared for any phase. 1 point: response does not attempt to guess or rank the phases numerically without a value-based justification, correctly treating \"steadily\" as only describing constancy within a phase, not a specific rate."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-24",
+    "sourceId": "U2-FRQ-24",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "acceleration_time_graphs",
+    "sourceOutcomes": [
+      "A1",
+      "A2",
+      "A4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "graph",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A physics student is given this acceleration–time description: an object has a constant acceleration of $-5.0\\ \\mathrm{m/s^2}$ for the entire 10 s interval shown, with an initial velocity of $+20.0\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the object's velocity at $t=4\\ \\mathrm{s}$, $t=8\\ \\mathrm{s}$, and $t=10\\ \\mathrm{s}$.",
+        "points": 4,
+        "modelResponse": "1 point: correct method, $v=v_0+at$, applied consistently. 1 point: correct value at $t=4\\ \\mathrm{s}$: $20.0+(-5.0)(4)=0\\ \\mathrm{m/s}$. 1 point: correct value at $t=8\\ \\mathrm{s}$: $20.0+(-5.0)(8)=-20.0\\ \\mathrm{m/s}$. 1 point: correct value at $t=10\\ \\mathrm{s}$: $20.0+(-5.0)(10)=-30.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "At what time does the object's velocity equal zero?",
+        "points": 2,
+        "modelResponse": "1 point: correct method, solving $0=20.0-5.0t$. 1 point: correct value, $t=4.0\\ \\mathrm{s}$ (consistent with the part (a) result)."
+      },
+      {
+        "label": "c",
+        "prompt": "A student argues: \"Since the acceleration is a single constant negative value for the whole 10 s, the object must be slowing down for the entire interval.\" Using your results from (a) and (b), explain whether this is correct.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the claim is **not** fully correct. 1 point: correct reasoning — from $t=0$ to $4\\ \\mathrm{s}$, velocity decreases from $+20.0$ toward $0\\ \\mathrm{m/s}$, so the object genuinely is slowing down (losing speed) during that portion. 1 point: correct reasoning for the rest — after $t=4\\ \\mathrm{s}$, velocity continues decreasing but is now becoming increasingly *negative* (from $0$ to $-30.0\\ \\mathrm{m/s}$), meaning the object is speeding up in the negative direction, not slowing down, for the remainder of the interval — a single constant negative acceleration does not correspond to \"slowing down\" the whole time once the object's direction of motion reverses."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-25",
+    "sourceId": "U2-FRQ-25",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "V6",
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A rescue vehicle starts from rest and accelerates at a constant $3.5\\ \\mathrm{m/s^2}$ for 8.0 s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the vehicle's final velocity.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$. 1 point: correct value, $0+(3.5)(8.0)=+28\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the vehicle's displacement over this interval.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$. 1 point: correctly substitutes $v_i=0$, simplifying to $\\tfrac12 at^2$. 1 point: correct value, $\\tfrac12(3.5)(8.0)^2=\\tfrac12(3.5)(64)=+112\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State which equation you used for each part, and why it was the appropriate choice given what was known and unknown in each case.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies Eq. 1 for part (a), since $v_i$, $a$, $t$ were known and $v_f$ was the unknown. 1 point: correctly identifies Eq. 2 for part (b), since $v_i$, $a$, $t$ were known (not $v_f$) and $\\Delta x$ was the unknown."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-26",
+    "sourceId": "U2-FRQ-26",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "A5",
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A train traveling at $+24.0\\ \\mathrm{m/s}$ begins braking with a constant acceleration of $-1.5\\ \\mathrm{m/s^2}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate how long it takes the train to come to a complete stop.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, solved for $t$. 1 point: correct setup, $0=24.0+(-1.5)t$. 1 point: correct value, $t=24.0/1.5=16.0\\ \\mathrm{s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the train's displacement during this braking interval.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$ (or an equivalent valid equation, such as Eq. 3 or Eq. 4). 1 point: correct substitution using the result from (a). 1 point: correct value, $(24.0)(16.0)+\\tfrac12(-1.5)(16.0)^2=384-192=+192\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "If the train's acceleration had instead been $-3.0\\ \\mathrm{m/s^2}$ (twice as large in magnitude), would the stopping displacement also simply double? Justify your answer using the structure of the equation you used in part (b), without recalculating a full numeric answer.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the displacement would **not** simply double (it would be smaller than half the original, not double). 1 point: correct reasoning — using $v_f^2=v_i^2+2a\\Delta x$ with $v_f=0$, $\\Delta x=-v_i^2/(2a)$, so $\\Delta x$ is *inversely* proportional to the magnitude of $a$; doubling $|a|$ halves $\\Delta x$, it does not double it. 1 point: response correctly identifies this as an inverse relationship, contrasting it with a potential assumption that displacement scales the same direction as acceleration magnitude."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-27",
+    "sourceId": "U2-FRQ-27",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "V6",
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "An arrow is released from rest and accelerates over the length of a bow's draw, a displacement of $6.4\\ \\mathrm{m}$, under a constant acceleration of $5.0\\ \\mathrm{m/s^2}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the arrow's velocity at the end of the draw (when it leaves the bow).",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f^2=v_i^2+2a\\Delta x$. 1 point: correct substitution, $v_f^2=0+2(5.0)(6.4)=64$. 1 point: correct value (positive root, consistent with speeding up from rest), $v_f=\\sqrt{64}=+8.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using your result from part (a), calculate how long the draw took.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, solved for $t$. 1 point: correct substitution, $8.0=0+(5.0)t$. 1 point: correct value, $t=1.6\\ \\mathrm{s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why Eq. 3 ($v_f^2=v_i^2+2a\\Delta x$) was a more direct choice for part (a) than first solving for time and then using Eq. 1.",
+        "points": 2,
+        "modelResponse": "1 point: correctly notes that time was not given or needed to find $v_f$ directly — Eq. 3 uses only $v_i$, $a$, and $\\Delta x$, all of which were already known. 1 point: correctly notes that finding time first (which would require a different equation, such as Eq. 2) and then using Eq. 1 would be an unnecessary extra step, since $v_f$ can be found directly without ever solving for $t$ first."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-28",
+    "sourceId": "U2-FRQ-28",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "Two vehicles start moving at the same instant and travel for 6.0 s under constant acceleration. Vehicle A starts from rest with an acceleration of $+4.0\\ \\mathrm{m/s^2}$. Vehicle B starts at $+5.0\\ \\mathrm{m/s}$ with an acceleration of $+2.5\\ \\mathrm{m/s^2}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate Vehicle A's displacement after 6.0 s.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\Delta x=\\tfrac12 at^2$ (since $v_i=0$). 1 point: correct value, $\\tfrac12(4.0)(6.0)^2=+72\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate Vehicle B's displacement after 6.0 s.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$. 1 point: correct substitution, $(5.0)(6.0)+\\tfrac12(2.5)(6.0)^2=30+45$. 1 point: correct value, $+75\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Which vehicle has traveled farther after 6.0 s, and by how much?",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies Vehicle B as having traveled farther. 1 point: correct difference, $75-72=3.0\\ \\mathrm{m}$ farther."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-29",
+    "sourceId": "U2-FRQ-29",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "A5",
+      "V6"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A skater decelerates from $+12.0\\ \\mathrm{m/s}$ to a complete stop over a displacement of $48\\ \\mathrm{m}$, under constant acceleration.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the skater's acceleration.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f^2=v_i^2+2a\\Delta x$, solved for $a$. 1 point: correct substitution, $0=(12.0)^2+2a(48)$. 1 point: correct value, $a=-144/96=-1.5\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using your result from part (a), calculate how long the skater took to stop.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, solved for $t$, using the value from (a). 1 point: correct substitution, $0=12.0+(-1.5)t$. 1 point: correct value, $t=8.0\\ \\mathrm{s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A classmate instead tries to solve for the elapsed time using $\\Delta x=v_i t+\\tfrac12 at^2$, without first finding the acceleration. Is this possible using only the values given in the problem ($v_i$, $v_f$, and $\\Delta x$)? Explain.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states this is **not** possible directly using only $v_i$, $v_f$, and $\\Delta x$. 1 point: correct reasoning — Eq. 2 ($\\Delta x=v_i t+\\tfrac12 at^2$) contains $a$ as a variable, and $a$ is not among the three given knowns in this framing, so the equation cannot be applied as written without first finding $a$ (or a different equation, such as Eq. 4, which does use only $v_i$, $v_f$, $t$, and $\\Delta x$). 1 point: correctly notes that Eq. 4, $\\Delta x=\\tfrac12(v_i+v_f)t$, would be the more direct choice for finding $t$ from exactly these three knowns, since it does not require $a$ at all."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-30",
+    "sourceId": "U2-FRQ-30",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "A5",
+      "P5",
+      "V6"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A student is solving a kinematics problem involving a car whose driver presses the gas pedal down at a gradually increasing rate for 10 s — meaning the car's acceleration itself is not constant during this time, but is steadily increasing throughout the interval.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain why none of the four constant-acceleration equations in this unit's equation set can be applied directly to the car's motion over the full 10 s interval as described.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the equation set requires a genuinely constant acceleration over the interval being analyzed. 1 point: correctly notes that the described 10 s interval has continuously changing (increasing) acceleration, violating this requirement. 1 point: correctly avoids the misconception that \"any kinematics equation applies to any motion\" — explicitly states that applying these equations here (e.g., using some single acceleration value) would not correctly describe the actual motion during this interval."
+      },
+      {
+        "label": "b",
+        "prompt": "A different phase of the same trip has the driver holding the gas pedal at one fixed position for a separate 6 s interval, producing a genuinely constant acceleration of $+2.0\\ \\mathrm{m/s^2}$, starting at $+8.0\\ \\mathrm{m/s}$. Calculate the car's displacement during this second, separate interval.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$ (or an equivalent valid equation). 1 point: correct substitution, $(8.0)(6.0)+\\tfrac12(2.0)(6.0)^2=48+36$. 1 point: correct value, $+84\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the equation set could be validly applied to the interval in part (b) even though it could not be applied to the interval in part (a), despite both being part of the same overall trip.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states that the second interval is described as having one single, fixed acceleration value for its entire duration — genuinely satisfying the constant-acceleration requirement. 1 point: correctly contrasts this with part (a)'s interval, where the acceleration value itself changes throughout — the equation set's validity depends on the behavior of acceleration *within the specific interval chosen*, not on the trip as a whole; different phases of one trip can be validly analyzed separately even if the whole trip together could not be."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-31",
+    "sourceId": "U2-FRQ-31",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "V6",
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A cart starts at $+3.0\\ \\mathrm{m/s}$ and experiences a constant acceleration of $+6.0\\ \\mathrm{m/s^2}$ for 4.0 s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the cart's final velocity.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$. 1 point: correct value, $3.0+(6.0)(4.0)=+27\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the cart's displacement over this interval.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$. 1 point: correct substitution, $(3.0)(4.0)+\\tfrac12(6.0)(4.0)^2=12+48$. 1 point: correct value, $+60\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Use Eq. 3 ($v_f^2=v_i^2+2a\\Delta x$) together with your displacement from part (b) to independently verify your final velocity from part (a). Show that the two methods agree.",
+        "points": 4,
+        "modelResponse": "1 point: correct method, substituting $v_i=3.0$, $a=6.0$, and $\\Delta x=60$ (from part b) into Eq. 3. 1 point: correct substitution, $v_f^2=(3.0)^2+2(6.0)(60)=9+720=729$. 1 point: correct value, $v_f=\\sqrt{729}=27\\ \\mathrm{m/s}$ (positive root, consistent with a speeding-up object moving positively). 1 point: explicitly states this matches the part (a) result, confirming the two methods agree."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-32",
+    "sourceId": "U2-FRQ-32",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "equations",
+    "sourceOutcomes": [
+      "P5",
+      "V6"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A ball is rolled up a gentle incline with an initial velocity of $+8.0\\ \\mathrm{m/s}$ (up the incline, taken as positive) and experiences a constant acceleration of $-2.0\\ \\mathrm{m/s^2}$ (directed down the incline) for 10.0 s.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the ball's velocity at $t=10.0\\ \\mathrm{s}$. What does the sign of this result tell you about the ball's direction of motion at that time?",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$. 1 point: correct value, $8.0+(-2.0)(10.0)=-12.0\\ \\mathrm{m/s}$. 1 point: correctly interprets the negative sign as meaning the ball is moving down the incline (the negative direction) at $t=10.0\\ \\mathrm{s}$, having reversed direction at some point during the interval."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the ball's net displacement over the full 10.0 s interval.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$ (or an equivalent valid equation). 1 point: correct substitution, $(8.0)(10.0)+\\tfrac12(-2.0)(10.0)^2=80-100$. 1 point: correct value, $-20\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "The ball's final velocity (part a) is negative, and its net displacement (part b) is also negative. A student claims this must be a calculation error, since \"the ball spent part of its time moving up the incline (a positive direction), so at least one of these two results should have come out positive.\" Evaluate this claim.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the claim is incorrect — there is no calculation error. 1 point: correct reasoning — both a negative final velocity and a negative net displacement are fully consistent with a ball that rolls up, reverses, and rolls back down far enough (and long enough past its starting point) that its net motion over the whole interval ends up displaced in the negative direction, even though part of the interval involved positive-direction motion. 1 point: response correctly distinguishes *net* displacement (a single value summarizing the whole interval) from the ball's momentary position or direction at any one instant during the interval — the sign of a net quantity does not require every instant within the interval to share that same sign."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-33",
+    "sourceId": "U2-FRQ-33",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "V6",
+      "P5",
+      "A1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is dropped from rest from the roof of a building.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the ball's acceleration while falling, using the up-is-positive convention.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states $-9.8\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the ball's velocity after falling for 3.0 s.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, with $v_i=0$. 1 point: correct value, $(-9.8)(3.0)=-29.4\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the ball's displacement (relative to its starting point) after falling for 3.0 s.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=\\tfrac12 at^2$ (since $v_i=0$). 1 point: correct substitution, $\\tfrac12(-9.8)(3.0)^2$. 1 point: correct value, $-44.1\\ \\mathrm{m}$."
+      },
+      {
+        "label": "d",
+        "prompt": "Is the ball's acceleration different at $t=1.0\\ \\mathrm{s}$ compared to $t=3.0\\ \\mathrm{s}$?",
+        "points": 1,
+        "modelResponse": "1 point: correctly states no — the acceleration is the same constant value at every instant during free fall."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-34",
+    "sourceId": "U2-FRQ-34",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "P5",
+      "V6",
+      "A5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is dropped from rest from a height of $122.5\\ \\mathrm{m}$ above the ground.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate how long it takes the ball to hit the ground.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\Delta x=\\tfrac12 at^2$, with $v_i=0$ and $\\Delta x=-122.5\\ \\mathrm{m}$. 1 point: correct setup, $-122.5=\\tfrac12(-9.8)t^2 \\Rightarrow t^2=25$. 1 point: correct value, $t=5.0\\ \\mathrm{s}$ (positive root)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the ball's velocity the instant it hits the ground.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, using the time from (a). 1 point: correct substitution, $0+(-9.8)(5.0)$. 1 point: correct value, $-49.0\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second, more massive ball is dropped from the same height at the same instant. Does it hit the ground at a different time, in this unit's idealized free-fall model? Explain.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states no, it lands at the same time. 1 point: correct reasoning — in this idealized model, free-fall acceleration is independent of mass, so two objects dropped from the same height at the same instant fall identically and land simultaneously."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-35",
+    "sourceId": "U2-FRQ-35",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "V6",
+      "P5",
+      "A1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "numerical",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is thrown straight up with an initial velocity of $+19.6\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate how long it takes the ball to reach its highest point.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $t=(v_f-v_i)/a$ with $v_f=0$. 1 point: correct value, $t=19.6/9.8=2.0\\ \\mathrm{s}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the maximum height the ball reaches above the launch point.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f^2=v_i^2+2a\\Delta x$ with $v_f=0$ (or an equivalent valid approach). 1 point: correct substitution, $0=(19.6)^2+2(-9.8)\\Delta x$. 1 point: correct value, $\\Delta x=+19.6\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the ball's acceleration at the instant it reaches this highest point, and explain why this value does not equal zero even though the velocity does.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the acceleration remains $-9.8\\ \\mathrm{m/s^2}$ at that instant. 1 point: correct reasoning — velocity and acceleration are independent quantities; gravity continues acting throughout the flight without pause, so a momentarily zero velocity does not require a zero acceleration."
+      },
+      {
+        "label": "d",
+        "prompt": "Calculate the ball's velocity at $t=3.0\\ \\mathrm{s}$, and state whether the ball is above or below its highest point at that time.",
+        "points": 2,
+        "modelResponse": "1 point: correct value, $v_f=19.6+(-9.8)(3.0)=-9.8\\ \\mathrm{m/s}$. 1 point: correctly states the ball is below its highest point at $t=3.0\\ \\mathrm{s}$ (it reached the highest point at $t=2.0\\ \\mathrm{s}$ and has been descending since, now moving downward)."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-36",
+    "sourceId": "U2-FRQ-36",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "P5",
+      "V6",
+      "A1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is thrown straight up with an initial velocity of $+24.5\\ \\mathrm{m/s}$, reaching its highest point at $t=2.5\\ \\mathrm{s}$, with a maximum height of $30.625\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the ball's velocity and displacement (relative to the launch point) at $t=1.0\\ \\mathrm{s}$.",
+        "points": 4,
+        "modelResponse": "1 point: correct method for velocity, $v_f=v_i+at$. 1 point: correct value, $24.5+(-9.8)(1.0)=+14.7\\ \\mathrm{m/s}$. 1 point: correct method for displacement, $\\Delta x=v_i t+\\tfrac12 at^2$. 1 point: correct value, $(24.5)(1.0)+\\tfrac12(-9.8)(1.0)^2=24.5-4.9=+19.6\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Without recalculating from scratch, use the symmetry of this motion to state the ball's velocity and displacement at $t=4.0\\ \\mathrm{s}$ (which is exactly 1.5 s past the highest point, the same amount of time before the highest point as $t=1.0\\ \\mathrm{s}$). Explain your reasoning.",
+        "points": 4,
+        "modelResponse": "1 point: correctly recognizes that $t=4.0\\ \\mathrm{s}$ is as far past the highest point ($t=2.5\\ \\mathrm{s}$) as $t=1.0\\ \\mathrm{s}$ is before it (1.5 s in each direction). 1 point: correctly states the displacement at $t=4.0\\ \\mathrm{s}$ equals the displacement at $t=1.0\\ \\mathrm{s}$ (both $+19.6\\ \\mathrm{m}$), since the motion is symmetric about the highest point in height. 1 point: correctly states the velocity at $t=4.0\\ \\mathrm{s}$ has the same magnitude as at $t=1.0\\ \\mathrm{s}$ but opposite sign, i.e., $-14.7\\ \\mathrm{m/s}$. 1 point: correct reasoning — the constant acceleration produces a velocity that decreases at a steady, symmetric rate on either side of the peak, so equal time-distances from the peak correspond to equal-magnitude, opposite-sign velocities and equal heights."
+      },
+      {
+        "label": "c",
+        "prompt": "At what time does the ball return to its exact launch height?",
+        "points": 2,
+        "modelResponse": "1 point: correct method — twice the time to the highest point. 1 point: correct value, $t=2\\times2.5=5.0\\ \\mathrm{s}$."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U2-FRQ-37",
+    "sourceId": "U2-FRQ-37",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "A1",
+      "V6",
+      "P5"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "numerical",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A ball is thrown straight up with an initial velocity of $+29.4\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the time to reach the highest point and the maximum height reached.",
+        "points": 4,
+        "modelResponse": "1 point: correct method, $t=v_i/|a|$. 1 point: correct value, $t=29.4/9.8=3.0\\ \\mathrm{s}$. 1 point: correct method for height, $h=v_i^2/(2|a|)$ (or an equivalent valid approach). 1 point: correct value, $h=(29.4)^2/(2\\times9.8)=44.1\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A student claims: \"Right at the highest point, the ball briefly has zero acceleration, because it has zero velocity there — so it should hover for a tiny moment before falling.\" Write a complete rebuttal to this claim, referencing what actually happens to the ball's acceleration and velocity at and immediately around that instant.",
+        "points": 5,
+        "modelResponse": "1 point: correctly states the claim is false. 1 point: correctly states the acceleration remains $-9.8\\ \\mathrm{m/s^2}$ at and around the highest point — it never becomes zero. 1 point: correctly explains that velocity and acceleration are independent quantities — a zero velocity at one instant does not require a zero acceleration at that same instant. 1 point: correctly explains that since acceleration is continuously nonzero through this instant, the velocity is continuously changing through it too — it passes through zero rather than pausing there, so there is no \"hover.\" 1 point: response is complete and internally consistent, correctly tying together the acceleration value, the absence of a pause, and the immediate resumption of motion (now downward) right after the peak."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-38",
+    "sourceId": "U2-FRQ-38",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "P5",
+      "V6",
+      "A5"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is thrown straight down from the edge of a cliff with an initial velocity of $-9.8\\ \\mathrm{m/s}$. The ball lands after falling a total displacement of $-39.2\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate how long the ball was in the air.",
+        "points": 4,
+        "modelResponse": "1 point: correct method, $\\Delta x=v_i t+\\tfrac12 at^2$, set equal to $-39.2$. 1 point: correct setup, $-39.2=-9.8t-4.9t^2$, rearranged to $t^2+2t-8=0$. 1 point: correct factoring or use of the quadratic formula, identifying roots $t=2.0\\ \\mathrm{s}$ and $t=-4.0\\ \\mathrm{s}$. 1 point: correctly selects the positive root, $t=2.0\\ \\mathrm{s}$, rejecting the negative root as not physically meaningful for elapsed time."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the ball's velocity the instant it lands.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, using the time from (a). 1 point: correct substitution, $-9.8+(-9.8)(2.0)$. 1 point: correct value, $-29.4\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second ball is dropped from rest (not thrown) from the same cliff. Would it take a longer, shorter, or the same amount of time to fall the same $39.2\\ \\mathrm{m}$ as the first ball? Explain without necessarily computing the exact new time.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the dropped ball would take *longer*. 1 point: correct reasoning — the thrown ball already has a nonzero downward initial velocity, so it covers the same 39.2 m distance faster than a ball starting from rest, which must build up speed from zero throughout the entire fall."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-39",
+    "sourceId": "U2-FRQ-39",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "A1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "numerical",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "Two balls of very different mass — one a small pebble, one a heavy shot-put ball — are dropped from rest from the same height at the same instant, in this unit's idealized free-fall model (negligible air resistance).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State whether the two balls land at the same time or at different times, and explain why, referencing what determines free-fall acceleration in this idealized model.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states they land at the same time. 1 point: correctly states that free-fall acceleration in this idealized model is the same constant value ($9.8\\ \\mathrm{m/s^2}$) for every object. 1 point: correctly notes this value is independent of mass, so both balls speed up identically throughout the fall."
+      },
+      {
+        "label": "b",
+        "prompt": "A student argues: \"The heavier ball must speed up faster, since gravity pulls harder on more massive objects.\" Identify the specific flaw in this reasoning — a heavier object does experience a larger gravitational pull, but explain why this does not by itself lead to a faster acceleration in this idealized model.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies the claim's conclusion (faster acceleration for heavier objects) as false in this idealized model. 1 point: correctly acknowledges the premise's partial truth — a more massive object does experience a proportionally larger gravitational force. 1 point: correctly explains that a more massive object also has proportionally more inertia (resistance to acceleration), and these two effects — larger force, larger inertia — scale together and exactly cancel, leaving the resulting acceleration unchanged by mass. 1 point: response correctly avoids simply restating \"heavier objects don't fall faster\" without addressing *why* — full credit requires engaging with the force-versus-inertia reasoning, not just asserting the correct conclusion."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-40",
+    "sourceId": "U2-FRQ-40",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "V1",
+      "V4",
+      "A1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "numerical",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The velocity–time graph below shows a ball thrown straight up, from $t=0\\ \\mathrm{s}$ (point A) to $t=4\\ \\mathrm{s}$ (point B).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Read the ball's initial and final velocity directly from the graph.",
+        "points": 2,
+        "modelResponse": "1 point: correctly reads the initial velocity as $+19.6\\ \\mathrm{m/s}$ (point A). 1 point: correctly reads the final velocity as $-19.6\\ \\mathrm{m/s}$ (point B)."
+      },
+      {
+        "label": "b",
+        "prompt": "At approximately what time does the ball reach its highest point? How can you tell from the graph?",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies $t\\approx2\\ \\mathrm{s}$ as the highest point. 1 point: correct reasoning — this is where the line crosses the time axis (velocity equals zero)."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the ball's net displacement over the full 4 s interval shown, using the graph's shape (not a separate equation).",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies that net displacement equals the signed area under the graph. 1 point: correctly splits the area into two triangular regions: $t=0$ to $2\\ \\mathrm{s}$ (above the axis) and $t=2$ to $4\\ \\mathrm{s}$ (below the axis). 1 point: correctly computes both triangular areas as equal in magnitude (each $\\tfrac12(2)(19.6)=19.6$) but opposite in sign. 1 point: correctly concludes the two areas cancel, giving a net displacement of $0\\ \\mathrm{m}$ — consistent with the ball returning to its launch height at $t=4\\ \\mathrm{s}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_ff_vt_g1.svg",
+        "caption": "Motion graph for this free-fall item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-41",
+    "sourceId": "U2-FRQ-41",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "P1",
+      "P3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "numerical",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A ball is thrown straight up with an initial velocity of $+19.6\\ \\mathrm{m/s}$, reaches a maximum height of $19.6\\ \\mathrm{m}$ above the launch point, and returns to its exact launch height at $t=4.0\\ \\mathrm{s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "What is the ball's net displacement over this 4.0 s interval?",
+        "points": 1,
+        "modelResponse": "1 point: correctly states $0\\ \\mathrm{m}$ (same start and end height)."
+      },
+      {
+        "label": "b",
+        "prompt": "What is the total distance the ball traveled over this same 4.0 s interval?",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the trip as two legs: launch to highest point, then highest point back to launch height. 1 point: correctly computes each leg's length as $19.6\\ \\mathrm{m}$. 1 point: correct total, $19.6+19.6=39.2\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why displacement and distance give two different values here, even though they describe the same physical trip.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states displacement depends only on the starting and ending positions, ignoring the path taken between them. 1 point: correctly states distance accumulates every bit of path length traveled, regardless of direction reversals. 1 point: correctly connects this specifically to the given scenario — because the ball reverses direction partway through (at the highest point) but ends up back at its starting height, the \"there and back\" path length (nonzero) is fundamentally different information from the net starting-to-ending change (zero)."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U2-FRQ-42",
+    "sourceId": "U2-FRQ-42",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "free_fall",
+    "sourceOutcomes": [
+      "A1",
+      "A2",
+      "A4",
+      "V6"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "numerical",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "The acceleration–time graph below shows a ball in free fall (it could be any of the three launch cases — thrown up, thrown down, or dropped) from $t=0\\ \\mathrm{s}$ to $t=4\\ \\mathrm{s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe the shape of this graph, and explain what this shape tells you about how the ball's acceleration behaves throughout its flight.",
+        "points": 3,
+        "modelResponse": "1 point: correctly describes the graph as a single flat (horizontal) line for the entire interval. 1 point: correctly states this means the acceleration is constant — the same value — throughout the entire flight. 1 point: correctly reads the constant value as $-9.8\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Suppose this ball was thrown straight up with an initial velocity of $+19.6\\ \\mathrm{m/s}$ at $t=0\\ \\mathrm{s}$. Using only the value read from this acceleration–time graph (not a separately memorized value of $g$), calculate the ball's velocity at $t=4\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_f=v_i+at$, using $a=-9.8\\ \\mathrm{m/s^2}$ as read from the graph. 1 point: correct substitution, $19.6+(-9.8)(4.0)$. 1 point: correct value, $-19.6\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Does this graph's shape change at all between $t=1.8\\ \\mathrm{s}$ and $t=2.2\\ \\mathrm{s}$ — the interval surrounding the moment (for the scenario in part b) when the ball's velocity is momentarily zero? Explain what this shows about the relationship between velocity and acceleration at that moment.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the graph's shape does **not** change at all over that interval — it remains the same flat line at $-9.8\\ \\mathrm{m/s^2}$. 1 point: correctly states this shows the acceleration is unaffected by the ball's velocity passing through zero during that interval. 1 point: correctly connects this to the broader point that velocity and acceleration are independent quantities — a momentarily zero velocity produces no visible change whatsoever in the acceleration–time graph, directly contradicting the idea that zero velocity implies zero (or changing) acceleration."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_ff_at_g1.svg",
+        "caption": "Motion graph for this free-fall item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-43",
+    "sourceId": "U2-FRQ-43",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a vector of magnitude $50\\ \\mathrm{m/s}$ directed at $37^\\circ$ above the $+x$ axis.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify which side of the right triangle formed by this vector is \"opposite\" the $37^\\circ$ angle, and which is \"adjacent.\"",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the vertical leg as opposite the $37^\\circ$ angle. 1 point: correctly identifies the horizontal leg as adjacent to the $37^\\circ$ angle."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the vector's horizontal ($x$) component.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $v_x=v\\cos\\theta$ (CAH, since the horizontal leg is adjacent). 1 point: correct value, $50\\times0.80=40\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the vector's vertical ($y$) component.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_y=v\\sin\\theta$ (SOH, since the vertical leg is opposite). 1 point: correct substitution, $50\\times0.60$. 1 point: correct value, $30\\ \\mathrm{m/s}$."
+      }
+    ],
+    "totalPoints": 7,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vec_g1.svg",
+        "caption": "Vector diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-44",
+    "sourceId": "U2-FRQ-44",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X3",
+      "X2"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A vector has components $v_x=9\\ \\mathrm{m}$ and $v_y=12\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate this vector's magnitude.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $|v|=\\sqrt{v_x^2+v_y^2}$. 1 point: correct substitution, $\\sqrt{9^2+12^2}=\\sqrt{81+144}$. 1 point: correct value, $\\sqrt{225}=15\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A student says: \"Since $12>9$, the $12\\ \\mathrm{m}$ leg must be the hypotenuse, because the hypotenuse is always the longest side I can see in my sketch.\" Explain what is wrong with this reasoning, and identify which side actually is the hypotenuse in this construction.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the student's reasoning is flawed. 1 point: correct reasoning — the hypotenuse is defined geometrically as the side opposite the right angle, not identified by comparing the visual lengths of the two legs to each other. 1 point: correctly identifies that the vector itself (magnitude $15\\ \\mathrm{m}$, found in part a) is the actual hypotenuse — longer than either individual leg (9 m and 12 m), consistent with the hypotenuse always being the longest side of a right triangle, but that \"longest side\" is determined by calculation, not by comparing the two given legs to each other."
+      },
+      {
+        "label": "c",
+        "prompt": "Using your answer to (a), verify the Pythagorean relationship holds: $v_x^2+v_y^2=|v|^2$.",
+        "points": 2,
+        "modelResponse": "1 point: correct substitution, $9^2+12^2=81+144=225$. 1 point: correctly confirms this equals $15^2=225$, verifying consistency."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-45",
+    "sourceId": "U2-FRQ-45",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X4"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A vector has components $v_x=-9\\ \\mathrm{m}$ and $v_y=12\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Which quadrant does this vector point into?",
+        "points": 1,
+        "modelResponse": "1 point: correctly identifies the second quadrant ($v_x<0$, $v_y>0$)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the reference angle, $\\tan^{-1}(|v_y|/|v_x|)$.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, using the magnitudes of the components. 1 point: correct substitution, $\\tan^{-1}(12/9)$. 1 point: correct value, $\\approx53.1^\\circ$."
+      },
+      {
+        "label": "c",
+        "prompt": "Using your answers to (a) and (b), find this vector's standard-position direction (measured counterclockwise from the $+x$ axis, reported between $0^\\circ$ and $360^\\circ$). Explain the adjustment you applied.",
+        "points": 3,
+        "modelResponse": "1 point: correct method — for a second-quadrant vector, subtract the reference angle from $180^\\circ$. 1 point: correct value, $180^\\circ-53.1^\\circ=126.9^\\circ$. 1 point: correct explanation that this adjustment places the angle in the correct quadrant, since the raw reference angle alone doesn't indicate which quadrant the vector points into."
+      },
+      {
+        "label": "d",
+        "prompt": "A student skips part (a) and simply reports the calculator's raw $\\tan^{-1}(v_y/v_x)$ output as the final answer. Explain what is wrong with this shortcut.",
+        "points": 2,
+        "modelResponse": "1 point: correctly notes that a calculator's inverse tangent function cannot distinguish between a vector and its exact opposite (angles $180^\\circ$ apart share the same tangent ratio), so it does not automatically know which quadrant is intended. 1 point: correctly notes that the component signs must always be checked separately to determine the correct quadrant and apply the appropriate adjustment."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-46",
+    "sourceId": "U2-FRQ-46",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2",
+      "X3",
+      "X4"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a vector with components $v_x=-30\\ \\mathrm{m}$ and $v_y=-40\\ \\mathrm{m}$, pointing into the third quadrant.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the vector's magnitude.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $|v|=\\sqrt{v_x^2+v_y^2}$. 1 point: correct substitution, $\\sqrt{(-30)^2+(-40)^2}=\\sqrt{900+1600}$. 1 point: correct value, $\\sqrt{2500}=50\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the reference angle for this vector.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $\\tan^{-1}(40/30)$. 1 point: correct value, $\\approx53.1^\\circ$."
+      },
+      {
+        "label": "c",
+        "prompt": "Find the vector's standard-position direction ($0^\\circ$–$360^\\circ$), explaining the quadrant adjustment used.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the third quadrant. 1 point: correct method for third-quadrant adjustment, $180^\\circ+$reference angle. 1 point: correct value, $180^\\circ+53.1^\\circ=233.1^\\circ$."
+      },
+      {
+        "label": "d",
+        "prompt": "Express this same direction using a \"reference angle from the nearest axis\" description instead (e.g., \"___° below/above/past the ___ axis\").",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the $-x$ axis (west) as the nearest axis reference for a third-quadrant vector this close to it. 1 point: correctly expresses this as $53.1^\\circ$ below (or \"past,\" toward south from) the $-x$ axis."
+      }
+    ],
+    "totalPoints": 10,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-2/kinematics-bank/u2_mcq_vec_g3.svg",
+        "caption": "Vector diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U2-FRQ-47",
+    "sourceId": "U2-FRQ-47",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A pilot's plane travels $300\\ \\mathrm{km}$ at a bearing of $53^\\circ$ east of north.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain which axis this angle is measured from, and which component (east or north) corresponds to the \"opposite\" side versus the \"adjacent\" side of the resulting right triangle.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the angle as measured from north (the $+y$ axis), not east. 1 point: correctly identifies the eastward (horizontal) component as opposite the given angle. 1 point: correctly identifies the northward (vertical) component as adjacent to the given angle."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the plane's eastward component of displacement.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_{\\text{east}}=v\\sin53^\\circ$ (SOH, since eastward is opposite). 1 point: correct substitution, $300\\times0.80$. 1 point: correct value, $240\\ \\mathrm{km}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the plane's northward component of displacement.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $v_{\\text{north}}=v\\cos53^\\circ$ (CAH, since northward is adjacent). 1 point: correct value, $300\\times0.60=180\\ \\mathrm{km}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U2-FRQ-48",
+    "sourceId": "U2-FRQ-48",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2",
+      "X3"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A vector's horizontal component is $v_x=36\\ \\mathrm{m}$, and it is directed at $37^\\circ$ above the $+x$ axis.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the vector's magnitude.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_x=v\\cos37^\\circ$, solved for $v$. 1 point: correct substitution, $v=36/0.80$. 1 point: correct value, $45\\ \\mathrm{m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using your answer from part (a), calculate the vector's vertical component.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $v_y=v\\sin37^\\circ$, using the magnitude from (a). 1 point: correct substitution, $45\\times0.60$. 1 point: correct value, $27\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second vector has the same magnitude as the one in this problem but is directed at $53^\\circ$ above the $+x$ axis instead of $37^\\circ$. Without recalculating from scratch, state whether this second vector's horizontal component is larger, smaller, or the same as $36\\ \\mathrm{m}$, and explain your reasoning using the behavior of cosine as the angle increases.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the second vector's horizontal component is smaller. 1 point: correct reasoning — cosine decreases as the angle increases (between $0^\\circ$ and $90^\\circ$), so a larger angle from the $+x$ axis produces a smaller horizontal component for the same magnitude. 1 point: response does not require recomputing the exact new value to support this conclusion, correctly reasoning instead from the general behavior of cosine."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-49",
+    "sourceId": "U2-FRQ-49",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2",
+      "X4"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A hiker's displacement is $150\\ \\mathrm{m}$ at $37^\\circ$ west of south.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Sketch (in words) which axis this angle is measured from, and identify the quadrant this displacement points into (treating east as $+x$, north as $+y$).",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the angle as measured from south (the $-y$ axis). 1 point: correctly identifies this as pointing into the third quadrant (both west and south are negative directions). 1 point: response correctly reasons through \"west of south\" as starting from due south and rotating toward west, rather than assuming a default axis."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the signed $x$- and $y$-components of this displacement.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies the westward (horizontal) component as opposite the given angle (since it's measured from the south/vertical axis), so $SOH$ applies: $|v_x|=150\\sin37^\\circ$. 1 point: correct value, $150\\times0.60=90\\ \\mathrm{m}$, negative (west): $v_x=-90\\ \\mathrm{m}$. 1 point: correctly identifies the southward (vertical) component as adjacent, so $CAH$ applies: $|v_y|=150\\cos37^\\circ$. 1 point: correct value, $150\\times0.80=120\\ \\mathrm{m}$, negative (south): $v_y=-120\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Verify your answer to (b) is consistent with the quadrant identified in part (a).",
+        "points": 2,
+        "modelResponse": "1 point: correctly notes both components are negative. 1 point: correctly connects this to the third-quadrant identification from part (a), confirming consistency."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U2-FRQ-50",
+    "sourceId": "U2-FRQ-50",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "kinematics-1d",
+    "unit": "Unit 2: Kinematics",
+    "cluster": "vector_components",
+    "sourceOutcomes": [
+      "X2",
+      "X3",
+      "X4"
+    ],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "vector-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A vector is described as having a magnitude of $29\\ \\mathrm{m}$, with components $v_x=-20\\ \\mathrm{m}$ and $v_y=21\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Verify that these components are consistent with the given magnitude.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\sqrt{v_x^2+v_y^2}$. 1 point: correct substitution, $\\sqrt{(-20)^2+21^2}=\\sqrt{400+441}$. 1 point: correctly confirms $\\sqrt{841}=29\\ \\mathrm{m}$, matching the given magnitude."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate this vector's standard-position direction ($0^\\circ$–$360^\\circ$), showing the reference angle and the quadrant adjustment applied.",
+        "points": 4,
+        "modelResponse": "1 point: correct method for the reference angle, $\\tan^{-1}(21/20)$. 1 point: correct reference angle value, $\\approx46.4^\\circ$. 1 point: correctly identifies the second quadrant ($v_x<0$, $v_y>0$) and the correct adjustment, $180^\\circ-$reference angle. 1 point: correct value, $180^\\circ-46.4^\\circ=133.6^\\circ$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second vector has the same magnitude ($29\\ \\mathrm{m}$) and the same reference angle as this one, but points into the fourth quadrant instead of the second. Without recomputing the reference angle, find this second vector's components and its standard-position direction.",
+        "points": 3,
+        "modelResponse": "1 point: correctly reasons that the same reference angle ($46.4^\\circ$) in the fourth quadrant means $v_x=+20\\ \\mathrm{m}$ (positive, since fourth-quadrant $x$ is positive) and $v_y=-21\\ \\mathrm{m}$ (negative, since fourth-quadrant $y$ is negative). 1 point: correctly applies the fourth-quadrant standard-position adjustment, $360^\\circ-$reference angle. 1 point: correct value, $360^\\circ-46.4^\\circ=313.6^\\circ$."
+      }
+    ],
+    "totalPoints": 10
+  }
+]
