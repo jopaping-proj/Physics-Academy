@@ -12,18 +12,18 @@
 <path d="M60 190H540"/>
 </g>
 <g fill="#111827" font-family="Arial" font-size="13">
-<text x="300" y="290" text-anchor="middle">t (s)</text>
+<text x="300" y="278" text-anchor="middle">t (s)</text>
 <text x="20" y="34">a (m/s&#178;)</text>
 </g>
 <g fill="#111827" font-family="Arial" font-size="12" text-anchor="middle">
-<text x="70" y="278">0</text><text x="180" y="278">2</text><text x="290" y="278">4</text><text x="400" y="278">6</text>
+<text x="70" y="209">0</text><text x="180" y="209">2</text><text x="290" y="209">4</text><text x="400" y="209">6</text>
 </g>
 <g fill="#111827" font-family="Arial" font-size="12" text-anchor="end">
 <text x="62" y="94">+2</text><text x="62" y="194">0</text>
 </g>
 <polyline points="70,90 290,90" fill="none" stroke="#1769aa" stroke-width="4"/>
-<text x="180" y="150" font-family="Arial" font-size="13" font-weight="bold" fill="#1a7f37" text-anchor="middle">area = &#916;v</text>
-<text x="180" y="170" font-family="Arial" font-size="12" fill="#1a7f37" text-anchor="middle">(+2)(4) = +8 m/s</text>
-<text x="330" y="120" font-family="Arial" font-size="13" fill="#111827">then  v_f = v_i + &#916;v</text>
-<text x="330" y="140" font-family="Arial" font-size="12" fill="#5b6675">&#916;v is not the final velocity by itself</text>
+<text x="180" y="135" font-family="Arial" font-size="13" font-weight="bold" fill="#1a7f37" text-anchor="middle">area = &#916;v</text>
+<text x="180" y="155" font-family="Arial" font-size="12" fill="#1a7f37" text-anchor="middle">(+2)(4) = +8 m/s</text>
+<text x="330" y="118" font-family="Arial" font-size="12" fill="#5b6675">&#916;v is a <tspan font-style="italic">change</tspan> in velocity,</text>
+<text x="330" y="134" font-family="Arial" font-size="12" fill="#5b6675">not the final velocity by itself.</text>
 </svg>

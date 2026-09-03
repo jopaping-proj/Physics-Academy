@@ -1,0 +1,421 @@
+{
+  "id": "basis-p8-u3-l1",
+  "slug": "gravity",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Gravity as a force",
+  "lessonTitle": "Gravity",
+  "lessonNumber": "1",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_01_gravity.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Unit 2 — weight $F_g = mg$ near Earth's surface; a force is a push or pull with a direction.",
+    "Reading values in scientific notation and using a scientific calculator (BASIS Physics 8 Unit 1)."
+  ],
+  "majorObjective": "Describe gravity as an always-attractive force directed toward the other object's centre of mass, reason qualitatively about how $F_G$ depends on mass (direct) and distance (inverse-square), and calculate any variable in $F_G = G\\dfrac{m_1 m_2}{r^2}$.",
+  "subObjectives": [
+    "State that every mass attracts every other mass, with the force on each pointing toward the other's centre of mass.",
+    "Predict how $F_G$ changes when a mass is scaled (directly) and when the separation is scaled (inverse-square: $\\times 3$ distance $\\Rightarrow \\times \\tfrac{1}{9}$ force).",
+    "Calculate $F_G$, a mass, or the separation $r$ from $F_G = G\\dfrac{m_1 m_2}{r^2}$ with $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$.",
+    "Distinguish the universal constant $G$ from the local gravitational acceleration $g$."
+  ],
+  "hook": {
+    "prompt": "Two objects float in deep space, far from any star. Which way does the gravitational force on each one point?",
+    "choices": [
+      "Straight down.",
+      "Toward the other object's centre of mass.",
+      "In whatever direction each object is moving.",
+      "There is no gravitational force unless one object is a planet."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Gravity is a **non-contact** force: it acts between objects that are not touching. Near Earth's surface you have used weight $F_g = mg$. This lesson is about gravity in general, between any two masses.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Gravity points toward the other mass's centre",
+      "concept": "**Every object with mass attracts every other object with mass.** The gravitational force on each object points from that object **toward the other object's centre of mass** — along the line joining the two centres.\n\n“Down” is not gravity's universal direction. It only looks that way near Earth's surface because Earth's centre of mass is beneath your feet. Two objects in space pull on each other along the line between them, whichever way that line points.\n\nThe pull is **mutual and equal**: the force on the small object from the large one is the same size as the force on the large one from the small one (Newton's third law, met properly in Lesson 7). Only the accelerations differ, because the masses differ.",
+      "representation": "For any two masses:\n\n1. Draw the line joining their centres of mass.\n2. Put a force arrow on each object, pointing along that line toward the other object.\n3. Draw the two arrows the same length — the forces are equal in size.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/gravity/two-body-gravity.svg",
+          "caption": "The force on $m_1$ points toward $m_2$; the force on $m_2$ points toward $m_1$. The arrows are equal in length: the pull is mutual and the same size on both, along the line joining the centres, a distance $r$ apart."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A spacecraft passes a large asteroid. The asteroid is far more massive than the spacecraft. Compare the gravitational force each exerts on the other, and the direction of each force.",
+        "phases": [
+          {
+            "label": "Direction of each force",
+            "steps": [
+              "The force on the spacecraft points from the spacecraft toward the asteroid's centre of mass.",
+              "The force on the asteroid points from the asteroid toward the spacecraft's centre of mass — the exact opposite direction, along the same line."
+            ]
+          },
+          {
+            "label": "Size of each force",
+            "steps": [
+              "The two forces are **equal in size**, even though the asteroid is far more massive. Gravity acts in a mutual pair."
+            ]
+          },
+          {
+            "label": "What differs",
+            "steps": [
+              "With equal forces but very different masses, the spacecraft accelerates a lot and the asteroid barely accelerates at all. Same force, different effect."
+            ]
+          }
+        ],
+        "keyMove": "Gravity is a mutual pair: equal sizes, opposite directions, along the line joining the centres."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L1-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "The Earth pulls on the Moon with a gravitational force. What is true of the force the Moon exerts on the Earth?",
+        "choices": [
+          "It is much smaller, because the Moon is much less massive.",
+          "It is equal in size and points from the Earth toward the Moon.",
+          "It is zero — only the more massive object exerts gravity.",
+          "It points in the same direction as the Earth's pull on the Moon."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — gravity is mutual: the Moon pulls on the Earth with a force of the same size as the Earth's pull on the Moon, directed from the Earth's centre toward the Moon's centre.",
+          "incorrect": {
+            "0": "The masses differ, but the two gravitational forces are equal in size. The different masses only make the accelerations differ.",
+            "2": "Both objects exert gravity on each other. Mass being smaller does not switch gravity off.",
+            "3": "The two forces point in opposite directions — each toward the other object — along the same line."
+          }
+        },
+        "hint": [
+          "Gravity acts in a mutual pair. What does that say about the two forces' sizes and directions?"
+        ],
+        "solution": "Gravitational force is mutual and equal: the Moon pulls on the Earth just as hard as the Earth pulls on the Moon. The force on the Earth points from the Earth's centre of mass toward the Moon's centre of mass — opposite to the Earth's pull on the Moon."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "More mass, more force; more distance, much less force",
+      "concept": "Two separate proportionalities — keep them apart:\n\n**Mass (direct).** Holding the distance fixed, $F_G$ scales directly with **each** mass. Double either mass and $F_G$ doubles. Double both and $F_G$ is $\\times 4$.\n\n**Distance (inverse-square).** Holding the masses fixed, $F_G$ decreases with the **square** of the distance:\n\n| Distance | Force |\n|---|---|\n| $\\times 1$ | $\\times 1$ |\n| $\\times 2$ | $\\times \\tfrac{1}{4}$ |\n| $\\times 3$ | $\\times \\tfrac{1}{9}$ |\n| $\\times 10$ | $\\times \\tfrac{1}{100}$ |\n\nTripling the distance divides the force by **9**, not by 3. This is the “inverse-square” law, and it is the step most people get wrong.",
+      "representation": "To predict a change in $F_G$:\n\n1. Handle the mass changes first: multiply $F_G$ by each mass's scale factor.\n2. Handle the distance change: multiply $F_G$ by $\\dfrac{1}{(\\text{distance scale factor})^2}$.\n3. Combine the factors.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "The gravitational force between two objects is $F$. One mass is doubled and the separation is tripled. What is the new force, as a multiple of $F$?",
+        "phases": [
+          {
+            "label": "Mass change",
+            "steps": [
+              "One mass doubles, the other is unchanged: the mass factor is $\\times 2$."
+            ]
+          },
+          {
+            "label": "Distance change",
+            "steps": [
+              "The separation triples: the distance factor is $\\dfrac{1}{3^2} = \\dfrac{1}{9}$."
+            ]
+          },
+          {
+            "label": "Combine",
+            "steps": [
+              "New force $= F \\times 2 \\times \\dfrac{1}{9} = \\dfrac{2F}{9}$ — a little over one-fifth of the original."
+            ]
+          }
+        ],
+        "keyMove": "Mass factors multiply straight in; a distance factor comes in as one over its square."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L1-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Two objects attract each other with a force $F$. Without changing the masses, the distance between them is increased to **four times** its original value. The new gravitational force is:",
+        "choices": [
+          "$\\dfrac{F}{16}$",
+          "$\\dfrac{F}{4}$",
+          "$\\dfrac{F}{8}$",
+          "$4F$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — inverse-square: multiplying the distance by $4$ multiplies the force by $\\dfrac{1}{4^2} = \\dfrac{1}{16}$.",
+          "incorrect": {
+            "1": "That would be an *inverse* relationship. Gravity is inverse-*square*: divide by $4^2 = 16$, not by $4$.",
+            "2": "Dividing by $8$ is not the rule. The factor is $1/(\\text{distance factor})^2 = 1/16$.",
+            "3": "Increasing the distance makes the force *smaller*, not larger."
+          }
+        },
+        "hint": [
+          "Inverse-square: the force is multiplied by $\\dfrac{1}{(\\text{distance factor})^2}$. The distance factor here is $4$."
+        ],
+        "solution": "$F_G$ depends on $\\dfrac{1}{r^2}$. If $r$ becomes $4r$, then $\\dfrac{1}{r^2}$ becomes $\\dfrac{1}{(4r)^2} = \\dfrac{1}{16 r^2}$. The force is $\\dfrac{F}{16}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "The equation, and solving for any variable",
+      "concept": "The two proportionalities are combined in **Newton's law of universal gravitation**: $$F_G = G\\,\\frac{m_1 m_2}{r^2}$$ where $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$ is the **universal gravitational constant** (from the formula sheet). $r$ is the centre-to-centre distance.\n\nThis is a four-variable relationship ($F_G$, $m_1$, $m_2$, $r$). Given any three, solve for the fourth — rearranging first when the unknown is not $F_G$:\n\n- for a mass: $m_1 = \\dfrac{F_G\\, r^2}{G\\, m_2}$\n- for the distance: $r = \\sqrt{\\dfrac{G\\, m_1 m_2}{F_G}}$\n\n**A scientific calculator is used for this part** — the numbers are in scientific notation.\n\n$G$ is **not** the same as $g$. $G$ is a universal constant ($6.67 \\times 10^{-11}$); $g \\approx 9.8\\ \\mathrm{m/s^2}$ is the *local* free-fall acceleration near Earth's surface, used in $F_g = mg$.",
+      "representation": "To use the equation:\n\n1. Identify the unknown; rearrange the equation for it first.\n2. Substitute every value with its unit, keeping scientific notation.\n3. Evaluate on a calculator; state the answer with a unit and the required precision.\n4. Sanity-check: gravitational forces between everyday objects are tiny.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Two spheres of mass $4.0 \\times 10^{2}\\ \\mathrm{kg}$ and $5.0 \\times 10^{2}\\ \\mathrm{kg}$ are $2.0\\ \\mathrm{m}$ apart (centre to centre). Find the gravitational force between them, to two significant figures.",
+        "phases": [
+          {
+            "label": "Identify the model and the unknown",
+            "steps": [
+              "Two masses, a separation, want the force → use $F_G = G\\dfrac{m_1 m_2}{r^2}$ directly (no rearranging).",
+              "Known: $m_1 = 4.0 \\times 10^{2}\\ \\mathrm{kg}$, $m_2 = 5.0 \\times 10^{2}\\ \\mathrm{kg}$, $r = 2.0\\ \\mathrm{m}$, $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$."
+            ]
+          },
+          {
+            "label": "Substitute",
+            "steps": [
+              "$F_G = (6.67 \\times 10^{-11})\\dfrac{(4.0 \\times 10^{2})(5.0 \\times 10^{2})}{(2.0)^2}$",
+              "$= (6.67 \\times 10^{-11})\\dfrac{2.0 \\times 10^{5}}{4.0}$"
+            ]
+          },
+          {
+            "label": "Evaluate",
+            "steps": [
+              "$= (6.67 \\times 10^{-11})(5.0 \\times 10^{4}) = 3.3 \\times 10^{-6}\\ \\mathrm{N}$.",
+              "A few millionths of a newton — far too small to feel, which is why everyday gravity between objects goes unnoticed."
+            ]
+          }
+        ],
+        "keyMove": "Substitute in scientific notation, group the powers of ten, and let the calculator finish."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L1-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "calculatorFree": true,
+        "question": "A problem asks for the gravitational force between two boulders using $F_G = G\\dfrac{m_1 m_2}{r^2}$. Which value should be used for $G$?",
+        "choices": [
+          "$9.8\\ \\mathrm{m/s^2}$",
+          "$6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$",
+          "$9.8\\ \\mathrm{N/kg}$",
+          "It depends on the masses of the boulders."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $G$ is the universal gravitational constant, $6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$, the same everywhere for everything.",
+          "incorrect": {
+            "0": "$9.8\\ \\mathrm{m/s^2}$ is $g$, the local free-fall acceleration near Earth's surface — used in $F_g = mg$, not in the universal-gravitation equation.",
+            "2": "$9.8\\ \\mathrm{N/kg}$ is another way of writing $g$. It is still the local quantity, not $G$.",
+            "3": "$G$ is a universal constant — it never depends on the masses in the problem."
+          }
+        },
+        "hint": [
+          "$G$ (big) is the universal constant in the gravitation equation. $g$ (small) is the local $9.8$ used for weight."
+        ],
+        "solution": "The symbol $G$ in $F_G = G\\dfrac{m_1 m_2}{r^2}$ is the universal gravitational constant, $6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$. It is a fixed number of nature, unrelated to the objects in the problem. The local acceleration $g \\approx 9.8\\ \\mathrm{m/s^2}$ is a different quantity, used only for weight near Earth."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L1-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "g-and-G-are-the-same-quantity",
+      "question": "A student solving for the gravitational force between two satellites writes: “$F_G = 9.8 \\times \\dfrac{m_1 m_2}{r^2}$.” What is wrong?",
+      "choices": [
+        "Nothing — $9.8$ is the gravitational constant.",
+        "The student used $g$ (local free-fall acceleration) in place of $G$ (the universal constant, $6.67 \\times 10^{-11}$).",
+        "The equation should have $r$ instead of $r^2$.",
+        "The masses should be added, not multiplied."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $g \\approx 9.8\\ \\mathrm{m/s^2}$ is the local free-fall acceleration used in $F_g = mg$. The universal-gravitation equation uses $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$, a completely different quantity.",
+        "incorrect": {
+          "0": "$9.8$ is $g$, not $G$. Using it here would overstate the force by about $23$ orders of magnitude.",
+          "2": "$r^2$ is correct — gravity is inverse-square. The error is the constant.",
+          "3": "The masses are correctly multiplied. The error is using $9.8$ instead of $6.67 \\times 10^{-11}$."
+        }
+      },
+      "hint": [
+        "Two different symbols: $G$ (universal constant) and $g$ (local $9.8$). Which one belongs in the universal-gravitation equation?"
+      ],
+      "solution": "The equation $F_G = G\\dfrac{m_1 m_2}{r^2}$ uses the universal gravitational constant $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$. The student substituted $9.8$, which is $g$ — the local free-fall acceleration used for weight ($F_g = mg$). $G$ and $g$ are distinct quantities with different meanings, units, and sizes."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Two probes attract each other with a gravitational force $F$. The mission plan then moves them so that the distance between them triples (the masses do not change). Predict the new gravitational force.\n\nStudent's response: “Gravity gets weaker with distance. The distance tripled, so the force is one-third of what it was: $\\dfrac{F}{3}$.”",
+      "prompts": [
+        "State how $F_G$ depends on the separation $r$.",
+        "Identify the step where the student's rule is wrong.",
+        "Give the correct new force as a multiple of $F$, and show it by substituting $3r$ into the equation."
+      ],
+      "modelResponse": "$F_G$ depends on $\\dfrac{1}{r^2}$ — it is inverse-*square*, not simply inverse. The wrong step is “the force is one-third”: that treats the relationship as $\\dfrac{1}{r}$. Correct: replacing $r$ with $3r$ gives $F_G \\propto \\dfrac{1}{(3r)^2} = \\dfrac{1}{9 r^2}$, so the new force is $\\dfrac{F}{9}$ — the force drops to one-ninth, not one-third. Tripling the distance divides the force by $3^2 = 9$.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal statement (“every mass attracts every mass”) becomes a two-body force diagram (equal inward arrows), then a pair of proportionalities (direct with mass, inverse-square with distance), then the equation $F_G = G\\dfrac{m_1 m_2}{r^2}$. A qualitative prediction and a numerical calculation must agree: if you say the force should roughly halve, the number should come out roughly halved.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L1-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "calculatorFree": true,
+      "question": "The gravitational force between two objects is $F$. One mass is halved and the distance between them is also halved. What is the new force?",
+      "choices": [
+        "$2F$",
+        "$\\dfrac{F}{2}$",
+        "$\\dfrac{F}{4}$",
+        "$F$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — halving a mass gives $\\times \\tfrac{1}{2}$; halving the distance gives $\\times \\dfrac{1}{(1/2)^2} = \\times 4$. Combined: $F \\times \\tfrac{1}{2} \\times 4 = 2F$.",
+        "incorrect": {
+          "1": "This only applied the mass change. The distance was also halved, which multiplies the force by $4$.",
+          "2": "This looks like both changes reduce the force, but halving the *distance* increases it (by $\\times 4$).",
+          "3": "The two effects do not cancel: $\\times \\tfrac{1}{2}$ from the mass and $\\times 4$ from the distance give $\\times 2$ overall."
+        }
+      },
+      "hint": [
+        "Mass factor: $\\times \\tfrac{1}{2}$. Distance factor: $\\times \\dfrac{1}{(1/2)^2} = \\times 4$. Multiply them."
+      ],
+      "solution": "Halving one mass multiplies $F_G$ by $\\tfrac{1}{2}$. Halving the separation multiplies it by $\\dfrac{1}{(1/2)^2} = 4$. The net factor is $\\tfrac{1}{2} \\times 4 = 2$, so the new force is $2F$."
+    },
+    {
+      "id": "BP8-U3-L1-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "calculatorFree": true,
+      "question": "A student says: “The Sun is far more massive than the Earth, so the Sun pulls on the Earth much harder than the Earth pulls on the Sun.” Evaluate this claim.",
+      "choices": [
+        "Correct — the more massive object always exerts the larger gravitational force.",
+        "Incorrect — the two gravitational forces are equal in size; the mass difference makes the *accelerations* very different, not the forces.",
+        "Correct, but only because the Sun is also closer to its own centre.",
+        "Impossible to decide without the exact masses."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — in the equation $F_G = G\\dfrac{m_1 m_2}{r^2}$, both masses appear the same way, so the force is the same size on each. The Sun barely accelerates because its mass is huge; the Earth accelerates enough to stay in orbit.",
+        "incorrect": {
+          "0": "Gravity is mutual and equal. The product $m_1 m_2$ is the same whichever object you call ‘the one being pulled’.",
+          "2": "Distance to an object's own centre is not part of this — $r$ is the centre-to-centre separation, the same for both.",
+          "3": "You do not need the masses: the equation is symmetric in $m_1$ and $m_2$, so the two forces are always equal in size."
+        }
+      },
+      "hint": [
+        "Look at how $m_1$ and $m_2$ appear in $F_G = G\\dfrac{m_1 m_2}{r^2}$. Are they treated differently?"
+      ],
+      "solution": "The equation $F_G = G\\dfrac{m_1 m_2}{r^2}$ contains the product $m_1 m_2$, which is the same regardless of which mass is which. So the Sun's pull on the Earth and the Earth's pull on the Sun are equal in size. What differs is the effect: $a = F/m$, and the Sun's enormous mass means the same force gives it a negligible acceleration, while the Earth's smaller mass means the same force keeps it in orbit."
+    },
+    {
+      "id": "BP8-U3-L1-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Use $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$; a scientific calculator is permitted for this question. Two asteroids of mass $m_1 = 3.0 \\times 10^{8}\\ \\mathrm{kg}$ and $m_2 = 2.0 \\times 10^{8}\\ \\mathrm{kg}$ are separated by $r = 200\\ \\mathrm{m}$ (centre to centre).",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the gravitational force between the two asteroids, to two significant figures.",
+          "modelResponse": "$F_G = G\\dfrac{m_1 m_2}{r^2} = (6.67 \\times 10^{-11})\\dfrac{(3.0 \\times 10^{8})(2.0 \\times 10^{8})}{(200)^2} = (6.67 \\times 10^{-11})\\dfrac{6.0 \\times 10^{16}}{4.0 \\times 10^{4}} = (6.67 \\times 10^{-11})(1.5 \\times 10^{12}) = 0.10\\ \\mathrm{N}$ (accept $\\approx 0.100\\ \\mathrm{N}$).",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Without recalculating, predict the new force if the separation were increased to $600\\ \\mathrm{m}$ (masses unchanged). Give it as a multiple of the answer to (a) and as a number.",
+          "modelResponse": "The distance is multiplied by $3$ ($200 \\to 600\\ \\mathrm{m}$), so the force is multiplied by $\\dfrac{1}{3^2} = \\dfrac{1}{9}$. New force $= \\dfrac{0.10\\ \\mathrm{N}}{9} \\approx 0.011\\ \\mathrm{N}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A student claims the answer to (a) proves that “gravity is only important for planet-sized objects.” Evaluate this using your result.",
+          "modelResponse": "The force in (a) is about $0.1\\ \\mathrm{N}$ — real, but tiny (roughly the weight of a small apple), between two $10^{8}\\ \\mathrm{kg}$ asteroids only $200\\ \\mathrm{m}$ apart. Gravity acts between *all* masses, not only planets; it is just extremely weak unless at least one mass is enormous (like a planet or star). So the claim is half right: gravity is universal, but its everyday effects are negligible until a mass is planet-sized.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The direction of gravity (toward the other centre of mass), the mutual-and-equal nature of the pair, the inverse-square distance law, and the $G$-versus-$g$ distinction are all standard AP and IB items. This lesson also sets up Lesson 3's free-body diagrams (where weight $F_g = mg$ is drawn) and Lesson 7's treatment of gravity as a Newton's-third-law pair.",
+  "summary": "Gravity is an always-attractive, non-contact force: every mass pulls every other mass toward its centre of mass, along the line joining them, with equal size on both. $F_G$ scales directly with each mass and inverse-square with distance ($\\times 3$ distance $\\Rightarrow \\times \\tfrac{1}{9}$ force). The equation is $F_G = G\\dfrac{m_1 m_2}{r^2}$ with $G = 6.67 \\times 10^{-11}\\ \\mathrm{N\\,m^2/kg^2}$ — a universal constant, not the local $g \\approx 9.8\\ \\mathrm{m/s^2}$.",
+  "exitQuestion": {
+    "id": "BP8-U3-L1-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "Two objects attract each other with force $F$. Both masses are doubled **and** the distance between them is doubled. What is the new force?",
+    "choices": [
+      "$F$",
+      "$2F$",
+      "$4F$",
+      "$\\dfrac{F}{2}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — doubling both masses gives $\\times 4$; doubling the distance gives $\\times \\dfrac{1}{4}$. They cancel: $F \\times 4 \\times \\tfrac{1}{4} = F$.",
+      "incorrect": {
+        "1": "The mass change ($\\times 4$) and the distance change ($\\times \\tfrac{1}{4}$) exactly cancel, leaving $F$.",
+        "2": "This is only the mass effect. The doubled distance divides the force by $4$.",
+        "3": "The two effects cancel exactly; the force is unchanged, not halved."
+      }
+    },
+    "hint": [
+      "Mass factor: $2 \\times 2 = 4$. Distance factor: $\\dfrac{1}{2^2} = \\dfrac{1}{4}$. Multiply."
+    ],
+    "solution": "Doubling both masses multiplies $F_G$ by $2 \\times 2 = 4$. Doubling the separation multiplies it by $\\dfrac{1}{2^2} = \\dfrac{1}{4}$. The net factor is $4 \\times \\tfrac{1}{4} = 1$: the force is unchanged, $F$."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-004",
+    "BP8-U3-MCQ-007",
+    "BP8-U3-MCQ-023",
+    "BP8-U3-MCQ-009"
+  ],
+  "needsPlotly": false
+}

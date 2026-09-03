@@ -18,7 +18,7 @@
 <line x1="60" y1="300" x2="315" y2="153" stroke="#111827" stroke-width="3" marker-end="url(#ah)"/>
 <defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#111827"/></marker></defs>
 <text x="322" y="150" font-family="Arial" font-size="13" font-weight="bold" fill="#111827">V  (hypotenuse)</text>
-<text x="150" y="322" font-family="Arial" font-size="12" fill="#1769aa">adjacent: v_x = V cos &#952;</text>
+<text x="150" y="322" font-family="Arial" font-size="12" fill="#1769aa">adjacent: v<tspan dy="3" font-size="9">x</tspan><tspan dy="-3"> = V cos &#952;</tspan></text>
 <text x="324" y="235" font-family="Arial" font-size="12" fill="#1769aa">opposite:</text>
-<text x="324" y="251" font-family="Arial" font-size="12" fill="#1769aa">v_y = V sin &#952;</text>
+<text x="324" y="251" font-family="Arial" font-size="12" fill="#1769aa">v<tspan dy="3" font-size="9">y</tspan><tspan dy="-3"> = V sin &#952;</tspan></text>
 </svg>

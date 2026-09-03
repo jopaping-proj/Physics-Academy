@@ -31,8 +31,8 @@
   <text x="34" y="174" font-size="11" fill="#111827" text-anchor="end">&#8722;3</text>
   <path d="M45 70H110L200 170H255" stroke="#1769aa" stroke-width="4" fill="none" stroke-linejoin="round"/>
   <circle cx="155" cy="120" r="4.5" fill="#c0392b"/>
-  <path d="M118 96L150 116" stroke="#c0392b" stroke-width="1"/>
-  <text x="116" y="93" font-size="11" fill="#c0392b" text-anchor="end">passes through v = 0</text>
+  <path d="M120 140L151 124" stroke="#c0392b" stroke-width="1"/>
+  <text x="50" y="152" font-size="11" fill="#c0392b">passes through v = 0</text>
   <text x="52" y="62" font-size="11" fill="#1769aa">speed 3</text>
   <text x="210" y="192" font-size="11" fill="#1769aa">speed 3</text>
   <text x="40" y="258" font-size="12" fill="#b3261e">Speed is the same before and after,</text>

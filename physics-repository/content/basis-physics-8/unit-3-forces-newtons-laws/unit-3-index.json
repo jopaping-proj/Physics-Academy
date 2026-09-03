@@ -88,10 +88,10 @@
     {
       "type": "module",
       "label": "Lesson 1",
-      "slug": null,
+      "slug": "gravity",
       "title": "Gravity",
       "cluster": "BP8.3.1",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
@@ -164,6 +164,14 @@
       "title": "Unit 3 Concept Check — retake",
       "status": "planned",
       "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-3-test",
+      "title": "Unit 3 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the forces-and-newtons-laws question bank to the Physics Academy test blueprint."
     }
   ]
 }

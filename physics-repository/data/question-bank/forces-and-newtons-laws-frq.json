@@ -1,0 +1,2105 @@
+[
+  {
+    "id": "BP8-U3-FRQ-01",
+    "sourceId": "U3-FRQ-01",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "gravity",
+    "sourceOutcomes": [
+      "G1",
+      "G3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "Two crates, $m_1=6.0\\times10^5\\ \\mathrm{kg}$ and $m_2=5.0\\times10^4\\ \\mathrm{kg}$, sit $r=10\\ \\mathrm{m}$ apart in a warehouse.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the gravitational force between the two crates, rounded to two decimal places in scientific notation.",
+        "points": 4,
+        "modelResponse": "1 point: correct equation, $F_G=Gm_1m_2/r^2$. 1 point: correct substitution of all four values. 1 point: correctly computed numerator and denominator. 1 point: correct final value, $F_G=(6.67\\times10^{-11})\\dfrac{(6.0\\times10^5)(5.0\\times10^4)}{(10)^2}=2.00\\times10^{-2}\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the direction of the force that $m_1$ exerts on $m_2$.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states the force on $m_2$ is directed toward $m_1$'s center of mass."
+      },
+      {
+        "label": "c",
+        "prompt": "State the direction of the force that $m_2$ exerts on $m_1$.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states the force on $m_1$ is directed toward $m_2$'s center of mass."
+      },
+      {
+        "label": "d",
+        "prompt": "Is the magnitude of the force in part (c) the same as, larger than, or smaller than the magnitude found in part (a)?",
+        "points": 1,
+        "modelResponse": "1 point: correctly states the magnitude is the same as part (a) — the two objects experience an equal-magnitude mutual attractive force."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-02",
+    "sourceId": "U3-FRQ-02",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "gravity",
+    "sourceOutcomes": [
+      "G3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "Two objects, $m_1=1.2\\times10^5\\ \\mathrm{kg}$ and $m_2=5.0\\times10^4\\ \\mathrm{kg}$, experience a gravitational force of $F_G=4.00\\times10^{-3}\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Rearrange $F_G=Gm_1m_2/r^2$ to solve for $r$, showing each algebraic step.",
+        "points": 3,
+        "modelResponse": "1 point: correctly multiplies both sides by $r^2$, giving $F_G r^2=Gm_1m_2$. 1 point: correctly divides both sides by $F_G$, giving $r^2=\\dfrac{Gm_1m_2}{F_G}$. 1 point: correctly takes the square root of both sides, giving $r=\\sqrt{\\dfrac{Gm_1m_2}{F_G}}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the separation distance $r$, rounded to two significant figures.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution of all values. 1 point: correctly computes the value inside the square root. 1 point: correct final value, $r=\\sqrt{\\dfrac{(6.67\\times10^{-11})(1.2\\times10^5)(5.0\\times10^4)}{4.00\\times10^{-3}}}\\approx10\\ \\mathrm{m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A classmate instead rearranges the equation to $r=\\dfrac{Gm_1m_2}{F_G}$ (forgetting the square root). Explain what is wrong with this classmate's rearrangement, without simply saying \"they forgot the square root\" — describe the specific algebraic step where the error occurs.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies that the error occurs at the step of isolating $r$ from $r^2$ — the classmate divided $F_G r^2=Gm_1m_2$ by $F_G$ correctly (reaching $r^2=Gm_1m_2/F_G$) but then treated this result as if it were already $r$, skipping the required square-root step entirely. 1 point: correctly notes that without the square root, the classmate's expression actually represents $r^2$, not $r$, and would produce a numeric answer many orders of magnitude too small when read as if it were the distance itself."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-03",
+    "sourceId": "U3-FRQ-03",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "gravity",
+    "sourceOutcomes": [
+      "G2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "Two objects experience a gravitational force $F_G$ at some initial mass and distance values.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If one of the two masses is doubled while the distance stays the same, express the new force in terms of the original $F_G$, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the new force is $2F_G$. 1 point: correct reasoning — $F_G$ is directly proportional to each individual mass. 1 point: response correctly notes only one mass changed, so the effect is a single factor of 2, not 4."
+      },
+      {
+        "label": "b",
+        "prompt": "If, separately, the distance between the objects is tripled while both masses stay the same, express the new force in terms of the original $F_G$, and explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the new force is $\\dfrac{1}{9}F_G$. 1 point: correct reasoning — $F_G$ is inversely proportional to the *square* of the distance. 1 point: correctly computes $3^2=9$ as the relevant factor, not $3$."
+      },
+      {
+        "label": "c",
+        "prompt": "If *both* changes happen at once (one mass doubles, and the distance triples), express the combined new force in terms of the original $F_G$.",
+        "points": 2,
+        "modelResponse": "1 point: correctly combines both factors multiplicatively: $2\\times\\dfrac{1}{9}=\\dfrac{2}{9}$. 1 point: correctly states the combined new force is $\\dfrac{2}{9}F_G$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-04",
+    "sourceId": "U3-FRQ-04",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "gravity",
+    "sourceOutcomes": [
+      "G2",
+      "G3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "Two different object pairs are described:\n\n- **Pair 1:** $m_1=1.0\\times10^4\\ \\mathrm{kg}$, $m_2=1.0\\times10^5\\ \\mathrm{kg}$, $r=5\\ \\mathrm{m}$.\n- **Pair 2:** $m_1=1.0\\times10^4\\ \\mathrm{kg}$, $m_2=4.0\\times10^5\\ \\mathrm{kg}$, $r=10\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate $F_G$ for Pair 1, rounded to two decimal places in scientific notation.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution. 1 point: correctly computed numerator and denominator. 1 point: correct value, $F_G=(6.67\\times10^{-11})\\dfrac{(1.0\\times10^4)(1.0\\times10^5)}{25}=2.67\\times10^{-3}\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate $F_G$ for Pair 2, rounded to two decimal places in scientific notation.",
+        "points": 3,
+        "modelResponse": "1 point: correct substitution. 1 point: correctly computed numerator and denominator. 1 point: correct value, $F_G=(6.67\\times10^{-11})\\dfrac{(1.0\\times10^4)(4.0\\times10^5)}{100}=2.67\\times10^{-3}\\ \\mathrm{N}$ — matching Pair 1."
+      },
+      {
+        "label": "c",
+        "prompt": "Without redoing the full calculation, explain *why* these two pairs produce the same force, using proportional reasoning about how $m_2$ and $r$ each changed from Pair 1 to Pair 2.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies that $m_2$ increased by a factor of 4 (from $1.0\\times10^5$ to $4.0\\times10^5$), which alone would multiply $F_G$ by 4. 1 point: correctly identifies that $r$ doubled (from 5 to 10 m), which alone would divide $F_G$ by $2^2=4$ (inverse-square). 1 point: correctly recognizes these two effects are equal and opposite factors of 4, so they exactly cancel. 1 point: response explicitly connects this cancellation to the two pairs' equal computed forces from parts (a) and (b), rather than treating the equality as coincidental."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U3-FRQ-05",
+    "sourceId": "U3-FRQ-05",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "gravity",
+    "sourceOutcomes": [
+      "G2",
+      "G3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A student is reviewing three related but distinct ideas from this unit and Unit 2: (1) the universal gravitational constant $G$, (2) the local gravitational acceleration $g$ near Earth's surface, and (3) the distinction between mass and weight.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain the difference between $G$ and $g$ — what each one represents, and why using one where the other is needed produces an answer with the wrong units as well as the wrong value.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies $G=6.67\\times10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$ as a universal constant used in the gravitational-force equation, the same everywhere in the universe. 1 point: correctly identifies $g\\approx9.8\\ \\mathrm{m/s^2}$ as the local gravitational acceleration near a specific massive body's surface (e.g., Earth's), which is not universal and would differ on another planet. 1 point: correctly notes that substituting one value in place of the other produces both a numerically wrong and dimensionally mismatched result, since the two quantities have different units ($\\mathrm{N\\cdot m^2/kg^2}$ vs. $\\mathrm{m/s^2}$) and represent different physical concepts."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain the difference between mass and weight, including which one changes if an object is moved to a location with a different local gravitational field strength.",
+        "points": 3,
+        "modelResponse": "1 point: correctly defines mass as the amount of matter in an object, measured in kg, and constant regardless of location. 1 point: correctly defines weight as the gravitational force on that mass ($F_g=mg$), measured in N. 1 point: correctly identifies that weight (not mass) changes if the object moves to a location with a different local gravitational field strength."
+      },
+      {
+        "label": "c",
+        "prompt": "A student argues: \"Since $F_G=Gm_1m_2/r^2$ shows that a more massive object experiences a larger gravitational force from Earth, more massive objects should fall faster.\" Using the relationship between force, mass, and acceleration, explain why this conclusion does not follow, even though its premise (larger force on more massive objects) is correct.",
+        "points": 3,
+        "modelResponse": "1 point: correctly accepts the premise as true — a more massive object genuinely does experience a larger gravitational force from Earth. 1 point: correctly notes that acceleration depends on both force *and* mass ($a=F_{net}/m$), not force alone. 1 point: correctly explains that the more massive object's proportionally greater force is exactly offset by its own proportionally greater mass (inertia) in the denominator of $a=F_{net}/m$, leaving the same acceleration for any mass — consistent with the equal free-fall times observed in Unit 2's idealized model."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-06",
+    "sourceId": "U3-FRQ-06",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inertia_and_n1",
+    "sourceOutcomes": [
+      "N1.1",
+      "N1.2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Define inertial mass.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies inertial mass as a property that resists a change in velocity/acceleration under a net force. 1 point: correctly notes it is measured in kg."
+      },
+      {
+        "label": "b",
+        "prompt": "Define inertia, and explain how it is related to your definition of inertial mass from part (a).",
+        "points": 3,
+        "modelResponse": "1 point: correctly defines inertia as the tendency of an object to resist a change in its velocity (to keep doing what it's already doing). 1 point: correctly connects inertia to inertial mass — inertial mass is the *quantity* (the numerical measure) of an object's inertia. 1 point: response distinguishes the qualitative tendency (inertia) from its quantitative measure (inertial mass) clearly."
+      },
+      {
+        "label": "c",
+        "prompt": "A student says inertia and inertial mass are just two different words for the exact same idea. Explain the distinction between them.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states they are related but not identical. 1 point: correct reasoning — inertia is the general concept/tendency; inertial mass is the specific, measurable quantity (in kg) that expresses how much of that tendency a given object has."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-07",
+    "sourceId": "U3-FRQ-07",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inertia_and_n1",
+    "sourceOutcomes": [
+      "N1.3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "For each of the following four scenarios, state whether the object's acceleration is zero or nonzero, and justify your answer using N1 reasoning:",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "A parked bicycle leaning against a wall.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states zero acceleration. 1 point: correct justification — the bicycle's velocity (zero) is not changing."
+      },
+      {
+        "label": "b",
+        "prompt": "An airplane cruising at a constant $250\\ \\mathrm{m/s}$ in level flight.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states zero acceleration. 1 point: correct justification — a constant velocity, even a large nonzero one, is not changing, and is therefore a zero-acceleration (equilibrium) condition just like the parked bicycle in part (a)."
+      },
+      {
+        "label": "c",
+        "prompt": "A skateboarder speeding up while rolling down a ramp.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states nonzero acceleration. 1 point: correct justification — the skateboarder's velocity is actively increasing (speeding up), which requires a nonzero net force and therefore a nonzero acceleration."
+      },
+      {
+        "label": "d",
+        "prompt": "A ball tossed straight up, at the exact instant it is momentarily at rest at the top of its path.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states nonzero acceleration. 1 point: correct justification — despite the ball's velocity being momentarily zero, gravity continues to act on it at that instant (its velocity is still changing, from positive to negative through this instant), so its acceleration is not zero, illustrating that a momentary zero velocity does not by itself indicate zero acceleration."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-08",
+    "sourceId": "U3-FRQ-08",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inertia_and_n1",
+    "sourceOutcomes": [
+      "N1.2",
+      "N1.3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A hockey puck is given a push and then slides across a large, perfectly smooth (frictionless) sheet of ice.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "According to Newton's First Law, what happens to the puck's velocity after the push ends, and why?",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the puck's velocity remains constant (in both speed and direction) after the push ends. 1 point: correct reasoning — with no net force acting on the puck (frictionless ice, and assuming other forces like gravity and the ice's normal force balance), N1 states its velocity does not change. 1 point: response correctly identifies this as inertia alone governing the puck's motion."
+      },
+      {
+        "label": "b",
+        "prompt": "A student argues: \"The puck must be slowing down at least a little, even on frictionless ice, because otherwise it would violate common sense — nothing moves forever.\" Write a complete response to this student, addressing both the physics and why the intuition might feel compelling despite being incorrect here.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the student's claim is not supported by the physics — on genuinely frictionless ice, the puck's velocity would not decrease at all. 1 point: correct physics — a net force of zero (as in this idealized frictionless scenario) means N1 requires zero acceleration, no matter how \"long\" the motion continues. 1 point: response acknowledges why the intuition feels compelling — everyday experience is dominated by friction and air resistance, which are real forces that *do* slow most real-world moving objects, so \"nothing moves forever\" is an accurate generalization about the real, frictional world, just not about this idealized frictionless scenario. 1 point: response is complete, distinguishing the idealized physics answer from the everyday intuition without dismissing the intuition as simply \"wrong\" outside its proper context."
+      },
+      {
+        "label": "c",
+        "prompt": "Suppose the same puck is now pushed across ordinary (non-frictionless) ice instead. Does N1 still apply to this new scenario? Explain, referencing the role of friction as a force.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states N1 still applies. 1 point: correct reasoning — N1 always applies; on non-frictionless ice, friction is a real, nonzero net force acting opposite to the puck's motion, so N1 correctly predicts the puck's velocity *will* change (decrease) in this case, consistent with there now being a nonzero net force."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-09",
+    "sourceId": "U3-FRQ-09",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inertia_and_n1",
+    "sourceOutcomes": [
+      "N1.1",
+      "N1.3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A small car and a large truck are both initially at rest, side by side. The exact same net force is applied to each vehicle for the same 5-second interval.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Which vehicle ends up with a greater final velocity? Explain your reasoning using the concept of inertial mass.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies the car as ending up with the greater final velocity. 1 point: correctly identifies the car as having less inertial mass than the truck. 1 point: correctly connects this to $a=F_{net}/m$ — for the same net force, a smaller mass produces a larger acceleration. 1 point: correctly connects the larger acceleration (starting from the same rest condition, over the same time) to a larger final velocity."
+      },
+      {
+        "label": "b",
+        "prompt": "If, instead, both vehicles needed to reach the *same* final velocity in the same 5-second interval, would the required net force on each vehicle be the same? Explain.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the required net forces would **not** be the same. 1 point: correctly identifies that reaching the same final velocity in the same time requires the same acceleration for both vehicles. 1 point: correctly reasons from $F_{net}=ma$ that achieving the same acceleration requires a *larger* net force for the more massive vehicle (the truck). 1 point: response correctly reverses the logic from part (a) — there, equal force led to unequal outcomes because of unequal mass; here, an equal *outcome* requires unequal force, again because of unequal mass."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-10",
+    "sourceId": "U3-FRQ-10",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID1",
+      "FID3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a free-body diagram for a box being pushed across a rough horizontal floor.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List all four forces shown, and state which axis (horizontal or vertical) each acts along.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies weight and normal force as acting along the vertical axis. 1 point: correctly identifies the applied force and friction as acting along the horizontal axis. 1 point: correctly names all four forces by type (weight, normal, applied, friction). 1 point: response correctly organizes the forces by axis rather than listing them without reference to direction."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why weight and the normal force are included on this diagram even though the box is not moving vertically.",
+        "points": 3,
+        "modelResponse": "1 point: correctly notes that a force does not need to cause motion to be present and relevant on an FBD. 1 point: correctly explains that weight and the normal force are present and exactly balance each other (since the box does not accelerate vertically), which is itself an important piece of information, not something to omit. 1 point: response connects this to the more general principle that every real force acting on the object belongs on the FBD, regardless of whether it contributes to the object's actual motion."
+      }
+    ],
+    "totalPoints": 7,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g1.svg",
+        "caption": "Free-body diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-11",
+    "sourceId": "U3-FRQ-11",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A box on a horizontal surface experiences three forces along the same axis: an applied force of $+75\\ \\mathrm{N}$, friction of $-30\\ \\mathrm{N}$, and a rope pulling backward with tension of $-20\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the net force on the box.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, summing signed values. 1 point: correct substitution, $(+75)+(-30)+(-20)$. 1 point: correct value, $+25\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A classmate computes the net force by adding all three magnitudes ($75+30+20=125\\ \\mathrm{N}$). Explain what is wrong with this approach.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the classmate's approach is incorrect. 1 point: correct reasoning — summing raw magnitudes ignores each force's direction, treating opposing forces as if they added together instead of partially canceling. 1 point: response correctly contrasts this with the correct signed-sum method used in part (a)."
+      },
+      {
+        "label": "c",
+        "prompt": "Based on your answer to (a), is the box speeding up, slowing down, or moving at constant velocity? (Assume the box is already moving in the positive direction.) Explain.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the box is speeding up. 1 point: correct reasoning — the net force ($+25\\ \\mathrm{N}$) is in the same direction as the box's motion (positive), which by N1's contrapositive means the box's velocity is increasing in that direction."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-12",
+    "sourceId": "U3-FRQ-12",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID1",
+      "FID3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a free-body diagram for a block hanging motionless from a rope attached to the ceiling.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List the two forces shown, and state the direction of each.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies weight, directed downward. 1 point: correctly identifies tension, directed upward."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why this diagram does **not** include a normal force.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states a normal force is not present here. 1 point: correct reasoning — the normal force specifically arises from contact between an object and a *surface*; the hanging block is not resting on or touching any surface. 1 point: response correctly distinguishes this scenario's support mechanism (a rope's tension) from a surface's normal force, rather than treating them as interchangeable."
+      },
+      {
+        "label": "c",
+        "prompt": "If the block's weight is $-140\\ \\mathrm{N}$ and it remains motionless, what must the tension be? Explain your reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the block remaining motionless as an equilibrium (zero net force) condition, by N1. 1 point: correct reasoning — tension must exactly balance weight for the net force to be zero. 1 point: correct value, tension $=+140\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g2.svg",
+        "caption": "Free-body diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-13",
+    "sourceId": "U3-FRQ-13",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A student is asked to list all forces acting on a hockey puck sliding across real (non-frictionless) ice, after being struck by a hockey stick and while it is still in contact with the ice (not yet reaching the boards or another player).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List every force acting on the puck during this interval, and state each one's direction.",
+        "points": 4,
+        "modelResponse": "1 point: correctly includes weight, directed downward. 1 point: correctly includes the normal force from the ice, directed upward. 1 point: correctly includes friction from the ice, directed opposite the puck's motion. 1 point: response does not invent or include any force not on this list (e.g., no \"stick force,\" no \"momentum force\")."
+      },
+      {
+        "label": "b",
+        "prompt": "The student initially includes a force labeled \"the force from the hockey stick,\" reasoning that the stick's hit is still influencing the puck's motion. Explain why this is incorrect once the stick is no longer in contact with the puck.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the \"stick force\" should not be included once contact ends. 1 point: correct reasoning — forces (other than non-contact forces like gravity) require ongoing physical contact between the objects involved; once the stick and puck separate, the stick can no longer exert a force on the puck. 1 point: correctly explains that the puck's continued motion after the hit is due to its own inertia (N1), not a persisting force from the stick. 1 point: response explicitly distinguishes \"what caused the puck to start moving\" (the stick's hit, now over) from \"what forces act on the puck now\" (which no longer includes the stick)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-14",
+    "sourceId": "U3-FRQ-14",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A rope pulls a crate to the right with tension $+150\\ \\mathrm{N}$. Friction opposes the crate's motion with a magnitude equal to exactly $40\\%$ of the tension's magnitude. A second, weaker rope also pulls the crate, but to the left, with tension $-35\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate friction's magnitude and signed value.",
+        "points": 2,
+        "modelResponse": "1 point: correct magnitude, $0.40\\times150=60\\ \\mathrm{N}$. 1 point: correct signed value, $-60\\ \\mathrm{N}$ (opposing the crate's rightward motion)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the net horizontal force on the crate, combining all three horizontal forces.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies all three horizontal forces: $+150$, $-60$, $-35$. 1 point: correct method, summing all three as signed values. 1 point: correct intermediate step, $150-60-35$. 1 point: correct final value, $+55\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "If the crate's weight is $-300\\ \\mathrm{N}$ and it does not move vertically, what is the normal force, and does this value affect your answer to part (b)? Explain.",
+        "points": 3,
+        "modelResponse": "1 point: correct value, normal force $=+300\\ \\mathrm{N}$ (balancing weight, since there's no vertical motion). 1 point: correctly states this does **not** affect the answer to part (b). 1 point: correct reasoning — the horizontal and vertical axes are independent; vertical forces (weight, normal) do not enter into a horizontal net-force calculation, and vice versa."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-15",
+    "sourceId": "U3-FRQ-15",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID1",
+      "FID3",
+      "FID2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A skydiver has just jumped from a plane. Early in the fall (before reaching terminal velocity), air resistance is smaller in magnitude than weight.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List the forces acting on the skydiver during this part of the fall, and state each one's direction.",
+        "points": 3,
+        "modelResponse": "1 point: correctly includes weight, directed downward. 1 point: correctly includes air resistance, directed upward (opposing the fall). 1 point: response does not invent or include any additional force."
+      },
+      {
+        "label": "b",
+        "prompt": "If the skydiver's weight is $-750\\ \\mathrm{N}$ and air resistance at this instant is $+280\\ \\mathrm{N}$, calculate the net force.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, summing signed values. 1 point: correct substitution, $(-750)+(+280)$. 1 point: correct value, $-470\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "As the skydiver continues falling and speeds up, air resistance increases in magnitude (this is a real physical effect: drag increases with speed) until it eventually equals the skydiver's weight in magnitude. Describe what happens to the net force and the skydiver's acceleration as this occurs, and what \"terminal velocity\" means in terms of net force.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the net force decreases in magnitude (gets smaller) as air resistance grows toward the weight's magnitude. 1 point: correctly states the acceleration also decreases in magnitude as this happens (since $a=F_{net}/m$). 1 point: correctly states that once air resistance exactly equals weight in magnitude, the net force becomes zero. 1 point: correctly defines terminal velocity as the constant velocity reached once net force is zero (by N1) — the skydiver stops speeding up, though they are still moving (and still falling) at this constant velocity."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U3-FRQ-16",
+    "sourceId": "U3-FRQ-16",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "force_identification_and_fbds",
+    "sourceOutcomes": [
+      "FID1",
+      "FID2",
+      "FID3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A crate sits on a horizontal floor. A rope pulls it to the right with $110\\ \\mathrm{N}$ of tension. Friction opposes the crate's motion with $45\\ \\mathrm{N}$. The crate weighs $250\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List all forces acting on the crate (including any not explicitly stated in the description but required by the scenario), and state each one's direction and, where determinable, its magnitude.",
+        "points": 5,
+        "modelResponse": "1 point: correctly includes tension, $+110\\ \\mathrm{N}$ (rightward). 1 point: correctly includes friction, $-45\\ \\mathrm{N}$ (leftward). 1 point: correctly includes weight, $-250\\ \\mathrm{N}$ (downward), as explicitly given. 1 point: correctly infers and includes the normal force, even though it was not explicitly stated — since the crate rests on and does not sink into or lift off the floor, a normal force must be present. 1 point: correctly determines the normal force's magnitude as $+250\\ \\mathrm{N}$ (balancing weight, since the crate does not accelerate vertically), demonstrating the force can be inferred rather than needing to be given directly."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the net horizontal force on the crate.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies only the two horizontal forces (tension and friction) are relevant to this calculation. 1 point: correct method, summing signed values. 1 point: correct substitution, $(+110)+(-45)$. 1 point: correct value, $+65\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-17",
+    "sourceId": "U3-FRQ-17",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ1",
+      "EQ4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Define static equilibrium.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states zero net force. 1 point: correctly states the object is at rest."
+      },
+      {
+        "label": "b",
+        "prompt": "Define dynamic equilibrium.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states zero net force. 1 point: correctly states the object moves at a constant, nonzero velocity."
+      },
+      {
+        "label": "c",
+        "prompt": "State the single defining test that applies to *both* static and dynamic equilibrium, and explain why this test — rather than checking velocity directly — is the more general way to identify either type.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies zero acceleration (equivalently, zero net force) as the shared test. 1 point: correctly notes that checking velocity directly (e.g., \"is velocity zero?\") only identifies the static case and would incorrectly exclude dynamic equilibrium. 1 point: correctly explains that zero acceleration captures both cases at once, since neither a zero velocity nor a nonzero constant velocity is changing — both share the same underlying condition."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-18",
+    "sourceId": "U3-FRQ-18",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ2",
+      "EQ4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a free-body diagram for a box on a horizontal floor.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If the applied force is $+60\\ \\mathrm{N}$ and friction is $-60\\ \\mathrm{N}$, and weight and the normal force are equal in magnitude, is the box in equilibrium? Show your work for both axes.",
+        "points": 4,
+        "modelResponse": "1 point: correct horizontal net force, $(+60)+(-60)=0\\ \\mathrm{N}$. 1 point: correct vertical net force, $0\\ \\mathrm{N}$ (weight and normal force cancel, as stated). 1 point: correctly concludes both axes are zero. 1 point: correctly states the box is in equilibrium."
+      },
+      {
+        "label": "b",
+        "prompt": "If instead the applied force is $+60\\ \\mathrm{N}$ and friction is $-45\\ \\mathrm{N}$ (with weight and the normal force still equal), is the box in equilibrium?",
+        "points": 3,
+        "modelResponse": "1 point: correct horizontal net force, $(+60)+(-45)=+15\\ \\mathrm{N}$. 1 point: correctly notes the vertical net force remains zero. 1 point: correctly concludes the box is **not** in equilibrium, since the horizontal net force is nonzero."
+      },
+      {
+        "label": "c",
+        "prompt": "For part (b), what additional friction force (beyond the given $-45\\ \\mathrm{N}$) would be required to bring the box into horizontal equilibrium?",
+        "points": 2,
+        "modelResponse": "1 point: correct method — an additional $-15\\ \\mathrm{N}$ of friction would bring the horizontal total to zero. 1 point: correct value, $-15\\ \\mathrm{N}$ (bringing total friction to $-60\\ \\mathrm{N}$)."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g1.svg",
+        "caption": "Free-body diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-19",
+    "sourceId": "U3-FRQ-19",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "For each scenario below, classify it as static equilibrium, dynamic equilibrium, or not in equilibrium, and justify each classification in one sentence.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "A book resting motionless on a shelf.",
+        "points": 2,
+        "modelResponse": "1 point: correctly classifies as static equilibrium. 1 point: correct justification — the book is at rest with (implied) zero net force."
+      },
+      {
+        "label": "b",
+        "prompt": "A train moving at a steady, unchanging $100\\ \\mathrm{km/h}$ on a straight track.",
+        "points": 2,
+        "modelResponse": "1 point: correctly classifies as dynamic equilibrium. 1 point: correct justification — the train's velocity is constant and nonzero, indicating zero net force."
+      },
+      {
+        "label": "c",
+        "prompt": "A car accelerating away from a stoplight.",
+        "points": 2,
+        "modelResponse": "1 point: correctly classifies as not in equilibrium. 1 point: correct justification — the car's velocity is changing (increasing), indicating a nonzero net force."
+      },
+      {
+        "label": "d",
+        "prompt": "A skydiver who has just reached terminal velocity and continues falling at that same constant speed.",
+        "points": 2,
+        "modelResponse": "1 point: correctly classifies as dynamic equilibrium. 1 point: correct justification — terminal velocity is, by definition, a constant (nonzero) velocity, meaning the net force (weight and air resistance) has become zero."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-20",
+    "sourceId": "U3-FRQ-20",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ1",
+      "EQ4"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A student writes: \"Static and dynamic equilibrium are basically opposite states — one is 'nothing happening' and the other is 'something happening (motion).'\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain what is wrong with framing these two states as \"opposites.\"",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the two are not opposites. 1 point: correctly identifies that both share the identical defining condition — zero net force (zero acceleration). 1 point: correctly notes the only difference between them is the specific velocity value (zero vs. nonzero), not the underlying force state. 1 point: response explicitly rejects the \"nothing happening\" framing, noting that a dynamic-equilibrium object's velocity is just as unchanging as a static-equilibrium object's, even though it is nonzero."
+      },
+      {
+        "label": "b",
+        "prompt": "Rewrite a corrected, accurate one-sentence description of how static and dynamic equilibrium are actually related to each other.",
+        "points": 3,
+        "modelResponse": "1 point: correctly describes both as subtypes of the same broader category (equilibrium/zero net force). 1 point: correctly notes they are distinguished only by whether the constant velocity is zero (static) or nonzero (dynamic). 1 point: response is phrased as a single clear, accurate sentence rather than a list of disconnected facts."
+      },
+      {
+        "label": "c",
+        "prompt": "A ball is tossed straight up and, at the very top of its path, is momentarily at rest. Explain why this instant is **not** an example of static equilibrium, despite the ball's velocity being zero at that moment.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the net force at that instant is not zero (gravity/weight is still acting, unbalanced). 1 point: correctly explains that this is only a momentary zero velocity within an ongoing (nonzero) acceleration, not a sustained equilibrium condition — the ball's velocity is actively changing sign through this point, unlike a genuinely at-rest static-equilibrium object."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-21",
+    "sourceId": "U3-FRQ-21",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A crate on a horizontal floor experiences an applied force of $+85\\ \\mathrm{N}$ and an unknown friction force, $F_f$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If the crate is confirmed to be in equilibrium, what is $F_f$?",
+        "points": 3,
+        "modelResponse": "1 point: correct reasoning — equilibrium requires the net force to be zero. 1 point: correct setup, $(+85)+F_f=0$. 1 point: correct value, $F_f=-85\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Suppose instead the friction force is measured directly and found to be $-60\\ \\mathrm{N}$. Is the crate in equilibrium? If not, what is the net force, and in which direction is the crate accelerating?",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the crate is **not** in equilibrium. 1 point: correct net force, $(+85)+(-60)=+25\\ \\mathrm{N}$. 1 point: correctly states the crate accelerates in the positive direction (the same direction as the net force)."
+      },
+      {
+        "label": "c",
+        "prompt": "For the scenario in part (b), if a second rope is added, pulling the crate with an additional force $F_2$, what value of $F_2$ would restore equilibrium?",
+        "points": 2,
+        "modelResponse": "1 point: correct reasoning — $F_2$ must exactly cancel the $+25\\ \\mathrm{N}$ net force from part (b). 1 point: correct value, $F_2=-25\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-22",
+    "sourceId": "U3-FRQ-22",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "equilibrium",
+    "sourceOutcomes": [
+      "EQ1",
+      "EQ2",
+      "EQ3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "The diagram below shows a free-body diagram for a block hanging from a rope.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If tension is $+150\\ \\mathrm{N}$ and weight is $-150\\ \\mathrm{N}$, and the block is observed to be at rest, what type of equilibrium is this, and why?",
+        "points": 3,
+        "modelResponse": "1 point: correctly computes the net force as zero. 1 point: correctly classifies this as static equilibrium. 1 point: correct reasoning — zero net force combined with the block being at rest matches the definition of static equilibrium exactly."
+      },
+      {
+        "label": "b",
+        "prompt": "Suppose instead the block is observed moving upward at a constant $1.5\\ \\mathrm{m/s}$, with the same tension and weight values as part (a). What type of equilibrium is this now, and why?",
+        "points": 3,
+        "modelResponse": "1 point: correctly computes the net force as zero (same force values as part a). 1 point: correctly classifies this as dynamic equilibrium. 1 point: correct reasoning — zero net force combined with a constant, nonzero velocity matches the definition of dynamic equilibrium exactly."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the *same* force values (tension $+150\\ \\mathrm{N}$, weight $-150\\ \\mathrm{N}$) can correspond to two different equilibrium types, as shown in parts (a) and (b), rather than uniquely determining which type applies.",
+        "points": 3,
+        "modelResponse": "1 point: correctly notes that the force values alone only ever determine whether the net force is zero (i.e., whether equilibrium of *some* type exists) — they say nothing about the object's actual velocity value. 1 point: correctly notes that distinguishing static from dynamic equilibrium additionally requires knowing the object's velocity (zero or nonzero), which is separate information not contained in the force values themselves. 1 point: response correctly frames this as expected, not a contradiction — the same zero-net-force condition is fully compatible with any constant velocity, and the specific velocity value is what determines which equilibrium subtype applies."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g2.svg",
+        "caption": "Free-body diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-23",
+    "sourceId": "U3-FRQ-23",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A $12\\ \\mathrm{kg}$ sled experiences an applied force of $+54\\ \\mathrm{N}$ and friction of $-6.0\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the net force on the sled.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, summing signed values. 1 point: correct value, $(+54)+(-6.0)=+48\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the sled's acceleration.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $a=F_{net}/m$. 1 point: correct substitution, $48/12$. 1 point: correct value, $4.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the direction of the sled's acceleration, and explain how you know.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the acceleration is in the positive direction. 1 point: correct reasoning — acceleration is always in the same direction as the net force, which is positive here."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-24",
+    "sourceId": "U3-FRQ-24",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If an object's net force triples while its mass stays the same, what happens to its acceleration? Explain using the structure of $F_{net}=ma$.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the acceleration also triples. 1 point: correct reasoning — acceleration is directly proportional to net force. 1 point: response correctly frames this via $a=F_{net}/m$, not just a memorized rule."
+      },
+      {
+        "label": "b",
+        "prompt": "If an object's mass triples while the net force stays the same, what happens to its acceleration? Explain.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the acceleration becomes one-third as large. 1 point: correct reasoning — acceleration is inversely proportional to mass. 1 point: response correctly frames this via $a=F_{net}/m$, noting mass is in the denominator."
+      },
+      {
+        "label": "c",
+        "prompt": "If both the net force and the mass triple at the same time, what happens to the acceleration? Explain.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the acceleration stays the same. 1 point: correct reasoning — tripling both the numerator and denominator of $a=F_{net}/m$ leaves the ratio unchanged."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-25",
+    "sourceId": "U3-FRQ-25",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.2",
+      "N2.1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a free-body diagram for a box on a horizontal floor, with mass $10\\ \\mathrm{kg}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If the applied force is $+65\\ \\mathrm{N}$ and friction is $-25\\ \\mathrm{N}$, calculate the box's acceleration (weight and normal force are equal and opposite).",
+        "points": 4,
+        "modelResponse": "1 point: correct net force, $(+65)+(-25)=+40\\ \\mathrm{N}$. 1 point: correct equation, $a=F_{net}/m$. 1 point: correct substitution, $40/10$. 1 point: correct value, $4.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "If the applied force is removed entirely (friction remains at $-25\\ \\mathrm{N}$), what is the new acceleration, and in which direction?",
+        "points": 3,
+        "modelResponse": "1 point: correct net force, $-25\\ \\mathrm{N}$ (friction alone). 1 point: correct value, $a=-25/10=-2.5\\ \\mathrm{m/s^2}$. 1 point: correctly states the direction is negative (opposite the box's original motion)."
+      },
+      {
+        "label": "c",
+        "prompt": "Compare the magnitudes of the two accelerations from parts (a) and (b), and explain the difference in terms of the change in net force.",
+        "points": 2,
+        "modelResponse": "1 point: correctly notes the magnitude decreased from $4.0$ to $2.5\\ \\mathrm{m/s^2}$. 1 point: correct reasoning — removing the applied force reduced the net force's magnitude (and changed its sign), directly producing a smaller-magnitude, oppositely-directed acceleration via $a=F_{net}/m$."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g1.svg",
+        "caption": "Free-body diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-26",
+    "sourceId": "U3-FRQ-26",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A $20\\ \\mathrm{kg}$ block experiences four horizontal forces: $+90\\ \\mathrm{N}$, $-15\\ \\mathrm{N}$, $+5.0\\ \\mathrm{N}$, and an unknown force $F_4$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If the block's measured acceleration is $3.0\\ \\mathrm{m/s^2}$, calculate the net force acting on it.",
+        "points": 2,
+        "modelResponse": "1 point: correct equation, $F_{net}=ma$. 1 point: correct value, $(20)(3.0)=60\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using your answer to part (a), solve for $F_4$.",
+        "points": 4,
+        "modelResponse": "1 point: correctly sets up the equation, $(+90)+(-15)+(+5.0)+F_4=60$. 1 point: correctly computes the sum of the three known forces, $80\\ \\mathrm{N}$. 1 point: correct setup, $80+F_4=60$. 1 point: correct value, $F_4=-20\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A classmate argues that $F_4$ must be negative, \"since there are already two positive forces and the block shouldn't need a third.\" Evaluate this reasoning against your actual answer to part (b).",
+        "points": 3,
+        "modelResponse": "1 point: correctly notes the classmate's *conclusion* (negative $F_4$) happens to be correct here. 1 point: correctly notes the classmate's *reasoning* is not valid in general — the sign of a missing force cannot be determined just by counting how many other forces are positive; it must be solved for directly from the required net force. 1 point: response distinguishes between a correct answer reached through unreliable reasoning and a properly justified one, noting the actual solving method (part b) is what should be trusted, not the informal intuition."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-27",
+    "sourceId": "U3-FRQ-27",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A student claims: \"Newton's First Law and Newton's Second Law are basically unrelated — N1 is about equilibrium, and N2 is about calculating acceleration from force and mass.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain why this claim is inaccurate, using the equation $F_{net}=ma$.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the claim is inaccurate. 1 point: correctly identifies N1 as the special case of N2 where $F_{net}=0$. 1 point: correctly explains that substituting $F_{net}=0$ into $F_{net}=ma$ directly yields $a=0$, N1's defining condition. 1 point: response explicitly frames N2 as the general law and N1 as a specific, derivable consequence of it, not a separate rule."
+      },
+      {
+        "label": "b",
+        "prompt": "Give a specific numeric example (your own choice of force and mass values) that demonstrates a nonzero net force producing a nonzero acceleration, and a second example with the *same* mass where the net force is zero, producing zero acceleration.",
+        "points": 4,
+        "modelResponse": "1 point: provides a valid nonzero force and mass example. 1 point: correctly computes a nonzero acceleration from that example using $a=F_{net}/m$. 1 point: provides a second example with the same mass and a net force of exactly zero. 1 point: correctly computes (or states directly) that this second example's acceleration is zero."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-28",
+    "sourceId": "U3-FRQ-28",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_second_law",
+    "sourceOutcomes": [
+      "N2.2",
+      "N2.1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A $15\\ \\mathrm{kg}$ cart, initially in equilibrium, has a new horizontal force added.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If the new force is $+45\\ \\mathrm{N}$ and no other forces change, calculate the cart's new acceleration.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the new net force as $+45\\ \\mathrm{N}$ (since the cart started at equilibrium, i.e., zero net force, and only this one new force was added). 1 point: correct method, $a=F_{net}/m$. 1 point: correct value, $45/15=3.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A second, identical $15\\ \\mathrm{kg}$ cart, also initially in equilibrium, has two new forces added at the same time: $+70\\ \\mathrm{N}$ and $-25\\ \\mathrm{N}$. Calculate this cart's new acceleration.",
+        "points": 4,
+        "modelResponse": "1 point: correctly combines the two new forces as signed values, $(+70)+(-25)$. 1 point: correct net force, $+45\\ \\mathrm{N}$. 1 point: correct method, $a=F_{net}/m$. 1 point: correct value, $45/15=3.0\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Which cart has the greater acceleration? Does this necessarily mean more *total* force was applied to it? Explain.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states both carts have the same acceleration ($3.0\\ \\mathrm{m/s^2}$). 1 point: correct reasoning — although the second cart had a larger total ($95\\ \\mathrm{N}$ combined magnitude) of individual forces applied, its net force came out equal to the first cart's, since one of its two forces partially opposed the other; acceleration depends only on the net force, not on the total magnitude of individual forces applied."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-29",
+    "sourceId": "U3-FRQ-29",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC1",
+      "INC2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows an $8\\ \\mathrm{kg}$ block on a frictionless $37^\\circ$ incline.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List the forces acting on the block.",
+        "points": 2,
+        "modelResponse": "1 point: correctly includes weight. 1 point: correctly includes the normal force, and correctly excludes friction (frictionless incline)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the parallel (down-slope) component of the block's weight.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_{\\parallel}=mg\\sin\\theta$. 1 point: correct substitution, $(8)(9.8)(0.60)$. 1 point: correct value, $47.0\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the normal force.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_N=mg\\cos\\theta$. 1 point: correct substitution, $(8)(9.8)(0.80)$. 1 point: correct value, $62.7\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_incline_g1.svg",
+        "caption": "Inclined-plane diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-30",
+    "sourceId": "U3-FRQ-30",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The same $8\\ \\mathrm{kg}$ block from FRQ-29 now sits on the same $37^\\circ$ incline, but with friction ($\\mu=0.30$), sliding down.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the friction force's magnitude.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_f=\\mu F_N$, using $F_N=62.7\\ \\mathrm{N}$ (from FRQ-29c). 1 point: correct substitution, $(0.30)(62.7)$. 1 point: correct value, $18.8\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the net force along the incline.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies friction as opposing the parallel weight component (up-slope). 1 point: correct setup, $47.0-18.8$. 1 point: correct value, $28.2\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the resulting acceleration.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $a=F_{net}/m$. 1 point: correct substitution, $28.2/8$. 1 point: correct value, $3.53\\ \\mathrm{m/s^2}$."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_incline_g2.svg",
+        "caption": "Inclined-plane diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-31",
+    "sourceId": "U3-FRQ-31",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "A block slides **down** a rough incline. State the direction friction acts, and explain why, referencing the concept of relative sliding.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states friction acts up-slope. 1 point: correct reasoning — friction opposes relative sliding between the surfaces. 1 point: correctly identifies the block's sliding direction (down-slope) as what friction opposes."
+      },
+      {
+        "label": "b",
+        "prompt": "The same block is now given a push and slides **up** the same incline instead. State the direction friction acts during this phase, and explain why it is different from part (a).",
+        "points": 3,
+        "modelResponse": "1 point: correctly states friction now acts down-slope. 1 point: correct reasoning — the block is now sliding up-slope, so friction (opposing that sliding) acts down-slope instead. 1 point: correctly explains the difference is due to the reversed sliding direction, not a change in the incline itself."
+      },
+      {
+        "label": "c",
+        "prompt": "A student claims: \"Friction should always point downhill on an incline, since that's the direction gravity pulls.\" Explain what is wrong with this claim, using your answers to parts (a) and (b).",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the claim is false. 1 point: correct reasoning — friction's direction is tied to the direction of relative sliding, not to gravity's direction; parts (a) and (b) show friction pointing in two different directions on the very same incline, depending only on which way the block is sliding."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-32",
+    "sourceId": "U3-FRQ-32",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A $3\\ \\mathrm{kg}$ block slides down a $53^\\circ$ incline with $\\mu=0.20$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the parallel weight component and the normal force.",
+        "points": 4,
+        "modelResponse": "1 point: correct method for $F_{\\parallel}=mg\\sin53^\\circ$. 1 point: correct value, $(3)(9.8)(0.80)=23.5\\ \\mathrm{N}$. 1 point: correct method for $F_N=mg\\cos53^\\circ$. 1 point: correct value, $(3)(9.8)(0.60)=17.6\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the friction force and the net force along the incline.",
+        "points": 3,
+        "modelResponse": "1 point: correct friction value, $F_f=(0.20)(17.6)=3.53\\ \\mathrm{N}$. 1 point: correct net-force setup, $23.5-3.53$. 1 point: correct value, $20.0\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the resulting acceleration.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $a=F_{net}/m$. 1 point: correct value, $20.0/3=6.66\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "d",
+        "prompt": "A second block, with twice the mass ($6\\ \\mathrm{kg}$), slides down the same $53^\\circ$ incline with the same $\\mu=0.20$. Without recalculating from scratch, state what its acceleration would be, and explain why.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states the acceleration would be the same ($6.66\\ \\mathrm{m/s^2}$), since mass cancels out of $a=g\\sin\\theta-\\mu g\\cos\\theta$ regardless of the specific mass value."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U3-FRQ-33",
+    "sourceId": "U3-FRQ-33",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC1",
+      "INC2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A $12\\ \\mathrm{kg}$ block sits on a frictionless $37^\\circ$ incline.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the block's full weight.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $mg$. 1 point: correct value, $(12)(9.8)=117.6\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the normal force.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $F_N=mg\\cos37^\\circ$. 1 point: correct substitution, $(117.6)(0.80)$. 1 point: correct value, $94.1\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A student says: \"The normal force should just equal the block's weight, like it would on a flat table.\" Using your answers to (a) and (b), explain why this is not the case here.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the normal force ($94.1\\ \\mathrm{N}$) is less than the full weight ($117.6\\ \\mathrm{N}$). 1 point: correct reasoning — on an incline, the normal force only balances the *perpendicular* component of weight, not the full weight; the remaining (parallel) component is left over to accelerate the block along the slope instead."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-34",
+    "sourceId": "U3-FRQ-34",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A $5\\ \\mathrm{kg}$ block on a frictionless $37^\\circ$ incline is pushed up the slope by an applied force of $35\\ \\mathrm{N}$ (parallel to the incline).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the parallel component of the block's weight.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $mg\\sin37^\\circ$. 1 point: correct value, $(5)(9.8)(0.60)=29.4\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the net force along the incline, being careful with signs.",
+        "points": 3,
+        "modelResponse": "1 point: correctly treats the applied force and the parallel weight component as opposing signed quantities. 1 point: correct setup, $35-29.4$. 1 point: correct value, $+5.6\\ \\mathrm{N}$ (up-slope)."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the resulting acceleration, and state its direction.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $a=F_{net}/m$. 1 point: correct value, $5.6/5=1.12\\ \\mathrm{m/s^2}$. 1 point: correctly states the direction is up-slope (same direction as the net force)."
+      },
+      {
+        "label": "d",
+        "prompt": "If the applied force were instead only $20\\ \\mathrm{N}$, would the block's acceleration point in the same direction as in part (c)? Explain without fully recalculating.",
+        "points": 1,
+        "modelResponse": "1 point: correctly states no — with only $20\\ \\mathrm{N}$ applied (less than the $29.4\\ \\mathrm{N}$ parallel weight component), the net force would instead be down-slope, reversing the acceleration's direction."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-35",
+    "sourceId": "U3-FRQ-35",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A block already sliding down a $37^\\circ$ incline has a coefficient of kinetic friction of exactly $\\mu=0.75$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the parallel weight component's relationship to the friction force, symbolically (in terms of $m$, $g$, and the given trig values), without assuming a specific mass.",
+        "points": 4,
+        "modelResponse": "1 point: correctly writes $F_{\\parallel}=mg\\sin37^\\circ=0.60mg$. 1 point: correctly writes $F_N=mg\\cos37^\\circ=0.80mg$. 1 point: correctly writes $F_f=\\mu F_N=(0.75)(0.80mg)=0.60mg$. 1 point: correctly recognizes $F_{\\parallel}=F_f$ (both equal $0.60mg$), regardless of the specific value of $m$."
+      },
+      {
+        "label": "b",
+        "prompt": "What is the net force along the incline, and what does this imply about the block's acceleration?",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the net force is zero. 1 point: correctly states this implies zero acceleration."
+      },
+      {
+        "label": "c",
+        "prompt": "Given that the block is already moving (not starting from rest), what type of equilibrium (if any) describes this situation, and why?",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies this as dynamic equilibrium. 1 point: correct reasoning — zero net force (zero acceleration) combined with the block already moving (nonzero, and now constant, velocity) matches the definition of dynamic equilibrium. 1 point: response correctly connects this incline scenario back to the general equilibrium concept from Cluster 4, rather than treating it as an unrelated special case."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-36",
+    "sourceId": "U3-FRQ-36",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC1",
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A $12\\ \\mathrm{kg}$ block slides down a $37^\\circ$ incline with $\\mu=0.15$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List all forces acting on the block, and state each one's direction.",
+        "points": 3,
+        "modelResponse": "1 point: correctly includes weight (straight down). 1 point: correctly includes the normal force (perpendicular to the incline surface, away from it). 1 point: correctly includes friction, directed up-slope (opposing the block's down-slope sliding)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the parallel weight component and the normal force.",
+        "points": 3,
+        "modelResponse": "1 point: correct method for both quantities. 1 point: correct parallel value, $(12)(9.8)(0.60)=70.6\\ \\mathrm{N}$. 1 point: correct normal-force value, $(12)(9.8)(0.80)=94.1\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the friction force and the net force along the incline.",
+        "points": 2,
+        "modelResponse": "1 point: correct friction value, $(0.15)(94.1)=14.1\\ \\mathrm{N}$. 1 point: correct net force, $70.6-14.1=56.4\\ \\mathrm{N}$."
+      },
+      {
+        "label": "d",
+        "prompt": "Calculate the resulting acceleration.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $a=F_{net}/m$. 1 point: correct value, $56.4/12=4.70\\ \\mathrm{m/s^2}$."
+      }
+    ],
+    "totalPoints": 10,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_incline_g2.svg",
+        "caption": "Inclined-plane diagram for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-37",
+    "sourceId": "U3-FRQ-37",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "inclined_planes",
+    "sourceOutcomes": [
+      "INC2",
+      "INC3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "free-body-diagram",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "A $5\\ \\mathrm{kg}$ block sits on a frictionless incline at an unfamiliar angle, $20^\\circ$, where $\\sin20^\\circ\\approx0.34$ and $\\cos20^\\circ\\approx0.94$ are provided.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the parallel weight component.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_{\\parallel}=mg\\sin\\theta$. 1 point: correct substitution, $(5)(9.8)(0.34)$. 1 point: correct value, $\\approx16.7\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the resulting acceleration.",
+        "points": 2,
+        "modelResponse": "1 point: correct equation, $a=g\\sin\\theta$ (frictionless case). 1 point: correct value, $(9.8)(0.34)\\approx3.33\\ \\mathrm{m/s^2}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the same method (resolving weight using sine and cosine of the incline angle) works for this unfamiliar $20^\\circ$ angle just as well as it did for the more commonly practiced $37^\\circ$ or $53^\\circ$ angles.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the same general relationships ($F_{\\parallel}=mg\\sin\\theta$, $F_N=mg\\cos\\theta$) hold for any incline angle, not just the commonly practiced ones. 1 point: correctly explains that $37^\\circ$ and $53^\\circ$ are simply convenient, \"clean-number\" angles for practice, not special cases where the underlying physics or method differs. 1 point: response explicitly generalizes the method — substitute the given (or looked-up) sine and cosine values for whatever angle is provided, and proceed identically regardless of whether the angle is a \"familiar\" one."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-38",
+    "sourceId": "U3-FRQ-38",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.1",
+      "N3.2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A person pushes on a heavy box with a force of $70\\ \\mathrm{N}$, but the box does not move.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the Newton's Third Law reaction to this push, including its magnitude, direction, and which object it acts on.",
+        "points": 3,
+        "modelResponse": "1 point: correct magnitude, $70\\ \\mathrm{N}$. 1 point: correct direction, opposite to the person's push. 1 point: correctly states this force acts on the person (the object doing the pushing)."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why the box's lack of movement does **not** mean the reaction force is smaller than $70\\ \\mathrm{N}$.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the reaction force is not smaller — it is exactly $70\\ \\mathrm{N}$. 1 point: correct reasoning — N3 guarantees equal magnitude regardless of whether either object moves; the box's lack of motion is explained separately (e.g., by other forces, such as friction, keeping the box itself in equilibrium), not by an unequal N3 reaction."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the person's push and the box's reaction push do **not** cancel each other out, even though they are equal in magnitude and opposite in direction.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the two forces act on two different objects (the box and the person). 1 point: correct reasoning — forces can only cancel when they act on the *same* object; since these two forces act on different objects, each object experiences only one of the two forces, so no cancellation between them can occur for either object."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-39",
+    "sourceId": "U3-FRQ-39",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.3"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A book rests motionless on a table.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the two forces that keep the book in equilibrium, stating which object each acts on.",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the book's weight, acting on the book. 1 point: correctly identifies the normal force, acting on the book."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify the genuine Newton's Third Law pair associated with the book resting on the table (a different pair of forces from part (a)), stating which object each force acts on.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the book pushing down on the table. 1 point: correctly identifies the table pushing up on the book (or the book's own reaction on the table — either direction of the pair is acceptable as long as both members are stated). 1 point: correctly states these two forces act on two different objects (the book and the table)."
+      },
+      {
+        "label": "c",
+        "prompt": "A student says: \"I don't see the difference — both pairs of forces you just described are equal in magnitude and opposite in direction, so they should be the same kind of thing.\" Write a complete response explaining the two key differences between the pair in part (a) and the pair in part (b).",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies the first key difference — object count: part (a)'s forces both act on the same object (the book), while part (b)'s forces act on two different objects (the book and the table). 1 point: correctly identifies the second key difference — force type: part (a)'s forces are of different types (gravitational weight vs. contact normal force), while part (b)'s forces are of the same type (both contact/normal force). 1 point: correctly notes that part (a)'s pairing produces an equilibrium condition (relevant to the book's own motion), while part (b)'s pairing (a genuine N3 pair) carries no such implication. 1 point: response is organized as a complete, clear rebuttal to the student's claim, not simply a restatement of each pair separately."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-40",
+    "sourceId": "U3-FRQ-40",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A rocket in deep space (far from any planet, so gravity is negligible) expels exhaust gas backward to propel itself forward.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the Newton's Third Law reaction to the rocket's push on the exhaust gas.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the exhaust gas pushes the rocket forward. 1 point: correct magnitude — equal to the force the rocket exerted on the gas. 1 point: correctly identifies this force acts on the rocket."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain how this reaction force is what causes the rocket to accelerate forward, connecting your answer to Newton's Second Law.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the gas's forward push on the rocket as a real, nonzero force acting on the rocket. 1 point: correctly connects this force to $a=F_{net}/m$ — this force (assuming it's the net force, or part of it) directly produces the rocket's forward acceleration. 1 point: response correctly frames the N3 reaction force as the very force responsible for the rocket's own N2 acceleration, not a separate, unrelated fact."
+      },
+      {
+        "label": "c",
+        "prompt": "A student argues: \"This can't be right — there's nothing else out in space for the rocket to push against, so it shouldn't be able to move.\" What is the flaw in this reasoning?",
+        "points": 2,
+        "modelResponse": "1 point: correctly identifies the flaw — the rocket does not need to push against an external object like a planet or wall; it pushes against its own expelled exhaust gas, which is sufficient for a valid N3 interaction. 1 point: correct reasoning — the exhaust gas *is* \"something to push against\"; the interaction is between the rocket and the gas it expels, not between the rocket and the empty space around it."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-41",
+    "sourceId": "U3-FRQ-41",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.2"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "scenario": "Two ice skaters, Skater A ($50\\ \\mathrm{kg}$) and Skater B ($80\\ \\mathrm{kg}$), stand motionless facing each other and push off from each other.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "If Skater A pushes on Skater B with $200\\ \\mathrm{N}$, what force does Skater B exert on Skater A? Explain using Newton's Third Law.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states $200\\ \\mathrm{N}$. 1 point: correctly states the direction is opposite to Skater A's push (back toward Skater A). 1 point: correct reasoning — by N3, the reaction force is always equal in magnitude and opposite in direction, regardless of either skater's mass."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate each skater's acceleration immediately after the push (assume each skater's own mass and the force found in part (a) apply to each).",
+        "points": 4,
+        "modelResponse": "1 point: correct method for Skater A, $a=F/m$. 1 point: correct value, $200/50=4.0\\ \\mathrm{m/s^2}$. 1 point: correct method and value for Skater B, $200/80=2.5\\ \\mathrm{m/s^2}$. 1 point: response correctly notes the two accelerations are different, despite the equal forces, due to the skaters' different masses."
+      },
+      {
+        "label": "c",
+        "prompt": "A student says: \"Since the forces are equal, the skaters should end up moving at the same speed.\" Explain why this is incorrect, referencing your answer to part (b).",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the claim is incorrect — the skaters do not end up at the same speed. 1 point: correct reasoning — equal forces (N3) produce different accelerations for the two skaters (N2, since they have different masses), and different accelerations (applied over the same brief push) result in different resulting speeds; equal *force* does not imply equal *acceleration* or equal *speed*."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-42",
+    "sourceId": "U3-FRQ-42",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.1",
+      "N3.2",
+      "N3.3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A block hangs motionless from a rope, which is tied to a hook on the ceiling.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the two forces that produce the block's own equilibrium, stating which object each acts on and which force type each is.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the block's weight (gravitational), acting on the block. 1 point: correctly identifies the rope's tension (contact), acting on the block. 1 point: response correctly notes both forces act on the same object (the block)."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify a genuine Newton's Third Law pair somewhere in this scenario (not the pair from part (a)), stating both objects involved and the force type.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies a valid N3 pair (e.g., the block pulls down on the rope, and the rope pulls up on the block; or the rope pulls down on the hook/ceiling, and the hook/ceiling pulls up on the rope). 1 point: correctly identifies both objects involved (e.g., the block and the rope). 1 point: correctly identifies the force type as the same on both sides (tension/contact)."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain how you can tell your answer to part (b) is a genuine N3 pair and your answer to part (a) is not, using the two distinguishing criteria discussed in this unit.",
+        "points": 4,
+        "modelResponse": "1 point: correctly states the first criterion — object count. 1 point: correctly applies it — part (a)'s forces act on one object (the block); part (b)'s forces act on two different objects. 1 point: correctly states the second criterion — force type. 1 point: correctly applies it — part (a)'s forces are two different types (gravitational and contact); part (b)'s forces are the same type (contact) on both sides."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U3-FRQ-43",
+    "sourceId": "U3-FRQ-43",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A small car ($1{,}200\\ \\mathrm{kg}$) and a large truck ($9{,}600\\ \\mathrm{kg}$) collide head-on.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "During the collision, is the force the car exerts on the truck equal to, greater than, or less than the force the truck exerts on the car? Justify your answer using Newton's Third Law.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the forces are equal. 1 point: correct reasoning — N3 guarantees equal-magnitude forces between any two interacting objects. 1 point: correctly notes this holds regardless of either vehicle's mass."
+      },
+      {
+        "label": "b",
+        "prompt": "A student argues: \"That can't be right — the truck is 8 times heavier, so it must hit the car 8 times harder.\" Explain what is wrong with this reasoning.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the reasoning is flawed. 1 point: correct explanation — this reflects the misconception that a more massive object exerts a larger force in an interaction; N3 does not depend on mass in this way. 1 point: response correctly distinguishes \"force exerted\" (equal, by N3) from \"damage/outcome experienced\" (which can differ due to other factors, including each vehicle's own structural strength and the resulting acceleration), without claiming outcomes must also be identical."
+      },
+      {
+        "label": "c",
+        "prompt": "If the collision force on each vehicle is $24{,}000\\ \\mathrm{N}$, calculate each vehicle's acceleration, and use this result to explain what actually *does* differ between the two vehicles during the collision.",
+        "points": 2,
+        "modelResponse": "1 point: correct values, $a_{car}=24{,}000/1{,}200=20\\ \\mathrm{m/s^2}$; $a_{truck}=24{,}000/9{,}600=2.5\\ \\mathrm{m/s^2}$. 1 point: correctly identifies that acceleration (not force) is what differs dramatically between the two vehicles, due to their different masses (N2), even though the collision force itself (N3) is identical for both."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-44",
+    "sourceId": "U3-FRQ-44",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "newtons_third_law",
+    "sourceOutcomes": [
+      "N3.1",
+      "N3.2",
+      "N3.3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A helicopter hovers motionless in the air, its rotors continuously pushing air downward.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Identify the Newton's Third Law pair for the rotor–air interaction, stating both objects, the direction of each force, and the force type.",
+        "points": 4,
+        "modelResponse": "1 point: correctly identifies the rotors pushing air downward. 1 point: correctly identifies the air pushing the rotors (and thus the helicopter) upward, with equal magnitude. 1 point: correctly identifies both objects (the rotors/helicopter and the air). 1 point: correctly identifies the force type as aerodynamic/contact, the same on both sides."
+      },
+      {
+        "label": "b",
+        "prompt": "Identify the two forces responsible for the helicopter's own equilibrium (why it neither rises nor falls), stating which object each acts on and each force's type.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the helicopter's weight, acting on the helicopter. 1 point: correctly identifies the upward air-reaction force (from part a), acting on the helicopter. 1 point: correctly notes both forces act on the same object (the helicopter), of different force types (gravitational vs. aerodynamic)."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain the relationship between your answers to (a) and (b) — specifically, how a force that is part of the N3 pair in (a) also plays a role in the equilibrium condition in (b), without the two concepts (N3 pair vs. equilibrium) being the same thing.",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies that the upward force on the helicopter (from the air, part of the N3 pair in part a) is the *same* force that appears again in part (b)'s equilibrium analysis. 1 point: correctly explains that this single force plays two different roles depending on which question is being asked — as one half of a N3 pair (when analyzing the rotor-air interaction) and as one of two balancing forces (when analyzing the helicopter's own equilibrium). 1 point: response correctly clarifies that this overlap does not make the N3 pair and the equilibrium condition \"the same concept\" — the N3 pair specifically concerns the two objects (rotors/helicopter and air) exchanging equal-opposite forces, while equilibrium specifically concerns all forces acting on one object (the helicopter) summing to zero, and only one of the two N3-pair forces (the one acting on the helicopter) ever enters that single-object sum."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U3-FRQ-45",
+    "sourceId": "U3-FRQ-45",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR1",
+      "SPR2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 4,
+    "scenario": "A spring with $k=60\\ \\mathrm{N/m}$ is stretched by $x=+0.25\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the spring force, including its correct sign.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_s=-kx$. 1 point: correct substitution, $-(60)(0.25)$. 1 point: correct value, $-15\\ \\mathrm{N}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain, in words, what the sign of your answer to part (a) means physically.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states the negative sign means the force acts opposite to the stretching direction. 1 point: correctly connects this to the restoring-force concept — the spring pulls back toward its natural length."
+      },
+      {
+        "label": "c",
+        "prompt": "If instead the spring were compressed by the same magnitude ($x=-0.25\\ \\mathrm{m}$), what would the spring force be?",
+        "points": 2,
+        "modelResponse": "1 point: correct method — negating $x$ negates $F_s$. 1 point: correct value, $+15\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U3-FRQ-46",
+    "sourceId": "U3-FRQ-46",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR1"
+    ],
+    "type": "free-response",
+    "skill": "evaluate-assumptions",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A student says: \"A spring with a bigger spring constant $k$ must be a 'more negative' spring, since Hooke's Law has a minus sign in it.\"",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain what is actually true about the sign of $k$ in this course's model, regardless of how large or small it is.",
+        "points": 2,
+        "modelResponse": "1 point: correctly states $k$ is always positive. 1 point: correctly notes this holds regardless of the spring's stiffness (large or small $k$)."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain what a larger $k$ value actually indicates about a spring.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states a larger $k$ means a stiffer spring. 1 point: correctly explains this means more force is produced per unit of displacement. 1 point: response correctly avoids conflating \"larger $k$\" with any change in sign."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain what the negative sign in $F_s=-kx$ is actually responsible for, if not the sign of $k$ itself.",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the negative sign is responsible for the opposite-sign relationship between $F_s$ and $x$. 1 point: correctly connects this to the restoring-force concept (force always opposes displacement). 1 point: response explicitly separates this role from $k$'s own (always positive) sign."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U3-FRQ-47",
+    "sourceId": "U3-FRQ-47",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "A spring exerts a force of $-21\\ \\mathrm{N}$ when stretched by $x=+0.07\\ \\mathrm{m}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the spring constant, $k$.",
+        "points": 3,
+        "modelResponse": "1 point: correct rearrangement, $k=-F_s/x$. 1 point: correct substitution, $-(-21)/(0.07)$. 1 point: correct value, $300\\ \\mathrm{N/m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Using your value of $k$ from part (a), calculate the force this spring would exert if compressed by $x=-0.15\\ \\mathrm{m}$.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_s=-kx$. 1 point: correct substitution, $-(300)(-0.15)$. 1 point: correct value, $+45\\ \\mathrm{N}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Using your value of $k$ from part (a), calculate the displacement this spring would need to exert a force of $+42\\ \\mathrm{N}$.",
+        "points": 3,
+        "modelResponse": "1 point: correct rearrangement, $x=-F_s/k$. 1 point: correct substitution, $-(42)/300$. 1 point: correct value, $-0.14\\ \\mathrm{m}$ (compressed)."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U3-FRQ-48",
+    "sourceId": "U3-FRQ-48",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "scenario": "The diagram below shows a force–extension graph for a spring.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the slope of this line.",
+        "points": 3,
+        "modelResponse": "1 point: correct method, $\\text{slope}=\\Delta y/\\Delta x$ using points A and B. 1 point: correct substitution, $(-20-20)/(0.4-(-0.4))$. 1 point: correct value, $-50$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the spring's spring constant, $k$, based on your answer to (a), and explain how you determined its sign (positive, even though the slope itself is negative).",
+        "points": 3,
+        "modelResponse": "1 point: correctly states $k=50\\ \\mathrm{N/m}$. 1 point: correctly explains that $k$ is reported as the *magnitude* of the slope. 1 point: correctly notes the slope's negative sign is itself consistent with Hooke's Law's restoring-force structure ($F_s=-kx$), not a sign carried by $k$."
+      },
+      {
+        "label": "c",
+        "prompt": "Using this spring's $k$, predict the force it would exert at $x=+0.5\\ \\mathrm{m}$ — a value beyond what's directly plotted on the graph.",
+        "points": 2,
+        "modelResponse": "1 point: correct method, $F_s=-kx=-(50)(0.5)$. 1 point: correct value, $-25\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 8,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_spring_g1.svg",
+        "caption": "Spring or force–extension graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-49",
+    "sourceId": "U3-FRQ-49",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR3",
+      "SPR1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "Two force–extension graphs are being compared: the one shown below (points A(−0.2, 20), B(0.2, −20)), and a second graph (not shown) with points A(−0.4, 10) and B(0.4, −10).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the spring constant for the graph shown.",
+        "points": 3,
+        "modelResponse": "1 point: correct slope calculation, $(-20-20)/(0.2-(-0.2))$. 1 point: correct value, $-100$. 1 point: correctly reports $k=100\\ \\mathrm{N/m}$ (positive magnitude)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the spring constant for the second (not-shown) graph, described by its two points above.",
+        "points": 3,
+        "modelResponse": "1 point: correct slope calculation, $(-10-10)/(0.4-(-0.4))$. 1 point: correct value, $-25$. 1 point: correctly reports $k=25\\ \\mathrm{N/m}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Which spring is stiffer, and how does the visual steepness of each graph's line reflect this?",
+        "points": 3,
+        "modelResponse": "1 point: correctly identifies the shown graph's spring ($k=100\\ \\mathrm{N/m}$) as stiffer. 1 point: correctly explains that a steeper line (larger slope magnitude) corresponds to a larger $k$, meaning more force per unit displacement. 1 point: response explicitly connects \"steeper line\" to \"larger $k$\" to \"stiffer spring\" as a single chain of reasoning, not three disconnected facts."
+      }
+    ],
+    "totalPoints": 9,
+    "figures": [
+      {
+        "svg": "basis-physics-8/unit-3/forces-bank/u3_spring_g3.svg",
+        "caption": "Spring or force–extension graph for this item."
+      }
+    ]
+  },
+  {
+    "id": "BP8-U3-FRQ-50",
+    "sourceId": "U3-FRQ-50",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "forces-and-newtons-laws",
+    "unit": "Unit 3: Forces and Newton's Laws",
+    "cluster": "hookes_law",
+    "sourceOutcomes": [
+      "SPR1",
+      "SPR2",
+      "SPR3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "scenario": "A spring's force–extension behavior is measured at three displacements: $x=+0.05\\ \\mathrm{m}$: $F_s=-14\\ \\mathrm{N}$; $x=+0.10\\ \\mathrm{m}$: $F_s=-28\\ \\mathrm{N}$; $x=+0.20\\ \\mathrm{m}$: $F_s=-56\\ \\mathrm{N}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Compute $k$ from each of the three data pairs separately, and confirm whether the data is consistent with a single, fixed spring constant.",
+        "points": 4,
+        "modelResponse": "1 point: correct method, $k=-F_s/x$, applied to each pair. 1 point: correctly computes $k=280\\ \\mathrm{N/m}$ for the first pair ($-(-14)/0.05$). 1 point: correctly computes $k=280\\ \\mathrm{N/m}$ for the second and third pairs as well ($-(-28)/0.10$ and $-(-56)/0.20$). 1 point: correctly concludes the data is consistent with a single, fixed $k=280\\ \\mathrm{N/m}$."
+      },
+      {
+        "label": "b",
+        "prompt": "A classmate says: \"The force keeps getting bigger and bigger as $x$ increases — doesn't that mean $k$ is increasing too?\" Write a complete rebuttal, using your results from part (a).",
+        "points": 3,
+        "modelResponse": "1 point: correctly states the classmate's conclusion is incorrect. 1 point: correct reasoning — the increasing force is fully explained by $F_s=-kx$ with a *constant* $k$ multiplied by an increasing $x$; this is exactly the expected, correct behavior of a linear spring, not evidence that $k$ is changing. 1 point: response explicitly cites the part (a) result (the same $k$ value recovered from all three pairs) as direct evidence against the classmate's claim."
+      },
+      {
+        "label": "c",
+        "prompt": "Using the confirmed $k$, predict the force this spring would exert if compressed by $x=-0.5\\ \\mathrm{m}$.",
+        "points": 3,
+        "modelResponse": "1 point: correct equation, $F_s=-kx$, using $k=280\\ \\mathrm{N/m}$. 1 point: correct substitution, $-(280)(-0.5)$. 1 point: correct value, $+140\\ \\mathrm{N}$."
+      }
+    ],
+    "totalPoints": 10
+  }
+]

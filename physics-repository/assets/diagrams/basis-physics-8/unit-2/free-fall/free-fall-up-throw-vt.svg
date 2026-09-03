@@ -25,6 +25,6 @@
 <path d="M336 128L308 172" stroke="#c0392b" stroke-width="1"/>
 <text x="340" y="124" font-family="Arial" font-size="12" fill="#c0392b">top of flight: v = 0,</text>
 <text x="340" y="140" font-family="Arial" font-size="12" fill="#c0392b">but a is still &#8722;9.8 m/s&#178;</text>
-<text x="96" y="64" font-family="Arial" font-size="13" font-weight="bold" fill="#1769aa">constant slope = &#8722;9.8 m/s&#178;</text>
-<text x="120" y="264" font-family="Arial" font-size="12" fill="#5b6675">the line does not flatten at the crossing</text>
+<text x="92" y="250" font-family="Arial" font-size="13" font-weight="bold" fill="#1769aa">constant slope = &#8722;9.8 m/s&#178;</text>
+<text x="92" y="270" font-family="Arial" font-size="12" fill="#5b6675">one straight line &#8212; it does not flatten at the crossing</text>
 </svg>

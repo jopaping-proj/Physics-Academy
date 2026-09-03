@@ -31,5 +31,5 @@
 <circle cx="370" cy="227" r="5" fill="#c0392b"/>
 <path d="M300 250L363 231" stroke="#c0392b" stroke-width="1"/>
 <text x="296" y="255" font-family="Arial" font-size="12" fill="#c0392b" text-anchor="end">v = 0 at t = 3 s</text>
-<text x="96" y="140" font-family="Arial" font-size="13" font-weight="bold" fill="#1769aa">slope = &#916;v/&#916;t = &#8722;2 m/s&#178;</text>
+<text x="90" y="315" font-family="Arial" font-size="13" font-weight="bold" fill="#1769aa">slope = &#916;v / &#916;t = (&#8722;8 m/s) / (4 s) = &#8722;2 m/s&#178;</text>
 </svg>
