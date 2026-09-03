@@ -1,0 +1,1695 @@
+[
+  {
+    "id": "BP8-U5-MCQ-001",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "In terms of the particles that make up a substance, temperature is a measure of what?",
+    "choices": [
+      "The total energy of all the particles added together.",
+      "The average kinetic energy of the particles.",
+      "The number of particles present.",
+      "The total force the particles exert on the container."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — temperature is proportional to the average random kinetic energy of the particles, not the total energy or the amount of substance.",
+      "incorrect": {
+        "0": "That is closer to internal energy, which also depends on how much substance is present. Temperature is an average per particle.",
+        "2": "A large cup and a small cup of water at the same temperature have very different numbers of particles but the same temperature.",
+        "3": "Pressure relates to the force on the container. Temperature is about the particles' average kinetic energy."
+      }
+    },
+    "hint": ["Two objects at the same temperature can have very different total energies. What quantity is the same for both?"],
+    "solution": "Temperature is a measure of the average kinetic energy of the particles of a substance. It does not depend on how many particles there are — a teaspoon and a bucket of water at 20 degrees Celsius have the same temperature but very different total (internal) energies."
+  },
+  {
+    "id": "BP8-U5-MCQ-002",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Room temperature is about $25\\ ^\\circ\\mathrm{C}$. What is this on the Kelvin scale? (Use $T_K = T_C + 273$.)",
+    "choices": ["$248\\ \\mathrm{K}$", "$298\\ \\mathrm{K}$", "$25\\ \\mathrm{K}$", "$302\\ \\mathrm{K}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $T_K = 25 + 273 = 298\\ \\mathrm{K}$.",
+      "incorrect": {
+        "0": "This subtracts 273 instead of adding it. To go from Celsius to kelvin you add 273.",
+        "2": "The kelvin and Celsius scales are offset by 273; you cannot leave the number unchanged.",
+        "3": "This adds 277. The offset between Celsius and kelvin is 273."
+      }
+    },
+    "hint": ["Celsius to kelvin: add 273."],
+    "solution": "To convert from Celsius to kelvin, add 273: $T_K = 25 + 273 = 298\\ \\mathrm{K}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-003",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A sample is heated so that its temperature rises from $290\\ \\mathrm{K}$ to $310\\ \\mathrm{K}$. What is the temperature change expressed in degrees Celsius?",
+    "choices": ["$20\\ ^\\circ\\mathrm{C}$", "$-253\\ ^\\circ\\mathrm{C}$", "$583\\ ^\\circ\\mathrm{C}$", "$47\\ ^\\circ\\mathrm{C}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — a change of 1 kelvin equals a change of 1 degree Celsius, so a $20\\ \\mathrm{K}$ rise is a $20\\ ^\\circ\\mathrm{C}$ rise.",
+      "incorrect": {
+        "1": "This converts a single temperature (290 K) to Celsius. The question asks about a temperature *change*.",
+        "2": "This adds the two Celsius temperatures. A change is a difference, not a sum.",
+        "3": "This converts 320 K to Celsius. The change is $310 - 290 = 20$, and a kelvin change equals a Celsius change."
+      }
+    },
+    "hint": ["The size of one kelvin equals the size of one degree Celsius, so temperature *differences* are numerically the same on both scales."],
+    "solution": "The kelvin and Celsius degrees are the same size, so a temperature *change* has the same numerical value on both scales. $\\Delta T = 310 - 290 = 20\\ \\mathrm{K} = 20\\ ^\\circ\\mathrm{C}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-004",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The temperature on a warm day is $30\\ ^\\circ\\mathrm{C}$. What is this in degrees Fahrenheit? (Use $T_F = \\tfrac{9}{5}T_C + 32$.)",
+    "choices": ["$86\\ ^\\circ\\mathrm{F}$", "$54\\ ^\\circ\\mathrm{F}$", "$62\\ ^\\circ\\mathrm{F}$", "$16.6\\ ^\\circ\\mathrm{F}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\tfrac{9}{5}(30) + 32 = 54 + 32 = 86\\ ^\\circ\\mathrm{F}$.",
+      "incorrect": {
+        "1": "This gives $\\tfrac{9}{5}(30) = 54$ but forgets to add 32.",
+        "2": "This adds 32 first, then does something else. Multiply by $\\tfrac{9}{5}$ first, then add 32.",
+        "3": "This is the Celsius-from-Fahrenheit calculation applied backwards. Use $T_F = \\tfrac{9}{5}T_C + 32$."
+      }
+    },
+    "hint": ["Multiply the Celsius value by $\\tfrac{9}{5}$, then add 32."],
+    "solution": "$T_F = \\tfrac{9}{5}T_C + 32 = \\tfrac{9}{5}(30) + 32 = 54 + 32 = 86\\ ^\\circ\\mathrm{F}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-005",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which statement best defines the internal energy of a substance?",
+    "choices": [
+      "The heat that flows into the substance from its surroundings.",
+      "The total random kinetic energy of its particles plus the total potential energy stored in the forces between them.",
+      "The average kinetic energy of its particles.",
+      "The work done on the substance by external forces."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — internal energy is the sum of all the particles' random kinetic energies and all the inter-particle potential energies.",
+      "incorrect": {
+        "0": "Heat is energy *in transit* due to a temperature difference. Internal energy is energy the substance *has*.",
+        "2": "That is temperature. Internal energy is a total over all particles, so it also depends on how much substance is present.",
+        "3": "Work can *change* the internal energy, but it is not the definition of it."
+      }
+    },
+    "hint": ["Internal energy is a total, and it has two parts: motion of particles and the 'springs' between them."],
+    "solution": "Internal energy is the total random kinetic energy of all the particles of a substance plus the total potential energy stored in the inter-particle forces. Unlike temperature (an average per particle), it depends on the amount of substance."
+  },
+  {
+    "id": "BP8-U5-MCQ-006",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT1", "TT3"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A cup of tea and a swimming pool are both at $20\\ ^\\circ\\mathrm{C}$. Which statement is correct?",
+    "choices": [
+      "The pool has a higher temperature because it contains more energy.",
+      "The tea and the pool have the same temperature, but the pool has far more internal energy.",
+      "The tea has more internal energy because it feels warmer to drink.",
+      "Both have the same internal energy because they are at the same temperature."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — temperature (average particle KE) is the same, $20\\ ^\\circ\\mathrm{C}$, but the pool has vastly more particles, so its total internal energy is much larger.",
+      "incorrect": {
+        "0": "More energy does not mean a higher temperature — temperature is an average per particle, and both are at $20\\ ^\\circ\\mathrm{C}$.",
+        "2": "The tea does not feel warmer than $20\\ ^\\circ\\mathrm{C}$ pool water; and internal energy scales with amount of substance, favouring the pool.",
+        "3": "Internal energy is a total. The pool has far more particles, so far more internal energy, at the same temperature."
+      }
+    },
+    "hint": ["Temperature is an average per particle; internal energy is a grand total. Which object has more particles?"],
+    "solution": "Temperature is the average kinetic energy per particle, so both are at $20\\ ^\\circ\\mathrm{C}$. Internal energy is the total over all particles, and the pool contains enormously more water, so it holds enormously more internal energy despite the equal temperature."
+  },
+  {
+    "id": "BP8-U5-MCQ-007",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT4"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A hot metal spoon is placed in a cup of cool water and left. As the two reach thermal equilibrium, what happens to their temperatures?",
+    "choices": [
+      "The spoon's temperature falls and the water's temperature rises until they are equal.",
+      "Both temperatures rise until they are equal.",
+      "The spoon stays hot and the water stays cool, since metal and water are different materials.",
+      "The water's temperature falls and the spoon's temperature rises."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — energy flows from the hotter spoon to the cooler water, cooling the spoon and warming the water until both are at the same temperature.",
+      "incorrect": {
+        "1": "The spoon cannot get hotter — it is the source of the energy. It cools while the water warms.",
+        "2": "Different materials still exchange energy when in contact at different temperatures until they reach a common temperature.",
+        "3": "Energy flows from hot to cold, so the spoon (hot) cools and the water (cold) warms, not the other way round."
+      }
+    },
+    "hint": ["Energy always flows from the hotter object to the cooler one. What does that do to each temperature?"],
+    "solution": "Energy is transferred from the hotter spoon to the cooler water. The spoon loses internal energy and cools; the water gains internal energy and warms. This continues until both are at the same temperature — thermal equilibrium — after which there is no further net transfer."
+  },
+  {
+    "id": "BP8-U5-MCQ-008",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT2"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why is $0\\ \\mathrm{K}$ (absolute zero) the lowest possible temperature?",
+    "choices": [
+      "Because water freezes at that temperature.",
+      "Because the particles' average kinetic energy would be zero, and kinetic energy cannot be negative.",
+      "Because thermometers cannot read any lower.",
+      "Because the particles would move infinitely fast."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — temperature is proportional to the average particle kinetic energy, and the least that can be is zero, which sets the absolute zero of the scale.",
+      "incorrect": {
+        "0": "Water freezes at $273\\ \\mathrm{K}$ ($0\\ ^\\circ\\mathrm{C}$), far above absolute zero.",
+        "2": "The limit is physical, not an instrument limitation.",
+        "3": "Absolute zero corresponds to *minimum* particle motion, not maximum."
+      }
+    },
+    "hint": ["If temperature tracks average kinetic energy, what is the smallest that average can be?"],
+    "solution": "Since temperature is proportional to the average kinetic energy of the particles, and kinetic energy is never negative, the smallest possible average kinetic energy — essentially zero particle motion — corresponds to the lowest possible temperature, $0\\ \\mathrm{K} = -273\\ ^\\circ\\mathrm{C}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-009",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A student says 'heat and temperature are the same thing.' Which correction is best?",
+    "choices": [
+      "They are the same, just measured in different units.",
+      "Temperature measures the average kinetic energy of particles; heat is energy transferred between objects because of a temperature difference.",
+      "Heat is what you feel and temperature is what a thermometer reads, but physically they are identical.",
+      "Temperature is always larger than heat."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — temperature is a property of an object (average particle KE); heat is energy on the move between objects at different temperatures.",
+      "incorrect": {
+        "0": "They are different physical quantities: temperature in kelvin or degrees, heat in joules.",
+        "2": "They are genuinely different quantities, not two names for one thing.",
+        "3": "They are different quantities with different units — you cannot compare their sizes."
+      }
+    },
+    "hint": ["One is a property an object *has*; the other is energy that *moves* from one object to another."],
+    "solution": "Temperature is a measure of the average kinetic energy of an object's particles — a property of the object. Heat is energy transferred from one object to another as a result of a temperature difference, measured in joules. An object 'has' a temperature; it does not 'have' heat."
+  },
+
+  {
+    "id": "BP8-U5-MCQ-010",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Heat is best described as:",
+    "choices": [
+      "a substance stored inside hot objects.",
+      "energy transferred between objects because they are at different temperatures.",
+      "the same as the temperature of an object.",
+      "the total kinetic energy of an object's particles."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — heat is energy in transit, flowing from the hotter object to the cooler one.",
+      "incorrect": {
+        "0": "This is the old 'caloric' idea, now known to be wrong. Objects contain internal energy, not 'heat'.",
+        "2": "Temperature is a property; heat is transferred energy. They are different quantities.",
+        "3": "That is (part of) internal energy. Heat is the energy that moves when temperatures differ."
+      }
+    },
+    "hint": ["Heat only exists while energy is moving. What makes it move?"],
+    "solution": "Heat is energy transferred from one object to another as a result of a temperature difference. It flows spontaneously from the hotter object to the cooler one and stops when they reach the same temperature."
+  },
+  {
+    "id": "BP8-U5-MCQ-011",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT2"],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "When a metal block is heated and its temperature rises, what is happening to its particles on the microscopic level?",
+    "choices": [
+      "The particles are getting bigger.",
+      "The particles are vibrating faster, so their average kinetic energy is larger.",
+      "New particles are being created.",
+      "The particles stop moving and lock into place."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a higher temperature means a larger average kinetic energy, which for a solid means the particles vibrate more vigorously about their fixed positions.",
+      "incorrect": {
+        "0": "Heating makes the particles move faster; it does not change their size. (The block expands because faster vibration needs more room, but individual particles do not grow.)",
+        "2": "The number of particles does not change when a substance is heated.",
+        "3": "That describes cooling toward absolute zero, not heating."
+      }
+    },
+    "hint": ["Temperature tracks average kinetic energy. Higher temperature means the particles move how?"],
+    "solution": "A rise in temperature is a rise in the average kinetic energy of the particles. In a solid the particles are held near fixed positions, so this shows up as faster, larger-amplitude vibration about those positions."
+  },
+  {
+    "id": "BP8-U5-MCQ-012",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A metal spoon left in a pot of hot soup becomes hot at the handle end, even though only the bowl end touches the soup. Which method of heat transfer is mainly responsible?",
+    "choices": ["Convection", "Conduction", "Radiation", "Evaporation"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — energy passes along the solid metal from particle to particle without the metal itself flowing. That is conduction.",
+      "incorrect": {
+        "0": "Convection needs a moving fluid (liquid or gas). The spoon is a solid.",
+        "2": "Radiation would heat the handle even without contact, but the dominant path here is straight through the solid metal.",
+        "3": "Evaporation is a phase change at a liquid surface, not a way of moving energy along a solid."
+      }
+    },
+    "hint": ["The energy travels through a solid without the solid moving. Which mechanism is that?"],
+    "solution": "Conduction is the transfer of energy through a material by particle-to-particle interaction, without bulk movement of the material. Metals conduct well, so energy passes quickly from the hot bowl end of the spoon to the handle."
+  },
+  {
+    "id": "BP8-U5-MCQ-013",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Which situation is the clearest example of heat transfer by radiation?",
+    "choices": [
+      "A radiator warming the air in a room, which then circulates.",
+      "Feeling the warmth of the Sun on your face on a clear day.",
+      "A metal rod conducting energy from a flame to your hand.",
+      "Hot water rising to the top of a kettle."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the Sun's energy reaches Earth across empty space as electromagnetic radiation, with no particles in between to carry it.",
+      "incorrect": {
+        "0": "Air circulating is convection.",
+        "2": "Energy passing along a solid rod is conduction.",
+        "3": "Warm water rising is convection — the fluid itself carries the energy."
+      }
+    },
+    "hint": ["Radiation is the only method that works through a vacuum. Which of these crosses empty space?"],
+    "solution": "Radiation transfers energy as electromagnetic waves and needs no medium. Sunlight travels through the vacuum of space to warm your face, which conduction and convection (both needing matter) cannot do."
+  },
+  {
+    "id": "BP8-U5-MCQ-014",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT3"],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A pot of water is heated on a stove. Which sequence correctly identifies the dominant transfer method at each stage?",
+    "choices": [
+      "Flame to pot base: convection; through the pot metal: radiation; through the water: conduction.",
+      "Flame to pot base: radiation and conduction; through the pot metal: conduction; through the water: convection.",
+      "Every stage is conduction, because the pot is solid.",
+      "Every stage is convection, because heat always rises."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the flame heats the base by radiation and by contact (conduction); the solid metal conducts; and the heated water rises and circulates by convection.",
+      "incorrect": {
+        "0": "The methods are mislabelled: the metal conducts (it is solid), and the water convects (it is a fluid that can flow).",
+        "2": "The water is a fluid and transfers energy mainly by convection, not conduction.",
+        "3": "The solid pot metal cannot convect — it transfers energy by conduction."
+      }
+    },
+    "hint": ["Solids transfer by conduction; fluids that can flow transfer mainly by convection; a glowing flame also radiates."],
+    "solution": "The flame delivers energy to the pot base by radiation and by conduction on contact. The solid metal base and walls conduct that energy inward. Once the bottom layer of water is heated it becomes less dense, rises, and is replaced by cooler water — convection — which is how the whole pot heats up."
+  },
+  {
+    "id": "BP8-U5-MCQ-015",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "On a cold day a metal railing feels colder than a wooden bench next to it, even though a thermometer shows both are at the same temperature. Why?",
+    "choices": [
+      "The metal is genuinely at a lower temperature than the wood.",
+      "Metal conducts energy away from your warm hand much faster than wood does, so your hand cools more quickly.",
+      "Cold flows out of the metal into your hand.",
+      "Wood produces its own heat."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'feeling cold' is really 'losing energy from your skin quickly.' Metal is a much better conductor, so it draws energy from your hand faster, and your skin cools faster.",
+      "incorrect": {
+        "0": "The thermometer shows they are at the same temperature. The difference is in how fast each removes energy from your hand.",
+        "2": "There is no such thing as 'cold' flowing. Energy flows from your warm hand to the cooler railing.",
+        "3": "Wood does not generate heat; it simply conducts energy away from your hand slowly."
+      }
+    },
+    "hint": ["Your sense of 'cold' is really about how fast energy leaves your skin. Which material pulls it away faster?"],
+    "solution": "Both objects are at the same temperature, below your body temperature, so energy flows from your hand into each. Metal is a far better conductor than wood, so it removes energy from your skin much faster, making your hand cool quickly — which your nerves report as 'colder.'"
+  },
+  {
+    "id": "BP8-U5-MCQ-016",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A room is heated by a wall heater. Warm air near the heater rises, cooler air sinks toward the heater, and a circulation loop forms. This is an example of:",
+    "choices": ["conduction", "convection", "radiation", "thermal equilibrium"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — convection is energy transfer by the bulk movement of a heated fluid; the rising warm air and sinking cool air form a convection current.",
+      "incorrect": {
+        "0": "Conduction does not involve the material flowing. Here the air itself moves.",
+        "2": "Radiation needs no medium and no bulk motion. This is a moving-fluid loop.",
+        "3": "Thermal equilibrium is the end state where temperatures are equal, not a transfer method."
+      }
+    },
+    "hint": ["The air itself is moving in a loop, carrying energy with it."],
+    "solution": "Convection transfers energy through a fluid by the bulk motion of the fluid: warmed air expands, becomes less dense, and rises; cooler denser air sinks to take its place, setting up a circulating convection current that spreads the energy through the room."
+  },
+  {
+    "id": "BP8-U5-MCQ-017",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT2", "HT1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "Two blocks at different temperatures are placed in contact. Explain, in particle terms, why energy flows from the hotter block to the colder one and not the reverse.",
+    "choices": [
+      "The hotter block physically pushes its particles into the colder block.",
+      "At the contact surface, faster-moving particles of the hot block collide with slower-moving particles of the cold block, on average transferring kinetic energy to them; the reverse transfer is smaller, so there is a net flow from hot to cold.",
+      "Cold is a substance that moves from the cold block to the hot block.",
+      "Energy flows equally both ways, so neither block changes temperature."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the net transfer is from hot to cold because the hot block's particles carry more kinetic energy on average, so collisions at the interface hand more energy to the cold side than they receive back.",
+      "incorrect": {
+        "0": "The particles of the two blocks do not swap places; they exchange energy through collisions at the boundary.",
+        "2": "There is no 'cold substance.' Only energy is transferred, and it goes from hot to cold.",
+        "3": "If the transfer were equal both ways there would be no observed cooling and warming — but there is, because the hot side gives up more."
+      }
+    },
+    "hint": ["Think about collisions at the boundary. Whose particles carry more kinetic energy, on average, and what happens in a collision between a fast and a slow particle?"],
+    "solution": "At the interface, particles of both blocks collide. Because the hot block's particles have greater average kinetic energy, a typical collision transfers energy from a hot-block particle to a cold-block particle more often than the reverse. Summed over the huge number of collisions, this gives a net flow of energy from hot to cold, which continues until the average kinetic energies (temperatures) are equal."
+  },
+
+  {
+    "id": "BP8-U5-MCQ-018",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A moving box slides across a rough floor and stops. Its kinetic energy has become:",
+    "choices": [
+      "gravitational potential energy of the box.",
+      "internal (thermal) energy of the box and floor, which warm up slightly.",
+      "nothing — the energy is destroyed by friction.",
+      "spring potential energy in the floor."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — friction converts the box's kinetic energy into internal energy of the box and floor; total energy is conserved.",
+      "incorrect": {
+        "0": "The box does not rise, so its gravitational potential energy does not change.",
+        "2": "Energy is never destroyed. Friction transforms the kinetic energy into thermal energy.",
+        "3": "The floor is not a spring; there is no elastic storage here."
+      }
+    },
+    "hint": ["Total energy is always conserved. Feel the floor after something heavy slides on it — where did the motion energy go?"],
+    "solution": "Friction does negative work on the box, removing its kinetic energy, and an equal amount of energy appears as internal (thermal) energy in the box and the floor — they warm up slightly. Mechanical energy is not conserved here, but total energy is."
+  },
+  {
+    "id": "BP8-U5-MCQ-019",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $2.0\\ \\mathrm{kg}$ block falls $5.0\\ \\mathrm{m}$ and lands without bouncing. Taking $g = 10\\ \\mathrm{m/s^2}$, how much energy is converted to internal energy (in the block, ground, and air) by the time the block is at rest on the ground?",
+    "choices": ["$0\\ \\mathrm{J}$", "$25\\ \\mathrm{J}$", "$100\\ \\mathrm{J}$", "$10\\ \\mathrm{J}$"],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — all the lost gravitational potential energy, $mgh = (2.0)(10)(5.0) = 100\\ \\mathrm{J}$, ends up as internal energy once the block is at rest.",
+      "incorrect": {
+        "1": "This looks like $\\tfrac{1}{2}mh$ or similar. The energy released is $mgh = 100\\ \\mathrm{J}$.",
+        "0": "The block started with $100\\ \\mathrm{J}$ of gravitational potential energy and ends at rest with none of it as mechanical energy — that energy went somewhere.",
+        "3": "This is $mg$, the weight. Multiply by the height: $mgh = 100\\ \\mathrm{J}$."
+      }
+    },
+    "hint": ["Initial mechanical energy = final mechanical energy + internal energy generated. The block starts and ends at rest."],
+    "solution": "The block loses $mgh = (2.0\\ \\mathrm{kg})(10\\ \\mathrm{m/s^2})(5.0\\ \\mathrm{m}) = 100\\ \\mathrm{J}$ of gravitational potential energy. It ends at rest, so none of this is kinetic energy. By conservation of energy, all $100\\ \\mathrm{J}$ has become internal (thermal) energy of the block, ground, and air."
+  },
+  {
+    "id": "BP8-U5-MCQ-020",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "You rub your hands together briskly and they get warm. Which energy transformation describes this best?",
+    "choices": [
+      "Chemical energy in your muscles does work against friction, which becomes internal energy in your hands.",
+      "Heat flows from the room into your hands.",
+      "Gravitational potential energy converts to thermal energy.",
+      "Your hands radiate energy inward."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — your muscles (chemical energy) do work moving your hands against friction, and that work is converted into internal energy, raising your hands' temperature.",
+      "incorrect": {
+        "1": "The room is not warmer than your hands, and rubbing faster makes them warmer still — the source is the mechanical work you do.",
+        "2": "Your hands do not change height significantly; gravity is not the source.",
+        "3": "Radiation is not driving this; the warming comes from friction doing work."
+      }
+    },
+    "hint": ["What is the ultimate source of the energy? What are you doing that stops the moment you stop moving your hands?"],
+    "solution": "Chemical energy stored in your muscles is used to do work sliding one hand across the other against friction. Friction converts that mechanical work into internal energy of the skin surfaces, raising their temperature. Stop rubbing and the warming stops, because the work input stops."
+  },
+  {
+    "id": "BP8-U5-MCQ-021",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A $0.50\\ \\mathrm{kg}$ ball is dropped from $8.0\\ \\mathrm{m}$ and rebounds to $6.0\\ \\mathrm{m}$. Using $g = 10\\ \\mathrm{m/s^2}$, how much mechanical energy was converted to internal energy in the bounce?",
+    "choices": ["$10\\ \\mathrm{J}$", "$40\\ \\mathrm{J}$", "$30\\ \\mathrm{J}$", "$70\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — initial $PE = mgh_1 = (0.50)(10)(8.0) = 40\\ \\mathrm{J}$; after the bounce $PE = (0.50)(10)(6.0) = 30\\ \\mathrm{J}$; the $10\\ \\mathrm{J}$ difference became internal energy.",
+      "incorrect": {
+        "1": "This is the initial potential energy, not the amount lost. Subtract the rebound potential energy.",
+        "2": "This is the rebound potential energy, not the amount lost.",
+        "3": "This adds the two potential energies. The energy lost is the *difference*."
+      }
+    },
+    "hint": ["Energy lost = (energy at the top before) minus (energy at the top after). Both are $mgh$ with the ball momentarily at rest."],
+    "solution": "At the drop height the ball has $mgh_1 = (0.50)(10)(8.0) = 40\\ \\mathrm{J}$ (at rest). At the rebound height it has $mgh_2 = (0.50)(10)(6.0) = 30\\ \\mathrm{J}$ (at rest). The missing $40 - 30 = 10\\ \\mathrm{J}$ was converted to internal energy of the ball and floor during the deformation of the bounce."
+  },
+  {
+    "id": "BP8-U5-MCQ-022",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student claims that friction 'uses up' energy and so violates conservation of energy. What is the best response?",
+    "choices": [
+      "The student is right; conservation of energy fails whenever friction acts.",
+      "Friction converts kinetic energy into internal (thermal) energy; the total energy is unchanged, so conservation of energy still holds.",
+      "Friction creates new energy, which balances the loss.",
+      "Conservation of energy only applies to objects in a vacuum."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — friction is a transformation pathway, not a leak. Mechanical energy decreases, internal energy increases by the same amount, and the total is constant.",
+      "incorrect": {
+        "0": "Conservation of *total* energy never fails. It is *mechanical* energy that is not conserved when friction acts.",
+        "2": "Friction does not create energy; it moves energy from the mechanical account to the thermal account.",
+        "3": "Conservation of energy applies everywhere; friction just adds a thermal term to track."
+      }
+    },
+    "hint": ["Where does the 'lost' energy actually go? Is the *total* really smaller afterwards?"],
+    "solution": "Friction transforms mechanical (kinetic) energy into internal energy of the rubbing surfaces. The mechanical energy decreases, but exactly that much internal energy appears, so the total energy is conserved. 'Using up' energy really means moving it into a form (heat) that is hard to recover as useful work."
+  },
+  {
+    "id": "BP8-U5-MCQ-023",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1", "SHC2"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A $0.20\\ \\mathrm{kg}$ lead ball ($c = 130\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) falls from a height of $26\\ \\mathrm{m}$ and lands without bouncing. If all the lost gravitational potential energy heats the ball alone, estimate its temperature rise. Use $g = 10\\ \\mathrm{m/s^2}$.",
+    "choices": ["about $2.0\\ \\mathrm{K}$", "about $0.1\\ \\mathrm{K}$", "about $20\\ \\mathrm{K}$", "about $10\\ \\mathrm{K}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — energy released $= mgh = (0.20)(10)(26) = 52\\ \\mathrm{J}$; then $\\Delta T = \\dfrac{Q}{mc} = \\dfrac{52}{(0.20)(130)} = \\dfrac{52}{26} = 2.0\\ \\mathrm{K}$.",
+      "incorrect": {
+        "1": "Check: $mc = (0.20)(130) = 26$, and $Q = 52\\ \\mathrm{J}$, so $\\Delta T = 52/26 = 2.0\\ \\mathrm{K}$.",
+        "2": "This looks like $Q/c$ without the mass, or an order-of-magnitude slip.",
+        "3": "This may come from using $g h$ without the mass in the energy step. $Q = mgh = 52\\ \\mathrm{J}$."
+      }
+    },
+    "hint": ["Two steps: (1) energy released $= mgh$; (2) set that equal to $Q = mc\\,\\Delta T$ and solve for $\\Delta T$. The mass cancels."],
+    "solution": "The gravitational potential energy released is $Q = mgh = (0.20\\ \\mathrm{kg})(10\\ \\mathrm{m/s^2})(26\\ \\mathrm{m}) = 52\\ \\mathrm{J}$. Setting this equal to $mc\\,\\Delta T$: $\\Delta T = \\dfrac{Q}{mc} = \\dfrac{52}{(0.20)(130)} = \\dfrac{52}{26} = 2.0\\ \\mathrm{K}$. (Notice the mass cancels, so $\\Delta T = gh/c$.)"
+  },
+
+  {
+    "id": "BP8-U5-MCQ-024",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The zeroth law of thermodynamics states that:",
+    "choices": [
+      "energy cannot be created or destroyed.",
+      "if object A is in thermal equilibrium with object B, and B is in thermal equilibrium with object C, then A is in thermal equilibrium with C.",
+      "heat always flows from cold to hot.",
+      "no engine can be perfectly efficient."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the zeroth law establishes that 'being at the same temperature' is a consistent, transitive relationship, which is what makes thermometers meaningful.",
+      "incorrect": {
+        "0": "That is the first law of thermodynamics (conservation of energy).",
+        "2": "Heat flows from hot to cold, and this is a consequence of the second law, not the zeroth.",
+        "3": "That is a statement of the second law."
+      }
+    },
+    "hint": ["It is about three objects and the transitivity of 'same temperature.'"],
+    "solution": "The zeroth law states that if A is in thermal equilibrium with B and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. This transitivity is what lets a thermometer (object B) be used to compare the temperatures of two other objects."
+  },
+  {
+    "id": "BP8-U5-MCQ-025",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1", "TT4"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A thermometer reads $21\\ ^\\circ\\mathrm{C}$ when held in the air of a room, and also $21\\ ^\\circ\\mathrm{C}$ when pressed against a tabletop in the same room. What can you conclude?",
+    "choices": [
+      "Nothing — a thermometer only works in air.",
+      "The air and the tabletop are in thermal equilibrium with each other (both at $21\\ ^\\circ\\mathrm{C}$), by the zeroth law.",
+      "The tabletop is warmer than the air because it is solid.",
+      "The thermometer is broken, since air and solids cannot be the same temperature."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the thermometer is in equilibrium with each, and both readings match, so by the zeroth law the air and tabletop are in equilibrium with each other.",
+      "incorrect": {
+        "0": "A thermometer works by reaching thermal equilibrium with whatever it touches, air or solid.",
+        "2": "Same temperature reading means same temperature. A solid at room temperature is not warmer than the room's air.",
+        "3": "Objects left together in a room do reach the same temperature; that is thermal equilibrium."
+      }
+    },
+    "hint": ["The thermometer is object B, in equilibrium with both the air and the table. What does the zeroth law then say about the air and the table?"],
+    "solution": "The thermometer reaches thermal equilibrium with each object it contacts and reports its temperature. Both the air and the tabletop bring it to $21\\ ^\\circ\\mathrm{C}$, so both are in thermal equilibrium with the thermometer, and by the zeroth law they are in thermal equilibrium with each other — they are at the same temperature."
+  },
+  {
+    "id": "BP8-U5-MCQ-026",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why does the zeroth law of thermodynamics matter for the everyday use of thermometers?",
+    "choices": [
+      "It guarantees that a thermometer never changes the temperature of what it measures.",
+      "It guarantees that if a thermometer reads the same value for two objects, those two objects are at the same temperature.",
+      "It defines the size of one degree.",
+      "It says heat flows into the thermometer forever."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the transitivity in the zeroth law is exactly what lets a thermometer stand in as a reliable go-between for comparing temperatures.",
+      "incorrect": {
+        "0": "A thermometer does exchange a little energy with what it measures; the zeroth law is about consistency of 'same temperature,' not about zero disturbance.",
+        "2": "The size of a degree is set by the choice of scale, not by the zeroth law.",
+        "3": "Heat flow into the thermometer stops once equilibrium is reached — that is the point."
+      }
+    },
+    "hint": ["A thermometer is a 'middle object.' The zeroth law is what makes comparing through a middle object valid."],
+    "solution": "The zeroth law states that thermal equilibrium is transitive: if the thermometer is in equilibrium with object A and with object B, then A and B are in equilibrium with each other. This is the logical basis for using a thermometer — a single go-between — to decide whether two other objects are at the same temperature."
+  },
+  {
+    "id": "BP8-U5-MCQ-027",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1", "TT4"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Two objects are in thermal equilibrium when:",
+    "choices": [
+      "they are touching.",
+      "they are at the same temperature, so there is no net transfer of energy between them.",
+      "one is much larger than the other.",
+      "they are both made of metal."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — thermal equilibrium means equal temperatures and therefore no net energy flow between the objects.",
+      "incorrect": {
+        "0": "Touching objects at different temperatures are *not* in equilibrium — energy is still flowing between them.",
+        "2": "Size is irrelevant to whether they are in thermal equilibrium.",
+        "3": "Material is irrelevant; equilibrium is about equal temperature."
+      }
+    },
+    "hint": ["Equilibrium means 'nothing is changing.' What has to be equal for energy to stop flowing?"],
+    "solution": "Two objects are in thermal equilibrium when they are at the same temperature. At that point energy may still be exchanged at the microscopic level, but there is no *net* transfer, so neither object's temperature changes."
+  },
+  {
+    "id": "BP8-U5-MCQ-028",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A student says: 'The zeroth law just says two things touching will end up the same temperature — that's obvious, so why give it a name?' What is the sharper point of the law?",
+    "choices": [
+      "It is not really needed and is only named for tradition.",
+      "It asserts *transitivity*: 'same temperature as' behaves like equality, so a thermometer in equilibrium with A and with B tells you A and B are in equilibrium with each other — even though A and B never touched.",
+      "It says energy is conserved during the process.",
+      "It says the process happens instantly."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the content is the transitivity, which is what makes temperature a well-defined property and thermometry valid; it is not obvious and must be stated.",
+      "incorrect": {
+        "0": "It is genuinely needed: it is the assumption that makes 'temperature' a consistent single-number property of a system.",
+        "2": "Energy conservation is the *first* law, a separate statement.",
+        "3": "The law says nothing about how fast equilibrium is reached."
+      }
+    },
+    "hint": ["The key word is 'transitive.' What does it let you conclude about two objects that were never in contact?"],
+    "solution": "The zeroth law's real content is transitivity: if A is in equilibrium with B and B with C, then A is in equilibrium with C. This is what allows a thermometer (B) to compare two objects (A and C) that never touch, and it is what makes 'temperature' a consistent property that every system has a single value of. It is an assumption about nature, not a triviality, which is why it is stated as a law."
+  },
+
+  {
+    "id": "BP8-U5-MCQ-029",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The specific heat capacity of a substance is:",
+    "choices": [
+      "the total heat a $1\\ \\mathrm{kg}$ sample can hold.",
+      "the energy needed to raise the temperature of $1\\ \\mathrm{kg}$ of the substance by $1\\ \\mathrm{K}$.",
+      "the temperature at which the substance melts.",
+      "the heat released when the substance freezes."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — specific heat capacity $c$ is the energy per kilogram per kelvin of temperature change, with units $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+      "incorrect": {
+        "0": "A substance does not 'hold heat' — heat is transferred energy. Specific heat capacity is about the energy needed *per degree* of temperature change.",
+        "2": "That is the melting point, unrelated to specific heat capacity.",
+        "3": "That involves latent heat, a different quantity."
+      }
+    },
+    "hint": ["It has units of $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$ — read those units as words."],
+    "solution": "Specific heat capacity $c$ is the energy required to raise the temperature of $1\\ \\mathrm{kg}$ of a substance by $1\\ \\mathrm{K}$ (equivalently $1\\ ^\\circ\\mathrm{C}$). Its units, $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$, spell out the definition."
+  },
+  {
+    "id": "BP8-U5-MCQ-030",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "How much energy is needed to raise the temperature of $2.0\\ \\mathrm{kg}$ of water by $10\\ \\mathrm{K}$? (Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)",
+    "choices": ["$8400\\ \\mathrm{J}$", "$84\\,000\\ \\mathrm{J}$", "$420\\ \\mathrm{J}$", "$21\\,000\\ \\mathrm{J}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $Q = mc\\,\\Delta T = (2.0)(4200)(10) = 84\\,000\\ \\mathrm{J}$.",
+      "incorrect": {
+        "0": "This uses $\\Delta T = 1$ instead of $10$: $2.0 \\times 4200 \\times 1 = 8400$.",
+        "2": "This divides $4200$ by $10$ somewhere. $Q = mc\\,\\Delta T$ is a product of all three.",
+        "3": "This uses $m = 0.5$ or halves the result. $2.0 \\times 4200 \\times 10 = 84\\,000$."
+      }
+    },
+    "hint": ["$Q = mc\\,\\Delta T$: multiply mass, specific heat capacity, and temperature change."],
+    "solution": "$Q = mc\\,\\Delta T = (2.0\\ \\mathrm{kg})(4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}})(10\\ \\mathrm{K}) = 84\\,000\\ \\mathrm{J}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-031",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $0.50\\ \\mathrm{kg}$ block of aluminium ($c = 900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) is given $9000\\ \\mathrm{J}$ of energy. By how much does its temperature rise?",
+    "choices": ["$20\\ \\mathrm{K}$", "$5\\ \\mathrm{K}$", "$40\\ \\mathrm{K}$", "$0.05\\ \\mathrm{K}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\Delta T = \\dfrac{Q}{mc} = \\dfrac{9000}{(0.50)(900)} = \\dfrac{9000}{450} = 20\\ \\mathrm{K}$.",
+      "incorrect": {
+        "1": "This looks like $Q/(m \\cdot c \\cdot 4)$ or a slip; $mc = 450$ and $9000/450 = 20$.",
+        "2": "This uses $Q/c$ divided by mass incorrectly, or forgets the $0.50$. $mc = (0.50)(900) = 450$.",
+        "3": "This inverts the fraction. $\\Delta T = Q/(mc)$, not $mc/Q$."
+      }
+    },
+    "hint": ["Rearrange $Q = mc\\,\\Delta T$ to $\\Delta T = \\dfrac{Q}{mc}$. First compute $mc$."],
+    "solution": "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{9000\\ \\mathrm{J}}{(0.50\\ \\mathrm{kg})(900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}})} = \\dfrac{9000}{450} = 20\\ \\mathrm{K}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-032",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Adding $6000\\ \\mathrm{J}$ to a $0.30\\ \\mathrm{kg}$ sample of an unknown metal raises its temperature by $50\\ \\mathrm{K}$. What is the specific heat capacity of the metal?",
+    "choices": ["$400\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$40\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$100\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $c = \\dfrac{Q}{m\\,\\Delta T} = \\dfrac{6000}{(0.30)(50)} = \\dfrac{6000}{15} = 400\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+      "incorrect": {
+        "1": "$900$ is aluminium's value; this calculation gives $400$. Check $m\\,\\Delta T = 0.30 \\times 50 = 15$.",
+        "2": "This forgets the mass in the denominator, or divides an extra factor of 10.",
+        "3": "This uses $\\Delta T = 60$ or a similar slip. $m\\,\\Delta T = 15$, and $6000/15 = 400$."
+      }
+    },
+    "hint": ["Rearrange $Q = mc\\,\\Delta T$ to $c = \\dfrac{Q}{m\\,\\Delta T}$."],
+    "solution": "$c = \\dfrac{Q}{m\\,\\Delta T} = \\dfrac{6000\\ \\mathrm{J}}{(0.30\\ \\mathrm{kg})(50\\ \\mathrm{K})} = \\dfrac{6000}{15} = 400\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-033",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC1"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Water has a specific heat capacity of $4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$; iron has $450\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$. Equal masses of water and iron each receive the same amount of energy. Which heats up more, and roughly by what factor?",
+    "choices": [
+      "The iron, by roughly a factor of 9.",
+      "The water, by roughly a factor of 9.",
+      "They heat up by the same amount.",
+      "The iron, by roughly a factor of 2."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — for the same $Q$ and $m$, $\\Delta T = Q/(mc) \\propto 1/c$. Iron's $c$ is about $1/9$ of water's, so iron's temperature rise is about 9 times larger.",
+      "incorrect": {
+        "1": "Water has the *larger* specific heat capacity, so it heats up *less*, not more.",
+        "2": "Different specific heat capacities give different temperature rises for the same energy input.",
+        "3": "The ratio $4200/450 \\approx 9.3$, not 2."
+      }
+    },
+    "hint": ["$\\Delta T = Q/(mc)$. With $Q$ and $m$ fixed, $\\Delta T$ is inversely proportional to $c$. Compare the two $c$ values."],
+    "solution": "With the same energy and mass, $\\Delta T = Q/(mc)$ is inversely proportional to the specific heat capacity. The ratio $c_{water}/c_{iron} = 4200/450 \\approx 9$, so the iron's temperature rise is about 9 times that of the water. This is why water is a good coolant and moderates climate near coasts."
+  },
+  {
+    "id": "BP8-U5-MCQ-034",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "reasonableness-check",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A student calculates that heating $0.25\\ \\mathrm{kg}$ of water from $20\\ ^\\circ\\mathrm{C}$ to $30\\ ^\\circ\\mathrm{C}$ requires $105\\ \\mathrm{J}$. What is the quickest check that this is wrong? (Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)",
+    "choices": [
+      "Just $1\\ \\mathrm{kg}$ of water needs $4200\\ \\mathrm{J}$ for a $1\\ \\mathrm{K}$ rise, so $0.25\\ \\mathrm{kg}$ over $10\\ \\mathrm{K}$ must need thousands of joules, not about a hundred.",
+      "The answer should be negative because the water gains energy.",
+      "Water cannot be heated by only $10\\ \\mathrm{K}$.",
+      "The mass should have been converted to grams first."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — a rough scale check: $0.25 \\times 4200 \\times 10 \\approx 10\\,000\\ \\mathrm{J}$, two orders of magnitude above the student's $105\\ \\mathrm{J}$. The student likely used $\\Delta T = 0.25$ or dropped a factor.",
+      "incorrect": {
+        "1": "Energy added to raise temperature is positive; sign is not the issue.",
+        "2": "A $10\\ \\mathrm{K}$ rise is perfectly ordinary.",
+        "3": "The equation $Q = mc\\,\\Delta T$ uses kilograms with $c$ in $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$; $0.25\\ \\mathrm{kg}$ is already correct."
+      }
+    },
+    "hint": ["Estimate: about a quarter of a kilogram, times ~4000, times 10. Is that near 100, or near 10,000?"],
+    "solution": "$Q = mc\\,\\Delta T = (0.25)(4200)(10) = 10\\,500\\ \\mathrm{J}$. A one-line scale estimate ($\\sim 0.25 \\times 4000 \\times 10 \\approx 10^4$) shows the student's $105\\ \\mathrm{J}$ is about 100 times too small — a classic sign of using $\\Delta T = 0.25$ (the mass) by mistake, or otherwise misplacing a factor."
+  },
+  {
+    "id": "BP8-U5-MCQ-035",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2", "EC1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A hot $0.10\\ \\mathrm{kg}$ copper block ($c = 400\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) is dropped into $0.20\\ \\mathrm{kg}$ of water ($c = 4000\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, rounded). The water warms by $2\\ \\mathrm{K}$. Assuming no energy escapes, by how much does the copper cool?",
+    "choices": ["$40\\ \\mathrm{K}$", "$2\\ \\mathrm{K}$", "$20\\ \\mathrm{K}$", "$4\\ \\mathrm{K}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — energy gained by water $= mc\\,\\Delta T = (0.20)(4000)(2) = 1600\\ \\mathrm{J}$. This equals the energy lost by the copper: $1600 = (0.10)(400)\\,\\Delta T_{Cu}$, so $\\Delta T_{Cu} = 1600/40 = 40\\ \\mathrm{K}$.",
+      "incorrect": {
+        "1": "The temperature *changes* are not equal — the copper has a much smaller heat capacity, so it changes temperature much more.",
+        "2": "Check: water gains $1600\\ \\mathrm{J}$; copper's $mc = 40$, so $\\Delta T_{Cu} = 1600/40 = 40\\ \\mathrm{K}$.",
+        "3": "This is the ratio of specific heats times $\\Delta T_{water}/... $; work it through with energy conservation to get $40\\ \\mathrm{K}$."
+      }
+    },
+    "hint": ["Energy lost by copper = energy gained by water. Compute the water's gain first, then divide by the copper's $mc$."],
+    "solution": "Energy gained by the water: $Q = (0.20)(4000)(2) = 1600\\ \\mathrm{J}$. With no losses, the copper loses the same $1600\\ \\mathrm{J}$: $1600 = m_{Cu}c_{Cu}\\,\\Delta T_{Cu} = (0.10)(400)\\,\\Delta T_{Cu} = 40\\,\\Delta T_{Cu}$, so $\\Delta T_{Cu} = 40\\ \\mathrm{K}$. The copper's small $mc$ means it cools far more than the water warms."
+  },
+  {
+    "id": "BP8-U5-MCQ-036",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Coastal towns have milder temperature swings between day and night than inland deserts at the same latitude. Which property of water best explains this?",
+    "choices": [
+      "Water's low melting point.",
+      "Water's high specific heat capacity, so it absorbs and releases a lot of energy with only a small temperature change.",
+      "Water's transparency to light.",
+      "Water's high density."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the sea's large specific heat capacity means it warms and cools only slightly as it exchanges energy with the air, buffering the coastal climate.",
+      "incorrect": {
+        "0": "Melting is not involved in ordinary day-night temperature changes.",
+        "2": "Transparency affects how deep sunlight penetrates but is not the main reason for the mild swings.",
+        "3": "Density alone does not determine how much a substance's temperature changes for a given energy transfer."
+      }
+    },
+    "hint": ["Which substance needs a lot of energy to change its temperature by even a little?"],
+    "solution": "Water has an unusually high specific heat capacity. A large body of water can absorb energy during the day and release it at night while its own temperature barely changes, so the air near it stays at a more constant temperature than air over dry land, which heats and cools rapidly."
+  },
+  {
+    "id": "BP8-U5-MCQ-037",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "error-analysis",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A student computes the energy to heat $500\\ \\mathrm{g}$ of water by $4\\ \\mathrm{K}$ as $Q = (500)(4200)(4) = 8\\,400\\,000\\ \\mathrm{J}$. What is the error?",
+    "choices": [
+      "The temperature change should be in kelvin, not degrees.",
+      "The mass must be in kilograms: $500\\ \\mathrm{g} = 0.5\\ \\mathrm{kg}$, giving $Q = (0.5)(4200)(4) = 8400\\ \\mathrm{J}$.",
+      "The specific heat capacity of water is $420$, not $4200$.",
+      "There is no error."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $c$ is in $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$, so the mass must be in kilograms. Using $500$ instead of $0.5$ makes the answer 1000 times too big.",
+      "incorrect": {
+        "0": "A change of $4\\ \\mathrm{K}$ equals a change of $4\\ ^\\circ\\mathrm{C}$, so that is fine.",
+        "2": "Water's specific heat capacity really is about $4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+        "3": "There is an error — the mass unit."
+      }
+    },
+    "hint": ["Look at the units of $c$. What mass unit do they require?"],
+    "solution": "The specific heat capacity is given per kilogram, so $m$ must be in kilograms. Converting, $500\\ \\mathrm{g} = 0.5\\ \\mathrm{kg}$, and $Q = (0.5)(4200)(4) = 8400\\ \\mathrm{J}$. The student's answer is 1000 times too large."
+  },
+  {
+    "id": "BP8-U5-MCQ-038",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "It takes $Q$ joules to raise the temperature of a sample of water by $5\\ \\mathrm{K}$. How much energy is needed to raise the same sample by $15\\ \\mathrm{K}$?",
+    "choices": ["$Q$", "$3Q$", "$Q/3$", "$9Q$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for a fixed mass and substance, $Q \\propto \\Delta T$. Tripling the temperature change triples the energy.",
+      "incorrect": {
+        "0": "A larger temperature change needs more energy, not the same.",
+        "2": "That would be for a *smaller* temperature change.",
+        "3": "$Q$ is proportional to $\\Delta T$, not to $(\\Delta T)^2$."
+      }
+    },
+    "hint": ["$Q = mc\\,\\Delta T$ with $m$ and $c$ fixed. How does $Q$ scale with $\\Delta T$?"],
+    "solution": "$Q = mc\\,\\Delta T$. With the same mass and substance, $Q$ is directly proportional to $\\Delta T$. Going from $5\\ \\mathrm{K}$ to $15\\ \\mathrm{K}$ triples $\\Delta T$, so the energy needed is $3Q$."
+  },
+  {
+    "id": "BP8-U5-MCQ-039",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2", "EC1"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "calculatorFree": true,
+    "question": "A $0.30\\ \\mathrm{kg}$ block of iron ($c = 450\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) at $80\\ ^\\circ\\mathrm{C}$ is placed in $0.30\\ \\mathrm{kg}$ of water ($c = 4500\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, rounded) at $20\\ ^\\circ\\mathrm{C}$, insulated from the surroundings. The equilibrium temperature is closest to:",
+    "choices": ["$25\\ ^\\circ\\mathrm{C}$", "$50\\ ^\\circ\\mathrm{C}$", "$75\\ ^\\circ\\mathrm{C}$", "$45\\ ^\\circ\\mathrm{C}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — with equal masses, the water's heat capacity is 10x the iron's, so the common temperature sits about 1/11 of the way from 20 up to 80, i.e. near $25\\ ^\\circ\\mathrm{C}$.",
+      "incorrect": {
+        "1": "$50\\ ^\\circ\\mathrm{C}$ would be right only if the two had equal heat capacities. The water's is much larger, so equilibrium is close to the water's starting temperature.",
+        "2": "The water dominates, so the final temperature is near $20\\ ^\\circ\\mathrm{C}$, not near the iron's $80\\ ^\\circ\\mathrm{C}$.",
+        "3": "Still too high — the water's much larger $mc$ keeps the final temperature near $25\\ ^\\circ\\mathrm{C}$."
+      }
+    },
+    "hint": ["Energy lost by iron = energy gained by water. Equal masses, so compare the $c$ values: water is ~10x. The final temperature is weighted toward the substance with the bigger $mc$."],
+    "solution": "Let the final temperature be $T$. Energy lost by iron = energy gained by water: $(0.30)(450)(80 - T) = (0.30)(4500)(T - 20)$, i.e. $450(80 - T) = 4500(T - 20)$, so $80 - T = 10(T - 20)$, giving $80 - T = 10T - 200$, $280 = 11T$, $T \\approx 25.5\\ ^\\circ\\mathrm{C}$. The water's large heat capacity pins the result near its starting temperature."
+  },
+
+  {
+    "id": "BP8-U5-MCQ-040",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The specific latent heat of a substance is the energy needed to:",
+    "choices": [
+      "raise $1\\ \\mathrm{kg}$ of it by $1\\ \\mathrm{K}$.",
+      "change the phase of $1\\ \\mathrm{kg}$ of it at constant temperature.",
+      "boil away $1\\ \\mathrm{litre}$ of it.",
+      "cool $1\\ \\mathrm{kg}$ of it to absolute zero."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — latent heat is the energy per kilogram to melt or boil (or the energy released to freeze or condense) a substance, with no temperature change during the process.",
+      "incorrect": {
+        "0": "That is specific heat *capacity*, a different quantity.",
+        "2": "Latent heat is defined per unit *mass* (kg), not per litre, and it is about the phase change, not just 'boiling away.'",
+        "3": "Latent heat is about phase changes at the melting or boiling point, not cooling to absolute zero."
+      }
+    },
+    "hint": ["'Latent' means hidden — the energy goes in but the temperature does not change. What process is happening instead?"],
+    "solution": "Specific latent heat $L$ is the energy required to change the phase of $1\\ \\mathrm{kg}$ of a substance at constant temperature — melting/freezing (latent heat of fusion) or boiling/condensing (latent heat of vaporisation). The energy goes into rearranging the particles, not into raising the temperature."
+  },
+  {
+    "id": "BP8-U5-MCQ-041",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "How much energy is needed to melt $2.0\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ into water at $0\\ ^\\circ\\mathrm{C}$? (Latent heat of fusion of ice $= 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.)",
+    "choices": ["$6.6 \\times 10^{5}\\ \\mathrm{J}$", "$1.65 \\times 10^{5}\\ \\mathrm{J}$", "$3.3 \\times 10^{5}\\ \\mathrm{J}$", "$3.3 \\times 10^{10}\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $Q = mL = (2.0)(3.3 \\times 10^{5}) = 6.6 \\times 10^{5}\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "This divides by 2 instead of multiplying. $Q = mL$ with $m = 2.0$.",
+        "2": "This is $L$ for $1\\ \\mathrm{kg}$. There are $2.0\\ \\mathrm{kg}$.",
+        "3": "This multiplies the powers of ten. $2.0 \\times 3.3 \\times 10^{5} = 6.6 \\times 10^{5}$."
+      }
+    },
+    "hint": ["$Q = mL$. Multiply the mass by the latent heat."],
+    "solution": "$Q = mL = (2.0\\ \\mathrm{kg})(3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}) = 6.6 \\times 10^{5}\\ \\mathrm{J}$. The temperature stays at $0\\ ^\\circ\\mathrm{C}$ throughout the melting."
+  },
+  {
+    "id": "BP8-U5-MCQ-042",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Removing $9.0 \\times 10^{5}\\ \\mathrm{J}$ from water at $0\\ ^\\circ\\mathrm{C}$ freezes some of it. How much ice forms? (Latent heat of fusion $= 3.0 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.)",
+    "choices": ["$3.0\\ \\mathrm{kg}$", "$0.33\\ \\mathrm{kg}$", "$2.7\\ \\mathrm{kg}$", "$27\\ \\mathrm{kg}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $m = \\dfrac{Q}{L} = \\dfrac{9.0 \\times 10^{5}}{3.0 \\times 10^{5}} = 3.0\\ \\mathrm{kg}$.",
+      "incorrect": {
+        "1": "This inverts the fraction. $m = Q/L$, not $L/Q$.",
+        "2": "This multiplies $Q$ and $L$ powers or similar. Divide: $9/3 = 3$.",
+        "3": "This misplaces the powers of ten. $\\dfrac{9.0 \\times 10^5}{3.0 \\times 10^5} = 3.0$."
+      }
+    },
+    "hint": ["Rearrange $Q = mL$ to $m = Q/L$."],
+    "solution": "$m = \\dfrac{Q}{L} = \\dfrac{9.0 \\times 10^{5}\\ \\mathrm{J}}{3.0 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}} = 3.0\\ \\mathrm{kg}$ of ice forms, all at $0\\ ^\\circ\\mathrm{C}$."
+  },
+  {
+    "id": "BP8-U5-MCQ-043",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why does the temperature of a substance stay constant while it melts, even though energy is being added the whole time?",
+    "choices": [
+      "The added energy leaks straight back out.",
+      "The added energy goes into breaking the bonds between particles (increasing their potential energy), not into increasing their average kinetic energy.",
+      "Melting produces its own cooling effect that cancels the heating.",
+      "Thermometers cannot read a temperature during melting."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — during a phase change the energy raises the particles' potential energy (separating them), and since temperature tracks average *kinetic* energy, the temperature does not change.",
+      "incorrect": {
+        "0": "The energy is retained — it is stored as increased inter-particle potential energy.",
+        "2": "There is no special cancelling 'cooling effect'; the energy simply goes to potential energy instead of kinetic.",
+        "3": "Thermometers read fine during melting — and they read a constant value, which is the point."
+      }
+    },
+    "hint": ["Temperature is about average *kinetic* energy. If energy goes into *potential* energy instead, what happens to the temperature?"],
+    "solution": "While a solid melts, the added energy is used to overcome the attractive forces holding the particles in the solid structure — it increases the particles' potential energy. It does not increase their average kinetic energy, and since temperature is a measure of average kinetic energy, the temperature stays constant until melting is complete."
+  },
+  {
+    "id": "BP8-U5-MCQ-044",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH2", "SHC2"],
+    "type": "multiple-choice",
+    "skill": "reasonableness-check",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "For water, the latent heat of vaporisation ($2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$) is far larger than the energy to heat the same mass from $0\\ ^\\circ\\mathrm{C}$ to $100\\ ^\\circ\\mathrm{C}$ ($\\approx 4.2 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$). What does this tell you?",
+    "choices": [
+      "Boiling a kettle dry takes far more energy than bringing it to the boil in the first place.",
+      "Water boils almost instantly once it reaches $100\\ ^\\circ\\mathrm{C}$.",
+      "The latent heat value must be a misprint.",
+      "It takes more energy to warm water by $1\\ ^\\circ\\mathrm{C}$ than to boil it."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — vaporising $1\\ \\mathrm{kg}$ needs about $2.3 \\times 10^{6}\\ \\mathrm{J}$, roughly 5 times the $\\sim 4.2 \\times 10^{5}\\ \\mathrm{J}$ needed to heat it from $0$ to $100\\ ^\\circ\\mathrm{C}$ — so boiling a pan dry consumes much more energy than heating it up.",
+      "incorrect": {
+        "1": "A large latent heat means boiling takes a *long* time, not that it is instant.",
+        "2": "The numbers are consistent with real measured values.",
+        "3": "One kelvin needs about $4200\\ \\mathrm{J\\,kg^{-1}}$; boiling needs about $2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$ — vastly more."
+      }
+    },
+    "hint": ["Compare the two numbers: $2.3 \\times 10^{6}$ versus $4.2 \\times 10^{5}$. Which process needs more energy per kilogram?"],
+    "solution": "Vaporising water needs about $2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$, about 5 times the $\\sim 4.2 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$ needed to heat it from $0\\ ^\\circ\\mathrm{C}$ to $100\\ ^\\circ\\mathrm{C}$. So once water reaches boiling, it takes several times as much additional energy to actually turn it all to steam — which is why a pan takes a long time to boil dry."
+  },
+  {
+    "id": "BP8-U5-MCQ-045",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Steam at $100\\ ^\\circ\\mathrm{C}$ causes worse burns than the same mass of water at $100\\ ^\\circ\\mathrm{C}$. Why?",
+    "choices": [
+      "Steam is hotter than $100\\ ^\\circ\\mathrm{C}$.",
+      "When steam condenses on the skin it releases its large latent heat of vaporisation, delivering far more energy than hot water alone.",
+      "Steam sticks to skin better because it is a gas.",
+      "Water at $100\\ ^\\circ\\mathrm{C}$ actually cannot cause burns."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — condensing steam gives up about $2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$ of latent heat to the skin *before* the resulting water even starts to cool, on top of the energy released as it then cools.",
+      "incorrect": {
+        "0": "Steam at $100\\ ^\\circ\\mathrm{C}$ is at the same temperature as the boiling water.",
+        "2": "The mechanism is the latent heat released on condensation, not adhesion.",
+        "3": "Water at $100\\ ^\\circ\\mathrm{C}$ certainly scalds — steam is just worse because of the extra latent heat."
+      }
+    },
+    "hint": ["What extra energy transfer happens when steam turns back into liquid water on your skin?"],
+    "solution": "Both are at $100\\ ^\\circ\\mathrm{C}$, but when steam touches cooler skin it condenses, releasing its latent heat of vaporisation (~$2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$) into the skin. That is a large amount of extra energy delivered before the condensed water even begins to cool, so steam burns are much more severe."
+  },
+  {
+    "id": "BP8-U5-MCQ-046",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "It takes energy $E$ to completely melt a block of ice. How much energy is needed to completely melt a block of the same ice with three times the mass (both starting at $0\\ ^\\circ\\mathrm{C}$)?",
+    "choices": ["$E$", "$3E$", "$E/3$", "$9E$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $Q = mL$, so with $L$ fixed the energy is proportional to the mass. Triple the mass, triple the energy.",
+      "incorrect": {
+        "0": "More mass needs more energy to melt.",
+        "2": "That would be for one third of the mass.",
+        "3": "$Q = mL$ is linear in mass, not quadratic."
+      }
+    },
+    "hint": ["$Q = mL$. How does $Q$ scale with $m$?"],
+    "solution": "$Q = mL$, and the latent heat $L$ is a property of the substance, unchanged. So the energy to melt is directly proportional to the mass: three times the mass needs $3E$."
+  },
+  {
+    "id": "BP8-U5-MCQ-047",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH2", "SHC2"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "How much energy is needed to turn $0.20\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ into water at $10\\ ^\\circ\\mathrm{C}$? Use $L_{fusion} = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$ and $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+    "choices": ["$74\\,400\\ \\mathrm{J}$", "$66\\,000\\ \\mathrm{J}$", "$8400\\ \\mathrm{J}$", "$330\\,000\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — melt: $Q_1 = mL = (0.20)(3.3 \\times 10^{5}) = 66\\,000\\ \\mathrm{J}$; then warm the water: $Q_2 = mc\\,\\Delta T = (0.20)(4200)(10) = 8400\\ \\mathrm{J}$; total $= 74\\,400\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "This is only the melting step; you must also warm the resulting water from $0$ to $10\\ ^\\circ\\mathrm{C}$.",
+        "2": "This is only the warming step; you must also melt the ice first.",
+        "3": "This uses $L$ for $1\\ \\mathrm{kg}$, not for $0.20\\ \\mathrm{kg}$, and omits the warming step."
+      }
+    },
+    "hint": ["Two stages: (1) melt the ice at $0\\ ^\\circ\\mathrm{C}$ using $Q = mL$; (2) warm the melted water from $0$ to $10\\ ^\\circ\\mathrm{C}$ using $Q = mc\\,\\Delta T$. Add them."],
+    "solution": "Stage 1 (melt at $0\\ ^\\circ\\mathrm{C}$): $Q_1 = mL = (0.20)(3.3 \\times 10^{5}) = 66\\,000\\ \\mathrm{J}$. Stage 2 (warm water $0 \\to 10\\ ^\\circ\\mathrm{C}$): $Q_2 = mc\\,\\Delta T = (0.20)(4200)(10) = 8400\\ \\mathrm{J}$. Total: $66\\,000 + 8400 = 74\\,400\\ \\mathrm{J}$."
+  },
+
+  {
+    "id": "BP8-U5-MCQ-048",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "On a heating curve (temperature on the vertical axis, energy added on the horizontal axis) for a substance heated steadily from solid to gas, what is happening during a flat (horizontal) section?",
+    "choices": [
+      "The substance is cooling down.",
+      "The substance is changing phase (melting or boiling); energy is added but the temperature stays constant.",
+      "No energy is being added during that time.",
+      "The substance is a gas being heated."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a flat section means energy is still going in (the graph moves right) but the temperature is not rising, which is exactly a phase change.",
+      "incorrect": {
+        "0": "The graph never goes down here — energy is being added throughout.",
+        "2": "Energy is still being added; that is why the curve continues to the right along the flat part.",
+        "3": "A gas being heated would be a *sloped* section, not flat."
+      }
+    },
+    "hint": ["Flat means constant temperature while energy keeps being added. When does that happen?"],
+    "solution": "A horizontal section of a heating curve is a phase change: energy is continuously added (the curve advances along the energy axis) but the temperature holds constant because the energy is going into rearranging particles (latent heat), not raising their kinetic energy. The lower flat is melting; the upper, longer flat is boiling."
+  },
+  {
+    "id": "BP8-U5-MCQ-049",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "On a heating curve, what is happening during a sloped (rising) section?",
+    "choices": [
+      "A phase change, at constant temperature.",
+      "A single phase (solid, liquid, or gas) is being warmed; its temperature rises as energy is added.",
+      "The substance is losing mass.",
+      "Nothing — the substance is in equilibrium."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a rising section means the substance is in one phase and its temperature is increasing as energy is added ($Q = mc\\,\\Delta T$ applies).",
+      "incorrect": {
+        "0": "A phase change is a *flat* section, not a sloped one.",
+        "2": "The mass does not change; the substance is just warming.",
+        "3": "The temperature is changing, so it is not in a steady equilibrium state."
+      }
+    },
+    "hint": ["Sloped means the temperature is changing. Which formula applies when temperature changes without a phase change?"],
+    "solution": "A sloped section of a heating curve is a single phase (solid, liquid, or gas) being warmed: energy added raises the particles' average kinetic energy, so the temperature rises. The relationship $Q = mc\\,\\Delta T$ describes this part, and the slope depends on the specific heat capacity of that phase."
+  },
+  {
+    "id": "BP8-U5-MCQ-050",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "On the heating curve for water, the flat section at $100\\ ^\\circ\\mathrm{C}$ (boiling) is much longer along the energy axis than the flat section at $0\\ ^\\circ\\mathrm{C}$ (melting). This is because:",
+    "choices": [
+      "the boiling point is a higher temperature than the melting point.",
+      "the latent heat of vaporisation is much larger than the latent heat of fusion, so much more energy is needed to boil the sample than to melt it.",
+      "the sample gains mass while boiling.",
+      "water boils more slowly than it melts for no physical reason."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the length of a flat section is proportional to $mL$ for that phase change, and $L_{vaporisation} \\gg L_{fusion}$ for water (~$2.3 \\times 10^{6}$ vs ~$3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$).",
+      "incorrect": {
+        "0": "The *height* of the section reflects temperature; the *length* reflects the energy needed, which is $mL$.",
+        "2": "The sample's mass is unchanged as a closed system boils.",
+        "3": "There is a clear physical reason: the much larger latent heat of vaporisation."
+      }
+    },
+    "hint": ["The horizontal length of a flat section is the energy for that phase change, $Q = mL$. Same mass — so compare the two $L$ values."],
+    "solution": "The horizontal extent of a plateau on a heating curve equals the energy absorbed during that phase change, $Q = mL$. For the same sample mass, the boiling plateau is longer because water's latent heat of vaporisation (~$2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$) is far greater than its latent heat of fusion (~$3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$) — separating particles fully into a gas takes much more energy than loosening them from a solid to a liquid."
+  },
+  {
+    "id": "BP8-U5-MCQ-051",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1", "SHC1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "Two sloped sections of a heating curve are drawn for the same substance and the same steady rate of energy input: the 'solid' section is steeper than the 'liquid' section. What does the steeper slope indicate?",
+    "choices": [
+      "The solid has a larger specific heat capacity than the liquid.",
+      "The solid has a smaller specific heat capacity than the liquid, so the same energy input raises its temperature faster.",
+      "The solid is denser than the liquid.",
+      "The solid is being cooled while the liquid is being heated."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a steeper temperature-versus-energy slope means less energy is needed per degree, i.e. a smaller $mc$, so (same mass) a smaller specific heat capacity for the solid phase.",
+      "incorrect": {
+        "0": "Larger specific heat capacity means more energy per degree, which would give a *shallower* slope, not a steeper one.",
+        "2": "Density does not set the slope of a heating curve; specific heat capacity does.",
+        "3": "Both sections rise, so both are being heated."
+      }
+    },
+    "hint": ["Slope = temperature rise per unit energy = $1/(mc)$ for that phase. Steeper slope means smaller what?"],
+    "solution": "On a temperature-versus-energy graph, the slope of a single-phase section is $\\Delta T / Q = 1/(mc)$ for that phase. A steeper slope means a smaller $mc$, and with the same mass that means a smaller specific heat capacity. So the solid phase here has a lower specific heat capacity than the liquid phase (which is true for water: ice ~$2100$, liquid water ~$4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$)."
+  },
+  {
+    "id": "BP8-U5-MCQ-052",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "graph",
+    "difficulty": "foundation",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A heating curve for a pure substance heated steadily from below its melting point shows, in order:",
+    "choices": [
+      "slope up, flat, slope up, flat, slope up.",
+      "flat, slope up, flat, slope up, flat.",
+      "slope down, flat, slope down.",
+      "one continuous straight slope up."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — warming the solid (slope), melting (flat), warming the liquid (slope), boiling (flat), warming the gas (slope).",
+      "incorrect": {
+        "1": "Heating starts by warming the solid, which is a *sloped* section, not flat.",
+        "2": "Adding energy raises temperature or drives a phase change; the curve never slopes downward.",
+        "3": "There are two flat plateaus (melting and boiling) interrupting the slopes."
+      }
+    },
+    "hint": ["Warm each phase (slope) with a phase change (flat) in between. Start with the solid."],
+    "solution": "Heating a pure substance steadily from below its melting point gives: a sloped section (warming the solid), a flat plateau (melting), a sloped section (warming the liquid), a longer flat plateau (boiling), and a final sloped section (warming the gas)."
+  },
+  {
+    "id": "BP8-U5-MCQ-053",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1", "LH1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student looks at a heating curve and says 'during the flat part, nothing is happening because the temperature isn't changing.' What is the correction?",
+    "choices": [
+      "The student is right; the flat part is a pause with no changes.",
+      "A great deal is happening: the substance is changing phase, and the energy being added is going into separating the particles (latent heat).",
+      "The flat part means the heater has been switched off.",
+      "The flat part shows the substance losing energy."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the flat part is a phase change in progress: energy keeps flowing in and is stored as inter-particle potential energy while the temperature holds constant.",
+      "incorrect": {
+        "0": "The phase change (melting or boiling) is a major process — 'nothing happening' is exactly the misconception.",
+        "2": "The heater is still on; the curve keeps advancing along the energy axis.",
+        "3": "Energy is being *added*, not lost — the substance is absorbing latent heat."
+      }
+    },
+    "hint": ["Constant temperature does not mean constant everything. What is changing about the substance's state?"],
+    "solution": "During a flat section the substance is actively melting or boiling. Energy is still being absorbed (the graph advances along the energy axis), but it goes into breaking inter-particle bonds — raising potential energy — rather than kinetic energy, so the temperature stays constant. The phase is changing, which is a substantial physical process."
+  },
+  {
+    "id": "BP8-U5-MCQ-054",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1", "SHC2", "LH2"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A heating curve is produced by a heater supplying energy at a constant rate. The melting plateau lasts $40\\ \\mathrm{s}$ and the boiling plateau lasts $200\\ \\mathrm{s}$ for the same sample. What is the ratio $L_{vaporisation} : L_{fusion}$ for this substance?",
+    "choices": ["$5 : 1$", "$1 : 5$", "$40 : 200$ cannot be simplified", "$2 : 1$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — at constant power, energy is proportional to time, and $Q = mL$ with the same $m$, so $L_{vap}/L_{fus} = t_{boil}/t_{melt} = 200/40 = 5$.",
+      "incorrect": {
+        "1": "Boiling takes *longer*, so it needs *more* energy, so $L_{vap}$ is the larger one: the ratio is $5 : 1$.",
+        "2": "$200/40$ simplifies to $5/1$.",
+        "3": "$200/40 = 5$, not 2."
+      }
+    },
+    "hint": ["Constant power means energy in proportional to time. $Q = mL$ with the same mass, so the latent heats are in the same ratio as the plateau times."],
+    "solution": "At constant power $P$, the energy delivered during a plateau is $Q = P\\,t$. For each phase change $Q = mL$ with the same sample mass, so $L \\propto t$. Therefore $\\dfrac{L_{vaporisation}}{L_{fusion}} = \\dfrac{t_{boil}}{t_{melt}} = \\dfrac{200\\ \\mathrm{s}}{40\\ \\mathrm{s}} = 5$, i.e. $5 : 1$."
+  }
+]

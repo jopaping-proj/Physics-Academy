@@ -1,0 +1,347 @@
+{
+  "id": "basis-p8-u5-l3",
+  "slug": "conservation-of-energy-thermal",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Conservation of Energy (Thermal Context)",
+  "lessonTitle": "Conservation of Energy with Internal Energy",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Conservation of Energy (Thermal Context) cluster, EC1); builds on Unit 4 Lesson 7; calibrated against OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB treatments.",
+  "prerequisites": [
+    "Unit 4 Lesson 7 — mechanical energy $ME = KE + PE$; friction converts mechanical energy to thermal energy; total energy is always conserved.",
+    "Lesson 1 — internal energy is the total energy of a substance's particles."
+  ],
+  "majorObjective": "Apply conservation of energy to situations that include internal (thermal) energy: account for kinetic, potential, and internal energy so the total is unchanged, and calculate an unknown energy or temperature change from the balance.",
+  "subObjectives": [
+    "State that in any process the total energy — kinetic plus potential plus internal — is conserved, even though mechanical energy alone often is not.",
+    "Identify where mechanical energy is converted to internal energy (friction, drag, impacts, deformation) and set that amount equal to the mechanical energy lost.",
+    "Combine an energy release ($mgh$, $\\tfrac{1}{2}mv^2$, or $\\tfrac{1}{2}kx^2$) with $Q = mc\\,\\Delta T$ to predict a temperature change.",
+    "Explain why an idealised prediction (all lost energy warms one object) overestimates a real temperature rise."
+  ],
+  "hook": {
+    "prompt": "You bang a nail repeatedly with a hammer and the nail gets noticeably hot. Where did that thermal energy come from?",
+    "choices": [
+      "It was already stored in the nail.",
+      "The kinetic energy of the hammer, converted to internal energy each time it strikes.",
+      "Friction with the air around the nail.",
+      "The nail is generating energy by being compressed."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Unit 4 ended with $ME_i = ME_f + E_{thermal}$: friction moves energy out of the mechanical account into a thermal one. This lesson makes the thermal term quantitative and links it to a measurable temperature rise.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The full energy account",
+      "concept": "Conservation of energy in its complete form:\n\n$$\\text{(KE + PE + internal energy)}_{\\text{before}} = \\text{(KE + PE + internal energy)}_{\\text{after}}$$\n\nNo energy is created or destroyed; it only moves between forms.\n\n**Mechanical energy alone ($KE + PE$) is often *not* conserved** — but that is because energy has moved into the internal-energy term, not because it vanished. The processes that do this:\n\n- **friction** between sliding surfaces;\n- **air resistance / drag**;\n- **impacts** that do not bounce perfectly (a ball landing, a hammer hitting a nail);\n- **bending or deforming** materials repeatedly (a paperclip flexed until it is warm).\n\nIn each case the mechanical energy lost appears as internal energy \u2014 the objects warm up:\n\n$$E_{\\text{internal, gained}} = \\text{mechanical energy lost}$$",
+      "representation": "To handle a problem with internal energy:\n\n1. Write the total energy before and after.\n2. Any drop in $KE + PE$ has become internal energy: $E_{\\text{internal}} = (KE + PE)_{\\text{before}} - (KE + PE)_{\\text{after}}$.\n3. If asked for a temperature change, feed that $E_{\\text{internal}}$ into $Q = mc\\,\\Delta T$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $1200\\ \\mathrm{kg}$ car travelling at $20\\ \\mathrm{m/s}$ brakes to a stop on level ground. (a) How much kinetic energy does it lose? (b) Where does that energy go? (c) If it all went into the four brake discs (total mass $8.0\\ \\mathrm{kg}$, $c = 500\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$), estimate their temperature rise.",
+        "phases": [
+          {
+            "label": "(a) Kinetic energy lost",
+            "steps": ["$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(1200)(20)^2 = \\tfrac{1}{2}(1200)(400) = 240\\,000\\ \\mathrm{J}$. The car ends at rest, so it loses all $240\\,000\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "(b) Where it goes",
+            "steps": ["Friction in the brakes converts it to **internal energy** \u2014 the brake discs, pads, tyres, and road warm up. Total energy is conserved."]
+          },
+          {
+            "label": "(c) Temperature rise of the discs",
+            "steps": [
+              "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{240\\,000}{(8.0)(500)} = \\dfrac{240\\,000}{4000} = 60\\ \\mathrm{K}$.",
+              "A large rise \u2014 which is why hard braking on a long descent can overheat brakes."
+            ]
+          }
+        ],
+        "keyMove": "Mechanical energy lost = internal energy gained; convert that to a temperature change with $Q = mc\\,\\Delta T$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L3-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A ball of clay is thrown at a wall and sticks, not bouncing at all. What happens to its kinetic energy?",
+        "choices": [
+          "It is destroyed on impact.",
+          "It becomes internal energy — the clay and wall warm very slightly — plus a little sound.",
+          "It is stored as elastic potential energy in the clay.",
+          "It becomes gravitational potential energy."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a completely non-bouncing impact converts essentially all the kinetic energy to internal energy (and a bit of sound). Total energy is conserved.",
+          "incorrect": {
+            "0": "Energy is never destroyed; it is transformed.",
+            "2": "Clay does not spring back — it deforms permanently, so the energy is not stored elastically.",
+            "3": "The ball's height barely changes on impact; gravity is not where the energy goes."
+          }
+        },
+        "hint": ["The clay does not bounce and does not rise. If the energy is not kinetic, elastic, or gravitational afterward, what is left?"],
+        "solution": "Because the clay does not bounce, its kinetic energy is not returned as motion, and because it deforms permanently it is not stored elastically. The energy is converted into internal energy of the clay and wall (they warm slightly) and a small amount of sound. Total energy is conserved."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Energy release drives a temperature change",
+      "concept": "Any stored or mechanical energy that is dissipated can raise a temperature. The pattern is always two steps:\n\n1. **Find the energy released.** From a fall: $mgh$. From stopping: $\\tfrac{1}{2}mv^2$. From a spring relaxing into a dissipative stop: $\\tfrac{1}{2}kx^2$.\n2. **Convert to a temperature change.** Set that energy equal to $Q = mc\\,\\Delta T$ for whatever absorbs it, and solve for $\\Delta T$:\n\n$$\\Delta T = \\frac{\\text{energy released}}{mc}$$\n\nOften the mass cancels (e.g. a falling object heating itself: $\\Delta T = gh/c$), giving a result that is independent of size.\n\nThese temperature rises are usually **small** \u2014 water and metals have large heat capacities, and everyday drops and speeds carry modest energy per kilogram. A $100\\ \\mathrm{m}$ waterfall warms its water by only about $0.2\\ \\mathrm{K}$.",
+      "representation": "$$\\underbrace{mgh \\quad\\text{or}\\quad \\tfrac{1}{2}mv^2 \\quad\\text{or}\\quad \\tfrac{1}{2}kx^2}_{\\text{energy released}} \\;=\\; \\underbrace{mc\\,\\Delta T}_{\\text{temperature change}}$$\n\nSolve for the unknown \u2014 usually $\\Delta T$, sometimes the height or speed needed for a stated $\\Delta T$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.050\\ \\mathrm{kg}$ lead bullet ($c = 130\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) travelling at $200\\ \\mathrm{m/s}$ embeds in a fixed wooden block. Assume half of its kinetic energy heats the bullet. Estimate the bullet's temperature rise.",
+        "phases": [
+          {
+            "label": "Step 1: energy released",
+            "steps": [
+              "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(0.050)(200)^2 = \\tfrac{1}{2}(0.050)(40\\,000) = 1000\\ \\mathrm{J}$.",
+              "Half heats the bullet: $Q = 500\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "Step 2: temperature rise",
+            "steps": [
+              "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{500}{(0.050)(130)} = \\dfrac{500}{6.5} \\approx 77\\ \\mathrm{K}$.",
+              "A large rise \u2014 fast lead projectiles can partly melt on impact."
+            ]
+          }
+        ],
+        "keyMove": "Energy released first (here $\\tfrac{1}{2}mv^2$, then take the stated fraction), then $\\Delta T = Q/(mc)$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L3-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A $2.0\\ \\mathrm{kg}$ block of copper ($c = 400\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) falls $40\\ \\mathrm{m}$ and lands without bouncing. If all the energy heats the block, what is its temperature rise? (Take $g = 10\\ \\mathrm{m/s^2}$.)",
+        "choices": ["$1.0\\ \\mathrm{K}$", "$0.5\\ \\mathrm{K}$", "$2.0\\ \\mathrm{K}$", "$100\\ \\mathrm{K}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $Q = mgh = (2.0)(10)(40) = 800\\ \\mathrm{J}$; $\\Delta T = Q/(mc) = 800/[(2.0)(400)] = 800/800 = 1.0\\ \\mathrm{K}$.",
+          "incorrect": {
+            "1": "Check: $mc = 800$, and $Q = 800\\ \\mathrm{J}$, so $\\Delta T = 1.0\\ \\mathrm{K}$, not $0.5$.",
+            "2": "This may double the energy or halve $mc$. $\\Delta T = gh/c = (10)(40)/400 = 1.0\\ \\mathrm{K}$ (mass cancels).",
+            "3": "This forgets to divide by $mc$; $800\\ \\mathrm{J}$ is the energy, not the temperature rise."
+          }
+        },
+        "hint": ["Energy released $= mgh$. Then $\\Delta T = \\dfrac{mgh}{mc} = \\dfrac{gh}{c}$ — the mass cancels."],
+        "solution": "Energy released: $Q = mgh = (2.0)(10)(40) = 800\\ \\mathrm{J}$. Temperature rise: $\\Delta T = \\dfrac{Q}{mc} = \\dfrac{800}{(2.0)(400)} = 1.0\\ \\mathrm{K}$. Equivalently $\\Delta T = gh/c$, so the mass does not matter."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Idealised versus real temperature rises",
+      "concept": "Problems usually say 'assume all the lost energy warms the object.' Reality is messier, and the real temperature rise is **always smaller** than the idealised one, because the dissipated energy is **shared**:\n\n- some warms the **other** object (the road, the wall, the target);\n- some goes to the **surrounding air**;\n- some leaves as **sound**;\n- some causes **spray, splashing, or permanent deformation**;\n- some is radiated or conducted away **during** the process.\n\nSo an idealised calculation gives an **upper bound**. When a question asks you to explain why a measured rise is smaller than predicted, list the pathways that carried energy away from the object you were tracking.",
+      "representation": "Idealised: $\\Delta T_{\\text{ideal}} = \\dfrac{\\text{all energy released}}{mc}$.\n\nReal: $\\Delta T_{\\text{real}} = \\dfrac{(\\text{fraction that stays in the object}) \\times \\text{energy released}}{mc} \\;<\\; \\Delta T_{\\text{ideal}}$.\n\nThe missing fraction went to the other body, the air, sound, and spray.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student predicts that a $2.0\\ \\mathrm{kg}$ bag of sand dropped $5.0\\ \\mathrm{m}$ onto concrete will warm by $\\Delta T = gh/c$ with $c_{sand} \\approx 800\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, i.e. about $0.06\\ \\mathrm{K}$. A thermometer in the sand shows almost no change. Give three reasons the measured rise is even smaller.",
+        "phases": [
+          {
+            "label": "Reason 1: the concrete",
+            "steps": ["Much of the energy warms the concrete floor, not the sand."]
+          },
+          {
+            "label": "Reason 2: sound and scattering",
+            "steps": ["The impact makes a loud thud (sound energy) and scatters sand grains (kinetic energy briefly, then air drag)."]
+          },
+          {
+            "label": "Reason 3: the air and spreading",
+            "steps": ["Some energy stirs the surrounding air, and the tiny rise is quickly spread through the bag and lost to the room, so a thermometer barely registers it."]
+          }
+        ],
+        "keyMove": "An idealised $\\Delta T$ is an upper limit; real losses to the other object, air, sound, and scattering make the measured value smaller."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L3-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A calculation assumes all the kinetic energy of a braking car heats the brake discs, giving $\\Delta T = 60\\ \\mathrm{K}$. The measured rise is $40\\ \\mathrm{K}$. Which is the best explanation?",
+        "choices": [
+          "The calculation must contain an arithmetic error.",
+          "Some of the energy warmed the tyres, wheels, and road, and some was carried away by the air, so less than the full amount reached the discs.",
+          "Energy was destroyed by the friction.",
+          "The brake discs have a larger specific heat capacity than assumed, and nothing else matters."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the dissipated energy is shared among the discs, pads, tyres, wheels, road, and air, so the discs receive less than 100 percent and warm less than the idealised prediction.",
+          "incorrect": {
+            "0": "The idealised calculation can be arithmetically perfect and still overpredict, because it assumes an unrealistic 100 percent goes to the discs.",
+            "2": "Energy is not destroyed; it is shared among more objects than the calculation assumed.",
+            "3": "A different $c$ is possible, but the dominant reason is that the energy is shared with other parts and the surroundings."
+          }
+        },
+        "hint": ["The idealised calculation assumes 100 percent of the energy reaches one object. What else absorbs some of it?"],
+        "solution": "The idealised calculation assumes every joule of lost kinetic energy heats the brake discs. In reality the energy is shared: the pads, tyres, wheels, and road also warm, and air moving past carries energy away. So the discs receive a fraction of the total and their measured temperature rise ($40\\ \\mathrm{K}$) is below the idealised upper bound ($60\\ \\mathrm{K}$)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L3-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'A bouncing ball loses energy each bounce and gets lower, so energy is not really conserved for a bouncing ball.' What is the correct response?",
+      "choices": [
+        "The student is right — bouncing balls break conservation of energy.",
+        "The ball's mechanical energy decreases each bounce, but that energy becomes internal energy (the ball and floor warm slightly) plus sound; the total energy is conserved.",
+        "The ball gains energy from the floor each bounce.",
+        "Energy conservation only applies to objects that do not touch anything."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — each bounce transfers some mechanical energy into internal energy and sound. Nothing is lost from the total.",
+        "incorrect": {
+          "0": "Conservation of *total* energy holds every bounce. Only the *mechanical* part decreases.",
+          "2": "The floor does not add energy to the ball; a passive floor only takes energy from it.",
+          "3": "Conservation of total energy applies universally; contact just adds an internal-energy term to track."
+        }
+      },
+      "hint": ["Where does the height the ball fails to regain 'go'? Feel the ball after many bounces."],
+      "solution": "With each bounce the ball deforms and does not spring back perfectly; some kinetic energy is converted to internal energy of the ball and floor (they warm slightly) and to sound. The mechanical energy — and so the rebound height — decreases, but the total energy (mechanical + internal + sound) is conserved throughout."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $3.0\\ \\mathrm{kg}$ block ($c = 900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) slides to rest from $6.0\\ \\mathrm{m/s}$. Assuming all the kinetic energy heats the block, find its temperature rise.\n\nStudent's response: '$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(3.0)(6.0) = 9.0\\ \\mathrm{J}$. Then $\\Delta T = KE \\times mc = 9.0 \\times (3.0)(900) = 24\\,300\\ \\mathrm{K}$.'",
+      "prompts": [
+        "Identify the two errors in the student's work (one in each line).",
+        "State the correct equation linking the energy released and the temperature rise.",
+        "Give the correct temperature rise."
+      ],
+      "modelResponse": "Error 1 (first line): the speed was not squared. $KE = \\tfrac{1}{2}(3.0)(6.0)^2 = \\tfrac{1}{2}(3.0)(36) = 54\\ \\mathrm{J}$. Error 2 (second line): the student multiplied by $mc$ instead of dividing. The correct relationship is $Q = mc\\,\\Delta T$, so $\\Delta T = \\dfrac{Q}{mc}$. Correct: $\\Delta T = \\dfrac{54}{(3.0)(900)} = \\dfrac{54}{2700} = 0.02\\ \\mathrm{K}$ — a tiny rise, as expected for a metal block and an everyday speed.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A described dissipative event (braking, an impact, a fall that does not bounce) fixes the mechanical energy lost ($\\tfrac{1}{2}mv^2$, $mgh$, or $\\tfrac{1}{2}kx^2$); that equals the internal energy gained; and $Q = mc\\,\\Delta T$ turns it into a temperature change. The total-energy bar chart from Unit 4 Lesson 7 gains an internal-energy column here. Real measurements fall below the idealised $\\Delta T$ because energy is shared with the other object and the surroundings.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L3-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.30\\ \\mathrm{kg}$ ball is dropped from $10\\ \\mathrm{m}$ and rebounds to $7\\ \\mathrm{m}$. How much mechanical energy became internal energy? (Take $g = 10\\ \\mathrm{m/s^2}$.)",
+      "choices": ["$9\\ \\mathrm{J}$", "$30\\ \\mathrm{J}$", "$21\\ \\mathrm{J}$", "$51\\ \\mathrm{J}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — before: $mgh_1 = (0.30)(10)(10) = 30\\ \\mathrm{J}$; after: $mgh_2 = (0.30)(10)(7) = 21\\ \\mathrm{J}$; lost $= 30 - 21 = 9\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "This is the initial potential energy, not the amount converted.",
+          "2": "This is the rebound potential energy, not the amount converted.",
+          "3": "This adds the two potential energies. The energy converted is the *difference*."
+        }
+      },
+      "hint": ["Energy converted = (energy at the top before) − (energy at the top after), both $mgh$ with the ball at rest."],
+      "solution": "At the drop height the ball has $mgh_1 = (0.30)(10)(10) = 30\\ \\mathrm{J}$; at the rebound height it has $mgh_2 = (0.30)(10)(7) = 21\\ \\mathrm{J}$. The $30 - 21 = 9\\ \\mathrm{J}$ difference was converted to internal energy of the ball and floor (plus a little sound)."
+    },
+    {
+      "id": "BP8-U5-L3-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "reasonableness-check",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A student calculates that a $1\\ \\mathrm{kg}$ steel ball ($c \\approx 450\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) dropped $2\\ \\mathrm{m}$ warms by $40\\ \\mathrm{K}$ on landing. Why is this obviously wrong?",
+      "choices": [
+        "Energy released is $mgh \\approx (1)(10)(2) = 20\\ \\mathrm{J}$, so $\\Delta T \\approx 20/450 \\approx 0.04\\ \\mathrm{K}$ — about a thousand times smaller than $40\\ \\mathrm{K}$.",
+        "The ball would not fall at all in $2\\ \\mathrm{m}$.",
+        "Steel cannot change temperature.",
+        "The answer should be negative because the ball cools."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — a quick estimate: $mgh \\approx 20\\ \\mathrm{J}$, and $\\Delta T = mgh/(mc) = gh/c \\approx 20/450 \\approx 0.04\\ \\mathrm{K}$. The claimed $40\\ \\mathrm{K}$ is three orders of magnitude too large.",
+        "incorrect": {
+          "1": "The ball certainly falls; that is not the issue.",
+          "2": "Steel changes temperature readily — just not by $40\\ \\mathrm{K}$ from a $2\\ \\mathrm{m}$ drop.",
+          "3": "The impact warms the ball slightly; the sign is positive, but the size is the real problem."
+        }
+      },
+      "hint": ["Estimate the energy released ($mgh$) and divide by $mc$. Everyday drops give tiny temperature rises."],
+      "solution": "The energy released is only $mgh \\approx (1\\ \\mathrm{kg})(10\\ \\mathrm{m/s^2})(2\\ \\mathrm{m}) = 20\\ \\mathrm{J}$. Even if all of it heats the ball, $\\Delta T = \\dfrac{20}{(1)(450)} \\approx 0.04\\ \\mathrm{K}$. A $40\\ \\mathrm{K}$ rise would need about $18\\,000\\ \\mathrm{J}$ — nowhere near available from a $2\\ \\mathrm{m}$ drop. The claim is about a thousand times too big."
+    },
+    {
+      "id": "BP8-U5-L3-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "scenario": "In a demonstration, $0.10\\ \\mathrm{kg}$ of small lead spheres ($c = 130\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) are sealed in a cardboard tube $1.0\\ \\mathrm{m}$ long. The tube is turned end-over-end $50$ times, so the lead falls $1.0\\ \\mathrm{m}$ inside it on each turn. Take $g = 10\\ \\mathrm{m/s^2}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the total gravitational potential energy released by the lead over the 50 turns.",
+          "modelResponse": "Each turn the lead falls $1.0\\ \\mathrm{m}$: energy per turn $= mgh = (0.10)(10)(1.0) = 1.0\\ \\mathrm{J}$. Over 50 turns: $50 \\times 1.0 = 50\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Assuming all this energy heats the lead, calculate the temperature rise.",
+          "modelResponse": "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{50}{(0.10)(130)} = \\dfrac{50}{13} \\approx 3.8\\ \\mathrm{K}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) When the experiment is done, the measured temperature rise is about $3\\ \\mathrm{K}$, a little below your prediction. Give two reasons, and state which conservation law still holds exactly.",
+          "modelResponse": "Reasons the measured rise is lower: (1) some energy warms the cardboard tube and the air inside rather than the lead; (2) some energy escapes as sound each time the lead lands, and some is lost to the room by conduction and convection during the minute or so the experiment takes. Conservation of total energy still holds exactly — the gravitational potential energy released equals the internal energy gained by the lead, tube, and air plus the sound emitted.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB commonly test 'where did the mechanical energy go?' problems: a braking vehicle, an inelastic collision, a bullet in a block, Joule's paddle-wheel-style experiments. The two-step method (energy released, then $Q = mc\\,\\Delta T$) and the explanation of why measured rises fall short of the idealised value are standard.",
+  "summary": "Total energy — kinetic plus potential plus internal — is always conserved. Mechanical energy alone is often not, because friction, drag, inelastic impacts, and repeated deformation convert it into internal energy: the objects warm up, and the internal energy gained equals the mechanical energy lost. To predict a temperature change, find the energy released ($mgh$, $\\tfrac{1}{2}mv^2$, or $\\tfrac{1}{2}kx^2$) and set it equal to $Q = mc\\,\\Delta T$. These rises are usually small. A real measured rise is always below the idealised prediction because the energy is shared with the other object, the air, sound, and scattering.",
+  "exitQuestion": {
+    "id": "BP8-U5-L3-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A hydraulic lift lowers a heavy load slowly and steadily; the fluid and pipes get slightly warm. Which statement is correct?",
+    "choices": [
+      "The load's gravitational potential energy was destroyed.",
+      "The load's gravitational potential energy was converted mostly to internal energy of the fluid and pipes (through friction and viscosity), with total energy conserved.",
+      "The load gained kinetic energy equal to its lost potential energy.",
+      "Energy conservation does not apply because the motion is slow."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — because the load descends slowly (little kinetic energy gained), nearly all its lost gravitational potential energy is dissipated as internal energy in the fluid and pipes.",
+      "incorrect": {
+        "0": "Energy is never destroyed; it is transformed into internal energy here.",
+        "2": "The load moves slowly and steadily, so it gains almost no kinetic energy — the energy goes to heat, not motion.",
+        "3": "Conservation of energy applies at any speed; slow motion just means the kinetic-energy term is small."
+      }
+    },
+    "hint": ["The load barely speeds up, so its lost potential energy is not becoming kinetic energy. What is getting warm?"],
+    "solution": "As the load descends slowly it gains negligible kinetic energy, so almost all of its lost gravitational potential energy must go somewhere else. Friction and viscous drag in the hydraulic fluid and pipes convert it to internal energy — the fluid and pipes warm up. Total energy is conserved: potential energy lost equals internal energy gained (plus a tiny kinetic term)."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-018", "BP8-U5-MCQ-020", "BP8-U5-MCQ-019", "BP8-U5-MCQ-022", "BP8-U5-MCQ-021", "BP8-U5-MCQ-023"],
+  "needsPlotly": false
+}

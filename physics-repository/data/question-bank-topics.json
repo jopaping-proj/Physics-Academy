@@ -26,6 +26,14 @@
       "scope": "Work ($W = Fd$ for angles $0^\\circ$, $90^\\circ$, $180^\\circ$), total and mechanical energy, gravitational potential energy ($mgh$), kinetic energy ($\\tfrac12 mv^2$), conservation of mechanical energy in isolated systems, spring potential energy ($\\tfrac12 kx^2$), and the work-energy theorem ($W_{net} = \\Delta KE$). Scalar energy accounting; no 2-D work integrals or power.",
       "source": "resources/physics8/rescue_sprint/unit_04_energy/test_bank/"
     },
+    "thermal-physics": {
+      "title": "Thermal physics (introductory)",
+      "banks": ["thermal-physics.json", "thermal-physics-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-2", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Temperature as average particle kinetic energy; Celsius / kelvin / Fahrenheit scales ($T_K = T_C + 273$); internal energy; thermal equilibrium and the zeroth law; heat as energy transferred by a temperature difference; conduction, convection, radiation; specific heat capacity ($Q = mc\\Delta T$); latent heat of fusion and vaporisation ($Q = mL$); calorimetry (energy lost = energy gained); heating curves. Scalar energy accounting only; no ideal-gas law, kinetic theory derivations, or entropy.",
+      "source": "Authored for Physics Academy from resources/physics8/resources/unit5_thermal_physics_outcomes.md, calibrated against Tsokos IB Physics Topic 3 and OpenStax High School Physics Ch. 11. No rescue_sprint source bank exists for Unit 5."
+    },
     "newtonian-dynamics": {
       "title": "Newtonian dynamics (AP Physics 1 Unit 2)",
       "banks": [

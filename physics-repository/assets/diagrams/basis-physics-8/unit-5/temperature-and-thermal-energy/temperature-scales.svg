@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="360" viewBox="0 0 560 360" role="img" aria-labelledby="t d">
+<title id="t">The Celsius, Kelvin and Fahrenheit temperature scales side by side</title>
+<desc id="d">Three vertical temperature scales aligned at the same physical temperatures. Absolute zero is 0 kelvin, minus 273 degrees Celsius, minus 460 degrees Fahrenheit. Water freezes at 273 kelvin, 0 degrees Celsius, 32 degrees Fahrenheit. Water boils at 373 kelvin, 100 degrees Celsius, 212 degrees Fahrenheit. The Celsius and Kelvin scales have the same size degree, offset by 273.</desc>
+<rect width="560" height="360" fill="white"/>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <text x="180" y="28" text-anchor="middle" font-weight="bold">Kelvin (K)</text>
+ <text x="320" y="28" text-anchor="middle" font-weight="bold">Celsius (&#176;C)</text>
+ <text x="460" y="28" text-anchor="middle" font-weight="bold">Fahrenheit (&#176;F)</text>
+
+ <line x1="180" y1="50" x2="180" y2="320" stroke="#1769aa" stroke-width="3"/>
+ <line x1="320" y1="50" x2="320" y2="320" stroke="#1769aa" stroke-width="3"/>
+ <line x1="460" y1="50" x2="460" y2="320" stroke="#1769aa" stroke-width="3"/>
+
+ <line x1="150" y1="70" x2="480" y2="70" stroke="#d5dbe3" stroke-width="1"/>
+ <text x="120" y="74" text-anchor="end" fill="#5b6675">water boils</text>
+ <circle cx="180" cy="70" r="3" fill="#1769aa"/><text x="192" y="74">373</text>
+ <circle cx="320" cy="70" r="3" fill="#1769aa"/><text x="332" y="74">100</text>
+ <circle cx="460" cy="70" r="3" fill="#1769aa"/><text x="472" y="74">212</text>
+
+ <line x1="150" y1="210" x2="480" y2="210" stroke="#d5dbe3" stroke-width="1"/>
+ <text x="120" y="214" text-anchor="end" fill="#5b6675">water freezes</text>
+ <circle cx="180" cy="210" r="3" fill="#1769aa"/><text x="192" y="214">273</text>
+ <circle cx="320" cy="210" r="3" fill="#1769aa"/><text x="332" y="214">0</text>
+ <circle cx="460" cy="210" r="3" fill="#1769aa"/><text x="472" y="214">32</text>
+
+ <line x1="150" y1="300" x2="480" y2="300" stroke="#d5dbe3" stroke-width="1"/>
+ <text x="120" y="304" text-anchor="end" fill="#c0392b">absolute zero</text>
+ <circle cx="180" cy="300" r="3" fill="#c0392b"/><text x="192" y="304">0</text>
+ <circle cx="320" cy="300" r="3" fill="#c0392b"/><text x="332" y="304">&#8722;273</text>
+ <circle cx="460" cy="300" r="3" fill="#c0392b"/><text x="472" y="304">&#8722;460</text>
+
+ <text x="280" y="344" text-anchor="middle" fill="#5b6675">A kelvin and a Celsius degree are the same size:  T(K) = T(&#176;C) + 273</text>
+</g>
+</svg>

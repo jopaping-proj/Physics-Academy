@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="280" viewBox="0 0 520 280" role="img" aria-labelledby="t d">
+<title id="t">The zeroth law of thermodynamics as a transitivity diagram</title>
+<desc id="d">Object A is in thermal equilibrium with thermometer B. Thermometer B is in thermal equilibrium with object C. Therefore, by the zeroth law, object A is in thermal equilibrium with object C, even though A and C never touch.</desc>
+<rect width="520" height="280" fill="white"/>
+<defs>
+ <marker id="z1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1769aa"/></marker>
+ <marker id="z2" markerWidth="9" markerHeight="9" refX="2" refY="4.5" orient="auto-start-reverse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1769aa"/></marker>
+</defs>
+<g font-family="Arial" fill="#111827" font-size="13">
+ <circle cx="90" cy="90" r="30" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <text x="90" y="95" text-anchor="middle" font-weight="bold">A</text>
+ <text x="90" y="140" text-anchor="middle" fill="#5b6675">object A</text>
+
+ <rect x="230" y="60" width="60" height="60" rx="6" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <text x="260" y="95" text-anchor="middle" font-weight="bold">B</text>
+ <text x="260" y="140" text-anchor="middle" fill="#5b6675">thermometer B</text>
+
+ <circle cx="430" cy="90" r="30" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <text x="430" y="95" text-anchor="middle" font-weight="bold">C</text>
+ <text x="430" y="140" text-anchor="middle" fill="#5b6675">object C</text>
+
+ <line x1="124" y1="90" x2="226" y2="90" stroke="#1769aa" stroke-width="2" marker-start="url(#z2)" marker-end="url(#z1)"/>
+ <text x="175" y="80" text-anchor="middle" font-size="11">equilibrium</text>
+ <line x1="294" y1="90" x2="396" y2="90" stroke="#1769aa" stroke-width="2" marker-start="url(#z2)" marker-end="url(#z1)"/>
+ <text x="345" y="80" text-anchor="middle" font-size="11">equilibrium</text>
+
+ <text x="260" y="176" text-anchor="middle" fill="#1a7f37" font-weight="bold">therefore A and C are in equilibrium (same temperature)</text>
+ <path d="M120,196 H400" stroke="#1a7f37" stroke-width="2" stroke-dasharray="6 4" marker-start="url(#z2)" marker-end="url(#z1)"/>
+ <text x="260" y="228" text-anchor="middle" fill="#5b6675">even though A and C never touch &#8212; this is what lets a thermometer work</text>
+</g>
+</svg>

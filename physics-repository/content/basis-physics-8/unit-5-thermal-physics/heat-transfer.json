@@ -1,0 +1,362 @@
+{
+  "id": "basis-p8-u5-l2",
+  "slug": "heat-transfer",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Heat Transfer",
+  "lessonTitle": "Heat and How It Travels",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Heat Transfer cluster, HT1-HT3); calibrated against Tsokos IB Physics Topic 3.1 and OpenStax High School Physics Ch. 11-12",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB thermal-physics treatments.",
+  "prerequisites": [
+    "Lesson 1 — temperature is the average kinetic energy of particles; energy flows from hot to cold until thermal equilibrium.",
+    "Unit 4 — energy is measured in joules and is conserved."
+  ],
+  "majorObjective": "Define heat as energy transferred because of a temperature difference, connect a temperature change to particle motion, and identify and explain conduction, convection, and radiation.",
+  "subObjectives": [
+    "State that heat is energy transferred between substances (or regions) that are at different temperatures, and that it flows from hot to cold.",
+    "Relate a macroscopic temperature change to the microscopic picture: heating speeds up the particles' random motion; cooling slows it.",
+    "Describe conduction, convection, and radiation, and identify which one dominates in a given situation.",
+    "State that only radiation can transfer energy across a vacuum."
+  ],
+  "hook": {
+    "prompt": "You take a metal spoon and a wooden spoon out of the same drawer, both at room temperature. The metal one feels colder. Why?",
+    "choices": [
+      "The metal spoon really is at a lower temperature.",
+      "Metal conducts energy away from your warm hand faster, so your skin cools more quickly.",
+      "Cold flows out of the metal into your hand.",
+      "The wooden spoon is generating heat."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Heat is not a substance an object contains — it is energy on the move. This lesson names the three routes that energy takes when it flows from a hot place to a cold one.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What heat is, and the microscopic picture",
+      "concept": "**Heat** is energy transferred between substances (or between parts of one substance) **because they are at different temperatures**. It always flows from the **hotter** region to the **cooler** one, and it stops once they reach the same temperature.\n\nHeat is measured in **joules**. An object does not 'contain heat' — it contains **internal energy**, and *heat* is the name for energy while it is being transferred.\n\n**Macroscopic ↔ microscopic.** When you heat a substance and its temperature rises, on the particle level:\n\n- the particles gain kinetic energy and move (or vibrate) **faster** on average;\n- in a solid, they vibrate more vigorously about fixed positions;\n- in a liquid or gas, they move around faster.\n\nCooling is the reverse: the particles slow down. 'Temperature went up by $10\\ ^\\circ\\mathrm{C}$' and 'the particles are now moving faster' are two descriptions of the same event.",
+      "representation": "Two ways to describe the same heating:\n\n| Macroscopic (what you measure) | Microscopic (what the particles do) |\n|---|---|\n| temperature rises | particles move / vibrate faster |\n| heat flows in | particles gain kinetic energy |\n| object reaches equilibrium | particle speeds stop changing |\n\nHeat is the energy in transit; the temperature change is the visible result.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A cold metal fork ($5\\ ^\\circ\\mathrm{C}$) is left in a warm kitchen ($22\\ ^\\circ\\mathrm{C}$). (a) State whether heat flows, and in which direction. (b) Describe what happens to the fork's particles. (c) State when the flow of heat stops.",
+        "phases": [
+          {
+            "label": "(a) Does heat flow, and which way?",
+            "steps": ["The fork is cooler than the kitchen air, so heat flows **from the air into the fork** (hot to cold)."]
+          },
+          {
+            "label": "(b) The fork's particles",
+            "steps": ["They gain kinetic energy and vibrate faster about their positions in the metal; the fork's temperature rises."]
+          },
+          {
+            "label": "(c) When it stops",
+            "steps": ["When the fork reaches the same temperature as the kitchen ($22\\ ^\\circ\\mathrm{C}$) — thermal equilibrium — there is no more temperature difference, so no more net heat flow."]
+          }
+        ],
+        "keyMove": "Heat flows only while there is a temperature difference, always from hot to cold, and shows up as a change in how fast the particles move."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L2-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which statement about heat is correct?",
+        "choices": [
+          "Heat is a substance stored inside warm objects.",
+          "Heat is energy transferred between things at different temperatures, always from hotter to cooler.",
+          "Heat and temperature are two words for the same quantity.",
+          "Heat flows from cold objects to hot objects."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — heat is energy in transit, driven by a temperature difference, and it moves from hot to cold.",
+          "incorrect": {
+            "0": "That is the discredited 'caloric' idea. Objects hold internal energy, not heat.",
+            "2": "Temperature is a property of an object; heat is transferred energy. Different quantities.",
+            "3": "The net flow of heat is always from hot to cold, never the reverse on its own."
+          }
+        },
+        "hint": ["Heat only 'exists' while energy is moving. What drives that movement, and which direction does it go?"],
+        "solution": "Heat is energy transferred from one object (or region) to another as a result of a temperature difference. It flows spontaneously from the hotter to the cooler until their temperatures are equal."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Conduction, convection, radiation",
+      "concept": "Energy travels from hot to cold by three mechanisms:\n\n- **Conduction** — energy passes **through a material** by particle-to-particle interaction, **without the material itself moving**. Fast-vibrating particles jostle their neighbours, passing energy along. Metals conduct well (free electrons help carry the energy); wood, plastic, air, and water conduct poorly (they are **insulators**). A metal spoon getting hot in soup is conduction.\n\n- **Convection** — energy is carried by the **bulk movement of a heated fluid** (liquid or gas). Warmed fluid expands, becomes less dense, and **rises**; cooler denser fluid **sinks** to replace it, forming a circulating **convection current**. A radiator warming a room, or hot water circulating in a kettle, is convection. Solids cannot convect.\n\n- **Radiation** — energy travels as **electromagnetic waves** (mostly infrared) and needs **no medium at all**. Every object radiates; hotter objects radiate more. The Sun warming your face, or a fire felt from across a room, is radiation. It is the **only** method that works across a **vacuum**.",
+      "representation": "Identify the method by asking:\n\n1. Is the energy passing through a **solid** that stays put? → **conduction**.\n2. Is a **fluid physically moving** in a loop, carrying energy with it? → **convection**.\n3. Is the energy crossing a **gap or vacuum** as waves, with nothing in between? → **radiation**.\n\nMany real situations use two or three at once (a pot on a stove: radiation + conduction from the flame, conduction through the metal, convection in the water).",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-5/heat-transfer/three-modes.svg",
+          "caption": "Conduction passes energy along a still solid; convection carries it in a circulating fluid; radiation sends it as waves, even across a vacuum."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, name the dominant method of heat transfer: (a) the handle of a metal saucepan getting hot on the stove; (b) a hot-air balloon rising; (c) warming your hands near a campfire without touching it; (d) a sea breeze forming as land heats faster than the sea.",
+        "phases": [
+          {
+            "label": "(a) Saucepan handle",
+            "steps": ["Energy travels along the solid metal without the metal moving → **conduction**."]
+          },
+          {
+            "label": "(b) Hot-air balloon",
+            "steps": ["Heated air is less dense and rises, carrying energy (and the balloon) with it → **convection**."]
+          },
+          {
+            "label": "(c) Hands near a campfire",
+            "steps": ["Energy crosses the air gap as infrared waves without heating all the air in between → **radiation**."]
+          },
+          {
+            "label": "(d) Sea breeze",
+            "steps": ["Air warmed over the land rises; cooler air flows in from over the sea to replace it — a large convection current → **convection**."]
+          }
+        ],
+        "keyMove": "Solid + staying put = conduction; fluid moving in a loop = convection; waves across a gap = radiation."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L2-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "An astronaut on a spacewalk feels the warmth of the Sun on the sunlit side of their suit. Which method of heat transfer is responsible, and why is it the only possibility?",
+        "choices": [
+          "Conduction, because the suit touches the Sun's field.",
+          "Radiation, because it is the only method that can carry energy across the vacuum of space.",
+          "Convection, because warm gas from the Sun reaches the astronaut.",
+          "All three equally."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — space is a vacuum, so conduction and convection (both needing matter) cannot operate. Radiation carries the Sun's energy as electromagnetic waves.",
+          "incorrect": {
+            "0": "There is no contact and no medium; conduction needs a material path.",
+            "2": "There is no continuous fluid between the Sun and the astronaut to convect.",
+            "3": "Only radiation works across a vacuum; the other two need matter."
+          }
+        },
+        "hint": ["What is between the Sun and the astronaut? Which transfer method needs no matter at all?"],
+        "solution": "The near-vacuum of space contains almost no particles, so conduction and convection cannot transfer energy across it. Radiation — energy carried as electromagnetic (mostly infrared and visible) waves — needs no medium, so it is the only way the Sun's energy reaches the astronaut."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Insulators, conductors, and everyday design",
+      "concept": "Materials differ enormously in how fast they conduct:\n\n- **Good conductors:** metals (copper, aluminium, iron). Used where you *want* fast energy transfer — saucepan bases, heat sinks, radiators.\n- **Good insulators:** air (especially trapped, still air), wool, foam, wood, plastic. Used where you *want to slow* energy transfer — oven mitts, house walls, winter clothing, animal fur.\n\nGood insulation usually works by **trapping air** so it cannot convect, while also being a poor conductor and (sometimes) reflecting radiation. A vacuum flask combines all three: a vacuum gap (stops conduction and convection), silvered walls (reflect radiation), and an insulating stopper.\n\n'Feeling cold' is really 'losing energy from your skin quickly.' A metal object at room temperature feels colder than a wooden one at the same temperature because metal conducts energy away from your hand much faster.",
+      "representation": "To slow heat transfer, block all three routes:\n\n- **conduction** → use a poor conductor / thicker material;\n- **convection** → trap the air so it cannot circulate (foam, fibres, double glazing);\n- **radiation** → use a shiny, reflective surface.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A camper wants to keep a pot of stew warm for as long as possible. They have: a wool blanket, aluminium foil, and a cardboard box. Explain how to use each to slow a different heat-loss route.",
+        "phases": [
+          {
+            "label": "The wool blanket",
+            "steps": ["Wrap it around the pot. Wool traps still air in its fibres, which is a poor conductor and cannot convect — this slows **conduction and convection**."]
+          },
+          {
+            "label": "The aluminium foil",
+            "steps": ["Wrap a shiny layer around the outside. The reflective surface bounces infrared **radiation** back toward the pot instead of letting it escape."]
+          },
+          {
+            "label": "The cardboard box",
+            "steps": ["Put the wrapped pot inside and close the lid. Cardboard is a poor conductor and the enclosed space stops draughts, cutting **convection** losses to the moving outside air."]
+          }
+        ],
+        "keyMove": "Each material targets a route: trapped air (fibres) slows conduction/convection; a shiny surface slows radiation; an enclosure stops draughts."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L2-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Why does fluffy winter clothing keep you warm, even though the fibres themselves are thin and light?",
+        "choices": [
+          "The fibres generate heat.",
+          "The fibres trap a layer of still air, which is a poor conductor and cannot form convection currents, so it slows energy loss from your body.",
+          "The fibres reflect all radiation perfectly.",
+          "The clothing lowers your body temperature so you feel warmer."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the insulating value comes mostly from the still air trapped between the fibres, which conducts poorly and cannot convect.",
+          "incorrect": {
+            "0": "Clothing does not generate heat; it slows the heat your body already produces from escaping.",
+            "2": "Ordinary fabric is not a perfect radiation reflector; the main effect is trapped air.",
+            "3": "Clothing does not lower your body temperature; it reduces the rate you lose energy to the surroundings."
+          }
+        },
+        "hint": ["What is between the fibres, and how well does it conduct or convect?"],
+        "solution": "Fluffy clothing works by trapping a thick layer of still air among its fibres. Still air is a poor conductor, and because it is held in place it cannot set up convection currents. This slows the transfer of energy from your warm body to the cold surroundings, so you stay warm."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L2-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'When I hold an ice cube, cold flows from the ice into my hand and that is why my hand feels cold.' What is the correct description?",
+      "choices": [
+        "The student is right — cold is a substance that moves.",
+        "There is no 'cold' to flow. Energy flows from your warmer hand into the colder ice (hot to cold), so your hand loses energy and cools.",
+        "Nothing flows; your hand just decides it feels cold.",
+        "Heat flows from the ice into your hand."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — only energy is transferred, and it goes from your hand (hotter) to the ice (colder). Your hand cooling is the loss of that energy.",
+        "incorrect": {
+          "0": "'Cold' is not a substance or a form of energy — it is simply a lower temperature. Only energy flows.",
+          "2": "Something real is happening: energy is leaving your hand and entering the ice.",
+          "3": "Heat flows from hot to cold, so from your hand to the ice — not the reverse."
+        }
+      },
+      "hint": ["Heat only flows hot → cold. Which is hotter, your hand or the ice?"],
+      "solution": "There is no such thing as 'cold' flowing. Your hand is warmer than the ice, so energy (heat) flows from your hand into the ice. Losing that energy is what cools your skin and makes it feel cold. The ice, gaining the energy, begins to melt."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'A closed metal saucepan of water sits on a gas flame. Identify the heat transfer method at each stage: flame to pan base; through the pan base; through the water; from the water to the lid.'\n\nStudent's response: 'Flame to base: convection (hot gas touches it). Through the base: convection (the metal carries it). Through the water: conduction (water passes it along). Water to lid: radiation.'",
+      "prompts": [
+        "State the rule for deciding conduction versus convection.",
+        "Identify which of the student's four answers are wrong and give the correct method.",
+        "Write the corrected sequence."
+      ],
+      "modelResponse": "Rule: energy through a material that stays put is conduction; energy carried by a fluid that physically moves in a loop is convection. Corrections: (1) 'through the base' is *conduction*, not convection — the solid metal does not flow; (2) 'through the water' is mainly *convection*, not conduction — the heated water rises and circulates. The 'flame to base' answer is acceptable as radiation plus conduction on contact (the student's 'convection' via touching hot gas is loosely conduction/contact). 'Water to lid' as radiation is reasonable, though rising warm water and steam (convection) also carry energy up. Corrected sequence: flame to base — radiation and conduction on contact; through the base — conduction; through the water — convection; water to lid — convection (rising warm water/steam) with some radiation.",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "A described scene fixes the transfer method: a still solid path is conduction, a circulating fluid is convection, waves across a gap are radiation. Heat itself is energy in joules, driven by a temperature difference (Lesson 1), flowing until thermal equilibrium. The rate of transfer depends on the materials — conductors speed it up, insulators (especially trapped air) slow it — which is the design principle behind clothing, buildings, and the vacuum flask.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L2-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Which list correctly pairs each example with its dominant heat transfer method?\n\n1. Sunlight warming a pavement.  2. A metal rod carrying energy from a flame.  3. Warm air rising from a heater.",
+      "choices": [
+        "1 radiation, 2 conduction, 3 convection",
+        "1 convection, 2 radiation, 3 conduction",
+        "1 conduction, 2 convection, 3 radiation",
+        "1 radiation, 2 convection, 3 conduction"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — sunlight crosses space as waves (radiation); a solid rod passes energy along without moving (conduction); rising warm air is a moving fluid (convection).",
+        "incorrect": {
+          "1": "Sunlight is radiation, not convection; a solid rod is conduction, not radiation.",
+          "2": "A solid rod is conduction, not itself; rising warm air is convection, not radiation.",
+          "3": "The rod is conduction (solid, stays put), not convection."
+        }
+      },
+      "hint": ["Waves across a gap; energy along a still solid; a moving fluid carrying energy."],
+      "solution": "1. Sunlight travels through the vacuum of space as electromagnetic waves — radiation. 2. Energy passes along the still solid metal rod by particle interaction — conduction. 3. Heated air expands, rises, and circulates — convection."
+    },
+    {
+      "id": "BP8-U5-L2-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two identical cups of hot coffee are left to cool. One is covered with a shiny metal lid; the other with a lid of the same shape made of black card. Which cools faster, and why?",
+      "choices": [
+        "The one with the shiny lid, because metal conducts heat away.",
+        "The one with the black card lid, because a dark, non-reflective surface radiates energy away more readily than a shiny one.",
+        "They cool at the same rate, because both lids block convection equally.",
+        "The one with the shiny lid, because shiny surfaces absorb radiation."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a dark matte surface is a better emitter of infrared radiation than a shiny one, so more energy radiates away from the black-card lid and that cup cools faster.",
+        "incorrect": {
+          "0": "Both lids largely stop convection and evaporation; the shiny metal lid actually *reflects* radiation back, slowing cooling.",
+          "2": "The lids differ in how they handle radiation, so the cooling rates differ.",
+          "3": "Shiny surfaces are poor emitters and good reflectors of radiation, so the shiny-lid cup cools *slower*, not faster."
+        }
+      },
+      "hint": ["Both lids stop most convection and evaporation, so the difference is in radiation. Which surface emits infrared better — shiny or matte black?"],
+      "solution": "Both lids suppress convection and evaporation from the surface, so the main remaining loss through the lid is radiation. A shiny metal surface is a poor emitter and reflects infrared back toward the coffee; a matte black surface is a good emitter and radiates energy away efficiently. So the cup with the black card lid loses energy faster and cools more quickly."
+    },
+    {
+      "id": "BP8-U5-L2-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A house designer wants to reduce heat loss through the walls and windows in winter. Options available: cavity walls filled with foam, double-glazed windows (two glass panes with a sealed gap), and a reflective foil layer behind the radiators.",
+      "parts": [
+        {
+          "prompt": "(a) Explain how the foam-filled cavity wall reduces heat loss, naming the transfer methods it targets.",
+          "modelResponse": "The foam is a poor conductor, so it slows conduction through the wall. It also traps the air into tiny pockets so the air cannot circulate, which stops convection currents carrying energy across the cavity. So it targets both conduction and convection.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Explain why two panes of glass with a sealed gap lose energy more slowly than a single thick pane of the same total thickness.",
+          "modelResponse": "The sealed gap (air, or a low-conductivity gas, or partial vacuum) is a much poorer conductor than glass, so it greatly slows conduction through the window. Because the gap is thin and sealed, convection within it is limited. A single thick pane of glass conducts throughout its whole thickness with no such barrier, so it loses energy faster.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Explain how the reflective foil behind a radiator helps, and which transfer method it targets.",
+          "modelResponse": "A radiator emits infrared radiation in all directions, including toward the wall behind it. A shiny foil layer reflects that radiation back into the room instead of letting it be absorbed by the wall and conducted outside. So it targets radiation losses, sending more of the radiator's output into the living space.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Naming and explaining conduction, convection, and radiation, knowing that only radiation crosses a vacuum, and analysing insulation (trapped air, reflective surfaces, double glazing, vacuum flasks) are recurring AP Physics 2 and IB items. The particle-level explanation of why heat flows from hot to cold is a standard extended-response prompt.",
+  "summary": "Heat is energy transferred between things at different temperatures, always from hot to cold, measured in joules; an object holds internal energy, not heat. A temperature change is the macroscopic sign that the particles have sped up (heating) or slowed down (cooling). Energy travels by conduction (through a still solid, particle to particle), convection (carried by a circulating fluid), and radiation (as electromagnetic waves, the only method that crosses a vacuum). Conductors (metals) speed transfer up; insulators (trapped still air, foam, wool) slow it down, and good insulation blocks all three routes at once.",
+  "exitQuestion": {
+    "id": "BP8-U5-L2-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A vacuum flask keeps a drink hot for hours. Which heat transfer method can still occur across the vacuum gap between its walls, and how is it reduced?",
+    "choices": [
+      "Conduction, reduced by making the walls thin.",
+      "Radiation, reduced by silvering the wall surfaces so they reflect infrared back inward.",
+      "Convection, reduced by sealing the stopper.",
+      "None — a vacuum stops all three."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the vacuum stops conduction and convection, but radiation still crosses it. Silvered surfaces reflect that infrared radiation back toward the drink.",
+      "incorrect": {
+        "0": "Conduction needs matter, so it is essentially blocked by the vacuum — it is not the route that remains.",
+        "2": "Convection also needs matter and is blocked by the vacuum gap; the stopper handles losses through the top.",
+        "3": "Radiation does not need matter, so it still crosses the vacuum — which is why the silvering matters."
+      }
+    },
+    "hint": ["Which method needs no medium? That is the one that survives the vacuum gap."],
+    "solution": "A vacuum contains almost no particles, so conduction and convection cannot operate across the gap between the flask's walls. Radiation does not need a medium, so infrared energy can still cross. Silvering the facing surfaces makes them poor emitters and good reflectors, so most of that radiation is bounced back toward the drink."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-010", "BP8-U5-MCQ-012", "BP8-U5-MCQ-016", "BP8-U5-MCQ-013", "BP8-U5-MCQ-015", "BP8-U5-MCQ-014"],
+  "needsPlotly": false
+}

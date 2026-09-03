@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="260" viewBox="0 0 660 260" role="img" aria-labelledby="t d">
+<title id="t">Conduction, convection and radiation</title>
+<desc id="d">Three panels. Conduction: energy passes along a solid metal bar from a flame to a hand, particle to particle, with the bar staying still. Convection: warm fluid rises and cool fluid sinks above a heat source, forming a circulating loop. Radiation: energy travels as waves from a hot source across empty space to an object, with no medium.</desc>
+<rect width="660" height="260" fill="white"/>
+<defs>
+ <marker id="a5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#e07b00"/></marker>
+</defs>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <!-- conduction -->
+ <text x="110" y="26" text-anchor="middle" font-size="13" font-weight="bold">Conduction</text>
+ <text x="110" y="42" text-anchor="middle" fill="#5b6675">through a solid</text>
+ <rect x="45" y="110" width="150" height="20" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+ <g fill="#1769aa"><circle cx="60" cy="120" r="3"/><circle cx="85" cy="120" r="3"/><circle cx="110" cy="120" r="3"/><circle cx="135" cy="120" r="3"/><circle cx="160" cy="120" r="3"/><circle cx="182" cy="120" r="3"/></g>
+ <path d="M40,90 q6,-14 12,0 q6,14 12,0" fill="none" stroke="#c0392b" stroke-width="2"/>
+ <text x="46" y="150" fill="#c0392b">flame</text>
+ <line x1="70" y1="120" x2="180" y2="120" stroke="#e07b00" stroke-width="2.5" marker-end="url(#a5)"/>
+ <text x="185" y="150" text-anchor="end">hand</text>
+ <text x="110" y="185" text-anchor="middle" fill="#5b6675">particles pass energy along;</text>
+ <text x="110" y="200" text-anchor="middle" fill="#5b6675">the bar itself does not move</text>
+
+ <!-- convection -->
+ <g transform="translate(220,0)">
+  <text x="110" y="26" text-anchor="middle" font-size="13" font-weight="bold">Convection</text>
+  <text x="110" y="42" text-anchor="middle" fill="#5b6675">in a fluid</text>
+  <rect x="45" y="150" width="130" height="12" fill="#f0d9c0" stroke="#b35f00" stroke-width="1.5"/>
+  <text x="110" y="176" text-anchor="middle" fill="#b35f00">heat source</text>
+  <path d="M70,150 C70,110 70,90 110,80" fill="none" stroke="#e07b00" stroke-width="2.5" marker-end="url(#a5)"/>
+  <path d="M150,80 C150,110 150,135 112,148" fill="none" stroke="#5b6675" stroke-width="2" marker-end="url(#a5)"/>
+  <text x="60" y="105">warm</text>
+  <text x="150" y="105" fill="#5b6675">cool</text>
+  <text x="110" y="200" text-anchor="middle" fill="#5b6675">the heated fluid rises and</text>
+  <text x="110" y="215" text-anchor="middle" fill="#5b6675">circulates, carrying energy</text>
+ </g>
+
+ <!-- radiation -->
+ <g transform="translate(440,0)">
+  <text x="110" y="26" text-anchor="middle" font-size="13" font-weight="bold">Radiation</text>
+  <text x="110" y="42" text-anchor="middle" fill="#5b6675">no medium needed</text>
+  <circle cx="55" cy="120" r="16" fill="#f4c9a0" stroke="#c0392b" stroke-width="2"/>
+  <text x="55" y="150" text-anchor="middle" fill="#c0392b">hot source</text>
+  <path d="M78,110 q14,10 0,20 M92,105 q18,15 0,30 M106,100 q22,20 0,40" fill="none" stroke="#e07b00" stroke-width="2"/>
+  <line x1="76" y1="120" x2="150" y2="120" stroke="#e07b00" stroke-width="2.5" marker-end="url(#a5)"/>
+  <rect x="152" y="106" width="26" height="28" fill="#eef4f9" stroke="#1769aa" stroke-width="2"/>
+  <text x="165" y="150" text-anchor="middle">object</text>
+  <text x="110" y="185" text-anchor="middle" fill="#5b6675">energy travels as waves,</text>
+  <text x="110" y="200" text-anchor="middle" fill="#5b6675">even across a vacuum</text>
+ </g>
+</g>
+</svg>

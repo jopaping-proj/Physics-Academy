@@ -1,0 +1,367 @@
+{
+  "id": "basis-p8-u5-l4",
+  "slug": "thermodynamic-laws",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Thermodynamic Laws",
+  "lessonTitle": "The Zeroth Law and Thermal Equilibrium",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Thermodynamic Laws cluster, ZL1); calibrated against Tsokos IB Physics Topic 3.1 and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB treatments.",
+  "prerequisites": [
+    "Lesson 1 — thermal equilibrium is the state of equal temperature and no net energy transfer.",
+    "Lesson 2 — heat flows from hot to cold until temperatures are equal."
+  ],
+  "majorObjective": "State the zeroth law of thermodynamics, explain the transitivity of thermal equilibrium, and explain why the zeroth law is what makes thermometers valid.",
+  "subObjectives": [
+    "State the zeroth law: if A is in thermal equilibrium with B and B is in thermal equilibrium with C, then A is in thermal equilibrium with C.",
+    "Explain that 'thermal equilibrium' is transitive and behaves like 'equals', so temperature is a consistent single-valued property of any system.",
+    "Explain how a thermometer uses the zeroth law: it is a common third object (B) that compares two others without them touching.",
+    "Distinguish the zeroth law from the first law (energy conservation) and the everyday statement of the second law (heat flows hot to cold)."
+  ],
+  "hook": {
+    "prompt": "You want to know if the milk in the fridge is at the same temperature as the juice, without pouring them together. What is the cleanest way?",
+    "choices": [
+      "Taste both quickly.",
+      "Touch the milk with a thermometer, wait, read it; then do the same with the juice; compare the readings.",
+      "There is no way to tell without mixing them.",
+      "Weigh both containers."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Thermodynamics has four numbered laws. You have already met the first (energy is conserved). This lesson is about the one numbered *zero* — added later, but so basic that it sits underneath all the others. It is the reason a thermometer means anything.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Thermal equilibrium is transitive",
+      "concept": "Recall from Lesson 1: two objects are in **thermal equilibrium** when they are at the same temperature, so there is no net transfer of energy between them.\n\nThe **zeroth law of thermodynamics** adds a crucial extra fact about this relationship:\n\n> If object **A** is in thermal equilibrium with object **B**, and object **B** is in thermal equilibrium with object **C**, then object **A** is in thermal equilibrium with object **C**.\n\nThis property is called **transitivity**. It means 'is in thermal equilibrium with' behaves just like 'is equal to' in arithmetic: if $a = b$ and $b = c$, then $a = c$.\n\nThis is **not obvious** and could have turned out false — it is a statement about how nature actually works. Because it is true, every object has a single, consistent **temperature**, and 'same temperature' is a well-defined idea.",
+      "representation": "The zeroth law as a chain:\n\n$$A \\leftrightarrow B \\quad\\text{and}\\quad B \\leftrightarrow C \\qquad\\Longrightarrow\\qquad A \\leftrightarrow C$$\n\nwhere $\\leftrightarrow$ means 'in thermal equilibrium with' (same temperature). A and C reach this conclusion **without ever touching**.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-5/thermodynamic-laws/zeroth-law-transitivity.svg",
+          "caption": "Object A is in equilibrium with thermometer B; B is in equilibrium with object C; therefore A and C are at the same temperature, even though A and C never touch."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A block of iron and a block of wood have both been sitting in the same room for a day. A student says 'they're different materials, so they must be at different temperatures.' Use the zeroth law to settle the question.",
+        "phases": [
+          {
+            "label": "Identify the common third object",
+            "steps": ["The room's air (call it B) has been in contact with both the iron (A) and the wood (C) for a long time."]
+          },
+          {
+            "label": "Apply thermal equilibrium",
+            "steps": [
+              "After a day, the iron is in thermal equilibrium with the room air: $A \\leftrightarrow B$.",
+              "The wood is also in thermal equilibrium with the room air: $B \\leftrightarrow C$."
+            ]
+          },
+          {
+            "label": "Apply the zeroth law",
+            "steps": [
+              "By transitivity, $A \\leftrightarrow C$: the iron and the wood are at the **same temperature** — room temperature.",
+              "Being different materials does not matter. (They may *feel* different because metal conducts energy from your hand faster — but that is about heat *transfer rate*, not temperature.)"
+            ]
+          }
+        ],
+        "keyMove": "Find the shared third object both items have equilibrated with; the zeroth law then guarantees the two items are at the same temperature."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L4-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "The zeroth law of thermodynamics is a statement about:",
+        "choices": [
+          "how energy is conserved in every process.",
+          "the transitivity of thermal equilibrium: if A and B are in equilibrium, and B and C are, then A and C are.",
+          "why heat cannot flow from cold to hot on its own.",
+          "the impossibility of reaching absolute zero."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the zeroth law says 'in thermal equilibrium with' is transitive, which makes temperature a consistent property and thermometry valid.",
+          "incorrect": {
+            "0": "That is the first law of thermodynamics.",
+            "2": "That is the everyday form of the second law.",
+            "3": "That is related to the third law."
+          }
+        },
+        "hint": ["It involves three objects, A, B and C, and the word 'transitive'."],
+        "solution": "The zeroth law states that if A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. This transitivity is what makes 'temperature' a well-defined, single-valued property."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Why a thermometer works",
+      "concept": "A **thermometer** is just a carefully chosen 'object B'.\n\nWhen you use one:\n\n1. You put it in contact with an object and **wait** until the reading stops changing. Now the thermometer is in **thermal equilibrium** with that object — they are at the same temperature.\n2. The thermometer has a property that changes predictably with temperature (the length of a liquid column, an electrical resistance), which it displays as a number.\n3. To compare two objects, you bring the thermometer to equilibrium with each in turn. If the readings match, the thermometer is in equilibrium with both — and by the **zeroth law**, the two objects are in equilibrium with **each other**, i.e. at the same temperature, even though they never touched.\n\nThis is why you must **wait** for the reading to settle: while it is still changing, the thermometer is not yet in equilibrium, so its reading is not yet the object's temperature.",
+      "representation": "The thermometry procedure:\n\n| Step | What it does |\n|---|---|\n| contact + wait | brings thermometer into equilibrium with the object |\n| read the scale | converts the thermometer's changed property to a temperature |\n| repeat on object 2, compare | zeroth law: equal readings ⇒ the two objects are at the same temperature |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A nurse takes a patient's temperature with a digital thermometer and reads $38.5\\ ^\\circ\\mathrm{C}$ after it beeps. (a) What does the beep signify? (b) What does the reading actually tell you about the thermometer? (c) A second patient reads $38.5\\ ^\\circ\\mathrm{C}$. What can be said about the two patients?",
+        "phases": [
+          {
+            "label": "(a) The beep",
+            "steps": ["It signals that the reading has stopped changing — the thermometer has reached thermal equilibrium with the patient."]
+          },
+          {
+            "label": "(b) What the reading means",
+            "steps": ["The thermometer is now at the same temperature as the patient ($38.5\\ ^\\circ\\mathrm{C}$); its displayed number is that shared temperature."]
+          },
+          {
+            "label": "(c) Comparing the two patients",
+            "steps": [
+              "The thermometer is in equilibrium with patient 1 at $38.5\\ ^\\circ\\mathrm{C}$ and (separately) with patient 2 at $38.5\\ ^\\circ\\mathrm{C}$.",
+              "By the zeroth law, the two patients are in thermal equilibrium with each other — they have the same body temperature — without any contact between them."
+            ]
+          }
+        ],
+        "keyMove": "The thermometer equilibrates with each object in turn; equal readings mean equal temperatures, by the zeroth law."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L4-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Why must you wait for a thermometer's reading to stop changing before recording it?",
+        "choices": [
+          "The thermometer needs time to switch on fully.",
+          "Until the reading is steady, the thermometer is not yet in thermal equilibrium with the object, so its reading is not yet the object's temperature.",
+          "Waiting makes the object hotter.",
+          "The scale is only accurate after one minute regardless of the object."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a changing reading means energy is still flowing between thermometer and object; only when the reading is steady are they at the same temperature.",
+          "incorrect": {
+            "0": "The delay is physical (reaching equilibrium), not electronic warm-up.",
+            "2": "Waiting does not change the object's temperature appreciably; it lets the thermometer catch up to it.",
+            "3": "The time needed depends on the object and the thermometer, not a fixed minute."
+          }
+        },
+        "hint": ["A moving reading means energy is still flowing. When has the thermometer actually matched the object's temperature?"],
+        "solution": "While the reading is still changing, energy is still being transferred between the thermometer and the object, so they are not yet at the same temperature. Only once the reading is steady has the thermometer reached thermal equilibrium with the object, and only then does its displayed value equal the object's temperature."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "The zeroth law among the others",
+      "concept": "The laws of thermodynamics, briefly:\n\n- **Zeroth law:** thermal equilibrium is transitive (this lesson) — makes *temperature* meaningful.\n- **First law:** energy is conserved; the internal energy of a system changes by the heat added minus the work it does. You met conservation of energy in Unit 4 and Lesson 3.\n- **Second law (everyday form):** heat flows spontaneously from hot to cold, never the reverse on its own — which is why objects reach equilibrium and why a fridge needs a power supply to move energy 'the wrong way'.\n- **Third law:** you cannot reach absolute zero in a finite number of steps.\n\nThe zeroth law is numbered last-but-first because it was recognised *after* the first and second laws were already named, but is more fundamental — the first and second laws both talk about 'temperature', which only makes sense because the zeroth law holds.\n\nFor this course, you need the **zeroth law statement and its role in thermometry**; the first and second laws are here only for context.",
+      "representation": "Rough map:\n\n| Law | One-line content | Where you meet it |\n|---|---|---|\n| Zeroth | equilibrium is transitive → temperature is well-defined | this lesson |\n| First | energy is conserved | Unit 4; Lesson 3 |\n| Second | heat flows hot → cold on its own | Lessons 1–2 (equilibrium direction) |\n| Third | absolute zero is unreachable | Lesson 1 (absolute zero exists) |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify each statement by which law of thermodynamics it expresses: (a) 'A cup of coffee left out always cools toward room temperature, never warms up on its own.' (b) 'The energy you put into a system as heat and work all has to be accounted for.' (c) 'If the thermometer agrees with the bath and with the block, the bath and block agree with each other.'",
+        "phases": [
+          {
+            "label": "(a) Coffee cools, never self-warms",
+            "steps": ["Heat flows spontaneously from hot to cold, not the reverse → **second law** (everyday form)."]
+          },
+          {
+            "label": "(b) Energy in must be accounted for",
+            "steps": ["Conservation of energy → **first law**."]
+          },
+          {
+            "label": "(c) Thermometer agreement is transitive",
+            "steps": ["Transitivity of thermal equilibrium → **zeroth law**."]
+          }
+        ],
+        "keyMove": "Transitivity = zeroth; energy accounting = first; hot-to-cold direction = second."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L4-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Which statement is an expression of the zeroth law of thermodynamics (rather than the first or second)?",
+        "choices": [
+          "The total energy of an isolated system never changes.",
+          "Two objects each in thermal equilibrium with a third object are in thermal equilibrium with each other.",
+          "Heat never flows from a cold body to a hot body without an external input.",
+          "No process can convert heat entirely into work."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — this is the transitivity statement, which is the zeroth law.",
+          "incorrect": {
+            "0": "That is the first law (conservation of energy).",
+            "2": "That is the second law (spontaneous direction of heat flow).",
+            "3": "That is another form of the second law."
+          }
+        },
+        "hint": ["The zeroth law is the one about three objects and 'in equilibrium with'."],
+        "solution": "The zeroth law states that if two objects are each in thermal equilibrium with a third, they are in thermal equilibrium with each other. The other options are the first law (energy conservation) and forms of the second law (direction of spontaneous heat flow)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L4-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "",
+      "question": "A student says: 'The zeroth law is just common sense — if two things have been in the same room a while, obviously they end up the same temperature. Why bother naming it?' What is the sharper point?",
+      "choices": [
+        "The student is right; it is not really needed.",
+        "Its real content is transitivity: 'in equilibrium with' behaves like 'equals', which is what makes temperature a single well-defined property and lets a thermometer compare objects that never touch. That is a genuine assumption about nature, not a triviality.",
+        "It says energy is conserved during the process.",
+        "It says the process happens instantly."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the law's job is to guarantee that temperature is consistent and that thermometry is valid. It could logically have been false; that it is true must be stated.",
+        "incorrect": {
+          "0": "It is essential: without it, 'temperature' would not be guaranteed to be a single consistent number for a system.",
+          "2": "Energy conservation is the first law.",
+          "3": "The zeroth law says nothing about how fast equilibrium is reached."
+        }
+      },
+      "hint": ["The key word is 'transitive'. What does it let you conclude about two objects that were never in contact?"],
+      "solution": "The zeroth law's content is that thermal equilibrium is transitive, so it behaves like equality. This is what makes 'the temperature of a system' a single, consistent quantity and what allows a thermometer (one shared third object) to compare two objects that never touch. It is a real assumption about how nature works, which is why it is stated as a law rather than assumed silently."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'Explain how the zeroth law lets a thermometer tell you whether a beaker of water and a metal block are at the same temperature.'\n\nStudent's response: 'The thermometer heats up the water and the block until they are all the same temperature. Then they are equal, so the zeroth law is satisfied.'",
+      "prompts": [
+        "Identify the incorrect claim about what the thermometer does.",
+        "State correctly what 'thermal equilibrium between the thermometer and an object' means and how it is reached.",
+        "Give a correct explanation of the procedure and how the zeroth law applies."
+      ],
+      "modelResponse": "Incorrect claim: the thermometer does not 'heat up the water and block until they are all the same temperature' — it is small and is used on each object separately, not left in both at once, and it aims to *match* the object's temperature, not change it. Correctly: putting the thermometer in contact with an object and waiting lets a tiny amount of energy flow between them until the thermometer is at the object's temperature — thermal equilibrium — at which point the reading is steady and equals the object's temperature. Correct procedure: bring the thermometer to equilibrium with the water and record the reading; then, separately, bring it to equilibrium with the block and record that reading. If the two readings are equal, the thermometer was in equilibrium with both, so by the zeroth law the water and block are in equilibrium with each other — the same temperature — even though they were never in contact.",
+      "responseMaxLength": 800
+    }
+  ],
+  "representationConnections": "Thermal equilibrium (Lesson 1) is the relationship; the zeroth law states that it is transitive, drawn as the chain $A \\leftrightarrow B$, $B \\leftrightarrow C \\Rightarrow A \\leftrightarrow C$. A thermometer is the shared object B, brought to equilibrium with each object in turn (wait for a steady reading). This is what makes temperature — used everywhere in the unit, including $Q = mc\\,\\Delta T$ — a consistent, measurable property.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L4-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A thermometer reads $19\\ ^\\circ\\mathrm{C}$ in a bowl of water and $19\\ ^\\circ\\mathrm{C}$ against a window pane in the same room. What is the strongest valid conclusion?",
+      "choices": [
+        "The water and the window are made of the same material.",
+        "The water and the window are at the same temperature, by the zeroth law.",
+        "The thermometer is faulty, because water and glass cannot be the same temperature.",
+        "Nothing can be concluded, because the thermometer was moved."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the thermometer reached equilibrium with each and gave the same reading, so by the zeroth law the water and window are at the same temperature.",
+        "incorrect": {
+          "0": "The reading says nothing about material; it says the temperatures match.",
+          "2": "Different materials left in the same room reach the same temperature — that is exactly thermal equilibrium.",
+          "3": "Moving the thermometer between objects and comparing readings is precisely how the zeroth law is used."
+        }
+      },
+      "hint": ["The thermometer is the shared third object. Equal readings with each ⇒ what about the two objects?"],
+      "solution": "The thermometer reached thermal equilibrium with the water (reading $19\\ ^\\circ\\mathrm{C}$) and, separately, with the window (also $19\\ ^\\circ\\mathrm{C}$). Since it is in equilibrium with both, the zeroth law says the water and the window are in thermal equilibrium with each other — they are at the same temperature."
+    },
+    {
+      "id": "BP8-U5-L4-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "evaluate-assumptions",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A very large, cold metal plate is touched with a small room-temperature thermometer for only two seconds, and the reading is recorded immediately. Why might this reading be unreliable, and what does it illustrate about the zeroth law?",
+      "choices": [
+        "It is perfectly reliable; two seconds is always enough.",
+        "In two seconds the thermometer has not reached thermal equilibrium with the plate, so its reading is somewhere between its own starting temperature and the plate's — the zeroth law only licenses the reading once equilibrium is actually reached.",
+        "The plate being large means the thermometer changes the plate's temperature a lot.",
+        "Metal cannot be measured with a thermometer."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the zeroth-law-based conclusion ('reading = object's temperature') is valid only after the thermometer and object have actually reached equilibrium. A rushed reading is an intermediate value.",
+        "incorrect": {
+          "0": "The time to equilibrium depends on the objects; two seconds against a massive cold plate is generally not enough.",
+          "2": "A large plate is barely affected by a small thermometer — the issue is the thermometer not yet matching the plate.",
+          "3": "Thermometers measure metal fine, once equilibrium is reached."
+        }
+      },
+      "hint": ["The zeroth-law conclusion needs the thermometer to actually be *in equilibrium* with the object. Has that happened in two seconds?"],
+      "solution": "After only two seconds the thermometer, which started at room temperature, has not yet cooled to the plate's temperature — it is partway between. The reading is therefore not the plate's temperature. The zeroth law justifies treating the reading as the object's temperature only once the thermometer and object have genuinely reached thermal equilibrium (steady reading)."
+    },
+    {
+      "id": "BP8-U5-L4-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "scenario": "A chef needs three pots of sauce — on three different burners — to all be at the same temperature before combining them, but does not want to mix them to check.",
+      "parts": [
+        {
+          "prompt": "(a) Describe a procedure using one thermometer, and state what result would confirm the three pots are at the same temperature.",
+          "modelResponse": "Place the thermometer in the first pot and wait until the reading is steady; record it. Repeat for the second and third pots, each time waiting for a steady reading. If all three readings are equal, the three pots are at the same temperature.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) State the zeroth law of thermodynamics and explain exactly how it justifies the conclusion in part (a).",
+          "modelResponse": "The zeroth law: if object A is in thermal equilibrium with B and B is in thermal equilibrium with C, then A is in thermal equilibrium with C. The thermometer (B) is brought into thermal equilibrium with each pot in turn. Equal readings mean the thermometer is in equilibrium with all three pots. By the zeroth law, each pair of pots is therefore in thermal equilibrium with each other — the same temperature — without the pots ever being mixed.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Explain why the chef must wait for the reading to stop changing in each pot, in terms of energy transfer.",
+          "modelResponse": "While the reading is still changing, energy is still flowing between the thermometer and the sauce because they are at different temperatures. Only when the reading is steady has the thermometer reached the sauce's temperature (thermal equilibrium), so only then does the reading represent that pot's true temperature.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The zeroth law statement, the transitivity of thermal equilibrium, and the explanation of how a thermometer relies on it are standard short-answer items in AP Physics 2 and IB Physics. Distinguishing the zeroth law from the first (energy conservation) and second (direction of spontaneous heat flow) laws is a common multiple-choice discriminator.",
+  "summary": "The zeroth law of thermodynamics states that if object A is in thermal equilibrium with object B, and B with object C, then A is in thermal equilibrium with C — thermal equilibrium is transitive, behaving like 'equals'. This is what makes temperature a single well-defined property and what makes thermometry valid: a thermometer is a shared third object, brought to equilibrium with each object in turn (you must wait for a steady reading), so equal readings mean the two objects are at the same temperature even without contact. The zeroth law underlies the first law (energy conservation) and the second law (heat flows spontaneously hot to cold), both of which refer to 'temperature'.",
+  "exitQuestion": {
+    "id": "BP8-U5-L4-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "The main reason the zeroth law of thermodynamics is important is that it:",
+    "choices": [
+      "guarantees energy is conserved.",
+      "makes 'temperature' a consistent, single-valued property and makes thermometers meaningful.",
+      "explains why heat flows from hot to cold.",
+      "sets the size of one degree Celsius."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — because thermal equilibrium is transitive, every system has one well-defined temperature, and a thermometer can compare objects reliably.",
+      "incorrect": {
+        "0": "Energy conservation is the first law.",
+        "2": "The direction of spontaneous heat flow is the second law.",
+        "3": "The size of a degree is fixed by the definition of the scale, not by the zeroth law."
+      }
+    },
+    "hint": ["What does transitivity of 'same temperature' let you build and trust?"],
+    "solution": "The zeroth law makes thermal equilibrium transitive, so 'the temperature of a system' is a single consistent number and a thermometer — one shared third object — can validly compare the temperatures of two other objects. Without it, temperature and thermometry would not be well-defined."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-027", "BP8-U5-MCQ-024", "BP8-U5-MCQ-025", "BP8-U5-MCQ-026", "BP8-U5-MCQ-028", "BP8-U5-MCQ-007"],
+  "needsPlotly": false
+}

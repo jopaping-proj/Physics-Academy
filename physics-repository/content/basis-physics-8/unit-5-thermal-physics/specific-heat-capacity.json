@@ -1,0 +1,352 @@
+{
+  "id": "basis-p8-u5-l5",
+  "slug": "specific-heat-capacity",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Specific Heat Capacity",
+  "lessonTitle": "Specific Heat Capacity",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Specific Heat Capacity cluster, SHC1-SHC2); calibrated against Tsokos IB Physics Topic 3.1 (worked examples 3.2-3.3) and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB thermal-physics treatments.",
+  "prerequisites": [
+    "Lesson 1 — temperature is the average kinetic energy of particles; a temperature change is the same in K and degrees Celsius.",
+    "Lesson 3 — energy released in a process can be set equal to $Q$ in an energy balance."
+  ],
+  "majorObjective": "Define specific heat capacity, and use $Q = mc\\,\\Delta T$ to calculate an energy, a temperature change, a mass, or a specific heat capacity, including in calorimetry problems where energy lost equals energy gained.",
+  "subObjectives": [
+    "State that specific heat capacity $c$ is the energy needed to raise the temperature of $1\\ \\mathrm{kg}$ of a substance by $1\\ \\mathrm{K}$, with units $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+    "Rearrange and apply $Q = mc\\,\\Delta T$ to solve for any one of $Q$, $m$, $c$, or $\\Delta T$, keeping units consistent (mass in kg).",
+    "Apply energy conservation to a mixing problem: energy lost by the hotter object equals energy gained by the cooler one (insulated system).",
+    "Explain, using specific heat capacity, everyday effects such as water moderating climate and metals heating quickly."
+  ],
+  "hook": {
+    "prompt": "You put a metal spoon and a wooden spoon into the same pot of just-boiled water for one minute, then touch each handle. The metal one is much harder to hold. The biggest reason is that metal has a:",
+    "choices": [
+      "higher melting point than wood.",
+      "much lower specific heat capacity, so the same energy raises its temperature far more.",
+      "greater mass than the wooden spoon.",
+      "shinier surface."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Different substances need different amounts of energy for the same temperature rise. Water needs a lot; metals need little. The number that captures this is the specific heat capacity, and it turns temperature changes into energy amounts.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What specific heat capacity is",
+      "concept": "The **specific heat capacity** $c$ of a substance is the energy needed to raise the temperature of **$1\\ \\mathrm{kg}$** of it by **$1\\ \\mathrm{K}$** (equivalently $1\\ ^\\circ\\mathrm{C}$).\n\nIts units, $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$, spell out the definition: joules, per kilogram, per kelvin.\n\nTypical values (approximate):\n\n| Substance | $c$ / $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$ |\n|---|---|\n| water (liquid) | $4200$ |\n| ice | $2100$ |\n| aluminium | $900$ |\n| iron / steel | $450$ |\n| copper | $390$ |\n| lead | $130$ |\n\nWater's is unusually **high** \u2014 about 9 times iron's and 30 times lead's. That means water is very 'reluctant' to change temperature: it soaks up a lot of energy while warming only slightly, and releases a lot while cooling only slightly.",
+      "representation": "Read $c$ as a rate:\n\n- large $c$ (water) \u2192 lots of energy needed per degree \u2192 slow to heat, slow to cool, stores a lot of energy;\n- small $c$ (lead, iron) \u2192 little energy needed per degree \u2192 quick to heat, quick to cool.\n\nFor the same energy and mass, the substance with the smaller $c$ has the bigger temperature change.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Explain, using specific heat capacity: (a) why the sand on a beach is scorching by midday while the sea stays cool; (b) why car engines use water (not oil) as the main coolant.",
+        "phases": [
+          {
+            "label": "(a) Hot sand, cool sea",
+            "steps": [
+              "Sand has a low specific heat capacity (~$800\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$); water's is ~$4200$.",
+              "The same sunlight energy per kilogram raises the sand's temperature about 5 times as much as the water's, so the sand gets very hot while the sea barely warms."
+            ]
+          },
+          {
+            "label": "(b) Water as engine coolant",
+            "steps": [
+              "Water's high specific heat capacity lets it absorb a large amount of waste heat from the engine for only a modest temperature rise, then carry it to the radiator.",
+              "It can remove more energy per kilogram per degree than most liquids, so a small flow does the job."
+            ]
+          }
+        ],
+        "keyMove": "High $c$ = resists temperature change and stores lots of energy; low $c$ = heats and cools quickly."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L5-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Equal masses of copper ($c = 390$) and aluminium ($c = 900$) are each given the same amount of energy. Which warms up more?",
+        "choices": [
+          "The copper, because it has the lower specific heat capacity.",
+          "The aluminium, because it has the higher specific heat capacity.",
+          "They warm by the same amount.",
+          "It cannot be determined without the temperatures."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — for the same $Q$ and $m$, $\\Delta T = Q/(mc)$ is inversely proportional to $c$. Copper's smaller $c$ gives the bigger temperature rise.",
+          "incorrect": {
+            "1": "A higher specific heat capacity means the substance needs *more* energy per degree, so it warms *less* for the same energy input.",
+            "2": "Different specific heat capacities give different temperature changes for the same energy.",
+            "3": "Only the ratio of the specific heat capacities is needed to say which warms more."
+          }
+        },
+        "hint": ["$\\Delta T = Q/(mc)$. Smaller $c$ ⇒ bigger $\\Delta T$."],
+        "solution": "With the same energy and mass, $\\Delta T = Q/(mc)$ is inversely proportional to $c$. Copper's specific heat capacity ($390$) is less than half aluminium's ($900$), so the copper's temperature rises more than twice as much."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Using Q = mcΔT",
+      "concept": "The equation is\n\n$$Q = mc\\,\\Delta T$$\n\nwhere $Q$ is the energy transferred (J), $m$ is the mass (**kg** \u2014 convert grams first), $c$ is the specific heat capacity ($\\mathrm{J\\,kg^{-1}\\,K^{-1}}$), and $\\Delta T$ is the temperature change (K or $^\\circ\\mathrm{C}$ \u2014 same number).\n\nIt rearranges four ways:\n\n- energy: $Q = mc\\,\\Delta T$\n- temperature change: $\\Delta T = \\dfrac{Q}{mc}$\n- mass: $m = \\dfrac{Q}{c\\,\\Delta T}$\n- specific heat capacity: $c = \\dfrac{Q}{m\\,\\Delta T}$\n\n**Sign:** $Q > 0$ when energy is added (temperature rises); $Q < 0$ when energy is removed (temperature falls). Often you just work with magnitudes and state 'added' or 'removed'.\n\n**Common errors:** using grams instead of kilograms (answer 1000x too big), forgetting to find $\\Delta T$ as a *difference*, and confusing $c$ with latent heat $L$ (next lesson).",
+      "representation": "Solve in three steps:\n\n1. List $m$ (in kg), $c$, and either $Q$ or $\\Delta T$ \u2014 whichever is given.\n2. Pick the rearrangement for the unknown.\n3. Substitute, compute, attach units (J for energy, K for $\\Delta T$, $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$ for $c$).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.60\\ \\mathrm{kg}$ aluminium pan ($c = 900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) is heated from $20\\ ^\\circ\\mathrm{C}$ to $120\\ ^\\circ\\mathrm{C}$. (a) Find the energy needed. (b) The same $54\\,000\\ \\mathrm{J}$ is instead given to $0.60\\ \\mathrm{kg}$ of water ($c = 4200$). Find the water's temperature rise.",
+        "phases": [
+          {
+            "label": "(a) Energy to heat the pan",
+            "steps": [
+              "$\\Delta T = 120 - 20 = 100\\ \\mathrm{K}$.",
+              "$Q = mc\\,\\Delta T = (0.60)(900)(100) = 54\\,000\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "(b) Water's temperature rise from the same energy",
+            "steps": [
+              "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{54\\,000}{(0.60)(4200)} = \\dfrac{54\\,000}{2520} \\approx 21\\ \\mathrm{K}$.",
+              "The same energy raises the water only ~$21\\ \\mathrm{K}$ versus the pan's $100\\ \\mathrm{K}$ \u2014 water's larger $c$."
+            ]
+          }
+        ],
+        "keyMove": "Find $\\Delta T$ as a difference, keep mass in kg, then substitute into the right rearrangement of $Q = mc\\,\\Delta T$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L5-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "How much energy must be removed to cool $3.0\\ \\mathrm{kg}$ of water from $25\\ ^\\circ\\mathrm{C}$ to $15\\ ^\\circ\\mathrm{C}$? (Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)",
+        "choices": ["$126\\,000\\ \\mathrm{J}$", "$12\\,600\\ \\mathrm{J}$", "$315\\,000\\ \\mathrm{J}$", "$1\\,260\\,000\\ \\mathrm{J}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $\\Delta T = 25 - 15 = 10\\ \\mathrm{K}$; $Q = mc\\,\\Delta T = (3.0)(4200)(10) = 126\\,000\\ \\mathrm{J}$ removed.",
+          "incorrect": {
+            "1": "This uses $\\Delta T = 1$. The change is $25 - 15 = 10\\ \\mathrm{K}$.",
+            "2": "This uses $\\Delta T = 25$ (the starting temperature, not the change).",
+            "3": "This uses grams somewhere, or an extra factor of 10. $Q = (3.0)(4200)(10) = 126\\,000\\ \\mathrm{J}$."
+          }
+        },
+        "hint": ["$\\Delta T$ is the *difference*: $25 - 15 = 10\\ \\mathrm{K}$. Then $Q = mc\\,\\Delta T$."],
+        "solution": "$\\Delta T = 25 - 15 = 10\\ \\mathrm{K}$. $Q = mc\\,\\Delta T = (3.0\\ \\mathrm{kg})(4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}})(10\\ \\mathrm{K}) = 126\\,000\\ \\mathrm{J}$ must be removed."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Calorimetry: energy lost equals energy gained",
+      "concept": "When a hot object and a cold object are mixed (or put in contact) in an **insulated** container, energy is conserved and none escapes, so:\n\n$$\\text{energy lost by the hotter object} = \\text{energy gained by the cooler object}$$\n\n$$m_{\\text{hot}}\\,c_{\\text{hot}}\\,(T_{\\text{hot},i} - T_f) \\;=\\; m_{\\text{cold}}\\,c_{\\text{cold}}\\,(T_f - T_{\\text{cold},i})$$\n\nwhere $T_f$ is the common final (equilibrium) temperature. This one equation lets you find an unknown final temperature, a mass, or an unknown specific heat capacity.\n\nThe final temperature always lands **between** the two starting temperatures, and **closer to** whichever object has the larger $mc$ \u2014 it 'wins' the tug-of-war because it changes temperature less per joule.\n\n**Assumptions** to state: the container absorbs no energy, and no energy is lost to the surroundings. Real experiments deviate from both.",
+      "representation": "The calorimetry recipe:\n\n1. Decide which object cools and which warms.\n2. Write $|Q_{\\text{lost}}| = |Q_{\\text{gained}}|$, i.e. $mc\\,|\\Delta T|$ for each side.\n3. Substitute known values; the one unknown is usually $T_f$ or a $c$.\n4. Solve. Check $T_f$ is between the two starting temperatures.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.20\\ \\mathrm{kg}$ block of hot iron ($c = 450\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) at $100\\ ^\\circ\\mathrm{C}$ is dropped into $0.45\\ \\mathrm{kg}$ of water ($c = 4200$) at $18\\ ^\\circ\\mathrm{C}$ in an insulated cup. Find the equilibrium temperature.",
+        "phases": [
+          {
+            "label": "Set up energy lost = energy gained",
+            "steps": [
+              "Iron cools from $100$ to $T_f$; water warms from $18$ to $T_f$.",
+              "$m_{Fe}c_{Fe}(100 - T_f) = m_w c_w (T_f - 18)$",
+              "$(0.20)(450)(100 - T_f) = (0.45)(4200)(T_f - 18)$"
+            ]
+          },
+          {
+            "label": "Simplify the coefficients",
+            "steps": [
+              "$90(100 - T_f) = 1890(T_f - 18)$",
+              "$9000 - 90T_f = 1890T_f - 34\\,020$"
+            ]
+          },
+          {
+            "label": "Solve for the final temperature",
+            "steps": [
+              "$9000 + 34\\,020 = 1890T_f + 90T_f$",
+              "$43\\,020 = 1980T_f \\;\\Rightarrow\\; T_f \\approx 21.7\\ ^\\circ\\mathrm{C}$",
+              "Between $18$ and $100$, and close to the water's start \u2014 the water's $mc$ ($1890$) far exceeds the iron's ($90$)."
+            ]
+          }
+        ],
+        "keyMove": "Write $mc\\,\\Delta T$ for the cooling side equal to $mc\\,\\Delta T$ for the warming side, with $T_f$ the shared unknown, then solve."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L5-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "limiting-case-analysis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A hot block is dropped into water in an insulated cup. The block's $mc$ equals the water's $mc$. Where does the final temperature sit?",
+        "choices": [
+          "Exactly halfway between the two starting temperatures.",
+          "Much closer to the water's starting temperature.",
+          "Much closer to the block's starting temperature.",
+          "Equal to the block's starting temperature."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — equal $mc$ means each side changes temperature by the same amount, so the final temperature is the exact average of the two starting values.",
+          "incorrect": {
+            "1": "The water would dominate only if its $mc$ were larger. Here they are equal.",
+            "2": "The block would dominate only if its $mc$ were larger. Here they are equal.",
+            "3": "The block cools and the water warms until they meet in the middle."
+          }
+        },
+        "hint": ["Energy lost = energy gained. If $mc$ is the same on both sides, how do the two $\\Delta T$ values compare?"],
+        "solution": "Energy lost by the block equals energy gained by the water: $mc\\,\\Delta T_{\\text{block}} = mc\\,\\Delta T_{\\text{water}}$. With equal $mc$ on both sides, the two temperature changes are equal in size, so the final temperature is exactly halfway between the two starting temperatures."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L5-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'A big object is always hotter than a small one after the same time on a heater, because it holds more heat.' What is the correct view?",
+      "choices": [
+        "The student is right — bigger objects always end up hotter.",
+        "For the same energy input, a bigger mass has a bigger $mc$, so its temperature rises *less*, not more ($\\Delta T = Q/(mc)$).",
+        "Objects do not hold heat at all, so the question is meaningless.",
+        "Temperature depends only on the material, never on the mass."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — with the same energy delivered, a larger mass (larger $mc$) shows a smaller temperature rise.",
+        "incorrect": {
+          "0": "It is the reverse for equal energy input: more mass means the same energy is spread over more particles, so a smaller temperature rise.",
+          "2": "The phrase 'holds heat' is loose, but the physics question (which warms more) is meaningful and answerable.",
+          "3": "For a fixed energy input, mass matters: it appears in $\\Delta T = Q/(mc)$."
+        }
+      },
+      "hint": ["Same $Q$, bigger $m$: what does $\\Delta T = Q/(mc)$ do?"],
+      "solution": "For the same energy input, $\\Delta T = Q/(mc)$. A bigger object has a larger mass and so a larger $mc$, which makes $\\Delta T$ *smaller*. A large pot of water on a hob warms more slowly than a small cup on the same hob. (A bigger object can store more total energy, but that is not the same as reaching a higher temperature.)"
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: How much energy is needed to heat $250\\ \\mathrm{g}$ of water from $10\\ ^\\circ\\mathrm{C}$ to $60\\ ^\\circ\\mathrm{C}$? ($c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)\n\nStudent's response: '$Q = mc\\,\\Delta T = (250)(4200)(60) = 63\\,000\\,000\\ \\mathrm{J}$.'",
+      "prompts": [
+        "Identify the two errors in the student's substitution.",
+        "State the correct values of $m$ and $\\Delta T$ to use.",
+        "Give the correct energy."
+      ],
+      "modelResponse": "Error 1: the mass must be in kilograms, so $250\\ \\mathrm{g} = 0.25\\ \\mathrm{kg}$, not $250$. Error 2: $\\Delta T$ is the *change*, $60 - 10 = 50\\ \\mathrm{K}$, not the final temperature $60$. Correct: $Q = mc\\,\\Delta T = (0.25)(4200)(50) = 52\\,500\\ \\mathrm{J}$. The student's answer is about 1200 times too large (1000x from the mass error, plus the wrong $\\Delta T$).",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal scenario gives a mass, a substance (so a $c$), and either an energy or a temperature change; $Q = mc\\,\\Delta T$ converts between the two. In a mixing problem, the balance 'energy lost = energy gained' ($mc\\,\\Delta T$ on each side) gives one equation for one unknown (a final temperature, a mass, or an unknown $c$). Lesson 3's energy-release quantities ($mgh$, $\\tfrac{1}{2}mv^2$) feed into the same $Q = mc\\,\\Delta T$; Lesson 7's heating-curve slopes are set by $c$.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L5-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.80\\ \\mathrm{kg}$ metal block absorbs $12\\,000\\ \\mathrm{J}$ and its temperature rises by $40\\ \\mathrm{K}$. What is its specific heat capacity?",
+      "choices": ["$375\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$600\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$150\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$", "$9600\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $c = \\dfrac{Q}{m\\,\\Delta T} = \\dfrac{12\\,000}{(0.80)(40)} = \\dfrac{12\\,000}{32} = 375\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+        "incorrect": {
+          "1": "Check $m\\,\\Delta T = 0.80 \\times 40 = 32$, and $12\\,000/32 = 375$, not $600$.",
+          "2": "This divides by an extra factor. $c = Q/(m\\,\\Delta T)$ with $m\\,\\Delta T = 32$.",
+          "3": "This multiplies instead of dividing, or uses $m\\,\\Delta T$ in the numerator."
+        }
+      },
+      "hint": ["Rearrange $Q = mc\\,\\Delta T$ to $c = \\dfrac{Q}{m\\,\\Delta T}$."],
+      "solution": "$c = \\dfrac{Q}{m\\,\\Delta T} = \\dfrac{12\\,000\\ \\mathrm{J}}{(0.80\\ \\mathrm{kg})(40\\ \\mathrm{K})} = \\dfrac{12\\,000}{32} = 375\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$ (close to iron/steel)."
+    },
+    {
+      "id": "BP8-U5-L5-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "$100\\ \\mathrm{g}$ of hot water at $80\\ ^\\circ\\mathrm{C}$ is added to $100\\ \\mathrm{g}$ of cold water at $20\\ ^\\circ\\mathrm{C}$ in an insulated cup. Then, separately, $100\\ \\mathrm{g}$ of hot iron at $80\\ ^\\circ\\mathrm{C}$ is added to $100\\ \\mathrm{g}$ of cold water at $20\\ ^\\circ\\mathrm{C}$. Which mixture ends up warmer?",
+      "choices": [
+        "The water-and-water mixture, at $50\\ ^\\circ\\mathrm{C}$; the iron-and-water mixture ends up cooler, closer to $20\\ ^\\circ\\mathrm{C}$.",
+        "The iron-and-water mixture, because iron transfers energy faster.",
+        "Both end at $50\\ ^\\circ\\mathrm{C}$.",
+        "Both end at $80\\ ^\\circ\\mathrm{C}$."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — equal masses of water give equal $mc$, so the mix sits at the average, $50\\ ^\\circ\\mathrm{C}$. Iron's much smaller $c$ means it carries far less energy at $80\\ ^\\circ\\mathrm{C}$, so it warms the cold water only slightly \u2014 the mixture ends near $20\\ ^\\circ\\mathrm{C}$.",
+        "incorrect": {
+          "1": "Transfer *rate* does not change the final equilibrium temperature; the energy content does. Hot iron carries much less energy than the same mass of hot water.",
+          "2": "Only the water-and-water case averages to $50\\ ^\\circ\\mathrm{C}$; iron's low $c$ pulls the other case down.",
+          "3": "Both mixtures must end between $20$ and $80\\ ^\\circ\\mathrm{C}$, not at $80$."
+        }
+      },
+      "hint": ["Compare the $mc$ of the hot object in each case. Iron's $c$ is about 1/9 of water's."],
+      "solution": "Water + water: equal $mc$ on both sides, so the final temperature is the average, $50\\ ^\\circ\\mathrm{C}$. Iron + water: the hot iron has $mc = (0.1)(450) = 45$, while the cold water has $mc = (0.1)(4200) = 420$ \u2014 nearly 10 times larger. Solving energy lost = energy gained gives a final temperature only about $6\\ ^\\circ\\mathrm{C}$ above the cold water's start, near $26\\ ^\\circ\\mathrm{C}$. The water-and-water mixture is much warmer."
+    },
+    {
+      "id": "BP8-U5-L5-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A student heats a $0.50\\ \\mathrm{kg}$ aluminium block ($c = 900\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) with a $60\\ \\mathrm{W}$ electric heater (60 J per second) embedded in it, insulated from the surroundings.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the energy delivered in 3.0 minutes.",
+          "modelResponse": "Energy $=$ power $\\times$ time $= (60\\ \\mathrm{W})(180\\ \\mathrm{s}) = 10\\,800\\ \\mathrm{J}$.",
+          "points": 2
+        },
+        {
+          "prompt": "(b) Assuming all this energy heats the block, calculate its temperature rise.",
+          "modelResponse": "$\\Delta T = \\dfrac{Q}{mc} = \\dfrac{10\\,800}{(0.50)(900)} = \\dfrac{10\\,800}{450} = 24\\ \\mathrm{K}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The measured rise is $21\\ \\mathrm{K}$. Use this to estimate what fraction of the heater's energy actually warmed the block, and give one reason for the loss.",
+          "modelResponse": "The energy that warmed the block is $Q = mc\\,\\Delta T = (0.50)(900)(21) = 9450\\ \\mathrm{J}$. As a fraction of the $10\\,800\\ \\mathrm{J}$ delivered, that is $9450/10\\,800 \\approx 0.88$, so about 88 percent warmed the block. The remaining ~12 percent was lost to the surroundings — for example, conduction and convection to the air through imperfect insulation, or energy warming the heater's own casing and wires.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 8
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB Physics test $Q = mc\\,\\Delta T$ in all four rearrangements, calorimetry problems (energy lost = energy gained), and reasoning from water's high specific heat capacity (climate moderation, coolants, hot-water bottles). Unit slips (grams vs kilograms) and $\\Delta T$-as-a-difference are frequently probed.",
+  "summary": "Specific heat capacity $c$ is the energy to raise $1\\ \\mathrm{kg}$ of a substance by $1\\ \\mathrm{K}$, in $\\mathrm{J\\,kg^{-1}\\,K^{-1}}$; water's is unusually high ($4200$), metals' are low ($130$\u2013$900$). Use $Q = mc\\,\\Delta T$ (mass in kg, $\\Delta T$ a difference) rearranged for whichever of $Q$, $\\Delta T$, $m$, or $c$ is unknown. For a hot object mixed with a cold one in an insulated container, energy lost by the hotter equals energy gained by the cooler: $m_h c_h(T_{h,i} - T_f) = m_c c_c(T_f - T_{c,i})$, which solves for the equilibrium temperature (always between the starting values, nearer the larger $mc$).",
+  "exitQuestion": {
+    "id": "BP8-U5-L5-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "How much energy is needed to raise $0.25\\ \\mathrm{kg}$ of water by $8\\ \\mathrm{K}$? (Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)",
+    "choices": ["$8400\\ \\mathrm{J}$", "$1050\\ \\mathrm{J}$", "$134\\,400\\ \\mathrm{J}$", "$525\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $Q = mc\\,\\Delta T = (0.25)(4200)(8) = 8400\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "This uses $\\Delta T = 1$: $(0.25)(4200)(1) = 1050$. The change is $8\\ \\mathrm{K}$.",
+        "2": "This uses $m = 4$ or grams incorrectly. $(0.25)(4200)(8) = 8400$.",
+        "3": "This halves twice or drops a factor. Multiply all three: $0.25 \\times 4200 \\times 8 = 8400$."
+      }
+    },
+    "hint": ["$Q = mc\\,\\Delta T$: multiply $0.25 \\times 4200 \\times 8$."],
+    "solution": "$Q = mc\\,\\Delta T = (0.25\\ \\mathrm{kg})(4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}})(8\\ \\mathrm{K}) = 8400\\ \\mathrm{J}$."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-029", "BP8-U5-MCQ-030", "BP8-U5-MCQ-031", "BP8-U5-MCQ-033", "BP8-U5-MCQ-034", "BP8-U5-MCQ-039"],
+  "needsPlotly": false
+}

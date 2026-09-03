@@ -1,0 +1,14 @@
+{
+  "format": "unit-test",
+  "id": "basis-p8-u5-unit-test",
+  "slug": "unit-5-test",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "lessonTitle": "Unit 5 Test",
+  "intro": "A **45-minute** timed test on the whole of Thermal Physics — temperature and thermal energy, heat transfer, conservation of energy in a thermal context, the zeroth law and thermal equilibrium, specific heat capacity, latent heat, and heating curves. It is **generated fresh every time you open it**: a new set of questions drawn from across the unit, in a new order, with the answer choices shuffled.\n\nThe mix follows the Physics Academy test blueprint (`docs/test-generation.md`). BASIS Physics 8 is a pre-AP course, so the energy accounting stays scalar and the gas laws are left out, but the reasoning is held to AP Physics 1 rigor.\n\n**No calculator.** Every multiple-choice item is built to be solved by hand ($Q = mc\\Delta T$ and $Q = mL$ with round numbers). Multiple choice is scored automatically; free response is scored by you against the model answer and rubric.\n\nThe bank is tranche 1 (text- and graph-described items); figure-drawn heating-curve items will follow.",
+  "config": { "mode": "time", "minutes": 45 },
+  "calculatorPolicy": "not-allowed",
+  "mcqBanks": ["thermal-physics.json"],
+  "frqBanks": ["thermal-physics-frq.json"]
+}

@@ -1,0 +1,370 @@
+{
+  "id": "basis-p8-u5-l1",
+  "slug": "temperature-and-thermal-energy",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Temperature and Thermal Energy",
+  "lessonTitle": "Temperature and Thermal Energy",
+  "lessonNumber": "1",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Temperature & Thermal Energy cluster, TT1-TT4); calibrated against Tsokos IB Physics Topic 3.1 and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB thermal-physics treatments.",
+  "prerequisites": [
+    "Unit 3 — every substance is made of particles (atoms and molecules) that are in constant motion.",
+    "Unit 4 — kinetic energy is the energy of motion, $KE = \\tfrac{1}{2}mv^2$."
+  ],
+  "majorObjective": "Define temperature as the average kinetic energy of particles, convert between the Celsius, Kelvin, and Fahrenheit scales, define internal energy and thermal equilibrium, and explain how two objects in contact reach a common temperature.",
+  "subObjectives": [
+    "State that temperature is a measure of the average random kinetic energy of the particles of a substance.",
+    "Convert temperatures between Celsius and kelvin ($T_K = T_C + 273$) and to Fahrenheit ($T_F = \\tfrac{9}{5}T_C + 32$), and know that $0\\ \\mathrm{K}$ is absolute zero.",
+    "Define internal energy as the total kinetic energy of the particles plus the total potential energy of the forces between them, and distinguish it from temperature.",
+    "Define thermal equilibrium and explain why the hotter of two objects in contact cools while the cooler one warms until their temperatures are equal."
+  ],
+  "hook": {
+    "prompt": "A lit birthday candle's flame is about $1000\\ ^\\circ\\mathrm{C}$; a warm bath is about $40\\ ^\\circ\\mathrm{C}$. Which one could deliver more energy to your hand?",
+    "choices": [
+      "The flame, always — it is far hotter.",
+      "The bath — it holds far more energy in total, even though it is at a lower temperature.",
+      "Neither can deliver energy below body temperature.",
+      "They deliver exactly the same amount."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Everything is made of particles in constant motion. This unit connects that microscopic picture to what a thermometer reads and to how energy moves between objects. The first idea: temperature is not 'amount of energy' — it is average energy per particle.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Temperature is average particle kinetic energy",
+      "concept": "**Temperature** is a measure of the **average random kinetic energy of the particles** of a substance.\n\n- Higher temperature \u2192 particles moving (or vibrating) faster on average.\n- Lower temperature \u2192 particles moving slower on average.\n\nThe word **average** is essential. Temperature does not depend on how *many* particles there are. A spark from a firework and a mug of tea can carry the same total energy, but the spark is at a far higher temperature because that energy is shared among very few particles \u2014 each one moves extremely fast.\n\nThis is why 'hot' and 'a lot of energy' are not the same thing. A swimming pool at $25\\ ^\\circ\\mathrm{C}$ holds vastly more energy than a cup of coffee at $80\\ ^\\circ\\mathrm{C}$, because the pool has so many more particles \u2014 even though each pool particle is slower.",
+      "representation": "To reason about temperature:\n\n1. Temperature tells you the **average speed** (kinetic energy) of the particles \u2014 a per-particle quantity.\n2. It does **not** tell you the total energy \u2014 that also depends on how much substance is present.\n3. Two objects at the same temperature have particles with the same average kinetic energy, regardless of their sizes.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A tiny metal filing and a large iron bar are both taken from the same $500\\ ^\\circ\\mathrm{C}$ furnace. (a) Compare the average kinetic energy of the particles in each. (b) Compare the total energy each could deliver as it cools to room temperature. (c) Which would be more dangerous to touch, and why is that not a contradiction?",
+        "phases": [
+          {
+            "label": "(a) Average particle kinetic energy",
+            "steps": [
+              "Both are at $500\\ ^\\circ\\mathrm{C}$, so the particles in each have the **same average kinetic energy**."
+            ]
+          },
+          {
+            "label": "(b) Total energy available",
+            "steps": [
+              "The iron bar has far more particles, so it holds and can release **far more total energy** as it cools."
+            ]
+          },
+          {
+            "label": "(c) Danger, and why it is consistent",
+            "steps": [
+              "The bar is more dangerous \u2014 it can deliver much more energy to your skin before it cools.",
+              "No contradiction: temperature (average per particle) is equal, but the *amount of energy transferable* depends on the number of particles too."
+            ]
+          }
+        ],
+        "keyMove": "Temperature = average energy per particle. Total energy also depends on how many particles there are."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L1-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which quantity does a thermometer's reading most directly reflect?",
+        "choices": [
+          "The total energy of all the particles in the object.",
+          "The average kinetic energy of the object's particles.",
+          "The number of particles in the object.",
+          "The mass of the object."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct \u2014 temperature is a measure of the average random kinetic energy of the particles, which is what a thermometer responds to.",
+          "incorrect": {
+            "0": "Total energy also depends on how much substance is present; a thermometer does not measure that.",
+            "2": "A large and a small sample at the same temperature have very different particle counts but the same thermometer reading.",
+            "3": "Mass does not set the temperature \u2014 a small hot object and a large hot object can read the same."
+          }
+        },
+        "hint": ["A teaspoon and a bathtub of water at the same temperature give the same reading. What is the same for both?"],
+        "solution": "Temperature is a measure of the average random kinetic energy of an object's particles. A thermometer reaches thermal equilibrium with the object and reports that average \u2014 not the total energy, the particle count, or the mass."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Temperature scales and absolute zero",
+      "concept": "Three scales are in common use:\n\n- **Celsius ($^\\circ\\mathrm{C}$):** water freezes at $0\\ ^\\circ\\mathrm{C}$, boils at $100\\ ^\\circ\\mathrm{C}$.\n- **Kelvin (K):** the *absolute* scale. $0\\ \\mathrm{K}$ is **absolute zero** \u2014 the lowest possible temperature, where particle motion is at its minimum. A kelvin is the **same size** as a Celsius degree, so the scales are just shifted:\n\n$$T_K = T_C + 273$$\n\n(so $0\\ ^\\circ\\mathrm{C} = 273\\ \\mathrm{K}$, and $-273\\ ^\\circ\\mathrm{C} = 0\\ \\mathrm{K}$).\n\n- **Fahrenheit ($^\\circ\\mathrm{F}$):** water freezes at $32\\ ^\\circ\\mathrm{F}$, boils at $212\\ ^\\circ\\mathrm{F}$:\n\n$$T_F = \\tfrac{9}{5}T_C + 32$$\n\nBecause a kelvin and a Celsius degree are the same size, a temperature **change** has the same number on both scales: a rise of $15\\ \\mathrm{K}$ is a rise of $15\\ ^\\circ\\mathrm{C}$. This matters later for $Q = mc\\,\\Delta T$.",
+      "representation": "Conversions:\n\n| From | To | Rule |\n|---|---|---|\n| $^\\circ\\mathrm{C}$ | K | add 273 |\n| K | $^\\circ\\mathrm{C}$ | subtract 273 |\n| $^\\circ\\mathrm{C}$ | $^\\circ\\mathrm{F}$ | multiply by $\\tfrac{9}{5}$, then add 32 |\n\nFor a temperature **change**: the kelvin value and the Celsius value are equal.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-5/temperature-and-thermal-energy/temperature-scales.svg",
+          "caption": "The three scales lined up at the same physical temperatures. Kelvin and Celsius have the same-size degree, offset by 273; Fahrenheit uses a different-size degree and a different zero."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) Convert $37\\ ^\\circ\\mathrm{C}$ (body temperature) to kelvin. (b) Convert $200\\ \\mathrm{K}$ to Celsius. (c) A sample warms from $250\\ \\mathrm{K}$ to $290\\ \\mathrm{K}$. State the temperature change in kelvin and in degrees Celsius.",
+        "phases": [
+          {
+            "label": "(a) 37 degrees Celsius to kelvin",
+            "steps": ["$T_K = T_C + 273 = 37 + 273 = 310\\ \\mathrm{K}$."]
+          },
+          {
+            "label": "(b) 200 K to Celsius",
+            "steps": ["$T_C = T_K - 273 = 200 - 273 = -73\\ ^\\circ\\mathrm{C}$."]
+          },
+          {
+            "label": "(c) The temperature change",
+            "steps": [
+              "$\\Delta T = 290 - 250 = 40\\ \\mathrm{K}$.",
+              "A kelvin equals a Celsius degree, so $\\Delta T = 40\\ ^\\circ\\mathrm{C}$ as well \u2014 same number."
+            ]
+          }
+        ],
+        "keyMove": "Convert a *temperature* by shifting 273; a *temperature change* is the same number in K and $^\\circ\\mathrm{C}$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L1-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A gas is cooled from $27\\ ^\\circ\\mathrm{C}$ to $-123\\ ^\\circ\\mathrm{C}$. What is this on the Kelvin scale, start and end?",
+        "choices": [
+          "From $300\\ \\mathrm{K}$ to $150\\ \\mathrm{K}$.",
+          "From $27\\ \\mathrm{K}$ to $-123\\ \\mathrm{K}$.",
+          "From $246\\ \\mathrm{K}$ to $396\\ \\mathrm{K}$.",
+          "From $300\\ \\mathrm{K}$ to $396\\ \\mathrm{K}$."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 $27 + 273 = 300\\ \\mathrm{K}$ and $-123 + 273 = 150\\ \\mathrm{K}$.",
+          "incorrect": {
+            "1": "The kelvin scale has no negative values, and you must add 273 to convert.",
+            "2": "This subtracts 273 from the first and adds it to the second. Always add 273 to go from Celsius to kelvin.",
+            "3": "The second value should be $-123 + 273 = 150\\ \\mathrm{K}$, and cooling should give a lower kelvin value than the start."
+          }
+        },
+        "hint": ["Add 273 to each Celsius temperature. Cooling means the kelvin value goes down too."],
+        "solution": "$T_K = T_C + 273$. Start: $27 + 273 = 300\\ \\mathrm{K}$. End: $-123 + 273 = 150\\ \\mathrm{K}$. The gas cooled, so the kelvin temperature also dropped, from $300\\ \\mathrm{K}$ to $150\\ \\mathrm{K}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Internal energy and thermal equilibrium",
+      "concept": "The **internal energy** of a substance is the **total** of two things:\n\n- the random kinetic energy of *all* its particles, plus\n- the potential energy stored in the forces between them.\n\nUnlike temperature (an average per particle), internal energy is a grand total \u2014 so it grows with the amount of substance. The pool has more internal energy than the coffee even though it is cooler.\n\n**Thermal equilibrium** is the state two objects reach when they are at the **same temperature**, so there is **no net transfer of energy** between them.\n\nWhen a hot object and a cold object are placed in contact:\n\n- energy flows from the hot object to the cold object (always hot \u2192 cold);\n- the hot object loses internal energy and **cools**;\n- the cold object gains internal energy and **warms**;\n- this continues until both are at the **same temperature** \u2014 thermal equilibrium \u2014 after which their temperatures stop changing.",
+      "representation": "Two objects in contact at different temperatures:\n\n1. Net energy flow is **hot \u2192 cold**, always.\n2. Hot object: internal energy \u2193, temperature \u2193.\n3. Cold object: internal energy \u2191, temperature \u2191.\n4. Stop when temperatures are **equal** = thermal equilibrium.\n\n(The final temperature is *between* the two starting temperatures \u2014 closer to whichever object has the larger $mc$.)",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A hot $200\\ ^\\circ\\mathrm{C}$ iron horseshoe is dropped into a bucket of $15\\ ^\\circ\\mathrm{C}$ water and left. (a) State the direction of energy flow. (b) Describe how each temperature changes. (c) The final temperature is $18\\ ^\\circ\\mathrm{C}$, much closer to the water's start than the horseshoe's. Explain why.",
+        "phases": [
+          {
+            "label": "(a) Direction of energy flow",
+            "steps": ["From the hotter horseshoe to the cooler water \u2014 hot to cold."]
+          },
+          {
+            "label": "(b) Temperature changes",
+            "steps": [
+              "The horseshoe loses internal energy and cools sharply (from $200\\ ^\\circ\\mathrm{C}$).",
+              "The water gains internal energy and warms slightly (from $15\\ ^\\circ\\mathrm{C}$).",
+              "They meet at a common temperature \u2014 thermal equilibrium."
+            ]
+          },
+          {
+            "label": "(c) Why the final temperature is near the water's",
+            "steps": [
+              "There is far more water than iron, and water has a much larger specific heat capacity (Lesson 5).",
+              "So the same amount of transferred energy changes the water's temperature only a little, but the horseshoe's a lot. Equilibrium lands near the water's starting temperature."
+            ]
+          }
+        ],
+        "keyMove": "Energy always flows hot \u2192 cold; both temperatures move toward each other and meet; the meeting point is nearer the object that resists temperature change more."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L1-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Two blocks, one at $70\\ ^\\circ\\mathrm{C}$ and one at $10\\ ^\\circ\\mathrm{C}$, are placed in contact in an insulated box. After a long time, which statement is correct?",
+        "choices": [
+          "Both blocks are at the same temperature, somewhere between $10\\ ^\\circ\\mathrm{C}$ and $70\\ ^\\circ\\mathrm{C}$; there is no further net energy transfer.",
+          "The hot block stays at $70\\ ^\\circ\\mathrm{C}$ and the cold block stays at $10\\ ^\\circ\\mathrm{C}$.",
+          "Both blocks end up at $10\\ ^\\circ\\mathrm{C}$.",
+          "Energy keeps flowing back and forth forever."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct \u2014 they reach a common temperature between the two starting values; at that point they are in thermal equilibrium and there is no net transfer.",
+          "incorrect": {
+            "1": "Objects in contact at different temperatures exchange energy until their temperatures are equal.",
+            "2": "The cold block warms up too; the final temperature is above $10\\ ^\\circ\\mathrm{C}$.",
+            "3": "Once they are at the same temperature, the net transfer stops \u2014 equilibrium is a steady state."
+          }
+        },
+        "hint": ["Energy flows from hot to cold until the temperatures are equal. Where does that leave both blocks?"],
+        "solution": "Energy flows from the hot block to the cold block, cooling one and warming the other, until both are at the same temperature \u2014 a value between $10\\ ^\\circ\\mathrm{C}$ and $70\\ ^\\circ\\mathrm{C}$. That is thermal equilibrium: equal temperatures, no net energy transfer."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L1-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'The iceberg is at $-5\\ ^\\circ\\mathrm{C}$ and the cup of tea is at $80\\ ^\\circ\\mathrm{C}$, so the tea has more thermal energy.' What is the correct response?",
+      "choices": [
+        "The student is right \u2014 higher temperature always means more thermal energy.",
+        "Temperature is average energy per particle; the iceberg has so many more particles that its total internal energy is far greater than the tea's, despite its lower temperature.",
+        "The iceberg has no thermal energy because it is below $0\\ ^\\circ\\mathrm{C}$.",
+        "Thermal energy cannot be compared between a solid and a liquid."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 internal (thermal) energy is a total over all particles. An iceberg's enormous particle count outweighs the tea's higher average energy per particle.",
+        "incorrect": {
+          "0": "Higher temperature means more energy *per particle*, not more total energy. Amount of substance matters too.",
+          "2": "An object at $-5\\ ^\\circ\\mathrm{C}$ (268 K) is well above absolute zero \u2014 its particles are still moving and it has plenty of internal energy.",
+          "3": "Internal energy can be compared for any objects; it is just a total amount of energy in joules."
+        }
+      },
+      "hint": ["Temperature is per particle. Total energy also depends on how many particles. Which object has vastly more particles?"],
+      "solution": "Temperature is the average kinetic energy per particle, so the tea's particles are more energetic on average. But internal (thermal) energy is the *total* over every particle. An iceberg contains an astronomically larger number of particles, so its total internal energy is far greater than the cup of tea's, even though it is colder."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A reaction vessel is cooled from $77\\ ^\\circ\\mathrm{C}$ to $27\\ ^\\circ\\mathrm{C}$. State the temperature change in kelvin.\n\nStudent's response: 'Convert each: $77\\ ^\\circ\\mathrm{C} = 350\\ \\mathrm{K}$, $27\\ ^\\circ\\mathrm{C} = 300\\ \\mathrm{K}$. So the change is $350 + 300 = 650\\ \\mathrm{K}$.'",
+      "prompts": [
+        "State how a temperature *change* is calculated, and how kelvin and Celsius changes compare.",
+        "Identify the two errors in the student's work.",
+        "Give the correct temperature change in both kelvin and degrees Celsius."
+      ],
+      "modelResponse": "A temperature change is a *difference*: final minus initial, not a sum. And because a kelvin and a Celsius degree are the same size, a change has the same numerical value on both scales, so converting first is unnecessary. Errors: (1) the student added the two temperatures instead of subtracting; (2) the student converted to kelvin needlessly (harmless here, but it hid the sign). Correct: $\\Delta T = 300 - 350 = -50\\ \\mathrm{K}$, equivalently $27 - 77 = -50\\ ^\\circ\\mathrm{C}$. The vessel cooled by $50$ degrees on either scale.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A described situation (particles moving fast or slow) maps to a temperature (average kinetic energy); a temperature on one scale converts to another by $T_K = T_C + 273$ or $T_F = \\tfrac{9}{5}T_C + 32$; a temperature *change* is the same number in K and $^\\circ\\mathrm{C}$; and the total energy an object holds is its internal energy, which also depends on the amount of substance. Thermal equilibrium (equal temperatures) is the end state of any hot\u2013cold contact, and it is what Lesson 4's zeroth law and Lesson 5's calorimetry build on.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L1-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "The surface of the Sun is about $5800\\ \\mathrm{K}$. What is this in degrees Celsius (to 2 significant figures)?",
+      "choices": ["about $5500\\ ^\\circ\\mathrm{C}$", "about $6100\\ ^\\circ\\mathrm{C}$", "about $5800\\ ^\\circ\\mathrm{C}$", "about $3300\\ ^\\circ\\mathrm{C}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct \u2014 $T_C = T_K - 273 = 5800 - 273 = 5527 \\approx 5500\\ ^\\circ\\mathrm{C}$.",
+        "incorrect": {
+          "1": "This adds 273 instead of subtracting. Going from kelvin to Celsius, subtract 273.",
+          "2": "The 273 offset cannot be ignored, though at this scale it is a small correction.",
+          "3": "This looks like $5800 \\times \\tfrac{5}{9}$ \u2014 the Fahrenheit rule misapplied. Kelvin to Celsius is just subtract 273."
+        }
+      },
+      "hint": ["Kelvin to Celsius: subtract 273."],
+      "solution": "$T_C = T_K - 273 = 5800 - 273 = 5527\\ ^\\circ\\mathrm{C}$, which to 2 significant figures is about $5500\\ ^\\circ\\mathrm{C}$."
+    },
+    {
+      "id": "BP8-U5-L1-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Object X is at $40\\ ^\\circ\\mathrm{C}$ and object Y is at $80\\ ^\\circ\\mathrm{C}$. They are placed in contact and reach equilibrium at $75\\ ^\\circ\\mathrm{C}$. What can you conclude?",
+      "choices": [
+        "X and Y have the same specific heat capacity and mass.",
+        "Y changed temperature far less than X, so Y has a much larger $mc$ (more mass, or a higher specific heat capacity, or both).",
+        "X must have started hotter than stated.",
+        "Energy flowed from X to Y."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct \u2014 the equilibrium temperature ($75\\ ^\\circ\\mathrm{C}$) is very close to Y's start ($80\\ ^\\circ\\mathrm{C}$) and far from X's ($40\\ ^\\circ\\mathrm{C}$). Y barely changed, so Y resists temperature change more \u2014 a larger $mc$.",
+        "incorrect": {
+          "0": "If they had equal $mc$, the final temperature would be the average, $60\\ ^\\circ\\mathrm{C}$, not $75\\ ^\\circ\\mathrm{C}$.",
+          "2": "The final temperature being near Y's start is explained by Y's large $mc$, not by a wrong starting value.",
+          "3": "Energy flows from hot to cold, so from Y ($80\\ ^\\circ\\mathrm{C}$) to X ($40\\ ^\\circ\\mathrm{C}$), not the other way."
+        }
+      },
+      "hint": ["Compare each object's temperature change. Whose barely moved? What does a small temperature change for a given energy transfer imply about $mc$?"],
+      "solution": "X's temperature rose $35\\ ^\\circ\\mathrm{C}$ (from 40 to 75) while Y's fell only $5\\ ^\\circ\\mathrm{C}$ (from 80 to 75). The same amount of energy was transferred (hot Y to cold X), so Y's small change means Y has a much larger $mc$ \u2014 greater mass, greater specific heat capacity, or both \u2014 which makes it resist temperature change."
+    },
+    {
+      "id": "BP8-U5-L1-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A student pours a small cup of boiling water ($100\\ ^\\circ\\mathrm{C}$) into a large room-temperature ($20\\ ^\\circ\\mathrm{C}$) metal sink and finds the mixture is barely warm.",
+      "parts": [
+        {
+          "prompt": "(a) State the direction of energy flow and describe how the temperature of the water and of the sink each change.",
+          "modelResponse": "Energy flows from the hotter water to the cooler sink (hot to cold). The water's temperature falls sharply from $100\\ ^\\circ\\mathrm{C}$; the sink's temperature rises slightly from $20\\ ^\\circ\\mathrm{C}$. They meet at a common, only slightly-above-room temperature.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Explain, using the ideas of temperature and internal energy, why the final temperature is so close to the sink's starting temperature.",
+          "modelResponse": "The sink is much more massive than the small cup of water, so it contains far more particles and far more internal energy. The energy given up by the small amount of hot water is spread among the sink's huge number of particles, raising their average kinetic energy — and so the temperature — only a little. Meanwhile that same energy loss cools the small water sample a lot.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) The student says 'the boiling water had a very high temperature, so it should have heated the sink a lot.' Explain the flaw in this reasoning.",
+          "modelResponse": "A high temperature means high average energy *per particle*, not a large total energy. The cup holds only a small mass of water, so the total energy available to transfer is modest. Once that energy is shared among the sink's very large number of particles, the sink's temperature rise is small. Temperature and total transferable energy are different things.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Distinguishing temperature (average particle KE, a per-particle quantity) from internal/thermal energy (a total), converting Celsius to kelvin, knowing that temperature *changes* are equal in K and $^\\circ\\mathrm{C}$, and describing how objects reach thermal equilibrium are all standard AP Physics 2 and IB Physics items. The kelvin scale and absolute zero appear whenever the gas laws or radiation are examined.",
+  "summary": "Temperature is a measure of the average random kinetic energy of a substance's particles \u2014 a per-particle quantity, so it does not depend on how much substance is present. Internal energy is the *total* particle kinetic energy plus inter-particle potential energy, so it grows with the amount of substance. Convert Celsius to kelvin with $T_K = T_C + 273$ (absolute zero is $0\\ \\mathrm{K} = -273\\ ^\\circ\\mathrm{C}$), and to Fahrenheit with $T_F = \\tfrac{9}{5}T_C + 32$; a temperature *change* has the same number in K and $^\\circ\\mathrm{C}$. When objects at different temperatures touch, energy flows hot \u2192 cold, cooling one and warming the other, until they reach a common temperature \u2014 thermal equilibrium.",
+  "exitQuestion": {
+    "id": "BP8-U5-L1-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "Two identical mugs, one holding $100\\ \\mathrm{g}$ of water and one holding $300\\ \\mathrm{g}$, are both at $50\\ ^\\circ\\mathrm{C}$. Which statement is correct?",
+    "choices": [
+      "The $300\\ \\mathrm{g}$ mug is at a higher temperature because it holds more energy.",
+      "Both are at the same temperature, but the $300\\ \\mathrm{g}$ mug has three times the internal energy.",
+      "Both have the same internal energy because they are at the same temperature.",
+      "The $100\\ \\mathrm{g}$ mug has more internal energy because its water heats up faster."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct \u2014 same temperature means the same average kinetic energy per particle; three times the mass means three times as many particles, so about three times the total internal energy.",
+      "incorrect": {
+        "0": "More total energy does not mean a higher temperature \u2014 temperature is an average per particle, and both read $50\\ ^\\circ\\mathrm{C}$.",
+        "2": "Internal energy is a total; the larger sample has more of it despite the equal temperature.",
+        "3": "Heating faster is about $mc$, not about how much internal energy is currently stored. The larger sample holds more."
+      }
+    },
+    "hint": ["Same temperature \u2192 same energy per particle. Three times the water \u2192 how many times the particles, and the total?"],
+    "solution": "Both samples are at $50\\ ^\\circ\\mathrm{C}$, so their particles have the same average kinetic energy. The $300\\ \\mathrm{g}$ sample has three times as many particles as the $100\\ \\mathrm{g}$ sample, so its total internal energy is about three times as large."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-001", "BP8-U5-MCQ-009", "BP8-U5-MCQ-002", "BP8-U5-MCQ-003", "BP8-U5-MCQ-006", "BP8-U5-MCQ-008"],
+  "needsPlotly": false
+}

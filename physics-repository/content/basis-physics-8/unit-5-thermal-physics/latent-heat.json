@@ -1,0 +1,346 @@
+{
+  "id": "basis-p8-u5-l6",
+  "slug": "latent-heat",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Latent Heat",
+  "lessonTitle": "Latent Heat and Phase Changes",
+  "lessonNumber": "6",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Latent Heat cluster, LH1-LH2); calibrated against Tsokos IB Physics Topic 3.1 (Table 3.2, worked example 3.4) and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB thermal-physics treatments.",
+  "prerequisites": [
+    "Lesson 1 — temperature is the average kinetic energy of particles; forces act between particles.",
+    "Lesson 5 — $Q = mc\\,\\Delta T$ raises temperature; specific heat capacity is energy per kg per K."
+  ],
+  "majorObjective": "Define specific latent heat, explain why temperature stays constant during a phase change, and use $Q = mL$ to calculate the energy for melting, freezing, boiling, or condensing.",
+  "subObjectives": [
+    "State that specific latent heat $L$ is the energy needed to change the phase of $1\\ \\mathrm{kg}$ of a substance at constant temperature, in $\\mathrm{J\\,kg^{-1}}$.",
+    "Distinguish the latent heat of fusion (melting/freezing) from the latent heat of vaporisation (boiling/condensing), and know that for water the vaporisation value is much larger.",
+    "Explain, in particle terms, why the temperature does not change while a substance melts or boils.",
+    "Apply $Q = mL$ to find the energy, the mass, or the latent heat, and combine it with $Q = mc\\,\\Delta T$ for multi-stage problems."
+  ],
+  "hook": {
+    "prompt": "You put a thermometer in a pan of pure crushed ice and heat it steadily. For several minutes, until the ice is fully melted, the thermometer reads:",
+    "choices": [
+      "steadily rising from below $0\\ ^\\circ\\mathrm{C}$ toward room temperature.",
+      "a constant $0\\ ^\\circ\\mathrm{C}$, even though the heater is on the whole time.",
+      "rising quickly, because ice heats faster than water.",
+      "falling, because melting is a cooling process."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Adding energy usually raises temperature ($Q = mc\\,\\Delta T$). But at a melting or boiling point, added energy goes somewhere else entirely — into pulling particles apart — and the temperature holds still. The energy for that is latent heat.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What latent heat is, and why temperature holds constant",
+      "concept": "The **specific latent heat** $L$ of a substance is the energy needed to **change the phase of $1\\ \\mathrm{kg}$** of it **at constant temperature**. Units: $\\mathrm{J\\,kg^{-1}}$ (no kelvin \u2014 there is no temperature change).\n\nTwo kinds:\n\n- **Latent heat of fusion, $L_f$** \u2014 melting a solid to a liquid (or the energy *released* when freezing). For water, $L_f \\approx 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.\n- **Latent heat of vaporisation, $L_v$** \u2014 boiling a liquid to a gas (or the energy *released* when condensing). For water, $L_v \\approx 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$ \u2014 about **7 times larger** than fusion.\n\n**Why the temperature stays constant:** during a phase change the added energy is used to **overcome the forces holding the particles together** \u2014 it raises the particles' **potential** energy (pulling them apart), not their kinetic energy. Since temperature measures average *kinetic* energy, it does not change until the phase change is complete.\n\n'Latent' means *hidden*: the energy goes in but the thermometer shows nothing.",
+      "representation": "At a phase change:\n\n- energy in \u2192 particle **potential** energy up (bonds broken / particles separated);\n- particle **kinetic** energy unchanged \u2192 **temperature constant**;\n- $L_v > L_f$ because separating particles fully into a gas takes far more energy than just loosening a solid into a liquid.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-5/heating-curves/heating-curve-water.svg",
+          "caption": "The flat sections are phase changes at constant temperature. The boiling plateau is much longer than the melting plateau because water's latent heat of vaporisation is about 7 times its latent heat of fusion."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A beaker of ice-and-water mixture at $0\\ ^\\circ\\mathrm{C}$ is heated steadily. (a) What happens to the temperature while ice remains? (b) What is the added energy doing? (c) What happens to the temperature once all the ice has melted?",
+        "phases": [
+          {
+            "label": "(a) While ice remains",
+            "steps": ["The temperature stays at $0\\ ^\\circ\\mathrm{C}$ \u2014 constant \u2014 even though the heater is on."]
+          },
+          {
+            "label": "(b) What the energy does",
+            "steps": ["It breaks the bonds of the ice structure, raising the particles' potential energy and converting solid to liquid \u2014 latent heat of fusion. Kinetic energy (and so temperature) is unchanged."]
+          },
+          {
+            "label": "(c) After all the ice has melted",
+            "steps": ["Now the added energy raises the kinetic energy of the water particles, so the temperature starts to rise again ($Q = mc\\,\\Delta T$ takes over)."]
+          }
+        ],
+        "keyMove": "During melting/boiling, energy goes to potential energy (separating particles); temperature only rises again once the phase change is done."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L6-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Energy is added to a boiling pot of pure water at a steady rate. What happens to the water's temperature while it boils, and why?",
+        "choices": [
+          "It keeps rising above $100\\ ^\\circ\\mathrm{C}$, because energy is still being added.",
+          "It stays at $100\\ ^\\circ\\mathrm{C}$, because the added energy is separating the particles into vapour (raising potential energy), not increasing their kinetic energy.",
+          "It falls, because evaporation cools the water.",
+          "It oscillates around $100\\ ^\\circ\\mathrm{C}$."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — during boiling the energy goes into the latent heat of vaporisation, pulling particles apart into a gas, so the temperature is fixed at the boiling point until all the liquid is gone.",
+          "incorrect": {
+            "0": "Adding energy does not raise the temperature during a phase change; it drives the phase change.",
+            "2": "While a pot boils under steady heating, the temperature holds at $100\\ ^\\circ\\mathrm{C}$; it does not fall.",
+            "3": "It is steady at $100\\ ^\\circ\\mathrm{C}$, not oscillating."
+          }
+        },
+        "hint": ["Temperature tracks *kinetic* energy. Where is the added energy going during boiling?"],
+        "solution": "While pure water boils, the added energy is used to overcome the attractions between liquid particles and turn them into vapour \u2014 it raises their potential energy. Their average kinetic energy, and so the temperature, stays fixed at $100\\ ^\\circ\\mathrm{C}$ until all the water has boiled away."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Using Q = mL",
+      "concept": "$$Q = mL$$\n\nwhere $Q$ is the energy transferred (J), $m$ is the mass (**kg**), and $L$ is the specific latent heat ($\\mathrm{J\\,kg^{-1}}$) \u2014 use $L_f$ for melting/freezing, $L_v$ for boiling/condensing.\n\nRearrangements:\n\n- energy: $Q = mL$\n- mass: $m = \\dfrac{Q}{L}$\n- latent heat: $L = \\dfrac{Q}{m}$\n\nThe **same** $Q = mL$ applies whether energy is going **in** (melting, boiling) or coming **out** (freezing, condensing) \u2014 the magnitude is identical; only the direction of energy flow reverses.\n\nNote: $Q = mL$ has **no $\\Delta T$** \u2014 the temperature does not change during the phase change. Do not mix it up with $Q = mc\\,\\Delta T$.",
+      "representation": "| Process | Energy | Formula |\n|---|---|---|\n| melting | absorbed | $Q = mL_f$ |\n| freezing | released | $Q = mL_f$ |\n| boiling / evaporating | absorbed | $Q = mL_v$ |\n| condensing | released | $Q = mL_v$ |\n\nPick $L_f$ or $L_v$ by the process; the mass is in kilograms; there is no temperature term.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Use $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$ and $L_v = 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$ for water. (a) Energy to melt $0.50\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$. (b) Energy to boil away $0.50\\ \\mathrm{kg}$ of water at $100\\ ^\\circ\\mathrm{C}$. (c) A cloud releases $6.9 \\times 10^{7}\\ \\mathrm{J}$ as rain condenses. What mass of water vapour condensed?",
+        "phases": [
+          {
+            "label": "(a) Melting 0.50 kg of ice",
+            "steps": ["$Q = mL_f = (0.50)(3.3 \\times 10^{5}) = 1.65 \\times 10^{5}\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "(b) Boiling 0.50 kg of water",
+            "steps": [
+              "$Q = mL_v = (0.50)(2.3 \\times 10^{6}) = 1.15 \\times 10^{6}\\ \\mathrm{J}$.",
+              "About 7 times the melting energy for the same mass."
+            ]
+          },
+          {
+            "label": "(c) Mass of vapour condensed",
+            "steps": ["$m = \\dfrac{Q}{L_v} = \\dfrac{6.9 \\times 10^{7}}{2.3 \\times 10^{6}} = 30\\ \\mathrm{kg}$."]
+          }
+        ],
+        "keyMove": "Choose $L_f$ or $L_v$ by the process, then $Q = mL$ (or $m = Q/L$). No temperature term."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L6-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "How much energy is released when $0.40\\ \\mathrm{kg}$ of water at $0\\ ^\\circ\\mathrm{C}$ freezes into ice at $0\\ ^\\circ\\mathrm{C}$? (Take $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.)",
+        "choices": ["$1.32 \\times 10^{5}\\ \\mathrm{J}$", "$8.25 \\times 10^{5}\\ \\mathrm{J}$", "$3.3 \\times 10^{5}\\ \\mathrm{J}$", "$0\\ \\mathrm{J}$, because the temperature does not change"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — freezing releases the same energy as melting would absorb: $Q = mL_f = (0.40)(3.3 \\times 10^{5}) = 1.32 \\times 10^{5}\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "This divides by $0.40$ instead of multiplying. $Q = mL_f$ with $m = 0.40$.",
+            "2": "This is $L_f$ for $1\\ \\mathrm{kg}$. There are $0.40\\ \\mathrm{kg}$.",
+            "3": "A phase change involves a large energy transfer even though the temperature is constant \u2014 that is exactly what latent heat is."
+          }
+        },
+        "hint": ["Freezing releases latent heat: $Q = mL_f$. The constant temperature does not make the energy zero."],
+        "solution": "Freezing releases the latent heat of fusion: $Q = mL_f = (0.40\\ \\mathrm{kg})(3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}) = 1.32 \\times 10^{5}\\ \\mathrm{J}$. The temperature stays at $0\\ ^\\circ\\mathrm{C}$ throughout, but a large amount of energy is given off."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Multi-stage problems: combining c and L",
+      "concept": "Real heating often crosses a phase-change point, so you add the stages:\n\n- warming within a phase: $Q = mc\\,\\Delta T$ (use the $c$ of that phase \u2014 ice, water, or steam);\n- crossing a phase change: $Q = mL$ (use $L_f$ or $L_v$).\n\n**Total energy = sum of every stage.**\n\nExample path for ice at $-10\\ ^\\circ\\mathrm{C}$ \u2192 steam at $110\\ ^\\circ\\mathrm{C}$:\n\n1. warm ice $-10 \\to 0\\ ^\\circ\\mathrm{C}$: $mc_{ice}\\,\\Delta T$\n2. melt at $0\\ ^\\circ\\mathrm{C}$: $mL_f$\n3. warm water $0 \\to 100\\ ^\\circ\\mathrm{C}$: $mc_{water}\\,\\Delta T$\n4. boil at $100\\ ^\\circ\\mathrm{C}$: $mL_v$\n5. warm steam $100 \\to 110\\ ^\\circ\\mathrm{C}$: $mc_{steam}\\,\\Delta T$\n\nThe biggest term is almost always the boiling step (step 4), because $L_v$ is so large.",
+      "representation": "For a path that crosses phase changes:\n\n- one $Q = mc\\,\\Delta T$ term per sloped stage;\n- one $Q = mL$ term per phase change;\n- add them all.\n\nDraw the heating curve first and read the stages off it.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "How much energy turns $0.10\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ into water at $30\\ ^\\circ\\mathrm{C}$? Use $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$ and $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+        "phases": [
+          {
+            "label": "Stage 1: melt the ice at 0 degrees C",
+            "steps": ["$Q_1 = mL_f = (0.10)(3.3 \\times 10^{5}) = 33\\,000\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "Stage 2: warm the melted water 0 to 30 degrees C",
+            "steps": ["$Q_2 = mc_{water}\\,\\Delta T = (0.10)(4200)(30) = 12\\,600\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "Total",
+            "steps": ["$Q = Q_1 + Q_2 = 33\\,000 + 12\\,600 = 45\\,600\\ \\mathrm{J}$."]
+          }
+        ],
+        "keyMove": "Melt first ($mL_f$), then warm the liquid ($mc\\,\\Delta T$), then add. Do not skip the melting term."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L6-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "error-analysis",
+        "representation": "equation",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A student calculates the energy to turn $0.20\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ into water at $20\\ ^\\circ\\mathrm{C}$ as $Q = mc\\,\\Delta T = (0.20)(4200)(20) = 16\\,800\\ \\mathrm{J}$. What did they miss?",
+        "choices": [
+          "Nothing — that is correct.",
+          "They left out the energy to melt the ice, $Q = mL_f = (0.20)(3.3 \\times 10^{5}) = 66\\,000\\ \\mathrm{J}$, so the total is $82\\,800\\ \\mathrm{J}$.",
+          "They should have used $c_{ice}$, not $c_{water}$.",
+          "They used the wrong $\\Delta T$; it should be $273\\ \\mathrm{K}$."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the ice must first be melted (a phase change, $Q = mL_f$) before the resulting water can be warmed. That melting term is by far the larger one here.",
+          "incorrect": {
+            "0": "The warming term alone ignores the phase change from ice to water at $0\\ ^\\circ\\mathrm{C}$.",
+            "2": "The ice is already at $0\\ ^\\circ\\mathrm{C}$ (its melting point), so no $c_{ice}$ warming step is needed \u2014 but the melting step is.",
+            "3": "$\\Delta T$ for the water-warming step is $20\\ \\mathrm{K}$ ($0$ to $20\\ ^\\circ\\mathrm{C}$), which is correct; the missing piece is the latent heat."
+          }
+        },
+        "hint": ["The ice is at its melting point. What has to happen to it before it can be 'water at $20\\ ^\\circ\\mathrm{C}$'?"],
+        "solution": "Ice at $0\\ ^\\circ\\mathrm{C}$ must first melt into water at $0\\ ^\\circ\\mathrm{C}$ \u2014 a phase change needing $Q = mL_f = (0.20)(3.3 \\times 10^{5}) = 66\\,000\\ \\mathrm{J}$ \u2014 and only then can that water be warmed to $20\\ ^\\circ\\mathrm{C}$ ($16\\,800\\ \\mathrm{J}$). Total: $82\\,800\\ \\mathrm{J}$. The student's answer omitted the (dominant) melting term."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L6-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'While ice is melting at $0\\ ^\\circ\\mathrm{C}$, the temperature isn't changing, so no energy is being transferred.' What is the correct view?",
+      "choices": [
+        "The student is right — constant temperature means no energy transfer.",
+        "A large amount of energy (the latent heat of fusion) is being absorbed the whole time; it goes into separating the particles rather than into raising the temperature.",
+        "Energy is being released, not absorbed, during melting.",
+        "Only a tiny amount of energy is involved because the temperature does not change."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — melting absorbs $Q = mL_f$, a substantial amount, even though the temperature holds at $0\\ ^\\circ\\mathrm{C}$.",
+        "incorrect": {
+          "0": "Constant temperature does not mean no energy transfer \u2014 it means the energy is going into potential energy, not kinetic.",
+          "2": "Melting *absorbs* energy; freezing releases it.",
+          "3": "For water, melting $1\\ \\mathrm{kg}$ needs $3.3 \\times 10^{5}\\ \\mathrm{J}$ \u2014 the same as heating it by about 80 degrees. Not tiny."
+        }
+      },
+      "hint": ["Constant temperature ≠ no energy. Where is the energy going while the ice melts?"],
+      "solution": "During melting the substance continuously absorbs energy \u2014 the latent heat of fusion, $Q = mL_f$, which for water is $3.3 \\times 10^{5}\\ \\mathrm{J}$ per kilogram. That energy breaks the bonds of the solid structure (raising the particles' potential energy). It does not raise the temperature, but it is a large and essential energy transfer."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: How much energy is needed to boil away $200\\ \\mathrm{g}$ of water already at $100\\ ^\\circ\\mathrm{C}$? ($L_v = 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$, $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.)\n\nStudent's response: '$Q = mc\\,\\Delta T = (200)(4200)(100) = 8.4 \\times 10^{7}\\ \\mathrm{J}$.'",
+      "prompts": [
+        "Identify which equation should be used for this process and why.",
+        "Identify the unit error the student also made.",
+        "Give the correct energy."
+      ],
+      "modelResponse": "The process is a phase change (liquid \u2192 gas) at constant temperature, so the correct equation is $Q = mL_v$, not $Q = mc\\,\\Delta T$ \u2014 there is no temperature change to put into $\\Delta T$. The student also used $200$ instead of $0.20$ for the mass (grams not converted to kilograms). Correct: $Q = mL_v = (0.20\\ \\mathrm{kg})(2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}) = 4.6 \\times 10^{5}\\ \\mathrm{J}$.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A described phase change fixes which latent heat ($L_f$ for melting/freezing, $L_v$ for boiling/condensing); $Q = mL$ gives the energy with no temperature term. On a heating curve (Lesson 7) each phase change is a flat plateau whose length is $mL$; each sloped part is a $Q = mc\\,\\Delta T$ stage (Lesson 5). Multi-stage problems add one term per stage. Latent heat released on freezing/condensing is what drives frost warnings and steam burns.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L6-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A heater takes $4.6 \\times 10^{5}\\ \\mathrm{J}$ to boil away a sample of water at $100\\ ^\\circ\\mathrm{C}$. What mass of water was boiled? (Take $L_v = 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$.)",
+      "choices": ["$0.20\\ \\mathrm{kg}$", "$2.0\\ \\mathrm{kg}$", "$0.50\\ \\mathrm{kg}$", "$5.0\\ \\mathrm{kg}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $m = \\dfrac{Q}{L_v} = \\dfrac{4.6 \\times 10^{5}}{2.3 \\times 10^{6}} = 0.20\\ \\mathrm{kg}$.",
+        "incorrect": {
+          "1": "This inverts the fraction. $m = Q/L_v$, not $L_v/Q$.",
+          "2": "Check the powers of ten: $\\dfrac{4.6 \\times 10^{5}}{2.3 \\times 10^{6}} = 0.20$.",
+          "3": "This inverts and mishandles the powers of ten."
+        }
+      },
+      "hint": ["Rearrange $Q = mL_v$ to $m = Q/L_v$."],
+      "solution": "$m = \\dfrac{Q}{L_v} = \\dfrac{4.6 \\times 10^{5}\\ \\mathrm{J}}{2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}} = 0.20\\ \\mathrm{kg}$."
+    },
+    {
+      "id": "BP8-U5-L6-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Why does spilling boiling water on your hand hurt, but spilling steam at the same $100\\ ^\\circ\\mathrm{C}$ hurt far more, for the same mass?",
+      "choices": [
+        "Steam is hotter than boiling water.",
+        "When steam hits your cooler skin it first condenses, releasing its latent heat of vaporisation ($\\sim 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$) into your skin, on top of the energy released as the resulting water then cools.",
+        "Steam sticks to skin better.",
+        "Boiling water at $100\\ ^\\circ\\mathrm{C}$ does not actually burn."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — condensing steam delivers a large latent-heat 'bonus' to the skin before the condensed water even begins to cool, so it transfers far more energy than the same mass of water at $100\\ ^\\circ\\mathrm{C}$.",
+        "incorrect": {
+          "0": "Steam at $100\\ ^\\circ\\mathrm{C}$ is at the same temperature as boiling water.",
+          "2": "Adhesion is not the mechanism; the latent heat released on condensation is.",
+          "3": "Water at $100\\ ^\\circ\\mathrm{C}$ certainly burns \u2014 steam is just far worse."
+        }
+      },
+      "hint": ["What happens to the steam as it touches your cooler skin, and how much energy does that release?"],
+      "solution": "Both are at $100\\ ^\\circ\\mathrm{C}$, but steam must condense on your skin before its temperature can drop. Condensing $1\\ \\mathrm{kg}$ releases $\\sim 2.3 \\times 10^{6}\\ \\mathrm{J}$ of latent heat directly into your skin \u2014 comparable to cooling that same water by about 500 degrees. Boiling water only delivers the smaller $mc\\,\\Delta T$ as it cools. So for equal masses, steam transfers far more energy and causes a much worse burn."
+    },
+    {
+      "id": "BP8-U5-L6-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "A $0.030\\ \\mathrm{kg}$ ice cube at $-10\\ ^\\circ\\mathrm{C}$ is dropped into a drink and ends up as water at $10\\ ^\\circ\\mathrm{C}$. Use $c_{ice} = 2100$, $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, and $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.",
+      "parts": [
+        {
+          "prompt": "(a) List the three stages the ice goes through, and write the energy expression for each.",
+          "modelResponse": "Stage 1: warm the ice from $-10\\ ^\\circ\\mathrm{C}$ to $0\\ ^\\circ\\mathrm{C}$: $Q_1 = mc_{ice}\\,\\Delta T$. Stage 2: melt the ice at $0\\ ^\\circ\\mathrm{C}$: $Q_2 = mL_f$. Stage 3: warm the melted water from $0\\ ^\\circ\\mathrm{C}$ to $10\\ ^\\circ\\mathrm{C}$: $Q_3 = mc_{water}\\,\\Delta T$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the energy for each stage and the total energy the ice cube takes from the drink.",
+          "modelResponse": "$Q_1 = (0.030)(2100)(10) = 630\\ \\mathrm{J}$. $Q_2 = (0.030)(3.3 \\times 10^{5}) = 9900\\ \\mathrm{J}$. $Q_3 = (0.030)(4200)(10) = 1260\\ \\mathrm{J}$. Total $Q = 630 + 9900 + 1260 = 11\\,790\\ \\mathrm{J}$ (about $1.2 \\times 10^{4}\\ \\mathrm{J}$).",
+          "points": 5
+        },
+        {
+          "prompt": "(c) State which stage dominates the total and explain why in physical terms.",
+          "modelResponse": "Stage 2, the melting, dominates ($9900\\ \\mathrm{J}$ of the $11\\,790\\ \\mathrm{J}$ total, about 84 percent). Melting requires the latent heat of fusion, which for water is very large ($3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$) because a lot of energy is needed to break the bonds of the solid ice structure. Warming the ice or the water by only 10 degrees needs far less, because the specific heat capacities are much smaller than the latent heat.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB Physics test $Q = mL$ (both directions), the constant-temperature explanation for phase changes, and multi-stage $c$-and-$L$ problems (ice to steam). The large value of $L_v$ for water underlies standard contexts: steam burns, sweating and evaporative cooling, and the length of the boiling plateau on a heating curve.",
+  "summary": "Specific latent heat $L$ is the energy to change the phase of $1\\ \\mathrm{kg}$ of a substance at constant temperature, in $\\mathrm{J\\,kg^{-1}}$: latent heat of fusion $L_f$ (melt/freeze) and latent heat of vaporisation $L_v$ (boil/condense), with $L_v \\gg L_f$ for water. The temperature holds constant during a phase change because the energy raises the particles' potential energy (separating them), not their kinetic energy. Use $Q = mL$ (no $\\Delta T$), choosing $L_f$ or $L_v$ by the process; for a path that crosses a phase change, add a $Q = mc\\,\\Delta T$ term for each sloped stage and a $Q = mL$ term for each phase change.",
+  "exitQuestion": {
+    "id": "BP8-U5-L6-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "How much energy is needed to melt $1.5\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ into water at $0\\ ^\\circ\\mathrm{C}$? (Take $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.)",
+    "choices": ["$4.95 \\times 10^{5}\\ \\mathrm{J}$", "$2.2 \\times 10^{5}\\ \\mathrm{J}$", "$3.3 \\times 10^{5}\\ \\mathrm{J}$", "$0\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $Q = mL_f = (1.5)(3.3 \\times 10^{5}) = 4.95 \\times 10^{5}\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "This divides by $1.5$ instead of multiplying.",
+        "2": "This is $L_f$ for $1\\ \\mathrm{kg}$; there are $1.5\\ \\mathrm{kg}$.",
+        "3": "A phase change transfers a large amount of energy even at constant temperature."
+      }
+    },
+    "hint": ["$Q = mL_f$: multiply the mass by the latent heat of fusion."],
+    "solution": "$Q = mL_f = (1.5\\ \\mathrm{kg})(3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}) = 4.95 \\times 10^{5}\\ \\mathrm{J}$. The temperature stays at $0\\ ^\\circ\\mathrm{C}$ throughout."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-040", "BP8-U5-MCQ-041", "BP8-U5-MCQ-042", "BP8-U5-MCQ-043", "BP8-U5-MCQ-045", "BP8-U5-MCQ-047"],
+  "needsPlotly": false
+}

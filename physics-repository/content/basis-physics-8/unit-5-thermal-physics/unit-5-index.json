@@ -73,58 +73,66 @@
     {
       "type": "module",
       "label": "Lesson 1",
-      "slug": null,
-      "title": "Temperature & Thermal Energy",
+      "slug": "temperature-and-thermal-energy",
+      "title": "Temperature and Thermal Energy",
       "cluster": "BP8.5.1",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
-      "title": "Heat Transfer",
+      "slug": "heat-transfer",
+      "title": "Heat and How It Travels",
       "cluster": "BP8.5.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
-      "title": "Conservation of Energy (Thermal Context)",
+      "slug": "conservation-of-energy-thermal",
+      "title": "Conservation of Energy with Internal Energy",
       "cluster": "BP8.5.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
-      "title": "Thermodynamic Laws",
+      "slug": "thermodynamic-laws",
+      "title": "The Zeroth Law and Thermal Equilibrium",
       "cluster": "BP8.5.4",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
+      "slug": "specific-heat-capacity",
       "title": "Specific Heat Capacity",
       "cluster": "BP8.5.5",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 6",
-      "slug": null,
-      "title": "Latent Heat",
+      "slug": "latent-heat",
+      "title": "Latent Heat and Phase Changes",
       "cluster": "BP8.5.6",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 7",
-      "slug": null,
-      "title": "Heating Curves",
+      "slug": "heating-curves",
+      "title": "Reading Heating Curves",
       "cluster": "BP8.5.7",
-      "status": "planned"
+      "status": "draft"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 8",
+      "slug": "synthesis-and-transfer",
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.5.8",
+      "status": "draft"
     },
     {
       "type": "concept-check",
@@ -132,7 +140,15 @@
       "slug": null,
       "title": "Unit 5 Concept Check — retake",
       "status": "planned",
-      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+      "note": "Placeholder — to be activated only after a Unit 5 diagnostic is authored and reviewed (none exists yet)."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-5-test",
+      "title": "Unit 5 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the thermal-physics question bank (tranche 1: 54 MCQ + 14 FRQ) to the Physics Academy test blueprint."
     }
   ]
 }

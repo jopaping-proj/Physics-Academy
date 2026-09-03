@@ -1,0 +1,368 @@
+{
+  "id": "basis-p8-u5-l7",
+  "slug": "heating-curves",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Heating Curves",
+  "lessonTitle": "Reading Heating Curves",
+  "lessonNumber": "7",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (Heating Curves cluster, HC1); calibrated against Tsokos IB Physics Topic 3.1 and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this lesson is authored from the approved outcome register and standard pre-AP / IB thermal-physics treatments.",
+  "prerequisites": [
+    "Lesson 5 — $Q = mc\\,\\Delta T$; a bigger specific heat capacity means more energy per degree.",
+    "Lesson 6 — $Q = mL$; temperature is constant during a phase change; $L_v \\gg L_f$ for water."
+  ],
+  "majorObjective": "Interpret every section of a heating (or cooling) curve — identify the phase, the process, and which equation applies — and reason from the shape of the curve about specific heat capacities and latent heats.",
+  "subObjectives": [
+    "Identify a sloped section as a single phase being warmed ($Q = mc\\,\\Delta T$) and a flat section as a phase change at constant temperature ($Q = mL$).",
+    "Name the phase (solid / liquid / gas) and the process (warming / melting / boiling) for each section of a heating curve.",
+    "Relate the length of a flat section to $mL$ and the steepness of a sloped section to $1/(mc)$ for that phase.",
+    "Read a melting point and boiling point off a heating curve, and describe the corresponding cooling curve."
+  ],
+  "hook": {
+    "prompt": "On a graph of temperature against energy added for a substance heated from solid to gas, a flat horizontal section means:",
+    "choices": [
+      "the heater was switched off during that time.",
+      "the substance is changing phase — energy is still going in, but the temperature stays constant.",
+      "the substance is cooling down.",
+      "nothing is happening."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "A heating curve is a single picture of everything in this unit: warming stages governed by $Q = mc\\,\\Delta T$ and phase changes governed by $Q = mL$, stitched together. Learning to read it means you can solve any thermal problem by first sketching the path.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Sloped sections and flat sections",
+      "concept": "A **heating curve** plots **temperature (vertical)** against **energy added (horizontal)** as a substance is heated at a steady rate. It has two kinds of section:\n\n- **Sloped (rising) section** — a **single phase** (solid, liquid, or gas) is being **warmed**. Energy raises the particles' kinetic energy, so the temperature rises. The relationship is $Q = mc\\,\\Delta T$, using the specific heat capacity of *that* phase.\n\n- **Flat (horizontal) section** — a **phase change** is happening (melting or boiling). Energy is still being added (the curve advances to the right), but it goes into the particles' **potential** energy, separating them, so the **temperature stays constant**. The relationship is $Q = mL$.\n\nA full curve for a pure substance heated from below its melting point:\n\n**slope (solid warms) → flat (melts) → slope (liquid warms) → flat (boils) → slope (gas warms)**\n\nThe curve never slopes downward — energy is always being added.",
+      "representation": "| Section | What it is | Equation | Temperature |\n|---|---|---|---|\n| sloped | one phase warming | $Q = mc\\,\\Delta T$ | rising |\n| flat (lower) | melting | $Q = mL_f$ | constant (melting point) |\n| flat (upper) | boiling | $Q = mL_v$ | constant (boiling point) |",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-5/heating-curves/heating-curve-water.svg",
+          "caption": "Heating curve for water: ice warms (slope), melts (short flat at 0 degrees C), water warms (slope), boils (long flat at 100 degrees C), steam warms (slope). Flat = phase change; sloped = one phase warming."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A heating curve for a pure substance shows, left to right: section A (sloped), B (flat), C (sloped, less steep than A), D (flat, much longer than B), E (sloped). Identify the phase and process for each section.",
+        "phases": [
+          {
+            "label": "A and B",
+            "steps": [
+              "A: sloped and first → the **solid** being **warmed** to its melting point.",
+              "B: flat and lower → **melting** (solid → liquid) at constant temperature."
+            ]
+          },
+          {
+            "label": "C and D",
+            "steps": [
+              "C: sloped, after melting → the **liquid** being **warmed** to its boiling point.",
+              "D: flat, higher, and long → **boiling** (liquid → gas) at constant temperature."
+            ]
+          },
+          {
+            "label": "E",
+            "steps": ["E: sloped, after boiling → the **gas** being **warmed** above the boiling point."]
+          }
+        ],
+        "keyMove": "Alternate: warm a phase (slope), change phase (flat), warm the next phase (slope). Start with the solid."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L7-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "data-analysis",
+        "representation": "graph",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "On a heating curve, a section where the temperature is rising steadily corresponds to which relationship and which situation?",
+        "choices": [
+          "$Q = mL$; a phase change is in progress.",
+          "$Q = mc\\,\\Delta T$; a single phase is being warmed.",
+          "$Q = mgh$; the substance is falling.",
+          "No energy is being transferred."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a rising temperature means one phase is warming, governed by $Q = mc\\,\\Delta T$.",
+          "incorrect": {
+            "0": "$Q = mL$ applies to the *flat* sections (phase changes), where the temperature does not change.",
+            "2": "$mgh$ is gravitational potential energy, not part of a heating curve.",
+            "3": "Energy is being added throughout — the curve advances along the energy axis."
+          }
+        },
+        "hint": ["Rising temperature ⇒ kinetic energy of one phase increasing. Which formula has $\\Delta T$ in it?"],
+        "solution": "A rising section of a heating curve is a single phase (solid, liquid, or gas) being warmed: the added energy raises the particles' kinetic energy and the temperature. This is described by $Q = mc\\,\\Delta T$ with the specific heat capacity of that phase."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "What the shape tells you",
+      "concept": "The **geometry** of a heating curve carries physical information (for a steady rate of energy input, so that horizontal distance is proportional to energy):\n\n- **Length of a flat section** $\\propto mL$ for that phase change. For the same sample, comparing two plateaus gives the ratio of the latent heats. Water's boiling plateau is ~7x its melting plateau because $L_v \\approx 7L_f$.\n\n- **Steepness of a sloped section** $\\propto \\dfrac{1}{mc}$ for that phase. A **steeper** slope means **less** energy per degree, i.e. a **smaller** $c$ (for the same mass). For water, the ice slope is steeper than the liquid-water slope because $c_{ice} \\approx 2100 < c_{water} \\approx 4200$.\n\n- **Height of a flat section** gives the **melting point** (lower plateau) or **boiling point** (upper plateau) directly, read off the temperature axis.\n\n- If the substance is **impure or a mixture**, the flat sections may tilt slightly or spread over a range instead of being perfectly horizontal.",
+      "representation": "For a constant heating rate:\n\n- flat length $\\propto mL$ → longer flat = more latent heat (or more mass);\n- slope $\\propto 1/(mc)$ → steeper slope = smaller $c$ (or smaller mass);\n- plateau height = the melting or boiling temperature.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A heater at constant power produces a heating curve for a $0.50\\ \\mathrm{kg}$ sample. The melting plateau lasts $30\\ \\mathrm{s}$; the boiling plateau lasts $180\\ \\mathrm{s}$. The solid-warming slope is twice as steep as the liquid-warming slope. (a) Find the ratio $L_v : L_f$. (b) Compare $c_{solid}$ and $c_{liquid}$.",
+        "phases": [
+          {
+            "label": "(a) Ratio of latent heats",
+            "steps": [
+              "At constant power, energy $\\propto$ time, and $Q = mL$ with the same $m$, so $L \\propto$ plateau time.",
+              "$\\dfrac{L_v}{L_f} = \\dfrac{180\\ \\mathrm{s}}{30\\ \\mathrm{s}} = 6$, so $L_v : L_f = 6 : 1$."
+            ]
+          },
+          {
+            "label": "(b) Comparing the specific heat capacities",
+            "steps": [
+              "Slope $\\propto 1/(mc)$, same $m$. The solid slope is twice as steep → $1/c_{solid} = 2 \\times 1/c_{liquid}$.",
+              "So $c_{solid} = \\tfrac{1}{2}c_{liquid}$ — the solid's specific heat capacity is half the liquid's."
+            ]
+          }
+        ],
+        "keyMove": "Constant power: plateau length ↔ latent heat; slope steepness ↔ $1/c$. Steeper = smaller $c$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L7-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "data-analysis",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "On the heating curve for water at a constant heating rate, why is the boiling plateau much longer than the melting plateau?",
+        "choices": [
+          "The boiling point is a higher temperature.",
+          "Water's latent heat of vaporisation is much larger than its latent heat of fusion, so more energy (hence more time) is needed to boil the sample than to melt it.",
+          "The water gains mass while boiling.",
+          "The heater speeds up during boiling."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — plateau length is proportional to $mL$, and for the same sample $L_v \\approx 7L_f$, so the boiling plateau is about 7 times longer.",
+          "incorrect": {
+            "0": "The plateau *height* reflects the temperature; the *length* reflects the energy, $mL$.",
+            "2": "In a closed sample the mass is unchanged as it boils.",
+            "3": "The heater rate is constant; the plateau length reflects the energy required."
+          }
+        },
+        "hint": ["Plateau length is the energy for that phase change, $Q = mL$. Same mass, so compare $L_v$ and $L_f$."],
+        "solution": "At a constant heating rate, the horizontal length of a plateau equals the energy absorbed during that phase change, $Q = mL$. For the same sample of water, $L_v \\approx 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$ is about 7 times $L_f \\approx 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$, so the boiling plateau is about 7 times longer than the melting plateau."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Cooling curves and using a curve to solve problems",
+      "concept": "A **cooling curve** is a heating curve run backward: energy is *removed* at a steady rate. It shows **slope down (gas cools) → flat (condenses) → slope down (liquid cools) → flat (freezes) → slope down (solid cools)**. The flat sections sit at the **same temperatures** as on the heating curve (a substance freezes at the same temperature it melts), and the energy *released* at each plateau equals $mL$.\n\n**To solve a thermal problem, sketch the curve first:**\n\n1. Mark the start and end states (temperature and phase).\n2. Identify every stage between them — each slope and each flat.\n3. Write $Q = mc\\,\\Delta T$ for each slope (right $c$) and $Q = mL$ for each flat (right $L$).\n4. Add the stages for the total, or divide the known total among them to find an unknown.\n\nThis turns 'ice at $-20\\ ^\\circ\\mathrm{C}$ to steam at $120\\ ^\\circ\\mathrm{C}$' from a scary problem into a checklist.",
+      "representation": "Cooling curve = mirror image of the heating curve:\n\n- slopes go **down** instead of up;\n- flats are at the **same temperatures**;\n- energy is **released** ($Q = mL$) at each flat and ($Q = mc\\,\\Delta T$) on each slope.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Steam at $100\\ ^\\circ\\mathrm{C}$ is cooled until it is water at $40\\ ^\\circ\\mathrm{C}$. (a) Sketch (describe) the cooling curve for this range. (b) State the two energy-release stages and the formula for each, for a mass $m$. Use $L_v = 2.3 \\times 10^{6}\\ \\mathrm{J\\,kg^{-1}}$, $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+        "phases": [
+          {
+            "label": "(a) The cooling curve",
+            "steps": [
+              "A flat section at $100\\ ^\\circ\\mathrm{C}$ (steam condensing to water), then a downward slope from $100\\ ^\\circ\\mathrm{C}$ to $40\\ ^\\circ\\mathrm{C}$ (water cooling)."
+            ]
+          },
+          {
+            "label": "(b) Energy-release stages",
+            "steps": [
+              "Stage 1: condense at $100\\ ^\\circ\\mathrm{C}$: $Q_1 = mL_v$.",
+              "Stage 2: cool the water $100 \\to 40\\ ^\\circ\\mathrm{C}$: $Q_2 = mc_{water}\\,\\Delta T = mc_{water}(60)$.",
+              "Total energy released $= Q_1 + Q_2$; the condensing stage is by far the larger, because $L_v$ is so big."
+            ]
+          }
+        ],
+        "keyMove": "Sketch the curve, list each slope and flat, attach $Q = mc\\,\\Delta T$ or $Q = mL$, and add."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L7-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "data-analysis",
+        "representation": "graph",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A cooling curve for a pure substance shows a downward slope, then a flat section, then another downward slope. The flat section is at $-114\\ ^\\circ\\mathrm{C}$. What is happening at the flat section, and what temperature is $-114\\ ^\\circ\\mathrm{C}$?",
+        "choices": [
+          "Boiling; it is the boiling point.",
+          "Freezing (liquid to solid); it is the freezing point, which equals the melting point.",
+          "The substance is being warmed; it is room temperature for that substance.",
+          "Nothing; the reading is an error."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — on a cooling curve a flat section is a phase change releasing energy; between two downward slopes it is freezing, and its temperature is the freezing point (same as the melting point).",
+          "incorrect": {
+            "0": "Boiling/condensing would be the *higher* plateau. Between two cooling slopes, the lower plateau is freezing.",
+            "2": "The temperature is constant (flat), so no single phase is simply warming or cooling there.",
+            "3": "The plateau is a real, expected feature — the freezing point."
+          }
+        },
+        "hint": ["Cooling curve, flat section between two downward slopes, at a low temperature. Liquid becoming what?"],
+        "solution": "On a cooling curve the flat sections are phase changes that release energy. The lower plateau, between the liquid-cooling slope and the solid-cooling slope, is freezing (liquid → solid). Its temperature, $-114\\ ^\\circ\\mathrm{C}$, is the freezing point of the substance, which is the same temperature as its melting point (this value is ethanol's)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L7-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "graph-slope-as-height",
+      "question": "A student looks at a heating curve and says: 'The boiling plateau is drawn higher up the graph than the melting plateau, so boiling needs more energy than melting.' What is the flaw?",
+      "choices": [
+        "There is no flaw; the reasoning is correct.",
+        "The plateau's *height* is the temperature (boiling point vs melting point); the energy for each phase change is the plateau's *horizontal length*, not its height.",
+        "The plateaus are actually the same height.",
+        "Boiling needs less energy than melting."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — height on this graph is temperature; the energy is read along the horizontal (energy) axis. It is true that boiling needs more energy for water, but you see that from the plateau *length*, not its height.",
+        "incorrect": {
+          "0": "The reasoning confuses the vertical axis (temperature) with the horizontal axis (energy).",
+          "2": "They are at different heights because the boiling point is higher than the melting point — that is genuine, it is just not what tells you the energy.",
+          "3": "For water, boiling needs *more* energy than melting; the point is that the plateau length, not height, shows this."
+        }
+      },
+      "hint": ["Which axis is energy on? Which axis is temperature on? Which feature of a plateau tells you the energy?"],
+      "solution": "On a heating curve, the vertical axis is temperature and the horizontal axis is energy added. A plateau's height tells you the phase-change temperature (melting or boiling point). The energy needed for that phase change is the plateau's horizontal length. Reading 'higher = more energy' confuses the two axes."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'A heating curve for a pure solid heated steadily shows: flat, slope up, flat, slope up. Identify each section.'\n\nStudent's response: 'Flat: the solid is at a steady temperature before heating starts. Slope up: melting. Flat: the liquid is steady. Slope up: boiling.'",
+      "prompts": [
+        "State which sections of a heating curve are sloped and which are flat, and what each represents.",
+        "Identify every error in the student's labels.",
+        "Give the correct labels for a solid heated steadily from below its melting point."
+      ],
+      "modelResponse": "On a heating curve, sloped sections are a single phase being warmed ($Q = mc\\,\\Delta T$) and flat sections are phase changes at constant temperature ($Q = mL$). The student has it backwards and also mis-starts. Errors: (1) heating a solid *starts* with a sloped section (solid warming), not a flat one; (2) melting is a *flat* section, not a slope; (3) 'the liquid is steady' flat is wrong — warming the liquid is a slope; (4) boiling is a *flat* section, not a slope. Correct sequence for a solid heated from below its melting point: slope up (solid warms) → flat (melts) → slope up (liquid warms) → flat (boils) → slope up (gas warms).",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "A heating curve is the graph form of the whole unit: each sloped section is a $Q = mc\\,\\Delta T$ stage (Lesson 5) whose steepness is set by $c$, and each flat section is a $Q = mL$ phase change (Lesson 6) whose length is set by $L$ and whose height is the melting or boiling point. A verbal multi-stage problem becomes a curve sketch; a cooling curve is the same picture mirrored, with energy released instead of absorbed.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L7-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "data-analysis",
+      "representation": "graph",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A heating curve for a pure substance (heated at constant power from solid) shows five sections. Which sections obey $Q = mL$?",
+      "choices": [
+        "The first and last (both sloped).",
+        "The two flat sections (the second and the fourth).",
+        "All five sections.",
+        "Only the middle sloped section."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $Q = mL$ describes the phase changes, which are the flat sections: melting (second) and boiling (fourth).",
+        "incorrect": {
+          "0": "Sloped sections are warming stages, described by $Q = mc\\,\\Delta T$.",
+          "2": "Only the phase changes use $Q = mL$; the warming stages use $Q = mc\\,\\Delta T$.",
+          "3": "The middle section is a slope (liquid warming), described by $Q = mc\\,\\Delta T$."
+        }
+      },
+      "hint": ["$Q = mL$ is for phase changes. Which sections have constant temperature?"],
+      "solution": "The five sections are: solid warming (slope), melting (flat), liquid warming (slope), boiling (flat), gas warming (slope). $Q = mL$ applies to the phase changes — the flat sections, melting and boiling. The sloped sections use $Q = mc\\,\\Delta T$."
+    },
+    {
+      "id": "BP8-U5-L7-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "data-analysis",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two pure substances P and Q are heated at the same constant power. Equal masses are used. On P's curve the solid-warming slope is gentle and the melting plateau is short. On Q's curve the solid-warming slope is steep and the melting plateau is long. What can you conclude?",
+      "choices": [
+        "P has a larger solid specific heat capacity and a larger latent heat of fusion than Q.",
+        "P has a larger solid specific heat capacity than Q, but Q has a larger latent heat of fusion than P.",
+        "Q has a larger solid specific heat capacity and a larger latent heat of fusion than P.",
+        "The two substances are identical."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a gentle slope means more energy per degree, so P has the larger solid $c$. A long plateau means more energy for the phase change, so Q has the larger $L_f$.",
+        "incorrect": {
+          "0": "P's plateau is *shorter*, so P has the *smaller* latent heat of fusion, not the larger.",
+          "2": "P's slope is *gentler*, so P (not Q) has the larger solid specific heat capacity.",
+          "3": "They differ in both the slope steepness and the plateau length, so they are not identical."
+        }
+      },
+      "hint": ["Gentle slope ⇒ big $c$ (lots of energy per degree). Long plateau ⇒ big $L$ (lots of energy for the phase change)."],
+      "solution": "For equal masses at the same power: slope steepness $\\propto 1/c$, so P's gentler solid slope means P has the larger solid specific heat capacity. Plateau length $\\propto L$, so Q's longer melting plateau means Q has the larger latent heat of fusion. The two properties are independent, and here they favour different substances."
+    },
+    {
+      "id": "BP8-U5-L7-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "scenario": "A $0.10\\ \\mathrm{kg}$ block of ice at $-20\\ ^\\circ\\mathrm{C}$ is heated steadily until it is water at $20\\ ^\\circ\\mathrm{C}$. Use $c_{ice} = 2100$, $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.",
+      "parts": [
+        {
+          "prompt": "(a) Describe the heating curve for this range: how many sections, and what each represents.",
+          "modelResponse": "Three sections. Section 1: a sloped section, ice warming from $-20\\ ^\\circ\\mathrm{C}$ to $0\\ ^\\circ\\mathrm{C}$. Section 2: a flat section at $0\\ ^\\circ\\mathrm{C}$, the ice melting to water. Section 3: a sloped section, water warming from $0\\ ^\\circ\\mathrm{C}$ to $20\\ ^\\circ\\mathrm{C}$. The water-warming slope is gentler than the ice-warming slope because $c_{water} > c_{ice}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the energy for each section and the total.",
+          "modelResponse": "Section 1: $Q_1 = mc_{ice}\\,\\Delta T = (0.10)(2100)(20) = 4200\\ \\mathrm{J}$. Section 2: $Q_2 = mL_f = (0.10)(3.3 \\times 10^{5}) = 33\\,000\\ \\mathrm{J}$. Section 3: $Q_3 = mc_{water}\\,\\Delta T = (0.10)(4200)(20) = 8400\\ \\mathrm{J}$. Total $Q = 4200 + 33\\,000 + 8400 = 45\\,600\\ \\mathrm{J}$.",
+          "points": 5
+        },
+        {
+          "prompt": "(c) State which section takes the most energy and, using the curve's shape, explain how you could have predicted that from the graph alone.",
+          "modelResponse": "The melting section (Section 2) takes the most energy, $33\\,000\\ \\mathrm{J}$ of the $45\\,600\\ \\mathrm{J}$ total (about 72 percent). On the graph this is the flat section, and at a constant heating rate it would be by far the longest section along the energy axis — much longer than either sloped section — because $mL_f$ is much greater than either $mc\\,\\Delta T$ term over these small temperature ranges.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB Physics routinely give a heating or cooling curve and ask students to label sections, identify melting and boiling points, compare specific heat capacities from slopes and latent heats from plateau lengths, and compute multi-stage energies. Sketching the curve first is the standard way to organise any ice-to-steam calculation.",
+  "summary": "A heating curve plots temperature against energy added. Sloped sections are a single phase being warmed ($Q = mc\\,\\Delta T$; steeper slope = smaller $c$); flat sections are phase changes at constant temperature ($Q = mL$; longer plateau = larger $L$ or mass; plateau height = melting or boiling point). A pure solid heated steadily gives slope-flat-slope-flat-slope. A cooling curve is the mirror image: energy is released, slopes go down, and the plateaus sit at the same temperatures (freezing point = melting point). To solve any thermal problem, sketch the curve, list every slope and flat between the start and end states, attach the right equation to each, and add.",
+  "exitQuestion": {
+    "id": "BP8-U5-L7-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "On a heating curve for a pure substance, how do you read off its melting point?",
+    "choices": [
+      "It is the temperature at the start of the graph.",
+      "It is the temperature (height) of the lower flat section.",
+      "It is the horizontal length of the lower flat section.",
+      "It is the steepness of the first sloped section."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the lower plateau is melting, and its height on the temperature axis is the melting point.",
+      "incorrect": {
+        "0": "The start of the graph is just the substance's initial temperature, which is below the melting point.",
+        "2": "The plateau's length gives the energy for melting ($mL_f$), not the temperature.",
+        "3": "The first slope's steepness gives information about the solid's specific heat capacity, not the melting point."
+      }
+    },
+    "hint": ["Melting happens at a fixed temperature. Which feature of the flat section is a temperature?"],
+    "solution": "Melting occurs at a constant temperature, shown as the lower flat section of the heating curve. The height of that plateau, read off the vertical (temperature) axis, is the melting point of the substance."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-052", "BP8-U5-MCQ-048", "BP8-U5-MCQ-049", "BP8-U5-MCQ-050", "BP8-U5-MCQ-051", "BP8-U5-MCQ-054"],
+  "needsPlotly": false
+}

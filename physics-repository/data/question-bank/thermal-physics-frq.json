@@ -1,0 +1,520 @@
+[
+  {
+    "id": "BP8-U5-FRQ-01",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT1", "TT3"],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A small mug holds $0.20\\ \\mathrm{kg}$ of water and a large jug holds $2.0\\ \\mathrm{kg}$ of water. Both are at $60\\ ^\\circ\\mathrm{C}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State how the temperatures of the two samples compare, and define temperature in terms of the particles.",
+        "points": 2,
+        "modelResponse": "Both are at the same temperature, $60\\ ^\\circ\\mathrm{C}$. Temperature is a measure of the average random kinetic energy of the particles of a substance."
+      },
+      {
+        "label": "b",
+        "prompt": "State how the internal energies of the two samples compare, and explain why, referring to the definition of internal energy.",
+        "points": 3,
+        "modelResponse": "The jug has about 10 times the internal energy of the mug. Internal energy is the total random kinetic energy of all the particles plus the total inter-particle potential energy. The particles have the same average kinetic energy (same temperature), but the jug contains 10 times as many particles ($2.0\\ \\mathrm{kg}$ versus $0.20\\ \\mathrm{kg}$), so its total is about 10 times larger."
+      },
+      {
+        "label": "c",
+        "prompt": "The two samples are poured together and left. Predict the final temperature and justify your answer.",
+        "points": 2,
+        "modelResponse": "The final temperature is $60\\ ^\\circ\\mathrm{C}$. Both samples are already at the same temperature, so they are in thermal equilibrium and there is no net transfer of energy between them; mixing does not change the common temperature."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U5-FRQ-02",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "temperature_thermal_energy",
+    "sourceOutcomes": ["TT2"],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A laboratory sample is cooled from $27\\ ^\\circ\\mathrm{C}$ to $-73\\ ^\\circ\\mathrm{C}$. Use $T_K = T_C + 273$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Convert both temperatures to the Kelvin scale.",
+        "points": 2,
+        "modelResponse": "$27\\ ^\\circ\\mathrm{C} = 27 + 273 = 300\\ \\mathrm{K}$. $-73\\ ^\\circ\\mathrm{C} = -73 + 273 = 200\\ \\mathrm{K}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the temperature change in kelvin and in degrees Celsius, and comment on the two values.",
+        "points": 3,
+        "modelResponse": "$\\Delta T = 200 - 300 = -100\\ \\mathrm{K}$, and on the Celsius scale $\\Delta T = -73 - 27 = -100\\ ^\\circ\\mathrm{C}$. The two values are numerically identical (both $-100$) because one kelvin and one degree Celsius are the same size — the scales differ only by a constant offset, which cancels in a difference."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the sample cannot be cooled below $-273\\ ^\\circ\\mathrm{C}$.",
+        "points": 2,
+        "modelResponse": "$-273\\ ^\\circ\\mathrm{C}$ is $0\\ \\mathrm{K}$, absolute zero. Temperature is proportional to the average kinetic energy of the particles, and kinetic energy cannot be negative, so there is no temperature below $0\\ \\mathrm{K}$."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U5-FRQ-03",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT3", "HT1"],
+    "type": "free-response",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A camper fills a vacuum flask with hot cocoa. The flask has double glass walls with a vacuum between them, silvered inner surfaces, and a plastic stopper.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Name the three methods of heat transfer and give a one-sentence description of each.",
+        "points": 3,
+        "modelResponse": "Conduction: energy passes through a material by particle-to-particle interaction, without the material flowing. Convection: energy is carried by the bulk motion of a heated fluid (warm fluid rises, cool fluid sinks). Radiation: energy travels as electromagnetic waves and needs no medium."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain how the vacuum, the silvered surfaces, and the plastic stopper each reduce a specific method of heat loss.",
+        "points": 4,
+        "modelResponse": "The vacuum between the walls has almost no particles, so it greatly reduces conduction and convection (both need matter) across the gap. The silvered surfaces reflect infrared radiation back toward the cocoa, reducing energy loss by radiation. The plastic stopper is a poor conductor and seals the top, reducing conduction through the lid and preventing convection currents from carrying warm air (and evaporated liquid) out of the flask."
+      },
+      {
+        "label": "c",
+        "prompt": "State which method of heat transfer can occur across a vacuum, and why.",
+        "points": 2,
+        "modelResponse": "Only radiation can cross a vacuum, because it travels as electromagnetic waves and does not need particles to carry the energy. Conduction and convection both require matter."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U5-FRQ-04",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heat_transfer",
+    "sourceOutcomes": ["HT1", "HT2", "TT4"],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A block of copper at $90\\ ^\\circ\\mathrm{C}$ is placed in firm contact with an identical block of copper at $30\\ ^\\circ\\mathrm{C}$ inside a well-insulated box.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the direction of the net energy transfer and name the quantity being transferred.",
+        "points": 2,
+        "modelResponse": "The net transfer of energy is from the hotter block ($90\\ ^\\circ\\mathrm{C}$) to the cooler block ($30\\ ^\\circ\\mathrm{C}$). The quantity transferred is heat — energy transferred because of a temperature difference."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain, in terms of particle collisions at the contact surface, why the net transfer goes in that direction.",
+        "points": 3,
+        "modelResponse": "At the interface, particles of the two blocks collide. The hot block's particles have a greater average kinetic energy, so on average each collision transfers more energy from a hot-block particle to a cold-block particle than the reverse. Summed over the enormous number of collisions, this produces a net flow of energy from the hot block to the cold block."
+      },
+      {
+        "label": "c",
+        "prompt": "The blocks are identical. Predict the final temperature and describe what 'thermal equilibrium' means here.",
+        "points": 3,
+        "modelResponse": "Because the blocks are identical (same material, same mass), the final temperature is the average, $(90 + 30)/2 = 60\\ ^\\circ\\mathrm{C}$. Thermal equilibrium means both blocks are at the same temperature, so there is no further net transfer of energy between them — the average kinetic energies of their particles are equal."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-05",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1"],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A $1.5\\ \\mathrm{kg}$ box slides along a level floor. It starts at $6.0\\ \\mathrm{m/s}$ and comes to rest because of friction.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the box's initial kinetic energy.",
+        "points": 2,
+        "modelResponse": "$KE = \\tfrac{1}{2}mv^2 = \\tfrac{1}{2}(1.5)(6.0)^2 = \\tfrac{1}{2}(1.5)(36) = 27\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State how much energy is converted to internal energy, and justify using conservation of energy.",
+        "points": 3,
+        "modelResponse": "$27\\ \\mathrm{J}$ is converted to internal energy. The box ends at rest at the same height, so its final mechanical energy is zero. By conservation of energy, all $27\\ \\mathrm{J}$ of the initial kinetic energy must have been transformed — friction converts it into internal (thermal) energy of the box and floor."
+      },
+      {
+        "label": "c",
+        "prompt": "State which conservation statement holds and which does not for this process, and explain the difference.",
+        "points": 3,
+        "modelResponse": "Conservation of total energy holds: the total (mechanical + internal) is unchanged. Conservation of mechanical energy does not hold: the mechanical energy fell from $27\\ \\mathrm{J}$ to $0$. The difference is that friction is a non-conservative force that moves energy out of the mechanical account and into the thermal account, but does not destroy any energy."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-06",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "energy_conservation_thermal",
+    "sourceOutcomes": ["EC1", "SHC2"],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "Water of total mass $10\\ \\mathrm{kg}$ falls $210\\ \\mathrm{m}$ down a waterfall and collects in a still pool at the bottom. Take $g = 10\\ \\mathrm{m/s^2}$ and $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$. Assume all the lost gravitational potential energy warms the water.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the gravitational potential energy released by the water in falling.",
+        "points": 2,
+        "modelResponse": "$\\Delta PE = mgh = (10)(10)(210) = 21\\,000\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Assuming all this energy warms the water, calculate the temperature rise of the water.",
+        "points": 3,
+        "modelResponse": "Set the released energy equal to $Q = mc\\,\\Delta T$: $21\\,000 = (10)(4200)\\,\\Delta T = 42\\,000\\,\\Delta T$, so $\\Delta T = 21\\,000 / 42\\,000 = 0.5\\ \\mathrm{K}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the actual temperature rise measured at the bottom of a real waterfall would be smaller than your answer to part (b).",
+        "points": 3,
+        "modelResponse": "In a real waterfall not all of the gravitational potential energy ends up as internal energy of the water: some goes to sound, some to spray and evaporation, some to stirring the pool and the surrounding air, and some is carried away by mist. Also the water is still moving when it hits the pool, so some energy is briefly kinetic and is shared with the pool and air. With less energy retained by the water itself, the measured temperature rise is smaller than the idealised $0.5\\ \\mathrm{K}$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-07",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "thermodynamic_laws",
+    "sourceOutcomes": ["ZL1", "TT4"],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A student wants to know whether a sealed bottle of juice in a cupboard is at the same temperature as a bag of flour on a different shelf of the same cupboard, without letting the juice and flour touch.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe a procedure the student could use, involving a thermometer, and state what readings would show the two are at the same temperature.",
+        "points": 3,
+        "modelResponse": "Put the thermometer against (or into) the juice bottle and wait until the reading stops changing; record it. Then do the same with the bag of flour. If both readings are the same, the juice and the flour are at the same temperature."
+      },
+      {
+        "label": "b",
+        "prompt": "State the zeroth law of thermodynamics and explain how it justifies the conclusion in part (a).",
+        "points": 3,
+        "modelResponse": "The zeroth law: if object A is in thermal equilibrium with object B, and B is in thermal equilibrium with object C, then A is in thermal equilibrium with C. Here the thermometer (B) reaches equilibrium with the juice (A) and, separately, with the flour (C). Equal readings mean the thermometer is in equilibrium with both, so by the zeroth law the juice and flour are in thermal equilibrium with each other — at the same temperature — even though they never touched."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why the student must wait for the thermometer reading to stop changing at each object.",
+        "points": 2,
+        "modelResponse": "The thermometer only reads the object's temperature once it has itself reached thermal equilibrium with that object. While the reading is still changing, energy is still flowing between the thermometer and the object, so the reading has not yet settled to the object's true temperature."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-08",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2"],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "An electric kettle transfers energy to $1.5\\ \\mathrm{kg}$ of water at a steady rate. Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the energy needed to raise the water's temperature from $20\\ ^\\circ\\mathrm{C}$ to $100\\ ^\\circ\\mathrm{C}$. Show the equation and substitution.",
+        "points": 3,
+        "modelResponse": "$Q = mc\\,\\Delta T$. $\\Delta T = 100 - 20 = 80\\ \\mathrm{K}$. $Q = (1.5)(4200)(80) = 504\\,000\\ \\mathrm{J}$ (about $5.0 \\times 10^{5}\\ \\mathrm{J}$)."
+      },
+      {
+        "label": "b",
+        "prompt": "The kettle supplies energy at $2000\\ \\mathrm{J}$ per second. Estimate the time to bring the water to the boil (ignore losses).",
+        "points": 2,
+        "modelResponse": "Time $= \\dfrac{Q}{\\text{power}} = \\dfrac{504\\,000}{2000} = 252\\ \\mathrm{s}$ (about 4 minutes)."
+      },
+      {
+        "label": "c",
+        "prompt": "State one reason the real boiling time would be longer than your estimate.",
+        "points": 2,
+        "modelResponse": "Some of the energy supplied is lost to the surroundings rather than going into the water — for example, heating the kettle body and the air, and energy carried away by evaporation and by conduction through the base and walls. With less than $2000\\ \\mathrm{J}$ per second actually reaching the water, it takes longer to reach $100\\ ^\\circ\\mathrm{C}$."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U5-FRQ-09",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC1", "SHC2", "EC1"],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "In a calorimetry experiment, a $0.40\\ \\mathrm{kg}$ metal block is heated to $100\\ ^\\circ\\mathrm{C}$ and quickly transferred into $0.50\\ \\mathrm{kg}$ of water at $16\\ ^\\circ\\mathrm{C}$ in an insulated cup. The mixture settles at $20\\ ^\\circ\\mathrm{C}$. Take $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the energy gained by the water.",
+        "points": 2,
+        "modelResponse": "$Q_{water} = m c\\,\\Delta T = (0.50)(4200)(20 - 16) = (0.50)(4200)(4) = 8400\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the energy lost by the metal block, giving your reasoning, and hence calculate the specific heat capacity of the metal.",
+        "points": 4,
+        "modelResponse": "The cup is insulated, so by conservation of energy the energy lost by the block equals the energy gained by the water: $8400\\ \\mathrm{J}$. The block cools from $100\\ ^\\circ\\mathrm{C}$ to $20\\ ^\\circ\\mathrm{C}$, so $\\Delta T_{block} = 80\\ \\mathrm{K}$. Then $c_{block} = \\dfrac{Q}{m\\,\\Delta T} = \\dfrac{8400}{(0.40)(80)} = \\dfrac{8400}{32} = 262.5 \\approx 260\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State one assumption in this calculation and explain how it affects the result.",
+        "points": 2,
+        "modelResponse": "It assumes no energy is lost to the cup or the surroundings, and that the block transferred all its lost energy to the water. In reality a little energy warms the cup and escapes to the air, so the water gains slightly less than the block loses; treating them as equal makes the calculated specific heat capacity of the metal slightly too low."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-10",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "specific_heat_capacity",
+    "sourceOutcomes": ["SHC2", "SHC1"],
+    "type": "free-response",
+    "skill": "proportional-reasoning",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "Equal masses of water ($c = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) and cooking oil ($c = 2100\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$) are heated on identical hotplates that each deliver energy at the same steady rate.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State which liquid's temperature rises faster and by what factor, justifying with the relationship $Q = mc\\,\\Delta T$.",
+        "points": 3,
+        "modelResponse": "For the same energy input $Q$ and the same mass $m$, $\\Delta T = Q/(mc)$ is inversely proportional to $c$. Oil has half the specific heat capacity of water, so the oil's temperature rises twice as fast as the water's."
+      },
+      {
+        "label": "b",
+        "prompt": "After $60\\ \\mathrm{s}$ the water has risen by $8\\ \\mathrm{K}$. Predict the oil's temperature rise in the same time.",
+        "points": 2,
+        "modelResponse": "The oil rises twice as fast, so in $60\\ \\mathrm{s}$ its temperature rises by $2 \\times 8 = 16\\ \\mathrm{K}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain, in terms of energy, why the two liquids need different amounts of energy for the same temperature rise.",
+        "points": 3,
+        "modelResponse": "Specific heat capacity is the energy needed per kilogram per kelvin. Water's is higher because more energy must be supplied to its particles (and the forces between them) to increase their average kinetic energy by the amount corresponding to $1\\ \\mathrm{K}$. So for the same mass and the same target temperature rise, water requires more energy than oil."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-11",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH1", "LH2"],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A freezer removes energy at a steady rate from $0.60\\ \\mathrm{kg}$ of water that is already at $0\\ ^\\circ\\mathrm{C}$. The latent heat of fusion of water is $3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the energy that must be removed to freeze all the water into ice at $0\\ ^\\circ\\mathrm{C}$.",
+        "points": 3,
+        "modelResponse": "$Q = mL = (0.60)(3.3 \\times 10^{5}) = 1.98 \\times 10^{5}\\ \\mathrm{J}$ (about $2.0 \\times 10^{5}\\ \\mathrm{J}$)."
+      },
+      {
+        "label": "b",
+        "prompt": "State what happens to the temperature of the water while it is freezing, and explain why in terms of the particles.",
+        "points": 3,
+        "modelResponse": "The temperature stays constant at $0\\ ^\\circ\\mathrm{C}$ throughout the freezing. As particles lock into the solid structure, they lose potential energy, which is carried away as the removed energy. Their average kinetic energy does not change, and since temperature measures average kinetic energy, the temperature stays constant until all the water has frozen."
+      },
+      {
+        "label": "c",
+        "prompt": "The freezer removes energy at $1.0 \\times 10^{4}\\ \\mathrm{J}$ per minute. Estimate how long the freezing takes.",
+        "points": 2,
+        "modelResponse": "Time $= \\dfrac{Q}{\\text{rate}} = \\dfrac{1.98 \\times 10^{5}}{1.0 \\times 10^{4}} \\approx 19.8\\ \\mathrm{minutes}$ (about $20\\ \\mathrm{minutes}$)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U5-FRQ-12",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "latent_heat",
+    "sourceOutcomes": ["LH1", "LH2", "SHC2"],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "A cook adds $0.10\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ to a hot drink to cool it. Use $L_{fusion} = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$ and $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the energy needed just to melt the ice (still at $0\\ ^\\circ\\mathrm{C}$).",
+        "points": 2,
+        "modelResponse": "$Q_1 = mL = (0.10)(3.3 \\times 10^{5}) = 3.3 \\times 10^{4}\\ \\mathrm{J} = 33\\,000\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the additional energy needed to then warm that melted water from $0\\ ^\\circ\\mathrm{C}$ to $20\\ ^\\circ\\mathrm{C}$, and state the total energy the ice takes from the drink to reach $20\\ ^\\circ\\mathrm{C}$.",
+        "points": 4,
+        "modelResponse": "$Q_2 = mc\\,\\Delta T = (0.10)(4200)(20) = 8400\\ \\mathrm{J}$. Total energy taken from the drink $= Q_1 + Q_2 = 33\\,000 + 8400 = 41\\,400\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain why ice at $0\\ ^\\circ\\mathrm{C}$ cools a drink much more effectively than the same mass of liquid water at $0\\ ^\\circ\\mathrm{C}$.",
+        "points": 3,
+        "modelResponse": "Ice at $0\\ ^\\circ\\mathrm{C}$ must first absorb its latent heat of fusion ($33\\,000\\ \\mathrm{J}$ for $0.10\\ \\mathrm{kg}$) to melt, and only then does it warm up like ordinary water. Liquid water at $0\\ ^\\circ\\mathrm{C}$ skips the melting step and only warms up ($8400\\ \\mathrm{J}$ to reach $20\\ ^\\circ\\mathrm{C}$). So the ice removes roughly five times as much energy from the drink for the same mass, producing far more cooling."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U5-FRQ-13",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1", "SHC1", "LH1"],
+    "type": "free-response",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A solid substance is heated at a constant rate from below its melting point until it is entirely gas. A graph of temperature (vertical) against energy added (horizontal) is recorded, showing, in order: sloped section P, flat section Q, sloped section R, flat section S, sloped section T.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the phase (solid, liquid, or gas) and the process occurring in each of the five sections P, Q, R, S, T.",
+        "points": 3,
+        "modelResponse": "P: solid being warmed (temperature rising). Q: melting — solid to liquid at constant temperature. R: liquid being warmed. S: boiling — liquid to gas at constant temperature. T: gas being warmed."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why sections Q and S are flat even though energy is still being added.",
+        "points": 3,
+        "modelResponse": "Q and S are phase changes. The energy added goes into overcoming the forces between particles (increasing their potential energy) — melting the solid or vaporising the liquid — rather than increasing their average kinetic energy. Since temperature is a measure of average kinetic energy, it stays constant during the phase change."
+      },
+      {
+        "label": "c",
+        "prompt": "Section S is longer than section Q. State what this tells you about the substance, and what a longer section R (compared to P) would tell you.",
+        "points": 3,
+        "modelResponse": "S longer than Q means the substance's latent heat of vaporisation is greater than its latent heat of fusion — more energy is needed to turn the liquid entirely to gas than to melt the same mass of solid. A section R longer than P (for the same temperature range) would mean the liquid has a greater specific heat capacity than the solid, since more energy is needed per kelvin of temperature rise."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U5-FRQ-14",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "thermal-physics",
+    "unit": "Unit 5: Thermal Physics",
+    "cluster": "heating_curves",
+    "sourceOutcomes": ["HC1", "SHC2", "LH2"],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "graph",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "A heater delivering $50\\ \\mathrm{J}$ per second warms $0.020\\ \\mathrm{kg}$ of a solid. The heating curve shows the solid reaching its melting point after $40\\ \\mathrm{s}$, then a melting plateau lasting $120\\ \\mathrm{s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the energy delivered during the melting plateau.",
+        "points": 2,
+        "modelResponse": "Energy $=$ power $\\times$ time $= (50)(120) = 6000\\ \\mathrm{J}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the specific latent heat of fusion of the solid.",
+        "points": 3,
+        "modelResponse": "During the plateau all the energy goes into melting: $Q = mL$, so $L = \\dfrac{Q}{m} = \\dfrac{6000}{0.020} = 300\\,000\\ \\mathrm{J\\,kg^{-1}} = 3.0 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State one assumption you made, and explain how a real experiment would deviate from it.",
+        "points": 3,
+        "modelResponse": "The calculation assumes all $50\\ \\mathrm{J}$ per second goes into the sample, with no energy lost to the surroundings. In a real experiment some energy escapes to the air and the container throughout, so less than $6000\\ \\mathrm{J}$ actually melts the sample; this would make the calculated latent heat too large (because the plateau time includes time spent replacing lost energy). Insulating the sample reduces this error."
+      }
+    ],
+    "totalPoints": 8
+  }
+]

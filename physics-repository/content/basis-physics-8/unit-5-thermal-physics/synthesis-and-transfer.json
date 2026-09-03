@@ -1,0 +1,368 @@
+{
+  "id": "basis-p8-u5-l8",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 5: Thermal Physics",
+  "topic": "Synthesis and Transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "8",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit5_thermal_physics_outcomes.md (integrates all seven clusters); calibrated against Tsokos IB Physics Topic 3.1 and OpenStax High School Physics Ch. 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 5 — this synthesis lesson is authored to the pattern of the Unit 2, 3, and 4 synthesis modules.",
+  "prerequisites": [
+    "Lessons 1–7 of this unit — temperature and internal energy, heat transfer, energy conservation with internal energy, the zeroth law, $Q = mc\\,\\Delta T$, $Q = mL$, and heating curves."
+  ],
+  "majorObjective": "Integrate the whole unit: run a multi-stage calorimetry problem that crosses a phase change, decide which quantities and equations a described situation needs, and reason from a heating or cooling curve about an unfamiliar substance.",
+  "subObjectives": [
+    "Given an unfamiliar thermal scenario, sketch the heating or cooling path and list every $Q = mc\\,\\Delta T$ and $Q = mL$ stage.",
+    "Set up a single 'energy lost = energy gained' equation for a mixing problem, including any melting or freezing that occurs, and solve for the unknown.",
+    "Decide whether a final state is 'all solid', 'all liquid', or a solid–liquid mixture at the phase-change temperature, by comparing available energy with the energy each stage requires.",
+    "Combine heat transfer, energy conservation, and calorimetry to explain a real device or situation (a cool box, evaporative cooling, an ice bath)."
+  ],
+  "hook": {
+    "prompt": "You drop one ice cube into a large glass of warm juice and it all melts, ending well above $0\\ ^\\circ\\mathrm{C}$. You drop twenty ice cubes into the same glass and, at the end, some ice is still floating in the juice. What is the final temperature of that second glass?",
+    "choices": [
+      "Below $0\\ ^\\circ\\mathrm{C}$.",
+      "Exactly $0\\ ^\\circ\\mathrm{C}$ — while ice and liquid water coexist, the mixture sits at the melting point.",
+      "The same as the original juice temperature.",
+      "It cannot be determined."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Each lesson gave you one tool. Real thermal problems arrive mixed together — a phase change inside a calorimetry problem, heat transfer competing with a temperature change. This lesson is about choosing: sketch the path, name the stages, write one energy equation.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The multi-stage calorimetry problem",
+      "concept": "When a hot thing and a cold thing are mixed and one of them **changes phase**, the method is still **energy lost = energy gained**, but each side may be a **sum of stages**.\n\nExample: ice at $0\\ ^\\circ\\mathrm{C}$ added to warm water. The ice's side is:\n\n$$\\underbrace{mL_f}_{\\text{melt the ice}} \\;+\\; \\underbrace{mc_{water}(T_f - 0)}_{\\text{warm the melt-water to } T_f}$$\n\nand this equals the energy **lost** by the warm water cooling from $T_{i}$ to $T_f$:\n\n$$m_{warm}c_{water}(T_{i} - T_f)$$\n\nSet the two equal and solve for $T_f$. If the ice starts **below** $0\\ ^\\circ\\mathrm{C}$, add a $mc_{ice}\\,\\Delta T$ stage to warm it to $0\\ ^\\circ\\mathrm{C}$ first.\n\n**Always check** your $T_f$ is between the starting temperatures and above $0\\ ^\\circ\\mathrm{C}$ \u2014 if it comes out below $0\\ ^\\circ\\mathrm{C}$, not all the ice melted (see chunk 3).",
+      "representation": "For a mix with a phase change:\n\n1. Write the cold side as: (warm solid to phase point) + (phase change, $mL$) + (warm the result to $T_f$).\n2. Write the hot side as: $mc\\,\\Delta T$ cooling to $T_f$.\n3. Set lost = gained, solve for $T_f$.\n4. Sanity check the answer.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "$0.020\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ is added to $0.20\\ \\mathrm{kg}$ of water at $25\\ ^\\circ\\mathrm{C}$ in an insulated cup. Find the final temperature. Use $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$. (Assume all the ice melts.)",
+        "phases": [
+          {
+            "label": "Energy gained by the ice's side",
+            "steps": [
+              "Melt the ice: $Q_{melt} = mL_f = (0.020)(3.3 \\times 10^{5}) = 6600\\ \\mathrm{J}$.",
+              "Warm the melt-water from $0$ to $T_f$: $Q_{warm} = (0.020)(4200)(T_f - 0) = 84\\,T_f$.",
+              "Total gained $= 6600 + 84\\,T_f$."
+            ]
+          },
+          {
+            "label": "Energy lost by the warm water",
+            "steps": ["$Q_{lost} = (0.20)(4200)(25 - T_f) = 840(25 - T_f) = 21\\,000 - 840\\,T_f$."]
+          },
+          {
+            "label": "Set equal and solve",
+            "steps": [
+              "$6600 + 84\\,T_f = 21\\,000 - 840\\,T_f$",
+              "$84\\,T_f + 840\\,T_f = 21\\,000 - 6600$",
+              "$924\\,T_f = 14\\,400 \\;\\Rightarrow\\; T_f \\approx 15.6\\ ^\\circ\\mathrm{C}$",
+              "Between $0$ and $25\\ ^\\circ\\mathrm{C}$, and above $0\\ ^\\circ\\mathrm{C}$ \u2014 so all the ice did melt. Consistent."
+            ]
+          }
+        ],
+        "keyMove": "The cold side is melt ($mL_f$) plus warm-the-result ($mc\\,\\Delta T$); set the sum equal to the hot side's loss and solve for $T_f$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L8-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "Ice at $-15\\ ^\\circ\\mathrm{C}$ is added to warm water and ends up as part of a lukewarm mixture. How many energy-absorbing stages does the ice go through?",
+        "choices": [
+          "One: melting.",
+          "Two: warming the ice to $0\\ ^\\circ\\mathrm{C}$, then melting.",
+          "Three: warming the ice to $0\\ ^\\circ\\mathrm{C}$, melting at $0\\ ^\\circ\\mathrm{C}$, then warming the melt-water to the final temperature.",
+          "None — ice does not absorb energy."
+        ],
+        "correctAnswer": 2,
+        "feedback": {
+          "correct": "Correct — $mc_{ice}\\,\\Delta T$ to reach $0\\ ^\\circ\\mathrm{C}$, then $mL_f$ to melt, then $mc_{water}\\,\\Delta T$ to warm the resulting water to $T_f$.",
+          "incorrect": {
+            "0": "The ice starts below $0\\ ^\\circ\\mathrm{C}$, so it must be warmed to the melting point first, and the melt-water then warms to $T_f$.",
+            "1": "This omits warming the melt-water from $0\\ ^\\circ\\mathrm{C}$ up to the final lukewarm temperature.",
+            "3": "The ice absorbs energy at every stage, which is what cools the warm water."
+          }
+        },
+        "hint": ["Ice at $-15\\ ^\\circ\\mathrm{C}$ ending as lukewarm water: warm the ice, melt it, warm the water. Count the stages."],
+        "solution": "The ice absorbs energy in three stages: (1) $mc_{ice}\\,\\Delta T$ to warm from $-15\\ ^\\circ\\mathrm{C}$ to $0\\ ^\\circ\\mathrm{C}$; (2) $mL_f$ to melt at $0\\ ^\\circ\\mathrm{C}$; (3) $mc_{water}\\,\\Delta T$ to warm the resulting water from $0\\ ^\\circ\\mathrm{C}$ to the final temperature. The sum equals the energy lost by the warm water."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Choosing the tool from the description",
+      "concept": "Before writing equations, read the scenario and decide **what kind of problem it is**:\n\n| The scenario says... | Use |\n|---|---|\n| one substance, temperature changes, no phase change | $Q = mc\\,\\Delta T$ |\n| one substance, phase change at constant temperature | $Q = mL$ |\n| a path that crosses a melting or boiling point | sum of $mc\\,\\Delta T$ and $mL$ stages (sketch the curve) |\n| hot + cold mixed, insulated | energy lost = energy gained |\n| 'how fast', 'through the wall', 'across the gap' | heat transfer: conduction / convection / radiation |\n| mechanical energy disappears (friction, impact, fall) | energy released = internal energy gained, then $Q = mc\\,\\Delta T$ |\n| a thermometer comparing two objects | zeroth law |\n\nMany real problems combine two or three rows. Name them all before starting.",
+      "representation": "A decision flow:\n\n1. Is anything **mixed**? → energy lost = energy gained is the backbone.\n2. Does any substance **cross a phase-change temperature**? → add $mL$ stage(s).\n3. Is the question about a **rate** or a **route**? → heat transfer.\n4. Did **mechanical energy** go missing? → convert it to internal energy first.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, name the equation(s) and concept(s) needed \u2014 do not solve: (a) 'A $2\\ \\mathrm{kW}$ kettle brings $1.5\\ \\mathrm{kg}$ of water from $20\\ ^\\circ\\mathrm{C}$ to boiling, then boils $0.3\\ \\mathrm{kg}$ away \u2014 how long?' (b) 'Why does a wet towel on your neck cool you on a hot day?' (c) 'A $0.5\\ \\mathrm{kg}$ hammer head at $5\\ \\mathrm{m/s}$ strikes a nail 30 times; estimate the nail's temperature rise.'",
+        "phases": [
+          {
+            "label": "(a) Kettle",
+            "steps": [
+              "Stage 1: warm the water, $Q = mc\\,\\Delta T$ (Lesson 5).",
+              "Stage 2: boil part of it, $Q = mL_v$ (Lesson 6).",
+              "Divide the total energy by the power ($2000\\ \\mathrm{J/s}$) for the time."
+            ]
+          },
+          {
+            "label": "(b) Wet towel",
+            "steps": [
+              "Evaporation is a phase change (liquid \u2192 gas) that absorbs latent heat of vaporisation from your skin (Lesson 6) \u2014 evaporative cooling. Heat transfer (Lesson 2) carries energy from your skin to the water."
+            ]
+          },
+          {
+            "label": "(c) Hammer and nail",
+            "steps": [
+              "Kinetic energy per strike $= \\tfrac{1}{2}mv^2$; times 30 strikes; a fraction becomes internal energy of the nail (Lesson 3).",
+              "Then $Q = mc\\,\\Delta T$ for the nail (Lesson 5) gives the temperature rise."
+            ]
+          }
+        ],
+        "keyMove": "Name every stage and concept first \u2014 warming ($mc\\,\\Delta T$), phase change ($mL$), transfer route, or mechanical-to-internal conversion \u2014 then compute."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L8-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "You must find the final temperature when hot water is poured over ice at $0\\ ^\\circ\\mathrm{C}$ in an insulated flask. Which is the correct backbone equation?",
+        "choices": [
+          "$m_{hot}c(T_i - T_f) = m_{ice}L_f + m_{ice}c(T_f - 0)$, assuming all the ice melts.",
+          "$m_{hot}c\\,\\Delta T = m_{ice}c\\,\\Delta T$, ignoring the phase change.",
+          "$Q = m_{ice}L_f$ only.",
+          "$m_{hot}c(T_i - T_f) = m_{ice}L_v$."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the hot water's energy loss equals the energy to melt the ice ($m_{ice}L_f$) plus the energy to warm the melt-water to $T_f$ ($m_{ice}c(T_f - 0)$). Check afterward that all the ice melted.",
+          "incorrect": {
+            "1": "Ignoring the melting term is wrong — the latent heat of fusion is usually the largest term.",
+            "2": "$m_{ice}L_f$ alone gives only the melting energy, not the final temperature.",
+            "3": "$L_v$ is for boiling/condensing. Melting ice needs $L_f$."
+          }
+        },
+        "hint": ["Hot side: cools, $mc\\,\\Delta T$. Cold side: melt the ice ($mL_f$), then warm the water ($mc\\,\\Delta T$). Set lost = gained."],
+        "solution": "Energy lost by the hot water as it cools from $T_i$ to $T_f$ equals the energy gained by the ice: melting it ($m_{ice}L_f$) and then warming the resulting water from $0\\ ^\\circ\\mathrm{C}$ to $T_f$ ($m_{ice}c(T_f - 0)$). Solve for $T_f$, then verify $T_f > 0\\ ^\\circ\\mathrm{C}$ (all ice melted); if not, the mixture is at $0\\ ^\\circ\\mathrm{C}$ with ice remaining."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Is the final state all-melted, or a mixture at 0 degrees C?",
+      "concept": "When ice meets a limited amount of warm water, three outcomes are possible:\n\n1. **All the ice melts and the mix warms above $0\\ ^\\circ\\mathrm{C}$** \u2014 the warm water had *more* than enough energy to melt all the ice and still leave the mix above freezing.\n2. **The final state is ice + water at exactly $0\\ ^\\circ\\mathrm{C}$** \u2014 the warm water's energy was enough to melt *some* but not *all* of the ice. Extra ice just sits there; the mixture is pinned at the melting point.\n3. **All the water freezes** (rare in these problems) \u2014 the ice was so cold and plentiful it took all the water's energy down to $0\\ ^\\circ\\mathrm{C}$ and then froze it.\n\n**How to decide:** compare the energy the warm water can give up on the way to $0\\ ^\\circ\\mathrm{C}$ with the energy needed to melt all the ice ($m_{ice}L_f$).\n\n- warm water's energy to reach $0\\ ^\\circ\\mathrm{C}$ $\\ge m_{ice}L_f$ \u2192 all ice melts (outcome 1);\n- warm water's energy to reach $0\\ ^\\circ\\mathrm{C}$ $< m_{ice}L_f$ \u2192 ice remains, mix at $0\\ ^\\circ\\mathrm{C}$ (outcome 2).",
+      "representation": "Compare two numbers:\n\n- $E_{available} = m_{warm}\\,c_{water}\\,(T_i - 0)$ \u2014 energy the warm water releases cooling to $0\\ ^\\circ\\mathrm{C}$;\n- $E_{needed} = m_{ice}\\,L_f$ \u2014 energy to melt all the ice.\n\nIf $E_{available} \\ge E_{needed}$, all the ice melts. Otherwise, mass melted $= E_{available}/L_f$ and the final mix is at $0\\ ^\\circ\\mathrm{C}$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "$0.30\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ is added to $0.20\\ \\mathrm{kg}$ of water at $30\\ ^\\circ\\mathrm{C}$ in an insulated cup. Use $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$. Find the final temperature and state what is present.",
+        "phases": [
+          {
+            "label": "Step 1: energy the warm water can give up",
+            "steps": ["$E_{available} = m_{warm}c_{water}(30 - 0) = (0.20)(4200)(30) = 25\\,200\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "Step 2: energy to melt all the ice",
+            "steps": ["$E_{needed} = m_{ice}L_f = (0.30)(3.3 \\times 10^{5}) = 99\\,000\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "Step 3: compare and conclude",
+            "steps": [
+              "$E_{available} = 25\\,200\\ \\mathrm{J} < E_{needed} = 99\\,000\\ \\mathrm{J}$ \u2014 not enough to melt all the ice.",
+              "Mass of ice melted $= \\dfrac{25\\,200}{3.3 \\times 10^{5}} \\approx 0.076\\ \\mathrm{kg}$.",
+              "**Final state:** a mixture of about $0.22\\ \\mathrm{kg}$ ice and $0.28\\ \\mathrm{kg}$ water, all at $0\\ ^\\circ\\mathrm{C}$."
+            ]
+          }
+        ],
+        "keyMove": "Compare 'energy the warm water can release to $0\\ ^\\circ\\mathrm{C}$' with 'energy to melt all the ice.' If the first is smaller, ice remains and the mix is at $0\\ ^\\circ\\mathrm{C}$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U5-L8-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "limiting-case-analysis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A student solves an ice-plus-warm-water problem and gets $T_f = -4\\ ^\\circ\\mathrm{C}$. All the ice started at $0\\ ^\\circ\\mathrm{C}$ and there was some warm water. What does this tell them?",
+        "choices": [
+          "The answer is fine; the mixture is below freezing.",
+          "The assumption that all the ice melted is wrong. Not enough energy was available, so the true final state is ice + water at $0\\ ^\\circ\\mathrm{C}$, not $-4\\ ^\\circ\\mathrm{C}$.",
+          "They should add $273$ to convert to kelvin.",
+          "The warm water must have been below $0\\ ^\\circ\\mathrm{C}$ too."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a final temperature below $0\\ ^\\circ\\mathrm{C}$ from mixing ice (at $0\\ ^\\circ\\mathrm{C}$) with warm water is impossible; it signals that the 'all ice melts' assumption failed and the mixture is actually pinned at $0\\ ^\\circ\\mathrm{C}$ with ice left over.",
+          "incorrect": {
+            "0": "You cannot cool a mixture below the temperature of its coldest component ($0\\ ^\\circ\\mathrm{C}$) by adding warmer water.",
+            "2": "Converting units does not fix a physically impossible result.",
+            "3": "The warm water was stated to be warm; the error is the melting assumption, not the water's temperature."
+          }
+        },
+        "hint": ["Can adding *warm* water to ice at $0\\ ^\\circ\\mathrm{C}$ ever produce a mixture colder than $0\\ ^\\circ\\mathrm{C}$?"],
+        "solution": "Mixing warm water with ice at $0\\ ^\\circ\\mathrm{C}$ can never give a final temperature below $0\\ ^\\circ\\mathrm{C}$. A result of $-4\\ ^\\circ\\mathrm{C}$ means the 'all the ice melts' assumption was false: the warm water did not have enough energy to melt all the ice. The correct final state is a mixture of ice and water at exactly $0\\ ^\\circ\\mathrm{C}$, with the mass melted equal to (warm water's energy to reach $0\\ ^\\circ\\mathrm{C}$) divided by $L_f$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U5-L8-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "",
+      "question": "For an ice-plus-warm-water calorimetry problem, a student writes $m_{warm}c(T_i - T_f) = m_{ice}c(T_f - 0)$ and solves for $T_f$. What is the consequence of this setup?",
+      "choices": [
+        "It is correct as long as the ice is at $0\\ ^\\circ\\mathrm{C}$.",
+        "It omits the latent heat of fusion needed to melt the ice, which is usually the largest energy term, so the predicted final temperature comes out much too high.",
+        "It double-counts the melting energy.",
+        "It gives a final temperature below $0\\ ^\\circ\\mathrm{C}$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — treating the ice as if it only warms up (like cold liquid water) ignores the large $m_{ice}L_f$ term, so the calculation credits far too little energy to the cold side and overestimates $T_f$.",
+        "incorrect": {
+          "0": "Even at $0\\ ^\\circ\\mathrm{C}$, the ice must be *melted* (a phase change, $m_{ice}L_f$) before its temperature can rise — that term is missing.",
+          "2": "The setup omits the melting term entirely; it does not double-count it.",
+          "3": "The error makes $T_f$ too *high*, not below freezing."
+        }
+      },
+      "hint": ["Before ice at $0\\ ^\\circ\\mathrm{C}$ can become 'water at $T_f$', what has to happen first, and how much energy does it take?"],
+      "solution": "The student treated the ice as though it simply warms from $0\\ ^\\circ\\mathrm{C}$ to $T_f$, like a cold liquid. But ice at $0\\ ^\\circ\\mathrm{C}$ must first *melt* — absorbing $m_{ice}L_f$, usually the dominant term — before the resulting water can warm. Omitting it means the cold side is credited with far too little energy absorption, so the calculated final temperature is much higher than the real one."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: $0.10\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ is added to $0.10\\ \\mathrm{kg}$ of water at $40\\ ^\\circ\\mathrm{C}$ in an insulated cup. Find the final temperature. ($c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.)\n\nStudent's response: 'Equal masses of water, so the final temperature is the average, $(0 + 40)/2 = 20\\ ^\\circ\\mathrm{C}$.'",
+      "prompts": [
+        "Explain why the 'average the temperatures' shortcut fails here.",
+        "Check whether the warm water even has enough energy to melt all the ice.",
+        "State the correct final state (you may leave the arithmetic symbolic)."
+      ],
+      "modelResponse": "The 'average' shortcut only works when both sides are the same substance in the same phase with equal $mc$ and no phase change. Here one side is *ice*, which must absorb its latent heat of fusion before it can warm — so the cold side absorbs far more energy per kelvin of final temperature than the shortcut assumes. Check: energy the warm water can release cooling to $0\\ ^\\circ\\mathrm{C}$ is $m_{warm}c(40 - 0) = (0.10)(4200)(40) = 16\\,800\\ \\mathrm{J}$. Energy to melt all the ice is $m_{ice}L_f = (0.10)(3.3 \\times 10^{5}) = 33\\,000\\ \\mathrm{J}$. Since $16\\,800 < 33\\,000$, the warm water cannot melt all the ice. Correct final state: a mixture of ice and water at exactly $0\\ ^\\circ\\mathrm{C}$, with mass melted $= 16\\,800 / (3.3 \\times 10^{5}) \\approx 0.051\\ \\mathrm{kg}$ (so about $0.049\\ \\mathrm{kg}$ of ice remains).",
+      "responseMaxLength": 850
+    }
+  ],
+  "representationConnections": "A described thermal scenario becomes a heating- or cooling-curve sketch; each slope is a $Q = mc\\,\\Delta T$ stage and each flat a $Q = mL$ stage; a mixing problem is the single equation 'energy lost = energy gained' with each side possibly a sum of stages. Comparing 'energy available' with 'energy needed to melt all the ice' decides whether the final state is all-liquid or a solid–liquid mixture pinned at $0\\ ^\\circ\\mathrm{C}$. Heat transfer (Lesson 2) and mechanical-to-internal conversion (Lesson 3) supply the energy that drives these changes.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U5-L8-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "$0.010\\ \\mathrm{kg}$ of ice at $0\\ ^\\circ\\mathrm{C}$ is dropped into $0.10\\ \\mathrm{kg}$ of water at $22\\ ^\\circ\\mathrm{C}$ in an insulated cup. Using $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$ and $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$, the final temperature is closest to:",
+      "choices": ["$0\\ ^\\circ\\mathrm{C}$", "$11\\ ^\\circ\\mathrm{C}$", "$14\\ ^\\circ\\mathrm{C}$", "$20\\ ^\\circ\\mathrm{C}$"],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — melt: $m_{ice}L_f = (0.010)(3.3\\times10^5) = 3300\\ \\mathrm{J}$. Balance: $(0.10)(4200)(22 - T_f) = 3300 + (0.010)(4200)(T_f - 0)$, i.e. $420(22 - T_f) = 3300 + 42T_f$; $9240 - 420T_f = 3300 + 42T_f$; $5940 = 462T_f$; $T_f \\approx 12.9 \\approx 14\\ ^\\circ\\mathrm{C}$ (closest option).",
+        "incorrect": {
+          "0": "The warm water's energy to reach $0\\ ^\\circ\\mathrm{C}$ is $(0.10)(4200)(22) = 9240\\ \\mathrm{J}$, well above the $3300\\ \\mathrm{J}$ to melt the ice, so all the ice melts and $T_f > 0\\ ^\\circ\\mathrm{C}$.",
+          "1": "Close, but the melting term must be included on the cold side along with warming the melt-water.",
+          "3": "This ignores the latent heat of fusion, which pulls the final temperature well below $20\\ ^\\circ\\mathrm{C}$."
+        }
+      },
+      "hint": ["First check all the ice melts. Then: $m_{warm}c(22 - T_f) = m_{ice}L_f + m_{ice}c(T_f - 0)$."],
+      "solution": "Check: warm water releasing to $0\\ ^\\circ\\mathrm{C}$ gives $(0.10)(4200)(22) = 9240\\ \\mathrm{J} > m_{ice}L_f = 3300\\ \\mathrm{J}$, so all the ice melts. Balance: $(0.10)(4200)(22 - T_f) = (0.010)(3.3\\times10^{5}) + (0.010)(4200)(T_f)$. So $420(22 - T_f) = 3300 + 42T_f$, giving $9240 - 420T_f = 3300 + 42T_f$, $5940 = 462T_f$, $T_f \\approx 12.9\\ ^\\circ\\mathrm{C}$ — closest to $14\\ ^\\circ\\mathrm{C}$."
+    },
+    {
+      "id": "BP8-U5-L8-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A camping cool box keeps drinks cold for a day by holding a block of ice. Which combination of ideas best explains why a single large block lasts longer than the same mass of ice crushed into small pieces?",
+      "choices": [
+        "Crushed ice has a lower latent heat of fusion.",
+        "Both hold the same total energy to absorb ($m L_f$), but crushed ice has far more surface area, so heat transfers into it faster from the warm surroundings — it melts sooner.",
+        "A large block is colder than crushed ice.",
+        "Crushed ice reflects more radiation."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the energy needed to melt all the ice ($mL_f$) is the same either way, but a large block presents much less surface area to the warm air and box walls, so heat conducts and convects into it more slowly, and it lasts longer.",
+        "incorrect": {
+          "0": "Latent heat of fusion is a property of the substance and does not depend on the piece size.",
+          "2": "Both are at $0\\ ^\\circ\\mathrm{C}$; piece size does not change the temperature.",
+          "3": "Reflectivity is not the main factor; surface area for conduction and convection is."
+        }
+      },
+      "hint": ["Same mass ⇒ same energy to melt it all. What differs is the *rate* energy gets in. What controls that?"],
+      "solution": "Melting all the ice requires the same energy, $mL_f$, whether it is one block or many pieces. But heat transfer into the ice (by conduction and convection from the warm box interior) is faster when there is more surface area exposed. Crushed ice has a much larger total surface area, so energy flows into it faster and it melts sooner. A single large block minimises surface area and lasts longest."
+    },
+    {
+      "id": "BP8-U5-L8-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "In an insulated flask, $0.040\\ \\mathrm{kg}$ of ice at $-8\\ ^\\circ\\mathrm{C}$ is added to $0.16\\ \\mathrm{kg}$ of water at $50\\ ^\\circ\\mathrm{C}$. Use $c_{ice} = 2100$, $c_{water} = 4200\\ \\mathrm{J\\,kg^{-1}\\,K^{-1}}$, $L_f = 3.3 \\times 10^{5}\\ \\mathrm{J\\,kg^{-1}}$.",
+      "parts": [
+        {
+          "prompt": "(a) List, in order, the energy-absorbing stages the ice goes through if it all melts and warms, with an expression for each.",
+          "modelResponse": "Stage 1: warm the ice from $-8\\ ^\\circ\\mathrm{C}$ to $0\\ ^\\circ\\mathrm{C}$: $Q_1 = m_{ice}c_{ice}(8)$. Stage 2: melt at $0\\ ^\\circ\\mathrm{C}$: $Q_2 = m_{ice}L_f$. Stage 3: warm the melt-water from $0\\ ^\\circ\\mathrm{C}$ to $T_f$: $Q_3 = m_{ice}c_{water}(T_f - 0)$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Confirm that all the ice melts by comparing the warm water's energy release (down to $0\\ ^\\circ\\mathrm{C}$) with the energy for stages 1 and 2.",
+          "modelResponse": "Warm water down to $0\\ ^\\circ\\mathrm{C}$: $E = m_{water}c_{water}(50) = (0.16)(4200)(50) = 33\\,600\\ \\mathrm{J}$. Stage 1: $Q_1 = (0.040)(2100)(8) = 672\\ \\mathrm{J}$. Stage 2: $Q_2 = (0.040)(3.3\\times10^{5}) = 13\\,200\\ \\mathrm{J}$. $Q_1 + Q_2 = 13\\,872\\ \\mathrm{J} < 33\\,600\\ \\mathrm{J}$, so the warm water has more than enough energy to warm and melt all the ice — all the ice melts and $T_f > 0\\ ^\\circ\\mathrm{C}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Set up and solve the energy-balance equation for the final temperature $T_f$.",
+          "modelResponse": "Energy lost by warm water = energy gained by ice's three stages: $m_{water}c_{water}(50 - T_f) = m_{ice}c_{ice}(8) + m_{ice}L_f + m_{ice}c_{water}(T_f)$. Substitute: $(0.16)(4200)(50 - T_f) = 672 + 13\\,200 + (0.040)(4200)T_f$, i.e. $672(50 - T_f) = 13\\,872 + 168T_f$. So $33\\,600 - 672T_f = 13\\,872 + 168T_f$, giving $19\\,728 = 840T_f$, $T_f \\approx 23.5\\ ^\\circ\\mathrm{C}$. This is between $0$ and $50\\ ^\\circ\\mathrm{C}$ and above $0\\ ^\\circ\\mathrm{C}$, consistent with all the ice having melted.",
+          "points": 5
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB Physics free-response problems regularly combine a phase change with calorimetry (ice into a warm drink, steam into cold water), and reward students who check whether all the ice melts before assuming a final temperature above $0\\ ^\\circ\\mathrm{C}$. The 'sketch the heating curve, list the stages, write one energy equation' method is the expected approach, along with reasoning about heat-transfer rate versus total energy (why a large ice block lasts longer).",
+  "summary": "Any thermal problem yields to one method: sketch the heating or cooling path, list every stage ($Q = mc\\,\\Delta T$ for each slope, $Q = mL$ for each phase change), and for a mixture write one equation, energy lost = energy gained, with each side possibly a sum of stages. Choose the tool from the description — warming, phase change, mixing, transfer rate, or mechanical-to-internal conversion — and name every applicable idea before computing. When ice meets a limited amount of warm water, compare the warm water's energy (cooling to $0\\ ^\\circ\\mathrm{C}$) with $m_{ice}L_f$: if it is enough, all the ice melts and $T_f > 0\\ ^\\circ\\mathrm{C}$; if not, the final state is ice and water together at exactly $0\\ ^\\circ\\mathrm{C}$. Always sanity-check the final temperature.",
+  "exitQuestion": {
+    "id": "BP8-U5-L8-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "question": "You must find the final temperature when ice at $0\\ ^\\circ\\mathrm{C}$ is added to a small amount of warm water. What should you check *before* assuming the final temperature is above $0\\ ^\\circ\\mathrm{C}$?",
+    "choices": [
+      "That the container is made of metal.",
+      "Whether the warm water can release enough energy (cooling to $0\\ ^\\circ\\mathrm{C}$) to melt all of the ice, i.e. compare $m_{warm}c(T_i - 0)$ with $m_{ice}L_f$.",
+      "That the ice was weighed in grams.",
+      "Whether radiation is significant."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — if the warm water's available energy is less than $m_{ice}L_f$, not all the ice melts and the final mixture is pinned at $0\\ ^\\circ\\mathrm{C}$.",
+      "incorrect": {
+        "0": "The container material affects losses but not the melt-all-the-ice check (which assumes an insulated system).",
+        "2": "Unit care matters for the arithmetic, but the conceptual check is about whether all the ice melts.",
+        "3": "In an insulated calorimetry problem, radiation is not the issue; the phase-change energy budget is."
+      }
+    },
+    "hint": ["The final temperature is only above $0\\ ^\\circ\\mathrm{C}$ if there is enough energy to melt *all* the ice. How do you test that?"],
+    "solution": "Before assuming $T_f > 0\\ ^\\circ\\mathrm{C}$, compare the energy the warm water can give up as it cools to $0\\ ^\\circ\\mathrm{C}$, $m_{warm}c(T_i - 0)$, with the energy needed to melt all the ice, $m_{ice}L_f$. If the first is at least the second, all the ice melts and the final temperature is above $0\\ ^\\circ\\mathrm{C}$. If not, some ice remains and the mixture ends at exactly $0\\ ^\\circ\\mathrm{C}$."
+  },
+  "questionBankFile": "thermal-physics.json",
+  "furtherPracticeQuestionIds": ["BP8-U5-MCQ-035", "BP8-U5-MCQ-039", "BP8-U5-MCQ-047", "BP8-U5-MCQ-023", "BP8-U5-MCQ-054", "BP8-U5-MCQ-050"],
+  "needsPlotly": false
+}
