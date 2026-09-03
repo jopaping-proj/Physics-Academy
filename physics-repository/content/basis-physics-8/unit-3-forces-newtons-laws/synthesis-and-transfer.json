@@ -1,0 +1,422 @@
+{
+  "id": "basis-p8-u3-l9",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Forces synthesis and transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "9",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_09_synthesis_and_transfer.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lessons 1–8 of this unit — gravity, inertia and the first law, force identification and free-body diagrams, equilibrium, the second law, inclined planes, the third law, and Hooke's law."
+  ],
+  "majorObjective": "Integrate the whole unit: run a multi-step force problem (identify forces → free-body diagram → net force → $F_{net} = ma$, including an incline), analyse a two-object interaction with Newton's third law, apply the inverse-square and first-law ideas together, and use a force–extension graph.",
+  "subObjectives": [
+    "Given a realistic scenario, decide which sub-skills apply and in what order — not just execute a given procedure.",
+    "Carry a force problem from identification through to a signed acceleration, on flat or inclined axes.",
+    "Separate a Newton's-third-law pair analysis from a single-object free-body analysis in the same situation.",
+    "Combine gravity's proportionalities with a first-law continuation, and read a spring constant from a graph."
+  ],
+  "hook": {
+    "prompt": "You are handed a force problem with an object on a rough incline and an applied force. Which of these do you do FIRST?",
+    "choices": [
+      "Write $F_{net} = ma$ and solve for $a$.",
+      "Identify every force on the object and draw its free-body diagram.",
+      "Calculate the friction force from $\\mu F_N$.",
+      "Resolve gravity into $mg\\sin\\theta$ and $mg\\cos\\theta$."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "This lesson introduces no new physics. It practises deciding which tools from Lessons 1–8 to use, and in what order, on problems that combine several of them.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The force problem: identify, diagram, sum, solve",
+      "concept": "Every dynamics problem in this unit runs on the same chain:\n\n1. **Identify the forces** on the chosen object (Lesson 3 checklist: weight, normal, applied/tension, friction).\n2. **Draw the free-body diagram** — on tilted axes if it is an incline (Lesson 6).\n3. **Resolve** any force that is not along an axis. On an incline, resolve gravity: $mg\\sin\\theta$ along, $mg\\cos\\theta$ perpendicular; the normal force matches the perpendicular part.\n4. **Sum to the net force**, signed, along the axis of motion (Lessons 3–4).\n5. **Apply $F_{net} = ma$** (Lesson 5): $a = F_{net}/m$, with a sign and a direction.\n\nIf the net force turns out to be zero, the object is in equilibrium (Lesson 4).",
+      "representation": "Deciding what to do next is part of the skill:\n\n- Incline mentioned? → use tilted axes and resolve gravity.\n- Friction mentioned? → you need $F_N$ first, then $F_f = \\mu F_N$.\n- Asked for acceleration? → you need the net force, so you need the free-body diagram.\n- Asked “is it in equilibrium?” → check whether the net force is zero.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_incline_g2.svg",
+          "caption": "A block on a rough incline. The full chain: identify the forces, resolve gravity with the incline angle, find $F_N = mg\\cos\\theta$ and $F_f = \\mu F_N$, sum along the slope, then $a = F_{net}/m$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An $8.0\\ \\mathrm{kg}$ crate is pushed up a rough $30^\\circ$ incline by a force of $60\\ \\mathrm{N}$ directed up the slope. $\\mu = 0.20$. Use $g = 9.8$, $\\sin 30^\\circ = 0.50$, $\\cos 30^\\circ \\approx 0.87$. Find the crate's acceleration.",
+        "phases": [
+          {
+            "label": "Identify and resolve",
+            "steps": [
+              "Forces: weight ($mg = 78.4\\ \\mathrm{N}$ down), normal (perpendicular), applied ($60\\ \\mathrm{N}$ up the slope), friction (opposes the motion).",
+              "Gravity resolved: along slope (down) $= mg\\sin 30^\\circ = 78.4 \\times 0.50 = 39.2\\ \\mathrm{N}$; perpendicular $= mg\\cos 30^\\circ \\approx 78.4 \\times 0.87 \\approx 68\\ \\mathrm{N}$."
+            ]
+          },
+          {
+            "label": "Normal force and friction",
+            "steps": [
+              "$F_N = mg\\cos 30^\\circ \\approx 68\\ \\mathrm{N}$.",
+              "The crate is pushed *up* the slope, so it moves up; kinetic friction acts *down* the slope: $F_f = \\mu F_N = 0.20 \\times 68 \\approx 14\\ \\mathrm{N}$."
+            ]
+          },
+          {
+            "label": "Net force along the slope (up positive)",
+            "steps": [
+              "Applied: $+60\\ \\mathrm{N}$. Gravity component: $-39.2\\ \\mathrm{N}$. Friction: $-14\\ \\mathrm{N}$.",
+              "$F_{net} = (+60) + (-39.2) + (-14) \\approx +6.8\\ \\mathrm{N}$ up the slope."
+            ]
+          },
+          {
+            "label": "Acceleration",
+            "steps": [
+              "$a = \\dfrac{F_{net}}{m} = \\dfrac{6.8}{8.0} \\approx 0.85\\ \\mathrm{m/s^2}$ up the slope."
+            ]
+          }
+        ],
+        "keyMove": "Same chain every time — the incline just tilts the axes and adds the gravity-resolution step."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L9-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A problem gives a $5\\ \\mathrm{kg}$ box on a rough incline and asks for its acceleration. You are told $\\theta$, $\\mu$, and $g$. What is the minimum you must compute before you can use $a = F_{net}/m$?",
+        "choices": [
+          "Just the applied force.",
+          "The along-slope gravity component ($mg\\sin\\theta$), the normal force ($mg\\cos\\theta$), and the friction ($\\mu F_N$) — then combine them into the net force along the slope.",
+          "Only the friction force.",
+          "The box's weight in newtons, and nothing else."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the net force along the slope needs the down-slope gravity component, and friction needs the normal force first ($F_N = mg\\cos\\theta$, then $F_f = \\mu F_N$). Combine all along-slope forces, then divide by mass.",
+          "incorrect": {
+            "0": "The applied force alone is not the net force — you also need gravity's component and friction.",
+            "2": "Friction is only one of the along-slope forces, and you cannot get it without the normal force.",
+            "3": "The weight is needed, but you must then resolve it into components and find friction before summing."
+          }
+        },
+        "hint": [
+          "To get the net force along the slope you need every along-slope force. Which ones are there, and what does each depend on?"
+        ],
+        "solution": "Along the slope, the net force is the signed sum of: the down-slope gravity component $mg\\sin\\theta$, the friction $\\mu F_N$ (which needs $F_N = mg\\cos\\theta$ first), and any applied force. You must compute all of these, combine them into $F_{net}$, and only then use $a = F_{net}/m$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The interaction: pair analysis versus single-object analysis",
+      "concept": "A two-object push or pull calls for **two separate analyses that must not be substituted for each other**:\n\n- **Newton's-third-law pair:** name the two objects, state the action force (A on B) and its equal-opposite reaction (B on A). This tells you the two forces are equal in size — and **nothing** about either object's motion.\n- **Single-object free-body diagram:** to find whether object B accelerates, draw the forces acting **on B alone** and sum them. The reaction force from A is one of those; the other forces on B (its weight, friction, a normal force) are separate.\n\nThe pair identification and the single-object FBD are different pictures of the same situation.",
+      "representation": "For “A pushes B”:\n\n1. Pair: A on B $= $ B on A (equal, opposite, same type).\n2. B's motion: FBD of B → sum forces on B → $a_B = F_{net,B}/m_B$.\n3. A's motion: FBD of A → sum forces on A (including B on A) → $a_A$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "On frictionless ice, a $2.0\\ \\mathrm{kg}$ block (A) is pushed against a $3.0\\ \\mathrm{kg}$ block (B), and the pair is pushed with a $25\\ \\mathrm{N}$ horizontal force applied to A. Find the acceleration of the blocks and the force A exerts on B.",
+        "phases": [
+          {
+            "label": "The two blocks move together",
+            "steps": [
+              "Treat A+B as one system of mass $5.0\\ \\mathrm{kg}$. Net force $= 25\\ \\mathrm{N}$. $a = 25/5.0 = 5.0\\ \\mathrm{m/s^2}$ — both blocks."
+            ]
+          },
+          {
+            "label": "Force A exerts on B (single-object FBD of B)",
+            "steps": [
+              "The only horizontal force on B is the push from A. So $F_{A\\ on\\ B} = m_B\\, a = (3.0)(5.0) = 15\\ \\mathrm{N}$."
+            ]
+          },
+          {
+            "label": "The third-law pair",
+            "steps": [
+              "By Newton's third law, B pushes back on A with $15\\ \\mathrm{N}$ in the opposite direction. Check A's FBD: $25\\ \\mathrm{N}$ forward $- 15\\ \\mathrm{N}$ back $= 10\\ \\mathrm{N} = (2.0)(5.0)$. Consistent."
+            ]
+          }
+        ],
+        "keyMove": "Use the system for the shared acceleration; use one object's FBD for the contact force between them; the third law links the two contact forces."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L9-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "free-body-diagram",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "Two boxes are pushed across a frictionless floor together. A student says: “Box 1 pushes box 2, and box 2 pushes back on box 1 with an equal force, so those cancel and box 2 doesn't accelerate.” What is the error?",
+        "choices": [
+          "Nothing — the forces do cancel.",
+          "The two forces of that pair act on *different* boxes, so they can't cancel on either one. Box 2 accelerates because of the net force acting *on box 2* — just box 1's push, which is unopposed.",
+          "Box 2 does not really push back on box 1.",
+          "Box 2 accelerates only if it is more massive than box 1."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — 'box 1 on box 2' acts on box 2; 'box 2 on box 1' acts on box 1. They are on different objects, so they never cancel. Box 2's acceleration comes from the forces on box 2, which is just box 1's forward push (frictionless floor).",
+          "incorrect": {
+            "0": "Forces on different objects cannot cancel each other.",
+            "2": "Box 2 pushes back on box 1 — that reaction is why box 1 accelerates less than it would alone.",
+            "3": "Box 2 accelerates regardless of the mass comparison, because there is an unopposed forward force on it."
+          }
+        },
+        "hint": [
+          "Which box does each force in the pair act on? Can two forces on different objects cancel?"
+        ],
+        "solution": "The pair 'box 1 pushes box 2' and 'box 2 pushes box 1' acts on two different objects, so it cannot cancel on either. To find box 2's motion, draw the forces on *box 2* alone — on a frictionless floor that is just the forward push from box 1, which is unopposed, so box 2 accelerates."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Gravity-and-inertia, and the spring graph",
+      "concept": "Two more integrations:\n\n**Gravity proportionalities + first law.** From Lesson 1: $F_G$ scales directly with each mass and inverse-square with distance. From Lesson 2: once the net force on an object becomes zero, its velocity stays constant. A problem may ask you to predict how $F_G$ changes, *then* reason about what the object does after the forces balance.\n\n**Spring graph.** From Lesson 8: the spring constant is the slope of a force–extension graph, and a steeper line is a stiffer spring — the same slope-reading skill as Unit 2's straight-line graphs, on new axes.",
+      "representation": "Pick the tool the question needs:\n\n- “How does $F_G$ change if…” → mass factors multiply in; a distance factor comes in as $1/(\\text{factor})^2$.\n- “What happens after the net force is zero” → constant velocity (first law).\n- “Read $k$ from the graph” → rise over run between two marked points, in $\\mathrm{N/m}$.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_spring_g3.svg",
+          "caption": "Two springs on one force–extension graph. The steeper line has the larger spring constant (stiffer spring); read each $k$ as rise over run."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Two probes attract each other with a gravitational force $F$. One probe's mass is doubled and the distance between them is doubled. (a) What is the new force? (b) The probes' thrusters then fire to bring the net force on probe 1 to zero. Predict probe 1's subsequent motion.",
+        "phases": [
+          {
+            "label": "(a) New gravitational force",
+            "steps": [
+              "Mass factor: $\\times 2$. Distance factor: $\\times \\dfrac{1}{2^2} = \\times \\dfrac{1}{4}$.",
+              "New force $= F \\times 2 \\times \\dfrac{1}{4} = \\dfrac{F}{2}$."
+            ]
+          },
+          {
+            "label": "(b) After the net force is zero",
+            "steps": [
+              "Newton's first law: with zero net force, probe 1's velocity stays constant — it coasts in a straight line at whatever speed and direction it had when the forces balanced. It does not stop, and it does not speed up."
+            ]
+          }
+        ],
+        "keyMove": "Inverse-square for the distance change; first law for what happens once the forces balance."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L9-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "equation",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "The gravitational force between two objects is $F$. Both masses are tripled and the separation is tripled. What is the new force?",
+        "choices": [
+          "$F$",
+          "$3F$",
+          "$9F$",
+          "$\\dfrac{F}{3}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — tripling both masses gives $\\times 9$; tripling the distance gives $\\times \\dfrac{1}{9}$. They cancel: $F \\times 9 \\times \\dfrac{1}{9} = F$.",
+          "incorrect": {
+            "1": "The mass effect ($\\times 9$) and the distance effect ($\\times \\tfrac{1}{9}$) cancel exactly, leaving $F$.",
+            "2": "This is only the mass effect. The tripled distance divides the force by $9$.",
+            "3": "This is roughly the distance effect alone, and it uses $1/3$ instead of $1/9$."
+          }
+        },
+        "hint": [
+          "Mass factor: $3 \\times 3 = 9$. Distance factor: $1/3^2 = 1/9$. Multiply them together."
+        ],
+        "solution": "Tripling both masses multiplies $F_G$ by $3 \\times 3 = 9$. Tripling the separation multiplies it by $\\dfrac{1}{3^2} = \\dfrac{1}{9}$. The net factor is $9 \\times \\dfrac{1}{9} = 1$: the force is unchanged, $F$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L9-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "question": "A student solving a longer incline problem writes, partway through, “$F_N = mg$, so $F_f = \\mu\\, mg$.” The rest of the working is correct. What single step should be fixed?",
+      "choices": [
+        "Nothing — the normal force always equals the weight.",
+        "On the incline, $F_N = mg\\cos\\theta$, so $F_f = \\mu\\, mg\\cos\\theta$. Fix that one step and the rest of the chain follows.",
+        "The friction should be $\\mu\\, mg\\sin\\theta$.",
+        "The whole problem must be restarted from the free-body diagram."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the normal force on an incline is the perpendicular component of the weight, $mg\\cos\\theta$. Isolate and fix that step; the rest of the chain (net force, $a = F_{net}/m$) does not need redoing from scratch.",
+        "incorrect": {
+          "0": "The normal force equals the full weight only on a horizontal surface. On an incline it is $mg\\cos\\theta$.",
+          "2": "$mg\\sin\\theta$ is the *along-slope* gravity component, not the normal force. Friction is $\\mu F_N = \\mu\\, mg\\cos\\theta$.",
+          "3": "Only the $F_N$ step is wrong. Fix it in place — restarting the whole problem is unnecessary."
+        }
+      },
+      "hint": [
+        "Which of gravity's two components does the normal force balance on an incline?"
+      ],
+      "solution": "This is Lesson 6's Misconception 9 resurfacing inside a longer problem. The normal force on an incline is the perpendicular component of the weight, $F_N = mg\\cos\\theta$, so $F_f = \\mu\\, mg\\cos\\theta$. Correct just that step — the perpendicular-balance argument — and the rest of the working stands."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $4.0\\ \\mathrm{kg}$ box is dragged along a level floor by a $30\\ \\mathrm{N}$ horizontal rope. Friction is $18\\ \\mathrm{N}$. Find the acceleration, then state what happens if the rope suddenly goes slack.\n\nStudent's response: “$a = 30/4.0 = 7.5\\ \\mathrm{m/s^2}$. When the rope goes slack the box keeps moving at that acceleration because of inertia.”",
+      "prompts": [
+        "Identify the two errors — one in the acceleration calculation, one in the reasoning about the slack rope.",
+        "Give the correct acceleration while the rope pulls.",
+        "Describe correctly what happens when the rope goes slack, using Newton's laws."
+      ],
+      "modelResponse": "Error 1: $a = 30/4.0$ uses the applied force alone. The net force is $30 - 18 = 12\\ \\mathrm{N}$, so $a = 12/4.0 = 3.0\\ \\mathrm{m/s^2}$ forward. Error 2: inertia does not keep an *acceleration* going — it keeps *velocity* constant when the net force is zero. When the rope goes slack, the forward pull vanishes but friction ($18\\ \\mathrm{N}$ backward) still acts, so the net force is now $18\\ \\mathrm{N}$ backward and the box *decelerates* at $18/4.0 = 4.5\\ \\mathrm{m/s^2}$ until it stops.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "Every tool in this unit is one of: a force checklist, a free-body diagram (flat or tilted), a signed net-force sum, $F_{net} = ma$, a Newton's-third-law pair, the gravity proportionalities, or a force–extension graph. A complete solution moves between them in the order the problem requires — and a correct answer has them all agreeing.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L9-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A $6.0\\ \\mathrm{kg}$ block is released from rest on a frictionless $37^\\circ$ incline ($\\sin 37^\\circ = 0.60$, $g = 9.8\\ \\mathrm{m/s^2}$). After sliding for $2.0\\ \\mathrm{s}$, how fast is it moving?",
+      "choices": [
+        "$11.8\\ \\mathrm{m/s}$",
+        "$5.9\\ \\mathrm{m/s}$",
+        "$19.6\\ \\mathrm{m/s}$",
+        "$3.5\\ \\mathrm{m/s}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — frictionless: $a = g\\sin 37^\\circ = 9.8 \\times 0.60 = 5.88\\ \\mathrm{m/s^2}$ down the slope. From rest: $v = at = 5.88 \\times 2.0 \\approx 11.8\\ \\mathrm{m/s}$.",
+        "incorrect": {
+          "1": "$5.9\\ \\mathrm{m/s}$ is the acceleration value ($\\approx 5.88\\ \\mathrm{m/s^2}$) with the wrong unit — multiply by the time.",
+          "2": "$19.6\\ \\mathrm{m/s}$ uses $a = g$ (a vertical drop), ignoring the $\\sin 37^\\circ$ factor for the incline.",
+          "3": "This uses $a = g\\cos 37^\\circ$ or a similar swap. The along-slope acceleration is $g\\sin\\theta$."
+        }
+      },
+      "hint": [
+        "Frictionless incline: $a = g\\sin\\theta$. Then use $v = v_i + at$ with $v_i = 0$ (Unit 2)."
+      ],
+      "solution": "On a frictionless incline the acceleration down the slope is $a = g\\sin\\theta = 9.8\\ \\mathrm{m/s^2} \\times 0.60 = 5.88\\ \\mathrm{m/s^2}$ (the mass cancels). Released from rest, after $2.0\\ \\mathrm{s}$: $v = v_i + at = 0 + (5.88)(2.0) \\approx 11.8\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "BP8-U3-L9-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A skydiver has just reached terminal velocity (falling at a constant speed). Which set of statements is all correct?",
+      "choices": [
+        "Net force zero; acceleration zero; air drag equal to weight; in dynamic equilibrium.",
+        "Net force downward; accelerating; air drag less than weight; not in equilibrium.",
+        "Net force zero; but still accelerating because the diver is moving.",
+        "Air drag greater than weight; decelerating toward a stop."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — constant speed in a straight line means constant velocity, so zero acceleration and zero net force. The only two forces (weight down, air drag up) must therefore be equal. The diver is moving at a constant velocity, so this is dynamic equilibrium.",
+        "incorrect": {
+          "1": "Constant speed means zero acceleration, so the net force is zero and drag equals weight — not less than it.",
+          "2": "Zero net force gives zero acceleration — moving fast does not create an acceleration.",
+          "3": "If drag exceeded weight the diver would slow down; at *terminal* velocity they are exactly balanced."
+        }
+      },
+      "hint": [
+        "Constant speed → constant velocity → zero acceleration → zero net force → the two forces are equal."
+      ],
+      "solution": "At terminal velocity the diver falls at a constant speed in a straight line, so the velocity is constant and the acceleration is zero. By Newton's first (and second) law the net force is zero, so the upward air drag exactly equals the downward weight. Because the diver is moving at a constant non-zero velocity, this is dynamic equilibrium."
+    },
+    {
+      "id": "BP8-U3-L9-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take up the slope as positive. A $10\\ \\mathrm{kg}$ crate is on a rough $30^\\circ$ incline. The coefficient of friction is $\\mu = 0.30$. A rope pulls the crate up the slope with a tension $T$. Use $g = 9.8\\ \\mathrm{m/s^2}$, $\\sin 30^\\circ = 0.50$, $\\cos 30^\\circ \\approx 0.87$.",
+      "parts": [
+        {
+          "prompt": "(a) Find the normal force on the crate and the maximum friction force ($\\mu F_N$).",
+          "modelResponse": "$mg = (10)(9.8) = 98\\ \\mathrm{N}$. $F_N = mg\\cos 30^\\circ = 98 \\times 0.87 \\approx 85\\ \\mathrm{N}$. Maximum friction $= \\mu F_N = 0.30 \\times 85 \\approx 26\\ \\mathrm{N}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the tension $T$ that holds the crate in equilibrium (at rest, on the verge of sliding down — friction acts up the slope at its maximum).",
+          "modelResponse": "Equilibrium along the slope: $T + F_f - mg\\sin 30^\\circ = 0$, with friction up the slope. $mg\\sin 30^\\circ = 98 \\times 0.50 = 49\\ \\mathrm{N}$. So $T = mg\\sin 30^\\circ - F_f = 49 - 26 = 23\\ \\mathrm{N}$. (A tension between about $23\\ \\mathrm{N}$ and $75\\ \\mathrm{N}$ would keep it at rest, depending on friction's direction; $23\\ \\mathrm{N}$ is the minimum, with friction helping.)",
+          "points": 4
+        },
+        {
+          "prompt": "(c) The rope is cut. Describe what the crate does, and compute its acceleration. (Now friction opposes the downward slide.)",
+          "modelResponse": "With no tension, gravity's down-slope component ($49\\ \\mathrm{N}$) exceeds the maximum friction ($26\\ \\mathrm{N}$), so the crate slides down, accelerating. Take down the slope as positive: $F_{net} = mg\\sin 30^\\circ - \\mu F_N = 49 - 26 = 23\\ \\mathrm{N}$. $a = F_{net}/m = 23/10 = 2.3\\ \\mathrm{m/s^2}$ down the slope.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The unit test and later units expect you to pick the right tool without being told which one, and to run a force problem end to end — including an incline and a friction step. Separating a third-law pair from a single-object free-body analysis is a recurring AP and IB conceptual scoring point.",
+  "summary": "Every force problem runs the same chain: identify the forces → free-body diagram (tilted for an incline) → resolve → signed net force → $a = F_{net}/m$ (or equilibrium if it is zero). A two-object interaction needs both a Newton's-third-law pair analysis (equal, opposite, two objects) and a separate single-object free-body diagram for each object's motion. Gravity's proportionalities combine with the first law; a force–extension graph's slope is the spring constant. Deciding what to do next is part of the skill.",
+  "exitQuestion": {
+    "id": "BP8-U3-L9-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "question": "A box is being pulled up a rough incline at a constant velocity. Which of these is true?",
+    "choices": [
+      "The net force along the slope is zero, and the pull equals the sum of the down-slope gravity component and friction.",
+      "The net force along the slope points up, because the box is moving up.",
+      "Friction is zero because the box is moving.",
+      "The normal force equals the full weight of the box."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — constant velocity means zero acceleration, so the net force along the slope is zero: the pull (up) balances gravity's down-slope component plus friction (both down, since the box moves up). Vertically to the slope, $F_N = mg\\cos\\theta$.",
+      "incorrect": {
+        "1": "Constant velocity means zero net force — not a net force in the direction of motion.",
+        "2": "A moving box on a rough incline has kinetic friction, opposing its upward slide (so pointing down the slope).",
+        "3": "On an incline the normal force is $mg\\cos\\theta$, less than the full weight."
+      }
+    },
+    "hint": [
+      "Constant velocity → zero acceleration → zero net force along the slope. Which forces act along the slope, and which way?"
+    ],
+    "solution": "Constant velocity means zero acceleration, so the net force along the slope is zero. The box moves up, so gravity's down-slope component and kinetic friction both point down the slope; the rope tension (up the slope) must balance their sum. Perpendicular to the slope, the normal force is $mg\\cos\\theta$, not the full weight."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-016",
+    "BP8-U3-MCQ-116",
+    "BP8-U3-MCQ-094",
+    "BP8-U3-MCQ-183"
+  ],
+  "needsPlotly": false
+}

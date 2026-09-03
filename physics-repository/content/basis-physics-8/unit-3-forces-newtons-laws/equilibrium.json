@@ -1,0 +1,414 @@
+{
+  "id": "basis-p8-u3-l4",
+  "slug": "equilibrium",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Static and dynamic equilibrium",
+  "lessonTitle": "Equilibrium",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_04_equilibrium.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 2 — zero net force means constant velocity (at rest or a straight line at steady speed).",
+    "Lesson 3 — identify forces and compute a signed net force from a free-body diagram."
+  ],
+  "majorObjective": "Define static and dynamic equilibrium, use the single zero-acceleration test to classify an object, and apply it to a free-body diagram or a verbal description.",
+  "subObjectives": [
+    "State that an object is in equilibrium exactly when its acceleration is zero (net force zero).",
+    "Distinguish static equilibrium (at rest) from dynamic equilibrium (constant non-zero velocity).",
+    "From a free-body diagram: sum the signed forces, then classify — equilibrium if the sum is zero, and state which kind from the motion.",
+    "From a verbal description: decide constant-vs-changing velocity, then name the equilibrium type — the same judgement as Lesson 2, relabelled."
+  ],
+  "hook": {
+    "prompt": "A car drives down a straight, flat highway with the cruise control holding it at exactly $100\\ \\mathrm{km/h}$. Is the car in equilibrium?",
+    "choices": [
+      "No — equilibrium means at rest, and the car is moving fast.",
+      "Yes — its velocity is constant, so its acceleration is zero: this is dynamic equilibrium.",
+      "No — the engine is running, so there must be a net force.",
+      "Only if the road is perfectly frictionless."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Equilibrium is the same condition Newton's first law describes — zero net force — given a name. This lesson is about recognising it and telling its two forms apart.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "One test: zero acceleration",
+      "concept": "An object is in **equilibrium** when its **net force is zero** — equivalently, when its **acceleration is zero**. That is the single test, and it never changes.\n\nEquilibrium comes in two forms:\n\n- **Static equilibrium:** net force zero, object **at rest**.\n- **Dynamic equilibrium:** net force zero, object moving at a **constant non-zero velocity** (straight line, steady speed).\n\nBoth pass the exact same test (zero acceleration). They differ only in whether the constant velocity happens to be zero.",
+      "representation": "To classify an object:\n\n1. Is the acceleration zero? (Net force zero, or velocity constant.) If not → **not** in equilibrium.\n2. If yes → in equilibrium. Check the motion: at rest → **static**; constant non-zero velocity → **dynamic**.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify each: (a) a parked car; (b) a car on cruise control on a flat, straight road; (c) a car braking to a stop.",
+        "phases": [
+          {
+            "label": "(a) Parked car",
+            "steps": [
+              "Velocity is zero and stays zero → acceleration zero → in equilibrium. At rest → **static equilibrium**."
+            ]
+          },
+          {
+            "label": "(b) Cruise control, flat straight road",
+            "steps": [
+              "Constant speed, constant direction → velocity constant → acceleration zero → in equilibrium. Moving at constant non-zero velocity → **dynamic equilibrium**."
+            ]
+          },
+          {
+            "label": "(c) Braking to a stop",
+            "steps": [
+              "The speed is decreasing → velocity changing → acceleration non-zero → **not** in equilibrium."
+            ]
+          }
+        ],
+        "keyMove": "The same test (zero acceleration) for all three; ‘at rest’ vs ‘constant velocity’ only picks static vs dynamic."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L4-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "An object slides across a frictionless surface in a straight line at a steady $3\\ \\mathrm{m/s}$. Which best describes it?",
+        "choices": [
+          "Static equilibrium.",
+          "Dynamic equilibrium.",
+          "Not in equilibrium, because it is moving.",
+          "Not in equilibrium, because there is no friction."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — constant non-zero velocity means zero acceleration, so the object is in equilibrium; because it is moving (not at rest), it is *dynamic* equilibrium.",
+          "incorrect": {
+            "0": "Static equilibrium is for an object at rest. This object is moving.",
+            "2": "Moving does not rule out equilibrium — a *constant* velocity is exactly dynamic equilibrium.",
+            "3": "Frictionless just means the net force is easily zero. Zero net force is equilibrium."
+          }
+        },
+        "hint": [
+          "Zero acceleration → equilibrium. At rest → static; moving at constant velocity → dynamic."
+        ],
+        "solution": "The velocity is constant (steady speed, straight line), so the acceleration is zero and the object is in equilibrium. Since it is moving rather than at rest, it is in *dynamic* equilibrium."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Classifying from a free-body diagram",
+      "concept": "Given a free-body diagram (or one you have just drawn), the **calculation** and the **classification** are two separate steps:\n\n1. **Calculate:** sum the signed forces along the relevant axis (Lesson 3's method) to get the net force.\n2. **Classify:** if the net force is zero, the object is in equilibrium — then read the scenario's stated motion to say *which kind* (static if at rest, dynamic if constant non-zero velocity). If the net force is non-zero, it is not in equilibrium.\n\nYou can sum correctly and still misclassify if you forget to check the motion description.",
+      "representation": "From an FBD:\n\n- Vertical sum $= 0$ **and** horizontal sum $= 0$ → in equilibrium.\n- Then: scenario says “at rest” → static; “constant velocity” / “steady speed” → dynamic.\n- Any axis sum $\\neq 0$ → not in equilibrium (accelerating along that axis).",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g2.svg",
+          "caption": "A hanging box: weight down, cord tension up. If the two arrows are equal, the net force is zero and the box is in equilibrium — static if it hangs still, dynamic if it is being raised or lowered at a steady speed."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An elevator moves upward at a constant $1.2\\ \\mathrm{m/s}$. Its free-body diagram shows a cable tension of $784\\ \\mathrm{N}$ up and a weight of $784\\ \\mathrm{N}$ down. Classify it.",
+        "phases": [
+          {
+            "label": "Calculate the net force",
+            "steps": [
+              "Vertical axis, up positive: $F_{net} = (+784) + (-784) = 0\\ \\mathrm{N}$."
+            ]
+          },
+          {
+            "label": "Classify",
+            "steps": [
+              "Net force zero → the elevator is in equilibrium.",
+              "The scenario says ‘moves upward at a constant $1.2\\ \\mathrm{m/s}$’ — constant non-zero velocity → **dynamic equilibrium**."
+            ]
+          },
+          {
+            "label": "Sanity check",
+            "steps": [
+              "Moving up at a steady speed needs no net upward force — the cable only has to hold the weight. That matches tension = weight."
+            ]
+          }
+        ],
+        "keyMove": "Sum first, then read the motion description to pick static or dynamic."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L4-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A crate's free-body diagram (up positive, right positive): weight $120\\ \\mathrm{N}$ down, normal $120\\ \\mathrm{N}$ up, applied $40\\ \\mathrm{N}$ right, friction $40\\ \\mathrm{N}$ left. The crate is described as “being pushed across the floor at a steady speed.” Which is correct?",
+        "choices": [
+          "Not in equilibrium — there is an applied force.",
+          "In dynamic equilibrium — both axis sums are zero, and it moves at a constant velocity.",
+          "In static equilibrium — the forces balance.",
+          "Cannot be classified without the crate's mass."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — horizontal: $(+40) + (-40) = 0$; vertical: $(+120) + (-120) = 0$. Zero net force, and the crate moves at a steady speed → dynamic equilibrium.",
+          "incorrect": {
+            "0": "An applied force does not rule out equilibrium — what matters is whether it is *balanced*. Here it is balanced by friction.",
+            "2": "Static equilibrium is for an object at rest. This crate is moving at a steady speed.",
+            "3": "Classification only needs the net force (zero here) and the motion description (steady speed). Mass is not required."
+          }
+        },
+        "hint": [
+          "Add the horizontal forces; add the vertical forces. Both zero? Then check: at rest or constant velocity?"
+        ],
+        "solution": "Horizontal sum: $(+40\\ \\mathrm{N}) + (-40\\ \\mathrm{N}) = 0$. Vertical sum: $(+120\\ \\mathrm{N}) + (-120\\ \\mathrm{N}) = 0$. The net force is zero, so the crate is in equilibrium. It is moving at a steady speed (not at rest), so it is in *dynamic* equilibrium."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Classifying straight from a description",
+      "concept": "When no free-body diagram is given, classify from the words alone — and it is the **same judgement** you made for Newton's first law in Lesson 2, now under the “equilibrium” label:\n\n1. Is the velocity **constant** (including zero) or **changing**?\n2. Constant → in equilibrium (static if at rest, dynamic if constant non-zero velocity).\n3. Changing → not in equilibrium — no matter how many forces are described.\n\nThe number of forces mentioned is a distraction. Only the motion decides.",
+      "representation": "Translate the description:\n\n- “hangs still” / “rests on” / “parked” → static equilibrium.\n- “constant velocity” / “steady speed in a straight line” / “terminal velocity” → dynamic equilibrium.\n- “speeding up” / “slowing” / “falling freely” / “turning” → not in equilibrium.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify: (a) a chandelier hanging from a ceiling; (b) a skydiver who has reached terminal velocity (falling at a constant speed); (c) a ball at the top of its arc after being thrown straight up.",
+        "phases": [
+          {
+            "label": "(a) Chandelier",
+            "steps": [
+              "Hangs still → velocity zero and constant → in equilibrium, at rest → **static equilibrium**."
+            ]
+          },
+          {
+            "label": "(b) Skydiver at terminal velocity",
+            "steps": [
+              "Falling at a *constant* speed → velocity constant → in equilibrium, moving → **dynamic equilibrium**. (Air drag now equals the weight.)"
+            ]
+          },
+          {
+            "label": "(c) Ball at the top of its arc",
+            "steps": [
+              "Velocity is zero for an instant, but it is *changing* (from up to down) — the acceleration is $g$, not zero. **Not** in equilibrium."
+            ]
+          }
+        ],
+        "keyMove": "Momentarily at rest is not the same as in equilibrium — check whether the velocity is *changing*."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L4-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A box is described as having “four forces acting on it, all different sizes.” Can it be in equilibrium?",
+        "choices": [
+          "No — equilibrium requires forces that are all equal.",
+          "Yes — if the forces combine (with directions) to a net force of zero, the object is in equilibrium regardless of the individual sizes.",
+          "No — more than two forces cannot balance.",
+          "Only if two of the four forces are zero."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — equilibrium is about the *net* force being zero. Several unequal forces can add (as vectors) to zero: e.g. $+5$, $+3$, $-6$, $-2$ along one axis.",
+          "incorrect": {
+            "0": "The individual forces do not need to be equal — only their signed sum needs to be zero.",
+            "2": "Any number of forces can balance, as long as they sum to zero.",
+            "3": "None of the forces has to be zero. Unequal non-zero forces can still cancel out."
+          }
+        },
+        "hint": [
+          "Equilibrium is a statement about the *net* force, not the individual forces. Can unequal numbers add to zero?"
+        ],
+        "solution": "Equilibrium means the net force — the signed sum of all the forces — is zero. Individual forces of different sizes can add to zero (for example $+5\\ \\mathrm{N}$, $+3\\ \\mathrm{N}$, $-6\\ \\mathrm{N}$, $-2\\ \\mathrm{N}$ sum to $0$). The count and sizes of the forces do not matter; only the total does."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L4-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "constant-velocity-implies-a-net-forward-force",
+      "question": "A student says: “A moving object can't be in equilibrium — equilibrium means everything is balanced and still.” What is the correct view?",
+      "choices": [
+        "The student is right — equilibrium always means at rest.",
+        "An object moving at a constant velocity is in equilibrium (dynamic equilibrium): its acceleration is zero, which is the only requirement.",
+        "Only objects in a vacuum can be in dynamic equilibrium.",
+        "Equilibrium requires the object to be slowing down toward rest."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — equilibrium is defined by zero acceleration, not zero speed. A constant velocity of any size qualifies; that is dynamic equilibrium.",
+        "incorrect": {
+          "0": "‘At rest’ is only the *static* form of equilibrium. Constant non-zero velocity is the *dynamic* form.",
+          "2": "Any object at constant velocity is in dynamic equilibrium — a car on cruise control, a puck on ice, a skydiver at terminal velocity.",
+          "3": "Slowing down is a *changing* velocity, which is the opposite of equilibrium."
+        }
+      },
+      "hint": [
+        "What is the single test for equilibrium — zero speed, or zero acceleration?"
+      ],
+      "solution": "Equilibrium means the net force is zero, i.e. the acceleration is zero. That is satisfied by an object at rest (static equilibrium) *and* by an object moving at a constant velocity (dynamic equilibrium). ‘Balanced and still’ describes only the static case."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $50\\ \\mathrm{kg}$ crate hangs motionless from two vertical ropes. Rope A has a tension of $250\\ \\mathrm{N}$. The crate's weight is $490\\ \\mathrm{N}$. Find the tension in rope B and classify the crate's equilibrium.\n\nStudent's response: “The crate is at rest, so it is in equilibrium. Tension B $= 490\\ \\mathrm{N}$, because the rope must hold the whole weight.”",
+      "prompts": [
+        "State the equilibrium condition as an equation for the vertical forces.",
+        "Identify the error in the tension-B calculation.",
+        "Give the correct tension in rope B and the correct equilibrium classification."
+      ],
+      "modelResponse": "Vertical equilibrium: the upward forces equal the downward force, so $T_A + T_B = F_g$. The error is setting $T_B$ equal to the full weight — that ignores rope A, which also pulls up. Correct: $T_B = F_g - T_A = 490 - 250 = 240\\ \\mathrm{N}$. The classification is right — the crate hangs motionless, so it is in **static** equilibrium (zero acceleration, at rest).",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A scenario or free-body diagram gives a signed net force; if it is zero along every axis, the object is in equilibrium; the motion description (at rest vs. constant velocity) then names it static or dynamic. This is Newton's first law (Lesson 2) with vocabulary, and the zero-net-force special case of $F_{net} = ma$ (Lesson 5).",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L4-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $200\\ \\mathrm{N}$ sign hangs from a single vertical chain and does not move. What is the tension in the chain, and what kind of equilibrium is the sign in?",
+      "choices": [
+        "$200\\ \\mathrm{N}$; static equilibrium.",
+        "$400\\ \\mathrm{N}$; static equilibrium.",
+        "$200\\ \\mathrm{N}$; dynamic equilibrium.",
+        "$0\\ \\mathrm{N}$; the forces cancel."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — at rest → equilibrium → net vertical force zero → tension up = weight down = $200\\ \\mathrm{N}$. It is at rest, so static equilibrium.",
+        "incorrect": {
+          "1": "The tension only needs to balance the weight once, not twice. $T = 200\\ \\mathrm{N}$.",
+          "2": "Dynamic equilibrium is for an object moving at a constant velocity. This sign does not move.",
+          "3": "The tension is not zero — it is $200\\ \\mathrm{N}$. ‘The forces cancel’ means the *net* force is zero, not that each force is zero."
+        }
+      },
+      "hint": [
+        "Not moving → net force zero → chain tension (up) equals weight (down)."
+      ],
+      "solution": "The sign is at rest, so it is in equilibrium and the net vertical force is zero. The only vertical forces are the chain tension (up) and the weight (down), so the tension equals the weight, $200\\ \\mathrm{N}$. Because the sign is at rest, this is static equilibrium."
+    },
+    {
+      "id": "BP8-U3-L4-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Which of these objects is NOT in equilibrium?",
+      "choices": [
+        "A parachutist descending at a constant $6\\ \\mathrm{m/s}$.",
+        "A book pressed against a wall by a horizontal push, staying put.",
+        "A ball rolling up a ramp, momentarily slowing as it climbs.",
+        "A hovering drone holding a fixed position in still air."
+      ],
+      "correctAnswer": 2,
+      "feedback": {
+        "correct": "Correct — a ball slowing as it rolls up a ramp has a *changing* velocity, so a non-zero acceleration and net force. Not in equilibrium.",
+        "incorrect": {
+          "0": "Constant descent speed → constant velocity → dynamic equilibrium (drag balances weight).",
+          "1": "Staying put against the wall → at rest → static equilibrium (the forces balance).",
+          "3": "Holding a fixed position → at rest → static equilibrium (lift balances weight)."
+        }
+      },
+      "hint": [
+        "Equilibrium = zero acceleration. Which object's velocity is changing?"
+      ],
+      "solution": "Equilibrium means zero acceleration. The parachutist (constant velocity), the book on the wall (at rest), and the hovering drone (at rest) all have zero acceleration. The ball slowing as it rolls up the ramp has a changing velocity, so a non-zero acceleration — it is not in equilibrium."
+    },
+    {
+      "id": "BP8-U3-L4-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take up as positive and right as positive. A $30\\ \\mathrm{kg}$ box is being lowered by a crane at a constant speed of $0.5\\ \\mathrm{m/s}$. Its weight is $294\\ \\mathrm{N}$. Separately, a $30\\ \\mathrm{kg}$ box sits at rest on a horizontal floor while a person pushes it horizontally with $60\\ \\mathrm{N}$ and it does not move.",
+      "parts": [
+        {
+          "prompt": "(a) For the box being lowered at constant speed: state its acceleration, find the cable tension, and classify its equilibrium.",
+          "modelResponse": "Constant speed in a straight line → constant velocity → zero acceleration. Net vertical force zero, so cable tension = weight = $294\\ \\mathrm{N}$ up. It is moving at a constant non-zero velocity → dynamic equilibrium.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) For the box on the floor being pushed with $60\\ \\mathrm{N}$ but not moving: what is the friction force on it, and what kind of equilibrium is it in?",
+          "modelResponse": "The box does not move, so it is in equilibrium and the horizontal net force is zero. The only other horizontal force is static friction, so static friction $= 60\\ \\mathrm{N}$ opposing the push (in the negative direction). Because the box is at rest, it is in static equilibrium.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) Both boxes have the same weight and are in equilibrium. A student concludes “so the physics of the two situations is identical.” Evaluate this.",
+          "modelResponse": "Both are in equilibrium (zero acceleration, zero net force), which is a real similarity. But they differ: box (a) is in *dynamic* equilibrium (moving at constant velocity, being lowered) while box (b) is in *static* equilibrium (at rest). The force sets also differ — (a) has a vertical tension/weight balance, (b) has a horizontal push/friction balance and a separate vertical normal/weight balance. ‘In equilibrium’ is a shared classification, not a claim that everything about the two situations is the same.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "‘Is this object in equilibrium?’ and ‘find the missing force given equilibrium’ are standard AP and IB items. The static/dynamic distinction and the trap that a *momentarily* at-rest object (top of a throw) is not in equilibrium are frequent scoring points.",
+  "summary": "An object is in equilibrium exactly when its acceleration is zero (net force zero) — that is the single test. Static equilibrium is at rest; dynamic equilibrium is constant non-zero velocity. From a free-body diagram, sum the signed forces, then read the motion to name the kind. From a description, decide constant-vs-changing velocity — the same judgement as Newton's first law. Unequal forces can still sum to zero; a momentarily at-rest object with a changing velocity is not in equilibrium.",
+  "exitQuestion": {
+    "id": "BP8-U3-L4-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "A ball is thrown straight up. At which moment(s) is it in equilibrium (air resistance ignored)?",
+    "choices": [
+      "At the top of its path, where its velocity is momentarily zero.",
+      "Never during the flight — the net force is always its weight, so the acceleration is always $g$.",
+      "On the way up only, while it is slowing down.",
+      "At the top and at the launch point."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — throughout the flight the only force is the weight, so the net force is never zero and the acceleration is always $g$. The ball is never in equilibrium.",
+      "incorrect": {
+        "0": "At the top the velocity is zero for an instant but *changing* (up to down), so the acceleration is $g$, not zero. Not equilibrium.",
+        "2": "Slowing down is a changing velocity — the opposite of equilibrium.",
+        "3": "Neither point is equilibrium: the weight acts the whole time, so there is always a net force."
+      }
+    },
+    "hint": [
+      "Equilibrium needs zero net force. What is the net force on the ball at every instant of the flight?"
+    ],
+    "solution": "With air resistance ignored, the only force on the ball is its weight, the entire flight. So the net force is never zero and the acceleration is always $g$ downward — the ball is never in equilibrium, not even at the top where its velocity is instantaneously zero."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-081",
+    "BP8-U3-MCQ-082",
+    "BP8-U3-MCQ-085",
+    "BP8-U3-MCQ-094"
+  ],
+  "needsPlotly": false
+}

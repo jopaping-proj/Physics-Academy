@@ -1,0 +1,422 @@
+{
+  "id": "basis-p8-u3-l3",
+  "slug": "force-identification-and-free-body-diagrams",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Force identification and free-body diagrams",
+  "lessonTitle": "Force Identification and Free-Body Diagrams",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_03_force_identification_and_fbds.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 1 — weight acts straight down (a special case of gravity near Earth's surface).",
+    "Lesson 2 — net force is all the forces combined with their directions; zero net force means constant velocity."
+  ],
+  "majorObjective": "Identify every force acting on an object in a described situation, compute the net force along one axis with a declared positive direction, and draw a correct free-body diagram.",
+  "subObjectives": [
+    "Name the standard forces and their directions: weight (down), normal (perpendicular to and away from the contact surface), applied (as stated), friction (opposing sliding or the tendency to slide), tension (along a rope, away from the object).",
+    "Work through a checklist to list every force acting ON the object — and no others.",
+    "Declare a positive direction, write each force with its sign, and add them to a signed net force with units.",
+    "Draw the object as a dot or box with one arrow per force, from the object outward, relative arrow lengths carrying meaning; a balanced pair drawn equal."
+  ],
+  "hook": {
+    "prompt": "A box sits still on the floor. How many forces act on the box?",
+    "choices": [
+      "Zero — it is not moving, so no forces act.",
+      "One — just its weight.",
+      "Two — its weight (down) and the floor's normal force (up).",
+      "Three — weight, normal force, and a ‘force of rest’ holding it in place."
+    ],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "Every force on an object comes from something else — the Earth (weight), a surface it touches (normal force, friction), a rope (tension), or something pushing or pulling it (applied force). A free-body diagram shows only the forces acting ON the chosen object.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The standard forces and their directions",
+      "concept": "The forces in this unit, each with its direction rule:\n\n- **Weight** ($F_g$): always present for an object with mass; points **straight down**.\n- **Normal force** ($F_N$): from a surface the object rests on or presses against; points **perpendicular to that surface, away from it**.\n- **Applied force** ($F_a$): a push or pull from a hand, engine, etc.; points **in whatever direction is stated**.\n- **Friction** ($F_f$): from a surface; points **opposite to the sliding (or the direction the object would slide)** — never assumed forward.\n- **Tension** ($F_T$): from a rope or string; points **along the rope, away from the object**.\n\nEvery force is a push or pull *from something else*. “Inertia” and “momentum” are not forces and never appear on a diagram.",
+      "representation": "Add one force at a time to a running example (a box):\n\n1. Weight — always, straight down.\n2. Is it on a surface? → normal force, perpendicular to that surface.\n3. Is anything pushing or pulling it? → applied force / tension, in the stated direction.\n4. Is it sliding, or about to? → friction, opposing that motion.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g1.svg",
+          "caption": "A box on the floor being pushed: weight down, normal force up from the floor, applied force in the push direction, friction opposing the slide. Each arrow starts at the box and points the way the force acts."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A crate is being pulled to the right across a rough floor by a horizontal rope. List every force acting on the crate and its direction.",
+        "phases": [
+          {
+            "label": "Weight",
+            "steps": [
+              "The crate has mass, so weight acts — straight down."
+            ]
+          },
+          {
+            "label": "Surface forces",
+            "steps": [
+              "The crate rests on the floor: a normal force acts upward (perpendicular to the floor).",
+              "The floor is rough and the crate is sliding right, so kinetic friction acts — to the left, opposing the slide."
+            ]
+          },
+          {
+            "label": "Rope",
+            "steps": [
+              "The rope pulls the crate along its length, away from the crate — to the right (tension)."
+            ]
+          },
+          {
+            "label": "Full list",
+            "steps": [
+              "Weight (down), normal force (up), tension (right), friction (left). Nothing else — no ‘force of motion’ in the direction of travel."
+            ]
+          }
+        ],
+        "keyMove": "Go through the checklist in order. If you can't name what exerts a force, it does not belong on the list."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L3-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "A ball has been thrown and is moving upward through the air (ignore air resistance). Which forces act on it while it is in flight?",
+        "choices": [
+          "Weight (down) and an upward ‘throwing force’ that gradually runs out.",
+          "Only weight, acting downward.",
+          "Weight (down) and a normal force (up).",
+          "No forces — it is in free flight."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — once the ball has left the hand, the only thing touching it is the air (ignored here), so the only force is its weight, acting downward the whole time.",
+          "incorrect": {
+            "0": "There is no ‘throwing force’ travelling with the ball. The hand stopped acting on it the instant it let go.",
+            "2": "A normal force needs a surface in contact. Nothing is touching the ball in mid-air.",
+            "3": "Weight still acts — gravity does not switch off during flight. That is why the ball slows, stops, and falls."
+          }
+        },
+        "hint": [
+          "What is touching the ball in mid-air? What non-contact force always acts on a mass?"
+        ],
+        "solution": "In flight (with air resistance ignored) nothing touches the ball, so there is no normal force, no applied force, and no friction. The only force is its weight, pointing straight down for the entire flight — which is why it decelerates on the way up and accelerates on the way down."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Net force along one axis",
+      "concept": "Once the forces are listed, the **net force along an axis** is the signed sum of the components along that axis.\n\n1. **Declare a positive direction** (e.g. “right is positive”).\n2. **Write each force with a sign**: forces in the positive direction are $+$, forces the other way are $-$.\n3. **Add them.** The result is the net force, with a size, a sign (= direction), and units (newtons).\n\nWrite the signed list out — do not add “in your head.” A dropped sign is the most common mistake.",
+      "representation": "For the horizontal axis of a sliding box:\n\n- $F_a = +40\\ \\mathrm{N}$ (push, in the positive direction)\n- $F_f = -15\\ \\mathrm{N}$ (friction, opposing)\n- $F_{net} = (+40) + (-15) = +25\\ \\mathrm{N}$ (net force, in the positive direction)",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $10\\ \\mathrm{kg}$ box on a floor is pushed to the right with $50\\ \\mathrm{N}$. Friction on the box is $18\\ \\mathrm{N}$. Its weight is $98\\ \\mathrm{N}$ and the floor's normal force is $98\\ \\mathrm{N}$. Find the net force along each axis.",
+        "phases": [
+          {
+            "label": "Horizontal axis (right positive)",
+            "steps": [
+              "Applied force: $+50\\ \\mathrm{N}$. Friction: $-18\\ \\mathrm{N}$ (opposes the rightward slide).",
+              "$F_{net,x} = (+50) + (-18) = +32\\ \\mathrm{N}$ — net force $32\\ \\mathrm{N}$ to the right."
+            ]
+          },
+          {
+            "label": "Vertical axis (up positive)",
+            "steps": [
+              "Normal force: $+98\\ \\mathrm{N}$. Weight: $-98\\ \\mathrm{N}$.",
+              "$F_{net,y} = (+98) + (-98) = 0\\ \\mathrm{N}$ — the vertical forces balance."
+            ]
+          },
+          {
+            "label": "Interpret",
+            "steps": [
+              "The box has a net force to the right (so it accelerates right) and zero net force vertically (so it does not accelerate up or down)."
+            ]
+          }
+        ],
+        "keyMove": "One axis at a time. Sign every force by the declared positive direction before adding."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L3-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Take east as positive. Three horizontal forces act on a cart: $+30\\ \\mathrm{N}$, $+10\\ \\mathrm{N}$, and $-25\\ \\mathrm{N}$. What is the net horizontal force?",
+        "choices": [
+          "$+15\\ \\mathrm{N}$",
+          "$+65\\ \\mathrm{N}$",
+          "$-15\\ \\mathrm{N}$",
+          "$+5\\ \\mathrm{N}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $(+30) + (+10) + (-25) = +15\\ \\mathrm{N}$, i.e. $15\\ \\mathrm{N}$ east.",
+          "incorrect": {
+            "1": "This adds the magnitudes ($30 + 10 + 25$). The $-25\\ \\mathrm{N}$ force points west, so it must be subtracted.",
+            "2": "Check the signs: two forces are positive (east) and one is negative (west). The total comes out positive.",
+            "3": "This looks like $(30) - (10) - (25) + 10$ or a sign slip. Add exactly: $30 + 10 - 25$."
+          }
+        },
+        "hint": [
+          "Add the three signed values directly: $(+30) + (+10) + (-25)$."
+        ],
+        "solution": "The net force is the signed sum: $(+30\\ \\mathrm{N}) + (+10\\ \\mathrm{N}) + (-25\\ \\mathrm{N}) = +15\\ \\mathrm{N}$ — $15\\ \\mathrm{N}$ in the positive (east) direction."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Drawing the free-body diagram",
+      "concept": "A **free-body diagram** shows every force acting **on one chosen object** — and only those forces.\n\n- Draw the object as a **dot or a small box**.\n- For each force, draw **one arrow from the object outward**, in the force's direction.\n- Make **relative arrow lengths carry meaning**: a bigger force gets a longer arrow; a **balanced pair is drawn exactly equal**, not just “about the same.”\n- Label each arrow ($F_g$, $F_N$, $F_a$, $F_f$, $F_T$).\n\nThe **“all and only” rule**: a correct diagram has every force that acts on the object, and nothing that does not (no “force of motion,” no forces the object exerts on *other* things).",
+      "representation": "Build the diagram in order:\n\n1. Object as a dot/box; pick your axes.\n2. Weight arrow down.\n3. Normal-force arrow (perpendicular to the surface, away from it).\n4. Applied / tension arrows in their stated directions.\n5. Friction arrow opposing the slide.\n6. Check “all and only,” and check that balanced pairs are equal length.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Draw and describe the free-body diagram for a book resting at rest on a horizontal table.",
+        "phases": [
+          {
+            "label": "Object and forces",
+            "steps": [
+              "Object: the book (a small box). Forces: weight (down) from the Earth; normal force (up) from the table. No applied force, no friction (nothing pushing it, nothing sliding)."
+            ]
+          },
+          {
+            "label": "Draw the arrows",
+            "steps": [
+              "One arrow straight down labelled $F_g$; one arrow straight up labelled $F_N$, drawn the **same length** as $F_g$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "‘All and only’: both real forces present, nothing extra. The book is at rest → net force zero → the two arrows must be equal, which matches the drawing."
+            ]
+          }
+        ],
+        "keyMove": "One arrow per force, from the object outward; a balanced pair is drawn exactly equal."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L3-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A student's free-body diagram for a box sliding to the right across a rough floor includes: weight (down), normal (up), friction (left), and a rightward arrow labelled “force of motion.” What is the error?",
+        "choices": [
+          "The friction arrow should point right, in the direction of motion.",
+          "There is no ‘force of motion’ — a moving object does not carry a forward force. That arrow does not belong.",
+          "The weight arrow should be left off, since the box is on a surface.",
+          "The normal force should be longer than the weight."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — ‘all and only.’ A sliding box has weight, normal, and friction (and an applied force if something is pushing it). A ‘force of motion’ is not a real force and must be removed.",
+          "incorrect": {
+            "0": "Friction opposes the slide, so for a box sliding right it points left. That part is correct.",
+            "2": "Weight always acts on an object with mass, whether or not it is on a surface.",
+            "3": "For a box on a horizontal floor with no vertical applied force, the normal force equals the weight — the arrows should be equal, not longer."
+          }
+        },
+        "hint": [
+          "Can you name the object that exerts the ‘force of motion’? If not, it is not a force."
+        ],
+        "solution": "Every force on a free-body diagram must come from an identifiable other object. There is nothing exerting a ‘force of motion’ — the box keeps moving because of inertia (Lesson 2), not a forward force. The diagram should have only weight, normal, and friction (plus an applied force if one is stated)."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L3-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "net-force-equals-a-single-applied-force",
+      "question": "A crate is dragged across a rough floor by a $70\\ \\mathrm{N}$ horizontal rope while $70\\ \\mathrm{N}$ of friction acts backward. A student states the net horizontal force is $70\\ \\mathrm{N}$ forward. What went wrong?",
+      "choices": [
+        "Nothing — the applied force is the net force.",
+        "The student used the applied force alone; the net force is the signed sum of the applied force and friction: $(+70) + (-70) = 0$.",
+        "Friction does not act on a crate that is being pulled.",
+        "The net force should be $140\\ \\mathrm{N}$ (the two forces added)."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — net force means *all* the forces combined, with signs. Here the $70\\ \\mathrm{N}$ pull forward and the $70\\ \\mathrm{N}$ friction backward cancel, giving a net horizontal force of $0$.",
+        "incorrect": {
+          "0": "The applied force is just one of the forces. The net force also includes friction (and any others).",
+          "2": "Friction acts whenever there is sliding on a rough surface — being pulled does not remove it.",
+          "3": "The two forces point in *opposite* directions, so they subtract, not add. $(+70) + (-70) = 0$."
+        }
+      },
+      "hint": [
+        "‘Net force’ combines every force with its direction. The pull is forward ($+$); friction is backward ($-$)."
+      ],
+      "solution": "The net force is the signed sum of every force along the axis. The $70\\ \\mathrm{N}$ pull is $+70\\ \\mathrm{N}$; the $70\\ \\mathrm{N}$ friction is $-70\\ \\mathrm{N}$. $F_{net} = (+70) + (-70) = 0\\ \\mathrm{N}$. Using only the applied force ignores friction and gives the wrong answer — and here the crate must actually be moving at constant velocity."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $4.0\\ \\mathrm{kg}$ lamp hangs at rest from a single vertical cord. Draw its free-body diagram and find the net force. (Weight $= 39.2\\ \\mathrm{N}$.)\n\nStudent's response: “Forces on the lamp: weight $39.2\\ \\mathrm{N}$ down, tension $39.2\\ \\mathrm{N}$ up, and the lamp's pull on the cord $39.2\\ \\mathrm{N}$ down. Net force $= 39.2 + 39.2 - 39.2 = 39.2\\ \\mathrm{N}$ down.”",
+      "prompts": [
+        "State the rule for which forces belong on a free-body diagram.",
+        "Identify the force in the student's list that should not be there, and why.",
+        "Give the correct force list, net force, and the diagram description."
+      ],
+      "modelResponse": "A free-body diagram shows only the forces acting **on** the chosen object (the lamp) — not forces the lamp exerts on other things. The ‘lamp's pull on the cord’ acts on the *cord*, not on the lamp, so it does not belong. Correct list: weight $39.2\\ \\mathrm{N}$ down, cord tension $39.2\\ \\mathrm{N}$ up. Net force $= (+39.2) + (-39.2) = 0\\ \\mathrm{N}$, which matches ‘at rest.’ Diagram: a box for the lamp, one arrow down ($F_g$) and one equal-length arrow up ($F_T$).",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal scenario becomes a force checklist, then a signed net-force sum along each axis, then a free-body diagram whose arrow lengths encode the same balance. The net force from this lesson feeds directly into equilibrium (Lesson 4: is it zero?) and $F_{net} = ma$ (Lesson 5: divide by mass).",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L3-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $2.0\\ \\mathrm{kg}$ block is at rest on a horizontal table. Someone presses straight down on it with an extra $10\\ \\mathrm{N}$. Its weight is $19.6\\ \\mathrm{N}$. What is the normal force from the table?",
+      "choices": [
+        "$29.6\\ \\mathrm{N}$",
+        "$19.6\\ \\mathrm{N}$",
+        "$9.6\\ \\mathrm{N}$",
+        "$10\\ \\mathrm{N}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — vertical forces: normal up, weight $19.6\\ \\mathrm{N}$ down, extra push $10\\ \\mathrm{N}$ down. At rest → net vertical force zero → $F_N = 19.6 + 10 = 29.6\\ \\mathrm{N}$.",
+        "incorrect": {
+          "1": "$19.6\\ \\mathrm{N}$ ignores the extra $10\\ \\mathrm{N}$ downward push, which the table must also support.",
+          "2": "The normal force must balance *both* downward forces, so it is larger than the weight, not smaller.",
+          "3": "$10\\ \\mathrm{N}$ is just the extra push. The table also supports the $19.6\\ \\mathrm{N}$ weight."
+        }
+      },
+      "hint": [
+        "At rest → net vertical force zero. The upward normal force balances *all* the downward forces: weight plus the extra push."
+      ],
+      "solution": "The block is at rest, so the net vertical force is zero. Downward: weight $19.6\\ \\mathrm{N}$ and the extra push $10\\ \\mathrm{N}$. Upward: the normal force. So $F_N = 19.6 + 10 = 29.6\\ \\mathrm{N}$ — the normal force is not always equal to the weight."
+    },
+    {
+      "id": "BP8-U3-L3-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "Which free-body diagram is correct for a box being pushed to the right at a constant velocity across a rough floor?",
+      "choices": [
+        "Weight down, normal up (equal to weight), applied force right, friction left — with the applied-force and friction arrows drawn equal in length.",
+        "Weight down, normal up, applied force right — with the applied-force arrow the longest.",
+        "Weight down, normal up, applied force right, friction left, and a ‘momentum’ arrow right.",
+        "Applied force right and friction left only — weight and normal cancel so they can be left off."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — constant velocity means zero net force, so along the horizontal axis the applied force and friction must be equal, and their arrows drawn equal length. Vertically, normal equals weight.",
+        "incorrect": {
+          "1": "If the applied force were larger than friction, the net force would be non-zero and the box would be accelerating — not moving at a constant velocity.",
+          "2": "Momentum is not a force and never appears on a free-body diagram.",
+          "3": "Weight and normal must both be drawn even though they balance — a free-body diagram shows every force that acts, not just the unbalanced ones."
+        }
+      },
+      "hint": [
+        "Constant velocity → zero net force on *both* axes. What does that say about the relative lengths of the two horizontal arrows?"
+      ],
+      "solution": "A constant velocity means zero net force. Horizontally, the applied force (right) and friction (left) must be equal, so their arrows are the same length. Vertically, the normal force equals the weight. All four real forces must be drawn; there is no momentum or ‘force of motion’ arrow."
+    },
+    {
+      "id": "BP8-U3-L3-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take right as positive and up as positive. A $6.0\\ \\mathrm{kg}$ sled is pulled to the right along level, snowy ground by a horizontal rope with a tension of $28\\ \\mathrm{N}$. Kinetic friction on the sled is $10\\ \\mathrm{N}$. Its weight is $58.8\\ \\mathrm{N}$.",
+      "parts": [
+        {
+          "prompt": "(a) List every force on the sled with its direction, and describe its free-body diagram (which arrows, and their relative lengths).",
+          "modelResponse": "Forces on the sled: weight $58.8\\ \\mathrm{N}$ down; normal force from the ground, up; tension $28\\ \\mathrm{N}$ right; kinetic friction $10\\ \\mathrm{N}$ left. Free-body diagram: a box with a long arrow down ($F_g$) and an equal-length arrow up ($F_N$); a medium arrow right ($F_T$) and a shorter arrow left ($F_f$), with the right arrow clearly longer than the left one.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Find the net force on the sled along each axis.",
+          "modelResponse": "Horizontal: $F_{net,x} = (+28) + (-10) = +18\\ \\mathrm{N}$ (right). Vertical: the sled does not accelerate vertically, so $F_{net,y} = 0$; this means $F_N = 58.8\\ \\mathrm{N}$ (normal balances weight).",
+          "points": 4
+        },
+        {
+          "prompt": "(c) A student leaves the normal force off the diagram, saying “it just cancels the weight, so it doesn't matter.” Explain why the normal force must still be shown.",
+          "modelResponse": "A free-body diagram is a complete record of every force acting on the object, not only the unbalanced ones. The normal force is a real force the ground exerts on the sled; leaving it off makes the diagram wrong even if the vertical forces happen to balance. It also matters for later work — friction depends on the normal force ($F_f = \\mu F_N$), so you need its value.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Drawing a correct free-body diagram and computing a signed net force are the entry point to every dynamics problem on the AP and IB exams. The ‘all and only’ rule and ‘normal force is not always the weight’ are frequent scoring points, and this lesson's net force feeds Lessons 4–6 directly.",
+  "summary": "Identify forces with a checklist: weight (always, down), normal (perpendicular to the surface), applied/tension (as stated), friction (opposing the slide). Declare a positive direction, write each force with a sign, and add to a signed net force. A free-body diagram shows the object as a dot or box with one labelled arrow per force from the object outward, relative lengths meaningful, balanced pairs equal — every real force, and nothing that is not a force.",
+  "exitQuestion": {
+    "id": "BP8-U3-L3-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "free-body-diagram",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A rock is in free flight after being thrown horizontally off a cliff (ignore air resistance). Its free-body diagram contains:",
+    "choices": [
+      "One arrow: weight, straight down.",
+      "Two arrows: weight down, and a horizontal ‘throw force’ in the direction it was thrown.",
+      "Two arrows: weight down, and air resistance up.",
+      "No arrows — it is in free fall."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — with air resistance ignored, nothing touches the rock, so the only force is its weight, straight down. (The horizontal motion continues by inertia, with no horizontal force.)",
+      "incorrect": {
+        "1": "There is no ‘throw force’ travelling with the rock. The hand stopped acting on it at release.",
+        "2": "Air resistance is explicitly ignored in this problem, so it is not drawn.",
+        "3": "Weight is a real force and must be drawn — ‘free fall’ means gravity is the only force, not that there are no forces."
+      }
+    },
+    "hint": [
+      "What is touching the rock in mid-air? What is the one non-contact force?"
+    ],
+    "solution": "In free flight with air resistance ignored, nothing is in contact with the rock, so there is no normal force, applied force, or friction. Gravity still acts, so the free-body diagram is a single arrow — weight, straight down. The rock keeps moving horizontally by inertia, with no horizontal force."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-046",
+    "BP8-U3-MCQ-051",
+    "BP8-U3-MCQ-047",
+    "BP8-U3-MCQ-049"
+  ],
+  "needsPlotly": false
+}

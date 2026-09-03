@@ -96,66 +96,66 @@
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
+      "slug": "inertia-and-newtons-first-law",
       "title": "Inertia and Newton's First Law",
       "cluster": "BP8.3.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
+      "slug": "force-identification-and-free-body-diagrams",
       "title": "Force Identification and Free-Body Diagrams",
       "cluster": "BP8.3.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
+      "slug": "equilibrium",
       "title": "Equilibrium",
       "cluster": "BP8.3.4",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
+      "slug": "newtons-second-law",
       "title": "Newton's Second Law",
       "cluster": "BP8.3.5",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 6",
-      "slug": null,
+      "slug": "inclined-planes",
       "title": "Inclined Planes",
       "cluster": "BP8.3.6",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 7",
-      "slug": null,
+      "slug": "newtons-third-law",
       "title": "Newton's Third Law",
       "cluster": "BP8.3.7",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 8",
-      "slug": null,
+      "slug": "hookes-law-and-springs",
       "title": "Hooke's Law and Springs",
       "cluster": "BP8.3.8",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 9",
-      "slug": null,
+      "slug": "synthesis-and-transfer",
       "title": "Synthesis and Transfer",
       "cluster": "BP8.3.9",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "concept-check",

@@ -1,0 +1,408 @@
+{
+  "id": "basis-p8-u3-l7",
+  "slug": "newtons-third-law",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Newton's third law",
+  "lessonTitle": "Newton's Third Law",
+  "lessonNumber": "7",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_07_newtons_third_law.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 1 — gravity is a mutual, equal pair between two masses.",
+    "Lesson 3 — a free-body diagram shows the forces on one object.",
+    "Lesson 4 — balanced forces on one object mean equilibrium."
+  ],
+  "majorObjective": "Identify a Newton's-third-law action–reaction pair, state that the two forces act on two different objects, and contrast a third-law pair with balanced forces on a single object.",
+  "subObjectives": [
+    "State Newton's third law: if object A exerts a force on object B, then B exerts an equal-magnitude, opposite-direction force of the same type on A.",
+    "Apply the two-objects test: name what exerts the force and what it acts on, then swap those roles for the reaction.",
+    "State that the two forces of a third-law pair always act on different objects — never on the same object.",
+    "Contrast a third-law pair (two objects, same force type, no equilibrium claim) with balanced forces (one object, possibly different types, implies equilibrium)."
+  ],
+  "hook": {
+    "prompt": "A book rests on a table. The table pushes up on the book with a normal force. What is the Newton's-third-law reaction to that force?",
+    "choices": [
+      "The book's weight, pulling it down.",
+      "The book pushes down on the table with an equal normal force.",
+      "The Earth pulls the book down.",
+      "There is no reaction, because the book is not moving."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Every force is an interaction between two objects. Newton's third law is a statement about that interaction: it always comes with a matching force the other way, on the other object.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Identifying an action–reaction pair",
+      "concept": "**Newton's third law:** for every force that object A exerts on object B, object B exerts a force back on object A that is:\n\n- **equal in magnitude**,\n- **opposite in direction**,\n- **the same type** (both normal forces, both gravitational, both frictional, etc.).\n\nExamples:\n\n- A table pushes up on a book (normal) ↔ the book pushes down on the table (normal).\n- The Earth pulls a ball down (gravity) ↔ the ball pulls the Earth up (gravity) — same size, though the Earth's acceleration is negligible.\n- A swimmer pushes water backward ↔ the water pushes the swimmer forward.",
+      "representation": "To state the reaction to a given force:\n\n1. Identify the force: “A exerts force $F$ on B.”\n2. The reaction is: “B exerts force $F$ on A” — same size, opposite direction, same type.\n3. Swap the two object names; keep the interaction type.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A person pushes on a wall with a force of $50\\ \\mathrm{N}$. Identify the reaction force: its size, direction, and which objects are involved.",
+        "phases": [
+          {
+            "label": "Name the given force",
+            "steps": [
+              "The person (A) exerts a $50\\ \\mathrm{N}$ push on the wall (B), directed into the wall."
+            ]
+          },
+          {
+            "label": "State the reaction",
+            "steps": [
+              "The wall (B) exerts a $50\\ \\mathrm{N}$ force back on the person (A), directed away from the wall (toward the person). Same size, opposite direction, same type (contact push)."
+            ]
+          },
+          {
+            "label": "Note",
+            "steps": [
+              "The wall pushes back with *exactly* $50\\ \\mathrm{N}$ — not less because it ‘can't push,’ and not zero. The person feels this push as resistance."
+            ]
+          }
+        ],
+        "keyMove": "Reaction = same size, opposite direction, other object exerting it — swap the two names."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L7-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A rocket engine pushes exhaust gas downward. What is the third-law reaction?",
+        "choices": [
+          "Gravity pulls the rocket down.",
+          "The exhaust gas pushes the rocket upward with an equal force.",
+          "Air resistance pushes the rocket down.",
+          "The rocket's fuel pushes the engine forward."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the rocket pushes the gas down; by Newton's third law the gas pushes the rocket up with an equal-size force. That upward push is the thrust.",
+          "incorrect": {
+            "0": "Gravity is a separate interaction (rocket–Earth), not the reaction to the rocket–gas push.",
+            "2": "Air resistance is a different interaction (rocket–air) and is not the reaction here.",
+            "3": "The action is the rocket (via its engine) pushing the *gas*. The reaction is the gas pushing back on the rocket."
+          }
+        },
+        "hint": [
+          "The action is ‘rocket pushes gas down.’ Swap the two objects: what does the gas do to the rocket?"
+        ],
+        "solution": "The engine pushes the exhaust gas downward (rocket on gas). By Newton's third law, the gas pushes back on the rocket with an equal-magnitude force in the opposite direction — upward. That reaction force is the rocket's thrust."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The two forces act on two different objects",
+      "concept": "The central discipline: **every third-law pair involves exactly two objects, and the two forces act on *different* objects — never on the same one.**\n\nUse the **two-objects test** for any stated force:\n\n1. What **exerted** the force?\n2. What did it **act on**?\n3. The reaction is exerted by the second object, acting on the first.\n\nSwimmer example: the swimmer's push acts **on the water**; the reaction (water pushing forward) acts **on the swimmer**. The two forces are on two different things.\n\nBecause the two forces act on different objects, they can **never cancel each other out** — you cannot add them on a single free-body diagram.",
+      "representation": "For a force “A on B”:\n\n- Action: A → B (force acts on B).\n- Reaction: B → A (force acts on A).\n- The two live on *different* free-body diagrams: one on B's, one on A's.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A swimmer pushes backward on the water with $50\\ \\mathrm{N}$. Identify the reaction and state exactly which object each force in the pair acts on.",
+        "phases": [
+          {
+            "label": "Two-objects test",
+            "steps": [
+              "What exerted the force? The swimmer. What did it act on? The water. So the action force ($50\\ \\mathrm{N}$ backward) acts **on the water**."
+            ]
+          },
+          {
+            "label": "Reaction",
+            "steps": [
+              "The water exerts a $50\\ \\mathrm{N}$ force forward **on the swimmer** — same size, opposite direction, same type (contact push)."
+            ]
+          },
+          {
+            "label": "Where each force lives",
+            "steps": [
+              "The swimmer's push goes on the *water's* free-body diagram. The water's push goes on the *swimmer's* free-body diagram. They are never on the same diagram, so they cannot cancel."
+            ]
+          }
+        ],
+        "keyMove": "Name what exerted it and what it acted on; the reaction swaps those two roles."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L7-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A student says: “The book on the table doesn't move because the table's push up and the book's push down on the table are a Newton's-third-law pair that cancels.” What is wrong?",
+        "choices": [
+          "Nothing — that is exactly why the book stays still.",
+          "The two forces in that pair act on *different* objects (one on the book, one on the table), so they cannot cancel. What keeps the book still is the balance of forces *on the book*: its weight and the table's normal force.",
+          "The book's push on the table is not a real force.",
+          "The pair does cancel, but only because the book is not moving."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a third-law pair acts on two different objects, so its two forces never cancel. The book is in equilibrium because the forces *on the book* (weight down, normal up) balance.",
+          "incorrect": {
+            "0": "The 'table pushes book up' and 'book pushes table down' forces act on different objects, so they can't cancel on either one.",
+            "2": "The book does push down on the table — that is a real contact force and the reaction to the table's push on the book.",
+            "3": "They never cancel, moving or not — they are on different objects."
+          }
+        },
+        "hint": [
+          "Which object does 'table pushes book up' act on? Which object does 'book pushes table down' act on? Can two forces on different objects cancel?"
+        ],
+        "solution": "‘Table pushes book up’ acts on the book; ‘book pushes table down’ acts on the table — different objects. Two forces on different objects can never cancel each other. The book stays still because the forces *on the book* — its weight and the table's normal force — are balanced. Those two are *not* a third-law pair (different types, same object)."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Third-law pairs versus balanced forces",
+      "concept": "These two ideas are constantly confused. Hold them apart:\n\n| | Third-law pair | Balanced forces |\n|---|---|---|\n| How many objects | **Two** | **One** |\n| Force types | **Same** type | Can be **different** types |\n| Sizes | Always equal | Equal *when balanced* |\n| Implies equilibrium? | **No** — says nothing about either object's motion | **Yes** — that one object has zero net force |\n\nBook on a table, fully resolved:\n\n- **Balanced forces on the book:** the book's weight (gravity, Earth on book) and the table's normal force (table on book). One object, two different types, they balance → the book is in equilibrium.\n- **A third-law pair:** the table's normal force on the book and the book's normal force on the table. Two objects, same type. This says nothing by itself about whether the book is in equilibrium.",
+      "representation": "For any two forces, run the test:\n\n- Same object? → candidate for **balanced forces** (check if they're equal and opposite).\n- Different objects, same type, equal and opposite? → **third-law pair** (and it tells you nothing about equilibrium).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A book of weight $8\\ \\mathrm{N}$ rests on a table. Identify (a) the balanced-forces pair on the book and (b) a third-law pair, and say which one tells you the book is in equilibrium.",
+        "phases": [
+          {
+            "label": "(a) Balanced forces on the book",
+            "steps": [
+              "The Earth pulls the book down with $8\\ \\mathrm{N}$ (gravity). The table pushes the book up with $8\\ \\mathrm{N}$ (normal). One object (the book), two different types, equal and opposite → the book is in equilibrium."
+            ]
+          },
+          {
+            "label": "(b) A third-law pair",
+            "steps": [
+              "The table pushes the book up with $8\\ \\mathrm{N}$ (normal, table on book). The book pushes the table down with $8\\ \\mathrm{N}$ (normal, book on table). Two objects, same type, equal and opposite."
+            ]
+          },
+          {
+            "label": "Which implies equilibrium",
+            "steps": [
+              "Only the balanced-forces pair in (a). The third-law pair in (b) would be equal and opposite even if the book were accelerating — it never implies equilibrium."
+            ]
+          }
+        ],
+        "keyMove": "‘One object, different types’ → balanced forces (implies equilibrium). ‘Two objects, same type’ → third-law pair (implies nothing about motion)."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L7-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A crate is accelerating upward in a lift. The lift floor pushes up on the crate; the crate pushes down on the floor. Which statement is correct?",
+        "choices": [
+          "The two forces are equal in size (a third-law pair), even though the crate is accelerating.",
+          "The floor's push must be larger than the crate's push, since the crate is accelerating up.",
+          "The two forces cancel, so the crate cannot be accelerating.",
+          "The crate's push on the floor is zero while it accelerates."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — a third-law pair is *always* equal in magnitude, regardless of motion. The crate accelerates because the forces *on the crate* (floor's push up vs. weight down) are unbalanced, not because the third-law pair is unequal.",
+          "incorrect": {
+            "1": "Third-law pair forces are always equal. What makes the crate accelerate is that the floor's push exceeds the crate's *weight* — a different comparison.",
+            "2": "The two forces act on different objects (crate and floor), so they never cancel on either one.",
+            "3": "The crate presses on the floor as hard as the floor presses on it — a non-zero force, equal to the floor's push."
+          }
+        },
+        "hint": [
+          "A third-law pair is equal in magnitude no matter what. The crate's acceleration comes from an imbalance among the forces *on the crate*."
+        ],
+        "solution": "The floor's push on the crate and the crate's push on the floor are a third-law pair — always equal in magnitude, even while the crate accelerates. The crate accelerates upward because, among the forces *on the crate*, the floor's upward push is greater than the crate's downward weight. Third-law equality and net-force imbalance are separate facts."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L7-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "larger-object-exerts-larger-force-in-collision",
+      "question": "A large truck collides head-on with a small car. During the collision, how do the forces the two vehicles exert on each other compare?",
+      "choices": [
+        "The truck exerts a much larger force on the car than the car exerts on the truck.",
+        "The two forces are equal in magnitude (a third-law pair); the car is damaged more because its smaller mass gives it a larger acceleration from that same force.",
+        "The car exerts a larger force, because it is moving faster.",
+        "Neither exerts a force until they are in contact for at least a second."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — by Newton's third law the truck's force on the car and the car's force on the truck are equal in magnitude. The car suffers more because $a = F/m$: the same force acting on the car's smaller mass produces a much larger (and more damaging) acceleration.",
+        "incorrect": {
+          "0": "Being larger or heavier does not make the truck exert a larger force. The forces in the collision pair are always equal.",
+          "2": "Speed does not change the third-law equality. Both vehicles feel the same size force during contact.",
+          "3": "The forces act the instant the vehicles touch — there is no delay."
+        }
+      },
+      "hint": [
+        "The two collision forces are a third-law pair — what does that say about their sizes? Then use $a = F/m$ to explain the different damage."
+      ],
+      "solution": "The truck's force on the car and the car's force on the truck are a Newton's-third-law pair, so they are equal in magnitude at every instant. The car is damaged more because it has much less mass: from $a = F/m$, the same force gives the car a far larger acceleration than it gives the truck, and that large acceleration is what causes the damage."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A horse pulls a cart forward along a level road, and the cart accelerates. A student says: “By Newton's third law, the cart pulls back on the horse with an equal force. So the forces cancel, and the cart cannot accelerate — this seems to break physics.”\n\nStudent's response: “The horse–cart pair is equal and opposite, so the net force is zero and there should be no acceleration.”",
+      "prompts": [
+        "State which object each force in the horse–cart third-law pair acts on.",
+        "Explain why those two forces do not cancel.",
+        "Explain what actually determines whether the cart accelerates."
+      ],
+      "modelResponse": "The horse's forward pull acts **on the cart**; the cart's backward pull acts **on the horse** — two different objects. Forces on different objects can never cancel each other, so 'equal and opposite' here does not give a net force of zero on either one. Whether the *cart* accelerates depends only on the forces acting *on the cart*: the horse's forward pull and the backward friction/drag on the cart. If the forward pull exceeds that resistance, the cart has a forward net force and accelerates. (Whether the *horse* moves forward is a separate question, decided by the forces on the horse — including the ground pushing its hooves forward.)",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "An interaction gives a third-law pair (two objects, same type, equal and opposite). Each object then gets its *own* free-body diagram (Lesson 3), and its own equilibrium or acceleration is decided by the forces on *it* (Lessons 4–5). Confusing the third-law pair with a balanced pair on one object is the classic error this lesson guards against.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L7-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Which pair of forces is a Newton's-third-law action–reaction pair?",
+      "choices": [
+        "The weight of a book and the normal force on the book from a table.",
+        "The Earth's gravitational pull on a satellite and the satellite's gravitational pull on the Earth.",
+        "The tension in a rope and the weight of the object it holds.",
+        "The forward push of a car's engine and the backward drag of the air on the car."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — two objects (Earth and satellite), the same interaction type (gravity), equal in magnitude, opposite in direction. That is a third-law pair.",
+        "incorrect": {
+          "0": "Both forces act on the *same* object (the book) and are different types (gravity vs. normal). That is a balanced pair, not a third-law pair.",
+          "2": "Both act on the same object (the hanging mass), and they are different types. Not a third-law pair.",
+          "3": "Both act on the same object (the car), and are different types (engine drive vs. air drag). Not a third-law pair."
+        }
+      },
+      "hint": [
+        "A third-law pair: two *different* objects, the *same* force type, equal and opposite. Only one option fits all three."
+      ],
+      "solution": "A Newton's-third-law pair needs two different objects, the same force type, equal in size and opposite in direction. The Earth–satellite gravity forces fit: gravity of Earth on satellite, and gravity of satellite on Earth. The other options are two forces on a *single* object, of *different* types — those are balanced-force pairs."
+    },
+    {
+      "id": "BP8-U3-L7-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "You jump off the ground. In the third-law pair for the push-off, what are the two forces and which objects do they act on?",
+      "choices": [
+        "Your feet push down on the Earth; the Earth pushes up on you — equal in size. You accelerate up a lot; the Earth accelerates down imperceptibly because of its enormous mass.",
+        "Your muscles push you up; gravity pushes you down — and gravity wins when the jump ends.",
+        "You push the air down; the air pushes you up.",
+        "Only one force acts: your legs pushing you upward."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — your feet exert a downward force on the Earth; the Earth exerts an equal upward force on you (the ground reaction). Same size, opposite direction. You gain a large upward acceleration; the Earth's is negligible because $a = F/m$ and its mass is vast.",
+        "incorrect": {
+          "1": "‘Muscles push you up’ and ‘gravity pushes you down’ are two forces on *you* — a net-force question, not a third-law pair.",
+          "2": "The push-off is against the *ground*, not the air. Pushing the air would barely lift you.",
+          "3": "Every force has a reaction. Your legs pushing *the ground* down comes with the ground pushing *you* up."
+        }
+      },
+      "hint": [
+        "What do your feet push on when you jump? Then swap: what pushes back on you, and how big is it?"
+      ],
+      "solution": "When you jump, your feet push down on the Earth, and by Newton's third law the Earth pushes up on you with an equal-magnitude force (the ground reaction) — this is what launches you. Both forces are the same size. You accelerate upward noticeably; the Earth accelerates downward by an utterly negligible amount because $a = F/m$ and the Earth's mass is enormous."
+    },
+    {
+      "id": "BP8-U3-L7-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $2.0\\ \\mathrm{kg}$ physics textbook lies at rest on a horizontal desk. Its weight is $19.6\\ \\mathrm{N}$.",
+      "parts": [
+        {
+          "prompt": "(a) Identify the two forces acting on the book, and state whether they are a Newton's-third-law pair. Justify.",
+          "modelResponse": "The forces on the book are: its weight, $19.6\\ \\mathrm{N}$ down (Earth on book, gravity); and the normal force, $19.6\\ \\mathrm{N}$ up (desk on book, contact). They are *not* a third-law pair: they act on the same object (the book) and are different types (gravity vs. normal). They are a *balanced* pair — equal and opposite because the book is in equilibrium.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) For each of the two forces in (a), state its Newton's-third-law reaction (what object exerts it, on what object, direction, size).",
+          "modelResponse": "Reaction to the weight: the book pulls the Earth *up* with a gravitational force of $19.6\\ \\mathrm{N}$ (book on Earth). Reaction to the normal force: the book pushes the desk *down* with a contact force of $19.6\\ \\mathrm{N}$ (book on desk).",
+          "points": 4
+        },
+        {
+          "prompt": "(c) A student claims: “The book is in equilibrium because the normal force and its Newton's-third-law reaction cancel.” Explain the error.",
+          "modelResponse": "The normal force (desk on book) and its reaction (book on desk) act on *different objects* — one on the book, one on the desk — so they can never cancel each other on either object. The book is in equilibrium because the forces acting *on the book* — its weight and the normal force — are balanced. Those two are a balanced pair (same object, different types), not a third-law pair.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "The 'third-law pair vs. balanced forces' distinction is one of the most heavily tested conceptual points in AP Physics 1 and IB mechanics — the truck/car collision, the horse/cart 'paradox', and the book/table analysis are all standard. Examiners look specifically for 'the two forces act on different objects.'",
+  "summary": "Newton's third law: if A pushes on B, then B pushes back on A with an equal-magnitude, opposite-direction force of the same type. The two forces of a pair always act on two *different* objects, so they never cancel on either one. Distinguish a third-law pair (two objects, same type, no equilibrium implication) from balanced forces (one object, possibly different types, implies equilibrium). Each object's own motion is decided by its own free-body diagram.",
+  "exitQuestion": {
+    "id": "BP8-U3-L7-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "An apple falls from a tree, accelerating downward at $9.8\\ \\mathrm{m/s^2}$. How does the gravitational force the apple exerts on the Earth compare with the force the Earth exerts on the apple?",
+    "choices": [
+      "Much smaller, because the apple is much less massive.",
+      "Equal in magnitude — they are a Newton's-third-law pair.",
+      "Zero — the apple is too small to pull the Earth.",
+      "Larger, because the apple is accelerating and the Earth is not."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the Earth's gravity on the apple and the apple's gravity on the Earth are a third-law pair, equal in magnitude and opposite in direction. The Earth's acceleration from that force is far too small to notice because its mass is enormous ($a = F/m$).",
+      "incorrect": {
+        "0": "The mass difference changes the *accelerations*, not the forces. The two gravitational forces are equal in size.",
+        "2": "Gravity is mutual: the apple pulls the Earth just as hard as the Earth pulls the apple.",
+        "3": "The forces are equal regardless of which object is accelerating more."
+      }
+    },
+    "hint": [
+      "Gravity between two masses is a mutual, equal pair (Lesson 1) — and a Newton's-third-law pair. What does that say about the two force magnitudes?"
+    ],
+    "solution": "The Earth's gravitational pull on the apple and the apple's gravitational pull on the Earth form a Newton's-third-law pair: equal in magnitude, opposite in direction, same type (gravity). The apple accelerates at $9.8\\ \\mathrm{m/s^2}$ and the Earth accelerates negligibly, because $a = F/m$ and the Earth's mass is vastly larger — but the forces themselves are exactly equal."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-176",
+    "BP8-U3-MCQ-177",
+    "BP8-U3-MCQ-178",
+    "BP8-U3-MCQ-183"
+  ],
+  "needsPlotly": false
+}

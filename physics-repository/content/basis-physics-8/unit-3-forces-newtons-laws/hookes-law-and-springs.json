@@ -1,0 +1,415 @@
+{
+  "id": "basis-p8-u3-l8",
+  "slug": "hookes-law-and-springs",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Hooke's law and springs",
+  "lessonTitle": "Hooke's Law and Springs",
+  "lessonNumber": "8",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_08_hookes_law.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Unit 2 Lesson 2 — the slope of a straight-line graph is rise over run.",
+    "Lesson 3 — forces have a direction; a signed value encodes it."
+  ],
+  "majorObjective": "State Hooke's law as a restoring force, calculate the spring force, spring constant, or displacement from $F_s = -kx$, and read the spring constant as the slope of a force–extension graph.",
+  "subObjectives": [
+    "State that a spring exerts a force proportional to its displacement from natural length, always directed back toward that natural length.",
+    "Explain that the minus sign in $F_s = -kx$ encodes 'force opposes displacement'; $k$ is always positive.",
+    "Solve $F_s = -kx$ for each of the three variables, and interpret the sign of the result physically.",
+    "Read $k$ as the slope of a linear force–extension graph (rise over run), with units $\\mathrm{N/m}$."
+  ],
+  "hook": {
+    "prompt": "You stretch a spring downward. Which way does the spring's force on your hand point?",
+    "choices": [
+      "Downward, in the direction you pulled.",
+      "Upward, back toward the spring's natural length.",
+      "There is no force until you let go.",
+      "Sideways, perpendicular to the stretch."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "A spring has a natural (relaxed) length. “Displacement” $x$ means how far the end has moved from that natural length — positive if stretched, negative if compressed.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Hooke's law: a restoring force",
+      "concept": "A spring exerts a force that is:\n\n- **proportional in size** to how far it is stretched or compressed from its natural length, and\n- always directed to **restore** the spring toward its natural length — a stretched spring **pulls back**; a compressed spring **pushes back**.\n\nIn symbols: $$F_s = -kx$$ where $x$ is the **signed** displacement (positive = stretched, negative = compressed) and $k > 0$ is the **spring constant**, a fixed property of that spring, in $\\mathrm{N/m}$.\n\nThe minus sign does **not** mean “the force is negative.” It means the force **opposes the displacement**: stretch it in the $+$ direction and the force is in the $-$ direction, and vice versa. The sign of the answer comes from $x$ and the leading minus — **never from $k$**, which is always positive.",
+      "representation": "For any spring situation:\n\n1. Which way is it displaced? Stretched → $x > 0$; compressed → $x < 0$.\n2. The force $F_s = -kx$ therefore points the *opposite* way — back toward natural length.\n3. Say in words what the sign means: e.g. “negative $F_s$ means the force points back toward the natural length, opposing the stretch.”",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A spring with $k = 200\\ \\mathrm{N/m}$ is stretched by $x = +0.15\\ \\mathrm{m}$. Find the spring force and describe its direction.",
+        "phases": [
+          {
+            "label": "Substitute",
+            "steps": [
+              "$F_s = -kx = -(200\\ \\mathrm{N/m})(+0.15\\ \\mathrm{m}) = -30\\ \\mathrm{N}$."
+            ]
+          },
+          {
+            "label": "Interpret the sign",
+            "steps": [
+              "The stretch was in the $+$ direction; the force came out negative, so the spring pulls in the $-$ direction — back toward its natural length. That is the restoring force."
+            ]
+          },
+          {
+            "label": "Size",
+            "steps": [
+              "The force has a magnitude of $30\\ \\mathrm{N}$. If you hold the spring stretched, you feel this $30\\ \\mathrm{N}$ pull."
+            ]
+          }
+        ],
+        "keyMove": "$F_s = -kx$: the minus sign flips the direction; $k$ stays positive."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L8-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A spring is compressed (pushed in from its natural length). Which way does its force point?",
+        "choices": [
+          "In the direction it was compressed, continuing the push.",
+          "Outward, back toward its natural length — it pushes back.",
+          "There is no force from a compressed spring, only from a stretched one.",
+          "The force depends on how fast it was compressed."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a spring's force always restores it toward its natural length. Compressed → it pushes outward; stretched → it pulls inward.",
+          "incorrect": {
+            "0": "The spring force opposes the displacement — it acts *against* the compression, not with it.",
+            "2": "A compressed spring pushes back just as a stretched spring pulls back. Both are restoring forces.",
+            "3": "Hooke's law depends on how far the spring is displaced ($x$), not on how fast."
+          }
+        },
+        "hint": [
+          "‘Restoring force’ — it always acts to return the spring to its natural length. Which way is that for a compressed spring?"
+        ],
+        "solution": "A spring exerts a restoring force: it always acts to return the spring toward its natural length. A stretched spring pulls its end back inward; a compressed spring pushes its end back outward. The size is $k|x|$; the speed of compression does not matter."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Solving F_s = -kx for each variable",
+      "concept": "$F_s = -kx$ links three quantities. Given any two, find the third:\n\n- **Spring force**, given $x$ and $k$: $F_s = -kx$ — keep the sign.\n- **Spring constant**, given $F_s$ and $x$: $k = \\dfrac{|F_s|}{|x|}$ — always report **positive** (it is a property of the spring, not a signed quantity). The same spring gives the *same* $k$ for any $F_s$ and $x$.\n- **Displacement**, given $F_s$ and $k$: $x = -\\dfrac{F_s}{k}$ — keep the sign, then say stretched ($x > 0$) or compressed ($x < 0$).\n\nAfter every calculation, state in words what the sign of the result means physically.",
+      "representation": "The three rearrangements, with the sign discipline:\n\n- $F_s = -kx$ (sign from $x$)\n- $k = |F_s| / |x|$ (always positive)\n- $x = -F_s / k$ (sign tells you stretched vs. compressed)",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A spring is stretched by $x = +0.12\\ \\mathrm{m}$ and pulls back with a force of magnitude $15.6\\ \\mathrm{N}$. Find (a) the spring constant $k$ and (b) the displacement that would produce a $26\\ \\mathrm{N}$ pull from the same spring.",
+        "phases": [
+          {
+            "label": "(a) Spring constant",
+            "steps": [
+              "The spring is stretched ($x = +0.12\\ \\mathrm{m}$) and the force pulls back (magnitude $15.6\\ \\mathrm{N}$).",
+              "$k = \\dfrac{|F_s|}{|x|} = \\dfrac{15.6\\ \\mathrm{N}}{0.12\\ \\mathrm{m}} = 130\\ \\mathrm{N/m}$ — reported positive."
+            ]
+          },
+          {
+            "label": "(b) Displacement for a 26 N pull",
+            "steps": [
+              "A pull *back* of $26\\ \\mathrm{N}$ means $F_s$ has magnitude $26\\ \\mathrm{N}$ and points opposite to the stretch.",
+              "$|x| = \\dfrac{|F_s|}{k} = \\dfrac{26}{130} = 0.20\\ \\mathrm{m}$ — the spring must be stretched by $0.20\\ \\mathrm{m}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": [
+              "$26\\ \\mathrm{N}$ is $\\tfrac{26}{15.6} \\approx 1.67$ times the original force, and $0.20\\ \\mathrm{m}$ is $\\tfrac{0.20}{0.12} \\approx 1.67$ times the original stretch — proportional, as Hooke's law requires."
+            ]
+          }
+        ],
+        "keyMove": "$k$ is always the same positive number for a given spring; use it to trade between force and displacement."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L8-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A spring stretches $0.040\\ \\mathrm{m}$ when a $10\\ \\mathrm{N}$ force is applied to it. What is its spring constant?",
+        "choices": [
+          "$250\\ \\mathrm{N/m}$",
+          "$0.40\\ \\mathrm{N/m}$",
+          "$40\\ \\mathrm{N/m}$",
+          "$-250\\ \\mathrm{N/m}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $k = \\dfrac{|F_s|}{|x|} = \\dfrac{10\\ \\mathrm{N}}{0.040\\ \\mathrm{m}} = 250\\ \\mathrm{N/m}$.",
+          "incorrect": {
+            "1": "$0.40\\ \\mathrm{N/m}$ is $|x|/|F_s|$ — the fraction is upside down. $k$ is force per unit displacement.",
+            "2": "$40\\ \\mathrm{N/m}$ would be $10 \\times 4$ or a decimal-place slip. $10 \\div 0.040 = 250$.",
+            "3": "$k$ is always reported as a positive number — the minus sign in Hooke's law belongs to the relationship, not to $k$."
+          }
+        },
+        "hint": [
+          "$k$ is force divided by displacement: $|F_s| / |x| = 10 / 0.040$."
+        ],
+        "solution": "The spring constant is the force per unit displacement: $k = \\dfrac{|F_s|}{|x|} = \\dfrac{10\\ \\mathrm{N}}{0.040\\ \\mathrm{m}} = 250\\ \\mathrm{N/m}$, reported as a positive value."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Spring constant from a force–extension graph",
+      "concept": "Plot the size of the force a spring needs against its extension: for a spring obeying Hooke's law, the graph is a **straight line through the origin**. The **spring constant is the slope** of that line:\n$$k = \\frac{\\text{rise}}{\\text{run}} = \\frac{\\Delta F}{\\Delta x}$$ read from two clearly marked points. This is the **same slope skill** from Unit 2's velocity–time graphs, applied to a new pair of axes; the units come out as $\\mathrm{N/m}$.\n\nA **steeper** line means a **stiffer** spring (larger $k$ — more force for the same extension).\n\n(A magnitude-only graph like this, with both axes non-negative, isolates the slope-reading skill from the sign reasoning of chunks 1–2 — a deliberate simplification.)",
+      "representation": "To read $k$ from a force–extension graph:\n\n1. Pick two clearly marked points on the line.\n2. Rise $= \\Delta F$ (in newtons); run $= \\Delta x$ (in metres).\n3. $k = \\Delta F / \\Delta x$, with units $\\mathrm{N/m}$.\n4. Steeper line → larger $k$ → stiffer spring.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_spring_g1.svg",
+          "caption": "A force–extension graph. The line is straight through the origin; its slope — rise over run between two marked points — is the spring constant $k = 50\\ \\mathrm{N/m}$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A force–extension graph for a spring is a straight line through the origin passing through $(0.20\\ \\mathrm{m},\\ 24\\ \\mathrm{N})$. Find the spring constant.",
+        "phases": [
+          {
+            "label": "Two points",
+            "steps": [
+              "The origin $(0,\\ 0)$ and the marked point $(0.20\\ \\mathrm{m},\\ 24\\ \\mathrm{N})$."
+            ]
+          },
+          {
+            "label": "Slope",
+            "steps": [
+              "$k = \\dfrac{\\Delta F}{\\Delta x} = \\dfrac{24\\ \\mathrm{N} - 0}{0.20\\ \\mathrm{m} - 0} = 120\\ \\mathrm{N/m}$."
+            ]
+          },
+          {
+            "label": "Interpret",
+            "steps": [
+              "It takes $120\\ \\mathrm{N}$ to stretch this spring by $1\\ \\mathrm{m}$ (or $12\\ \\mathrm{N}$ for $0.1\\ \\mathrm{m}$). A stiffer spring would give a steeper line."
+            ]
+          }
+        ],
+        "keyMove": "Slope of the force–extension line = $k$, in $\\mathrm{N/m}$ — the same slope method as any straight-line graph."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L8-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Two springs are graphed on the same force–extension axes. Spring P's line is steeper than spring Q's. What does that tell you?",
+        "choices": [
+          "Spring P has a larger spring constant — it is stiffer.",
+          "Spring P has a smaller spring constant — it stretches more easily.",
+          "Spring P has a longer natural length.",
+          "Nothing — slope on this graph has no physical meaning."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the slope of a force–extension graph is the spring constant $k$. A steeper line means a larger $k$: more force needed per unit of extension, i.e. a stiffer spring.",
+          "incorrect": {
+            "1": "A steeper line means *more* force per unit extension — harder to stretch, so a larger $k$, not a smaller one.",
+            "2": "Natural length is not shown on a force–extension graph (extension is measured from the natural length, wherever it is).",
+            "3": "The slope is exactly $k$ — it is the whole point of the graph."
+          }
+        },
+        "hint": [
+          "Slope $= \\Delta F / \\Delta x = k$. Steeper means more force for the same extension — stiffer or softer?"
+        ],
+        "solution": "On a force–extension graph the slope is the spring constant. Spring P's steeper line means it takes more force to produce the same extension — a larger $k$, meaning P is the stiffer spring."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L8-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "spring-constant-changes-with-applied-force",
+      "question": "A student stretches the same spring by two different amounts and gets $k = 120\\ \\mathrm{N/m}$ the first time and $k = 95\\ \\mathrm{N/m}$ the second time. What is the most likely explanation?",
+      "choices": [
+        "The spring constant genuinely changes when you pull harder.",
+        "A calculation error — for the same spring, $k$ should come out the same every time; the differing values are a signal to recheck the arithmetic or the readings.",
+        "The spring got permanently stretched, so $k$ dropped.",
+        "$k$ becomes negative when the spring is pulled far enough."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $k$ is a fixed property of a given spring, like inertial mass is a fixed property of an object. Two different values for the same spring means a mistake in the measurements or the calculation, not a real change in $k$.",
+        "incorrect": {
+          "0": "For a spring obeying Hooke's law, $k$ does not depend on how hard you pull — that is what makes the force–extension graph a straight line.",
+          "2": "Permanent stretching (past the elastic limit) is a real effect, but it is not the *expected* explanation for a routine calculation — recheck the work first.",
+          "3": "$k$ is always positive. The minus sign in $F_s = -kx$ belongs to the relationship, not to $k$."
+        }
+      },
+      "hint": [
+        "Is $k$ a property of the spring, or does it depend on the situation? What should happen if you measure it twice for the same spring?"
+      ],
+      "solution": "The spring constant $k$ is a fixed property of a given spring (as long as it obeys Hooke's law). Measuring it twice for the same spring should give the same value. Two noticeably different results point to an error — a misread displacement, a wrong force, or an arithmetic slip — not to $k$ actually changing."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A spring with $k = 300\\ \\mathrm{N/m}$ is compressed by $0.050\\ \\mathrm{m}$ (so $x = -0.050\\ \\mathrm{m}$). Find the spring force and state its direction.\n\nStudent's response: “$F_s = -kx = -(300)(-0.050) = +15\\ \\mathrm{N}$. The plus sign means the force points in the negative direction, back toward natural length. Wait — or does the plus mean it points in the positive direction? The sign of $k$ makes this confusing.”",
+      "prompts": [
+        "State what determines the sign of $F_s$ in $F_s = -kx$.",
+        "Identify the confusion in the student's reasoning.",
+        "Give the correct spring force with its sign and a clear physical description of its direction."
+      ],
+      "modelResponse": "The sign of $F_s$ comes from the signed displacement $x$ together with the leading minus sign — $k$ is always positive and never affects the sign. The student's arithmetic is fine ($F_s = -(300)(-0.050) = +15\\ \\mathrm{N}$) but the interpretation wavers. A positive $F_s$ means the force points in the *positive* direction. The spring was compressed ($x$ negative, i.e. the end was pushed in the negative direction), so the restoring force pushes it back out in the positive direction — which matches $F_s = +15\\ \\mathrm{N}$. So: the spring pushes outward with $15\\ \\mathrm{N}$, back toward its natural length. $k$ played no role in the sign.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal description ('stretched by $x$') gives a signed displacement; $F_s = -kx$ gives a signed restoring force; solving for $k$ gives a positive spring property; and a force–extension graph gives that same $k$ as its slope. The slope reading reuses Unit 2's straight-line-graph method exactly.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L8-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A spring obeys Hooke's law. When stretched $0.10\\ \\mathrm{m}$ it pulls back with $8.0\\ \\mathrm{N}$. How hard will it pull back when stretched $0.25\\ \\mathrm{m}$?",
+      "choices": [
+        "$20\\ \\mathrm{N}$",
+        "$8.0\\ \\mathrm{N}$",
+        "$3.2\\ \\mathrm{N}$",
+        "$0.80\\ \\mathrm{N}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — the force is proportional to the extension. $k = 8.0/0.10 = 80\\ \\mathrm{N/m}$, so at $0.25\\ \\mathrm{m}$ the force is $80 \\times 0.25 = 20\\ \\mathrm{N}$. (Or: $0.25$ is $2.5\\times$ the extension, so $2.5 \\times 8.0 = 20\\ \\mathrm{N}$.)",
+        "incorrect": {
+          "1": "The force is proportional to extension — more extension, more force. It does not stay at $8.0\\ \\mathrm{N}$.",
+          "2": "The force increases, not decreases, with extension.",
+          "3": "This divides instead of scaling up. Larger extension means larger force."
+        }
+      },
+      "hint": [
+        "Force is proportional to extension. $0.25\\ \\mathrm{m}$ is how many times $0.10\\ \\mathrm{m}$? Scale the force by the same factor."
+      ],
+      "solution": "By Hooke's law the spring force is proportional to the extension. The extension goes from $0.10\\ \\mathrm{m}$ to $0.25\\ \\mathrm{m}$, a factor of $2.5$, so the force scales by $2.5$: $8.0\\ \\mathrm{N} \\times 2.5 = 20\\ \\mathrm{N}$. (Equivalently, $k = 8.0/0.10 = 80\\ \\mathrm{N/m}$ and $F = 80 \\times 0.25 = 20\\ \\mathrm{N}$.)"
+    },
+    {
+      "id": "BP8-U3-L8-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "multi-representation-reasoning",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "A force–extension graph for a spring is a straight line from the origin to $(0.30\\ \\mathrm{m},\\ 18\\ \\mathrm{N})$. A student reads the slope as $18/0.30 = 60$ and writes “$k = 60$.” What, if anything, is missing or wrong?",
+      "choices": [
+        "The value is wrong — it should be $0.30/18$.",
+        "The value $60$ is right but the units are missing: $k = 60\\ \\mathrm{N/m}$.",
+        "The slope of this graph is not the spring constant.",
+        "The student should have used only the endpoint, not the origin."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the slope $\\Delta F / \\Delta x = 18\\ \\mathrm{N} / 0.30\\ \\mathrm{m} = 60\\ \\mathrm{N/m}$. The number is right; a spring constant must carry the unit $\\mathrm{N/m}$.",
+        "incorrect": {
+          "0": "$k$ is force per unit extension: rise over run, $\\Delta F / \\Delta x$, not the other way round. $18/0.30$ is correct.",
+          "2": "The slope of a force–extension graph is exactly the spring constant.",
+          "3": "Using the origin and the endpoint is fine — they are two points on the line. The slope is the same between any two points."
+        }
+      },
+      "hint": [
+        "The number came from rise/run correctly. What does every physical quantity need alongside its number?"
+      ],
+      "solution": "The slope is $\\dfrac{\\Delta F}{\\Delta x} = \\dfrac{18\\ \\mathrm{N}}{0.30\\ \\mathrm{m}} = 60$, and that is the spring constant. The only problem is the missing unit: the answer must be written $k = 60\\ \\mathrm{N/m}$ (newtons per metre)."
+    },
+    {
+      "id": "BP8-U3-L8-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "proportional-reasoning",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $0.50\\ \\mathrm{kg}$ mass hangs at rest from a vertical spring. Use $g = 9.8\\ \\mathrm{m/s^2}$, so the mass's weight is $4.9\\ \\mathrm{N}$. The spring is stretched $0.070\\ \\mathrm{m}$ beyond its natural length while the mass hangs there.",
+      "parts": [
+        {
+          "prompt": "(a) The mass hangs at rest. What is the size of the spring's force on it, and how do you know?",
+          "modelResponse": "The mass is in equilibrium, so the net force on it is zero. The only forces are the spring force (up) and the weight ($4.9\\ \\mathrm{N}$ down). So the spring force is $4.9\\ \\mathrm{N}$ upward — equal and opposite to the weight.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Find the spring constant $k$.",
+          "modelResponse": "$k = \\dfrac{|F_s|}{|x|} = \\dfrac{4.9\\ \\mathrm{N}}{0.070\\ \\mathrm{m}} = 70\\ \\mathrm{N/m}$ (reported positive).",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A second identical mass is added, so $1.0\\ \\mathrm{kg}$ now hangs from the spring. Predict the new extension without recalculating $k$, and explain.",
+          "modelResponse": "The hanging weight doubles ($4.9 \\to 9.8\\ \\mathrm{N}$), and at rest the spring force must again equal the weight. Since $k$ is unchanged and the spring force is proportional to the extension, doubling the force doubles the extension: $0.070\\ \\mathrm{m} \\to 0.14\\ \\mathrm{m}$. (Check: $k = 9.8 / 0.14 = 70\\ \\mathrm{N/m}$, the same spring constant.)",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Hooke's law appears on AP Physics 1 and IB Paper 1 both as a calculation ($F_s = -kx$, solve for any variable) and as a graph task (slope of a force–extension line = $k$). The restoring-force interpretation of the minus sign and 'k is a fixed positive property' are common conceptual scoring points; the graph slope reuses Unit 2's method.",
+  "summary": "A spring exerts a restoring force proportional to its displacement from natural length: $F_s = -kx$, with $x$ signed (stretched $+$, compressed $-$) and $k > 0$ a fixed property in $\\mathrm{N/m}$. The minus sign means 'force opposes displacement'; the sign of the answer comes from $x$, never from $k$. Solve for any of the three variables and interpret the sign in words. On a force–extension graph, $k$ is the slope (rise over run), and a steeper line is a stiffer spring.",
+  "exitQuestion": {
+    "id": "BP8-U3-L8-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "In Hooke's law $F_s = -kx$, what does the negative sign represent?",
+    "choices": [
+      "That the spring constant $k$ is a negative number.",
+      "That the spring force always opposes the displacement — it points back toward the natural length.",
+      "That the spring stores negative energy.",
+      "That the equation only works for compression, not stretching."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the minus sign encodes the direction rule: whichever way the spring is displaced, the force points the opposite way, restoring it toward natural length.",
+      "incorrect": {
+        "0": "$k$ is always positive. The minus sign is separate from $k$.",
+        "2": "Energy is not what the sign is about — it is a statement about the force's direction.",
+        "3": "The equation works for both: stretched gives $x > 0$ and a restoring force in the $-$ direction; compressed gives $x < 0$ and a restoring force in the $+$ direction."
+      }
+    },
+    "hint": [
+      "If $x$ is positive (stretched), what sign does $-kx$ give the force? Which direction is that relative to the stretch?"
+    ],
+    "solution": "The negative sign in $F_s = -kx$ means the spring force is always opposite in direction to the displacement. Stretch the spring in the positive direction ($x > 0$) and the force is negative (pulling back); compress it ($x < 0$) and the force is positive (pushing back out). It is a restoring force, and $k$ itself stays positive."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-211",
+    "BP8-U3-MCQ-212",
+    "BP8-U3-MCQ-216",
+    "BP8-U3-MCQ-239"
+  ],
+  "needsPlotly": false
+}

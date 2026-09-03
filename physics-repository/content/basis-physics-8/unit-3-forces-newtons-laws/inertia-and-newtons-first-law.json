@@ -1,0 +1,407 @@
+{
+  "id": "basis-p8-u3-l2",
+  "slug": "inertia-and-newtons-first-law",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Inertia and Newton's first law",
+  "lessonTitle": "Inertia and Newton's First Law",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_02_inertia_and_newtons_first_law.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Unit 2 — velocity is constant only when speed AND direction are both unchanged; acceleration is any change in velocity.",
+    "Lesson 1 — a force is a push or pull with a direction; gravity acts on every mass."
+  ],
+  "majorObjective": "Define inertial mass and inertia, state Newton's first law as the zero-net-force condition, and use it to classify an object's acceleration state from a verbal description.",
+  "subObjectives": [
+    "State that inertial mass is an object's resistance to acceleration: for the same net force, more mass gives less acceleration.",
+    "Distinguish inertia (the tendency to keep a state of motion) from inertial mass (its measure), and state that inertia is a property, not a force.",
+    "State Newton's first law: when the net external force is zero, the velocity stays constant (including zero).",
+    "From a description, decide whether the net force is zero or non-zero, and therefore whether the velocity is constant or changing."
+  ],
+  "hook": {
+    "prompt": "A spacecraft is coasting through deep space, far from any star, with its engines off. What is happening to its velocity?",
+    "choices": [
+      "It slowly decreases, because there is nothing to keep it moving.",
+      "It stays constant — with zero net force, the velocity does not change.",
+      "It increases, because there is no air resistance.",
+      "It cannot be determined without knowing the spacecraft's mass."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "“Net force” is the single force you get by combining all the forces on an object, keeping directions. This lesson is about what happens — and does not happen — to an object's motion when that net force is zero.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Inertial mass: resistance to acceleration",
+      "concept": "**Inertial mass** is the property of an object that sets how hard it is to change its motion. For the **same net force**, a larger inertial mass produces a **smaller acceleration**.\n\nPush an empty shopping cart and a fully loaded one with the same effort: the loaded cart speeds up much more slowly. Same push, more mass, less acceleration. That resistance to being accelerated is what “mass” measures in this unit.\n\n(This lesson builds the idea; the equation $F_{net} = ma$ that makes it a number is Lesson 5.)",
+      "representation": "To compare how two objects respond to the same net force:\n\n1. Same net force on both.\n2. The one with more inertial mass accelerates less.\n3. Double the mass → half the acceleration, for that same force.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "The same horizontal push is applied to a $2\\ \\mathrm{kg}$ block and to a $6\\ \\mathrm{kg}$ block, both on the same low-friction surface. Compare their accelerations.",
+        "phases": [
+          {
+            "label": "Same net force",
+            "steps": [
+              "The push is the same on both, and friction is small and similar, so the net force is essentially the same for each block."
+            ]
+          },
+          {
+            "label": "Compare the masses",
+            "steps": [
+              "The $6\\ \\mathrm{kg}$ block has three times the inertial mass of the $2\\ \\mathrm{kg}$ block."
+            ]
+          },
+          {
+            "label": "Compare the accelerations",
+            "steps": [
+              "For the same net force, three times the mass gives one-third the acceleration. The $6\\ \\mathrm{kg}$ block speeds up one-third as fast as the $2\\ \\mathrm{kg}$ block."
+            ]
+          }
+        ],
+        "keyMove": "Same force, more mass, less acceleration — mass is the resistance."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L2-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Two carts are given the same net force. Cart A speeds up faster than cart B. What can you conclude?",
+        "choices": [
+          "Cart A has less inertial mass than cart B.",
+          "Cart A has more inertial mass than cart B.",
+          "The two carts have equal inertial mass.",
+          "Cart B had no force applied to it."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — for the same net force, a smaller inertial mass gives a larger acceleration. Cart A accelerated more, so it has less mass.",
+          "incorrect": {
+            "1": "More inertial mass means *more* resistance to acceleration — it would speed up more slowly, not faster.",
+            "2": "Equal mass with the same net force would give equal acceleration. The carts accelerate differently.",
+            "3": "Both carts were given the same net force; the difference is their mass."
+          }
+        },
+        "hint": [
+          "Same net force. The one that accelerates more has less resistance to acceleration — less inertial mass."
+        ],
+        "solution": "For a fixed net force, acceleration and inertial mass are inversely related: smaller mass, larger acceleration. Cart A accelerated more, so cart A has the smaller inertial mass."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Inertia and Newton's first law",
+      "concept": "**Inertia** is the tendency of an object to keep doing what it is already doing — to maintain its state of motion. Inertial mass is the *measure* of that tendency.\n\nInertia is a **property**, not a force. It does not push or pull on the object; it is just the object's resistance to a change in motion.\n\n**Newton's first law:** when the net external force on an object is zero, its **velocity stays constant**. “Constant velocity” includes staying at rest (velocity zero) and moving in a straight line at a steady speed. A change in the motion — speeding up, slowing down, or turning — always means the net force is *not* zero.",
+      "representation": "Newton's first law works both ways:\n\n- Net force zero → velocity constant (at rest, or straight line at steady speed).\n- Velocity changing → net force is not zero.\n\nRemember: constant velocity does not mean “no forces.” It usually means several forces that **balance**.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A hockey puck slides across frictionless ice at a constant speed in a straight line. Identify the forces on it and state its acceleration.",
+        "phases": [
+          {
+            "label": "Identify the forces",
+            "steps": [
+              "Weight acts downward. The ice pushes up with a normal force. There is no friction (frictionless) and nothing pushing it horizontally."
+            ]
+          },
+          {
+            "label": "Find the net force",
+            "steps": [
+              "Vertically, the upward normal force balances the downward weight. Horizontally, there is no force at all. So the net force is zero."
+            ]
+          },
+          {
+            "label": "Apply Newton's first law",
+            "steps": [
+              "Zero net force → constant velocity → zero acceleration. The puck keeps sliding at the same speed in the same direction, with no force needed to ‘keep it going.’"
+            ]
+          }
+        ],
+        "keyMove": "A moving object with zero net force does not slow down — that is exactly what the first law says."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L2-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Which statement about inertia is correct?",
+        "choices": [
+          "Inertia is a force that pushes a moving object forward.",
+          "Inertia is a property — an object's tendency to keep its state of motion — measured by its inertial mass.",
+          "Inertia only acts on objects that are moving, not on objects at rest.",
+          "Inertia is the same as the net force on an object."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — inertia is a property, not a force. It is the resistance to a change in motion, and inertial mass is how much of it an object has.",
+          "incorrect": {
+            "0": "Inertia is not a force. A moving object with zero net force keeps moving because of the first law, not because inertia pushes it.",
+            "2": "Inertia applies to objects at rest too — a heavy object at rest is hard to start moving, which is inertia.",
+            "3": "Inertia is a property of the object; the net force is the combined push/pull acting on it. Different things."
+          }
+        },
+        "hint": [
+          "Is inertia something acting *on* the object (a force), or something *about* the object (a property)?"
+        ],
+        "solution": "Inertia is a property of an object — its tendency to keep moving the same way (or to stay at rest). It is not a force and does not act on the object. Inertial mass is the numerical measure of an object's inertia."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Classifying the acceleration state from a description",
+      "concept": "Given a description of a motion, decide the object's acceleration state in two steps:\n\n1. **Is the net force zero or non-zero?** Look at whether the forces balance.\n2. **Therefore, is the velocity constant or changing?** Zero net force → constant velocity (including at rest) → zero acceleration. Non-zero net force → changing velocity → non-zero acceleration.\n\nThe case students most often get wrong: **moving at a constant speed in a straight line**. That is zero acceleration — the object needs *no* net force to continue, so the forces on it balance.",
+      "representation": "Match the description to a state:\n\n- “at rest” / “parked” / “hanging still” → net force zero, acceleration zero.\n- “constant speed in a straight line” / “cruise control on a flat straight road” → net force zero, acceleration zero.\n- “speeding up” / “slowing down” / “turning” / “starting to move” → net force non-zero, acceleration non-zero.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify the acceleration state for each: (a) a book resting on a table; (b) a car speeding up from a stop light; (c) a train moving north at a steady $30\\ \\mathrm{m/s}$ on a straight track.",
+        "phases": [
+          {
+            "label": "(a) Book on a table",
+            "steps": [
+              "Weight down, normal force up, balanced. Net force zero → at rest → zero acceleration."
+            ]
+          },
+          {
+            "label": "(b) Car speeding up",
+            "steps": [
+              "‘Speeding up’ means the velocity is changing. So the net force is not zero, and the acceleration is not zero — it points forward, the direction the speed is increasing."
+            ]
+          },
+          {
+            "label": "(c) Train at steady 30 m/s, straight",
+            "steps": [
+              "Speed constant, direction constant → velocity constant. Net force zero, zero acceleration — even though the train is moving fast. The forces on it (including the engine's drive and the resisting friction/drag) balance."
+            ]
+          }
+        ],
+        "keyMove": "Constant speed in a straight line is a zero-acceleration state, exactly like being at rest."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L2-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A plane cruises in a straight line at a constant $250\\ \\mathrm{m/s}$. What is the net force on it?",
+        "choices": [
+          "A large forward net force, to keep it moving so fast.",
+          "Zero — constant velocity means the forces (thrust, drag, lift, weight) balance.",
+          "A net force equal to the plane's weight, pointing down.",
+          "It cannot be zero, because the engines are clearly doing work."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the speed and direction are both constant, so the velocity is constant, so by Newton's first law the net force is zero. Thrust balances drag; lift balances weight.",
+          "incorrect": {
+            "0": "A forward net force would make the plane speed up. At a constant speed the forward thrust is exactly cancelled by air drag.",
+            "2": "The downward weight is balanced by the upward lift, so it does not contribute to a non-zero net force here.",
+            "3": "The engines run to *balance* drag, not to produce a net force. Constant velocity still means zero net force."
+          }
+        },
+        "hint": [
+          "Constant speed and constant direction → constant velocity. What does the first law then say about the net force?"
+        ],
+        "solution": "Constant speed in a straight line is constant velocity. Newton's first law says a constant velocity means the net force is zero: the engine's forward thrust is balanced by air drag, and the wings' lift is balanced by the weight. Fast, steady motion needs no net force."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L2-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "motion-requires-a-sustaining-force",
+      "question": "A puck slides across frictionless ice at a steady speed. A student says: “There must be a forward force on the puck — otherwise it would stop.” What is wrong?",
+      "choices": [
+        "Nothing — a forward force is needed to keep anything moving.",
+        "A moving object with zero net force keeps moving at a constant velocity; no forward force is needed once it is going.",
+        "The puck is actually slowing down, just very slowly.",
+        "The forward force comes from the puck's own inertia."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — Newton's first law: with zero net force the velocity stays constant. On frictionless ice there is nothing to slow the puck, so it keeps sliding with no forward force at all.",
+        "incorrect": {
+          "0": "This is the everyday intuition, but it is wrong. Objects slow down because of friction and drag, not because they ‘run out of force.’ Remove those and motion continues indefinitely.",
+          "2": "Frictionless means truly nothing opposing the motion — the puck does not slow at all.",
+          "3": "Inertia is not a force. It is the reason the puck keeps moving, but it does not push."
+        }
+      },
+      "hint": [
+        "On frictionless ice, what force would slow the puck down? If there is none, what does the first law predict?"
+      ],
+      "solution": "The everyday feeling that ‘things need a force to keep moving’ comes from friction and air resistance, which are always present in daily life. On frictionless ice there is no horizontal force at all, the net force is zero, and Newton's first law says the velocity stays constant — the puck slides forever with no forward force."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A crate is being dragged across a rough floor at a constant velocity by a steady horizontal pull of $80\\ \\mathrm{N}$. Friction on the crate is $80\\ \\mathrm{N}$ backward. What is the crate's acceleration?\n\nStudent's response: “There is an $80\\ \\mathrm{N}$ pull, so there is a net force of $80\\ \\mathrm{N}$ forward. That gives a forward acceleration.”",
+      "prompts": [
+        "State what ‘net force’ means and how to compute it here.",
+        "Identify the first step that is wrong.",
+        "Give the correct net force and acceleration, and connect the answer to Newton's first law and the stated motion."
+      ],
+      "modelResponse": "The net force is the combination of *all* horizontal forces, keeping their directions: the $80\\ \\mathrm{N}$ pull forward and the $80\\ \\mathrm{N}$ friction backward. The wrong step is ‘there is a net force of $80\\ \\mathrm{N}$ forward’ — that uses the pull alone and ignores friction. Correct: net force $= 80\\ \\mathrm{N} - 80\\ \\mathrm{N} = 0$. Zero net force means zero acceleration, which matches the stated ‘constant velocity.’ By Newton's first law, a constant velocity requires the forces to balance — here the pull and friction are equal and opposite.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal scenario becomes a net-force judgment (do the forces balance?), which becomes an acceleration-state classification (constant vs. changing velocity). This is the same judgment used throughout the unit — equilibrium (Lesson 4) is the same idea under a different name, and $F_{net} = ma$ (Lesson 5) makes it quantitative.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L2-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Which of these objects has a non-zero acceleration?",
+      "choices": [
+        "A satellite drifting through deep space with its engines off, far from any planet.",
+        "A car rounding a curve at a constant speed of $40\\ \\mathrm{km/h}$.",
+        "A crate sitting motionless on a warehouse floor.",
+        "A train moving north on a straight track at a steady $25\\ \\mathrm{m/s}$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — rounding a curve changes the *direction* of the velocity, so the velocity is changing, so the acceleration is non-zero (and the net force is non-zero, pointing toward the centre of the curve).",
+        "incorrect": {
+          "0": "Far from any planet with engines off, the net force is essentially zero, so the velocity is constant — zero acceleration.",
+          "2": "Motionless with balanced weight and normal force — zero net force, zero acceleration.",
+          "3": "Constant speed and constant direction → constant velocity → zero acceleration."
+        }
+      },
+      "hint": [
+        "Acceleration is any change in velocity — including a change in direction. Which object's velocity is changing?"
+      ],
+      "solution": "Acceleration is a change in velocity, and velocity includes direction. The car rounding a curve at constant speed still has a changing velocity (its direction keeps changing), so it has a non-zero acceleration. The other three all have a constant velocity — at rest, or a straight line at steady speed — and so zero acceleration."
+    },
+    {
+      "id": "BP8-U3-L2-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "Astronaut A has a mass of $60\\ \\mathrm{kg}$; astronaut B has a mass of $90\\ \\mathrm{kg}$. Both float at rest in the space station and are given an identical gentle push. Which statement is correct?",
+      "choices": [
+        "Both drift off at the same speed, since they are weightless.",
+        "Astronaut A drifts off faster, because A has less inertial mass and so accelerates more from the same push.",
+        "Astronaut B drifts off faster, because more mass means more momentum.",
+        "Neither moves, because there is no gravity to pull them."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — inertial mass still resists acceleration in space. The same push gives astronaut A (less mass) a larger acceleration, so A reaches a higher speed and drifts off faster.",
+        "incorrect": {
+          "0": "Weightlessness removes the *gravitational* force, not the inertial mass. A and B still resist being accelerated differently.",
+          "2": "The lighter astronaut ends up moving faster from the same push. Momentum is not what the question asks about.",
+          "3": "No gravity does not mean no motion — a push is a force, and it produces an acceleration."
+        }
+      },
+      "hint": [
+        "In space there is no weight, but inertial mass is unchanged. Same push, less mass → ?"
+      ],
+      "solution": "Inertial mass — resistance to acceleration — does not depend on gravity. In the space station both astronauts are weightless, but astronaut A's smaller inertial mass means the same push produces a larger acceleration for A, so A ends up moving faster."
+    },
+    {
+      "id": "BP8-U3-L2-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A delivery van is driving along a straight, level road. Over one stretch of the trip its speedometer holds steady at $50\\ \\mathrm{km/h}$. The engine is running and the driver is holding the accelerator pedal down.",
+      "parts": [
+        {
+          "prompt": "(a) State the van's acceleration during this stretch, and the net force on it. Justify using Newton's first law.",
+          "modelResponse": "The speed is constant ($50\\ \\mathrm{km/h}$) and the road is straight, so the velocity is constant — zero acceleration. By Newton's first law, a constant velocity means the net force is zero.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) The engine is clearly pushing the van forward. Explain how the net force can still be zero.",
+          "modelResponse": "The engine's forward driving force is exactly balanced by the backward forces on the van — mainly air resistance (drag) and rolling friction. These add up to the same size as the driving force, so the horizontal forces cancel and the net force is zero. (Vertically, the road's normal force balances the weight.)",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A passenger says: “If the driver lifted off the accelerator, the van would keep going at $50\\ \\mathrm{km/h}$, because of inertia.” Evaluate this claim.",
+          "modelResponse": "Only partly right. Inertia means the van resists a change in its motion, so it would not stop instantly. But lifting off the accelerator removes the forward driving force while drag and rolling friction still act backward — now the net force is non-zero and backward, so the van decelerates. It slows down gradually, not staying at $50\\ \\mathrm{km/h}$. Inertia only keeps velocity constant when the net force is zero.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Newton's first law and the ‘constant velocity means zero net force’ idea are among the most-tested points in AP and IB mechanics, usually as a trap: a fast-moving object at constant velocity has zero net force. This lesson's classification skill is reused for equilibrium (Lesson 4) and extended by $F_{net} = ma$ (Lesson 5).",
+  "summary": "Inertial mass is an object's resistance to acceleration: for the same net force, more mass gives less acceleration. Inertia is the tendency to keep a state of motion — a property, not a force. Newton's first law: zero net force means constant velocity (at rest, or a straight line at steady speed); a changing velocity means a non-zero net force. Constant velocity does not mean ‘no forces’ — it means the forces balance.",
+  "exitQuestion": {
+    "id": "BP8-U3-L2-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "An elevator moves upward at a constant $2\\ \\mathrm{m/s}$. How does the tension in the cable compare with the elevator's weight?",
+    "choices": [
+      "The tension is greater than the weight, because the elevator is moving up.",
+      "The tension is equal to the weight, because the velocity is constant so the net force is zero.",
+      "The tension is less than the weight, because the elevator is not accelerating.",
+      "It cannot be determined without the elevator's speed."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — constant velocity means zero net force. The upward tension must exactly balance the downward weight.",
+      "incorrect": {
+        "0": "Moving upward at a *constant* speed does not require a net upward force — only starting to move up (accelerating) would.",
+        "2": "If tension were less than the weight, the net force would be downward and the elevator would be slowing or accelerating downward — not moving up at a steady speed.",
+        "3": "The speed value does not matter. Constant velocity of any size means zero net force, so tension equals weight."
+      }
+    },
+    "hint": [
+      "Constant velocity → zero net force → the two vertical forces (tension up, weight down) must be equal."
+    ],
+    "solution": "The elevator moves at a constant velocity, so by Newton's first law the net force is zero. The only vertical forces are the cable tension (up) and the weight (down), so they must be equal in size. The direction or speed of the steady motion does not change this."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-026",
+    "BP8-U3-MCQ-029",
+    "BP8-U3-MCQ-032",
+    "BP8-U3-MCQ-041"
+  ],
+  "needsPlotly": false
+}

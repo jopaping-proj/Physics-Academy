@@ -1,0 +1,414 @@
+{
+  "id": "basis-p8-u3-l5",
+  "slug": "newtons-second-law",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Newton's second law",
+  "lessonTitle": "Newton's Second Law",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_05_newtons_second_law.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Lesson 2 — inertial mass is resistance to acceleration; zero net force means zero acceleration.",
+    "Lesson 3 — draw a free-body diagram and compute a signed net force along an axis.",
+    "Lesson 4 — equilibrium is the zero-net-force case."
+  ],
+  "majorObjective": "Use $F_{net} = ma$ to relate net force, mass, and acceleration: find acceleration from a free-body diagram, and reason qualitatively from a description to the direction and relative size of the acceleration.",
+  "subObjectives": [
+    "State that $F_{net} = ma$: acceleration is in the same direction as the net force, its size set by the net force divided by the mass.",
+    "State the qualitative relationships: more net force → more acceleration (direct); more mass → less acceleration for the same force (inverse).",
+    "From a free-body diagram, compute the signed acceleration ($a = F_{net}/m$) with units and a stated direction.",
+    "From a verbal description, state the direction of the acceleration (same as the net force) and compare its size to a reference case."
+  ],
+  "hook": {
+    "prompt": "A net force of $12\\ \\mathrm{N}$ east acts on a $3\\ \\mathrm{kg}$ cart. What is the cart's acceleration?",
+    "choices": [
+      "$36\\ \\mathrm{m/s^2}$ east",
+      "$4\\ \\mathrm{m/s^2}$ east",
+      "$4\\ \\mathrm{m/s^2}$ west",
+      "$0.25\\ \\mathrm{m/s^2}$ east"
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "When the net force is zero the acceleration is zero — that is equilibrium (Lesson 4). This lesson covers the general case: what happens when the net force is not zero.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "F_net = ma: the general relationship",
+      "concept": "**Newton's second law:** $$F_{net} = ma$$ The acceleration of an object points **in the same direction as the net force**, and its size is the net force divided by the (inertial) mass.\n\nEquilibrium (Lesson 4) is the special case $F_{net} = 0$, which gives $a = 0$. The second law extends this: a non-zero net force produces an acceleration.\n\nTwo qualitative relationships fall straight out of the equation:\n\n- **More net force → more acceleration** (direct — double the force, double the acceleration).\n- **More mass → less acceleration** for the same force (inverse — double the mass, half the acceleration). This is inertial mass from Lesson 2 as a number.",
+      "representation": "Read the equation three ways:\n\n- Given $F_{net}$ and $m$: $a = F_{net}/m$ (find the acceleration).\n- Given $m$ and $a$: $F_{net} = ma$ (find the net force needed).\n- Given $F_{net}$ and $a$: $m = F_{net}/a$ (find the mass).\n\nThe sign of $a$ always matches the sign of $F_{net}$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A net force of $20.0\\ \\mathrm{N}$ east acts on a $10.0\\ \\mathrm{kg}$ cart. Find the cart's acceleration. Then predict the acceleration if the same force acted on a $40.0\\ \\mathrm{kg}$ cart.",
+        "phases": [
+          {
+            "label": "First cart",
+            "steps": [
+              "$a = \\dfrac{F_{net}}{m} = \\dfrac{20.0\\ \\mathrm{N}}{10.0\\ \\mathrm{kg}} = 2.0\\ \\mathrm{m/s^2}$, east (same direction as the net force)."
+            ]
+          },
+          {
+            "label": "Heavier cart, same force",
+            "steps": [
+              "The mass is four times larger, so for the same net force the acceleration is one-quarter: $a = \\dfrac{20.0}{40.0} = 0.5\\ \\mathrm{m/s^2}$, still east."
+            ]
+          },
+          {
+            "label": "Check the pattern",
+            "steps": [
+              "$\\times 4$ mass → $\\times \\tfrac{1}{4}$ acceleration, for the same force. Direct with force, inverse with mass."
+            ]
+          }
+        ],
+        "keyMove": "Acceleration = net force over mass; direction of $a$ = direction of the net force."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L5-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "The net force on an object stays the same, but its mass is tripled. What happens to its acceleration?",
+        "choices": [
+          "It triples.",
+          "It becomes one-third of what it was.",
+          "It stays the same.",
+          "It becomes nine times smaller."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $a = F_{net}/m$. With $F_{net}$ fixed, tripling $m$ divides $a$ by $3$.",
+          "incorrect": {
+            "0": "Acceleration and mass are inversely related for a fixed force, not directly. More mass means *less* acceleration.",
+            "2": "Only if the force also tripled. With the force unchanged, more mass means less acceleration.",
+            "3": "That would be an inverse-*square* relationship. $F_{net} = ma$ is a simple inverse: $\\times 3$ mass → $\\times \\tfrac{1}{3}$ acceleration."
+          }
+        },
+        "hint": [
+          "$a = F_{net}/m$. If $F_{net}$ is fixed and $m$ triples, what happens to the fraction?"
+        ],
+        "solution": "From $F_{net} = ma$, the acceleration is $a = F_{net}/m$. Holding $F_{net}$ constant and tripling $m$ makes the denominator three times larger, so the acceleration becomes one-third of its original value."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Acceleration from a free-body diagram",
+      "concept": "The full chain for a numerical problem:\n\n1. **Identify the forces** (Lesson 3) and draw the free-body diagram.\n2. **Sum to the net force**, signed, along the axis of motion (Lesson 3).\n3. **Divide by the mass:** $a = F_{net}/m$.\n4. **Report** the acceleration with a size, a sign (= direction), and units, and state the direction in words.\n\nThe most common slip is losing the sign between step 2 and step 4 — the sign of $a$ must match the sign of $F_{net}$.",
+      "representation": "Keep the two arithmetic steps separate:\n\n- Step A: $F_{net} = (\\text{sum of signed forces})$.\n- Step B: $a = F_{net} / m$.\n\nNever combine them into one mental calculation — write $F_{net}$ down first.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_fbd_g1.svg",
+          "caption": "A pushed box on the floor: the horizontal net force is the applied force minus friction. Divide that by the box's mass for its acceleration, in the direction of the net force."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Two horizontal forces act on a $6.0\\ \\mathrm{kg}$ sled on ice: a $45.0\\ \\mathrm{N}$ applied force forward and $12.0\\ \\mathrm{N}$ of friction backward. Find the sled's acceleration.",
+        "phases": [
+          {
+            "label": "Net force (forward positive)",
+            "steps": [
+              "$F_{net} = (+45.0\\ \\mathrm{N}) + (-12.0\\ \\mathrm{N}) = +33.0\\ \\mathrm{N}$ — net force $33.0\\ \\mathrm{N}$ forward."
+            ]
+          },
+          {
+            "label": "Divide by mass",
+            "steps": [
+              "$a = \\dfrac{F_{net}}{m} = \\dfrac{+33.0\\ \\mathrm{N}}{6.0\\ \\mathrm{kg}} = +5.5\\ \\mathrm{m/s^2}$."
+            ]
+          },
+          {
+            "label": "Report",
+            "steps": [
+              "The acceleration is $5.5\\ \\mathrm{m/s^2}$ forward — same direction as the net force. The sled speeds up in the direction of the pull."
+            ]
+          }
+        ],
+        "keyMove": "Net force first, then divide by mass; carry the sign all the way to the answer."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L5-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "Take east as positive. A $4.0\\ \\mathrm{kg}$ block has two horizontal forces on it: $30\\ \\mathrm{N}$ east and $50\\ \\mathrm{N}$ west. What is its acceleration?",
+        "choices": [
+          "$5.0\\ \\mathrm{m/s^2}$ west",
+          "$5.0\\ \\mathrm{m/s^2}$ east",
+          "$20\\ \\mathrm{m/s^2}$ west",
+          "$0\\ \\mathrm{m/s^2}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $F_{net} = (+30) + (-50) = -20\\ \\mathrm{N}$ (west). $a = -20/4.0 = -5.0\\ \\mathrm{m/s^2}$, i.e. $5.0\\ \\mathrm{m/s^2}$ west.",
+          "incorrect": {
+            "1": "The net force points west (the $50\\ \\mathrm{N}$ wins), so the acceleration points west, not east.",
+            "2": "$20\\ \\mathrm{N}$ is the net force. You still have to divide by the $4.0\\ \\mathrm{kg}$ mass.",
+            "3": "The forces are not equal ($30$ vs $50$), so they do not cancel. There is a net westward force."
+          }
+        },
+        "hint": [
+          "Net force $= (+30) + (-50)$. Then $a = F_{net}/m$, keeping the sign."
+        ],
+        "solution": "$F_{net} = (+30\\ \\mathrm{N}) + (-50\\ \\mathrm{N}) = -20\\ \\mathrm{N}$ (net force west). $a = F_{net}/m = (-20\\ \\mathrm{N})/(4.0\\ \\mathrm{kg}) = -5.0\\ \\mathrm{m/s^2}$ — an acceleration of $5.0\\ \\mathrm{m/s^2}$ to the west."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Reasoning about acceleration from a description",
+      "concept": "Without an FBD or numbers, you can still say two things about the acceleration from a description:\n\n- **Direction:** the acceleration points **the same way as the net force**. Work out which way the forces are unbalanced.\n- **Relative size:** compare with a reference case using $a = F_{net}/m$. More net force or less mass → more acceleration.\n\nThis is the same verbal reasoning used for Newton's first law and equilibrium, extended to non-zero net force.",
+      "representation": "For a described situation:\n\n1. Which way are the forces unbalanced? → that is the direction of the acceleration.\n2. Compared with a reference: is the net force bigger/smaller? Is the mass bigger/smaller? → combine to say the acceleration is bigger or smaller.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A car and a loaded truck each have their brakes applied with the same braking force. The truck is much more massive. Compare their decelerations (the size of their accelerations).",
+        "phases": [
+          {
+            "label": "Direction",
+            "steps": [
+              "For both, the braking force opposes the motion, so the net force — and the acceleration — points backward (a deceleration)."
+            ]
+          },
+          {
+            "label": "Relative size",
+            "steps": [
+              "Same net force, but the truck has much more mass. From $a = F_{net}/m$, more mass → smaller acceleration."
+            ]
+          },
+          {
+            "label": "Conclusion",
+            "steps": [
+              "The truck decelerates more slowly than the car and takes longer (and farther) to stop, even with the same braking force."
+            ]
+          }
+        ],
+        "keyMove": "Direction of $a$ = direction of net force; size of $a$ compares net force to mass."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L5-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A box moves to the right. Friction (the only horizontal force) acts to the left. What is the direction of the box's acceleration?",
+        "choices": [
+          "To the right, the direction it is moving.",
+          "To the left, the direction of the net force.",
+          "Zero — friction just keeps the speed steady.",
+          "It depends on how fast the box is moving."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the acceleration always points the same way as the net force. The only horizontal force is friction (left), so the net force is left and the acceleration is left. The box slows down.",
+          "incorrect": {
+            "0": "Acceleration is not ‘in the direction of motion.’ It is in the direction of the *net force*, which here is opposite the motion.",
+            "2": "An unbalanced friction force cannot keep the speed steady — it produces an acceleration that slows the box.",
+            "3": "The direction of the acceleration is set by the net force, not by the speed. (Speed only affects how long it takes to stop.)"
+          }
+        },
+        "hint": [
+          "Acceleration points the same way as the net force. What is the only horizontal force here?"
+        ],
+        "solution": "By Newton's second law the acceleration is in the direction of the net force. The only horizontal force is friction, pointing left, so the net force is left and the acceleration is left — opposite to the motion, which is why the box slows down."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L5-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "net-force-equals-a-single-applied-force",
+      "question": "A $5.0\\ \\mathrm{kg}$ box is pushed forward with $40\\ \\mathrm{N}$ while $15\\ \\mathrm{N}$ of friction acts backward. A student computes $a = 40/5.0 = 8.0\\ \\mathrm{m/s^2}$. What is the error?",
+      "choices": [
+        "Nothing — the applied force is what causes the acceleration.",
+        "The acceleration must use the *net* force: $F_{net} = 40 - 15 = 25\\ \\mathrm{N}$, so $a = 25/5.0 = 5.0\\ \\mathrm{m/s^2}$.",
+        "The mass should be added to the friction first.",
+        "The friction should be added to the push: $a = 55/5.0 = 11\\ \\mathrm{m/s^2}$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $F_{net} = ma$ uses the net force, not one force. Here $F_{net} = (+40) + (-15) = +25\\ \\mathrm{N}$, so $a = 25/5.0 = 5.0\\ \\mathrm{m/s^2}$ forward.",
+        "incorrect": {
+          "0": "$F_{net} = ma$ specifically means the *net* force. The student used the applied force alone and ignored friction.",
+          "2": "Mass and force are different quantities and are never added together.",
+          "3": "Friction opposes the push, so it subtracts. $F_{net} = 40 - 15 = 25\\ \\mathrm{N}$, not $55$."
+        }
+      },
+      "hint": [
+        "The $m$ in $F_{net} = ma$ multiplies the acceleration. The force on the left is the *net* force. Did the student compute the net force?"
+      ],
+      "solution": "Newton's second law is $F_{net} = ma$ — the net force. The student divided the *applied* force by the mass, ignoring friction. Correct: $F_{net} = (+40\\ \\mathrm{N}) + (-15\\ \\mathrm{N}) = +25\\ \\mathrm{N}$, then $a = F_{net}/m = 25/5.0 = 5.0\\ \\mathrm{m/s^2}$ forward."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Take up as positive. A $2.0\\ \\mathrm{kg}$ bucket is pulled straight up by a rope with a tension of $26\\ \\mathrm{N}$. Its weight is $19.6\\ \\mathrm{N}$. Find the bucket's acceleration.\n\nStudent's response: “The tension is $26\\ \\mathrm{N}$ and the mass is $2.0\\ \\mathrm{kg}$, so $a = 26/2.0 = 13\\ \\mathrm{m/s^2}$ upward.”",
+      "prompts": [
+        "State which force goes into $F_{net} = ma$.",
+        "Identify the first wrong step.",
+        "Give the correct net force and acceleration, with direction, and a quick check of the sign."
+      ],
+      "modelResponse": "$F_{net} = ma$ uses the *net* force — the signed sum of all vertical forces. The wrong step is $a = 26/2.0$, which uses the tension alone and ignores the weight. Correct: $F_{net} = (+26\\ \\mathrm{N}) + (-19.6\\ \\mathrm{N}) = +6.4\\ \\mathrm{N}$ (up). Then $a = F_{net}/m = 6.4/2.0 = +3.2\\ \\mathrm{m/s^2}$ — an acceleration of $3.2\\ \\mathrm{m/s^2}$ upward. Check: the tension ($26\\ \\mathrm{N}$) exceeds the weight ($19.6\\ \\mathrm{N}$), so the net force and the acceleration should be upward, which they are.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A scenario becomes a free-body diagram, then a signed net force (Lesson 3), then an acceleration via $a = F_{net}/m$. Equilibrium (Lesson 4) is the $F_{net} = 0$ special case. The acceleration then connects back to Unit 2's kinematics — a constant net force gives a constant acceleration, which drives the velocity and position over time.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L5-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $1200\\ \\mathrm{kg}$ car experiences a forward driving force of $4000\\ \\mathrm{N}$ and a total resisting force (drag + friction) of $1000\\ \\mathrm{N}$. What is its acceleration?",
+      "choices": [
+        "$2.5\\ \\mathrm{m/s^2}$ forward",
+        "$3.3\\ \\mathrm{m/s^2}$ forward",
+        "$4.2\\ \\mathrm{m/s^2}$ forward",
+        "$0.83\\ \\mathrm{m/s^2}$ forward"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $F_{net} = 4000 - 1000 = 3000\\ \\mathrm{N}$ forward. $a = 3000/1200 = 2.5\\ \\mathrm{m/s^2}$ forward.",
+        "incorrect": {
+          "1": "$3.3\\ \\mathrm{m/s^2}$ uses the driving force alone ($4000/1200$), ignoring the resisting force.",
+          "2": "This looks like $5000/1200$ — adding the resisting force instead of subtracting it.",
+          "3": "This divides the resisting force by the mass ($1000/1200$). Use the net force."
+        }
+      },
+      "hint": [
+        "Net force = driving force minus resisting force. Then divide by the mass."
+      ],
+      "solution": "$F_{net} = 4000\\ \\mathrm{N} - 1000\\ \\mathrm{N} = 3000\\ \\mathrm{N}$ forward. $a = F_{net}/m = 3000\\ \\mathrm{N} / 1200\\ \\mathrm{kg} = 2.5\\ \\mathrm{m/s^2}$ forward."
+    },
+    {
+      "id": "BP8-U3-L5-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A net force $F$ gives a $2\\ \\mathrm{kg}$ object an acceleration of $6\\ \\mathrm{m/s^2}$. The net force is then doubled and the mass is tripled. What is the new acceleration?",
+      "choices": [
+        "$4\\ \\mathrm{m/s^2}$",
+        "$6\\ \\mathrm{m/s^2}$",
+        "$9\\ \\mathrm{m/s^2}$",
+        "$36\\ \\mathrm{m/s^2}$"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — doubling $F_{net}$ multiplies $a$ by $2$; tripling $m$ multiplies $a$ by $\\tfrac{1}{3}$. New $a = 6 \\times 2 \\times \\tfrac{1}{3} = 4\\ \\mathrm{m/s^2}$.",
+        "incorrect": {
+          "1": "The two changes do not cancel: $\\times 2$ from the force and $\\times \\tfrac{1}{3}$ from the mass give $\\times \\tfrac{2}{3}$ overall.",
+          "2": "This applies only the force change. The mass tripled too, which reduces the acceleration.",
+          "3": "This multiplies by $2$ and by $3$. Mass is in the *denominator* of $a = F_{net}/m$, so tripling it *divides* the acceleration by $3$."
+        }
+      },
+      "hint": [
+        "$a = F_{net}/m$. Force factor: $\\times 2$. Mass factor: $\\times \\tfrac{1}{3}$ (it is in the denominator). Multiply them into the original $a$."
+      ],
+      "solution": "From $a = F_{net}/m$: doubling the net force multiplies $a$ by $2$; tripling the mass multiplies $a$ by $\\tfrac{1}{3}$. Net factor $= 2 \\times \\tfrac{1}{3} = \\tfrac{2}{3}$. New acceleration $= 6\\ \\mathrm{m/s^2} \\times \\tfrac{2}{3} = 4\\ \\mathrm{m/s^2}$."
+    },
+    {
+      "id": "BP8-U3-L5-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "Take up as positive. A $50\\ \\mathrm{kg}$ crate hangs from a crane cable. Use $g = 9.8\\ \\mathrm{m/s^2}$, so the crate's weight is $490\\ \\mathrm{N}$.",
+      "parts": [
+        {
+          "prompt": "(a) The crane raises the crate with an acceleration of $1.2\\ \\mathrm{m/s^2}$ upward. Find the cable tension.",
+          "modelResponse": "Newton's second law (up positive): $F_{net} = ma = (50)(+1.2) = +60\\ \\mathrm{N}$. The vertical forces are tension $T$ up and weight $490\\ \\mathrm{N}$ down: $T - 490 = +60$, so $T = 550\\ \\mathrm{N}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) The crane then lowers the crate with an acceleration of $1.2\\ \\mathrm{m/s^2}$ downward. Find the new cable tension.",
+          "modelResponse": "Now $a = -1.2\\ \\mathrm{m/s^2}$, so $F_{net} = ma = (50)(-1.2) = -60\\ \\mathrm{N}$. $T - 490 = -60$, so $T = 430\\ \\mathrm{N}$ — less than the weight, because the crate is accelerating downward.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) A worker says: “The tension always equals the weight, $490\\ \\mathrm{N}$, because the crane is holding the crate.” Use your answers to (a) and (b) to explain why this is wrong.",
+          "modelResponse": "The tension equals the weight only when the acceleration is zero (constant velocity or at rest — equilibrium). When the crate accelerates upward the tension must exceed the weight (to provide an upward net force): $550\\ \\mathrm{N}$ in (a). When it accelerates downward the tension is less than the weight: $430\\ \\mathrm{N}$ in (b). The tension depends on the acceleration, not just on the crate hanging there.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "$F_{net} = ma$ is the core equation of AP Physics 1 and IB mechanics. The full chain — free-body diagram → signed net force → divide by mass — and the trap that tension ≠ weight when accelerating are recurring high-value items. This lesson also connects forces back to Unit 2's kinematics.",
+  "summary": "Newton's second law: $F_{net} = ma$. The acceleration is in the direction of the net force, with size $F_{net}/m$ — direct with net force, inverse with mass. For a numerical problem: draw the free-body diagram, sum to a signed net force, then $a = F_{net}/m$, keeping the sign. For a described situation: the acceleration direction matches the net force, and its size compares net force to mass. Equilibrium is the $F_{net} = 0$ case.",
+  "exitQuestion": {
+    "id": "BP8-U3-L5-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "free-body-diagram",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "question": "A $3.0\\ \\mathrm{kg}$ object is at rest on a frictionless floor. A steady $6.0\\ \\mathrm{N}$ horizontal force is applied. After $2.0\\ \\mathrm{s}$, how fast is it moving?",
+    "choices": [
+      "$4.0\\ \\mathrm{m/s}$",
+      "$2.0\\ \\mathrm{m/s}$",
+      "$12\\ \\mathrm{m/s}$",
+      "$6.0\\ \\mathrm{m/s}$"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $a = F_{net}/m = 6.0/3.0 = 2.0\\ \\mathrm{m/s^2}$. Starting from rest, after $2.0\\ \\mathrm{s}$: $v = at = (2.0)(2.0) = 4.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "$2.0\\ \\mathrm{m/s}$ is the acceleration value ($2.0\\ \\mathrm{m/s^2}$) with the wrong unit — you still need to multiply by the time.",
+        "2": "$12\\ \\mathrm{m/s}$ would use $a = 6.0\\ \\mathrm{m/s^2}$ (the force, not the force over the mass).",
+        "3": "$6.0\\ \\mathrm{m/s}$ is the applied force value. Find the acceleration first, then $v = at$."
+      }
+    },
+    "hint": [
+      "First $a = F_{net}/m$. Then use the constant-acceleration result $v = v_i + at$ with $v_i = 0$."
+    ],
+    "solution": "Newton's second law: $a = F_{net}/m = 6.0\\ \\mathrm{N} / 3.0\\ \\mathrm{kg} = 2.0\\ \\mathrm{m/s^2}$. The floor is frictionless so the net force stays constant, and the object starts from rest: $v = v_i + at = 0 + (2.0\\ \\mathrm{m/s^2})(2.0\\ \\mathrm{s}) = 4.0\\ \\mathrm{m/s}$."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-111",
+    "BP8-U3-MCQ-112",
+    "BP8-U3-MCQ-113",
+    "BP8-U3-MCQ-135"
+  ],
+  "needsPlotly": false
+}

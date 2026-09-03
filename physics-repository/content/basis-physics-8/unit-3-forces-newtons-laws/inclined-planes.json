@@ -1,0 +1,419 @@
+{
+  "id": "basis-p8-u3-l6",
+  "slug": "inclined-planes",
+  "course": "BASIS Physics 8",
+  "courses": [
+    "basis-physics-8"
+  ],
+  "unit": "Unit 3: Forces and Newton's Laws",
+  "topic": "Inclined planes",
+  "lessonTitle": "Inclined Planes",
+  "lessonNumber": "6",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/rescue_sprint/unit_03_forces/lessons/module_06_inclined_planes.md",
+  "sourceApproval": "Founder-approved under DEC-040 (adapted to Physics Academy rigor)",
+  "prerequisites": [
+    "Unit 2 Lesson 8 — SOHCAHTOA: opposite/adjacent relative to a reference angle; the component along the adjacent side uses cosine.",
+    "Lesson 3 — free-body diagrams and signed net force.",
+    "Lesson 5 — $a = F_{net}/m$."
+  ],
+  "majorObjective": "Identify the forces on an object on an incline, resolve gravity into components parallel and perpendicular to the surface, and calculate the net force and acceleration along the incline, with and without friction.",
+  "subObjectives": [
+    "Draw the normal force perpendicular to the incline surface (not vertical).",
+    "Resolve gravity: $mg\\sin\\theta$ down the slope (parallel), $mg\\cos\\theta$ into the slope (perpendicular).",
+    "State that the normal force equals $mg\\cos\\theta$ because the perpendicular acceleration is zero — not because it always equals the full weight.",
+    "Add friction as a parallel force of magnitude $\\mu F_N$ opposing the slide, then find the net force along the incline and $a = F_{net}/m$."
+  ],
+  "hook": {
+    "prompt": "A block sits on a frictionless ramp tilted at angle $\\theta$. Which way does the normal force from the ramp point?",
+    "choices": [
+      "Straight up (vertically).",
+      "Perpendicular to the ramp surface, away from it.",
+      "Down the slope, in the direction the block would slide.",
+      "Straight down, opposite to the normal force on a flat floor."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "On an incline the natural axes are *along* the slope and *perpendicular* to the slope, not horizontal and vertical. Gravity still points straight down, so it has a component along each of the incline's axes.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Forces on an incline, and the tilted normal force",
+      "concept": "An object on a tilted surface has:\n\n- **Weight** ($F_g = mg$): straight down, as always.\n- **Normal force** ($F_N$): **perpendicular to the incline surface, pointing away from it** — not vertical. This is the key visual change from a flat-surface diagram.\n- **Applied force** or **friction**, if present.\n\nBecause the object does not accelerate *into* or *out of* the surface, the forces perpendicular to the incline balance. But the forces *along* the slope generally do not — that is what makes the object slide.",
+      "representation": "Set up the incline diagram:\n\n1. Draw the ramp at angle $\\theta$ from the horizontal.\n2. Weight arrow straight down from the object's centre.\n3. Normal-force arrow perpendicular to the ramp surface, away from it.\n4. Choose axes: one *along* the slope, one *perpendicular* to it.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-3/forces-bank/u3_incline_g1.svg",
+          "caption": "A block on a $30^\\circ$ incline. The weight $F_g = mg$ points straight down; the normal force is perpendicular to the ramp surface. The weight resolves into $mg\\sin\\theta$ down the slope and $mg\\cos\\theta$ into the slope."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A crate rests on a ramp tilted at $20^\\circ$. State the forces on the crate and the direction of each, and choose the axes.",
+        "phases": [
+          {
+            "label": "Forces",
+            "steps": [
+              "Weight: straight down. Normal force: perpendicular to the ramp surface, pointing up and away from it. No applied force; assume frictionless for now."
+            ]
+          },
+          {
+            "label": "Axes",
+            "steps": [
+              "Use ‘down the slope’ as the positive along-incline direction, and ‘away from the surface’ as the positive perpendicular direction."
+            ]
+          },
+          {
+            "label": "What balances, what doesn't",
+            "steps": [
+              "Perpendicular to the slope: the normal force and the perpendicular part of gravity balance (no perpendicular acceleration). Along the slope: only gravity's parallel part acts — nothing balances it, so the crate slides down."
+            ]
+          }
+        ],
+        "keyMove": "Normal force is perpendicular to the *surface*, and the useful axes are along/perpendicular to the slope."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L6-FC-001",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "developing",
+        "cognitiveLevel": 3,
+        "question": "A block is on a frictionless incline. Which forces act on it?",
+        "choices": [
+          "Weight and the normal force only.",
+          "Weight, the normal force, and a force pushing it down the slope.",
+          "Weight only — the incline exerts no force.",
+          "The normal force only."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — on a frictionless incline the only forces are the weight (straight down) and the normal force (perpendicular to the surface). There is no separate ‘down-the-slope force.’",
+          "incorrect": {
+            "1": "There is no extra ‘down-the-slope force.’ The block slides down because part of *gravity* points along the slope — it is not a new force.",
+            "2": "The incline pushes on the block with a normal force wherever they are in contact.",
+            "3": "Weight always acts on an object with mass, incline or not."
+          }
+        },
+        "hint": [
+          "What is touching the block (→ normal force)? What non-contact force always acts (→ weight)? Is there anything else?"
+        ],
+        "solution": "On a frictionless incline the block touches only the ramp, so it feels a normal force perpendicular to the surface, plus its weight straight down. The block slides down because a component of the weight points along the slope — that is gravity resolved, not an additional force."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Resolving gravity: mg sinθ and mg cosθ",
+      "concept": "Gravity points straight down, but the incline's axes are tilted. Split the weight into two components using the incline angle $\\theta$ as the reference angle (SOHCAHTOA from Unit 2):\n\n- **Along the slope (down the ramp):** $mg\\sin\\theta$ — this is the component that makes the object slide.\n- **Perpendicular to the slope (into the surface):** $mg\\cos\\theta$ — this is balanced by the normal force.\n\nSo on an incline, **$F_N = mg\\cos\\theta$**, not $mg$. The normal force is whatever value keeps the perpendicular acceleration zero — on a flat surface ($\\theta = 0$) that is the full $mg$; on an incline part of gravity now pulls along the surface instead of into it, so $F_N$ is smaller.\n\nFor the **frictionless** case, the net force along the slope is just $mg\\sin\\theta$, so $a = g\\sin\\theta$ (the mass cancels).",
+      "representation": "The incline component recipe:\n\n1. Reference angle $= \\theta$ (the incline's tilt).\n2. Parallel (down-slope) component of weight $= mg\\sin\\theta$.\n3. Perpendicular (into-slope) component of weight $= mg\\cos\\theta$; the normal force equals this.\n4. Frictionless net force along the slope $= mg\\sin\\theta$; acceleration $= g\\sin\\theta$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $12.0\\ \\mathrm{kg}$ crate is released from rest on a frictionless $25^\\circ$ incline. Use $g = 9.8\\ \\mathrm{m/s^2}$, $\\sin 25^\\circ \\approx 0.42$, $\\cos 25^\\circ \\approx 0.91$. Find the normal force and the crate's acceleration down the slope.",
+        "phases": [
+          {
+            "label": "Weight",
+            "steps": [
+              "$F_g = mg = (12.0)(9.8) = 117.6\\ \\mathrm{N}$ straight down."
+            ]
+          },
+          {
+            "label": "Perpendicular balance → normal force",
+            "steps": [
+              "Perpendicular component of weight $= mg\\cos 25^\\circ = 117.6 \\times 0.91 \\approx 107\\ \\mathrm{N}$.",
+              "No perpendicular acceleration → $F_N = 107\\ \\mathrm{N}$ (less than the full $117.6\\ \\mathrm{N}$ weight)."
+            ]
+          },
+          {
+            "label": "Along the slope → acceleration",
+            "steps": [
+              "Net force down the slope (frictionless) $= mg\\sin 25^\\circ = 117.6 \\times 0.42 \\approx 49\\ \\mathrm{N}$.",
+              "$a = \\dfrac{F_{net}}{m} = \\dfrac{49}{12.0} \\approx 4.1\\ \\mathrm{m/s^2}$ down the slope. (Equivalently $a = g\\sin 25^\\circ = 9.8 \\times 0.42 \\approx 4.1\\ \\mathrm{m/s^2}$.)"
+            ]
+          }
+        ],
+        "keyMove": "$\\sin\\theta$ for the along-slope (sliding) part, $\\cos\\theta$ for the into-slope part; the normal force matches the $\\cos\\theta$ part."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L6-FC-002",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "free-body-diagram",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A block of weight $50\\ \\mathrm{N}$ sits on a frictionless $30^\\circ$ incline ($\\sin 30^\\circ = 0.50$, $\\cos 30^\\circ \\approx 0.87$). What is the normal force from the incline?",
+        "choices": [
+          "$\\approx 43\\ \\mathrm{N}$",
+          "$50\\ \\mathrm{N}$",
+          "$25\\ \\mathrm{N}$",
+          "$\\approx 58\\ \\mathrm{N}$"
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the normal force balances the perpendicular component of the weight: $F_N = mg\\cos 30^\\circ = 50 \\times 0.87 \\approx 43\\ \\mathrm{N}$.",
+          "incorrect": {
+            "1": "$50\\ \\mathrm{N}$ is the full weight, which the normal force equals only on a *flat* surface. On an incline it is $mg\\cos\\theta$, less than the weight.",
+            "2": "$25\\ \\mathrm{N}$ is $mg\\sin 30^\\circ$ — that is the *along-slope* component, not the normal force.",
+            "3": "The normal force cannot exceed the weight on a simple incline; it is $mg\\cos\\theta < mg$."
+          }
+        },
+        "hint": [
+          "The normal force balances the part of gravity pressing *into* the surface: $mg\\cos\\theta$, using the incline angle."
+        ],
+        "solution": "The block does not accelerate perpendicular to the surface, so the normal force equals the perpendicular component of the weight: $F_N = mg\\cos\\theta = 50\\ \\mathrm{N} \\times \\cos 30^\\circ \\approx 50 \\times 0.87 \\approx 43\\ \\mathrm{N}$ — less than the full weight, because on an incline some of gravity acts along the slope instead."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Adding friction",
+      "concept": "Friction on an incline is an extra force **along the slope**, with:\n\n- **Magnitude:** $|F_f| = \\mu F_N = \\mu\\, mg\\cos\\theta$ (using the incline normal force from chunk 2).\n- **Direction:** **opposite to the sliding**, or opposite to the direction the object *would* slide if it is not yet moving — **never** assumed to point along the motion.\n\nThe recipe:\n\n1. Find $F_N = mg\\cos\\theta$.\n2. Find $F_f = \\mu F_N$.\n3. Net force along the slope $=$ (down-slope gravity component) $\\pm$ (friction), signed — friction subtracts when the object slides down.\n4. $a = F_{net}/m$ along the slope.",
+      "representation": "For an object sliding *down* a rough incline (take down-slope as positive):\n\n- Gravity along slope: $+mg\\sin\\theta$\n- Friction (opposes the downward slide): $-\\mu\\, mg\\cos\\theta$\n- $F_{net} = mg\\sin\\theta - \\mu\\, mg\\cos\\theta$\n- $a = g(\\sin\\theta - \\mu\\cos\\theta)$",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "The same $12.0\\ \\mathrm{kg}$ crate on the $25^\\circ$ incline, now with $\\mu = 0.20$. Find its acceleration down the slope. Use $g = 9.8$, $\\sin 25^\\circ \\approx 0.42$, $\\cos 25^\\circ \\approx 0.91$.",
+        "phases": [
+          {
+            "label": "Normal force and friction",
+            "steps": [
+              "$F_N = mg\\cos 25^\\circ = 117.6 \\times 0.91 \\approx 107\\ \\mathrm{N}$.",
+              "$F_f = \\mu F_N = 0.20 \\times 107 \\approx 21\\ \\mathrm{N}$, up the slope (opposing the downward slide)."
+            ]
+          },
+          {
+            "label": "Net force along the slope (down positive)",
+            "steps": [
+              "Gravity component: $+mg\\sin 25^\\circ \\approx +49\\ \\mathrm{N}$.",
+              "Friction: $-21\\ \\mathrm{N}$.",
+              "$F_{net} = (+49) + (-21) = +28\\ \\mathrm{N}$ down the slope."
+            ]
+          },
+          {
+            "label": "Acceleration",
+            "steps": [
+              "$a = \\dfrac{F_{net}}{m} = \\dfrac{28}{12.0} \\approx 2.3\\ \\mathrm{m/s^2}$ down the slope — less than the frictionless $4.1\\ \\mathrm{m/s^2}$, as expected."
+            ]
+          }
+        ],
+        "keyMove": "Friction magnitude comes from $\\mu\\, mg\\cos\\theta$; it subtracts from the down-slope gravity component."
+      },
+      "formativeCheck": {
+        "id": "BP8-U3-L6-FC-003",
+        "courses": [
+          "basis-physics-8"
+        ],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "free-body-diagram",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 4,
+        "question": "A crate slides *up* a rough incline (someone gave it a shove and let go). While it is moving up, which way does friction on it point?",
+        "choices": [
+          "Up the slope, helping it along.",
+          "Down the slope, opposing the upward slide.",
+          "Perpendicular to the slope.",
+          "There is no friction once the crate is moving."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — friction opposes the relative sliding. The crate slides up, so kinetic friction points down the slope. (Gravity's component also points down the slope, so the crate decelerates quickly.)",
+          "incorrect": {
+            "0": "Friction never ‘helps along’ a slide — it always opposes the relative motion.",
+            "2": "Friction acts *along* the surface (parallel to the slope), not perpendicular to it. The perpendicular force is the normal force.",
+            "3": "A moving object on a rough surface still has kinetic friction — it just switches from static to kinetic."
+          }
+        },
+        "hint": [
+          "Friction opposes the *sliding*. The crate is sliding up, so friction points…?"
+        ],
+        "solution": "Kinetic friction always opposes the relative sliding motion. The crate is sliding up the incline, so friction points down the slope. Together with gravity's down-slope component, this makes the crate decelerate rapidly as it goes up."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U3-L6-MC-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "misconceptionTested": "normal-force-always-equals-weight",
+      "question": "A student calculating friction on a $40^\\circ$ incline uses $F_f = \\mu\\, mg$ (with $mg$ the full weight). What is wrong, and what is a good way to check the correct expression?",
+      "choices": [
+        "Nothing — the normal force always equals the weight.",
+        "On an incline $F_N = mg\\cos\\theta$, not $mg$, so $F_f = \\mu\\, mg\\cos\\theta$. Check: at $\\theta = 0^\\circ$, $\\cos 0^\\circ = 1$ and the flat-surface result $F_f = \\mu\\, mg$ is recovered.",
+        "The student should use $F_N = mg\\sin\\theta$.",
+        "Friction on an incline does not depend on the normal force."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the normal force is $mg\\cos\\theta$ on an incline, so friction is $\\mu\\, mg\\cos\\theta$. Setting $\\theta = 0^\\circ$ gives $\\cos 0^\\circ = 1$ and recovers the flat-surface $\\mu\\, mg$, a good sanity check.",
+        "incorrect": {
+          "0": "The normal force equals the full weight only on a horizontal surface. On an incline part of gravity acts along the slope, so $F_N$ is smaller: $mg\\cos\\theta$.",
+          "2": "$mg\\sin\\theta$ is the *along-slope* component of gravity, not the normal force. The normal force balances the *perpendicular* component, $mg\\cos\\theta$.",
+          "3": "Friction magnitude is $\\mu F_N$ — it depends entirely on the normal force."
+        }
+      },
+      "hint": [
+        "The normal force balances the part of gravity pressing into the surface. On an incline is that the full weight or a component of it?"
+      ],
+      "solution": "On an incline the normal force equals the perpendicular component of the weight, $F_N = mg\\cos\\theta$ — not the full weight. So $F_f = \\mu F_N = \\mu\\, mg\\cos\\theta$. A reliable check: substitute $\\theta = 0^\\circ$ (flat surface); $\\cos 0^\\circ = 1$, and the expression correctly reduces to $\\mu\\, mg$."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A block is released from rest on a frictionless $37^\\circ$ incline ($\\sin 37^\\circ = 0.60$, $\\cos 37^\\circ = 0.80$, $g = 9.8\\ \\mathrm{m/s^2}$). Find its acceleration down the slope.\n\nStudent's response: “The force down the slope is $mg\\cos 37^\\circ$, so $a = g\\cos 37^\\circ = 9.8 \\times 0.80 = 7.84\\ \\mathrm{m/s^2}$.”",
+      "prompts": [
+        "State which component of gravity acts *along* the slope.",
+        "Identify the swapped trig function in the student's work.",
+        "Give the correct acceleration and a sanity check using a limiting case."
+      ],
+      "modelResponse": "The component of gravity *along* the slope (the one that makes the block slide) is $mg\\sin\\theta$, not $mg\\cos\\theta$. The student swapped sine and cosine. Correct: $a = g\\sin 37^\\circ = 9.8 \\times 0.60 = 5.88\\ \\mathrm{m/s^2}$ down the slope. Sanity check: as $\\theta \\to 90^\\circ$ (a vertical drop), the acceleration should approach $g$; $\\sin 90^\\circ = 1$ gives $a = g$, which is correct. Using cosine would (wrongly) give $a \\to 0$ for a vertical drop.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "An incline scenario becomes a free-body diagram with a tilted normal force; gravity is resolved with the incline angle (Unit 2 SOHCAHTOA) into $mg\\sin\\theta$ along and $mg\\cos\\theta$ perpendicular; the normal force matches the perpendicular part; friction is $\\mu F_N$ along the slope; and $a = F_{net}/m$ (Lesson 5) finishes the job — unchanged, just on tilted axes.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U3-L6-LA-001",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "question": "A block is released from rest on a frictionless incline. On a steeper incline (larger $\\theta$), its acceleration down the slope is:",
+      "choices": [
+        "larger, because $\\sin\\theta$ increases with $\\theta$",
+        "smaller, because $\\cos\\theta$ decreases with $\\theta$",
+        "the same — it is always $g$",
+        "zero until the incline is vertical"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — frictionless acceleration down the slope is $a = g\\sin\\theta$, and $\\sin\\theta$ grows as $\\theta$ increases (from $0$ at $\\theta = 0^\\circ$ to $g$ at $\\theta = 90^\\circ$).",
+        "incorrect": {
+          "1": "The frictionless acceleration is $g\\sin\\theta$, which uses sine, not cosine — and it increases with $\\theta$.",
+          "2": "The acceleration is $g$ only for a vertical drop ($\\theta = 90^\\circ$). On a gentle slope it is much less.",
+          "3": "Even a slight tilt gives a non-zero $g\\sin\\theta$."
+        }
+      },
+      "hint": [
+        "Frictionless: $a = g\\sin\\theta$. What does $\\sin\\theta$ do as $\\theta$ goes from $0^\\circ$ toward $90^\\circ$?"
+      ],
+      "solution": "For a frictionless incline the acceleration down the slope is $a = g\\sin\\theta$ (the mass cancels). As the incline gets steeper, $\\sin\\theta$ increases — from $0$ on a flat surface to $g$ for a vertical drop — so the acceleration is larger on a steeper incline."
+    },
+    {
+      "id": "BP8-U3-L6-LA-002",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A $10\\ \\mathrm{kg}$ box is at rest on a $30^\\circ$ incline and does *not* slide. The down-slope component of its weight is $mg\\sin 30^\\circ = 49\\ \\mathrm{N}$. What is the friction force on the box?",
+      "choices": [
+        "$49\\ \\mathrm{N}$ up the slope",
+        "$49\\ \\mathrm{N}$ down the slope",
+        "$\\mu\\, mg\\cos 30^\\circ$, whatever that equals",
+        "Zero — the box is not moving"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — the box is in equilibrium along the slope, so friction must exactly balance the $49\\ \\mathrm{N}$ down-slope gravity component: $49\\ \\mathrm{N}$ up the slope. (Static friction adjusts itself up to its maximum.)",
+        "incorrect": {
+          "1": "Friction opposes the tendency to slide. Gravity pulls the box down the slope, so friction points *up* the slope.",
+          "2": "$\\mu\\, mg\\cos\\theta$ is the *maximum* static friction. The actual static friction is only as large as needed — here $49\\ \\mathrm{N}$ — as long as that is within the maximum.",
+          "3": "If friction were zero the box would slide. It is at rest, so static friction is holding it — equal and opposite to the $49\\ \\mathrm{N}$ pull."
+        }
+      },
+      "hint": [
+        "The box is at rest, so the forces along the slope balance. What must friction equal to cancel the $49\\ \\mathrm{N}$ down-slope pull?"
+      ],
+      "solution": "The box is in equilibrium, so the net force along the slope is zero. The only along-slope forces are gravity's component ($49\\ \\mathrm{N}$ down the slope) and static friction. So static friction is $49\\ \\mathrm{N}$ up the slope — exactly balancing gravity. Static friction takes whatever value is needed, up to its maximum $\\mu\\, mg\\cos\\theta$."
+    },
+    {
+      "id": "BP8-U3-L6-LA-003",
+      "courses": [
+        "basis-physics-8"
+      ],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "free-body-diagram",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $5.0\\ \\mathrm{kg}$ block is released from rest on a rough incline tilted at $37^\\circ$. The coefficient of kinetic friction is $\\mu = 0.25$. Use $g = 9.8\\ \\mathrm{m/s^2}$, $\\sin 37^\\circ = 0.60$, $\\cos 37^\\circ = 0.80$.",
+      "parts": [
+        {
+          "prompt": "(a) Find the normal force on the block and the kinetic friction force.",
+          "modelResponse": "$F_g = mg = (5.0)(9.8) = 49\\ \\mathrm{N}$. Perpendicular balance: $F_N = mg\\cos 37^\\circ = 49 \\times 0.80 = 39.2\\ \\mathrm{N}$. Friction: $F_f = \\mu F_N = 0.25 \\times 39.2 = 9.8\\ \\mathrm{N}$, directed up the slope (opposing the block's downward slide).",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Find the net force along the slope and the block's acceleration.",
+          "modelResponse": "Take down the slope as positive. Gravity component: $+mg\\sin 37^\\circ = +49 \\times 0.60 = +29.4\\ \\mathrm{N}$. Friction: $-9.8\\ \\mathrm{N}$. $F_{net} = (+29.4) + (-9.8) = +19.6\\ \\mathrm{N}$. $a = F_{net}/m = 19.6/5.0 = 3.92\\ \\mathrm{m/s^2}$ down the slope.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Would the block's acceleration be different if its mass were doubled to $10\\ \\mathrm{kg}$ (same angle, same $\\mu$)? Explain.",
+          "modelResponse": "No — the acceleration is unchanged. Both the down-slope gravity component ($mg\\sin\\theta$) and the friction force ($\\mu\\, mg\\cos\\theta$) are proportional to $m$, so $F_{net} = mg(\\sin\\theta - \\mu\\cos\\theta)$ is proportional to $m$. Dividing by $m$ for the acceleration, the mass cancels: $a = g(\\sin\\theta - \\mu\\cos\\theta)$, the same for any mass. (Doubling the mass would double the *forces* but not the acceleration.)",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "Incline problems are among the most common on AP Physics 1 and IB Paper 1. The $\\sin\\theta$ / $\\cos\\theta$ assignment, $F_N = mg\\cos\\theta$ (not $mg$), and friction opposing the slide are all repeated scoring points, and the mass-cancels result for the frictionless (and constant-$\\mu$) case is a classic.",
+  "summary": "On an incline, draw the normal force perpendicular to the surface. Resolve gravity with the incline angle: $mg\\sin\\theta$ down the slope (makes it slide), $mg\\cos\\theta$ into the slope (balanced by the normal force, so $F_N = mg\\cos\\theta$, not $mg$). Frictionless: $a = g\\sin\\theta$. With friction: $F_f = \\mu\\, mg\\cos\\theta$ opposing the slide; $F_{net}$ along the slope is the signed sum; $a = F_{net}/m$. For frictionless or constant-$\\mu$ inclines the mass cancels.",
+  "exitQuestion": {
+    "id": "BP8-U3-L6-EXIT-001",
+    "courses": [
+      "basis-physics-8"
+    ],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "question": "The frictionless down-slope acceleration is $a = g\\sin\\theta$. What does this expression predict for $\\theta = 0^\\circ$ (flat) and $\\theta = 90^\\circ$ (vertical)?",
+    "choices": [
+      "$a = 0$ when flat; $a = g$ when vertical — both correct.",
+      "$a = g$ when flat; $a = 0$ when vertical.",
+      "$a = g$ for both.",
+      "$a = 0$ for both."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\sin 0^\\circ = 0$ gives $a = 0$ (a block on a flat frictionless surface does not accelerate), and $\\sin 90^\\circ = 1$ gives $a = g$ (a vertical drop is free fall). Both match physical expectation.",
+      "incorrect": {
+        "1": "This has it backwards. $\\sin 0^\\circ = 0$, not $1$; $\\sin 90^\\circ = 1$, not $0$.",
+        "2": "$\\sin 0^\\circ = 0$, so the flat case gives $a = 0$, not $g$.",
+        "3": "$\\sin 90^\\circ = 1$, so the vertical case gives $a = g$, not $0$."
+      }
+    },
+    "hint": [
+      "Substitute $\\theta = 0^\\circ$ and $\\theta = 90^\\circ$ into $a = g\\sin\\theta$. What are $\\sin 0^\\circ$ and $\\sin 90^\\circ$?"
+    ],
+    "solution": "$a = g\\sin\\theta$. At $\\theta = 0^\\circ$: $\\sin 0^\\circ = 0$, so $a = 0$ — a block on a flat frictionless surface has no along-surface acceleration. At $\\theta = 90^\\circ$: $\\sin 90^\\circ = 1$, so $a = g$ — a vertical ‘incline’ is just free fall. Both limits are physically correct, which is a good sign the expression uses sine (not cosine)."
+  },
+  "questionBankFile": "forces-and-newtons-laws.json",
+  "furtherPracticeQuestionIds": [
+    "BP8-U3-MCQ-136",
+    "BP8-U3-MCQ-139",
+    "BP8-U3-MCQ-137",
+    "BP8-U3-MCQ-138"
+  ],
+  "needsPlotly": false
+}
