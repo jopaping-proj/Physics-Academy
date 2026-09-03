@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-077",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -31,6 +32,7 @@
   {
     "id": "AP1-U2-MCQ-078",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -65,6 +67,7 @@
   {
     "id": "AP1-U2-MCQ-079",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -99,6 +102,7 @@
   {
     "id": "AP1-U2-MCQ-080",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -133,6 +137,7 @@
   {
     "id": "AP1-U2-MCQ-081",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -167,6 +172,7 @@
   {
     "id": "AP1-U2-MCQ-082",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",

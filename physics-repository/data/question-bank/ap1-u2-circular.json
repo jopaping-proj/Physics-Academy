@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-107",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -31,6 +32,7 @@
   {
     "id": "AP1-U2-MCQ-108",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -60,6 +62,7 @@
   {
     "id": "AP1-U2-MCQ-109",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -94,6 +97,7 @@
   {
     "id": "AP1-U2-MCQ-110",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -123,6 +127,7 @@
   {
     "id": "AP1-U2-MCQ-111",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -152,6 +157,7 @@
   {
     "id": "AP1-U2-MCQ-112",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",

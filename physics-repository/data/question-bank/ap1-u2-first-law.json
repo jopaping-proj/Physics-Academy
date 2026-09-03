@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-065",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",
@@ -36,6 +37,7 @@
   {
     "id": "AP1-U2-MCQ-066",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",
@@ -70,6 +72,7 @@
   {
     "id": "AP1-U2-MCQ-067",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",
@@ -104,6 +107,7 @@
   {
     "id": "AP1-U2-MCQ-068",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",
@@ -133,6 +137,7 @@
   {
     "id": "AP1-U2-MCQ-069",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",
@@ -162,6 +167,7 @@
   {
     "id": "AP1-U2-MCQ-070",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's First Law",

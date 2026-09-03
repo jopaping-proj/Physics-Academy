@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-113",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
@@ -36,6 +37,7 @@
   {
     "id": "AP1-U2-MCQ-114",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
@@ -70,6 +72,7 @@
   {
     "id": "AP1-U2-MCQ-115",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
@@ -104,6 +107,7 @@
   {
     "id": "AP1-U2-MCQ-116",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
@@ -138,6 +142,7 @@
   {
     "id": "AP1-U2-MCQ-117",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
@@ -167,6 +172,7 @@
   {
     "id": "AP1-U2-MCQ-118",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",

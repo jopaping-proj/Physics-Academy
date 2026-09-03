@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-101",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -37,6 +38,7 @@
   {
     "id": "AP1-U2-MCQ-102",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -67,6 +69,7 @@
   {
     "id": "AP1-U2-MCQ-103",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -97,6 +100,7 @@
   {
     "id": "AP1-U2-MCQ-104",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -132,6 +136,7 @@
   {
     "id": "AP1-U2-MCQ-105",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -166,6 +171,7 @@
   {
     "id": "AP1-U2-MCQ-106",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",

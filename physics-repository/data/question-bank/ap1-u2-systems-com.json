@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-059",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",
@@ -36,6 +37,7 @@
   {
     "id": "AP1-U2-MCQ-060",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",
@@ -65,6 +67,7 @@
   {
     "id": "AP1-U2-MCQ-061",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",
@@ -99,6 +102,7 @@
   {
     "id": "AP1-U2-MCQ-062",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",
@@ -133,6 +137,7 @@
   {
     "id": "AP1-U2-MCQ-063",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",
@@ -167,6 +172,7 @@
   {
     "id": "AP1-U2-MCQ-064",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Systems and Center of Mass",

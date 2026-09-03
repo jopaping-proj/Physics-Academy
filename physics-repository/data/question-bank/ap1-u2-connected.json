@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-089",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -34,6 +35,7 @@
   {
     "id": "AP1-U2-MCQ-090",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -68,6 +70,7 @@
   {
     "id": "AP1-U2-MCQ-091",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -100,6 +103,7 @@
   {
     "id": "AP1-U2-MCQ-092",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -129,6 +133,7 @@
   {
     "id": "AP1-U2-MCQ-093",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -158,6 +163,7 @@
   {
     "id": "AP1-U2-MCQ-094",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",

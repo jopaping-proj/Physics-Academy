@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-MCQ-095",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -31,6 +32,7 @@
   {
     "id": "AP1-U2-MCQ-096",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -60,6 +62,7 @@
   {
     "id": "AP1-U2-MCQ-097",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -89,6 +92,7 @@
   {
     "id": "AP1-U2-MCQ-098",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -123,6 +127,7 @@
   {
     "id": "AP1-U2-MCQ-099",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -152,6 +157,7 @@
   {
     "id": "AP1-U2-MCQ-100",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",

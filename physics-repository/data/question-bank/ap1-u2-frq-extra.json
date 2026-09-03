@@ -2,6 +2,7 @@
   {
     "id": "AP1-U2-FRQ-016",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -28,6 +29,7 @@
   {
     "id": "AP1-U2-FRQ-017",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Inclined Planes",
@@ -53,6 +55,7 @@
   {
     "id": "AP1-U2-FRQ-018",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -78,6 +81,7 @@
   {
     "id": "AP1-U2-FRQ-019",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Circular Motion",
@@ -103,6 +107,7 @@
   {
     "id": "AP1-U2-FRQ-020",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -128,6 +133,7 @@
   {
     "id": "AP1-U2-FRQ-021",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Gravitation, Springs, and Apparent Weight",
@@ -153,6 +159,7 @@
   {
     "id": "AP1-U2-FRQ-022",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -179,6 +186,7 @@
   {
     "id": "AP1-U2-FRQ-023",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Connected Objects and Systems",
@@ -204,6 +212,7 @@
   {
     "id": "AP1-U2-FRQ-024",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Newton's Third Law: Interaction Pairs vs Balanced Forces",
@@ -229,6 +238,7 @@
   {
     "id": "AP1-U2-FRQ-025",
     "course": "AP Physics 1",
+    "topicId": "newtonian-dynamics",
     "courses": ["ap-physics-1"],
     "unit": "Unit 2: Force and Translational Dynamics",
     "lesson": "Unit 2 Synthesis and Transfer",
