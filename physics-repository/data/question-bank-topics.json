@@ -15,8 +15,23 @@
       "banks": ["forces-and-newtons-laws.json", "forces-and-newtons-laws-frq.json"],
       "courses": ["basis-physics-8"],
       "plannedCourses": ["ap-physics-1"],
-      "scope": "Gravity (universal gravitation), inertia and Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with and without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines; no 2-D vector force addition beyond incline components.",
+      "scope": "Gravity (universal gravitation), inertia and Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with and without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines; no 2-D vector force addition beyond incline components. The pre-AP subset of `newtonian-dynamics`.",
       "source": "resources/physics8/rescue_sprint/unit_03_forces/test_bank/"
+    },
+    "newtonian-dynamics": {
+      "title": "Newtonian dynamics (AP Physics 1 Unit 2)",
+      "banks": [
+        "ap1-u2-systems-com.json", "ap1-u2-forces-fbd.json", "ap1-u2-first-law.json",
+        "ap1-u2-dynamics.json", "ap1-u2-dynamics-frq.json", "ap1-u2-multi-force.json",
+        "ap1-u2-third-law.json", "ap1-u2-friction.json", "ap1-u2-connected.json",
+        "ap1-u2-grav-spring-aw.json", "ap1-u2-inclines.json", "ap1-u2-circular.json",
+        "ap1-u2-synthesis.json", "ap1-u2-frq-extra.json",
+        "ap1-u2-exam-mix.json", "ap1-u2-exam-mix-hi.json", "ap1-u2-exam-mix-lo.json"
+      ],
+      "courses": ["ap-physics-1"],
+      "plannedCourses": ["ap-physics-2", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Systems and centre of mass, force identification and free-body diagrams, Newton's three laws, static and kinetic friction, connected objects and pulleys, inclined planes with 2-D component resolution, gravitation / springs / apparent weight, and uniform circular motion. The full AP Physics 1 Unit 2 (Force and Translational Dynamics) scope; a superset of the pre-AP `forces-and-newtons-laws` topic.",
+      "source": "AP Physics 1 CED Unit 2; docs/ap-physics-1-unit-2-architecture.md"
     }
   }
 }

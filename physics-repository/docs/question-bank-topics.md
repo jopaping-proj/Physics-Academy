@@ -43,10 +43,12 @@ when the target course's unit is built and reviewed).
 | `topicId` | Bank files | `courses` (live) | `plannedCourses` | Notes |
 |---|---|---|---|---|
 | `kinematics-1d` | `kinematics-1d.json`, `kinematics-1d-frq.json` | `basis-physics-8` | `ap-physics-1`, `ib-physics-sl`, `ib-physics-hl` | One-dimensional motion only: motion language, `x`/`v`/`a`–`t` graphs, constant-acceleration equations, 1-D free fall, vector components / SOHCAHTOA. **No** projectile motion, force-based reasoning, or calculus. 250 MCQ + 50 FRQ from the Founder-approved BASIS Unit 2 test bank. |
-| `forces-and-newtons-laws` | `forces-and-newtons-laws.json`, `forces-and-newtons-laws-frq.json` | `basis-physics-8` | `ap-physics-1` | Gravity, inertia / Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with/without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines. 250 MCQ + 50 FRQ from `resources/physics8/rescue_sprint/unit_03_forces/test_bank/`. The 10 universal-gravitation numerical MCQs are `calculatorFree: false` (a scientific calculator is permitted for that outcome per DEC-040). |
+| `forces-and-newtons-laws` | `forces-and-newtons-laws.json`, `forces-and-newtons-laws-frq.json` | `basis-physics-8` | `ap-physics-1` | Gravity, inertia / Newton's first law, force identification and free-body diagrams, equilibrium, Newton's second law, inclined planes (with/without friction), Newton's third law, Hooke's law. 1-D net-force reasoning and simple inclines — the **pre-AP subset of `newtonian-dynamics`**. 250 MCQ + 50 FRQ from `resources/physics8/rescue_sprint/unit_03_forces/test_bank/`. The 10 universal-gravitation numerical MCQs are `calculatorFree: false`. |
+| `newtonian-dynamics` | the 17 `ap1-u2-*.json` files (see the registry) | `ap-physics-1` | `ap-physics-2`, `ib-physics-sl`, `ib-physics-hl` | Systems and centre of mass, free-body diagrams, Newton's three laws, static/kinetic friction, connected objects and pulleys, inclined planes with 2-D component resolution, gravitation / springs / apparent weight, uniform circular motion. The full AP Physics 1 Unit 2 (Force and Translational Dynamics) scope — a **superset** of `forces-and-newtons-laws`. 180 items; migrated onto `topicId` 2026-09-03 (`build/migrations/2026-09-03-ap1-u2-topicid/`). |
 
-The existing AP Physics 1 Unit 2 banks (`ap1-u2-*.json`) predate this model and
-are **not** migrated yet; they stay course-keyed until a later pass. New banks
+The AP Physics 1 Unit 2 banks (`ap1-u2-*.json`) were migrated onto `topicId`
+(`newtonian-dynamics`) on 2026-09-03 — an additive one-line insert per item, no
+content or formatting change. New banks
 use the topic-keyed model.
 
 ## 3. Item schema additions
@@ -150,4 +152,4 @@ for a 15-item draw.
 **Not started:** independent physics review of the auto-assigned tags and
 synthesised hints; the actual cross-tag to AP/IB (deferred by owner decision
 until each target course's unit is built — the registry's `plannedCourses`
-holds the intent); migrating the `ap1-u2-*` banks onto `topicId`.
+holds the intent).
