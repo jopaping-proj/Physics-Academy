@@ -72,50 +72,58 @@
     {
       "type": "module",
       "label": "Lesson 1",
-      "slug": null,
-      "title": "Basic Concepts & Definitions",
+      "slug": "light-basics",
+      "title": "Light: Basic Concepts and Definitions",
       "cluster": "BP8.7.1",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
-      "title": "Reflection & Plane Mirrors",
+      "slug": "reflection-and-plane-mirrors",
+      "title": "Reflection and Plane Mirrors",
       "cluster": "BP8.7.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
-      "title": "Spherical Mirrors (Concave & Convex)",
+      "slug": "spherical-mirrors",
+      "title": "Concave and Convex Mirrors",
       "cluster": "BP8.7.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
-      "title": "Refraction & Index of Refraction",
+      "slug": "refraction-and-index",
+      "title": "Refraction and the Index of Refraction",
       "cluster": "BP8.7.4",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
-      "title": "Diffraction & Dispersion",
-      "cluster": "BP8.7.5",
-      "status": "planned"
+      "slug": "snells-law-and-tir",
+      "title": "Snell's Law and Total Internal Reflection",
+      "cluster": "BP8.7.6",
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 6",
-      "slug": null,
-      "title": "Total Internal Reflection",
-      "cluster": "BP8.7.6",
-      "status": "planned"
+      "slug": "dispersion-and-diffraction",
+      "title": "Dispersion and Diffraction",
+      "cluster": "BP8.7.5",
+      "status": "draft"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 7",
+      "slug": "synthesis-and-transfer",
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.7.7",
+      "status": "draft"
     },
     {
       "type": "concept-check",
@@ -123,7 +131,15 @@
       "slug": null,
       "title": "Unit 7 Concept Check — retake",
       "status": "planned",
-      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+      "note": "Placeholder — to be activated only after a Unit 7 diagnostic is authored and reviewed (none exists yet)."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-7-test",
+      "title": "Unit 7 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the geometric-optics question bank (tranche 1: 57 MCQ + 14 FRQ) to the Physics Academy test blueprint."
     }
   ]
 }

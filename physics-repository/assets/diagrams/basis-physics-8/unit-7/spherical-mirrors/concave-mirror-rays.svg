@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="320" viewBox="0 0 620 320" role="img" aria-labelledby="t d">
+<title id="t">Ray diagram for a concave mirror with the object beyond the centre of curvature</title>
+<desc id="d">A concave mirror on the right, with the principal axis horizontal. The centre of curvature C and focal point F are marked. An upright object stands beyond C. One ray from the top of the object travels parallel to the axis and reflects through F. A second ray travels from the top of the object through C and reflects straight back on itself. The two reflected rays cross below the axis, between F and C, forming a real, inverted, smaller image.</desc>
+<rect width="620" height="320" fill="white"/>
+<defs><marker id="cm7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1769aa"/></marker>
+<marker id="cmg" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/></marker>
+<marker id="cmr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/></marker></defs>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <path d="M540,70 Q560,170 540,270" fill="none" stroke="#111827" stroke-width="3"/>
+ <line x1="60" y1="170" x2="545" y2="170" stroke="#5b6675" stroke-width="1.5"/>
+ <text x="66" y="164" fill="#5b6675" font-size="11">principal axis</text>
+
+ <circle cx="360" cy="170" r="3" fill="#111827"/><text x="360" y="188" text-anchor="middle" font-size="11">C</text>
+ <circle cx="450" cy="170" r="3" fill="#111827"/><text x="450" y="188" text-anchor="middle" font-size="11">F</text>
+
+ <line x1="250" y1="170" x2="250" y2="110" stroke="#1a7f37" stroke-width="3" marker-end="url(#cmg)"/>
+ <text x="250" y="100" text-anchor="middle" fill="#1a7f37" font-size="11">object</text>
+
+ <!-- parallel ray -->
+ <line x1="250" y1="110" x2="540" y2="110" stroke="#1769aa" stroke-width="1.5"/>
+ <line x1="540" y1="110" x2="405" y2="200" stroke="#1769aa" stroke-width="1.5" marker-end="url(#cm7)"/>
+ <!-- ray through C -->
+ <line x1="250" y1="110" x2="540" y2="266" stroke="#1769aa" stroke-width="1.5"/>
+ <line x1="540" y1="266" x2="405" y2="193" stroke="#1769aa" stroke-width="1.5" marker-end="url(#cm7)"/>
+
+ <line x1="409" y1="170" x2="409" y2="197" stroke="#c0392b" stroke-width="3" marker-end="url(#cmr)"/>
+ <text x="409" y="222" text-anchor="middle" fill="#c0392b" font-size="11">image</text>
+
+ <text x="310" y="300" text-anchor="middle" fill="#1a7f37" font-weight="bold" font-size="12">Object beyond C  &#8594;  real, inverted, smaller image between F and C</text>
+</g>
+</svg>

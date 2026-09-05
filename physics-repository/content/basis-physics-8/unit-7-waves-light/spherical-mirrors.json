@@ -1,0 +1,357 @@
+{
+  "id": "basis-p8-u7-l3",
+  "slug": "spherical-mirrors",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Spherical Mirrors",
+  "lessonTitle": "Concave and Convex Mirrors",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Spherical Mirrors cluster, SM1-SM3); calibrated against AP Physics 2 CED Unit 13, OpenStax High School Physics Ch. 15",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments (ray diagrams only; no mirror equation).",
+  "prerequisites": [
+    "Lesson 1 — principal axis, focal point, focal length, real and virtual images.",
+    "Lesson 2 — the law of reflection; constructing a ray diagram; extending rays to locate a virtual image."
+  ],
+  "majorObjective": "Identify concave and convex mirrors, construct ray diagrams for each using principal rays, and describe the characteristics (type, orientation, size, location) of the images they form for different object positions.",
+  "subObjectives": [
+    "Identify a concave (converging, caves in) mirror and a convex (diverging, bulges out) mirror, and state what each does to parallel light.",
+    "State and use the principal rays for a concave mirror (parallel-in → through F; through F → parallel-out; through C → back on itself; to the vertex → equal angles).",
+    "Describe the image for a real object at each key position for a concave mirror (beyond C, at C, between C and F, at F, inside F) and for a convex mirror (always virtual, upright, reduced).",
+    "Connect image characteristics to real devices: torch/headlamp reflectors and shaving mirrors (concave); wing mirrors and security mirrors (convex)."
+  ],
+  "hook": {
+    "prompt": "You look at yourself in the back of a shiny spoon (convex) and then the front of the bowl (concave) held close to your face. What do you see?",
+    "choices": [
+      "Both give a magnified upright image.",
+      "The back (convex): small and upright. The front (concave), held close: magnified and upright.",
+      "Both give an upside-down image.",
+      "The back: magnified. The front: tiny."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "A curved mirror still obeys the law of reflection at every point — but because the surface is curved, the normals fan out or in, so parallel rays are brought together (concave) or spread apart (convex). A few standard 'principal rays' let you find any image by drawing.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Concave and convex mirrors",
+      "concept": "A **concave** mirror **curves inward** — its reflecting surface is on the *inside* of the curve, like the inside of a spoon's bowl ('con**cave**' contains 'cave'). It is a **converging** mirror: rays arriving **parallel to the principal axis** are reflected to **converge at the focal point $F$**, a real point in front of the mirror. The focal length $f$ is the mirror-to-$F$ distance; the centre of curvature $C$ is at $2f$.\n\nA **convex** mirror **curves outward** — the reflecting surface is on the *outside* of the bulge, like the back of a spoon. It is a **diverging** mirror: parallel rays are reflected so they **spread apart**, appearing to come from a **virtual focal point behind the mirror**.\n\nDevices:\n\n- **concave:** torch and headlamp reflectors (source at $F$ → parallel beam), shaving/make-up mirrors (magnify), reflecting telescopes;\n- **convex:** vehicle wing mirrors and shop security mirrors (wide field of view).",
+      "representation": "| | Concave | Convex |\n|---|---|---|\n| shape | caves in | bulges out |\n| effect on parallel light | converges to real $F$ (in front) | diverges from virtual $F$ (behind) |\n| also called | converging | diverging |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student shines a torch (giving a nearly parallel beam) straight at (a) a concave mirror and (b) a convex mirror, both facing the torch. Describe what the reflected light does in each case.",
+        "phases": [
+          {
+            "label": "(a) Concave mirror",
+            "steps": ["The parallel beam converges to a bright point at the focal point in front of the mirror, then spreads out again past it."]
+          },
+          {
+            "label": "(b) Convex mirror",
+            "steps": ["The parallel beam spreads out (diverges) after reflecting, as if it had come from a point behind the mirror — it never focuses."]
+          }
+        ],
+        "keyMove": "Concave converges parallel light to a real focus in front; convex diverges it from a virtual focus behind."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L3-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A car's passenger-side wing mirror is convex. What does a convex mirror do to parallel light, and why is that useful here?",
+        "choices": [
+          "Converges it to a focus; useful for a bright image.",
+          "Diverges it (spreads it apart); this gives a wide field of view so more of the road behind is visible.",
+          "Reflects it straight back; useful for signalling.",
+          "Absorbs it; useful for reducing glare."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a convex mirror diverges light and forms a reduced image, packing a wide scene into the mirror.",
+          "incorrect": {
+            "0": "That is a concave mirror. A convex mirror diverges parallel light.",
+            "2": "That is a flat mirror at normal incidence, or a corner reflector.",
+            "3": "Mirrors reflect; the curvature diverges the light, it does not absorb it."
+          }
+        },
+        "hint": ["Convex = bulges out = diverging. What does spreading the light out do to the image size and field of view?"],
+        "solution": "A convex mirror diverges parallel light. It always forms an upright, reduced virtual image, so a wide field of view is compressed into the mirror — ideal for seeing traffic across a broad angle behind the car (with the trade-off that objects look smaller and farther away)."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Principal rays and the concave-mirror ray diagram",
+      "concept": "To find an image with a **concave** mirror, draw any **two** of these **principal rays** from a point on the object (usually the top):\n\n1. A ray **parallel to the principal axis** reflects **through the focal point $F$**.\n2. A ray **through the focal point $F$** reflects **parallel to the principal axis**.\n3. A ray **through the centre of curvature $C$** reflects **straight back on itself** (it hits the mirror along a normal).\n4. A ray to the **vertex** (centre of the mirror) reflects with the **angle of reflection equal to the angle of incidence** about the principal axis.\n\nWhere the two reflected rays **cross** is the image of that point.\n\n- If they cross **in front of the mirror** → **real** image (rays actually meet; catchable on a screen; **inverted**).\n- If they **diverge** and you must extend them **backward** to cross behind the mirror → **virtual** image (**upright**).",
+      "representation": "Principal rays for a concave mirror:\n\n| Incoming | Reflects |\n|---|---|\n| parallel to axis | through $F$ |\n| through $F$ | parallel to axis |\n| through $C$ | back on itself |\n| to vertex | equal angles about the axis |\n\nRays cross in front → real, inverted. Rays diverge, extend back → virtual, upright.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/spherical-mirrors/concave-mirror-rays.svg",
+          "caption": "Concave mirror, object beyond C. The parallel-in ray reflects through F; the through-F ray reflects parallel. They cross between F and C, forming a real, inverted, reduced image."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An object stands beyond the centre of curvature $C$ of a concave mirror. Use the parallel ray and the focal-point ray to find the image, and describe it.",
+        "phases": [
+          {
+            "label": "Draw the two rays",
+            "steps": [
+              "From the top of the object, a ray parallel to the axis reflects through $F$.",
+              "From the top of the object, a ray through $F$ reflects parallel to the axis."
+            ]
+          },
+          {
+            "label": "Find where they cross",
+            "steps": ["The two reflected rays cross **in front of the mirror**, between $F$ and $C$, **below** the axis."]
+          },
+          {
+            "label": "Describe the image",
+            "steps": ["Real (rays actually meet), inverted (below the axis), smaller than the object, located between $F$ and $C$."]
+          }
+        ],
+        "keyMove": "Two principal rays; where the reflected rays cross is the image. In front and below the axis → real and inverted."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L3-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "physical-model",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "For a concave mirror, a ray from an object that passes through the focal point F, on its way to the mirror, reflects:",
+        "choices": [
+          "back through F.",
+          "parallel to the principal axis.",
+          "straight back on itself.",
+          "toward the centre of curvature."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — this is the reverse of the parallel ray: a ray through F reflects parallel to the axis.",
+          "incorrect": {
+            "0": "A ray *parallel to the axis* reflects through F; a ray *through F* reflects parallel — the two are opposites.",
+            "2": "A ray reflects straight back only if it passes through the centre of curvature C.",
+            "3": "There is no principal ray that reflects toward C from an arbitrary starting direction."
+          }
+        },
+        "hint": ["Parallel-in → through F. So through-F → parallel-out."],
+        "solution": "The principal rays come in reversible pairs. A ray parallel to the principal axis reflects through the focal point F. By reversibility, a ray that arrives passing through F reflects back parallel to the principal axis."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Image characteristics by object position",
+      "concept": "**Concave mirror** — the image depends on where the object is:\n\n| Object position | Image: type, orientation, size, location |\n|---|---|\n| beyond $C$ | real, inverted, **reduced**, between $F$ and $C$ |\n| at $C$ | real, inverted, **same size**, at $C$ |\n| between $C$ and $F$ | real, inverted, **enlarged**, beyond $C$ |\n| at $F$ | no image (reflected rays parallel — 'image at infinity') |\n| inside $F$ | **virtual**, **upright**, **enlarged**, behind the mirror |\n\nNote the symmetry: object and image positions swap, and moving the object closer makes the image farther and larger. The 'inside $F$' case is the magnifying-mirror setup.\n\n**Convex mirror** — always the same, for any object position: **virtual, upright, reduced**, located behind the mirror (between the mirror and its virtual focal point). This is why it gives a wide, distortion-tolerant view but makes things look small and far.",
+      "representation": "Concave, as the object moves in from far away: image starts small near $F$, grows and moves out past $C$, then (past $F$) flips to virtual, upright, enlarged behind the mirror.\n\nConvex: virtual, upright, reduced — always.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "State the image for: (a) a candle far beyond $C$ of a concave mirror; (b) your face $5\\ \\mathrm{cm}$ from a concave shaving mirror of focal length $15\\ \\mathrm{cm}$; (c) a person standing $2\\ \\mathrm{m}$ from a convex security mirror.",
+        "phases": [
+          {
+            "label": "(a) Candle far beyond C (concave)",
+            "steps": ["Real, inverted, much reduced, near $F$ (this is the telescope regime)."]
+          },
+          {
+            "label": "(b) Face inside F (concave)",
+            "steps": ["$5\\ \\mathrm{cm} < 15\\ \\mathrm{cm}$, so the face is inside $F$ → virtual, upright, enlarged (magnifying mirror)."]
+          },
+          {
+            "label": "(c) Person at a convex mirror",
+            "steps": ["Convex → virtual, upright, reduced, behind the mirror — regardless of the $2\\ \\mathrm{m}$ distance."]
+          }
+        ],
+        "keyMove": "Concave: compare the object distance with $f$ and $2f$ to read off the image. Convex: always virtual, upright, reduced."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L3-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "An object is placed between the focal point F and the mirror surface of a concave mirror (inside F). The image is:",
+        "choices": [
+          "real, inverted, and reduced.",
+          "virtual, upright, and enlarged, located behind the mirror.",
+          "real, upright, and the same size.",
+          "at the centre of curvature, inverted."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — with the object inside the focal length, the reflected rays diverge and their backward extensions form a virtual, upright, magnified image behind the mirror. This is the shaving-mirror setup.",
+          "incorrect": {
+            "0": "A real, inverted, reduced image occurs when the object is beyond C.",
+            "2": "A same-size image requires the object at C, and it is real and inverted.",
+            "3": "The image at C (same size, inverted) is the object-at-C case, not object-inside-F."
+          }
+        },
+        "hint": ["Inside F is the 'magnifying mirror' region. What does a magnifying mirror show?"],
+        "solution": "When a real object is inside the focal length of a concave mirror, the reflected rays diverge. Their backward extensions meet behind the mirror, forming a virtual, upright, enlarged image — exactly what a concave shaving or make-up mirror shows when held close to the face."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L3-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'A concave mirror always magnifies, and a convex mirror always shrinks — that's the whole difference.' What is the accurate statement?",
+      "choices": [
+        "The student is right.",
+        "A convex mirror always gives a reduced upright virtual image, but a concave mirror can give a reduced, same-size, or enlarged image (and real or virtual) depending on where the object is relative to F and C.",
+        "A concave mirror always shrinks and a convex mirror always magnifies.",
+        "Both mirrors always give the same-size image."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the convex mirror is simple (always reduced, upright, virtual), but the concave mirror's image changes completely with object position.",
+        "incorrect": {
+          "0": "A concave mirror reduces an object that is beyond C — it does not always magnify.",
+          "2": "This has it backwards for the concave mirror and wrong for the convex.",
+          "3": "Only a plane mirror always gives a same-size image."
+        }
+      },
+      "hint": ["Is the concave mirror's image the same for a far object and a close one? Try it with a spoon."],
+      "solution": "A convex mirror always forms a virtual, upright, reduced image, for any object position. A concave mirror is different: an object beyond the centre of curvature gives a real, inverted, reduced image; at C, real, inverted, same-size; between C and F, real, inverted, enlarged; inside F, virtual, upright, enlarged. So a concave mirror can shrink, keep the size, or magnify, depending on the object's distance."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'A concave mirror has focal length $10\\ \\mathrm{cm}$ (so C is at $20\\ \\mathrm{cm}$). An object is placed at $30\\ \\mathrm{cm}$. Describe the image using a ray diagram.'\n\nStudent's response: 'The object is far from the mirror, so the image is virtual and upright, like in a bathroom mirror, and the same size.'",
+      "prompts": [
+        "State where the object is relative to F and C.",
+        "Identify why the student's description is wrong.",
+        "Give the correct image characteristics with a brief ray-diagram justification."
+      ],
+      "modelResponse": "The object is at $30\\ \\mathrm{cm}$, which is *beyond* the centre of curvature C ($20\\ \\mathrm{cm}$). Error: the student assumed a concave mirror behaves like a plane mirror (virtual, upright, same size). It does not — a concave mirror forms a real, inverted image whenever the object is beyond F. Correct: draw the parallel ray (reflects through F) and the through-F ray (reflects parallel). They cross in front of the mirror, between F and C, below the axis. The image is real, inverted, and reduced, located between F and C.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal object position (relative to F and C) maps, via a two-principal-ray diagram, to an image whose type/orientation/size/location can be read off: reflected rays crossing in front → real, inverted; diverging with backward extensions crossing behind → virtual, upright. The table of concave-mirror cases and the always-the-same convex-mirror result summarise the diagrams. These connect to devices (torch reflectors, shaving mirrors, wing mirrors) and, in Lesson 7, to combined optical systems.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L3-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "An object is at the centre of curvature C of a concave mirror. The image is:",
+      "choices": [
+        "virtual, upright, enlarged.",
+        "real, inverted, the same size, located at C.",
+        "real, inverted, reduced, at F.",
+        "there is no image."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — object at C gives a real, inverted, same-size image, also at C.",
+        "incorrect": {
+          "0": "A virtual enlarged image needs the object inside F.",
+          "2": "A reduced image at F would be for an object at infinity.",
+          "3": "There *is* an image; the 'no image' case is when the object is at F."
+        }
+      },
+      "hint": ["At C, the object and image coincide, and the image is the same size."],
+      "solution": "When a real object is at the centre of curvature C of a concave mirror, the image is real, inverted, exactly the same size as the object, and located at C. (This is the case used to measure a concave mirror's radius of curvature: move a screen until the image is sharp and equal in size to the object.)"
+    },
+    {
+      "id": "BP8-U7-L3-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A solar cooker uses a large concave mirror to heat a pot. Where should the pot be placed, and what image of the Sun forms there?",
+      "choices": [
+        "At the mirror's surface; a virtual image of the Sun.",
+        "At the focal point; a real, inverted, very reduced image of the Sun, where the sunlight is concentrated.",
+        "Behind the mirror; a virtual enlarged image.",
+        "Anywhere; the mirror heats evenly."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the Sun is effectively at infinity, so its rays arrive parallel and the concave mirror focuses them to a small, bright, real image at the focal point. Placing the pot there concentrates the maximum solar energy.",
+        "incorrect": {
+          "0": "At the mirror's surface the light is not yet concentrated, and the image would not be virtual.",
+          "2": "The image of a distant object in a concave mirror is real and in front, not virtual and behind.",
+          "3": "The energy is concentrated only near the focal point; elsewhere it is spread out."
+        }
+      },
+      "hint": ["Sunlight arrives as parallel rays. Where does a concave mirror send parallel rays?"],
+      "solution": "The Sun is so distant that its light reaches the mirror as parallel rays. A concave mirror focuses parallel rays to its focal point, forming a real, inverted, greatly reduced but intensely bright image of the Sun there. The pot is placed at the focal point so that all the collected sunlight is concentrated on it, producing high temperatures."
+    },
+    {
+      "id": "BP8-U7-L3-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "multi-representation-reasoning",
+      "representation": "physical-model",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A concave mirror has its focal point F and centre of curvature C marked. An object is placed between F and C.",
+      "parts": [
+        {
+          "prompt": "(a) Name two principal rays you would draw from the top of the object and state how each reflects.",
+          "modelResponse": "Ray 1: parallel to the principal axis, which reflects through the focal point F. Ray 2: through the focal point F, which reflects parallel to the principal axis. (Alternatively, a ray through C reflects straight back.) The two reflected rays are then followed until they intersect.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) State the type, orientation, size, and location of the image for an object between F and C.",
+          "modelResponse": "The two reflected rays cross in front of the mirror, beyond C and below the axis. The image is real, inverted, enlarged (larger than the object), and located beyond the centre of curvature C.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) A film projector places a small bright slide just outside the focal point of a concave mirror (or a lens working the same way) to throw a large image on a distant screen. Explain how this uses the result from part (b).",
+          "modelResponse": "Part (b) shows that when the object is just beyond F (between F and C, close to F), the image is real, inverted, and greatly enlarged, formed far from the mirror. A projector exploits this: the slide is the object placed just outside F, and the enlarged real image is caught on the distant screen. The image is inverted, which is why projector slides are loaded upside down so the picture appears the right way up.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 11
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test identifying concave vs convex mirrors, drawing ray diagrams with the standard principal rays, and reading off image characteristics for each object position — especially the concave cases (beyond C, at C, between C and F, at F, inside F) and the always-virtual convex case. Applications (telescopes, headlamps, shaving mirrors, wing mirrors, solar cookers) are common contexts.",
+  "summary": "A concave (converging) mirror caves inward and focuses parallel light to a real focal point in front; a convex (diverging) mirror bulges outward and spreads parallel light from a virtual focal point behind. For a concave mirror, draw two principal rays — parallel-in reflects through F, through-F reflects parallel, through-C reflects back on itself — and where the reflected rays cross is the image (in front and inverted → real; diverging and extended back → virtual, upright). The concave-mirror image depends on object position: beyond C (real, inverted, reduced), at C (real, inverted, same size), between C and F (real, inverted, enlarged), at F (no image), inside F (virtual, upright, enlarged). A convex mirror always gives a virtual, upright, reduced image for any object position.",
+  "exitQuestion": {
+    "id": "BP8-U7-L3-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A shop owner installs a mirror in a corner so a cashier can watch the whole shop floor. Which mirror should they use, and what image will it give?",
+    "choices": [
+      "A concave mirror; a magnified image of one area.",
+      "A convex mirror; an upright, reduced image showing a wide field of view.",
+      "A plane mirror; a same-size image of a narrow strip.",
+      "A concave mirror; an inverted image of the whole shop."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a convex mirror always gives an upright, diminished image, compressing a wide angle of the shop into one mirror.",
+      "incorrect": {
+        "0": "A concave mirror would magnify a small region, not survey the whole floor.",
+        "2": "A plane mirror shows only a limited angle at same size — not a wide overview.",
+        "3": "An inverted image would be confusing, and a concave mirror only inverts real images of nearer objects."
+      }
+    },
+    "hint": ["Which mirror shrinks everything and so fits a wide scene into the glass?"],
+    "solution": "A convex (diverging) mirror always forms an upright, reduced, virtual image, so a very wide angle of the shop is visible in a single mirror. The trade-off — objects look smaller and farther away — is acceptable for surveillance, where the goal is to see everything at once."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-022", "BP8-U7-MCQ-023", "BP8-U7-MCQ-024", "BP8-U7-MCQ-025", "BP8-U7-MCQ-027", "BP8-U7-MCQ-033"],
+  "needsPlotly": false
+}

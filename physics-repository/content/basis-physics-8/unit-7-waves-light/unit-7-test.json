@@ -1,0 +1,14 @@
+{
+  "format": "unit-test",
+  "id": "basis-p8-u7-unit-test",
+  "slug": "unit-7-test",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "lessonTitle": "Unit 7 Test",
+  "intro": "A **45-minute** timed test on the whole of Waves and Light — light basics, reflection and plane mirrors, concave and convex mirrors, refraction and the index of refraction, Snell's law and total internal reflection, and dispersion and diffraction. It is **generated fresh every time you open it**: a new set of questions drawn from across the unit, in a new order, with the answer choices shuffled.\n\nThe mix follows the Physics Academy test blueprint (`docs/test-generation.md`). BASIS Physics 8 is a pre-AP course, so this is geometric optics (ray diagrams, $n = c/v$, Snell's law solved for an index, $\\sin\\theta_c = 1/n$) held to AP Physics 2 rigor; no lens/mirror equation or wave-interference maths.\n\n**No calculator.** Every multiple-choice item is built to be solved by hand (round numbers, standard angles, given sine values). Multiple choice is scored automatically; free response is scored by you against the model answer and rubric.\n\nThe bank is tranche 1; drawn-ray-diagram items will follow.",
+  "config": { "mode": "time", "minutes": 45 },
+  "calculatorPolicy": "not-allowed",
+  "mcqBanks": ["geometric-optics.json"],
+  "frqBanks": ["geometric-optics-frq.json"]
+}

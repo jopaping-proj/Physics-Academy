@@ -34,6 +34,14 @@
       "scope": "Temperature as average particle kinetic energy; Celsius / kelvin / Fahrenheit scales ($T_K = T_C + 273$); internal energy; thermal equilibrium and the zeroth law; heat as energy transferred by a temperature difference; conduction, convection, radiation; specific heat capacity ($Q = mc\\Delta T$); latent heat of fusion and vaporisation ($Q = mL$); calorimetry (energy lost = energy gained); heating curves. Scalar energy accounting only; no ideal-gas law, kinetic theory derivations, or entropy.",
       "source": "Authored for Physics Academy from resources/physics8/resources/unit5_thermal_physics_outcomes.md, calibrated against Tsokos IB Physics Topic 3 and OpenStax High School Physics Ch. 11. No rescue_sprint source bank exists for Unit 5."
     },
+    "geometric-optics": {
+      "title": "Geometric optics and light (introductory)",
+      "banks": ["geometric-optics.json", "geometric-optics-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-2", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Transparent/opaque; the normal; speed of light in vacuum ($c = 3.0\\times10^8\\ \\mathrm{m/s}$); reflection vs refraction vs absorption; focal length/point, principal axis, image. Law of reflection and plane-mirror images (virtual, upright, same size, equidistant); simple plane-mirror ray diagrams. Concave and convex mirrors: identification, ray diagrams, image characteristics (size, orientation, type, location). Index of refraction $n = c/v$; refraction as a change of speed; Snell's law $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$ solved for an index. Dispersion and frequency-dependent bending; diffraction. Critical angle and total internal reflection. No mirror/lens equation ($1/f = 1/d_o + 1/d_i$), no thin lenses, no wave interference maths.",
+      "source": "Authored for Physics Academy from resources/physics8/resources/unit7_waves_light_outcomes.md, calibrated against AP Physics 2 CED Unit 13 (Geometric Optics), OpenStax High School Physics Ch. 15 (Light), and Tsokos IB Physics. No rescue_sprint source bank exists for Unit 7."
+    },
     "momentum-and-collisions": {
       "title": "Momentum and collisions (introductory)",
       "banks": ["momentum-and-collisions.json", "momentum-and-collisions-frq.json"],

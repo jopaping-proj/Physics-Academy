@@ -1,0 +1,1808 @@
+[
+  {
+    "id": "BP8-U7-MCQ-001",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "A material that lets light pass through it so you can see clearly through it is called:",
+    "choices": ["opaque", "transparent", "reflective", "luminous"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a transparent material transmits light, so objects can be seen clearly through it (glass, clear water, air).",
+      "incorrect": {
+        "0": "Opaque materials block light — you cannot see through them (wood, metal, cardboard).",
+        "2": "Reflective describes a surface that bounces light back, not one you see through.",
+        "3": "Luminous means the object produces its own light (the Sun, a lamp)."
+      }
+    },
+    "hint": ["Which word means 'light goes straight through'?"],
+    "solution": "A transparent material transmits light with little scattering, so you can see clearly through it. An opaque material does not transmit light at all. (A translucent material lets light through but scatters it, so images are blurred.)"
+  },
+  {
+    "id": "BP8-U7-MCQ-002",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "In optics, the 'normal' at a point on a surface is:",
+    "choices": [
+      "a line drawn along the surface at that point.",
+      "a line drawn perpendicular to the surface at that point.",
+      "the incoming ray of light.",
+      "the average of the incident and reflected rays."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the normal is the line perpendicular to the surface at the point where the ray meets it. All angles in optics are measured from the normal.",
+      "incorrect": {
+        "0": "That is the tangent to the surface, not the normal.",
+        "2": "The incident ray is a separate line; the normal is a construction line perpendicular to the surface.",
+        "3": "The normal is defined by the surface geometry, not by the rays."
+      }
+    },
+    "hint": ["'Normal' in geometry means perpendicular."],
+    "solution": "The normal is the straight line drawn perpendicular to a surface at the point where a ray strikes it. Angles of incidence, reflection, and refraction are all measured between a ray and this normal, not between a ray and the surface."
+  },
+  {
+    "id": "BP8-U7-MCQ-003",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The speed of light in a vacuum is approximately:",
+    "choices": ["$3.0 \\times 10^{5}\\ \\mathrm{m/s}$", "$3.0 \\times 10^{8}\\ \\mathrm{m/s}$", "$3.0 \\times 10^{8}\\ \\mathrm{km/h}$", "$340\\ \\mathrm{m/s}$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ (about 300 million metres per second).",
+      "incorrect": {
+        "0": "That is 1000 times too small — it is the speed in km/s, not m/s.",
+        "2": "The units are metres per second, not km/h.",
+        "3": "$340\\ \\mathrm{m/s}$ is roughly the speed of sound in air, not light."
+      }
+    },
+    "hint": ["About 300 million metres per second."],
+    "solution": "Light travels at $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in a vacuum. This is the fastest speed anything can travel, and light slows down when it passes through a material."
+  },
+  {
+    "id": "BP8-U7-MCQ-004",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B4"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Light strikes a surface. Which pairing correctly describes reflection, refraction, and absorption?",
+    "choices": [
+      "Reflection: light bounces off; refraction: light bends as it passes through into another medium; absorption: light's energy is taken up by the material.",
+      "Reflection: light is absorbed; refraction: light bounces off; absorption: light passes through.",
+      "All three mean the light bounces back.",
+      "Reflection and refraction are the same; absorption means the light speeds up."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — reflection is bouncing off, refraction is bending while passing into a new medium (because the speed changes), and absorption is the material taking up the light's energy (usually warming up).",
+      "incorrect": {
+        "1": "The definitions are scrambled. Reflection = bounce off; refraction = bend through; absorption = energy taken up.",
+        "2": "Only reflection is bouncing back; refraction is transmission with bending, absorption is energy uptake.",
+        "3": "Reflection and refraction are different processes, and absorbed light energy typically heats the material."
+      }
+    },
+    "hint": ["Bounce off / bend through / energy taken up."],
+    "solution": "When light meets a surface it can be reflected (bounced off the surface), refracted (transmitted into the new medium, bending because its speed changes), or absorbed (its energy taken up by the material, usually appearing as heat). Usually all three happen to some degree at once."
+  },
+  {
+    "id": "BP8-U7-MCQ-005",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B5"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "For a curved mirror, the 'principal axis' is:",
+    "choices": [
+      "the straight line through the centre of the mirror and its focal point.",
+      "the line along the mirror's surface.",
+      "any ray of light that hits the mirror.",
+      "the vertical line where the image forms."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the principal axis is the line of symmetry through the centre (vertex) of the mirror and its focal point (and centre of curvature).",
+      "incorrect": {
+        "1": "That is the surface of the mirror, not the axis.",
+        "2": "Rays are drawn relative to the principal axis; they are not the axis itself.",
+        "3": "The image can form on or off the axis; the axis is fixed by the mirror's geometry."
+      }
+    },
+    "hint": ["It is the mirror's line of symmetry, passing through the focal point."],
+    "solution": "The principal axis of a curved mirror is the straight line passing through the centre of the mirror's surface, its focal point, and its centre of curvature. It is the mirror's axis of symmetry, and ray diagrams are drawn with respect to it."
+  },
+  {
+    "id": "BP8-U7-MCQ-006",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B5"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The focal point of a concave mirror is the point where:",
+    "choices": [
+      "the mirror's surface is deepest.",
+      "rays that arrive parallel to the principal axis meet after reflecting.",
+      "the object must be placed to see an image.",
+      "the mirror touches the principal axis."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — parallel rays (as from a very distant object) converge to the focal point after reflecting from a concave mirror. The focal length is the distance from the mirror to this point.",
+      "incorrect": {
+        "0": "That is the vertex or pole of the mirror, not the focal point.",
+        "2": "Objects can be placed anywhere; the image location depends on where.",
+        "3": "That is the vertex; the focal point is out in front of the mirror."
+      }
+    },
+    "hint": ["Where do parallel rays (from a distant object) come together after reflecting?"],
+    "solution": "The focal point (focus) of a concave mirror is where rays travelling parallel to the principal axis converge after reflection. The focal length $f$ is the distance from the mirror to this point. For a convex mirror, parallel rays diverge as if coming from a focal point behind the mirror."
+  },
+  {
+    "id": "BP8-U7-MCQ-007",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B5"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "What is the difference between a real image and a virtual image?",
+    "choices": [
+      "A real image can be projected onto a screen (light rays actually meet there); a virtual image cannot (rays only appear to come from it).",
+      "A real image is always upright; a virtual image is always inverted.",
+      "A virtual image is larger; a real image is smaller.",
+      "There is no difference — the words are interchangeable."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — for a real image the reflected/refracted rays actually converge at the image location, so it can be caught on a screen. For a virtual image the rays only appear to diverge from a point (e.g. behind a mirror), so no screen image forms.",
+      "incorrect": {
+        "1": "Orientation is not what defines real vs virtual. Real images from a single mirror are inverted; virtual images are upright — but that is a consequence, not the definition.",
+        "2": "Size varies for both types depending on the setup.",
+        "3": "They are fundamentally different: rays meet (real) versus only appear to meet (virtual)."
+      }
+    },
+    "hint": ["Can you put a screen where the image is and see it there?"],
+    "solution": "A real image forms where light rays actually converge, so it can be projected onto a screen (a cinema screen, the retina). A virtual image forms where rays only appear to originate — such as behind a plane mirror — so the rays never actually meet there and it cannot be captured on a screen."
+  },
+  {
+    "id": "BP8-U7-MCQ-008",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B1", "B4"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A red apple looks red in white light. What is happening to the light?",
+    "choices": [
+      "The apple produces red light.",
+      "The apple reflects red wavelengths and absorbs the other colours; the reflected red light reaches your eye.",
+      "The apple refracts white light into red.",
+      "The apple is transparent to red light only."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the apple's skin absorbs most wavelengths of the white light and reflects the red ones, so red is what reaches your eye.",
+      "incorrect": {
+        "0": "The apple is not luminous — it does not make its own light. It reflects some of the light shining on it.",
+        "2": "Refraction bends light passing through a medium; it does not turn white light red.",
+        "3": "An opaque apple is not transparent to any colour; it reflects red and absorbs the rest."
+      }
+    },
+    "hint": ["An object's colour is the colour of light it reflects; the rest is absorbed."],
+    "solution": "White light contains all visible wavelengths. The apple's skin absorbs most of them (their energy warms the apple slightly) and reflects the red wavelengths. Only that reflected red light enters your eye, so the apple appears red."
+  },
+  {
+    "id": "BP8-U7-MCQ-009",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B3"],
+    "type": "multiple-choice",
+    "skill": "reasonableness-check",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Light from the Sun takes about 8 minutes to reach Earth, roughly $1.5 \\times 10^{11}\\ \\mathrm{m}$ away. Which statement is consistent with $c \\approx 3 \\times 10^{8}\\ \\mathrm{m/s}$?",
+    "choices": [
+      "$8\\ \\mathrm{minutes} \\approx 480\\ \\mathrm{s}$, and $(3 \\times 10^{8})(480) \\approx 1.4 \\times 10^{11}\\ \\mathrm{m}$ — close to the Earth-Sun distance, so it checks out.",
+      "Light should take only a few seconds to travel that distance.",
+      "Light should take several hours.",
+      "The distance is too small to matter for light."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — time $\\times$ speed $= 480\\ \\mathrm{s} \\times 3 \\times 10^{8}\\ \\mathrm{m/s} \\approx 1.4 \\times 10^{11}\\ \\mathrm{m}$, matching the Earth-Sun distance to about one significant figure.",
+      "incorrect": {
+        "1": "A few seconds would cover only ~$10^{9}\\ \\mathrm{m}$, far short of $1.5 \\times 10^{11}\\ \\mathrm{m}$.",
+        "2": "Several hours is thousands of times too long.",
+        "3": "The distance is large enough that even light takes 8 minutes."
+      }
+    },
+    "hint": ["distance = speed x time. Multiply $3 \\times 10^{8}\\ \\mathrm{m/s}$ by $\\sim 480\\ \\mathrm{s}$ and compare with $1.5 \\times 10^{11}\\ \\mathrm{m}$."],
+    "solution": "$d = ct = (3 \\times 10^{8}\\ \\mathrm{m/s})(8 \\times 60\\ \\mathrm{s}) = (3 \\times 10^{8})(480) \\approx 1.4 \\times 10^{11}\\ \\mathrm{m}$. This matches the Earth-Sun distance ($1.5 \\times 10^{11}\\ \\mathrm{m}$) to one significant figure, confirming the value of $c$."
+  },
+  {
+    "id": "BP8-U7-MCQ-010",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": ["B2"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A student measures the angle between an incident ray and a flat mirror surface as $30^\\circ$. What is the angle of incidence?",
+    "choices": ["$30^\\circ$", "$60^\\circ$", "$15^\\circ$", "$90^\\circ$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the angle of incidence is measured from the normal, not the surface. If the ray makes $30^\\circ$ with the surface, it makes $90^\\circ - 30^\\circ = 60^\\circ$ with the normal.",
+      "incorrect": {
+        "0": "That is the angle from the *surface*. The angle of incidence is measured from the *normal*.",
+        "2": "Do not halve it — subtract from $90^\\circ$: $90 - 30 = 60^\\circ$.",
+        "3": "$90^\\circ$ would mean the ray runs along the surface."
+      }
+    },
+    "hint": ["Angles in optics are measured from the normal (perpendicular), not from the surface. Surface angle + normal angle = $90^\\circ$."],
+    "solution": "The angle of incidence is the angle between the incident ray and the normal (the perpendicular to the surface). A ray making $30^\\circ$ with the surface makes $90^\\circ - 30^\\circ = 60^\\circ$ with the normal, so the angle of incidence is $60^\\circ$."
+  },
+
+  {
+    "id": "BP8-U7-MCQ-011",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The law of reflection states that:",
+    "choices": [
+      "the angle of incidence is twice the angle of reflection.",
+      "the angle of incidence equals the angle of reflection (both measured from the normal), and the incident ray, reflected ray, and normal lie in one plane.",
+      "light always reflects straight back the way it came.",
+      "the reflected ray is perpendicular to the incident ray."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — angle of incidence = angle of reflection, measured from the normal, and all three lines lie in the same plane.",
+      "incorrect": {
+        "0": "The two angles are equal, not in a 2:1 ratio.",
+        "2": "Light reflects straight back only if it hits the surface head-on (angle of incidence $0^\\circ$).",
+        "3": "The reflected ray is perpendicular to the incident ray only for a $45^\\circ$ angle of incidence."
+      }
+    },
+    "hint": ["Incidence angle = reflection angle, both from the normal."],
+    "solution": "The law of reflection: the angle of incidence equals the angle of reflection, with both angles measured between the ray and the normal to the surface. The incident ray, the reflected ray, and the normal all lie in the same plane."
+  },
+  {
+    "id": "BP8-U7-MCQ-012",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM4"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A ray strikes a plane mirror with an angle of incidence of $25^\\circ$. What is the angle of reflection?",
+    "choices": ["$25^\\circ$", "$65^\\circ$", "$50^\\circ$", "$12.5^\\circ$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — by the law of reflection, the angle of reflection equals the angle of incidence: $25^\\circ$.",
+      "incorrect": {
+        "1": "$65^\\circ$ is the angle from the surface, not from the normal.",
+        "2": "$50^\\circ$ is the total angle between the incident and reflected rays, not the angle of reflection.",
+        "3": "The angles are equal, not halved."
+      }
+    },
+    "hint": ["Angle of reflection = angle of incidence."],
+    "solution": "The law of reflection says the angle of reflection equals the angle of incidence, both measured from the normal. So the angle of reflection is $25^\\circ$."
+  },
+  {
+    "id": "BP8-U7-MCQ-013",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM4"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A ray hits a plane mirror so that the angle between the incident ray and the reflected ray is $80^\\circ$. What is the angle of incidence?",
+    "choices": ["$40^\\circ$", "$80^\\circ$", "$20^\\circ$", "$10^\\circ$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the incident and reflected rays are symmetric about the normal, so each makes half of $80^\\circ$ with the normal: $40^\\circ$.",
+      "incorrect": {
+        "1": "$80^\\circ$ is the angle *between the rays*, which is split equally by the normal.",
+        "2": "$20^\\circ$ would be a quarter; the normal bisects the $80^\\circ$, giving $40^\\circ$ each.",
+        "3": "This over-divides."
+      }
+    },
+    "hint": ["The normal bisects the angle between the incident and reflected rays."],
+    "solution": "The angle of incidence equals the angle of reflection, and the normal lies exactly between the two rays. So the $80^\\circ$ between the rays is split into two equal $40^\\circ$ angles — the angle of incidence is $40^\\circ$."
+  },
+  {
+    "id": "BP8-U7-MCQ-014",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The image of an object in a plane (flat) mirror is:",
+    "choices": [
+      "real, inverted, and smaller than the object.",
+      "virtual, upright, the same size as the object, and as far behind the mirror as the object is in front.",
+      "real, upright, and larger than the object.",
+      "virtual, inverted, and located on the mirror's surface."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a plane mirror produces a virtual, upright, same-size image located as far behind the mirror as the object is in front (and laterally reversed left-right).",
+      "incorrect": {
+        "0": "A plane mirror image is virtual and upright, not real and inverted, and it is the same size.",
+        "2": "It is virtual and the same size, not real and larger.",
+        "3": "It is upright, and it is located behind the mirror, not on its surface."
+      }
+    },
+    "hint": ["Look in a bathroom mirror: is your reflection bigger, smaller, or the same? Upright or upside down?"],
+    "solution": "A plane mirror forms a virtual image (the light only appears to come from behind the mirror), upright, the same size as the object, located as far behind the mirror as the object is in front, and reversed left-to-right (lateral inversion)."
+  },
+  {
+    "id": "BP8-U7-MCQ-015",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "You stand $1.5\\ \\mathrm{m}$ in front of a plane mirror. How far is your image from you?",
+    "choices": ["$1.5\\ \\mathrm{m}$", "$3.0\\ \\mathrm{m}$", "$0.75\\ \\mathrm{m}$", "It depends on your height."],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the image is $1.5\\ \\mathrm{m}$ behind the mirror, and you are $1.5\\ \\mathrm{m}$ in front, so the image is $1.5 + 1.5 = 3.0\\ \\mathrm{m}$ from you.",
+      "incorrect": {
+        "0": "$1.5\\ \\mathrm{m}$ is the image's distance behind the *mirror*, not from *you*.",
+        "2": "The image is not between you and the mirror; it is behind the mirror.",
+        "3": "The image distance behind the mirror equals the object distance in front, independent of height."
+      }
+    },
+    "hint": ["The image is as far behind the mirror as you are in front. Add the two distances."],
+    "solution": "A plane mirror places the image as far behind the mirror as the object is in front — so $1.5\\ \\mathrm{m}$ behind. The distance from you to your image is $1.5\\ \\mathrm{m}$ (you to mirror) $+ 1.5\\ \\mathrm{m}$ (mirror to image) $= 3.0\\ \\mathrm{m}$."
+  },
+  {
+    "id": "BP8-U7-MCQ-016",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM3"],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "To draw a ray diagram locating the image of a point object in a plane mirror, you should:",
+    "choices": [
+      "draw the image on the mirror's surface.",
+      "reflect two rays off the mirror using the law of reflection, then extend the reflected rays straight backward behind the mirror until they cross — that crossing point is the (virtual) image.",
+      "draw a single ray straight through the mirror.",
+      "place the image halfway between the object and the mirror."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the reflected rays diverge as if from a point behind the mirror; extending them backward (as dashed lines) to their intersection locates the virtual image.",
+      "incorrect": {
+        "0": "The image is behind the mirror, not on its surface.",
+        "2": "Light does not pass straight through a mirror; it reflects.",
+        "3": "The image is behind the mirror at the same distance as the object is in front — not halfway to the mirror."
+      }
+    },
+    "hint": ["Reflect two rays, then trace the reflected rays *backward* behind the mirror to where they appear to meet."],
+    "solution": "Draw two rays from the object to the mirror, reflect each using the law of reflection, and then extend the reflected rays backward (dashed) behind the mirror. Where these extensions cross is the virtual image — as far behind the mirror as the object is in front."
+  },
+  {
+    "id": "BP8-U7-MCQ-017",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM1", "PM4"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A mirror is rotated by $10^\\circ$ while the incident ray stays fixed. By what angle does the reflected ray rotate?",
+    "choices": ["$10^\\circ$", "$20^\\circ$", "$5^\\circ$", "$0^\\circ$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — rotating a mirror by an angle rotates the normal by the same angle, and both the angle of incidence and the angle of reflection change by that amount, so the reflected ray turns by $2 \\times 10^\\circ = 20^\\circ$.",
+      "incorrect": {
+        "0": "The reflected ray turns by *twice* the mirror's rotation, not the same amount.",
+        "2": "It is double, not half.",
+        "3": "The reflected ray definitely moves when the mirror turns — that is how a mirror galvanometer works."
+      }
+    },
+    "hint": ["Rotating the mirror by $\\theta$ rotates the normal by $\\theta$, changing incidence by $\\theta$ and reflection by $\\theta$ in the same sense."],
+    "solution": "When a plane mirror rotates by an angle $\\theta$, its normal rotates by $\\theta$ as well. The angle of incidence changes by $\\theta$, and by the law of reflection the angle of reflection also changes by $\\theta$ in the same direction. The reflected ray therefore rotates by $2\\theta = 20^\\circ$."
+  },
+  {
+    "id": "BP8-U7-MCQ-018",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM2"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "What is the shortest vertical plane mirror in which a person of height $H$ can see their whole body (mirror hung at the right height)?",
+    "choices": ["$H$", "$H/2$", "$2H$", "$3H/4$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — by the law of reflection, the mirror only needs to span from halfway between your eyes and the top of your head down to halfway between your eyes and your feet: a total of $H/2$.",
+      "incorrect": {
+        "0": "A full-height mirror works but is not the minimum. Half your height is enough.",
+        "2": "That is twice what is needed.",
+        "3": "The exact result from the geometry is $H/2$, regardless of how far you stand from the mirror."
+      }
+    },
+    "hint": ["Trace rays from your feet and the top of your head to your eyes via the mirror. The reflection points are each halfway up."],
+    "solution": "To see your feet, the ray from your feet must reflect at a mirror point exactly halfway between your feet and your eyes. To see the top of your head, the reflection point is halfway between your eyes and the top of your head. The mirror only needs to cover between these two points — a length of $H/2$ — and this is independent of your distance from the mirror."
+  },
+  {
+    "id": "BP8-U7-MCQ-019",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why can you see a clear image in a smooth mirror but only a diffuse glow on a sheet of white paper, even though both reflect light?",
+    "choices": [
+      "The paper absorbs all the light.",
+      "The mirror gives specular (regular) reflection — parallel rays stay parallel; the rough paper gives diffuse reflection — parallel rays scatter in all directions, so no image forms.",
+      "The paper refracts the light instead of reflecting it.",
+      "Only shiny objects obey the law of reflection."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — every point on the paper still obeys the law of reflection, but because the surface is microscopically rough, the normals point every which way, so parallel incoming rays leave in all directions and no image is preserved.",
+      "incorrect": {
+        "0": "The paper reflects most of the light (that is why it looks white) — it just scatters it.",
+        "2": "Paper reflects and scatters; it does not transmit the light.",
+        "3": "The law of reflection holds at every point of any surface, rough or smooth."
+      }
+    },
+    "hint": ["The law of reflection holds at every tiny patch. On rough paper, which way do all those tiny normals point?"],
+    "solution": "The law of reflection holds at every point of any surface. A smooth mirror has all its surface normals parallel, so a set of parallel rays reflects as a parallel set — the image is preserved (specular reflection). White paper is microscopically rough: its surface normals point in all directions, so parallel rays scatter every which way (diffuse reflection). You see the paper's brightness but not a mirror image."
+  },
+  {
+    "id": "BP8-U7-MCQ-020",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": ["PM4"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Two plane mirrors meet at right angles ($90^\\circ$). A ray reflects off both. How does the final ray's direction compare with the original ray's direction?",
+    "choices": [
+      "It travels back exactly antiparallel to the original (reversed).",
+      "It travels perpendicular to the original.",
+      "It travels parallel to the original in the same direction.",
+      "It cannot be determined."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — two mirrors at $90^\\circ$ send any ray (in the plane of the mirrors) back exactly the way it came, just displaced. This is how a corner reflector (bike reflector, road stud) works.",
+      "incorrect": {
+        "1": "Each reflection at a right-angle pair adds up to a total turn of $180^\\circ$, not $90^\\circ$.",
+        "2": "A $180^\\circ$ turn reverses the direction, it does not keep it the same.",
+        "3": "The geometry is fixed: two $90^\\circ$ mirrors always retro-reflect."
+      }
+    },
+    "hint": ["Each reflection turns the ray; two mirrors at $90^\\circ$ turn it by a total of $180^\\circ$."],
+    "solution": "For two plane mirrors meeting at $90^\\circ$, a ray that reflects off both leaves exactly antiparallel to the incoming ray (turned through $180^\\circ$), regardless of the angle it entered. This retro-reflecting property is used in bicycle reflectors, road studs, and the reflectors left on the Moon."
+  },
+
+  {
+    "id": "BP8-U7-MCQ-022",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "A concave mirror is one that:",
+    "choices": [
+      "curves inward, like the inside of a spoon's bowl (caves in), and can converge light.",
+      "curves outward, like the back of a spoon, and always spreads light out.",
+      "is perfectly flat.",
+      "is coloured on one side."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — a concave mirror curves inward (it 'caves in'); its reflecting surface is on the inside of the curve, and it converges parallel light to a focal point.",
+      "incorrect": {
+        "1": "That describes a convex mirror.",
+        "2": "A flat mirror is a plane mirror, neither concave nor convex.",
+        "3": "Colour is irrelevant to whether a mirror is concave or convex."
+      }
+    },
+    "hint": ["'Concave' contains 'cave' — it caves inward."],
+    "solution": "A concave mirror curves inward — the reflecting surface is like the inside of a bowl or the inside of a spoon. It converges rays that arrive parallel to the principal axis toward a real focal point in front of the mirror. A convex mirror curves outward and diverges such rays."
+  },
+  {
+    "id": "BP8-U7-MCQ-023",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The image formed by a convex mirror of a real object is always:",
+    "choices": [
+      "real, inverted, and larger.",
+      "virtual, upright, and smaller, located behind the mirror.",
+      "real, upright, and the same size.",
+      "virtual, inverted, and larger."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a convex mirror always forms a virtual, upright, reduced image behind the mirror, for any object position. That is why it gives a wide field of view (car wing mirrors, shop security mirrors).",
+      "incorrect": {
+        "0": "A convex mirror never forms a real or enlarged image of a real object.",
+        "2": "The image is virtual and smaller, not real and same-size.",
+        "3": "The image is upright, not inverted."
+      }
+    },
+    "hint": ["Think of a car wing mirror or a shop dome mirror: what does the reflection look like?"],
+    "solution": "A convex (diverging) mirror always forms a virtual, upright, diminished image located behind the mirror, no matter where the object is. The reduced image size gives a wide field of view, which is why convex mirrors are used for vehicle wing mirrors and store security."
+  },
+  {
+    "id": "BP8-U7-MCQ-024",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "An object is placed very close to a concave mirror, well inside its focal point. The image is:",
+    "choices": [
+      "real, inverted, and smaller.",
+      "virtual, upright, and larger (magnified) — this is the 'shaving/make-up mirror' setup.",
+      "real, upright, and the same size.",
+      "at infinity."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — with the object inside the focal length, a concave mirror acts like a magnifying mirror: virtual, upright, enlarged image behind the mirror.",
+      "incorrect": {
+        "0": "That is the case when the object is *beyond* the centre of curvature.",
+        "2": "A same-size image occurs when the object is *at* the centre of curvature, and it is real and inverted.",
+        "3": "The image is at infinity only when the object is *at* the focal point."
+      }
+    },
+    "hint": ["A make-up or shaving mirror is concave, and you hold your face close to it. What does your reflection look like?"],
+    "solution": "When a real object is inside the focal point of a concave mirror, the reflected rays diverge, and their backward extensions meet behind the mirror to form a virtual, upright, magnified image. This is exactly how a concave shaving or make-up mirror works when held close to the face."
+  },
+  {
+    "id": "BP8-U7-MCQ-025",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A distant object (much farther than the centre of curvature) is viewed in a concave mirror. Its image is:",
+    "choices": [
+      "virtual, upright, and larger.",
+      "real, inverted, and smaller, formed near the focal point.",
+      "at the mirror's surface.",
+      "the same size as the object."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a far object gives a real, inverted, reduced image close to the focal point of a concave mirror (this is how a reflecting telescope forms an image).",
+      "incorrect": {
+        "0": "A virtual enlarged image happens only when the object is inside the focal point.",
+        "2": "The image forms near the focal point, in front of the mirror, not on its surface.",
+        "3": "A same-size image needs the object at the centre of curvature; a far object gives a much smaller image."
+      }
+    },
+    "hint": ["Rays from a very distant object arrive nearly parallel. Where do parallel rays converge for a concave mirror?"],
+    "solution": "Rays from a very distant object arrive at the concave mirror nearly parallel to the principal axis, so they converge to a point near the focal point. The result is a real, inverted image, much smaller than the object, located just in front of the mirror near its focus — the principle of a reflecting telescope."
+  },
+  {
+    "id": "BP8-U7-MCQ-026",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM2"],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Which is a correct principal ray to use when drawing a ray diagram for a concave mirror?",
+    "choices": [
+      "A ray parallel to the principal axis reflects through the focal point.",
+      "A ray parallel to the principal axis reflects straight back along itself.",
+      "A ray through the focal point reflects back through the focal point.",
+      "A ray to the mirror's vertex passes straight through unchanged."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — for a concave mirror, an incoming ray parallel to the principal axis reflects so that it passes through the focal point. (Also: a ray through the focal point reflects parallel to the axis; a ray to the vertex reflects symmetrically about the axis.)",
+      "incorrect": {
+        "1": "A ray parallel to the axis reflects *through the focal point*, not back on itself. (That happens only for a ray along the axis or through the centre of curvature.)",
+        "2": "A ray *through the focal point* reflects *parallel to the axis*, not back through the focus.",
+        "3": "A ray to the vertex reflects with the angle of incidence equal to the angle of reflection about the principal axis — it does not pass straight through."
+      }
+    },
+    "hint": ["Parallel-in → through the focus. Through the focus → parallel-out."],
+    "solution": "Standard principal rays for a concave mirror: (1) a ray parallel to the principal axis reflects through the focal point; (2) a ray passing through the focal point reflects parallel to the axis; (3) a ray to the mirror's vertex reflects with equal angles about the principal axis; (4) a ray through the centre of curvature reflects straight back. Any two locate the image."
+  },
+  {
+    "id": "BP8-U7-MCQ-027",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "An object sits exactly at the centre of curvature ($C$) of a concave mirror. Its image is:",
+    "choices": [
+      "virtual, upright, and larger.",
+      "real, inverted, the same size as the object, and also located at $C$.",
+      "at the focal point, reduced.",
+      "there is no image."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — at the centre of curvature, the image is real, inverted, the same size, and forms back at $C$.",
+      "incorrect": {
+        "0": "A virtual magnified image needs the object inside the focal point.",
+        "2": "That is the case for an object beyond $C$; at $C$ the image is same-size and also at $C$.",
+        "3": "An image *does* form (unlike the special case of the object at the focal point)."
+      }
+    },
+    "hint": ["The centre of curvature is special: the image lands right back on top of $C$."],
+    "solution": "When a real object is at the centre of curvature $C$ of a concave mirror, the image is real, inverted, exactly the same size as the object, and located at $C$ as well. (Object between $C$ and $F$: real, inverted, enlarged. Object beyond $C$: real, inverted, reduced. Object inside $F$: virtual, upright, enlarged.)"
+  },
+  {
+    "id": "BP8-U7-MCQ-028",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM1", "SM3"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why is a convex mirror, rather than a plane or concave mirror, used for a car's passenger-side wing mirror?",
+    "choices": [
+      "It magnifies objects so you can see detail.",
+      "It always gives an upright, reduced image, which provides a wider field of view of the traffic behind.",
+      "It forms a real image on the glass.",
+      "It reflects more light than a flat mirror."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the reduced image of a convex mirror packs a wider scene into the same glass, giving a larger field of view (with the trade-off that objects look smaller and farther away, hence the warning label).",
+      "incorrect": {
+        "0": "A convex mirror makes objects look *smaller*, not magnified.",
+        "2": "A convex mirror forms a *virtual* image behind the glass, not a real one on it.",
+        "3": "Reflectivity depends on the coating, not the curvature."
+      }
+    },
+    "hint": ["What does a convex mirror do to image size, and what does that do to how much of the scene fits in the mirror?"],
+    "solution": "A convex mirror always produces an upright, diminished virtual image. Because objects appear smaller, more of the scene fits within the mirror — a wider field of view, useful for spotting vehicles in the blind spot. The downside is that objects look farther away than they are, which is why such mirrors carry the label 'objects in mirror are closer than they appear'."
+  },
+  {
+    "id": "BP8-U7-MCQ-029",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "An object is placed between the focal point ($F$) and the centre of curvature ($C$) of a concave mirror. The image is:",
+    "choices": [
+      "real, inverted, and enlarged, located beyond $C$.",
+      "virtual, upright, and enlarged, located behind the mirror.",
+      "real, inverted, and reduced, between $F$ and $C$.",
+      "the same size as the object, at $C$."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — object between $F$ and $C$ gives a real, inverted, enlarged image located beyond $C$ (the reverse of 'object beyond $C$ → image between $F$ and $C$, reduced').",
+      "incorrect": {
+        "1": "A virtual upright enlarged image needs the object *inside* $F$.",
+        "2": "That is the case for an object *beyond* $C$.",
+        "3": "A same-size image at $C$ needs the object *at* $C$."
+      }
+    },
+    "hint": ["Object and image positions swap: object between F and C ↔ image beyond C. Larger object distance ↔ smaller image, and vice versa."],
+    "solution": "For a concave mirror, the object and image positions are interchangeable, and closer object means farther, larger image. With the object between $F$ and $C$, the image is real, inverted, enlarged, and located beyond $C$. (This is the projector/headlamp region — a small source near $F$ throws a large, bright beam.)"
+  },
+  {
+    "id": "BP8-U7-MCQ-030",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM2"],
+    "type": "multiple-choice",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "In a ray diagram for a convex mirror, an incoming ray parallel to the principal axis reflects so that:",
+    "choices": [
+      "it passes through the focal point in front of the mirror.",
+      "its backward extension appears to come from the focal point behind the mirror.",
+      "it returns exactly along its own path.",
+      "it goes straight through the mirror unchanged."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a convex mirror diverges parallel rays; each reflected ray travels as if it had come from the virtual focal point behind the mirror.",
+      "incorrect": {
+        "0": "That is the behaviour of a *concave* mirror. A convex mirror's focal point is virtual and behind the mirror.",
+        "2": "A ray returns along its own path only if it heads toward the centre of curvature.",
+        "3": "Light reflects from a mirror; it does not pass through."
+      }
+    },
+    "hint": ["A convex mirror spreads parallel rays apart; trace them backward to find where they seem to originate."],
+    "solution": "For a convex mirror, an incoming ray parallel to the principal axis reflects outward (diverging). Extending the reflected ray backward, it appears to originate from the focal point located behind the mirror (a virtual focus). This is one of the principal rays used to locate the always-virtual image."
+  },
+  {
+    "id": "BP8-U7-MCQ-031",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "An object is placed exactly at the focal point of a concave mirror. What image forms?",
+    "choices": [
+      "A real image at the focal point.",
+      "No clear image forms — the reflected rays are parallel and do not converge (or the image is 'at infinity').",
+      "A virtual image at the mirror's surface.",
+      "An enlarged upright image just behind the mirror."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — rays from an object at the focal point reflect parallel to the principal axis, so they never meet; there is no image at a finite distance (it is said to form 'at infinity').",
+      "incorrect": {
+        "0": "The rays leave parallel, so they do not converge to form a real image.",
+        "2": "The parallel reflected rays do not have backward extensions that meet either.",
+        "3": "An upright enlarged virtual image requires the object *inside* the focal point, not exactly at it."
+      }
+    },
+    "hint": ["A ray from the focal point reflects parallel to the axis. If all rays leave parallel, where do they meet?"],
+    "solution": "For an object placed at the focal point of a concave mirror, every ray reflects parallel to the principal axis. Parallel rays never converge, so no image forms at any finite distance — the image is described as forming 'at infinity'. (This is the reverse of a distant object producing an image at the focal point, and it is how a spotlight makes a parallel beam.)"
+  },
+  {
+    "id": "BP8-U7-MCQ-032",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which everyday object uses a concave mirror?",
+    "choices": [
+      "A car's passenger-side wing mirror.",
+      "The reflector behind a torch (flashlight) bulb or a car headlamp.",
+      "A security mirror in a shop.",
+      "A flat bathroom mirror."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a torch or headlamp puts the bulb near the focal point of a concave reflector, so the reflected light comes out as a roughly parallel beam.",
+      "incorrect": {
+        "0": "Wing mirrors are convex (wide field of view).",
+        "2": "Shop security mirrors are convex.",
+        "3": "A bathroom mirror is a plane mirror."
+      }
+    },
+    "hint": ["Which one needs to make a *beam* of light, or magnify a close object?"],
+    "solution": "Concave mirrors are used where light must be converged or a beam formed: torch and headlamp reflectors (bulb near the focus → parallel beam), shaving/make-up mirrors (magnified upright image), and reflecting telescopes. Convex mirrors are used for wide-angle viewing (wing mirrors, shop security)."
+  },
+  {
+    "id": "BP8-U7-MCQ-033",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": ["SM2", "SM3"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "physical-model",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "Using only ray-diagram reasoning (no equations), as an object moves from far away toward the focal point of a concave mirror, the real image:",
+    "choices": [
+      "moves from near the focal point outward toward infinity, growing larger and staying inverted.",
+      "stays at the focal point and shrinks.",
+      "moves toward the mirror and becomes upright.",
+      "disappears immediately."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — object at infinity → image at $F$ (tiny). As the object approaches $F$, the image recedes from $F$ toward infinity and grows without limit, remaining real and inverted, until at $F$ the rays leave parallel and the image is 'at infinity'.",
+      "incorrect": {
+        "1": "The image only sits at $F$ when the object is infinitely far; it moves as the object moves.",
+        "2": "The real image stays inverted throughout this range and moves *away* from the mirror.",
+        "3": "The real image persists (and enlarges) until the object reaches $F$."
+      }
+    },
+    "hint": ["Trace the 'parallel-in, through-F' ray and the 'through-F, parallel-out' ray as the object slides inward. Where do they cross as the object nears F?"],
+    "solution": "For a concave mirror, as a real object moves from infinity toward the focal point: the real, inverted image starts small and near $F$, then moves farther from the mirror and grows larger. As the object reaches $F$, the reflected rays become parallel and the image recedes to infinity (becoming infinitely large in the limit). Only when the object passes inside $F$ does the image become virtual and upright."
+  },
+
+  {
+    "id": "BP8-U7-MCQ-034",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Refraction of light is caused by:",
+    "choices": [
+      "light changing colour as it enters a new material.",
+      "light changing speed as it passes from one material into another, which makes it change direction (unless it hits the surface head-on).",
+      "light being absorbed and re-emitted at a random angle.",
+      "the surface reflecting part of the light."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — light travels at different speeds in different media; the speed change at the boundary bends the ray. Head-on (along the normal), there is no bending, just a speed change.",
+      "incorrect": {
+        "0": "The colour (frequency) does not change on refraction; the speed and wavelength do.",
+        "2": "Refraction is an ordered bending, not random scattering.",
+        "3": "Reflection is a separate process; refraction is about the transmitted ray bending."
+      }
+    },
+    "hint": ["What changes about the light when it moves from air into water or glass?"],
+    "solution": "Refraction occurs because light travels at different speeds in different transparent media. When a ray crosses the boundary at an angle, one side of the wavefront slows (or speeds up) before the other, swinging the ray around — it bends. A ray hitting the surface along the normal changes speed but not direction."
+  },
+  {
+    "id": "BP8-U7-MCQ-035",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The index of refraction $n$ of a material is defined by:",
+    "choices": [
+      "$n = v/c$ (speed in the material over speed in vacuum).",
+      "$n = c/v$ (speed of light in vacuum over speed of light in the material).",
+      "$n = c \\times v$.",
+      "$n$ = the material's density."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $n = c/v$. Since $v \\le c$, the index of refraction is always $\\ge 1$; it is $1$ for a vacuum and about $1.5$ for glass.",
+      "incorrect": {
+        "0": "This is upside down — it would give $n \\le 1$, which never happens.",
+        "2": "$n$ is a ratio, not a product.",
+        "3": "There is a rough correlation with density for many materials, but $n$ is defined by the speed ratio."
+      }
+    },
+    "hint": ["$n$ tells you how many times slower light goes in the material: $c$ divided by $v$."],
+    "solution": "The index (or coefficient) of refraction is $n = \\dfrac{c}{v}$, where $c$ is the speed of light in vacuum and $v$ is its speed in the material. Because light never travels faster than $c$ in a material, $n \\ge 1$: $n = 1$ (vacuum), $\\approx 1.0$ (air), $\\approx 1.33$ (water), $\\approx 1.5$ (glass), $\\approx 2.4$ (diamond)."
+  },
+  {
+    "id": "BP8-U7-MCQ-036",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Light travels at $2.0 \\times 10^{8}\\ \\mathrm{m/s}$ in a certain glass. What is the index of refraction of the glass? (Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.)",
+    "choices": ["$1.5$", "$0.67$", "$6.0$", "$0.5$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $n = c/v = \\dfrac{3.0 \\times 10^{8}}{2.0 \\times 10^{8}} = 1.5$.",
+      "incorrect": {
+        "1": "This is $v/c$ — the fraction is upside down. $n = c/v$.",
+        "2": "This multiplies the powers of ten. $\\dfrac{3.0 \\times 10^{8}}{2.0 \\times 10^{8}} = 1.5$.",
+        "3": "The index of refraction is never less than 1."
+      }
+    },
+    "hint": ["$n = c/v$: divide $3.0 \\times 10^{8}$ by $2.0 \\times 10^{8}$."],
+    "solution": "$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m/s}}{2.0 \\times 10^{8}\\ \\mathrm{m/s}} = 1.5$. Light in this glass travels at two-thirds of its vacuum speed."
+  },
+  {
+    "id": "BP8-U7-MCQ-037",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A material has an index of refraction of $2.0$. What is the speed of light in this material? (Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.)",
+    "choices": ["$1.5 \\times 10^{8}\\ \\mathrm{m/s}$", "$6.0 \\times 10^{8}\\ \\mathrm{m/s}$", "$3.0 \\times 10^{8}\\ \\mathrm{m/s}$", "$2.0 \\times 10^{8}\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — rearranging $n = c/v$: $v = c/n = \\dfrac{3.0 \\times 10^{8}}{2.0} = 1.5 \\times 10^{8}\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "Light cannot travel faster than $c$ in a material. $v = c/n$, so it is slower.",
+        "2": "That is the vacuum speed. In a material with $n = 2$, light is twice as slow.",
+        "3": "This is numerically $n \\times 10^{8}$; the correct value is $c/n = 1.5 \\times 10^{8}$."
+      }
+    },
+    "hint": ["Rearrange $n = c/v$ to $v = c/n$."],
+    "solution": "$v = \\dfrac{c}{n} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m/s}}{2.0} = 1.5 \\times 10^{8}\\ \\mathrm{m/s}$ — half the vacuum speed, as expected for $n = 2$."
+  },
+  {
+    "id": "BP8-U7-MCQ-038",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R2"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A light ray passes from air into water at an angle (not along the normal). Which way does it bend, and why?",
+    "choices": [
+      "Toward the normal, because it slows down entering the denser water.",
+      "Away from the normal, because it speeds up entering the water.",
+      "It does not bend, only slows.",
+      "It bends toward the surface."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — going from a lower-index medium (air) to a higher-index medium (water), light slows and bends toward the normal.",
+      "incorrect": {
+        "1": "Light *slows* entering water (higher $n$), so it bends *toward* the normal, not away.",
+        "2": "It does bend, because it hits the surface at an angle and one side of the wavefront slows first.",
+        "3": "Angles are measured from the normal; the ray bends toward the normal here."
+      }
+    },
+    "hint": ["Entering a slower (higher-$n$) medium: toward the normal. Entering a faster (lower-$n$) medium: away from the normal."],
+    "solution": "Water has a higher index of refraction than air, so light travels slower in water. When the ray crosses the boundary at an angle, the side of the wavefront that enters the water first slows down, swinging the ray toward the normal. (Going the other way, water to air, it would speed up and bend away from the normal.)"
+  },
+  {
+    "id": "BP8-U7-MCQ-039",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Light in air ($n_1 = 1.0$) hits a glass surface. The angle of incidence has $\\sin\\theta_1 = 0.90$ and the angle of refraction has $\\sin\\theta_2 = 0.60$. What is the index of refraction of the glass?",
+    "choices": ["$1.5$", "$0.67$", "$1.8$", "$0.54$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, so $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.90)}{0.60} = 1.5$.",
+      "incorrect": {
+        "1": "This inverts the ratio ($0.60/0.90$). Solve $n_2 = n_1\\sin\\theta_1/\\sin\\theta_2$.",
+        "2": "This multiplies the sines. Snell's law uses a ratio.",
+        "3": "This uses $\\sin\\theta_1 \\times \\sin\\theta_2$; use $\\sin\\theta_1 / \\sin\\theta_2$."
+      }
+    },
+    "hint": ["$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$. Solve for $n_2$: $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2}$."],
+    "solution": "Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$. Rearranging for the glass: $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.90)}{0.60} = 1.5$."
+  },
+  {
+    "id": "BP8-U7-MCQ-040",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why does a straight straw look bent where it enters a glass of water?",
+    "choices": [
+      "The water chemically bends the straw.",
+      "Light from the underwater part of the straw refracts (bends) as it leaves the water and enters the air, so it reaches your eye from a different direction — the straw appears displaced.",
+      "The water magnifies the straw unevenly.",
+      "The straw reflects off the water surface."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — light from the submerged part bends away from the normal as it exits into air, so your eye traces it back to a shifted position; the underwater part appears offset from the part above water.",
+      "incorrect": {
+        "0": "The straw itself is unchanged; only the light path bends.",
+        "2": "Magnification is a side effect, but the 'bend' is due to refraction shifting the apparent position.",
+        "3": "Some light does reflect, but the apparent bending is caused by refraction of the transmitted light."
+      }
+    },
+    "hint": ["Light from the underwater straw changes direction as it crosses the water surface. Your eye assumes light travels straight."],
+    "solution": "Light rays from the underwater part of the straw refract (bend away from the normal) as they pass from water into air. Your eye and brain assume light travelled in a straight line, so they trace the rays back to a position that is shifted from the straw's true position. The submerged part therefore appears offset from the part above the water, making the straw look bent at the surface."
+  },
+  {
+    "id": "BP8-U7-MCQ-041",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R1"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Material X has $n = 1.5$ and material Y has $n = 3.0$. In which does light travel faster, and by what factor?",
+    "choices": [
+      "Light travels faster in X, by a factor of 2.",
+      "Light travels faster in Y, by a factor of 2.",
+      "Light travels at the same speed in both.",
+      "Light travels faster in X, by a factor of 1.5."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $v = c/n$, so a larger $n$ means slower light. Y's index is twice X's, so light in Y is half as fast — light in X is twice as fast as in Y.",
+      "incorrect": {
+        "1": "A higher index means *slower* light, so Y (higher $n$) has the slower light.",
+        "2": "Different indices give different speeds: $v_X = c/1.5$, $v_Y = c/3.0$.",
+        "3": "The factor is the ratio of the indices, $3.0/1.5 = 2$, not $1.5$."
+      }
+    },
+    "hint": ["$v = c/n$: speed is inversely proportional to $n$. Compare $n_X$ and $n_Y$."],
+    "solution": "Since $v = c/n$, the speed of light in a material is inversely proportional to its index of refraction. $v_X = c/1.5$ and $v_Y = c/3.0$, so $v_X / v_Y = 3.0/1.5 = 2$. Light travels twice as fast in X as in Y."
+  },
+  {
+    "id": "BP8-U7-MCQ-042",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R2", "R3"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A light ray travels from air straight into a glass block along the normal (angle of incidence $0^\\circ$). What happens?",
+    "choices": [
+      "It bends toward the normal.",
+      "It bends away from the normal.",
+      "It continues in a straight line, but its speed decreases.",
+      "It is totally reflected."
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — at normal incidence there is no bending (Snell's law: $\\sin 0 = 0$ on both sides), but the light still slows down on entering the higher-index glass.",
+      "incorrect": {
+        "0": "Bending happens only when the ray hits the surface at an angle. At $0^\\circ$ there is no bend.",
+        "1": "Same reason — no bending at normal incidence.",
+        "3": "Total internal reflection happens for light going from dense to less dense at a large angle, not this case."
+      }
+    },
+    "hint": ["Snell's law with $\\theta_1 = 0$: what is $\\sin 0$? So what is $\\sin\\theta_2$?"],
+    "solution": "Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$. With $\\theta_1 = 0^\\circ$, $\\sin\\theta_1 = 0$, so $\\sin\\theta_2 = 0$ and $\\theta_2 = 0^\\circ$ — the ray does not bend. But its speed still drops to $v = c/n_{glass}$ (and its wavelength shortens); only the frequency and direction are unchanged."
+  },
+  {
+    "id": "BP8-U7-MCQ-043",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": ["R1", "R3"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "Light passes from water ($n = 1.33$) into a plastic. The measured angles give $\\sin\\theta_{water} = 0.75$ and $\\sin\\theta_{plastic} = 0.50$. What is the index of refraction of the plastic (to 2 significant figures)?",
+    "choices": ["$2.0$", "$0.89$", "$1.5$", "$1.0$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $n_{water}\\sin\\theta_{water} = n_{plastic}\\sin\\theta_{plastic}$, so $n_{plastic} = \\dfrac{(1.33)(0.75)}{0.50} = \\dfrac{1.0}{0.50} \\approx 2.0$.",
+      "incorrect": {
+        "1": "This inverts the ratio. Solve $n_{plastic} = n_{water}\\sin\\theta_{water}/\\sin\\theta_{plastic}$.",
+        "2": "This forgets the water index (uses $n_1 = 1$). Here the light starts in water.",
+        "3": "This ignores the angle ratio entirely."
+      }
+    },
+    "hint": ["Snell's law works between any two media: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$. Here $n_1$ is water's $1.33$, not $1$."],
+    "solution": "Snell's law between water and plastic: $n_{water}\\sin\\theta_{water} = n_{plastic}\\sin\\theta_{plastic}$. So $n_{plastic} = \\dfrac{n_{water}\\sin\\theta_{water}}{\\sin\\theta_{plastic}} = \\dfrac{(1.33)(0.75)}{0.50} \\approx \\dfrac{1.0}{0.50} = 2.0$."
+  },
+
+  {
+    "id": "BP8-U7-MCQ-044",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Total internal reflection occurs when:",
+    "choices": [
+      "light travels from a less dense medium into a denser one at any angle.",
+      "light travels from a denser (higher-$n$) medium toward a less dense one at an angle of incidence greater than the critical angle, so all the light reflects back and none refracts out.",
+      "a mirror is placed behind a glass block.",
+      "light hits any surface exactly along the normal."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for light going from high $n$ to low $n$, beyond the critical angle there is no refracted ray at all; 100% of the light reflects back into the denser medium.",
+      "incorrect": {
+        "0": "Going from less dense to denser, light always refracts through — TIR cannot occur.",
+        "2": "No mirror is involved; the boundary itself reflects everything.",
+        "3": "At normal incidence the light passes straight through (or partially reflects), not total internal reflection."
+      }
+    },
+    "hint": ["It needs light going the 'dense → less dense' way, and an angle bigger than a certain critical value."],
+    "solution": "Total internal reflection happens when light travelling in a denser medium meets a boundary with a less dense medium at an angle of incidence greater than the critical angle. Beyond that angle, Snell's law has no solution for a refracted ray, so all the light is reflected back into the denser medium. It is the basis of optical fibres and the sparkle of cut diamond."
+  },
+  {
+    "id": "BP8-U7-MCQ-045",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "The critical angle $\\theta_c$ for light going from a medium of index $n$ into air ($n \\approx 1$) satisfies:",
+    "choices": ["$\\sin\\theta_c = n$", "$\\sin\\theta_c = 1/n$", "$\\theta_c = 90^\\circ - n$", "$\\sin\\theta_c = n^2$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — from Snell's law with the refracted ray at $90^\\circ$: $n\\sin\\theta_c = (1)\\sin 90^\\circ = 1$, so $\\sin\\theta_c = 1/n$.",
+      "incorrect": {
+        "0": "This is upside down. $\\sin\\theta_c$ must be $\\le 1$, and $n > 1$, so $\\sin\\theta_c = 1/n$.",
+        "2": "The critical angle is not $90^\\circ$ minus the index — mixing angles and a pure number.",
+        "3": "The relationship is $\\sin\\theta_c = 1/n$, not $n^2$."
+      }
+    },
+    "hint": ["Set the refraction angle to $90^\\circ$ in Snell's law: $n\\sin\\theta_c = 1 \\times \\sin 90^\\circ$."],
+    "solution": "At the critical angle, the refracted ray grazes along the boundary at $90^\\circ$. Snell's law: $n\\sin\\theta_c = (1)\\sin 90^\\circ = 1$, so $\\sin\\theta_c = \\dfrac{1}{n}$. For $n = 1.5$ (glass), $\\sin\\theta_c \\approx 0.67$; for $n = 2.0$, $\\sin\\theta_c = 0.5$, so $\\theta_c = 30^\\circ$."
+  },
+  {
+    "id": "BP8-U7-MCQ-046",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A material has an index of refraction of $2.0$. What is its critical angle for light passing into air?",
+    "choices": ["$30^\\circ$", "$60^\\circ$", "$45^\\circ$", "$90^\\circ$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\sin\\theta_c = 1/n = 1/2.0 = 0.5$, and $\\sin 30^\\circ = 0.5$, so $\\theta_c = 30^\\circ$.",
+      "incorrect": {
+        "1": "$\\sin 60^\\circ \\approx 0.87$, which would need $n \\approx 1.15$.",
+        "2": "$\\sin 45^\\circ \\approx 0.71$, which would need $n \\approx 1.4$.",
+        "3": "$90^\\circ$ is the refraction angle at the critical angle, not the critical angle itself."
+      }
+    },
+    "hint": ["$\\sin\\theta_c = 1/n = 1/2.0$. Which angle has a sine of $0.5$?"],
+    "solution": "$\\sin\\theta_c = \\dfrac{1}{n} = \\dfrac{1}{2.0} = 0.5$. Since $\\sin 30^\\circ = 0.5$, the critical angle is $\\theta_c = 30^\\circ$. Any ray inside this material hitting the surface at more than $30^\\circ$ from the normal is totally internally reflected."
+  },
+  {
+    "id": "BP8-U7-MCQ-047",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR1", "TIR2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Diamond ($n \\approx 2.4$) has a smaller critical angle than glass ($n \\approx 1.5$). What does this mean for light inside a cut diamond?",
+    "choices": [
+      "Light escapes more easily from diamond than from glass.",
+      "Light is totally internally reflected over a wider range of angles inside diamond, so it bounces around inside and exits in bright flashes — the diamond's 'fire' and sparkle.",
+      "Diamond cannot transmit light.",
+      "Light travels faster in diamond than in glass."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a smaller critical angle ($\\sin\\theta_c = 1/n$, larger $n$ → smaller $\\theta_c$) means more incidence angles cause total internal reflection, so light is trapped and bounces around before emerging in concentrated flashes.",
+      "incorrect": {
+        "0": "The opposite — a smaller critical angle makes it *harder* for light to escape.",
+        "2": "Diamond is transparent; it transmits light very well (that is why the trapped light eventually escapes as sparkle).",
+        "3": "Light is slower in diamond (higher $n$ means slower)."
+      }
+    },
+    "hint": ["Smaller critical angle → total internal reflection for more angles → light gets trapped and bounces around."],
+    "solution": "Since $\\sin\\theta_c = 1/n$, diamond's large $n \\approx 2.4$ gives a small critical angle (about $24^\\circ$). Almost any ray inside a well-cut diamond exceeds this angle at the facets, so it is totally internally reflected, bouncing repeatedly before finally exiting through a top facet in a bright, concentrated flash. This total-internal-reflection trapping is what gives diamond its brilliance and 'fire'."
+  },
+  {
+    "id": "BP8-U7-MCQ-048",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR2"],
+    "type": "multiple-choice",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "How does an optical fibre carry a light signal for kilometres with very little loss?",
+    "choices": [
+      "The fibre has tiny mirrors along its length.",
+      "Light entering the fibre hits the core-cladding boundary at angles beyond the critical angle, so it is totally internally reflected again and again, staying trapped in the core.",
+      "The fibre amplifies the light as it goes.",
+      "The light travels along the outside surface of the fibre."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the fibre's core has a higher index than its cladding, and light is injected so that it always strikes the boundary beyond the critical angle, giving repeated total internal reflection with essentially no loss at each bounce.",
+      "incorrect": {
+        "0": "There are no mirrors — the boundary itself reflects 100% of the light via total internal reflection.",
+        "2": "A plain fibre does not amplify; total internal reflection is nearly lossless, so amplification is only needed over very long distances.",
+        "3": "The light stays inside the core, not on the outer surface."
+      }
+    },
+    "hint": ["A fibre is a long thin rod of glass. What keeps the light bouncing inside it instead of leaking out the sides?"],
+    "solution": "An optical fibre has a glass core surrounded by cladding of lower index of refraction. Light is launched so that it always meets the core-cladding boundary at an angle greater than the critical angle, so it undergoes total internal reflection at every bounce. Because total internal reflection loses essentially no energy, the light signal can travel many kilometres down the core with very little attenuation."
+  },
+  {
+    "id": "BP8-U7-MCQ-049",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR1"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "Can total internal reflection occur for light travelling from air into glass?",
+    "choices": [
+      "Yes, at large angles of incidence.",
+      "No — total internal reflection only occurs when light travels from a higher-index medium toward a lower-index one. Air to glass is low index to high index.",
+      "Yes, but only if the glass is very thick.",
+      "Only if the light is a single colour."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — going from low $n$ (air) to high $n$ (glass), the refracted ray always exists (it bends toward the normal), so there is no critical angle and no total internal reflection.",
+      "incorrect": {
+        "0": "No angle of incidence in air produces total internal reflection into glass — the refracted ray always exists.",
+        "2": "Thickness is irrelevant; the direction of the index change is what matters.",
+        "3": "Colour does not enable total internal reflection when going low-index to high-index."
+      }
+    },
+    "hint": ["Total internal reflection needs the light to be in the *slower* (higher-$n$) medium heading toward the faster one."],
+    "solution": "Total internal reflection requires light to travel from a higher-index (optically denser) medium toward a lower-index one. Going from air ($n \\approx 1$) into glass ($n \\approx 1.5$), the light bends toward the normal and a refracted ray always exists — there is no critical angle and no total internal reflection. It can only happen for the reverse trip, glass to air."
+  },
+  {
+    "id": "BP8-U7-MCQ-050",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "The critical angle for a certain glass-to-air boundary is found to be the angle whose sine is $0.625$. What is the index of refraction of the glass?",
+    "choices": ["$1.6$", "$0.625$", "$1.25$", "$2.0$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c = 1/0.625 = 1.6$.",
+      "incorrect": {
+        "1": "That is $\\sin\\theta_c$, not $n$. Take the reciprocal.",
+        "2": "This is $2 \\times 0.625$; the relationship is $n = 1/\\sin\\theta_c$.",
+        "3": "$n = 2.0$ would give $\\sin\\theta_c = 0.5$, not $0.625$."
+      }
+    },
+    "hint": ["$\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c$."],
+    "solution": "For a boundary with air, $\\sin\\theta_c = \\dfrac{1}{n}$. Rearranging: $n = \\dfrac{1}{\\sin\\theta_c} = \\dfrac{1}{0.625} = 1.6$."
+  },
+  {
+    "id": "BP8-U7-MCQ-051",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "For light inside glass hitting the glass-air surface, at exactly the critical angle the refracted ray:",
+    "choices": [
+      "does not exist at all.",
+      "travels along the surface (refraction angle $90^\\circ$).",
+      "goes straight through undeviated.",
+      "bends back toward the normal."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — at the critical angle the refracted ray grazes along the boundary at $90^\\circ$ to the normal. For any larger angle of incidence, no refracted ray exists (total internal reflection).",
+      "incorrect": {
+        "0": "Just *beyond* the critical angle the refracted ray vanishes; *at* the critical angle it grazes the surface.",
+        "2": "At the critical angle the ray is bent all the way to $90^\\circ$, far from undeviated.",
+        "3": "Light going from dense to less dense bends *away* from the normal, not toward it."
+      }
+    },
+    "hint": ["The critical angle is the incidence angle at which the refraction angle reaches its maximum possible value."],
+    "solution": "As the angle of incidence inside the glass increases, the refracted ray bends further and further away from the normal. At the critical angle, the refracted ray reaches $90^\\circ$ — it runs along the surface. For any angle of incidence greater than the critical angle, Snell's law has no solution and the light is totally internally reflected."
+  },
+  {
+    "id": "BP8-U7-MCQ-052",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": ["TIR2"],
+    "type": "multiple-choice",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A swimmer underwater looks up toward the surface. Directly overhead they see the sky, but far off to the sides the surface looks like a silvery mirror. Why?",
+    "choices": [
+      "The pool has mirrored walls.",
+      "Overhead, light from the sky refracts down into the water; at large viewing angles the swimmer's line of sight exceeds the critical angle, so the surface totally internally reflects light from within the pool — it looks like a mirror.",
+      "The water is dirtier at the edges.",
+      "Sunlight only comes from directly above."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the swimmer sees the outside world only within a cone (the 'Snell's window') around the vertical; outside that cone the angle exceeds the critical angle and the underside of the surface acts as a perfect mirror.",
+      "incorrect": {
+        "0": "No mirrors — the water surface itself reflects via total internal reflection at steep viewing angles.",
+        "2": "Cleanliness is not the cause; it is the geometry of the critical angle.",
+        "3": "Skylight comes from all directions above the surface; the swimmer just cannot see most of it because of total internal reflection."
+      }
+    },
+    "hint": ["The swimmer's eye is in the denser medium (water). Beyond the critical angle, what does the surface do to light coming from below?"],
+    "solution": "Light entering the water from the whole sky is squeezed by refraction into a cone (about $49^\\circ$ half-angle for water) around the vertical — 'Snell's window'. When the swimmer looks at the surface at an angle greater than the critical angle, no light from outside can reach their eye along that line; instead the surface totally internally reflects light from within the pool, so it looks like a silvery mirror."
+  },
+
+  {
+    "id": "BP8-U7-MCQ-053",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A glass prism splits white light into a spectrum of colours. This happens because:",
+    "choices": [
+      "the prism adds colour to the light.",
+      "different colours (frequencies) of light travel at slightly different speeds in glass, so they have slightly different indices of refraction and bend by different amounts.",
+      "the prism reflects each colour separately.",
+      "white light is not really made of colours."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — this is dispersion: the index of refraction of glass depends slightly on frequency, so violet (higher frequency) bends more than red, and the colours fan out.",
+      "incorrect": {
+        "0": "The colours were already present in the white light; the prism only separates them.",
+        "2": "The separation is by refraction (bending), not reflection.",
+        "3": "White light is a mixture of all the visible colours, which is why it can be split."
+      }
+    },
+    "hint": ["Which colour bends most in a prism, and why? It is about speed in glass depending on colour."],
+    "solution": "White light contains all visible frequencies. In glass, the index of refraction is slightly higher for higher frequencies (violet) than for lower ones (red), so violet light slows more and bends more on entering and leaving the prism. This frequency-dependent refraction is called dispersion, and it fans the white light out into a spectrum."
+  },
+  {
+    "id": "BP8-U7-MCQ-054",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In a glass prism, which colour of visible light is bent (deviated) the most?",
+    "choices": ["Red", "Green", "Violet", "All colours bend equally."],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — violet has the highest frequency and the shortest wavelength, the largest index of refraction in glass, and so the greatest bending. Red bends the least.",
+      "incorrect": {
+        "0": "Red has the lowest frequency and the smallest index in glass, so it bends the *least*.",
+        "1": "Green is in the middle.",
+        "3": "If all colours bent equally, a prism could not make a spectrum."
+      }
+    },
+    "hint": ["Higher frequency → higher index of refraction in glass → more bending. Which visible colour has the highest frequency?"],
+    "solution": "The index of refraction of glass increases slightly with the frequency of light. Violet light has the highest frequency (shortest wavelength) of visible light, so it has the largest index of refraction in glass and is deviated the most. Red, the lowest frequency, is deviated the least. This spread is why a prism produces a spectrum with red and violet at opposite ends."
+  },
+  {
+    "id": "BP8-U7-MCQ-055",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Diffraction of light is:",
+    "choices": [
+      "the splitting of white light into colours.",
+      "the spreading (bending) of light waves as they pass through a narrow opening or around the edge of an obstacle.",
+      "the bending of light as it changes speed between two media.",
+      "the bouncing of light off a surface."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — diffraction is the spreading of a wave after it passes an edge or through a gap; it is most noticeable when the gap is comparable to the wavelength.",
+      "incorrect": {
+        "0": "That is dispersion.",
+        "2": "That is refraction.",
+        "3": "That is reflection."
+      }
+    },
+    "hint": ["It is a wave behaviour: waves 'wrap around' edges and spread out after gaps."],
+    "solution": "Diffraction is the spreading of a wave as it passes through an opening or around an obstacle. It is a general wave property (water waves, sound, light). For light the effect is usually small because light's wavelength is tiny, but it becomes obvious when the opening or obstacle is about the size of the wavelength (a narrow slit, a CD's tracks, a distant streetlight seen through fine fabric)."
+  },
+  {
+    "id": "BP8-U7-MCQ-056",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "Light passes through a single narrow slit and spreads out (diffracts). Which change would make the light spread out MORE?",
+    "choices": [
+      "Making the slit wider.",
+      "Making the slit narrower (closer to the wavelength of the light).",
+      "Using light of higher frequency (shorter wavelength).",
+      "Moving the screen closer to the slit."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — diffraction spreading increases as the slit width decreases toward the wavelength. A narrower slit → more spreading.",
+      "incorrect": {
+        "0": "A wider slit gives *less* spreading (the light passes more like a straight beam).",
+        "2": "Shorter wavelength (higher frequency) gives *less* spreading, not more. Longer wavelength diffracts more.",
+        "3": "Moving the screen changes the pattern size but not the angular spread caused by diffraction."
+      }
+    },
+    "hint": ["Diffraction spreading depends on the ratio of wavelength to slit width. To increase it, shrink the slit or lengthen the wavelength."],
+    "solution": "The angular spread of single-slit diffraction increases as the ratio (wavelength / slit width) increases. So you get more spreading by making the slit narrower (toward the wavelength) or by using longer-wavelength (lower-frequency) light. A wider slit or shorter wavelength gives a narrower, more beam-like transmission."
+  },
+  {
+    "id": "BP8-U7-MCQ-057",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A rainbow forms when sunlight passes through water droplets. Which two processes are responsible?",
+    "choices": [
+      "Only reflection.",
+      "Refraction (which disperses the colours because each bends by a different amount) together with internal reflection inside each droplet.",
+      "Only diffraction.",
+      "Absorption and re-emission."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — light refracts entering each droplet (dispersing into colours), reflects off the back of the droplet, and refracts again on the way out, sending different colours to your eye at slightly different angles.",
+      "incorrect": {
+        "0": "Reflection alone would not separate the colours or bend the light into the rainbow angle.",
+        "2": "Diffraction plays a minor role at best; the rainbow is a refraction/dispersion effect.",
+        "3": "The droplet does not absorb and re-emit the light; it refracts and reflects it."
+      }
+    },
+    "hint": ["Sunlight enters a raindrop, bounces off the back, and comes out — bending (and dispersing) each time it crosses the surface."],
+    "solution": "In a rainbow, sunlight refracts as it enters a spherical raindrop — and because refraction is frequency-dependent (dispersion), the colours fan apart. The light then reflects off the inside back surface of the drop and refracts again as it exits. Each colour emerges at a slightly different angle (red near $42^\\circ$, violet near $40^\\circ$ from the antisolar point), so an observer sees a circular arc of separated colours."
+  },
+  {
+    "id": "BP8-U7-MCQ-058",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": ["DD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why do we hear sound waves bend around a doorway easily, but light passing through the same doorway travels in nearly straight beams?",
+    "choices": [
+      "Sound is faster than light.",
+      "Diffraction is large when the wavelength is comparable to the opening. Sound wavelengths (~1 m) are close to a doorway's size, so sound diffracts strongly; light wavelengths (~$5 \\times 10^{-7}\\ \\mathrm{m}$) are tiny compared with the doorway, so light barely diffracts.",
+      "Light cannot diffract at all.",
+      "Sound reflects off the door frame."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the amount a wave spreads depends on the ratio of wavelength to gap size. A doorway is huge compared with a light wavelength, so light passes almost straight through; it is comparable to a sound wavelength, so sound spreads widely.",
+      "incorrect": {
+        "0": "Speed is not the reason; the wavelength-to-gap ratio is.",
+        "2": "Light does diffract — through a slit as fine as its wavelength — it just does not diffract noticeably through a doorway.",
+        "3": "Reflection is not why sound reaches around a corner; diffraction is."
+      }
+    },
+    "hint": ["Compare each wave's wavelength with the width of the doorway."],
+    "solution": "Diffraction (spreading) is significant only when a wave's wavelength is comparable to the size of the opening. Audible sound has wavelengths of roughly a metre — similar to a doorway — so it diffracts strongly and you hear around corners. Visible light has wavelengths of about half a micrometre, millions of times smaller than a doorway, so it spreads negligibly and travels in nearly straight beams."
+  }
+]

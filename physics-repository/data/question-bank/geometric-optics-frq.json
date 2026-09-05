@@ -1,0 +1,592 @@
+[
+  {
+    "id": "BP8-U7-FRQ-01",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "basics",
+    "sourceOutcomes": [
+      "B2",
+      "B4",
+      "PM1"
+    ],
+    "type": "free-response",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "scenario": "A ray of light strikes a flat glass window pane at an angle. Some of it bounces off, some passes into the glass, and the pane warms very slightly.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Name the three things that can happen to light at a surface, and match each to the description in the scenario.",
+        "points": 3,
+        "modelResponse": "Reflection — the part of the light that bounces off the surface. Refraction (transmission) — the part that passes into the glass, bending because its speed changes. Absorption — the part whose energy is taken up by the glass, which is why the pane warms slightly."
+      },
+      {
+        "label": "b",
+        "prompt": "Define the 'normal' at the point where the ray hits the pane, and state how the angle of incidence is measured.",
+        "points": 2,
+        "modelResponse": "The normal is the line drawn perpendicular to the glass surface at the point where the ray strikes it. The angle of incidence is the angle between the incident ray and this normal (not between the ray and the surface)."
+      },
+      {
+        "label": "c",
+        "prompt": "State the law of reflection for the part of the light that bounces off.",
+        "points": 2,
+        "modelResponse": "The angle of reflection equals the angle of incidence, with both measured from the normal, and the incident ray, the reflected ray, and the normal all lie in the same plane."
+      }
+    ],
+    "totalPoints": 7
+  },
+  {
+    "id": "BP8-U7-FRQ-02",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": [
+      "PM1",
+      "PM4"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A ray of light hits a plane mirror. The angle between the incident ray and the mirror surface is $35^\\circ$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the angle of incidence (measured from the normal).",
+        "points": 2,
+        "modelResponse": "The angle of incidence is measured from the normal, so it is $90^\\circ - 35^\\circ = 55^\\circ$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the angle of reflection and the total angle between the incident and reflected rays.",
+        "points": 3,
+        "modelResponse": "By the law of reflection, the angle of reflection equals the angle of incidence: $55^\\circ$. The total angle between the incident and reflected rays is $55^\\circ + 55^\\circ = 110^\\circ$."
+      },
+      {
+        "label": "c",
+        "prompt": "If the mirror is rotated by $5^\\circ$ (incident ray unchanged), by how much does the reflected ray rotate? Justify.",
+        "points": 3,
+        "modelResponse": "The reflected ray rotates by $10^\\circ$ — twice the mirror's rotation. Rotating the mirror by $5^\\circ$ rotates the normal by $5^\\circ$, which changes the angle of incidence by $5^\\circ$; the angle of reflection changes by the same $5^\\circ$ in the same sense, so the reflected ray swings by $2 \\times 5^\\circ = 10^\\circ$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U7-FRQ-03",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "plane_mirrors",
+    "sourceOutcomes": [
+      "PM2",
+      "PM3"
+    ],
+    "type": "free-response",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "An object (a small arrow pointing up) is placed $8\\ \\mathrm{cm}$ in front of a vertical plane mirror.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the four properties of the image (type, orientation, size, location).",
+        "points": 4,
+        "modelResponse": "Type: virtual (light only appears to come from behind the mirror). Orientation: upright (same way up as the object). Size: the same size as the object. Location: $8\\ \\mathrm{cm}$ behind the mirror (as far behind as the object is in front)."
+      },
+      {
+        "label": "b",
+        "prompt": "Describe how to construct a ray diagram to locate the image of the tip of the arrow.",
+        "points": 4,
+        "modelResponse": "Draw two rays from the arrow's tip to the mirror. Reflect each at the mirror using the law of reflection (angle of reflection = angle of incidence, measured from the normal at that point). Then extend the two reflected rays backward as dashed lines behind the mirror. Where the dashed extensions intersect is the image of the tip — it should lie $8\\ \\mathrm{cm}$ behind the mirror, directly opposite the object tip."
+      },
+      {
+        "label": "c",
+        "prompt": "State how far the image is from the object, and explain why you cannot catch this image on a screen placed behind the mirror.",
+        "points": 3,
+        "modelResponse": "The image is $8 + 8 = 16\\ \\mathrm{cm}$ from the object. You cannot catch it on a screen because the image is virtual: the actual light rays are all in front of the mirror (they reflect off it). Behind the mirror the rays only appear to originate from the image point — no real light travels there — so a screen placed behind the mirror would receive nothing."
+      }
+    ],
+    "totalPoints": 11
+  },
+  {
+    "id": "BP8-U7-FRQ-04",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": [
+      "SM1",
+      "SM3"
+    ],
+    "type": "free-response",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A student has a concave (converging) mirror and a convex (diverging) mirror.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe how to tell the two mirrors apart by their shape and by what they do to a beam of parallel light.",
+        "points": 3,
+        "modelResponse": "The concave mirror curves inward (reflecting surface on the inside of the curve, like the inside of a spoon); it converges parallel light to a real focal point in front of the mirror. The convex mirror curves outward (like the back of a spoon); it diverges parallel light, which appears to come from a virtual focal point behind the mirror."
+      },
+      {
+        "label": "b",
+        "prompt": "For the convex mirror, state the type, orientation, and size of the image of any real object.",
+        "points": 3,
+        "modelResponse": "For a convex mirror the image is always virtual, always upright, and always smaller than the object (diminished), located behind the mirror — regardless of where the object is placed."
+      },
+      {
+        "label": "c",
+        "prompt": "Give one practical use of each mirror and explain why that mirror's image properties suit the job.",
+        "points": 3,
+        "modelResponse": "Concave: a shaving or make-up mirror — with the face held inside the focal length it gives a magnified, upright image so the user can see fine detail. (Or a torch/headlamp reflector — a source at the focus gives a parallel beam.) Convex: a car wing mirror or shop security mirror — the diminished image fits a wide field of view into the mirror, so more of the surroundings can be seen at once."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U7-FRQ-05",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": [
+      "SM2",
+      "SM3"
+    ],
+    "type": "free-response",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A concave mirror has its focal point $F$ and centre of curvature $C$ marked on the principal axis. An object is placed beyond $C$ (farther from the mirror than $C$).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Name two principal rays you would draw from the top of the object and state how each reflects.",
+        "points": 4,
+        "modelResponse": "Ray 1: from the top of the object parallel to the principal axis; after reflecting it passes through the focal point $F$. Ray 2: from the top of the object through the focal point $F$; after reflecting it travels parallel to the principal axis. (A third option: a ray through $C$ reflects straight back on itself; a ray to the vertex reflects symmetrically about the axis.) The two reflected rays cross to locate the image of the top of the object."
+      },
+      {
+        "label": "b",
+        "prompt": "State the type, orientation, size, and approximate location of the image for an object beyond C.",
+        "points": 4,
+        "modelResponse": "The image is real (the reflected rays actually cross in front of the mirror), inverted, smaller than the object (diminished), and located between the focal point $F$ and the centre of curvature $C$."
+      },
+      {
+        "label": "c",
+        "prompt": "Explain how the image changes as the object is moved from beyond C inward to a point between F and C.",
+        "points": 3,
+        "modelResponse": "As the object moves from beyond $C$ to between $F$ and $C$, the image moves outward from the $F$-to-$C$ region to beyond $C$, and it grows: at $C$ the image is exactly the same size as the object (and also at $C$); between $F$ and $C$ the image is enlarged. Throughout this range the image stays real and inverted."
+      }
+    ],
+    "totalPoints": 11
+  },
+  {
+    "id": "BP8-U7-FRQ-06",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "spherical_mirrors",
+    "sourceOutcomes": [
+      "SM3"
+    ],
+    "type": "free-response",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A dentist uses a small concave mirror to look at a tooth. A security office uses a large convex dome mirror to watch a whole room.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain why the dentist chooses a concave mirror and how they must position it relative to the tooth.",
+        "points": 3,
+        "modelResponse": "A concave mirror can produce a magnified, upright, virtual image when the object is inside its focal length. The dentist holds the mirror close to the tooth (within the focal distance) so the tooth appears enlarged and the right way up, making small features easy to see."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why the security office chooses a convex mirror.",
+        "points": 3,
+        "modelResponse": "A convex mirror always gives an upright, diminished virtual image regardless of object position. Because everything appears smaller, a very wide field of view — the whole room — is compressed into one mirror, so a single mirror can monitor a large area."
+      },
+      {
+        "label": "c",
+        "prompt": "State one disadvantage of each choice for its purpose.",
+        "points": 3,
+        "modelResponse": "Concave (dentist): it only magnifies and stays upright while the object is inside the focal length; if the mirror is pulled too far from the tooth the image flips to inverted and shrinks, and the useful working range is short. Convex (security): objects look farther away and smaller than they really are, so it is hard to judge distances or see fine detail, and the image is distorted toward the edges."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U7-FRQ-07",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": [
+      "R1",
+      "R2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "Light travels at $2.5 \\times 10^{8}\\ \\mathrm{m/s}$ in a certain plastic. Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the index of refraction of the plastic.",
+        "points": 2,
+        "modelResponse": "$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}}{2.5 \\times 10^{8}} = 1.2$."
+      },
+      {
+        "label": "b",
+        "prompt": "A ray of light travels from air into this plastic at an angle to the normal. State whether it bends toward or away from the normal, and explain why in terms of speed.",
+        "points": 3,
+        "modelResponse": "It bends toward the normal. The plastic has a higher index of refraction than air ($1.2 > 1.0$), so light travels slower in it. When the ray meets the boundary at an angle, the side of the wavefront entering the plastic first slows down, which swings the ray toward the normal."
+      },
+      {
+        "label": "c",
+        "prompt": "The ray then travels back out of the plastic into air. State how its speed and direction change.",
+        "points": 3,
+        "modelResponse": "Going from the plastic back into air, the light speeds up (from $2.5 \\times 10^{8}\\ \\mathrm{m/s}$ back to $3.0 \\times 10^{8}\\ \\mathrm{m/s}$) and bends away from the normal. If it exits through a parallel surface, the emerging ray is parallel to the original incident ray but slightly displaced sideways."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U7-FRQ-08",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": [
+      "R3"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A ray of light travels from air ($n_1 = 1.0$) into a transparent solid. Measurements give $\\sin\\theta_1 = 0.80$ for the angle of incidence and $\\sin\\theta_2 = 0.50$ for the angle of refraction.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State Snell's law and use it to calculate the index of refraction of the solid.",
+        "points": 3,
+        "modelResponse": "Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$. Rearranging: $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.80)}{0.50} = 1.6$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the speed of light in the solid. Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+        "points": 2,
+        "modelResponse": "$v = \\dfrac{c}{n} = \\dfrac{3.0 \\times 10^{8}}{1.6} \\approx 1.9 \\times 10^{8}\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "The angle of refraction ($\\sin\\theta_2 = 0.50$) is smaller than the angle of incidence ($\\sin\\theta_1 = 0.80$). Explain what this tells you about the solid compared with air.",
+        "points": 3,
+        "modelResponse": "A smaller refraction angle means the ray bent toward the normal on entering the solid. This happens when light slows down, so the solid must have a higher index of refraction than air (which the calculation confirms: $n = 1.6 > 1.0$). Light travels more slowly in the solid than in air."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U7-FRQ-09",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "refraction_index",
+    "sourceOutcomes": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A ray of light passes from water ($n = 1.33$) into a diamond. The angle measurements give $\\sin\\theta_{water} = 0.90$ and $\\sin\\theta_{diamond} = 0.50$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the index of refraction of the diamond (to 2 significant figures).",
+        "points": 3,
+        "modelResponse": "Snell's law between the two media: $n_{water}\\sin\\theta_{water} = n_{diamond}\\sin\\theta_{diamond}$. So $n_{diamond} = \\dfrac{(1.33)(0.90)}{0.50} = \\dfrac{1.197}{0.50} \\approx 2.4$."
+      },
+      {
+        "label": "b",
+        "prompt": "In which medium — water or diamond — does light travel faster? Justify with your value of $n$.",
+        "points": 2,
+        "modelResponse": "Light travels faster in water. Since $v = c/n$ and $n_{water} = 1.33 < n_{diamond} \\approx 2.4$, the speed of light in water ($c/1.33$) is greater than in diamond ($c/2.4$)."
+      },
+      {
+        "label": "c",
+        "prompt": "The ray bent toward the normal on entering the diamond. Explain how this is consistent with your answers.",
+        "points": 3,
+        "modelResponse": "The ray bends toward the normal when it enters a medium where it travels more slowly, i.e. a medium of higher index of refraction. Diamond's index ($\\approx 2.4$) is higher than water's ($1.33$), so light slows down entering the diamond and bends toward the normal — matching the smaller refraction angle ($\\sin\\theta_{diamond} = 0.50 < \\sin\\theta_{water} = 0.90$)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U7-FRQ-10",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": [
+      "TIR1",
+      "TIR2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A block of transparent material has an index of refraction of $2.0$. Light travelling inside it reaches the flat top surface, which is in contact with air.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Define the critical angle and derive the relationship $\\sin\\theta_c = 1/n$ from Snell's law.",
+        "points": 3,
+        "modelResponse": "The critical angle $\\theta_c$ is the angle of incidence (inside the denser medium) at which the refracted ray grazes along the boundary at $90^\\circ$. Applying Snell's law at that angle: $n\\sin\\theta_c = n_{air}\\sin 90^\\circ = (1)(1) = 1$, so $\\sin\\theta_c = \\dfrac{1}{n}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the critical angle for this block.",
+        "points": 2,
+        "modelResponse": "$\\sin\\theta_c = \\dfrac{1}{n} = \\dfrac{1}{2.0} = 0.5$. Since $\\sin 30^\\circ = 0.5$, the critical angle is $\\theta_c = 30^\\circ$."
+      },
+      {
+        "label": "c",
+        "prompt": "A ray inside the block hits the top surface at $40^\\circ$ to the normal. State what happens to it and why.",
+        "points": 3,
+        "modelResponse": "The angle of incidence ($40^\\circ$) is greater than the critical angle ($30^\\circ$), so the ray undergoes total internal reflection: none of the light passes out into the air, and all of it reflects back into the block, obeying the law of reflection (angle of reflection $= 40^\\circ$)."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U7-FRQ-11",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": [
+      "TIR1",
+      "TIR2"
+    ],
+    "type": "free-response",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "An optical fibre has a glass core and a plastic cladding of lower index of refraction. Light is sent along the core.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain how total internal reflection keeps the light travelling along the core.",
+        "points": 3,
+        "modelResponse": "Because the core has a higher index of refraction than the cladding, there is a critical angle for the core-cladding boundary. The light is launched into the fibre so that it always strikes this boundary at an angle greater than the critical angle. At each such strike it is totally internally reflected back into the core — no light leaks into the cladding — so it zig-zags down the core without escaping."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why total internal reflection is preferable to coating the inside of the fibre with a mirror.",
+        "points": 3,
+        "modelResponse": "Even the best mirror coatings absorb a small percentage of the light at every reflection; over the millions of reflections in a long fibre this would remove almost all the signal. Total internal reflection reflects essentially 100% of the light at each bounce (no absorption at the boundary), so the signal can travel many kilometres with very little loss."
+      },
+      {
+        "label": "c",
+        "prompt": "State one condition on the light entering the fibre for the guiding to work, and what would happen if it were not met.",
+        "points": 3,
+        "modelResponse": "The light must enter the end of the fibre within a limited cone of angles (the acceptance cone) so that, once inside, it strikes the core-cladding boundary beyond the critical angle. If light enters at too steep an angle to the fibre axis, it will hit the boundary at less than the critical angle, refract into the cladding, and be lost from the core."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U7-FRQ-12",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "snell_tir",
+    "sourceOutcomes": [
+      "TIR1",
+      "R1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "A glass has a critical angle (for the glass-air boundary) equal to the angle whose sine is $0.60$. Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the index of refraction of the glass.",
+        "points": 3,
+        "modelResponse": "For a glass-air boundary, $\\sin\\theta_c = \\dfrac{1}{n}$, so $n = \\dfrac{1}{\\sin\\theta_c} = \\dfrac{1}{0.60} \\approx 1.67$ (to 3 significant figures)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the speed of light in this glass.",
+        "points": 3,
+        "modelResponse": "$v = \\dfrac{c}{n} = \\dfrac{3.0 \\times 10^{8}}{1.67} \\approx 1.8 \\times 10^{8}\\ \\mathrm{m/s}$."
+      },
+      {
+        "label": "c",
+        "prompt": "A second glass has a larger index of refraction. State whether its critical angle (with air) is larger or smaller than $\\theta_c$ for the first glass, and explain what this means for trapping light.",
+        "points": 3,
+        "modelResponse": "A larger index of refraction gives a smaller critical angle, because $\\sin\\theta_c = 1/n$ decreases as $n$ increases. A smaller critical angle means total internal reflection occurs for a wider range of incidence angles, so light is trapped inside the second glass more easily — it is a better light-guiding material (and, for a gemstone, would sparkle more)."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U7-FRQ-13",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": [
+      "DD1",
+      "R2"
+    ],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A narrow beam of white light passes through a triangular glass prism and emerges spread into a band of colours, with red at one edge and violet at the other.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Explain, in terms of the index of refraction, why the prism separates the colours.",
+        "points": 3,
+        "modelResponse": "The index of refraction of glass depends slightly on the frequency (colour) of the light: it is a little larger for higher-frequency (violet) light than for lower-frequency (red) light. So each colour bends by a slightly different amount as it enters and leaves the prism, and the colours fan out into a spectrum. This is called dispersion."
+      },
+      {
+        "label": "b",
+        "prompt": "State which colour is deviated the most and which the least, and relate this to their frequencies and speeds in glass.",
+        "points": 3,
+        "modelResponse": "Violet is deviated the most and red the least. Violet has the highest frequency, the largest index of refraction in glass, and therefore the slowest speed in glass and the greatest bending. Red has the lowest frequency, the smallest index of refraction, the fastest speed in glass, and the least bending."
+      },
+      {
+        "label": "c",
+        "prompt": "The same white light passing straight through a flat sheet of window glass does NOT visibly separate into colours. Explain the difference.",
+        "points": 3,
+        "modelResponse": "In a flat sheet with parallel faces, each colour bends toward the normal on entering and by an equal and opposite amount away from the normal on leaving, so every colour emerges travelling parallel to the original beam (just displaced sideways by a tiny, colour-dependent amount). The colours are not fanned apart. A prism has non-parallel faces, so the bending at the second face adds to rather than cancels the bending at the first, and the small colour differences accumulate into a visible spread."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U7-FRQ-14",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "geometric-optics",
+    "unit": "Unit 7: Waves and Light",
+    "cluster": "dispersion_diffraction",
+    "sourceOutcomes": [
+      "DD1",
+      "PM1",
+      "R2",
+      "TIR2"
+    ],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "A rainbow appears in the sky after rain, with the observer's back to the Sun. Each raindrop acts on the sunlight passing through it.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "List, in order, the optical processes that act on a ray of sunlight as it passes through a single raindrop to form a rainbow colour.",
+        "points": 4,
+        "modelResponse": "1. Refraction as the light enters the front surface of the spherical drop (bending, and dispersing the colours because each bends by a different amount). 2. Internal reflection off the back surface of the drop. 3. Refraction again as the light exits the front surface, bending and dispersing further. The light leaves the drop travelling back toward the Sun-side, separated into colours."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why the rainbow shows separated colours rather than white light.",
+        "points": 3,
+        "modelResponse": "Water, like glass, has an index of refraction that depends slightly on frequency (dispersion). At each refraction inside the drop, violet light bends slightly more than red. Over the two refractions the difference accumulates, so different colours leave the drop at slightly different angles — about $42^\\circ$ for red and $40^\\circ$ for violet from the direction opposite the Sun. The observer therefore sees each colour coming from drops at a slightly different height in the sky, producing a band of separated colours."
+      },
+      {
+        "label": "c",
+        "prompt": "State one way this rainbow situation is similar to, and one way it is different from, light passing through a glass prism.",
+        "points": 3,
+        "modelResponse": "Similar: both rely on dispersion — a frequency-dependent index of refraction causing different colours to bend by different amounts at refracting surfaces, spreading white light into a spectrum. Different: the prism separates colours using two refractions at flat, angled faces with no internal reflection needed, whereas the raindrop uses two refractions at a curved surface plus an internal reflection off the back, and the spherical shape (not a fixed prism angle) is what sends specific colours to specific angles for many drops at once."
+      }
+    ],
+    "totalPoints": 10
+  }
+]

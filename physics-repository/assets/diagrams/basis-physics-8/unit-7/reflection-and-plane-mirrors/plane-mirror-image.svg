@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="t d">
+<title id="t">Virtual image in a plane mirror</title>
+<desc id="d">An object stands in front of a vertical plane mirror, with an eye also in front of the mirror. Two rays from the top of the object reflect off the mirror to the eye, obeying the law of reflection. Their backward extensions, drawn dashed behind the mirror, meet at the image of the object top, which is as far behind the mirror as the object is in front. The image is virtual, upright, and the same size as the object.</desc>
+<rect width="640" height="300" fill="white"/>
+<defs><marker id="pm7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1769aa"/></marker>
+<marker id="pmg" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/></marker></defs>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <text x="320" y="22" text-anchor="middle" fill="#1a7f37" font-weight="bold">Virtual, upright, same size, as far behind the mirror as the object is in front</text>
+
+ <line x1="360" y1="50" x2="360" y2="250" stroke="#5b6675" stroke-width="3"/>
+ <text x="360" y="268" text-anchor="middle" fill="#5b6675">mirror</text>
+
+ <line x1="150" y1="200" x2="150" y2="130" stroke="#1a7f37" stroke-width="3" marker-end="url(#pmg)"/>
+ <text x="150" y="216" text-anchor="middle" fill="#1a7f37">object</text>
+
+ <line x1="560" y1="200" x2="560" y2="130" stroke="#1769aa" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#pm7)"/>
+ <text x="560" y="216" text-anchor="middle" fill="#1769aa">virtual image</text>
+
+ <line x1="150" y1="204" x2="360" y2="204" stroke="#5b6675" stroke-width="1"/>
+ <text x="255" y="230" text-anchor="middle" fill="#5b6675" font-size="11">d</text>
+ <line x1="360" y1="204" x2="560" y2="204" stroke="#5b6675" stroke-width="1"/>
+ <text x="460" y="230" text-anchor="middle" fill="#5b6675" font-size="11">d</text>
+
+ <!-- ray 1: object top to mirror to eye; backward extension to image -->
+ <line x1="150" y1="130" x2="360" y2="118" stroke="#1769aa" stroke-width="1.5"/>
+ <line x1="360" y1="118" x2="285" y2="95" stroke="#1769aa" stroke-width="1.5" marker-end="url(#pm7)"/>
+ <line x1="360" y1="118" x2="560" y2="130" stroke="#1769aa" stroke-width="1" stroke-dasharray="4 3"/>
+ <!-- ray 2 -->
+ <line x1="150" y1="130" x2="360" y2="150" stroke="#1769aa" stroke-width="1.5"/>
+ <line x1="360" y1="150" x2="290" y2="112" stroke="#1769aa" stroke-width="1.5" marker-end="url(#pm7)"/>
+ <line x1="360" y1="150" x2="560" y2="130" stroke="#1769aa" stroke-width="1" stroke-dasharray="4 3"/>
+
+ <circle cx="278" cy="92" r="9" fill="none" stroke="#111827" stroke-width="1.5"/>
+ <text x="262" y="80" text-anchor="end" font-size="11">eye</text>
+</g>
+</svg>

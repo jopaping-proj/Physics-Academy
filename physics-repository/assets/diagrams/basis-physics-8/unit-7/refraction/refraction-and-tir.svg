@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" role="img" aria-labelledby="t d">
+<title id="t">Refraction and total internal reflection at a boundary</title>
+<desc id="d">Left: a ray passing from air into glass bends toward the normal because it slows down. Right: rays inside glass hitting the glass-air boundary at increasing angles. Below the critical angle the ray refracts out, bending away from the normal (shown blue). At the critical angle the refracted ray grazes along the surface at 90 degrees (shown red). Above the critical angle the ray is totally internally reflected back into the glass (shown green).</desc>
+<rect width="640" height="340" fill="white"/>
+<defs><marker id="fr7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1769aa"/></marker>
+<marker id="frr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#c0392b"/></marker>
+<marker id="frg" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/></marker></defs>
+<g font-family="Arial" fill="#111827" font-size="11">
+ <text x="150" y="24" text-anchor="middle" font-size="12" font-weight="bold">Air &#8594; glass</text>
+ <rect x="30" y="130" width="230" height="110" fill="#eaf2f7"/>
+ <text x="36" y="124" fill="#5b6675">air</text>
+ <text x="36" y="148" fill="#5b6675">glass</text>
+ <line x1="30" y1="130" x2="260" y2="130" stroke="#111827" stroke-width="1.5"/>
+ <line x1="145" y1="72" x2="145" y2="205" stroke="#5b6675" stroke-width="1" stroke-dasharray="5 4"/>
+ <line x1="85" y1="80" x2="145" y2="130" stroke="#1769aa" stroke-width="2.5" marker-end="url(#fr7)"/>
+ <line x1="145" y1="130" x2="180" y2="200" stroke="#1769aa" stroke-width="2.5" marker-end="url(#fr7)"/>
+ <text x="150" y="262" text-anchor="middle" fill="#5b6675" font-size="10">slows down, bends toward the normal</text>
+
+ <text x="465" y="24" text-anchor="middle" font-size="12" font-weight="bold">Glass &#8594; air, at increasing angles</text>
+ <rect x="360" y="130" width="240" height="110" fill="#eaf2f7"/>
+ <text x="366" y="124" fill="#5b6675">air</text>
+ <text x="366" y="148" fill="#5b6675">glass</text>
+ <line x1="360" y1="130" x2="600" y2="130" stroke="#111827" stroke-width="1.5"/>
+ <line x1="470" y1="72" x2="470" y2="238" stroke="#5b6675" stroke-width="1" stroke-dasharray="5 4"/>
+
+ <line x1="442" y1="234" x2="470" y2="130" stroke="#1769aa" stroke-width="2"/>
+ <line x1="470" y1="130" x2="520" y2="94" stroke="#1769aa" stroke-width="2" marker-end="url(#fr7)"/>
+ <line x1="453" y1="236" x2="470" y2="130" stroke="#c0392b" stroke-width="2"/>
+ <line x1="470" y1="130" x2="560" y2="130" stroke="#c0392b" stroke-width="2" marker-end="url(#frr)"/>
+ <line x1="466" y1="238" x2="470" y2="130" stroke="#1a7f37" stroke-width="2.5"/>
+ <line x1="470" y1="130" x2="512" y2="238" stroke="#1a7f37" stroke-width="2.5" marker-end="url(#frg)"/>
+
+ <text x="360" y="286" fill="#1769aa" font-size="10">blue &#8212; below &#952;c: refracts out (bends away from normal)</text>
+ <text x="360" y="302" fill="#c0392b" font-size="10">red &#8212; at &#952;c: refracted ray grazes along the surface (90&#176;)</text>
+ <text x="360" y="318" fill="#1a7f37" font-size="10">green &#8212; above &#952;c: total internal reflection (100% reflected)</text>
+
+ <text x="150" y="302" text-anchor="middle" fill="#0f3d61" font-size="11">sin &#952;c = 1 / n</text>
+ <text x="150" y="318" text-anchor="middle" fill="#5b6675" font-size="10">(for a glass&#8211;air boundary)</text>
+</g>
+</svg>

@@ -1,0 +1,342 @@
+{
+  "id": "basis-p8-u7-l2",
+  "slug": "reflection-and-plane-mirrors",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Reflection and Plane Mirrors",
+  "lessonTitle": "Reflection and Plane Mirrors",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Reflection and Plane Mirrors cluster, PM1-PM4); calibrated against AP Physics 2 CED Unit 13, OpenStax High School Physics Ch. 15",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Lesson 1 — the normal is the perpendicular to a surface; optical angles are measured from it; virtual images.",
+    "Unit 2 — basic angle geometry (angles on a straight line add to $180^\\circ$; complementary angles add to $90^\\circ$)."
+  ],
+  "majorObjective": "State and apply the law of reflection, describe the image formed by a plane mirror, construct a plane-mirror ray diagram, and calculate angles of incidence and reflection.",
+  "subObjectives": [
+    "State the law of reflection: angle of incidence = angle of reflection (both from the normal), and the incident ray, reflected ray, and normal are coplanar.",
+    "Calculate the angle of incidence or reflection given information about a ray and a surface, including converting between the angle from the surface and the angle from the normal.",
+    "Describe the properties of a plane-mirror image: virtual, upright, same size, laterally reversed, as far behind the mirror as the object is in front.",
+    "Construct a ray diagram for a plane-mirror image by reflecting two rays and extending them behind the mirror to their intersection."
+  ],
+  "hook": {
+    "prompt": "You walk toward a large mirror at $1\\ \\mathrm{m/s}$. How fast does the gap between you and your image shrink?",
+    "choices": ["$0.5\\ \\mathrm{m/s}$", "$1\\ \\mathrm{m/s}$", "$2\\ \\mathrm{m/s}$", "The gap does not change."],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "Reflection is the simplest thing light does at a surface, and it follows one exact rule. From that rule everything about flat-mirror images follows: where the image is, how big it is, which way up.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The law of reflection",
+      "concept": "**The law of reflection:**\n\n1. The **angle of incidence equals the angle of reflection**, both measured from the **normal**.\n2. The incident ray, the reflected ray, and the normal all lie in the **same plane**.\n\nA smooth surface reflects a set of parallel rays as a parallel set — this is **specular** (regular) reflection, and it preserves an image (a mirror, still water, polished metal).\n\nA rough surface still obeys the law of reflection **at every point**, but its surface normals point in all directions, so parallel rays scatter every which way — this is **diffuse** reflection. You see the object's brightness but no image (paper, a wall, matte paint). This is why most objects are visible from all directions but do not act as mirrors.",
+      "representation": "$$\\theta_{\\text{incidence}} = \\theta_{\\text{reflection}} \\quad (\\text{from the normal})$$\n\n- angle from surface $= 90^\\circ - $ angle from normal;\n- angle between incident and reflected rays $= 2 \\times$ angle of incidence.\n\nSmooth surface → specular (image preserved). Rough surface → diffuse (scattered, no image).",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/reflection-and-plane-mirrors/law-of-reflection.svg",
+          "caption": "The incident ray, the normal, and the reflected ray. The angle of incidence and the angle of reflection — both measured from the normal — are equal."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A ray hits a mirror at $32^\\circ$ from the normal. Find the angle of reflection and the angle between the incident and reflected rays. (b) A ray hits a mirror at $32^\\circ$ from the *surface*. Find the angle of incidence.",
+        "phases": [
+          {
+            "label": "(a) Given the angle from the normal",
+            "steps": [
+              "Angle of reflection $= 32^\\circ$ (law of reflection).",
+              "Angle between the rays $= 32^\\circ + 32^\\circ = 64^\\circ$."
+            ]
+          },
+          {
+            "label": "(b) Given the angle from the surface",
+            "steps": ["Angle of incidence (from the normal) $= 90^\\circ - 32^\\circ = 58^\\circ$."]
+          }
+        ],
+        "keyMove": "Reflection angle = incidence angle (from the normal). Convert surface angles with $90^\\circ - \\theta$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L2-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A ray strikes a plane mirror with an angle of incidence of $50^\\circ$. What is the angle between the reflected ray and the mirror surface?",
+        "choices": ["$50^\\circ$", "$40^\\circ$", "$100^\\circ$", "$25^\\circ$"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the angle of reflection is $50^\\circ$ from the normal, so it is $90^\\circ - 50^\\circ = 40^\\circ$ from the surface.",
+          "incorrect": {
+            "0": "$50^\\circ$ is the angle from the *normal*. The question asks for the angle from the *surface*.",
+            "2": "$100^\\circ$ is the angle between the incident and reflected rays.",
+            "3": "Do not halve — subtract from $90^\\circ$."
+          }
+        },
+        "hint": ["Angle of reflection = $50^\\circ$ (from the normal). Angle from the surface = $90^\\circ - 50^\\circ$."],
+        "solution": "By the law of reflection, the angle of reflection equals the angle of incidence: $50^\\circ$ from the normal. The angle between the reflected ray and the mirror surface is $90^\\circ - 50^\\circ = 40^\\circ$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The plane-mirror image",
+      "concept": "A **plane (flat) mirror** forms an image that is:\n\n- **virtual** — the light never actually goes behind the mirror; it only appears to;\n- **upright** — the same way up as the object;\n- **the same size** as the object (magnification 1);\n- **laterally reversed** — left and right appear swapped (why text looks mirror-written);\n- located **as far behind the mirror as the object is in front**, directly opposite along the perpendicular to the mirror.\n\nBecause the image is the same distance behind as the object is in front, if you move **toward** the mirror at speed $v$, your image moves toward the mirror at $v$ too, so the **gap between you and your image closes at $2v$**.\n\nThe minimum mirror height to see your whole body is **half your height**, $H/2$, hung correctly — and this does not depend on how far away you stand.",
+      "representation": "Plane mirror image: **virtual, upright, same size**, distance behind = distance in front, left-right reversed.\n\n- move toward mirror at $v$ → you approach your image at $2v$;\n- full-body mirror needs height $\\ge H/2$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "You stand $2.0\\ \\mathrm{m}$ from a plane mirror. (a) How far behind the mirror is your image? (b) How far is your image from you? (c) You step back to $3.0\\ \\mathrm{m}$. Now how far is your image from you?",
+        "phases": [
+          {
+            "label": "(a) Image behind the mirror",
+            "steps": ["As far behind as you are in front: $2.0\\ \\mathrm{m}$."]
+          },
+          {
+            "label": "(b) Image distance from you",
+            "steps": ["$2.0\\ \\mathrm{m}$ (you to mirror) $+ 2.0\\ \\mathrm{m}$ (mirror to image) $= 4.0\\ \\mathrm{m}$."]
+          },
+          {
+            "label": "(c) After stepping back to 3.0 m",
+            "steps": ["Image is now $3.0\\ \\mathrm{m}$ behind; total distance $= 3.0 + 3.0 = 6.0\\ \\mathrm{m}$."]
+          }
+        ],
+        "keyMove": "Image distance behind = object distance in front. Distance from you to your image = twice your distance from the mirror."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L2-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which set of properties describes the image in a flat bathroom mirror?",
+        "choices": [
+          "Real, inverted, magnified.",
+          "Virtual, upright, same size.",
+          "Real, upright, reduced.",
+          "Virtual, inverted, same size."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a plane mirror always gives a virtual, upright, same-size image.",
+          "incorrect": {
+            "0": "Your reflection is not upside down or bigger, and it cannot be projected on a screen.",
+            "2": "It is virtual and the same size, not real and reduced.",
+            "3": "The image is upright, not inverted (it is reversed left-right, which is different)."
+          }
+        },
+        "hint": ["Look at your reflection: same size? Right way up? Can you catch it on a screen?"],
+        "solution": "A plane mirror forms a virtual (light only appears to come from behind), upright, same-size image, located as far behind the mirror as you are in front, and reversed left-to-right."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Constructing a plane-mirror ray diagram",
+      "concept": "To locate the image of a point object in a plane mirror:\n\n1. Draw **two rays** from the object to the mirror.\n2. At each point where a ray meets the mirror, draw the **normal** and reflect the ray so that the angle of reflection equals the angle of incidence.\n3. The two **reflected rays diverge** — they spread apart as if coming from a point behind the mirror.\n4. **Extend the reflected rays backward** (dashed lines) behind the mirror until they **cross**.\n5. That crossing point is the **virtual image** of the object point — it will be as far behind the mirror as the object is in front.\n\nFor an extended object (an arrow), do this for the tip and the base; the image is the same size, upright, and directly opposite.\n\nAn eye positioned to catch the reflected rays sees the light as if it came straight from the image behind the mirror.",
+      "representation": "Ray-diagram steps: two rays out → reflect each (law of reflection) → reflected rays diverge → extend backward (dashed) → intersection = virtual image.\n\nCheck: image is the same perpendicular distance behind the mirror as the object is in front.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/reflection-and-plane-mirrors/plane-mirror-image.svg",
+          "caption": "Two rays from the object reflect toward the eye; extended backward (dashed), they meet at the virtual image, as far behind the mirror as the object is in front."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "An arrow $6\\ \\mathrm{cm}$ tall stands $10\\ \\mathrm{cm}$ in front of a vertical plane mirror. Describe the ray-diagram construction and state the image's height, orientation, and position.",
+        "phases": [
+          {
+            "label": "Construct",
+            "steps": [
+              "From the arrow's tip, draw two rays to the mirror; reflect each with the law of reflection.",
+              "The reflected rays diverge; extend them backward (dashed) until they meet.",
+              "That meeting point is the image of the tip. Repeat for the base."
+            ]
+          },
+          {
+            "label": "Read off the image",
+            "steps": [
+              "Height: $6\\ \\mathrm{cm}$ (same size).",
+              "Orientation: upright.",
+              "Position: $10\\ \\mathrm{cm}$ behind the mirror, directly opposite the object."
+            ]
+          }
+        ],
+        "keyMove": "Reflect two rays, extend them behind the mirror to their intersection — that is the virtual image, same size, upright, equidistant."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L2-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "multi-representation-reasoning",
+        "representation": "physical-model",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "In a plane-mirror ray diagram, why are the lines drawn behind the mirror dashed rather than solid?",
+        "choices": [
+          "To make the diagram look neater.",
+          "Because no real light travels behind the mirror — the dashed lines only show where the reflected rays *appear* to come from (the virtual image).",
+          "Because the light is dimmer behind the mirror.",
+          "Because the mirror is semi-transparent."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — solid lines represent real light paths; dashed lines represent the backward extensions used to locate a virtual image, where no light actually goes.",
+          "incorrect": {
+            "0": "It is a physics convention, not a style choice.",
+            "2": "There is no light behind the mirror at all, not just dimmer light.",
+            "3": "A normal mirror is not transparent; the dashing shows the rays are imaginary extensions."
+          }
+        },
+        "hint": ["Solid = real light path. Dashed = where rays only *seem* to come from."],
+        "solution": "In a ray diagram, solid lines show the actual paths of light. The reflected rays from a plane mirror all travel in front of the mirror. Their backward extensions behind the mirror — drawn dashed — are not real light paths; they just show where the diverging reflected rays appear to originate, which is the location of the virtual image."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L2-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'To see my whole body, I need a mirror as tall as I am.' What does the physics say?",
+      "choices": [
+        "The student is right — a full-length mirror must be full height.",
+        "A mirror only half your height ($H/2$), hung at the correct height, lets you see your whole body — and this is true no matter how far back you stand.",
+        "You need a mirror twice your height.",
+        "It depends entirely on how close you stand."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — tracing rays from your feet and the top of your head to your eyes, each reflects at a mirror point exactly halfway up, so the mirror only needs to span $H/2$.",
+        "incorrect": {
+          "0": "A full-height mirror works but wastes half the glass.",
+          "2": "Twice your height is far more than needed.",
+          "3": "Surprisingly, the required mirror height is independent of your distance from it — moving back does not change which mirror points you use."
+        }
+      },
+      "hint": ["Trace a ray from your feet to your eyes via the mirror. Where on the mirror does it reflect?"],
+      "solution": "The ray from your feet must reflect at a mirror point exactly halfway between your feet and your eyes (equal angles). The ray from the top of your head reflects at a point halfway between your eyes and the top of your head. The mirror only needs to cover the span between these two points — a length of $H/2$ — and moving toward or away from the mirror shifts the ray angles but keeps these reflection points at the same heights, so the required mirror size does not change."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A ray makes an angle of $20^\\circ$ with a mirror surface. Find the angle of reflection.\n\nStudent's response: 'By the law of reflection, angle of reflection = angle of incidence = $20^\\circ$.'",
+      "prompts": [
+        "State from which line the angle of incidence and angle of reflection are measured.",
+        "Identify the student's error.",
+        "Give the correct angle of incidence and angle of reflection."
+      ],
+      "modelResponse": "The angle of incidence and angle of reflection are both measured from the *normal* (the perpendicular to the surface), not from the surface itself. Error: the student used the $20^\\circ$ measured from the surface directly as the angle of incidence. Correct: the angle of incidence is $90^\\circ - 20^\\circ = 70^\\circ$ from the normal. By the law of reflection, the angle of reflection is also $70^\\circ$ from the normal (equivalently, $20^\\circ$ from the surface on the other side).",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A described ray-and-surface situation gives an angle (from the surface or the normal); converting to the normal and applying $\\theta_i = \\theta_r$ gives the reflected direction. Two reflected rays, extended behind the mirror to their intersection, locate the virtual image on a ray diagram; its properties (virtual, upright, same size, equidistant) follow directly from the equal-angle rule. This is the foundation for the curved-mirror ray diagrams of Lesson 3.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L2-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "The angle between an incident ray and a plane mirror's reflected ray is $70^\\circ$. What is the angle of incidence?",
+      "choices": ["$35^\\circ$", "$70^\\circ$", "$20^\\circ$", "$110^\\circ$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — the normal bisects the angle between the incident and reflected rays, so each makes $70^\\circ / 2 = 35^\\circ$ with the normal.",
+        "incorrect": {
+          "1": "$70^\\circ$ is the angle *between the rays*, split equally by the normal.",
+          "2": "This is $90^\\circ - 70^\\circ$; but the $70^\\circ$ here is between the rays, not from the surface.",
+          "3": "Angles of incidence are at most $90^\\circ$."
+        }
+      },
+      "hint": ["The normal lies exactly between the incident and reflected rays, so it halves the angle between them."],
+      "solution": "The incident and reflected rays are symmetric about the normal, and the angle of incidence equals the angle of reflection. So the $70^\\circ$ between the two rays is divided equally by the normal: the angle of incidence is $35^\\circ$."
+    },
+    {
+      "id": "BP8-U7-L2-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "A periscope uses two plane mirrors. Light enters horizontally, reflects off the top mirror (tilted $45^\\circ$) to travel straight down, then reflects off the bottom mirror (tilted $45^\\circ$) to travel horizontally again to the viewer's eye. What is the angle of incidence at each mirror?",
+      "choices": ["$45^\\circ$", "$90^\\circ$", "$22.5^\\circ$", "$0^\\circ$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — a ray hitting a mirror tilted at $45^\\circ$ to the ray's direction makes $45^\\circ$ with the normal, so the angle of incidence is $45^\\circ$ and the ray turns through $90^\\circ$.",
+        "incorrect": {
+          "1": "$90^\\circ$ from the normal would mean the ray runs along the mirror.",
+          "2": "The mirror is tilted $45^\\circ$, and the angle of incidence equals that: $45^\\circ$.",
+          "3": "$0^\\circ$ would send the ray straight back, not turn it by $90^\\circ$."
+        }
+      },
+      "hint": ["A mirror at $45^\\circ$ to a ray turns that ray by $90^\\circ$. The angle of incidence is $45^\\circ$."],
+      "solution": "The horizontal ray meets the top mirror, whose surface is tilted $45^\\circ$ from vertical. The normal is then $45^\\circ$ from the ray, so the angle of incidence is $45^\\circ$; the reflected ray leaves at $45^\\circ$ on the other side of the normal, a total turn of $90^\\circ$ — straight down. The same happens at the bottom mirror, turning the ray back to horizontal."
+    },
+    {
+      "id": "BP8-U7-L2-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "multi-representation-reasoning",
+      "representation": "physical-model",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "An object $4\\ \\mathrm{cm}$ tall is placed $12\\ \\mathrm{cm}$ in front of a vertical plane mirror. An observer's eye is off to one side.",
+      "parts": [
+        {
+          "prompt": "(a) State the type, orientation, size, and position of the image.",
+          "modelResponse": "Type: virtual. Orientation: upright (but reversed left-to-right). Size: $4\\ \\mathrm{cm}$ (same as the object). Position: $12\\ \\mathrm{cm}$ directly behind the mirror, opposite the object.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Describe how to construct the ray diagram that lets the off-to-one-side observer see the top of the object, and what the observer perceives.",
+          "modelResponse": "From the top of the object, draw a ray to the mirror that, after reflecting (angle of reflection = angle of incidence, measured from the normal at that point), travels toward the observer's eye. Draw a second such ray. Extend both reflected rays backward behind the mirror; they meet $12\\ \\mathrm{cm}$ behind the mirror at the image of the object's top. The observer's eye receives the reflected rays and the brain traces them straight back, so the observer sees the top of the object as if it were located at that point behind the mirror.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The observer now walks toward the mirror at $0.8\\ \\mathrm{m/s}$. State how fast the observer approaches their own image, and justify.",
+          "modelResponse": "The observer approaches their image at $1.6\\ \\mathrm{m/s}$. The image is always as far behind the mirror as the observer is in front, so when the observer moves $0.8\\ \\mathrm{m}$ closer to the mirror in one second, the image also moves $0.8\\ \\mathrm{m}$ closer to the mirror (from the other side). The gap between observer and image therefore closes at $0.8 + 0.8 = 1.6\\ \\mathrm{m/s}$.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test the law of reflection (with the from-the-normal convention and surface-angle conversions), the properties of a plane-mirror image, plane-mirror ray-diagram construction (solid rays, dashed virtual extensions), and applications such as periscopes, corner reflectors, and the minimum full-length mirror. The 'image approaches at $2v$' result is a common reasoning item.",
+  "summary": "The law of reflection: the angle of incidence equals the angle of reflection, both measured from the normal, and the incident ray, reflected ray, and normal are coplanar. Smooth surfaces give specular reflection (image preserved); rough surfaces obey the law at each point but scatter parallel rays (diffuse reflection, no image). A plane mirror forms a virtual, upright, same-size image, as far behind the mirror as the object is in front, reversed left-to-right. To locate it on a ray diagram, reflect two rays and extend them backward (dashed) to their intersection. Moving toward a mirror at speed $v$ closes the gap to your image at $2v$; a full-length mirror need only be half your height.",
+  "exitQuestion": {
+    "id": "BP8-U7-L2-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A ray of light hits a plane mirror at an angle of incidence of $28^\\circ$. Through what total angle is the ray's direction changed by the reflection?",
+    "choices": ["$28^\\circ$", "$56^\\circ$", "$62^\\circ$", "$124^\\circ$"],
+    "correctAnswer": 3,
+    "feedback": {
+      "correct": "Correct — the ray reverses its component along the normal. The angle between the incident and reflected rays is $2 \\times 28^\\circ = 56^\\circ$, so the *change of direction* is $180^\\circ - 56^\\circ = 124^\\circ$.",
+      "incorrect": {
+        "0": "That is the angle of incidence, not the change of direction.",
+        "1": "$56^\\circ$ is the angle between the incident and reflected rays; the direction change is the supplement, $180^\\circ - 56^\\circ = 124^\\circ$.",
+        "2": "$62^\\circ$ is $90^\\circ - 28^\\circ$, the angle from the surface — not the direction change."
+      }
+    },
+    "hint": ["The angle *between* the incident and reflected rays is $2\\theta_i$. The *change in direction* is $180^\\circ$ minus that."],
+    "solution": "The incident and reflected rays each make $28^\\circ$ with the normal, so the angle between them is $56^\\circ$. The change in the ray's direction of travel is the supplement: $180^\\circ - 56^\\circ = 124^\\circ$. (At normal incidence, $\\theta_i = 0$, the ray reverses — a $180^\\circ$ change; at grazing incidence, $\\theta_i \\to 90^\\circ$, the direction barely changes.)"
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-011", "BP8-U7-MCQ-012", "BP8-U7-MCQ-014", "BP8-U7-MCQ-015", "BP8-U7-MCQ-016", "BP8-U7-MCQ-018"],
+  "needsPlotly": false
+}

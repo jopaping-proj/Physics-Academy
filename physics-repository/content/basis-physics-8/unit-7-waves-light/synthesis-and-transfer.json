@@ -1,0 +1,366 @@
+{
+  "id": "basis-p8-u7-l7",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Synthesis and Transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "7",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (integrates all six clusters); calibrated against AP Physics 2 CED Units 13-14",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this synthesis lesson is authored to the pattern of the Unit 2-6 synthesis modules.",
+  "prerequisites": [
+    "Lessons 1-6 of this unit — light vocabulary, reflection and plane mirrors, spherical mirrors, refraction and the index of refraction, Snell's law and total internal reflection, dispersion and diffraction."
+  ],
+  "majorObjective": "Integrate the whole unit: decide which optical principle a described situation calls for, trace light through a multi-surface system, and explain real optical devices and effects using the unit's ideas together.",
+  "subObjectives": [
+    "Given an unfamiliar optical scenario, identify whether it involves reflection, refraction, total internal reflection, dispersion, or diffraction, and select the matching relationship.",
+    "Trace a ray through a sequence of surfaces (a prism, a fibre, a periscope, a water surface), applying the law of reflection or Snell's law at each and comparing angles with the critical angle.",
+    "Explain a real device or phenomenon (rainbow, mirage-like effects, binoculars, cameras, fibre-optic communication) as a combination of the unit's principles.",
+    "Check optical answers for reasonableness: $n \\ge 1$, $\\sin\\theta \\le 1$, sensible bending direction, real vs virtual image consistent with the geometry."
+  ],
+  "hook": {
+    "prompt": "A ray of light travels from air, through a glass block, and out the other side. How many times could it change direction along the way?",
+    "choices": [
+      "Never — light travels in straight lines.",
+      "Up to twice — it can refract at each of the two surfaces it crosses.",
+      "Exactly once, in the middle of the block.",
+      "Continuously, curving through the glass."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Each lesson gave you one tool: the law of reflection, image rules for mirrors, $n = c/v$, Snell's law, the critical angle, dispersion, diffraction. Real optics problems and devices use several at once. This lesson is about choosing and combining.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Choosing the principle",
+      "concept": "Read the scenario and match it to a tool:\n\n| The situation involves... | Use |\n|---|---|\n| light bouncing off a surface | law of reflection: $\\theta_i = \\theta_r$ (from the normal) |\n| an image in a flat mirror | virtual, upright, same size, equidistant |\n| an image in a curved mirror | principal-ray diagram; image rules by object position |\n| light crossing into a new medium (speed/direction) | $n = c/v$; bending rule (toward normal into denser) |\n| a bending angle and indices | Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$ |\n| light possibly trapped inside a dense medium | compare the angle with $\\theta_c$ ($\\sin\\theta_c = 1/n$) |\n| white light splitting into colours | dispersion (frequency-dependent index) |\n| a wave spreading past an edge or gap | diffraction (wavelength vs opening size) |\n\nMany problems chain two or three rows: a ray refracts in, reflects (or totally internally reflects) inside, and refracts out.",
+      "representation": "Decision flow:\n\n1. Does the light stay in one medium (bounce)? → reflection rules.\n2. Does it cross a boundary? → $n = c/v$ / Snell's law / check $\\theta_c$.\n3. Is white light being separated? → dispersion.\n4. Is a wave spreading past an edge? → diffraction.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Name the principle(s) for each — do not solve: (a) 'A ray hits a mirror at $25^\\circ$; find the reflected direction.' (b) 'Light goes from air ($\\sin\\theta_1 = 0.8$) into glass ($\\sin\\theta_2 = 0.5$); find $n$.' (c) 'A ray inside diamond ($n = 2.4$) hits a facet at $30^\\circ$; does it escape?' (d) 'Why does a soap bubble show colours?' (which is beyond this course but should be recognised as a wave/interference effect, not covered here). (e) 'A prism turns white light into a band of colours; explain.'",
+        "phases": [
+          {
+            "label": "(a) Mirror at 25 degrees",
+            "steps": ["Law of reflection: angle of reflection $= 25^\\circ$."]
+          },
+          {
+            "label": "(b) Air into glass, find n",
+            "steps": ["Snell's law solved for the index: $n_2 = n_1\\sin\\theta_1/\\sin\\theta_2$."]
+          },
+          {
+            "label": "(c) Ray inside diamond at 30 degrees",
+            "steps": ["Compare with the critical angle: $\\sin\\theta_c = 1/2.4 \\approx 0.42$, so $\\theta_c \\approx 24^\\circ$; $30^\\circ > 24^\\circ$, so total internal reflection — it does not escape."]
+          },
+          {
+            "label": "(d) Soap bubble colours",
+            "steps": ["Thin-film interference — a wave effect not in this course; recognise it is *not* dispersion or ordinary reflection."]
+          },
+          {
+            "label": "(e) Prism spectrum",
+            "steps": ["Dispersion: the index of refraction is slightly larger for violet, so each colour refracts by a different amount."]
+          }
+        ],
+        "keyMove": "Match the scenario to the tool first. Reflection / Snell / critical angle / dispersion / diffraction each have a signature."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L7-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "You must decide whether a light ray travelling inside a glass rod escapes at the side wall or stays trapped. Which quantity must you compare, and with what?",
+        "choices": [
+          "The ray's speed, with $c$.",
+          "The ray's angle of incidence at the wall (from the normal), with the critical angle $\\theta_c$ where $\\sin\\theta_c = 1/n$.",
+          "The ray's wavelength, with the rod's diameter.",
+          "The ray's frequency, with the glass's dispersion."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — light inside the glass hitting the glass-air wall stays trapped (total internal reflection) if its angle of incidence exceeds $\\theta_c$, and refracts out if it is below $\\theta_c$.",
+          "incorrect": {
+            "0": "The speed is set by $n$; it does not decide escape.",
+            "2": "That comparison is for diffraction, not for whether a ray escapes a light guide.",
+            "3": "Dispersion affects the colour slightly but not whether the ray is totally internally reflected."
+          }
+        },
+        "hint": ["Trapped-inside-glass is a total-internal-reflection question. What angle sets the threshold?"],
+        "solution": "For light travelling inside the glass and meeting the glass-air side wall, total internal reflection occurs if the angle of incidence (measured from the normal to the wall) is greater than the critical angle, $\\theta_c$, given by $\\sin\\theta_c = 1/n$. If the angle is below $\\theta_c$, the ray refracts and partly escapes. So you compare the ray's angle of incidence at the wall with $\\theta_c$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Tracing a ray through several surfaces",
+      "concept": "For a system with multiple surfaces (a prism, a fibre, a raindrop, a glass block, a periscope), apply the right rule **at each surface in turn**:\n\n1. Find the **normal** at the point the ray meets that surface.\n2. If the ray **reflects** there → angle of reflection $=$ angle of incidence.\n3. If the ray **crosses into a new medium** → check whether the angle exceeds $\\theta_c$ (if going to a lower index):\n   - **below $\\theta_c$** (or going to a higher index) → **refract** using the bending rule (toward the normal into denser, away into less dense);\n   - **above $\\theta_c$** → **total internal reflection** (treat as a mirror).\n4. Carry the new direction to the **next** surface and repeat.\n\n**Prism:** refract in (toward normal), travel through, refract out (away from normal); the two bends add because the faces are angled. **Fibre:** refract in at the end, then total internal reflection at every core-wall hit. **Raindrop:** refract in (disperse), reflect off the back, refract out (disperse more).",
+      "representation": "At each surface: normal → reflect ($\\theta_r = \\theta_i$) or refract (check vs $\\theta_c$, apply bending rule) → carry direction forward.\n\nRepeat for every surface the ray meets.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ray enters a $45^\\circ$-$45^\\circ$-$90^\\circ$ glass prism ($n = 1.5$, $\\theta_c \\approx 42^\\circ$) through a short face, along the normal (so it does not bend there). It then meets the long (hypotenuse) face. Trace it.",
+        "phases": [
+          {
+            "label": "Surface 1: short face",
+            "steps": ["The ray enters along the normal → no bending, just a speed decrease. It travels straight to the hypotenuse."]
+          },
+          {
+            "label": "Surface 2: hypotenuse (glass-air)",
+            "steps": [
+              "Geometry gives an angle of incidence of $45^\\circ$ at the hypotenuse.",
+              "$45^\\circ > \\theta_c \\approx 42^\\circ$, so **total internal reflection**: the ray reflects, turning $90^\\circ$."
+            ]
+          },
+          {
+            "label": "Surface 3: the other short face",
+            "steps": ["The ray now meets the second short face along its normal → exits straight, travelling at $90^\\circ$ to its original direction."]
+          }
+        ],
+        "keyMove": "Do each surface in order. At the hypotenuse, $45^\\circ > \\theta_c$ → total internal reflection acts as a perfect mirror."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L7-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A ray of light passes through a raindrop and contributes to a rainbow. In the correct order, the ray:",
+        "choices": [
+          "reflects off the front, then refracts through the back.",
+          "refracts (and disperses) entering the front, reflects off the inside of the back, then refracts (dispersing more) exiting the front.",
+          "diffracts around the drop, then reflects.",
+          "is absorbed and re-emitted twice."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — refraction in (dispersion), one internal reflection off the back, refraction out (more dispersion). Each colour leaves at its own angle.",
+          "incorrect": {
+            "0": "Reflection off the front cannot separate colours or send the light back toward the anti-solar point.",
+            "2": "Diffraction plays only a tiny role; the primary rainbow is refraction + internal reflection.",
+            "3": "The water refracts and reflects the light; it does not absorb and re-emit it."
+          }
+        },
+        "hint": ["Two refractions (at the front, in and out) with one reflection off the back in between."],
+        "solution": "For a primary rainbow, sunlight refracts as it enters the front of the spherical drop (dispersing because each colour bends differently), reflects once off the inside of the back surface, and refracts again as it exits the front (dispersing further). Each colour emerges at a slightly different angle, producing the coloured arc."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Devices, effects, and reasonableness checks",
+      "concept": "**Optical devices as combinations of unit ideas:**\n\n- **Periscope / binoculars:** plane mirrors or (better) $45^\\circ$ prisms using total internal reflection to fold the light path.\n- **Camera / eye:** a converging element forms a **real, inverted, reduced** image on a sensor or retina (the concave-mirror 'object beyond C' behaviour, done with a lens).\n- **Shaving/make-up mirror:** concave mirror, face inside $F$ → **virtual, upright, enlarged**.\n- **Wing mirror / security mirror:** convex mirror → **virtual, upright, reduced**, wide field of view.\n- **Optical fibre:** refraction in at the end, then repeated **total internal reflection** guiding the light for kilometres with almost no loss.\n- **Prism spectrometer / rainbow:** **dispersion** (frequency-dependent index) spreading white light into colours.\n- **Diffraction grating / CD:** **diffraction** through wavelength-scale spacings, spreading light by colour.\n\n**Reasonableness checks:**\n\n- an index of refraction is always $\\ge 1$;\n- $\\sin\\theta$ (of any real angle) is always $\\le 1$ — if a calculation gives $\\sin\\theta > 1$, total internal reflection is happening (no refracted ray) or the formula is inverted;\n- light bends **toward** the normal entering a denser medium, **away** entering a less dense one;\n- a single mirror's real image is inverted; its virtual image is upright.",
+      "representation": "Each device = one or two unit principles:\n\n| Device | Principle(s) |\n|---|---|\n| periscope, binocular prisms | reflection / total internal reflection |\n| camera, eye | converging element → real inverted image |\n| shaving mirror | concave, inside $F$ → virtual upright enlarged |\n| wing mirror | convex → virtual upright reduced |\n| optical fibre | refraction + total internal reflection |\n| prism / rainbow | dispersion |\n| grating / CD | diffraction |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, name the main optical principle and the image or effect: (a) the picture on a camera's sensor; (b) the reflectors on the back of a bicycle; (c) the coloured sheen on the underside of a CD; (d) a rainbow.",
+        "phases": [
+          {
+            "label": "(a) Camera sensor",
+            "steps": ["A converging element forms a **real, inverted, reduced** image on the sensor (light actually converges there, so it can be recorded)."]
+          },
+          {
+            "label": "(b) Bicycle reflectors",
+            "steps": ["Corner reflectors: pairs of surfaces at $90^\\circ$ using reflection (and total internal reflection in the plastic) to send light straight back toward its source — a car's headlights."]
+          },
+          {
+            "label": "(c) CD sheen",
+            "steps": ["**Diffraction**: the finely spaced tracks (spacing near the wavelength of light) spread the reflected light out by colour."]
+          },
+          {
+            "label": "(d) Rainbow",
+            "steps": ["**Dispersion** in raindrops (frequency-dependent index) plus one internal reflection, sending each colour to a slightly different angle."]
+          }
+        ],
+        "keyMove": "Identify the one or two unit principles behind each device or effect; then the image type or colour behaviour follows."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L7-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "reasonableness-check",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A student's Snell's-law calculation for a refracted ray gives $\\sin\\theta_2 = 1.4$. What is the correct interpretation?",
+        "choices": [
+          "The angle of refraction is about $90^\\circ$.",
+          "There is no refracted ray — the light must be undergoing total internal reflection (or the equation was set up upside down).",
+          "The index of refraction is $1.4$.",
+          "The light has a very long wavelength."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $\\sin\\theta_2$ can never exceed $1$. A value greater than $1$ means Snell's law has no solution for a refracted ray, which is exactly the condition for total internal reflection (or a sign that $n_1$ and $n_2$ were swapped).",
+          "incorrect": {
+            "0": "$\\sin\\theta_2 = 1$ corresponds to $90^\\circ$; $1.4$ is not a valid sine at all.",
+            "2": "$\\sin\\theta_2$ is not an index of refraction.",
+            "3": "Wavelength is not what the sine value tells you."
+          }
+        },
+        "hint": ["What is the largest possible value of a sine? What does it mean if a calculation exceeds that?"],
+        "solution": "The sine of any real angle is at most $1$. If Snell's law gives $\\sin\\theta_2 > 1$, there is no angle that satisfies it, so no refracted ray exists — the light is being totally internally reflected (the angle of incidence exceeds the critical angle). It can also mean the two media's indices were entered the wrong way round, so check that first."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L7-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "misconceptionTested": "",
+      "question": "A student analyses a $45^\\circ$ prism used as a mirror in binoculars and writes: 'The light reflects off the silvered back face of the prism.' What is wrong, and why does it matter?",
+      "choices": [
+        "Nothing — prisms are silvered.",
+        "The prism is NOT silvered. The light hits the back face at $45^\\circ$, which exceeds the critical angle (~$42^\\circ$ for glass), so it is totally internally reflected — which reflects 100% of the light. A silver coating would absorb a few percent at each of the many reflections, dimming the image.",
+        "The light refracts through the back face, not reflects.",
+        "The prism uses diffraction to turn the light."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the whole point of using a prism instead of a mirror is that total internal reflection is lossless, so binoculars stay bright even with several reflections in the light path.",
+        "incorrect": {
+          "0": "Roof and Porro prisms in binoculars rely on total internal reflection, not silvering (though some roof prisms add a coating on one face for a different geometric reason).",
+          "2": "At $45^\\circ$ (above the critical angle) the light does not refract through — it is totally internally reflected.",
+          "3": "The turning is by total internal reflection, a geometric-optics effect, not diffraction."
+        }
+      },
+      "hint": ["Compare $45^\\circ$ with the critical angle of glass. What does that tell you happens at the back face?"],
+      "solution": "A $45^\\circ$ prism in binoculars is not silvered. A ray reaching the hypotenuse face at $45^\\circ$ exceeds the critical angle for glass (about $42^\\circ$), so it undergoes total internal reflection, which reflects essentially 100% of the light. This is better than a silvered mirror, which absorbs a small percentage at every bounce — significant over the multiple reflections in a binocular's folded light path, where it would noticeably dim the image."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A ray inside a glass block ($n = 1.5$, critical angle $\\approx 42^\\circ$) reaches the top surface at $50^\\circ$ to the normal. The student is asked for the direction of the refracted ray.\n\nStudent's response: 'Snell's law: $(1.5)\\sin 50^\\circ = (1.0)\\sin\\theta_2$, so $\\sin\\theta_2 = 1.5 \\times 0.77 = 1.15$. Then $\\theta_2 = \\sin^{-1}(1.15)$.'",
+      "prompts": [
+        "State what the value $\\sin\\theta_2 = 1.15$ tells you.",
+        "Explain what the student should have checked before applying Snell's law.",
+        "Give the correct description of what happens to the ray."
+      ],
+      "modelResponse": "$\\sin\\theta_2 = 1.15$ is impossible, because the sine of any angle is at most $1$. This is the mathematical signal that no refracted ray exists. The student should first have compared the angle of incidence ($50^\\circ$) with the critical angle ($\\approx 42^\\circ$): since $50^\\circ > 42^\\circ$ and the light is going from glass (higher index) toward air (lower index), the condition for total internal reflection is met. Correct: there is no refracted ray; the ray is totally internally reflected back into the glass, with an angle of reflection of $50^\\circ$ (law of reflection).",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A described optical situation is matched to a principle (reflection, Snell's law, critical angle, dispersion, diffraction); a multi-surface path is traced by applying the right rule at each surface in turn (normal → reflect or refract → carry direction forward, comparing with $\\theta_c$ where light might be trapped). Real devices and effects (periscopes, cameras, fibres, rainbows, CDs) are decomposed into these principles. Answers are checked against $n \\ge 1$, $\\sin\\theta \\le 1$, the bending-direction rule, and real-vs-virtual image consistency.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L7-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A ray of light travels inside a glass fibre ($n = 1.5$) and reaches the flat, polished END of the fibre (glass-air) at $10^\\circ$ to the normal, then, elsewhere, meets the curved SIDE wall at $60^\\circ$ to the normal. What happens at each surface? (Critical angle $\\approx 42^\\circ$.)",
+      "choices": [
+        "Total internal reflection at both surfaces.",
+        "At the end ($10^\\circ < 42^\\circ$): refracts out into the air. At the side wall ($60^\\circ > 42^\\circ$): total internal reflection, stays in the fibre.",
+        "Refracts out at both surfaces.",
+        "At the end: total internal reflection. At the side wall: refracts out."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — compare each angle with $\\theta_c \\approx 42^\\circ$. The end-face angle ($10^\\circ$) is below it, so the light exits (this is how the signal leaves the fibre). The side-wall angle ($60^\\circ$) is above it, so total internal reflection keeps the light guided.",
+        "incorrect": {
+          "0": "At the end face, $10^\\circ$ is well below the critical angle, so the light refracts out there.",
+          "2": "At the side wall, $60^\\circ$ exceeds the critical angle, so the light is totally internally reflected, not refracted out.",
+          "3": "This has both surfaces backwards."
+        }
+      },
+      "hint": ["At each surface, compare the angle of incidence with the critical angle ($\\approx 42^\\circ$). Below → refracts out; above → total internal reflection."],
+      "solution": "Total internal reflection occurs when the angle of incidence (glass toward air) exceeds the critical angle ($\\approx 42^\\circ$). At the end face the angle is $10^\\circ$, well below $\\theta_c$, so the light refracts and exits into the air — this is where the signal comes out. At the side wall the angle is $60^\\circ$, above $\\theta_c$, so the light is totally internally reflected and stays guided along the fibre."
+    },
+    {
+      "id": "BP8-U7-L7-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A camera lens forms an image of a distant landscape on the sensor. A concave makeup mirror forms an image of a face held close to it. Which statement correctly compares the two images?",
+      "choices": [
+        "Both are real and inverted.",
+        "The camera image is real, inverted, and reduced (distant object → converging element); the makeup-mirror image is virtual, upright, and enlarged (object inside the focal length of a concave reflector).",
+        "Both are virtual and upright.",
+        "The camera image is virtual; the makeup-mirror image is real."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a distant object with a converging element gives a real, inverted, reduced image (near the focal plane); an object inside the focal length of a concave mirror gives a virtual, upright, enlarged image.",
+        "incorrect": {
+          "0": "The makeup-mirror image is virtual and upright, not real and inverted.",
+          "2": "The camera image must be real — it is recorded on the sensor where light physically converges.",
+          "3": "Reversed: the camera image is real (on the sensor); the close-up mirror image is virtual (behind the mirror)."
+        }
+      },
+      "hint": ["Distant object + converging element = real, inverted, reduced. Close object inside F of a concave mirror = virtual, upright, enlarged."],
+      "solution": "A camera photographing a distant landscape: the object is far beyond the focal length, so the converging lens forms a real, inverted, reduced image on the sensor (where the light actually converges and can be recorded). A concave makeup mirror with a face held closer than the focal length: the object is inside F, so the mirror forms a virtual, upright, enlarged image behind the mirror — which is why it magnifies for grooming."
+    },
+    {
+      "id": "BP8-U7-L7-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "verbal",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "A beam of white light enters a triangular glass prism, is dispersed into a spectrum inside it, and then each colour reaches the second (exit) face of the prism. The prism glass has an index of refraction near $1.5$ for red light and slightly higher for violet, and a critical angle of about $42^\\circ$ for the average colour.",
+      "parts": [
+        {
+          "prompt": "(a) Explain what happens to the white beam at the first (entry) face, naming the principle and the effect on the colours.",
+          "modelResponse": "At the entry face the light refracts (Snell's law): going from air into the denser glass, it bends toward the normal. Because the index of refraction is slightly higher for violet than for red (dispersion), violet bends a little more than red, so the colours begin to fan apart inside the prism.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) At the exit face, the colours strike at angles of incidence of about $35^\\circ$. State what happens to the light there and how the colour separation changes.",
+          "modelResponse": "At about $35^\\circ$, the angle of incidence is below the critical angle (~$42^\\circ$), so the light refracts out into the air (it is not totally internally reflected). Going from glass into the less dense air, each colour bends away from the normal — and again violet bends more than red — so the colours fan apart further. The white light emerges as a visible spectrum, red deviated least, violet most.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) If the prism were rotated so the colours struck the exit face at about $50^\\circ$ instead, what would happen, and what would the observer see?",
+          "modelResponse": "At about $50^\\circ$ the angle of incidence would exceed the critical angle (~$42^\\circ$), so the light would undergo total internal reflection at the exit face instead of refracting out — no spectrum would emerge from that face. The light would reflect back into the prism and could exit through a different face (or be trapped). The observer would see the spectrum disappear from the expected direction as the prism is rotated past the critical-angle condition.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 2 free-response problems on geometric optics routinely trace a ray through a prism, a fibre, or a water surface, applying the law of reflection or Snell's law at each surface and testing against the critical angle, and ask students to explain a device (binoculars, cameras, fibre communication) or an effect (rainbows) using several principles together. The reasonableness checks ($n \\ge 1$, $\\sin\\theta \\le 1$, bending direction) are frequently the difference between full and partial marks.",
+  "summary": "To solve an optics problem, match the scenario to a principle: law of reflection for bouncing; mirror image rules for mirrors; $n = c/v$ and the bending rule for crossing a boundary; Snell's law for a bending angle; $\\sin\\theta_c = 1/n$ and the angle comparison for possible trapping; dispersion for colour separation; diffraction for wave spreading. For a multi-surface system, apply the right rule at each surface in order — find the normal, decide reflect or refract (checking against $\\theta_c$ where the light might be trapped), and carry the direction to the next surface. Real devices combine these: periscopes and binoculars (total internal reflection), cameras and eyes (real inverted image), fibres (refraction + total internal reflection), rainbows and prisms (dispersion), CDs and gratings (diffraction). Check every answer: $n \\ge 1$, $\\sin\\theta \\le 1$ (a value above 1 means total internal reflection), sensible bending, and real-vs-virtual consistent with the geometry.",
+  "exitQuestion": {
+    "id": "BP8-U7-L7-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "question": "You must decide what happens to a light ray inside a glass block ($n = 1.5$) that reaches the glass-air surface. What is the first thing to determine?",
+    "choices": [
+      "The colour of the light.",
+      "Whether the angle of incidence (from the normal) is greater or less than the critical angle, $\\theta_c$ with $\\sin\\theta_c = 1/n$.",
+      "The wavelength of the light.",
+      "The thickness of the glass block."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for light going from glass toward air, comparing the angle of incidence with $\\theta_c$ decides between refraction (below) and total internal reflection (above).",
+      "incorrect": {
+        "0": "Colour affects the index only slightly; the key decision is the angle-vs-critical-angle comparison.",
+        "2": "Wavelength matters for diffraction, not for whether this ray refracts or reflects.",
+        "3": "The block's thickness affects where the ray lands, not what happens at the surface."
+      }
+    },
+    "hint": ["Light going from dense to less dense: the outcome hinges on one angle comparison."],
+    "solution": "For light travelling inside the glass and reaching the glass-air boundary, the outcome depends on the angle of incidence (measured from the normal) compared with the critical angle $\\theta_c$, where $\\sin\\theta_c = 1/n$. If the angle is below $\\theta_c$, the ray refracts out (bending away from the normal); if it is above $\\theta_c$, the ray is totally internally reflected and stays in the glass."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-013", "BP8-U7-MCQ-033", "BP8-U7-MCQ-043", "BP8-U7-MCQ-047", "BP8-U7-MCQ-052", "BP8-U7-MCQ-057"],
+  "needsPlotly": false
+}

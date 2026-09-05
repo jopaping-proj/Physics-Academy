@@ -1,0 +1,349 @@
+{
+  "id": "basis-p8-u7-l6",
+  "slug": "dispersion-and-diffraction",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Dispersion and Diffraction",
+  "lessonTitle": "Dispersion and Diffraction",
+  "lessonNumber": "6",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Diffraction and Dispersion cluster, DD1); calibrated against AP Physics 2 CED Unit 14 (Waves and Physical Optics), OpenStax High School Physics Ch. 13 and 15, Tsokos IB Physics Topic 4 and 9",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments (qualitative; no interference or grating equations).",
+  "prerequisites": [
+    "Lesson 4 — refraction is caused by a speed change; the index of refraction $n = c/v$.",
+    "Lesson 5 — light bends more when it slows more (a larger index)."
+  ],
+  "majorObjective": "Explain dispersion — that different frequencies of light have slightly different indices of refraction and so bend by different amounts — and diffraction — the spreading of a wave as it passes an edge or a gap.",
+  "subObjectives": [
+    "State that light of higher frequency (violet) has a slightly larger index of refraction in a medium than lower-frequency (red) light, so it travels slightly slower and bends slightly more.",
+    "Explain how a prism disperses white light into a spectrum, and why a flat parallel slab does not.",
+    "Explain rainbows as dispersion combined with internal reflection in raindrops.",
+    "Define diffraction as the spreading of a wave past an edge or through an opening, and state that it is significant when the opening or obstacle is comparable to the wavelength (so sound diffracts obviously, light rarely does)."
+  ],
+  "hook": {
+    "prompt": "A prism splits white light into colours. In the spectrum, which colour is bent the most?",
+    "choices": ["Red", "Green", "Violet", "They all bend the same amount."],
+    "correctIndex": 2
+  },
+  "priorKnowledge": "White light is a mixture of all the visible colours. Two wave effects reveal that mixture and that light is a wave: dispersion (colours bend by different amounts) and diffraction (light spreads past an edge).",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Dispersion: colours bend by different amounts",
+      "concept": "The index of refraction of a material is **not exactly the same for every colour of light**. It is slightly **larger for higher-frequency light** (violet) than for lower-frequency light (red). So in glass:\n\n- **violet** light travels slightly **slower** and bends **more**;\n- **red** light travels slightly **faster** and bends **less**.\n\nThis frequency-dependence of the index of refraction is called **dispersion**.\n\nWhen white light passes through a **prism**, it refracts at the first face and again at the second face. Because the two faces are **not parallel**, the small colour-by-colour differences in bending **add up** rather than cancelling, and the white light fans out into a **spectrum** — red deviated least, violet most, with orange, yellow, green, blue in between.\n\nThrough a **flat parallel slab** (a window pane), each colour bends toward the normal on entering and by an equal amount away from the normal on leaving, so all colours emerge **parallel** to the original beam — no visible spectrum.",
+      "representation": "Dispersion: $n_{\\text{violet}} > n_{\\text{red}}$ (slightly) → violet slower, bends more.\n\n- prism (non-parallel faces): bending differences add up → visible spectrum;\n- flat slab (parallel faces): bending in = bending out → colours stay together.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/dispersion-and-diffraction/prism-dispersion.svg",
+          "caption": "A prism disperses white light. The index of refraction of glass is slightly larger for violet, so violet slows and bends more than red."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "White light passes through a triangular glass prism. (a) Rank red, green, and violet by how much they are deviated. (b) Rank them by their speed in the glass. (c) Explain why a rectangular glass block does not produce a visible spectrum.",
+        "phases": [
+          {
+            "label": "(a) Deviation",
+            "steps": ["Violet most, green middle, red least (higher frequency → larger index → more bending)."]
+          },
+          {
+            "label": "(b) Speed in the glass",
+            "steps": ["Red fastest, green middle, violet slowest (larger index → slower, since $v = c/n$)."]
+          },
+          {
+            "label": "(c) Rectangular block",
+            "steps": ["Its two faces are parallel, so each colour's bend on entering is undone by an equal opposite bend on leaving; all colours emerge parallel and overlapping, so no separated spectrum is seen (just a tiny sideways colour fringe on the edges)."]
+          }
+        ],
+        "keyMove": "Higher frequency → larger index → slower → bent more. A prism's non-parallel faces let those tiny differences add up into a spectrum."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L6-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A prism produces a spectrum because:",
+        "choices": [
+          "the prism adds colour to the white light.",
+          "different colours of light have slightly different indices of refraction in glass, so they bend by different amounts.",
+          "the prism reflects each colour off a different face.",
+          "white light is not really made of colours."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — this frequency-dependent refraction is dispersion; the colours were already in the white light and the prism separates them by bending each differently.",
+          "incorrect": {
+            "0": "The colours are present in the white light to begin with.",
+            "2": "The separation is by refraction (bending), not by reflection off different faces.",
+            "3": "White light is a mixture of all the visible colours, which is why it can be split."
+          }
+        },
+        "hint": ["Does the index of refraction of glass have exactly one value for all colours?"],
+        "solution": "The index of refraction of glass depends slightly on the frequency of light: it is a little larger for violet than for red. So each colour refracts by a slightly different amount as it passes through the prism, and white light fans out into a spectrum. This is dispersion."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Rainbows",
+      "concept": "A **rainbow** is dispersion happening in millions of raindrops at once, with an internal reflection added.\n\nFor one spherical raindrop, sunlight:\n\n1. **refracts** as it enters the front of the drop — and disperses, because each colour bends by a slightly different amount;\n2. **reflects** off the inside of the back surface of the drop;\n3. **refracts** again as it exits the front — dispersing further.\n\nEach colour leaves the drop at a slightly different angle from the incoming sunlight: about **$42^\\circ$ for red** and **$40^\\circ$ for violet** (measured from the direction pointing away from the Sun). An observer with the Sun behind them sees:\n\n- red light coming from drops slightly **higher** in the sky,\n- violet from drops slightly **lower**,\n\nso the colours appear as a circular arc, **red on the outside, violet on the inside**.\n\n(A secondary rainbow, fainter and with reversed colours, comes from light that reflects **twice** inside the drops.)",
+      "representation": "Rainbow per drop: refract (disperse) → internally reflect → refract (disperse more).\n\nRed exits near $42^\\circ$, violet near $40^\\circ$ → red outer arc, violet inner arc; observer's back to the Sun.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student claims a rainbow is caused only by reflection of sunlight off the front of raindrops. Give two reasons this is wrong, using the correct sequence of processes.",
+        "phases": [
+          {
+            "label": "Reason 1: reflection alone cannot separate colours",
+            "steps": ["Reflection off a surface does not depend on colour, so it could not fan white light into a spectrum. The colour separation comes from **refraction** (dispersion) as the light enters and leaves the drop."]
+          },
+          {
+            "label": "Reason 2: the rainbow appears opposite the Sun, not toward it",
+            "steps": ["Light merely reflecting off the front of a drop would scatter back toward the Sun's side. The rainbow is seen with the Sun **behind** the observer because the light **refracts in, reflects off the back, and refracts out**, sending it back toward the anti-solar direction at about $40$–$42^\\circ$."]
+          }
+        ],
+        "keyMove": "Rainbow = refraction (dispersion) + one internal reflection + refraction (dispersion). Reflection alone explains neither the colours nor the geometry."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L6-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "transfer",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Which combination of processes produces the colours of a primary rainbow?",
+        "choices": [
+          "Reflection only.",
+          "Refraction (which disperses the colours) plus one internal reflection inside each raindrop, then refraction again on exit.",
+          "Diffraction only.",
+          "Absorption and re-emission of light by the water."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — light refracts (and disperses) entering the drop, reflects once off the back, and refracts (dispersing more) on exit; each colour emerges at its own angle.",
+          "incorrect": {
+            "0": "Reflection does not separate colours or send light back toward the anti-solar point at the rainbow angle.",
+            "2": "Diffraction contributes only subtle effects (supernumerary bows); the primary rainbow is refraction/dispersion plus internal reflection.",
+            "3": "The water does not absorb and re-emit the sunlight; it refracts and reflects it."
+          }
+        },
+        "hint": ["Sunlight goes into the drop, bounces off the back, and comes out — bending (and dispersing) at each surface."],
+        "solution": "In a primary rainbow, sunlight refracts as it enters each spherical raindrop, dispersing into colours; it reflects once off the inside of the back surface; then it refracts again on the way out, dispersing further. Each colour leaves at a slightly different angle (red ~$42^\\circ$, violet ~$40^\\circ$ from the anti-solar direction), so the observer sees a coloured arc with red outermost."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Diffraction: waves spreading past edges",
+      "concept": "**Diffraction** is the **spreading of a wave** as it passes through an **opening** or around the **edge of an obstacle**. It is a property of **all waves** — water waves, sound, light.\n\nHow much a wave spreads depends on the **ratio of its wavelength to the size of the opening**:\n\n- opening **much larger** than the wavelength → little spreading (the wave passes almost straight through, like a beam);\n- opening **comparable to** the wavelength → strong spreading (the wave fans out widely).\n\nThis is why:\n\n- **Sound** (wavelength around $1\\ \\mathrm{m}$) diffracts strongly through a doorway (also about $1\\ \\mathrm{m}$) — you hear people around a corner.\n- **Light** (wavelength about $5 \\times 10^{-7}\\ \\mathrm{m}$) barely diffracts through a doorway (millions of times bigger) — it travels in nearly straight beams and casts sharp shadows.\n- Light **does** diffract noticeably through a very fine slit or grating (spacing near its wavelength): a CD splitting light into colours, the spread of a laser through a thin gap, streetlights seen as streaks through a fine fabric.\n\nTo make a wave spread **more**: use a **narrower** opening, or a **longer** wavelength.",
+      "representation": "Diffraction spreading grows with (wavelength / opening size).\n\n| Opening vs wavelength | Spreading |\n|---|---|\n| opening &gt;&gt; wavelength | small (near-straight beam) |\n| opening ~ wavelength | large (wide fan) |\n\nSound diffracts obviously (long waves); light rarely does (tiny waves) — except through slits near its wavelength.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, state whether the wave diffracts noticeably and why: (a) sound from a stereo passing through an open door; (b) sunlight passing through the same open door; (c) light passing through a slit $0.001\\ \\mathrm{mm}$ wide (about twice the wavelength of visible light).",
+        "phases": [
+          {
+            "label": "(a) Sound through a door",
+            "steps": ["Sound wavelength ($\\sim 1\\ \\mathrm{m}$) is comparable to the door width → **strong diffraction**; you hear the music around the corner."]
+          },
+          {
+            "label": "(b) Sunlight through a door",
+            "steps": ["Light wavelength ($\\sim 5 \\times 10^{-7}\\ \\mathrm{m}$) is millions of times smaller than the door → **negligible diffraction**; light forms a sharp-edged patch."]
+          },
+          {
+            "label": "(c) Light through a very fine slit",
+            "steps": ["The slit is about twice the wavelength → **strong diffraction**; the light spreads out into a wide fan (and shows a bright-dark pattern)."]
+          }
+        ],
+        "keyMove": "Compare the wavelength with the opening. Similar sizes → strong diffraction; opening much bigger → almost none."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L6-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Light passes through a narrow slit and spreads out. To make it spread out MORE, you could:",
+        "choices": [
+          "widen the slit.",
+          "narrow the slit (toward the wavelength of the light).",
+          "use light of higher frequency (shorter wavelength).",
+          "move the light source farther from the slit."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — diffraction spreading increases as the slit width decreases toward the wavelength.",
+          "incorrect": {
+            "0": "A wider slit gives *less* spreading (more beam-like).",
+            "2": "Shorter wavelength gives *less* spreading. Longer wavelength (lower frequency) gives more.",
+            "3": "The source distance changes the pattern's brightness and shape a little but not the fundamental diffraction spreading, which is set by wavelength and slit width."
+          }
+        },
+        "hint": ["Spreading depends on wavelength / slit width. Increase that ratio by shrinking the slit or lengthening the wavelength."],
+        "solution": "The angular spread produced by a single slit increases as the ratio (wavelength / slit width) increases. So you can increase the spreading by making the slit narrower (closer to the wavelength) or by using longer-wavelength light. A wider slit or a shorter wavelength makes the transmitted light more beam-like."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L6-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'Light doesn't diffract at all — that's why shadows have sharp edges.' What is the accurate statement?",
+      "choices": [
+        "The student is right — light never diffracts.",
+        "Light does diffract, but only noticeably when it passes an opening or obstacle close to its own (tiny) wavelength. Through everyday-sized openings the spreading is far too small to see, so shadows look sharp.",
+        "Light diffracts strongly through any opening.",
+        "Diffraction only happens to sound, never to light."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — diffraction is a general wave property. Light's wavelength (~$0.5\\ \\mu\\mathrm{m}$) is so small that only openings near that scale (fine slits, gratings, a CD) produce visible spreading.",
+        "incorrect": {
+          "0": "Light does diffract — it is demonstrated with fine slits and diffraction gratings.",
+          "2": "Through openings much larger than the wavelength (a window, a doorway), the diffraction is negligible.",
+          "3": "Diffraction happens to all waves, light included; it is just less obvious for light because of its short wavelength."
+        }
+      },
+      "hint": ["Diffraction is significant when the opening is close to the wavelength. How big is a light wavelength compared with a window?"],
+      "solution": "Diffraction is a wave behaviour common to all waves. For light, the wavelength is about half a micrometre, so through everyday openings — far larger than that — the spreading is negligible and shadows appear sharp. Through openings close to the wavelength (a very fine slit, the grooves on a CD, a diffraction grating), light diffracts obviously and can even be split into colours."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'Rank red, green, and violet light by their speed in glass and by how much a prism bends them.'\n\nStudent's response: 'Violet has the shortest wavelength, so it travels fastest and bends the least. Red bends the most.'",
+      "prompts": [
+        "State how the index of refraction of glass depends on the frequency (colour) of light.",
+        "Identify the two things the student got backwards.",
+        "Give the correct ranking for both speed and bending."
+      ],
+      "modelResponse": "The index of refraction of glass is slightly *larger* for higher-frequency (violet) light than for lower-frequency (red) light. Errors: (1) the student said violet travels fastest, but a larger index means a *slower* speed ($v = c/n$), so violet is the *slowest* in glass; (2) the student said violet bends the least, but more slowing means *more* bending, so violet bends the *most*. Correct: speed in glass, red fastest > green > violet slowest; deviation by the prism, violet most > green > red least.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "Dispersion connects a colour (frequency) to a slightly different index of refraction (Lesson 4), and hence a slightly different bending (Lesson 5): a prism's non-parallel faces accumulate those differences into a spectrum, and a raindrop adds an internal reflection to make a rainbow. Diffraction connects a wave's wavelength and an opening size to how much the wave spreads: large for sound (long waves), small for light (short waves) except through wavelength-scale slits.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L6-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "In a prism spectrum, red light is deviated the least. This tells you that, in the glass, red light has the:",
+      "choices": [
+        "smallest index of refraction and the highest speed of the visible colours.",
+        "largest index of refraction and the lowest speed.",
+        "same index as violet but a different colour.",
+        "highest frequency."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — least bending means the smallest index of refraction, and by $v = c/n$ that means the highest speed. Red also has the lowest frequency of the visible colours.",
+        "incorrect": {
+          "1": "That would make red bend the most, not the least.",
+          "2": "If red and violet had the same index, the prism could not separate them.",
+          "3": "Red has the *lowest* visible frequency; violet has the highest."
+        }
+      },
+      "hint": ["Least deviation ↔ smallest index. Smallest index ↔ fastest speed ($v = c/n$)."],
+      "solution": "The amount a colour is deviated by a prism increases with its index of refraction in the glass. Red is deviated least, so it has the smallest index of refraction of the visible colours, and therefore (via $v = c/n$) the highest speed in the glass. Red also has the lowest frequency and the longest wavelength."
+    },
+    {
+      "id": "BP8-U7-L6-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "Ocean waves ($\\sim 5\\ \\mathrm{m}$ apart) and light waves ($\\sim 5 \\times 10^{-7}\\ \\mathrm{m}$) both pass a $2\\ \\mathrm{m}$ gap in a barrier. Which diffracts noticeably, and why?",
+      "choices": [
+        "Both diffract equally.",
+        "The ocean waves diffract strongly (wavelength comparable to the gap); the light barely diffracts (wavelength millions of times smaller than the gap).",
+        "The light diffracts strongly; the ocean waves do not.",
+        "Neither diffracts, because the gap is fixed."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — diffraction spreading depends on wavelength relative to gap size. The $5\\ \\mathrm{m}$ ocean waves are comparable to the $2\\ \\mathrm{m}$ gap, so they fan out behind it; the sub-micrometre light waves pass almost straight through.",
+        "incorrect": {
+          "0": "The wavelengths differ by a factor of about $10^{7}$, so the diffraction is completely different.",
+          "2": "It is the reverse — the long ocean waves diffract, the short light waves do not.",
+          "3": "The gap size relative to wavelength is exactly what determines diffraction, and here it favours the ocean waves."
+        }
+      },
+      "hint": ["Compare each wavelength with the $2\\ \\mathrm{m}$ gap."],
+      "solution": "Diffraction is significant when the wavelength is comparable to (or larger than) the opening. The ocean waves ($\\sim 5\\ \\mathrm{m}$) are comparable to the $2\\ \\mathrm{m}$ gap, so they spread out strongly behind the barrier. Light ($\\sim 5 \\times 10^{-7}\\ \\mathrm{m}$) has a wavelength millions of times smaller than the gap, so it passes through in a nearly straight beam with negligible spreading."
+    },
+    {
+      "id": "BP8-U7-L6-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 4,
+      "scenario": "A student passes a narrow beam of white light through a glass prism and sees a spectrum on the wall. They then replace the prism with a thick, flat sheet of the same glass, and the beam emerges white (just shifted sideways).",
+      "parts": [
+        {
+          "prompt": "(a) Explain, in terms of the index of refraction, why the prism produces separated colours.",
+          "modelResponse": "The index of refraction of the glass is slightly larger for higher-frequency light (violet) than for lower-frequency light (red). So each colour is refracted by a slightly different amount at each face of the prism. Because the prism's two faces are not parallel, the bending at the second face adds to the bending at the first, and the small colour-by-colour differences build up into a visibly spread spectrum — red deviated least, violet most.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Explain why the flat sheet does NOT produce a visible spectrum.",
+          "modelResponse": "The flat sheet has two parallel faces. Each colour bends toward the normal on entering and away from the normal by an equal amount on leaving, so the entry and exit bends cancel. Every colour emerges travelling parallel to the original beam, just displaced sideways by a tiny (slightly colour-dependent) amount, so the colours stay overlapped and the beam looks white.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) State the name for this frequency-dependence of the index of refraction, and one everyday phenomenon besides a prism spectrum that it causes.",
+          "modelResponse": "The frequency-dependence of the index of refraction is called dispersion. Besides a prism spectrum it causes rainbows (dispersion in raindrops, plus an internal reflection), the coloured 'fire' seen in cut gemstones, and coloured fringes at the edges of images in simple (single-element) lenses (chromatic aberration).",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test dispersion (frequency-dependent index → violet bends more, travels slower; prism vs parallel slab; rainbows) and diffraction as a general wave property scaled by wavelength-to-opening ratio (sound vs light through a doorway; fine slits and gratings). The 'violet is fastest / bends least' reversal and the 'light never diffracts' claim are standard distractors.",
+  "summary": "Dispersion is the frequency-dependence of the index of refraction: in glass, violet (higher frequency) has a slightly larger index than red, so it travels slightly slower and bends slightly more. A prism's non-parallel faces let those small differences accumulate into a spectrum (red deviated least, violet most); a flat parallel slab does not separate the colours. A rainbow is dispersion in spherical raindrops plus one internal reflection, sending red near $42^\\circ$ and violet near $40^\\circ$ from the anti-solar direction, red on the outside. Diffraction is the spreading of any wave past an edge or through a gap; it is significant only when the opening is comparable to the wavelength — so sound (wavelength ~1 m) diffracts obviously through a doorway, while light (wavelength ~$0.5\\ \\mu\\mathrm{m}$) barely does, except through slits and gratings near its wavelength.",
+  "exitQuestion": {
+    "id": "BP8-U7-L6-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "Diffraction of a wave through an opening is most noticeable when the opening is:",
+    "choices": [
+      "much larger than the wavelength.",
+      "about the same size as the wavelength.",
+      "made of glass.",
+      "circular rather than square."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the closer the opening size is to the wavelength, the more the wave spreads.",
+      "incorrect": {
+        "0": "A large opening gives little spreading — the wave passes through like a beam.",
+        "2": "The opening's material is irrelevant; its size relative to the wavelength is what matters.",
+        "3": "The shape has a minor effect on the pattern, but the size relative to wavelength governs how much spreading occurs."
+      }
+    },
+    "hint": ["Compare the opening width with the wavelength. Similar → lots of spreading."],
+    "solution": "Diffraction spreading is significant when the opening (or obstacle) is comparable to the wavelength of the wave. A much larger opening lets the wave pass almost straight through; an opening near the wavelength makes the wave fan out widely. This is why long-wavelength sound diffracts around a doorway but short-wavelength light does not."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-053", "BP8-U7-MCQ-054", "BP8-U7-MCQ-055", "BP8-U7-MCQ-056", "BP8-U7-MCQ-057", "BP8-U7-MCQ-058"],
+  "needsPlotly": false
+}

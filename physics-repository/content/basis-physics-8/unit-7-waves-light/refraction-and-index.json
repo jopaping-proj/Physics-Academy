@@ -1,0 +1,338 @@
+{
+  "id": "basis-p8-u7-l4",
+  "slug": "refraction-and-index",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Refraction and the Index of Refraction",
+  "lessonTitle": "Refraction and the Index of Refraction",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Refraction and Index of Refraction cluster, R1-R2); calibrated against AP Physics 2 CED Unit 13, OpenStax High School Physics Ch. 15",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Lesson 1 — the normal; the speed of light $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in vacuum, slower in a material; refraction is transmission with bending.",
+    "Unit 2 — speed = distance / time."
+  ],
+  "majorObjective": "Explain refraction as a consequence of light changing speed between media, define and calculate the index of refraction $n = c/v$, and predict which way a ray bends at a boundary.",
+  "subObjectives": [
+    "State that refraction is the bending of light caused by its change of speed as it crosses from one medium into another (no bending at normal incidence).",
+    "Define the index of refraction $n = c/v$, know that $n \\ge 1$ (with $n = 1$ for vacuum, $\\approx 1.33$ water, $\\approx 1.5$ glass, $\\approx 2.4$ diamond), and calculate $n$ or $v$ given the other.",
+    "Predict the bending direction: entering a higher-index (slower) medium, light bends toward the normal; entering a lower-index (faster) medium, it bends away from the normal.",
+    "Explain everyday refraction effects (a bent-looking straw, apparent depth, a pool looking shallower) in terms of ray bending at the water surface."
+  ],
+  "hook": {
+    "prompt": "Light travels at $2.0 \\times 10^{8}\\ \\mathrm{m/s}$ in a certain glass. Its index of refraction is:",
+    "choices": ["$0.67$", "$1.5$", "$6.0$", "$2.0$"],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Light slows down when it enters a material. If it enters at an angle, one edge of the beam slows before the other, and the beam swings around — it bends. The number that says how much it slows is the index of refraction.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Why light bends: the speed change",
+      "concept": "**Refraction** is the change in direction of a light ray as it passes from one transparent medium into another. Its cause is the **change in the speed of light** at the boundary.\n\nPicture a wide beam hitting a water surface at an angle. The part of the wavefront that reaches the water **first slows down** while the rest is still in air moving fast. This makes the wavefront **pivot**, swinging the ray toward a new direction.\n\n- A ray crossing the boundary **at an angle** bends.\n- A ray hitting the surface **along the normal** ($0^\\circ$ incidence) does **not** bend — the whole wavefront slows at once — but it still changes speed.\n\nThe **frequency (colour) of the light does not change** on refraction. The speed changes and the wavelength changes with it (speed $=$ frequency $\\times$ wavelength).",
+      "representation": "Refraction cause: speed change at the boundary → wavefront pivots → ray bends (unless it hits along the normal).\n\nUnchanged: frequency / colour. Changed: speed, wavelength, direction (at non-normal incidence).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A ray of light passes from air into a glass block. (a) State what happens to its speed, wavelength, frequency, and direction. (b) The ray then exits the far side of the block back into air (parallel surfaces). Compare the emerging ray with the original.",
+        "phases": [
+          {
+            "label": "(a) Entering the glass",
+            "steps": [
+              "Speed: decreases (glass is slower than air).",
+              "Wavelength: decreases (shorter, because speed dropped and frequency is fixed).",
+              "Frequency: unchanged.",
+              "Direction: bends toward the normal (if it entered at an angle)."
+            ]
+          },
+          {
+            "label": "(b) Exiting into air",
+            "steps": [
+              "The ray speeds back up and bends away from the normal by the same amount.",
+              "The emerging ray is **parallel to the original ray**, just shifted sideways (laterally displaced)."
+            ]
+          }
+        ],
+        "keyMove": "Speed change causes the bend. Through a parallel slab, the exit ray is parallel to the entry ray but offset."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L4-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "The direct cause of refraction is:",
+        "choices": [
+          "the light changing colour.",
+          "the light changing speed as it enters a new medium.",
+          "the light being partly reflected.",
+          "the surface being rough."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — light travels at different speeds in different media; the speed change at the boundary bends the ray (unless it hits along the normal).",
+          "incorrect": {
+            "0": "The colour (frequency) does not change on refraction.",
+            "2": "Reflection is a separate process; refraction is the bending of the transmitted ray.",
+            "3": "Refraction happens at smooth boundaries; roughness causes scattering, not refraction."
+          }
+        },
+        "hint": ["What is different about light in water compared with light in air?"],
+        "solution": "Refraction is caused by light changing speed as it passes from one medium into another. When a ray meets the boundary at an angle, one part of the wavefront slows (or speeds up) before the rest, which pivots the wavefront and bends the ray."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The index of refraction",
+      "concept": "The **index of refraction** (refractive index) $n$ of a material measures how much light slows down in it:\n\n$$n = \\frac{c}{v}$$\n\nwhere $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ is the vacuum speed and $v$ is the speed of light in the material. Because $v \\le c$, we always have $n \\ge 1$:\n\n| Material | $n$ | speed of light in it |\n|---|---|---|\n| vacuum | $1.00$ | $c$ |\n| air | $\\approx 1.00$ | $\\approx c$ |\n| water | $\\approx 1.33$ | $\\approx 2.3 \\times 10^{8}\\ \\mathrm{m/s}$ |\n| glass | $\\approx 1.5$ | $\\approx 2.0 \\times 10^{8}\\ \\mathrm{m/s}$ |\n| diamond | $\\approx 2.4$ | $\\approx 1.25 \\times 10^{8}\\ \\mathrm{m/s}$ |\n\nRearrangements:\n\n- $n = c/v$;  $v = c/n$.\n\nA material with a **higher** index is called **optically denser** — light goes **slower** in it. (This is about optical behaviour, not always mass density.)",
+      "representation": "$$n = \\frac{c}{v} \\qquad v = \\frac{c}{n}$$\n\n- $n = 1$: vacuum (or nearly, air).\n- $n$ large: light very slow, material 'optically dense' (diamond).\n- $v \\propto 1/n$: double the index → half the speed.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) Light travels at $1.5 \\times 10^{8}\\ \\mathrm{m/s}$ in a plastic. Find its index of refraction. (b) A crystal has $n = 2.5$. Find the speed of light in it. Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+        "phases": [
+          {
+            "label": "(a) Index of the plastic",
+            "steps": ["$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}}{1.5 \\times 10^{8}} = 2.0$."]
+          },
+          {
+            "label": "(b) Speed in the crystal",
+            "steps": ["$v = \\dfrac{c}{n} = \\dfrac{3.0 \\times 10^{8}}{2.5} = 1.2 \\times 10^{8}\\ \\mathrm{m/s}$."]
+          }
+        ],
+        "keyMove": "$n = c/v$ to find the index; $v = c/n$ to find the speed. Both come from one relationship."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L4-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A material has an index of refraction of $1.5$. What is the speed of light in it? (Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.)",
+        "choices": ["$2.0 \\times 10^{8}\\ \\mathrm{m/s}$", "$4.5 \\times 10^{8}\\ \\mathrm{m/s}$", "$3.0 \\times 10^{8}\\ \\mathrm{m/s}$", "$1.5 \\times 10^{8}\\ \\mathrm{m/s}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $v = c/n = \\dfrac{3.0 \\times 10^{8}}{1.5} = 2.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+          "incorrect": {
+            "1": "Light cannot go faster than $c$. Use $v = c/n$ (a division), giving a smaller value.",
+            "2": "That is the vacuum speed; in a material with $n = 1.5$ light is slower.",
+            "3": "This is $c$ divided by $2$, not by $1.5$."
+          }
+        },
+        "hint": ["Rearrange $n = c/v$ to $v = c/n$."],
+        "solution": "$v = \\dfrac{c}{n} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m/s}}{1.5} = 2.0 \\times 10^{8}\\ \\mathrm{m/s}$ — two-thirds of the vacuum speed, typical of glass."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Which way does it bend?",
+      "concept": "The bending direction follows one rule, tied to the speed change:\n\n- **Into a higher-index (optically denser, slower) medium** \u2014 the ray bends **toward the normal**. (Air \u2192 water, air \u2192 glass.)\n- **Into a lower-index (optically less dense, faster) medium** \u2014 the ray bends **away from the normal**. (Water \u2192 air, glass \u2192 air.)\n- **At normal incidence** \u2014 no bending, just a speed change.\n\nA memory aid: the ray behaves like a car driving off a road onto mud at an angle \u2014 the wheel that hits the mud first slows, and the car veers toward the mud (toward the normal). Driving from mud back onto road, it veers away.\n\nThis explains why:\n\n- a straw in water looks **bent** at the surface (light from the submerged part bends away from the normal on exiting into air, shifting its apparent position);\n- a swimming pool looks **shallower** than it is (light from the bottom bends away from the normal on exiting, so the bottom appears raised);\n- a coin at the bottom of an empty cup 'appears' when you add water (refraction bends light from the coin over the cup's rim to your eye).",
+      "representation": "| Crossing into... | Speed | Bends |\n|---|---|---|\n| higher $n$ (denser, slower) | decreases | toward the normal |\n| lower $n$ (less dense, faster) | increases | away from the normal |\n| along the normal | changes | no bend |",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/refraction/refraction-and-tir.svg",
+          "caption": "Left: air to glass, the ray slows and bends toward the normal. Right (previewing Lesson 5): glass to air at increasing angles — refract, then graze at the critical angle, then total internal reflection."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Trace a ray for each: (a) light going from air into a diamond at $40^\\circ$ from the normal; (b) light going from water into air at $30^\\circ$ from the normal; (c) light going from air straight down into a pond (normal incidence).",
+        "phases": [
+          {
+            "label": "(a) Air → diamond",
+            "steps": ["Higher index (diamond $n \\approx 2.4$), so light slows and bends **toward the normal** \u2014 the refraction angle is less than $40^\\circ$."]
+          },
+          {
+            "label": "(b) Water → air",
+            "steps": ["Lower index (air), so light speeds up and bends **away from the normal** \u2014 the refraction angle is more than $30^\\circ$."]
+          },
+          {
+            "label": "(c) Air → pond, normal incidence",
+            "steps": ["No bending. The ray goes straight down, but slows on entering the water."]
+          }
+        ],
+        "keyMove": "Toward the normal entering a slower medium; away from the normal entering a faster one; no bend along the normal."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L4-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A diver's legs look shorter than they are when seen from above the water. Which statement explains this?",
+        "choices": [
+          "Water magnifies vertically.",
+          "Light from the diver's feet bends away from the normal as it leaves the water into air, so the feet appear raised (the pool looks shallower), making the legs look shorter.",
+          "The diver's legs are actually compressed by water pressure.",
+          "Light travels faster in water, shrinking the image."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — rays from the feet refract away from the normal on exiting into air; traced back straight, they seem to come from a point higher up, so the underwater depth appears reduced.",
+          "incorrect": {
+            "0": "There is a refraction effect, but it is a raising of the apparent position, not a stretching.",
+            "2": "Water pressure does not visibly compress a diver's legs.",
+            "3": "Light travels *slower* in water; and the effect is refractive bending of the apparent position."
+          }
+        },
+        "hint": ["Light from the feet exits water into air. Which way does it bend, and where does your eye trace it back to?"],
+        "solution": "Light rays travelling from the diver's feet up to your eye bend away from the normal as they leave the water (going into the faster medium, air). Your eye assumes the light travelled straight, so it traces the rays back to a point higher than the true position of the feet. The underwater part therefore appears raised — the pool looks shallower and the submerged legs look shorter."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L4-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'When light goes into glass it must speed up, because glass is clear and doesn't get in the way.' What is the correct physics?",
+      "choices": [
+        "The student is right — clear materials speed light up.",
+        "Light slows down in glass (and any material). Its index of refraction is $n = c/v > 1$, meaning $v < c$. Clarity (transparency) is about not absorbing the light, not about its speed.",
+        "Light travels at the same speed in glass as in vacuum.",
+        "Glass has a negative index of refraction."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — every transparent material has $n > 1$ and slows light. Transparency means the light passes without being absorbed, which is separate from its speed.",
+        "incorrect": {
+          "0": "Nothing speeds light above its vacuum speed; glass slows it to about $2 \\times 10^{8}\\ \\mathrm{m/s}$.",
+          "2": "If the speed were the same, $n$ would be 1 and there would be no refraction.",
+          "3": "Ordinary materials have $n \\ge 1$; a negative index is an exotic engineered metamaterial property."
+        }
+      },
+      "hint": ["$n = c/v$ and $n > 1$ for glass. So how does $v$ compare with $c$?"],
+      "solution": "Light travels *slower* in glass than in vacuum. The index of refraction $n = c/v$ is about $1.5$ for glass, so $v = c/1.5 \\approx 2 \\times 10^{8}\\ \\mathrm{m/s}$. Being transparent means the material transmits the light without absorbing it — it says nothing about the speed, which is always reduced in a material."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Light travels at $2.4 \\times 10^{8}\\ \\mathrm{m/s}$ in ice. Find the index of refraction of ice. ($c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.)\n\nStudent's response: '$n = v/c = \\dfrac{2.4 \\times 10^{8}}{3.0 \\times 10^{8}} = 0.8$.'",
+      "prompts": [
+        "State the correct definition of the index of refraction.",
+        "Explain why the student's answer of $0.8$ cannot be right.",
+        "Give the correct index of refraction of the ice."
+      ],
+      "modelResponse": "The index of refraction is $n = \\dfrac{c}{v}$ (vacuum speed over material speed), not $v/c$. The student's answer of $0.8$ cannot be right because $n$ is always at least $1$: light never travels faster in a material than in vacuum, so $c/v \\ge 1$. An $n$ of $0.8$ would mean $v > c$. Correct: $n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}}{2.4 \\times 10^{8}} = 1.25$.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A speed of light in a material and the vacuum speed give the index of refraction via $n = c/v$ (or $v = c/n$). The index then predicts the bending direction at a boundary (toward the normal for higher $n$, away for lower $n$), which explains a bent-looking straw, apparent depth, and the coin-in-a-cup trick. Lesson 5 makes the bending quantitative with Snell's law and derives the critical angle from it.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L4-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Light slows from $3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in vacuum to $1.25 \\times 10^{8}\\ \\mathrm{m/s}$ in a gemstone. What is the gemstone's index of refraction?",
+      "choices": ["$2.4$", "$0.42$", "$1.75$", "$3.75$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $n = c/v = \\dfrac{3.0 \\times 10^{8}}{1.25 \\times 10^{8}} = 2.4$ (this is diamond).",
+        "incorrect": {
+          "1": "This is $v/c$ — upside down. $n = c/v$.",
+          "2": "This subtracts the exponent mantissas ($3.0 - 1.25$); use the ratio.",
+          "3": "This looks like $c \\times$ something. $n = 3.0 / 1.25 = 2.4$."
+        }
+      },
+      "hint": ["$n = c/v$: divide the vacuum speed by the speed in the gemstone."],
+      "solution": "$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m/s}}{1.25 \\times 10^{8}\\ \\mathrm{m/s}} = 2.4$. This is the index of refraction of diamond."
+    },
+    {
+      "id": "BP8-U7-L4-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "Medium A has $n = 1.2$ and medium B has $n = 1.6$. A ray travels from A into B at an angle. Which statement is correct?",
+      "choices": [
+        "The ray speeds up and bends away from the normal.",
+        "The ray slows down and bends toward the normal.",
+        "The ray keeps the same speed and does not bend.",
+        "The ray is totally internally reflected."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — B has the higher index, so light is slower in B; entering the slower medium at an angle, the ray bends toward the normal.",
+        "incorrect": {
+          "0": "The ray *slows* going into the higher-index B, and slower means bending *toward* the normal.",
+          "2": "Different indices mean different speeds, so the ray bends (unless it enters along the normal).",
+          "3": "Total internal reflection needs the ray going from higher to lower index; here it goes low to high."
+        }
+      },
+      "hint": ["Compare $n_A$ and $n_B$. Higher $n$ = slower light = bends toward the normal."],
+      "solution": "Since $v = c/n$, light travels slower in B ($n = 1.6$) than in A ($n = 1.2$). Going from A into B, the ray enters a slower medium at an angle, so it bends toward the normal — the angle of refraction in B is smaller than the angle of incidence in A."
+    },
+    {
+      "id": "BP8-U7-L4-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A ray of light travels from air into a rectangular block of transparent plastic and out the other side (the two long faces are parallel). Inside the plastic, light travels at $2.0 \\times 10^{8}\\ \\mathrm{m/s}$. Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the index of refraction of the plastic.",
+          "modelResponse": "$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}}{2.0 \\times 10^{8}} = 1.5$.",
+          "points": 2
+        },
+        {
+          "prompt": "(b) The ray enters the top face at an angle to the normal. State how its direction, speed, and wavelength change on entering, and again on leaving the bottom face.",
+          "modelResponse": "Entering the plastic: the ray slows down (to $2.0 \\times 10^{8}\\ \\mathrm{m/s}$), its wavelength shortens, its frequency is unchanged, and it bends toward the normal (because it is entering the higher-index medium). Leaving the bottom face into air: it speeds back up to $3.0 \\times 10^{8}\\ \\mathrm{m/s}$, its wavelength returns to its original value, its frequency is still unchanged, and it bends away from the normal by the same amount it was bent on entering.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Compare the direction of the ray that emerges from the bottom face with the direction of the ray that entered the top face, and explain.",
+          "modelResponse": "The emerging ray is parallel to the original incident ray, but shifted sideways (laterally displaced). This is because the two faces are parallel, so the bend toward the normal on entering and the bend away from the normal on leaving are equal and opposite; the ray ends up travelling in the same direction as before, just along a slightly offset line.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 9
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test refraction as a speed effect, the definition and calculation of the index of refraction ($n = c/v$, $v = c/n$), the bending-direction rule, and everyday consequences (bent straw, apparent depth, lateral shift through a parallel slab). The 'clear means faster' misconception is a common distractor.",
+  "summary": "Refraction is the bending of a light ray when it crosses between two media, caused by the change in the speed of light; there is no bending at normal incidence, and the frequency (colour) never changes. The index of refraction is $n = c/v$ (vacuum speed over speed in the material), always $\\ge 1$: about $1.0$ for air, $1.33$ water, $1.5$ glass, $2.4$ diamond; rearrange to $v = c/n$. Entering a higher-index (slower) medium, a ray bends toward the normal; entering a lower-index (faster) medium, it bends away from the normal. This explains a bent-looking straw, a pool appearing shallower than it is, and the emerging ray from a parallel slab being parallel to the incident ray but laterally shifted.",
+  "exitQuestion": {
+    "id": "BP8-U7-L4-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "Light travels at $2.5 \\times 10^{8}\\ \\mathrm{m/s}$ in a liquid. What is the liquid's index of refraction? (Take $c = 3.0 \\times 10^{8}\\ \\mathrm{m/s}$.)",
+    "choices": ["$1.2$", "$0.83$", "$1.5$", "$5.5$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $n = c/v = \\dfrac{3.0 \\times 10^{8}}{2.5 \\times 10^{8}} = 1.2$.",
+      "incorrect": {
+        "1": "This is $v/c$ — inverted. The index is $c/v$.",
+        "2": "$1.5$ would need $v = 2.0 \\times 10^{8}\\ \\mathrm{m/s}$.",
+        "3": "This adds the mantissas; use the ratio $3.0 / 2.5 = 1.2$."
+      }
+    },
+    "hint": ["$n = c/v$: divide $3.0 \\times 10^{8}$ by $2.5 \\times 10^{8}$."],
+    "solution": "$n = \\dfrac{c}{v} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m/s}}{2.5 \\times 10^{8}\\ \\mathrm{m/s}} = 1.2$."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-034", "BP8-U7-MCQ-035", "BP8-U7-MCQ-036", "BP8-U7-MCQ-037", "BP8-U7-MCQ-038", "BP8-U7-MCQ-041"],
+  "needsPlotly": false
+}

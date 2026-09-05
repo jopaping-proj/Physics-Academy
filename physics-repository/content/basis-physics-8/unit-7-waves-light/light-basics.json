@@ -1,0 +1,350 @@
+{
+  "id": "basis-p8-u7-l1",
+  "slug": "light-basics",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Basic Concepts and Definitions",
+  "lessonTitle": "Light: Basic Concepts and Definitions",
+  "lessonNumber": "1",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Basic Concepts and Definitions cluster, B1-B5); calibrated against AP Physics 2 CED Unit 13 (Geometric Optics), OpenStax High School Physics Ch. 15",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Unit 2 — speed is distance travelled per unit time.",
+    "Unit 5 — energy absorbed by a material usually appears as internal (thermal) energy."
+  ],
+  "majorObjective": "Define the basic vocabulary of light and optics: transparent and opaque, the normal, the speed of light in vacuum, reflection versus refraction versus absorption, and the terms used for images and curved mirrors.",
+  "subObjectives": [
+    "Define transparent (light passes through, image visible) and opaque (light blocked); note translucent as an in-between.",
+    "Define the normal as the line perpendicular to a surface at the point a ray strikes it, and state that all optical angles are measured from the normal.",
+    "State that the speed of light in vacuum is $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$, the fastest speed in nature, and that light slows in a material.",
+    "Distinguish reflection (bounces off), refraction (transmitted with bending), and absorption (energy taken up); define focal length, focal point, principal axis, real image, and virtual image."
+  ],
+  "hook": {
+    "prompt": "You see a red apple in white light. Where does the red come from?",
+    "choices": [
+      "The apple produces its own red light.",
+      "The apple reflects red light and absorbs the other colours; the reflected red reaches your eye.",
+      "White light turns red inside the apple.",
+      "The apple is transparent to red light only."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Optics has a precise vocabulary, and getting it right makes every later lesson easier. This lesson pins down the words: what light does at a surface, how angles are measured, how fast light goes, and what an 'image' is.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Transparent, opaque, and the speed of light",
+      "concept": "**Transparent** materials transmit light with little scattering, so you can see clearly through them: glass, clear water, air. **Opaque** materials do not transmit light at all — you cannot see through them: wood, metal, cardboard. (**Translucent** is in between: light passes but is scattered, so images are blurred — frosted glass, tissue paper.)\n\nLight travels at\n\n$$c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$$\n\nin a **vacuum** — about 300 million metres per second, or once around the Earth about 7.5 times per second. This is the **fastest speed anything can travel**. In a material (water, glass, diamond) light travels **slower** than $c$; how much slower is measured by the index of refraction (Lesson 4).\n\nBecause $c$ is so large, we usually treat light as arriving instantly over everyday distances. Over astronomical distances it is not: sunlight takes about 8 minutes to reach Earth.",
+      "representation": "| Term | Light does what | Example |\n|---|---|---|\n| transparent | passes through clearly | window glass, air |\n| translucent | passes but scatters | frosted glass |\n| opaque | blocked | wood, metal |\n\nSpeed of light in vacuum: $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ (slower in any material).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) Classify: clean window, brick wall, wax paper. (b) A radio signal (which travels at $c$) is sent to a spacecraft $3.0 \\times 10^{8}\\ \\mathrm{m}$ away. How long does it take to arrive?",
+        "phases": [
+          {
+            "label": "(a) Classify",
+            "steps": [
+              "Clean window: **transparent** (see through clearly).",
+              "Brick wall: **opaque** (no light through).",
+              "Wax paper: **translucent** (light through, but blurred)."
+            ]
+          },
+          {
+            "label": "(b) Travel time",
+            "steps": [
+              "$t = \\dfrac{d}{c} = \\dfrac{3.0 \\times 10^{8}\\ \\mathrm{m}}{3.0 \\times 10^{8}\\ \\mathrm{m/s}} = 1.0\\ \\mathrm{s}$."
+            ]
+          }
+        ],
+        "keyMove": "Transparent / translucent / opaque describe how much light gets through. Light travel time is $t = d/c$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L1-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 1,
+        "question": "Which statement about the speed of light is correct?",
+        "choices": [
+          "Light travels at $3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in vacuum and even faster in glass.",
+          "Light travels at $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in vacuum and slower in any material.",
+          "Light travels at the same speed in all materials.",
+          "Light travels at $340\\ \\mathrm{m/s}$."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $c$ is the vacuum speed and the universal speed limit; light always travels slower than $c$ inside a material.",
+          "incorrect": {
+            "0": "Nothing travels faster than $c$. Light *slows down* in glass.",
+            "2": "Light travels at different speeds in different materials (that is what causes refraction).",
+            "3": "$340\\ \\mathrm{m/s}$ is roughly the speed of sound, not light."
+          }
+        },
+        "hint": ["$c$ is the top speed in nature. Materials can only slow light down."],
+        "solution": "Light travels at $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in a vacuum, which is the fastest speed anything can travel. In a transparent material it travels slower — for example about $2.0 \\times 10^{8}\\ \\mathrm{m/s}$ in glass. This slowing is what causes refraction."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The normal, and what light does at a surface",
+      "concept": "The **normal** at a point on a surface is the line drawn **perpendicular** to the surface there. Every angle in optics — incidence, reflection, refraction — is measured **between a ray and the normal**, not between a ray and the surface. (So a ray grazing along a surface has an angle of incidence near $90^\\circ$; a ray hitting head-on has an angle of $0^\\circ$.)\n\nWhen light meets a surface, three things can happen, usually all at once to some degree:\n\n- **Reflection** — light **bounces off** the surface.\n- **Refraction** — light is **transmitted into** the new medium, **bending** because its speed changes (Lesson 4).\n- **Absorption** — the material **takes up** the light's energy, which usually appears as heat (a black object in sunlight warms up).\n\nAn object's **colour** is the colour of light it reflects; the rest is absorbed. A red apple reflects red and absorbs the other colours.",
+      "representation": "At a surface: reflect (bounce), refract (bend through), absorb (energy taken up).\n\nAll angles measured from the **normal** (perpendicular), so:\n- head-on ray → angle $= 0^\\circ$;\n- grazing ray → angle near $90^\\circ$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Sunlight falls on a dark green leaf and the leaf warms up. (a) Which processes are happening? (b) Why is the leaf green? (c) A ray makes $20^\\circ$ with the leaf's surface. What is its angle of incidence?",
+        "phases": [
+          {
+            "label": "(a) Processes",
+            "steps": [
+              "Some light **reflects** (the sheen you can see), some is **absorbed** (warming the leaf), and some may pass through (thin leaves are slightly translucent) — that would be transmission with refraction."
+            ]
+          },
+          {
+            "label": "(b) Why green",
+            "steps": ["The leaf's pigments absorb most wavelengths and reflect green; only that reflected green light reaches your eye."]
+          },
+          {
+            "label": "(c) Angle of incidence",
+            "steps": ["Measured from the normal: $90^\\circ - 20^\\circ = 70^\\circ$."]
+          }
+        ],
+        "keyMove": "Reflect / refract / absorb — usually together. Colour = reflected light. Angles are from the normal."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L1-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A light ray hits a mirror and the angle between the ray and the mirror's surface is $40^\\circ$. What is the angle of incidence?",
+        "choices": ["$40^\\circ$", "$50^\\circ$", "$20^\\circ$", "$140^\\circ$"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the angle of incidence is measured from the normal, so it is $90^\\circ - 40^\\circ = 50^\\circ$.",
+          "incorrect": {
+            "0": "That is the angle from the surface. Measure from the normal instead.",
+            "2": "Do not halve — subtract from $90^\\circ$.",
+            "3": "Angles of incidence are between $0^\\circ$ and $90^\\circ$."
+          }
+        },
+        "hint": ["Angle from surface + angle from normal = $90^\\circ$."],
+        "solution": "In optics, angles are measured from the normal (the perpendicular to the surface). A ray making $40^\\circ$ with the surface makes $90^\\circ - 40^\\circ = 50^\\circ$ with the normal, so the angle of incidence is $50^\\circ$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Images, and the words for curved mirrors",
+      "concept": "An **image** is where an optical system (a mirror or lens) makes light appear to come from — a reproduction of an object.\n\n- A **real image** forms where light rays **actually converge**. You can catch it on a screen (a cinema image, the image on your retina).\n- A **virtual image** forms where rays only **appear** to come from — the rays never actually meet there. You cannot catch it on a screen. The image in a flat mirror is virtual (it seems to be behind the mirror).\n\nFor a **curved mirror** (Lessons 2\u20133):\n\n- the **principal axis** is the mirror's line of symmetry, through its centre and its focal point;\n- the **focal point (focus, $F$)** is where rays arriving parallel to the principal axis converge after reflecting (concave mirror), or appear to diverge from (convex mirror);\n- the **focal length ($f$)** is the distance from the mirror to the focal point.",
+      "representation": "| Term | Meaning |\n|---|---|\n| real image | rays actually meet; catchable on a screen |\n| virtual image | rays only appear to meet; not catchable |\n| principal axis | mirror's line of symmetry |\n| focal point $F$ | where parallel rays converge (or appear to) |\n| focal length $f$ | mirror-to-focal-point distance |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, state whether the image is real or virtual: (a) the picture a projector throws on a screen; (b) your face in a bathroom mirror; (c) the image at the back of a camera's sensor; (d) a friend's reflection in a still pond.",
+        "phases": [
+          {
+            "label": "(a) Projector on a screen",
+            "steps": ["Light actually converges on the screen \u2192 **real**."]
+          },
+          {
+            "label": "(b) Bathroom mirror",
+            "steps": ["The image seems to be behind the mirror where no light goes \u2192 **virtual**."]
+          },
+          {
+            "label": "(c) Camera sensor",
+            "steps": ["Light converges on the sensor to expose it \u2192 **real**."]
+          },
+          {
+            "label": "(d) Reflection in a pond",
+            "steps": ["Same as a flat mirror \u2014 the image appears below the surface where no light travels \u2192 **virtual**."]
+          }
+        ],
+        "keyMove": "If you can put a screen there and see the picture, it is real; if the image only 'appears' somewhere light does not go, it is virtual."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L1-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "What is the key difference between a real image and a virtual image?",
+        "choices": [
+          "A real image is upright and a virtual image is inverted.",
+          "For a real image, light rays actually meet at the image location (so it can be projected onto a screen); for a virtual image, the rays only appear to come from that point.",
+          "A virtual image is always bigger.",
+          "A real image is in colour and a virtual image is black and white."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — real: rays converge there, catchable on a screen. Virtual: rays only appear to originate there, not catchable.",
+          "incorrect": {
+            "0": "Orientation is a consequence, not the definition. (A single mirror's real image is inverted, its virtual image upright — but that follows from the ray geometry.)",
+            "2": "Size varies for both.",
+            "3": "Colour has nothing to do with real vs virtual."
+          }
+        },
+        "hint": ["Can you place a screen at the image and see it there?"],
+        "solution": "A real image forms where light rays physically converge, so it can be captured on a screen (a projector image, the image on a retina or camera sensor). A virtual image forms where rays only appear to originate — like behind a plane mirror — so no light actually reaches that point and it cannot be projected."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L1-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "developing",
+      "cognitiveLevel": 2,
+      "misconceptionTested": "",
+      "question": "A student measures the angle of incidence of a ray as the angle between the ray and the surface, getting $15^\\circ$. What is the actual angle of incidence, and what did the student do wrong?",
+      "choices": [
+        "$15^\\circ$ — nothing wrong.",
+        "$75^\\circ$ — the angle of incidence is measured from the normal (perpendicular), not from the surface, so it is $90^\\circ - 15^\\circ$.",
+        "$30^\\circ$ — the student should have doubled the angle.",
+        "$7.5^\\circ$ — the student should have halved the angle."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — all optical angles are measured from the normal. A ray $15^\\circ$ from the surface is $75^\\circ$ from the normal.",
+        "incorrect": {
+          "0": "Measuring from the surface is the classic error. Optics uses the normal.",
+          "2": "There is no doubling — subtract from $90^\\circ$.",
+          "3": "There is no halving — subtract from $90^\\circ$."
+        }
+      },
+      "hint": ["The reference line for optical angles is the normal, not the surface."],
+      "solution": "By convention, angles of incidence, reflection, and refraction are all measured between the ray and the normal (the line perpendicular to the surface). A ray that makes $15^\\circ$ with the surface makes $90^\\circ - 15^\\circ = 75^\\circ$ with the normal, so the angle of incidence is $75^\\circ$."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Question: 'A shiny black car sits in the summer Sun and becomes very hot to touch, but you can also see a clear reflection of the sky in its paint. Explain what is happening to the sunlight.'\n\nStudent's response: 'The car reflects all the light, which is why you see the sky. It gets hot because black cars are always hot.'",
+      "prompts": [
+        "Name the three things that can happen to light at a surface.",
+        "Explain the contradiction in the student's answer.",
+        "Give a correct explanation covering both the reflection and the heating."
+      ],
+      "modelResponse": "The three processes are reflection (light bounces off), refraction/transmission (light passes into the material, bending), and absorption (the material takes up the light's energy). The student's contradiction: if the car reflected *all* the light, none would be absorbed and it would not heat up. Correct explanation: the smooth clear coat on the paint reflects a fraction of the light in an orderly way (specular reflection), which is why you see a sharp image of the sky. The black pigment beneath absorbs most of the remaining light across all visible colours (which is why it looks black), and that absorbed energy becomes internal energy, heating the car. So the same surface both reflects some light and absorbs a lot of it.",
+      "responseMaxLength": 750
+    }
+  ],
+  "representationConnections": "A described scene maps to the vocabulary: how much light gets through (transparent / translucent / opaque); what happens at each surface (reflect / refract / absorb); how angles are measured (from the normal); and whether the resulting image is real (rays meet, screen-catchable) or virtual (rays only appear to meet). The speed of light $c$ and the terms focal point, focal length, and principal axis set up the mirror lessons (2\u20133) and the refraction lessons (4\u20135).",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L1-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Which list correctly matches each situation to the dominant process?\n\n1. A mirror shows your reflection.  2. A straw looks bent in a glass of water.  3. A black T-shirt feels hot in the Sun.",
+      "choices": [
+        "1 reflection, 2 refraction, 3 absorption",
+        "1 refraction, 2 absorption, 3 reflection",
+        "1 absorption, 2 reflection, 3 refraction",
+        "1 reflection, 2 absorption, 3 refraction"
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — the mirror reflects, the water refracts the light from the submerged straw, and the black shirt absorbs light energy (which becomes heat).",
+        "incorrect": {
+          "1": "A mirror reflects, it does not refract; and a black shirt in the Sun absorbs, it does not mainly reflect.",
+          "2": "A mirror reflects (not absorbs); the bent straw is refraction (not reflection).",
+          "3": "The bent straw is refraction, not absorption."
+        }
+      },
+      "hint": ["Bounce off / bend through / energy taken up as heat."],
+      "solution": "1. A mirror image is formed by reflection (light bounces off the smooth surface). 2. The straw looks bent because light from its submerged part refracts (bends) as it leaves the water. 3. A black shirt looks black because it absorbs almost all the visible light falling on it, and that absorbed energy raises its temperature."
+    },
+    {
+      "id": "BP8-U7-L1-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "reasonableness-check",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "The Moon is about $3.8 \\times 10^{8}\\ \\mathrm{m}$ from Earth. A radio command sent to a lunar rover takes about how long to arrive? (Radio waves travel at $c$.)",
+      "choices": ["about $1.3\\ \\mathrm{s}$", "about $0.001\\ \\mathrm{s}$", "about $2\\ \\mathrm{minutes}$", "about $13\\ \\mathrm{s}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $t = d/c = \\dfrac{3.8 \\times 10^{8}}{3.0 \\times 10^{8}} \\approx 1.3\\ \\mathrm{s}$.",
+        "incorrect": {
+          "1": "That is far too short — $c \\times 0.001\\ \\mathrm{s} = 3 \\times 10^{5}\\ \\mathrm{m}$, only $300\\ \\mathrm{km}$.",
+          "2": "Two minutes ($120\\ \\mathrm{s}$) would cover $\\sim 3.6 \\times 10^{10}\\ \\mathrm{m}$, about 100 times too far.",
+          "3": "This is off by a factor of 10: $t = 3.8 \\times 10^{8} / 3.0 \\times 10^{8} \\approx 1.3\\ \\mathrm{s}$."
+        }
+      },
+      "hint": ["$t = d/c$: divide $3.8 \\times 10^{8}\\ \\mathrm{m}$ by $3.0 \\times 10^{8}\\ \\mathrm{m/s}$."],
+      "solution": "$t = \\dfrac{d}{c} = \\dfrac{3.8 \\times 10^{8}\\ \\mathrm{m}}{3.0 \\times 10^{8}\\ \\mathrm{m/s}} \\approx 1.3\\ \\mathrm{s}$. (This one-way delay — and the same again for the reply — is why lunar rovers cannot be driven with real-time reflexes.)"
+    },
+    {
+      "id": "BP8-U7-L1-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "identify-principle",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "scenario": "A cinema projector throws a bright picture onto a screen at the front of the room. A member of the audience also sees a faint reflection of the exit sign in the polished screen surface.",
+      "parts": [
+        {
+          "prompt": "(a) Classify the picture on the screen as a real or virtual image and justify your answer.",
+          "modelResponse": "It is a real image. The projector's lens makes the light rays from each point of the film frame actually converge at a corresponding point on the screen, so the light physically comes together there — which is exactly what lets it be caught on a screen and seen by the whole audience.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Classify the reflection of the exit sign as a real or virtual image and justify your answer.",
+          "modelResponse": "It is a virtual image. The screen surface reflects the light from the exit sign; the reflected rays diverge as if coming from a point behind the screen, where no light actually travels. Because the rays only appear to originate there, the image cannot be caught on a screen — it is virtual.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The screen is designed to be a good diffuse (matte) reflector rather than a mirror. Explain why, referring to specular versus diffuse reflection.",
+          "modelResponse": "A mirror (specular reflector) sends parallel incoming rays out parallel, so only viewers along one line would see the projected light — everyone else would see a bright glare instead of the picture. A matte screen scatters the light from each point in all directions (diffuse reflection), so every seat in the room receives light from every part of the image and the whole audience sees the picture. The faint exit-sign reflection shows the screen is not perfectly matte.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB geometric optics assume this vocabulary: measuring angles from the normal, distinguishing reflection / refraction / absorption, the value of $c$, and real versus virtual images. These definitions are tested directly and are prerequisites for every ray-diagram and Snell's-law question in the unit.",
+  "summary": "Transparent materials transmit light clearly, opaque ones block it, translucent ones scatter it. Light travels at $c \\approx 3.0 \\times 10^{8}\\ \\mathrm{m/s}$ in vacuum (the fastest speed in nature) and slower in any material. The normal is the perpendicular to a surface at the point a ray strikes it, and all optical angles are measured from it. At a surface, light can reflect (bounce off), refract (transmit with bending, because its speed changes), or be absorbed (energy taken up, usually as heat); an object's colour is the light it reflects. A real image forms where rays actually converge and can be caught on a screen; a virtual image forms where rays only appear to originate. For a curved mirror, the principal axis is its line of symmetry, the focal point is where parallel rays converge (or appear to), and the focal length is the mirror-to-focus distance.",
+  "exitQuestion": {
+    "id": "BP8-U7-L1-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "The angle of incidence of a light ray is measured between the ray and:",
+    "choices": [
+      "the surface it strikes.",
+      "the normal (the perpendicular to the surface at that point).",
+      "the reflected ray.",
+      "the horizontal."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — all optical angles (incidence, reflection, refraction) are measured from the normal.",
+      "incorrect": {
+        "0": "Measuring from the surface is a common mistake; the convention is to use the normal.",
+        "2": "The angle between the incident and reflected rays is a different quantity (it equals twice the angle of incidence).",
+        "3": "The reference is the local normal to the surface, whatever its orientation."
+      }
+    },
+    "hint": ["Which line is the reference for optical angles — the surface or its perpendicular?"],
+    "solution": "The angle of incidence is the angle between the incident ray and the normal — the line drawn perpendicular to the surface at the point where the ray meets it. The same convention applies to the angles of reflection and refraction."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-001", "BP8-U7-MCQ-002", "BP8-U7-MCQ-003", "BP8-U7-MCQ-004", "BP8-U7-MCQ-007", "BP8-U7-MCQ-010"],
+  "needsPlotly": false
+}

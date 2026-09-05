@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 560 280" role="img" aria-labelledby="t d">
+<title id="t">White light dispersed into a spectrum by a glass prism</title>
+<desc id="d">A narrow beam of white light enters a triangular glass prism from the left. Inside and on leaving the prism the light fans out into a spectrum, with red deviated the least and violet the most, because the index of refraction of glass is slightly larger for higher-frequency light.</desc>
+<rect width="560" height="280" fill="white"/>
+<defs><marker id="w7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#5b6675"/></marker></defs>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <path d="M210,60 L300,210 L120,210 Z" fill="#eaf2f7" stroke="#1769aa" stroke-width="2"/>
+ <text x="210" y="234" text-anchor="middle" fill="#5b6675">glass prism</text>
+
+ <line x1="40" y1="120" x2="175" y2="120" stroke="#5b6675" stroke-width="3" marker-end="url(#w7)"/>
+ <text x="45" y="108" fill="#5b6675">white light</text>
+
+ <line x1="255" y1="150" x2="470" y2="120" stroke="#c0392b" stroke-width="2.5"/>
+ <line x1="255" y1="150" x2="470" y2="140" stroke="#e07b00" stroke-width="2.5"/>
+ <line x1="255" y1="150" x2="470" y2="160" stroke="#1a7f37" stroke-width="2.5"/>
+ <line x1="255" y1="150" x2="470" y2="180" stroke="#1769aa" stroke-width="2.5"/>
+ <line x1="255" y1="150" x2="470" y2="205" stroke="#6a0dad" stroke-width="2.5"/>
+
+ <text x="478" y="120" fill="#c0392b">red (bends least)</text>
+ <text x="478" y="163" fill="#1a7f37">green</text>
+ <text x="478" y="208" fill="#6a0dad">violet (bends most)</text>
+
+ <text x="280" y="264" text-anchor="middle" fill="#0f3d61" font-size="11">Dispersion: n is slightly larger for violet, so violet slows and bends more.</text>
+</g>
+</svg>

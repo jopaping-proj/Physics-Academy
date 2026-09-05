@@ -1,0 +1,334 @@
+{
+  "id": "basis-p8-u7-l5",
+  "slug": "snells-law-and-tir",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 7: Waves and Light",
+  "topic": "Snell's Law and Total Internal Reflection",
+  "lessonTitle": "Snell's Law and Total Internal Reflection",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit7_waves_light_outcomes.md (Refraction R3; Total Internal Reflection cluster, TIR1-TIR2); calibrated against AP Physics 2 CED Unit 13, OpenStax High School Physics Ch. 15",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 7 — this lesson is authored from the approved outcome register. Per the outcome wording, Snell's law is used to solve for an index of refraction only (not for an angle).",
+  "prerequisites": [
+    "Lesson 4 — refraction is caused by a speed change; $n = c/v$; light bends toward the normal entering a higher-index medium and away entering a lower-index one.",
+    "Unit 2 — the sine of an angle; standard values ($\\sin 30^\\circ = 0.5$, $\\sin 90^\\circ = 1$)."
+  ],
+  "majorObjective": "State Snell's law and use it to calculate an index of refraction, define the critical angle and derive $\\sin\\theta_c = 1/n$, and explain when total internal reflection occurs and where it is used.",
+  "subObjectives": [
+    "State Snell's law, $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, with all angles measured from the normal, and use it to solve for an unknown index of refraction given the two angles and the other index.",
+    "Define the critical angle and derive $\\sin\\theta_c = 1/n$ (for a boundary with air) by setting the refraction angle to $90^\\circ$ in Snell's law.",
+    "State that total internal reflection occurs only for light travelling from a higher-index toward a lower-index medium at an angle of incidence greater than the critical angle, and that at that point 100% of the light reflects.",
+    "Explain optical fibres, diamond brilliance, and the underwater 'mirror' surface as consequences of total internal reflection."
+  ],
+  "hook": {
+    "prompt": "A material has an index of refraction of $2.0$. Its critical angle for light passing into air is:",
+    "choices": ["$60^\\circ$", "$30^\\circ$", "$45^\\circ$", "$90^\\circ$"],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Lesson 4 said which way light bends. Snell's law says by how much: it links the two angles and the two indices. Push the incidence angle far enough and the refracted ray cannot escape at all — total internal reflection.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Snell's law",
+      "concept": "**Snell's law** relates the angles and indices at a refracting boundary:\n\n$$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$$\n\nwhere $n_1$ and $\\theta_1$ are the index and angle (from the normal) on the incoming side, and $n_2$ and $\\theta_2$ on the outgoing side.\n\nIt captures the bending rule from Lesson 4:\n\n- if $n_2 > n_1$ (into a denser medium), then $\\sin\\theta_2 < \\sin\\theta_1$, so $\\theta_2 < \\theta_1$ \u2014 bent **toward** the normal;\n- if $n_2 < n_1$ (into a less dense medium), then $\\theta_2 > \\theta_1$ \u2014 bent **away** from the normal.\n\nIn this course you will use Snell's law to **solve for an unknown index of refraction**, given both angles and the other index:\n\n$$n_2 = \\frac{n_1\\sin\\theta_1}{\\sin\\theta_2}$$\n\n(You will be given the sine values, or a standard angle, so no calculator is needed.)",
+      "representation": "$$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$$\n\nSolve for the unknown index:\n\n$$n_2 = \\frac{n_1\\sin\\theta_1}{\\sin\\theta_2} \\qquad n_1 = \\frac{n_2\\sin\\theta_2}{\\sin\\theta_1}$$\n\nBigger index side ↔ smaller angle side.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Light travels from air ($n_1 = 1.0$) into a transparent solid. The angle of incidence has $\\sin\\theta_1 = 0.90$ and the angle of refraction has $\\sin\\theta_2 = 0.60$. (a) Find the index of refraction of the solid. (b) Check the bending direction is consistent.",
+        "phases": [
+          {
+            "label": "(a) Index of the solid",
+            "steps": [
+              "$n_1\\sin\\theta_1 = n_2\\sin\\theta_2$",
+              "$n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.90)}{0.60} = 1.5$."
+            ]
+          },
+          {
+            "label": "(b) Consistency check",
+            "steps": [
+              "$n_2 = 1.5 > n_1 = 1.0$: the light enters a denser medium, so it should bend toward the normal.",
+              "$\\sin\\theta_2 = 0.60 < \\sin\\theta_1 = 0.90$, so $\\theta_2 < \\theta_1$ \u2014 yes, bent toward the normal. Consistent."
+            ]
+          }
+        ],
+        "keyMove": "$n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2}$. The larger index always pairs with the smaller angle."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L5-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Light goes from air ($n_1 = 1.0$) into water. The angle of incidence has $\\sin\\theta_1 = 0.80$; the angle of refraction has $\\sin\\theta_2 = 0.60$. What is the index of refraction of the water?",
+        "choices": ["$1.33$", "$0.75$", "$1.4$", "$0.48$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $n_2 = \\dfrac{(1.0)(0.80)}{0.60} = \\dfrac{0.80}{0.60} \\approx 1.33$, the standard index of water.",
+          "incorrect": {
+            "1": "This inverts the ratio ($0.60/0.80$). Solve $n_2 = n_1\\sin\\theta_1/\\sin\\theta_2$.",
+            "2": "Close, but $0.80/0.60 = 1.33$, not $1.4$.",
+            "3": "This multiplies the sines. Snell's law uses a ratio."
+          }
+        },
+        "hint": ["$n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.80)}{0.60}$."],
+        "solution": "Snell's law: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, so $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.0)(0.80)}{0.60} = \\dfrac{4}{3} \\approx 1.33$ — the index of refraction of water."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "The critical angle",
+      "concept": "When light goes from a **higher-index** medium toward a **lower-index** one (say glass to air), it bends **away** from the normal, so the refraction angle $\\theta_2$ is **bigger** than the incidence angle $\\theta_1$. As $\\theta_1$ increases, $\\theta_2$ reaches $90^\\circ$ \u2014 the refracted ray grazes along the surface. The incidence angle at which this happens is the **critical angle $\\theta_c$**.\n\nSet $\\theta_2 = 90^\\circ$ in Snell's law (with the second medium being air, $n_2 = 1$):\n\n$$n\\sin\\theta_c = (1)\\sin 90^\\circ = 1 \\quad\\Longrightarrow\\quad \\boxed{\\sin\\theta_c = \\frac{1}{n}}$$\n\nExamples:\n\n- glass, $n = 1.5$: $\\sin\\theta_c = 0.67$, $\\theta_c \\approx 42^\\circ$;\n- $n = 2.0$: $\\sin\\theta_c = 0.5$, $\\theta_c = 30^\\circ$;\n- diamond, $n = 2.4$: $\\sin\\theta_c \\approx 0.42$, $\\theta_c \\approx 24^\\circ$.\n\nA **higher index** gives a **smaller** critical angle.",
+      "representation": "$$\\sin\\theta_c = \\frac{1}{n} \\quad\\text{(boundary with air)}, \\qquad n = \\frac{1}{\\sin\\theta_c}$$\n\nLarger $n$ → smaller $\\theta_c$ → total internal reflection over a wider range of angles.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A plastic has $n = 2.0$. Find its critical angle for a boundary with air. (b) A gem's critical angle is found to be the angle with sine $0.40$. Find the gem's index of refraction.",
+        "phases": [
+          {
+            "label": "(a) Critical angle of the plastic",
+            "steps": [
+              "$\\sin\\theta_c = \\dfrac{1}{n} = \\dfrac{1}{2.0} = 0.5$.",
+              "$\\sin 30^\\circ = 0.5$, so $\\theta_c = 30^\\circ$."
+            ]
+          },
+          {
+            "label": "(b) Index of the gem",
+            "steps": ["$n = \\dfrac{1}{\\sin\\theta_c} = \\dfrac{1}{0.40} = 2.5$."]
+          }
+        ],
+        "keyMove": "$\\sin\\theta_c = 1/n$ (from Snell's law with $\\theta_2 = 90^\\circ$). Rearrange for whichever is unknown."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L5-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "The critical angle for a certain glass-air boundary is the angle whose sine is $0.5$. What is the index of refraction of the glass?",
+        "choices": ["$2.0$", "$0.5$", "$1.5$", "$0.25$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c = 1/0.5 = 2.0$.",
+          "incorrect": {
+            "1": "That is $\\sin\\theta_c$ itself. Take the reciprocal to get $n$.",
+            "2": "$n = 1.5$ would give $\\sin\\theta_c = 0.67$.",
+            "3": "This squares or halves; $n = 1/0.5 = 2.0$."
+          }
+        },
+        "hint": ["$\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c$."],
+        "solution": "For a boundary with air, $\\sin\\theta_c = \\dfrac{1}{n}$, so $n = \\dfrac{1}{\\sin\\theta_c} = \\dfrac{1}{0.5} = 2.0$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Total internal reflection",
+      "concept": "**Total internal reflection (TIR)** occurs when light travelling in a higher-index medium meets a boundary with a lower-index medium at an angle of incidence **greater than the critical angle**. Beyond $\\theta_c$, Snell's law has **no solution** for a refracted ray, so **100% of the light is reflected** back into the denser medium (obeying the law of reflection). No light escapes.\n\n**Conditions (both required):**\n\n1. light going from **higher index to lower index** (denser to less dense);\n2. angle of incidence **> critical angle**.\n\nAt exactly $\\theta_c$: the refracted ray grazes along the surface ($\\theta_2 = 90^\\circ$). Below $\\theta_c$: normal refraction, most light passes through. Above $\\theta_c$: total internal reflection.\n\n**Uses:**\n\n- **Optical fibres** \u2014 light is launched so it always exceeds $\\theta_c$ at the core-cladding boundary, so it bounces along the core with essentially no loss (better than any mirror).\n- **Cut diamond** \u2014 the small critical angle ($\\approx 24^\\circ$) traps light, which bounces around and exits in bright flashes ('fire' and brilliance).\n- **Prisms in binoculars and periscopes** \u2014 $45^\\circ$-$45^\\circ$-$90^\\circ$ glass prisms use TIR (angle of incidence $45^\\circ > \\theta_c \\approx 42^\\circ$) as perfect mirrors.\n- **Underwater view** \u2014 looking up at a steep angle, the water surface acts as a mirror.",
+      "representation": "| Angle of incidence (in the denser medium) | What happens |\n|---|---|\n| $< \\theta_c$ | refracts out (bent away from normal) + partial reflection |\n| $= \\theta_c$ | refracted ray grazes at $90^\\circ$ |\n| $> \\theta_c$ | total internal reflection (100% reflected, no refraction) |\n\nRequires: denser → less dense, **and** angle $> \\theta_c$.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-7/refraction/refraction-and-tir.svg",
+          "caption": "Right panel: rays inside glass hitting the glass-air boundary at increasing angles — refract out below the critical angle, graze along the surface at the critical angle, and totally internally reflect above it."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A glass block has $n = 1.5$ ($\\theta_c \\approx 42^\\circ$). A ray inside the glass hits the top surface (glass-air) at (a) $30^\\circ$, (b) $42^\\circ$, (c) $50^\\circ$ to the normal. Describe what happens in each case.",
+        "phases": [
+          {
+            "label": "(a) 30 degrees (below critical)",
+            "steps": ["Less than $\\theta_c$: the ray refracts out into the air, bending away from the normal (refraction angle about $49^\\circ$). A little light also reflects back."]
+          },
+          {
+            "label": "(b) 42 degrees (at critical)",
+            "steps": ["Equal to $\\theta_c$: the refracted ray grazes along the surface at $90^\\circ$; almost all the light is reflected."]
+          },
+          {
+            "label": "(c) 50 degrees (above critical)",
+            "steps": ["Greater than $\\theta_c$: total internal reflection \u2014 no light escapes, all of it reflects back into the glass at $50^\\circ$."]
+          }
+        ],
+        "keyMove": "Compare the angle of incidence with $\\theta_c$: below → refracts out; at → grazes; above → total internal reflection."
+      },
+      "formativeCheck": {
+        "id": "BP8-U7-L5-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Can total internal reflection occur for light passing from air into a diamond?",
+        "choices": [
+          "Yes, at angles above the critical angle.",
+          "No — total internal reflection requires light going from a higher-index medium toward a lower-index one. Air to diamond is low index to high index.",
+          "Yes, but only for red light.",
+          "Only if the diamond is very large."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — going from low index (air) to high index (diamond), a refracted ray always exists (bent toward the normal), so there is no critical angle and no total internal reflection.",
+          "incorrect": {
+            "0": "No angle of incidence in air produces total internal reflection into diamond.",
+            "2": "Colour does not enable total internal reflection in the wrong direction.",
+            "3": "Size is irrelevant; the direction of the index change is what matters."
+          }
+        },
+        "hint": ["Which direction must the light travel (relative to index) for total internal reflection to be possible?"],
+        "solution": "Total internal reflection requires light to travel from a higher-index (denser) medium toward a lower-index one. Air to diamond goes from low index to high index, so the ray always has a refracted path (bending toward the normal) and no total internal reflection is possible. It can only occur for light already inside the diamond hitting a facet, going diamond to air."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U7-L5-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'An optical fibre works because the inside is coated with a very good mirror.' What is the correct explanation?",
+      "choices": [
+        "The student is right — it is a mirror coating.",
+        "There is no mirror. The fibre's core has a higher index than its cladding, and the light always hits the boundary above the critical angle, so it is totally internally reflected — which reflects 100% of the light, better than any real mirror.",
+        "The fibre absorbs and re-emits the light along its length.",
+        "The light travels along the outside surface of the fibre."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — total internal reflection at the core-cladding boundary is a perfect reflection (no absorption), which is why fibres can carry light for kilometres. A real mirror coating would absorb a little at every bounce and lose the signal.",
+        "incorrect": {
+          "0": "Even the best mirror coatings absorb a fraction of the light each bounce; over millions of bounces the signal would vanish.",
+          "2": "The fibre does not absorb and re-emit; it guides the same light by repeated total internal reflection.",
+          "3": "The light stays trapped inside the core, not on the outer surface."
+        }
+      },
+      "hint": ["What does total internal reflection do to the fraction of light reflected, compared with a real mirror?"],
+      "solution": "An optical fibre has no mirror coating. Its glass core has a higher index of refraction than the surrounding cladding, so there is a critical angle at the core-cladding boundary. Light is launched so that it always strikes this boundary at more than the critical angle, undergoing total internal reflection — which reflects essentially 100% of the light with no absorption. That is why fibres can carry signals many kilometres, whereas a real mirror would lose the light after enough bounces."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A glass has $n = 1.6$. Find its critical angle for light passing into air.\n\nStudent's response: '$\\sin\\theta_c = n = 1.6$, so $\\theta_c = \\sin^{-1}(1.6)$... but my calculator gives an error.'",
+      "prompts": [
+        "State the correct relationship between the critical angle and the index of refraction.",
+        "Explain why the student's version gives an impossible value.",
+        "Give the correct value of $\\sin\\theta_c$ for this glass."
+      ],
+      "modelResponse": "The correct relationship (for a boundary with air) is $\\sin\\theta_c = \\dfrac{1}{n}$, not $\\sin\\theta_c = n$. The student's version gives $\\sin\\theta_c = 1.6$, which is impossible because the sine of any angle is at most $1$ \u2014 that is why the calculator returns an error, and it should signal that the formula is upside down. Correct: $\\sin\\theta_c = \\dfrac{1}{1.6} = 0.625$ (so $\\theta_c \\approx 39^\\circ$).",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "Two refraction angles and one index feed Snell's law, $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$, to give the other index. Setting $\\theta_2 = 90^\\circ$ turns Snell's law into $\\sin\\theta_c = 1/n$, the critical angle. Comparing an actual angle of incidence (in the denser medium) with $\\theta_c$ decides refraction versus total internal reflection, which is drawn as the sequence of rays in the SVG and underlies optical fibres, diamond brilliance, prism reflectors, and Snell's window.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U7-L5-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "Light travels from water ($n_1 = 1.33$) into a glass. Measured angles give $\\sin\\theta_1 = 0.60$ (in water) and $\\sin\\theta_2 = 0.50$ (in glass). What is the index of refraction of the glass?",
+      "choices": ["$1.6$", "$1.1$", "$0.9$", "$2.0$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.33)(0.60)}{0.50} = \\dfrac{0.80}{0.50} \\approx 1.6$.",
+        "incorrect": {
+          "1": "This forgets the water index (uses $n_1 = 1$). The light starts in water.",
+          "2": "This inverts the sine ratio.",
+          "3": "$(1.33)(0.60)/0.50 = 1.6$, not $2.0$."
+        }
+      },
+      "hint": ["Snell's law works between any two media: $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$ with $n_1 = 1.33$."],
+      "solution": "$n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2} = \\dfrac{(1.33)(0.60)}{0.50} = \\dfrac{0.80}{0.50} = 1.6$."
+    },
+    {
+      "id": "BP8-U7-L5-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two gemstones have indices of refraction $1.5$ and $2.4$. Which sparkles more (traps light better by total internal reflection), and why?",
+      "choices": [
+        "The $n = 1.5$ stone, because light escapes it more easily.",
+        "The $n = 2.4$ stone, because its larger index gives a smaller critical angle, so total internal reflection happens for a wider range of angles and light is trapped and bounces around before emerging in bright flashes.",
+        "They sparkle equally.",
+        "The $n = 1.5$ stone, because light travels faster in it."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $\\sin\\theta_c = 1/n$, so the higher-index stone has a smaller $\\theta_c$; almost any internal ray exceeds it, so light is repeatedly totally internally reflected and finally exits concentrated into flashes.",
+        "incorrect": {
+          "0": "Easier escape means less trapping and less sparkle.",
+          "2": "The critical angles differ ($\\approx 42^\\circ$ vs $\\approx 24^\\circ$), so the trapping differs.",
+          "3": "Speed is not the mechanism; the critical angle is."
+        }
+      },
+      "hint": ["$\\sin\\theta_c = 1/n$. Larger $n$ → smaller $\\theta_c$ → more angles cause total internal reflection → more trapping."],
+      "solution": "The critical angle is $\\theta_c$ with $\\sin\\theta_c = 1/n$. The $n = 2.4$ stone has $\\sin\\theta_c \\approx 0.42$, $\\theta_c \\approx 24^\\circ$; the $n = 1.5$ stone has $\\theta_c \\approx 42^\\circ$. In the high-index stone almost any internally travelling ray strikes a facet at more than $24^\\circ$, so it is totally internally reflected and bounces repeatedly before finally exiting a top facet in a bright, concentrated flash — that is the diamond-like brilliance."
+    },
+    {
+      "id": "BP8-U7-L5-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A rectangular block of transparent material sits in air. A ray of light inside the block travels toward the top face and reaches it at various angles of incidence. The material's index of refraction is $2.0$.",
+      "parts": [
+        {
+          "prompt": "(a) Derive the critical angle for the block-air boundary from Snell's law, and calculate it.",
+          "modelResponse": "At the critical angle the refracted ray grazes the surface, so $\\theta_2 = 90^\\circ$. Snell's law: $n\\sin\\theta_c = n_{air}\\sin 90^\\circ = (1)(1) = 1$, so $\\sin\\theta_c = \\dfrac{1}{n} = \\dfrac{1}{2.0} = 0.5$. Since $\\sin 30^\\circ = 0.5$, $\\theta_c = 30^\\circ$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) State what happens to a ray hitting the top face at $20^\\circ$, at $30^\\circ$, and at $45^\\circ$ to the normal.",
+          "modelResponse": "At $20^\\circ$ (less than $\\theta_c$): the ray refracts out into the air, bending away from the normal, with some partial reflection back into the block. At $30^\\circ$ (equal to $\\theta_c$): the refracted ray grazes along the surface at $90^\\circ$; essentially all the light is reflected. At $45^\\circ$ (greater than $\\theta_c$): total internal reflection — no light escapes, and all of it reflects back into the block at $45^\\circ$.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Explain why a $45^\\circ$-$45^\\circ$-$90^\\circ$ prism made of this material can be used as a perfect mirror to turn a light beam through $90^\\circ$.",
+          "modelResponse": "A beam entering the prism through one of the short faces hits the long (hypotenuse) face at $45^\\circ$ to its normal. Since $45^\\circ$ is greater than the critical angle ($30^\\circ$), the beam is totally internally reflected off the hypotenuse — reflecting 100% of the light with no coating needed — and exits through the other short face travelling at $90^\\circ$ to its original direction. Because total internal reflection loses no light, the prism is a better 'mirror' than a metal-coated one.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test Snell's law (here restricted to solving for an index), the derivation and use of $\\sin\\theta_c = 1/n$, the two conditions for total internal reflection, and its applications (optical fibres, prism reflectors, diamond, Snell's window). The 'air into glass cannot give total internal reflection' point and the impossible $\\sin\\theta_c > 1$ error are common discriminators.",
+  "summary": "Snell's law, $n_1\\sin\\theta_1 = n_2\\sin\\theta_2$ (angles from the normal), relates the indices and angles at a boundary; solved for an index, $n_2 = \\dfrac{n_1\\sin\\theta_1}{\\sin\\theta_2}$, with the larger index always on the smaller-angle side. Setting the refraction angle to $90^\\circ$ gives the critical angle: $\\sin\\theta_c = 1/n$ for a boundary with air (larger $n$ → smaller $\\theta_c$). Total internal reflection occurs only when light travels from a higher-index toward a lower-index medium at an angle of incidence greater than the critical angle; then 100% of the light reflects back, with no refracted ray. This is the basis of optical fibres (lossless guiding), the brilliance of cut diamond, prism reflectors in binoculars, and the mirror-like water surface seen from below at a steep angle.",
+  "exitQuestion": {
+    "id": "BP8-U7-L5-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A material has a critical angle (with air) whose sine is $0.4$. What is its index of refraction?",
+    "choices": ["$2.5$", "$0.4$", "$1.4$", "$4.0$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c = 1/0.4 = 2.5$.",
+      "incorrect": {
+        "1": "That is $\\sin\\theta_c$, not $n$. Take the reciprocal.",
+        "2": "$n = 1.4$ would give $\\sin\\theta_c \\approx 0.71$.",
+        "3": "$1/0.4 = 2.5$, not $4.0$."
+      }
+    },
+    "hint": ["$\\sin\\theta_c = 1/n$, so $n = 1/\\sin\\theta_c$."],
+    "solution": "$\\sin\\theta_c = \\dfrac{1}{n}$ for a boundary with air, so $n = \\dfrac{1}{\\sin\\theta_c} = \\dfrac{1}{0.4} = 2.5$."
+  },
+  "questionBankFile": "geometric-optics.json",
+  "furtherPracticeQuestionIds": ["BP8-U7-MCQ-039", "BP8-U7-MCQ-044", "BP8-U7-MCQ-045", "BP8-U7-MCQ-046", "BP8-U7-MCQ-048", "BP8-U7-MCQ-050"],
+  "needsPlotly": false
+}
