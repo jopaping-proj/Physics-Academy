@@ -34,6 +34,14 @@
       "scope": "Temperature as average particle kinetic energy; Celsius / kelvin / Fahrenheit scales ($T_K = T_C + 273$); internal energy; thermal equilibrium and the zeroth law; heat as energy transferred by a temperature difference; conduction, convection, radiation; specific heat capacity ($Q = mc\\Delta T$); latent heat of fusion and vaporisation ($Q = mL$); calorimetry (energy lost = energy gained); heating curves. Scalar energy accounting only; no ideal-gas law, kinetic theory derivations, or entropy.",
       "source": "Authored for Physics Academy from resources/physics8/resources/unit5_thermal_physics_outcomes.md, calibrated against Tsokos IB Physics Topic 3 and OpenStax High School Physics Ch. 11. No rescue_sprint source bank exists for Unit 5."
     },
+    "momentum-and-collisions": {
+      "title": "Momentum and collisions (introductory)",
+      "banks": ["momentum-and-collisions.json", "momentum-and-collisions-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-1", "ap-physics-2", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Linear momentum $p = mv$ (a vector); momentum of a single object and of a two-object system; change in momentum $\\Delta p$; impulse $J = F\\,\\Delta t = \\Delta p$ (impulse-momentum theorem); conservation of momentum in a closed system; elastic vs inelastic collisions (including perfectly inelastic); one-dimensional two-object collision analysis solving for one unknown. Scalar/1-D sign convention only; no 2-D momentum, centre-of-mass frame, or coefficient of restitution.",
+      "source": "Authored for Physics Academy from resources/physics8/resources/unit6_momentum_collisions_outcomes.md, calibrated against AP Physics 1 CED Unit 4 (Linear Momentum) and OpenStax High School Physics Ch. 8. No rescue_sprint source bank exists for Unit 6."
+    },
     "newtonian-dynamics": {
       "title": "Newtonian dynamics (AP Physics 1 Unit 2)",
       "banks": [

@@ -1,0 +1,360 @@
+{
+  "id": "basis-p8-u6-l3",
+  "slug": "conservation-of-momentum",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 6: Momentum and Collisions",
+  "topic": "Conservation of Momentum",
+  "lessonTitle": "Conservation of Momentum",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit6_momentum_collisions_outcomes.md (Conservation of Momentum cluster, CM1); calibrated against AP Physics 1 CED Unit 4 (Topic 4.3) and OpenStax High School Physics Ch. 8",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 6 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 1 treatments.",
+  "prerequisites": [
+    "Lesson 1 — total momentum of a system is the signed sum $m_1 v_1 + m_2 v_2$.",
+    "Lesson 2 — impulse equals change in momentum; forces come in equal-and-opposite pairs.",
+    "Unit 3 — Newton's third law: the forces two objects exert on each other are equal in magnitude and opposite in direction."
+  ],
+  "majorObjective": "State and apply conservation of momentum: for a closed system with no external forces, the total momentum before an interaction equals the total after, and use this to solve for an unknown velocity.",
+  "subObjectives": [
+    "State that the total momentum of a closed (isolated) system is constant, and explain why using Newton's third law (internal forces are equal-and-opposite pairs that sum to zero).",
+    "Identify whether a system is closed for momentum: negligible external force (or external impulse) during the event.",
+    "Set up $p_{total,\\,before} = p_{total,\\,after}$ with signed momenta and solve for one unknown velocity (recoil, push-off, or collision).",
+    "Explain everyday recoil phenomena — a skater throwing a ball, a rifle, a rocket — as consequences of momentum conservation."
+  ],
+  "hook": {
+    "prompt": "An astronaut floating at rest in space (far from anything) throws a wrench away from herself. What happens to the astronaut?",
+    "choices": [
+      "Nothing — she stays at rest.",
+      "She drifts in the opposite direction to the wrench, more slowly because she is more massive.",
+      "She drifts in the same direction as the wrench.",
+      "She spins but does not move."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "In Lesson 2 you saw that the impulse two objects exert on each other in a collision is equal and opposite. Add that up and you get the single most powerful idea in this unit: the total momentum of a closed system never changes.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "The law, and why it holds",
+      "concept": "**Conservation of momentum:** for a **closed** (isolated) system \u2014 one with **no external forces** \u2014 the total momentum is constant:\n\n$$p_{total,\\,\\text{before}} = p_{total,\\,\\text{after}}$$\n\n**Why it holds.** When two objects in the system interact, they push on each other. By **Newton's third law** those forces are **equal in magnitude and opposite in direction**, and they act for the **same time**, so the impulses are equal and opposite. Object A's momentum change is exactly cancelled by object B's:\n\n$$\\Delta p_A = -\\Delta p_B \\quad\\Rightarrow\\quad \\Delta p_A + \\Delta p_B = 0$$\n\nSo the **total** momentum does not change. The internal forces redistribute momentum between the objects but cannot change the sum.\n\nThis works for **any** interaction \u2014 collisions, explosions, pushing apart, a ball thrown from a boat \u2014 as long as no significant **external** force acts.",
+      "representation": "Conservation of momentum in one dimension:\n\n$$m_1 v_{1i} + m_2 v_{2i} \\;=\\; m_1 v_{1f} + m_2 v_{2f}$$\n\n(all velocities signed). The forces *between* the objects are internal and cancel; only an *external* force can change the total.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-6/conservation-of-momentum/before-after-collision.svg",
+          "caption": "A 2 kg cart at 6 m/s hits a stationary 4 kg cart and they couple. Total momentum is 12 kg\u00b7m/s to the right before and after — the collision forces are internal and cannot change the total."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $60\\ \\mathrm{kg}$ astronaut at rest throws a $3.0\\ \\mathrm{kg}$ tool at $8.0\\ \\mathrm{m/s}$ to her right. (a) State the total momentum before and after. (b) Find the astronaut's velocity after the throw.",
+        "phases": [
+          {
+            "label": "(a) Total momentum",
+            "steps": [
+              "Before: both at rest, so $p_{total} = 0$.",
+              "The astronaut-plus-tool system has no external force, so $p_{total} = 0$ after as well."
+            ]
+          },
+          {
+            "label": "(b) The astronaut's velocity",
+            "steps": [
+              "$0 = m_{tool}v_{tool} + m_{astro}v_{astro} = (3.0)(+8.0) + (60)v_{astro}$.",
+              "$60\\,v_{astro} = -24$, so $v_{astro} = -0.40\\ \\mathrm{m/s}$ \u2014 $0.40\\ \\mathrm{m/s}$ to the left."
+            ]
+          }
+        ],
+        "keyMove": "Write the total momentum before, set it equal to the total after, and solve for the one unknown. Recoil is opposite to the thrown object."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L3-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Conservation of momentum applies to a system when:",
+        "choices": [
+          "the objects have equal mass.",
+          "there is no significant external force on the system during the event.",
+          "kinetic energy is conserved.",
+          "the objects do not touch."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a closed system (negligible external force) conserves total momentum, whatever the masses or the type of interaction.",
+          "incorrect": {
+            "0": "Momentum conservation does not require equal masses.",
+            "2": "Kinetic energy is conserved only in elastic collisions; momentum is conserved regardless.",
+            "3": "The objects can touch, collide, or stick — internal forces do not break conservation. Only external forces do."
+          }
+        },
+        "hint": ["What kind of force can change a system's total momentum?"],
+        "solution": "The total momentum of a system is conserved when no significant external force acts on it during the event (a closed or isolated system). Internal forces — the objects pushing on each other — are Newton's-third-law pairs that cancel and cannot change the total."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Is the system closed? Choosing the system",
+      "concept": "Momentum is conserved only for a **closed** system, so the first step in any problem is to **choose the system** and check that external forces are negligible **over the event**.\n\n- A **single object** in a collision is usually **not** closed \u2014 the other object pushes on it (external to that one object). Take **both** objects as the system.\n- A ball **falling** is not closed \u2014 gravity is external. Take **ball + Earth**, and momentum is conserved (Earth's recoil is unmeasurably small).\n- **Friction** and **air resistance** are external. Over a **long** time they matter; over a **brief collision** their impulse is usually negligible, so momentum is approximately conserved even on a slightly rough surface.\n- A **frictionless track** removes the main external horizontal force, making the two-cart system genuinely closed.\n\nGravity and the normal force are usually **vertical**, so for **horizontal** collisions they do not affect the horizontal momentum.",
+      "representation": "Checklist before writing $p_i = p_f$:\n\n1. What is the system? (Usually *all* the interacting objects.)\n2. Any external horizontal force? (Friction, a hand, a motor, a tilt.)\n3. Does it act long enough during the event to matter?\n4. If negligible \u2192 momentum is conserved; proceed.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, state whether the total momentum of the named system is conserved during the event: (a) two gliders colliding on a frictionless air track [system: the two gliders]; (b) a ball rolling across a carpet and slowing [system: the ball]; (c) a cannon firing a cannonball [system: cannon + cannonball]; (d) a car speeding up from a stoplight [system: the car].",
+        "phases": [
+          {
+            "label": "(a) Gliders on an air track",
+            "steps": ["Frictionless, brief collision, forces internal \u2192 **conserved**."]
+          },
+          {
+            "label": "(b) Ball on carpet",
+            "steps": ["Carpet friction is a large external force acting the whole time \u2192 **not conserved** (the ball loses momentum to Earth via friction)."]
+          },
+          {
+            "label": "(c) Cannon firing",
+            "steps": ["Over the brief firing, external forces (gravity, ground friction) deliver little impulse; the explosion is internal \u2192 **conserved** (cannon recoils, ball flies forward)."]
+          },
+          {
+            "label": "(d) Car accelerating",
+            "steps": ["The road pushes the car forward (friction on the drive wheels) \u2014 an external force adding momentum \u2192 **not conserved** for the car alone."]
+          }
+        ],
+        "keyMove": "Include all interacting objects in the system; conservation holds only if external forces deliver negligible impulse during the event."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L3-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Two carts collide on a track that has a small amount of friction. Why is it still reasonable to treat the two-cart system's momentum as conserved *during the collision*?",
+        "choices": [
+          "Friction only acts after the collision.",
+          "The collision lasts a very short time, so friction (an external force) delivers a negligible impulse during it, even though it matters over longer times.",
+          "Friction is an internal force.",
+          "Friction speeds the carts up, cancelling its own effect."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — impulse is force times time. Over the brief collision, the small friction force acts for so little time that its impulse (and hence its effect on the total momentum) is negligible.",
+          "incorrect": {
+            "0": "Friction acts whenever the carts move, including during the collision — it is just that its impulse over that tiny time is small.",
+            "2": "Friction with the track is external to the two-cart system.",
+            "3": "Friction opposes motion; it does not speed the carts up."
+          }
+        },
+        "hint": ["External impulse = (external force) x (time). The collision time is tiny."],
+        "solution": "Conservation of momentum holds exactly only with no external force. Friction with the track is an external force, but the collision itself lasts only a fraction of a second, so friction's impulse ($F_{friction} \\times \\Delta t_{collision}$) during the collision is tiny compared with the momenta involved. So momentum is very nearly conserved through the collision, even though friction noticeably slows the carts over the following seconds."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Solving problems: recoil, push-off, and collisions",
+      "concept": "The method is always the same:\n\n1. **Choose the system** (all interacting objects) and a **positive direction**.\n2. Write the **total momentum before**: $p_i = m_1 v_{1i} + m_2 v_{2i}$ (signed).\n3. Write the **total momentum after**: $p_f = m_1 v_{1f} + m_2 v_{2f}$ (or $(m_1 + m_2)v$ if they stick).\n4. Set $p_i = p_f$ and **solve for the one unknown**.\n\n**Recoil / push-off** (starting from rest): $p_i = 0$, so the two objects fly apart with **equal and opposite** momenta. The lighter one moves faster ($m_1 v_1 = m_2 v_2$ in size).\n\n**Explosion:** same as push-off, but the pieces may be many \u2014 their momenta still sum to the (usually zero) initial total.\n\nMomentum conservation gives you **one equation**, so you can solve for **one** unknown. If two are unknown, you need a second relationship (e.g. 'they stick together', or 'the collision is elastic' \u2014 Lesson 4).",
+      "representation": "$$m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$$\n\n- Stick together: right side becomes $(m_1 + m_2)v_f$.\n- Start from rest: left side is $0$, so $m_1 v_{1f} = -m_2 v_{2f}$.\n- One unknown per equation.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $1.0\\ \\mathrm{kg}$ trolley moving right at $5.0\\ \\mathrm{m/s}$ collides with a stationary $4.0\\ \\mathrm{kg}$ trolley. (a) If they stick together, find their common velocity. (b) If instead the $1.0\\ \\mathrm{kg}$ trolley rebounds at $3.0\\ \\mathrm{m/s}$, find the $4.0\\ \\mathrm{kg}$ trolley's velocity.",
+        "phases": [
+          {
+            "label": "Total momentum before",
+            "steps": ["$p_i = (1.0)(+5.0) + (4.0)(0) = +5.0\\ \\mathrm{kg\\,m/s}$."]
+          },
+          {
+            "label": "(a) Stuck together",
+            "steps": [
+              "$(1.0 + 4.0)v = +5.0$, so $v = +1.0\\ \\mathrm{m/s}$ (rightward)."
+            ]
+          },
+          {
+            "label": "(b) First trolley rebounds",
+            "steps": [
+              "$p_f = (1.0)(-3.0) + (4.0)v_2 = -3.0 + 4.0v_2$.",
+              "$+5.0 = -3.0 + 4.0v_2$, so $4.0v_2 = 8.0$ and $v_2 = +2.0\\ \\mathrm{m/s}$ (rightward)."
+            ]
+          }
+        ],
+        "keyMove": "One equation ($p_i = p_f$), one unknown. 'Stick together' or a given final velocity supplies what you need."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L3-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $70\\ \\mathrm{kg}$ person stands on a $30\\ \\mathrm{kg}$ stationary cart on frictionless ground and jumps off horizontally at $2.0\\ \\mathrm{m/s}$. How fast does the cart move, and in which direction?",
+        "choices": [
+          "$4.7\\ \\mathrm{m/s}$, opposite to the person.",
+          "$2.0\\ \\mathrm{m/s}$, same direction as the person.",
+          "$0.86\\ \\mathrm{m/s}$, opposite to the person.",
+          "$0\\ \\mathrm{m/s}$ — the cart does not move."
+        ],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — total momentum starts at zero: $0 = (70)(+2.0) + (30)v_{cart}$, so $v_{cart} = -140/30 \\approx -4.7\\ \\mathrm{m/s}$ (opposite direction).",
+          "incorrect": {
+            "1": "The cart recoils *opposite* to the person, and at a different speed (it is lighter, so faster).",
+            "2": "That is the person's speed. Momentum balance: $v_{cart} = -(70)(2.0)/30 \\approx -4.7\\ \\mathrm{m/s}$.",
+            "3": "The cart must recoil to keep the total momentum zero."
+          }
+        },
+        "hint": ["Total momentum before = 0. Person's forward momentum ($70 \\times 2.0$) must be balanced by the cart's backward momentum."],
+        "solution": "Initial total momentum is zero. $0 = m_{person}v_{person} + m_{cart}v_{cart} = (70)(+2.0) + (30)v_{cart}$. So $v_{cart} = \\dfrac{-140}{30} \\approx -4.7\\ \\mathrm{m/s}$: the cart recoils at about $4.7\\ \\mathrm{m/s}$ opposite to the person. The lighter cart moves faster than the heavier person."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U6-L3-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "objects-need-something-external-to-push-against-to-accelerate",
+      "question": "A student says: 'A rocket can't accelerate in deep space because there's no air for the exhaust to push against.' What is the correct physics?",
+      "choices": [
+        "The student is right — rockets need air.",
+        "The rocket ejects exhaust gas backward; by conservation of momentum the rocket-plus-exhaust total stays constant, so the rocket gains forward momentum equal to the backward momentum of the exhaust. No external medium is needed.",
+        "The rocket pushes against its own structure.",
+        "Rockets in space rely entirely on gravity."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — it is the same physics as the skater throwing a ball or the astronaut throwing a wrench. Ejecting mass one way pushes you the other way.",
+        "incorrect": {
+          "0": "Rockets, satellites, and deep-space probes all operate in vacuum using exactly this principle.",
+          "2": "The forces between the rocket body and the exhaust are internal to the system; the momentum comes from expelling mass, not from pushing on anything external.",
+          "3": "Gravity assists exist but are separate; the basic thrust is momentum exchange with the exhaust."
+        }
+      },
+      "hint": ["Does the astronaut in the hook need air to recoil from the wrench? Same idea, continuously."],
+      "solution": "A rocket continuously ejects exhaust gas backward at high speed. The rocket-plus-exhaust system has no external force (in deep space), so its total momentum is conserved. As the exhaust carries momentum backward, the rocket gains equal momentum forward. It does not need to push against any external medium — the same reason an astronaut recoils when she throws a wrench."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $2.0\\ \\mathrm{kg}$ ball moving right at $6.0\\ \\mathrm{m/s}$ collides with a $2.0\\ \\mathrm{kg}$ ball moving left at $2.0\\ \\mathrm{m/s}$, and they stick. Find their common velocity.\n\nStudent's response: '$p_i = (2.0)(6.0) + (2.0)(2.0) = 12 + 4 = 16$. Common velocity $= 16 / 4.0 = 4.0\\ \\mathrm{m/s}$ to the right.'",
+      "prompts": [
+        "State how the two velocities should be signed.",
+        "Identify the student's error and recompute the total momentum.",
+        "Give the correct common velocity."
+      ],
+      "modelResponse": "Momentum is a vector: with right positive, the second ball moves *left*, so its velocity is $-2.0\\ \\mathrm{m/s}$. Error: the student used $+2.0\\ \\mathrm{m/s}$ for the second ball, adding the magnitudes. Correct total: $p_i = (2.0)(+6.0) + (2.0)(-2.0) = 12 - 4 = +8.0\\ \\mathrm{kg\\,m/s}$. Common velocity: $v = \\dfrac{8.0}{4.0} = +2.0\\ \\mathrm{m/s}$ to the right.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A verbal scenario names the interacting objects (the system), their masses, and their velocities before; conservation of momentum, $\\sum m_i v_i$ (before) $= \\sum m_i v_i$ (after), is one signed equation that solves for one unknown velocity. A before/after diagram or momentum bar chart shows the total staying fixed while individual momenta shift. The law rests on Newton's third law (Unit 3) and the impulse-momentum theorem (Lesson 2). Lesson 4 adds a second equation (kinetic-energy conservation) for elastic collisions.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U6-L3-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.015\\ \\mathrm{kg}$ bullet is fired at $400\\ \\mathrm{m/s}$ from a $4.0\\ \\mathrm{kg}$ rifle initially at rest. What is the rifle's recoil speed?",
+      "choices": ["$1.5\\ \\mathrm{m/s}$", "$0.67\\ \\mathrm{m/s}$", "$6.0\\ \\mathrm{m/s}$", "$400\\ \\mathrm{m/s}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $0 = (0.015)(+400) + (4.0)v_r$, so $v_r = -6.0/4.0 = -1.5\\ \\mathrm{m/s}$ (backward).",
+        "incorrect": {
+          "1": "Check: bullet momentum $= (0.015)(400) = 6.0\\ \\mathrm{kg\\,m/s}$; rifle speed $= 6.0/4.0 = 1.5\\ \\mathrm{m/s}$.",
+          "2": "$6.0$ is the momentum in $\\mathrm{kg\\,m/s}$, not the speed. Divide by the rifle mass $4.0\\ \\mathrm{kg}$.",
+          "3": "The rifle is far more massive than the bullet, so it recoils far slower."
+        }
+      },
+      "hint": ["Total momentum before firing is zero. Bullet's forward momentum = rifle's backward momentum in size."],
+      "solution": "Initial total momentum is zero. $0 = m_b v_b + m_r v_r = (0.015)(+400) + (4.0)v_r$. So $v_r = \\dfrac{-6.0}{4.0} = -1.5\\ \\mathrm{m/s}$: the rifle recoils backward at $1.5\\ \\mathrm{m/s}$."
+    },
+    {
+      "id": "BP8-U6-L3-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "limiting-case-analysis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "In the rifle example, the bullet and rifle carry equal-magnitude momenta. Which carries more kinetic energy, and by roughly what factor?",
+      "choices": [
+        "The rifle, by about the mass ratio.",
+        "The bullet, by about the mass ratio (~270): for equal momentum, $KE = p^2/(2m)$ favours the lighter object.",
+        "They carry equal kinetic energy.",
+        "Neither carries kinetic energy until impact."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — equal $|p|$ means $KE \\propto 1/m$, so the bullet (about 270 times lighter) carries about 270 times the kinetic energy of the recoiling rifle.",
+        "incorrect": {
+          "0": "The heavier object has *less* kinetic energy for equal momentum.",
+          "2": "Equal momentum does not mean equal kinetic energy unless the masses are equal.",
+          "3": "Both move right after firing, so both have kinetic energy immediately."
+        }
+      },
+      "hint": ["$KE = \\dfrac{p^2}{2m}$. Same $|p|$, so how does $KE$ compare between a $0.015\\ \\mathrm{kg}$ bullet and a $4.0\\ \\mathrm{kg}$ rifle?"],
+      "solution": "With equal-magnitude momenta, $KE = \\dfrac{p^2}{2m}$ is inversely proportional to mass. The rifle is about $4.0/0.015 \\approx 270$ times more massive than the bullet, so the bullet carries about 270 times the kinetic energy. This is why the recoil is a manageable shove while the bullet is destructive — momentum is shared equally, but kinetic energy is not."
+    },
+    {
+      "id": "BP8-U6-L3-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "On a frictionless surface, a $0.50\\ \\mathrm{kg}$ cart moving right at $4.0\\ \\mathrm{m/s}$ collides with a $1.5\\ \\mathrm{kg}$ cart moving left at $2.0\\ \\mathrm{m/s}$. After the collision the $0.50\\ \\mathrm{kg}$ cart moves left at $2.0\\ \\mathrm{m/s}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the total momentum of the two-cart system before the collision.",
+          "modelResponse": "Take right as positive. $p_i = (0.50)(+4.0) + (1.5)(-2.0) = 2.0 - 3.0 = -1.0\\ \\mathrm{kg\\,m/s}$ (to the left).",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Use conservation of momentum to find the velocity of the $1.5\\ \\mathrm{kg}$ cart after the collision.",
+          "modelResponse": "$p_f = (0.50)(-2.0) + (1.5)v_2 = -1.0 + 1.5v_2$. Set $p_f = p_i = -1.0$: $-1.0 = -1.0 + 1.5v_2$, so $1.5v_2 = 0$ and $v_2 = 0\\ \\mathrm{m/s}$. The $1.5\\ \\mathrm{kg}$ cart is at rest after the collision.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) State one assumption you made in part (b), and explain what a real experiment would show if that assumption failed.",
+          "modelResponse": "The main assumption is that the system is closed — no significant external horizontal force acts during the collision (frictionless surface, brief collision). If there were noticeable friction, an external impulse would act over the collision and the measured total momentum after would differ slightly from before, so the calculated $v_2$ would be a little off. Timing and speed measurement uncertainty would also cause small discrepancies.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 Topic 4.3 is built on this: setting up $p_i = p_f$ with signed velocities to find a recoil speed, a push-off speed, or a post-collision velocity; identifying whether a system is closed; and explaining recoil and rocket propulsion via momentum conservation and Newton's third law. Momentum bar charts are a required representation.",
+  "summary": "For a closed system (no significant external force during the event), the total momentum is conserved: $p_{total,\\,before} = p_{total,\\,after}$. This follows from Newton's third law — the internal forces between objects are equal-and-opposite pairs whose impulses cancel, so individual momenta change but the total does not. To use it: choose the system (all interacting objects) and a positive direction, write the signed total momentum before and after, set them equal, and solve for the one unknown. Push-off and recoil from rest give equal and opposite momenta (the lighter object moves faster); this is why rifles recoil and rockets work in vacuum. One conservation equation solves for one unknown; a second condition (sticking together, or an elastic collision) is needed for two unknowns.",
+  "exitQuestion": {
+    "id": "BP8-U6-L3-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A $3.0\\ \\mathrm{kg}$ cart moving right at $2.0\\ \\mathrm{m/s}$ collides with and sticks to a stationary $1.0\\ \\mathrm{kg}$ cart. What is their common velocity?",
+    "choices": ["$1.5\\ \\mathrm{m/s}$", "$2.0\\ \\mathrm{m/s}$", "$0.5\\ \\mathrm{m/s}$", "$6.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (3.0)(2.0) + (1.0)(0) = 6.0\\ \\mathrm{kg\\,m/s}$; $(3.0 + 1.0)v = 6.0$, so $v = 1.5\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "The moving cart slows when it picks up the extra mass; it does not keep $2.0\\ \\mathrm{m/s}$.",
+        "2": "This divides by $12$ (double the total mass). $v = 6.0/4.0 = 1.5$.",
+        "3": "This is the total momentum value, not the velocity. Divide by the total mass $4.0\\ \\mathrm{kg}$."
+      }
+    },
+    "hint": ["$p_i = p_f$. After sticking, total mass is $3.0 + 1.0 = 4.0\\ \\mathrm{kg}$."],
+    "solution": "$p_i = (3.0\\ \\mathrm{kg})(2.0\\ \\mathrm{m/s}) + (1.0\\ \\mathrm{kg})(0) = 6.0\\ \\mathrm{kg\\,m/s}$. Sticking together: $(3.0 + 1.0)v = 6.0$, so $v = \\dfrac{6.0}{4.0} = 1.5\\ \\mathrm{m/s}$ in the original direction."
+  },
+  "questionBankFile": "momentum-and-collisions.json",
+  "furtherPracticeQuestionIds": ["BP8-U6-MCQ-027", "BP8-U6-MCQ-028", "BP8-U6-MCQ-029", "BP8-U6-MCQ-033", "BP8-U6-MCQ-035", "BP8-U6-MCQ-038"],
+  "needsPlotly": false
+}

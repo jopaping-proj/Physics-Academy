@@ -1,0 +1,364 @@
+{
+  "id": "basis-p8-u6-l5",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 6: Momentum and Collisions",
+  "topic": "Synthesis and Transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit6_momentum_collisions_outcomes.md (integrates all four clusters); calibrated against AP Physics 1 CED Unit 4 and OpenStax High School Physics Ch. 8",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 6 — this synthesis lesson is authored to the pattern of the Unit 2, 3, 4, and 5 synthesis modules.",
+  "prerequisites": [
+    "Lessons 1–4 of this unit — momentum $p = mv$, impulse $J = F\\,\\Delta t = \\Delta p$, conservation of momentum, and elastic vs inelastic collisions.",
+    "Unit 4 — kinetic energy and its conservation; mechanical energy converting to internal energy."
+  ],
+  "majorObjective": "Integrate the whole unit: choose between the impulse-momentum theorem and conservation of momentum for a given problem, run a multi-stage momentum-and-energy analysis, and reason about safety and design using momentum ideas.",
+  "subObjectives": [
+    "Given an unfamiliar scenario, decide whether it calls for the impulse-momentum theorem (one object, a force over a time) or conservation of momentum (two or more objects interacting).",
+    "Track momentum and kinetic energy separately through a collision or explosion, using momentum conservation to find velocities and a kinetic-energy comparison to classify the interaction.",
+    "Explain safety features (crumple zones, airbags, padding, catching technique) with the impulse-momentum theorem, and 'bounce vs stick' outcomes with momentum transfer.",
+    "Check that an answer is physically reasonable: momentum conserved, kinetic energy not increased (without a source), directions sensible."
+  ],
+  "hook": {
+    "prompt": "You must find how fast a block moves after a lump of putty is thrown at it and sticks. Which principle do you reach for first?",
+    "choices": [
+      "The impulse-momentum theorem, using the force of the throw.",
+      "Conservation of momentum for the putty-plus-block system.",
+      "Conservation of kinetic energy.",
+      "Newton's second law, $F = ma$."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Each lesson gave you one tool. Real problems arrive without a label. This lesson is about choosing: is this one object being pushed (impulse-momentum theorem), or two objects interacting (conservation of momentum)? And is kinetic energy conserved, or lost?",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Choosing the tool",
+      "concept": "Two big tools, two triggers:\n\n| The scenario has... | Use |\n|---|---|\n| **one object**, a force acting over a time (a bat hits a ball, a wall stops a ball, brakes stop a car, a floor catches a jumper) | **impulse-momentum theorem** $F\\,\\Delta t = m(v_f - v_i)$ |\n| **two (or more) objects** interacting with each other (collision, explosion, push-off, recoil, coupling) | **conservation of momentum** $\\sum m_i v_{i,\\text{before}} = \\sum m_i v_{i,\\text{after}}$ |\n\nThen a second question \u2014 **is kinetic energy conserved?**\n\n- Told it is elastic, or 'bounces with no speed loss' \u2192 $KE_i = KE_f$ (an extra equation).\n- Told the objects stick, or it is a crash / explosion \u2192 kinetic energy is **not** conserved (inelastic); compute the loss by comparing $KE_i$ and $KE_f$.\n\nMany problems combine both tools: use momentum conservation to get the velocities, then the impulse-momentum theorem to get a force during the contact.",
+      "representation": "Decision flow:\n\n1. One object + a force over time? \u2192 impulse-momentum theorem.\n2. Two objects interacting? \u2192 conservation of momentum (one equation, one unknown).\n3. Need a second unknown? \u2192 add 'elastic' ($KE_i = KE_f$) or 'stick together'.\n4. Asked for a force during contact? \u2192 impulse-momentum theorem with the contact time.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "For each, name the principle(s) to use \u2014 do not solve: (a) 'A $0.15\\ \\mathrm{kg}$ ball hits a wall at $12\\ \\mathrm{m/s}$ and rebounds at $10\\ \\mathrm{m/s}$ over $0.008\\ \\mathrm{s}$ \u2014 find the force.' (b) 'A $2\\ \\mathrm{kg}$ cart hits a $3\\ \\mathrm{kg}$ cart and they couple \u2014 find their speed.' (c) 'A $1\\ \\mathrm{kg}$ ball elastically hits a stationary $1\\ \\mathrm{kg}$ ball \u2014 find both final velocities.' (d) 'A $60\\ \\mathrm{kg}$ skater throws a $2\\ \\mathrm{kg}$ ball at $5\\ \\mathrm{m/s}$ \u2014 find the recoil, then the force if the throw took $0.4\\ \\mathrm{s}$.'",
+        "phases": [
+          {
+            "label": "(a) Ball and wall",
+            "steps": ["One object, force over time \u2192 impulse-momentum theorem: $F = m(v_f - v_i)/\\Delta t$ (with signs for the rebound)."]
+          },
+          {
+            "label": "(b) Coupling carts",
+            "steps": ["Two objects interacting, they stick \u2192 conservation of momentum: $m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2)v_f$."]
+          },
+          {
+            "label": "(c) Elastic equal-mass collision",
+            "steps": ["Two objects, elastic, two unknowns \u2192 conservation of momentum **plus** $KE_i = KE_f$ \u2014 or use the equal-mass result: they exchange velocities."]
+          },
+          {
+            "label": "(d) Skater throws a ball",
+            "steps": [
+              "Recoil: conservation of momentum (system starts at rest, $p = 0$).",
+              "Force during the throw: impulse-momentum theorem on the ball (or the skater), $F = \\Delta p / \\Delta t$."
+            ]
+          }
+        ],
+        "keyMove": "One object + force + time \u2192 impulse-momentum theorem. Two objects interacting \u2192 conservation of momentum. Combine them when a problem asks for both a velocity and a force."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L5-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "evaluate-assumptions",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "You are asked for the common speed of two railway cars after they couple. Which principle applies, and does kinetic energy help?",
+        "choices": [
+          "Conservation of momentum; and kinetic energy is also conserved, so you have two equations.",
+          "Conservation of momentum alone gives the answer; kinetic energy is not conserved (coupling is perfectly inelastic), so it is only useful afterward to find the energy lost.",
+          "The impulse-momentum theorem, using the coupling force.",
+          "Conservation of kinetic energy alone."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — coupling is perfectly inelastic. Momentum conservation with one common final velocity is one equation for one unknown; kinetic energy is not conserved, so it does not give a second equation, only the energy-lost calculation.",
+          "incorrect": {
+            "0": "Coupling cars lose kinetic energy, so $KE_i = KE_f$ does not hold.",
+            "2": "You do not know the coupling force or contact time; momentum conservation sidesteps that.",
+            "3": "Kinetic energy is not conserved when cars couple."
+          }
+        },
+        "hint": ["Coupling = objects stick = perfectly inelastic. What is conserved, and what is not?"],
+        "solution": "Coupling railway cars is a perfectly inelastic collision. Total momentum is conserved: $m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2)v_f$ — one equation, one unknown, giving the common speed. Kinetic energy is *not* conserved, so it provides no second equation; you can only use it afterward to compute how much kinetic energy was converted to heat and sound."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Multi-stage: momentum first, then energy or force",
+      "concept": "A common pattern: an interaction, then a question about what happens next (a force, a height, a distance).\n\n**Order of operations:**\n\n1. **Conservation of momentum** through the interaction \u2192 the velocity right after.\n2. Then use the appropriate follow-on tool:\n   - a **force during a brief contact** \u2192 impulse-momentum theorem with the contact time;\n   - a **stopping distance under friction** \u2192 work-energy ideas (Unit 4): the post-collision $KE$ is removed by friction over the distance;\n   - a **rise up a ramp or into a spring** \u2192 conservation of (mechanical) energy from the post-collision speed.\n\n**Ballistic-pendulum style:** a bullet embeds in a block (perfectly inelastic \u2192 momentum conservation for the speed), then the block-plus-bullet swings up (energy conservation for the height). You cannot use energy conservation across the embedding step \u2014 kinetic energy is lost there.",
+      "representation": "$$\\underbrace{\\text{collision}}_{\\text{momentum conservation} \\to v_{\\text{after}}} \\;\\longrightarrow\\; \\underbrace{\\text{what happens next}}_{\\text{impulse, friction/work, or energy conservation}}$$\n\nNever run energy conservation *through* an inelastic collision.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.020\\ \\mathrm{kg}$ dart moving at $30\\ \\mathrm{m/s}$ embeds in a $0.480\\ \\mathrm{kg}$ block at rest on a frictionless table. The block then slides into a spring and compresses it. (a) Find the speed of the block-plus-dart just after impact. (b) Explain which principle to use for the spring-compression stage and which stage you may NOT use energy conservation across.",
+        "phases": [
+          {
+            "label": "(a) Speed after impact",
+            "steps": [
+              "Perfectly inelastic: $p_i = (0.020)(30) = 0.60\\ \\mathrm{kg\\,m/s}$.",
+              "$(0.020 + 0.480)v = 0.60$, so $(0.50)v = 0.60$ and $v = 1.2\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(b) Which principle where",
+            "steps": [
+              "**Spring-compression stage:** conservation of mechanical energy \u2014 the block-plus-dart's kinetic energy ($\\tfrac{1}{2}(0.50)(1.2)^2 = 0.36\\ \\mathrm{J}$) converts to spring potential energy $\\tfrac{1}{2}kx^2$ at maximum compression.",
+              "**You may NOT** use energy conservation across the **embedding** step: the dart ploughing into the block is inelastic, so kinetic energy is lost there. Use momentum conservation for that step (as in part a)."
+            ]
+          }
+        ],
+        "keyMove": "Momentum conservation through the inelastic collision for the speed; energy conservation only for the frictionless motion *after* it."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L5-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 6,
+        "question": "In a ballistic pendulum, a bullet embeds in a hanging block and the block swings up to a height $h$. Which sequence of principles gives the bullet's original speed?",
+        "choices": [
+          "Energy conservation for the whole process (bullet to top of swing).",
+          "Momentum conservation for the embedding (bullet speed to block-plus-bullet speed), then energy conservation for the swing (that speed to height $h$).",
+          "The impulse-momentum theorem for the embedding, then $F = ma$ for the swing.",
+          "Energy conservation for the embedding, then momentum conservation for the swing."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the embedding is inelastic (kinetic energy lost), so use momentum conservation there; the swing is (nearly) frictionless, so use energy conservation there. Work backward from $h$ to the bullet's speed.",
+          "incorrect": {
+            "0": "You cannot use energy conservation across the embedding — a lot of kinetic energy is lost to heat and deformation.",
+            "2": "You do not know the embedding force or time; and $F = ma$ does not directly give a height.",
+            "3": "It is the reverse: momentum for the (inelastic) embedding, energy for the (conservative) swing."
+          }
+        },
+        "hint": ["Which stage loses kinetic energy? Use momentum there. Which stage is frictionless? Use energy there."],
+        "solution": "Stage 1, the bullet embedding in the block, is perfectly inelastic — kinetic energy is lost — so use conservation of momentum: $m_{bullet}v_{bullet} = (m_{bullet} + m_{block})V$, giving the combined speed $V$ just after impact. Stage 2, the block-plus-bullet swinging up to height $h$, is essentially frictionless, so use conservation of energy: $\\tfrac{1}{2}(m_{bullet} + m_{block})V^2 = (m_{bullet} + m_{block})gh$. Solve stage 2 for $V$, then stage 1 for $v_{bullet}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Safety, design, and reasonableness",
+      "concept": "**Momentum ideas explain a lot of engineering:**\n\n- **Crumple zones / airbags / crash mats / boxing gloves / running shoes:** the change in momentum is fixed by the speeds; extending the contact time $\\Delta t$ reduces the force $F = \\Delta p / \\Delta t$.\n- **Crumple zones are deliberately inelastic:** a car that *bounced* off would have a larger $\\Delta p$ (and force) than one that crumples to a stop. Inelastic is safer here.\n- **Rockets, jet skis, squid, party poppers:** eject mass one way, move the other way (momentum conservation from rest).\n- **'Follow through' in sport:** keep the bat/racket/foot in contact longer \u2192 larger $\\Delta t$ \u2192 larger impulse \u2192 larger $\\Delta p$ \u2192 faster ball.\n\n**Reasonableness checks for any answer:**\n\n- Is total momentum the same before and after? (It must be, for a closed system.)\n- Is $KE_f \\le KE_i$? (It cannot exceed $KE_i$ without a spring or explosive.)\n- Do the directions make sense? (Recoil opposite the thrown object; a struck object moves forward, not backward, unless the striker rebounds.)",
+      "representation": "Design principle: for a fixed $\\Delta p$, **spread the impulse over more time** to cut the force.\n\nCheck any collision answer against: momentum conserved? $KE_f \\le KE_i$? directions sensible?",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A student solves a collision problem and gets: a $2\\ \\mathrm{kg}$ cart at $3\\ \\mathrm{m/s}$ hits a stationary $2\\ \\mathrm{kg}$ cart; afterward the first cart moves at $1\\ \\mathrm{m/s}$ forward and the second at $2.5\\ \\mathrm{m/s}$ forward. Check the answer.",
+        "phases": [
+          {
+            "label": "Momentum check",
+            "steps": [
+              "$p_i = (2)(3) + 0 = 6\\ \\mathrm{kg\\,m/s}$.",
+              "$p_f = (2)(1) + (2)(2.5) = 2 + 5 = 7\\ \\mathrm{kg\\,m/s}$.",
+              "$7 \\ne 6$ \u2014 **momentum is not conserved**, so the answer is wrong."
+            ]
+          },
+          {
+            "label": "Kinetic energy check",
+            "steps": [
+              "$KE_i = \\tfrac{1}{2}(2)(3)^2 = 9\\ \\mathrm{J}$.",
+              "$KE_f = \\tfrac{1}{2}(2)(1)^2 + \\tfrac{1}{2}(2)(2.5)^2 = 1 + 6.25 = 7.25\\ \\mathrm{J}$.",
+              "$KE_f < KE_i$ is fine on its own, but the momentum failure already condemns the answer."
+            ]
+          },
+          {
+            "label": "Conclusion",
+            "steps": ["Reject the answer and re-solve. A valid inelastic result: e.g. second cart at $2\\ \\mathrm{m/s}$, first at $1\\ \\mathrm{m/s}$ gives $p_f = 2 + 4 = 6\\ \\mathrm{kg\\,m/s}$ \u2014 momentum conserved."]
+          }
+        ],
+        "keyMove": "Always check: total momentum equal before and after? $KE_f$ not above $KE_i$? If either fails, the answer is wrong."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L5-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "reasonableness-check",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A student's collision answer has the total kinetic energy increasing from $20\\ \\mathrm{J}$ to $28\\ \\mathrm{J}$, with no spring or explosive involved. What should the student conclude?",
+        "choices": [
+          "The collision was 'super-elastic', which is fine.",
+          "There is an error — a passive collision cannot increase the total kinetic energy.",
+          "Momentum must also have increased.",
+          "The masses were entered in grams."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — with no stored energy released, kinetic energy after a collision can be equal to (elastic) or less than (inelastic) the kinetic energy before, never more. An increase means a mistake.",
+          "incorrect": {
+            "0": "Kinetic energy increasing needs an energy source; it is not a normal collision outcome.",
+            "2": "The kinetic-energy error stands on its own; momentum should still be conserved.",
+            "3": "A unit error is possible but the direct red flag is the impossible energy increase."
+          }
+        },
+        "hint": ["Where would the extra $8\\ \\mathrm{J}$ have come from? Was there a spring or explosive?"],
+        "solution": "In a passive collision (no compressed spring, no explosive), the total kinetic energy afterward is at most the total before: equal for an elastic collision, less for an inelastic one. It can never increase. A calculated increase from $20\\ \\mathrm{J}$ to $28\\ \\mathrm{J}$ means an arithmetic or sign error — the student should recheck, starting with whether momentum is conserved."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U6-L5-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "For a ballistic pendulum, a student uses energy conservation across the whole process — bullet's initial kinetic energy equals the block-plus-bullet's gravitational potential energy at the top of the swing. What goes wrong, and what is the fix?",
+      "choices": [
+        "Nothing — energy is always conserved.",
+        "Kinetic energy is not conserved when the bullet embeds (an inelastic collision), so equating the bullet's KE to the final PE overestimates the height / underestimates the required bullet speed. Fix: use momentum conservation for the embedding, then energy conservation only for the swing.",
+        "Momentum is not conserved in the swing, so the whole method fails.",
+        "The student should have used $F = ma$ throughout."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — a large fraction of the bullet's kinetic energy is lost to heat and deformation as it embeds. Only momentum is conserved across that step; energy conservation is valid only for the frictionless swing afterward.",
+        "incorrect": {
+          "0": "*Total* energy is conserved, but *kinetic* energy is not — much of it becomes internal energy in the embedding step.",
+          "2": "Momentum *is* conserved in the embedding; and energy is conserved in the swing. The error is using energy across the embedding.",
+          "3": "$F = ma$ needs forces and times you do not have; the two-stage momentum-then-energy method is the standard approach."
+        }
+      },
+      "hint": ["Which stage of a ballistic pendulum loses kinetic energy? You cannot use energy conservation across that stage."],
+      "solution": "When the bullet embeds in the block, the collision is perfectly inelastic: most of the bullet's kinetic energy is converted to internal energy and deformation, not carried into the swing. So equating the bullet's initial kinetic energy to the final gravitational potential energy is wrong. The correct method has two stages: conservation of momentum for the embedding ($m_b v_b = (m_b + m_{block})V$), then conservation of energy for the frictionless swing ($\\tfrac{1}{2}(m_b + m_{block})V^2 = (m_b + m_{block})gh$)."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $0.30\\ \\mathrm{kg}$ ball moving right at $8.0\\ \\mathrm{m/s}$ collides with a stationary $0.30\\ \\mathrm{kg}$ ball. The student is told the collision is elastic and asked for both final velocities.\n\nStudent's response: 'Momentum: $2.4 = 0.30 v_1 + 0.30 v_2$. That is one equation with two unknowns, so the problem cannot be solved.'",
+      "prompts": [
+        "State what second equation an elastic collision provides.",
+        "For this equal-mass case with the target at rest, state the standard shortcut result.",
+        "Give both final velocities and verify momentum and kinetic energy."
+      ],
+      "modelResponse": "An elastic collision also conserves total kinetic energy: $\\tfrac{1}{2}(0.30)(8.0)^2 = \\tfrac{1}{2}(0.30)v_1^2 + \\tfrac{1}{2}(0.30)v_2^2$. That is the second equation, so the problem *is* solvable. Shortcut: for a 1-D elastic collision between equal masses with the target at rest, the balls exchange velocities. So $v_1 = 0$ and $v_2 = 8.0\\ \\mathrm{m/s}$. Check: momentum $= (0.30)(0) + (0.30)(8.0) = 2.4\\ \\mathrm{kg\\,m/s}$ (matches $2.4$); kinetic energy $= 0 + \\tfrac{1}{2}(0.30)(8.0)^2 = 9.6\\ \\mathrm{J}$ (matches the initial $9.6\\ \\mathrm{J}$).",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A described scenario triggers a tool: one object with a force over time \u2192 impulse-momentum theorem; two objects interacting \u2192 conservation of momentum, with 'elastic' or 'stick together' as the second condition. Multi-stage problems chain momentum conservation (through the collision) to energy conservation or the impulse-momentum theorem (after it) \u2014 never energy conservation *across* an inelastic collision. Every answer is checked against momentum conservation, the $KE_f \\le KE_i$ limit, and sensible directions. These are the AP Physics 1 Unit 4 reasoning skills.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U6-L5-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A $0.010\\ \\mathrm{kg}$ bullet moving at $200\\ \\mathrm{m/s}$ embeds in a $1.99\\ \\mathrm{kg}$ block hanging from a string. To what height does the block-plus-bullet rise? (Take $g = 10\\ \\mathrm{m/s^2}$.)",
+      "choices": ["$0.05\\ \\mathrm{m}$", "$0.20\\ \\mathrm{m}$", "$1.0\\ \\mathrm{m}$", "$20\\ \\mathrm{m}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — momentum: $(0.010)(200) = (2.0)V$, so $V = 1.0\\ \\mathrm{m/s}$. Energy for the swing: $\\tfrac{1}{2}(2.0)(1.0)^2 = (2.0)(10)h$, so $1.0 = 20h$ and $h = 0.05\\ \\mathrm{m}$.",
+        "incorrect": {
+          "1": "This may use the bullet's speed in the energy step. Use the *combined* speed $V = 1.0\\ \\mathrm{m/s}$ after the (inelastic) embedding.",
+          "2": "This uses $V = \\sqrt{2gh}$ with the wrong $V$, or the bullet's kinetic energy directly (not allowed across the inelastic step).",
+          "3": "This equates the bullet's kinetic energy to $mgh$ — invalid, because kinetic energy is lost when the bullet embeds."
+        }
+      },
+      "hint": ["Two stages: momentum conservation for the embedding to get the combined speed $V$, then energy conservation for the swing: $\\tfrac{1}{2}(M)V^2 = Mgh$."],
+      "solution": "Stage 1 (embedding, inelastic): $m_b v_b = (m_b + m_{block})V$, so $(0.010)(200) = (2.0)V$ and $V = 1.0\\ \\mathrm{m/s}$. Stage 2 (frictionless swing): $\\tfrac{1}{2}(2.0)(1.0)^2 = (2.0)(10)h$, so $1.0 = 20h$ and $h = 0.05\\ \\mathrm{m}$."
+    },
+    {
+      "id": "BP8-U6-L5-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A safety engineer must choose between two car-front designs for a head-on crash test at a fixed speed: (X) a rigid front that makes the car rebound backward off the barrier at $2\\ \\mathrm{m/s}$; (Y) a crumple front that brings the car to rest against the barrier. Which is safer for the occupants, and why?",
+      "choices": [
+        "X, because rebounding spreads the force out.",
+        "Y, because the car's change in momentum is smaller (speed to zero, not speed to a reversal) and the crumpling also lengthens the stopping time — both reduce the force.",
+        "They are equally safe, since momentum is conserved either way.",
+        "X, because a rebound means less kinetic energy is absorbed by the car."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — design Y has the smaller $\\Delta p$ (the car does not have to be sent backward) and a longer $\\Delta t$ (crumpling), so $F = \\Delta p / \\Delta t$ is smaller on both counts.",
+        "incorrect": {
+          "0": "A rebound *increases* $\\Delta p$ (the car's velocity reverses), raising the force.",
+          "2": "Conservation of momentum for the car-Earth/barrier system does not tell you the force on the occupants; the $\\Delta p$ and $\\Delta t$ of the car do.",
+          "3": "Absorbing less energy is not the safety goal; reducing the force on the occupants is, and design Y does that."
+        }
+      },
+      "hint": ["Compare the car's $\\Delta p$: 'speed to zero' vs 'speed to a backward speed'. Then compare $\\Delta t$."],
+      "solution": "The force on the occupants is $F = \\Delta p / \\Delta t$ for the car. Design X reverses the car's velocity, so $\\Delta p$ is *larger* than just stopping (up to twice as large), and a rigid front gives a *short* $\\Delta t$ — both increase the force. Design Y brings the car to rest (smaller $\\Delta p$) and the crumple zone extends $\\Delta t$ — both decrease the force. Design Y is much safer, which is why real cars are built to crumple, not bounce."
+    },
+    {
+      "id": "BP8-U6-L5-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "On a frictionless surface, a $0.50\\ \\mathrm{kg}$ block of clay moving right at $4.0\\ \\mathrm{m/s}$ collides with and sticks to a $1.5\\ \\mathrm{kg}$ block at rest. The combined blocks then slide onto a rough patch and come to rest after $2.0\\ \\mathrm{m}$.",
+      "parts": [
+        {
+          "prompt": "(a) Find the speed of the combined blocks just after the collision, and state which principle you used and why.",
+          "modelResponse": "Conservation of momentum (the collision is perfectly inelastic, so kinetic energy is not conserved, but momentum is): $p_i = (0.50)(4.0) + (1.5)(0) = 2.0\\ \\mathrm{kg\\,m/s}$. Combined mass $= 2.0\\ \\mathrm{kg}$, so $v = 2.0 / 2.0 = 1.0\\ \\mathrm{m/s}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Calculate the kinetic energy of the combined blocks just after the collision, and the kinetic energy lost in the collision.",
+          "modelResponse": "$KE$ just after $= \\tfrac{1}{2}(2.0)(1.0)^2 = 1.0\\ \\mathrm{J}$. $KE$ before $= \\tfrac{1}{2}(0.50)(4.0)^2 = 4.0\\ \\mathrm{J}$. Kinetic energy lost in the collision $= 4.0 - 1.0 = 3.0\\ \\mathrm{J}$ (to heat and deformation of the clay).",
+          "points": 4
+        },
+        {
+          "prompt": "(c) The combined blocks are brought to rest by friction over $2.0\\ \\mathrm{m}$. Find the average friction force, and explain why you cannot use momentum conservation for this final stage.",
+          "modelResponse": "The friction removes the post-collision kinetic energy ($1.0\\ \\mathrm{J}$) as work over $2.0\\ \\mathrm{m}$: $F_{friction} \\times d = KE$, so $F_{friction} = 1.0 / 2.0 = 0.50\\ \\mathrm{N}$. Momentum conservation does not apply to this stage because friction with the rough patch is an *external* force on the block system — it delivers an external impulse, so the system's momentum is not conserved (it drops from $2.0\\ \\mathrm{kg\\,m/s}$ to zero). The rough patch and Earth take up that momentum.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 1 Unit 4 free-response problems routinely chain a collision (momentum conservation) to a subsequent motion (energy conservation, or friction stopping a block), and reward students who use the right principle for each stage and never run energy conservation across an inelastic collision. Safety-design reasoning (crumple zones, airbags) and reasonableness checks (momentum conserved, kinetic energy not gained) appear on both the multiple-choice and free-response sections.",
+  "summary": "Choose the tool: one object with a force over a time \u2192 the impulse-momentum theorem $F\\,\\Delta t = m(v_f - v_i)$; two or more objects interacting \u2192 conservation of momentum $\\sum m_i v_i$ (before) $= \\sum m_i v_i$ (after). Add a second condition \u2014 elastic ($KE_i = KE_f$) or 'stick together' \u2014 when there are two unknowns. For multi-stage problems, run momentum conservation *through* the collision to get the velocity, then use energy conservation or the impulse-momentum theorem for what happens next \u2014 never energy conservation *across* an inelastic collision (a ballistic pendulum is the classic case). Momentum ideas explain crumple zones, airbags, rockets, and sporting 'follow-through'. Check every answer: total momentum unchanged, $KE_f$ not above $KE_i$, directions sensible.",
+  "exitQuestion": {
+    "id": "BP8-U6-L5-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "question": "You need to find the speed of a block right after a ball of clay is thrown at it and sticks, and then how far the block slides before friction stops it. Which pair of principles, in order, should you use?",
+    "choices": [
+      "Energy conservation for the collision, then momentum conservation for the slide.",
+      "Momentum conservation for the collision, then work-energy (friction removing the kinetic energy) for the slide.",
+      "The impulse-momentum theorem for both stages.",
+      "Momentum conservation for both stages."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the sticking collision is inelastic, so use momentum conservation for the speed just after; the slide is stopped by an external friction force, so use work-energy (friction force times distance equals the kinetic energy removed).",
+      "incorrect": {
+        "0": "Energy conservation cannot be used across the inelastic (sticking) collision, and momentum is not conserved during the friction slide.",
+        "2": "You do not know the contact force or the friction force in advance; and the impulse-momentum theorem does not directly give a sliding distance.",
+        "3": "Momentum is *not* conserved during the slide — friction is an external force removing momentum."
+      }
+    },
+    "hint": ["Collision (sticking) = inelastic = momentum conservation. Slide (external friction) = work-energy."],
+    "solution": "Stage 1, the clay sticking to the block, is perfectly inelastic: use conservation of momentum to find the common speed just after impact. Stage 2, the block sliding to rest under friction, involves an external force (friction) that removes momentum, so momentum is not conserved there; instead use the work-energy idea — the friction force times the sliding distance equals the kinetic energy the block had just after the collision."
+  },
+  "questionBankFile": "momentum-and-collisions.json",
+  "furtherPracticeQuestionIds": ["BP8-U6-MCQ-014", "BP8-U6-MCQ-026", "BP8-U6-MCQ-036", "BP8-U6-MCQ-040", "BP8-U6-MCQ-050", "BP8-U6-MCQ-053"],
+  "needsPlotly": false
+}

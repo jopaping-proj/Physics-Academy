@@ -1,0 +1,356 @@
+{
+  "id": "basis-p8-u6-l4",
+  "slug": "collisions",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 6: Momentum and Collisions",
+  "topic": "Collisions",
+  "lessonTitle": "Elastic and Inelastic Collisions",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit6_momentum_collisions_outcomes.md (Collisions cluster, C1-C2); calibrated against AP Physics 1 CED Unit 4 (Topic 4.4) and OpenStax High School Physics Ch. 8",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 6 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 1 treatments.",
+  "prerequisites": [
+    "Lesson 3 — conservation of momentum: $p_i = p_f$ for a closed system, one equation for one unknown.",
+    "Unit 4 — kinetic energy is $\\tfrac{1}{2}mv^2$, and mechanical energy can be converted to internal energy."
+  ],
+  "majorObjective": "Distinguish elastic from inelastic collisions by what happens to kinetic energy, and analyse a one-dimensional two-object collision of either type to find one unknown quantity.",
+  "subObjectives": [
+    "State that all closed-system collisions conserve total momentum; an elastic collision also conserves total kinetic energy, while an inelastic collision converts some kinetic energy to internal energy and sound.",
+    "Identify a perfectly (completely) inelastic collision — the objects stick together and move with one common velocity — as the case of maximum kinetic-energy loss.",
+    "Determine whether a given collision is elastic or inelastic by comparing the total kinetic energy before and after.",
+    "Analyse a 1-D collision: use momentum conservation (plus 'stick together' or a given final velocity) to find an unknown velocity, and calculate the kinetic energy converted."
+  ],
+  "hook": {
+    "prompt": "A dart is thrown at a wooden block on a frictionless cart. Compared with the dart sticking into the block, if the dart instead bounces straight back off the block, the block ends up moving:",
+    "choices": [
+      "slower, because bouncing wastes energy.",
+      "faster, because the dart's momentum change is larger, so it transfers more momentum to the block.",
+      "at the same speed either way.",
+      "backward."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Every collision in a closed system conserves total momentum. What separates collisions is what happens to the kinetic energy: it stays the same (elastic) or some is lost to heat and sound (inelastic). The extreme case is objects sticking together \u2014 perfectly inelastic.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Elastic, inelastic, and perfectly inelastic",
+      "concept": "**Every** collision in a closed system conserves **total momentum**. Collisions are classified by what happens to the **total kinetic energy**:\n\n- **Elastic collision:** total kinetic energy is **conserved** (before = after). No energy goes to permanent deformation or heat. Examples: hard steel balls, gas molecules, a superball, magnets repelling.\n\n- **Inelastic collision:** total kinetic energy **decreases** \u2014 some is converted to **internal (thermal) energy and sound** as the objects deform. Most everyday collisions are inelastic. Momentum is still conserved.\n\n- **Perfectly (completely) inelastic collision:** the objects **stick together** and move off with a **single common velocity**. This loses the **maximum** kinetic energy that momentum conservation allows. Examples: clay lumps, a bullet embedding in a block, railway cars coupling.\n\nKinetic energy in a collision can **stay the same** or **decrease**, but it can never **increase** \u2014 unless stored energy is released (a spring between the objects, an explosive).",
+      "representation": "| Type | Momentum | Kinetic energy | Signature |\n|---|---|---|---|\n| elastic | conserved | conserved | objects bounce apart, no KE lost |\n| inelastic | conserved | decreases | objects deform; heat + sound |\n| perfectly inelastic | conserved | decreases the most | objects stick, one common velocity |",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-6/collisions/elastic-vs-inelastic.svg",
+          "caption": "Both types conserve momentum. An elastic collision conserves kinetic energy (bars equal height); an inelastic collision loses some to heat and sound; a perfectly inelastic collision (objects stick) loses the most."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Classify each collision: (a) two pool balls click off each other, barely losing speed; (b) a car rear-ends another and their bumpers lock; (c) two lumps of putty collide and stop dead; (d) a moving cart hits a spring-loaded bumper on a second cart and both move off with the same total kinetic energy as before.",
+        "phases": [
+          {
+            "label": "(a) Pool balls",
+            "steps": ["Almost no kinetic energy lost \u2192 **(nearly) elastic**."]
+          },
+          {
+            "label": "(b) Cars with locking bumpers",
+            "steps": ["They move off together; a lot of kinetic energy goes to crumpling metal and sound \u2192 **perfectly inelastic**."]
+          },
+          {
+            "label": "(c) Putty lumps stopping dead",
+            "steps": ["They stick and (if their momenta were equal and opposite) the total is zero \u2192 **perfectly inelastic**, with all kinetic energy lost."]
+          },
+          {
+            "label": "(d) Spring bumper, KE unchanged",
+            "steps": ["Total kinetic energy is the same before and after \u2192 **elastic** (the spring stored and returned the energy)."]
+          }
+        ],
+        "keyMove": "Elastic = no KE lost; inelastic = some KE lost; perfectly inelastic = objects stick, most KE lost."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L4-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Which quantity is conserved in every closed-system collision, elastic or not?",
+        "choices": ["Total kinetic energy", "Total momentum", "The speed of each object", "The direction each object moves"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — total momentum is conserved in every closed-system collision. Total kinetic energy is conserved only in elastic collisions.",
+          "incorrect": {
+            "0": "Kinetic energy is conserved only when the collision is elastic.",
+            "2": "Individual speeds change — that is what a collision does.",
+            "3": "Objects can reverse direction in a collision."
+          }
+        },
+        "hint": ["One quantity is always conserved for a closed system; the other only for elastic collisions."],
+        "solution": "Total momentum is conserved in every collision within a closed system, because the collision forces are an internal Newton's-third-law pair. Total kinetic energy is conserved only if the collision is elastic; otherwise some becomes internal energy and sound."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Deciding: elastic or inelastic?",
+      "concept": "To classify a collision from data, **compare the total kinetic energy before and after**:\n\n1. Compute $KE_i = \\tfrac{1}{2}m_1 v_{1i}^2 + \\tfrac{1}{2}m_2 v_{2i}^2$.\n2. Compute $KE_f = \\tfrac{1}{2}m_1 v_{1f}^2 + \\tfrac{1}{2}m_2 v_{2f}^2$.\n3. **$KE_f = KE_i$** \u2192 elastic. **$KE_f < KE_i$** \u2192 inelastic; the difference is the energy converted to heat and sound. **$KE_f > KE_i$** \u2192 impossible for a passive collision (check your arithmetic, or an explosive/spring released energy).\n\nA useful special result: for a **1-D elastic collision between equal masses** with one initially at rest, the objects **exchange velocities** (the incoming one stops, the target moves off at the incoming speed). For equal masses moving toward each other elastically, they simply **bounce back** at their original speeds.\n\nA **perfectly inelastic** collision is easy to spot: the objects share one final velocity.",
+      "representation": "$$KE_i \\overset{?}{=} KE_f$$\n\n- equal \u2192 elastic;\n- $KE_f$ smaller \u2192 inelastic, energy lost $= KE_i - KE_f$;\n- $KE_f$ larger \u2192 error or stored energy released.\n\nEqual-mass elastic, 1-D: velocities swap.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $2.0\\ \\mathrm{kg}$ ball at $3.0\\ \\mathrm{m/s}$ hits a stationary $1.0\\ \\mathrm{kg}$ ball. Afterward the $2.0\\ \\mathrm{kg}$ ball moves at $1.0\\ \\mathrm{m/s}$ and the $1.0\\ \\mathrm{kg}$ ball moves at $4.0\\ \\mathrm{m/s}$ (both forward). Is the collision elastic?",
+        "phases": [
+          {
+            "label": "Check momentum first",
+            "steps": [
+              "$p_i = (2.0)(3.0) + 0 = 6.0\\ \\mathrm{kg\\,m/s}$.",
+              "$p_f = (2.0)(1.0) + (1.0)(4.0) = 2.0 + 4.0 = 6.0\\ \\mathrm{kg\\,m/s}$. Momentum is conserved \u2014 good, the data are consistent."
+            ]
+          },
+          {
+            "label": "Compare kinetic energy",
+            "steps": [
+              "$KE_i = \\tfrac{1}{2}(2.0)(3.0)^2 = \\tfrac{1}{2}(2.0)(9.0) = 9.0\\ \\mathrm{J}$.",
+              "$KE_f = \\tfrac{1}{2}(2.0)(1.0)^2 + \\tfrac{1}{2}(1.0)(4.0)^2 = 1.0 + 8.0 = 9.0\\ \\mathrm{J}$."
+            ]
+          },
+          {
+            "label": "Conclude",
+            "steps": ["$KE_f = KE_i = 9.0\\ \\mathrm{J}$, so the collision is **elastic**."]
+          }
+        ],
+        "keyMove": "Compute $KE_i$ and $KE_f$ from the velocities and compare. Equal \u2192 elastic; smaller \u2192 inelastic."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L4-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $3.0\\ \\mathrm{kg}$ cart at $4.0\\ \\mathrm{m/s}$ collides with a stationary $1.0\\ \\mathrm{kg}$ cart; they couple. How much kinetic energy is lost?",
+        "choices": ["$6.0\\ \\mathrm{J}$", "$0\\ \\mathrm{J}$", "$24\\ \\mathrm{J}$", "$18\\ \\mathrm{J}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $KE_i = \\tfrac{1}{2}(3.0)(4.0)^2 = 24\\ \\mathrm{J}$. Common velocity $= 12/4.0 = 3.0\\ \\mathrm{m/s}$; $KE_f = \\tfrac{1}{2}(4.0)(3.0)^2 = 18\\ \\mathrm{J}$. Lost $= 24 - 18 = 6.0\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "Coupling carts do not conserve kinetic energy — this is a perfectly inelastic collision.",
+            "2": "$24\\ \\mathrm{J}$ is the *total* kinetic energy before, not the amount lost.",
+            "3": "$18\\ \\mathrm{J}$ is the kinetic energy *after*, not the amount lost."
+          }
+        },
+        "hint": ["Find $KE_i$, then the common velocity from momentum, then $KE_f$, then subtract."],
+        "solution": "$KE_i = \\tfrac{1}{2}(3.0)(4.0)^2 = 24\\ \\mathrm{J}$. Momentum: $p_i = (3.0)(4.0) = 12\\ \\mathrm{kg\\,m/s}$; common velocity $= 12/4.0 = 3.0\\ \\mathrm{m/s}$; $KE_f = \\tfrac{1}{2}(4.0)(3.0)^2 = 18\\ \\mathrm{J}$. Kinetic energy lost $= 24 - 18 = 6.0\\ \\mathrm{J}$, converted to heat and sound."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Analysing a 1-D collision",
+      "concept": "**Perfectly inelastic (objects stick):**\n\n$$m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2)v_f$$\n\nOne equation, one unknown ($v_f$). Then compute $KE_i$ and $KE_f$ if asked for the energy lost.\n\n**General 1-D collision (given all but one variable):** use\n\n$$m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$$\n\nand plug in every known velocity; solve for the one unknown.\n\n**Elastic collision with two unknowns:** you need the second equation, $KE_i = KE_f$. (In this course you will usually be *given* one final velocity, or told the objects stick, so momentum conservation alone is enough.)\n\n**The 'bounce vs stick' principle:** a dart that **bounces** off a block changes its own momentum by **more** than one that **sticks**, so \u2014 by conservation \u2014 it transfers **more** momentum to the block, and the block moves **faster**.",
+      "representation": "| Situation | Equation(s) |\n|---|---|\n| stick together | $m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2)v_f$ |\n| one final velocity given | $m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$ |\n| elastic, both unknown | above **plus** $KE_i = KE_f$ |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.010\\ \\mathrm{kg}$ bullet moving at $500\\ \\mathrm{m/s}$ embeds in a $0.990\\ \\mathrm{kg}$ block at rest on a frictionless table. (a) Find the speed of the block-plus-bullet. (b) Find the kinetic energy lost.",
+        "phases": [
+          {
+            "label": "(a) Common speed",
+            "steps": [
+              "$p_i = (0.010)(500) = 5.0\\ \\mathrm{kg\\,m/s}$.",
+              "$(0.010 + 0.990)v_f = 5.0$, so $(1.0)v_f = 5.0$ and $v_f = 5.0\\ \\mathrm{m/s}$."
+            ]
+          },
+          {
+            "label": "(b) Kinetic energy lost",
+            "steps": [
+              "$KE_i = \\tfrac{1}{2}(0.010)(500)^2 = \\tfrac{1}{2}(0.010)(250\\,000) = 1250\\ \\mathrm{J}$.",
+              "$KE_f = \\tfrac{1}{2}(1.0)(5.0)^2 = 12.5\\ \\mathrm{J}$.",
+              "Lost $= 1250 - 12.5 = 1237.5\\ \\mathrm{J}$ \u2014 almost all of it, converted to heat and deformation as the bullet ploughs into the block."
+            ]
+          }
+        ],
+        "keyMove": "Perfectly inelastic: one momentum equation for $v_f$. The kinetic-energy loss can be huge even though momentum is fully conserved."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L4-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "transfer",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "A ball is thrown at a free-standing block on a frictionless floor. Which outcome makes the block move fastest, for the same throw?",
+        "choices": [
+          "The ball sticks to the block.",
+          "The ball bounces straight back off the block.",
+          "The ball stops and drops after hitting the block.",
+          "All three give the same block speed."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — bouncing back is the largest possible change in the ball's momentum, so by conservation the block gains the most momentum and moves fastest.",
+          "incorrect": {
+            "0": "Sticking transfers less momentum than bouncing (the ball ends up moving forward with the block, not backward).",
+            "2": "Stopping transfers the ball's incoming momentum ($mv$); bouncing transfers more (up to $2mv$).",
+            "3": "The block speed depends on how much momentum the ball loses, which is largest for a bounce."
+          }
+        },
+        "hint": ["Whatever momentum the ball loses, the block gains. When does the ball lose the most momentum — sticking, stopping, or bouncing?"],
+        "solution": "By conservation of momentum, the block gains exactly the momentum the ball loses. If the ball sticks, it keeps moving forward with the block, so it loses only part of its momentum. If it stops, it loses $mv$. If it bounces backward, its momentum goes from $+mv$ to a negative value \u2014 a change of more than $mv$ \u2014 so the block gains the most and moves fastest."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U6-L4-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'In an inelastic collision, momentum is lost because kinetic energy is lost.' What is the correct view?",
+      "choices": [
+        "Correct — losing kinetic energy means losing momentum.",
+        "Momentum and kinetic energy are separate quantities. Total momentum is conserved in *every* closed-system collision; only kinetic energy decreases in an inelastic one — the 'lost' kinetic energy becomes internal energy and sound.",
+        "Both momentum and kinetic energy are always conserved.",
+        "Momentum is lost but kinetic energy is conserved."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — an inelastic collision conserves total momentum exactly; it is the total kinetic energy that decreases, converted to heat and sound.",
+        "incorrect": {
+          "0": "Momentum is not lost in an inelastic collision — it is fully conserved. Only kinetic energy decreases.",
+          "2": "Kinetic energy is conserved only in *elastic* collisions.",
+          "3": "It is the other way round: momentum conserved, kinetic energy decreased."
+        }
+      },
+      "hint": ["Which quantity is always conserved for a closed system, and which only sometimes?"],
+      "solution": "Momentum and kinetic energy are different quantities that behave differently. In any closed-system collision the total momentum is conserved (the collision forces are an internal third-law pair). In an *inelastic* collision the total kinetic energy decreases — that energy is not destroyed, it is converted to internal (thermal) energy of the deforming objects plus a little sound. In an *elastic* collision the kinetic energy is also conserved."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $1.0\\ \\mathrm{kg}$ cart at $6.0\\ \\mathrm{m/s}$ collides with a stationary $2.0\\ \\mathrm{kg}$ cart and they stick. A student is asked whether the collision is elastic.\n\nStudent's response: 'Momentum is conserved: $6.0 = 6.0$. Since momentum is conserved, the collision is elastic.'",
+      "prompts": [
+        "State what test decides whether a collision is elastic.",
+        "Carry out that test for this collision.",
+        "State the correct classification and how much kinetic energy is lost."
+      ],
+      "modelResponse": "Momentum is conserved in *every* closed-system collision, so it cannot be used to decide elastic vs inelastic. The test is whether the *total kinetic energy* is the same before and after. Here the common velocity is $v = \\dfrac{(1.0)(6.0)}{3.0} = 2.0\\ \\mathrm{m/s}$. $KE_i = \\tfrac{1}{2}(1.0)(6.0)^2 = 18\\ \\mathrm{J}$; $KE_f = \\tfrac{1}{2}(3.0)(2.0)^2 = 6.0\\ \\mathrm{J}$. Since $KE_f = 6.0\\ \\mathrm{J} < KE_i = 18\\ \\mathrm{J}$, the collision is *inelastic* (in fact perfectly inelastic, since the carts stick). Kinetic energy lost $= 18 - 6.0 = 12\\ \\mathrm{J}$, converted to heat and sound.",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A verbal collision scenario gives masses and velocities; conservation of momentum (Lesson 3) supplies one equation, and 'objects stick together' or a given final velocity supplies the rest, so you can solve for an unknown velocity. Comparing $KE_i$ and $KE_f$ (computed from the velocities) classifies the collision and gives the energy converted. A bar chart shows momentum conserved (total unchanged) while the kinetic-energy bars shrink for an inelastic collision. The 'bounce vs stick' result explains why elastic impacts transfer more momentum.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U6-L4-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $0.30\\ \\mathrm{kg}$ ball at $10\\ \\mathrm{m/s}$ collides head-on with a stationary $0.30\\ \\mathrm{kg}$ ball. The collision is elastic. What are the final velocities?",
+      "choices": [
+        "First ball stops; second ball moves off at $10\\ \\mathrm{m/s}$.",
+        "Both move at $5.0\\ \\mathrm{m/s}$.",
+        "First ball bounces back at $10\\ \\mathrm{m/s}$; second stays at rest.",
+        "Both stop."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — equal masses, elastic, one at rest: the balls exchange velocities. Check: momentum $3.0 = 0 + 3.0$; KE $15\\ \\mathrm{J} = 0 + 15\\ \\mathrm{J}$.",
+        "incorrect": {
+          "1": "Both at $5.0\\ \\mathrm{m/s}$ conserves momentum but loses kinetic energy ($15\\ \\mathrm{J} \\to 7.5\\ \\mathrm{J}$) — that is the inelastic (stuck) result.",
+          "2": "The first ball bouncing back would make the total momentum $-3.0$, not $+3.0$.",
+          "3": "Both stopping gives zero momentum, violating conservation."
+        }
+      },
+      "hint": ["Equal masses, elastic head-on, target at rest: the classic 'velocity exchange' result."],
+      "solution": "For a 1-D elastic collision between equal masses with the target at rest, the two balls exchange velocities: the incoming ball stops and the target ball moves off at $10\\ \\mathrm{m/s}$. This conserves both momentum ($3.0\\ \\mathrm{kg\\,m/s}$) and kinetic energy ($15\\ \\mathrm{J}$)."
+    },
+    {
+      "id": "BP8-U6-L4-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "Two identical carts moving toward each other at the same speed collide and stick together. What happens, and where does the kinetic energy go?",
+      "choices": [
+        "They continue at the original speed; no energy is lost.",
+        "They stop dead; all the initial kinetic energy is converted to internal energy and sound.",
+        "They bounce back at the original speed; kinetic energy is conserved.",
+        "One cart stops and the other moves off; energy is conserved."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the momenta are equal and opposite, so the total is zero; sticking together means the combined mass is at rest. Every joule of the initial kinetic energy is converted to heat and sound — the maximum possible loss.",
+        "incorrect": {
+          "0": "The total momentum is zero, so the stuck-together carts cannot be moving.",
+          "2": "Bouncing back at the original speed would be the *elastic* outcome; sticking is perfectly inelastic.",
+          "3": "That would violate momentum conservation (total momentum is zero)."
+        }
+      },
+      "hint": ["Equal and opposite momenta: total is zero. Stuck together at zero momentum means...?"],
+      "solution": "The two carts have equal and opposite momenta, so the system's total momentum is zero. In a perfectly inelastic collision they stick and move with one velocity; with zero total momentum, that velocity is zero — they stop dead. All of the initial kinetic energy ($2 \\times \\tfrac{1}{2}mv^2$) is converted to internal energy and sound, the largest possible kinetic-energy loss for a collision."
+    },
+    {
+      "id": "BP8-U6-L4-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "scenario": "On a frictionless track, a $2.0\\ \\mathrm{kg}$ glider moving right at $3.0\\ \\mathrm{m/s}$ collides with a $1.0\\ \\mathrm{kg}$ glider moving right at $1.0\\ \\mathrm{m/s}$. After the collision the $1.0\\ \\mathrm{kg}$ glider moves right at $3.0\\ \\mathrm{m/s}$.",
+      "parts": [
+        {
+          "prompt": "(a) Use conservation of momentum to find the velocity of the $2.0\\ \\mathrm{kg}$ glider after the collision.",
+          "modelResponse": "$p_i = (2.0)(3.0) + (1.0)(1.0) = 6.0 + 1.0 = 7.0\\ \\mathrm{kg\\,m/s}$. Conservation: $7.0 = (2.0)v_1 + (1.0)(3.0) = 2.0v_1 + 3.0$. So $2.0v_1 = 4.0$ and $v_1 = 2.0\\ \\mathrm{m/s}$ (still to the right).",
+          "points": 4
+        },
+        {
+          "prompt": "(b) Determine whether the collision is elastic by comparing total kinetic energy before and after.",
+          "modelResponse": "$KE_i = \\tfrac{1}{2}(2.0)(3.0)^2 + \\tfrac{1}{2}(1.0)(1.0)^2 = 9.0 + 0.5 = 9.5\\ \\mathrm{J}$. $KE_f = \\tfrac{1}{2}(2.0)(2.0)^2 + \\tfrac{1}{2}(1.0)(3.0)^2 = 4.0 + 4.5 = 8.5\\ \\mathrm{J}$. Since $KE_f = 8.5\\ \\mathrm{J} < KE_i = 9.5\\ \\mathrm{J}$, the collision is inelastic.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) State how much kinetic energy was converted to other forms and what those forms are.",
+          "modelResponse": "Kinetic energy converted $= 9.5 - 8.5 = 1.0\\ \\mathrm{J}$. It became internal (thermal) energy of the gliders as their bumpers deformed, plus a small amount of sound energy. Total energy is still conserved.",
+          "points": 2
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 Topic 4.4 tests: classifying collisions by kinetic-energy conservation; the perfectly inelastic case ($v_f$ from momentum alone); computing kinetic energy converted; the equal-mass elastic 'velocity exchange' result; and the 'bounce vs stick' momentum-transfer argument (often with bar charts). Bullet-in-block and coupling-carts problems are standard.",
+  "summary": "Every closed-system collision conserves total momentum. Collisions are classified by kinetic energy: elastic (total kinetic energy conserved — objects bounce apart with no loss), inelastic (some kinetic energy converted to internal energy and sound), and perfectly inelastic (objects stick and move with one common velocity — the maximum kinetic-energy loss). To classify a collision, compare $KE_i$ and $KE_f$ computed from the velocities. To analyse a 1-D collision, use $m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$ (or $(m_1 + m_2)v_f$ if they stick) — one equation for one unknown; an elastic collision with two unknowns also needs $KE_i = KE_f$. A ball that bounces off an object transfers more momentum than one that sticks, so it makes the object move faster.",
+  "exitQuestion": {
+    "id": "BP8-U6-L4-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A $0.20\\ \\mathrm{kg}$ ball of clay moving at $10\\ \\mathrm{m/s}$ hits and sticks to a $0.80\\ \\mathrm{kg}$ block at rest on a frictionless surface. What is the speed of the block-plus-clay?",
+    "choices": ["$2.0\\ \\mathrm{m/s}$", "$2.5\\ \\mathrm{m/s}$", "$10\\ \\mathrm{m/s}$", "$8.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (0.20)(10) = 2.0\\ \\mathrm{kg\\,m/s}$; $(0.20 + 0.80)v = 2.0$, so $v = 2.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "This uses a total mass of $0.80\\ \\mathrm{kg}$. The combined mass is $0.20 + 0.80 = 1.0\\ \\mathrm{kg}$.",
+        "2": "The clay slows dramatically when it sticks to the much heavier block.",
+        "3": "This uses the clay mass alone in the denominator or a similar slip. $v = 2.0/1.0 = 2.0\\ \\mathrm{m/s}$."
+      }
+    },
+    "hint": ["Perfectly inelastic: $p_i = (m_1 + m_2)v_f$."],
+    "solution": "Momentum before: $p_i = (0.20\\ \\mathrm{kg})(10\\ \\mathrm{m/s}) = 2.0\\ \\mathrm{kg\\,m/s}$. The clay sticks, so the combined mass is $0.20 + 0.80 = 1.0\\ \\mathrm{kg}$: $v_f = \\dfrac{2.0}{1.0} = 2.0\\ \\mathrm{m/s}$."
+  },
+  "questionBankFile": "momentum-and-collisions.json",
+  "furtherPracticeQuestionIds": ["BP8-U6-MCQ-041", "BP8-U6-MCQ-042", "BP8-U6-MCQ-044", "BP8-U6-MCQ-045", "BP8-U6-MCQ-049", "BP8-U6-MCQ-050"],
+  "needsPlotly": false
+}

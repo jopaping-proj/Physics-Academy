@@ -53,34 +53,42 @@
     {
       "type": "module",
       "label": "Lesson 1",
-      "slug": null,
-      "title": "Momentum",
+      "slug": "momentum",
+      "title": "Linear Momentum",
       "cluster": "BP8.6.1",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
-      "title": "Impulse",
+      "slug": "impulse",
+      "title": "Impulse and the Impulse-Momentum Theorem",
       "cluster": "BP8.6.2",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
+      "slug": "conservation-of-momentum",
       "title": "Conservation of Momentum",
       "cluster": "BP8.6.3",
-      "status": "planned"
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
-      "title": "Collisions",
+      "slug": "collisions",
+      "title": "Elastic and Inelastic Collisions",
       "cluster": "BP8.6.4",
-      "status": "planned"
+      "status": "draft"
+    },
+    {
+      "type": "module",
+      "label": "Lesson 5",
+      "slug": "synthesis-and-transfer",
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.6.5",
+      "status": "draft"
     },
     {
       "type": "concept-check",
@@ -88,7 +96,15 @@
       "slug": null,
       "title": "Unit 6 Concept Check — retake",
       "status": "planned",
-      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+      "note": "Placeholder — to be activated only after a Unit 6 diagnostic is authored and reviewed (none exists yet)."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-6-test",
+      "title": "Unit 6 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the momentum-and-collisions question bank (tranche 1: 54 MCQ + 14 FRQ) to the Physics Academy test blueprint."
     }
   ]
 }

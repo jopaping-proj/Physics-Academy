@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="340" viewBox="0 0 600 340" role="img" aria-labelledby="t d">
+<title id="t">Elastic versus inelastic collisions</title>
+<desc id="d">Two columns. Left, elastic collision: total momentum is conserved and total kinetic energy is conserved; the objects bounce apart. Right, inelastic collision: total momentum is conserved but total kinetic energy decreases, with the missing energy becoming internal energy and sound; a perfectly inelastic collision is one where the objects stick together. Bar charts show kinetic energy before and after: unchanged on the left, reduced on the right.</desc>
+<rect width="600" height="340" fill="white"/>
+<g font-family="Arial" fill="#111827" font-size="12">
+ <text x="150" y="26" text-anchor="middle" font-size="13" font-weight="bold">Elastic</text>
+ <text x="450" y="26" text-anchor="middle" font-size="13" font-weight="bold">Inelastic</text>
+
+ <text x="150" y="52" text-anchor="middle" fill="#1a7f37">momentum conserved</text>
+ <text x="150" y="70" text-anchor="middle" fill="#1a7f37">kinetic energy conserved</text>
+ <text x="450" y="52" text-anchor="middle" fill="#1a7f37">momentum conserved</text>
+ <text x="450" y="70" text-anchor="middle" fill="#c0392b">kinetic energy decreases</text>
+
+ <line x1="70" y1="270" x2="270" y2="270" stroke="#111827" stroke-width="1.5"/>
+ <rect x="95" y="130" width="45" height="140" fill="#1769aa"/>
+ <rect x="185" y="130" width="45" height="140" fill="#1769aa"/>
+ <text x="117" y="286" text-anchor="middle" font-size="11">KE before</text>
+ <text x="207" y="286" text-anchor="middle" font-size="11">KE after</text>
+ <text x="150" y="120" text-anchor="middle" font-size="11" fill="#5b6675">same height</text>
+
+ <line x1="360" y1="270" x2="560" y2="270" stroke="#111827" stroke-width="1.5"/>
+ <rect x="385" y="130" width="45" height="140" fill="#1769aa"/>
+ <rect x="475" y="190" width="45" height="80" fill="#1769aa"/>
+ <rect x="475" y="130" width="45" height="60" fill="#f0d3ce" stroke="#c0392b" stroke-width="1"/>
+ <text x="407" y="286" text-anchor="middle" font-size="11">KE before</text>
+ <text x="497" y="286" text-anchor="middle" font-size="11">KE after</text>
+ <text x="497" y="120" text-anchor="middle" font-size="10" fill="#c0392b">lost to heat + sound</text>
+
+ <text x="300" y="322" text-anchor="middle" font-size="11" fill="#5b6675">A perfectly inelastic collision (objects stick together) loses the most kinetic energy.</text>
+</g>
+</svg>

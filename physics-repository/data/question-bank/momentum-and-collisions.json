@@ -1,0 +1,1657 @@
+[
+  {
+    "id": "BP8-U6-MCQ-001",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The linear momentum of an object is defined as:",
+    "choices": [
+      "its mass divided by its velocity.",
+      "its mass multiplied by its velocity, $p = mv$.",
+      "half its mass times its velocity squared.",
+      "its weight multiplied by the time it moves."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — momentum is $p = mv$, a vector with the same direction as the velocity, measured in $\\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "0": "Momentum is a product, $mv$, not a quotient.",
+        "2": "That is kinetic energy, $\\tfrac{1}{2}mv^2$ — a scalar, not momentum.",
+        "3": "That is impulse from a force. Momentum is a property of a moving object: $p = mv$."
+      }
+    },
+    "hint": ["Momentum points the same way the object moves and grows with both mass and speed."],
+    "solution": "Linear momentum is $p = mv$: the product of an object's mass and its velocity. It is a vector (same direction as the velocity) with units of $\\mathrm{kg\\,m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-002",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A $3.0\\ \\mathrm{kg}$ ball moves at $4.0\\ \\mathrm{m/s}$. What is its momentum?",
+    "choices": ["$12\\ \\mathrm{kg\\,m/s}$", "$0.75\\ \\mathrm{kg\\,m/s}$", "$24\\ \\mathrm{kg\\,m/s}$", "$7.0\\ \\mathrm{kg\\,m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p = mv = (3.0)(4.0) = 12\\ \\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "1": "This divides ($3.0/4.0$). Momentum is $mv$, a product.",
+        "2": "This looks like $\\tfrac{1}{2}mv^2$-style doubling, or $2mv$. $p = mv = 12$.",
+        "3": "This adds mass and velocity. Momentum multiplies them."
+      }
+    },
+    "hint": ["$p = mv$: multiply the mass by the velocity."],
+    "solution": "$p = mv = (3.0\\ \\mathrm{kg})(4.0\\ \\mathrm{m/s}) = 12\\ \\mathrm{kg\\,m/s}$, in the direction of motion."
+  },
+  {
+    "id": "BP8-U6-MCQ-003",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which statement about momentum is correct?",
+    "choices": [
+      "Momentum is a scalar, so direction does not matter.",
+      "Momentum is a vector: two objects with the same speed but opposite directions have momenta that are equal in size but opposite in sign.",
+      "Momentum is always positive.",
+      "Momentum has the same units as energy."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — momentum is a vector. In one dimension, motion one way is positive and the other way is negative.",
+      "incorrect": {
+        "0": "Momentum is a vector; direction is essential — it determines the sign in 1-D problems.",
+        "2": "Momentum can be negative (for motion in the chosen negative direction).",
+        "3": "Momentum is in $\\mathrm{kg\\,m/s}$; energy is in joules ($\\mathrm{kg\\,m^2/s^2}$). Different units."
+      }
+    },
+    "hint": ["Does a ball moving left have the same momentum as an identical ball moving right at the same speed?"],
+    "solution": "Momentum $p = mv$ is a vector with the direction of the velocity. In one dimension you assign a positive direction; motion the other way gives negative momentum. Its units are $\\mathrm{kg\\,m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-004",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Cart A ($2.0\\ \\mathrm{kg}$) moves right at $5.0\\ \\mathrm{m/s}$; cart B ($4.0\\ \\mathrm{kg}$) moves left at $2.0\\ \\mathrm{m/s}$. Taking right as positive, what is the total momentum of the two-cart system?",
+    "choices": ["$+2.0\\ \\mathrm{kg\\,m/s}$", "$+18\\ \\mathrm{kg\\,m/s}$", "$-2.0\\ \\mathrm{kg\\,m/s}$", "$0\\ \\mathrm{kg\\,m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_A = (2.0)(+5.0) = +10$; $p_B = (4.0)(-2.0) = -8$; total $= +10 + (-8) = +2.0\\ \\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "1": "This adds the magnitudes ($10 + 8$) instead of using signs. B moves left, so its momentum is negative.",
+        "2": "Check the signs: A's $+10$ outweighs B's $-8$, giving $+2.0$.",
+        "3": "The momenta are $+10$ and $-8$, which do not cancel."
+      }
+    },
+    "hint": ["Momentum is a vector. Give B's momentum a negative sign because it moves left, then add."],
+    "solution": "With right positive: $p_A = (2.0\\ \\mathrm{kg})(+5.0\\ \\mathrm{m/s}) = +10\\ \\mathrm{kg\\,m/s}$, $p_B = (4.0\\ \\mathrm{kg})(-2.0\\ \\mathrm{m/s}) = -8\\ \\mathrm{kg\\,m/s}$. Total system momentum $= +10 - 8 = +2.0\\ \\mathrm{kg\\,m/s}$ (to the right)."
+  },
+  {
+    "id": "BP8-U6-MCQ-005",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $0.20\\ \\mathrm{kg}$ ball moving right at $6.0\\ \\mathrm{m/s}$ bounces straight back and moves left at $4.0\\ \\mathrm{m/s}$. Taking right as positive, what is its change in momentum?",
+    "choices": ["$-2.0\\ \\mathrm{kg\\,m/s}$", "$+0.4\\ \\mathrm{kg\\,m/s}$", "$-0.4\\ \\mathrm{kg\\,m/s}$", "$+2.0\\ \\mathrm{kg\\,m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (0.20)(+6.0) = +1.2$; $p_f = (0.20)(-4.0) = -0.8$; $\\Delta p = p_f - p_i = -0.8 - 1.2 = -2.0\\ \\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "1": "This uses $\\Delta v = 6 - 4 = 2$ (treating both speeds as positive) times $m$. The ball reverses, so $\\Delta v = -4 - 6 = -10$.",
+        "2": "This has the right idea but the wrong sign or a factor. $\\Delta p = m(v_f - v_i) = 0.20(-4 - 6) = -2.0$.",
+        "3": "The ball ends up moving left, so its momentum change is negative (to the left)."
+      }
+    },
+    "hint": ["$\\Delta p = m(v_f - v_i)$. The final velocity is $-4.0\\ \\mathrm{m/s}$ (leftward), the initial is $+6.0\\ \\mathrm{m/s}$."],
+    "solution": "$\\Delta p = p_f - p_i = m(v_f - v_i) = (0.20\\ \\mathrm{kg})(-4.0 - (+6.0))\\ \\mathrm{m/s} = (0.20)(-10) = -2.0\\ \\mathrm{kg\\,m/s}$. The change is $2.0\\ \\mathrm{kg\\,m/s}$ to the left — larger than either momentum alone because the ball reversed direction."
+  },
+  {
+    "id": "BP8-U6-MCQ-006",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A $5.0\\ \\mathrm{kg}$ object speeds up from $2.0\\ \\mathrm{m/s}$ to $8.0\\ \\mathrm{m/s}$ in a straight line. What is its change in momentum?",
+    "choices": ["$+30\\ \\mathrm{kg\\,m/s}$", "$+50\\ \\mathrm{kg\\,m/s}$", "$+10\\ \\mathrm{kg\\,m/s}$", "$+6.0\\ \\mathrm{kg\\,m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\Delta p = m(v_f - v_i) = (5.0)(8.0 - 2.0) = (5.0)(6.0) = +30\\ \\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "1": "This is $p_f = mv_f = (5.0)(8.0)$, the final momentum, not the change.",
+        "2": "This is $p_i = mv_i = (5.0)(2.0)$, the initial momentum.",
+        "3": "This is just $\\Delta v = 6.0$; multiply by the mass to get $\\Delta p$."
+      }
+    },
+    "hint": ["$\\Delta p = m\\,\\Delta v = m(v_f - v_i)$."],
+    "solution": "$\\Delta p = m(v_f - v_i) = (5.0\\ \\mathrm{kg})(8.0 - 2.0)\\ \\mathrm{m/s} = (5.0)(6.0) = +30\\ \\mathrm{kg\\,m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-007",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M4"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $1000\\ \\mathrm{kg}$ car travels at $10\\ \\mathrm{m/s}$. A $10\\,000\\ \\mathrm{kg}$ truck travels at $1\\ \\mathrm{m/s}$ in the same direction. Compare their momenta.",
+    "choices": [
+      "The car has more momentum, because it is faster.",
+      "The truck has more momentum, because it is heavier.",
+      "They have equal momentum: both are $10\\,000\\ \\mathrm{kg\\,m/s}$.",
+      "Momentum cannot be compared between a car and a truck."
+    ],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — $p_{car} = (1000)(10) = 10\\,000\\ \\mathrm{kg\\,m/s}$ and $p_{truck} = (10\\,000)(1) = 10\\,000\\ \\mathrm{kg\\,m/s}$. Equal.",
+      "incorrect": {
+        "0": "Speed is only half the story — momentum is $mv$. The truck's much larger mass compensates for its lower speed.",
+        "1": "Mass is only half the story. Here the products $mv$ come out equal.",
+        "3": "Momentum can always be compared; just compute $mv$ for each."
+      }
+    },
+    "hint": ["Compute $p = mv$ for each and compare the numbers."],
+    "solution": "$p_{car} = (1000\\ \\mathrm{kg})(10\\ \\mathrm{m/s}) = 10\\,000\\ \\mathrm{kg\\,m/s}$. $p_{truck} = (10\\,000\\ \\mathrm{kg})(1\\ \\mathrm{m/s}) = 10\\,000\\ \\mathrm{kg\\,m/s}$. The two are equal: the truck's greater mass exactly offsets its lower speed."
+  },
+  {
+    "id": "BP8-U6-MCQ-008",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M1", "M4"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student says: 'A parked car has zero momentum, so it also has zero mass.' What is wrong?",
+    "choices": [
+      "Nothing — a parked car does have zero mass.",
+      "Momentum is $p = mv$. A parked car has $v = 0$, so $p = 0$ regardless of its mass. Zero momentum does not mean zero mass.",
+      "A parked car has momentum equal to its weight.",
+      "Momentum does not depend on velocity."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — momentum is zero whenever the velocity is zero, no matter how massive the object.",
+      "incorrect": {
+        "0": "The car obviously still has mass; it just is not moving.",
+        "2": "Weight is a force in newtons; momentum is $mv$ in $\\mathrm{kg\\,m/s}$. A stationary car has zero momentum.",
+        "3": "Momentum depends directly on velocity: $p = mv$."
+      }
+    },
+    "hint": ["What is $v$ for a parked car, and what does that make $p = mv$?"],
+    "solution": "Momentum is $p = mv$. A parked car has velocity zero, so its momentum is zero — but its mass is unchanged. Zero momentum means 'not moving', not 'no mass'."
+  },
+  {
+    "id": "BP8-U6-MCQ-009",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "An object has momentum $18\\ \\mathrm{kg\\,m/s}$ and moves at $6.0\\ \\mathrm{m/s}$. What is its mass?",
+    "choices": ["$3.0\\ \\mathrm{kg}$", "$108\\ \\mathrm{kg}$", "$0.33\\ \\mathrm{kg}$", "$12\\ \\mathrm{kg}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $m = p/v = 18/6.0 = 3.0\\ \\mathrm{kg}$.",
+      "incorrect": {
+        "1": "This multiplies ($18 \\times 6.0$). Rearranging $p = mv$ gives $m = p/v$.",
+        "2": "This inverts the fraction ($6.0/18$).",
+        "3": "This subtracts. $m = p/v = 18/6.0 = 3.0$."
+      }
+    },
+    "hint": ["Rearrange $p = mv$ to $m = p/v$."],
+    "solution": "$m = \\dfrac{p}{v} = \\dfrac{18\\ \\mathrm{kg\\,m/s}}{6.0\\ \\mathrm{m/s}} = 3.0\\ \\mathrm{kg}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-010",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why is a heavy truck moving slowly through a car park still considered 'hard to stop' in physics terms?",
+    "choices": [
+      "Because it has a large kinetic energy.",
+      "Because it has a large momentum ($p = mv$): its big mass gives it a large $mv$ even at low speed, so a large impulse is needed to change its motion.",
+      "Because it has a large acceleration.",
+      "Because heavy objects cannot be stopped at all."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — 'hard to stop' means 'needs a large impulse', and impulse changes momentum. A massive object has large momentum even at low speed.",
+      "incorrect": {
+        "0": "Kinetic energy ($\\tfrac{1}{2}mv^2$) is actually small at low speed. 'Hard to stop' is about momentum.",
+        "2": "A truck moving at steady speed has zero acceleration.",
+        "3": "It can be stopped — it just requires a large force, a long time, or both."
+      }
+    },
+    "hint": ["'Hard to stop' = 'needs a big change of momentum'. What is the truck's momentum?"],
+    "solution": "Stopping an object means reducing its momentum to zero, which requires an impulse equal in size to its momentum. Because momentum is $p = mv$, a very massive truck has a large momentum even at low speed, so a large force acting over a long time is needed to stop it."
+  },
+  {
+    "id": "BP8-U6-MCQ-011",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M4"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Object X has momentum $p$. Object Y has twice the mass of X and half the speed. What is Y's momentum?",
+    "choices": ["$p$", "$2p$", "$p/2$", "$4p$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_Y = (2m)(v/2) = mv = p$. The factors of 2 cancel.",
+      "incorrect": {
+        "1": "The doubled mass is offset by the halved speed. $p_Y = (2m)(v/2) = mv = p$.",
+        "2": "Only if the speed were halved without the mass doubling.",
+        "3": "That would need both mass and speed doubled."
+      }
+    },
+    "hint": ["Write $p_Y = (2m)(v/2)$ and simplify."],
+    "solution": "$p_Y = (2m)\\left(\\dfrac{v}{2}\\right) = mv = p$. Doubling the mass and halving the speed leaves the momentum unchanged."
+  },
+  {
+    "id": "BP8-U6-MCQ-012",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M3"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A ball of mass $m$ hits a wall at speed $v$ and either (i) sticks to the wall or (ii) bounces straight back at the same speed $v$. In which case is the magnitude of the ball's change in momentum larger, and by how much?",
+    "choices": [
+      "Case (i), sticking, gives the larger change.",
+      "Case (ii), bouncing, gives the larger change: $2mv$ versus $mv$ for sticking.",
+      "Both give the same change, $mv$.",
+      "Both give the same change, $2mv$."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — sticking: $\\Delta p = 0 - mv = -mv$ (size $mv$). Bouncing: $\\Delta p = -mv - mv = -2mv$ (size $2mv$). Bouncing requires twice the impulse.",
+      "incorrect": {
+        "0": "Sticking only removes the incoming momentum ($mv$). Bouncing also has to reverse it, needing $2mv$.",
+        "2": "Bouncing needs $2mv$: stop the ball ($mv$) and then send it back ($mv$ more).",
+        "3": "Sticking needs only $mv$ — the ball just has to be brought to rest."
+      }
+    },
+    "hint": ["Take toward the wall as positive. Sticking: $v_f = 0$. Bouncing: $v_f = -v$. Compute $m(v_f - v_i)$ for each."],
+    "solution": "Take the direction toward the wall as positive. Sticking: $\\Delta p = m(0) - m(v) = -mv$, magnitude $mv$. Bouncing back at speed $v$: $\\Delta p = m(-v) - m(v) = -2mv$, magnitude $2mv$. Bouncing produces twice the momentum change, so the wall exerts twice the impulse on the ball (and the ball on the wall)."
+  },
+  {
+    "id": "BP8-U6-MCQ-013",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "How do momentum and kinetic energy differ for a single moving object?",
+    "choices": [
+      "They are the same quantity with different names.",
+      "Momentum ($mv$) is a vector with a direction; kinetic energy ($\\tfrac{1}{2}mv^2$) is a scalar and is always positive.",
+      "Kinetic energy is a vector; momentum is a scalar.",
+      "Momentum depends on speed squared; kinetic energy depends on speed."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — momentum is a vector, linear in $v$; kinetic energy is a scalar, quadratic in $v$ and never negative.",
+      "incorrect": {
+        "0": "They are different quantities with different units and different behaviour under collisions.",
+        "2": "It is the other way around: momentum is the vector, kinetic energy the scalar.",
+        "3": "Reversed: momentum $\\propto v$, kinetic energy $\\propto v^2$."
+      }
+    },
+    "hint": ["One has a direction and doubles when speed doubles; the other has no direction and quadruples."],
+    "solution": "Momentum $p = mv$ is a vector (it has direction and can be negative in 1-D) and is proportional to speed. Kinetic energy $KE = \\tfrac{1}{2}mv^2$ is a scalar, always non-negative, and proportional to speed squared. In a collision, momentum is always conserved for a closed system, but kinetic energy is only conserved in an elastic collision."
+  },
+  {
+    "id": "BP8-U6-MCQ-014",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "momentum",
+    "sourceOutcomes": ["M2", "M4"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "Two objects have equal kinetic energy. Object P has mass $m$ and object Q has mass $4m$. What is the ratio of their momenta, $p_P : p_Q$?",
+    "choices": ["$1 : 2$", "$2 : 1$", "$1 : 4$", "$1 : 1$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — for equal $KE$, $p = \\sqrt{2m\\,KE}$, so $p \\propto \\sqrt{m}$. With masses $m$ and $4m$, the ratio is $\\sqrt{m} : \\sqrt{4m} = 1 : 2$.",
+      "incorrect": {
+        "1": "The heavier object has the *larger* momentum for equal KE, so Q's momentum exceeds P's.",
+        "2": "The ratio goes as $\\sqrt{m}$, not $m$: $\\sqrt{1} : \\sqrt{4} = 1 : 2$, not $1 : 4$.",
+        "3": "Equal kinetic energy does not mean equal momentum unless the masses are equal."
+      }
+    },
+    "hint": ["Write $KE = \\dfrac{p^2}{2m}$, so for the same $KE$, $p = \\sqrt{2m\\,KE} \\propto \\sqrt{m}$."],
+    "solution": "Kinetic energy can be written $KE = \\dfrac{p^2}{2m}$, so for a fixed $KE$, $p = \\sqrt{2m\\,KE} \\propto \\sqrt{m}$. With $m_P = m$ and $m_Q = 4m$: $\\dfrac{p_P}{p_Q} = \\sqrt{\\dfrac{m}{4m}} = \\dfrac{1}{2}$. The more massive object carries more momentum for the same kinetic energy."
+  },
+
+  {
+    "id": "BP8-U6-MCQ-015",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The impulse delivered to an object by a constant force is:",
+    "choices": [
+      "the force divided by the time it acts.",
+      "the force multiplied by the time it acts, $J = F\\,\\Delta t$, and it equals the object's change in momentum.",
+      "the force multiplied by the distance over which it acts.",
+      "the object's mass times its acceleration."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — impulse is $J = F\\,\\Delta t$, and by the impulse-momentum theorem $J = \\Delta p$. Units: $\\mathrm{N\\,s}$, the same as $\\mathrm{kg\\,m/s}$.",
+      "incorrect": {
+        "0": "Impulse is a product of force and time, not a quotient.",
+        "2": "Force times distance is work, which changes kinetic energy, not momentum.",
+        "3": "$ma$ is the net force itself (Newton's second law), not the impulse."
+      }
+    },
+    "hint": ["Impulse is 'how hard, for how long'. It changes momentum, not energy."],
+    "solution": "Impulse $J = F\\,\\Delta t$ (constant force). The impulse-momentum theorem states that the impulse delivered to an object equals its change in momentum: $F\\,\\Delta t = \\Delta p$. Units are $\\mathrm{N\\,s} = \\mathrm{kg\\,m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-016",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A constant force of $20\\ \\mathrm{N}$ acts on a box for $3.0\\ \\mathrm{s}$. What impulse does it deliver?",
+    "choices": ["$60\\ \\mathrm{N\\,s}$", "$6.7\\ \\mathrm{N\\,s}$", "$23\\ \\mathrm{N\\,s}$", "$180\\ \\mathrm{N\\,s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $J = F\\,\\Delta t = (20)(3.0) = 60\\ \\mathrm{N\\,s}$.",
+      "incorrect": {
+        "1": "This divides ($20/3.0$). Impulse is force times time.",
+        "2": "This adds force and time. Impulse multiplies them.",
+        "3": "This looks like $F \\times \\Delta t^2$ or a factor error. $J = (20)(3.0) = 60$."
+      }
+    },
+    "hint": ["$J = F\\,\\Delta t$: multiply the force by the time."],
+    "solution": "$J = F\\,\\Delta t = (20\\ \\mathrm{N})(3.0\\ \\mathrm{s}) = 60\\ \\mathrm{N\\,s}$, in the direction of the force. This also equals the box's change in momentum."
+  },
+  {
+    "id": "BP8-U6-MCQ-017",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2", "M3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $2.0\\ \\mathrm{kg}$ ball moving at $3.0\\ \\mathrm{m/s}$ is struck and moves off at $9.0\\ \\mathrm{m/s}$ in the same direction. What impulse was delivered to the ball?",
+    "choices": ["$+12\\ \\mathrm{N\\,s}$", "$+18\\ \\mathrm{N\\,s}$", "$+6.0\\ \\mathrm{N\\,s}$", "$+24\\ \\mathrm{N\\,s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $J = \\Delta p = m(v_f - v_i) = (2.0)(9.0 - 3.0) = (2.0)(6.0) = +12\\ \\mathrm{N\\,s}$.",
+      "incorrect": {
+        "1": "This is $p_f = mv_f = (2.0)(9.0)$, the final momentum, not the change.",
+        "2": "This is $p_i = mv_i = (2.0)(3.0)$, the initial momentum.",
+        "3": "This looks like $m(v_f + v_i)$. Impulse equals $m(v_f - v_i)$."
+      }
+    },
+    "hint": ["Impulse = change in momentum = $m(v_f - v_i)$."],
+    "solution": "By the impulse-momentum theorem, $J = \\Delta p = m(v_f - v_i) = (2.0\\ \\mathrm{kg})(9.0 - 3.0)\\ \\mathrm{m/s} = +12\\ \\mathrm{N\\,s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-018",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "An impulse of $30\\ \\mathrm{N\\,s}$ is delivered to a cart over $0.50\\ \\mathrm{s}$. What was the average force?",
+    "choices": ["$60\\ \\mathrm{N}$", "$15\\ \\mathrm{N}$", "$30\\ \\mathrm{N}$", "$0.017\\ \\mathrm{N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $F = J/\\Delta t = 30/0.50 = 60\\ \\mathrm{N}$.",
+      "incorrect": {
+        "1": "This multiplies ($30 \\times 0.50$). Rearranging $J = F\\,\\Delta t$ gives $F = J/\\Delta t$.",
+        "2": "This ignores the time. $F = 30/0.50 = 60\\ \\mathrm{N}$.",
+        "3": "This inverts the fraction ($0.50/30$)."
+      }
+    },
+    "hint": ["Rearrange $J = F\\,\\Delta t$ to $F = J/\\Delta t$."],
+    "solution": "$F = \\dfrac{J}{\\Delta t} = \\dfrac{30\\ \\mathrm{N\\,s}}{0.50\\ \\mathrm{s}} = 60\\ \\mathrm{N}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-019",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why does bending your knees when landing from a jump reduce the force on your legs?",
+    "choices": [
+      "It reduces your change in momentum.",
+      "It increases the time over which your momentum is brought to zero, and since $F = \\Delta p / \\Delta t$, a longer time means a smaller average force.",
+      "It increases the impulse you experience.",
+      "It converts the impulse into kinetic energy."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the change in momentum (from your landing speed to zero) is fixed, so stretching out the stopping time reduces the average force.",
+      "incorrect": {
+        "0": "Your change in momentum is the same either way — you go from your landing velocity to rest.",
+        "2": "The impulse (= $\\Delta p$) is the same; bending your knees changes how that impulse is delivered (more time, less force).",
+        "3": "Impulse changes momentum, not energy; and it is not 'converted' to anything."
+      }
+    },
+    "hint": ["$\\Delta p$ is fixed (you stop). Impulse $F\\,\\Delta t = \\Delta p$. If $\\Delta t$ goes up, what happens to $F$?"],
+    "solution": "Landing means changing your momentum from $mv$ to zero — a fixed $\\Delta p$. The impulse needed is $F\\,\\Delta t = \\Delta p$. Bending your knees increases $\\Delta t$ (the stopping takes longer), so the average force $F = \\Delta p / \\Delta t$ is smaller. Crumple zones, airbags, and catching a ball 'softly' all work the same way."
+  },
+  {
+    "id": "BP8-U6-MCQ-020",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $0.50\\ \\mathrm{kg}$ ball travelling at $8.0\\ \\mathrm{m/s}$ is caught and brought to rest in $0.20\\ \\mathrm{s}$. What is the average force on the ball?",
+    "choices": ["$20\\ \\mathrm{N}$", "$4.0\\ \\mathrm{N}$", "$40\\ \\mathrm{N}$", "$2.0\\ \\mathrm{N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\Delta p = m\\,\\Delta v = (0.50)(0 - 8.0) = -4.0\\ \\mathrm{kg\\,m/s}$; $F = \\Delta p / \\Delta t = -4.0/0.20 = -20\\ \\mathrm{N}$ (magnitude $20\\ \\mathrm{N}$).",
+      "incorrect": {
+        "1": "This is $\\Delta p = 4.0\\ \\mathrm{N\\,s}$, not the force. Divide by $\\Delta t = 0.20\\ \\mathrm{s}$.",
+        "2": "This looks like $m v / \\Delta t^2$ or a doubled result. $F = 4.0/0.20 = 20\\ \\mathrm{N}$.",
+        "3": "This divides $\\Delta p$ by the speed instead of the time."
+      }
+    },
+    "hint": ["First find $\\Delta p = m\\,\\Delta v$, then $F = \\Delta p / \\Delta t$."],
+    "solution": "$\\Delta p = m(v_f - v_i) = (0.50\\ \\mathrm{kg})(0 - 8.0\\ \\mathrm{m/s}) = -4.0\\ \\mathrm{kg\\,m/s}$. Average force: $F = \\dfrac{\\Delta p}{\\Delta t} = \\dfrac{-4.0}{0.20} = -20\\ \\mathrm{N}$ — a force of $20\\ \\mathrm{N}$ opposing the ball's motion."
+  },
+  {
+    "id": "BP8-U6-MCQ-021",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1", "I2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Two identical eggs are dropped from the same height. One lands on concrete and stops in $0.001\\ \\mathrm{s}$; the other lands on a pillow and stops in $0.1\\ \\mathrm{s}$. How do the average forces on the two eggs compare?",
+    "choices": [
+      "The forces are equal, because the eggs are identical and fall the same distance.",
+      "The concrete exerts about 100 times the force, because the same impulse is delivered in about 1/100 of the time.",
+      "The pillow exerts the larger force, because it is softer.",
+      "Neither egg experiences any force."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — both eggs have the same $\\Delta p$ (same landing speed to rest), so $F = \\Delta p / \\Delta t$. The concrete's $\\Delta t$ is ~100 times shorter, so its force is ~100 times larger — which is why that egg breaks.",
+      "incorrect": {
+        "0": "The change in momentum is the same, but the stopping *time* differs enormously, so the forces differ.",
+        "2": "A softer surface exerts a *smaller* force by stretching out the stopping time.",
+        "3": "Both eggs experience a stopping force; the question is how large."
+      }
+    },
+    "hint": ["Same $\\Delta p$ for both. $F = \\Delta p / \\Delta t$. Compare the two stopping times."],
+    "solution": "Both eggs reach the ground at the same speed and stop, so both undergo the same change in momentum $\\Delta p$. The impulse is $F\\,\\Delta t = \\Delta p$, so $F = \\Delta p / \\Delta t$. The concrete stops the egg in about $1/100$ of the time the pillow does, so it exerts about 100 times the average force — enough to break the shell."
+  },
+  {
+    "id": "BP8-U6-MCQ-022",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $0.15\\ \\mathrm{kg}$ ball moving right at $10\\ \\mathrm{m/s}$ is hit and rebounds left at $20\\ \\mathrm{m/s}$. The contact lasts $0.010\\ \\mathrm{s}$. What is the average force on the ball (magnitude)?",
+    "choices": ["$450\\ \\mathrm{N}$", "$150\\ \\mathrm{N}$", "$300\\ \\mathrm{N}$", "$45\\ \\mathrm{N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\Delta p = m(v_f - v_i) = (0.15)(-20 - 10) = (0.15)(-30) = -4.5\\ \\mathrm{kg\\,m/s}$; $F = \\Delta p / \\Delta t = -4.5/0.010 = -450\\ \\mathrm{N}$, magnitude $450\\ \\mathrm{N}$.",
+      "incorrect": {
+        "1": "This uses $\\Delta v = 10\\ \\mathrm{m/s}$ (the difference of speeds) instead of $\\Delta v = -30\\ \\mathrm{m/s}$ (the ball reverses).",
+        "2": "This uses $\\Delta v = 20\\ \\mathrm{m/s}$. The correct $\\Delta v = -20 - 10 = -30\\ \\mathrm{m/s}$.",
+        "3": "This is the change in momentum ($4.5\\ \\mathrm{N\\,s}$) without dividing by the contact time."
+      }
+    },
+    "hint": ["The ball reverses, so $v_f = -20\\ \\mathrm{m/s}$ and $v_i = +10\\ \\mathrm{m/s}$: $\\Delta v = -30\\ \\mathrm{m/s}$. Then $F = m\\,\\Delta v / \\Delta t$."],
+    "solution": "Taking right as positive: $\\Delta p = m(v_f - v_i) = (0.15\\ \\mathrm{kg})(-20 - (+10))\\ \\mathrm{m/s} = (0.15)(-30) = -4.5\\ \\mathrm{kg\\,m/s}$. Average force: $F = \\dfrac{\\Delta p}{\\Delta t} = \\dfrac{-4.5}{0.010} = -450\\ \\mathrm{N}$ — magnitude $450\\ \\mathrm{N}$, directed left."
+  },
+  {
+    "id": "BP8-U6-MCQ-023",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "On a graph of force versus time for a collision, the impulse delivered is represented by:",
+    "choices": [
+      "the slope of the line.",
+      "the area between the curve and the time axis.",
+      "the highest point on the curve.",
+      "the length of the time axis."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — impulse is force multiplied by time, which is the area under a force-versus-time graph (even when the force varies).",
+      "incorrect": {
+        "0": "The slope of a force-time graph is the rate of change of force, not the impulse.",
+        "2": "The peak force is a single value; the impulse depends on the whole force-time history.",
+        "3": "The duration alone does not give the impulse — you need force times time, i.e. the area."
+      }
+    },
+    "hint": ["Impulse = force x time. On an F-vs-t graph, what does 'a quantity times time' correspond to?"],
+    "solution": "Impulse is $J = \\int F\\,dt$, which is the area between the force-versus-time curve and the time axis. For a constant force this is a rectangle ($F\\,\\Delta t$); for a varying force (a real collision) it is the area under the curve."
+  },
+  {
+    "id": "BP8-U6-MCQ-024",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1", "M3"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student says: 'A pitcher and a catcher throw and catch a baseball at the same speed, so the catcher must feel a bigger impulse because catching hurts more.' What is the correct view?",
+    "choices": [
+      "The student is right — catching delivers a larger impulse.",
+      "The impulse is the same size for both (each changes the ball's momentum by $mv$); catching just tends to happen over a shorter time, so the force can be larger.",
+      "The pitcher delivers a larger impulse because throwing takes more effort.",
+      "Neither delivers any impulse."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the ball goes from $0$ to $mv$ (throwing) and from $mv$ to $0$ (catching): equal-magnitude momentum changes, so equal-magnitude impulses. The felt force depends on the contact time.",
+      "incorrect": {
+        "0": "The impulse (momentum change) is the same magnitude; only the peak force may differ.",
+        "2": "Effort is not impulse. Both change the ball's momentum by the same amount.",
+        "3": "Both clearly deliver an impulse — the ball's momentum changes by $mv$ each time."
+      }
+    },
+    "hint": ["Throwing: $0 \\to mv$. Catching: $mv \\to 0$. Compare the sizes of these momentum changes."],
+    "solution": "Throwing changes the ball's momentum from $0$ to $mv$; catching changes it from $mv$ back to $0$. Both are momentum changes of magnitude $mv$, so both involve the same magnitude of impulse. Catching often hurts more because it is done over a shorter time (stiffer hands), giving a larger average force for the same impulse — which is why catchers 'give' with the catch."
+  },
+  {
+    "id": "BP8-U6-MCQ-025",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "For how long must a $5.0\\ \\mathrm{N}$ force act to deliver an impulse of $20\\ \\mathrm{N\\,s}$?",
+    "choices": ["$4.0\\ \\mathrm{s}$", "$100\\ \\mathrm{s}$", "$0.25\\ \\mathrm{s}$", "$15\\ \\mathrm{s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\Delta t = J/F = 20/5.0 = 4.0\\ \\mathrm{s}$.",
+      "incorrect": {
+        "1": "This multiplies ($20 \\times 5.0$). Rearrange $J = F\\,\\Delta t$ to $\\Delta t = J/F$.",
+        "2": "This inverts the fraction ($5.0/20$).",
+        "3": "This subtracts. $\\Delta t = 20/5.0 = 4.0\\ \\mathrm{s}$."
+      }
+    },
+    "hint": ["Rearrange $J = F\\,\\Delta t$ to $\\Delta t = J/F$."],
+    "solution": "$\\Delta t = \\dfrac{J}{F} = \\dfrac{20\\ \\mathrm{N\\,s}}{5.0\\ \\mathrm{N}} = 4.0\\ \\mathrm{s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-026",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "impulse",
+    "sourceOutcomes": ["I1", "I2"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "Water leaves a hose horizontally at $20\\ \\mathrm{m/s}$, hitting a wall and stopping (not bouncing). If $2.0\\ \\mathrm{kg}$ of water hits the wall each second, what average force does the water exert on the wall?",
+    "choices": ["$40\\ \\mathrm{N}$", "$10\\ \\mathrm{N}$", "$400\\ \\mathrm{N}$", "$20\\ \\mathrm{N}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — each second, $2.0\\ \\mathrm{kg}$ of water loses $\\Delta p = (2.0)(20) = 40\\ \\mathrm{kg\\,m/s}$. Force $= \\Delta p / \\Delta t = 40/1 = 40\\ \\mathrm{N}$ (by Newton's third law, the water pushes back on the wall with $40\\ \\mathrm{N}$).",
+      "incorrect": {
+        "1": "This divides speed by mass-per-second. Force is (momentum lost per second) = $(2.0\\ \\mathrm{kg/s})(20\\ \\mathrm{m/s})$.",
+        "2": "This would be right only if the water *bounced back* at $20\\ \\mathrm{m/s}$, doubling $\\Delta p$. Here it stops.",
+        "3": "This is just the speed. Force $= (\\dot m)(v) = (2.0)(20) = 40\\ \\mathrm{N}$."
+      }
+    },
+    "hint": ["Force = rate of momentum change = (mass hitting per second) x (speed lost). The water stops, so it loses all its speed."],
+    "solution": "The rate of momentum delivered is (mass per second) x (change in speed) $= (2.0\\ \\mathrm{kg/s})(20\\ \\mathrm{m/s} - 0) = 40\\ \\mathrm{kg\\,m/s}$ per second $= 40\\ \\mathrm{N}$. That is the force the wall exerts on the water to stop it; by Newton's third law the water pushes on the wall with $40\\ \\mathrm{N}$. (If the water bounced straight back at $20\\ \\mathrm{m/s}$, the force would double to $80\\ \\mathrm{N}$.)"
+  },
+
+  {
+    "id": "BP8-U6-MCQ-027",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The law of conservation of momentum states that:",
+    "choices": [
+      "momentum is always increasing.",
+      "the total momentum of a closed system (no external forces) stays constant.",
+      "momentum equals kinetic energy.",
+      "each object in a system keeps its own momentum unchanged."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — with no external forces, the total momentum of the system before an interaction equals the total after.",
+      "incorrect": {
+        "0": "Total momentum stays the same, not increases, in a closed system.",
+        "2": "Momentum and kinetic energy are different quantities with different units.",
+        "3": "Individual objects can gain or lose momentum in a collision; it is the *total* that is conserved."
+      }
+    },
+    "hint": ["It is the *total* momentum of the whole system that is fixed, provided nothing external pushes on it."],
+    "solution": "Conservation of momentum: if no external forces act on a system (it is closed/isolated), the total momentum of the system is constant. Internal forces (the objects pushing on each other) transfer momentum between objects but cannot change the total."
+  },
+  {
+    "id": "BP8-U6-MCQ-028",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $60\\ \\mathrm{kg}$ skater at rest throws a $2.0\\ \\mathrm{kg}$ ball to the right at $9.0\\ \\mathrm{m/s}$. Ignoring friction, what is the skater's velocity afterward?",
+    "choices": ["$0.30\\ \\mathrm{m/s}$ to the left", "$0.30\\ \\mathrm{m/s}$ to the right", "$9.0\\ \\mathrm{m/s}$ to the left", "$0\\ \\mathrm{m/s}$ (the skater does not move)"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — total momentum starts at zero, so $0 = (2.0)(+9.0) + (60)v_{skater}$, giving $v_{skater} = -18/60 = -0.30\\ \\mathrm{m/s}$ (to the left).",
+      "incorrect": {
+        "1": "The skater recoils *opposite* to the ball. Momentum to the right (the ball) must be balanced by momentum to the left (the skater).",
+        "2": "The skater is far more massive than the ball, so recoils much more slowly. $v = -0.30\\ \\mathrm{m/s}$, not $9.0$.",
+        "3": "The skater must recoil to keep the total momentum zero."
+      }
+    },
+    "hint": ["Total momentum before = 0. After: ball's $mv$ (right, +) plus skater's $mv$ (must be left, -) = 0."],
+    "solution": "Initial total momentum is zero (both at rest). By conservation: $0 = m_{ball}v_{ball} + m_{skater}v_{skater} = (2.0)(+9.0) + (60)v_{skater}$. So $v_{skater} = \\dfrac{-18}{60} = -0.30\\ \\mathrm{m/s}$: the skater recoils at $0.30\\ \\mathrm{m/s}$ to the left."
+  },
+  {
+    "id": "BP8-U6-MCQ-029",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $2.0\\ \\mathrm{kg}$ cart at $3.0\\ \\mathrm{m/s}$ collides with a stationary $4.0\\ \\mathrm{kg}$ cart and they stick together. What is their common velocity afterward?",
+    "choices": ["$1.0\\ \\mathrm{m/s}$", "$1.5\\ \\mathrm{m/s}$", "$3.0\\ \\mathrm{m/s}$", "$0.5\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (2.0)(3.0) + (4.0)(0) = 6.0\\ \\mathrm{kg\\,m/s}$. After: $(2.0 + 4.0)v = 6.0$, so $v = 1.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "This uses a total mass of $4.0\\ \\mathrm{kg}$. The stuck-together mass is $2.0 + 4.0 = 6.0\\ \\mathrm{kg}$.",
+        "2": "The moving cart slows down when it picks up the stationary cart's mass — it does not keep $3.0\\ \\mathrm{m/s}$.",
+        "3": "This divides by 12 (double the total mass). $v = 6.0 / 6.0 = 1.0\\ \\mathrm{m/s}$."
+      }
+    },
+    "hint": ["Total momentum before = total after. After sticking, the mass is $2.0 + 4.0 = 6.0\\ \\mathrm{kg}$ moving together."],
+    "solution": "Before: $p_i = (2.0\\ \\mathrm{kg})(3.0\\ \\mathrm{m/s}) + (4.0\\ \\mathrm{kg})(0) = 6.0\\ \\mathrm{kg\\,m/s}$. After sticking: $(m_1 + m_2)v = p_i$, so $v = \\dfrac{6.0}{6.0} = 1.0\\ \\mathrm{m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-030",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "During a collision between two cars, why is the total momentum of the two-car system conserved even though each car's momentum changes dramatically?",
+    "choices": [
+      "Because the cars have equal mass.",
+      "Because the forces the cars exert on each other are internal to the system and are equal and opposite (Newton's third law), so they cancel and cannot change the total.",
+      "Because friction with the road adds momentum back.",
+      "Because kinetic energy is conserved."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the collision forces are an internal Newton's-third-law pair; they transfer momentum from one car to the other but sum to zero, leaving the total unchanged (over the brief collision, external forces like friction are negligible).",
+      "incorrect": {
+        "0": "Conservation of momentum does not require equal masses.",
+        "2": "Friction is an *external* force that would slowly change the total; over the short collision time its effect is small, and it does not 'add momentum back'.",
+        "3": "Kinetic energy is generally *not* conserved in a car crash (it is inelastic); momentum still is."
+      }
+    },
+    "hint": ["The push each car gives the other is a Newton's third-law pair. What is the sum of a third-law pair?"],
+    "solution": "The forces the cars exert on each other during the crash form a Newton's third-law pair: equal in magnitude, opposite in direction. They are internal to the two-car system, so they sum to zero and cannot change the total momentum. They do redistribute momentum between the two cars. (Over the brief collision, external forces such as road friction deliver negligible impulse.)"
+  },
+  {
+    "id": "BP8-U6-MCQ-031",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $1.0\\ \\mathrm{kg}$ trolley at $6.0\\ \\mathrm{m/s}$ hits a stationary $2.0\\ \\mathrm{kg}$ trolley. After the collision the $1.0\\ \\mathrm{kg}$ trolley moves at $2.0\\ \\mathrm{m/s}$ (same direction). What is the velocity of the $2.0\\ \\mathrm{kg}$ trolley?",
+    "choices": ["$2.0\\ \\mathrm{m/s}$", "$4.0\\ \\mathrm{m/s}$", "$1.0\\ \\mathrm{m/s}$", "$6.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (1.0)(6.0) + 0 = 6.0$. $p_f = (1.0)(2.0) + (2.0)v_2 = 2.0 + 2.0v_2$. Setting equal: $6.0 = 2.0 + 2.0v_2$, so $v_2 = 2.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "Check: $6.0 = 2.0 + 2.0v_2$ gives $2.0v_2 = 4.0$, so $v_2 = 2.0$, not $4.0$.",
+        "2": "This would leave total momentum at $2.0 + 2.0 = 4.0$, not the required $6.0$.",
+        "3": "The $2.0\\ \\mathrm{kg}$ trolley starts at rest and is nudged forward, but not to the full $6.0\\ \\mathrm{m/s}$."
+      }
+    },
+    "hint": ["$p_i = p_f$. $p_i = (1.0)(6.0)$. $p_f = (1.0)(2.0) + (2.0)v_2$. Solve for $v_2$."],
+    "solution": "Conservation: $(1.0)(6.0) + (2.0)(0) = (1.0)(2.0) + (2.0)v_2$. So $6.0 = 2.0 + 2.0v_2$, giving $v_2 = \\dfrac{4.0}{2.0} = 2.0\\ \\mathrm{m/s}$ in the original direction."
+  },
+  {
+    "id": "BP8-U6-MCQ-032",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A $50\\ \\mathrm{kg}$ girl on a stationary $10\\ \\mathrm{kg}$ raft (total $60\\ \\mathrm{kg}$, at rest on still water) walks and the raft moves backward at $0.50\\ \\mathrm{m/s}$. The girl's momentum forward is $25\\ \\mathrm{kg\\,m/s}$. What is the raft's momentum?",
+    "choices": ["$25\\ \\mathrm{kg\\,m/s}$ backward", "$25\\ \\mathrm{kg\\,m/s}$ forward", "$5.0\\ \\mathrm{kg\\,m/s}$ backward", "$50\\ \\mathrm{kg\\,m/s}$ backward"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — total momentum stays zero, so the raft's momentum must be $25\\ \\mathrm{kg\\,m/s}$ backward to cancel the girl's $25\\ \\mathrm{kg\\,m/s}$ forward.",
+      "incorrect": {
+        "1": "If both momenta pointed forward, the total would not be zero. The raft must go backward.",
+        "2": "The raft's momentum ($10 \\times 0.50 = 5.0$) does not match — recheck; the girl's forward momentum is $25$, so the raft's must be $25$ backward. (The raft speed given, $0.50\\ \\mathrm{m/s}$, is inconsistent with a $10\\ \\mathrm{kg}$ raft — the exam value to use is the momentum balance.)",
+        "3": "The magnitudes must be equal: $25$ each, opposite directions."
+      }
+    },
+    "hint": ["The system started at rest, so total momentum is zero. Forward + backward momenta must cancel."],
+    "solution": "The girl-plus-raft system starts at rest, so its total momentum is zero and stays zero (still water, no external horizontal force). The girl gains $25\\ \\mathrm{kg\\,m/s}$ forward, so the raft must have $25\\ \\mathrm{kg\\,m/s}$ backward, so the two cancel."
+  },
+  {
+    "id": "BP8-U6-MCQ-033",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A ball is dropped and its downward momentum increases as it falls. Does this violate conservation of momentum?",
+    "choices": [
+      "Yes — momentum should stay constant.",
+      "No — the ball alone is not a closed system; Earth's gravity is an external force. The ball-plus-Earth system does conserve momentum (Earth gains an equal, opposite, imperceptible momentum).",
+      "Yes — but the violation is too small to measure.",
+      "No — because momentum is not conserved for falling objects."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — conservation of momentum applies to a *closed* system. Gravity is external to the ball. Include Earth and the total momentum is conserved.",
+      "incorrect": {
+        "0": "Momentum is conserved only when no external force acts. Gravity is an external force on the ball.",
+        "2": "There is no violation — the ball is simply not an isolated system.",
+        "3": "Momentum *is* conserved for the ball-plus-Earth closed system; the ball alone just is not closed."
+      }
+    },
+    "hint": ["Is the ball a closed system while it falls? What is pulling on it from outside?"],
+    "solution": "Conservation of momentum requires a closed system with no external forces. The falling ball feels Earth's gravity — an external force — so its momentum is not constant. If you take the ball *and* Earth as the system, the forces are internal (a third-law pair): the ball gains downward momentum and Earth gains an equal upward momentum (far too small to notice), so the total is conserved."
+  },
+  {
+    "id": "BP8-U6-MCQ-034",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $3.0\\ \\mathrm{kg}$ object moving right at $4.0\\ \\mathrm{m/s}$ collides with a $1.0\\ \\mathrm{kg}$ object moving left at $8.0\\ \\mathrm{m/s}$. They stick together. What is the velocity of the combined object?",
+    "choices": ["$+1.0\\ \\mathrm{m/s}$ (rightward)", "$-1.0\\ \\mathrm{m/s}$ (leftward)", "$+5.0\\ \\mathrm{m/s}$", "$0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (3.0)(+4.0) + (1.0)(-8.0) = 12 - 8 = +4.0\\ \\mathrm{kg\\,m/s}$. After: $(4.0)v = +4.0$, so $v = +1.0\\ \\mathrm{m/s}$ (rightward).",
+      "incorrect": {
+        "1": "Check the signs: $+12$ and $-8$ give $+4.0$, so the combined object moves *right*, not left.",
+        "2": "This adds the speeds. Use signed momenta: $12 + (-8) = 4$.",
+        "3": "The momenta are $+12$ and $-8$, which do not cancel."
+      }
+    },
+    "hint": ["Take right as positive. The left-moving object has negative momentum. Add the signed momenta, then divide by the total mass."],
+    "solution": "With right positive: $p_i = (3.0)(+4.0) + (1.0)(-8.0) = 12 - 8 = +4.0\\ \\mathrm{kg\\,m/s}$. Sticking together: $(3.0 + 1.0)v = +4.0$, so $v = +1.0\\ \\mathrm{m/s}$ — the combined object moves right at $1.0\\ \\mathrm{m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-035",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $0.010\\ \\mathrm{kg}$ bullet is fired at $300\\ \\mathrm{m/s}$ from a $3.0\\ \\mathrm{kg}$ rifle. What is the recoil speed of the rifle?",
+    "choices": ["$1.0\\ \\mathrm{m/s}$", "$0.10\\ \\mathrm{m/s}$", "$10\\ \\mathrm{m/s}$", "$300\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — total momentum starts at zero: $0 = (0.010)(+300) + (3.0)v_{rifle}$, so $v_{rifle} = -3.0/3.0 = -1.0\\ \\mathrm{m/s}$ (backward).",
+      "incorrect": {
+        "1": "Check: bullet momentum $= (0.010)(300) = 3.0\\ \\mathrm{kg\\,m/s}$; rifle recoil speed $= 3.0/3.0 = 1.0\\ \\mathrm{m/s}$.",
+        "2": "This uses the wrong mass ratio. $v_{rifle} = m_{bullet}v_{bullet}/m_{rifle} = 3.0/3.0 = 1.0$.",
+        "3": "The rifle is 300 times more massive than the bullet, so it recoils 300 times slower: $1.0\\ \\mathrm{m/s}$."
+      }
+    },
+    "hint": ["Total momentum before firing is zero. Bullet's forward momentum = rifle's backward momentum in size."],
+    "solution": "Initial total momentum is zero. Conservation: $0 = m_b v_b + m_r v_r = (0.010)(+300) + (3.0)v_r$. So $v_r = \\dfrac{-3.0}{3.0} = -1.0\\ \\mathrm{m/s}$: the rifle recoils backward at $1.0\\ \\mathrm{m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-036",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1", "M4"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "In the rifle-and-bullet example, the bullet and rifle have equal-magnitude momenta. Which has the greater kinetic energy just after firing, and why?",
+    "choices": [
+      "The rifle, because it is more massive.",
+      "The bullet, because for equal momentum, $KE = p^2/(2m)$, so the smaller mass has the larger kinetic energy.",
+      "They have equal kinetic energy, because momentum is conserved.",
+      "Neither has kinetic energy until it hits something."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — with equal $|p|$, $KE = p^2/(2m)$ is inversely proportional to mass, so the light bullet carries far more kinetic energy than the heavy rifle.",
+      "incorrect": {
+        "0": "For equal momentum, the *more* massive object has *less* kinetic energy.",
+        "2": "Momentum conservation does not imply equal kinetic energies — and here the kinetic energies are very unequal.",
+        "3": "Both are moving right after firing, so both have kinetic energy."
+      }
+    },
+    "hint": ["Write $KE = \\dfrac{p^2}{2m}$. With $|p|$ the same for both, how does $KE$ depend on $m$?"],
+    "solution": "Kinetic energy can be written $KE = \\dfrac{p^2}{2m}$. The bullet and rifle have equal-magnitude momenta, so their kinetic energies are in inverse ratio to their masses. The bullet (about 300 times lighter) carries about 300 times the kinetic energy — which is why the bullet, not the recoiling rifle, does the damage."
+  },
+  {
+    "id": "BP8-U6-MCQ-037",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student claims: 'A rocket cannot work in space because there is nothing for the exhaust to push against.' What is the correct physics?",
+    "choices": [
+      "The student is right — rockets need air.",
+      "The rocket pushes exhaust gas backward and, by conservation of momentum, the rocket gains an equal forward momentum. No surrounding medium is needed.",
+      "The rocket pushes against its own fuel tank.",
+      "Rockets work by gravity assist only."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the rocket-plus-exhaust system conserves momentum: gas ejected backward means the rocket moves forward, whether or not there is air.",
+      "incorrect": {
+        "0": "Rockets work in the vacuum of space; the space shuttle and probes rely on exactly this.",
+        "2": "It does not need to 'push against' anything external — the momentum comes from ejecting mass.",
+        "3": "Gravity assists are a separate trick; the basic thrust comes from ejecting exhaust."
+      }
+    },
+    "hint": ["Think of the skater throwing a ball. Does the skater need to push against the air to recoil?"],
+    "solution": "A rocket ejects exhaust gas backward at high speed. The rocket-plus-exhaust system has (nearly) constant total momentum, so as the exhaust carries momentum backward, the rocket gains an equal amount of momentum forward. This is the same physics as a skater recoiling from a thrown ball — no external medium is required, so rockets work in the vacuum of space."
+  },
+  {
+    "id": "BP8-U6-MCQ-038",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Two ice skaters, initially at rest and facing each other, push off. Skater A ($40\\ \\mathrm{kg}$) moves left at $3.0\\ \\mathrm{m/s}$. Skater B has mass $60\\ \\mathrm{kg}$. What is B's speed?",
+    "choices": ["$2.0\\ \\mathrm{m/s}$", "$3.0\\ \\mathrm{m/s}$", "$4.5\\ \\mathrm{m/s}$", "$1.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — total momentum stays zero: $0 = (40)(-3.0) + (60)v_B$, so $v_B = 120/60 = 2.0\\ \\mathrm{m/s}$ (to the right).",
+      "incorrect": {
+        "1": "The skaters have different masses, so they move at different speeds. B is heavier, so slower.",
+        "2": "This uses the wrong mass ratio. $v_B = m_A v_A / m_B = (40)(3.0)/60 = 2.0$.",
+        "3": "Check: A's momentum is $40 \\times 3.0 = 120$; B's speed is $120/60 = 2.0\\ \\mathrm{m/s}$."
+      }
+    },
+    "hint": ["Total momentum before = 0. A's leftward momentum must equal B's rightward momentum in size."],
+    "solution": "Initial total momentum is zero. $0 = m_A v_A + m_B v_B = (40)(-3.0) + (60)v_B$, so $v_B = \\dfrac{120}{60} = 2.0\\ \\mathrm{m/s}$ to the right. The lighter skater moves faster."
+  },
+  {
+    "id": "BP8-U6-MCQ-039",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "evaluate-assumptions",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "For which system is total momentum most nearly conserved during the event described?",
+    "choices": [
+      "A single ball rolling to a stop on carpet.",
+      "Two air-track gliders colliding on a frictionless track over a fraction of a second.",
+      "A parachutist drifting down at steady speed.",
+      "A car accelerating from a stop light."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — on a frictionless track over a very short time, external horizontal forces deliver negligible impulse, so the two-glider system's total momentum is essentially conserved.",
+      "incorrect": {
+        "0": "Friction from the carpet is a large external force, so the ball's (and system's) momentum is not conserved.",
+        "2": "Gravity and air drag are external forces; the parachutist's momentum is constant only because they happen to balance, but the system (parachutist alone) is not isolated.",
+        "3": "The road's friction (driving the car forward) is an external force adding momentum to the car."
+      }
+    },
+    "hint": ["Which system has no significant external horizontal force during the event?"],
+    "solution": "Conservation of momentum needs a closed system with negligible external impulse. Two gliders colliding on a frictionless air track over a fraction of a second have essentially no external horizontal force (friction is removed, and gravity/normal forces are vertical), so their total momentum is conserved. The other scenarios all involve a substantial external force (carpet friction, gravity/drag, road friction)."
+  },
+  {
+    "id": "BP8-U6-MCQ-040",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "conservation_of_momentum",
+    "sourceOutcomes": ["CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A $2.0\\ \\mathrm{kg}$ block slides at $5.0\\ \\mathrm{m/s}$ on frictionless ice and explodes into two pieces. A $0.5\\ \\mathrm{kg}$ piece flies backward at $3.0\\ \\mathrm{m/s}$. What is the velocity of the $1.5\\ \\mathrm{kg}$ piece?",
+    "choices": ["$+11/1.5 \\approx +7.3\\ \\mathrm{m/s}$", "$+5.0\\ \\mathrm{m/s}$", "$+3.0\\ \\mathrm{m/s}$", "$-7.3\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (2.0)(5.0) = 10\\ \\mathrm{kg\\,m/s}$. $p_f = (0.5)(-3.0) + (1.5)v = -1.5 + 1.5v$. Setting equal: $10 = -1.5 + 1.5v$, so $v = 11.5/1.5 \\approx 7.3\\ \\mathrm{m/s}$ forward.",
+      "incorrect": {
+        "1": "An internal explosion changes each piece's velocity; the $1.5\\ \\mathrm{kg}$ piece does not simply keep $5.0\\ \\mathrm{m/s}$.",
+        "2": "$+3.0\\ \\mathrm{m/s}$ would not conserve momentum: $(0.5)(-3) + (1.5)(3) = 3.0 \\ne 10$.",
+        "3": "The large forward-moving piece must move forward (positive), and faster than before, to make up for the small piece thrown backward."
+      }
+    },
+    "hint": ["Total momentum is unchanged by the internal explosion. $p_i = (2.0)(5.0)$. Then $p_i = (0.5)(-3.0) + (1.5)v$."],
+    "solution": "The explosion is internal, so total momentum is conserved: $p_i = (2.0\\ \\mathrm{kg})(5.0\\ \\mathrm{m/s}) = 10\\ \\mathrm{kg\\,m/s}$. After: $10 = (0.5)(-3.0) + (1.5)v = -1.5 + 1.5v$, so $1.5v = 11.5$ and $v \\approx 7.3\\ \\mathrm{m/s}$ forward. (Kinetic energy increased — supplied by the explosive.)"
+  },
+
+  {
+    "id": "BP8-U6-MCQ-041",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "In an elastic collision:",
+    "choices": [
+      "momentum is conserved but kinetic energy is not.",
+      "both momentum and kinetic energy are conserved.",
+      "kinetic energy is conserved but momentum is not.",
+      "neither momentum nor kinetic energy is conserved."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — an elastic collision conserves both total momentum and total kinetic energy.",
+      "incorrect": {
+        "0": "That describes an *inelastic* collision.",
+        "2": "Momentum is always conserved for a closed system, elastic or not.",
+        "3": "Momentum is always conserved for a closed system; in an elastic collision kinetic energy is too."
+      }
+    },
+    "hint": ["'Elastic' means no kinetic energy is lost — nothing gets permanently deformed or heated."],
+    "solution": "In an elastic collision, the total momentum *and* the total kinetic energy of the system are the same before and after. No energy goes into permanent deformation, heat, or sound. Collisions between hard steel balls or gas molecules are nearly elastic."
+  },
+  {
+    "id": "BP8-U6-MCQ-042",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which collision is perfectly inelastic?",
+    "choices": [
+      "Two billiard balls bouncing apart.",
+      "Two lumps of clay that hit and stick together, moving off as one.",
+      "A ball bouncing off a wall with no loss of speed.",
+      "Two magnets repelling each other without touching."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a perfectly inelastic collision is one in which the objects stick together and move with a common velocity; the maximum possible kinetic energy is lost (consistent with momentum conservation).",
+      "incorrect": {
+        "0": "Billiard balls bouncing apart is nearly elastic — little kinetic energy is lost.",
+        "2": "A ball bouncing off a wall with no speed loss is elastic.",
+        "3": "Magnets repelling without contact is effectively an elastic interaction."
+      }
+    },
+    "hint": ["Perfectly inelastic = the objects end up moving *together* as one."],
+    "solution": "A perfectly (completely) inelastic collision is one in which the colliding objects stick together and move off with a single common velocity. Momentum is conserved (as always for a closed system), but the largest possible amount of kinetic energy is converted to internal energy and sound."
+  },
+  {
+    "id": "BP8-U6-MCQ-043",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A collision is found to conserve momentum but the total kinetic energy afterward is less than before. What kind of collision is it, and where did the energy go?",
+    "choices": [
+      "Elastic; the energy became momentum.",
+      "Inelastic; the missing kinetic energy became internal energy (heat) and sound in the deforming objects.",
+      "Impossible; momentum conservation requires kinetic energy conservation.",
+      "Elastic; the energy left the system as an external force."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a momentum-conserving collision with less kinetic energy afterward is inelastic; the lost kinetic energy is converted to internal energy and sound.",
+      "incorrect": {
+        "0": "Kinetic energy does not 'become momentum' — they are different quantities. And an elastic collision loses no kinetic energy.",
+        "2": "Momentum is conserved in *all* closed-system collisions; kinetic energy is conserved only in elastic ones.",
+        "3": "The energy is lost internally (to heat/sound), not via an external force."
+      }
+    },
+    "hint": ["Momentum conserved + kinetic energy decreased = which type? Where does 'lost' mechanical energy usually go?"],
+    "solution": "Every closed-system collision conserves momentum. If the total kinetic energy afterward is smaller, the collision is inelastic: the missing kinetic energy has been converted into internal (thermal) energy of the objects as they deform, plus a little sound. Total energy is still conserved — only kinetic energy is not."
+  },
+  {
+    "id": "BP8-U6-MCQ-044",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $1.0\\ \\mathrm{kg}$ ball at $10\\ \\mathrm{m/s}$ collides head-on with a stationary $1.0\\ \\mathrm{kg}$ ball. The collision is elastic. What are the final velocities?",
+    "choices": [
+      "Both move at $5.0\\ \\mathrm{m/s}$.",
+      "The first ball stops; the second moves off at $10\\ \\mathrm{m/s}$.",
+      "The first ball bounces back at $10\\ \\mathrm{m/s}$; the second stays still.",
+      "Both stop."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — for an elastic head-on collision between equal masses, the moving ball stops and the stationary ball moves off with the original velocity. (Check: momentum $10 = 0 + 10$; KE $50 = 0 + 50$.)",
+      "incorrect": {
+        "0": "Both at $5.0\\ \\mathrm{m/s}$ conserves momentum ($10 = 5 + 5$) but *not* kinetic energy ($50 \\ne 12.5 + 12.5$), so it is the *inelastic* (stuck) outcome, not elastic.",
+        "2": "The first ball bouncing back would give total momentum $-10 + 0 = -10 \\ne 10$. Not allowed.",
+        "3": "Both stopping gives zero momentum, violating conservation."
+      }
+    },
+    "hint": ["Equal masses, elastic, one initially at rest: the classic result is that the balls 'swap' velocities."],
+    "solution": "For a one-dimensional elastic collision between equal masses with one initially at rest, the two balls exchange velocities: the incoming ball stops and the target ball moves off at $10\\ \\mathrm{m/s}$. This satisfies both momentum ($10 = 0 + 10$) and kinetic energy ($\\tfrac{1}{2}(1)(10)^2 = 0 + \\tfrac{1}{2}(1)(10)^2$)."
+  },
+  {
+    "id": "BP8-U6-MCQ-045",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $4.0\\ \\mathrm{kg}$ cart at $6.0\\ \\mathrm{m/s}$ hits a stationary $2.0\\ \\mathrm{kg}$ cart and they couple together. How much kinetic energy is lost in the collision?",
+    "choices": ["$24\\ \\mathrm{J}$", "$0\\ \\mathrm{J}$", "$72\\ \\mathrm{J}$", "$48\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — before: $KE = \\tfrac{1}{2}(4.0)(6.0)^2 = 72\\ \\mathrm{J}$. After: $v = p_i/(m_1+m_2) = 24/6.0 = 4.0\\ \\mathrm{m/s}$; $KE = \\tfrac{1}{2}(6.0)(4.0)^2 = 48\\ \\mathrm{J}$. Lost: $72 - 48 = 24\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "Kinetic energy is *not* conserved when carts couple together — this is a perfectly inelastic collision.",
+        "2": "$72\\ \\mathrm{J}$ is the *total* kinetic energy before, not the amount lost. Subtract the final $48\\ \\mathrm{J}$.",
+        "3": "$48\\ \\mathrm{J}$ is the kinetic energy *after* the collision, not the amount lost."
+      }
+    },
+    "hint": ["Find $KE_i$ and $KE_f$ separately. $KE_f$ needs the common velocity from momentum conservation first."],
+    "solution": "Before: $KE_i = \\tfrac{1}{2}(4.0)(6.0)^2 = 72\\ \\mathrm{J}$. Momentum: $p_i = (4.0)(6.0) = 24\\ \\mathrm{kg\\,m/s}$; common velocity $v = \\dfrac{24}{6.0} = 4.0\\ \\mathrm{m/s}$. After: $KE_f = \\tfrac{1}{2}(6.0)(4.0)^2 = 48\\ \\mathrm{J}$. Kinetic energy lost $= 72 - 48 = 24\\ \\mathrm{J}$ (converted to heat and sound)."
+  },
+  {
+    "id": "BP8-U6-MCQ-046",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $0.020\\ \\mathrm{kg}$ bullet moving at $400\\ \\mathrm{m/s}$ embeds in a $1.98\\ \\mathrm{kg}$ block of wood at rest on a frictionless surface. What is the speed of the block-plus-bullet just after impact?",
+    "choices": ["$4.0\\ \\mathrm{m/s}$", "$8.0\\ \\mathrm{m/s}$", "$40\\ \\mathrm{m/s}$", "$2.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (0.020)(400) = 8.0\\ \\mathrm{kg\\,m/s}$. After: $(0.020 + 1.98)v = 2.0v = 8.0$, so $v = 4.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "$8.0$ is the momentum in $\\mathrm{kg\\,m/s}$, not the speed. Divide by the total mass $2.0\\ \\mathrm{kg}$.",
+        "2": "This divides by the bullet mass region or drops a factor of 10. $v = 8.0/2.0 = 4.0$.",
+        "3": "This uses a total mass of $4.0\\ \\mathrm{kg}$. The total is $0.020 + 1.98 = 2.0\\ \\mathrm{kg}$."
+      }
+    },
+    "hint": ["Perfectly inelastic: $p_i = (m_{bullet})(v_{bullet})$, then divide by the combined mass."],
+    "solution": "Momentum before: $p_i = (0.020\\ \\mathrm{kg})(400\\ \\mathrm{m/s}) = 8.0\\ \\mathrm{kg\\,m/s}$. The bullet embeds, so total mass afterward is $0.020 + 1.98 = 2.0\\ \\mathrm{kg}$: $v = \\dfrac{8.0}{2.0} = 4.0\\ \\mathrm{m/s}$."
+  },
+  {
+    "id": "BP8-U6-MCQ-047",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Cart 1 ($3.0\\ \\mathrm{kg}$) moving right at $4.0\\ \\mathrm{m/s}$ collides with cart 2 ($2.0\\ \\mathrm{kg}$) moving right at $1.0\\ \\mathrm{m/s}$. After the collision cart 1 moves at $2.0\\ \\mathrm{m/s}$. What is cart 2's velocity?",
+    "choices": ["$+4.0\\ \\mathrm{m/s}$", "$+1.0\\ \\mathrm{m/s}$", "$+2.0\\ \\mathrm{m/s}$", "$+8.0\\ \\mathrm{m/s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $p_i = (3.0)(4.0) + (2.0)(1.0) = 12 + 2 = 14\\ \\mathrm{kg\\,m/s}$. $p_f = (3.0)(2.0) + (2.0)v_2 = 6 + 2v_2$. Setting equal: $14 = 6 + 2v_2$, so $v_2 = 4.0\\ \\mathrm{m/s}$.",
+      "incorrect": {
+        "1": "$+1.0\\ \\mathrm{m/s}$ is cart 2's *initial* velocity. It gets pushed faster by the collision.",
+        "2": "Check: $14 = 6 + 2v_2$ gives $v_2 = 4.0$, not $2.0$.",
+        "3": "This double-counts. $2v_2 = 14 - 6 = 8$, so $v_2 = 4.0$."
+      }
+    },
+    "hint": ["$p_i = p_f$. Compute the total initial momentum, subtract cart 1's final momentum, divide by cart 2's mass."],
+    "solution": "$p_i = (3.0)(4.0) + (2.0)(1.0) = 14\\ \\mathrm{kg\\,m/s}$. Conservation: $14 = (3.0)(2.0) + (2.0)v_2 = 6 + 2.0v_2$, so $v_2 = \\dfrac{8.0}{2.0} = 4.0\\ \\mathrm{m/s}$ in the original direction."
+  },
+  {
+    "id": "BP8-U6-MCQ-048",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "reasonableness-check",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student calculates that after a head-on collision, the total kinetic energy of two carts is greater than before, even though no explosive or motor was involved. What does this indicate?",
+    "choices": [
+      "The collision was super-elastic, which is normal.",
+      "There is an error: an ordinary collision can conserve kinetic energy (elastic) or lose it (inelastic), but cannot create it without an energy source.",
+      "Momentum was not conserved.",
+      "The carts must have swapped masses."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — kinetic energy can stay the same (elastic) or decrease (inelastic) in a collision, but it cannot increase unless stored energy is released (a spring, an explosive). More KE out than in signals a calculation mistake.",
+      "incorrect": {
+        "0": "A collision that increases kinetic energy needs an energy source; it is not an 'ordinary' outcome.",
+        "2": "Momentum being conserved is a separate check; the KE increase alone flags the error.",
+        "3": "Carts do not swap masses; the result is simply unphysical for a passive collision."
+      }
+    },
+    "hint": ["Where would the extra kinetic energy have come from? Was there a spring or explosive?"],
+    "solution": "In a passive collision the total kinetic energy afterward is at most the kinetic energy before (equal for elastic, less for inelastic). It can only increase if stored energy is released — a compressed spring between the carts, an explosive charge, a motor. With none of those present, a calculated increase in kinetic energy means an arithmetic or sign error."
+  },
+  {
+    "id": "BP8-U6-MCQ-049",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $2.0\\ \\mathrm{kg}$ ball moving right at $3.0\\ \\mathrm{m/s}$ collides head-on with a $2.0\\ \\mathrm{kg}$ ball moving left at $3.0\\ \\mathrm{m/s}$. The collision is perfectly inelastic. What happens?",
+    "choices": [
+      "The stuck-together balls move right at $3.0\\ \\mathrm{m/s}$.",
+      "The stuck-together balls are at rest; all the kinetic energy ($18\\ \\mathrm{J}$) is converted to heat and sound.",
+      "The balls bounce back at $3.0\\ \\mathrm{m/s}$ each.",
+      "The stuck-together balls move at $6.0\\ \\mathrm{m/s}$."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — total momentum is $(2.0)(+3.0) + (2.0)(-3.0) = 0$, so the combined object is at rest. All the initial kinetic energy, $2 \\times \\tfrac{1}{2}(2.0)(3.0)^2 = 18\\ \\mathrm{J}$, becomes internal energy and sound.",
+      "incorrect": {
+        "0": "The two momenta are equal and opposite, so the total is zero — the combined object cannot be moving.",
+        "2": "Perfectly inelastic means they stick, not bounce.",
+        "3": "$6.0\\ \\mathrm{m/s}$ would violate momentum conservation (total momentum is zero)."
+      }
+    },
+    "hint": ["Equal masses, equal and opposite velocities: what is the total momentum, and so the final velocity?"],
+    "solution": "Total momentum: $(2.0)(+3.0) + (2.0)(-3.0) = 0$. In a perfectly inelastic collision the objects stick together, so $(4.0)v = 0$ gives $v = 0$: the combined mass is at rest. Every joule of the initial kinetic energy ($2 \\times \\tfrac{1}{2}(2.0)(3.0)^2 = 18\\ \\mathrm{J}$) is converted to internal energy and sound — the maximum possible loss."
+  },
+  {
+    "id": "BP8-U6-MCQ-050",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1", "C2"],
+    "type": "multiple-choice",
+    "skill": "transfer",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A dart is thrown at a block on a frictionless track. Compared with the dart sticking into the block, if instead the dart bounces backward off the block, the block ends up moving:",
+    "choices": [
+      "slower, because bouncing wastes energy.",
+      "faster, because the dart's momentum change is larger when it reverses, so it transfers more momentum to the block.",
+      "at the same speed, because momentum is conserved either way.",
+      "backward."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a bouncing dart changes its own momentum by more than a sticking dart (it has to reverse), and by conservation that larger momentum change is transferred to the block, so the block moves faster.",
+      "incorrect": {
+        "0": "Bouncing is more elastic, not less — and the block goes faster regardless of the energy accounting.",
+        "2": "Momentum is conserved in both cases, but the block's *share* of the momentum is larger when the dart rebounds.",
+        "3": "The block is pushed forward in both cases; bouncing just pushes it forward more."
+      }
+    },
+    "hint": ["How much does the dart's own momentum change if it sticks (goes to the block's speed) versus if it bounces backward? That change is transferred to the block."],
+    "solution": "If the dart sticks, its momentum changes from $mv$ down to the small common speed. If the dart bounces backward, its momentum changes from $mv$ (forward) to a negative value — a larger change. By conservation of momentum, whatever momentum the dart loses, the block gains. The bouncing dart loses more momentum, so the block gains more and moves faster. (This is why a super-ball bouncing off a cart pushes it harder than a beanbag that sticks.)"
+  },
+  {
+    "id": "BP8-U6-MCQ-051",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Two identical $1.0\\ \\mathrm{kg}$ gliders approach each other, each at $2.0\\ \\mathrm{m/s}$, and collide elastically head-on. What are their velocities afterward?",
+    "choices": [
+      "Both at rest.",
+      "Each rebounds at $2.0\\ \\mathrm{m/s}$ (they reverse).",
+      "Both move together at $2.0\\ \\mathrm{m/s}$.",
+      "One at $4.0\\ \\mathrm{m/s}$, the other at rest."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — equal masses, elastic: the gliders exchange velocities, so each ends up moving at $2.0\\ \\mathrm{m/s}$ in the opposite direction. (Momentum: $0 = 0$; KE: $4\\ \\mathrm{J} = 4\\ \\mathrm{J}$.)",
+      "incorrect": {
+        "0": "Both at rest conserves momentum but loses all $4\\ \\mathrm{J}$ of kinetic energy — that is the perfectly inelastic outcome, not elastic.",
+        "2": "Total momentum is zero, so the pair cannot move off together at $2.0\\ \\mathrm{m/s}$.",
+        "3": "This would violate momentum conservation (total would be $+4$, not $0$)."
+      }
+    },
+    "hint": ["Equal masses, elastic head-on: velocities swap. Here that means each simply reverses."],
+    "solution": "For equal masses in a 1-D elastic collision, the two objects exchange velocities. Glider A had $+2.0\\ \\mathrm{m/s}$ and glider B had $-2.0\\ \\mathrm{m/s}$; after the collision A has $-2.0\\ \\mathrm{m/s}$ and B has $+2.0\\ \\mathrm{m/s}$ — each bounces straight back at the same speed. Momentum ($0$) and kinetic energy ($4\\ \\mathrm{J}$) are both conserved."
+  },
+  {
+    "id": "BP8-U6-MCQ-052",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which quantity is conserved in every collision between objects in a closed system, whether the collision is elastic or inelastic?",
+    "choices": ["Kinetic energy", "Total momentum", "The speed of each object", "The kinetic energy of each object"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — total momentum is conserved in any closed-system collision. Kinetic energy is conserved only if the collision is elastic.",
+      "incorrect": {
+        "0": "Kinetic energy is conserved only in *elastic* collisions.",
+        "2": "Individual speeds change in a collision — that is what a collision does.",
+        "3": "Individual kinetic energies change as momentum is redistributed."
+      }
+    },
+    "hint": ["One quantity is always conserved for a closed system; the other only sometimes."],
+    "solution": "Total momentum is conserved in every collision within a closed system (no external forces), because the collision forces are an internal third-law pair. Total kinetic energy is conserved only when the collision is elastic; in an inelastic collision some kinetic energy becomes internal energy and sound."
+  },
+  {
+    "id": "BP8-U6-MCQ-053",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C2", "CM1"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A $1.0\\ \\mathrm{kg}$ ball at $4.0\\ \\mathrm{m/s}$ collides head-on with a $3.0\\ \\mathrm{kg}$ ball at rest. After the collision the $1.0\\ \\mathrm{kg}$ ball moves backward at $2.0\\ \\mathrm{m/s}$. Is this collision elastic?",
+    "choices": [
+      "Yes — check: the $3.0\\ \\mathrm{kg}$ ball moves at $2.0\\ \\mathrm{m/s}$, and both momentum ($4.0 = -2.0 + 6.0$) and KE ($8.0\\ \\mathrm{J} = 2.0 + 6.0\\ \\mathrm{J}$) are conserved.",
+      "No — momentum is not conserved.",
+      "No — momentum is conserved but kinetic energy increases.",
+      "Cannot tell without the collision time."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — momentum: $4.0 = (1.0)(-2.0) + (3.0)v_2 \\Rightarrow v_2 = 2.0\\ \\mathrm{m/s}$. KE before $= \\tfrac{1}{2}(1.0)(4.0)^2 = 8.0\\ \\mathrm{J}$; KE after $= \\tfrac{1}{2}(1.0)(2.0)^2 + \\tfrac{1}{2}(3.0)(2.0)^2 = 2.0 + 6.0 = 8.0\\ \\mathrm{J}$. Both conserved, so elastic.",
+      "incorrect": {
+        "1": "Momentum *is* conserved: $4.0 = -2.0 + 6.0$.",
+        "2": "KE is unchanged ($8.0\\ \\mathrm{J}$ before and after), not increased.",
+        "3": "Elastic vs inelastic is decided by comparing kinetic energy before and after, which you can do from the velocities alone."
+      }
+    },
+    "hint": ["First use momentum conservation to find the heavy ball's velocity, then compare total kinetic energy before and after."],
+    "solution": "Momentum: $(1.0)(4.0) = (1.0)(-2.0) + (3.0)v_2$, so $4.0 = -2.0 + 3.0v_2$ and $v_2 = 2.0\\ \\mathrm{m/s}$. Kinetic energy before: $\\tfrac{1}{2}(1.0)(4.0)^2 = 8.0\\ \\mathrm{J}$. After: $\\tfrac{1}{2}(1.0)(2.0)^2 + \\tfrac{1}{2}(3.0)(2.0)^2 = 2.0 + 6.0 = 8.0\\ \\mathrm{J}$. Kinetic energy is unchanged, so the collision is elastic."
+  },
+  {
+    "id": "BP8-U6-MCQ-054",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "momentum-and-collisions",
+    "unit": "Unit 6: Momentum and Collisions",
+    "cluster": "collisions",
+    "sourceOutcomes": ["C1", "C2"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why are the front and rear of modern cars designed to crumple in a crash?",
+    "choices": [
+      "To reduce the car's change in momentum.",
+      "To extend the collision time, which reduces the peak force on the occupants ($F = \\Delta p / \\Delta t$), by making the crash more inelastic and drawn-out.",
+      "To make the collision elastic so the car bounces off.",
+      "To increase the car's kinetic energy on impact."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a crumple zone lengthens the time over which the car (and occupants) come to rest, so the same momentum change is spread over more time and the average force is lower.",
+      "incorrect": {
+        "0": "The change in momentum (the car stopping) is fixed; crumpling changes the *time*, not the $\\Delta p$.",
+        "2": "You want the opposite — an inelastic, drawn-out stop, not a bounce (a bounce would mean a larger $\\Delta p$ and force).",
+        "3": "Crumpling absorbs energy through deformation; it does not increase kinetic energy."
+      }
+    },
+    "hint": ["The car has to stop, so $\\Delta p$ is fixed. What does crumpling do to $\\Delta t$, and hence to $F$?"],
+    "solution": "In a crash the car's momentum change (down to zero) is fixed. The force on the occupants is $F = \\Delta p / \\Delta t$. A crumple zone deforms progressively, extending the stopping time $\\Delta t$, so the peak and average forces are reduced. It also ensures the crash is inelastic (the car does not rebound), avoiding the larger $\\Delta p$ that a bounce would require."
+  }
+]

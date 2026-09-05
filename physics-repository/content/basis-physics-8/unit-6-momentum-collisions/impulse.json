@@ -1,0 +1,351 @@
+{
+  "id": "basis-p8-u6-l2",
+  "slug": "impulse",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 6: Momentum and Collisions",
+  "topic": "Impulse",
+  "lessonTitle": "Impulse and the Impulse-Momentum Theorem",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit6_momentum_collisions_outcomes.md (Impulse cluster, I1-I2); calibrated against AP Physics 1 CED Unit 4 (Topic 4.2) and OpenStax High School Physics Ch. 8",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 6 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 1 treatments.",
+  "prerequisites": [
+    "Lesson 1 — momentum is $p = mv$; change in momentum is $\\Delta p = m(v_f - v_i)$, with signs.",
+    "Unit 3 — a net force causes acceleration; forces come in equal-and-opposite pairs (Newton's third law)."
+  ],
+  "majorObjective": "Define impulse as $J = F\\,\\Delta t$, state and apply the impulse-momentum theorem $J = \\Delta p$, and solve for impulse, force, or time given the other quantities.",
+  "subObjectives": [
+    "State that impulse is force multiplied by the time it acts, $J = F\\,\\Delta t$, a vector in $\\mathrm{N\\,s}$ ($= \\mathrm{kg\\,m/s}$).",
+    "State the impulse-momentum theorem: the impulse delivered to an object equals its change in momentum, $F\\,\\Delta t = \\Delta p$.",
+    "Rearrange $J = F\\,\\Delta t = \\Delta p$ to solve for any one of impulse, force, time, or a velocity change.",
+    "Explain why extending the contact time (crumple zones, airbags, bending knees, 'giving' with a catch) reduces the force for a fixed change in momentum, and read impulse as the area under a force-time graph."
+  ],
+  "hook": {
+    "prompt": "Two identical eggs are dropped from the same height. One lands on concrete, one on a thick pillow. Both stop. Which egg experiences the larger average force?",
+    "choices": [
+      "The concrete egg, because it stops in a much shorter time for the same change in momentum.",
+      "The pillow egg, because the pillow pushes back harder.",
+      "They experience the same force, since they fell the same distance.",
+      "Neither egg experiences any force while stopping."
+    ],
+    "correctIndex": 0
+  },
+  "priorKnowledge": "A force acting for a time changes an object's momentum. That product \u2014 force times time \u2014 is called impulse, and it is exactly equal to the change in momentum. This one idea explains airbags, crumple zones, and why you bend your knees when you land.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Impulse and the impulse-momentum theorem",
+      "concept": "The **impulse** delivered by a constant force is\n\n$$J = F\\,\\Delta t$$\n\n\u2014 the force multiplied by the time it acts. Impulse is a **vector** in the direction of the force; its units are **newton-seconds ($\\mathrm{N\\,s}$)**, which are the same as $\\mathrm{kg\\,m/s}$.\n\nThe **impulse-momentum theorem** states:\n\n$$J = \\Delta p \\qquad\\text{i.e.}\\qquad F\\,\\Delta t = m(v_f - v_i)$$\n\nThe impulse delivered to an object **equals** its change in momentum. This follows from Newton's second law: $F = ma = m\\dfrac{\\Delta v}{\\Delta t}$, so $F\\,\\Delta t = m\\,\\Delta v = \\Delta p$.\n\nKey consequences:\n\n- To produce a given $\\Delta p$, you can use a **big force for a short time** or a **small force for a long time** \u2014 the product is what matters.\n- A larger $\\Delta p$ (e.g. a bouncing rather than stopping object) needs a larger impulse.",
+      "representation": "Three equivalent readings of the theorem:\n\n- $J = F\\,\\Delta t$ (impulse from a force and time);\n- $J = \\Delta p = m(v_f - v_i)$ (impulse from a momentum change);\n- $F\\,\\Delta t = m(v_f - v_i)$ (the two set equal \u2014 solve for the unknown).\n\nWork with signs, just as for momentum.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.50\\ \\mathrm{kg}$ ball moving right at $4.0\\ \\mathrm{m/s}$ is pushed by a constant $6.0\\ \\mathrm{N}$ force (to the right) for $2.0\\ \\mathrm{s}$. (a) Find the impulse. (b) Find the ball's final velocity.",
+        "phases": [
+          {
+            "label": "(a) Impulse",
+            "steps": ["$J = F\\,\\Delta t = (+6.0\\ \\mathrm{N})(2.0\\ \\mathrm{s}) = +12\\ \\mathrm{N\\,s}$ (to the right)."]
+          },
+          {
+            "label": "(b) Final velocity",
+            "steps": [
+              "$J = \\Delta p = m(v_f - v_i)$, so $+12 = (0.50)(v_f - 4.0)$.",
+              "$v_f - 4.0 = 24$, so $v_f = 28\\ \\mathrm{m/s}$ (to the right)."
+            ]
+          }
+        ],
+        "keyMove": "Impulse from $F\\,\\Delta t$; then set it equal to $m(v_f - v_i)$ and solve for the final velocity."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L2-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "The impulse-momentum theorem says that the impulse on an object equals its:",
+        "choices": ["change in kinetic energy", "change in momentum", "acceleration", "mass"],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — $J = F\\,\\Delta t = \\Delta p$. Impulse changes momentum.",
+          "incorrect": {
+            "0": "Force times *distance* (work) changes kinetic energy. Force times *time* (impulse) changes momentum.",
+            "2": "Acceleration is $F/m$; impulse is force times time.",
+            "3": "Mass is a property of the object, not something impulse equals."
+          }
+        },
+        "hint": ["Impulse is force x time. Which quantity does 'force x time' change?"],
+        "solution": "The impulse-momentum theorem states $J = F\\,\\Delta t = \\Delta p$: the impulse delivered to an object equals its change in momentum. (Contrast with work, force times distance, which equals the change in kinetic energy.)"
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Same momentum change, different force: why time matters",
+      "concept": "When an object must undergo a **fixed** change in momentum \u2014 a car crashing to a stop, a ball being caught, a person landing \u2014 the impulse $J = \\Delta p$ is **set**. The force then depends entirely on the time:\n\n$$F = \\frac{\\Delta p}{\\Delta t}$$\n\n**Longer stopping time \u2192 smaller force.** This is the physics behind:\n\n- **crumple zones** and **airbags** \u2014 extend the time the occupant takes to stop;\n- **bending your knees** when landing \u2014 lengthens the stop;\n- **'giving' with a catch** (moving your hands back) \u2014 catches a ball over more time;\n- **crash mats, packaging foam, boxing gloves** \u2014 all spread the impulse over more time.\n\nThe egg on concrete and the egg on a pillow undergo the **same** $\\Delta p$; the concrete stops the egg ~100x faster, so it delivers ~100x the force \u2014 enough to break the shell.",
+      "representation": "For a fixed $\\Delta p$:\n\n$$F \\times \\Delta t = \\Delta p = \\text{constant}$$\n\nSo $F$ and $\\Delta t$ are inversely related: double the stopping time, halve the average force.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-6/impulse/force-time-impulse.svg",
+          "caption": "The impulse in a real collision is the area under the force-versus-time curve. A given impulse (area) delivered over a longer time has a lower average force (the dashed line drops)."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $70\\ \\mathrm{kg}$ person jumps down and lands moving at $5.0\\ \\mathrm{m/s}$. (a) Find the impulse needed to stop them. (b) Find the average force if they stop stiff-legged in $0.10\\ \\mathrm{s}$. (c) Find the average force if they bend their knees and stop in $0.50\\ \\mathrm{s}$.",
+        "phases": [
+          {
+            "label": "(a) Impulse to stop",
+            "steps": ["$J = \\Delta p = m(v_f - v_i) = (70)(0 - 5.0) = -350\\ \\mathrm{N\\,s}$ (magnitude $350\\ \\mathrm{N\\,s}$)."]
+          },
+          {
+            "label": "(b) Stiff-legged, 0.10 s",
+            "steps": ["$F = \\dfrac{\\Delta p}{\\Delta t} = \\dfrac{350}{0.10} = 3500\\ \\mathrm{N}$."]
+          },
+          {
+            "label": "(c) Bent knees, 0.50 s",
+            "steps": [
+              "$F = \\dfrac{350}{0.50} = 700\\ \\mathrm{N}$.",
+              "Five times the stopping time \u2192 one fifth of the force."
+            ]
+          }
+        ],
+        "keyMove": "The impulse to stop is fixed by the landing speed. Stretching the stopping time cuts the force proportionally."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L2-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A car crash test is repeated with a longer crumple zone, so the car takes twice as long to stop from the same speed. How does the average force on the car change?",
+        "choices": [
+          "It doubles.",
+          "It halves.",
+          "It stays the same, because the change in momentum is the same.",
+          "It quadruples."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the change in momentum is fixed (same speed to zero), so $F = \\Delta p / \\Delta t$: doubling $\\Delta t$ halves the average force.",
+          "incorrect": {
+            "0": "A longer stopping time gives a *smaller* force, not a larger one.",
+            "2": "The change in momentum is indeed the same — but the force also depends on the *time*, which changed.",
+            "3": "The relationship is $F \\propto 1/\\Delta t$, so double the time gives half the force, not a quarter."
+          }
+        },
+        "hint": ["$\\Delta p$ is fixed. $F = \\Delta p / \\Delta t$. Double $\\Delta t$ \u2192 ?"],
+        "solution": "The car goes from the same speed to rest, so its change in momentum $\\Delta p$ is unchanged. The impulse-momentum theorem gives $F = \\Delta p / \\Delta t$. Doubling the stopping time halves the average force on the car (and its occupants) — which is the whole point of a crumple zone."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Impulse as an area, and solving for force or time",
+      "concept": "A real collision force is not constant \u2014 it rises, peaks, and falls. For any force,\n\n$$J = \\text{area between the force-versus-time graph and the time axis}$$\n\nFor a constant force this area is a rectangle ($F\\,\\Delta t$); for a triangular pulse it is $\\tfrac{1}{2}(\\text{base})(\\text{height})$; the **average force** is the height of the rectangle with the same area over the same time.\n\nThe theorem $F\\,\\Delta t = m(v_f - v_i)$ solves for whichever quantity is unknown:\n\n- **impulse:** $J = m(v_f - v_i)$ or $J = F\\,\\Delta t$ (area);\n- **force:** $F = J / \\Delta t = m(v_f - v_i)/\\Delta t$;\n- **time:** $\\Delta t = J / F$;\n- **final velocity:** $v_f = v_i + J/m$.\n\nAlways carry signs, and state directions in the answer.",
+      "representation": "| Unknown | Formula |\n|---|---|\n| impulse | $J = F\\,\\Delta t = m(v_f - v_i)$ = area under $F$-$t$ graph |\n| average force | $F = J/\\Delta t$ |\n| contact time | $\\Delta t = J/F$ |\n| final velocity | $v_f = v_i + J/m$ |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $0.20\\ \\mathrm{kg}$ ball moving right at $15\\ \\mathrm{m/s}$ is struck by a bat and leaves moving left at $25\\ \\mathrm{m/s}$. (a) Find the impulse. (b) If the bat is in contact for $0.010\\ \\mathrm{s}$, find the average force. (c) Sketch-describe the force-time graph and mark what represents the impulse.",
+        "phases": [
+          {
+            "label": "(a) Impulse",
+            "steps": [
+              "Right positive: $v_i = +15$, $v_f = -25\\ \\mathrm{m/s}$.",
+              "$J = m(v_f - v_i) = (0.20)(-25 - 15) = (0.20)(-40) = -8.0\\ \\mathrm{N\\,s}$ (to the left)."
+            ]
+          },
+          {
+            "label": "(b) Average force",
+            "steps": ["$F = \\dfrac{J}{\\Delta t} = \\dfrac{-8.0}{0.010} = -800\\ \\mathrm{N}$ (magnitude $800\\ \\mathrm{N}$, to the left)."]
+          },
+          {
+            "label": "(c) The graph",
+            "steps": [
+              "Force starts at 0, rises to a peak as the ball deforms against the bat, falls back to 0 as they separate \u2014 a hump lasting $0.010\\ \\mathrm{s}$.",
+              "The **area** under that hump is the impulse, $8.0\\ \\mathrm{N\\,s}$; the peak force is higher than the $800\\ \\mathrm{N}$ average."
+            ]
+          }
+        ],
+        "keyMove": "Impulse from $m(v_f - v_i)$ with signs; force from $J/\\Delta t$; on the graph, impulse is the area."
+      },
+      "formativeCheck": {
+        "id": "BP8-U6-L2-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "data-analysis",
+        "representation": "graph",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A force on a cart follows a triangular pulse: it rises from $0$ to $60\\ \\mathrm{N}$ over $0.10\\ \\mathrm{s}$, then falls back to $0$ over the next $0.10\\ \\mathrm{s}$. What is the total impulse?",
+        "choices": ["$6.0\\ \\mathrm{N\\,s}$", "$12\\ \\mathrm{N\\,s}$", "$60\\ \\mathrm{N\\,s}$", "$3.0\\ \\mathrm{N\\,s}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the impulse is the area of the triangle: $\\tfrac{1}{2}(\\text{base})(\\text{height}) = \\tfrac{1}{2}(0.20\\ \\mathrm{s})(60\\ \\mathrm{N}) = 6.0\\ \\mathrm{N\\,s}$.",
+          "incorrect": {
+            "1": "This uses the peak force times the full time as a rectangle: $60 \\times 0.20 = 12$. The pulse is a triangle, so halve it.",
+            "2": "This is just the peak force value.",
+            "3": "This uses base $0.10\\ \\mathrm{s}$ (half). The whole pulse lasts $0.20\\ \\mathrm{s}$."
+          }
+        },
+        "hint": ["Impulse = area under the F-t graph. The whole pulse is a triangle: base $0.20\\ \\mathrm{s}$, height $60\\ \\mathrm{N}$."],
+        "solution": "The impulse is the area between the force-time curve and the time axis. The pulse is a triangle with base $0.10 + 0.10 = 0.20\\ \\mathrm{s}$ and height $60\\ \\mathrm{N}$: area $= \\tfrac{1}{2}(0.20)(60) = 6.0\\ \\mathrm{N\\,s}$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U6-L2-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'An airbag protects you by reducing the impulse in a crash.' What is the accurate statement?",
+      "choices": [
+        "Correct — the airbag reduces the impulse.",
+        "The airbag does not reduce the impulse (your change in momentum is fixed by the crash). It extends the time over which that impulse is delivered, so the average force on you is smaller.",
+        "The airbag reduces your change in momentum to zero.",
+        "The airbag increases the impulse but spreads it out."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — impulse equals $\\Delta p$, which is set by your speed dropping to zero. The airbag changes the *time* (and hence the force), not the impulse.",
+        "incorrect": {
+          "0": "The impulse (= your momentum change) is fixed by the crash. The airbag cannot reduce it.",
+          "2": "Your change in momentum is whatever it takes to bring you to rest — the airbag does not change that.",
+          "3": "The impulse is unchanged; only its delivery time is stretched, lowering the force."
+        }
+      },
+      "hint": ["Impulse = $\\Delta p$. Does the airbag change how much your momentum must change? Or how long it takes?"],
+      "solution": "In a crash your momentum must change from $mv$ to zero \u2014 a fixed $\\Delta p$, and therefore a fixed impulse. An airbag works by increasing the time over which that impulse is delivered (you sink into it rather than hitting the wheel). Since $F = \\Delta p / \\Delta t$, a longer time means a smaller average force on your body."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $0.30\\ \\mathrm{kg}$ ball moving right at $5.0\\ \\mathrm{m/s}$ is hit and rebounds left at $7.0\\ \\mathrm{m/s}$. Find the impulse delivered to the ball.\n\nStudent's response: '$J = m\\,\\Delta v = (0.30)(7.0 - 5.0) = (0.30)(2.0) = 0.60\\ \\mathrm{N\\,s}$ to the right.'",
+      "prompts": [
+        "State how the two velocities should be signed.",
+        "Identify the student's error.",
+        "Give the correct impulse, with magnitude and direction."
+      ],
+      "modelResponse": "Taking right as positive: the initial velocity is $+5.0\\ \\mathrm{m/s}$ and the final velocity is $-7.0\\ \\mathrm{m/s}$ (the ball reversed). Error: the student subtracted the *speeds* ($7.0 - 5.0$), ignoring that the ball's direction flipped. Correct: $J = m(v_f - v_i) = (0.30)(-7.0 - (+5.0)) = (0.30)(-12) = -3.6\\ \\mathrm{N\\,s}$ \u2014 an impulse of $3.6\\ \\mathrm{N\\,s}$ directed to the left. It is much larger than the student's answer because a bounce, not just a stop, requires reversing the momentum.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "A verbal scenario gives a force and a time, or an initial and final velocity; $J = F\\,\\Delta t$ and $J = m(v_f - v_i)$ are two routes to the same impulse, set equal to solve for the unknown. On a force-versus-time graph the impulse is the area under the curve, and the average force is the equivalent rectangle's height. For a fixed $\\Delta p$, $F$ and $\\Delta t$ trade off \u2014 the design principle of every cushioning device. Lesson 3 uses the fact that the impulses two colliding objects exert on each other are equal and opposite.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U6-L2-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $1500\\ \\mathrm{kg}$ car travelling at $12\\ \\mathrm{m/s}$ is brought to rest by its brakes in $4.0\\ \\mathrm{s}$. What is the average braking force?",
+      "choices": ["$4500\\ \\mathrm{N}$", "$18\\,000\\ \\mathrm{N}$", "$1500\\ \\mathrm{N}$", "$500\\ \\mathrm{N}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $\\Delta p = m(v_f - v_i) = (1500)(0 - 12) = -18\\,000\\ \\mathrm{N\\,s}$; $F = \\Delta p / \\Delta t = -18\\,000/4.0 = -4500\\ \\mathrm{N}$ (magnitude $4500\\ \\mathrm{N}$).",
+        "incorrect": {
+          "1": "This is the impulse ($18\\,000\\ \\mathrm{N\\,s}$), not the force. Divide by the time $4.0\\ \\mathrm{s}$.",
+          "2": "This is the mass, not the force.",
+          "3": "This divides by $36$ or uses the wrong quantities. $F = 18\\,000/4.0 = 4500\\ \\mathrm{N}$."
+        }
+      },
+      "hint": ["Find $\\Delta p = m\\,\\Delta v$ first, then $F = \\Delta p / \\Delta t$."],
+      "solution": "$\\Delta p = m(v_f - v_i) = (1500\\ \\mathrm{kg})(0 - 12\\ \\mathrm{m/s}) = -18\\,000\\ \\mathrm{N\\,s}$. Average force: $F = \\dfrac{\\Delta p}{\\Delta t} = \\dfrac{-18\\,000}{4.0} = -4500\\ \\mathrm{N}$ — $4500\\ \\mathrm{N}$ opposing the motion."
+    },
+    {
+      "id": "BP8-U6-L2-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A pitcher throws a ball and a catcher catches it at the same speed. A student claims the catcher must exert a larger impulse because catching 'stings'. Evaluate this.",
+      "choices": [
+        "Correct — catching delivers more impulse than throwing.",
+        "Incorrect — throwing changes the ball's momentum from $0$ to $mv$ and catching changes it from $mv$ to $0$, so both involve the same magnitude of impulse; the sting comes from a shorter contact time, giving a larger force.",
+        "Incorrect — the pitcher exerts more impulse because throwing takes muscular effort.",
+        "Correct — because the catcher's hands are stationary."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — the impulse magnitude is $mv$ for both. The difference in felt pain is about contact time and hence force, not impulse.",
+        "incorrect": {
+          "0": "Both the throw and the catch change the ball's momentum by $mv$ in magnitude, so both deliver the same magnitude of impulse.",
+          "2": "Effort is not impulse. The momentum change is $mv$ in both cases.",
+          "3": "Whether the hands move matters for the *time* (and force), not for the impulse."
+        }
+      },
+      "hint": ["Throw: $0 \\to mv$. Catch: $mv \\to 0$. Same magnitude of $\\Delta p$, so same magnitude of impulse."],
+      "solution": "The impulse equals the change in momentum. Throwing takes the ball from $0$ to $mv$; catching takes it from $mv$ to $0$ — both are momentum changes of magnitude $mv$, so both involve the same magnitude of impulse. Catching hurts more only when it is done over a shorter time (stiff hands), which raises the average force $F = J/\\Delta t$. A catcher who 'gives' with the catch lengthens $\\Delta t$ and feels less force for the same impulse."
+    },
+    {
+      "id": "BP8-U6-L2-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $0.058\\ \\mathrm{kg}$ tennis ball travelling toward a player at $30\\ \\mathrm{m/s}$ is returned by the racket at $40\\ \\mathrm{m/s}$ in the opposite direction. The racket and ball are in contact for $0.005\\ \\mathrm{s}$. Take the return direction as positive.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the impulse the racket delivers to the ball.",
+          "modelResponse": "The incoming velocity is $-30\\ \\mathrm{m/s}$ and the outgoing is $+40\\ \\mathrm{m/s}$. $J = m(v_f - v_i) = (0.058)\\big((+40) - (-30)\\big) = (0.058)(70) = 4.06\\ \\mathrm{N\\,s} \\approx 4.1\\ \\mathrm{N\\,s}$ in the return direction.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the average force the racket exerts on the ball.",
+          "modelResponse": "$F = \\dfrac{J}{\\Delta t} = \\dfrac{4.06}{0.005} = 812\\ \\mathrm{N} \\approx 810\\ \\mathrm{N}$ in the return direction.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The real force during contact is not constant. Describe the shape of the force-versus-time graph and state how the peak force compares with your answer to part (b).",
+          "modelResponse": "The force starts at zero when contact begins, rises to a peak as the ball is compressed most against the strings, then falls back to zero as the ball springs off — a single hump lasting $0.005\\ \\mathrm{s}$. The area under this hump equals the impulse ($4.1\\ \\mathrm{N\\,s}$). Because the average force is $810\\ \\mathrm{N}$, the peak force must be higher than $810\\ \\mathrm{N}$ (roughly twice, for a roughly triangular pulse).",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 1 Topic 4.2 tests impulse as $F\\,\\Delta t$ and as the area under a force-time graph, the impulse-momentum theorem for finding a final velocity or an average force, and the reasoning behind cushioning devices (longer $\\Delta t$, smaller $F$, same $\\Delta p$). The 'pitcher and catcher' and 'egg on concrete vs pillow' scenarios are classic exam and instructional items.",
+  "summary": "Impulse is $J = F\\,\\Delta t$ (a vector in $\\mathrm{N\\,s} = \\mathrm{kg\\,m/s}$), and the impulse-momentum theorem states that the impulse delivered to an object equals its change in momentum: $F\\,\\Delta t = m(v_f - v_i)$. Solve it for impulse, force, time, or final velocity, carrying signs. When an object must undergo a fixed change in momentum (a crash, a catch, a landing), the impulse is set, so the force is $F = \\Delta p / \\Delta t$ — extending the stopping time reduces the force, which is how crumple zones, airbags, bent knees, and padding protect people. On a force-versus-time graph the impulse is the area under the curve, and the average force is the height of the equivalent rectangle.",
+  "exitQuestion": {
+    "id": "BP8-U6-L2-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "question": "A gymnast lands on a thick crash mat instead of the bare floor. For the same landing speed, the crash mat:",
+    "choices": [
+      "reduces the gymnast's change in momentum.",
+      "increases the time over which the gymnast stops, reducing the average force on their body.",
+      "increases the impulse the gymnast receives.",
+      "does nothing — the force is the same as on the floor."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the gymnast's momentum change (from landing speed to zero) is fixed. The mat compresses, extending the stopping time, so $F = \\Delta p / \\Delta t$ is smaller.",
+      "incorrect": {
+        "0": "The change in momentum is set by the landing speed, not by the mat.",
+        "2": "The impulse equals the (fixed) change in momentum; the mat does not change it.",
+        "3": "The mat lets the gymnast sink in and stop over a longer time, so the force is much smaller than on a hard floor."
+      }
+    },
+    "hint": ["The gymnast stops either way, so $\\Delta p$ is fixed. What does the mat change — $\\Delta p$, or $\\Delta t$?"],
+    "solution": "Landing at a given speed and coming to rest is a fixed change in momentum, so a fixed impulse. A crash mat compresses under the gymnast, extending the time over which they stop. Since $F = \\Delta p / \\Delta t$, a longer stopping time means a much smaller average force on the gymnast's bones and joints."
+  },
+  "questionBankFile": "momentum-and-collisions.json",
+  "furtherPracticeQuestionIds": ["BP8-U6-MCQ-015", "BP8-U6-MCQ-016", "BP8-U6-MCQ-019", "BP8-U6-MCQ-020", "BP8-U6-MCQ-021", "BP8-U6-MCQ-023"],
+  "needsPlotly": false
+}
