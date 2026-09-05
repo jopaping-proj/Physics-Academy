@@ -60,42 +60,42 @@
     {
       "type": "module",
       "label": "Lesson 1",
-      "slug": null,
-      "title": "Circuit Diagrams & Analysis Tools",
-      "cluster": "BP8.8.1",
-      "status": "planned"
+      "slug": "charge-current-and-voltage",
+      "title": "Charge, Current, and Voltage",
+      "cluster": "BP8.8.3",
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 2",
-      "slug": null,
-      "title": "Ohm's Law",
-      "cluster": "BP8.8.2",
-      "status": "planned"
+      "slug": "resistance",
+      "title": "Resistance",
+      "cluster": "BP8.8.4",
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 3",
-      "slug": null,
-      "title": "Current",
-      "cluster": "BP8.8.3",
-      "status": "planned"
+      "slug": "ohms-law-and-circuit-diagrams",
+      "title": "Ohm's Law and Circuit Diagrams",
+      "cluster": "BP8.8.2",
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 4",
-      "slug": null,
-      "title": "Resistance",
-      "cluster": "BP8.8.4",
-      "status": "planned"
+      "slug": "series-and-parallel-circuits",
+      "title": "Series and Parallel Circuits",
+      "cluster": "BP8.8.1",
+      "status": "draft"
     },
     {
       "type": "module",
       "label": "Lesson 5",
-      "slug": null,
-      "title": "Voltage",
-      "cluster": "BP8.8.5",
-      "status": "planned"
+      "slug": "synthesis-and-transfer",
+      "title": "Synthesis and Transfer",
+      "cluster": "BP8.8.6",
+      "status": "draft"
     },
     {
       "type": "concept-check",
@@ -103,7 +103,15 @@
       "slug": null,
       "title": "Unit 8 Concept Check — retake",
       "status": "planned",
-      "note": "Placeholder — to be activated only after the corresponding diagnostic is converted and reviewed."
+      "note": "Placeholder — to be activated only after a Unit 8 diagnostic is authored and reviewed (none exists yet)."
+    },
+    {
+      "type": "module",
+      "label": "Unit Test",
+      "slug": "unit-8-test",
+      "title": "Unit 8 Test",
+      "status": "draft",
+      "note": "45 minutes, no calculator, generated fresh every time — drawn from the dc-circuits question bank (tranche 1: 56 MCQ + 14 FRQ) to the Physics Academy test blueprint."
     }
   ]
 }

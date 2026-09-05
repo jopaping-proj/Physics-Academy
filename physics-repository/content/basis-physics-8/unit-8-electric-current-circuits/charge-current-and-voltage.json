@@ -1,0 +1,332 @@
+{
+  "id": "basis-p8-u8-l1",
+  "slug": "charge-current-and-voltage",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "topic": "Charge, Current, and Voltage",
+  "lessonTitle": "Charge, Current, and Voltage",
+  "lessonNumber": "1",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit8_electric_current_circuits_outcomes.md (Current cluster C1; Voltage cluster V1); calibrated against AP Physics 2 CED Unit 11 (Electric Circuits), OpenStax High School Physics Ch. 18-19",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 8 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Unit 2 — a rate is an amount per unit time.",
+    "Unit 4 — energy is measured in joules and is conserved.",
+    "Unit 5 — energy absorbed by a component often appears as heat and light."
+  ],
+  "majorObjective": "Define electric charge, current ($I = Q/t$), and voltage (energy per unit charge), and explain how they describe what happens in a simple circuit.",
+  "subObjectives": [
+    "State that electric charge is measured in coulombs (C) and that a current is a flow of charge — carried by free electrons in a metal.",
+    "Define current as the rate of flow of charge, $I = Q/t$, in amperes (A), and rearrange it to find $Q$ or $t$.",
+    "Define voltage (potential difference) as the electrical energy transferred per unit charge, in volts ($1\\ \\mathrm{V} = 1\\ \\mathrm{J/C}$), and calculate energy as $E = VQ$.",
+    "Explain that in a single loop the current is the same everywhere (charge is not used up) and that a complete circuit is needed for current to flow."
+  ],
+  "hook": {
+    "prompt": "A lit bulb is in a single-loop circuit. Compared with the current in the wire *entering* the bulb, the current in the wire *leaving* the bulb is:",
+    "choices": [
+      "smaller — the bulb used some of it up.",
+      "the same — the current is identical everywhere in a single loop.",
+      "larger — the bulb adds current.",
+      "zero — the current stops at the bulb."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Electricity is the movement of charge. Three quantities describe a circuit: how much charge flows each second (current), the energy each unit of charge carries (voltage), and how hard it is to push the charge through (resistance, next lesson).",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Charge and current",
+      "concept": "**Electric charge** is a basic property of matter, measured in **coulombs (C)**. In a metal wire, some electrons are **free** to move through the fixed lattice of positive ions; a flow of these charges is an **electric current**.\n\n**Current** is the **rate of flow of charge** past a point:\n\n$$I = \\frac{Q}{t}$$\n\nwhere $Q$ is the charge (C), $t$ is the time (s), and $I$ is the current in **amperes (A)**. One ampere is one coulomb per second ($1\\ \\mathrm{A} = 1\\ \\mathrm{C/s}$).\n\nRearrangements: $Q = It$ and $t = Q/I$.\n\n**Charge is conserved — it is not used up.** In a single loop, the same number of coulombs per second passes every point, so the current is the **same everywhere in the loop**, before and after every component.\n\n(By convention, 'conventional current' is drawn flowing from the + terminal to the \u2212 terminal, which is opposite to the direction the electrons actually drift.)",
+      "representation": "$$I = \\frac{Q}{t} \\qquad Q = It \\qquad t = \\frac{Q}{I}$$\n\n- units: A (current), C (charge), s (time), with $1\\ \\mathrm{A} = 1\\ \\mathrm{C/s}$;\n- in a single loop, $I$ is the same at every point.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) $18\\ \\mathrm{C}$ of charge flows past a point in $6.0\\ \\mathrm{s}$. Find the current. (b) A current of $0.25\\ \\mathrm{A}$ flows for $40\\ \\mathrm{s}$. Find the charge that passed.",
+        "phases": [
+          {
+            "label": "(a) Current",
+            "steps": ["$I = \\dfrac{Q}{t} = \\dfrac{18\\ \\mathrm{C}}{6.0\\ \\mathrm{s}} = 3.0\\ \\mathrm{A}$."]
+          },
+          {
+            "label": "(b) Charge",
+            "steps": ["$Q = It = (0.25\\ \\mathrm{A})(40\\ \\mathrm{s}) = 10\\ \\mathrm{C}$."]
+          }
+        ],
+        "keyMove": "$I = Q/t$: current is charge per second. Rearrange to $Q = It$ or $t = Q/I$ as needed."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L1-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A current of $3.0\\ \\mathrm{A}$ flows through a wire for $20\\ \\mathrm{s}$. How much charge passes a point in the wire?",
+        "choices": ["$60\\ \\mathrm{C}$", "$6.7\\ \\mathrm{C}$", "$23\\ \\mathrm{C}$", "$0.15\\ \\mathrm{C}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $Q = It = (3.0)(20) = 60\\ \\mathrm{C}$.",
+          "incorrect": {
+            "1": "This divides ($20/3.0$). Use $Q = It$.",
+            "2": "This adds. $Q = It = 60\\ \\mathrm{C}$.",
+            "3": "This inverts ($3.0/20$)."
+          }
+        },
+        "hint": ["Rearrange $I = Q/t$ to $Q = It$."],
+        "solution": "$Q = It = (3.0\\ \\mathrm{A})(20\\ \\mathrm{s}) = 60\\ \\mathrm{C}$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Voltage: energy per unit charge",
+      "concept": "**Voltage** (also called **potential difference**) between two points is the **electrical energy transferred per unit of charge** that moves between them:\n\n$$V = \\frac{E}{Q} \\qquad\\Rightarrow\\qquad E = VQ$$\n\nmeasured in **volts (V)**, where $1\\ \\mathrm{V} = 1\\ \\mathrm{joule\\ per\\ coulomb}$.\n\n- A **battery's voltage** is the energy it gives to each coulomb of charge (converting chemical energy to electrical energy).\n- A **component's voltage** is the energy each coulomb delivers to that component (converted there to heat, light, motion).\n\nVoltage is the **'push'** that drives current around a circuit. In the water analogy: the battery is a pump, voltage is the pressure it creates, current is the flow rate, and resistance is a narrow pipe.\n\n**Energy is conserved:** the energy each coulomb gains at the battery equals the total energy it delivers to the components on one trip around the loop.",
+      "representation": "$$V = \\frac{E}{Q} \\qquad E = VQ$$\n\n- $1\\ \\mathrm{V} = 1\\ \\mathrm{J/C}$;\n- battery voltage = energy given per coulomb; component voltage = energy delivered per coulomb;\n- around one loop, energy gained = energy delivered (conservation).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $6.0\\ \\mathrm{V}$ battery drives a circuit. (a) How much energy does it give to each coulomb of charge? (b) How much energy does it give to $5.0\\ \\mathrm{C}$ of charge? (c) That circuit contains one bulb. How much energy does each coulomb deliver to the bulb?",
+        "phases": [
+          {
+            "label": "(a) Energy per coulomb",
+            "steps": ["$6.0\\ \\mathrm{V} = 6.0\\ \\mathrm{J/C}$, so each coulomb receives $6.0\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "(b) Energy for 5.0 C",
+            "steps": ["$E = VQ = (6.0\\ \\mathrm{V})(5.0\\ \\mathrm{C}) = 30\\ \\mathrm{J}$."]
+          },
+          {
+            "label": "(c) Energy to the bulb per coulomb",
+            "steps": [
+              "With just one component, each coulomb delivers all $6.0\\ \\mathrm{J}$ to the bulb.",
+              "So the voltage across the bulb is $6.0\\ \\mathrm{V}$ \u2014 it equals the battery voltage."
+            ]
+          }
+        ],
+        "keyMove": "Voltage = joules per coulomb. Energy $= VQ$. Around one loop, the component voltages account for all the battery's energy per coulomb."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L1-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A motor has $4.0\\ \\mathrm{V}$ across it. How much electrical energy does it receive from each $3.0\\ \\mathrm{C}$ of charge that passes through it?",
+        "choices": ["$12\\ \\mathrm{J}$", "$1.3\\ \\mathrm{J}$", "$7.0\\ \\mathrm{J}$", "$0.75\\ \\mathrm{J}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $E = VQ = (4.0)(3.0) = 12\\ \\mathrm{J}$.",
+          "incorrect": {
+            "1": "This divides ($4.0/3.0$). Energy $= VQ$, a product.",
+            "2": "This adds. $E = VQ = 12\\ \\mathrm{J}$.",
+            "3": "This inverts ($3.0/4.0$)."
+          }
+        },
+        "hint": ["Voltage is energy per coulomb, so energy = voltage x charge."],
+        "solution": "Voltage is the energy transferred per unit charge, so $E = VQ = (4.0\\ \\mathrm{V})(3.0\\ \\mathrm{C}) = 12\\ \\mathrm{J}$. The motor converts this to kinetic energy (and some heat)."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Complete circuits, and current is not 'used up'",
+      "concept": "For a **steady current to flow**, there must be a **complete conducting loop** — a **closed circuit** — from one battery terminal, through the components, back to the other terminal. Break the loop **anywhere** (an open switch, a disconnected wire, a blown fuse) and the current stops **everywhere** in that loop.\n\nA persistent misconception: 'current gets used up as it goes around, so later components are weaker.' This is **wrong**:\n\n- **charge is conserved** \u2014 the same coulombs per second flow past every point of a single loop;\n- an ammeter reads the **same current** just after the battery and just before it;\n- what components consume is **energy**, delivered by the charge (shown by the voltage across each component), not the charge itself.\n\nThink of water in a closed pipe loop with a pump and a paddle wheel: the flow rate is the same all the way round; the paddle wheel takes *energy* from the water, but the water keeps flowing.",
+      "representation": "- Current flows only in a **complete loop**; a break anywhere stops it everywhere.\n- Current is the **same at every point** of a single loop (charge conserved).\n- Components use **energy** (voltage $\\times$ charge), not current.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A circuit is a single loop: battery \u2192 wire \u2192 bulb A \u2192 wire \u2192 bulb B \u2192 wire \u2192 back to battery. An ammeter reads $0.30\\ \\mathrm{A}$ between the battery and bulb A. (a) What does an ammeter read between bulb A and bulb B? (b) Between bulb B and the battery? (c) The wire between bulb B and the battery is cut. Now what do all three ammeter positions read?",
+        "phases": [
+          {
+            "label": "(a) Between A and B",
+            "steps": ["$0.30\\ \\mathrm{A}$ \u2014 the same current flows everywhere in the single loop."]
+          },
+          {
+            "label": "(b) Between B and the battery",
+            "steps": ["$0.30\\ \\mathrm{A}$ \u2014 still the same; the current returns to the battery undiminished."]
+          },
+          {
+            "label": "(c) After the wire is cut",
+            "steps": ["All positions read $0\\ \\mathrm{A}$. The loop is broken, so no current flows anywhere \u2014 both bulbs go out."]
+          }
+        ],
+        "keyMove": "Single loop → same current everywhere. Break the loop → zero current everywhere."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L1-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "misconception-diagnosis",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "In a single-loop circuit with a battery and two bulbs, a student measures $0.5\\ \\mathrm{A}$ leaving the battery and predicts a smaller current returning to it 'because the bulbs used some up.' What will the returning current actually be, and why?",
+        "choices": [
+          "Less than $0.5\\ \\mathrm{A}$, because the bulbs consume current.",
+          "Exactly $0.5\\ \\mathrm{A}$, because charge is conserved and the current is the same everywhere in a single loop.",
+          "More than $0.5\\ \\mathrm{A}$, because the bulbs add current.",
+          "Zero, because the current is fully absorbed."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the same $0.5\\ \\mathrm{A}$ returns to the battery. The bulbs take energy from the charge, not the charge itself.",
+          "incorrect": {
+            "0": "Current (charge per second) is conserved; it is energy that the bulbs consume.",
+            "2": "Bulbs are passive components; they cannot add current.",
+            "3": "The current flows continuously all the way around a complete loop."
+          }
+        },
+        "hint": ["Do the bulbs consume charge, or energy? What is conserved around a loop?"],
+        "solution": "The returning current is exactly $0.5\\ \\mathrm{A}$ — the same as the current leaving the battery. In a single loop, charge is conserved, so the same number of coulombs per second passes every point. The bulbs convert electrical energy (delivered via the voltage across them) into light and heat, but they do not consume the charge, which continues around the loop."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U8-L1-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'Voltage flows through a circuit, just like current does.' What is the correct statement?",
+      "choices": [
+        "Correct — voltage and current both flow.",
+        "Current flows *through* components; voltage is *across* components (a difference between two points). Voltage does not flow — it is the energy per coulomb between two points, and it is what drives the current.",
+        "Voltage flows but current does not.",
+        "Voltage and current are the same quantity."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — 'through' vs 'across' is the key. Current is a flow (measured through a point); voltage is a difference (measured across two points).",
+        "incorrect": {
+          "0": "Voltage is a potential *difference* between two points; it does not flow along a wire.",
+          "2": "Current definitely flows; that is what an ammeter (placed *in* the line) measures.",
+          "3": "They are different: current in amperes (a flow), voltage in volts (energy per charge)."
+        }
+      },
+      "hint": ["An ammeter goes *in* the circuit (measures current *through*). A voltmeter goes *across* two points (measures a difference)."],
+      "solution": "Current flows *through* a component and is the same all around a single loop. Voltage is measured *across* a component — it is the difference in energy per coulomb between the two ends — and it does not 'flow'. Voltage is the cause; current is the effect. An ammeter is connected in series (in the line); a voltmeter is connected across (in parallel with) the component."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A bulb carries a current of $0.20\\ \\mathrm{A}$ for $3.0\\ \\mathrm{minutes}$. How much charge passes through it?\n\nStudent's response: '$Q = I/t = 0.20/3.0 = 0.067\\ \\mathrm{C}$.'",
+      "prompts": [
+        "State the correct rearrangement of $I = Q/t$ for finding $Q$.",
+        "Identify the two errors in the student's work.",
+        "Give the correct charge."
+      ],
+      "modelResponse": "From $I = Q/t$, the charge is $Q = It$ (a product), not $I/t$. Errors: (1) the student divided instead of multiplying; (2) the time was left in minutes — it must be in seconds: $3.0\\ \\mathrm{minutes} = 180\\ \\mathrm{s}$. Correct: $Q = It = (0.20\\ \\mathrm{A})(180\\ \\mathrm{s}) = 36\\ \\mathrm{C}$.",
+      "responseMaxLength": 550
+    }
+  ],
+  "representationConnections": "A described flow of charge over a time gives a current via $I = Q/t$ (rearranged for $Q$ or $t$). A battery or component voltage is the energy per coulomb, so $E = VQ$ links voltage, charge, and energy. In a circuit diagram, current is the same all around a single loop (charge conserved) and stops everywhere if the loop is broken; the component voltages account for all the battery's energy per coulomb (energy conserved). Resistance (Lesson 2) and Ohm's law (Lesson 3) then connect $V$ and $I$.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U8-L1-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A charger delivers $120\\ \\mathrm{C}$ of charge to a phone in $2.0\\ \\mathrm{minutes}$. What is the average current?",
+      "choices": ["$1.0\\ \\mathrm{A}$", "$60\\ \\mathrm{A}$", "$240\\ \\mathrm{A}$", "$0.017\\ \\mathrm{A}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $t = 2.0\\ \\mathrm{min} = 120\\ \\mathrm{s}$; $I = Q/t = 120/120 = 1.0\\ \\mathrm{A}$.",
+        "incorrect": {
+          "1": "This uses $t = 2.0\\ \\mathrm{s}$ instead of $120\\ \\mathrm{s}$.",
+          "2": "This multiplies $Q \\times$ minutes. Convert to seconds and divide.",
+          "3": "This inverts, or uses $t$ in minutes and inverts."
+        }
+      },
+      "hint": ["Convert minutes to seconds ($\\times 60$), then $I = Q/t$."],
+      "solution": "First convert the time: $2.0\\ \\mathrm{minutes} = 120\\ \\mathrm{s}$. Then $I = \\dfrac{Q}{t} = \\dfrac{120\\ \\mathrm{C}}{120\\ \\mathrm{s}} = 1.0\\ \\mathrm{A}$."
+    },
+    {
+      "id": "BP8-U8-L1-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "justify-with-principle",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "In a single-loop circuit, the battery supplies $12\\ \\mathrm{J}$ of energy to each coulomb. The circuit has two components. The first has $9\\ \\mathrm{V}$ across it. What is the voltage across the second, and why?",
+      "choices": [
+        "$9\\ \\mathrm{V}$, the same as the first.",
+        "$3\\ \\mathrm{V}$, because the component voltages must add up to the $12\\ \\mathrm{V}$ the battery supplies per coulomb (energy conservation).",
+        "$12\\ \\mathrm{V}$, the full battery voltage.",
+        "$21\\ \\mathrm{V}$, the sum of the battery and first-component voltages."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — each coulomb gains $12\\ \\mathrm{J}$ at the battery and must deliver all $12\\ \\mathrm{J}$ to the components on one trip. The first takes $9\\ \\mathrm{J}$, so the second takes $12 - 9 = 3\\ \\mathrm{J}$ per coulomb, i.e. $3\\ \\mathrm{V}$.",
+        "incorrect": {
+          "0": "The components are different, so they generally take different amounts of energy per coulomb.",
+          "2": "The full $12\\ \\mathrm{V}$ is shared between the two components in series.",
+          "3": "The component voltages *add to* the battery voltage, they do not add to each other and the battery."
+        }
+      },
+      "hint": ["Energy is conserved around the loop: energy gained per coulomb = energy delivered per coulomb. The battery gives $12\\ \\mathrm{J/C}$."],
+      "solution": "Voltage is energy per coulomb. Each coulomb gains $12\\ \\mathrm{J}$ at the battery and must give all of it to the components before returning. If the first component takes $9\\ \\mathrm{J}$ per coulomb ($9\\ \\mathrm{V}$), the second must take the remaining $3\\ \\mathrm{J}$ per coulomb, so the voltage across it is $3\\ \\mathrm{V}$. The component voltages in a series loop always add up to the battery voltage."
+    },
+    {
+      "id": "BP8-U8-L1-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $9.0\\ \\mathrm{V}$ battery drives a single-loop circuit containing a small electric motor. The current is $0.50\\ \\mathrm{A}$ and the circuit runs for $2.0\\ \\mathrm{minutes}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the total charge that flows through the motor in this time.",
+          "modelResponse": "$t = 2.0\\ \\mathrm{minutes} = 120\\ \\mathrm{s}$. $Q = It = (0.50\\ \\mathrm{A})(120\\ \\mathrm{s}) = 60\\ \\mathrm{C}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the total electrical energy the battery supplies in this time.",
+          "modelResponse": "Voltage is energy per coulomb, so $E = VQ = (9.0\\ \\mathrm{V})(60\\ \\mathrm{C}) = 540\\ \\mathrm{J}$.",
+          "points": 3
+        },
+        {
+          "prompt": "(c) The motor converts most of this energy to useful kinetic energy, but some becomes heat in the wires and motor. State which conservation law applies and describe the energy transfers.",
+          "modelResponse": "Conservation of total energy applies. The battery converts $540\\ \\mathrm{J}$ of chemical energy into electrical energy, carried by the $60\\ \\mathrm{C}$ of charge. At the motor this electrical energy is converted mostly into kinetic energy (the useful output) with some converted to internal (thermal) energy in the motor windings and connecting wires because of their resistance. The total energy out (kinetic + heat) equals the $540\\ \\mathrm{J}$ supplied.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test the definitions of charge, current ($I = Q/t$), and voltage (energy per charge, $V = E/Q$), the need for a complete circuit, and the fact that current is the same everywhere in a single loop while energy (voltage) is shared among the components. The 'current is used up' and 'voltage flows' misconceptions are standard multiple-choice distractors.",
+  "summary": "Electric charge is measured in coulombs; a current is a flow of charge, carried by free electrons in a metal. Current is the rate of flow of charge, $I = Q/t$ (amperes), rearranging to $Q = It$ and $t = Q/I$. Voltage (potential difference) is the electrical energy transferred per unit charge, $V = E/Q$ (volts, $1\\ \\mathrm{V} = 1\\ \\mathrm{J/C}$), so $E = VQ$; a battery's voltage is the energy given per coulomb, a component's voltage is the energy delivered per coulomb. A steady current needs a complete conducting loop — break it anywhere and it stops everywhere. In a single loop the current is the same at every point (charge is conserved, not used up); the components consume energy, and their voltages add up to the battery voltage (energy is conserved).",
+  "exitQuestion": {
+    "id": "BP8-U8-L1-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "How much charge flows past a point when a current of $4.0\\ \\mathrm{A}$ flows for $15\\ \\mathrm{s}$?",
+    "choices": ["$60\\ \\mathrm{C}$", "$3.75\\ \\mathrm{C}$", "$0.27\\ \\mathrm{C}$", "$19\\ \\mathrm{C}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $Q = It = (4.0)(15) = 60\\ \\mathrm{C}$.",
+      "incorrect": {
+        "1": "This divides ($15/4.0$). Use $Q = It$.",
+        "2": "This inverts ($4.0/15$).",
+        "3": "This adds. $Q = It = 60\\ \\mathrm{C}$."
+      }
+    },
+    "hint": ["$Q = It$: multiply the current by the time."],
+    "solution": "$Q = It = (4.0\\ \\mathrm{A})(15\\ \\mathrm{s}) = 60\\ \\mathrm{C}$."
+  },
+  "questionBankFile": "dc-circuits.json",
+  "furtherPracticeQuestionIds": ["BP8-U8-MCQ-001", "BP8-U8-MCQ-002", "BP8-U8-MCQ-004", "BP8-U8-MCQ-005", "BP8-U8-MCQ-010", "BP8-U8-MCQ-014"],
+  "needsPlotly": false
+}

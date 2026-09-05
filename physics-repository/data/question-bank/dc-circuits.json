@@ -1,0 +1,1689 @@
+[
+  {
+    "id": "BP8-U8-MCQ-001",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Electric current is defined as:",
+    "choices": [
+      "the amount of charge stored in a wire.",
+      "the rate of flow of electric charge past a point, $I = Q/t$.",
+      "the voltage across a component.",
+      "the resistance of a circuit."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — current is charge per unit time, $I = Q/t$, measured in amperes (A), where $1\\ \\mathrm{A} = 1\\ \\mathrm{C/s}$.",
+      "incorrect": {
+        "0": "A wire does not 'store' charge in this sense; current is about charge *moving through*.",
+        "2": "Voltage is a different quantity (energy per unit charge).",
+        "3": "Resistance opposes current; it is not the current itself."
+      }
+    },
+    "hint": ["Current is a *rate* — how much charge flows past a point each second."],
+    "solution": "Electric current is the rate at which electric charge flows past a point in a circuit: $I = \\dfrac{Q}{t}$, in amperes (A). One ampere is one coulomb of charge per second."
+  },
+  {
+    "id": "BP8-U8-MCQ-002",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "If $12\\ \\mathrm{C}$ of charge flows past a point in a wire in $4.0\\ \\mathrm{s}$, what is the current?",
+    "choices": ["$3.0\\ \\mathrm{A}$", "$48\\ \\mathrm{A}$", "$0.33\\ \\mathrm{A}$", "$8.0\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = Q/t = 12/4.0 = 3.0\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This multiplies. Current is charge *divided by* time.",
+        "2": "This inverts ($4.0/12$).",
+        "3": "This subtracts. $I = 12/4.0 = 3.0\\ \\mathrm{A}$."
+      }
+    },
+    "hint": ["$I = Q/t$: divide the charge by the time."],
+    "solution": "$I = \\dfrac{Q}{t} = \\dfrac{12\\ \\mathrm{C}}{4.0\\ \\mathrm{s}} = 3.0\\ \\mathrm{A}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-003",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A current of $2.0\\ \\mathrm{A}$ flows through a bulb for $30\\ \\mathrm{s}$. How much charge passes through the bulb?",
+    "choices": ["$60\\ \\mathrm{C}$", "$15\\ \\mathrm{C}$", "$0.067\\ \\mathrm{C}$", "$32\\ \\mathrm{C}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — rearranging $I = Q/t$: $Q = It = (2.0)(30) = 60\\ \\mathrm{C}$.",
+      "incorrect": {
+        "1": "This divides ($30/2.0$). Use $Q = It$, a product.",
+        "2": "This inverts. $Q = It = 60\\ \\mathrm{C}$.",
+        "3": "This adds. $Q = It = 2.0 \\times 30 = 60$."
+      }
+    },
+    "hint": ["Rearrange $I = Q/t$ to $Q = It$."],
+    "solution": "$Q = It = (2.0\\ \\mathrm{A})(30\\ \\mathrm{s}) = 60\\ \\mathrm{C}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-004",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["V1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Voltage (potential difference) between two points in a circuit is best described as:",
+    "choices": [
+      "the amount of current flowing between the points.",
+      "the electrical energy transferred per unit of charge moving between the points, measured in volts (joules per coulomb).",
+      "the resistance between the points.",
+      "the number of electrons at each point."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — voltage is energy per unit charge: $1\\ \\mathrm{V} = 1\\ \\mathrm{J/C}$. A battery's voltage is the energy it gives each coulomb; a bulb's voltage is the energy each coulomb delivers to it.",
+      "incorrect": {
+        "0": "That is current. Voltage is what *drives* the current.",
+        "2": "Resistance opposes current; voltage is the electrical push.",
+        "3": "Voltage is about energy per charge, not a count of electrons."
+      }
+    },
+    "hint": ["Volts = joules per coulomb: energy carried by each unit of charge."],
+    "solution": "Voltage (potential difference) is the electrical energy transferred per unit charge as charge moves between two points: $V = E/Q$, in volts, where $1\\ \\mathrm{V} = 1\\ \\mathrm{J/C}$. It is the 'push' that drives current around a circuit, supplied by a battery or power source."
+  },
+  {
+    "id": "BP8-U8-MCQ-005",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["V1", "C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A helpful analogy compares an electric circuit to water flowing in pipes. In this analogy, voltage is most like:",
+    "choices": [
+      "the amount of water in the pipes.",
+      "the pressure difference produced by a pump that drives the water around.",
+      "the width of the pipes.",
+      "a narrow section that slows the flow."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — voltage is the electrical 'pressure' from the battery (pump) that pushes charge (water) around the circuit. Current is like the flow rate; resistance is like a narrow pipe.",
+      "incorrect": {
+        "0": "The amount of water is more like the total charge, not the voltage.",
+        "2": "Pipe width is like the inverse of resistance (wider = less resistance).",
+        "3": "A narrow section is like a resistor."
+      }
+    },
+    "hint": ["Battery = pump; charge = water; current = flow rate; resistance = narrow pipe. What does the pump provide?"],
+    "solution": "In the water analogy, the battery is a pump that creates a pressure difference; voltage corresponds to that pressure difference — the push that drives the flow. Current corresponds to the flow rate of water (charge per second), and resistance corresponds to narrow pipes that impede the flow."
+  },
+  {
+    "id": "BP8-U8-MCQ-006",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "How long does it take for $30\\ \\mathrm{C}$ of charge to flow through a wire carrying a steady current of $5.0\\ \\mathrm{A}$?",
+    "choices": ["$6.0\\ \\mathrm{s}$", "$150\\ \\mathrm{s}$", "$0.17\\ \\mathrm{s}$", "$25\\ \\mathrm{s}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — rearranging $I = Q/t$: $t = Q/I = 30/5.0 = 6.0\\ \\mathrm{s}$.",
+      "incorrect": {
+        "1": "This multiplies. $t = Q/I$, a division.",
+        "2": "This inverts ($5.0/30$).",
+        "3": "This subtracts. $t = 30/5.0 = 6.0\\ \\mathrm{s}$."
+      }
+    },
+    "hint": ["Rearrange $I = Q/t$ to $t = Q/I$."],
+    "solution": "$t = \\dfrac{Q}{I} = \\dfrac{30\\ \\mathrm{C}}{5.0\\ \\mathrm{A}} = 6.0\\ \\mathrm{s}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-007",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "misconception-diagnosis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student says: 'Current gets used up as it goes around a simple series circuit, so the bulb near the end of the loop is dimmer.' What is the correct physics?",
+    "choices": [
+      "The student is right — current is consumed by each component.",
+      "In a single loop the current is the same everywhere; charge is not used up. What the components use is *energy* (voltage), not current.",
+      "Current increases as it goes around the loop.",
+      "Current only flows in half the circuit."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the same current flows through every part of a single series loop. Energy is transferred to the components (they drop voltage), but the charge itself keeps flowing and returns to the battery.",
+      "incorrect": {
+        "0": "Charge is conserved — it is not consumed. The same number of coulombs per second flows everywhere in the loop.",
+        "2": "The current is constant around a single loop, not increasing.",
+        "3": "Current flows continuously all the way around a complete loop."
+      }
+    },
+    "hint": ["Think of water in a single closed pipe loop: is the flow rate different at different points?"],
+    "solution": "In a single series loop, the current has the same value at every point — charge is conserved and is not 'used up'. As charge passes through each component it transfers energy to it (the component has a voltage across it), but the charge itself continues around the loop and back to the battery. It is energy, delivered via the voltage, that the components consume."
+  },
+  {
+    "id": "BP8-U8-MCQ-008",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["V1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $9\\ \\mathrm{V}$ battery drives a circuit. How much electrical energy does it give to each $2\\ \\mathrm{C}$ of charge that passes through it?",
+    "choices": ["$18\\ \\mathrm{J}$", "$4.5\\ \\mathrm{J}$", "$9\\ \\mathrm{J}$", "$11\\ \\mathrm{J}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — voltage is energy per unit charge, so energy $= VQ = (9)(2) = 18\\ \\mathrm{J}$.",
+      "incorrect": {
+        "1": "This divides ($9/2$). Energy $= VQ$, a product.",
+        "2": "$9\\ \\mathrm{J}$ is the energy per *one* coulomb; there are $2\\ \\mathrm{C}$.",
+        "3": "This adds. Energy $= VQ = 18\\ \\mathrm{J}$."
+      }
+    },
+    "hint": ["Voltage = energy per coulomb. So energy = voltage x charge."],
+    "solution": "Voltage is defined as energy per unit charge, $V = E/Q$, so the energy transferred is $E = VQ = (9\\ \\mathrm{V})(2\\ \\mathrm{C}) = 18\\ \\mathrm{J}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-009",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1", "V1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which units correctly pair with current, voltage, and resistance?",
+    "choices": [
+      "Current: volts; voltage: amperes; resistance: ohms.",
+      "Current: amperes (A); voltage: volts (V); resistance: ohms ($\\Omega$).",
+      "Current: coulombs; voltage: joules; resistance: watts.",
+      "All three are measured in volts."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — amperes for current, volts for voltage, ohms for resistance.",
+      "incorrect": {
+        "0": "Current and voltage units are swapped.",
+        "2": "Coulombs measure charge, joules measure energy, watts measure power — not these three quantities.",
+        "3": "Only voltage is measured in volts."
+      }
+    },
+    "hint": ["A (amperes), V (volts), Ω (ohms)."],
+    "solution": "Current is measured in amperes (A), voltage (potential difference) in volts (V), and resistance in ohms ($\\Omega$). These are linked by Ohm's law, $V = IR$."
+  },
+  {
+    "id": "BP8-U8-MCQ-010",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "For a current to flow continuously through a bulb, what must be true?",
+    "choices": [
+      "The bulb must be connected to just one terminal of the battery.",
+      "There must be a complete conducting loop (closed circuit) from one battery terminal, through the bulb, back to the other terminal.",
+      "The wires must be very short.",
+      "The switch must be open."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — current needs a complete, unbroken conducting path (a closed circuit). Break the loop anywhere (an open switch, a disconnected wire) and the current stops everywhere.",
+      "incorrect": {
+        "0": "A single connection is not a loop; charge has nowhere to return, so no steady current flows.",
+        "2": "Wire length affects resistance slightly but is not what allows current to flow.",
+        "3": "An open switch breaks the loop and stops the current."
+      }
+    },
+    "hint": ["Charge must be able to flow all the way around and back to the battery."],
+    "solution": "A steady current requires a complete conducting loop — a closed circuit — so that charge leaving one battery terminal can flow through the components and return to the other terminal. Any break in the loop (an open switch, a loose wire) stops the current throughout the whole circuit."
+  },
+  {
+    "id": "BP8-U8-MCQ-011",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A wire carries a steady current. If the charge passing a point doubles in the same time, the current:",
+    "choices": ["doubles", "halves", "stays the same", "quadruples"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = Q/t$, so for a fixed time, doubling the charge doubles the current.",
+      "incorrect": {
+        "1": "More charge in the same time means *more* current.",
+        "2": "The current is proportional to the charge per unit time.",
+        "3": "$I \\propto Q$ (linear), so it doubles, not quadruples."
+      }
+    },
+    "hint": ["$I = Q/t$: how does $I$ scale with $Q$ at fixed $t$?"],
+    "solution": "Current is $I = Q/t$. With the time held fixed, current is directly proportional to the charge passing the point, so doubling the charge doubles the current."
+  },
+  {
+    "id": "BP8-U8-MCQ-012",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["V1", "C1"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "Two bulbs are connected one after another (in series) to a battery. The voltage across bulb A is $8\\ \\mathrm{V}$ and across bulb B is $4\\ \\mathrm{V}$. Which statement is correct?",
+    "choices": [
+      "Bulb A carries twice the current of bulb B.",
+      "The same current flows through both bulbs, but each coulomb of charge gives twice as much energy to A as to B.",
+      "Bulb B has no current because A used it all.",
+      "The battery voltage is $8 - 4 = 4\\ \\mathrm{V}$."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — in a single series loop the current is identical through both bulbs. The different voltages mean the charge transfers different amounts of energy to each: $8\\ \\mathrm{J/C}$ to A and $4\\ \\mathrm{J/C}$ to B.",
+      "incorrect": {
+        "0": "Series means one path, so the current is the same in both bulbs.",
+        "2": "Current is not consumed; the same current flows in every part of the loop.",
+        "3": "In series the component voltages *add*: the battery voltage is $8 + 4 = 12\\ \\mathrm{V}$."
+      }
+    },
+    "hint": ["Series = one path = same current everywhere. Voltage is energy per coulomb delivered to each component."],
+    "solution": "The two bulbs are in a single series loop, so exactly the same current flows through both. The voltage across each bulb is the energy each coulomb transfers to it: $8\\ \\mathrm{J}$ per coulomb to bulb A and $4\\ \\mathrm{J}$ per coulomb to bulb B. The battery supplies $8 + 4 = 12\\ \\mathrm{J}$ per coulomb ($12\\ \\mathrm{V}$)."
+  },
+  {
+    "id": "BP8-U8-MCQ-013",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "question": "A battery is rated $2000\\ \\mathrm{mA\\,h}$ (milliamp-hours), meaning it can supply $2000\\ \\mathrm{mA}$ for one hour (or an equivalent product). For how long can it supply a steady $500\\ \\mathrm{mA}$?",
+    "choices": ["$4\\ \\mathrm{hours}$", "$1\\ \\mathrm{hour}$", "$0.25\\ \\mathrm{hours}$", "$1000\\ \\mathrm{hours}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — the capacity is a fixed current-time product: $2000\\ \\mathrm{mA\\,h} = (500\\ \\mathrm{mA})(t)$, so $t = 2000/500 = 4\\ \\mathrm{hours}$.",
+      "incorrect": {
+        "1": "One hour is the time only at the rated $2000\\ \\mathrm{mA}$; at a smaller current it lasts longer.",
+        "2": "That would be for a *larger* current ($8000\\ \\mathrm{mA}$).",
+        "3": "This looks like $2000 \\times 500$ or a units slip. $t = 2000/500 = 4$."
+      }
+    },
+    "hint": ["Capacity = current x time = total charge delivered. $2000\\ \\mathrm{mA\\,h}$ is fixed; divide by the new current."],
+    "solution": "A milliamp-hour rating is really a total charge (current times time). The capacity $2000\\ \\mathrm{mA\\,h}$ is fixed, so at $500\\ \\mathrm{mA}$ the time is $t = \\dfrac{2000\\ \\mathrm{mA\\,h}}{500\\ \\mathrm{mA}} = 4\\ \\mathrm{hours}$. Smaller current draw makes a battery last proportionally longer."
+  },
+  {
+    "id": "BP8-U8-MCQ-014",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": ["C1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "In a metal wire, the moving charges that make up the current are:",
+    "choices": ["protons", "free electrons", "whole atoms", "neutrons"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — in a metal, some electrons are free to move through the lattice of fixed positive ions; their drift is the electric current.",
+      "incorrect": {
+        "0": "Protons are locked in the nuclei of the fixed metal ions and do not move through the wire.",
+        "2": "Whole atoms (ions) stay in place in the metal lattice.",
+        "3": "Neutrons have no charge and are bound in nuclei."
+      }
+    },
+    "hint": ["Which particles in a metal are free to move and carry charge?"],
+    "solution": "A metal consists of a fixed lattice of positive ions with a 'sea' of free electrons that can move through it. When a voltage is applied, these free electrons drift, and that flow of charge is the electric current. (Conventional current is defined as flowing from + to \u2212, opposite to the electron drift.)"
+  },
+
+  {
+    "id": "BP8-U8-MCQ-015",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "The electrical resistance of a component is:",
+    "choices": [
+      "the amount of current it produces.",
+      "a measure of how much it opposes the flow of current, $R = V/I$, in ohms.",
+      "the voltage of the battery.",
+      "the charge stored in it."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — resistance measures opposition to current: $R = V/I$, in ohms ($\\Omega$). A higher resistance means less current for a given voltage.",
+      "incorrect": {
+        "0": "Resistance opposes current; it does not produce it.",
+        "2": "The battery voltage is separate from a component's resistance.",
+        "3": "Resistance is not a stored quantity; it is a property of the component."
+      }
+    },
+    "hint": ["Resistance = how hard it is for current to get through = $V/I$."],
+    "solution": "Resistance is a measure of how strongly a component opposes the flow of electric current. It is defined as $R = \\dfrac{V}{I}$ (the voltage across the component divided by the current through it) and is measured in ohms ($\\Omega$)."
+  },
+  {
+    "id": "BP8-U8-MCQ-016",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "How does the resistance of a wire depend on its length and its thickness?",
+    "choices": [
+      "Longer and thinner wires have more resistance; shorter and thicker wires have less.",
+      "Longer and thicker wires have more resistance.",
+      "Resistance does not depend on the wire's dimensions.",
+      "Shorter and thinner wires have more resistance."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — resistance increases with length (more material to push charge through) and decreases with cross-sectional area (a wider wire gives more room for charge to flow).",
+      "incorrect": {
+        "1": "A thicker wire has *less* resistance, not more.",
+        "2": "Resistance depends strongly on both length and thickness.",
+        "3": "A shorter wire has *less* resistance, not more."
+      }
+    },
+    "hint": ["Water pipe analogy: a long narrow pipe resists flow; a short wide pipe lets it flow easily."],
+    "solution": "The resistance of a wire is proportional to its length (a longer wire opposes current more) and inversely proportional to its cross-sectional area (a thicker wire opposes current less). So long, thin wires have high resistance; short, thick wires have low resistance. The material also matters (its resistivity)."
+  },
+  {
+    "id": "BP8-U8-MCQ-017",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A component has $6.0\\ \\mathrm{V}$ across it and $2.0\\ \\mathrm{A}$ through it. What is its resistance?",
+    "choices": ["$3.0\\ \\Omega$", "$12\\ \\Omega$", "$0.33\\ \\Omega$", "$8.0\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $R = V/I = 6.0/2.0 = 3.0\\ \\Omega$.",
+      "incorrect": {
+        "1": "This multiplies. $R = V/I$, a division.",
+        "2": "This inverts ($2.0/6.0$).",
+        "3": "This adds. $R = 6.0/2.0 = 3.0\\ \\Omega$."
+      }
+    },
+    "hint": ["$R = V/I$: divide the voltage by the current."],
+    "solution": "$R = \\dfrac{V}{I} = \\dfrac{6.0\\ \\mathrm{V}}{2.0\\ \\mathrm{A}} = 3.0\\ \\Omega$."
+  },
+  {
+    "id": "BP8-U8-MCQ-018",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Wire B is the same material and thickness as wire A but three times as long. How does B's resistance compare with A's?",
+    "choices": ["Three times as large", "One third as large", "The same", "Nine times as large"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — resistance is proportional to length, so three times the length gives three times the resistance.",
+      "incorrect": {
+        "1": "A longer wire has *more* resistance, not less.",
+        "2": "Length matters — a longer wire resists current more.",
+        "3": "Resistance is proportional to length (linear), not to length squared."
+      }
+    },
+    "hint": ["$R \\propto$ length. Triple the length → ?"],
+    "solution": "Resistance is directly proportional to the length of the wire (with the material and thickness unchanged). Making the wire three times as long triples its resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-019",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Wire Y is the same material and length as wire X but twice the diameter (so about four times the cross-sectional area). How does Y's resistance compare with X's?",
+    "choices": [
+      "About one quarter of X's resistance.",
+      "About four times X's resistance.",
+      "The same.",
+      "About half of X's resistance."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — resistance is inversely proportional to cross-sectional area. Four times the area gives one quarter the resistance.",
+      "incorrect": {
+        "1": "A thicker wire has *less* resistance, not more.",
+        "2": "Thickness matters — a wider wire lets current flow more easily.",
+        "3": "Doubling the *diameter* quadruples the *area* (area goes as diameter squared), so the resistance is quartered, not halved."
+      }
+    },
+    "hint": ["$R \\propto 1/\\text{area}$. Double the diameter → 4x the area → ?"],
+    "solution": "Resistance is inversely proportional to the cross-sectional area of the wire. Doubling the diameter multiplies the area by $2^2 = 4$, so the resistance becomes $1/4$ of the original. Thicker wires carry current with less resistance, which is why heavy-duty cables are thick."
+  },
+  {
+    "id": "BP8-U8-MCQ-020",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A resistor has a resistance of $8.0\\ \\Omega$. What voltage is needed to drive a current of $0.50\\ \\mathrm{A}$ through it?",
+    "choices": ["$4.0\\ \\mathrm{V}$", "$16\\ \\mathrm{V}$", "$8.5\\ \\mathrm{V}$", "$0.0625\\ \\mathrm{V}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $V = IR = (0.50)(8.0) = 4.0\\ \\mathrm{V}$.",
+      "incorrect": {
+        "1": "This divides ($8.0/0.50$). Use $V = IR$, a product.",
+        "2": "This adds. $V = IR = 4.0\\ \\mathrm{V}$.",
+        "3": "This is $I/R$; the formula is $V = IR$."
+      }
+    },
+    "hint": ["Rearrange $R = V/I$ to $V = IR$."],
+    "solution": "$V = IR = (0.50\\ \\mathrm{A})(8.0\\ \\Omega) = 4.0\\ \\mathrm{V}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-021",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "What is the difference between the 'total resistance' of a circuit and the 'individual resistance' of one component?",
+    "choices": [
+      "They are always equal.",
+      "The individual resistance is a property of one component; the total (equivalent) resistance is the single value that the whole combination of components acts like when seen from the battery.",
+      "The total resistance is always smaller than any individual resistance.",
+      "The total resistance is always the sum of the individual ones."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — the total or equivalent resistance is the single resistor that would draw the same current from the battery as the whole network does. How you combine the individual resistances depends on whether they are in series or parallel.",
+      "incorrect": {
+        "0": "They are equal only if there is a single component.",
+        "2": "That is true only for parallel combinations; in series the total is larger than any individual one.",
+        "3": "That is true only for series combinations; in parallel the total is smaller."
+      }
+    },
+    "hint": ["Total (equivalent) resistance = what the whole network 'looks like' as one resistor to the battery."],
+    "solution": "An individual resistance is the property of a single component. The total (or equivalent) resistance is the single resistance value that the entire combination behaves like, as far as the battery is concerned — it determines the total current the battery drives. For resistors in series, the total is the sum; for resistors in parallel, the total is less than the smallest."
+  },
+  {
+    "id": "BP8-U8-MCQ-022",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE2"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why are the thick cables that carry large currents into a house made much thicker than the thin wires inside small electronic devices?",
+    "choices": [
+      "Thick cables look more impressive.",
+      "A thicker cable has a larger cross-sectional area and so a lower resistance, which reduces wasted heating and voltage loss when a large current flows.",
+      "Thin wires carry more current than thick ones.",
+      "Thick cables store more charge."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — lower resistance in the supply cable means less energy wasted as heat and a smaller voltage drop along the cable, which matters when the current is large.",
+      "incorrect": {
+        "0": "It is a real engineering reason, not an aesthetic one.",
+        "2": "A thin wire has *higher* resistance and would overheat if forced to carry a large current.",
+        "3": "Cables do not 'store' charge; they carry current."
+      }
+    },
+    "hint": ["Large current in a resistive cable wastes energy as heat and drops voltage. How do you keep the cable's resistance low?"],
+    "solution": "Resistance is inversely proportional to cross-sectional area, so a thicker cable has a lower resistance. When a large current flows, a low cable resistance keeps the energy wasted as heat small and the voltage drop along the cable small, so more of the supply voltage reaches the appliances. Small devices draw tiny currents, so thin high-resistance wires are fine there."
+  },
+  {
+    "id": "BP8-U8-MCQ-023",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $12\\ \\mathrm{V}$ battery drives a current of $3.0\\ \\mathrm{A}$ through a single resistor. What is the resistor's resistance?",
+    "choices": ["$4.0\\ \\Omega$", "$36\\ \\Omega$", "$0.25\\ \\Omega$", "$15\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $R = V/I = 12/3.0 = 4.0\\ \\Omega$.",
+      "incorrect": {
+        "1": "This multiplies ($12 \\times 3.0$). $R = V/I$.",
+        "2": "This inverts ($3.0/12$).",
+        "3": "This adds. $R = 12/3.0 = 4.0\\ \\Omega$."
+      }
+    },
+    "hint": ["$R = V/I = 12/3.0$."],
+    "solution": "$R = \\dfrac{V}{I} = \\dfrac{12\\ \\mathrm{V}}{3.0\\ \\mathrm{A}} = 4.0\\ \\Omega$."
+  },
+  {
+    "id": "BP8-U8-MCQ-024",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "Wire Q is made of the same material as wire P, but Q is twice as long AND half the cross-sectional area of P. How does Q's resistance compare with P's?",
+    "choices": ["Four times P's resistance", "The same as P's", "Half of P's resistance", "Twice P's resistance"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $R \\propto \\text{length}/\\text{area}$. Twice the length multiplies $R$ by 2; half the area multiplies $R$ by another 2. Total: $2 \\times 2 = 4$ times.",
+      "incorrect": {
+        "1": "Both changes increase the resistance, so it cannot stay the same.",
+        "2": "Both changes make the wire *more* resistive, not less.",
+        "3": "The length change gives $\\times 2$ and the area change gives another $\\times 2$, so $\\times 4$ overall."
+      }
+    },
+    "hint": ["$R \\propto \\text{length}$ and $R \\propto 1/\\text{area}$. Apply both factors."],
+    "solution": "Resistance is proportional to length and inversely proportional to cross-sectional area. Doubling the length multiplies the resistance by 2; halving the area multiplies it by another 2. So wire Q has $2 \\times 2 = 4$ times the resistance of wire P."
+  },
+  {
+    "id": "BP8-U8-MCQ-025",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Which is generally the best electrical conductor (lowest resistance for a given size)?",
+    "choices": ["Rubber", "Copper", "Glass", "Dry wood"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — copper is a metal with many free electrons, so it conducts electricity very well and is used for most wiring.",
+      "incorrect": {
+        "0": "Rubber is an insulator — very high resistance — which is why it is used to coat wires.",
+        "2": "Glass is an insulator.",
+        "3": "Dry wood is a poor conductor (a weak insulator)."
+      }
+    },
+    "hint": ["Which of these is a metal?"],
+    "solution": "Copper is a metal with a large number of free electrons available to carry current, so it has a very low resistance and is the standard material for electrical wiring. Rubber, glass, and dry wood are insulators, with very high resistance, used to prevent current from flowing where it should not."
+  },
+  {
+    "id": "BP8-U8-MCQ-026",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": ["RE1", "RE2"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A wire of resistance $R$ is stretched (keeping its volume constant) so that it becomes twice as long. Its new resistance is:",
+    "choices": ["$4R$", "$2R$", "$R$", "$R/2$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — stretching to twice the length at constant volume halves the cross-sectional area. $R \\propto \\text{length}/\\text{area}$: length $\\times 2$ and area $\\times \\tfrac{1}{2}$ give $R \\times 4$.",
+      "incorrect": {
+        "1": "This accounts only for the length change and forgets that stretching also thins the wire.",
+        "2": "Both the length increase and the area decrease raise the resistance.",
+        "3": "Stretching increases the resistance, not decreases it."
+      }
+    },
+    "hint": ["Constant volume: if the length doubles, the cross-sectional area must halve. Then apply $R \\propto \\text{length}/\\text{area}$."],
+    "solution": "Volume = length $\\times$ area is constant, so doubling the length halves the cross-sectional area. Resistance is proportional to length and inversely proportional to area: $R_{new} = R \\times \\dfrac{2}{(1/2)} = 4R$. Stretching a wire makes it much more resistive."
+  },
+
+  {
+    "id": "BP8-U8-MCQ-027",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "equation",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Ohm's law relates voltage, current, and resistance as:",
+    "choices": ["$V = I/R$", "$V = IR$", "$V = I + R$", "$V = I - R$"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — $V = IR$: the voltage across a resistor equals the current through it times its resistance. It rearranges to $I = V/R$ and $R = V/I$.",
+      "incorrect": {
+        "0": "$V = IR$ is a product, not $I$ divided by $R$.",
+        "2": "Ohm's law is a product relationship, not a sum.",
+        "3": "It is not a difference either."
+      }
+    },
+    "hint": ["Voltage = current times resistance."],
+    "solution": "Ohm's law: $V = IR$. The three rearrangements are $V = IR$, $I = \\dfrac{V}{R}$, and $R = \\dfrac{V}{I}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-028",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A $9.0\\ \\mathrm{V}$ battery is connected across a $3.0\\ \\Omega$ resistor. What current flows?",
+    "choices": ["$3.0\\ \\mathrm{A}$", "$27\\ \\mathrm{A}$", "$0.33\\ \\mathrm{A}$", "$6.0\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = V/R = 9.0/3.0 = 3.0\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This multiplies. $I = V/R$, a division.",
+        "2": "This inverts ($3.0/9.0$).",
+        "3": "This subtracts. $I = 9.0/3.0 = 3.0\\ \\mathrm{A}$."
+      }
+    },
+    "hint": ["$I = V/R = 9.0/3.0$."],
+    "solution": "$I = \\dfrac{V}{R} = \\dfrac{9.0\\ \\mathrm{V}}{3.0\\ \\Omega} = 3.0\\ \\mathrm{A}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-029",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A resistor carries $0.25\\ \\mathrm{A}$ when $5.0\\ \\mathrm{V}$ is applied. What is its resistance?",
+    "choices": ["$20\\ \\Omega$", "$1.25\\ \\Omega$", "$4.75\\ \\Omega$", "$0.05\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $R = V/I = 5.0/0.25 = 20\\ \\Omega$.",
+      "incorrect": {
+        "1": "This multiplies ($5.0 \\times 0.25$).",
+        "2": "This subtracts.",
+        "3": "This inverts ($0.25/5.0$)."
+      }
+    },
+    "hint": ["$R = V/I = 5.0/0.25$. Dividing by $0.25$ is multiplying by 4."],
+    "solution": "$R = \\dfrac{V}{I} = \\dfrac{5.0\\ \\mathrm{V}}{0.25\\ \\mathrm{A}} = 20\\ \\Omega$."
+  },
+  {
+    "id": "BP8-U8-MCQ-030",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A resistor is connected to a variable power supply. If the voltage across the resistor is tripled, what happens to the current through it (assuming its resistance is constant)?",
+    "choices": ["It triples", "It stays the same", "It is one third", "It increases nine-fold"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — for a fixed resistance, $I = V/R$ is proportional to $V$, so tripling the voltage triples the current.",
+      "incorrect": {
+        "1": "More voltage across a fixed resistor drives more current.",
+        "2": "That would be if the voltage were reduced to one third.",
+        "3": "The relationship is linear ($I \\propto V$), not quadratic."
+      }
+    },
+    "hint": ["$I = V/R$ with $R$ fixed: $I \\propto V$."],
+    "solution": "Ohm's law gives $I = \\dfrac{V}{R}$. With the resistance held constant, the current is directly proportional to the voltage, so tripling the voltage triples the current. (A graph of $I$ against $V$ for an ohmic resistor is a straight line through the origin.)"
+  },
+  {
+    "id": "BP8-U8-MCQ-031",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "graph",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "For an ohmic resistor, a graph of current $I$ (vertical) against voltage $V$ (horizontal) is:",
+    "choices": [
+      "a straight line through the origin, whose gradient is $1/R$.",
+      "a horizontal line.",
+      "a curve that bends upward.",
+      "a straight line whose gradient is $R$."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = (1/R)V$, so the $I$-$V$ graph is a straight line through the origin with gradient $1/R$ (a steeper line means a smaller resistance).",
+      "incorrect": {
+        "1": "A horizontal line would mean the current does not depend on voltage, which is not ohmic behaviour.",
+        "2": "An upward-bending curve indicates a *decreasing* resistance (a non-ohmic component).",
+        "3": "Rearranging to $I = (1/R)V$, the gradient of the $I$-vs-$V$ line is $1/R$, not $R$. (A $V$-vs-$I$ graph would have gradient $R$.)"
+      }
+    },
+    "hint": ["Write Ohm's law as $I = (1/R)V$. That is $y = mx$ with what gradient?"],
+    "solution": "Rearranging Ohm's law, $I = \\dfrac{1}{R}V$. So a graph of $I$ against $V$ for an ohmic resistor is a straight line passing through the origin, with gradient $\\dfrac{1}{R}$. A steeper line corresponds to a lower resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-032",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O3", "SP1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $12\\ \\mathrm{V}$ battery is connected to two resistors in series, $2.0\\ \\Omega$ and $4.0\\ \\Omega$. What is the current in the circuit?",
+    "choices": ["$2.0\\ \\mathrm{A}$", "$6.0\\ \\mathrm{A}$", "$1.0\\ \\mathrm{A}$", "$3.0\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — series total resistance $= 2.0 + 4.0 = 6.0\\ \\Omega$; current $= V/R_{total} = 12/6.0 = 2.0\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This uses only the $2.0\\ \\Omega$ resistor: $12/2.0$. Add the series resistances first.",
+        "2": "This uses a total of $12\\ \\Omega$. Series total is $2.0 + 4.0 = 6.0\\ \\Omega$.",
+        "3": "This uses only the $4.0\\ \\Omega$ resistor: $12/4.0$. Use the combined resistance."
+      }
+    },
+    "hint": ["Add the series resistances to get $R_{total}$, then $I = V/R_{total}$."],
+    "solution": "In series the resistances add: $R_{total} = 2.0 + 4.0 = 6.0\\ \\Omega$. The current from the battery is $I = \\dfrac{V}{R_{total}} = \\dfrac{12\\ \\mathrm{V}}{6.0\\ \\Omega} = 2.0\\ \\mathrm{A}$, and this current is the same through both resistors."
+  },
+  {
+    "id": "BP8-U8-MCQ-033",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O3", "SP1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In the previous circuit ($12\\ \\mathrm{V}$, $2.0\\ \\Omega$ and $4.0\\ \\Omega$ in series, current $2.0\\ \\mathrm{A}$), what is the voltage across the $4.0\\ \\Omega$ resistor?",
+    "choices": ["$8.0\\ \\mathrm{V}$", "$4.0\\ \\mathrm{V}$", "$12\\ \\mathrm{V}$", "$2.0\\ \\mathrm{V}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $V = IR = (2.0)(4.0) = 8.0\\ \\mathrm{V}$. (The $2.0\\ \\Omega$ resistor drops $4.0\\ \\mathrm{V}$, and $8.0 + 4.0 = 12\\ \\mathrm{V}$ matches the battery.)",
+      "incorrect": {
+        "1": "This is the voltage across the $2.0\\ \\Omega$ resistor.",
+        "2": "$12\\ \\mathrm{V}$ is the total; it is shared between the two resistors.",
+        "3": "This is the current value, not a voltage."
+      }
+    },
+    "hint": ["Ohm's law for that resistor alone: $V = IR$ with $I = 2.0\\ \\mathrm{A}$ and $R = 4.0\\ \\Omega$."],
+    "solution": "Apply Ohm's law to the $4.0\\ \\Omega$ resistor: $V = IR = (2.0\\ \\mathrm{A})(4.0\\ \\Omega) = 8.0\\ \\mathrm{V}$. The larger resistor takes the larger share of the battery voltage; the two voltages ($8.0\\ \\mathrm{V}$ and $4.0\\ \\mathrm{V}$) add up to the battery's $12\\ \\mathrm{V}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-034",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O3", "SP2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $6.0\\ \\mathrm{V}$ battery is connected across two resistors in parallel, $3.0\\ \\Omega$ and $6.0\\ \\Omega$. What is the current through the $3.0\\ \\Omega$ resistor?",
+    "choices": ["$2.0\\ \\mathrm{A}$", "$1.0\\ \\mathrm{A}$", "$0.5\\ \\mathrm{A}$", "$3.0\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — in parallel, each resistor has the full $6.0\\ \\mathrm{V}$ across it. Through the $3.0\\ \\Omega$ resistor: $I = V/R = 6.0/3.0 = 2.0\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This is the current through the $6.0\\ \\Omega$ resistor ($6.0/6.0$).",
+        "2": "This would need $12\\ \\mathrm{V}$ across a $... $; each parallel branch gets the full $6.0\\ \\mathrm{V}$.",
+        "3": "This uses $R = 2.0\\ \\Omega$; but each branch is analysed with its own resistance and the full battery voltage."
+      }
+    },
+    "hint": ["In parallel, both resistors have the full battery voltage across them. Use $I = V/R$ for the branch."],
+    "solution": "In a parallel combination, every branch has the full battery voltage across it — here $6.0\\ \\mathrm{V}$. The current through the $3.0\\ \\Omega$ resistor is $I = \\dfrac{V}{R} = \\dfrac{6.0\\ \\mathrm{V}}{3.0\\ \\Omega} = 2.0\\ \\mathrm{A}$ (and $1.0\\ \\mathrm{A}$ flows through the $6.0\\ \\Omega$ resistor)."
+  },
+  {
+    "id": "BP8-U8-MCQ-035",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "reasonableness-check",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A student calculates that a $1.5\\ \\mathrm{V}$ cell drives a current of $30\\ \\mathrm{A}$ through a $5\\ \\Omega$ resistor. What is the quickest sign that this is wrong?",
+    "choices": [
+      "$I = V/R = 1.5/5 = 0.3\\ \\mathrm{A}$, which is 100 times smaller than $30\\ \\mathrm{A}$ — the student probably multiplied instead of dividing, or misplaced a factor.",
+      "The resistance is too small.",
+      "The current should be negative.",
+      "The voltage should be in millivolts."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = V/R = 1.5/5 = 0.3\\ \\mathrm{A}$. A tiny $1.5\\ \\mathrm{V}$ cell cannot push $30\\ \\mathrm{A}$ through a $5\\ \\Omega$ resistor; the answer is 100 times too big.",
+      "incorrect": {
+        "1": "A $5\\ \\Omega$ resistor is perfectly ordinary.",
+        "2": "Current magnitude is what matters here; there is no sign issue.",
+        "3": "$1.5\\ \\mathrm{V}$ is the standard voltage of an AA/AAA cell — it is fine."
+      }
+    },
+    "hint": ["Compute $I = V/R = 1.5/5$. Does $30\\ \\mathrm{A}$ look plausible from a single cell?"],
+    "solution": "Ohm's law gives $I = \\dfrac{V}{R} = \\dfrac{1.5\\ \\mathrm{V}}{5\\ \\Omega} = 0.3\\ \\mathrm{A}$. The student's $30\\ \\mathrm{A}$ is 100 times too large — a single $1.5\\ \\mathrm{V}$ cell driving $30\\ \\mathrm{A}$ would deliver enormous power and is not physically reasonable. The likely error is multiplying $V$ and $R$ (or a decimal-place slip)."
+  },
+  {
+    "id": "BP8-U8-MCQ-036",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O3", "SP1"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In a series circuit of a battery and two identical bulbs, one bulb is unscrewed (its filament breaks the circuit). What happens to the other bulb?",
+    "choices": [
+      "It stays the same brightness.",
+      "It goes out, because the single loop is now broken and no current flows anywhere.",
+      "It gets brighter.",
+      "It flickers."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a series circuit is one loop. Breaking it at any point stops the current everywhere, so the remaining bulb goes out too.",
+      "incorrect": {
+        "0": "The circuit is broken, so no current flows and the other bulb cannot light.",
+        "2": "It cannot get brighter with zero current.",
+        "3": "With the loop broken there is no current at all — it simply goes out."
+      }
+    },
+    "hint": ["Series = one loop. Break it anywhere and...?"],
+    "solution": "A series circuit forms a single conducting loop. Removing one bulb breaks that loop, so the current stops everywhere in the circuit — the other bulb goes out as well. (Old-style series Christmas lights had this problem: one dead bulb killed the whole string.)"
+  },
+  {
+    "id": "BP8-U8-MCQ-037",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O3", "SP2"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "Two identical bulbs are connected in parallel across a battery. One bulb is unscrewed. What happens to the other bulb?",
+    "choices": [
+      "It goes out.",
+      "It stays at the same brightness, because it still has its own complete path to the battery with the full battery voltage across it.",
+      "It gets much dimmer.",
+      "It gets much brighter."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — in parallel, each bulb has its own independent loop with the full battery voltage. Removing one does not affect the other's voltage or current.",
+      "incorrect": {
+        "0": "The remaining bulb still has a complete circuit of its own.",
+        "2": "Its voltage is unchanged (the full battery voltage), so its current and brightness are unchanged.",
+        "3": "Its voltage does not increase; it was already the full battery voltage."
+      }
+    },
+    "hint": ["Parallel = each branch is its own loop. Does removing one branch change the voltage across the other?"],
+    "solution": "In a parallel circuit, each bulb is connected directly across the battery in its own loop, so each has the full battery voltage across it. Unscrewing one bulb breaks only its branch; the other bulb still has its complete path and the same voltage, so it stays at the same brightness. This is why household lighting and sockets are wired in parallel."
+  },
+  {
+    "id": "BP8-U8-MCQ-038",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": ["O2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "What voltage drives a current of $4.0\\ \\mathrm{A}$ through a $2.5\\ \\Omega$ resistor?",
+    "choices": ["$10\\ \\mathrm{V}$", "$1.6\\ \\mathrm{V}$", "$0.625\\ \\mathrm{V}$", "$6.5\\ \\mathrm{V}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $V = IR = (4.0)(2.5) = 10\\ \\mathrm{V}$.",
+      "incorrect": {
+        "1": "This divides ($4.0/2.5$). Use $V = IR$.",
+        "2": "This inverts ($2.5/4.0$).",
+        "3": "This adds. $V = IR = 10\\ \\mathrm{V}$."
+      }
+    },
+    "hint": ["$V = IR = 4.0 \\times 2.5$."],
+    "solution": "$V = IR = (4.0\\ \\mathrm{A})(2.5\\ \\Omega) = 10\\ \\mathrm{V}$."
+  },
+
+  {
+    "id": "BP8-U8-MCQ-039",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "physical-model",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "In a standard circuit diagram, a long thin line next to a short thick line represents:",
+    "choices": ["a resistor", "a cell (or battery)", "a switch", "a bulb"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — a cell is drawn as a long thin line (the positive terminal) beside a short thick line (the negative terminal). A battery is two or more cells drawn in a row.",
+      "incorrect": {
+        "0": "A resistor is drawn as a rectangle (or a zigzag in older diagrams).",
+        "2": "A switch is drawn as a break in the wire with a hinged lever.",
+        "3": "A bulb is drawn as a circle with a cross inside."
+      }
+    },
+    "hint": ["Long line = positive terminal, short line = negative terminal."],
+    "solution": "The symbol for a cell is a long thin line (positive terminal, $+$) next to a short thick line (negative terminal, $\u2212$). A battery is drawn as two or more such cell symbols in a row. Other standard symbols: resistor (rectangle), bulb (circle with a cross), switch (a gap with a hinged lever), wire (a plain line)."
+  },
+  {
+    "id": "BP8-U8-MCQ-040",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "physical-model",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "A circle with a cross inside it, placed in a circuit line, represents:",
+    "choices": ["a switch", "a battery", "a lamp (bulb)", "a piece of wire"],
+    "correctAnswer": 2,
+    "feedback": {
+      "correct": "Correct — a circle with a cross (or sometimes a circle with a wavy filament line) is the standard symbol for a lamp or bulb.",
+      "incorrect": {
+        "0": "A switch is a gap in the line with a hinged lever.",
+        "1": "A battery is drawn with long and short parallel lines.",
+        "3": "A plain line is a wire; the circle-with-cross is a component."
+      }
+    },
+    "hint": ["Which component gives out light?"],
+    "solution": "A circle with a cross inside it is the standard circuit symbol for a lamp (bulb). The cross represents the filament. A switch is shown as a break in the wire with a hinged arm; a cell/battery uses long and short parallel lines; a resistor is a plain rectangle."
+  },
+  {
+    "id": "BP8-U8-MCQ-041",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD2"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A VIR chart for a circuit lists, for each component and for the whole circuit, its:",
+    "choices": [
+      "voltage, current, and resistance.",
+      "volume, inertia, and radius.",
+      "voltage, inductance, and reactance.",
+      "value, importance, and rating."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — a VIR chart is a table with a row for each component (and a 'total' row) and columns for V, I, and R. You fill it in using Ohm's law ($V = IR$) plus the series/parallel rules.",
+      "incorrect": {
+        "1": "These are mechanics quantities, not circuit quantities.",
+        "2": "Inductance and reactance are AC concepts beyond this course.",
+        "3": "Not physical quantities."
+      }
+    },
+    "hint": ["V, I, R — the three quantities linked by Ohm's law."],
+    "solution": "A VIR chart (also called a VIRP chart when power is included) is a table used to analyse a circuit: each row is a component (plus a 'total' row for the whole circuit), and the columns are voltage $V$, current $I$, and resistance $R$. You complete it using Ohm's law and the rules for series and parallel combinations."
+  },
+  {
+    "id": "BP8-U8-MCQ-042",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD2", "SP1"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In a VIR chart for a SERIES circuit, which column has the same value in every component row?",
+    "choices": ["The voltage (V) column", "The current (I) column", "The resistance (R) column", "None of them"],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — in a series circuit the current is the same through every component, so the I column is filled with one repeated value. Voltage is shared (adds up to the total) and resistances differ.",
+      "incorrect": {
+        "0": "In series the voltages are generally different (they add to the total).",
+        "2": "The components can have different resistances.",
+        "3": "The current column is the constant one in a series circuit."
+      }
+    },
+    "hint": ["Series = one path = same current everywhere."],
+    "solution": "In a series circuit there is a single path, so the current is identical through every component. In a VIR chart this means the current (I) column has the same value in every row, including the total row. The individual voltages add up to the total voltage, and the individual resistances add up to the total resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-043",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD2", "SP2"],
+    "type": "multiple-choice",
+    "skill": "data-analysis",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In a VIR chart for a simple PARALLEL circuit (two resistors across one battery), which column has the same value in every component row?",
+    "choices": ["The voltage (V) column", "The current (I) column", "The resistance (R) column", "None of them"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — in a parallel circuit each branch is connected across the same two points, so every branch has the same voltage (the battery voltage). Currents split between branches and resistances differ.",
+      "incorrect": {
+        "1": "The branch currents are generally different (they add to the total).",
+        "2": "The branch resistances can differ.",
+        "3": "The voltage column is the constant one in a parallel circuit."
+      }
+    },
+    "hint": ["Parallel = every branch across the same two points = same voltage."],
+    "solution": "In a simple parallel circuit, every branch connects the same two nodes (the battery terminals), so each branch has the full battery voltage across it. In a VIR chart the voltage (V) column is the same in every row. The branch currents add up to the total current, and the equivalent resistance is less than the smallest branch resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-044",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": ["CD1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "physical-model",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "When a switch symbol in a circuit diagram is drawn 'open' (the lever lifted away from the contact), it means:",
+    "choices": [
+      "the circuit is complete and current flows.",
+      "there is a break in the circuit, so no current flows.",
+      "the switch is broken and must be replaced.",
+      "the battery is flat."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — an open switch is a deliberate gap in the conducting loop, so no current flows anywhere in that loop. Closing the switch completes the circuit.",
+      "incorrect": {
+        "0": "An open switch breaks the loop; current flows only when the switch is closed.",
+        "2": "'Open' is a normal switch state (off), not a fault.",
+        "3": "The switch state says nothing about the battery."
+      }
+    },
+    "hint": ["Open switch = gap in the wire = ?"],
+    "solution": "A switch drawn open represents an intentional break in the conducting path. With the loop broken, no current can flow in that part of the circuit (the components are 'off'). Drawing the switch closed (lever touching the contact) completes the loop and lets current flow."
+  },
+
+  {
+    "id": "BP8-U8-MCQ-045",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "foundation",
+    "cognitiveLevel": 1,
+    "calculatorFree": true,
+    "question": "Three resistors of $2\\ \\Omega$, $3\\ \\Omega$, and $5\\ \\Omega$ are connected in series. What is their total (equivalent) resistance?",
+    "choices": ["$10\\ \\Omega$", "$0.97\\ \\Omega$", "$3.3\\ \\Omega$", "$30\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — in series, resistances add: $2 + 3 + 5 = 10\\ \\Omega$.",
+      "incorrect": {
+        "1": "That is roughly the *parallel* combination. In series you add.",
+        "2": "That is the average; series resistances add, not average.",
+        "3": "This multiplies. Series resistances add."
+      }
+    },
+    "hint": ["Series: $R_{total} = R_1 + R_2 + R_3$."],
+    "solution": "For resistors in series, the equivalent resistance is the sum: $R_{total} = 2 + 3 + 5 = 10\\ \\Omega$. Adding resistors in series always increases the total resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-046",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "Two $6\\ \\Omega$ resistors are connected in parallel. What is their equivalent resistance?",
+    "choices": ["$3\\ \\Omega$", "$12\\ \\Omega$", "$6\\ \\Omega$", "$0.33\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — two equal resistors in parallel give half the value: $6/2 = 3\\ \\Omega$.",
+      "incorrect": {
+        "1": "That is the series result. Parallel gives a smaller value.",
+        "2": "Parallel resistance is always less than either resistor.",
+        "3": "$\\dfrac{1}{R} = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{2}{6} = \\dfrac{1}{3}$, so $R = 3\\ \\Omega$, not $0.33$."
+      }
+    },
+    "hint": ["Two equal resistors in parallel: half of one of them."],
+    "solution": "$\\dfrac{1}{R_{total}} = \\dfrac{1}{6} + \\dfrac{1}{6} = \\dfrac{2}{6} = \\dfrac{1}{3}$, so $R_{total} = 3\\ \\Omega$. Two identical resistors in parallel always give half the individual resistance. Adding a resistor in parallel always *decreases* the total resistance."
+  },
+  {
+    "id": "BP8-U8-MCQ-047",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "A $3\\ \\Omega$ resistor and a $6\\ \\Omega$ resistor are connected in parallel. What is their equivalent resistance?",
+    "choices": ["$2\\ \\Omega$", "$9\\ \\Omega$", "$4.5\\ \\Omega$", "$18\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $\\dfrac{1}{R} = \\dfrac{1}{3} + \\dfrac{1}{6} = \\dfrac{2}{6} + \\dfrac{1}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R = 2\\ \\Omega$. (Or use $\\dfrac{R_1 R_2}{R_1 + R_2} = \\dfrac{18}{9} = 2$.)",
+      "incorrect": {
+        "1": "That is the series result ($3 + 6$).",
+        "2": "That is the average; parallel gives less than the smaller resistor.",
+        "3": "That is $R_1 R_2$; you must also divide by $R_1 + R_2$."
+      }
+    },
+    "hint": ["$\\dfrac{1}{R} = \\dfrac{1}{3} + \\dfrac{1}{6}$, using a common denominator of 6."],
+    "solution": "$\\dfrac{1}{R_{total}} = \\dfrac{1}{3} + \\dfrac{1}{6} = \\dfrac{2}{6} + \\dfrac{1}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_{total} = 2\\ \\Omega$. The parallel combination ($2\\ \\Omega$) is less than the smaller of the two resistors ($3\\ \\Omega$), as it must be."
+  },
+  {
+    "id": "BP8-U8-MCQ-048",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "question": "In a series circuit, as you add more resistors, the total resistance ___ and the current from the battery ___.",
+    "choices": [
+      "increases; decreases",
+      "decreases; increases",
+      "increases; increases",
+      "stays the same; stays the same"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — series resistances add, so the total goes up; and by $I = V/R_{total}$, a larger total resistance means a smaller current from the battery.",
+      "incorrect": {
+        "1": "Adding series resistors *increases* the total resistance.",
+        "2": "A larger total resistance gives a *smaller* current, not larger.",
+        "3": "Both change when you add a series resistor."
+      }
+    },
+    "hint": ["Series total goes up. Then $I = V/R_{total}$: bigger $R$ → ?"],
+    "solution": "Adding resistors in series increases the total resistance ($R_{total} = R_1 + R_2 + \\ldots$). With the battery voltage fixed, $I = V/R_{total}$ decreases, so less current flows from the battery and each bulb in a series string is dimmer than a single bulb would be."
+  },
+  {
+    "id": "BP8-U8-MCQ-049",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "In a parallel circuit, as you add more resistors (branches), the total resistance ___ and the total current from the battery ___.",
+    "choices": [
+      "decreases; increases",
+      "increases; decreases",
+      "stays the same; stays the same",
+      "decreases; decreases"
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — each new parallel branch gives current another path, lowering the total resistance; by $I = V/R_{total}$, the total current from the battery goes up.",
+      "incorrect": {
+        "1": "Adding a parallel branch *decreases* the total resistance.",
+        "2": "Both change: more branches mean lower total resistance and more total current.",
+        "3": "Lower total resistance means *more* total current, not less."
+      }
+    },
+    "hint": ["Each parallel branch is another path for current. More paths → less total resistance → more total current."],
+    "solution": "Adding resistors in parallel gives current additional paths, so the total (equivalent) resistance decreases (it is always less than the smallest branch). With the battery voltage fixed, $I = V/R_{total}$ increases — the battery supplies more total current. This is why plugging in too many appliances on one circuit can trip the breaker."
+  },
+  {
+    "id": "BP8-U8-MCQ-050",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1", "O3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $24\\ \\mathrm{V}$ battery is connected to three resistors in series: $4\\ \\Omega$, $4\\ \\Omega$, and $4\\ \\Omega$. What is the voltage across ONE of the resistors?",
+    "choices": ["$8\\ \\mathrm{V}$", "$24\\ \\mathrm{V}$", "$12\\ \\mathrm{V}$", "$2\\ \\mathrm{V}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $R_{total} = 12\\ \\Omega$; $I = 24/12 = 2\\ \\mathrm{A}$; across one resistor $V = IR = (2)(4) = 8\\ \\mathrm{V}$. (Or: three equal resistors share $24\\ \\mathrm{V}$ equally.)",
+      "incorrect": {
+        "1": "$24\\ \\mathrm{V}$ is across all three together, not one.",
+        "2": "$12\\ \\mathrm{V}$ would be across two of the three.",
+        "3": "This looks like $I$ or a misdivision; each resistor drops $24/3 = 8\\ \\mathrm{V}$."
+      }
+    },
+    "hint": ["Three equal series resistors share the battery voltage equally: $24/3$."],
+    "solution": "The three equal resistors give $R_{total} = 4 + 4 + 4 = 12\\ \\Omega$, so $I = \\dfrac{24}{12} = 2\\ \\mathrm{A}$. Each resistor has $V = IR = (2)(4) = 8\\ \\mathrm{V}$ across it — equivalently, three equal resistors in series split the $24\\ \\mathrm{V}$ into three equal $8\\ \\mathrm{V}$ shares."
+  },
+  {
+    "id": "BP8-U8-MCQ-051",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2", "O3"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "question": "A $12\\ \\mathrm{V}$ battery drives two resistors in parallel, $4\\ \\Omega$ and $12\\ \\Omega$. What is the total current from the battery?",
+    "choices": ["$4\\ \\mathrm{A}$", "$1.33\\ \\mathrm{A}$", "$0.75\\ \\mathrm{A}$", "$3\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — branch currents: $12/4 = 3\\ \\mathrm{A}$ and $12/12 = 1\\ \\mathrm{A}$; total $= 3 + 1 = 4\\ \\mathrm{A}$. (Or $R_{total} = \\dfrac{4 \\times 12}{16} = 3\\ \\Omega$, so $I = 12/3 = 4\\ \\mathrm{A}$.)",
+      "incorrect": {
+        "1": "This is roughly $12/9$ — it uses $R_{total} = 9\\ \\Omega$ (the wrong combination).",
+        "2": "This uses $R_{total} = 16\\ \\Omega$ (adding the resistances, which is the series rule).",
+        "3": "This is the current in the $4\\ \\Omega$ branch alone; add the other branch."
+      }
+    },
+    "hint": ["Find each branch current with $I = V/R$ (full $12\\ \\mathrm{V}$ on each) and add them."],
+    "solution": "Each parallel branch has the full $12\\ \\mathrm{V}$. Branch currents: $\\dfrac{12}{4} = 3\\ \\mathrm{A}$ and $\\dfrac{12}{12} = 1\\ \\mathrm{A}$. The total current from the battery is the sum: $3 + 1 = 4\\ \\mathrm{A}$. (Consistently, $R_{total} = \\dfrac{(4)(12)}{4 + 12} = \\dfrac{48}{16} = 3\\ \\Omega$ and $I = \\dfrac{12}{3} = 4\\ \\mathrm{A}$.)"
+  },
+  {
+    "id": "BP8-U8-MCQ-052",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1", "SP2"],
+    "type": "multiple-choice",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Why is household wiring (lights, sockets) connected in parallel rather than in series?",
+    "choices": [
+      "Series wiring uses less copper.",
+      "In parallel, each device gets the full mains voltage and can be switched on or off independently without affecting the others; in series, one device failing or switching off would break the whole circuit.",
+      "Parallel circuits have a higher total resistance, which is safer.",
+      "Series circuits cannot carry alternating current."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — parallel wiring gives every appliance the full voltage and an independent path, so devices work at their rated brightness/power and can be controlled separately.",
+      "incorrect": {
+        "0": "Parallel wiring actually uses more copper, but the independence and full voltage are worth it.",
+        "2": "Parallel combinations have a *lower* total resistance, not higher.",
+        "3": "Both series and parallel circuits can carry alternating current."
+      }
+    },
+    "hint": ["In your home, does switching off one light turn off all the others? What would series wiring do?"],
+    "solution": "Household circuits are wired in parallel so that each appliance has the full mains voltage across it and its own path back to the supply. This means every device runs at its rated power, and turning one off (or one bulb blowing) does not interrupt the others. Series wiring would make all the devices share the voltage, dim each other, and shut the whole circuit down if any one failed."
+  },
+  {
+    "id": "BP8-U8-MCQ-053",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2"],
+    "type": "multiple-choice",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "The equivalent resistance of two resistors in parallel is always:",
+    "choices": [
+      "greater than the larger resistance.",
+      "less than the smaller of the two resistances.",
+      "equal to the average of the two.",
+      "equal to the sum of the two."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — adding a parallel path always makes it easier for current to flow, so the equivalent resistance drops below even the smaller resistor.",
+      "incorrect": {
+        "0": "Parallel resistance is smaller than either resistor, not larger.",
+        "2": "It is less than the average — in fact less than the smaller one.",
+        "3": "The sum is the *series* result."
+      }
+    },
+    "hint": ["A second path for current can only make things flow more easily, so the total resistance goes down."],
+    "solution": "Placing a second resistor in parallel gives the current an extra path, so more total current flows for the same voltage — meaning the equivalent resistance is lower. Mathematically, $\\dfrac{1}{R_{total}} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$ is larger than either $\\dfrac{1}{R_1}$ or $\\dfrac{1}{R_2}$, so $R_{total}$ is smaller than either $R_1$ or $R_2$."
+  },
+  {
+    "id": "BP8-U8-MCQ-054",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1", "SP2", "O3"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "equation",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "question": "A $12\\ \\mathrm{V}$ battery is connected to a $2\\ \\Omega$ resistor in series with a parallel pair of $6\\ \\Omega$ and $3\\ \\Omega$ resistors. What is the total current from the battery?",
+    "choices": ["$3\\ \\mathrm{A}$", "$1.1\\ \\mathrm{A}$", "$6\\ \\mathrm{A}$", "$2\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — parallel pair: $\\dfrac{1}{R_p} = \\dfrac{1}{6} + \\dfrac{1}{3} = \\dfrac{1}{6} + \\dfrac{2}{6} = \\dfrac{3}{6}$, so $R_p = 2\\ \\Omega$. Series total: $2 + 2 = 4\\ \\Omega$. Current: $I = 12/4 = 3\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This looks like $12$ divided by $(2 + 6 + 3) = 11$. The $6$ and $3$ are in parallel, not series.",
+        "2": "This uses $R_{total} = 2\\ \\Omega$ (the series resistor alone).",
+        "3": "This uses $R_{total} = 6\\ \\Omega$; recompute the parallel pair as $2\\ \\Omega$ and add the series $2\\ \\Omega$ to get $4\\ \\Omega$."
+      }
+    },
+    "hint": ["First combine the parallel pair into one resistance, then add it to the series resistor, then use $I = V/R_{total}$."],
+    "solution": "Combine the parallel pair first: $\\dfrac{1}{R_p} = \\dfrac{1}{6} + \\dfrac{1}{3} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_p = 2\\ \\Omega$. This is in series with the $2\\ \\Omega$ resistor: $R_{total} = 2 + 2 = 4\\ \\Omega$. Total current: $I = \\dfrac{12\\ \\mathrm{V}}{4\\ \\Omega} = 3\\ \\mathrm{A}$."
+  },
+  {
+    "id": "BP8-U8-MCQ-055",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP1", "O3"],
+    "type": "multiple-choice",
+    "skill": "identify-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Two bulbs, one rated $2\\ \\Omega$ and one rated $4\\ \\Omega$, are connected in series to a battery. Which bulb is brighter (dissipates more energy per second)?",
+    "choices": [
+      "The $2\\ \\Omega$ bulb.",
+      "The $4\\ \\Omega$ bulb, because with the same current through both, the larger resistance has the larger voltage across it and transfers more energy.",
+      "They are equally bright.",
+      "Neither lights, because they are in series."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — series means equal current $I$. The energy delivered per second to a resistor is $I \\times V = I \\times (IR) = I^2 R$, so with $I$ the same, the larger $R$ gets more — the $4\\ \\Omega$ bulb is brighter.",
+      "incorrect": {
+        "0": "For equal current, the *smaller* resistance drops less voltage and transfers less energy.",
+        "2": "Equal current but unequal resistance gives unequal voltage and unequal brightness.",
+        "3": "Series bulbs do light (just dimmer than a single bulb would be)."
+      }
+    },
+    "hint": ["Series → same current in both. Energy per second to a resistor goes as $I^2 R$ (or $I \\times V$). Which has the bigger $R$?"],
+    "solution": "In series the current $I$ is the same through both bulbs. The voltage across each is $V = IR$, so the $4\\ \\Omega$ bulb has twice the voltage of the $2\\ \\Omega$ bulb. The energy transferred per second is $IV = I^2 R$, which is larger for the larger resistance. So the $4\\ \\Omega$ bulb glows brighter. (In *parallel* it would be the opposite: same voltage, and the smaller resistance draws more current and is brighter.)"
+  },
+  {
+    "id": "BP8-U8-MCQ-056",
+    "sourceId": null,
+    "courses": ["basis-physics-8"],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": ["SP2"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "question": "Three identical $9\\ \\Omega$ resistors are connected in parallel. What is the equivalent resistance?",
+    "choices": ["$3\\ \\Omega$", "$27\\ \\Omega$", "$9\\ \\Omega$", "$1\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $n$ identical resistors in parallel give $R/n$: $9/3 = 3\\ \\Omega$.",
+      "incorrect": {
+        "1": "That is the series result ($9 + 9 + 9$).",
+        "2": "Parallel gives less than one resistor.",
+        "3": "$\\dfrac{1}{R} = \\dfrac{3}{9} = \\dfrac{1}{3}$, so $R = 3\\ \\Omega$, not $1\\ \\Omega$."
+      }
+    },
+    "hint": ["Three equal resistors in parallel: divide one of them by 3."],
+    "solution": "For $n$ identical resistors $R$ in parallel, the equivalent resistance is $R/n$. Here $\\dfrac{1}{R_{total}} = \\dfrac{1}{9} + \\dfrac{1}{9} + \\dfrac{1}{9} = \\dfrac{3}{9} = \\dfrac{1}{3}$, so $R_{total} = 3\\ \\Omega$."
+  }
+]

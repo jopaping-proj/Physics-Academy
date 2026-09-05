@@ -34,6 +34,14 @@
       "scope": "Temperature as average particle kinetic energy; Celsius / kelvin / Fahrenheit scales ($T_K = T_C + 273$); internal energy; thermal equilibrium and the zeroth law; heat as energy transferred by a temperature difference; conduction, convection, radiation; specific heat capacity ($Q = mc\\Delta T$); latent heat of fusion and vaporisation ($Q = mL$); calorimetry (energy lost = energy gained); heating curves. Scalar energy accounting only; no ideal-gas law, kinetic theory derivations, or entropy.",
       "source": "Authored for Physics Academy from resources/physics8/resources/unit5_thermal_physics_outcomes.md, calibrated against Tsokos IB Physics Topic 3 and OpenStax High School Physics Ch. 11. No rescue_sprint source bank exists for Unit 5."
     },
+    "dc-circuits": {
+      "title": "Electric current and DC circuits (introductory)",
+      "banks": ["dc-circuits.json", "dc-circuits-frq.json"],
+      "courses": ["basis-physics-8"],
+      "plannedCourses": ["ap-physics-2", "ib-physics-sl", "ib-physics-hl"],
+      "scope": "Electric charge (coulombs); current as charge per unit time ($I = Q/t$, amperes); voltage / potential difference as energy per unit charge (volts); resistance ($R = V/I$, ohms) and its dependence on wire length and thickness; Ohm's law ($V = IR$) applied to single resistors, series circuits, and simple parallel circuits; circuit diagrams with battery, bulb, resistor, and switch symbols; VIR (voltage-current-resistance) charts for up to three components; equivalent resistance in series ($R_s = R_1 + R_2 + \\ldots$) and in parallel ($1/R_p = 1/R_1 + 1/R_2 + \\ldots$). No electric power ($P = IV$), EMF/internal resistance, capacitors, or Kirchhoff's-law simultaneous equations.",
+      "source": "Authored for Physics Academy from resources/physics8/resources/unit8_electric_current_circuits_outcomes.md, calibrated against AP Physics 2 CED Unit 11 (Electric Circuits) and OpenStax High School Physics Ch. 18-19. No rescue_sprint source bank exists for Unit 8."
+    },
     "geometric-optics": {
       "title": "Geometric optics and light (introductory)",
       "banks": ["geometric-optics.json", "geometric-optics-frq.json"],

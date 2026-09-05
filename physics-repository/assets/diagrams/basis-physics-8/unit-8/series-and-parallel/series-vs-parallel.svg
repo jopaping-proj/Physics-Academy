@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="290" viewBox="0 0 620 290" role="img" aria-labelledby="t d">
+<title id="t">A series circuit and a parallel circuit compared</title>
+<desc id="d">Left: two bulbs in series in a single loop with a battery. The same current flows through both bulbs, and the battery voltage is shared between them, so the total resistance is R1 plus R2. Right: two bulbs in parallel across a battery, each on its own branch. Each bulb has the full battery voltage, the branch currents add to the total, and the reciprocal of the total resistance is the sum of the reciprocals.</desc>
+<rect width="620" height="290" fill="white"/>
+<g font-family="Arial" fill="#111827" font-size="12" stroke="#111827">
+ <text x="150" y="24" text-anchor="middle" stroke="none" font-weight="bold">Series</text>
+ <text x="460" y="24" text-anchor="middle" stroke="none" font-weight="bold">Parallel</text>
+
+ <!-- SERIES loop -->
+ <path d="M70,90 H250 V200 H70 Z" fill="none" stroke-width="2"/>
+ <line x1="63" y1="118" x2="63" y2="132" stroke-width="5"/>
+ <line x1="70" y1="118" x2="70" y2="132" stroke-width="2"/>
+ <line x1="70" y1="90" x2="70" y2="118" stroke-width="2"/>
+ <line x1="70" y1="132" x2="70" y2="200" stroke-width="2"/>
+ <text x="82" y="129" stroke="none" fill="#5b6675" font-size="10">battery</text>
+ <circle cx="150" cy="90" r="13" fill="none" stroke-width="2"/>
+ <line x1="141" y1="81" x2="159" y2="99" stroke-width="1.3"/>
+ <line x1="159" y1="81" x2="141" y2="99" stroke-width="1.3"/>
+ <circle cx="250" cy="145" r="13" fill="none" stroke-width="2"/>
+ <line x1="241" y1="136" x2="259" y2="154" stroke-width="1.3"/>
+ <line x1="259" y1="136" x2="241" y2="154" stroke-width="1.3"/>
+ <text x="150" y="235" text-anchor="middle" stroke="none" fill="#5b6675" font-size="10">same current in both bulbs;</text>
+ <text x="150" y="249" text-anchor="middle" stroke="none" fill="#5b6675" font-size="10">battery voltage is shared</text>
+ <text x="150" y="270" text-anchor="middle" stroke="none" fill="#0f3d61" font-size="11">R(total) = R1 + R2</text>
+
+ <!-- PARALLEL -->
+ <path d="M370,90 H550 V200 H370 Z" fill="none" stroke-width="2"/>
+ <line x1="363" y1="118" x2="363" y2="132" stroke-width="5"/>
+ <line x1="370" y1="118" x2="370" y2="132" stroke-width="2"/>
+ <line x1="370" y1="90" x2="370" y2="118" stroke-width="2"/>
+ <line x1="370" y1="132" x2="370" y2="200" stroke-width="2"/>
+ <text x="382" y="129" stroke="none" fill="#5b6675" font-size="10">battery</text>
+ <line x1="450" y1="90" x2="450" y2="200" stroke-width="2"/>
+ <line x1="510" y1="90" x2="510" y2="200" stroke-width="2"/>
+ <circle cx="450" cy="145" r="13" fill="none" stroke-width="2"/>
+ <line x1="441" y1="136" x2="459" y2="154" stroke-width="1.3"/>
+ <line x1="459" y1="136" x2="441" y2="154" stroke-width="1.3"/>
+ <circle cx="510" cy="145" r="13" fill="none" stroke-width="2"/>
+ <line x1="501" y1="136" x2="519" y2="154" stroke-width="1.3"/>
+ <line x1="519" y1="136" x2="501" y2="154" stroke-width="1.3"/>
+ <text x="460" y="235" text-anchor="middle" stroke="none" fill="#5b6675" font-size="10">full battery voltage on each bulb;</text>
+ <text x="460" y="249" text-anchor="middle" stroke="none" fill="#5b6675" font-size="10">branch currents add to the total</text>
+ <text x="460" y="270" text-anchor="middle" stroke="none" fill="#0f3d61" font-size="11">1/R(total) = 1/R1 + 1/R2</text>
+</g>
+</svg>

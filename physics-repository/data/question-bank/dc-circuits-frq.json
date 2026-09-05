@@ -1,0 +1,596 @@
+[
+  {
+    "id": "BP8-U8-FRQ-01",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": [
+      "C1",
+      "V1"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "scenario": "A torch bulb is connected to a $3.0\\ \\mathrm{V}$ battery. A steady current of $0.40\\ \\mathrm{A}$ flows for $60\\ \\mathrm{s}$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the definition of electric current and calculate the charge that flows through the bulb in the $60\\ \\mathrm{s}$.",
+        "points": 3,
+        "modelResponse": "Current is the rate of flow of charge, $I = Q/t$. Rearranging, $Q = It = (0.40\\ \\mathrm{A})(60\\ \\mathrm{s}) = 24\\ \\mathrm{C}$."
+      },
+      {
+        "label": "b",
+        "prompt": "State the definition of voltage and calculate the electrical energy transferred from the battery in this time.",
+        "points": 3,
+        "modelResponse": "Voltage is the energy transferred per unit charge, $V = E/Q$. Rearranging, $E = VQ = (3.0\\ \\mathrm{V})(24\\ \\mathrm{C}) = 72\\ \\mathrm{J}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State what happens to this $72\\ \\mathrm{J}$ of energy.",
+        "points": 2,
+        "modelResponse": "The energy is transferred by the moving charge to the bulb, where it is converted to light and thermal (heat) energy. (Total energy is conserved: the battery's chemical energy becomes electrical energy, then light and heat.)"
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U8-FRQ-02",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "charge_current_voltage",
+    "sourceOutcomes": [
+      "C1"
+    ],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A student builds a simple circuit: a battery, a switch, and one bulb, all connected in a single loop with wires. They place an ammeter first just after the battery, then just before it (on the return wire).",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Predict how the two ammeter readings compare, and justify your answer.",
+        "points": 3,
+        "modelResponse": "The two readings are the same. In a single-loop (series) circuit the current is identical at every point, because electric charge is conserved — the same number of coulombs per second that leaves the battery flows through the bulb and returns to the battery."
+      },
+      {
+        "label": "b",
+        "prompt": "The student says 'the bulb uses up some of the current, so the reading before the battery should be lower.' Explain the error.",
+        "points": 3,
+        "modelResponse": "Current (charge flow) is not consumed by the bulb. What the bulb takes is *energy*, which the charge carries and delivers as it passes through (shown by the voltage across the bulb). The charge itself continues around the loop unchanged, so the current is the same before and after the bulb."
+      },
+      {
+        "label": "c",
+        "prompt": "The student then opens the switch. State what both ammeters read and why.",
+        "points": 2,
+        "modelResponse": "Both ammeters read zero. Opening the switch breaks the single conducting loop, so no current can flow anywhere in the circuit."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U8-FRQ-03",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": [
+      "RE1",
+      "RE2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A resistor has a voltage of $10\\ \\mathrm{V}$ across it and a current of $0.50\\ \\mathrm{A}$ through it.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Define resistance and calculate the resistance of this component.",
+        "points": 3,
+        "modelResponse": "Resistance is a measure of how much a component opposes the flow of current, $R = V/I$. Here $R = \\dfrac{10\\ \\mathrm{V}}{0.50\\ \\mathrm{A}} = 20\\ \\Omega$."
+      },
+      {
+        "label": "b",
+        "prompt": "This resistor is a length of nichrome wire. State two changes to the wire that would each reduce its resistance.",
+        "points": 4,
+        "modelResponse": "(1) Use a shorter piece of the wire — resistance is proportional to length, so a shorter wire has less resistance. (2) Use a thicker wire (larger cross-sectional area) — resistance is inversely proportional to area, so a wider wire has less resistance. (A third option: use a different material with a lower resistivity, such as copper.)"
+      },
+      {
+        "label": "c",
+        "prompt": "If the wire is replaced with one of the same material and thickness but half the length, state the new resistance and the new current (voltage unchanged at $10\\ \\mathrm{V}$).",
+        "points": 3,
+        "modelResponse": "Half the length gives half the resistance: $R = 10\\ \\Omega$. The current is then $I = V/R = 10/10 = 1.0\\ \\mathrm{A}$ — double the original, because the resistance halved and the voltage stayed the same."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U8-FRQ-04",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "resistance",
+    "sourceOutcomes": [
+      "RE2"
+    ],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "An electrician must choose the cable to carry a large current from a fuse box to an electric shower across a house. The options are a thin cable and a thick cable of the same copper.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State how the thickness of a cable affects its resistance, and why.",
+        "points": 3,
+        "modelResponse": "A thicker cable has a larger cross-sectional area, and resistance is inversely proportional to cross-sectional area, so a thicker cable has a lower resistance. There is more room for the charge to flow, so the cable opposes the current less."
+      },
+      {
+        "label": "b",
+        "prompt": "Explain why using the thick cable is important when the current is large, referring to energy and voltage.",
+        "points": 4,
+        "modelResponse": "When a large current $I$ flows through a cable of resistance $R$, the cable has a voltage $IR$ across it and transfers energy to the surroundings as heat at a rate $I^2 R$. A thin (high-$R$) cable would drop a large voltage — so less of the supply voltage reaches the shower — and would waste a lot of energy heating up, which is inefficient and a fire risk. A thick (low-$R$) cable keeps both the voltage drop and the heating small."
+      },
+      {
+        "label": "c",
+        "prompt": "State why the thin cable might be acceptable for a low-current device such as a phone charger.",
+        "points": 2,
+        "modelResponse": "A phone charger draws only a small current, so even with the thin cable's higher resistance, the voltage drop ($IR$) and heating ($I^2 R$) along the cable are negligible. The extra copper of a thick cable would be wasteful for such a small current."
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U8-FRQ-05",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": [
+      "O1",
+      "O2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "calculatorFree": true,
+    "scenario": "A single resistor is connected to a battery. The current through it is $0.30\\ \\mathrm{A}$ and its resistance is $20\\ \\Omega$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State Ohm's law and calculate the voltage across the resistor.",
+        "points": 3,
+        "modelResponse": "Ohm's law: $V = IR$. Here $V = (0.30\\ \\mathrm{A})(20\\ \\Omega) = 6.0\\ \\mathrm{V}$."
+      },
+      {
+        "label": "b",
+        "prompt": "The battery voltage is increased to $12\\ \\mathrm{V}$ (resistance unchanged). Calculate the new current.",
+        "points": 3,
+        "modelResponse": "$I = \\dfrac{V}{R} = \\dfrac{12\\ \\mathrm{V}}{20\\ \\Omega} = 0.60\\ \\mathrm{A}$."
+      },
+      {
+        "label": "c",
+        "prompt": "State the relationship between voltage and current for this resistor, and what a graph of current against voltage would look like.",
+        "points": 2,
+        "modelResponse": "For a fixed resistance, current is directly proportional to voltage ($I \\propto V$). A graph of current against voltage is a straight line through the origin, with gradient $1/R$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U8-FRQ-06",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": [
+      "O3",
+      "SP1",
+      "CD2"
+    ],
+    "type": "free-response",
+    "skill": "data-analysis",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A $12\\ \\mathrm{V}$ battery is connected in series with two resistors, $R_1 = 3\\ \\Omega$ and $R_2 = 9\\ \\Omega$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the total resistance and the current in the circuit.",
+        "points": 3,
+        "modelResponse": "Series total: $R_{total} = 3 + 9 = 12\\ \\Omega$. Current: $I = \\dfrac{V}{R_{total}} = \\dfrac{12}{12} = 1.0\\ \\mathrm{A}$ (the same through both resistors)."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the voltage across each resistor, and check that they add up correctly.",
+        "points": 4,
+        "modelResponse": "Across $R_1$: $V_1 = IR_1 = (1.0)(3) = 3.0\\ \\mathrm{V}$. Across $R_2$: $V_2 = IR_2 = (1.0)(9) = 9.0\\ \\mathrm{V}$. Check: $V_1 + V_2 = 3.0 + 9.0 = 12\\ \\mathrm{V}$, which equals the battery voltage, as it must for a series circuit."
+      },
+      {
+        "label": "c",
+        "prompt": "Present your results as a VIR chart with rows for $R_1$, $R_2$, and the total.",
+        "points": 3,
+        "modelResponse": "Row $R_1$: V = 3.0 V, I = 1.0 A, R = 3 Ω. Row $R_2$: V = 9.0 V, I = 1.0 A, R = 9 Ω. Total row: V = 12 V, I = 1.0 A, R = 12 Ω. (The I column is the same in every row for a series circuit; the V and R columns add to the total.)"
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U8-FRQ-07",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "ohms_law",
+    "sourceOutcomes": [
+      "O3",
+      "SP2",
+      "CD2"
+    ],
+    "type": "free-response",
+    "skill": "data-analysis",
+    "representation": "physical-model",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A $12\\ \\mathrm{V}$ battery is connected to two resistors in parallel, $R_1 = 6\\ \\Omega$ and $R_2 = 4\\ \\Omega$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the voltage across each resistor and calculate the current through each.",
+        "points": 4,
+        "modelResponse": "In parallel, each resistor has the full battery voltage: $12\\ \\mathrm{V}$ across each. Currents: $I_1 = \\dfrac{12}{6} = 2.0\\ \\mathrm{A}$ through $R_1$; $I_2 = \\dfrac{12}{4} = 3.0\\ \\mathrm{A}$ through $R_2$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the total current from the battery and the equivalent resistance of the combination.",
+        "points": 4,
+        "modelResponse": "Total current: $I = I_1 + I_2 = 2.0 + 3.0 = 5.0\\ \\mathrm{A}$. Equivalent resistance: $R_{total} = \\dfrac{V}{I} = \\dfrac{12}{5.0} = 2.4\\ \\Omega$. (Check: $\\dfrac{1}{R} = \\dfrac{1}{6} + \\dfrac{1}{4} = \\dfrac{2}{12} + \\dfrac{3}{12} = \\dfrac{5}{12}$, so $R = 2.4\\ \\Omega$.)"
+      },
+      {
+        "label": "c",
+        "prompt": "State how the equivalent resistance ($2.4\\ \\Omega$) compares with the two branch resistances, and explain why this must be so.",
+        "points": 2,
+        "modelResponse": "The equivalent resistance ($2.4\\ \\Omega$) is smaller than both branch resistances ($6\\ \\Omega$ and $4\\ \\Omega$). This must be so because the second branch gives the current an extra path, so more total current flows for the same voltage — which means a lower effective resistance."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U8-FRQ-08",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "circuit_diagrams",
+    "sourceOutcomes": [
+      "CD1"
+    ],
+    "type": "free-response",
+    "skill": "multi-representation-reasoning",
+    "representation": "physical-model",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "A real circuit consists of a 2-cell battery, a switch, and two bulbs connected one after the other (in series), joined by wires.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe the standard circuit symbol for each of: a cell, a switch, a bulb, and a connecting wire.",
+        "points": 4,
+        "modelResponse": "Cell: a long thin line (positive terminal) next to a short thick line (negative terminal); a battery is two or more of these in a row. Switch: a break in the wire with a hinged lever that can touch or lift off a contact. Bulb (lamp): a circle with a cross inside it. Connecting wire: a plain straight line."
+      },
+      {
+        "label": "b",
+        "prompt": "Describe how you would arrange these symbols to draw the circuit diagram for the series circuit.",
+        "points": 4,
+        "modelResponse": "Draw a single rectangular loop of wire (plain lines). On one side put the battery symbol (two cells in a row). Somewhere in the loop put the switch symbol. In series with the battery and switch, place the two bulb symbols one after the other along the loop, so that the single loop passes: battery, switch, bulb 1, bulb 2, and back to the battery. There are no branch points."
+      },
+      {
+        "label": "c",
+        "prompt": "State what a VIR chart for this circuit would show about the current through each bulb, and why.",
+        "points": 3,
+        "modelResponse": "The VIR chart would show the same current value in the row for bulb 1, the row for bulb 2, and the total row. This is because a series circuit is a single loop with no branches, so the same current flows through every component."
+      }
+    ],
+    "totalPoints": 11
+  },
+  {
+    "id": "BP8-U8-FRQ-09",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "SP1",
+      "SP2"
+    ],
+    "type": "free-response",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 3,
+    "calculatorFree": true,
+    "scenario": "You have three resistors: $2\\ \\Omega$, $3\\ \\Omega$, and $6\\ \\Omega$.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate their total resistance if all three are connected in series.",
+        "points": 2,
+        "modelResponse": "In series, resistances add: $R_{total} = 2 + 3 + 6 = 11\\ \\Omega$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the equivalent resistance of the $3\\ \\Omega$ and $6\\ \\Omega$ resistors connected in parallel.",
+        "points": 3,
+        "modelResponse": "$\\dfrac{1}{R_p} = \\dfrac{1}{3} + \\dfrac{1}{6} = \\dfrac{2}{6} + \\dfrac{1}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_p = 2\\ \\Omega$."
+      },
+      {
+        "label": "c",
+        "prompt": "The $2\\ \\Omega$ resistor is now connected in series with that parallel pair. Calculate the total resistance of the whole network.",
+        "points": 3,
+        "modelResponse": "The parallel pair behaves as a single $2\\ \\Omega$ resistance. In series with the separate $2\\ \\Omega$ resistor: $R_{total} = 2 + 2 = 4\\ \\Omega$."
+      }
+    ],
+    "totalPoints": 8
+  },
+  {
+    "id": "BP8-U8-FRQ-10",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "SP1",
+      "O3"
+    ],
+    "type": "free-response",
+    "skill": "limiting-case-analysis",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "A string of decorative lights contains 10 identical small bulbs. In version A the bulbs are all in series; in version B they are all in parallel across the supply.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "In version A, one bulb's filament breaks. State what happens to the other nine bulbs and why.",
+        "points": 3,
+        "modelResponse": "All the other nine bulbs go out. The series string is a single loop, so a broken filament breaks the loop, and no current can flow anywhere in the string."
+      },
+      {
+        "label": "b",
+        "prompt": "In version B, one bulb's filament breaks. State what happens to the other nine bulbs and why.",
+        "points": 3,
+        "modelResponse": "The other nine bulbs stay lit at the same brightness. In parallel, each bulb has its own path across the full supply voltage, so breaking one branch does not affect the voltage across or the current through the others."
+      },
+      {
+        "label": "c",
+        "prompt": "State one advantage of the series version despite the failure problem.",
+        "points": 3,
+        "modelResponse": "In the series version the supply voltage is shared among all 10 bulbs, so each bulb only has one tenth of the supply across it. This lets small, low-voltage bulbs be run directly from a high-voltage supply without needing a transformer or individual resistors, and the total current drawn is small. (Parallel bulbs would each need to be rated for the full supply voltage.)"
+      }
+    ],
+    "totalPoints": 9
+  },
+  {
+    "id": "BP8-U8-FRQ-11",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "SP1",
+      "SP2",
+      "O3",
+      "CD2"
+    ],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "physical-model",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 6,
+    "calculatorFree": true,
+    "scenario": "A $6.0\\ \\mathrm{V}$ battery is connected to a $1.0\\ \\Omega$ resistor in series with a parallel combination of a $6.0\\ \\Omega$ resistor and a $3.0\\ \\Omega$ resistor.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Calculate the equivalent resistance of the parallel combination, and then the total resistance of the whole circuit.",
+        "points": 3,
+        "modelResponse": "Parallel: $\\dfrac{1}{R_p} = \\dfrac{1}{6} + \\dfrac{1}{3} = \\dfrac{1}{6} + \\dfrac{2}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_p = 2.0\\ \\Omega$. Total: the $1.0\\ \\Omega$ resistor is in series with $R_p$, so $R_{total} = 1.0 + 2.0 = 3.0\\ \\Omega$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the total current from the battery, and the voltage across the $1.0\\ \\Omega$ resistor and across the parallel combination.",
+        "points": 4,
+        "modelResponse": "Total current: $I = \\dfrac{V}{R_{total}} = \\dfrac{6.0}{3.0} = 2.0\\ \\mathrm{A}$. This full current passes through the $1.0\\ \\Omega$ resistor: $V_{1\\Omega} = IR = (2.0)(1.0) = 2.0\\ \\mathrm{V}$. Voltage across the parallel combination: $V_p = 6.0 - 2.0 = 4.0\\ \\mathrm{V}$ (or $V_p = I R_p = (2.0)(2.0) = 4.0\\ \\mathrm{V}$)."
+      },
+      {
+        "label": "c",
+        "prompt": "Calculate the current through the $6.0\\ \\Omega$ resistor and through the $3.0\\ \\Omega$ resistor, and check they add to the total current.",
+        "points": 4,
+        "modelResponse": "Both parallel resistors have $4.0\\ \\mathrm{V}$ across them. Through the $6.0\\ \\Omega$ resistor: $I = \\dfrac{4.0}{6.0} \\approx 0.67\\ \\mathrm{A}$. Through the $3.0\\ \\Omega$ resistor: $I = \\dfrac{4.0}{3.0} \\approx 1.33\\ \\mathrm{A}$. Check: $0.67 + 1.33 = 2.0\\ \\mathrm{A}$, which equals the total current, as it must."
+      }
+    ],
+    "totalPoints": 11
+  },
+  {
+    "id": "BP8-U8-FRQ-12",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "SP1",
+      "SP2",
+      "O3"
+    ],
+    "type": "free-response",
+    "skill": "justify-with-principle",
+    "representation": "verbal",
+    "difficulty": "ap5-ib7-target",
+    "cognitiveLevel": 5,
+    "calculatorFree": true,
+    "scenario": "Two identical bulbs are connected to identical batteries in two ways: circuit S has the bulbs in series; circuit P has the bulbs in parallel.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Compare the total resistance of circuit S with that of circuit P (assume each bulb has resistance R).",
+        "points": 3,
+        "modelResponse": "Circuit S (series): $R_{total} = R + R = 2R$. Circuit P (parallel): $\\dfrac{1}{R_{total}} = \\dfrac{1}{R} + \\dfrac{1}{R} = \\dfrac{2}{R}$, so $R_{total} = R/2$. The series total is four times the parallel total."
+      },
+      {
+        "label": "b",
+        "prompt": "Compare the total current drawn from the battery in the two circuits, and hence which circuit's battery runs down faster.",
+        "points": 3,
+        "modelResponse": "With the same battery voltage $V$, the total current is $I = V/R_{total}$. Circuit S draws $V/(2R)$; circuit P draws $V/(R/2) = 2V/R$. So circuit P draws four times the total current, and its battery runs down faster."
+      },
+      {
+        "label": "c",
+        "prompt": "Compare the brightness of one bulb in circuit S with one bulb in circuit P, and explain.",
+        "points": 4,
+        "modelResponse": "In circuit P each bulb has the full battery voltage $V$ across it and current $V/R$ through it — the same as a single bulb on its own — so each bulb glows at full (normal) brightness. In circuit S the two bulbs share the voltage ($V/2$ each) and carry a smaller current ($V/(2R)$), so each bulb is dimmer than normal. A bulb in circuit P is brighter than a bulb in circuit S."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U8-FRQ-13",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "SP2",
+      "O2"
+    ],
+    "type": "free-response",
+    "skill": "experimental-design",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "calculatorFree": true,
+    "scenario": "A student wants to check experimentally that adding a resistor in parallel decreases the total resistance of a circuit.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "Describe a circuit the student could build and what they would measure.",
+        "points": 3,
+        "modelResponse": "Connect a battery of fixed voltage to a resistor $R_1$, with an ammeter in the main line to measure the total current and a voltmeter across the battery terminals. Record $V$ and $I$, and compute the total resistance $R = V/I$. Then connect a second resistor $R_2$ in parallel with $R_1$ and record the new $V$ and $I$, computing the new total resistance."
+      },
+      {
+        "label": "b",
+        "prompt": "State what the student should observe if the claim is correct, and how the total resistance is found from the measurements.",
+        "points": 4,
+        "modelResponse": "If the claim is correct, adding $R_2$ in parallel should cause the ammeter reading (total current) to increase while the battery voltage stays about the same. The total resistance is calculated as $R_{total} = V/I$ using the measured voltage and total current, and this value should be smaller after $R_2$ is added — and smaller than $R_1$ itself."
+      },
+      {
+        "label": "c",
+        "prompt": "State one control the student should keep the same between the two measurements, and why.",
+        "points": 3,
+        "modelResponse": "The battery (and its voltage) should be the same for both measurements, and the same resistor $R_1$ should stay in the circuit. This ensures the only change is the addition of the parallel resistor, so any change in total current and total resistance can be attributed to the parallel connection rather than to a different supply voltage or a different $R_1$."
+      }
+    ],
+    "totalPoints": 10
+  },
+  {
+    "id": "BP8-U8-FRQ-14",
+    "sourceId": null,
+    "courses": [
+      "basis-physics-8"
+    ],
+    "topicId": "dc-circuits",
+    "unit": "Unit 8: Electric Current and Circuits",
+    "cluster": "series_parallel",
+    "sourceOutcomes": [
+      "C1",
+      "V1",
+      "RE1",
+      "O3",
+      "SP1",
+      "SP2"
+    ],
+    "type": "free-response",
+    "skill": "synthesis",
+    "representation": "physical-model",
+    "difficulty": "distinction-stretch",
+    "cognitiveLevel": 7,
+    "calculatorFree": true,
+    "scenario": "A $12\\ \\mathrm{V}$ car battery powers, at the same time: a $6\\ \\Omega$ dashboard heater and two $12\\ \\Omega$ headlamp bulbs, all connected in parallel across the battery.",
+    "parts": [
+      {
+        "label": "a",
+        "prompt": "State the voltage across each device and calculate the current through the heater and through each headlamp bulb.",
+        "points": 4,
+        "modelResponse": "All three devices are in parallel across the battery, so each has $12\\ \\mathrm{V}$ across it. Heater: $I = \\dfrac{12}{6} = 2.0\\ \\mathrm{A}$. Each headlamp: $I = \\dfrac{12}{12} = 1.0\\ \\mathrm{A}$."
+      },
+      {
+        "label": "b",
+        "prompt": "Calculate the total current the battery must supply, and the equivalent resistance of the whole load.",
+        "points": 4,
+        "modelResponse": "Total current: $I = 2.0 + 1.0 + 1.0 = 4.0\\ \\mathrm{A}$. Equivalent resistance: $R_{total} = \\dfrac{V}{I} = \\dfrac{12}{4.0} = 3.0\\ \\Omega$. (Check: $\\dfrac{1}{R} = \\dfrac{1}{6} + \\dfrac{1}{12} + \\dfrac{1}{12} = \\dfrac{2}{12} + \\dfrac{1}{12} + \\dfrac{1}{12} = \\dfrac{4}{12} = \\dfrac{1}{3}$.)"
+      },
+      {
+        "label": "c",
+        "prompt": "In $10\\ \\mathrm{s}$, calculate the total charge delivered by the battery and the total electrical energy it supplies.",
+        "points": 4,
+        "modelResponse": "Charge: $Q = It = (4.0\\ \\mathrm{A})(10\\ \\mathrm{s}) = 40\\ \\mathrm{C}$. Energy: $E = VQ = (12\\ \\mathrm{V})(40\\ \\mathrm{C}) = 480\\ \\mathrm{J}$. (This energy is transferred to the heater and headlamps and converted to heat and light.)"
+      }
+    ],
+    "totalPoints": 12
+  }
+]

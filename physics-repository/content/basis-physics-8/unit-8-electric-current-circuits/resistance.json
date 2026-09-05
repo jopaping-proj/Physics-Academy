@@ -1,0 +1,329 @@
+{
+  "id": "basis-p8-u8-l2",
+  "slug": "resistance",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "topic": "Resistance",
+  "lessonTitle": "Resistance",
+  "lessonNumber": "2",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit8_electric_current_circuits_outcomes.md (Resistance cluster, RE1-RE4); calibrated against AP Physics 2 CED Unit 11, OpenStax High School Physics Ch. 19",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 8 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Lesson 1 — current is the flow of charge ($I = Q/t$); voltage is the electrical push (energy per coulomb).",
+    "Unit 5 — energy dissipated in a component appears as heat."
+  ],
+  "majorObjective": "Define electrical resistance, calculate it with $R = V/I$, and explain how the resistance of a wire depends on its length and thickness; distinguish the total (equivalent) resistance of a circuit from the resistance of one component.",
+  "subObjectives": [
+    "State that resistance measures how much a component opposes current, $R = V/I$, in ohms ($\\Omega$), and calculate $R$, $V$, or $I$ from the other two.",
+    "State that the resistance of a wire is proportional to its length and inversely proportional to its cross-sectional area, and reason with these proportionalities.",
+    "Distinguish conductors (low resistance, e.g. copper) from insulators (very high resistance, e.g. rubber, glass).",
+    "Explain the difference between an individual component's resistance and the total (equivalent) resistance the battery experiences."
+  ],
+  "hook": {
+    "prompt": "A wire is replaced by one of the same material and thickness but twice as long. Its resistance:",
+    "choices": ["doubles", "halves", "stays the same", "quadruples"],
+    "correctIndex": 0
+  },
+  "priorKnowledge": "Voltage pushes charge; resistance opposes it. A big resistance means only a small current flows for a given voltage. Resistance depends on what the wire is made of and on its shape — long and thin resists a lot, short and thick resists little.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "What resistance is",
+      "concept": "**Resistance** is a measure of how strongly a component **opposes the flow of electric current**. It is defined as\n\n$$R = \\frac{V}{I}$$\n\nthe voltage across the component divided by the current through it, measured in **ohms ($\\Omega$)**. One ohm is one volt per ampere.\n\nA **large** resistance means only a **small** current flows for a given voltage. A **small** resistance lets a large current flow.\n\nRearrangements (this is also Ohm's law, Lesson 3):\n\n- $R = \\dfrac{V}{I}$;  $V = IR$;  $I = \\dfrac{V}{R}$.\n\nAs charge is pushed through a resistance, it transfers energy to the component, which is why resistors and filaments get **hot** \u2014 electrical energy becomes internal (thermal) energy.",
+      "representation": "$$R = \\frac{V}{I} \\qquad V = IR \\qquad I = \\frac{V}{R}$$\n\n- units: $\\Omega$ (resistance), V (voltage), A (current); $1\\ \\Omega = 1\\ \\mathrm{V/A}$;\n- large $R$ → small current; small $R$ → large current;\n- pushing charge through $R$ dissipates energy as heat.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "(a) A resistor has $8.0\\ \\mathrm{V}$ across it and $0.40\\ \\mathrm{A}$ through it. Find its resistance. (b) What current flows through a $50\\ \\Omega$ resistor when $10\\ \\mathrm{V}$ is applied?",
+        "phases": [
+          {
+            "label": "(a) Resistance",
+            "steps": ["$R = \\dfrac{V}{I} = \\dfrac{8.0\\ \\mathrm{V}}{0.40\\ \\mathrm{A}} = 20\\ \\Omega$."]
+          },
+          {
+            "label": "(b) Current",
+            "steps": ["$I = \\dfrac{V}{R} = \\dfrac{10\\ \\mathrm{V}}{50\\ \\Omega} = 0.20\\ \\mathrm{A}$."]
+          }
+        ],
+        "keyMove": "$R = V/I$. Rearrange to $I = V/R$ or $V = IR$ for the unknown."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L2-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A component has $15\\ \\mathrm{V}$ across it and $3.0\\ \\mathrm{A}$ through it. What is its resistance?",
+        "choices": ["$5.0\\ \\Omega$", "$45\\ \\Omega$", "$0.2\\ \\Omega$", "$18\\ \\Omega$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $R = V/I = 15/3.0 = 5.0\\ \\Omega$.",
+          "incorrect": {
+            "1": "This multiplies. $R = V/I$.",
+            "2": "This inverts ($3.0/15$).",
+            "3": "This adds. $R = 15/3.0 = 5.0\\ \\Omega$."
+          }
+        },
+        "hint": ["$R = V/I = 15/3.0$."],
+        "solution": "$R = \\dfrac{V}{I} = \\dfrac{15\\ \\mathrm{V}}{3.0\\ \\mathrm{A}} = 5.0\\ \\Omega$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "How a wire's resistance depends on its shape",
+      "concept": "For a wire of a given material, the resistance depends on its **dimensions**:\n\n- **Resistance is proportional to length.** A longer wire has more material for the charge to be pushed through, so more resistance. Double the length \u2192 double the resistance.\n- **Resistance is inversely proportional to cross-sectional area.** A thicker wire gives the charge more room to flow, so less resistance. Double the area \u2192 half the resistance. (Note: doubling the *diameter* multiplies the *area* by four, so quarters the resistance.)\n\nCombining: **long, thin wires have high resistance; short, thick wires have low resistance.** The water-pipe analogy: a long narrow pipe resists water flow; a short wide pipe barely does.\n\nThe **material** also matters (its *resistivity*): copper and other metals have many free electrons and conduct well; rubber, glass, and plastic have almost no free electrons and are **insulators** with enormous resistance.\n\nThis is why mains cables carrying large currents are made **thick** (low resistance \u2192 little wasted heating and voltage loss) while wires in small devices, carrying tiny currents, can be **thin**.",
+      "representation": "$$R \\propto \\frac{\\text{length}}{\\text{cross-sectional area}}$$\n\n| Change | Effect on $R$ |\n|---|---|\n| length $\\times 2$ | $R \\times 2$ |\n| length $\\times \\tfrac{1}{2}$ | $R \\times \\tfrac{1}{2}$ |\n| area $\\times 2$ (or diameter $\\times \\sqrt 2$) | $R \\times \\tfrac{1}{2}$ |\n| diameter $\\times 2$ (area $\\times 4$) | $R \\times \\tfrac{1}{4}$ |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Wire A has resistance $12\\ \\Omega$. Find the resistance of a wire of the same material that is: (a) three times as long, same thickness; (b) same length, twice the cross-sectional area; (c) twice as long AND twice the cross-sectional area.",
+        "phases": [
+          {
+            "label": "(a) Three times the length",
+            "steps": ["$R \\propto$ length, so $R = 3 \\times 12 = 36\\ \\Omega$."]
+          },
+          {
+            "label": "(b) Twice the area",
+            "steps": ["$R \\propto 1/\\text{area}$, so $R = \\tfrac{1}{2} \\times 12 = 6.0\\ \\Omega$."]
+          },
+          {
+            "label": "(c) Twice the length and twice the area",
+            "steps": [
+              "Length $\\times 2 \\Rightarrow R \\times 2$; area $\\times 2 \\Rightarrow R \\times \\tfrac{1}{2}$.",
+              "$R = 12 \\times 2 \\times \\tfrac{1}{2} = 12\\ \\Omega$ \u2014 unchanged (the two effects cancel)."
+            ]
+          }
+        ],
+        "keyMove": "Apply $R \\propto \\text{length}$ and $R \\propto 1/\\text{area}$ as separate factors, then multiply them."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L2-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "proportional-reasoning",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Wire Y is the same material and length as wire X but half the cross-sectional area. How does Y's resistance compare with X's?",
+        "choices": ["Twice as large", "Half as large", "The same", "Four times as large"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — resistance is inversely proportional to area, so halving the area doubles the resistance.",
+          "incorrect": {
+            "1": "A thinner wire has *more* resistance, not less.",
+            "2": "Thickness matters — a thinner wire resists more.",
+            "3": "$R \\propto 1/\\text{area}$: halving the area doubles $R$ (it does not quadruple it — that would be for a quarter of the area)."
+          }
+        },
+        "hint": ["$R \\propto 1/\\text{area}$. Half the area → ?"],
+        "solution": "Resistance is inversely proportional to cross-sectional area. Halving the area multiplies the resistance by $1/(1/2) = 2$, so wire Y has twice the resistance of wire X. Thinner wires resist current more."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Individual resistance versus total resistance",
+      "concept": "Every component has its own **individual resistance** \u2014 a property of that component.\n\nA circuit with several components has a **total** (or **equivalent**) resistance: the **single resistance value the whole network behaves like** as far as the battery is concerned. It determines the total current the battery drives: $I_{total} = V_{battery} / R_{total}$.\n\nHow the individual resistances combine into the total depends on how they are wired (Lesson 4):\n\n- **In series** (one after another, single path): the resistances **add**, $R_{total} = R_1 + R_2 + \\ldots$, and the total is **larger** than any individual one.\n- **In parallel** (side by side, multiple paths): $\\dfrac{1}{R_{total}} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$, and the total is **smaller** than the smallest individual one.\n\nSo the total resistance is **not** simply the sum unless the components are in series.",
+      "representation": "- individual resistance: property of one component;\n- total (equivalent) resistance: what the whole network 'looks like' to the battery;\n- series: $R_{total} = R_1 + R_2 + \\ldots$ (bigger than any one);\n- parallel: $\\dfrac{1}{R_{total}} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$ (smaller than the smallest).",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "You have a $4\\ \\Omega$ resistor and a $12\\ \\Omega$ resistor. (a) Find the total resistance if they are in series. (b) Find the total resistance if they are in parallel. (c) A $6\\ \\mathrm{V}$ battery drives the parallel combination \u2014 find the total current.",
+        "phases": [
+          {
+            "label": "(a) Series",
+            "steps": ["$R_{total} = 4 + 12 = 16\\ \\Omega$ \u2014 larger than either resistor."]
+          },
+          {
+            "label": "(b) Parallel",
+            "steps": [
+              "$\\dfrac{1}{R_{total}} = \\dfrac{1}{4} + \\dfrac{1}{12} = \\dfrac{3}{12} + \\dfrac{1}{12} = \\dfrac{4}{12} = \\dfrac{1}{3}$.",
+              "$R_{total} = 3\\ \\Omega$ \u2014 smaller than either resistor."
+            ]
+          },
+          {
+            "label": "(c) Total current (parallel)",
+            "steps": ["$I_{total} = \\dfrac{V_{battery}}{R_{total}} = \\dfrac{6\\ \\mathrm{V}}{3\\ \\Omega} = 2\\ \\mathrm{A}$."]
+          }
+        ],
+        "keyMove": "Series total = sum (bigger). Parallel total = reciprocal sum (smaller than the smallest). Then $I_{total} = V/R_{total}$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L2-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A $10\\ \\Omega$ resistor and a $5\\ \\Omega$ resistor are combined. The equivalent resistance is measured to be $3.3\\ \\Omega$. How are they connected?",
+        "choices": [
+          "In series.",
+          "In parallel — the equivalent resistance ($3.3\\ \\Omega$) is less than the smaller resistor ($5\\ \\Omega$), which only happens for a parallel combination.",
+          "The measurement must be wrong.",
+          "It cannot be determined."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a parallel combination is always smaller than the smallest resistor. $3.3\\ \\Omega < 5\\ \\Omega$, so they are in parallel. (A series combination would be $15\\ \\Omega$.)",
+          "incorrect": {
+            "0": "In series the total would be $10 + 5 = 15\\ \\Omega$, not $3.3\\ \\Omega$.",
+            "2": "$\\dfrac{1}{R} = \\dfrac{1}{10} + \\dfrac{1}{5} = \\dfrac{3}{10}$, so $R \\approx 3.3\\ \\Omega$ — the measurement is consistent with parallel.",
+            "3": "The value $3.3\\ \\Omega$ (below the smaller resistor) uniquely indicates a parallel connection here."
+          }
+        },
+        "hint": ["Series → bigger than either. Parallel → smaller than the smallest. Which is $3.3\\ \\Omega$?"],
+        "solution": "A series combination gives a total larger than any individual resistor ($10 + 5 = 15\\ \\Omega$). A parallel combination gives a total smaller than the smallest resistor. Since $3.3\\ \\Omega < 5\\ \\Omega$, the resistors must be in parallel: $\\dfrac{1}{R} = \\dfrac{1}{10} + \\dfrac{1}{5} = \\dfrac{3}{10}$, so $R \\approx 3.3\\ \\Omega$."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U8-L2-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'Adding a second resistor to a circuit always increases the total resistance.' What is the correct statement?",
+      "choices": [
+        "The student is right — more resistors always means more total resistance.",
+        "Adding a resistor in *series* increases the total resistance, but adding a resistor in *parallel* decreases it (the new branch gives current an extra path).",
+        "Adding a resistor never changes the total resistance.",
+        "Adding a resistor always decreases the total resistance."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — it depends on how the resistor is connected. Series adds to the total; parallel provides another path and lowers the total.",
+        "incorrect": {
+          "0": "A parallel resistor lowers the total resistance, letting more current flow.",
+          "2": "Adding a resistor always changes the total — the question is in which direction.",
+          "3": "A *series* resistor increases the total resistance."
+        }
+      },
+      "hint": ["Think about what a parallel branch does: it gives current a new route. Does that make it harder or easier for current to flow overall?"],
+      "solution": "Whether an added resistor raises or lowers the total resistance depends on the connection. In series, the resistances add, so the total goes up. In parallel, the new resistor gives current an additional path, so more total current flows for the same voltage — meaning the equivalent resistance goes *down* (it is always less than the smallest branch)."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: Wire B is the same material as wire A, but twice as long and twice the diameter. How does B's resistance compare with A's?\n\nStudent's response: 'Twice as long doubles the resistance, twice the diameter halves it, so they cancel and B has the same resistance as A.'",
+      "prompts": [
+        "State how resistance depends on the cross-sectional area, and how the area depends on the diameter.",
+        "Identify the student's error.",
+        "Give the correct comparison of B's resistance to A's."
+      ],
+      "modelResponse": "Resistance is inversely proportional to the cross-sectional *area*, and the area is proportional to the *square* of the diameter. Error: the student treated 'twice the diameter' as 'twice the area' — it is actually four times the area. Correct: length $\\times 2$ multiplies $R$ by $2$; area $\\times 4$ multiplies $R$ by $1/4$. So $R_B = R_A \\times 2 \\times \\tfrac{1}{4} = \\tfrac{1}{2}R_A$ — wire B has half the resistance of wire A.",
+      "responseMaxLength": 600
+    }
+  ],
+  "representationConnections": "A voltage and current across a component give its resistance via $R = V/I$. A wire's resistance follows from its geometry, $R \\propto \\text{length}/\\text{area}$, applied as separate proportional factors. The individual resistances combine into a total (equivalent) resistance — sum for series, reciprocal-sum for parallel (Lesson 4) — and that total sets the battery's current, $I_{total} = V/R_{total}$. Ohm's law (Lesson 3) uses the same $V$-$I$-$R$ relationship for every calculation in this unit.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U8-L2-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $4.5\\ \\mathrm{V}$ battery drives $0.90\\ \\mathrm{A}$ through a single resistor. What is the resistance?",
+      "choices": ["$5.0\\ \\Omega$", "$4.05\\ \\Omega$", "$0.2\\ \\Omega$", "$5.4\\ \\Omega$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $R = V/I = 4.5/0.90 = 5.0\\ \\Omega$.",
+        "incorrect": {
+          "1": "This multiplies ($4.5 \\times 0.90$).",
+          "2": "This inverts ($0.90/4.5$).",
+          "3": "This adds. $R = 4.5/0.90 = 5.0\\ \\Omega$."
+        }
+      },
+      "hint": ["$R = V/I = 4.5/0.90$. Dividing by $0.9$ is close to dividing by $1$ then adding a bit."],
+      "solution": "$R = \\dfrac{V}{I} = \\dfrac{4.5\\ \\mathrm{V}}{0.90\\ \\mathrm{A}} = 5.0\\ \\Omega$."
+    },
+    {
+      "id": "BP8-U8-L2-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "proportional-reasoning",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "A wire of resistance $R$ is cut into two equal halves, and the two halves are then twisted together side by side (in parallel). What is the resistance of the combined double-thickness half-length wire?",
+      "choices": ["$R/4$", "$R/2$", "$R$", "$2R$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — each half has resistance $R/2$ (half the length). Two $R/2$ resistors in parallel give $(R/2)/2 = R/4$. (Equivalently: half the length AND double the area, so $R \\times \\tfrac{1}{2} \\times \\tfrac{1}{2} = R/4$.)",
+        "incorrect": {
+          "1": "This accounts only for the halved length, not the parallel doubling of thickness.",
+          "2": "Both the shorter length and the greater effective thickness reduce the resistance.",
+          "3": "The combination has *less* resistance than $R$, not more."
+        }
+      },
+      "hint": ["Each half has resistance $R/2$. Two $R/2$ resistors in parallel = ?"],
+      "solution": "Cutting the wire in half gives two pieces, each of resistance $R/2$ (half the length, same area). Twisting them together side by side connects them in parallel: two equal $R/2$ resistors in parallel give $\\dfrac{R/2}{2} = \\dfrac{R}{4}$. (Viewed as one wire, it is now half the original length and twice the cross-sectional area: $R \\times \\dfrac{1/2}{2} = R/4$.)"
+    },
+    {
+      "id": "BP8-U8-L2-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A student tests a length of resistance wire. With $6.0\\ \\mathrm{V}$ across it, the current is $0.30\\ \\mathrm{A}$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the resistance of this length of wire.",
+          "modelResponse": "$R = \\dfrac{V}{I} = \\dfrac{6.0\\ \\mathrm{V}}{0.30\\ \\mathrm{A}} = 20\\ \\Omega$.",
+          "points": 2
+        },
+        {
+          "prompt": "(b) The student cuts the wire to one quarter of its original length (same thickness). State the new resistance and the new current when $6.0\\ \\mathrm{V}$ is applied.",
+          "modelResponse": "Resistance is proportional to length, so one quarter of the length gives one quarter of the resistance: $R = 20/4 = 5.0\\ \\Omega$. The new current is $I = V/R = 6.0/5.0 = 1.2\\ \\mathrm{A}$ — four times the original, because the resistance is one quarter and the voltage is unchanged.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) The student then replaces the quarter-length wire with one of the same material and length but double the diameter. State how the resistance changes and why.",
+          "modelResponse": "Doubling the diameter multiplies the cross-sectional area by $2^2 = 4$. Resistance is inversely proportional to area, so the resistance drops to one quarter of $5.0\\ \\Omega$, i.e. $1.25\\ \\Omega$. The thicker wire gives the charge four times as much room to flow, so it opposes the current four times less.",
+          "points": 4
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test $R = V/I$, the $R \\propto \\text{length}/\\text{area}$ proportionalities (including the diameter-squared trap), the conductor/insulator distinction, and the difference between individual and equivalent resistance. The 'adding a resistor always increases resistance' and 'double diameter = double area' misconceptions are standard distractors.",
+  "summary": "Resistance measures how much a component opposes current: $R = V/I$, in ohms, rearranging to $V = IR$ and $I = V/R$. A large resistance means a small current for a given voltage, and pushing charge through a resistance dissipates energy as heat. A wire's resistance is proportional to its length and inversely proportional to its cross-sectional area (doubling the diameter quarters the resistance, because area goes as diameter squared); the material matters too — metals like copper conduct well, rubber and glass are insulators. An individual component has its own resistance; the total (equivalent) resistance is the single value the whole network behaves like to the battery — the sum for a series combination (larger than any one), the reciprocal sum for a parallel combination (smaller than the smallest).",
+  "exitQuestion": {
+    "id": "BP8-U8-L2-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "proportional-reasoning",
+    "representation": "verbal",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "Two wires are made of the same metal and are the same length. Wire 1 is thin; wire 2 is thick. Which has the greater resistance?",
+    "choices": [
+      "Wire 1 (thin), because a smaller cross-sectional area means more resistance.",
+      "Wire 2 (thick), because more metal means more resistance.",
+      "They are equal, because they are the same length and material.",
+      "It cannot be determined."
+    ],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — resistance is inversely proportional to cross-sectional area, so the thinner wire (smaller area) has the greater resistance.",
+      "incorrect": {
+        "1": "A thicker wire gives charge more room to flow, so it has *less* resistance.",
+        "2": "Length and material being equal, thickness decides it — thinner means more resistance.",
+        "3": "The thickness difference determines the answer: thinner = more resistance."
+      }
+    },
+    "hint": ["$R \\propto 1/\\text{area}$. Which wire has the smaller area?"],
+    "solution": "Resistance is inversely proportional to cross-sectional area. With the same length and material, the thin wire has the smaller area and therefore the greater resistance. A thick wire lets current flow more easily, which is why high-current cables are made thick."
+  },
+  "questionBankFile": "dc-circuits.json",
+  "furtherPracticeQuestionIds": ["BP8-U8-MCQ-015", "BP8-U8-MCQ-016", "BP8-U8-MCQ-018", "BP8-U8-MCQ-019", "BP8-U8-MCQ-022", "BP8-U8-MCQ-026"],
+  "needsPlotly": false
+}

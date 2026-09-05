@@ -1,0 +1,14 @@
+{
+  "format": "unit-test",
+  "id": "basis-p8-u8-unit-test",
+  "slug": "unit-8-test",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "lessonTitle": "Unit 8 Test",
+  "intro": "A **45-minute** timed test on the whole of Electric Current and Circuits — charge, current and voltage; resistance and its dependence on wire dimensions; Ohm's law and circuit diagrams; and series and parallel circuits. It is **generated fresh every time you open it**: a new set of questions drawn from across the unit, in a new order, with the answer choices shuffled.\n\nThe mix follows the Physics Academy test blueprint (`docs/test-generation.md`). BASIS Physics 8 is a pre-AP course, so this is DC circuit analysis ($I = Q/t$, $V = IR$, series/parallel equivalent resistance, VIR charts) held to AP Physics 2 rigor; no electric power formula, EMF/internal resistance, or Kirchhoff's-law simultaneous equations.\n\n**No calculator.** Every multiple-choice item is built to be solved by hand (round numbers; parallel pairs chosen to give whole-number results). Multiple choice is scored automatically; free response is scored by you against the model answer and rubric.\n\nThe bank is tranche 1; drawn-circuit-diagram items will follow.",
+  "config": { "mode": "time", "minutes": 45 },
+  "calculatorPolicy": "not-allowed",
+  "mcqBanks": ["dc-circuits.json"],
+  "frqBanks": ["dc-circuits-frq.json"]
+}

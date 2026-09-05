@@ -1,0 +1,352 @@
+{
+  "id": "basis-p8-u8-l5",
+  "slug": "synthesis-and-transfer",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "topic": "Synthesis and Transfer",
+  "lessonTitle": "Synthesis and Transfer",
+  "lessonNumber": "5",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit8_electric_current_circuits_outcomes.md (integrates all five clusters); calibrated against AP Physics 2 CED Unit 11",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 8 — this synthesis lesson is authored to the pattern of the Unit 2-7 synthesis modules.",
+  "prerequisites": [
+    "Lessons 1-4 of this unit — charge, current and voltage; resistance; Ohm's law and circuit diagrams; series and parallel circuits."
+  ],
+  "majorObjective": "Integrate the whole unit: analyse a circuit that combines series and parallel sections, build a complete VIR chart, and reason about real electrical situations (household wiring, fuses, battery life, safety) using the unit's ideas together.",
+  "subObjectives": [
+    "Reduce a circuit with a series section and a parallel section to a single equivalent resistance by combining step by step.",
+    "Work from the equivalent resistance back through the circuit to find every current and voltage, and present the result as a VIR chart.",
+    "Apply the correct rule at each stage: series (equal current, voltages add) or parallel (equal voltage, currents add), and Ohm's law within each component.",
+    "Explain real situations — why fuses and switches go in series, why sockets are parallel, why thin overloaded wires overheat, how battery life depends on the current drawn — using current, voltage, resistance, and energy together."
+  ],
+  "hook": {
+    "prompt": "A circuit has a $2\\ \\Omega$ resistor in series with a parallel pair of $6\\ \\Omega$ and $3\\ \\Omega$ resistors, all on a $12\\ \\mathrm{V}$ battery. What is the FIRST step to find the total current?",
+    "choices": [
+      "Add all three resistances: $2 + 6 + 3 = 11\\ \\Omega$.",
+      "Combine the parallel pair ($6\\ \\Omega$ and $3\\ \\Omega$) into one equivalent resistance first.",
+      "Divide $12\\ \\mathrm{V}$ by the $2\\ \\Omega$ resistor.",
+      "Assume the current is $1\\ \\mathrm{A}$."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "Each lesson gave you one rule. Real circuits mix series and parallel sections. The method is always the same: simplify the network one combination at a time down to a single resistance, find the total current, then expand back out to get every current and voltage.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Reducing a combined circuit",
+      "concept": "A circuit with **both series and parallel** parts is solved by **combining resistances step by step** until the whole network is a **single equivalent resistance**:\n\n1. **Find a pure series or pure parallel group** somewhere in the network.\n2. **Replace it** with its single equivalent resistance (series: add; parallel: reciprocal-sum).\n3. **Repeat** \u2014 the simplified network usually reveals another pure group.\n4. Stop when one resistance remains: that is $R_{total}$.\n5. **Total current:** $I_{total} = \\dfrac{V_{battery}}{R_{total}}$.\n\nThen **work backward** (chunk 2) to find the current and voltage everywhere.\n\n**Watch which rule applies where:** the parallel pair's combined resistance behaves like one resistor *in series* with the rest; the current *into* a parallel section is the total, and it *splits* among the branches.",
+      "representation": "Combine → replace → repeat → one resistance = $R_{total}$ → $I_{total} = V/R_{total}$.\n\n- series group: $R = R_1 + R_2 + \\ldots$;\n- parallel group: $\\dfrac{1}{R} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $12\\ \\mathrm{V}$ battery connects to a $2\\ \\Omega$ resistor ($R_1$) in series with a parallel pair: $6\\ \\Omega$ ($R_2$) and $3\\ \\Omega$ ($R_3$). Find $R_{total}$ and $I_{total}$.",
+        "phases": [
+          {
+            "label": "Step 1: combine the parallel pair",
+            "steps": [
+              "$\\dfrac{1}{R_{23}} = \\dfrac{1}{6} + \\dfrac{1}{3} = \\dfrac{1}{6} + \\dfrac{2}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_{23} = 2\\ \\Omega$."
+            ]
+          },
+          {
+            "label": "Step 2: combine the series",
+            "steps": ["$R_1$ is in series with $R_{23}$: $R_{total} = 2 + 2 = 4\\ \\Omega$."]
+          },
+          {
+            "label": "Step 3: total current",
+            "steps": ["$I_{total} = \\dfrac{V}{R_{total}} = \\dfrac{12}{4} = 3\\ \\mathrm{A}$."]
+          }
+        ],
+        "keyMove": "Reduce the parallel pair to one resistance, add the series resistor, then $I_{total} = V/R_{total}$."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L5-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 4,
+        "question": "A circuit has a $4\\ \\Omega$ resistor in series with a parallel pair of two $8\\ \\Omega$ resistors. What is the total resistance?",
+        "choices": ["$8\\ \\Omega$", "$20\\ \\Omega$", "$4\\ \\Omega$", "$12\\ \\Omega$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — the two $8\\ \\Omega$ resistors in parallel give $8/2 = 4\\ \\Omega$; in series with the $4\\ \\Omega$ resistor: $4 + 4 = 8\\ \\Omega$.",
+          "incorrect": {
+            "1": "This adds all three ($4 + 8 + 8$), ignoring that two of them are in parallel.",
+            "2": "This is just the parallel pair ($4\\ \\Omega$); add the series $4\\ \\Omega$.",
+            "3": "This adds the $4\\ \\Omega$ to just one $8\\ \\Omega$."
+          }
+        },
+        "hint": ["Two equal resistors in parallel = half of one. Then add the series resistor."],
+        "solution": "The parallel pair of two $8\\ \\Omega$ resistors has equivalent resistance $8/2 = 4\\ \\Omega$. This is in series with the separate $4\\ \\Omega$ resistor, so $R_{total} = 4 + 4 = 8\\ \\Omega$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Working backward to the full VIR chart",
+      "concept": "Once you have $R_{total}$ and $I_{total}$, expand the simplification in **reverse**:\n\n- The **total current flows through every series element** (the $2\\ \\Omega$ resistor and the parallel combination as a whole).\n- Find the **voltage across each series element** with $V = IR$: across $R_1$, $V_1 = I_{total}R_1$; across the parallel section, $V_p = V_{battery} - V_1$ (or $V_p = I_{total}R_{23}$).\n- **Inside the parallel section**, each branch has that **same voltage** $V_p$; find each branch current with $I = V_p / R_{branch}$.\n- **Check:** the branch currents add up to $I_{total}$; the series voltages add up to $V_{battery}$.\n\nOrganise everything in a **VIR chart** with a row for each real resistor and a total row.",
+      "representation": "Backward pass:\n\n1. $I_{total}$ through every series element.\n2. $V$ across each series element via $V = IR$.\n3. that $V$ is the same on each parallel branch → $I_{branch} = V/R_{branch}$.\n4. checks: branch currents sum to $I_{total}$; series voltages sum to $V_{battery}$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Continue the earlier circuit: $12\\ \\mathrm{V}$, $R_1 = 2\\ \\Omega$ in series with the parallel pair $R_2 = 6\\ \\Omega$, $R_3 = 3\\ \\Omega$; $R_{total} = 4\\ \\Omega$, $I_{total} = 3\\ \\mathrm{A}$. Find the voltage across $R_1$ and the parallel section, and the current in $R_2$ and $R_3$.",
+        "phases": [
+          {
+            "label": "Voltage across the series parts",
+            "steps": [
+              "Across $R_1$: $V_1 = I_{total}R_1 = (3)(2) = 6\\ \\mathrm{V}$.",
+              "Across the parallel section: $V_p = 12 - 6 = 6\\ \\mathrm{V}$ (also $V_p = I_{total}R_{23} = (3)(2) = 6\\ \\mathrm{V}$)."
+            ]
+          },
+          {
+            "label": "Branch currents (each has 6 V)",
+            "steps": [
+              "$R_2 = 6\\ \\Omega$: $I_2 = 6/6 = 1\\ \\mathrm{A}$.",
+              "$R_3 = 3\\ \\Omega$: $I_3 = 6/3 = 2\\ \\mathrm{A}$."
+            ]
+          },
+          {
+            "label": "Checks",
+            "steps": ["$I_2 + I_3 = 1 + 2 = 3\\ \\mathrm{A} = I_{total}$. $V_1 + V_p = 6 + 6 = 12\\ \\mathrm{V} = V_{battery}$. Consistent."]
+          }
+        ],
+        "keyMove": "Total current through the series parts; $V = IR$ for each; that $V$ splits current among the parallel branches. Then check both sums."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L5-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "synthesis",
+        "representation": "verbal",
+        "difficulty": "ap5-ib7-target",
+        "cognitiveLevel": 5,
+        "question": "In a circuit where a $3\\ \\Omega$ resistor is in series with a parallel pair, the total current is $4\\ \\mathrm{A}$. What is the current *through the $3\\ \\Omega$ resistor*, and what is the current *through each branch of the parallel pair*?",
+        "choices": [
+          "The $3\\ \\Omega$ resistor carries $4\\ \\mathrm{A}$; each parallel branch also carries $4\\ \\mathrm{A}$.",
+          "The $3\\ \\Omega$ resistor carries the full $4\\ \\mathrm{A}$; the parallel branches carry currents that add up to $4\\ \\mathrm{A}$ (split according to their resistances).",
+          "The $3\\ \\Omega$ resistor carries $2\\ \\mathrm{A}$; each branch carries $2\\ \\mathrm{A}$.",
+          "There is no current in the $3\\ \\Omega$ resistor."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the $3\\ \\Omega$ resistor is in the single series path, so it carries the whole $4\\ \\mathrm{A}$. That current then splits among the parallel branches, and the branch currents add back to $4\\ \\mathrm{A}$.",
+          "incorrect": {
+            "0": "Each parallel branch carries *part* of the $4\\ \\mathrm{A}$, not the full amount (unless there is only one branch).",
+            "2": "The series resistor carries the *total* current, not a share.",
+            "3": "All the current passes through the series resistor."
+          }
+        },
+        "hint": ["The series resistor is on the one path everything must take. The parallel section is where the current splits."],
+        "solution": "The $3\\ \\Omega$ resistor is the only element on the main path, so the entire total current ($4\\ \\mathrm{A}$) flows through it. When that current reaches the parallel section it divides between the branches (more through the lower-resistance branch), and the branch currents add back up to $4\\ \\mathrm{A}$."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Real electrical situations",
+      "concept": "The unit's ideas explain everyday electricity:\n\n- **Household sockets and lights are wired in parallel** \u2014 each device gets the full mains voltage, runs at its rated power, and switches independently.\n- **A fuse (or circuit breaker) is placed in series** with a circuit \u2014 if too much current flows (a fault, or too many appliances), the fuse wire melts (or the breaker trips), **breaking the whole series loop** and cutting the current for safety.\n- **A switch is in series** with what it controls \u2014 opening it breaks that loop.\n- **Thin wires overheat if overloaded** \u2014 a thin wire has a high resistance, and the energy dissipated per second in a wire of resistance $R$ carrying current $I$ is $I^2 R$; a large current in a resistive wire produces a lot of heat, which is a fire risk. That is why supply cables are thick and why extension leads have current ratings.\n- **Battery life depends on the current drawn** \u2014 a battery stores a fixed total charge (its 'capacity', e.g. in $\\mathrm{mA\\,h}$); a device drawing a small current runs proportionally longer. Connecting devices in parallel lowers the total resistance, raises the total current, and drains the battery faster.\n\n**Energy accounting:** the battery converts chemical energy to electrical energy ($E = VQ$); the components convert it to light, heat, and motion; total energy is conserved.",
+      "representation": "| Situation | Principle |\n|---|---|\n| sockets & lights | parallel (full voltage, independent) |\n| fuse, breaker, switch | series (break the loop) |\n| thin wire overheating | $I^2 R$ heating; high $R$ + high $I$ |\n| battery lasts longer | smaller current drawn ($Q = It$ fixed) |",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A power strip is on one $13\\ \\mathrm{A}$-rated household circuit. A kettle draws $10\\ \\mathrm{A}$, a heater draws $8\\ \\mathrm{A}$, and a lamp draws $0.5\\ \\mathrm{A}$, all plugged in together. (a) Are they in series or parallel? (b) What total current flows? (c) What happens?",
+        "phases": [
+          {
+            "label": "(a) Series or parallel?",
+            "steps": ["All plugged into sockets on the same circuit \u2192 **parallel** (each has the full mains voltage)."]
+          },
+          {
+            "label": "(b) Total current",
+            "steps": ["Parallel branch currents add: $10 + 8 + 0.5 = 18.5\\ \\mathrm{A}$."]
+          },
+          {
+            "label": "(c) What happens",
+            "steps": [
+              "$18.5\\ \\mathrm{A}$ exceeds the $13\\ \\mathrm{A}$ rating.",
+              "The fuse or circuit breaker (in series with the whole circuit) trips, breaking the loop and cutting the power \u2014 protecting the wiring from overheating."
+            ]
+          }
+        ],
+        "keyMove": "Parallel appliances → currents add. If the total exceeds the rating, the series fuse/breaker cuts the whole circuit."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L5-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "transfer",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Why is a fuse always connected in series with the circuit it protects, rather than in parallel?",
+        "choices": [
+          "So it gets the full mains voltage.",
+          "So that when it melts (from too much current), it breaks the single loop and stops the current everywhere in that circuit.",
+          "So it carries only a small part of the current.",
+          "So it can be switched independently."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — a series fuse carries the full circuit current, and when it blows it opens the one path, cutting all the current. A parallel fuse would carry only a fraction of the current and could not interrupt the circuit.",
+          "incorrect": {
+            "0": "The fuse should have only a small voltage across it normally; getting the full voltage is not the goal.",
+            "2": "In series it carries the *full* current, which is exactly what lets it sense an overload.",
+            "3": "A fuse is a protective device, not a control switch."
+          }
+        },
+        "hint": ["A fuse must (a) carry the whole current so it can sense an overload, and (b) cut the whole current when it blows. Series or parallel?"],
+        "solution": "A fuse is placed in series so that the entire circuit current passes through it. If that current exceeds a safe value, the fuse wire heats up ($I^2 R$) and melts, opening the single conducting loop and stopping the current everywhere in the circuit. In parallel, the fuse would carry only a small share of the current and blowing it would not interrupt the main path."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U8-L5-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "misconceptionTested": "",
+      "question": "To analyse a circuit with a $2\\ \\Omega$ resistor in series with a parallel pair of $4\\ \\Omega$ and $4\\ \\Omega$, a student adds all three resistances: $2 + 4 + 4 = 10\\ \\Omega$, then divides the battery voltage by $10\\ \\Omega$. What is wrong, and what is the fix?",
+      "choices": [
+        "Nothing — adding all the resistances is correct.",
+        "The two $4\\ \\Omega$ resistors are in parallel, not series, so they combine to $2\\ \\Omega$ (not $8\\ \\Omega$). The correct total is $2 + 2 = 4\\ \\Omega$. Fix: reduce the parallel group first, then add the series resistor.",
+        "The battery voltage should be divided by each resistor separately.",
+        "The student should use $\\dfrac{1}{R} = \\dfrac{1}{2} + \\dfrac{1}{4} + \\dfrac{1}{4}$ for the whole circuit."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — you cannot simply add every resistance in a mixed circuit. Combine each pure series or parallel group with its own rule, working inward, until one resistance remains.",
+        "incorrect": {
+          "0": "Adding the two parallel resistors as if in series overstates their combined resistance by a factor of 4.",
+          "2": "That would only be valid if all three were in parallel, which they are not.",
+          "3": "The $2\\ \\Omega$ resistor is in series with the pair, not in parallel with them, so it should not be inside the reciprocal sum."
+        }
+      },
+      "hint": ["Identify each pure group (series or parallel) and combine it with its own rule. Do not add everything."],
+      "solution": "In a mixed circuit you combine groups step by step, each with the correct rule. The two $4\\ \\Omega$ resistors are in parallel: $\\dfrac{1}{R} = \\dfrac{1}{4} + \\dfrac{1}{4} = \\dfrac{1}{2}$, so they combine to $2\\ \\Omega$ (not $8\\ \\Omega$). That $2\\ \\Omega$ equivalent is then in series with the separate $2\\ \\Omega$ resistor: $R_{total} = 2 + 2 = 4\\ \\Omega$. Simply adding all three ($10\\ \\Omega$) applies the series rule to a parallel group."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $6\\ \\mathrm{V}$ battery connects to a $1\\ \\Omega$ resistor in series with a parallel pair of $2\\ \\Omega$ and $2\\ \\Omega$. Find the current through one of the $2\\ \\Omega$ resistors.\n\nStudent's response: 'Total resistance $= 1 + 2 + 2 = 5\\ \\Omega$. Total current $= 6/5 = 1.2\\ \\mathrm{A}$. That current goes through each $2\\ \\Omega$ resistor, so $1.2\\ \\mathrm{A}$.'",
+      "prompts": [
+        "Identify the error in the total resistance calculation.",
+        "Give the correct total resistance and total current.",
+        "Give the correct current through one $2\\ \\Omega$ resistor."
+      ],
+      "modelResponse": "Error: the two $2\\ \\Omega$ resistors are in *parallel*, so they combine to $\\dfrac{2}{2} = 1\\ \\Omega$, not $4\\ \\Omega$. Correct total: $R_{total} = 1 + 1 = 2\\ \\Omega$. Total current: $I = \\dfrac{6}{2} = 3\\ \\mathrm{A}$ (this flows through the $1\\ \\Omega$ series resistor). The voltage across the parallel pair is $V_p = 6 - (3)(1) = 3\\ \\mathrm{V}$. Each $2\\ \\Omega$ branch then carries $I = \\dfrac{3}{2} = 1.5\\ \\mathrm{A}$ (and $1.5 + 1.5 = 3\\ \\mathrm{A}$ checks out). The student both mis-combined the parallel pair and forgot that the total current *splits* between the parallel branches.",
+      "responseMaxLength": 800
+    }
+  ],
+  "representationConnections": "A mixed circuit diagram is reduced by combining pure series groups (add) and pure parallel groups (reciprocal-sum), step by step, to a single $R_{total}$; then $I_{total} = V/R_{total}$ and a backward pass (total current through series elements, $V = IR$ each, that voltage splitting current among parallel branches) fills the whole VIR chart. Checks: branch currents sum to $I_{total}$, series voltages sum to $V_{battery}$. The same ideas explain household parallel wiring, series fuses and switches, $I^2 R$ heating in thin wires, and how the current drawn sets battery life via $Q = It$.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U8-L5-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "synthesis",
+      "representation": "equation",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 6,
+      "question": "A $10\\ \\mathrm{V}$ battery connects to a $3\\ \\Omega$ resistor in series with a parallel pair of $4\\ \\Omega$ and $4\\ \\Omega$. What is the voltage across one of the $4\\ \\Omega$ resistors?",
+      "choices": ["$4\\ \\mathrm{V}$", "$10\\ \\mathrm{V}$", "$6\\ \\mathrm{V}$", "$5\\ \\mathrm{V}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — parallel pair: $4/2 = 2\\ \\Omega$; total $R = 3 + 2 = 5\\ \\Omega$; $I_{total} = 10/5 = 2\\ \\mathrm{A}$; across the parallel section $V = I R = (2)(2) = 4\\ \\mathrm{V}$, which is the voltage on each $4\\ \\Omega$ branch.",
+        "incorrect": {
+          "1": "$10\\ \\mathrm{V}$ is the whole battery; the $3\\ \\Omega$ resistor takes some of it.",
+          "2": "$6\\ \\mathrm{V}$ is the voltage across the $3\\ \\Omega$ series resistor ($IR = 2 \\times 3$).",
+          "3": "This assumes the voltage splits evenly, which it does not."
+        }
+      },
+      "hint": ["Reduce the parallel pair, get the total resistance and current, then find the voltage across the parallel section (= across each branch)."],
+      "solution": "Parallel pair: two $4\\ \\Omega$ in parallel give $2\\ \\Omega$. Total resistance: $3 + 2 = 5\\ \\Omega$. Total current: $I = \\dfrac{10}{5} = 2\\ \\mathrm{A}$. Voltage across the $3\\ \\Omega$ resistor: $(2)(3) = 6\\ \\mathrm{V}$. Voltage across the parallel section: $10 - 6 = 4\\ \\mathrm{V}$ — and each $4\\ \\Omega$ branch has this same $4\\ \\mathrm{V}$ across it."
+    },
+    {
+      "id": "BP8-U8-L5-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "transfer",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 6,
+      "question": "A camper runs a $2\\ \\mathrm{A}$ lamp from a battery for 5 hours, then wants to also run a $2\\ \\mathrm{A}$ fan from the same battery. Both are connected in parallel. Approximately how long will the battery now last with both running (starting from full)?",
+      "choices": [
+        "About 2.5 hours.",
+        "About 5 hours.",
+        "About 10 hours.",
+        "About 1 hour."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — with both devices in parallel the total current is $2 + 2 = 4\\ \\mathrm{A}$, twice the single-device draw. A battery stores a fixed total charge, so at twice the current it lasts about half as long: roughly $5/2 = 2.5$ hours.",
+        "incorrect": {
+          "1": "Adding the fan doubles the current, so the battery does not last as long as with the lamp alone.",
+          "2": "More current makes the battery last *less* time, not more.",
+          "3": "The current only doubles (not quadruples), so the time roughly halves to ~2.5 hours."
+        }
+      },
+      "hint": ["Parallel devices: currents add. A battery stores a fixed charge $Q = It$. Double the current → ?"],
+      "solution": "In parallel the currents add: total $= 2 + 2 = 4\\ \\mathrm{A}$, double the lamp-only draw. A battery holds a fixed total charge (its capacity), and $Q = It$, so at double the current the run time roughly halves. If the lamp alone lasted 5 hours, both together last about $5/2 \\approx 2.5$ hours."
+    },
+    {
+      "id": "BP8-U8-L5-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "synthesis",
+      "representation": "physical-model",
+      "difficulty": "distinction-stretch",
+      "cognitiveLevel": 7,
+      "scenario": "A $12\\ \\mathrm{V}$ battery is connected to a $1\\ \\Omega$ resistor $R_1$ in series with a parallel combination of $R_2 = 4\\ \\Omega$ and $R_3 = 4\\ \\Omega$.",
+      "parts": [
+        {
+          "prompt": "(a) Calculate the equivalent resistance of the parallel pair and the total resistance of the circuit.",
+          "modelResponse": "Parallel pair: two equal $4\\ \\Omega$ resistors give $R_{23} = 4/2 = 2\\ \\Omega$. Total: $R_1$ in series with $R_{23}$, so $R_{total} = 1 + 2 = 3\\ \\Omega$.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) Calculate the total current, the voltage across $R_1$, and the voltage across the parallel section.",
+          "modelResponse": "Total current: $I = \\dfrac{12}{3} = 4\\ \\mathrm{A}$ (through $R_1$ and into the parallel section). Voltage across $R_1$: $V_1 = IR_1 = (4)(1) = 4\\ \\mathrm{V}$. Voltage across the parallel section: $V_p = 12 - 4 = 8\\ \\mathrm{V}$ (also $V_p = I R_{23} = (4)(2) = 8\\ \\mathrm{V}$).",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Calculate the current through $R_2$ and through $R_3$, and present the complete VIR chart (rows for $R_1$, $R_2$, $R_3$, and total). Verify your currents and voltages are consistent.",
+          "modelResponse": "Each parallel branch has $8\\ \\mathrm{V}$: $I_2 = 8/4 = 2\\ \\mathrm{A}$; $I_3 = 8/4 = 2\\ \\mathrm{A}$. VIR chart — $R_1$: V = 4 V, I = 4 A, R = 1 Ω. $R_2$: V = 8 V, I = 2 A, R = 4 Ω. $R_3$: V = 8 V, I = 2 A, R = 4 Ω. Total: V = 12 V, I = 4 A, R = 3 Ω. Checks: branch currents $2 + 2 = 4\\ \\mathrm{A} = I_{total}$; series voltages $V_1 + V_p = 4 + 8 = 12\\ \\mathrm{V} = V_{battery}$. Consistent.",
+          "points": 5
+        }
+      ],
+      "totalPoints": 12
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB free-response problems on circuits give a network with series and parallel sections and ask for a full analysis: reduce to an equivalent resistance, find the total current, then work back to every branch current and voltage, often as a VIR (or VIRP) chart. Real-world reasoning — parallel household wiring, series fuses and switches, $I^2 R$ heating in undersized wires, battery life versus current drawn — appears throughout. Mis-combining a parallel group as a series sum (or forgetting that current splits in a parallel section) is the classic error.",
+  "summary": "Analyse a mixed circuit by reducing it one combination at a time: replace each pure series group with its sum and each pure parallel group with its reciprocal-sum, repeating until one equivalent resistance $R_{total}$ remains, then $I_{total} = V/R_{total}$. Work backward: the total current flows through every series element (use $V = IR$ for each), and the voltage across a parallel section is the same on each of its branches (use $I = V/R$ for each branch). Check that branch currents add to $I_{total}$ and series voltages add to the battery voltage; organise it all in a VIR chart. The same ideas explain real electricity: household sockets and lights are parallel (full voltage, independent switching); fuses, breakers, and switches are in series (breaking the loop); thin overloaded wires overheat because of $I^2 R$; and a battery drained by a larger total current (as when more devices are added in parallel) lasts a shorter time because it stores a fixed total charge.",
+  "exitQuestion": {
+    "id": "BP8-U8-L5-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "synthesis",
+    "representation": "verbal",
+    "difficulty": "ap-ib-standard",
+    "cognitiveLevel": 4,
+    "question": "To find the total resistance of a circuit that has a resistor in series with a parallel pair, what must you do first?",
+    "choices": [
+      "Add all the resistances together.",
+      "Combine the parallel pair into one equivalent resistance, then add the series resistor.",
+      "Divide the battery voltage by the series resistor.",
+      "Assume the parallel pair has zero resistance."
+    ],
+    "correctAnswer": 1,
+    "feedback": {
+      "correct": "Correct — reduce the parallel group with the reciprocal-sum rule first, then treat it as a single resistor in series with the rest.",
+      "incorrect": {
+        "0": "Adding everything applies the series rule to the parallel pair, which is wrong.",
+        "2": "You need the total resistance (including the parallel section) before finding any current.",
+        "3": "The parallel pair has a real, non-zero equivalent resistance."
+      }
+    },
+    "hint": ["Deal with the pure parallel group using its own rule before combining it with the series part."],
+    "solution": "Work from the inside out: first combine the parallel pair using $\\dfrac{1}{R_p} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$ to get one equivalent resistance. That equivalent resistance is then in series with the other resistor, so add them to get $R_{total}$. Only then can you find the total current with $I = V/R_{total}$."
+  },
+  "questionBankFile": "dc-circuits.json",
+  "furtherPracticeQuestionIds": ["BP8-U8-MCQ-013", "BP8-U8-MCQ-026", "BP8-U8-MCQ-037", "BP8-U8-MCQ-050", "BP8-U8-MCQ-054", "BP8-U8-MCQ-055"],
+  "needsPlotly": false
+}

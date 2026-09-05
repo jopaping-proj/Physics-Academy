@@ -1,0 +1,342 @@
+{
+  "id": "basis-p8-u8-l3",
+  "slug": "ohms-law-and-circuit-diagrams",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "topic": "Ohm's Law and Circuit Diagrams",
+  "lessonTitle": "Ohm's Law and Circuit Diagrams",
+  "lessonNumber": "3",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit8_electric_current_circuits_outcomes.md (Ohm's Law cluster O1-O3; Circuit Diagrams cluster CD1-CD2); calibrated against AP Physics 2 CED Unit 11, OpenStax High School Physics Ch. 19",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 8 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Lesson 1 — current ($I = Q/t$) and voltage (energy per coulomb); current is the same everywhere in a single loop.",
+    "Lesson 2 — resistance $R = V/I$; total vs individual resistance."
+  ],
+  "majorObjective": "State Ohm's law ($V = IR$) and apply it to single resistors and simple circuits; draw and interpret circuit diagrams with standard symbols; build a VIR chart to analyse a circuit.",
+  "subObjectives": [
+    "State Ohm's law $V = IR$ and use all three rearrangements to find any one of $V$, $I$, $R$ from the other two.",
+    "Recognise and draw the standard circuit symbols for a cell/battery, bulb, resistor, switch, and wire, and translate between a real circuit and its diagram.",
+    "Construct a VIR chart (rows for each component and the total; columns V, I, R) and fill it in using Ohm's law.",
+    "Apply Ohm's law to a single loop: total resistance sets the current; each component's voltage is $IR$ for that component."
+  ],
+  "hook": {
+    "prompt": "A $9\\ \\mathrm{V}$ battery is connected across a single $3\\ \\Omega$ resistor. What current flows?",
+    "choices": ["$3\\ \\mathrm{A}$", "$27\\ \\mathrm{A}$", "$0.33\\ \\mathrm{A}$", "$12\\ \\mathrm{A}$"],
+    "correctIndex": 0
+  },
+  "priorKnowledge": "One equation links voltage, current, and resistance: $V = IR$. It is the workhorse of every circuit calculation. Circuit diagrams and VIR charts are the tools that organise the work.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Ohm's law",
+      "concept": "**Ohm's law:**\n\n$$V = IR$$\n\nThe voltage across a resistor equals the current through it times its resistance. The three rearrangements:\n\n- for voltage: $V = IR$\n- for current: $I = \\dfrac{V}{R}$\n- for resistance: $R = \\dfrac{V}{I}$\n\nFor a component that **obeys Ohm's law** (an 'ohmic' resistor), the resistance $R$ is **constant**, so the current is **directly proportional to the voltage**. A graph of current against voltage is then a **straight line through the origin**, with gradient $\\dfrac{1}{R}$ (a steeper line = smaller resistance).\n\n(A filament bulb is *not* ohmic \u2014 it gets hotter as more current flows, and hot metal has more resistance, so its $I$-$V$ graph curves. For this course, treat the resistors as ohmic unless told otherwise.)",
+      "representation": "$$V = IR \\qquad I = \\frac{V}{R} \\qquad R = \\frac{V}{I}$$\n\nOhmic resistor: $R$ constant, $I \\propto V$, $I$-vs-$V$ graph a straight line through the origin with gradient $1/R$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A circuit has a battery and one $6.0\\ \\Omega$ resistor. (a) The current is $2.0\\ \\mathrm{A}$; find the battery voltage. (b) The battery is swapped for a $3.0\\ \\mathrm{V}$ one; find the new current.",
+        "phases": [
+          {
+            "label": "(a) Battery voltage",
+            "steps": ["$V = IR = (2.0\\ \\mathrm{A})(6.0\\ \\Omega) = 12\\ \\mathrm{V}$."]
+          },
+          {
+            "label": "(b) New current with 3.0 V",
+            "steps": ["$I = \\dfrac{V}{R} = \\dfrac{3.0\\ \\mathrm{V}}{6.0\\ \\Omega} = 0.50\\ \\mathrm{A}$."]
+          }
+        ],
+        "keyMove": "Pick the rearrangement of $V = IR$ that solves for your unknown, then substitute."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L3-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "A $2.0\\ \\Omega$ resistor carries a current of $1.5\\ \\mathrm{A}$. What is the voltage across it?",
+        "choices": ["$3.0\\ \\mathrm{V}$", "$1.3\\ \\mathrm{V}$", "$0.75\\ \\mathrm{V}$", "$3.5\\ \\mathrm{V}$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $V = IR = (1.5)(2.0) = 3.0\\ \\mathrm{V}$.",
+          "incorrect": {
+            "1": "This divides ($2.0/1.5$). Use $V = IR$.",
+            "2": "This inverts ($1.5/2.0$).",
+            "3": "This adds. $V = IR = 3.0\\ \\mathrm{V}$."
+          }
+        },
+        "hint": ["$V = IR = 1.5 \\times 2.0$."],
+        "solution": "$V = IR = (1.5\\ \\mathrm{A})(2.0\\ \\Omega) = 3.0\\ \\mathrm{V}$."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Circuit diagrams and symbols",
+      "concept": "A **circuit diagram** represents a circuit with standard **symbols** joined by straight lines (wires). The essentials:\n\n- **Cell:** a long thin line ($+$ terminal) next to a short thick line ($-$ terminal).\n- **Battery:** two or more cell symbols in a row.\n- **Bulb (lamp):** a circle with a cross inside.\n- **Resistor:** a plain rectangle.\n- **Switch:** a break in the wire with a hinged lever \u2014 drawn *open* (gap) means off, *closed* (touching) means on.\n- **Connecting wire:** a plain straight line; corners are right angles; a dot marks a genuine junction where wires connect.\n\nTo **translate** a real circuit to a diagram: identify each component, choose its symbol, and trace the conducting path, drawing the components in the same order around the loop (or on the same branches). The layout can be tidied into rectangles \u2014 only the *connections* matter, not the physical positions.",
+      "representation": "| Component | Symbol |\n|---|---|\n| cell | long thin line + short thick line |\n| battery | two or more cells in a row |\n| bulb | circle with a cross |\n| resistor | plain rectangle |\n| switch | gap with a hinged lever |\n| wire | plain straight line |",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-8/circuit-diagrams/circuit-symbols.svg",
+          "caption": "The standard circuit symbols: cell, battery, bulb, resistor, switch (open), and connecting wire."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Describe the circuit diagram for: a 2-cell battery connected through a switch to two bulbs that are wired one after the other, all in a single loop.",
+        "phases": [
+          {
+            "label": "Identify the components",
+            "steps": ["Battery (two cells), one switch, two bulbs, connecting wires."]
+          },
+          {
+            "label": "Trace the loop",
+            "steps": [
+              "Draw a single rectangular loop.",
+              "On one side: the battery symbol (two cells). Somewhere in the loop: the switch symbol. In series along the loop: bulb 1 then bulb 2.",
+              "The loop passes: battery \u2192 switch \u2192 bulb 1 \u2192 bulb 2 \u2192 back to battery. No branch points."
+            ]
+          }
+        ],
+        "keyMove": "One component per symbol, drawn in loop order. Tidy the layout into a rectangle; only the connections matter."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L3-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "identify-principle",
+        "representation": "physical-model",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "In a circuit diagram, a gap in the wire bridged by a hinged lever (drawn lifted away from the contact) represents:",
+        "choices": [
+          "a resistor.",
+          "an open switch — a deliberate break, so no current flows in that loop.",
+          "a bulb.",
+          "a battery."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — an open switch breaks the loop. Drawn closed (lever touching), it completes the circuit and current flows.",
+          "incorrect": {
+            "0": "A resistor is a plain rectangle.",
+            "2": "A bulb is a circle with a cross.",
+            "3": "A battery is long and short parallel lines."
+          }
+        },
+        "hint": ["A hinged lever that can bridge or break a gap in the wire."],
+        "solution": "A gap in the wire with a hinged lever is the symbol for a switch. Drawn open (lever lifted), it is a break in the conducting path, so no current flows in that loop. Drawn closed, it completes the circuit."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "VIR charts",
+      "concept": "A **VIR chart** organises a circuit analysis into a table:\n\n- one **row per component**, plus a **'total' row** for the whole circuit;\n- three **columns**: voltage $V$, current $I$, resistance $R$.\n\nYou fill it in using **Ohm's law** ($V = IR$) applied to each row, plus the **series/parallel rules** (Lesson 4):\n\n- **Series circuit:** the **I column** is the same in every row (single path); the **V column** and the **R column** each add to give the total.\n- **Simple parallel circuit:** the **V column** is the same in every row (every branch across the same points); the **I column** adds to give the total, and the total $R$ is *less* than the smallest branch.\n\n**Strategy:** fill in what you know, use $V = IR$ to complete any row that has two of the three, use the series/parallel rules to fill the total row, then work back to any missing rows.",
+      "representation": "VIR chart layout:\n\n| | V | I | R |\n|---|---|---|---|\n| component 1 | | | |\n| component 2 | | | |\n| **total** | | | |\n\n- series: I equal in all rows; V and R add;\n- parallel: V equal in all rows; I adds; total R < smallest.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $12\\ \\mathrm{V}$ battery is in series with a $2\\ \\Omega$ resistor and a $4\\ \\Omega$ resistor. Build the VIR chart.",
+        "phases": [
+          {
+            "label": "Total row first",
+            "steps": [
+              "Series total resistance: $R = 2 + 4 = 6\\ \\Omega$.",
+              "Total voltage $= 12\\ \\mathrm{V}$ (the battery).",
+              "Total current: $I = V/R = 12/6 = 2\\ \\mathrm{A}$."
+            ]
+          },
+          {
+            "label": "Component rows (series → same current)",
+            "steps": [
+              "Both resistors carry the total current, $2\\ \\mathrm{A}$.",
+              "$2\\ \\Omega$ row: $V = IR = (2)(2) = 4\\ \\mathrm{V}$.",
+              "$4\\ \\Omega$ row: $V = IR = (2)(4) = 8\\ \\mathrm{V}$."
+            ]
+          },
+          {
+            "label": "Check",
+            "steps": ["Component voltages: $4 + 8 = 12\\ \\mathrm{V}$ = total. Resistances: $2 + 4 = 6\\ \\Omega$ = total. Consistent."]
+          }
+        ],
+        "keyMove": "Fill the total row (series: add R, then $I = V/R$), carry the current to each series row, then $V = IR$ per row."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L3-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "data-analysis",
+        "representation": "physical-model",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "A VIR chart for a circuit shows the same voltage ($6\\ \\mathrm{V}$) in the row for each of two resistors and in the total row. The circuit is:",
+        "choices": [
+          "series.",
+          "parallel — every branch has the same voltage across it.",
+          "impossible.",
+          "a single resistor."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — the same voltage in every component row is the signature of a parallel circuit (each branch is across the same two points).",
+          "incorrect": {
+            "0": "In a series circuit the *current* column is constant, and the voltages generally differ.",
+            "2": "It is perfectly normal — it is exactly what a parallel VIR chart looks like.",
+            "3": "There are two resistor rows, so there are two resistors."
+          }
+        },
+        "hint": ["Which quantity is the same for every component in a parallel circuit?"],
+        "solution": "In a simple parallel circuit, every branch connects the same two nodes (the battery terminals), so each has the same voltage across it — equal to the total. In the VIR chart, the voltage column has the same value in every row. (The current column is the constant one for a series circuit.)"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U8-L3-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student writes Ohm's law as $R = IV$ and calculates the resistance of a component with $2\\ \\mathrm{A}$ and $6\\ \\mathrm{V}$ as $R = (2)(6) = 12\\ \\Omega$. What is the error?",
+      "choices": [
+        "Nothing — $R = 12\\ \\Omega$ is correct.",
+        "Ohm's law is $V = IR$, so $R = V/I = 6/2 = 3\\ \\Omega$. The student multiplied instead of dividing.",
+        "The current and voltage values are swapped.",
+        "Resistance cannot be calculated from $V$ and $I$."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — from $V = IR$, dividing both sides by $I$ gives $R = V/I$, not $IV$. So $R = 6/2 = 3\\ \\Omega$.",
+        "incorrect": {
+          "0": "Multiplying $I$ and $V$ gives the power ($IV$, in watts), not the resistance.",
+          "2": "The values are used correctly; the formula rearrangement is wrong.",
+          "3": "$R = V/I$ is exactly how resistance is found from a voltage and current."
+        }
+      },
+      "hint": ["Rearrange $V = IR$ for $R$: divide both sides by $I$."],
+      "solution": "Ohm's law is $V = IR$. To solve for $R$, divide both sides by $I$: $R = \\dfrac{V}{I} = \\dfrac{6\\ \\mathrm{V}}{2\\ \\mathrm{A}} = 3\\ \\Omega$. Multiplying $I$ and $V$ instead gives $IV = 12$, which is the electrical power in watts, a different quantity."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $12\\ \\mathrm{V}$ battery is in series with a $3\\ \\Omega$ and a $6\\ \\Omega$ resistor. Find the current in the circuit.\n\nStudent's response: 'Current through the $3\\ \\Omega$ resistor: $I = V/R = 12/3 = 4\\ \\mathrm{A}$. Current through the $6\\ \\Omega$ resistor: $I = 12/6 = 2\\ \\mathrm{A}$.'",
+      "prompts": [
+        "State how the current in a single series loop compares between components.",
+        "Identify the student's error.",
+        "Give the correct single current for this circuit."
+      ],
+      "modelResponse": "In a single series loop the current is the same through every component. Error: the student applied the full $12\\ \\mathrm{V}$ across each resistor separately, as if they were in parallel, and got two different currents. In series, the $12\\ \\mathrm{V}$ is shared, not applied fully to each. Correct: first find the total resistance, $R_{total} = 3 + 6 = 9\\ \\Omega$, then the single current, $I = \\dfrac{V}{R_{total}} = \\dfrac{12}{9} \\approx 1.3\\ \\mathrm{A}$, which flows through both resistors.",
+      "responseMaxLength": 650
+    }
+  ],
+  "representationConnections": "Ohm's law ($V = IR$ and its rearrangements) links the three circuit quantities for any resistor. A real circuit becomes a diagram by replacing components with standard symbols and tracing the conducting path; a diagram becomes a solved circuit via a VIR chart, filled using Ohm's law per row plus the series rule (equal current, adding voltages and resistances) or the parallel rule (equal voltage, adding currents) from Lesson 4. Lesson 5 combines series and parallel sections in one problem.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U8-L3-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $24\\ \\mathrm{V}$ battery is in series with a $2\\ \\Omega$ and a $6\\ \\Omega$ resistor. What is the voltage across the $6\\ \\Omega$ resistor?",
+      "choices": ["$18\\ \\mathrm{V}$", "$24\\ \\mathrm{V}$", "$6\\ \\mathrm{V}$", "$3\\ \\mathrm{V}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — $R_{total} = 8\\ \\Omega$; $I = 24/8 = 3\\ \\mathrm{A}$; across the $6\\ \\Omega$ resistor $V = IR = (3)(6) = 18\\ \\mathrm{V}$.",
+        "incorrect": {
+          "1": "$24\\ \\mathrm{V}$ is across both resistors together.",
+          "2": "This is the resistance value, not a voltage. Do $V = IR$ with $I = 3\\ \\mathrm{A}$.",
+          "3": "This is the current $I = 3\\ \\mathrm{A}$, not the voltage."
+        }
+      },
+      "hint": ["Total resistance, then total current, then $V = IR$ for the $6\\ \\Omega$ resistor."],
+      "solution": "$R_{total} = 2 + 6 = 8\\ \\Omega$. Current: $I = \\dfrac{24}{8} = 3\\ \\mathrm{A}$ (same through both). Across the $6\\ \\Omega$ resistor: $V = IR = (3\\ \\mathrm{A})(6\\ \\Omega) = 18\\ \\mathrm{V}$. (The $2\\ \\Omega$ resistor drops $6\\ \\mathrm{V}$; $18 + 6 = 24\\ \\mathrm{V}$.)"
+    },
+    {
+      "id": "BP8-U8-L3-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "data-analysis",
+      "representation": "graph",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 4,
+      "question": "Two ohmic resistors, P and Q, are tested. On a graph of current (vertical) against voltage (horizontal), P's line is steeper than Q's. What does this tell you?",
+      "choices": [
+        "P has a larger resistance than Q.",
+        "P has a smaller resistance than Q, because the gradient of an $I$-vs-$V$ line is $1/R$.",
+        "P and Q have the same resistance.",
+        "P is not ohmic."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — $I = (1/R)V$, so the steeper the $I$-vs-$V$ line, the larger $1/R$, and so the smaller $R$.",
+        "incorrect": {
+          "0": "A steeper line means a *larger* $1/R$, i.e. a *smaller* $R$.",
+          "2": "Different gradients mean different resistances.",
+          "3": "A straight line through the origin is exactly ohmic behaviour."
+        }
+      },
+      "hint": ["Rearrange Ohm's law to $I = (1/R)V$. The gradient of $I$ vs $V$ is $1/R$."],
+      "solution": "Ohm's law rearranged is $I = \\dfrac{1}{R}V$, so a graph of $I$ against $V$ for an ohmic resistor is a straight line through the origin with gradient $\\dfrac{1}{R}$. A steeper line corresponds to a larger $\\dfrac{1}{R}$ and therefore a smaller resistance. So P (steeper) has the smaller resistance."
+    },
+    {
+      "id": "BP8-U8-L3-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "data-analysis",
+      "representation": "physical-model",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $10\\ \\mathrm{V}$ battery is connected in series with a switch, a $2\\ \\Omega$ resistor $R_1$, and a $3\\ \\Omega$ resistor $R_2$.",
+      "parts": [
+        {
+          "prompt": "(a) Describe the circuit diagram, naming the symbol for each component and the order they appear around the loop.",
+          "modelResponse": "A single rectangular loop. On one side, the battery symbol (long thin line for + next to short thick line for \u2212). In the loop: the switch symbol (a gap with a hinged lever), then $R_1$ (a rectangle labelled $2\\ \\Omega$), then $R_2$ (a rectangle labelled $3\\ \\Omega$), then wires back to the battery. Order around the loop: battery \u2192 switch \u2192 $R_1$ \u2192 $R_2$ \u2192 battery.",
+          "points": 3
+        },
+        {
+          "prompt": "(b) With the switch closed, calculate the total resistance, the current, and the voltage across each resistor.",
+          "modelResponse": "Total resistance: $R_{total} = 2 + 3 = 5\\ \\Omega$. Current: $I = \\dfrac{V}{R_{total}} = \\dfrac{10}{5} = 2\\ \\mathrm{A}$ (same through both). Voltage across $R_1$: $V_1 = IR_1 = (2)(2) = 4\\ \\mathrm{V}$. Voltage across $R_2$: $V_2 = IR_2 = (2)(3) = 6\\ \\mathrm{V}$. Check: $4 + 6 = 10\\ \\mathrm{V}$ = battery voltage.",
+          "points": 4
+        },
+        {
+          "prompt": "(c) Present the results as a VIR chart with rows for $R_1$, $R_2$, and the total, and state which column is constant and why.",
+          "modelResponse": "Row $R_1$: V = 4 V, I = 2 A, R = 2 Ω. Row $R_2$: V = 6 V, I = 2 A, R = 3 Ω. Total row: V = 10 V, I = 2 A, R = 5 Ω. The current (I) column is constant at 2 A in every row, because a series circuit is a single loop and the same current flows through every component.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 10
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test Ohm's law in all three forms, the interpretation of $I$-$V$ graphs (straight line through the origin for ohmic; gradient $1/R$; curved for a filament bulb), the standard circuit symbols, and VIR-chart analysis of series and simple parallel circuits. Applying the full battery voltage to each series component (instead of finding the total resistance first) is the classic error.",
+  "summary": "Ohm's law is $V = IR$, with rearrangements $I = V/R$ and $R = V/I$; for an ohmic resistor $R$ is constant, so $I \\propto V$ and the $I$-vs-$V$ graph is a straight line through the origin of gradient $1/R$. Circuit diagrams use standard symbols: a cell (long + short parallel lines), a battery (cells in a row), a bulb (circle with a cross), a resistor (rectangle), a switch (a gap with a hinged lever), and wires (plain lines). A VIR chart has a row per component plus a total row and columns V, I, R; fill it using Ohm's law per row and the series rule (equal current; voltages and resistances add) or the parallel rule (equal voltage; currents add; total R below the smallest). Always find the total resistance before finding the current in a series circuit.",
+  "exitQuestion": {
+    "id": "BP8-U8-L3-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "What current flows when a $20\\ \\mathrm{V}$ supply is connected across a $5\\ \\Omega$ resistor?",
+    "choices": ["$4\\ \\mathrm{A}$", "$100\\ \\mathrm{A}$", "$0.25\\ \\mathrm{A}$", "$25\\ \\mathrm{A}$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — $I = V/R = 20/5 = 4\\ \\mathrm{A}$.",
+      "incorrect": {
+        "1": "This multiplies. $I = V/R$.",
+        "2": "This inverts ($5/20$).",
+        "3": "This adds. $I = 20/5 = 4\\ \\mathrm{A}$."
+      }
+    },
+    "hint": ["$I = V/R = 20/5$."],
+    "solution": "$I = \\dfrac{V}{R} = \\dfrac{20\\ \\mathrm{V}}{5\\ \\Omega} = 4\\ \\mathrm{A}$."
+  },
+  "questionBankFile": "dc-circuits.json",
+  "furtherPracticeQuestionIds": ["BP8-U8-MCQ-027", "BP8-U8-MCQ-028", "BP8-U8-MCQ-030", "BP8-U8-MCQ-031", "BP8-U8-MCQ-039", "BP8-U8-MCQ-041"],
+  "needsPlotly": false
+}

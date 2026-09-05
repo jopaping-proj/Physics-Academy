@@ -1,0 +1,359 @@
+{
+  "id": "basis-p8-u8-l4",
+  "slug": "series-and-parallel-circuits",
+  "course": "BASIS Physics 8",
+  "courses": ["basis-physics-8"],
+  "unit": "Unit 8: Electric Current and Circuits",
+  "topic": "Series and Parallel Circuits",
+  "lessonTitle": "Series and Parallel Circuits",
+  "lessonNumber": "4",
+  "status": "draft",
+  "sourceDocument": "resources/physics8/resources/unit8_electric_current_circuits_outcomes.md (Resistance RE3-RE4; Ohm's Law O3); calibrated against AP Physics 2 CED Unit 11, OpenStax High School Physics Ch. 19",
+  "sourceApproval": "Outcomes Founder-approved. No rescue_sprint lesson module exists for Unit 8 — this lesson is authored from the approved outcome register and standard pre-AP / AP Physics 2 treatments.",
+  "prerequisites": [
+    "Lesson 1 — current is the same everywhere in a single loop; component voltages add up to the battery voltage.",
+    "Lesson 3 — Ohm's law $V = IR$; VIR charts."
+  ],
+  "majorObjective": "Find the equivalent resistance of resistors in series ($R_s = R_1 + R_2 + \\ldots$) and in parallel ($1/R_p = 1/R_1 + 1/R_2 + \\ldots$), and analyse series and simple parallel circuits with Ohm's law.",
+  "subObjectives": [
+    "State the series rules: single path, same current everywhere, voltages add, resistances add ($R_s = R_1 + R_2 + \\ldots$).",
+    "State the parallel rules: multiple paths, same voltage on each branch, currents add, $1/R_p = 1/R_1 + 1/R_2 + \\ldots$ (with $R_p$ less than the smallest branch).",
+    "Calculate the equivalent resistance and then the currents and voltages throughout a series or simple parallel circuit.",
+    "Explain why household wiring is parallel and why removing one component affects a series circuit differently from a parallel one."
+  ],
+  "hook": {
+    "prompt": "Two identical bulbs are connected to a battery in parallel. One bulb is unscrewed. The other bulb:",
+    "choices": [
+      "goes out.",
+      "stays the same brightness.",
+      "gets much dimmer.",
+      "gets much brighter."
+    ],
+    "correctIndex": 1
+  },
+  "priorKnowledge": "There are two basic ways to connect components: one after another (series) or side by side (parallel). Each has its own rules for how current, voltage, and resistance behave — and knowing which is which lets you analyse any simple circuit.",
+  "chunks": [
+    {
+      "id": "chunk-1",
+      "title": "Series circuits",
+      "concept": "Components in **series** are connected **one after another** in a **single loop** with **no branch points**.\n\nThe rules:\n\n- **Current:** the **same** through every component (single path, charge conserved).\n- **Voltage:** the component voltages **add up** to the battery voltage ($V_{battery} = V_1 + V_2 + \\ldots$). The largest resistance takes the largest share.\n- **Resistance:** the equivalent (total) resistance is the **sum**:\n\n$$R_s = R_1 + R_2 + R_3 + \\ldots$$\n\nAdding a resistor in series **increases** the total resistance, so (with a fixed battery) the current from the battery **decreases** \u2014 every bulb in a series string is dimmer than a single bulb would be.\n\n**Break the loop anywhere** (unscrew one bulb, open a switch) and the current stops **everywhere** \u2014 all the components go off.",
+      "representation": "Series: single path.\n\n| Quantity | Rule |\n|---|---|\n| current | same in every component |\n| voltage | $V_1 + V_2 + \\ldots = V_{battery}$ |\n| resistance | $R_s = R_1 + R_2 + \\ldots$ |\n\nOne break → whole circuit off.",
+      "conceptFigures": [
+        {
+          "svg": "basis-physics-8/unit-8/series-and-parallel/series-vs-parallel.svg",
+          "caption": "Left: two bulbs in series — same current through both, battery voltage shared, $R_s = R_1 + R_2$. Right: two bulbs in parallel — full voltage on each, branch currents add, $1/R_p = 1/R_1 + 1/R_2$."
+        }
+      ],
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $12\\ \\mathrm{V}$ battery is in series with resistors of $1\\ \\Omega$, $2\\ \\Omega$, and $3\\ \\Omega$. Find (a) the total resistance, (b) the current, (c) the voltage across each resistor.",
+        "phases": [
+          {
+            "label": "(a) Total resistance",
+            "steps": ["$R_s = 1 + 2 + 3 = 6\\ \\Omega$."]
+          },
+          {
+            "label": "(b) Current",
+            "steps": ["$I = \\dfrac{V}{R_s} = \\dfrac{12}{6} = 2\\ \\mathrm{A}$ (the same through all three)."]
+          },
+          {
+            "label": "(c) Voltage across each",
+            "steps": [
+              "$1\\ \\Omega$: $V = IR = (2)(1) = 2\\ \\mathrm{V}$.",
+              "$2\\ \\Omega$: $V = (2)(2) = 4\\ \\mathrm{V}$.",
+              "$3\\ \\Omega$: $V = (2)(3) = 6\\ \\mathrm{V}$.",
+              "Check: $2 + 4 + 6 = 12\\ \\mathrm{V}$ = battery voltage."
+            ]
+          }
+        ],
+        "keyMove": "Add the resistances → $R_s$. $I = V/R_s$ (same everywhere). $V = IR$ per resistor; the voltages add to the battery voltage."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L4-FC-001",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "developing",
+        "cognitiveLevel": 2,
+        "question": "Resistors of $10\\ \\Omega$ and $15\\ \\Omega$ are connected in series. What is the equivalent resistance?",
+        "choices": ["$25\\ \\Omega$", "$6\\ \\Omega$", "$12.5\\ \\Omega$", "$150\\ \\Omega$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — series resistances add: $10 + 15 = 25\\ \\Omega$.",
+          "incorrect": {
+            "1": "That is the parallel result. Series adds.",
+            "2": "That is the average. Series adds, not averages.",
+            "3": "This multiplies. Series adds."
+          }
+        },
+        "hint": ["Series: $R_s = R_1 + R_2$."],
+        "solution": "$R_s = R_1 + R_2 = 10 + 15 = 25\\ \\Omega$. Adding resistors in series always increases the total resistance."
+      }
+    },
+    {
+      "id": "chunk-2",
+      "title": "Parallel circuits",
+      "concept": "Components in **parallel** are connected **side by side** between the **same two points**, giving current **multiple paths**.\n\nThe rules:\n\n- **Voltage:** the **same** across every branch \u2014 equal to the battery voltage (each branch connects the same two nodes).\n- **Current:** the branch currents **add up** to the total current from the battery ($I_{total} = I_1 + I_2 + \\ldots$). The smallest resistance carries the largest current.\n- **Resistance:** the equivalent (total) resistance is given by\n\n$$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3} + \\ldots$$\n\nand $R_p$ is always **less than the smallest branch resistance**. Two useful shortcuts: for **two** resistors, $R_p = \\dfrac{R_1 R_2}{R_1 + R_2}$; for **$n$ equal** resistors, $R_p = \\dfrac{R}{n}$.\n\nAdding a resistor in parallel **decreases** the total resistance (an extra path), so the total current from the battery **increases**.\n\n**Break one branch** (unscrew one bulb) and the **others are unaffected** \u2014 each still has its own complete path at the full voltage.",
+      "representation": "Parallel: multiple paths between the same two points.\n\n| Quantity | Rule |\n|---|---|\n| voltage | same on every branch (= battery) |\n| current | $I_1 + I_2 + \\ldots = I_{total}$ |\n| resistance | $\\dfrac{1}{R_p} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$ ($R_p$ < smallest) |\n\nTwo resistors: $R_p = \\dfrac{R_1 R_2}{R_1 + R_2}$.  $n$ equal: $R_p = R/n$.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "A $6\\ \\mathrm{V}$ battery is connected across a $2\\ \\Omega$ resistor and a $3\\ \\Omega$ resistor in parallel. Find (a) the voltage across each, (b) the current in each branch, (c) the total current, (d) the equivalent resistance.",
+        "phases": [
+          {
+            "label": "(a) Voltage across each",
+            "steps": ["Both branches are across the battery, so each has $6\\ \\mathrm{V}$."]
+          },
+          {
+            "label": "(b) Branch currents",
+            "steps": [
+              "$2\\ \\Omega$ branch: $I = V/R = 6/2 = 3\\ \\mathrm{A}$.",
+              "$3\\ \\Omega$ branch: $I = 6/3 = 2\\ \\mathrm{A}$."
+            ]
+          },
+          {
+            "label": "(c) Total current",
+            "steps": ["$I_{total} = 3 + 2 = 5\\ \\mathrm{A}$."]
+          },
+          {
+            "label": "(d) Equivalent resistance",
+            "steps": [
+              "$R_p = \\dfrac{V}{I_{total}} = \\dfrac{6}{5} = 1.2\\ \\Omega$.",
+              "Check: $\\dfrac{1}{R_p} = \\dfrac{1}{2} + \\dfrac{1}{3} = \\dfrac{3}{6} + \\dfrac{2}{6} = \\dfrac{5}{6}$, so $R_p = 1.2\\ \\Omega$ \u2014 less than $2\\ \\Omega$, as required."
+            ]
+          }
+        ],
+        "keyMove": "Parallel: full voltage on each branch → $I = V/R$ per branch → add for the total → $R_p = V/I_{total}$ (or the reciprocal-sum formula)."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L4-FC-002",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "construct-model",
+        "representation": "equation",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Resistors of $4\\ \\Omega$ and $12\\ \\Omega$ are connected in parallel. What is the equivalent resistance?",
+        "choices": ["$3\\ \\Omega$", "$16\\ \\Omega$", "$8\\ \\Omega$", "$48\\ \\Omega$"],
+        "correctAnswer": 0,
+        "feedback": {
+          "correct": "Correct — $\\dfrac{1}{R_p} = \\dfrac{1}{4} + \\dfrac{1}{12} = \\dfrac{3}{12} + \\dfrac{1}{12} = \\dfrac{4}{12} = \\dfrac{1}{3}$, so $R_p = 3\\ \\Omega$. (Or $\\dfrac{4 \\times 12}{16} = 3$.)",
+          "incorrect": {
+            "1": "That is the series result.",
+            "2": "That is the average; parallel is less than the smaller resistor.",
+            "3": "That is $R_1 R_2$; divide by $R_1 + R_2$ as well."
+          }
+        },
+        "hint": ["$\\dfrac{1}{R_p} = \\dfrac{1}{4} + \\dfrac{1}{12}$, common denominator 12. Or use $\\dfrac{R_1 R_2}{R_1 + R_2}$."],
+        "solution": "$\\dfrac{1}{R_p} = \\dfrac{1}{4} + \\dfrac{1}{12} = \\dfrac{3 + 1}{12} = \\dfrac{4}{12} = \\dfrac{1}{3}$, so $R_p = 3\\ \\Omega$. This is less than the smaller resistor ($4\\ \\Omega$), as a parallel combination always must be."
+      }
+    },
+    {
+      "id": "chunk-3",
+      "title": "Comparing the two, and everyday circuits",
+      "concept": "| | Series | Parallel |\n|---|---|---|\n| paths | one | many |\n| current | same in all | splits; branch currents add |\n| voltage | shares (adds to battery) | same on each branch (= battery) |\n| equivalent $R$ | $R_1 + R_2 + \\ldots$ (bigger) | $\\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$ reciprocal (smaller) |\n| one component removed | whole circuit off | others unaffected |\n\n**Household wiring is parallel.** Every socket and light is connected across the mains, so each device gets the **full voltage**, runs at its **rated power**, and can be **switched independently** \u2014 turning off one light (or one bulb blowing) does not affect the others.\n\n**Some things use series on purpose:** a string of low-voltage decorative bulbs run from a high-voltage supply shares the voltage among all the bulbs (each only needs $V_{supply}/n$), and a fuse is placed in series so that breaking it cuts the whole circuit.",
+      "representation": "Choose the type from the clue:\n- 'same current everywhere', 'one bulb out = all out', 'voltage shared' → **series**;\n- 'full voltage on each', 'independent switching', 'one out = others fine' → **parallel**.\n\nHousehold: parallel. Fuse / voltage-sharing bulb string: series.",
+      "workedExample": {
+        "scaffold": "full",
+        "problem": "Two identical bulbs (each $6\\ \\Omega$) are connected to a $12\\ \\mathrm{V}$ battery. Compare the current through one bulb and its brightness when the bulbs are (a) in series and (b) in parallel.",
+        "phases": [
+          {
+            "label": "(a) Series",
+            "steps": [
+              "$R_s = 6 + 6 = 12\\ \\Omega$; $I = 12/12 = 1\\ \\mathrm{A}$ through each bulb.",
+              "Each bulb has $V = IR = (1)(6) = 6\\ \\mathrm{V}$ \u2014 half the battery voltage. Dimmer than normal."
+            ]
+          },
+          {
+            "label": "(b) Parallel",
+            "steps": [
+              "Each bulb has the full $12\\ \\mathrm{V}$; $I = 12/6 = 2\\ \\mathrm{A}$ through each.",
+              "Full voltage, larger current \u2192 each bulb at full (normal) brightness. (Battery supplies $4\\ \\mathrm{A}$ total.)"
+            ]
+          },
+          {
+            "label": "Compare",
+            "steps": ["A bulb is **brighter in parallel** (full voltage, more current) than in series (shared voltage, less current)."]
+          }
+        ],
+        "keyMove": "Series: shared voltage, one current, dimmer. Parallel: full voltage on each, more current, full brightness."
+      },
+      "formativeCheck": {
+        "id": "BP8-U8-L4-FC-003",
+        "courses": ["basis-physics-8"],
+        "type": "multiple-choice",
+        "skill": "justify-with-principle",
+        "representation": "verbal",
+        "difficulty": "ap-ib-standard",
+        "cognitiveLevel": 3,
+        "question": "Why are the lights in a house wired in parallel rather than in series?",
+        "choices": [
+          "Series wiring is more expensive.",
+          "In parallel, each light gets the full mains voltage and can be switched independently; one light going off (or its bulb blowing) does not affect the others.",
+          "Parallel circuits use less current overall.",
+          "Series circuits cannot be switched on."
+        ],
+        "correctAnswer": 1,
+        "feedback": {
+          "correct": "Correct — parallel wiring gives every fixture the full voltage and an independent path, so devices run normally and one failure does not black out the rest.",
+          "incorrect": {
+            "0": "Cost is not the main reason; parallel actually uses more wire.",
+            "2": "Parallel circuits draw *more* total current (lower total resistance), not less.",
+            "3": "Series circuits can be switched, but one open switch turns off the whole string."
+          }
+        },
+        "hint": ["In your home, does one light switch turn off every light? What would series wiring do if a bulb blew?"],
+        "solution": "Household lights and sockets are wired in parallel so that each has the full mains voltage across it (running at its rated power) and its own path to the supply. This means each can be switched on and off independently, and a single bulb blowing or one switch being off does not interrupt the others. Series wiring would share the voltage among all the fixtures and shut the whole circuit down if any one failed."
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "id": "BP8-U8-L4-MC-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "misconception-diagnosis",
+      "representation": "verbal",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "misconceptionTested": "",
+      "question": "A student says: 'Putting resistors in parallel should give more resistance, because there is more resistor material in the circuit.' What is the correct reasoning?",
+      "choices": [
+        "The student is right — more resistors means more resistance.",
+        "In parallel, each new resistor gives the current an extra path, so more total current flows for the same voltage — which means the equivalent resistance is *lower*, always less than the smallest branch.",
+        "Parallel resistors have no effect on the total resistance.",
+        "The total resistance in parallel equals the sum of the resistances."
+      ],
+      "correctAnswer": 1,
+      "feedback": {
+        "correct": "Correct — 'more paths for current' means less overall opposition. $\\dfrac{1}{R_p}$ is the sum of the reciprocals, so $R_p$ is smaller than any single branch.",
+        "incorrect": {
+          "0": "That is the series intuition; it does not apply to parallel.",
+          "2": "Parallel resistors definitely change (lower) the total resistance.",
+          "3": "That is the *series* formula. Parallel uses reciprocals."
+        }
+      },
+      "hint": ["A second lane on a motorway lets more traffic through. Does adding a parallel path make current flow more or less easily?"],
+      "solution": "Adding a resistor in parallel opens a new path for the current, so for the same battery voltage, more total current flows. More current for the same voltage means a lower effective resistance. Mathematically, $\\dfrac{1}{R_p} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$ is larger than any single $\\dfrac{1}{R_i}$, so $R_p$ is smaller than every branch resistance."
+    }
+  ],
+  "errorAnalysis": [
+    {
+      "studentWork": "Problem: A $12\\ \\mathrm{V}$ battery is connected to a $6\\ \\Omega$ and a $3\\ \\Omega$ resistor in parallel. Find the total current from the battery.\n\nStudent's response: 'Total resistance $= 6 + 3 = 9\\ \\Omega$. Total current $= 12/9 \\approx 1.3\\ \\mathrm{A}$.'",
+      "prompts": [
+        "State the rule for combining resistances in parallel.",
+        "Identify the student's error and compute the correct equivalent resistance.",
+        "Give the correct total current."
+      ],
+      "modelResponse": "For resistors in parallel, the reciprocals add: $\\dfrac{1}{R_p} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$, not the resistances themselves. Error: the student used the *series* rule (adding the resistances) for a parallel combination. Correct: $\\dfrac{1}{R_p} = \\dfrac{1}{6} + \\dfrac{1}{3} = \\dfrac{1}{6} + \\dfrac{2}{6} = \\dfrac{3}{6} = \\dfrac{1}{2}$, so $R_p = 2\\ \\Omega$. Total current: $I = \\dfrac{V}{R_p} = \\dfrac{12}{2} = 6\\ \\mathrm{A}$. (Check: branch currents $12/6 = 2\\ \\mathrm{A}$ and $12/3 = 4\\ \\mathrm{A}$, adding to $6\\ \\mathrm{A}$.)",
+      "responseMaxLength": 700
+    }
+  ],
+  "representationConnections": "A circuit diagram shows whether components are in series (one loop, no branches) or parallel (branches between the same two nodes). The series rules (equal current; voltages and resistances add) or the parallel rules (equal voltage; currents add; $1/R_p$ = sum of reciprocals) let you fill a VIR chart and find every current and voltage with Ohm's law. The equivalent resistance sets the battery's total current, $I_{total} = V/R_{total}$. Lesson 5 combines a series section with a parallel section in one circuit.",
+  "lessonAssessment": [
+    {
+      "id": "BP8-U8-L4-LA-001",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "construct-model",
+      "representation": "equation",
+      "difficulty": "ap-ib-standard",
+      "cognitiveLevel": 3,
+      "question": "A $9\\ \\mathrm{V}$ battery drives three identical $9\\ \\Omega$ resistors connected in parallel. What is the total current from the battery?",
+      "choices": ["$3\\ \\mathrm{A}$", "$1\\ \\mathrm{A}$", "$0.33\\ \\mathrm{A}$", "$27\\ \\mathrm{A}$"],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — each branch carries $9/9 = 1\\ \\mathrm{A}$; total $= 1 + 1 + 1 = 3\\ \\mathrm{A}$. (Or $R_p = 9/3 = 3\\ \\Omega$, so $I = 9/3 = 3\\ \\mathrm{A}$.)",
+        "incorrect": {
+          "1": "That is the current in *one* branch. Add all three branches.",
+          "2": "This uses a total of $27\\ \\Omega$ (the series result).",
+          "3": "This inverts, or misuses the numbers."
+        }
+      },
+      "hint": ["Each branch has the full $9\\ \\mathrm{V}$: $I = 9/9 = 1\\ \\mathrm{A}$ per branch. Three branches → ?"],
+      "solution": "Each of the three parallel branches has the full $9\\ \\mathrm{V}$ across it, so each carries $I = 9/9 = 1\\ \\mathrm{A}$. The total current from the battery is $1 + 1 + 1 = 3\\ \\mathrm{A}$. (Equivalently, three $9\\ \\Omega$ resistors in parallel give $R_p = 9/3 = 3\\ \\Omega$, and $I = 9/3 = 3\\ \\mathrm{A}$.)"
+    },
+    {
+      "id": "BP8-U8-L4-LA-002",
+      "courses": ["basis-physics-8"],
+      "type": "multiple-choice",
+      "skill": "limiting-case-analysis",
+      "representation": "verbal",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "question": "In a series circuit with a $2\\ \\Omega$ bulb and a $4\\ \\Omega$ bulb, which bulb is brighter? In a parallel circuit with the same two bulbs, which is brighter?",
+      "choices": [
+        "Series: the $4\\ \\Omega$ bulb. Parallel: the $2\\ \\Omega$ bulb.",
+        "The $4\\ \\Omega$ bulb is brighter in both.",
+        "The $2\\ \\Omega$ bulb is brighter in both.",
+        "They are equally bright in both cases."
+      ],
+      "correctAnswer": 0,
+      "feedback": {
+        "correct": "Correct — series: same current $I$, so power $I^2 R$ favours the larger $R$ (the $4\\ \\Omega$ bulb). Parallel: same voltage $V$, so power $V^2/R$ favours the smaller $R$ (the $2\\ \\Omega$ bulb, which also draws more current).",
+        "incorrect": {
+          "1": "In parallel, the smaller resistance draws more current and dissipates more power.",
+          "2": "In series, the larger resistance has more voltage across it and dissipates more power.",
+          "3": "The brightness differs because the resistances differ, in opposite ways for series and parallel."
+        }
+      },
+      "hint": ["Series → same current → power $\\propto R$. Parallel → same voltage → power $\\propto 1/R$."],
+      "solution": "In series the current is the same through both bulbs, and the energy per second delivered to a bulb is $IV = I^2 R$, which is larger for the larger resistance — so the $4\\ \\Omega$ bulb is brighter. In parallel the voltage across both bulbs is the same, and the power is $IV = V^2/R$, which is larger for the smaller resistance — so the $2\\ \\Omega$ bulb (which also draws the larger current) is brighter."
+    },
+    {
+      "id": "BP8-U8-L4-LA-003",
+      "courses": ["basis-physics-8"],
+      "type": "free-response",
+      "skill": "construct-model",
+      "representation": "physical-model",
+      "difficulty": "ap5-ib7-target",
+      "cognitiveLevel": 5,
+      "scenario": "A $12\\ \\mathrm{V}$ battery is connected to a $2\\ \\Omega$ resistor and a $6\\ \\Omega$ resistor. Consider two arrangements: (S) the two resistors in series; (P) the two resistors in parallel.",
+      "parts": [
+        {
+          "prompt": "(a) For arrangement S, calculate the equivalent resistance, the current, and the voltage across each resistor.",
+          "modelResponse": "Series: $R_s = 2 + 6 = 8\\ \\Omega$. Current: $I = 12/8 = 1.5\\ \\mathrm{A}$ (same through both). Voltages: across $2\\ \\Omega$, $V = (1.5)(2) = 3\\ \\mathrm{V}$; across $6\\ \\Omega$, $V = (1.5)(6) = 9\\ \\mathrm{V}$. Check: $3 + 9 = 12\\ \\mathrm{V}$.",
+          "points": 4
+        },
+        {
+          "prompt": "(b) For arrangement P, calculate the equivalent resistance, the current in each branch, and the total current.",
+          "modelResponse": "Parallel: $\\dfrac{1}{R_p} = \\dfrac{1}{2} + \\dfrac{1}{6} = \\dfrac{3}{6} + \\dfrac{1}{6} = \\dfrac{4}{6} = \\dfrac{2}{3}$, so $R_p = 1.5\\ \\Omega$. Each branch has $12\\ \\mathrm{V}$: through the $2\\ \\Omega$, $I = 12/2 = 6\\ \\mathrm{A}$; through the $6\\ \\Omega$, $I = 12/6 = 2\\ \\mathrm{A}$. Total current $= 6 + 2 = 8\\ \\mathrm{A}$ (check: $12/1.5 = 8\\ \\mathrm{A}$).",
+          "points": 4
+        },
+        {
+          "prompt": "(c) State which arrangement draws more total current from the battery and which would drain the battery faster, and explain.",
+          "modelResponse": "Arrangement P draws more total current ($8\\ \\mathrm{A}$ versus $1.5\\ \\mathrm{A}$ for S), because its equivalent resistance ($1.5\\ \\Omega$) is much lower than S's ($8\\ \\Omega$). More current means the battery delivers charge (and energy) faster, so arrangement P would drain the battery faster.",
+          "points": 3
+        }
+      ],
+      "totalPoints": 11
+    }
+  ],
+  "examConnection": "AP Physics 2 and IB test the series rules (equal current, adding voltages, adding resistances), the parallel rules (equal voltage, adding currents, reciprocal-sum resistance below the smallest branch), calculating full VIR charts, and reasoning about brightness ($I^2 R$ in series, $V^2/R$ in parallel) and the effect of removing one component. Applying the series formula to a parallel combination (or vice versa) is the most common error.",
+  "summary": "In a series circuit (one loop, no branches) the current is the same everywhere, the component voltages add up to the battery voltage, and the resistances add: $R_s = R_1 + R_2 + \\ldots$ (larger than any one). In a parallel circuit (branches between the same two nodes) every branch has the same voltage (the battery voltage), the branch currents add to the total, and $\\dfrac{1}{R_p} = \\dfrac{1}{R_1} + \\dfrac{1}{R_2} + \\ldots$ with $R_p$ below the smallest branch (for two resistors, $R_p = \\dfrac{R_1 R_2}{R_1 + R_2}$; for $n$ equal, $R/n$). Adding a series resistor raises the total resistance and lowers the current; adding a parallel resistor lowers the total resistance and raises the current. Removing one component switches off a whole series circuit but leaves a parallel circuit's other branches unaffected — which is why household wiring is parallel.",
+  "exitQuestion": {
+    "id": "BP8-U8-L4-EXIT-001",
+    "courses": ["basis-physics-8"],
+    "type": "multiple-choice",
+    "skill": "construct-model",
+    "representation": "equation",
+    "difficulty": "developing",
+    "cognitiveLevel": 2,
+    "question": "Two $8\\ \\Omega$ resistors are connected in parallel. What is the equivalent resistance?",
+    "choices": ["$4\\ \\Omega$", "$16\\ \\Omega$", "$8\\ \\Omega$", "$0.25\\ \\Omega$"],
+    "correctAnswer": 0,
+    "feedback": {
+      "correct": "Correct — two equal resistors in parallel give half the value: $8/2 = 4\\ \\Omega$.",
+      "incorrect": {
+        "1": "That is the series result.",
+        "2": "Parallel is less than one resistor.",
+        "3": "$\\dfrac{1}{R} = \\dfrac{2}{8} = \\dfrac{1}{4}$, so $R = 4\\ \\Omega$, not $0.25\\ \\Omega$."
+      }
+    },
+    "hint": ["Two equal resistors in parallel: half of one of them."],
+    "solution": "$\\dfrac{1}{R_p} = \\dfrac{1}{8} + \\dfrac{1}{8} = \\dfrac{2}{8} = \\dfrac{1}{4}$, so $R_p = 4\\ \\Omega$. Two identical resistors in parallel always give half the individual value."
+  },
+  "questionBankFile": "dc-circuits.json",
+  "furtherPracticeQuestionIds": ["BP8-U8-MCQ-045", "BP8-U8-MCQ-046", "BP8-U8-MCQ-047", "BP8-U8-MCQ-049", "BP8-U8-MCQ-052", "BP8-U8-MCQ-054"],
+  "needsPlotly": false
+}
